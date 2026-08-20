@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FichePage from '../../components/FichePage.astro';
 import { labelStatut } from '../../lib/fiche-view';
+import { dateAttribution, formaterDate } from '../../lib/hub-view';
 
 export function getStaticPaths() {
   return getCollection('catalog').then((entries) =>
@@ -17,6 +18,10 @@ const { fiche } = Astro.props;
 
 const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()} recensée par FrancePassoire — ${fiche.volume.label.toLowerCase()}. Données annoncées, historique et sources citées sur la fiche.`;
 
+// T48 : la date d'attribution désambiguïse les récidivistes (Chronopost,
+// France Travail…) — sinon deux fiches d'une même entité partagent <title>.
+const titreDocument = `${fiche.entity} : la fiche du ${formaterDate(dateAttribution(fiche))} - France Passoire`;
+
 const articleJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -28,7 +33,7 @@ const articleJsonLd = JSON.stringify({
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
 });
 ---
-<Layout title={`${fiche.entity} : la fiche - France Passoire`} description={ficheDescription}>
+<Layout title={titreDocument} description={ficheDescription}>
   <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
   <FichePage fiche={fiche} />
 </Layout>
