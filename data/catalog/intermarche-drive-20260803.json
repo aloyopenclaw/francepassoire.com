@@ -1,0 +1,47 @@
+{
+  "slug": "intermarche-drive-20260803",
+  "entity": "Intermarché (Groupement Les Mousquetaires)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-03",
+    "publication": "2026-08-03"
+  },
+  "volume": {
+    "count": 287605,
+    "unit": "personnes",
+    "label": "287 605 clients du service Drive identifiés comme concernés et informés par l'enseigne, sur environ 2 millions de clients (chiffre Intermarché du 3 août)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Fuite de données : Intermarché Drive touché par une cyberattaque, près de 300 000 clients concernés",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-intermarche-drive-touche-par-une-cyberattaque-2-millions-de-clients-concernes-03-08-2026-XS6ZY2H5JJCTDNLXNVRMJ4RZ6U.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien (AFP) — Cyberattaque contre Intermarché : une enquête est ouverte après la fuite de données qui concerne 300 000 clients",
+      "url": "https://www.leparisien.fr/high-tech/cyberattaque-contre-intermarche-une-enquete-est-ouverte-apres-la-fuite-de-donnees-qui-concerne-300-000-clients-06-08-2026-OBKH7GMH7NEOTL2NUPXHXKNC5A.php",
+      "kind": "article"
+    },
+    {
+      "label": "RMC/BFMTV — Cyberattaque Intermarché : si vous êtes client, voici ce qu'il faut vérifier",
+      "url": "https://rmc.bfmtv.com/conso/alimentation/cyberattaque-intermarche-si-vous-etes-client-voici-ce-qu-il-faut-verifier-dans-les-prochains-jours_AN-202608040260.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Groupement Les Mousquetaires a annoncé le 3 août 2026 une cyberattaque détectée et bloquée en interne la semaine précédente, visant les fichiers des clients du service Drive d'Intermarché. Selon l'enseigne, les attaquants ont accédé à des données de 287 605 clients, informés par courriel : identité, date de naissance, coordonnées, numéro de carte de fidélité et certaines informations de commandes en ligne. Aucune donnée bancaire, aucun mot de passe ni adresse électronique n'est concerné selon le groupe, qui a notifié la CNIL et déposé plainte. Le 6 août, le parquet de Paris a ouvert une enquête confiée à la brigade de lutte contre la cybercriminalité.",
+  "timeline": [
+    {
+      "date": "2026-08-03",
+      "event": "Le groupe confirme à l'AFP une attaque détectée et bloquée la semaine précédente ; 287 605 clients du Drive sont informés par courriel, la CNIL notifiée, une plainte déposée."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Le parquet de Paris ouvre une enquête pour atteinte à un système automatisé de données ; elle est confiée à la brigade de lutte contre la cybercriminalité."
+    }
+  ]
+}
