@@ -32,4 +32,11 @@
       "id": "0000000000000000000000000000000"
     }
   ]
+
+  // SECRET (PAS une var — jamais de valeur en clair ici) pour l'ouverture des
+  // PR de la file de validation (src/pr-automation.ts, T19) :
+  //   FRANCEPASSOIRE_GH_TOKEN — fine-grained PAT, contenu+PR du dépôt.
+  // Création au câblage runtime (T47) :
+  //   npx wrangler secret put FRANCEPASSOIRE_GH_TOKEN
+  // Le jeton réel n'existe pas encore : les tests T19 injectent un fake.
 }

@@ -2,6 +2,12 @@
 // Les tâches 14-18 (ransomware.live, RSS médias, CERT-FR, CNIL, fuitesinfos)
 // implémentent SourceAdapter et s'enregistrent dans `adapters`.
 
+import { ransomwareLiveAdapter } from '../adapters/ransomware-live';
+import { rssAdapters } from '../adapters/rss';
+import { certFrAvisAdapter, certFrAlertesAdapter } from '../adapters/cert-fr';
+import { cnilSanctionsAdapter } from '../adapters/cnil';
+import { hibpDiffAdapter } from '../adapters/hibp';
+
 export type CandidateStatus = 'NEW' | 'DRAFT' | 'PUBLISHED' | 'REJECTED';
 
 /**
@@ -37,5 +43,24 @@ export interface SourceAdapter {
   fetchCandidates(fetchFn: typeof fetch): Promise<Candidate[]>;
 }
 
-/** Registre des adapters actifs — vide à la T13, rempli par les tâches 14-18. */
-export const adapters: SourceAdapter[] = [];
+/**
+ * Registre des adapters actifs — câblé en T19 (9 sources). Déclaratif :
+ * l'ordre du tableau est l'ordre d'exécution du run.
+ *
+ * cnilDataGouvAdapter (stats /chiffres) n'est PAS enregistré : il ne produit
+ * aucun candidat (statistiques agrégées, câblage T36) — l'enregistrer ne
+ * ferait que consommer le quota data.gouv.
+ *
+ * hibpDiffAdapter() est instancié sans snapshot précédent : chaque run fetch
+ * le catalogue (amorçage de l'état) et renvoie [] — le premier diff réel
+ * exigera la persistance du snapshot par le runner (T47). Idem pour les
+ * gardes guid_set (RSS) et cadence CNIL (isDailyRateOk) : à câbler au runner.
+ */
+export const adapters: SourceAdapter[] = [
+  ransomwareLiveAdapter,
+  ...rssAdapters,
+  certFrAvisAdapter,
+  certFrAlertesAdapter,
+  cnilSanctionsAdapter,
+  hibpDiffAdapter(),
+];
