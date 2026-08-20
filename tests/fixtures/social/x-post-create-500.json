@@ -1,0 +1,23 @@
+{
+  "comment": "POST https://api.x.com/2/tweets — 500 Internal Server Error. Erreur plateforme transitoire : retryable, la ligne reste PENDING et est rejouée au cron suivant (pacing 5 min).",
+  "request": {
+    "method": "POST",
+    "url": "https://api.x.com/2/tweets",
+    "headers": {
+      "Authorization": "Bearer test-user-token-x",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "text": "Nouvelle fiche confirmée : Alaxione — 900 000 patients. Sources et détails : https://francepassoire.com/f/alaxione-20260820"
+    }
+  },
+  "response": {
+    "status": 500,
+    "body": {
+      "title": "Internal Server Error",
+      "detail": "An unknown internal error occurred.",
+      "type": "about:blank",
+      "status": 500
+    }
+  }
+}

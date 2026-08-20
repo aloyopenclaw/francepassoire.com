@@ -1,0 +1,24 @@
+{
+  "comment": "POST https://api.x.com/2/tweets — 201 Created. Forme de la doc officielle X (docs.x.com/x-api/posts/create-post) : corps {text}, réponse {data:{id,text,edit_history_tweet_ids}}. Token utilisateur factice de test.",
+  "request": {
+    "method": "POST",
+    "url": "https://api.x.com/2/tweets",
+    "headers": {
+      "Authorization": "Bearer test-user-token-x",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "text": "Nouvelle fiche revendiquée : Alaxione — 1,2 million de comptes (revendication non confirmée par l’entité). Détails : https://francepassoire.com/f/alaxione-20260820"
+    }
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "data": {
+        "id": "1792861284885307392",
+        "text": "Nouvelle fiche revendiquée : Alaxione — 1,2 million de comptes (revendication non confirmée par l’entité). Détails : https://francepassoire.com/f/alaxione-20260820",
+        "edit_history_tweet_ids": ["1792861284885307392"]
+      }
+    }
+  }
+}
