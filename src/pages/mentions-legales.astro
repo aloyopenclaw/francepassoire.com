@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout
   title="Mentions légales - France Passoire"
-  description="Mentions légales de FrancePassoire : éditeur, hébergement, propriété intellectuelle et statut du site."
+  description="Mentions légales de FrancePassoire : éditeur, directeur de la publication, hébergement Cloudflare, propriété intellectuelle et nature du site."
 >
   <section class="bg-brand-cream border-b-2 border-brand-ink py-12">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -17,51 +17,79 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Éditeur du site</h2>
-        <p class="font-body leading-relaxed mb-3">
-          FrancePassoire est un projet d'utilité publique citoyenne, indépendant, sans but
-          lucratif et sans financement publicitaire. Il documente les fuites de données
-          personnelles touchant la France à partir de sources publiques, sans jamais
-          consulter ni reproduire de données volées.
-        </p>
         <p class="font-body leading-relaxed">
-          Le site est actuellement un prototype en construction. L'identité complète de
-          l'éditeur — nom, adresse et directeur de la publication — sera publiée sur cette
-          page dès la mise en production.
+          Le site francepassoire.com est édité par <strong>FrancePassoire</strong>, projet
+          citoyen indépendant, sans but lucratif et sans financement publicitaire. Il
+          documente les fuites de données personnelles touchant la France à partir de
+          sources publiques, sans jamais consulter, héberger ni reproduire de données
+          volées.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Directeur de la publication</h2>
+        <p class="font-body leading-relaxed">
+          Le directeur de la publication est l'éditeur du projet FrancePassoire.
         </p>
       </div>
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Hébergement</h2>
         <p class="font-body leading-relaxed mb-3">
-          L'hébergeur de production sera identifié ici dès la mise en ligne du site.
+          Le site est hébergé par <strong>Cloudflare, Inc.</strong>, San Francisco,
+          États-Unis — <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer" class="underline font-bold hover:text-brand-orange">cloudflare.com</a>.
         </p>
         <p class="font-body leading-relaxed">
-          À ce stade, le site ne collecte aucune donnée personnelle — consultez notre
+          Les contenus sont servis depuis le réseau Cloudflare ; aucune donnée
+          personnelle n'est collectée à ce stade — voir notre
           <a href="/confidentialite/" class="underline font-bold hover:text-brand-orange">politique de confidentialité</a>.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Contact</h2>
+        <p class="font-body leading-relaxed mb-3">
+          Pour toute question, correction ou demande (y compris l'exercice de vos
+          droits — voir <a href="/confidentialite/" class="underline font-bold hover:text-brand-orange">Confidentialité</a>) :
+          <a href="mailto:contact@francepassoire.com" class="underline font-bold hover:text-brand-orange">contact@francepassoire.com</a>.
+        </p>
+        <p class="font-body leading-relaxed">
+          La boîte aux lettres du projet est en cours d'activation ; dès sa mise en
+          service, c'est le canal officiel unique du site. Toute demande de correction
+          d'une fiche est étudiée avec la même exigence de preuves factuelles que le
+          reste de la méthode éditoriale.
         </p>
       </div>
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Propriété intellectuelle</h2>
         <p class="font-body leading-relaxed mb-3">
-          Les textes éditoriaux, le design et le code du site sont le travail du projet
-          FrancePassoire. Le jeu de données issu du catalogue est destiné à être publié en
-          accès libre sous licence CC-BY — voir
+          Les contenus du site — textes éditoriaux, méthode, design — sont publiés sous
+          licence <strong>Creative Commons Attribution (CC-BY)</strong>. Le jeu de
+          données du catalogue, dès sa publication, le sera également sous CC-BY — voir
           <a href="/methode/" class="underline font-bold hover:text-brand-orange">La méthode</a>.
         </p>
+        <p class="font-body leading-relaxed mb-3">
+          La marque FrancePassoire fait l'objet d'un dépôt en cours.
+        </p>
         <p class="font-body leading-relaxed">
-          Les marques et noms d'entités cités le sont à titre factuel et informatif, dans
-          un but d'intérêt public ; ils appartiennent à leurs titulaires respectifs.
+          Les marques et noms d'entités cités le sont à titre factuel et informatif,
+          dans un but d'intérêt public ; ils appartiennent à leurs titulaires respectifs.
         </p>
       </div>
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
-        <h2 class="font-display font-extrabold text-2xl mb-3">Contenus et responsabilité</h2>
+        <h2 class="font-display font-extrabold text-2xl mb-3">Nature du site</h2>
+        <p class="font-body leading-relaxed mb-3">
+          FrancePassoire est un observatoire citoyen et indépendant des fuites de
+          données personnelles touchant la France. Le site ne consulte, n'héberge et
+          ne reproduit <strong>aucune donnée volée</strong> : il ne traite que des
+          métadonnées publiques — qui revendique quoi, statut de vérification — et cite
+          ses sources sur chaque fiche.
+        </p>
         <p class="font-body leading-relaxed">
-          Le site ne recense que des métadonnées publiques (qui revendique quoi, statut de
-          vérification) et cite ses sources sur chaque fiche. Les critères de publication,
-          de vérification et de retrait sont décrits sur la page
-          <a href="/methode/" class="underline font-bold hover:text-brand-orange">La méthode</a>.
+          Les critères de publication, de vérification et de retrait sont décrits sur
+          la page <a href="/methode/" class="underline font-bold hover:text-brand-orange">La méthode</a>.
         </p>
       </div>
 
