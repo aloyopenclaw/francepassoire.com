@@ -1,0 +1,50 @@
+{
+  "slug": "orange-20250728",
+  "entity": "Orange",
+  "siren": "380129866",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-28",
+    "publication": "2025-07-28",
+    "confirmation": "2025-08-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non chiffré ; environ 4 Go de données internes publiées sur le dark web à la mi-août, jugées anciennes ou peu sensibles par Orange"
+  },
+  "data_types": ["documents"],
+  "sources": [
+    {
+      "label": "Orange (communiqué, 28 juillet 2025) — Le groupe Orange annonce avoir déposé plainte lundi 28 juillet pour atteinte à un de ses systèmes d'information",
+      "url": "https://www.orange.com/fr/communiques/le-groupe-orange-annonce-avoir-depose-plainte-lundi-28-juillet-pour-atteinte-a-un-de-ses-systemes-dinformation-307431",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDnet — La cyberattaque d'Orange se solde finalement par une fuite de données",
+      "url": "https://www.zdnet.fr/actualites/la-cyberattaque-dorange-se-solde-finalement-par-une-fuite-de-donnees-480732.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Orange : les données des clients sont sur le dark web, c'est la quatrième attaque contre l'opérateur en 2025",
+      "url": "https://www.lesnumeriques.com/societe-numerique/orange-les-donnees-des-clients-sont-sur-le-dark-web-c-est-la-quatrieme-attaque-contre-l-operateur-en-2025-n241399.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Orange annonce le 28 juillet 2025 avoir déposé plainte après une cyberattaque détectée le 25 juillet sur l'un de ses systèmes d'information, qui a perturbé certaines plateformes de gestion pour une partie de ses clients entreprises et grand public ; le communiqué indique alors qu'aucun élément ne laisse penser à une exfiltration. À la mi-août, le groupe criminel Warlock publie sur le dark web environ 4 Go de données issues de cette intrusion. Orange reconnaît une exfiltration limitée à des données « obsolètes ou peu sensibles » et déclare avoir informé les entreprises concernées avant la publication ; l'ampleur exacte du vol n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-07-25",
+      "event": "Le groupe Orange détecte une cyberattaque sur l'un de ses systèmes d'information et isole les services concernés, ce qui perturbe certaines plateformes de gestion pour des clients entreprises et grand public."
+    },
+    {
+      "date": "2025-07-28",
+      "event": "Orange annonce avoir déposé plainte et alerté les autorités ; à ce stade, « aucun élément ne laisse penser » que des données de clients ou d'Orange auraient été exfiltrées, selon le communiqué."
+    },
+    {
+      "date": "2025-08-22",
+      "event": "Selon la presse, le groupe Warlock a publié mi-août environ 4 Go de données issues de l'intrusion ; Orange reconnaît une exfiltration limitée à des données « obsolètes ou peu sensibles » et dit avoir informé les clients entreprises concernés."
+    }
+  ]
+}

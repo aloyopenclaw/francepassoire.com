@@ -1,0 +1,51 @@
+{
+  "slug": "auchan-20250821",
+  "entity": "Auchan",
+  "siren": "481986446",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-21",
+    "publication": "2025-08-21",
+    "confirmation": "2025-08-21"
+  },
+  "volume": {
+    "count": 100000,
+    "unit": "personnes",
+    "label": "de l'ordre d'une centaine de milliers de clients selon un porte-parole interrogé par Le Monde informatique ; franceinfo évoque plusieurs centaines de milliers (chiffre exact non communiqué par Auchan)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "franceinfo — Le groupe Auchan victime d'une cyberattaque, les données de plusieurs centaines de milliers de clients dérobées",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/le-groupe-auchan-victime-d-une-cyberattaque-les-donnees-de-plusieurs-centaines-de-milliers-de-clients-derobees_7447297.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde informatique — Encore piraté, Auchan alerte sur une fuite de données clients",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-encore-pirate-auchan-alerte-sur-une-fuite-de-donnees-clients-97652.html",
+      "kind": "article"
+    },
+    {
+      "label": "Capital — Auchan victime d'une cyberattaque, des centaines de milliers de données de clients dérobées",
+      "url": "https://www.capital.fr/economie-politique/auchan-victime-dune-cyberattaque-des-centaines-de-milliers-de-donnees-de-clients-derobees-1517399",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — Auchan retailer data breach impacts hundreds of thousands of customers",
+      "url": "https://www.bleepingcomputer.com/news/security/auchan-retailer-data-breach-impacts-hundreds-of-thousands-of-customers/",
+      "kind": "article"
+    }
+  ],
+  "description": "Auchan annonce le 21 août 2025 un « acte de cybermalveillance » ayant donné à des tiers un accès non autorisé à des données de comptes de fidélité : civilité, nom, prénom, adresses e-mail et postale, numéro de téléphone et numéro de carte de fidélité. L'enseigne, qui a identifié l'incident le week-end précédent, précise que les données bancaires, mots de passe et codes PIN ne sont pas concernés ; elle a notifié la CNIL et informe les clients touchés. Un porte-parole évoque « une centaine de milliers » de clients concernés, sans chiffre exact. Une fuite similaire avait déjà visé les comptes de fidélité de l'enseigne en novembre 2024.",
+  "timeline": [
+    {
+      "date": "2025-08-21",
+      "event": "Auchan annonce un acte de cybermalveillance touchant les comptes de fidélité, identifié le week-end précédent ; la CNIL est notifiée et les clients concernés sont informés."
+    },
+    {
+      "date": "2025-08-21",
+      "event": "Un porte-parole indique au Monde informatique qu'« une centaine de milliers de clients » sont concernés, sans chiffre exact ; l'incident fait suite à une attaque similaire en novembre 2024."
+    }
+  ]
+}
