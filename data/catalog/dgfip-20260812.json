@@ -1,0 +1,69 @@
+{
+  "slug": "dgfip-20260812",
+  "entity": "Direction générale des Finances publiques (DGFiP)",
+  "siren": "130004955",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-14",
+    "confirmation": "2026-08-14"
+  },
+  "volume": {
+    "count": 678000,
+    "unit": "personnes",
+    "label": "678 000 particuliers et professionnels (bilan du communiqué officiel du 14 août, dont un peu plus de 350 000 particuliers ; des données cadastrales distinctes ont également été consultées)"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "impots.gouv.fr — Accès illégitimes au système d'information de la DGFiP (publié le 14 août, modifié le 17 août)",
+      "url": "https://www.impots.gouv.fr/actualite/acces-illegitimes-au-systeme-dinformation-de-la-dgfip",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ministère de l'Économie (communiqué n° 953, 14 août 2026) — Accès illégitimes au système d'information de la Direction générale des Finances publiques",
+      "url": "https://presse.economie.gouv.fr/?p=182374",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — Le piratage du système d'information des impôts a touché 678 000 contribuables, annonce la DGFiP",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/piratage-du-systeme-d-information-des-impots-quelques-centaines-de-milliers-d-usagers-sont-concernes-annonce-la-dgfip_8147609.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Données dérobées, principaux risques… Ce que contient le mail envoyé par le fisc aux victimes du piratage du site des impôts",
+      "url": "https://www.leparisien.fr/high-tech/donnees-derobees-principaux-risques-ce-que-contient-le-mail-envoye-par-le-fisc-aux-victimes-du-piratage-du-site-des-impots-17-08-2026-ZZNHEFEQGRBRFGUT66MNFRDUTA.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Piratage du fisc : ce que contient le courriel envoyé cette semaine aux milliers de victimes du vol de données",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/piratage-du-fisc-ce-que-contient-le-courriel-envoye-cette-semaine-aux-milliers-de-victimes-20260818",
+      "kind": "article"
+    },
+    {
+      "label": "CNews — Cyberattaque : une « troisième fuite » sur des données liées aux successions identifiée par le fisc",
+      "url": "https://www.cnews.fr/france/2026-08-18/cyberattaque-une-troisieme-fuite-sur-des-donnees-liees-aux-successions-identifiee",
+      "kind": "article"
+    }
+  ],
+  "description": "La Direction générale des Finances publiques (DGFiP) reconnaît dans un communiqué du 14 août que des accès illégitimes survenus en juin et juillet, via des identifiants d'agents usurpés, ont servi à consulter et extraire des données de 678 000 particuliers et professionnels : identifiant fiscal, état civil, coordonnées, situation fiscale (revenu fiscal de référence, quotient familial, taux de prélèvement à la source). Le vol n'a été établi qu'à partir du 12 août, quand « ZeroBytes » a revendiqué ces accès sur un forum. La DGFiP a saisi la CNIL, déposé plainte et informe individuellement les personnes concernées depuis le 17 août. L'administration précise que les mots de passe n'ont pas été compromis.",
+  "timeline": [
+    {
+      "date": "2026-08-12",
+      "event": "Un acteur malveillant nommé « ZeroBytes » revendique sur un forum des accès illégitimes au système d'information de la DGFiP, intervenus en juin et juillet via des identifiants d'agents usurpés ; la DGFiP en prend connaissance ce jour-là."
+    },
+    {
+      "date": "2026-08-14",
+      "event": "Un communiqué officiel établit que ces accès ont servi à consulter et extraire des données de 678 000 particuliers et professionnels ; la DGFiP saisit la CNIL et annonce le dépôt de plainte."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La DGFiP commence à informer individuellement les personnes concernées, par courriel puis par courrier ; une page dédiée et une FAQ sont en ligne sur impots.gouv.fr."
+    },
+    {
+      "date": "2026-08-18",
+      "event": "Le ministre des Comptes publics présente ses excuses ; une troisième fuite, portant sur des données de successions jugées peu sensibles, est identifiée et coupée."
+    }
+  ]
+}

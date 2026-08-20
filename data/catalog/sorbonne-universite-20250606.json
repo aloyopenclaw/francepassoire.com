@@ -1,0 +1,50 @@
+{
+  "slug": "sorbonne-universite-20250606",
+  "entity": "Sorbonne Université",
+  "siren": "130023385",
+  "secteur": "recherche",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-06",
+    "publication": "2025-06-06",
+    "confirmation": "2025-06-06"
+  },
+  "volume": {
+    "count": 32000,
+    "unit": "comptes",
+    "label": "32 000 comptes d'agents et d'anciens agents (chiffre confirmé par Sorbonne Université à ZDnet)"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Sorbonne Université (communiqué) — Informations sur la cyberattaque dont Sorbonne Université fait l'objet",
+      "url": "https://www.sorbonne-universite.fr/presse/informations-sur-la-cyberattaque-dont-sorbonne-universite-fait-lobjet",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDnet — Sorbonne-Université victime d'une cyberattaque",
+      "url": "https://www.zdnet.fr/actualites/sorbonne-universite-victime-dune-cyberattaque-477354.htm",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Fuite massive à Sorbonne Université : données bancaires, contrats et numéros de sécu dans la nature",
+      "url": "https://www.zataz.com/fuite-massive-a-sorbonne-universite-donnees-bancaires-contrats-et-numeros-de-secu-dans-la-nature/",
+      "kind": "article"
+    }
+  ],
+  "description": "Sorbonne Université annonce le 6 juin 2025 une cyberattaque ayant endommagé plusieurs outils numériques ; ses investigations mettent en évidence la compromission de données sensibles de personnels : adresses e-mail professionnelles, coordonnées bancaires, numéros de Sécurité sociale et éléments relatifs à la rémunération, après une intrusion visant l'outil de gestion des ressources humaines. Environ 32 000 comptes, y compris d'anciens agents, sont concernés selon Zataz, chiffre confirmé par l'université à ZDnet. L'établissement a déposé plainte et déclaré l'incident à la CNIL et à l'ANSSI ; un numéro vert et une FAQ sont mis à disposition des personnels. Aucune revendication n'est signalée.",
+  "timeline": [
+    {
+      "date": "2025-06-06",
+      "event": "L'université annonce une cyberattaque ayant « endommagé différents outils numériques » ; les investigations mettent en évidence la compromission de données sensibles (e-mails professionnels, coordonnées bancaires, numéros de Sécurité sociale, rémunération). Plainte, déclarations CNIL et ANSSI."
+    },
+    {
+      "date": "2025-06-13",
+      "event": "Zataz fait état d'un document interne évoquant plus de 32 000 comptes exposés, dont des bulletins de paie, des RIB et des justificatifs d'embauche, ainsi que des courriels internes."
+    },
+    {
+      "date": "2025-06-17",
+      "event": "Le chiffre de 32 000 comptes exposés — agents et anciens agents — est confirmé par Sorbonne Université à ZDnet."
+    }
+  ]
+}

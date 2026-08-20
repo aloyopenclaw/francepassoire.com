@@ -366,7 +366,7 @@
 
     if (!name || !entite) {
       validationEl.innerHTML =
-        '<span class="text-brand-orange font-bold flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Veuillez renseigner votre nom et le nom de l\'entité destinataire.</span>';
+        '<span class="text-brand-ink font-bold flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0" stroke="#E85A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Veuillez renseigner votre nom et le nom de l\'entité destinataire.</span>';
       letterWrap.hidden = true;
       currentText = '';
       if (feedbackEl) feedbackEl.textContent = '';
@@ -446,7 +446,7 @@
     }
     feedbackEl.innerHTML = copied
       ? '<span class="text-[#0E7A46]">Lettre copiée !</span>'
-      : '<span class="text-brand-orange">Copie impossible — sélectionnez la lettre manuellement.</span>';
+      : '<span class="text-brand-ink">Copie impossible — sélectionnez la lettre manuellement.</span>';
   }
 
   function downloadLetter(): void {

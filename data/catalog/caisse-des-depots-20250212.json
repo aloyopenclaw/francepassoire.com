@@ -1,0 +1,46 @@
+{
+  "slug": "caisse-des-depots-20250212",
+  "entity": "Caisse des dépôts et consignations (CDC)",
+  "siren": "180020026",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-12",
+    "publication": "2025-02-12",
+    "confirmation": "2025-02-13"
+  },
+  "volume": {
+    "count": 70000,
+    "unit": "personnes",
+    "label": "70 000 affiliés à l'Ircantec, dont environ 1 000 élus locaux (chiffre annoncé par la Caisse des dépôts)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "franceinfo — Vols de données personnelles à la Caisse des dépôts : 70 000 personnes concernées dont 1 000 élus",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/vols-de-donnees-personnelles-a-la-caisse-des-depots-70-000-personnes-concernees-dont-1-000-elus_7070919.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Les données personnelles de 70 000 personnes, dont des élus, dérobées à la Caisse des Dépôts après une cyberattaque",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/les-donnees-personnelles-de-70-000-personnes-dont-des-elus-derobees-a-la-caisse-des-depots-apres-une-cyberattaque-20250213",
+      "kind": "article"
+    },
+    {
+      "label": "ZDnet — La Caisse des dépôts victime d'une fuite de données",
+      "url": "https://www.zdnet.fr/actualites/la-caisse-des-depots-victime-dune-fuite-de-donnees-406471.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "La Caisse des dépôts révèle le 12 février 2025 un vol de données personnelles touchant 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, praticiens hospitaliers et élus locaux, dont environ un millier d'élus. Des identifiants de connexion d'employeurs publics à une plateforme dédiée aux régimes de retraite ont été utilisés frauduleusement, permettant un accès illégitime à des données d'affiliés : numéro de Sécurité sociale, état civil, date et lieu de naissance, adresse postale. L'institution précise que données bancaires, mots de passe et e-mails ne sont pas concernés ; elle a informé les personnes touchées, déposé plainte et notifié la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-02-12",
+      "event": "La Caisse des dépôts révèle à franceinfo un vol de données concernant 70 000 affiliés à l'Ircantec, dont 1 000 élus, via l'usage frauduleux d'identifiants d'employeurs publics."
+    },
+    {
+      "date": "2025-02-13",
+      "event": "L'institution détaille les données dérobées (numéro de Sécurité sociale, état civil, adresse postale), indique avoir déposé plainte et notifié la CNIL, et avoir bloqué les connexions frauduleuses."
+    }
+  ]
+}

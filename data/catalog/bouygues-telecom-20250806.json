@@ -1,0 +1,55 @@
+{
+  "slug": "bouygues-telecom-20250806",
+  "entity": "Bouygues Telecom",
+  "siren": "397480930",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-06",
+    "publication": "2025-08-06",
+    "confirmation": "2025-08-06"
+  },
+  "volume": {
+    "count": 6400000,
+    "unit": "comptes",
+    "label": "6,4 millions de comptes clients, dont une partie avec IBAN (chiffre annoncé par Bouygues Telecom)"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Le Parisien (AFP) — Bouygues Telecom hacké : plus de six millions de comptes clients piratés, coordonnées et IBAN ont fuité",
+      "url": "https://www.leparisien.fr/high-tech/bouygues-telecom-hacke-plus-de-six-millions-de-comptes-clients-pirates-coordonnees-et-iban-ont-fuite-06-08-2025-XRWUNEKIBZGGHDDJRHBFBQCXTI.php",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Six millions de comptes clients Bouygues Telecom touchés par une cyberattaque, des IBAN parmi les données volées",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/six-millions-de-comptes-clients-bouygues-telecom-touches-par-une-cyberattaque-des-iban-parmi-les-donnees-volees_7421521.html",
+      "kind": "article"
+    },
+    {
+      "label": "Cybermalveillance (GIP) — Violation de données personnelles de l'opérateur Bouygues Telecom : situation, risques et recommandations",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-de-donnees-personnelles-bouygues-telecom-202508",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Coordonnées, IBAN, états civils : six millions de comptes clients Bouygues Telecom touchés par une cyberattaque",
+      "url": "https://www.lefigaro.fr/conjoncture/coordonnees-iban-etats-civils-six-millions-de-comptes-clients-bouygues-telecom-touches-par-une-cyberattaque-20250806",
+      "kind": "article"
+    }
+  ],
+  "description": "Bouygues Telecom annonce le 6 août 2025 une cyberattaque détectée le 4 août, ayant permis l'accès non autorisé à des données de 6,4 millions de comptes clients. Selon l'opérateur, les données consultées comprennent l'état civil, les coordonnées, les données contractuelles — celles de l'entreprise pour les professionnels — et des IBAN ; les mots de passe et les numéros de cartes bancaires ne sont pas concernés. Les clients touchés sont informés par mail ou SMS. L'opérateur a déposé plainte et signalé l'incident à la CNIL ; Cybermalveillance publie le 13 août des recommandations sur les risques de phishing et de prélèvements illégitimes liés aux IBAN exposés.",
+  "timeline": [
+    {
+      "date": "2025-08-04",
+      "event": "Bouygues Telecom détecte une cyberattaque ; après analyse, un tiers a pu accéder à certaines informations personnelles associées à des abonnements."
+    },
+    {
+      "date": "2025-08-06",
+      "event": "L'opérateur annonce une fuite concernant 6,4 millions de comptes clients, dont des IBAN ; plainte déposée auprès des autorités judiciaires et incident signalé à la CNIL."
+    },
+    {
+      "date": "2025-08-13",
+      "event": "Cybermalveillance (GIP) publie une fiche de recommandations : risques de phishing, d'usurpation d'identité, de détournement de ligne mobile et de prélèvements illégitimes via les IBAN exposés."
+    }
+  ]
+}
