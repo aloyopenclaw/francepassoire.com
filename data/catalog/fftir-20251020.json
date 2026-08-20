@@ -1,0 +1,55 @@
+{
+  "slug": "fftir-20251020",
+  "entity": "Fédération française de tir (FFTir)",
+  "siren": "784354409",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-20",
+    "publication": "2025-11-07",
+    "confirmation": "2025-11-27"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "personnes",
+    "label": "un million de licenciés concernés : 250 000 actuels et 750 000 anciens (chiffres FFTir et parquet de Paris)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — Violation de données personnelles de la Fédération Française de Tir",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-de-donnees-personnelles-fftir-202511",
+      "kind": "officiel"
+    },
+    {
+      "label": "FFTir / Préfecture de Police — Sensibilisation aux appels et interventions de faux policiers, gendarmes ou douaniers",
+      "url": "https://www.fftir.org/wp-content/uploads/2025/11/Sensibilisation-FFTir.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien/AFP — Piratage de la Fédération française de tir : des données utilisées pour voler des armes dans tout le pays",
+      "url": "https://www.leparisien.fr/faits-divers/piratage-de-la-federation-francaise-de-tir-des-donnees-utilisees-pour-voler-des-armes-dans-tout-le-pays-27-11-2025-EKJSIWCSENGYNCBCKDVAUBTKR4.php",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — L'angoisse des tireurs sportifs face à une série de vols d'armes par de faux policiers",
+      "url": "https://www.tf1info.fr/justice-faits-divers/video-reportage-vols-d-armes-l-angoisse-des-tireurs-sportifs-cibles-par-de-faux-policiers-apres-le-piratage-de-leur-federation-2407977.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération française de tir subit une attaque du 18 au 20 octobre 2025 via la compromission d'un compte interne de son système ITAC. Les données volées couvrent un million de licenciés, actuels et anciens : état civil, adresses, e-mails, téléphones et numéros de licence. Le Système d'information sur les armes n'est pas concerné, précise la fédération. Le parquet de Paris confirme en novembre que les données piratées ont servi à des vols d'armes par de faux policiers. La fédération a déposé plainte, notifié la CNIL et envoyé un million de mails d'alerte ; la préfecture de Police appelle à la vigilance.",
+  "timeline": [
+    {
+      "date": "2025-10-20",
+      "event": "La FFTir détecte l'attaque survenue entre le 18 et le 20 octobre via un compte interne compromis et déconnecte ses systèmes ; les données d'un million de licenciés sont extraites."
+    },
+    {
+      "date": "2025-11-07",
+      "event": "Cybermalveillance.gouv.fr et la préfecture de Police publient une alerte commune sur la violation et les risques d'appels de faux policiers."
+    },
+    {
+      "date": "2025-11-27",
+      "event": "Le parquet de Paris confirme l'extraction de données de 250 000 licenciés actuels et 750 000 anciens, utilisées pour des vols d'armes par usurpation."
+    }
+  ]
+}

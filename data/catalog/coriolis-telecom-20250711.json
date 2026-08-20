@@ -1,0 +1,49 @@
+{
+  "slug": "coriolis-telecom-20250711",
+  "entity": "Coriolis Telecom",
+  "siren": "419735741",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-11",
+    "publication": "2025-07-12"
+  },
+  "volume": {
+    "count": 508276,
+    "unit": "enregistrements",
+    "label": "508 276 fiches clients revendiquées par le pirate, avec IBAN et BIC selon lui ; Coriolis Telecom n'a pas confirmé la fuite"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Zataz — Coriolis Telecom : 500 000 fiches clients exposées par un pirate avec IBAN",
+      "url": "https://www.zataz.com/coriolis-telecom-500-000-fiches-clients-exposees-par-un-pirate-avec-iban/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Coriolis Télécom, 508 276 personnes exposées en ligne",
+      "url": "https://frenchbreaches.com/alertes/coriolis-telecom-facc20991ead",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 508 276 clients de Coriolis Télécom affectés par une fuite de données",
+      "url": "https://fuitesinfos.fr/article/2026-01-25-coriolis-telecom",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 juillet 2025, un cybercriminel met en vente sur un forum une base présentée comme issue de l'opérateur français Coriolis Telecom. Selon la revendication relayée par Zataz, le fichier de 356 Mo rassemble 508 276 fiches clients. Les champs annoncés incluent identité, coordonnées, dates de naissance et données bancaires : IBAN, BIC et mention SEPA. Un échantillon d'une centaine de clients accompagne l'annonce. FrenchBreaches documente la même mise en vente. Coriolis Telecom n'a pas confirmé cette fuite. La revendication, qui survient un an après les campagnes des « Frérots K » visant le même opérateur, n'est établie par aucune source officielle.",
+  "timeline": [
+    {
+      "date": "2025-07-11",
+      "event": "Un pirate met en vente une base de 508 276 fiches présentée comme issue de Coriolis Telecom, avec un échantillon d'une centaine de clients."
+    },
+    {
+      "date": "2025-07-12",
+      "event": "Zataz relaie la revendication : champs d'identité, coordonnées, IBAN et BIC annoncés ; l'opérateur n'a pas confirmé."
+    },
+    {
+      "date": "2026-01-25",
+      "event": "Fuites Infos documente la fuite, toujours sans confirmation de l'opérateur ni des autorités."
+    }
+  ]
+}
