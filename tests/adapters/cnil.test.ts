@@ -30,13 +30,15 @@ afterEach(() => {
 });
 
 describe('cnil sanctions — page réelle enregistrée (2026-08-20)', () => {
-  it('parse la totalité des 16 tableaux annuels : 395 sanctions', () => {
+  it('parse la totalité des 16 tableaux annuels : 390 sanctions distinctes', () => {
     const candidats = parseCnilSanctions(fixture('cnil-sanctions.html'));
 
     // 396 lignes <td> dans la page, dont 1 note de bas de tableau colspan
     // (« * Recours pendant devant le Conseil d'Etat ») qui n'est pas une
-    // sanction — vérifié à la main sur la fixture.
-    expect(candidats).toHaveLength(395);
+    // sanction — vérifié à la main sur la fixture. 395 lignes de sanction,
+    // dont 5 strictement identiques dans tous leurs champs (doublons de la
+    // page CNIL elle-même) → 390 candidats distincts après dédup guid.
+    expect(candidats).toHaveLength(390);
     expect(candidats.every((c) => c.source === 'cnil-sanctions')).toBe(true);
     expect(candidats.every((c) => typeof c.raw === 'string' && c.raw.length > 0)).toBe(true);
   });
@@ -73,6 +75,34 @@ describe('cnil sanctions — page réelle enregistrée (2026-08-20)', () => {
     const raw = JSON.parse(banque?.raw ?? '{}') as { date: string; theme: string };
     expect(raw.date).toBe('26/01/2017');
     expect(raw.theme).toBe('Fichage banque de France');
+  });
+
+  it('dédup guid (knownGuids) : guid connu filtré, guid inconnu émis — 390 lignes, 390 guids uniques', async () => {
+    const guidDe = (c: { raw: string } | undefined): string =>
+      (JSON.parse(c?.raw ?? '{}') as { guid: string }).guid;
+    const page = fixture('cnil-sanctions.html');
+    const tous = parseCnilSanctions(page);
+    const operateur = tous.find(
+      (c) => c.source_url === 'https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000053352594',
+    );
+    const banque = tous.find(
+      (c) => c.source_url === 'https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000033954589/',
+    );
+    expect(operateur).toBeDefined();
+    expect(banque).toBeDefined();
+
+    // la jointure des colonnes ne collisionne pas sur la page réelle
+    expect(new Set(tous.map(guidDe)).size).toBe(390);
+
+    const dedupliques = await cnilSanctionsAdapter.fetchCandidates(
+      fetchServant(page),
+      new Set([guidDe(operateur)]),
+    );
+
+    // l'adapter re-parse la page : 390 (et pas 389) prouverait un guid instable
+    expect(dedupliques).toHaveLength(389);
+    expect(dedupliques.map(guidDe)).not.toContain(guidDe(operateur));
+    expect(dedupliques.map(guidDe)).toContain(guidDe(banque));
   });
 
   it('markup muté (cellules détruites) → 0 sanction + console.warn, pas d’exception', () => {
