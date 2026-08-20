@@ -1,0 +1,23 @@
+{
+  "comment": "POST https://api.x.com/2/tweets — 401 Unauthorized. Token utilisateur absent/révoqué : erreur PERMANENTE (retry inutile), la ligne passe DEAD immédiatement. Forme d'erreur X API v2.",
+  "request": {
+    "method": "POST",
+    "url": "https://api.x.com/2/tweets",
+    "headers": {
+      "Authorization": "Bearer test-user-token-x-mort",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "text": "Mise à jour : la fiche Alaxione passe de « revendiquée » à « confirmée » après vérification d’une source officielle. https://francepassoire.com/f/alaxione-20260820"
+    }
+  },
+  "response": {
+    "status": 401,
+    "body": {
+      "title": "Unauthorized",
+      "type": "about:blank",
+      "status": 401,
+      "detail": "This request requires a valid user context token with tweet.write scope."
+    }
+  }
+}

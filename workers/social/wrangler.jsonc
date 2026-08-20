@@ -1,0 +1,67 @@
+// workers/social/wrangler.jsonc — worker de publication sociale (T39+T40, Wave 5).
+//
+// Modèle « file d'attente » (docs/social-setup.md, § Principe) : les posts
+// s'accumulent dans D1 (social_outbox) et partent dès que la clé de la
+// plateforme concernée existe comme secret. Le lancement du site n'attend
+// aucune de ces clés — les lignes sans clé passent PENDING_KEYS, jamais en
+// échec.
+//
+// Comme le worker d'ingestion, ce worker possède sa propre config (le
+// wrangler.toml racine reste minimal, périmètre D1). Il pointe la MÊME base
+// D1 de staging (database_id n'est pas un secret : identifiant, pas un jeton).
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "francepassoire-social",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+
+  // Cron toutes les 5 minutes : vidage de la file social_outbox
+  // (PENDING → envoi ; PENDING_KEYS → re-test des secrets ; le cron
+  // lui-même sert de pacing naturel entre deux tentatives).
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  },
+
+  // Staging D1 (migrations partagées avec la racine, d'où le ../../migrations).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "francepassoire",
+      "database_id": "613f348d-fb59-478c-8f53-84a8679f1ed9",
+      "migrations_dir": "../../migrations"
+    }
+  ]
+
+  // SECRETS (PAS des vars — jamais de valeur en clair ici). Noms canoniques
+  // alignés sur docs/social-setup.md (« Secrets wrangler canoniques ») :
+  //
+  //   npx wrangler secret put X_BEARER
+  //     Bearer token app-only X — LECTURE SEULE, ce worker ne l'utilise
+  //     JAMAIS pour publier (docs/social-setup.md §1 : le Bearer ne peut pas
+  //     poster ; il figure ici pour mémoire, consommation future en lecture).
+  //
+  //   npx wrangler secret put X_USER_TOKEN
+  //     Token UTILISATEUR OAuth 2.0 (scopes tweet.read + users.read +
+  //     tweet.write) — le seul qui publie sur X. Nom défini par la T39 :
+  //     le définir lorsque le propriétaire souscrit l'offre pay-per-use.
+  //
+  //   npx wrangler secret put LINKEDIN_ACCESS_TOKEN
+  //     Token membre (scope w_member_social, durée de vie 60 jours —
+  //     renouvellement à ~2 mois, le worker logue l'échec d'expiration).
+  //
+  //   npx wrangler secret put LINKEDIN_MEMBER_URN
+  //     URN du membre émetteur, ex. urn:li:person:XXXXXX — copiée depuis la
+  //     page Token Generator du portail développeur LinkedIn (secret
+  //     additionnel documenté par la T40 : le token seul ne suffit pas,
+  //     l'UGC Post exige l'auteur).
+  //
+  //   npx wrangler secret put TIKTOK_ACCESS_TOKEN
+  //     User access token Login Kit (scope video.publish, préfixe « act. »).
+  //     NB : sans stratégie vidéo (digest vidéo), le client TikTok refuse
+  //     honnêtement les payloads texte — voir clients/tiktok.ts.
+  //
+  // Aucun secret n'existe au jour du lancement : le worker tourne quand
+  // même (cron) et les lignes s'accumulent en PENDING_KEYS. Le déploiement
+  // live sera déclenché au câblage des clés — d'où le dry-run seul en QA.
+}
