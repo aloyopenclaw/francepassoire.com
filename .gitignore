@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (build production à venir)
+node_modules/
+dist/
+.vite/
+
+# Environnement
+.env
+.env.local
+.wrangler/
