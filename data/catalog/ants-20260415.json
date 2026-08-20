@@ -1,0 +1,57 @@
+{
+  "slug": "ants-20260415",
+  "entity": "Agence nationale des titres sécurisés (ANTS)",
+  "siren": "130003262",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-15",
+    "publication": "2026-04-21"
+  },
+  "volume": {
+    "count": 11700000,
+    "unit": "comptes",
+    "label": "11,7 millions de comptes du portail ants.gouv.fr « seraient concernés » selon le point d'étape officiel du 21 avril ; les attaquants revendiquaient 18 à 19 millions de lignes sur un forum"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ministère de l'Intérieur — Incident de sécurité relatif au portail ants.gouv.fr : point d'étape du 21 avril 2026",
+      "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/incident-de-securite-relatif-au-portail-antsgouvfr-point-detape-du-21-avril-2026",
+      "kind": "officiel"
+    },
+    {
+      "label": "France 24 — Pièces d'identité : fuite de données de près de 12 millions de comptes de l'ANTS",
+      "url": "https://www.france24.com/fr/france/20260421-pr%C3%A8s-de-12-millions-de-comptes-de-l-ants-concern%C3%A9s-par-une-fuite-de-donn%C3%A9es-annonce-l-int%C3%A9rieur",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Fuite de données à l'ANTS : près de 12 millions de comptes concernés par l'attaque informatique",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/fuite-de-donnees-a-l-ants-pres-de-12-millions-de-comptes-concernes-par-l-attaque-informatique_AD-202604210879.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Piratage France Titres : l'État confirme 11,7 millions de comptes compromis et saisit l'IGA",
+      "url": "https://www.lesnumeriques.com/societe-numerique/piratage-france-titres-l-etat-confirme-11-7-millions-de-comptes-compromis-et-saisit-l-iga-mais-les-victimes-n-ont-toujours-pas-ete-prevenues-n254693.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Agence nationale des titres sécurisés (ANTS), qui gère les demandes de titres sur ants.gouv.fr, détecte le 15 avril 2026 un incident de sécurité impliquant des comptes particuliers et professionnels du portail. Un point d'étape du ministère de l'Intérieur du 21 avril indique que 11,7 millions de comptes « seraient concernés » : identifiant de connexion, état civil, adresse électronique, date de naissance et, pour certains comptes, coordonnées. Les attaquants revendiquaient 18 à 19 millions de lignes sur un forum de revente. Les investigations excluent la divulgation des pièces jointes et de la biométrie ; un signalement a été transmis au parquet de Paris, l'Office anti-cybercriminalité enquête et l'IGA est saisie.",
+  "timeline": [
+    {
+      "date": "2026-04-15",
+      "event": "L'ANTS détecte un incident de sécurité pouvant impliquer une divulgation de données de comptes particuliers et professionnels du portail ants.gouv.fr."
+    },
+    {
+      "date": "2026-04-16",
+      "event": "Le parquet de Paris reçoit un signalement visant la mise en vente sur le darkweb de données présentées comme issues de l'attaque ; l'enquête est confiée à l'Office anti-cybercriminalité."
+    },
+    {
+      "date": "2026-04-21",
+      "event": "Un point d'étape du ministère de l'Intérieur chiffre à 11,7 millions les comptes « concernés », détaille les catégories de données et annonce la saisie de l'Inspection générale de l'administration."
+    }
+  ]
+}
