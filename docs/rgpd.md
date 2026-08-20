@@ -27,16 +27,17 @@
 | **Durée de conservation** | Candidats **REJETÉS** : purge automatique **1 an après le dépôt** (règle C1, §2). Candidats NEW/DRAFT : le temps de l'examen éditorial. Candidats PUBLIÉS : la fiche publiée ne reprend que des métadonnées publiques (dépôt git) ; la ligne D1 suit ensuite le cycle de purge des candidats traités. L'email de contact optionnel ne survit jamais au candidat qui le porte. |
 | **Mesures** | Anti-abus en cascade (honeypot, Turnstile, limite 5/IP/h) ; accès D1 par bindings seuls ; aucun export. |
 
-### 1.2 Watchlists / alertes email — **À L'ACTIVATION** (bloqué, verdict T29)
+### 1.2 Watchlists / alertes email — **EN SERVICE (T30/T31), activation pending secrets Brevo**
 
 | Rubrique | Contenu |
 |---|---|
-| **Statut réel** | **Aucun abonné n'existe, aucune adresse n'est collectée aujourd'hui.** Le flux d'inscription (T30) et le moteur d'alertes (T31) sont **bloqués sur une décision propriétaire** depuis le 21/08 : la sonde T29 a prouvé par l'expérience que le binding `send_email` Cloudflare **refuse tout envoi vers une destination non vérifiée** (« destination address is not a verified address », preuve dans docs/email-infra.md). En attente du choix : fournisseur externe ou descope des alertes email. Aucune promesse d'activation n'est faite sur le site. |
-| **Finalité (prévue)** | Alertes personnalisées (secteur, type de données, entité) lors de la publication d'une fiche, fréquence immédiate ou hebdomadaire. |
-| **Base légale (prévue)** | Consentement (art. 6(1)(a)) via **double opt-in** : inscription → email de confirmation → activation au clic. |
-| **Données (prévues)** | Adresse email stockée **chiffrée** (AES-GCM, clé en secret wrangler) + `email_hash` = SHA-256 de l'adresse normalisée (minuscules, espaces retirés) pour la recherche/dédup sans clair ; préférences (filtres, fréquence) en JSON ; jeton de désinscription unique. Convention `email_hash` engageante pour T30 : **sha256(trim(email).toLowerCase()) en hex** — même convention que `scripts/erase-subscriber.mjs`. |
-| **Durée (prévue)** | Jusqu'à désinscription ; **désinscription en 1 clic** depuis chaque email ; purge des inscriptions **non confirmées après 30 jours** (règle S1, §2) ; effacement **immédiat** sur demande ou auto-demande via `scripts/erase-subscriber.mjs`. |
-| **Mesures** | Le registre ci-dessus sera complété à l'activation réelle, avant la première collecte (engagement déjà publié sur /confidentialite/). |
+| **Statut réel** | Le traitement est **implémenté et déployable** (T30/T31, décision propriétaire post-T29 : envoi via l'API HTTPS **Brevo**, sous-traitant). L'activation effective exige 4 secrets worker (`BREVO_API_KEY`, `WATCHLIST_AES_KEY`, `WATCHLIST_HASH_KEY`, `TURNSTILE_SECRET`) — tant qu'ils sont absents : le formulaire de /proteger/ reste masqué derrière un avis factuel (« activation en cours »), l'API répond 503 **avant toute écriture** (aucune collecte), et le cron digest sort proprement. **USER-ACTION (propriétaire)** : créer le compte Brevo, vérifier l'expéditeur alerte@francepassoire.com, générer la clé API v3, puis `npx wrangler secret put BREVO_API_KEY / WATCHLIST_AES_KEY / WATCHLIST_HASH_KEY --config workers/api/wrangler.jsonc` (les deux dernières : `openssl rand -hex 32`). |
+| **Finalité** | Alertes personnalisées (secteur, type de données, entité) lors de la publication d'une fiche : récap hebdomadaire (lundi 09:00 Paris) pour tous les abonnés confirmés dont les préférences matchent ; alertes immédiates (fréquence « quotidien ») au câblage CI (T47 — la fonction est implémentée et testée, le digest hebdo est le chemin live). |
+| **Base légale** | Consentement (art. 6(1)(a)) via **double opt-in** : inscription → email de confirmation (lien HMAC signé, validité 24 h) → activation au clic uniquement. Aucun envoi avant confirmation (asserté en test). |
+| **Données** | Adresse email stockée **chiffrée** (AES-256-GCM, clé `WATCHLIST_AES_KEY` en secret wrangler — jamais en clair en base) + `email_hash` = SHA-256 de l'adresse normalisée pour la recherche/dédup sans clair (convention `sha256(trim(email).toLowerCase())` en hex, partagée avec `scripts/erase-subscriber.mjs`) ; préférences (secteurs, types, entités, fréquence) en JSON ; jeton de désinscription unique (32 octets aléatoires). Rien d'autre : pas de nom, pas d'IP persistée (l'IP ne sert qu'au rate limit 3/h, en KV éphémère). |
+| **Destinataires** | Aucun tiers lecteur. Sous-traitants : Cloudflare (Workers, D1 Europe occidentale, KV) et **Brevo** (envoi des emails — traitement en qualité de sous-traitant, DPA Brevo). |
+| **Durée de conservation** | Jusqu'à désinscription ; **désinscription en 1 clic** (lien présent dans CHAQUE email, asserté en test) → suppression immédiate de la ligne complète ; purge des inscriptions **non confirmées après 30 jours** (règle S1, §2, worker retention) ; effacement **immédiat** sur demande via `scripts/erase-subscriber.mjs`. |
+| **Droits** | Notice art. 13 intégrée à l'email de confirmation ; les préférences sont consultables via l'API `/api/watchlist/prefs?token=<jeton>` (email masqué — future page de gestion) ; désinscription autonome sans justification. |
 
 ### 1.3 Journaux workers (table `events` D1)
 
@@ -81,9 +82,10 @@ Bornes documentées :
   de date de traitement distincte, et un candidat REJECTED est par définition
   déjà traité — la purge est donc au plus tard 1 an après le traitement.
 - S1 ne touche **que** les inscriptions jamais confirmées : une inscription
-  confirmée vit jusqu'à sa désinscription (à l'activation de T30) ou à
-  l'effacement demandé (immédiat, §3). Aujourd'hui, aucune inscription
-  n'étant collectée (§1.2), la règle S1 est une garde en avance de phase.
+  confirmée vit jusqu'à sa désinscription (1 clic, chaque email — T30) ou à
+  l'effacement demandé (immédiat, §3). Tant que les secrets Brevo ne sont pas
+  posés, aucune inscription n'est collectée (503 avant écriture) et S1 reste
+  une garde en avance de phase.
 - Les candidats NEW/DRAFT (file éditoriale vive), la table `registry`
   (chaîne d'intégrité) et `social_outbox` (posts publics programmés) ne sont
   **jamais** purgés par ce worker.
@@ -164,7 +166,11 @@ signalement et dans tout futur email de confirmation d'alerte) :
 
 - RGPD art. 6, 12-22, 30, 33-34 ; lignes directrices CNIL (registre,
   notification des violations — cnil.fr).
-- docs/email-infra.md (verdict T29 complet, USER-ACTION boîte) ;
+- docs/email-infra.md (verdict T29 complet — origine du choix Brevo) ;
+  workers/api/src/watchlist.ts (implémentation T30/T31 : double opt-in,
+  chiffrement AES-GCM, HMAC 24 h, désinscription 1 clic, digest hebdo) ;
+  tests/api-watchlist.test.ts (assertions : aucun envoi aux non-confirmés,
+  lien de désinscription dans chaque rendu, aucun email en clair en base) ;
   src/pages/confidentialite.astro (version publique) ;
-  .omo/plans/francepassoire-launch.md tâche 46 (Metis finding #10).
+  .omo/plans/francepassoire-launch.md tâches 30-31.
 - Constat Web Analytics : journal d'évidence tâche 6 + confirmation tâche 29.

@@ -1,0 +1,125 @@
+# Task 30 + 31 — Watchlists double opt-in + moteur d'alertes Brevo (Wave 4)
+Date : 21/08/2026 — worker `francepassoire-api` étend (aucun autre worker touché).
+
+## Périmètre livré
+
+- `workers/api/src/watchlist.ts` (NOUVEAU, ~700 l.) : routes /api/watchlist*
+  (POST inscription, GET status/confirm/unsub/prefs), crypto (AES-256-GCM
+  email_enc, sha256 email_hash, HMAC confirm 24 h, unsub_token 32 o), Brevo
+  v3 HTTPS, digest hebdo `runWeeklyDigest`, instantané `enqueueInstantAlert`
+  (contrat testé, déclencheur CI = T47).
+- `workers/api/src/index.ts` : Env +3 secrets (BREVO_API_KEY,
+  WATCHLIST_AES_KEY, WATCHLIST_HASH_KEY), D1PreparedStatement.first/all
+  optionnels, routage /api/watchlist*, handler `scheduled`.
+- `workers/api/wrangler.jsonc` : `triggers.crons ["0 7 * * 1"]` (lundi
+  09:00 Europe/Paris) + documentation des 4 secrets et de leur génération.
+- `src/components/WatchlistForm.astro` (NOUVEAU) : îlot — GET status d'abord
+  (form masqué si service inactif, avis factuel « activation en cours »),
+  chips secteurs (contrat de design : peer-checked orange), fréquence,
+  Turnstile, validation FR, aria-live, panneau double opt-in.
+- `src/pages/proteger.astro` : section Surveiller = îlot + grille conservée
+  sous « Autres outils de veille » (les 2 états) + bandeau ?veille=
+  confirmee|invalide|desinscrit (param consommé via history.replaceState).
+- `tests/api-watchlist.test.ts` (NOUVEAU) : 26 tests.
+- `docs/rgpd.md` : §1.2 watchlists passe EN SERVICE (double opt-in réel,
+  Brevo sous-traitant, désinscription 1 clic, USER-ACTION secrets).
+
+## Décisions documentées (écarts vs littéral du brief)
+
+1. email_hash = sha256(trim(email).toLowerCase()) hex (convention engageante
+   rgpd.md §1.2 + scripts/erase-subscriber.mjs) et NON un HMAC : préserve
+   l'outil d'effacement RGPD art. 17. WATCHLIST_HASH_KEY reste la clé HMAC
+   des jetons de confirmation (meilleur usage).
+2. Sans BREVO_API_KEY → 503 AVANT toute écriture D1 (décision du brief
+   « 503 early, no row ») : aucune ligne orpheline, /proteger/ honnête.
+3. Digest : inclut les abonnés confirmés des DEUX fréquences (jamais moins
+   que promis) ; « quotidien » recevra en plus les instants au câblage T47.
+4. Échec d'envoi Brevo à l'inscription → 502 FR honnête (jamais de 201
+   factice) ; la ligne non confirmée reste récupérable par ré-inscription.
+5. Sources publiées lues via fiches.json public (cache 1 h) — zéro plomberie.
+
+## Tests — vitest (26/26 verts, suite totale 466/466, 28 fichiers)
+
+npx vitest run tests/api-watchlist.test.ts → 26 passed (74ms)
+
+T30 (15) : happy subscribe (ligne non confirmée, Brevo appelé avec sender
+alerte@francepassoire.com + lien confirm), duplicate (prefs MAJ + jeton
+régénéré + confirmed_at conservé), Turnstile fail 403, rate-limit 4e→429
+(clé rl:watchlist: distincte), secteur inconnu 400 (aucun siteverify),
+email invalide 400, BREVO absent 503 sans ligne, confirm happy (302
+confirmee + confirmed_at), confirm expiré 25 h (302 invalide + inchangé),
+confirm falsifié, unsub 1 clic (ligne supprimée + 302 desinscrit), unsub
+inconnu (302 propre sans oracle), prefs (email masqué j***@ + prefs +
+confirmé ; inconnu 404), status (false sans secrets / true avec), AES
+roundtrip (+ IV aléatoire : 2 chiffrés differ).
+
+T31 (11) : digest → confirmés matchants seulement (non-confirmée absente
+de la sélection ET des envois ; 3 confirmés dont 1 sans match → 2 envois),
+lien de désinscription dans CHAQUE rendu HTML+texte, gabarit rend les
+fiches de la semaine (entité/volume/lien /fiche/<slug>/) et ignore la
+fiche hors fenêtre, no-match → aucun email, Brevo 429 → saut+log (pas de
+crash), BREVO absent → sortie propre zéro fetch, fiches.json 500 → sortie
+propre, semaine vide → raison semaine-vide, instant happy (quotidien
+confirmé matchant uniquement, lien unsub, sujet avec entité), match
+d'entité par normalisation locale (« Alaxione SAS » ≡ « Alaxione »),
+instant sans secrets → sortie propre.
+
+## Build & bundling
+
+npm run build → 242 pages, ✓ Complete (sitemap ok).
+npx wrangler deploy --dry-run --config workers/api/wrangler.jsonc
+→ Total Upload 32.67 KiB (gzip 9.02), bindings DB + RATE_LIMIT, exit 0.
+
+## wrangler dev local (comportements live)
+
+Sans secrets :
+  GET /api/watchlist/status  → {"ok":true,"email_enabled":false} [200]
+  POST /api/watchlist        → 503 « Protection anti-abus non configurée… »
+  GET /api/health            → {"ok":true} [200]
+Avec --var TURNSTILE_SECRET/BREVO_API_KEY/WATCHLIST_AES_KEY/WATCHLIST_HASH_KEY :
+  GET /api/watchlist/status  → {"ok":true,"email_enabled":true}
+  POST (token bidon)         → 403 fail closed « Vérification anti-robot
+                                échouée » (flux complet inatteignable sans
+                                token réel — comportement complet prouvé
+                                par vitest).
+
+## /proteger/ preview (astro preview :4322, build frais)
+
+GET /proteger/ → 200. Îlot présent : veille-form/notice/status/success/
+email/submit + veille-banner (grep markup = 9 ids).
+Playwright :
+- état 503 (API prod sans route status → JSON inconnu) : notice factuelle
+  « Veille par email : activation en cours. / En attendant : les outils de
+  veille ci-dessous fonctionnent. » + grille « Autres outils de veille »
+  (4 cartes) visible. Console : 404 status attendu (worker non déployé) +
+  Turnstile 110200 localhost = allowlist documentée (T33), pas de regression.
+- ?veille=confirmee → bandeau vert « Veille confirmée… » affiché, param
+  retiré de l'URL (replaceState), idem mécanique pour invalide/desinscrit.
+Captures : task-30-31-proteger-surveiller-503.png (section complète),
+task-30-31-proteger-bandeau-confirmee.png (bandeau + hero).
+
+## USER-ACTIONS (propriétaire) — bloquantes pour l'activation réelle
+
+1. Créer le compte Brevo (offre 300 emails/jour) + accepter le DPA
+   sous-traitant.
+2. Vérifier l'expéditeur alerte@francepassoire.com chez Brevo (DNS
+   SPF/DKIM déjà en place côté Cloudflare pour le domaine).
+3. Générer la clé API v3 Brevo.
+4. npx wrangler secret put BREVO_API_KEY     --config workers/api/wrangler.jsonc
+   npx wrangler secret put WATCHLIST_AES_KEY --config workers/api/wrangler.jsonc   # openssl rand -hex 32
+   npx wrangler secret put WATCHLIST_HASH_KEY --config workers/api/wrangler.jsonc  # openssl rand -hex 32
+   (TURNSTILE_SECRET : déjà documenté T33, même commande si pas encore posé.)
+5. Déployer le worker (T47) — le cron lundi 07:00 UTC et les routes
+   /api/watchlist* partiront avec.
+
+## Risques résiduels
+
+- Jusqu'aux USER-ACTIONS : le formulaire reste masqué (avis factuel),
+  l'API 503 avant écriture, le cron sort propre — aucun état cassé.
+- Digest basé sur fiches.json : si le catalogue devient momentanément
+  indisponible, la semaine est sautée (raison fiches-indisponibles,
+  aucune boucle infinie) — les fiches arrivent dans le digest suivant.
+- enqueueInstantAlert non déclenché tant que T47 n'existe pas (assumé,
+  documenté dans le code et rgpd.md).
+- Brevo 300/jour : plafond large pour le lancement ; le skip-and-log 429
+  est testé, la reprise est naturelle la semaine suivante.

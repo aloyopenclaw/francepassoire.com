@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import PasswordChecker from '../components/PasswordChecker.astro';
 import DpoGenerator from '../components/DpoGenerator.astro';
+import WatchlistForm from '../components/WatchlistForm.astro';
 ---
 <Layout
   title="Se protéger - France Passoire"
@@ -16,6 +17,11 @@ import DpoGenerator from '../components/DpoGenerator.astro';
       <a href="#proteger-surveiller" class="bg-brand-green text-brand-cream border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">3. Surveiller</a>
     </div>
   </section>
+
+  <!-- Bandeau retour veille : ?veille=confirmee|invalide|desinscrit (T30) -->
+  <div id="veille-banner" class="max-w-4xl mx-auto px-4 sm:px-6 mt-8" role="status" aria-live="polite" hidden>
+    <p id="veille-banner-text" class="border-2 border-brand-ink rounded-xl px-5 py-4 font-body font-medium"></p>
+  </div>
 
   <div class="bg-brand-paper space-y-24 py-16">
 
@@ -147,7 +153,7 @@ import DpoGenerator from '../components/DpoGenerator.astro';
       <DpoGenerator />
     </section>
 
-    <!-- SECTION 3: SURVEILLER (veille via outils externes — pas de collecte) -->
+    <!-- SECTION 3: SURVEILLER (veille email double opt-in + outils externes) -->
     <section id="proteger-surveiller" class="max-w-4xl mx-auto px-4 sm:px-6 scroll-mt-24">
       <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
         <span class="bg-brand-green text-brand-cream w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-2xl">3</span>
@@ -156,8 +162,14 @@ import DpoGenerator from '../components/DpoGenerator.astro';
 
       <p class="font-body text-lg mb-8 max-w-3xl">
         Vérifier une fois ne suffit pas : une fuite peut vous concerner n'importe quand.
-        Trois réflexes de veille, gratuits, suffisent à rester informé sans y passer ses journées.
+        Activez une veille par email ci-dessous — ou appuyez-vous sur les outils gratuits
+        et indépendants qui suivent.
       </p>
+
+      <WatchlistForm />
+
+      <h3 class="font-display font-extrabold text-2xl mt-12 mb-2">Autres outils de veille</h3>
+      <p class="font-body text-brand-ink/70 mb-6">Gratuits, complémentaires de la veille email.</p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
@@ -200,4 +212,42 @@ import DpoGenerator from '../components/DpoGenerator.astro';
     </section>
 
   </div>
+
+  <script is:inline>
+    // Bandeau de retour de la veille (T30) : confirm / désinscription
+    // redirigent ici avec ?veille=… — le paramètre est consommé puis retiré
+    // de l'URL (history.replaceState) pour ne pas ressurgir au rechargement.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var veille = params.get('veille');
+      if (!veille) return;
+      var textes = {
+        confirmee: {
+          texte: 'Veille confirmée. Vous recevrez vos alertes selon la fréquence choisie — désinscription en un clic dans chaque email.',
+          classe: 'bg-brand-green/10 border-brand-green'
+        },
+        invalide: {
+          texte: 'Lien de confirmation invalide ou expiré (validité 24 heures). Relancez une inscription ci-dessous pour recevoir un nouveau lien.',
+          classe: 'bg-brand-orange/10 border-brand-hover'
+        },
+        desinscrit: {
+          texte: 'Vous êtes désinscrit de la veille email. Votre adresse et vos préférences ont été supprimées.',
+          classe: 'bg-brand-cream border-brand-ink'
+        }
+      };
+      var conf = textes[veille];
+      if (!conf) return;
+      params.delete('veille');
+      var propre = params.toString();
+      window.history.replaceState(null, '', window.location.pathname + (propre ? '?' + propre : '') + window.location.hash);
+      var banner = document.getElementById('veille-banner');
+      var texte = document.getElementById('veille-banner-text');
+      if (banner && texte) {
+        texte.textContent = conf.texte;
+        texte.className = 'border-2 border-brand-ink rounded-xl px-5 py-4 font-body font-medium ' + conf.classe;
+        banner.hidden = false;
+        banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    })();
+  </script>
 </Layout>
