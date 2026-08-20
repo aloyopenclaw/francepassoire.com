@@ -1,0 +1,42 @@
+{
+  "slug": "easy-cash-20250416",
+  "entity": "Easy Cash",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-16",
+    "publication": "2025-04-23",
+    "confirmation": "2025-04-23"
+  },
+  "volume": {
+    "count": 92000,
+    "unit": "personnes",
+    "label": "92 000 clients et collaborateurs selon le groupe ; une base revendiquée fin 2024 sur le dark web évoquait 13 millions d’utilisateurs, sans lien établi"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "RTL — Easy Cash piraté : une cyberattaque menace les données de 92 000 clients du leader français de l’achat-revente (23 avril 2025)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/easy-cash-pirate-une-cyberattaque-menace-les-donnees-de-92-000-clients-du-leader-francais-de-l-achat-revente-7900497536",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Easy Cash",
+      "url": "https://frenchbreaches.com/alertes/easycash-d3eb6f7fc500",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 avril 2025, Easy Cash, leader français de l’achat-revente, a subi une cyberattaque ayant entraîné une fuite sur le poste d’un magasin, confirmée le 23 avril auprès de RTL. Les données de 92 000 clients et collaborateurs ont pu être récupérées : nom, prénom et date de naissance. L’enseigne a précisé que les données bancaires, mots de passe et accès aux comptes n’étaient pas concernés et qu’aucun usage frauduleux n’avait été détecté. Une enquête avec Orange CyberDefense a été ouverte et les autorités informées. Les clients concernés ont été prévenus.",
+  "timeline": [
+    {
+      "date": "2025-04-16",
+      "event": "Une cyberattaque vise Easy Cash et entraîne une fuite de données sur le poste d’un magasin."
+    },
+    {
+      "date": "2025-04-23",
+      "event": "Le groupe confirme à RTL : 92 000 clients et collaborateurs concernés, enquête avec Orange CyberDefense, déclarations aux autorités."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "suzuki-france-20251120",
+  "entity": "Suzuki France",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-20",
+    "publication": "2025-11-20",
+    "confirmation": "2025-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichier client exposé via un prestataire attaqué le 10 novembre 2025 ; volume non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Suzuki France — Information importante concernant la sécurité de vos données personnelles",
+      "url": "https://www.suzuki.fr/securite-donnees-personnelles",
+      "kind": "officiel"
+    },
+    {
+      "label": "01net — Cyberattaques en France : les dernières fuites de données et entreprises touchées",
+      "url": "https://www.01net.com/actualites/cyberattaques-france-dernieres-fuites-donnees-entreprises-touchees.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Suzuki France",
+      "url": "https://frenchbreaches.com/alertes/suzuki-france-3cc2f4616421",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 novembre 2025, un partenaire de Suzuki France a subi une attaque informatique ; la filiale en a été informée le 20 novembre et a publié une page officielle d’information. L’incident a entraîné l’accès à un fichier contenant des données personnelles de clients : noms, prénoms, adresses e-mail et postales, selon les relais de veille. Suzuki France a précisé que les données bancaires, mots de passe et comptes clients n’étaient pas concernés. Les clients touchés ont été invités à la vigilance face au phishing. Le volume exact de personnes concernées n’a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2025-11-10",
+      "event": "Un partenaire de Suzuki France subit une attaque informatique donnant accès à un fichier de données personnelles de clients."
+    },
+    {
+      "date": "2025-11-20",
+      "event": "Informée de l’attaque, Suzuki France publie une information officielle et prévient les clients concernés."
+    }
+  ]
+}

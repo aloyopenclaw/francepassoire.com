@@ -1,0 +1,50 @@
+{
+  "slug": "france-travail-stormous-20251027",
+  "entity": "France Travail",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-27",
+    "publication": "2025-10-29",
+    "confirmation": "2025-10-29"
+  },
+  "volume": {
+    "count": 31000,
+    "unit": "comptes",
+    "label": "plus de 31 000 comptes de demandeurs d’emploi revendiqués par Stormous (30 Go) ; France Travail confirme une extraction de données sans en confirmer le volume ni la nature"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFM TV — France Travail encore une fois victime d’un piratage massif, les données de 31 000 demandeurs d’emplois menacées (29 octobre 2025)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/france-travail-encore-une-fois-victime-d-un-piratage-massif-les-donnees-de-31-000-demandeurs-d-emplois-menacees_AN-202510290517.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — France Travail victime d’un nouveau piratage : les données de 31 000 demandeurs d’emploi menacées",
+      "url": "https://www.rtl.fr/actu/sciences-tech/france-travail-victime-d-un-nouveau-piratage-les-donnees-de-31-000-demandeurs-d-emploi-menacees-7900559749",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — France Travail victime d’une nouvelle cyberattaque (29 octobre 2025)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/france-travail-victime-d-une-nouvelle-cyberattaque_7582685.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 octobre 2025, le groupe Stormous a revendiqué sur le dark web le piratage de France Travail : 30 Go de données, dont plus de 31 000 comptes de demandeurs d’emploi avec identifiants, données d’état civil, RIB, cartes d’identité et certificats de formation. Le 29 octobre, France Travail a confirmé à BFM, RTL et franceinfo que des données avaient bien été extraites, sans pouvoir en préciser le volume ni la nature. L’organisme évoque des logiciels malveillants de type infostealer installés sur les ordinateurs personnels d’usagers. C’est la troisième fuite majeure de l’institution depuis 2024.",
+  "timeline": [
+    {
+      "date": "2025-10-27",
+      "event": "Stormous revendique le piratage de France Travail : 30 Go de données, plus de 31 000 comptes de demandeurs d’emploi visés selon le groupe."
+    },
+    {
+      "date": "2025-10-29",
+      "event": "France Travail confirme une extraction de données, sans en confirmer le volume ni la nature ; hypothèse d’infostealers sur ordinateurs personnels des usagers."
+    }
+  ]
+}

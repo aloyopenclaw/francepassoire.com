@@ -1,0 +1,49 @@
+{
+  "slug": "indigo-20250422",
+  "entity": "Groupe Indigo",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-22",
+    "publication": "2025-04-22",
+    "confirmation": "2025-04-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients non communiqué ; noms, e-mails, téléphones, adresses postales et plaques d’immatriculation concernés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe Indigo — Alerte cyber incident groupe Indigo (mise à jour du 24 avril 2025)",
+      "url": "https://www.group-indigo.com/alerte-incident-groupe-indigo/",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFM TV — Le spécialiste du parking Indigo a été victime d’une cyberattaque (22 avril 2025)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/le-specialiste-du-parking-indigo-a-ete-victime-d-une-cyberattaque_AV-202504220307.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Alerte vol de données Indigo : votre e-mail et plaque d’immatriculation entre les mains des hackers",
+      "url": "https://www.clubic.com/actualite-562914-alerte-vol-de-donnees-indigo-votre-email-et-plaque-d-immatriculation-entre-les-mains-des-hackers-le-danger-explique.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 avril 2025, le groupe Indigo, opérateur mondial de stationnement, a informé ses clients d’une cyberattaque ayant permis un accès non autorisé à des données personnelles. Les pirates ont consulté noms, adresses e-mail et postale, numéros de téléphone et plaques d’immatriculation. L’entreprise a précisé qu’aucune donnée bancaire, aucun mot de passe ni moyen d’accès aux comptes clients n’étaient concernés. Une page officielle d’information a été publiée, les clients touchés ont été prévenus individuellement et les autorités informées. Le nombre de personnes concernées n’a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2025-04-22",
+      "event": "Indigo informe ses clients d’une cyberattaque ; des données personnelles, dont des plaques d’immatriculation, ont été consultées par des tiers."
+    },
+    {
+      "date": "2025-04-24",
+      "event": "L’entreprise publie une page d’information officielle et précise avoir informé individuellement les clients concernés ainsi que les autorités."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "samaritaine-20250918",
+  "entity": "Samaritaine SAS",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-18",
+    "publication": "2025-09-23",
+    "confirmation": "2025-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "salariés des réserves du magasin parisien ; effectif précis non communiqué par la CNIL"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Caméras dissimulées : la CNIL sanctionne la SAMARITAINE (23 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/cameras-dissimulees-la-cnil-sanctionne-la-samaritaine",
+      "kind": "officiel"
+    },
+    {
+      "label": "Mediapart — La Samaritaine condamnée à 100 000 euros d’amende pour ses caméras espions (23 septembre 2025)",
+      "url": "https://www.mediapart.fr/journal/economie-et-social/230925/la-samaritaine-condamnee-100-000-euros-d-amende-pour-ses-cameras-espions",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo régions — La Samaritaine écope d’une amende de 100 000 euros pour avoir caché des caméras dans ses réserves",
+      "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/la-samaritaine-ecope-d-une-amende-de-100-000-euros-pour-avoir-cache-des-cameras-dans-ses-reserves-3221891.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 septembre 2025, la CNIL a sanctionné la Samaritaine SAS, grand magasin du groupe LVMH, d’une amende de 100 000 euros. En 2023, face à des vols dans ses réserves, la société y avait installé des caméras camouflées en détecteurs de fumée, capables d’enregistrer le son, sans informer les salariés ni la déléguée à la protection des données. La formation restreinte a jugé l’enregistrement sonore excessif et le dispositif non encadré : absence du registre des traitements, pas d’analyse d’impact. Les caméras ont été retirées en septembre 2023 après leur découverte, révélée fin 2023 par Mediapart.",
+  "timeline": [
+    {
+      "date": "2023-01-01",
+      "event": "La Samaritaine installe des caméras dissimulées, en apparence des détecteurs de fumée, dans deux réserves du magasin, avec microphones, pour faire face à des vols."
+    },
+    {
+      "date": "2023-09-01",
+      "event": "Découvertes par les salariés, les caméras sont retirées ; la CNIL est ensuite saisie d’une plainte à l’automne 2023."
+    },
+    {
+      "date": "2023-12-01",
+      "event": "Mediapart révèle l’existence de ces caméras espions dans les réserves du grand magasin."
+    },
+    {
+      "date": "2025-09-18",
+      "event": "La formation restreinte prononce une amende de 100 000 euros pour plusieurs manquements au RGPD."
+    }
+  ]
+}

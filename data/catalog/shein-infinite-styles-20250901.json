@@ -1,0 +1,52 @@
+{
+  "slug": "shein-infinite-styles-20250901",
+  "entity": "Infinite Styles Services Co. Limited (groupe SHEIN)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-01",
+    "publication": "2025-09-03",
+    "confirmation": "2025-09-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de comptes concernés non communiqué ; la CNIL relève qu’en moyenne 12 millions de personnes résidant en France visitent le site shein.com chaque mois"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Cookies déposés sans consentement : la CNIL sanctionne SHEIN d’une amende de 150 millions d’euros (3 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/cookies-deposes-sans-consentement-la-cnil-sanctionne-shein-dune-amende-de-150-millions-deuros",
+      "kind": "officiel"
+    },
+    {
+      "label": "Vie-publique.fr — CNIL : des amendes prononcées à l’encontre de Google et de Shein",
+      "url": "https://www.vie-publique.fr/en-bref/300037-cnil-des-amendes-prononcees-lencontre-de-google-et-de-shein",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — Shein et Google écopent d’une lourde amende en France, voici pourquoi",
+      "url": "https://www.clubic.com/actualite-577956-shein-et-google-ecopent-d-une-lourde-amende-en-france-voici-pourquoi.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er septembre 2025, la CNIL a sanctionné Infinite Styles Services Co. Limited, filiale irlandaise du groupe SHEIN, d’une amende de 150 millions d’euros. À la suite d’un contrôle du site shein.com réalisé en août 2023, la formation restreinte a constaté des traceurs déposés sans consentement, un non-respect des choix exprimés par les internautes et une information insuffisante. L’autorité a retenu le caractère massif du traitement : en moyenne 12 millions de personnes résidant en France visitent le site chaque mois. La société a modifié son site pendant la procédure, rendant l’injonction inutile selon la CNIL.",
+  "timeline": [
+    {
+      "date": "2023-08-01",
+      "event": "La CNIL effectue un contrôle en ligne du site shein.com et relève des dépôts de traceurs non conformes à l’article 82 de la loi Informatique et Libertés."
+    },
+    {
+      "date": "2025-09-01",
+      "event": "La formation restreinte prononce une amende de 150 millions d’euros contre la filiale irlandaise du groupe SHEIN pour manquements aux règles sur les traceurs."
+    },
+    {
+      "date": "2025-09-03",
+      "event": "La CNIL publie sa décision ; les modifications apportées au site en cours de procédure dispensent d’injonction selon l’autorité."
+    }
+  ]
+}

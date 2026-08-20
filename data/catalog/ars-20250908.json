@@ -1,0 +1,48 @@
+{
+  "slug": "ars-20250908",
+  "entity": "Agences régionales de santé (Hauts-de-France, Pays de la Loire, Bretagne)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-08",
+    "publication": "2025-09-09",
+    "confirmation": "2025-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données d’identité de patients d’hôpitaux publics de plusieurs régions ; volume non chiffré par les ARS"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "ARS Hauts-de-France — Cyberattaque menée contre les données d’identité des patients des hôpitaux publics de la région",
+      "url": "https://www.hauts-de-france.ars.sante.fr/cyberattaque-menee-contre-les-donnees-didentite-des-patients-des-hopitaux-publics-de-la-region",
+      "kind": "officiel"
+    },
+    {
+      "label": "20 Minutes — Trois agences régionales de santé ciblées par une cyberattaque (9 septembre 2025)",
+      "url": "https://www.20minutes.fr/justice/4172150-20250909-piratage-trois-agences-regionales-sante-ciblee-cyberattaque-donnees-volees",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — « L’usurpation d’identité de professionnels de santé » provoque des fuites de données dans plusieurs régions de France",
+      "url": "https://www.numerama.com/cyberguerre/2068617-lusurpation-didentite-de-professionnels-de-sante-provoque-des-fuites-de-donnees-dans-plusieurs-regions-de-france.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Début septembre 2025, au moins trois agences régionales de santé — Hauts-de-France, Pays de la Loire et Bretagne — ont révélé une cyberattaque touchant des services numériques destinés aux professionnels de santé. Des usurpations d’identité de professionnels ont permis d’accéder à des données d’identité de patients d’hôpitaux publics : états civils et coordonnées. Les ARS ont précisé que les dossiers médicaux n’étaient pas exposés et ont lancé des campagnes d’information par SMS et courriel vers les patients concernés. Le volume exact de personnes touchées n’a pas été chiffré.",
+  "timeline": [
+    {
+      "date": "2025-09-08",
+      "event": "L’ARS Pays de la Loire annonce une cyberattaque touchant des services numériques des professionnels de santé, sans impact sur les soins."
+    },
+    {
+      "date": "2025-09-09",
+      "event": "L’ARS Hauts-de-France publie un communiqué ; 20 Minutes relève qu’au moins trois ARS sont concernées ; les patients sont informés par SMS ou courriel."
+    }
+  ]
+}

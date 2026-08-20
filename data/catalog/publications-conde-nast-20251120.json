@@ -1,0 +1,56 @@
+{
+  "slug": "publications-conde-nast-20251120",
+  "entity": "Les Publications Condé Nast (vanityfair.fr)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-20",
+    "publication": "2025-11-27",
+    "confirmation": "2025-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "visiteurs du site vanityfair.fr ; volume non chiffré, mais la CNIL a tenu compte du nombre de personnes concernées dans le montant de l’amende"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Cookies déposés sans consentement : la CNIL sanctionne la société éditrice du site « vanityfair.fr » d’une amende de 750 000 euros",
+      "url": "https://www.cnil.fr/fr/cookies-deposes-sans-consentement-la-cnil-sanctionne-la-societe-editrice-du-site-vanityfairfr",
+      "kind": "officiel"
+    },
+    {
+      "label": "Haas Avocats — Vanity Fair sanctionné : la CNIL inflige 750 000 € pour cookies sans consentement",
+      "url": "https://www.haas-avocats.com/contentieux/vanity-fair-sanctionne-la-cnil-inflige-750-000-e-pour-cookies-sans-consentement/",
+      "kind": "article"
+    },
+    {
+      "label": "Actecil — Cookies : la CNIL inflige 750 000 € d’amende à vanityfair.fr",
+      "url": "https://actecil.eu/cookies-cnil-vanityfair/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 novembre 2025, la CNIL a sanctionné Les Publications Condé Nast, éditrice du site vanityfair.fr, d’une amende de 750 000 euros. À la suite d’une plainte de l’association NOYB en décembre 2019, puis d’une mise en demeure en septembre 2021, de nouveaux contrôles en 2023 et février 2025 ont confirmé des traceurs déposés dès l’arrivée sur le site, avant tout choix de l’internaute. Le bouton « Tout refuser » restait inefficace et des cookies étaient présentés à tort comme strictement nécessaires. La récidive après mise en demeure a aggravé la sanction.",
+  "timeline": [
+    {
+      "date": "2019-12-01",
+      "event": "L’association NOYB dépose une plainte publique concernant les cookies déposés depuis vanityfair.fr."
+    },
+    {
+      "date": "2021-09-01",
+      "event": "La CNIL met en demeure l’éditeur ; la procédure est close en juillet 2022."
+    },
+    {
+      "date": "2025-02-01",
+      "event": "Après de nouveaux contrôles en 2023 puis en février 2025, la CNIL constate la persistance des manquements aux règles sur les traceurs."
+    },
+    {
+      "date": "2025-11-20",
+      "event": "La formation restreinte prononce une amende de 750 000 euros (délibération SAN-2025-010)."
+    }
+  ]
+}

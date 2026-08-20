@@ -1,0 +1,52 @@
+{
+  "slug": "solocal-marketing-services-20250515",
+  "entity": "Solocal Marketing Services",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "publication": "2025-05-21",
+    "confirmation": "2025-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs millions de personnes démarchées ; la formation restreinte évoque un volume de données équivalent à la moitié de la population française et une amende d’environ 1 % du chiffre d’affaires"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Courtiers en données : sanction de 900 000 euros à l’encontre de la société SOLOCAL MARKETING SERVICES (21 mai 2025)",
+      "url": "https://www.cnil.fr/fr/sanction-de-900-000-euros-societe-solocal-marketing-services",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFM TV — 900 000 euros : la Cnil sanctionne une filiale de Solocal (ex-Pages Jaunes) pour démarchage sans consentement",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/900-000-euros-la-cnil-sanctionne-une-filiale-de-solocal-ex-pages-jaunes-pour-demarchage-sans-consentement_AD-202505210274.html",
+      "kind": "article"
+    },
+    {
+      "label": "AGIL’IT — Prospection commerciale par voie électronique : SOLOCAL sanctionnée par la Cnil",
+      "url": "https://www.agilit.law/donnees-caractere-personnel/prospection-commerciale-par-voie-electronique-solocal-sanctionnee-par-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 mai 2025, la CNIL a sanctionné Solocal Marketing Services, filiale de Solocal, d’une amende de 900 000 euros. La société achetait des données de prospects à des courtiers alimentés par des formulaires de jeux-concours, puis démarchait ces personnes par SMS ou courriel pour ses clients annonceurs. La formation restreinte a jugé les formulaires trompeurs, incapables de recueillir un consentement libre et univoque. La société n’a pas su prouver les consentements et a attendu 17 mois pour cesser d’utiliser les données d’un fournisseur défaillant. Le volume touché avoisine la moitié de la population française selon la décision.",
+  "timeline": [
+    {
+      "date": "2022-01-01",
+      "event": "Dans le cadre de sa thématique prioritaire sur la prospection, la CNIL contrôle les pratiques de courtage en données et s’intéresse à Solocal Marketing Services."
+    },
+    {
+      "date": "2025-05-05",
+      "event": "Le Conseil d’État renvoie à la CJUE des questions sur le consentement recueilli par des primo-collectants pour le compte de « partenaires » non nommés."
+    },
+    {
+      "date": "2025-05-15",
+      "event": "La formation restreinte prononce une amende de 900 000 euros, soit environ 1 % du chiffre d’affaires de la société."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "inovie-labosud-20250923",
+  "entity": "Inovie Labosud",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-23",
+    "publication": "2025-09-25",
+    "confirmation": "2025-09-23"
+  },
+  "volume": {
+    "count": 3200000,
+    "unit": "personnes",
+    "label": "3,2 millions de patients potentiellement concernés selon le groupe et Le Figaro ; messages individuels envoyés aux patients"
+  },
+  "data_types": [
+    "identite",
+    "sante",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Inovie — Information importante : accès non autorisé à des données",
+      "url": "https://inovie.fr/information-importante-acces-non-autorise-a-des-donnees/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — 3,2 millions : le nombre de patients concernés, le laboratoire Inovie Labosud victime d’une cyber-attaque (25 septembre 2025)",
+      "url": "https://www.lefigaro.fr/flash-eco/3-2-millions-le-nombre-de-patients-concernes-le-laboratoire-inovie-labosud-victime-d-une-cyber-attaque-20250925",
+      "kind": "article"
+    },
+    {
+      "label": "BFM TV — Cyberattaque du laboratoire Inovie Labosud, 3,2 millions d’Héraultais potentiellement concernés",
+      "url": "https://www.bfmtv.com/herault/cyberattaque-du-laboratoire-inovie-labosud-3-2-millions-d-heraultais-potentiellement-concernes_AD-202509250737.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 août 2025, Inovie Labosud, groupe montpelliérain de laboratoires de biologie médicale, a détecté un accès non autorisé à certaines données personnelles, annoncé publiquement le 23 septembre. Selon Le Figaro et BFM, 3,2 millions de patients sont potentiellement concernés. Les données touchées incluent identité, numéro de Sécurité sociale et coordonnées ; le groupe a déposé plainte. France 3 a rapporté que des pirates évoquaient la vente prochaine de ces données. Le groupe a mis en place une information dédiée et prévenu la CNIL et l’ANSSI. Les résultats d’analyses n’étaient pas accessibles selon l’entreprise.",
+  "timeline": [
+    {
+      "date": "2025-08-31",
+      "event": "Inovie Labosud détecte un accès non autorisé à certaines données personnelles de patients ; l’incident est notifié aux autorités."
+    },
+    {
+      "date": "2025-09-23",
+      "event": "Le groupe annonce publiquement l’incident et publie une page d’information dédiée."
+    },
+    {
+      "date": "2025-09-25",
+      "event": "Le Figaro et BFM chiffrent à 3,2 millions les patients potentiellement concernés ; une plainte est déposée."
+    }
+  ]
+}

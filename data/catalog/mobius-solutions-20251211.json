@@ -1,0 +1,53 @@
+{
+  "slug": "mobius-solutions-20251211",
+  "entity": "Mobius Solutions Ltd",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "publication": "2025-12-19",
+    "confirmation": "2025-12-11"
+  },
+  "volume": {
+    "count": 46000000,
+    "unit": "personnes",
+    "label": "données de plus de 46 millions d’utilisateurs Deezer conservées après la fin du contrat ; 21,5 millions de personnes en Europe, dont 9 849 354 en France, selon la délibération SAN-2025-014"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Violation de données : sanction d’un million d’euros à l’encontre de la société MOBIUS SOLUTIONS LTD (19 décembre 2025)",
+      "url": "https://www.cnil.fr/fr/violation-de-donnees-sanction-dun-million-deuros-lencontre-de-la-societe-mobius-solutions-ltd",
+      "kind": "officiel"
+    },
+    {
+      "label": "Bignon Lebray — Violation de données et sous-traitance : la CNIL prononce une amende d’1 million d’euros à l’encontre de MOBIUS SOLUTIONS LTD",
+      "url": "https://www.bignonlebray.com/actualites/publications/violation-de-donnees-et-sous-traitance-la-cnil-prononce-une-amende-d1-million-deuros-a-lencontre-de-mobius-solutions-ltd.html",
+      "kind": "article"
+    },
+    {
+      "label": "Squair — Responsabilité du sous-traitant : la CNIL sanctionne Mobius Solutions Ltd, ancien fournisseur Saas pour Deezer, à hauteur de 1 000 000 €",
+      "url": "https://www.squairlaw.com/fr/blog/responsabilite-du-sous-traitant-la-cnil-sanctionne-mobius-solutions-ltd-ancien-fournisseur-de-solutions-saas-pour-deezer-a-hauteur-de-1-000-000-eu",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 décembre 2025, la CNIL a sanctionné Mobius Solutions Ltd, sous-traitant britannique du groupe Optimove, d’un million d’euros. En novembre 2022, Deezer avait notifié une violation : des données de ses utilisateurs circulaient sur le darknet. Les contrôles ont établi que trois salariés de Mobius avaient copié les données de plus de 46 millions d’utilisateurs Deezer après la fin du contrat, pour améliorer leurs propres services, sans registre des traitements. La formation restreinte a jugé la société responsable des actes de ses salariés ; identités, coordonnées et habitudes d’écoute ont circulé sur le darknet.",
+  "timeline": [
+    {
+      "date": "2022-11-01",
+      "event": "Deezer notifie à la CNIL une violation de données : des informations de ses utilisateurs sont mises en ligne sur le darknet, impliquant son ancien sous-traitant."
+    },
+    {
+      "date": "2023-01-01",
+      "event": "La CNIL engage des contrôles en 2023 et 2024 sur les pratiques de Mobius Solutions en qualité de sous-traitant."
+    },
+    {
+      "date": "2025-12-11",
+      "event": "La formation restreinte prononce une amende d’un million d’euros (SAN-2025-014) et rend la décision publique."
+    }
+  ]
+}

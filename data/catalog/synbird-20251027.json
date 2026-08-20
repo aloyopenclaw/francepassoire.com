@@ -1,0 +1,48 @@
+{
+  "slug": "synbird-20251027",
+  "entity": "Synbird",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-27",
+    "publication": "2025-11-18",
+    "confirmation": "2025-10-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "usagers de rendez-vous en mairie dans environ 1 300 communes, pour des données s’étalant de 2021 à novembre 2025 ; volume non chiffré publiquement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — Fuite de données chez Synbird : La Rochelle touchée comme 1 300 communes de France (27 novembre 2025)",
+      "url": "https://www.sudouest.fr/charente-maritime/la-rochelle/fuite-de-donnees-chez-synbird-la-rochelle-touchee-comme-1-300-communes-de-france-26875312.php",
+      "kind": "article"
+    },
+    {
+      "label": "Banque des Territoires — Fuite de données dans 1 300 communes : les prestataires en cause",
+      "url": "https://www.banquedesterritoires.fr/fuite-de-donnees-dans-1300-communes-les-prestataires-en-cause",
+      "kind": "article"
+    },
+    {
+      "label": "Synbird — FAQ Incident de sécurité / protection des données",
+      "url": "https://www.synbird.com/fr/faq-protection-des-donnees/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 octobre 2025, Synbird, éditeur savoyard d’applications de prise de rendez-vous en mairie, a notifié un incident de sécurité à la CNIL et à l’ANSSI. Un mot de passe d’employé municipal réutilisé ailleurs, déjà compromis, a permis des accès non autorisés. Environ 1 300 communes sont concernées, pour des données s’échelonnant de 2021 à novembre 2025 : noms, prénoms, numéros de téléphone et courriels d’usagers, selon Sud Ouest et la Banque des Territoires. Le Figaro a recensé des centaines de mairies touchées avec un second prestataire. Le volume de personnes n’a pas été chiffré.",
+  "timeline": [
+    {
+      "date": "2025-10-27",
+      "event": "Synbird notifie l’incident à la CNIL et à l’ANSSI : des identifiants d’employés municipaux compromis ont permis des accès frauduleux."
+    },
+    {
+      "date": "2025-11-18",
+      "event": "La presse régionale et nationale révèle l’ampleur : environ 1 300 communes concernées, des données de 2021 à novembre 2025."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "mango-20251014",
+  "entity": "Mango",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-14",
+    "publication": "2025-10-15",
+    "confirmation": "2025-10-14"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "personnes",
+    "label": "≈ 1 million de personnes selon les relais de veille ; Mango confirme un vol chez un prestataire marketing sans communiquer de chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Fuite de données personnelles : Mango alerte ses clients après le piratage d’un prestataire (15 octobre 2025)",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-personnelles-mango-alerte-ses-clients-apres-le-piratage-dun-prestataire-15-10-2025-QA2WKHAYDZHZ3HT7SMKQNWN6ME.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Mango annonce une fuite de ses données clients, mais rassurez-vous, ses systèmes sont intacts",
+      "url": "https://www.numerama.com/cyberguerre/2095859-mango-annonce-une-fuite-de-ses-donnees-clients-mais-rassurez-vous-ses-systemes-sont-intacts.html",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — Mango : vol de données chez un prestataire, pas de « risque majeur », assure la marque",
+      "url": "https://www.20minutes.fr/high-tech/4179656-20251016-mango-vol-donnees-chez-prestataire-risque-majeur-piratage-assure-marque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 octobre 2025, Mango, géant catalan de la mode, a annoncé par courriel à ses clients une fuite de données survenue chez l’un de ses prestataires marketing, rapportent Le Parisien et Numerama. Des hackers ont accédé à des données personnelles : noms, genres, dates de naissance, adresses e-mail et postales, numéros de téléphone et historiques d’achat partiels. L’enseigne a assuré que ses propres systèmes étaient intacts, que les données bancaires et mots de passe n’étaient pas concernés, et a écarté un « risque majeur ». Des clients français figurent parmi les personnes touchées.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "Mango envoie un courriel « Avis important concernant les données personnelles » à ses clients après un piratage chez un prestataire marketing."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Le Parisien relaie l’alerte ; l’enseigne invite les clients à la vigilance face aux e-mails et SMS douteux."
+    }
+  ]
+}

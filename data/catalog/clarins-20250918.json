@@ -1,0 +1,48 @@
+{
+  "slug": "clarins-20250918",
+  "entity": "Groupe Clarins",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-18",
+    "publication": "2025-09-18",
+    "confirmation": "2025-09-18"
+  },
+  "volume": {
+    "count": 600000,
+    "unit": "personnes",
+    "label": "plus de 600 000 clients concernés selon la revendication du groupe Everest ; noms, dates de naissance, adresses, e-mails, téléphones"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "INCIBE (CERT gouvernemental espagnol) — Clarins data breach impacts more than 600 000 customers",
+      "url": "https://www.incibe.es/en/incibe-cert/publications/cybersecurity-highlights/clarins-data-breach-impacts-more-600000-customers",
+      "kind": "article"
+    },
+    {
+      "label": "TEISS — Cybercriminal group Everest claims massive data breach at Clarins",
+      "url": "https://www.teiss.co.uk/news/cybercriminal-group-everest-claims-massive-data-breach-at-clarins-16427",
+      "kind": "article"
+    },
+    {
+      "label": "SC Media — Over 600K Clarins clients impacted by Everest ransomware-claimed intrusion",
+      "url": "https://www.scworld.com/brief/over-600k-clarins-clients-impacted-by-everest-ransomware-claimed-intrusion",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-septembre 2025, le groupe d’extorsion Everest a publié des données volées chez Clarins, groupe français de cosmétiques, avant d’être repris par les CERT et la presse spécialisée. Le 18 septembre, Clarins a informé ses clients d’une fuite affectant ses plateformes d’e-commerce internationales : noms, dates de naissance, adresses postales et e-mail, numéros de téléphone et historiques d’achat ont circulé, selon des captures diffusées par les veilleurs. La revendication évoque plus de 600 000 clients touchés. Des clients français figuraient parmi les personnes concernées selon les relais de veille.",
+  "timeline": [
+    {
+      "date": "2025-09-15",
+      "event": "Le groupe Everest publie des données présentées comme exfiltrées des plateformes e-commerce du groupe Clarins."
+    },
+    {
+      "date": "2025-09-18",
+      "event": "Clarins notifie ses clients de la fuite ; les CERT et la presse spécialisée chiffrent à plus de 600 000 les clients concernés."
+    }
+  ]
+}

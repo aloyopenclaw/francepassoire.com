@@ -1,0 +1,52 @@
+{
+  "slug": "louis-vuitton-20250704",
+  "entity": "Louis Vuitton (LVMH)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-04",
+    "publication": "2025-07-16",
+    "confirmation": "2025-07-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "≈ 1,5 million de clients touchés selon les relais de veille (monde) ; la maison confirme un accès non autorisé sans chiffrer ; des clients français sont concernés selon NextINPact"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "NextINPact — Fuite de données chez Louis Vuitton : la France est aussi concernée",
+      "url": "https://next.ink/brief-article/fuite-de-donnees-chez-louis-vuitton-la-france-est-aussi-concernee/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDnet France — Des données dérobées à Louis Vuitton au Royaume-Uni",
+      "url": "https://www.zdnet.fr/actualites/des-donnees-derobees-a-louis-vuitton-au-royaume-uni-479009.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — Louis Vuitton victime d’une nouvelle cyberattaque au Royaume-Uni",
+      "url": "https://www.solutions-numeriques.com/louis-vuitton-victime-dune-nouvelle-cyberattaque-au-royaume-uni/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 juillet 2025, la filiale britannique de Louis Vuitton a subi une cyberattaque, puis la maison a confirmé un accès non autorisé à des données clients, révélé mi-juillet. Cette fuite a suivi une attaque distincte contre la filiale sud-coréenne le 8 juin. Les données touchées incluent noms, coordonnées et informations de contact ; les données financières étaient épargnées selon l’entreprise. NextINPact a établi que des clients français figuraient parmi les personnes concernées. Les relais de veille avancent environ 1,5 million de clients touchés dans le monde, chiffre que la maison n’a pas confirmé.",
+  "timeline": [
+    {
+      "date": "2025-06-08",
+      "event": "La filiale sud-coréenne de Louis Vuitton subit une première cyberattaque, confirmée début juillet par la maison."
+    },
+    {
+      "date": "2025-07-04",
+      "event": "La filiale britannique est attaquée à son tour : des données personnelles de clients sont dérobées."
+    },
+    {
+      "date": "2025-07-16",
+      "event": "La fuite britannique est confirmée publiquement ; NextINPact indique que des clients français sont aussi concernés."
+    }
+  ]
+}

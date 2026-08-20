@@ -1,0 +1,45 @@
+{
+  "slug": "e-leclerc-20250127",
+  "entity": "E.Leclerc",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-27",
+    "publication": "2025-01-27",
+    "confirmation": "2025-01-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de comptes concernés non communiqué par l’enseigne, qui a réinitialisé les mots de passe des comptes touchés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "NextINPact — Cyberattaque contre E.Leclerc : des données personnelles ont pu être exposées (27 janvier 2025)",
+      "url": "https://next.ink/167199/cyberattaque-contre-e-leclerc-des-donnees-personnelles-ont-pu-etre-exposees/",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Énième fuite de données en France : E.Leclerc victime d’une cyberattaque, changez vos mots de passe",
+      "url": "https://www.01net.com/actualites/enieme-fuite-donnees-france-eleclerc-victime-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "Univers Freebox — Nouvelle fuite de données : changez votre mot de passe si vous êtes client de cette grande enseigne française",
+      "url": "https://www.universfreebox.com/article/576441/nouvelle-fuite-de-donnees-changez-votre-mot-de-passe-si-vous-etes-clients-de-cette-grande-enseigne-francaise",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 janvier 2025, E.Leclerc a prévenu ses clients d’une potentielle fuite de données après une attaque par credential stuffing, révèlent NextINPact et 01net. Des identifiants issus de fuites antérieures ont été réutilisés pour accéder à des comptes clients du site de l’enseigne. L’enseigne a réinitialisé les mots de passe des comptes concernés et invité l’ensemble des clients à changer leurs identifiants ailleurs si le même mot de passe y était employé. Le nombre de comptes touchés n’a pas été communiqué. La CNIL a été informée selon la presse.",
+  "timeline": [
+    {
+      "date": "2025-01-27",
+      "event": "E.Leclerc alerte ses clients : des données personnelles ont pu être exposées via des accès frauduleux à des comptes ; les mots de passe des comptes concernés sont réinitialisés."
+    }
+  ]
+}
