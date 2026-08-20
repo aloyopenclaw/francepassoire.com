@@ -1,0 +1,42 @@
+{
+  "slug": "xplor-resamania-20260801",
+  "entity": "Xplor Resamania",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-01",
+    "publication": "2026-08-01"
+  },
+  "volume": {
+    "count": 5270000,
+    "unit": "enregistrements",
+    "label": "5,27 millions de dossiers d'adhérents de salles de sport selon la revendication, couvrant des enseignes françaises"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Xplor Resamania : 5,27 millions de dossiers d'adhérents de salles de sport revendiqués",
+      "url": "https://www.cyberattaque.org/xplor-resamania-527-millions-de-dossiers-dadherents-de-salles-de-sport-revendiques/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données : plus de 5 millions d'adhérents de Fitness Park, Gigafit et Magic Form concernés",
+      "url": "https://frenchbreaches.com/blog/fuite-de-donnees-plus-de-5-millions-dadherents-de-fitness-park-gigafit-et-magic-form-concernes",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er août 2026, le hacker 84City affirme diffuser une base de 5,27 millions de dossiers d'adhérents de salles de sport issus de Xplor Resamania, éditeur de logiciels de gestion utilisé par des réseaux de fitness. Des enseignes françaises dont Fitness Park, Gigafit et Magic Form sont citées parmi les concernées. Les dossiers comprendraient identités et coordonnées des adhérents. La revendication n'est pas confirmée par l'éditeur ; les volumes annoncés restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-08-01",
+      "event": "Le hacker 84City revendique la diffusion de 5,27 millions de dossiers d'adhérents de salles de sport issus de Xplor Resamania."
+    },
+    {
+      "date": "2026-08-01",
+      "event": "Les relais de veille identifient des enseignes françaises concernées, dont Fitness Park, Gigafit et Magic Form."
+    }
+  ]
+}

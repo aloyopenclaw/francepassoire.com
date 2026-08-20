@@ -1,0 +1,41 @@
+{
+  "slug": "educonnect-20260411",
+  "entity": "EduConnect",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-11",
+    "publication": "2026-04-12"
+  },
+  "volume": {
+    "count": 3500000,
+    "unit": "comptes",
+    "label": "3,5 millions d'élèves mineurs selon un relais de veille, 3,1 millions de comptes selon un autre ; volume non confirmé"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — EduConnect : plus de 3,1 millions de comptes d'élèves en fuite sur la plateforme de l'État",
+      "url": "https://www.cyberattaque.org/educonnect-plus-de-31-millions-de-comptes-deleves-en-fuite/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — EduConnect piraté : 3,5 millions d'élèves mineurs exposés dans une fuite massive",
+      "url": "https://frenchbreaches.com/blog/educonnect-pirate-3-5-millions-d-eleves-mineurs-exposes-dans-une-fuite-massive",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Les 11 et 12 avril 2026, un hacker affirme détenir une base de données associée à EduConnect, la plateforme officielle d'accès aux services numériques scolaires. Selon les relais de veille, 3,1 à 3,5 millions de comptes d'élèves, majoritairement mineurs, sont proposés en vente sur un forum. Des échantillons sont publiés pour crédibiliser l'offre. À ce stade, ni le volume ni l'authenticité complète de la base ne sont confirmés par l'opérateur du service.",
+  "timeline": [
+    {
+      "date": "2026-04-11",
+      "event": "Un hacker affirme détenir une base EduConnect ; un relais évoque plus de 3,1 millions de comptes d'élèves."
+    },
+    {
+      "date": "2026-04-12",
+      "event": "Un second relais évoque 3,5 millions d'élèves mineurs concernés ; des échantillons circulent sur un forum."
+    }
+  ]
+}

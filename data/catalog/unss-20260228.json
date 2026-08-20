@@ -1,0 +1,53 @@
+{
+  "slug": "unss-20260228",
+  "entity": "Union nationale du sport scolaire (UNSS)",
+  "siren": "775675655",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-28",
+    "publication": "2026-03-02"
+  },
+  "volume": {
+    "count": 1557000,
+    "unit": "enregistrements",
+    "label": "1 557 000 photos d'élèves et 65 Go de données selon la revendication, incluant noms, dates de naissance et établissements"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "20 Minutes — L'UNSS piraté, plus d'un million de photos d'enfants balancées sur le darkweb",
+      "url": "https://www.20minutes.fr/faits-divers/4204245-20260302-unss-pirate-plus-million-photos-enfants-balancees-darkweb",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — 1,5 million de photos d'adolescents mises en ligne sur le darknet après le piratage du site de l'UNSS",
+      "url": "https://www.leparisien.fr/faits-divers/rien-nest-securise-15-million-de-photos-dadolescents-mises-en-ligne-sur-le-darknet-apres-le-piratage-du-site-de-lunss-03-03-2026-4S7X7P56L5B7TB77IOSFOM2YYY.php",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Plus de 1,5 million de photos d'adolescents sur le darknet après le piratage du site de l'UNSS",
+      "url": "https://www.tf1info.fr/justice-faits-divers/plus-de-1-5-million-de-photos-d-adolescents-sur-le-darknet-apres-le-piratage-du-site-de-l-unss-principale-federation-du-sport-scolaire-2427999.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — 1 557 000 photos d'élèves exposées : 65 Go de données sur des mineurs mis en vente après le piratage de l'UNSS",
+      "url": "https://frenchbreaches.com/blog/1-557-000-photos-deleves-exposees-65-go-de-donnees-sur-des-mineurs-mis-en-vente-apres-le-piratage-de-lunss",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 février 2026, le groupe DumpSec revendique le piratage de l'UNSS, première fédération du sport scolaire français, et met en vente 1 557 000 photos d'élèves et 65 Go de données. Noms, dates de naissance et établissements de collégiens et lycéens figurent dans la base. Selon Le Parisien, un hacker de 17 ans se présentant sous le pseudonyme Mensonge revendique aussi l'intrusion. L'UNSS a confirmé le piratage et engagé les signalements requis. Les volumes annoncés ne sont pas confirmés par la fédération.",
+  "timeline": [
+    {
+      "date": "2026-02-28",
+      "event": "Le groupe DumpSec revendique le piratage de l'UNSS et met en vente 1 557 000 photos d'élèves et 65 Go de données."
+    },
+    {
+      "date": "2026-03-02",
+      "event": "L'UNSS confirme le piratage ; la presse révèle l'exposition de données de collégiens et lycéens sur le darknet."
+    }
+  ]
+}

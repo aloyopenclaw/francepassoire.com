@@ -1,0 +1,52 @@
+{
+  "slug": "fnc-20260123",
+  "entity": "Fédération nationale des chasseurs (FNC)",
+  "siren": "439220153",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-01-23",
+    "publication": "2026-01-24"
+  },
+  "volume": {
+    "count": 1400000,
+    "unit": "personnes",
+    "label": "jusqu'à 1,4 million de chasseurs selon la mise en vente relayée ; la FNC n'a pas confirmé ce chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — La Fédération nationale des chasseurs victime d'une cyberattaque faisant craindre un risque de vols d'armes à feu",
+      "url": "https://www.bfmtv.com/societe/la-federation-nationale-des-chasseurs-victime-d-une-cyberattaque-faisant-craindre-un-risque-de-vols-d-armes-a-feu_AV-202601260238.html",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — La Fédération nationale des chasseurs victime d'une cyberattaque, des données personnelles d'adhérents dérobées",
+      "url": "https://www.20minutes.fr/faits-divers/4198084-20260126-federation-nationale-chasseurs-victime-cyberattaque-donnees-personnelles-adherents-derobees",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Armes à feu : la Fédération nationale des chasseurs victime d'une cyberattaque potentiellement massive",
+      "url": "https://actu.fr/faits-divers/armes-a-feu-la-federation-nationale-des-chasseurs-victime-d-une-cyberattaque-potentiellement-massive_63744797.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 janvier 2026 à 5 h 30, une cyberattaque vise l'espace adhérents du guichet unique de validation des permis de chasser de la Fédération nationale des chasseurs. La FNC annonce le 23 janvier avoir isolé les accès et stoppé l'attaque. Elle reconnaît un accès non autorisé à certaines informations personnelles et, le cas échéant, à des données de validation du permis, mais exclut toute donnée bancaire, mot de passe ou information liée à la détention d'armes. Une mise en vente portant sur jusqu'à 1,4 million de chasseurs circule ensuite, non confirmée par la fédération.",
+  "timeline": [
+    {
+      "date": "2026-01-20",
+      "event": "Une attaque touche l'espace adhérents du guichet unique de validation des permis de chasser ; la FNC isole les accès."
+    },
+    {
+      "date": "2026-01-23",
+      "event": "La FNC rend l'incident public : plainte déposée et CNIL prévenue ; les systèmes doivent être remis en service de façon sécurisée."
+    },
+    {
+      "date": "2026-01-24",
+      "event": "Une mise en vente de données de jusqu'à 1,4 million de chasseurs est relayée par des veilleurs ; la fédération ne la confirme pas."
+    }
+  ]
+}
