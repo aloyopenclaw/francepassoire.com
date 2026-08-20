@@ -1,0 +1,30 @@
+{
+  "slug": "clinique-soleil-2024",
+  "entity": "Clinique du Soleil (exemple)",
+  "siren": "123456789",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-03-10",
+    "publication": "2024-06-01",
+    "confirmation": "2024-06-01"
+  },
+  "volume": {
+    "count": 120000,
+    "unit": "personnes",
+    "label": "120 000 personnes"
+  },
+  "data_types": ["sante", "identite"],
+  "sources": [
+    {
+      "label": "Communiqué de la clinique (exemple)",
+      "url": "https://exemple.fr/communique-clinique",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Fiche fictive de test : dossiers patients exposés suite à un accès non autorisé, fuite confirmée par l'entité puis colmatée.",
+  "timeline": [
+    { "date": "2024-03-10", "event": "Détection de l'accès non autorisé (exemple)." },
+    { "date": "2024-06-01", "event": "Confirmation publique et colmatage (exemple)." }
+  ]
+}

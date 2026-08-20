@@ -1,0 +1,27 @@
+{
+  "slug": "banque-exemple-2025",
+  "entity": "Banque Exemple (fictive)",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-20"
+  },
+  "volume": {
+    "count": 900000,
+    "unit": "comptes",
+    "label": "900 000 comptes"
+  },
+  "data_types": ["financier", "credentials"],
+  "sources": [
+    {
+      "label": "Blog ransomware (exemple)",
+      "url": "https://exemple.fr/revendication-groupe",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fiche fictive de test : revendication ransomware sur un serveur bancaire, volumes en comptes clients, aucune publication confirmée à ce jour.",
+  "timeline": [
+    { "date": "2025-01-20", "event": "Revendication sur un blog ransomware (exemple)." }
+  ],
+  "group": "Groupe Exemple (fictif)"
+}

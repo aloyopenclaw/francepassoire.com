@@ -1,0 +1,29 @@
+{
+  "slug": "media-exemple-2025",
+  "entity": "Média Exemple (fictif)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-15",
+    "publication": "2025-10-01",
+    "confirmation": "2025-10-01"
+  },
+  "volume": {
+    "count": 20000,
+    "unit": "enregistrements",
+    "label": "20 000 enregistrements"
+  },
+  "data_types": ["geolocalisation", "documents", "autre"],
+  "sources": [
+    {
+      "label": "Dépôt CNIL (exemple)",
+      "url": "https://exemple.fr/declaration-media",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Fiche fictive de test : registre interne d'un média mesuré en enregistrements, hors compteur de personnes, fuite confirmée par dépôt officiel.",
+  "timeline": [
+    { "date": "2025-09-15", "event": "Découverte de l'exposition (exemple)." },
+    { "date": "2025-10-01", "event": "Confirmation officielle (exemple)." }
+  ]
+}
