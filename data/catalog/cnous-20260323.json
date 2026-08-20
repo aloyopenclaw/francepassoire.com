@@ -1,0 +1,50 @@
+{
+  "slug": "cnous-20260323",
+  "entity": "Centre national des œuvres universitaires et scolaires (Cnous)",
+  "siren": "180044018",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-23",
+    "publication": "2026-03-24",
+    "confirmation": "2026-03-24"
+  },
+  "volume": {
+    "count": 774000,
+    "unit": "personnes",
+    "label": "774 000 personnes selon le Cnous, dont 139 000 avec pièces jointes exfiltrées et 635 000 avec données très limitées ; une revendication évoque 1,9 million de personnes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "lescrous.fr — Exfiltration de données provenant du site mesrdv.etudiant.gouv.fr",
+      "url": "https://www.lescrous.fr/2026/03/exfiltration-de-donnees-provenant-du-site-mesrdv-etudiant-gouv-fr/",
+      "kind": "officiel"
+    },
+    {
+      "label": "RTL — Le Crous victime d'une cyberattaque, les données de près de 800 000 étudiants ou ex-étudiants piratées",
+      "url": "https://www.rtl.fr/actu/sciences-tech/des-pieces-d-identite-volees-le-crous-victime-d-une-cyberattaque-les-donnees-de-pres-de-800-000-etudiants-ou-ex-etudiants-piratees-7900616117",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Cyberattaque contre le Crous : les données de plus de 770 000 étudiants compromises",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-contre-le-crous-les-donnees-de-plus-de-770-00-etudiants-ou-ex-etudiants-ont-ete-compromises-le-cnous-se-dit-conscient-du-caractere-systemique-de-ces-menaces_AD-202603250268.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 mars 2026, le Cnous prend connaissance d'une exfiltration de données du site mesrdv.etudiant.gouv.fr, plateforme de rendez-vous avec les services sociaux et logement des Crous. Le lendemain, il chiffre l'incident à 774 000 personnes sur dix ans : 139 000 ont subi une exfiltration de pièces jointes et 635 000 une extraction limitée aux nom, prénom, adresse mail, objet et date du rendez-vous. Le groupe DumpSec revendique une base de 1,9 million de personnes, périmètre que l'établissement ne confirme pas. CNIL notifiée, plainte en cours, site suspendu.",
+  "timeline": [
+    {
+      "date": "2026-03-23",
+      "event": "Le Cnous prend connaissance d'une exfiltration de données issue de la plateforme de rendez-vous mesrdv.etudiant.gouv.fr."
+    },
+    {
+      "date": "2026-03-24",
+      "event": "Le Cnous communique : 774 000 personnes concernées dont 139 000 avec pièces jointes ; déclaration à la CNIL et plainte en cours."
+    }
+  ]
+}

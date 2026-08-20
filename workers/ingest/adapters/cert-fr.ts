@@ -18,6 +18,14 @@
 // CDATA). Limites documentées : tout écart de markup (flux tronqué, page
 // HTML) => [] + console.warn, jamais d'exception. Chaque item sans <link>
 // ni <guid> est ignoré.
+//
+// DÉDUP GUID — même pattern que cnil.ts (fix soak 1f32779) : chaque item
+// reçoit un guid stable (jointure déterministe titre ⊕ lien, cf. guidItem)
+// exposé sur le candidat, et fetchCandidates(fetchFn, knownGuids?) filtre
+// les guids déjà vus (guid_set KV câblé par le runner). Sans ce filtre,
+// chaque pass réinsérait les ~40 items du flux (constat du soak : cert-fr
+// 160→960 en quelques passes). Le guid RSS natif ne suffit pas : des items
+// sans <guid> existent (lien seul).
 
 import type { Candidate, SourceAdapter } from '../src/adapter';
 
@@ -82,10 +90,27 @@ function parserItem(bloc: string): ItemBrut | null {
 }
 
 /**
+ * Guid stable d'un item : jointure déterministe titre ⊕ lien (fallback guid
+ * RSS si lien absent), séparateur \u0000 absent du contenu décodé — même
+ * règle de clé que guidSanction (cnil.ts), pas de collision de jointure.
+ */
+function guidItem(item: ItemBrut): string {
+  return [item.titre, item.lien ?? item.guid ?? ''].join('\u0000');
+}
+
+/**
  * Parse un corps RSS CERT-FR en candidats de contexte. Pur et total :
  * markup non reconnu ou items illisibles => [] + console.warn.
+ *
+ * @param knownGuids Optionnel : guids déjà vus (guid_set KV câblé par le
+ *        runner) — les items correspondants sont filtrés, ainsi que les
+ *        doublons stricts au sein d'un même flux.
  */
-export function parserFluxCertFr(xml: string, flux: 'avis' | 'alertes'): Candidate[] {
+export function parserFluxCertFr(
+  xml: string,
+  flux: 'avis' | 'alertes',
+  knownGuids?: Set<string>,
+): Candidate[] {
   if (!/<rss[\s>]/i.test(xml)) {
     console.warn(`[cert-fr-${flux}] corps non reconnu comme RSS — flux ignoré`, xml.slice(0, 80));
     return [];
@@ -97,11 +122,17 @@ export function parserFluxCertFr(xml: string, flux: 'avis' | 'alertes'): Candida
   }
 
   const candidats: Candidate[] = [];
+  const vus = new Set<string>();
   for (const bloc of blocs) {
     const item = parserItem(bloc);
     if (item === null) continue;
+    const guid = guidItem(item);
+    if (vus.has(guid)) continue;
+    vus.add(guid);
+    if (knownGuids?.has(guid)) continue;
     candidats.push({
       source: SOURCE,
+      guid,
       source_url: item.lien ?? item.guid,
       entity_name: extraireOrganisation(item.titre),
       raw: JSON.stringify({
@@ -121,13 +152,13 @@ export function parserFluxCertFr(xml: string, flux: 'avis' | 'alertes'): Candida
 function adapterCertFr(id: string, url: string, flux: 'avis' | 'alertes'): SourceAdapter {
   return {
     id,
-    async fetchCandidates(fetchFn) {
+    async fetchCandidates(fetchFn, knownGuids?) {
       const response = await fetchFn(url);
       if (!response.ok) {
         console.warn(`[cert-fr-${flux}] HTTP ${response.status} sur ${url} — run ignoré`, id);
         return [];
       }
-      return parserFluxCertFr(await response.text(), flux);
+      return parserFluxCertFr(await response.text(), flux, knownGuids);
     },
   };
 }

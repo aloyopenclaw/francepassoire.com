@@ -1,0 +1,58 @@
+{
+  "slug": "wakanim-20220828",
+  "entity": "Wakanim",
+  "siren": "510634256",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-08-28",
+    "publication": "2022-09-22"
+  },
+  "volume": {
+    "count": 6706951,
+    "unit": "enregistrements",
+    "label": "6 706 951 enregistrements — e-mails, noms, pseudonymes, adresses postales et IP — selon la mise en vente et le jeu de données vérifié par Have I Been Pwned ; volume non confirmé par la plateforme"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Le Monde — Wakanim : suspicion de piratage de la plateforme de streaming française (22 septembre 2022, article archivé)",
+      "url": "https://web.archive.org/web/2022/https://www.lemonde.fr/pixels/article/2022/09/22/suspicion-d-un-piratage-d-ampleur-touchant-la-plate-forme-de-streaming-francaise-wakanim_6142721_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "RTBF — Wakanim : le service de streaming français subit un hack massif",
+      "url": "https://www.rtbf.be/article/wakanim-le-service-de-streaming-francais-subit-un-hack-massif-11056049",
+      "kind": "article"
+    },
+    {
+      "label": "Anime News Network — Wakanim streaming service delays content after possible data breach (7 septembre 2022)",
+      "url": "https://www.animenewsnetwork.com/news/2022-09-07/wakanim-streaming-service-delays-content-after-possible-data-breach/.189234",
+      "kind": "article"
+    },
+    {
+      "label": "Have I Been Pwned — Wakanim Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/Wakanim",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin août 2022, un pirate anonyme met en vente une base revendiquée de 6,7 millions de comptes de Wakanim, plateforme française de streaming d'animation. Y figurent e-mails, noms, pseudonymes, adresses postales et IP, selon Le Monde. Début septembre, Wakanim évoque une possible violation, restreint son service et impose des réinitialisations, sans confirmer l'exfiltration. En octobre 2022, Have I Been Pwned publie le jeu de données vérifié : 6 706 951 enregistrements. La fuite est établie par la veille, pas par une source officielle.",
+  "timeline": [
+    {
+      "date": "2022-08-28",
+      "event": "Un pirate anonyme met en vente une base revendiquée de 6,7 millions de comptes Wakanim, selon Le Monde."
+    },
+    {
+      "date": "2022-09-07",
+      "event": "Wakanim évoque une possible fuite de données, retarde la publication de contenus et force des réinitialisations de mots de passe."
+    },
+    {
+      "date": "2022-09-22",
+      "event": "Le Monde révèle la mise en vente ; la plateforme ne confirme pas l'authenticité des données."
+    },
+    {
+      "date": "2022-10-06",
+      "event": "Le jeu de données vérifié — 6 706 951 enregistrements — est intégré à Have I Been Pwned."
+    }
+  ]
+}

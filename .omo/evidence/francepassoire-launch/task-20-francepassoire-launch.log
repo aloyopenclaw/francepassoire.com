@@ -134,3 +134,17 @@ hibp 0 until T47 snapshot wiring); zero disabled sources; zero error events.
   D1/KV are the ground truth for soak health.
 - Pre-existing (NOT this lane): tests/social-x-queue.test.ts has 3 tsc errors
   (untracked file from a parallel wave task); full vitest suite is green regardless.
+2026-08-20 cnil-sanctions guid dedup (soak: ~790 dupes/h): mirrored rss.ts knownGuids pattern.
+cnil.ts: guidSanction() = \u0000-join of full row (date+organisme+url+decision+manquements+theme) — entity+date+URL alone collides on real page (2 distinct sanctions share it); guid embedded in raw; parseCnilSanctions(html, knownGuids?) filters + intra-page dedup (5 byte-identical rows in fixture); warn now fires only on 0 parsed rows, not 0 novel.
+cnil.test.ts: dedup test added (known guid filtered 390->389, unknown emitted, 390 unique guids); 395->390 count updated (5 page duplicates, hand-verified).
+Tests: npx vitest run tests/adapters/cnil.test.ts = 18/18 green; full npx vitest run = 321/321 green (25 files); npx tsc --noEmit exit 0.
+2026-08-21 guid dedup systémique (soak: cert-fr 160→960 ~10 dupes/pass, rss/ransomware.live growing sans re-ingestion; cnil figé à 790 depuis son fix = pattern validé):
+src/adapter.ts: Candidate.guid? (clé guid_set KV du runner) + SourceAdapter.fetchCandidates(fetchFn, knownGuids?) — param optionnel, les adapters qui l'ignorent restent structurellement conformes.
+src/index.ts runSource: passe new Set(state.guid_set) en 2e arg à fetchCandidates + FILET RUNNER (filtre les candidats à guid connu même si l'adapter ignore knownGuids) + après insert merge FIFO des nouveaux guids dans state.guid_set, cap GUID_SET_MAX=500 (borne la valeur KV; CNIL=390 < cap).
+cert-fr.ts: guidItem() = \u0000-join titre⊕lien (fallback guid RSS natif — des items sans <guid> existent; le guid natif seul ne suffit pas), candidat.guid émis, parserFluxCertFr(xml, flux, knownGuids?) + dédup intra-flux, factory passe knownGuids (pattern cnil 1f32779).
+rss.ts: candidat.guid = guid natif de l'item (= raw.guid), param knownGuids conservé.
+ransomware-live.ts: guidRevendication() = \u0000-join victim⊕group⊕date (post_date absent de /recentvictims — fallback postdate puis attackdate, vérifié sur cassette fixture) ; candidat.guid émis + knownGuids + dédup intra-payload.
+Tests: worker-skeleton +2 (fake adapter ignorant knownGuids: run1 insère 2 & guid_set=[g1,g2], run2 mêmes guids → 0 INSERT via le filet runner, knownGuids bien repassé en 2e arg ; cap 501 anciens+1 nouveau → 500 stockés, 2 plus anciens évincés FIFO — l'arithmétique 502-500=2 est piège à off-by-one, premier jet faux). cert-fr +2 (guid stable/distinct 40/40 ; connu filtré 40→39). rss +1 (candidate.guid = raw.guid sur les 6 zataz). ransomware-live +2 (guid stable/distinct 3 FR ; connu filtré 3→2).
+Tests: npx vitest run = 387/387 green (26 fichiers) ; npx tsc --noEmit exit 0.
+Note: toCandidate(ransomware.live) retourne (Candidate & { guid: string }) | null — guid optionnel dans le contrat mais toujours assigné par cet adapter, évite les narrows défensifs dans la boucle de dédup.
+Résiduel assumé: cap 500 FIFO → un item très ancien réapparaissant après éviction serait réinséré (borné, volume d'un flux max) ; hibp reste amorçage (renvoie [], pas de guid) — diff réel = T47.

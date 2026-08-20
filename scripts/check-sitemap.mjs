@@ -48,7 +48,7 @@ function walk(dir) {
   for (const entry of readdirSync(dir)) {
     const p = join(dir, entry);
     if (statSync(p).isDirectory()) out.push(...walk(p));
-    else if (p.endsWith('.html')) out.push(p);
+    else if (p.endsWith('.html') && !p.endsWith('404.html')) out.push(p); // 404 = page d'erreur, hors sitemap
   }
   return out;
 }

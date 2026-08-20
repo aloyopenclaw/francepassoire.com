@@ -1,0 +1,49 @@
+{
+  "slug": "ffa-20260221",
+  "entity": "Fédération française d'athlétisme (FFA)",
+  "siren": "784448730",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-21",
+    "publication": "2026-02-21"
+  },
+  "volume": {
+    "count": 11400000,
+    "unit": "enregistrements",
+    "label": "11,4 millions de données personnelles mises en vente selon la revendication, dont environ 3 millions de mots de passe en clair ; la fédération compte plus de 300 000 licenciés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — La Fédération française d'athlétisme « victime d'une cyberattaque »",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/la-federation-francaise-d-athletisme-victime-d-une-cyberattaque_7820777.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien — La Fédération française d'athlétisme victime d'une cyberattaque majeure",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/64513-la-federation-francaise-d-athletisme-victime-d-une-cyberattaque-majeure.html",
+      "kind": "article"
+    },
+    {
+      "label": "CyberVeille — Cyberattaque à la FFA : données de licenciés exposées",
+      "url": "https://cyberveille.ch/posts/2026-02-22-cyberattaque-a-la-ffa-donnees-de-licencies-exposees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 février 2026, la Fédération française d'athlétisme informe ses licenciés d'une cyberattaque contre son logiciel de gestion des données. Elle reconnaît un accès non autorisé aux noms, prénoms, sexe, adresses, dates et lieux de naissance, téléphones et données de licence. Quelques jours plus tard, un cybercriminel nommé HexDex met en vente 11,4 millions de données, dont environ 3 millions de mots de passe en clair et des informations conservées depuis 2002. La fédération a saisi la CNIL et annoncé une plainte ; les volumes revendiqués ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2026-02-21",
+      "event": "La FFA notifie à ses licenciés une cyberattaque avec accès non autorisé aux données du logiciel de gestion des licenciés ; la CNIL est saisie."
+    },
+    {
+      "date": "2026-02-24",
+      "event": "Un acteur nommé HexDex met en vente 11,4 millions de données, dont des mots de passe en clair, en réclamant 5 000 dollars."
+    }
+  ]
+}

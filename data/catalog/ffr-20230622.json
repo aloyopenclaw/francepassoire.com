@@ -1,0 +1,59 @@
+{
+  "slug": "ffr-20230622",
+  "entity": "Fédération française de rugby (FFR)",
+  "siren": "784405813",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-06-22",
+    "publication": "2023-06-22"
+  },
+  "volume": {
+    "count": 281977,
+    "unit": "comptes",
+    "label": "281 977 adresses e-mail uniques, avec noms, dates de naissance et numéros de téléphone, dans le jeu de données vérifié par Have I Been Pwned (publié en 2025) ; la FFR n'a pas communiqué de décompte de licenciés concernés"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "FFR — Attaque informatique : la FFR porte plainte (communiqué)",
+      "url": "https://www.ffr.fr/actualites/federation/attaque-informatique-la-ffr-porte-plainte",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien — La Fédération française de rugby visée par une cyber-attaque (22 juin 2023)",
+      "url": "https://www.leparisien.fr/sports/rugby/la-federation-francaise-de-rugby-visee-par-une-cyber-attaque-22-06-2023-EGOTTU7OPZHXTIJKJ72ZUDX37I.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — La Fédération française de rugby visée par une cyberattaque : « les menaces des pirates sont à prendre au sérieux » (juin 2023)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/la-federation-francaise-de-rugby-visee-par-une-cyberattaque-les-menaces-des-pirates-sont-a-prendre-au-serieux-7900277355",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde — Des pirates informatiques tentent de faire chanter la Fédération française de rugby (22 juin 2023, article archivé)",
+      "url": "https://web.archive.org/web/2023/https://www.lemonde.fr/sport/article/2023/06/22/des-pirates-informatiques-tentent-de-faire-chanter-la-federation-francaise-de-rugby-victime-d-une-attaque_6178763_3242.html",
+      "kind": "archive"
+    },
+    {
+      "label": "Have I Been Pwned — FFR Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/FFR",
+      "kind": "article"
+    }
+  ],
+  "description": "Début juin 2023, la Fédération française de rugby subit une attaque informatique. Le groupe de cybercriminels Play menace de publier sous cinq jours des documents soutirés si une rançon n'est pas payée, relèvent Le Parisien et Le Monde le 22 juin. La FFR assure avoir rétabli ses systèmes, appelle ses licenciés à la vigilance et porte plainte. Elle confirme l'intrusion mais pas l'exfiltration. En 2025, Have I Been Pwned publie le jeu de données vérifié : 281 977 adresses, noms, dates de naissance et téléphones.",
+  "timeline": [
+    {
+      "date": "2023-06-22",
+      "event": "Le groupe Play menace de publier sous cinq jours des documents de la FFR en cas de rançon impayée ; la fédération appelle ses licenciés à la vigilance."
+    },
+    {
+      "date": "2023-06-22",
+      "event": "La FFR indique avoir rétabli ses systèmes et porte plainte, sans confirmer d'exfiltration de données."
+    },
+    {
+      "date": "2025-05-22",
+      "event": "Le jeu de données vérifié — 281 977 adresses e-mail, noms, dates de naissance, téléphones — est intégré à Have I Been Pwned."
+    }
+  ]
+}

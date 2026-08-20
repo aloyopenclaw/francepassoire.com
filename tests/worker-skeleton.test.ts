@@ -106,6 +106,68 @@ describe('worker d’ingestion — contrat adapter', () => {
   });
 });
 
+describe('worker d’ingestion — dédup guid systémique (guid_set KV)', () => {
+  const candidatGuid = (guid: string) => ({
+    source: 'fake-guid',
+    source_url: `https://example.fr/${guid}`,
+    raw: JSON.stringify({ guid }),
+    entity_name: null,
+    guid,
+  });
+
+  it('run 1 : insère et enregistre les guids ; run 2 : mêmes guids → 0 insert (filet runner)', async () => {
+    const { env, executed, store } = makeEnv();
+    // L'adapter ignore volontairement knownGuids : c'est le runner qui doit
+    // filtrer (dédup systémique, pas seulement par adapter coopératif).
+    const fetchCandidates = vi.fn(async () => [candidatGuid('g1'), candidatGuid('g2')]);
+    adapters.push({ id: 'fake-guid', fetchCandidates });
+
+    await runScheduled(env, runOpts);
+    expect(executed).toHaveLength(2);
+    const state1 = JSON.parse(store.get('ingest:state:fake-guid') ?? '{}');
+    expect(state1.guid_set).toEqual(['g1', 'g2']);
+
+    await runScheduled(env, runOpts);
+
+    expect(executed).toHaveLength(2); // aucun nouvel INSERT malgré le retour identique
+    const state2 = JSON.parse(store.get('ingest:state:fake-guid') ?? '{}');
+    expect(state2.guid_set).toEqual(['g1', 'g2']); // pas de croissance du guid_set
+    // le runner repasse bien le guid_set en 2e argument du contrat adapter
+    expect(fetchCandidates).toHaveBeenLastCalledWith(expect.any(Function), new Set(['g1', 'g2']));
+  });
+
+  it('borne guid_set à 500 (FIFO : le guid le plus ancien est évincé)', async () => {
+    const { env, store } = makeEnv();
+    const anciens = Array.from({ length: 501 }, (_, i) => `ancien-${i}`);
+    store.set(
+      'ingest:state:fake-cap',
+      JSON.stringify({
+        last_run: null,
+        last_success: null,
+        consecutive_failures: 0,
+        disabled: false,
+        guid_set: anciens,
+      }),
+    );
+    adapters.push({
+      id: 'fake-cap',
+      async fetchCandidates() {
+        return [candidatGuid('nouveau')];
+      },
+    });
+
+    await runScheduled(env, runOpts);
+
+    const state = JSON.parse(store.get('ingest:state:fake-cap') ?? '{}');
+    expect(state.guid_set).toHaveLength(500);
+    // 501 anciens + 1 nouveau = 502 → les 2 plus anciens évincés (FIFO)
+    expect(state.guid_set).not.toContain('ancien-0');
+    expect(state.guid_set).not.toContain('ancien-1');
+    expect(state.guid_set).toContain('ancien-2');
+    expect(state.guid_set[499]).toBe('nouveau'); // le nouveau en queue
+  });
+});
+
 describe('worker d’ingestion — circuit breaker', () => {
   it('désactive la source après 3 runs consécutifs en échec, la 4e run la skippe sans D1', async () => {
     const { env, executed, store } = makeEnv();

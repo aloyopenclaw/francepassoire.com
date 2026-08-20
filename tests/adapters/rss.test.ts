@@ -135,6 +135,18 @@ describe('T15 · adapter RSS — déduplication par guid', () => {
     expect(findCandidate(deduped, 'Stripe visé par une fuite')).toBeUndefined();
     expect(findCandidate(deduped, 'Fuite Stripe')).toBeDefined();
   });
+
+  it('chaque candidat porte le guid natif de l’item (candidate.guid = raw.guid)', async () => {
+    const adapter = makeRssAdapter(feed({ id: 'rss:zataz', name: 'Zataz', url: 'https://www.zataz.com/feed/' }));
+    const candidates = await adapter.fetchCandidates(fetchServing(loadFixture('rss-zataz.xml')));
+
+    expect(candidates).toHaveLength(6);
+    for (const c of candidates) {
+      // le runner (guid_set KV) dédup sur candidate.guid : il doit refléter le guid item
+      expect(c.guid).toBe(JSON.parse(c.raw ?? '{}').guid);
+      expect(c.guid).toBeTruthy();
+    }
+  });
 });
 
 describe('T15 · adapter RSS — heuristiques (docs RSS inline)', () => {

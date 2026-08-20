@@ -1,0 +1,131 @@
+=== 2026-08-21T00:58Z — TASK 50 (Wave Gate) : pile de surveillance — chien de garde Nostr, page 404, balayage lancement ===
+
+Périmètre (voie réservée) : workers/watchdog/** (nouveau), src/pages/404.astro (nouveau),
+scripts/launch-sweep.mjs (nouveau), tests/watchdog.test.ts (nouveau).
+
+Contexte-verdicts : alerte courriel BLOQUÉE (T29 : send_email refuse les destinations non
+vérifiées) → canal d'alerte = notes Nostr depuis le npub du projet (T27,
+npub1c4s8aye7ye8vmwa39zllytlj8rqcz4gqwtp30vw0vlk9ksj3u5uqqyjymd, secret wrangler
+NOSTR_NSEC — valeur de ~/.config/francepassoire/nostr.key, JAMAIS affichée ni commitée).
+Zone Health Checks indisponibles au plan (erreur 1002) → chien de garde auto-hébergé.
+
+--- ÉTAPE 1 : worker watchdog (workers/watchdog) ---
+Architecture (calquée sur workers/social, T38) :
+  src/cibles.ts    — 4 cibles (accueil 200+« FrancePassoire », feed.xml 200+«<rss»,
+                     registre.jsonl 200+non vide, api/health {ok:true}), constantes,
+                     heureUtc/texteAlerte purs. Module séparé : l'entrypoint workerd
+                     n'accepte que des fonctions en exports nommés (constaté en dev :
+                     « Incorrect type for map entry 'CLE_HISTORIQUE' » → restructuré
+                     AVANT le déploiement de production ; seuls fonctions+interfaces
+                     sortent de src/index.ts, comme ingest/api/social).
+  src/nostr.ts     — signature kind 1 (finalizeEvent), normalizeSecret hex/nsec,
+                     3 relais épinglés (damus, nos.lol, primal) best-effort ≥1 accepté,
+                     fabrique WS injectable.
+  src/index.ts     — sonder (fetch 15 s max via AbortController), comparer à KV
+                     watchdog:state:<cible> = {ok, since, lastCheck}, note UNIQUEMENT
+                     sur transition (jamais d'état stable), watchdog:history = tampon
+                     circulaire FIFO 100 contrôles. NOSTR_NSEC absent → mode
+                     DÉTECT-ONLY (KV + console.error, zéro crash). Publication ratée
+                     ne bloque jamais l'état (sinon re-spam au cron suivant).
+Fetch/publish/now injectables (options.fetchFn/publish/now) — aucun réseau en test.
+
+KV namespace créé :
+  $ npx wrangler kv namespace create WATCHDOG --config workers/watchdog/wrangler.jsonc
+  → id fdae27fb73ac4d6fb17c3d4a99c0b179 (identifiant, pas un secret) — câblé dans
+  workers/watchdog/wrangler.jsonc (cron */10 * * * *, binding WATCHDOG).
+
+--- ÉTAPE 2 : tests (tests/watchdog.test.ts, écrits avec l'implémentation) ---
+13 tests, tous les scénarios exigés :
+  - steady state ok→ok : AUCUNE note, since inchangé, lastCheck rafraîchi, historique 4 ;
+  - première observation (KV vide) : baseline sans note ;
+  - transition ok→down : UNE note « Surveillance FrancePassoire : le flux RSS
+    inaccessible depuis 2026-08-21 10:40 UTC. », état basculé ;
+  - récupération down→ok : UNE note « l’API publique rétablie à … (indisponible 10 min). » ;
+  - 4 cibles tombées : 4 notes ;
+  - corps 200 sans marqueur (accueil sans « FrancePassoire », santé sans ok:true) : down ;
+  - timeout fetch 15 s (fake timers + AbortController réel) : down + note ;
+  - NOSTR_NSEC absent sans publish : DÉTECT-ONLY (console.error, état écrit, pas de crash) ;
+  - historique FIFO borné 100 (anciennes entrées évincées) ;
+  - module nostr : normalizeSecret hex/nsec/clé fraîche (jamais la clé en quarantaine),
+    note kind 1 vérifiable (verifyEvent), relais ≥1 OK / tous muets.
+
+$ npx vitest run tests/watchdog.test.ts
+ Test Files 1 passed (1) — Tests 13 passed (13)
+
+$ npx vitest run  (suite complète)
+ Test Files 27 passed (27) — Tests 400 passed (400)   [387 préexistants + 13 nouveaux]
+
+$ npx tsc --noEmit -p tsconfig.json → 0 erreur.
+
+--- ÉTAPE 3 : déploiement ---
+$ npx wrangler deploy --dry-run --config workers/watchdog/wrangler.jsonc → bundle 232 KiB OK.
+$ npx wrangler deploy --config workers/watchdog/wrangler.jsonc (2 passes : la 1re avec
+  entrypoint à constantes exportées a été écrasée par la restructuration ; version en
+  production = la 2de) :
+  Uploaded francepassoire-watchdog
+  https://francepassoire-watchdog.t5hsrdmmmn.workers.dev
+  schedule: */10 * * * *
+  Current Version ID: 4d0a71f8-52fd-4464-b65e-6a2e4d0663b2
+
+$ cat ~/.config/francepassoire/nostr.key | npx wrangler secret put NOSTR_NSEC \
+    --config workers/watchdog/wrangler.jsonc
+  ✨ Success! Uploaded secret NOSTR_NSEC (valeur jamais affichée ; secret list la confirme).
+
+Déclenchement local du cron (une fois) :
+$ npx wrangler dev --test-scheduled --config workers/watchdog/wrangler.jsonc
+$ curl "http://localhost:8791/__scheduled?cron=*/10+*+*+*+*"
+  Ran scheduled event
+  [watchdog] première observation accueil : ok
+  [watchdog] première observation flux-rss : ok
+  [watchdog] première observation registre : ok
+  [watchdog] première observation api : ok
+  → baseline posée SANS note (comportement voulu : pas d'alerte sur du vide). Le cron
+  production posera la même baseline dans le KV réel à la première échéance */10.
+
+--- ÉTAPE 4 : page 404 (src/pages/404.astro) ---
+Layout standard + <meta name="robots" content="noindex" slot="head"> (le Layout n'a pas
+de prop noindex ; le slot head est le mécanisme du repo — cf. index.astro JSON-LD).
+Contrat visuel figé : tuile crème « Page introuvable. » (border-2 ink, shadow-hard,
+rounded-passoire, -rotate-1), badge mono « Erreur 404 », ligne sobre « Cette page
+n'existe pas — ou plus. », CTA orange « Retour à l'accueil » → /.
+
+$ npm run build → 165 pages (164 + 404) ; dist/404.html émis (Astro statique ;
+Cloudflare Pages le sert automatiquement pour tout chemin manquant).
+$ npx astro preview --port 4399 && curl http://localhost:4399/inexistant
+  → HTTP 404 + « Page introuvable. » + noindex présents dans le corps. ✓
+
+--- ÉTAPE 5 : balayage lancement (scripts/launch-sweep.mjs, zéro dépendance) ---
+Sonde les 164 URLs de dist/sitemap-0.xml + 3 cibles profondes (feed.xml <rss>+<item>,
+registre.jsonl non vide, api/health {ok:true}), 15 s de délai par sonde, concurrence 8 ;
+cohérence catalogue : 69 URLs /fiche/ du sitemap = count 69 de dist/api/v1/fiches.json.
+Sortie : tableau markdown-ish + exit 1 nominatif. Options --base/--api-base (préprod).
+
+$ node scripts/launch-sweep.mjs   (sur le dist frais, production)
+  ## Cohérence catalogue : 69 URLs /fiche/ = 69 fiches API → OK
+  ## Sondes (167) : 167/167 OK, 0 échec(s) → exit 0. ✓
+
+--- COMMIT (1, exactement mes fichiers ; voie parallèle 404-frontmatter non touchée) ---
+ workers/watchdog/src/cibles.ts
+ workers/watchdog/src/index.ts
+ workers/watchdog/src/nostr.ts
+ workers/watchdog/wrangler.jsonc
+ src/pages/404.astro
+ scripts/launch-sweep.mjs
+ tests/watchdog.test.ts
+ .omo/evidence/francepassoire-launch/task-50-francepassoire-launch.log
+Message : feat(ops): monitoring, error pages, launch sweep
+Aucun push (voie de l'orchestrateur).
+
+--- RISQUES RESIDUELS ---
+1. Première observation = baseline sans note : une panne commencée AVANT le premier
+   cron production ne notifie pas tant qu'elle ne « transitionne » pas (elle notifie
+   à la rétablisation). Choix anti-spam assumé ; le balayage lancement couvre le jour J.
+2. Publication best-effort : note perdue si les 3 relais sont muets au moment de la
+   transition (consignée en console.error, non rejouée — le prochain changement d'état
+   notifiera). Anti-spam > garantie de livraison, assumé.
+3. La rétablie note la durée d'après « since » KV — si un état a été posé par une
+   version intermédiaire, la durée peut être approximative (cosmétique).
+4. Le sitemap contient feed.xml et les flux secteur en URLs « statut 200 » ; la sanité
+   RSS profonde ne porte que sur feed.xml racine (périmètre T50).
+5. workers.dev du watchdog exposé sans route fetch (cron only) : handler fetch absent —
+   ouvrir l'URL ne renvoie rien d'utile, aucune donnée exposée (KV non lisible).

@@ -1,0 +1,54 @@
+{
+  "slug": "banques-alimentaires-20260304",
+  "entity": "Fédération française des Banques Alimentaires (FFBA)",
+  "siren": "334559465",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-04",
+    "publication": "2026-03-11"
+  },
+  "volume": {
+    "count": 1462485,
+    "unit": "personnes",
+    "label": "659 658 familles, soit 1 462 485 personnes accompagnées selon la revendication ; étendue exacte non établie selon la FFBA"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Banques Alimentaires — Communication importante : protection de vos données personnelles",
+      "url": "https://www.banquealimentaire.org/communication-importante-protection-de-vos-donnees-personnelles-7674",
+      "kind": "officiel"
+    },
+    {
+      "label": "Banques Alimentaires — Communication importante (PDF)",
+      "url": "https://www.banquealimentaire.org/sites/default/files/2026-03/Communication%20importante%20%E2%80%93%20Protection%20de%20vos%20donn%C3%A9es%20personnelles.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — 1 462 485 bénéficiaires touchés par la fuite de données de Banque Alimentaire",
+      "url": "https://fuitesinfos.fr/article/2026-03-04-banque-alimentaire",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Piratage massif de la Banque Alimentaires : 659 658 familles revendiquées par un hacker",
+      "url": "https://frenchbreaches.com/blog/piratage-massif-de-la-banque-alimentaires-les-donnees-de-659-658-familles-146-million-de-personnes-revendiquees-par-un-hacker",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 4 mars 2026, une personne se présentant comme un hacker propose à la vente des données de 659 658 familles, soit 1 462 485 personnes accompagnées par le réseau des Banques Alimentaires. Selon la revendication, les données couvrent la période 2012-2026 et proviennent d'une application de gestion des stocks et de l'aide alimentaire utilisée par les associations partenaires et les CCAS. La FFBA confirme l'incident, notifie la CNIL et dépose plainte. État civil, situation familiale, quotient familial, revenus et reste à vivre figurent parmi les données citées.",
+  "timeline": [
+    {
+      "date": "2026-03-04",
+      "event": "Une mise en vente de données de 1,46 million de bénéficiaires du réseau des Banques Alimentaires est publiée ; la FFBA en prend connaissance le même jour."
+    },
+    {
+      "date": "2026-03-11",
+      "event": "La FFBA publie une communication : analyses engagées, notification à la CNIL, plainte pénale et vigilance recommandée aux personnes concernées."
+    }
+  ]
+}
