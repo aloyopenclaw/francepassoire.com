@@ -1,0 +1,43 @@
+{
+  "slug": "pierre-vacances-20260515",
+  "entity": "Pierre & Vacances-Center Parcs",
+  "siren": "316580869",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-15",
+    "publication": "2026-05-15"
+  },
+  "volume": {
+    "count": 4500000,
+    "unit": "personnes",
+    "label": "4,5 millions de vacanciers exposés selon la revendication ; le groupe a reconnu un incident de sécurité"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Pierre & Vacances : 4,5 millions de vacanciers exposés dans une fuite massive de données",
+      "url": "https://www.cyberattaque.org/maeva-pierre-vacances-center-parcs-cyberattque-fuite-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Le groupe Maeva victime d'un piratage massif exposant 4,5 millions de données clients",
+      "url": "https://frenchbreaches.com/blog/le-groupe-maeva-victime-dun-piratage-massif-exposant-4-5-millions-de-donnees-clients",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 15 mai 2026, une fuite de données visant le groupe Pierre & Vacances-Center Parcs, notamment sa marque maeva, est rendue publique. Selon la revendication, 4,5 millions de vacanciers sont exposés, avec des données clients incluant identités et coordonnées. Le groupe a reconnu un incident de sécurité ayant conduit à une exposition de données, selon le relais de veille qui l'a contacté. L'étendue exacte du périmètre n'est pas établie publiquement à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-05-15",
+      "event": "Une fuite visant le groupe Pierre & Vacances-Center Parcs et sa marque maeva est rendue publique : 4,5 millions de vacanciers selon la revendication."
+    },
+    {
+      "date": "2026-05-15",
+      "event": "Le groupe reconnaît un incident de sécurité ayant conduit à une exposition de données clients, sans confirmer le volume annoncé."
+    }
+  ]
+}

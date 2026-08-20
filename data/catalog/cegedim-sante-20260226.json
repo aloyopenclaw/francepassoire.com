@@ -1,0 +1,59 @@
+{
+  "slug": "cegedim-sante-20260226",
+  "entity": "Cegedim Santé",
+  "siren": "348940255",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-02-26",
+    "publication": "2026-02-26",
+    "confirmation": "2026-02-27"
+  },
+  "volume": {
+    "count": 15000000,
+    "unit": "personnes",
+    "label": "15 millions de patients selon le ministère de la Santé ; 15,8 millions de dossiers administratifs selon Cegedim, dont 169 000 annotations sensibles"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Cegedim — Communiqué de presse du 26 février 2026 (PDF)",
+      "url": "https://www.cegedim.fr/Communique/Cegedim_Communique26022026.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Fuite massive de données personnelles de patients après une cyberattaque",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/nom-telephone-voire-annotations-du-medecin-fuite-massive-de-donnees-personnelles-de-patients-apres-une-cyberattaque-20260227",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Une fuite de données médicales inquiète en France, entre 11 et 15 millions de personnes touchées",
+      "url": "https://www.franceinfo.fr/sante/enquete-francetv-une-fuite-massive-de-donnees-medicales-inquiete-en-france_7831823.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Entre 11 et 15 millions de Français touchés par une fuite massive après une cyberattaque visant un éditeur de logiciels médicaux",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/du-numero-de-telephone-a-la-religion-en-passant-par-l-orientation-sexuelle-entre-11-et-15-millions-de-francais-touches-par-une-fuite-massive-de-donnees-apres-une-cyberattaque-visant-un-editeur-de-logiciels-medicaux_AD-202602270411.html",
+      "kind": "article"
+    }
+  ],
+  "description": "France 2 révèle le 26 février 2026 une base de données de santé en libre accès, revendiquée par le groupe DumpSec. Cegedim Santé, éditeur du logiciel MLM utilisé par 3 800 médecins, a identifié fin 2025 des requêtes anormales sur 1 500 comptes. Les données extraites proviennent des dossiers administratifs des patients : identité, coordonnées et commentaires libres, dont 169 000 annotations sensibles selon le ministère. Le 27 février, le ministère de la Santé confirme 15 millions de personnes concernées. Une plainte a été déposée le 27 octobre 2025 et la CNIL a été notifiée.",
+  "timeline": [
+    {
+      "date": "2025-10-27",
+      "event": "Cegedim Santé dépose plainte après des courriers d'extorsion revendiquant le piratage du logiciel MLM."
+    },
+    {
+      "date": "2026-02-26",
+      "event": "France 2 révèle une base de données de santé en libre accès ; Cegedim publie un communiqué reconnaissant une extraction illégale de données de patients."
+    },
+    {
+      "date": "2026-02-27",
+      "event": "Le ministère de la Santé confirme environ 15 millions de personnes concernées ; le parquet de Paris ouvre une enquête."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ff-savate-20260330",
+  "entity": "Fédération française de savate et disciplines associées (FFSavate)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-30",
+    "publication": "2026-03-30"
+  },
+  "volume": {
+    "count": 680000,
+    "unit": "personnes",
+    "label": "près de 680 000 licenciés sur 49 ans d'historique selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — 49 ans d'historique : près de 680 000 licenciés de la Fédération Française de Savate exposés",
+      "url": "https://frenchbreaches.com/blog/49-ans-dhistorique-pres-de-680-000-licencies-de-la-federation-francaise-de-savate-exposes",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Fédération française de Savate : près de 680 000 licenciés exposés sur 49 ans",
+      "url": "https://www.cyberattaque.org/federation-francaise-de-savate-pres-de-680-000-licencies-exposes-sur-49-ans/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 mars 2026, une fuite de données visant la Fédération française de savate est mise en vente. Selon la revendication, près de 680 000 licenciés sont concernés sur 49 ans d'historique, des données remontant à plusieurs décennies. Identités et coordonnées des adhérents figurent dans les échantillons analysés par les relais de veille. La fédération n'a pas confirmé publiquement la compromission ni les volumes annoncés à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-03-30",
+      "event": "Une base présentée comme issue de la Fédération française de savate est mise en vente : près de 680 000 licenciés sur 49 ans."
+    }
+  ]
+}
