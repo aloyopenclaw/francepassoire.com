@@ -17,3 +17,5 @@ dist/
 .env
 .env.local
 .wrangler/
+cloudflare.txt
+*.token
