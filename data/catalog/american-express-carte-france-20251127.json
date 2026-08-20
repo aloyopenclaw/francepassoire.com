@@ -1,0 +1,48 @@
+{
+  "slug": "american-express-carte-france-20251127",
+  "entity": "American Express Carte France",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-27",
+    "publication": "2025-12-03",
+    "confirmation": "2025-11-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "utilisateurs du site americanexpress.fr ; volume non communiqué par la CNIL"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Cookies : la CNIL sanctionne AMERICAN EXPRESS d’une amende de 1,5 million d’euros",
+      "url": "https://www.cnil.fr/fr/cookies-la-cnil-sanctionne-american-express-dune-amende-de-15-million-deuros",
+      "kind": "officiel"
+    },
+    {
+      "label": "Actecil — Cookies : 1,5 million d’euros à l’encontre de American Express (4 décembre 2025)",
+      "url": "https://actecil.eu/rgpd-american-express/",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (EN) — Cookies: AMERICAN EXPRESS fined €1.5 million by the CNIL",
+      "url": "https://www.cnil.fr/en/cookies-american-express-fined-eu15-million-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 novembre 2025, la CNIL a sanctionné American Express Carte France, filiale française du groupe, d’une amende de 1,5 million d’euros pour le non-respect des règles sur les traceurs. Après des contrôles réalisés en janvier 2023, l’autorité a constaté des cookies publicitaires déposés dès l’arrivée sur americanexpress.fr, avant toute interaction avec la bannière, d’autres déposés malgré le refus exprimé, et la lecture continue de traceurs après le retrait du consentement. La formation restreinte a aussi retenu un manquement au principe de minimisation. La société s’est mise en conformité pendant la procédure.",
+  "timeline": [
+    {
+      "date": "2023-01-01",
+      "event": "La CNIL mène plusieurs contrôles, en ligne et dans les locaux de la société, sur les pratiques de dépôt de cookies."
+    },
+    {
+      "date": "2025-11-27",
+      "event": "La formation restreinte prononce une amende de 1,5 million d’euros pour manquement à l’article 82 de la loi Informatique et Libertés et à la minimisation."
+    }
+  ]
+}

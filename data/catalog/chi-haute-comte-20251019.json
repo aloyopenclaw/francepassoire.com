@@ -1,0 +1,47 @@
+{
+  "slug": "chi-haute-comte-20251019",
+  "entity": "Centre hospitalier intercommunal de Haute-Comté (Pontarlier)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-19",
+    "publication": "2025-10-19",
+    "confirmation": "2025-10-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "établissement de trois sites (Pontarlier, Mouthe, Levier) ; exfiltration de données non établie à ce stade — attaque par chiffrement (cryptolocker)"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "France 3 régions — Cyberattaque à l’hôpital de Pontarlier : le système informatique à l’arrêt complet (19 octobre 2025)",
+      "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/doubs/haut-doubs/cyberattaque-a-l-hopital-de-pontarlier-ne-surchargez-pas-les-lignes-telephoniques-le-systeme-informatique-a-l-arret-complet-3236039.html",
+      "kind": "article"
+    },
+    {
+      "label": "TICsanté — Victime d’une cyberattaque, le CHI de Pontarlier poursuit son activité en mode dégradé",
+      "url": "https://www.ticsante.com/story?ID=7925",
+      "kind": "article"
+    },
+    {
+      "label": "L’Informaticien — Un centre hospitalier à Pontarlier victime d’une cyberattaque",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/64012-un-centre-hospitalier-a-pontarlier-victime-d-une-cyberattaque.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 18 au 19 octobre 2025, le centre hospitalier intercommunal de Haute-Comté, à Pontarlier, a subi une attaque par cryptolocker qui a mis à l’arrêt complet son système informatique. L’établissement, qui couvre aussi les sites de Mouthe et Levier, a poursuivi son activité en mode dégradé, avec des reports d’interventions. France 3 et TICsanté ont relaté l’organisation de la continuité des soins et la mobilisation de l’ANSSI. Un vol de données n’a pas été établi publiquement à ce stade ; l’incident illustre l’impact d’un rançongiciel sur un hôpital public français.",
+  "timeline": [
+    {
+      "date": "2025-10-19",
+      "event": "Vers 3 heures du matin, un cryptolocker paralyse le système d’information du CHI de Haute-Comté ; l’activité continue en mode dégradé."
+    },
+    {
+      "date": "2025-10-20",
+      "event": "L’établissement communique sur la continuité des soins ; l’ANSSI est mobilisée, des reports d’interventions sont annoncés."
+    }
+  ]
+}

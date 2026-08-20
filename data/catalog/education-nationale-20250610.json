@@ -1,0 +1,47 @@
+{
+  "slug": "education-nationale-20250610",
+  "entity": "Ministère de l’Éducation nationale (Cyclades, ÉduConnect)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-06-10",
+    "publication": "2025-06-10"
+  },
+  "volume": {
+    "count": 40000,
+    "unit": "comptes",
+    "label": "40 000 entrées revendiquées par Stormous (combolist issue de Cyclades et ÉduConnect) ; le ministère n’a pas confirmé ce chiffre"
+  },
+  "data_types": [
+    "credentials",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — Éducation nationale : Stormous semble avoir constitué une combolist (10 juin 2025)",
+      "url": "https://www.lemagit.fr/actualites/366625817/Education-nationale-Stormous-semble-avoir-constitue-une-combolist",
+      "kind": "article"
+    },
+    {
+      "label": "La Tribune — Cyberattaque : 40 000 comptes d’étudiants piratés depuis Cyclades, ÉduConnect…",
+      "url": "https://www.latribune.fr/technos-medias/internet/cyberattaque-40-000-comptes-d-etudiants-pirates-depuis-cyclades-educonnect-1027053.html",
+      "kind": "article"
+    },
+    {
+      "label": "L’Informaticien — 40 000 données de l’Éducation nationale exfiltrées par Stormous ?",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/63530-40-000-donnees-de-l-education-nationale-exfiltrees-par-stormous.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 juin 2025, le groupe cybercriminel pro-russe Stormous a revendiqué une cyberattaque contre les systèmes de l’Éducation nationale, alerte le veilleur Clément Domingo. Les pirates auraient constitué une combolist d’environ 40 000 identifiants issus des plateformes Cyclades et ÉduConnect, touchant des élèves, étudiants et personnels. La Tribune et L’Informaticien ont relayé la divulgation d’échantillons de données. Le ministère n’a pas confirmé publiquement le volume exfiltré à ce stade. La revendication est jugée crédible par les veilleurs, sans confirmation officielle complète.",
+  "timeline": [
+    {
+      "date": "2025-06-10",
+      "event": "Stormous revendique une attaque contre l’Éducation nationale ; SaxX documente une combolist d’environ 40 000 comptes issus de Cyclades et ÉduConnect."
+    },
+    {
+      "date": "2025-06-11",
+      "event": "La Tribune et L’Informaticien relaient la divulgation d’échantillons ; le ministère n’a pas confirmé le volume."
+    }
+  ]
+}

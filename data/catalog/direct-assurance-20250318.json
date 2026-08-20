@@ -1,0 +1,45 @@
+{
+  "slug": "direct-assurance-20250318",
+  "entity": "Direct Assurance (AXA)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-18",
+    "publication": "2025-03-18",
+    "confirmation": "2025-03-18"
+  },
+  "volume": {
+    "count": 15000,
+    "unit": "personnes",
+    "label": "données d’environ 15 000 clients dérobées selon la presse spécialisée ; le pirate near2tlg évoquait des milliers de clients et prospects supplémentaires"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "01net — Direct Assurance piraté : les données de 15 000 Français ont été compromises",
+      "url": "https://www.01net.com/actualites/direct-assurance-pirate-donnees-15-000-clients-compromises.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Cyberattaque sur Direct Assurance ? Un pirate parle de milliers de clients et prospects exposés",
+      "url": "https://www.zataz.com/cyberattaque-sur-direct-assurance-un-pirate-parle-de-milliers-de-clients-et-prospects-exposes/",
+      "kind": "article"
+    },
+    {
+      "label": "L’Informaticien — Fuite de données chez Direct Assurance : des IBAN et des RIB dans la nature",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/62722-fuite-de-donnees-chez-direct-assurance-des-iban-et-des-rib-dans-la-nature.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-mars 2025, le groupe cybercriminel near2tlg a revendiqué une attaque contre Direct Assurance, filiale d’AXA, déjà connu pour viser Le Point et des hôpitaux. Avec des identifiants compromis, le pirate a exfiltré les données d’environ 15 000 clients, dont des IBAN et RIB, rapportent 01net et L’Informaticien. La société a reconnu l’incident auprès de la presse spécialisée et indiqué avoir engagé les procédues adaptées. La fuite soulève des risques de phishing et de fraude bancaire pour les personnes concernées. Le dossier a été couvert par la presse cyber française.",
+  "timeline": [
+    {
+      "date": "2025-03-18",
+      "event": "La presse spécialisée révèle la revendication du groupe near2tlg contre Direct Assurance : exfiltration de données de clients, dont IBAN et RIB."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "cartier-20250603",
+  "entity": "Cartier (Richemont)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-03",
+    "publication": "2025-06-03",
+    "confirmation": "2025-06-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« certaines données » de clients selon la maison ; nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Cartier victime d’une cyberattaque : les données clients ciblées",
+      "url": "https://www.zataz.com/cartier-victime-dune-cyberattaque-les-donnees-clients-ciblees/",
+      "kind": "article"
+    },
+    {
+      "label": "Boursorama (Reuters) — Cartier signale que certaines données de clients ont été volées lors d’une cyberattaque (3 juin 2025)",
+      "url": "https://www.boursorama.com/bourse/actualites/cartier-signale-que-certaines-donnees-de-clients-ont-ete-volees-lors-d-une-cyberattaque-150ec84d5493dd1fb2cea33eb4a359f5",
+      "kind": "article"
+    },
+    {
+      "label": "L’Informaticien — Cartier cible d’une cyberattaque",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/63520-cartier-cible-d-une-cyberattaque.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Début juin 2025, Cartier, maison du groupe suisse Richemont, a averti ses clients qu’une personne non autorisée était entrée dans son système et avait exfiltré des données personnelles. L’alerte, relayée le 3 juin par Reuters et la presse spécialisée, précise que noms, coordonnées et pays de résidence ont pu être concernés, sans que les données de paiement ne le soient. La maison a invité ses clients à se méfier des tentatives de phishing utilisant ces informations. Le nombre de personnes concernées n’a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2025-05-31",
+      "event": "Selon des relais de veille, des cybercriminels exploitent une faille chez Cartier et obtiennent des données clients fraîchement collectées."
+    },
+    {
+      "date": "2025-06-03",
+      "event": "Cartier notifie ses clients de l’exfiltration de « certaines données » ; Reuters relaie l’information le même jour."
+    }
+  ]
+}

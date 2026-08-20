@@ -1,0 +1,56 @@
+{
+  "slug": "dior-20250513",
+  "entity": "Dior (LVMH)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-13",
+    "publication": "2025-05-14",
+    "confirmation": "2025-05-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "clients de la maison, d’abord alertés en Asie puis aux États-Unis ; nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro — Dior victime d’une cyberattaque par « un tiers non autorisé » (14 mai 2025)",
+      "url": "https://www.lefigaro.fr/societes/dior-victime-d-une-cyberattaque-par-un-tiers-non-autorise-qui-a-eu-acces-a-certaines-donnees-de-clients-20250514",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Noms, adresses, courriels… Dior victime d’une cyberattaque sur « certaines données » de clients",
+      "url": "https://www.leparisien.fr/faits-divers/noms-adresses-courriels-dior-victime-dune-cyberattaque-sur-certaines-donnees-de-clients-14-05-2025-FQDP2I2QKNAK3DD7BD3562MVEI.php",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — Dior : une cyberattaque vole les données de ses clients",
+      "url": "https://www.solutions-numeriques.com/dior-une-cyberattaque-vole-les-donnees-de-ses-clients/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 mai 2025, Dior a découvert qu’un tiers non autorisé avait accédé à certaines données clients, remontant à une intrusion datée du 26 janvier selon la presse. Les clients asiatiques ont été alertés dès le 13 mai, puis les clients américains deux mois plus tard. Les informations concernées incluent noms, prénoms, numéros de téléphone, adresses e-mail et postales, historiques d’achats et montants dépensés. La maison, propriété de LVMH, a précisé que les données bancaires et cartes de paiement n’étaient pas concernées et a invité les clients à la vigilance contre le phishing.",
+  "timeline": [
+    {
+      "date": "2025-01-26",
+      "event": "Selon la presse spécialisée, l’intrusion à l’origine de l’incident remonterait au 26 janvier 2025."
+    },
+    {
+      "date": "2025-05-07",
+      "event": "Dior découvre qu’un tiers non autorisé a accédé à certaines données clients de sa base Asie."
+    },
+    {
+      "date": "2025-05-13",
+      "event": "La maison alerte ses clients d’abord en Asie ; Le Monde et Le Figaro relatent la cyberattaque le lendemain."
+    },
+    {
+      "date": "2025-07-14",
+      "event": "Selon L’Usine Digitale, Dior prévient ses clients américains, deux mois après la découverte de la fuite."
+    }
+  ]
+}

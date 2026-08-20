@@ -1,0 +1,48 @@
+{
+  "slug": "mutuelle-des-motards-20250210",
+  "entity": "La Mutuelle des Motards",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-10",
+    "publication": "2025-02-13",
+    "confirmation": "2025-02-10"
+  },
+  "volume": {
+    "count": 1330000,
+    "unit": "personnes",
+    "label": "1,33 million d’utilisateurs selon le pirate « Lanvin » ; la mutuelle a reconnu l’incident sans communiquer de chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "La Mutuelle des Motards — Fuite de données : message aux sociétaires",
+      "url": "https://www.mutuelledesmotards.fr/node/20692",
+      "kind": "officiel"
+    },
+    {
+      "label": "Zataz — Fuite de données chez Mutuelle des Motards : plus d’1,3 million d’utilisateurs impactés",
+      "url": "https://www.zataz.com/fuite-de-donnees-chez-mutuelle-des-motards-plus-d13-million-dutilisateurs-impactes/",
+      "kind": "article"
+    },
+    {
+      "label": "NextINPact — Nouvelle fuite de données : la Mutuelle des Motards piratée",
+      "url": "https://next.ink/brief-article/nouvelle-fuite-de-donnees-la-mutuelle-des-motards-piratee/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 février 2025, la Mutuelle des Motards a détecté un incident affectant la confidentialité de données personnelles, selon son message aux sociétaires. Une personne malveillante a ciblé un outil de gestion des contacts marketing et y a accédé sans autorisation. Le service de veille Zataz a ensuite relayé la revendication d’un pirate, « Lanvin », annonçant 1,33 million d’utilisateurs impactés. La mutuelle a déclaré l’incident à la CNIL et déposé plainte. Les données exposées incluaient des informations de contact de sociétaires ; les données de santé étaient, selon la mutuelle, hors de périmètre.",
+  "timeline": [
+    {
+      "date": "2025-02-10",
+      "event": "La Mutuelle des Motards détecte un accès non autorisé à un outil de gestion des contacts marketing et informe la CNIL."
+    },
+    {
+      "date": "2025-02-13",
+      "event": "Zataz relaie la revendication du pirate « Lanvin » : 1,33 million d’utilisateurs impactés ; la plainte de la mutuelle est confirmée."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "google-20250901",
+  "entity": "Google (Google LLC et Google Ireland Limited)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-01",
+    "publication": "2025-09-03",
+    "confirmation": "2025-09-01"
+  },
+  "volume": {
+    "count": 53000000,
+    "unit": "personnes",
+    "label": "selon la CNIL, le manquement relatif aux traceurs a concerné plus de 74 millions de comptes d’utilisateurs résidant en France, dont 53 millions de personnes ont vu des annonces publicitaires s’insérer dans Gmail sans consentement valable"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Publicités insérées entre les courriels et cookies : la CNIL sanctionne GOOGLE d’une amende de 325 millions d’euros (3 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/publicites-inserees-entre-les-courriels-et-cookies-la-cnil-sanctionne-google-dune-amende-de-325",
+      "kind": "officiel"
+    },
+    {
+      "label": "Vie-publique.fr — CNIL : des amendes prononcées à l’encontre de Google et de Shein",
+      "url": "https://www.vie-publique.fr/en-bref/300037-cnil-des-amendes-prononcees-lencontre-de-google-et-de-shein",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — Shein et Google écopent d’une lourde amende en France, voici pourquoi",
+      "url": "https://www.clubic.com/actualite-577956-shein-et-google-ecopent-d-une-lourde-amende-en-france-voici-pourquoi.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er septembre 2025, la formation restreinte de la CNIL a sanctionné Google LLC et Google Ireland Limited d’une amende de 325 millions d’euros. L’autorité a constaté des traceurs publicitaires déposés sans consentement libre ni éclairé lors de la création de comptes, et des publicités en forme de courriels insérées dans les onglets « Promotions » et « Réseaux sociaux » de Gmail sans consentement préalable. Selon la décision, plus de 74 millions de comptes en France ont été concernés par les traceurs et 53 millions de personnes ont vu ces annonces. Une injonction de mise en conformité a été prononcée.",
+  "timeline": [
+    {
+      "date": "2023-10-01",
+      "event": "Selon la CNIL, les sociétés ajoutent un bouton de refus aussi simple que l’acceptation pour les traceurs publicitaires, mais le défaut de consentement éclairé persiste."
+    },
+    {
+      "date": "2025-09-01",
+      "event": "La formation restreinte prononce une amende de 325 millions d’euros et une injonction pour les manquements aux règles sur les traceurs et la prospection électronique."
+    },
+    {
+      "date": "2025-09-03",
+      "event": "La CNIL publie sa décision et son communiqué : plus de 74 millions de comptes français concernés, dont 53 millions de personnes exposées aux annonces insérées dans Gmail."
+    }
+  ]
+}

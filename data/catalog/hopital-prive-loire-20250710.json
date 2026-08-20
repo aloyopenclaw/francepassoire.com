@@ -1,0 +1,49 @@
+{
+  "slug": "hopital-prive-loire-20250710",
+  "entity": "Hôpital privé de la Loire (Ramsay Santé)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-10",
+    "publication": "2025-07-10",
+    "confirmation": "2025-07-10"
+  },
+  "volume": {
+    "count": 126000,
+    "unit": "personnes",
+    "label": "plus de 126 000 patients informés par courriel selon le groupe et TF1 ; le pirate « Marak » revendique jusqu’à 530 000 dossiers ; 40 cas critiques avec motifs d’hospitalisation"
+  },
+  "data_types": [
+    "identite",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — Les données personnelles de plus de 126 000 patients volées lors d’une cyberattaque sur une clinique privée à Saint-Étienne (10 juillet 2025)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/les-donnees-personnelles-de-plus-de-126-000-patients-volees-lors-d-une-cyberattaque-sur-une-clinique-privee-a-saint-etienne_7370827.html",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Saint-Étienne : une clinique victime d’une cyberattaque, les données de plus de 126 000 patients volées",
+      "url": "https://www.tf1info.fr/justice-faits-divers/saint-etienne-une-clinique-victime-d-une-cyberattaque-les-donnees-de-plus-de-126-000-patients-volees-2382280.html",
+      "kind": "article"
+    },
+    {
+      "label": "NextINPact — Les données de 126 000 à 530 000 patients d’un hôpital privé de Saint-Étienne dérobées",
+      "url": "https://next.ink/brief-article/les-donnees-de-126-000-a-530-000-patients-dun-hopital-prive-de-saint-etienne-derobees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le 26 juin et le 1er juillet 2025, l’Hôpital privé de la Loire à Saint-Étienne, exploité par Ramsay Santé, a subi une usurpation d’identité ayant permis l’accès frauduleux au dossier d’un praticien, selon le groupe. Un pirate, « Marak », a revendiqué le vol de données pouvant atteindre 530 000 patients. Le 10 juillet, l’établissement a informé plus de 126 000 patients par courriel, dont 40 cas critiques combinant identité, NIR et motifs d’hospitalisation. L’équipe de France info rapporte que des copies de pièces d’identité figuraient parmi les données. Une plainte a été déposée.",
+  "timeline": [
+    {
+      "date": "2025-06-26",
+      "event": "Début de la fenêtre d’intrusion par usurpation d’identité sur le système d’information de l’hôpital, close le 1er juillet selon le groupe."
+    },
+    {
+      "date": "2025-07-10",
+      "event": "L’hôpital informe plus de 126 000 patients ; le pirate « Marak » revendique jusqu’à 530 000 dossiers volés ; plainte déposée."
+    }
+  ]
+}
