@@ -1,0 +1,45 @@
+# CI/CD: build & deploy to Cloudflare Pages on every push to main.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   - CLOUDFLARE_API_TOKEN : Cloudflare API token with Cloudflare Pages: Edit
+#     permission (account-scoped). NEVER commit the token value here.
+#   - CLOUDFLARE_ACCOUNT_ID: 8bf7b7311f17611f5b95f1f4e755f8e7
+#     (not sensitive, but stored as a secret to keep config in one place)
+#
+# The Pages project "francepassoire" (production branch: main) is created
+# manually via wrangler; this workflow only deploys.
+
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: pages-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler pages deploy dist --project-name francepassoire --branch main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
