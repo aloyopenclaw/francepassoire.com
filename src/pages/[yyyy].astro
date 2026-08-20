@@ -1,0 +1,108 @@
+---
+// Page hub année (/<yyyy>/) — tâche 28 (Wave 3). Une page par année (règle
+// d'attribution de stats.ts : publication ?? revendication) comptant
+// ≥ SEUIL_HUB fiches (règle dure « aucun hub vide ») ; catalogue vide →
+// aucune page. Contrat visuel : cartes « chiffres » du prototype (barres
+// horizontales) + cartes catalogue (CatalogFilters).
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import {
+  anneeRoutes,
+  classeStatut,
+  dateAttribution,
+  formaterDate,
+  formaterNombre,
+  labelSecteur,
+  labelStatut,
+  urlFiche,
+} from '../lib/hub-view';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('catalog');
+  return anneeRoutes(entries.map((entry) => entry.data));
+}
+
+const { hub } = Astro.props;
+---
+
+<Layout title={hub.titreDocument} description={hub.description}>
+  <!-- Hero sobre (bandeau encre, kicker mono — même famille que /chiffres/) -->
+  <section class="bg-brand-ink text-brand-cream border-b-2 border-brand-ink py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <p class="font-mono text-brand-cream/70 text-sm uppercase tracking-wide mb-3">{hub.kicker}</p>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-6">{hub.titre}</h1>
+      <div class="space-y-2 max-w-3xl">
+        {hub.intro.map((phrase) => <p class="font-body text-lg leading-relaxed text-brand-cream/90">{phrase}</p>)}
+      </div>
+      <p class="font-mono text-sm mt-6 text-brand-cream/70">
+        <a href="/chiffres/" class="underline hover:text-brand-orange transition-colors">→ tous les chiffres</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Barres croisées + fiches du hub -->
+  <section class="py-12 sm:py-16 bg-brand-paper">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+      <!-- Carte de barres (contrat visuel « chiffres » du prototype) -->
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard lg:sticky lg:top-8">
+        <h2 class="font-display font-extrabold text-2xl mb-1">{hub.carteTitre}</h2>
+        <p class="text-sm font-body text-brand-ink/70 mb-8">{hub.carteSousTitre}</p>
+        <div class="space-y-4">
+          {hub.barres.map((barre) => barre.href ? (
+            <a href={barre.href} class="block group">
+              <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
+                <span>{barre.label}</span><span>{barre.count}</span>
+              </div>
+              <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
+              </div>
+            </a>
+          ) : (
+            <div class="block">
+              <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                <span>{barre.label}</span><span>{barre.count}</span>
+              </div>
+              <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Fiches du hub (cartes catalogue, lien /fuite/<slug>/) -->
+      <div class="lg:col-span-2">
+        <h2 class="font-display font-extrabold text-2xl mb-6">Les fiches <span class="font-mono text-brand-ink/60">({hub.fiches.length})</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {hub.fiches.map((fiche) => (
+            <a href={urlFiche(fiche.slug)} class="block bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard p-6 card-hover transition-all">
+              <div class="flex justify-between items-start mb-4 gap-2">
+                <span class="font-mono text-sm font-bold border-b-2 border-brand-ink pb-1">{labelSecteur(fiche.secteur)}</span>
+                <span class="font-mono text-sm text-brand-ink/60">{formaterDate(dateAttribution(fiche))}</span>
+              </div>
+              <h3 class="font-display font-extrabold text-2xl mb-2">{fiche.entity}</h3>
+              <p class="font-mono text-lg text-brand-orange drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6">{formaterNombre(fiche.volume.count)} {fiche.volume.unit}</p>
+              <span class={`${classeStatut(fiche.statut)} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm inline-flex items-center gap-1.5`}>
+                <span class={`block w-2 h-2 rounded-full ${fiche.statut === 'confirmee' ? 'bg-brand-cream' : 'bg-brand-ink animate-pulse'}`} aria-hidden="true"></span>
+                {labelStatut(fiche.statut)}
+              </span>
+            </a>
+          ))}
+        </div>
+
+        <div class="flex flex-wrap gap-4 mt-8 font-mono text-sm font-bold">
+          <a href="/" class="underline hover:text-brand-orange">→ le catalogue</a>
+          <a href="/proteger/" class="underline hover:text-brand-orange">→ comment se protéger</a>
+          <a href="/methode/" class="underline hover:text-brand-orange">→ la méthode</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center font-mono text-sm text-brand-ink/60 mt-12">
+      <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
+        Tous les chiffres viennent du catalogue public — même donnée, même méthode.
+      </span>
+    </p>
+  </section>
+</Layout>
