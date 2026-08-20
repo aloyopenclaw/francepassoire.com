@@ -1,0 +1,45 @@
+{
+  "slug": "croq-vacances-20260715",
+  "entity": "Croq'Vacances",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-15",
+    "publication": "2026-07-16"
+  },
+  "volume": {
+    "count": 72916,
+    "unit": "personnes",
+    "label": "72 916 personnes et 17 356 documents (24 Go) revendiqués ; 72 639 comptes, 71 181 contacts, 9 021 candidatures et plus de 69 000 mots de passe hachés (chiffres non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Croq'Vacances : 72 916 personnes et 24 Go de documents dans une fuite massive",
+      "url": "https://www.cyberattaque.org/croqvacances-72-916-personnes-et-24-go-de-documents-dans-une-fuite-massive/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Croqvacances : 72 916 personnes exposées",
+      "url": "https://www.zataz.com/croqvacances-72-916-personnes-exposees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur malveillant a revendiqué le 15 juillet 2026, sur un forum cybercriminel, la diffusion d'une archive de 24 Go attribuée à Croq'Vacances, organisateur français de colonies de vacances : 72 916 personnes, 17 356 documents — dont des CV d'animateurs, des pièces d'identité et des documents médicaux — ainsi que plus de 69 000 mots de passe hachés. Zataz relève également 1 728 numéros de Sécurité sociale et 1 713 références de cartes d'identité. L'authenticité est illustrée par un échantillon publié ; l'organisme n'a pas communiqué publiquement et ces chiffres ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2026-07-15",
+      "event": "Une revendication publiée sur un forum cybercriminel annonce la diffusion d'une base attribuée à Croq'Vacances : 72 916 personnes, 17 356 documents et 24 Go."
+    },
+    {
+      "date": "2026-07-16",
+      "event": "Cyberattaque.org relaie la revendication : comptes utilisateurs, contacts, candidatures, documents médicaux et justificatifs vaccinaux figurent dans le dépôt annoncé."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "sante-publique-france-20260811",
+  "entity": "Santé publique France",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-11",
+    "publication": "2026-08-11"
+  },
+  "volume": {
+    "count": 80000,
+    "unit": "personnes",
+    "label": "près de 80 000 personnes (chiffre confirmé par Santé publique France ; données de contact uniquement, sans donnée de santé)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — Un prestataire de Santé publique France victime d'une cyberattaque, près de 80 000 données de contact concernées",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/un-prestataire-de-sante-publique-france-victime-d-une-cyberattaque-pres-de-80-000-donnees-de-contact-concernees_8146196.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Cyberattaque d'un prestataire de Santé publique France : près de 80 000 données de contact ciblées",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/cyberattaque-d-un-prestataire-de-sante-publique-france-pres-de-80-000-donnees-de-contact-ciblees-20260813",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — 80 000 personnes concernées : un prestataire de Santé publique France victime d'une cyberattaque",
+      "url": "https://www.rtl.fr/actu/sante/80-000-personnes-concernees-un-prestataire-de-sante-publique-france-victime-d-une-cyberattaque-7900661942",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Santé publique France : près de 80 000 personnes exposées après une faille",
+      "url": "https://www.cyberattaque.org/sante-publique-france-pres-de-80-000-personnes-exposees-apres-une-faille/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 11 août 2026 sur un forum attribuait à Santé publique France l'extraction de données de près de 80 000 personnes. L'agence a confirmé le 13 août à l'AFP une cyberattaque visant moncoupon.santepubliquefrance.fr, plateforme de commande de documents de prévention hébergée par un prestataire et indépendante des autres sites de l'agence. Sa base contient uniquement des données de contact — adresses électronique et postale, numéro de téléphone — pour l'acheminement des commandes, et aucune donnée de santé. La plateforme a été mise en maintenance, les mots de passe supprimés et la CNIL notifiée de la violation.",
+  "timeline": [
+    {
+      "date": "2026-08-11",
+      "event": "Une revendication publiée sur un forum fait état de l'extraction des coordonnées de près de 80 000 personnes ; elle est relayée le jour même par la presse spécialisée."
+    },
+    {
+      "date": "2026-08-13",
+      "event": "Santé publique France confirme à l'AFP l'attaque de la plateforme moncoupon, hébergée par un prestataire : données de contact seulement, maintenance, mots de passe supprimés, CNIL notifiée."
+    }
+  ]
+}

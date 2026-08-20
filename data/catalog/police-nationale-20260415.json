@@ -1,0 +1,51 @@
+{
+  "slug": "police-nationale-20260415",
+  "entity": "Police nationale (plateforme e-campus)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-15",
+    "publication": "2026-04-15"
+  },
+  "volume": {
+    "count": 170000,
+    "unit": "personnes",
+    "label": "plus de 170 000 agents (policiers actifs, administratifs et contractuels) selon le courriel d'information adressé aux victimes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — La plateforme de formation en ligne de la police nationale victime d'un piratage informatique",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/la-plateforme-de-formation-en-ligne-de-la-police-nationale-victime-d-un-piratage-informatique_7940765.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Piratage de la plateforme de formation de la Police nationale : des profils de policiers consultés par un acteur malveillant",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/piratage-de-la-plateforme-de-formation-de-la-police-nationale-des-profils-de-policiers-ont-ete-consultes-par-un-acteur-malveillant_AN-202604150720.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Fuite de données à la police nationale : plus de 170 000 policiers touchés par un hack",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-la-police-nationale-les-donnees-de-17-000-policiers-ont-ete-piratees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La plateforme de formation en ligne e-campus, gérée par un prestataire extérieur pour la Police nationale, a été piratée les 17 et 18 mars 2026. La Direction générale de la Police nationale (DGPN) l'a confirmé le 15 avril : des données d'identification de policiers actifs, administratifs et contractuels ont été consultées par un acteur malveillant ; ces données ne sont pas liées aux fichiers de police. Selon 01net, un courriel d'information aux victimes évoque plus de 170 000 agents concernés et une mise en vente sur le darkweb. Des mesures correctives ont été prises et la plateforme rétablie progressivement.",
+  "timeline": [
+    {
+      "date": "2026-03-17",
+      "event": "La plateforme de formation e-campus, gérée par un prestataire extérieur, est piratée « entre le 17 et le 18 mars », selon la DGPN."
+    },
+    {
+      "date": "2026-04-15",
+      "event": "La DGPN confirme l'incident : des données d'identification de policiers actifs, administratifs et contractuels ont été consultées par un acteur malveillant, sans lien avec les fichiers de police."
+    },
+    {
+      "date": "2026-04-16",
+      "event": "Selon 01net, un courriel d'information aux victimes fait état de plus de 170 000 agents concernés ; des données sont présentées comme mises en vente sur le darkweb."
+    }
+  ]
+}

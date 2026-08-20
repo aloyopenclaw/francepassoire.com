@@ -1,0 +1,43 @@
+{
+  "slug": "stade-francois-20260805",
+  "entity": "Stade Français Paris",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "qilin",
+  "dates": {
+    "revendication": "2026-08-05",
+    "publication": "2026-08-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Aucun volume annoncé : le groupe Qilin a publié 18 photographies de pièces d'identité de joueurs en guise de preuve, sans chiffrer les personnes concernées"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Équipe — Top 14 : le Stade Français victime d'une cyberattaque, les hackers réclament une rançon",
+      "url": "https://www.lequipe.fr/Rugby/Actualites/Top-14-le-stade-francais-victime-d-une-cyberattaque-les-hackers-reclament-une-rancon/1709358",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Données volées, plainte déposée : ce que l'on sait de la cyberattaque au Stade Français",
+      "url": "https://actu.fr/sports/rugby/top-14/donnees-volees-plainte-deposee-ce-que-l-on-sait-de-la-cyberattaque-au-stade-francais_64637756.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le club de rugby du Stade Français apparaît le 5 août 2026 sur le site d'extorsion du groupe de rançongiciels Qilin, avec un compte à rebours de dix jours et 18 photographies de passeports et cartes d'identité présentées comme appartenant à des joueurs. Le club confirme le 6 août une cyberattaque : dispositif de crise activé avec des experts indépendants, autorités informées, plainte déposée, restauration depuis des sauvegardes saines. Il ne confirme pas la nature des données potentiellement exfiltrées ; billetterie et boutique en ligne fonctionnent normalement selon le club. Les cybercriminels exigent une rançon avant le 15 août.",
+  "timeline": [
+    {
+      "date": "2026-08-05",
+      "event": "Le Stade Français apparaît sur le site de fuite de Qilin avec un compte à rebours de dix jours et 18 pièces d'identité de joueurs publiées en échantillon."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Le club confirme l'attaque, active sa cellule de crise, dépose plainte et restaure son environnement informatique depuis des sauvegardes saines."
+    }
+  ]
+}
