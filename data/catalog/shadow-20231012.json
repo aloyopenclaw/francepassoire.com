@@ -1,0 +1,59 @@
+{
+  "slug": "shadow-20231012",
+  "entity": "Shadow",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-12",
+    "publication": "2023-10-12",
+    "confirmation": "2023-10-12"
+  },
+  "volume": {
+    "count": 543295,
+    "unit": "personnes",
+    "label": "543 295 clients selon le jeu de données vérifié par Have I Been Pwned (adresses e-mail et postales, noms, dates de naissance) ; « environ 500 000 » utilisateurs selon IT Connect ; Shadow n'a pas publié de décompte"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BleepingComputer — Shadow PC warns of data breach as hacker tries to sell gamers' info (12 octobre 2023)",
+      "url": "https://www.bleepingcomputer.com/news/security/shadow-pc-warns-of-data-breach-as-hacker-tries-to-sell-gamers-info/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNET.fr — Voici comment le spécialiste français du cloud gaming Shadow s'est fait voler vos données (13 octobre 2023)",
+      "url": "https://www.zdnet.fr/actualites/voici-comment-le-specialiste-francais-du-cloud-gaming-shadow-s-est-fait-voler-vos-donnees-39961836.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Fuite de données chez Shadow : quelles données sont concernées, comment se protéger (13 octobre 2023)",
+      "url": "https://www.clubic.com/actualite-488146-fuite-de-donnees-chez-shadow-quelles-donnees-sont-concernees-comment-se-proteger.html",
+      "kind": "article"
+    },
+    {
+      "label": "MacGeneration — Shadow victime d'une attaque, des données privées des clients dérobées (13 octobre 2023)",
+      "url": "https://www.macg.co/ailleurs/2023/10/shadow-victime-dune-attaque-des-donnees-privees-des-clients-derobees-139795",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Le Français Shadow victime d'une importante fuite de données (13 octobre 2023)",
+      "url": "https://www.it-connect.fr/shadow-victime-dun-piratage-les-donnees-personnelles-de-500-000-utilisateurs-ont-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Shadow, service français de PC dans le cloud, prévient ses clients le 12 octobre 2023 d'une attaque « hautement sophistiquée » survenue fin septembre : un employé trompé a téléchargé un malware déguisé en jeu Steam, ouvrant l'accès à un outil interne, selon ZDNET. Un pirate tente d'écouler les données d'environ un demi-million de clients : noms, adresses e-mail et postales, dates de naissance. Mots de passe et données bancaires ne sont pas concernés selon l'entreprise, qui recommande la double authentification. L'exfiltration est confirmée par la notification officielle aux clients.",
+  "timeline": [
+    {
+      "date": "2023-10-12",
+      "event": "Shadow avertit ses clients d'une attaque « hautement sophistiquée » ayant exposé leurs données personnelles."
+    },
+    {
+      "date": "2023-10-12",
+      "event": "BleepingComputer documente la vente tentative des données d'un demi-million de clients par un pirate."
+    },
+    {
+      "date": "2023-10-13",
+      "event": "ZDNET détaille le mode opératoire : malware déguisé en jeu Steam téléchargé par un employé trompé."
+    }
+  ]
+}

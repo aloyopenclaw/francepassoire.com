@@ -1,0 +1,40 @@
+{
+  "slug": "basic-fit-20260413",
+  "entity": "Basic-Fit France",
+  "siren": "798233011",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-13",
+    "publication": "2026-04-13"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "personnes",
+    "label": "environ 1 million de membres selon l'enseigne, dont des coordonnées bancaires exposées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — 1 million de membres Basic-Fit piratés : leurs données (dont bancaires) dans la nature",
+      "url": "https://frenchbreaches.com/blog/1-million-de-membres-basic-fit-pirates-leurs-donnees-dont-bancaires-dans-la-nature",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Basic-Fit : 1 million de clients touchés, des coordonnées bancaires exposées après une cyberattaque",
+      "url": "https://www.cyberattaque.org/basic-fit-1-million-de-clients-touches-des-coordonnees-bancaires-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 avril 2026, Basic-Fit, chaîne de salles de sport présente en France, a confirmé une cyberattaque ayant entraîné une fuite de données concernant environ 1 million de membres. Des coordonnées bancaires figurent parmi les données exposées, selon le relais de veille ayant contacté l'enseigne. Les données d'identité et de contact des adhérents sont également concernées. L'entreprise n'a pas précisé publiquement le mécanisme de l'attaque ni les mesures engagées.",
+  "timeline": [
+    {
+      "date": "2026-04-13",
+      "event": "Basic-Fit confirme une cyberattaque : environ 1 million de membres concernés, dont des coordonnées bancaires exposées."
+    }
+  ]
+}

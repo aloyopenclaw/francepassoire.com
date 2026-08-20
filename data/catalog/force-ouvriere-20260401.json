@@ -1,0 +1,47 @@
+{
+  "slug": "force-ouvriere-20260401",
+  "entity": "Force Ouvrière (FO)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-01",
+    "publication": "2026-04-01"
+  },
+  "volume": {
+    "count": 161000,
+    "unit": "personnes",
+    "label": "plus de 161 000 membres du syndicat selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Force Ouvrière : plus de 161 000 membres exposés",
+      "url": "https://frenchbreaches.com/blog/fuite-de-donnees-chez-force-ouvriere-plus-de-161-000-membres-exposes",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Canard Enchaîné — Cyberattaque : piratage de masse (populaire) chez FO",
+      "url": "https://www.lecanardenchaine.fr/technologie-sciences/53556-alerte-piratage-de-masse-populaire-chez-fo",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — FO : plus de 160 000 profils exposés dans une fuite de données",
+      "url": "https://www.cyberattaque.org/fo-plus-de-160-000-profils-exposes-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début avril 2026, des données de plus de 161 000 membres de Force Ouvrière sont mises en vente sur des forums cybercriminels. Les échantillons analysés contiennent des identités, adresses, téléphones et courriels déjà en circulation. Selon un relais de veille, l'accès au fichier des adhérents aurait été obtenu après l'ouverture d'un courriel frauduleux par une salariée. Le syndicat a porté plainte, confirment Le Canard enchaîné et les relais de veille. Le volume annoncé n'est pas confirmé officiellement.",
+  "timeline": [
+    {
+      "date": "2026-04-01",
+      "event": "Une mise en vente de données de plus de 161 000 membres de FO est relayée ; des échantillons circulent sur des forums."
+    },
+    {
+      "date": "2026-04-01",
+      "event": "Le syndicat porte plainte après avoir pris connaissance de la fuite, selon la presse."
+    }
+  ]
+}

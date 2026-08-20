@@ -1,0 +1,54 @@
+{
+  "slug": "truffaut-20240831",
+  "entity": "Truffaut",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-31",
+    "publication": "2024-09-11",
+    "confirmation": "2024-09-11"
+  },
+  "volume": {
+    "count": 277000,
+    "unit": "enregistrements",
+    "label": "277 000 commandes clients revendiquées par le vendeur — près de 280 000 entrées selon ZDNET — ; Truffaut n'a pas corroboré ce chiffre"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "ZDNET.fr — Fuites de données chez Boulanger, Cultura ou encore Truffaut : la piste du piratage d'un prestataire externe (13 septembre 2024)",
+      "url": "https://www.zdnet.fr/actualites/fuites-de-donnees-chez-boulanger-cultura-ou-encore-truffaut-la-piste-du-piratage-dun-prestataire-externe-397030.htm",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Des données de clients de Truffaut dérobées après une cyberattaque visant l'un de ses prestataires (11 septembre 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/des-donnees-de-clients-de-truffaut-derobees-apres-une-cyberattaque-visant-l-un-de-ses-prestataires_6775963.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Après Boulanger et Cultura, l'enseigne de jardinage Truffaut à son tour victime d'une cyberattaque (11 septembre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/apres-boulanger-et-cultura-lenseigne-de-jardinage-truffaut-a-son-tour-victime-dune-cyberattaque-11-09-2024-5T3BJQNUNFGM5PUXM6QXVYNBMQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "RMC/BFM Tech — Cyberattaque : après Boulanger et Cultura, Truffaut également touché par un vol de données de clients (11 septembre 2024)",
+      "url": "https://rmc.bfmtv.com/actualites/tech/cyberattaque-apres-boulanger-et-cultura-truffaut-egalement-touche-par-un-vol-de-donnees-de-clients_AN-202409110836.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Truffaut, enseigne française de jardinerie, confirme le 11 septembre 2024 un vol de données client à la suite d'une cyberattaque contre un prestataire externe chargé des commandes. Le 31 août, un compte proposait déjà à la vente une base de près de 280 000 entrées, égrenée avec d'autres enseignes françaises. Y figurent noms, prénoms, téléphones, e-mails, adresses et contenu des commandes en ligne. Aucune donnée bancaire ni mot de passe n'est concerné selon l'enseigne, qui a déposé plainte et notifié la CNIL. Seuls les clients du site web sont concernés.",
+  "timeline": [
+    {
+      "date": "2024-08-31",
+      "event": "Un compte de revente met en vente sur un forum une base Truffaut de près de 280 000 entrées, première d'une série d'enseignes françaises."
+    },
+    {
+      "date": "2024-09-11",
+      "event": "Truffaut confirme le vol de données de clients via un prestataire cyberattaqué : identité, coordonnées, contenu des commandes."
+    },
+    {
+      "date": "2024-09-11",
+      "event": "L'enseigne dépose plainte et notifie la CNIL ; les achats en magasin seul ne sont pas concernés."
+    }
+  ]
+}

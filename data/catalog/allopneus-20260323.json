@@ -1,0 +1,43 @@
+{
+  "slug": "allopneus-20260323",
+  "entity": "Allopneus",
+  "siren": "327125878",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-23",
+    "publication": "2026-03-28"
+  },
+  "volume": {
+    "count": 453000,
+    "unit": "personnes",
+    "label": "453 000 clients selon la revendication, sur douze ans de données"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage Allopneus : 453 000 clients exposés, 12 ans de données sur le dark web",
+      "url": "https://frenchbreaches.com/blog/piratage-allopneus-453-000-clients-exposes-12-ans-de-donnees-sur-le-dark-web",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Allopneus : 453 000 clients touchés par une fuite massive",
+      "url": "https://www.cyberattaque.org/allopneus-453-000-clients-touches-par-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 mars 2026, une base présentée comme issue d'Allopneus, site français de vente de pneus, est mise en vente sur le dark web : 453 000 clients concernés sur douze ans de données, selon la revendication. Identités, coordonnées et historiques de commandes figurent dans les échantillons analysés par les relais de veille. Le 27 mars, l'entreprise a confirmé un incident de sécurité dans un courriel adressé à ses clients. L'étendue exacte des données concernées n'est pas établie publiquement.",
+  "timeline": [
+    {
+      "date": "2026-03-23",
+      "event": "Une base présentée comme issue d'Allopneus est mise en vente : 453 000 clients sur douze ans de données."
+    },
+    {
+      "date": "2026-03-27",
+      "event": "Allopneus notifie un incident de sécurité par courriel à ses clients, confirmé ensuite par les relais de veille."
+    }
+  ]
+}

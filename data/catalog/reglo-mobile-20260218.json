@@ -1,0 +1,58 @@
+{
+  "slug": "reglo-mobile-20260218",
+  "entity": "Réglo Mobile",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-18",
+    "publication": "2026-02-23"
+  },
+  "volume": {
+    "count": 358000,
+    "unit": "personnes",
+    "label": "358 000 clients selon la mise en vente relayée par les veilleurs ; 123 000 codes PUK et 124 000 données bancaires partielles selon les mêmes analyses"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "01net — Fuite de données : un autre opérateur français a été piraté",
+      "url": "https://www.01net.com/actualites/fuite-donnees-autre-operateur-francais-pirate.html",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Piratage Réglo Mobile : de nombreuses infos personnelles, dont des données bancaires, sont dans la nature",
+      "url": "https://www.commentcamarche.net/securite/piratage/37135-piratage-reglo-mobile/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite de données chez Réglo Mobile",
+      "url": "https://www.zataz.com/fuite-de-donnees-chez-reglo-mobile/",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Geek — Un autre opérateur français a été piraté, vous êtes peut-être concerné",
+      "url": "https://www.journaldugeek.com/2026/02/23/un-autre-operateur-francais-a-ete-pirate-vous-etes-peut-etre-concerne/",
+      "kind": "article"
+    }
+  ],
+  "description": "Réglo Mobile, opérateur mobile virtuel du groupe E.Leclerc, informe ses clients le 18 février 2026 qu'un prestataire subit depuis le 13 février une attaque ayant entraîné une extraction non autorisée de données. Selon la mise en vente relayée par les veilleurs, 358 000 clients sont concernés : identité, coordonnées, relevés de communications, codes PUK pour environ 123 000 d'entre eux, et données bancaires partiellement masquées (IBAN, carte, RUM) pour environ 124 000. L'opérateur indique que les mots de passe ne sont pas concernés, a corrigé la faille, notifié la CNIL et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-02-13",
+      "event": "Une attaque informatique débute chez un prestataire de Réglo Mobile, entraînant une extraction non autorisée de données clients."
+    },
+    {
+      "date": "2026-02-18",
+      "event": "L'opérateur informe ses clients par SMS et communiqué ; la CNIL est notifiée et une plainte est déposée."
+    },
+    {
+      "date": "2026-02-23",
+      "event": "La presse relaie la mise en vente revendiquée de données de 358 000 clients, incluant codes PUK et données bancaires partielles."
+    }
+  ]
+}

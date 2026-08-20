@@ -2,9 +2,10 @@
 //
 // Parcourt les adapters enregistrés (adapter.ts), insère les candidats dans
 // D1 (status NEW, id = crypto.randomUUID()) et maintient l'état par source
-// dans KV (RUN_STATE) : last_run / last_success / guid_set (contrat
-// placeholder pour le dédup guid des tâches 15+) / circuit breaker
-// (3 échecs consécutifs → disabled + alerte console.error).
+// dans KV (RUN_STATE) : last_run / last_success / guid_set (dédup guid
+// systémique : les guids vus sont repassés à l'adapter ET filtrés par le
+// runner lui-même) / circuit breaker (3 échecs consécutifs → disabled +
+// alerte console.error).
 //
 // Accès D1/KV uniquement via l'env injecté — interfaces structurelles
 // minimales (pas de dépendance @cloudflare/workers-types), donc testable
@@ -47,6 +48,10 @@ const MAX_ATTEMPTS = 3;
 /** Runs consécutifs en échec avant ouverture du circuit breaker. */
 const BREAKER_THRESHOLD = 3;
 const BACKOFF_BASE_MS = 200;
+/** Taille max de guid_set par source (FIFO : les plus anciens sont évincés) —
+ *  borne la taille de la valeur KV sans jamais dépasser le volume d'un flux
+ *  complet (CNIL : 390 sanctions distinctes). */
+const GUID_SET_MAX = 500;
 
 export interface SourceRunResult {
   adapter: string;
@@ -66,7 +71,7 @@ interface SourceState {
   last_success: string | null;
   consecutive_failures: number;
   disabled: boolean;
-  /** Placeholder : les adapters (T15+) y enregistreront les guids vus pour le dédup. */
+  /** Guids des candidats déjà insérés (≤ GUID_SET_MAX, FIFO) — dédup guid. */
   guid_set: string[];
 }
 
@@ -135,13 +140,31 @@ async function runSource(
   let lastError: unknown = null;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
-      const candidates = await adapter.fetchCandidates(fetchFn);
-      const inserted = await insertCandidates(env.DB, candidates);
+      const knownGuids = new Set(state.guid_set);
+      const fetched = await adapter.fetchCandidates(fetchFn, knownGuids);
+      // Filet runner : les adapters qui ignorent knownGuids (paramètre
+      // optionnel du contrat) voient leurs candidats déjà vus filtrés ici
+      // aussi — le dédup est systémique, pas seulement par adapter.
+      const nouveaux = fetched.filter(
+        (candidate) => candidate.guid === undefined || !knownGuids.has(candidate.guid),
+      );
+      const inserted = await insertCandidates(env.DB, nouveaux);
+
+      const guidSet = state.guid_set.slice();
+      const vus = new Set(guidSet);
+      for (const candidate of nouveaux) {
+        if (candidate.guid !== undefined && !vus.has(candidate.guid)) {
+          vus.add(candidate.guid);
+          guidSet.push(candidate.guid);
+        }
+      }
+
       await writeState(env.RUN_STATE, adapter.id, {
         ...state,
         last_run: new Date().toISOString(),
         last_success: new Date().toISOString(),
         consecutive_failures: 0,
+        guid_set: guidSet.slice(-GUID_SET_MAX),
       });
       return { adapter: adapter.id, inserted, failed: false, skipped: false };
     } catch (error) {

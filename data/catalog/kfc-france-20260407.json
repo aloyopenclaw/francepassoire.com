@@ -1,0 +1,39 @@
+{
+  "slug": "kfc-france-20260407",
+  "entity": "KFC France",
+  "siren": "380744870",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-07",
+    "publication": "2026-04-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "Nombre non communiqué ; « des milliers de comptes » du programme de fidélité Colonel Club selon les relais de veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — KFC France hacké : des milliers de comptes Colonel Club potentiellement exposés",
+      "url": "https://frenchbreaches.com/blog/kfc-france-hacke-des-milliers-de-comptes-colonel-club-potentiellement-exposes",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — KFC : fuite de données sur le programme fidélité Colonel Club",
+      "url": "https://www.cyberattaque.org/kfc-fuite-de-donnees-sur-le-programme-fidelite-colonel-club/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début avril 2026, KFC France a notifié par courriel les membres de son programme de fidélité Colonel Club d'une fuite de données. Selon les relais de veille, des milliers de comptes sont potentiellement exposés, avec des données d'identité et de coordonnées. L'enseigne a informé directement les membres concernés ; elle n'a pas communiqué publiquement de volume ni de périmètre précis. Les chiffres annoncés par les relais ne sont pas confirmés par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2026-04-07",
+      "event": "KFC France notifie par courriel les membres du programme Colonel Club d'une fuite de données ; les relais évoquent des milliers de comptes."
+    }
+  ]
+}

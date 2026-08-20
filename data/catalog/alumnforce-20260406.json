@@ -1,0 +1,42 @@
+{
+  "slug": "alumnforce-20260406",
+  "entity": "AlumnForce",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-06",
+    "publication": "2026-04-07"
+  },
+  "volume": {
+    "count": 2700000,
+    "unit": "personnes",
+    "label": "2,7 millions d'étudiants et diplômés selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — AlumnForce : 2,7 millions d'étudiants et diplômés exposés",
+      "url": "https://www.cyberattaque.org/alumnforce-2-7-millions-etudiants-exposes/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — 2,7 millions d'étudiants et diplômés exposés : une fuite AlumForce en vente",
+      "url": "https://frenchbreaches.com/blog/2-7-millions-detudiants-et-diplomes-exposes-une-fuite-alumforce-en-vente",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début avril 2026, une fuite touchant AlumnForce, plateforme française de gestion de réseaux d'anciens élèves et de communautés professionnelles, est mise en vente. Selon la revendication, 2,7 millions d'étudiants et diplômés sont exposés, les données provenant d'un service utilisé par des universités et écoles. Identités et coordonnées figurent dans les échantillons analysés. La revendication n'est pas confirmée publiquement par l'entreprise à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-04-06",
+      "event": "Une fuite présentée comme issue d'AlumnForce est mise en vente : 2,7 millions d'étudiants et diplômés selon le vendeur."
+    },
+    {
+      "date": "2026-04-07",
+      "event": "Les relais de veille détaillent la base et son origine présumée, un service de réseaux d'anciens élèves."
+    }
+  ]
+}

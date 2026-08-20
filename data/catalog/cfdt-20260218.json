@@ -1,0 +1,62 @@
+{
+  "slug": "cfdt-20260218",
+  "entity": "Confédération française démocratique du travail (CFDT)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-02-18",
+    "publication": "2026-02-19",
+    "confirmation": "2026-02-18"
+  },
+  "volume": {
+    "count": 1431906,
+    "unit": "personnes",
+    "label": "1 431 906 adhérents et anciens adhérents selon la mise en vente revendiquée ; le syndicat compte environ 640 000 adhérents en exercice"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CFDT — La CFDT victime d'une cyberattaque (déclaration du 18 février 2026, PDF)",
+      "url": "https://www.cfdt.fr/upload/media-library/2026/02/18/3c5ad034-e154-4fc7-88b1-7bb60bc0375a.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CFDT — Cyberattaque à l'encontre de la CFDT : les mesures mises en place",
+      "url": "https://www.cfdt.fr/sinformer/toutes-les-actualites-par-dossiers-thematiques/cyberattaque-a-l-encontre-de-la-cfdt-les-mesures-mises-en-place",
+      "kind": "officiel"
+    },
+    {
+      "label": "01net — Le syndicat CFDT a été piraté, les informations des adhérents volées",
+      "url": "https://www.01net.com/actualites/enieme-fuite-donnees-france-syndicat-cfdt-pirate-informations-adherents-volees.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — La CFDT annonce avoir été victime d'une cyberattaque",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/la-cfdt-annonce-avoir-ete-victime-d-une-cyberattaque-le-syndicat-aurait-recu-deux-revendications-de-piratage-et-confirme-que-des-donnees-personnelles-ont-ete-derobees_AV-202602190482.html",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 1 431 906 adhérents concernés par une fuite de données chez CFDT",
+      "url": "https://fuitesinfos.fr/article/2026-02-18-cfdt",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 17 au 18 février 2026, un attaquant accède à l'application Cnas de la CFDT via le compte piraté d'un responsable départemental, puis dépasse les droits de ce compte. Le syndicat confirme un téléchargement illégal de fichiers : noms, prénoms, adresses postales et appartenance syndicale d'adhérents et d'anciens adhérents. Un acteur met ensuite en vente 1 431 906 dossiers sur un forum, un volume que le syndicat ne confirme pas. La CFDT a isolé le serveur, notifié la CNIL et l'ANSSI, et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-02-17",
+      "event": "En pleine nuit, un cyberattaquant utilise des identifiants piratés pour accéder à l'application Cnas et étendre son accès au-delà du département d'origine."
+    },
+    {
+      "date": "2026-02-18",
+      "event": "La CFDT rend l'incident public, isole le serveur ; la CNIL et l'ANSSI sont informées et une plainte est déposée."
+    },
+    {
+      "date": "2026-02-19",
+      "event": "La presse relaie deux revendications, dont une mise en vente de données de 1,4 million de syndiqués et d'anciens syndiqués."
+    }
+  ]
+}

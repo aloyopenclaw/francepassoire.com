@@ -1,0 +1,49 @@
+{
+  "slug": "zadig-et-voltaire-20240605",
+  "entity": "Zadig & Voltaire",
+  "siren": "409115870",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-06-05",
+    "publication": "2024-06-05"
+  },
+  "volume": {
+    "count": 586895,
+    "unit": "enregistrements",
+    "label": "586 895 adresses e-mail uniques et 638 726 dossiers clients — noms, e-mails, adresses postales, téléphones, genres — selon la publication sur forum relayée par 01net et le jeu de données vérifié par Have I Been Pwned ; volumes non confirmés par la marque"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "01net — Plus de 600 000 données personnelles volées : une cyberattaque aurait frappé la marque française Zadig & Voltaire (5 juin 2024)",
+      "url": "https://www.01net.com/actualites/plus-600000-donnees-personnelles-volees-cyberattaque-frappe-marque-francaise-zadig-voltaire.html",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Cyberattaque Zadig et Voltaire : fuite de données de 600 000 clients (5 juin 2024)",
+      "url": "https://www.it-connect.fr/cyberattaque-zadig-et-voltaire-fuite-de-donnees-600000-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "Have I Been Pwned — Zadig & Voltaire Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/ZadigVoltaire",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 juin 2024, un cybercriminel publie sur un forum une base revendiquée de clients de Zadig & Voltaire, marque française de prêt-à-porter : plus de 600 000 dossiers avec noms, e-mails, adresses postales, téléphones et genres, relèvent 01net et IT-Connect. Contactée via Have I Been Pwned, la marque indique que l'incident s'est produit plus de six mois auparavant et que « toutes les mesures ont été prises rapidement ». Elle ne publie pas de communiqué sur le volume. L'exfiltration est établie par la veille, pas par une source officielle.",
+  "timeline": [
+    {
+      "date": "2023-11-16",
+      "event": "Date de l'incident à l'origine de la base, selon la marque : les faits se seraient produits plus de six mois avant la publication."
+    },
+    {
+      "date": "2024-06-05",
+      "event": "Un cybercriminel publie sur un forum plus de 600 000 dossiers clients revendiqués de Zadig & Voltaire."
+    },
+    {
+      "date": "2024-06-17",
+      "event": "Le jeu de données vérifié — 586 895 adresses e-mail uniques — est intégré à Have I Been Pwned."
+    }
+  ]
+}

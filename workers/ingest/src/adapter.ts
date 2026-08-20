@@ -31,16 +31,29 @@ export interface Candidate {
   entity_name: string | null;
   dedup_score?: number | null;
   status?: CandidateStatus;
+  /**
+   * Guid stable de dédup calculé par l'adapter (jointure déterministe des
+   * champs identifiants de la source, cf. guidSanction dans cnil.ts). Le
+   * runner l'enregistre dans guid_set (KV RUN_STATE) et filtre les candidats
+   * déjà vus — optionnel : un candidat sans guid passe à chaque run.
+   */
+  guid?: string;
 }
 
 /**
  * Adapter source : fetch via la fonction injectée (testable avec un mock),
  * normalisation, retourne des candidats. Ne touche ni D1 ni KV — le runner
  * (index.ts) s'en charge, y compris retries et circuit breaker.
+ *
+ * @param knownGuids Optionnel : guids déjà vus (guid_set KV persisté par le
+ *        runner) — un adapter cooperatif filtre lui-même les candidats
+ *        correspondants ; le runner applique de toute façon un filet
+ *        équivalent après le fetch (les adapters qui ignorent le paramètre
+ *        restent conformes au contrat).
  */
 export interface SourceAdapter {
   id: string;
-  fetchCandidates(fetchFn: typeof fetch): Promise<Candidate[]>;
+  fetchCandidates(fetchFn: typeof fetch, knownGuids?: Set<string>): Promise<Candidate[]>;
 }
 
 /**
@@ -53,8 +66,9 @@ export interface SourceAdapter {
  *
  * hibpDiffAdapter() est instancié sans snapshot précédent : chaque run fetch
  * le catalogue (amorçage de l'état) et renvoie [] — le premier diff réel
- * exigera la persistance du snapshot par le runner (T47). Idem pour les
- * gardes guid_set (RSS) et cadence CNIL (isDailyRateOk) : à câbler au runner.
+ * exigera la persistance du snapshot par le runner (T47). Les gardes guid_set
+ * (dédup guid systémique) et cadence CNIL (isDailyRateOk) sont câblées au
+ * runner depuis le fix soak de la tâche 20.
  */
 export const adapters: SourceAdapter[] = [
   ransomwareLiveAdapter,
