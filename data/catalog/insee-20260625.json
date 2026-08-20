@@ -1,0 +1,58 @@
+{
+  "slug": "insee-20260625",
+  "entity": "Institut national de la statistique et des études économiques (Insee)",
+  "siren": "120027016",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-25",
+    "publication": "2026-06-26",
+    "confirmation": "2026-06-26"
+  },
+  "volume": {
+    "count": 12800,
+    "unit": "personnes",
+    "label": "environ 12 800 personnes travaillant, ayant travaillé ou issues des corps de l'Insee concernées selon le communiqué officiel ; l'auteur de la revendication avance 12 796 enregistrements"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "insee.fr — Incident de cybersécurité sur l'annuaire des agents de l'Insee (communiqué du 26 juin 2026)",
+      "url": "https://www.insee.fr/fr/information/9016741",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — Le piratage de l'Insee expose les identités de 12 800 agents",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-piratage-de-l-insee-expose-les-identites-de-12-800-agents-100574.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien (AFP) — Cybersécurité : l'Insee visée par une attaque informatique, 12 800 personnes affectées",
+      "url": "https://www.leparisien.fr/societe/cybersecurite-linsee-visee-par-une-attaque-informatique-12-800-personnes-affectees-26-06-2026-WLOGQVOD2RASPFIXMKJMCP76C4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ostraca (blog de veille) — Fuite INSEE 2026 : 12 800 agents exposés",
+      "url": "https://blog.ostraca.fr/fuites-de-donnees/fuite-insee-annuaire-agents-2026/",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Insee détecte le 19 juin 2026 une attaque contre l'annuaire interne de ses agents. Le 25 juin, un acteur pseudonyme « Saturne » diffuse sur un forum une base de 12 796 enregistrements présentée comme un export de cet annuaire. Le 26 juin, l'institut confirme une violation portant sur l'identité et les coordonnées professionnelles d'environ 12 800 personnes travaillant, ayant travaillé ou issues des corps de l'Insee. Les mots de passe, données bancaires et numéros de Sécurité sociale ne sont pas concernés, et aucune donnée statistique collectée n'est compromise. La CNIL est saisie et une plainte déposée.",
+  "timeline": [
+    {
+      "date": "2026-06-19",
+      "event": "L'Insee détecte l'incident sur l'annuaire interne de ses agents et met en œuvre des mesures immédiates pour stopper l'attaque."
+    },
+    {
+      "date": "2026-06-25",
+      "event": "Un acteur nommé « Saturne » revendique sur un forum la diffusion d'une base d'environ 12 796 enregistrements issue de l'annuaire trombi.insee.fr."
+    },
+    {
+      "date": "2026-06-26",
+      "event": "Communiqué officiel : violation des données d'identité et des coordonnées professionnelles d'environ 12 800 personnes ; CNIL saisie, plainte déposée, ANSSI associée."
+    }
+  ]
+}

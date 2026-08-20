@@ -1,0 +1,57 @@
+{
+  "slug": "ffhandball-20260810",
+  "entity": "Fédération française de handball (FFHandball)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-10",
+    "publication": "2026-08-12"
+  },
+  "volume": {
+    "count": 1367197,
+    "unit": "enregistrements",
+    "label": "1 367 197 enregistrements d'adhérents et environ 311 000 licences et documents personnels (dont pièces d'identité) revendiqués par ZeroBytes ; la fédération évalue encore la portée exacte"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FFHandball (communiqué officiel) — Acte de cyber malveillance visant le logiciel fédéral de la FFHandball",
+      "url": "https://www.ffhandball.fr/actualite/lactualite-federale/acte-de-cyber-malveillance-visant-le-logiciel-federal-de-la-ffhandball/",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque revendiquée contre la Fédération Française de Handball : les données de 1,36 million d'adhérents potentiellement compromises",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-handball-msn9vcfexvsnlnk1ha",
+      "kind": "revendication"
+    },
+    {
+      "label": "ZDNet France — Cyberattaque à la FFHandball : la série noire des fédérations sportives se poursuit",
+      "url": "https://www.zdnet.fr/actualites/cyberattaque-a-la-ffhandball-la-serie-noire-des-federations-sportives-se-poursuit-499744.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Une nouvelle fuite pour la FF Handball",
+      "url": "https://www.zataz.com/une-nouvelle-fuite-pour-la-ff-handball/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 août 2026, ZeroBytes revendique l'accès à un outil interne de la FFHandball via des identifiants compromis, puis le contournement du filtre limitant les recherches aux licenciés d'un seul club. Il met en vente 1 367 197 enregistrements d'adhérents, dont des mineurs, et annonce environ 311 000 licences et documents personnels, cartes d'identité et passeports compris. Le même jour, la fédération détecte un accès non autorisé à Gest'Hand, son logiciel fédéral, et suspend l'outil ; elle notifie la CNIL et signale l'incident à l'ANSSI. L'ampleur revendiquée n'est pas confirmée ; l'évaluation de la portée exacte est en cours.",
+  "timeline": [
+    {
+      "date": "2026-08-10",
+      "event": "ZeroBytes revendique sur un forum l'extraction de 1 367 197 enregistrements d'adhérents via un outil interne ; la fédération détecte le même jour un accès non autorisé à Gest'Hand."
+    },
+    {
+      "date": "2026-08-11",
+      "event": "Communiqué de la fédération : accès à Gest'Hand suspendu, actions correctives engagées avec le prestataire, notification à la CNIL et signalement à l'ANSSI."
+    },
+    {
+      "date": "2026-08-12",
+      "event": "La presse spécialisée relaie la revendication ; la fédération précise que l'évaluation de la portée exacte se poursuit et que les personnes concernées seront informées."
+    }
+  ]
+}
