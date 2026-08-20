@@ -90,6 +90,31 @@ describe('ransomware.live adapter — cassette fixture', () => {
   });
 });
 
+describe('ransomware.live adapter — dédup guid (pattern cnil, fix soak)', () => {
+  it('chaque candidat FR porte un guid stable et distinct (victim ⊕ group ⊕ date)', async () => {
+    const fetchFn = vi.fn(async () => jsonResponse(fixtureText));
+    const passe1 = await ransomwareLiveAdapter.fetchCandidates(fetchFn);
+    const passe2 = await ransomwareLiveAdapter.fetchCandidates(fetchFn);
+
+    expect(passe1.map((c) => c.guid)).toEqual(passe2.map((c) => c.guid)); // stable d'une passe à l'autre
+    expect(new Set(passe1.map((c) => c.guid)).size).toBe(frVictims.length); // les 3 FR distincts
+  });
+
+  it('guid connu filtré via knownGuids, les autres passent', async () => {
+    const tous = await ransomwareLiveAdapter.fetchCandidates(vi.fn(async () => jsonResponse(fixtureText)));
+    const cible = tous[0]?.guid as string; // frVictims.length ≥ 2 (garde-fou provenance)
+    expect(cible).toBeTruthy();
+
+    const dedupliques = await ransomwareLiveAdapter.fetchCandidates(
+      vi.fn(async () => jsonResponse(fixtureText)),
+      new Set([cible]),
+    );
+
+    expect(dedupliques).toHaveLength(frVictims.length - 1);
+    expect(dedupliques.map((c) => c.guid)).not.toContain(cible);
+  });
+});
+
 describe('ransomware.live adapter — réponses inutilisables (≠ panne)', () => {
   it('retourne [] sur HTTP 500 sans lever (le circuit breaker reste au repos)', async () => {
     const fetchFn = vi.fn(async () => jsonResponse('internal server error', 500));
