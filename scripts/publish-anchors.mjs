@@ -141,13 +141,32 @@ function enregistrerAncrages(cheminDoc, lignes) {
       .map((l) => l.split('|')[1]?.trim())
       .filter((v) => v && !v.startsWith('-') && v !== 'ancrage'),
   );
-  const ajouts = lignes.filter(([ancrage]) => !existants.has(ancrage));
+  // « tête » est une référence MOBILE : à chaque append, la tête du registre
+  // change — la ligne doit être REMPLACÉE (jamais ignorée). Les lignes par
+  // fiche, elles, sont permanentes (ignorées si déjà présentes).
+  const lignesTete = lignes.filter(([ancrage]) => ancrage === 'tête');
+  const ajouts = lignes.filter(([ancrage]) => ancrage !== 'tête' && !existants.has(ancrage));
   if (ajouts.length > 0) {
     const rendus = ajouts.map(([a, e, id]) => `| ${a} | ${e} | ${id} |`);
     lignesFichier.splice(fin, 0, ...rendus);
+  }
+  let teteRemplacee = 0;
+  if (lignesTete.length > 0) {
+    const [teteEmpreinte, teteId] = lignesTete[0];
+    const indexAncienne = lignesFichier.findIndex(
+      (l) => l.trim().startsWith('|') && l.split('|')[1]?.trim() === 'tête',
+    );
+    if (indexAncienne !== -1) {
+      lignesFichier[indexAncienne] = `| tête | ${teteEmpreinte} | ${teteId} |`;
+    } else {
+      lignesFichier.splice(fin + ajouts.length, 0, `| tête | ${teteEmpreinte} | ${teteId} |`);
+    }
+    teteRemplacee = 1;
+  }
+  if (ajouts.length > 0 || teteRemplacee > 0) {
     writeFileSync(cheminDoc, lignesFichier.join('\n'), 'utf8');
   }
-  return { ajoutes: ajouts.length, ignores: lignes.length - ajouts.length };
+  return { ajoutes: ajouts.length, ignores: lignes.length - ajouts.length - teteRemplacee, teteRemplacee };
 }
 
 async function main() {
@@ -221,11 +240,15 @@ async function main() {
   }
 
   if (tousAcceptes) {
-    const { ajoutes, ignores } = enregistrerAncrages(
+    const { ajoutes, ignores, teteRemplacee } = enregistrerAncrages(
       opts.ancrages,
       evenements.map(({ ancrage, empreinteContenue, event }) => [ancrage, empreinteContenue, event.id]),
     );
-    console.log(`${opts.ancrages} : ${ajoutes} ancrage(s) enregistré(s)${ignores > 0 ? `, ${ignores} déjà présent(s) ignoré(s)` : ''}`);
+    console.log(
+      `${opts.ancrages} : ${ajoutes} ancrage(s) enregistré(s)` +
+        (ignores > 0 ? `, ${ignores} déjà présent(s) ignoré(s)` : '') +
+        (teteRemplacee > 0 ? ', ligne « tête » remplacée' : ''),
+    );
   }
   console.log('contrôle final : node scripts/verify-anchors.mjs');
   return tousAcceptes ? 0 : 1;
