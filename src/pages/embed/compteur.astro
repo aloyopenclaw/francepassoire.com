@@ -24,6 +24,13 @@ const libelle =
   cible === null
     ? 'aucune fiche vérifiée pour l’instant — rien d’inventé'
     : `personnes concernées depuis le 1ᵉʳ janvier ${annee} — ${compteur.personnesLabel}`;
+
+// T48 : bien que conçu pour une iframe, ce document est dans le sitemap —
+// head complet (description, canonical, OG) + un seul <h1>, comme les autres
+// pages, sinon l'audit SEO pré-lancement le rejette.
+const urlCanonique = new URL(Astro.url.pathname, Astro.site).href;
+const description =
+  'Widget embarquable FrancePassoire : le Compteur National des personnes concernées par les fuites de données recensées en France.';
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,6 +38,14 @@ const libelle =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compteur National — FrancePassoire (embed)</title>
+    <link rel="canonical" href={urlCanonique} />
+    <meta name="description" content={description} />
+    <meta property="og:title" content="Compteur National — FrancePassoire (embed)" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={urlCanonique} />
+    <meta property="og:site_name" content="FrancePassoire" />
+    <meta name="twitter:card" content="summary" />
     <style>
       /* Police auto-hébergée (T45) : aucune requête vers un service tiers. */
       @font-face {
@@ -69,6 +84,7 @@ const libelle =
         font-size: clamp(2rem, 8vw, 3.5rem);
         font-weight: 700;
         line-height: 1;
+        margin: 0; /* <h1> : neutraliser la marge UA */
         color: #ff6b1a; /* brand.orange */
         letter-spacing: -0.02em;
       }
@@ -90,7 +106,7 @@ const libelle =
   </head>
   <body>
     <div class="compteur">
-      <span class="compteur__nombre">{nombre}</span>
+      <h1 class="compteur__nombre">{nombre}</h1>
       <span class="compteur__libelle">{libelle}</span>
       <span class="compteur__source">source&nbsp;: <a href="https://francepassoire.com/">francepassoire.com</a></span>
     </div>

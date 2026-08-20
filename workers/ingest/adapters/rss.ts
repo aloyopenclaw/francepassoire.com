@@ -19,9 +19,10 @@
 //    médias français sont en casse phrase, donc beaucoup de vraies entités
 //    d'un seul mot (ex. « SFR », « Stripe ») sortent avec entity_name null —
 //    le synthétiseur (T18) décide.
-//  * Dédup guid : `fetchCandidates(fetchFn, knownGuids?)` filtre les items
-//    dont le guid est déjà connu. C'est le runner (T19) qui câble le guid_set
-//    persisté en KV (ingest:state:<id>) — l'adapter ne touche ni D1 ni KV.
+//  * Dédup guid : le guid natif de l'item est exposé sur le candidat
+//    (candidate.guid) et `fetchCandidates(fetchFn, knownGuids?)` filtre les
+//    items déjà connus. C'est le runner (T19) qui câble le guid_set persisté
+//    en KV (ingest:state:<id>) — l'adapter ne touche ni D1 ni KV.
 
 import type { Candidate, SourceAdapter } from '../src/adapter';
 
@@ -201,6 +202,7 @@ export function makeRssAdapter(feedCfg: FeedConfig): RssAdapter {
         if (knownGuids?.has(item.guid)) continue;
         candidates.push({
           source: 'rss',
+          guid: item.guid,
           source_url: item.link,
           raw: JSON.stringify({
             title: item.title,
