@@ -1,0 +1,55 @@
+{
+  "slug": "biosynex-20260806",
+  "entity": "Biosynex",
+  "siren": "481075703",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-08-06",
+    "confirmation": "2026-08-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; coordonnées et documents professionnels (périmètre annoncé par le groupe, enquête en cours)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "EQS News (communiqué réglementé) — BIOSYNEX SA : Cyberattaque",
+      "url": "https://www.eqs-news.com/news/fr-regulatory/biosynex-sa-cyberattaque/52aa722f-bf8d-42e6-bfeb-1fa18e50b7d6_fr",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque confirmée chez BIOSYNEX : des données professionnelles potentiellement compromises",
+      "url": "https://frenchbreaches.com/alertes/biosynex-msi1a59xyyo8dd0uay9",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Biosynex annonce être victime d’une fuite de données professionnelles",
+      "url": "https://www.cyberattaque.org/biosynex-annonce-etre-victime-dune-fuite-de-donnees-professionnelles/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Cyberattaque chez BIOSYNEX, données professionnelles et documents exposés",
+      "url": "https://fuitesinfos.fr/article/2026-08-06-biosynex",
+      "kind": "article"
+    }
+  ],
+  "description": "Biosynex, groupe français de diagnostic in vitro coté à Euronext Growth, a annoncé le 6 août 2026 dans un communiqué réglementé avoir été victime d'une cyberattaque survenue entre le 31 juillet et le 2 août 2026, ayant affecté une partie de ses systèmes d'information. Selon le groupe, les premières vérifications limitent les données concernées à des informations professionnelles — coordonnées et documents liés à l'activité — et l'activité opérationnelle est préservée. Une enquête est en cours pour déterminer la nature et l'étendue de la compromission ; les volumes ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Cyberattaque sur une partie des systèmes d’information du groupe, survenue dans la fenêtre du 31 juillet au 2 août 2026 selon le communiqué réglementé."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Biosynex publie un communiqué réglementé : mesures préventives et correctives déployées, enquête en cours, données limitées selon les premières vérifications à des informations professionnelles."
+    }
+  ]
+}

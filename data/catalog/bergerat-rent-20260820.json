@@ -1,0 +1,45 @@
+{
+  "slug": "bergerat-rent-20260820",
+  "entity": "Bergerat Rent",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 132433,
+    "unit": "enregistrements",
+    "label": "43 Go de données et 132 433 fichiers attribués et publiés (revendiqué, série BlgCloud / ChimeraZ) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Bergerat Rent : compromission BlgCloud, données CRM et documents en fuite",
+      "url": "https://frenchbreaches.com/alertes/bergerat-rent-blgcloud-mt1zdsa2pfwxiwrzeuf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Bergerat Rent : 132 433 fichiers publiés après la compromission de son compte BlgCloud",
+      "url": "https://www.cyberattaque.org/bergerat-rent-132-433-fichiers-publies-apres-la-compromission-de-son-compte-blgcloud/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Bergerat Rent victime de la série BlgCloud",
+      "url": "https://fuitesinfos.fr/article/2026-08-20-bergerat-rent",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 août 2026, ChimeraZ publie une base attribuée à Bergerat Rent, société de location de matériels : 43 Go de données et 132 433 fichiers, dans la continuité de la compromission revendiquée de l'ERP BlgCloud utilisé par l'entreprise. Les relais décrivent des données CRM, courriels, documents internes et informations commerciales, incluant coordonnées professionnelles et coordonnées bancaires. L'entreprise n'a pas commenté publiquement à ce stade et l'authenticité de l'ensemble des fichiers reste à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Publication d’une base attribuée à Bergerat Rent : 43 Go et 132 433 fichiers, présentés comme issus de la compromission BlgCloud."
+    }
+  ]
+}

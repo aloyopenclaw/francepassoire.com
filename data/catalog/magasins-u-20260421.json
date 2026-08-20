@@ -1,0 +1,38 @@
+{
+  "slug": "magasins-u-20260421",
+  "entity": "Magasins U (Système U)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-21",
+    "publication": "2026-04-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "Nombre non précisé ; détenteurs de la carte de fidélité informés par courriel (comptes clients potentiellement compromis)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque et fuite de données chez Super U : des comptes clients potentiellement compromis",
+      "url": "https://frenchbreaches.com/alertes/magasins-u-mo8v8hp6z6pnmzroxkp",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Magasins U, volume non précisé",
+      "url": "https://fuitesinfos.fr/article/2026-04-21-magasins-u",
+      "kind": "article"
+    }
+  ],
+  "description": "Système U a informé le 21 avril 2026 les détenteurs de la carte de fidélité de Magasins U d'une attaque informatique ayant entraîné un accès non autorisé à certains comptes clients. Selon la notification relayée, les données concernées comprennent identité, coordonnées, informations liées au compte de fidélité et statut client professionnel ; les données bancaires ne seraient pas concernées. L'incident a été notifié à la CNIL. Le nombre de comptes affectés n'est pas précisé et l'exfiltration n'est pas établie à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-04-21",
+      "event": "Une notification par courriel aux détenteurs de la carte de fidélité décrit une activité suspecte et un accès non autorisé à des comptes clients ; CNIL notifiée."
+    }
+  ]
+}

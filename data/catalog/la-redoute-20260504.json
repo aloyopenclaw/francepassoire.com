@@ -1,0 +1,48 @@
+{
+  "slug": "la-redoute-20260504",
+  "entity": "La Redoute",
+  "siren": "477180186",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-04",
+    "publication": "2026-05-04"
+  },
+  "volume": {
+    "count": 96000,
+    "unit": "enregistrements",
+    "label": "Environ 96 000 enregistrements clients et de suivi logistique publiés (chiffre revendiqué) ; Fuites Infos recense 66 812 clients distincts"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — « La Redoute » : 96K clients et suivis logistiques exposés",
+      "url": "https://frenchbreaches.com/alertes/la-redoute-mormeoj9mzujxtscd1",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — La Redoute : une base logistique de 96 000 clients liée aux livraisons en fuite",
+      "url": "https://www.cyberattaque.org/la-redoute-une-base-logistique-de-96-000-clients-liees-aux-livraisons-en-fuite/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 66 812 clients de La Redoute concernés par une fuite de données",
+      "url": "https://fuitesinfos.fr/article/2026-05-04-la-redoute",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 mai 2026, un internaute publie sur un forum cybercriminel une base présentée comme « récente » et attribuée à La Redoute : environ 96 000 enregistrements de clients, commandes et suivis logistiques. Le 5 mai, l'entreprise relie l'incident à une violation de données survenue en janvier 2026 chez son partenaire logistique Relais Colis, et indique que les données concernées se limiteraient à des informations de livraison — nom, adresse, courriel, téléphone — traitées dans ce cadre. Fuites Infos recense 66 812 clients distincts. L'exfiltration n'est pas confirmée au-delà de ces éléments.",
+  "timeline": [
+    {
+      "date": "2026-05-04",
+      "event": "Un hacker publie sur un forum une base « récente » attribuée à La Redoute : environ 96 000 entrées clients, commandes et suivis logistiques."
+    },
+    {
+      "date": "2026-05-05",
+      "event": "La Redoute relie l’incident à une violation de janvier 2026 chez son partenaire logistique Relais Colis ; seules des informations de livraison seraient concernées selon l’entreprise."
+    }
+  ]
+}

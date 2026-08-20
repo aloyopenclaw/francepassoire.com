@@ -1,0 +1,48 @@
+{
+  "slug": "ville-de-roubaix-20260510",
+  "entity": "Ville de Roubaix",
+  "siren": "215905126",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-10",
+    "publication": "2026-05-12"
+  },
+  "volume": {
+    "count": 165,
+    "unit": "personnes",
+    "label": "165 enfants scolarisés concernés selon la Ville, avec des données sur leurs responsables légaux (compromission de deux comptes du Kiosque famille)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Ville de Roubaix / services scolaires : plusieurs milliers de personnes potentiellement concernées (#111grp)",
+      "url": "https://frenchbreaches.com/alertes/ville-de-roubaix-services-scolaires-mozp91ekk0ljyb1ibem",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Roubaix : le Kiosque famille suspendu après une fuite de données concernant des enfants scolarisés",
+      "url": "https://www.cyberattaque.org/roubaix-le-kiosque-famille-suspendu-apres-une-fuite-de-donnees-concernant-des-enfants-scolarises/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Ville de Roubaix : fuite de données des services scolaires",
+      "url": "https://fuitesinfos.fr/article/2026-05-12-ville-de-roubaix",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe « #111grp » a revendiqué le 10 mai 2026 la compromission de systèmes liés aux services scolaires de la Ville de Roubaix, avec diffusion d'extraits de bases administratives concernant des élèves, leurs responsables légaux et des agents. La municipalité a réagi en suspendant le Kiosque famille, plateforme de cantine et garderie : selon la Ville, la compromission de deux comptes utilisateurs a donné accès à des données concernant 165 enfants scolarisés — identité des enfants, coordonnées des parents, situation familiale et école de rattachement.",
+  "timeline": [
+    {
+      "date": "2026-05-10",
+      "event": "Le groupe « #111grp » revendique l’extraction de bases scolaires et diffuse des extraits : élèves, responsables légaux et agents des services scolaires de Roubaix."
+    },
+    {
+      "date": "2026-05-12",
+      "event": "La Ville suspend le Kiosque famille : deux comptes utilisateurs compromis, données de 165 enfants scolarisés concernées selon la municipalité."
+    }
+  ]
+}

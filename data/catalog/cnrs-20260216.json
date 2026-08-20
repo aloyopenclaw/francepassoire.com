@@ -1,0 +1,40 @@
+{
+  "slug": "cnrs-20260216",
+  "entity": "CNRS",
+  "siren": "180089013",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-16",
+    "publication": "2026-02-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; agents titulaires et non titulaires ayant travaillé au CNRS avant le 31 décembre 2006 (périmètre confirmé par l'organisme)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Le CNRS confirme une exfiltration de données après des téléchargements non autorisés",
+      "url": "https://frenchbreaches.com/alertes/cnrs-mlp74bpt9y9dzgsxnoh",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données CNRS : ransomware ciblant des agents avant 2007",
+      "url": "https://fuitesinfos.fr/article/2026-02-16-cnrs",
+      "kind": "article"
+    }
+  ],
+  "description": "Le CNRS a confirmé le 16 février 2026 une exfiltration de données consécutive à des téléchargements non autorisés sur un serveur interne rapidement isolé, incident notifié à la CNIL et à l'ANSSI. Les personnes concernées sont les agents titulaires et non titulaires ayant travaillé au CNRS avant le 31 décembre 2006. Selon les relais de veille, les données exposées comprennent identité, coordonnées, numéros de Sécurité sociale, RIB et informations professionnelles. Le nombre exact de victimes n'a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2026-02-16",
+      "event": "Le CNRS confirme une exfiltration après des téléchargements non autorisés sur un serveur interne isolé ; CNIL et ANSSI notifiées, périmètre restreint aux agents d’avant 2007."
+    }
+  ]
+}
