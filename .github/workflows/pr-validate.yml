@@ -1,0 +1,78 @@
+# CI des PR fiches (T19) — file de validation éditoriale « fusionner = publier ».
+#
+# Se déclenche sur tout PR ciblant main qui touche data/catalog/** (+ dispatch
+# manuel). Trois portes :
+#   1. zod : tests/pr-fiches.test.ts valide TOUT le catalogue contre
+#      ficheSchema — exécuté via vitest pour réutiliser son pipeline TS
+#      (un script .mjs ne peut pas importer le schéma TypeScript ; tsx n'est
+#      pas une dépendance — zéro nouvelle dépendance) ;
+#   2. build : `npm run build` doit rester vert (la collection catalog est
+#      chargée par le loader glob : une fiche invalide ferait de toute façon
+#      échouer le build Astro) ;
+#   3. spot-check des URLs sources : 10 % (min 1) sondées par curl, repli GET
+#      sur HEAD refusé (leçon T37), équivalent web.archive.org accepté avec
+#      avertissement — table markdown dans le step summary ; exit 1 si morte.
+#
+# PAS de preview deploy ici : T47 ajoutera les portes perf/a11y + le dispatch
+# social PAR-DESSUS ce workflow (et le déploiement de preview
+# `wrangler pages deploy --branch` des PR fiche/*) — ne pas dupliquer.
+#
+# Décision #6 : data/catalog/ reste VIDE sur main — ce workflow est vert en
+# triviale sur main (catalogue vide) et ne devient une vraie porte que sur les
+# branches de PR fiche/*.
+
+name: PR validation fiches
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/catalog/**'
+  workflow_dispatch:
+
+concurrency:
+  group: pr-validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (historique complet pour le diff des fiches)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Porte 1 — validation zod du catalogue (ficheSchema)
+        run: npx vitest run tests/pr-fiches.test.ts
+
+      - name: Porte 2 — le build reste vert
+        run: npm run build
+
+      - name: Fiches changées par ce PR
+        id: changed
+        run: |
+          git fetch origin main
+          CHANGED=$(git diff --name-only --diff-filter=ACMR origin/main...HEAD -- 'data/catalog/*.json')
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          echo "Fiches changées :"
+          echo "$CHANGED"
+
+      - name: Porte 3 — spot-check des URLs sources (10 %, min 1)
+        run: |
+          # shellcheck disable=SC2086 — liste intentionnellement découpée en mots
+          node scripts/spot-check-sources.mjs ${{ steps.changed.outputs.files }}
+
+      # T47 : portes perf/a11y + preview deploy (wrangler pages deploy
+      # --branch) + dispatch social se grefferont ici — PAS avant.

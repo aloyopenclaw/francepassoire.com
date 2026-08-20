@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 // Squelette du worker d'ingestion (T13) : fakes D1/KV en mémoire + fetch
 // mocké — aucune dépendance runtime Cloudflare.
 import worker, {
@@ -49,9 +49,14 @@ const okResponse = (): Response => new Response('{}', { status: 200 });
 const noSleep = async (): Promise<void> => {};
 const runOpts = { fetchFn: async () => okResponse(), sleep: noSleep };
 
-afterEach(() => {
-  // Le registre réel est manipulé par ces tests — on le vide entre chacun.
+beforeEach(() => {
+  // Depuis le câblage T19, le registre contient les 9 vrais adapters : ces
+  // tests n'en veulent qu'à leurs fakes — on repart d'un registre vide AVANT
+  // chaque test (le reset en afterEach ne suffisait plus).
   adapters.length = 0;
+});
+
+afterEach(() => {
   vi.restoreAllMocks();
 });
 
