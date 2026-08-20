@@ -51,6 +51,9 @@ const datasetJsonLd = JSON.stringify({
   <!-- Catalogue -->
   <section class="py-12 bg-brand-paper">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Ordre de titres h1→h3 sinon (Lighthouse heading-order, tâche 44) ;
+           visuellement masqué : le contrat visuel figé n'a pas de titre ici -->
+      <h2 class="sr-only">Le catalogue des fuites recensées</h2>
 
       <CatalogFilters items={[]} />
 

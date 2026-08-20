@@ -94,7 +94,7 @@ const anneesLabel =
 
       <div class="mt-8 pt-8 border-t-2 border-brand-ink/20 border-dashed">
         <p class="font-mono text-lg mb-2">Volumes annoncés (toutes victimes) :</p>
-        <p class="font-display font-extrabold text-2xl sm:text-4xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)]">
+        <p class="font-display font-extrabold text-2xl sm:text-4xl text-brand-hover drop-shadow-[2px_2px_0px_rgba(36,20,5,1)]">
           {dossier.volumes.map((volume) => `${formaterNombre(volume.count)} ${phraseUniteCourte(volume.unit)}`).join(' · ')}
         </p>
         <p class="font-mono text-sm text-brand-ink/70 mt-3 leading-relaxed">
@@ -136,7 +136,7 @@ const anneesLabel =
                   <p class="font-mono text-sm opacity-70 mt-1">Secteur : {labelSecteur(fiche.secteur)}</p>
                 </div>
                 <span class={`${classeStatut(fiche.statut)} px-3 py-1 rounded-full font-display font-bold text-xs shadow-sm self-start sm:self-auto w-max flex items-center gap-2`}>
-                  {!estConfirmee && <span class="block w-2 h-2 bg-brand-ink rounded-full animate-pulse" aria-hidden="true"></span>}
+                  {!estConfirmee && <span class="block w-2 h-2 bg-brand-ink rounded-full motion-safe:animate-pulse" aria-hidden="true"></span>}
                   {labelStatut(fiche.statut)}
                 </span>
               </div>
