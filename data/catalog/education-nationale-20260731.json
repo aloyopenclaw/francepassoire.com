@@ -1,0 +1,60 @@
+{
+  "slug": "education-nationale-20260731",
+  "entity": "Ministère de l'Éducation nationale",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-31"
+  },
+  "volume": {
+    "count": 346178591,
+    "unit": "lignes",
+    "label": "346 178 591 lignes brutes (43 Go, environ 2 500 fichiers) revendiquées par ZeroBytes ; l'auteur évoque 1,22 million d'élèves et 4,35 millions d'identifiants de personnels ; le ministère ne confirme pas ces chiffres"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Numerama — Piratage de l'Éducation nationale : ce que ZeroBytes revendique, ce que le ministère a confirmé",
+      "url": "https://www.numerama.com/cyberguerre/2313135-piratage-de-leducation-nationale-ce-que-le-pirate-revendique-ce-que-le-ministere-a-confirme.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Élèves, enseignants, parents… Après le fisc, ZeroBytes revendique le piratage massif de données de l'Éducation nationale",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/eleves-enseignants-parents-apres-le-fisc-zerobytes-revendique-le-piratage-massif-de-donnees-de-l-education-nationale-20260818",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — ZeroBytes, à l'origine du vol de données du fisc, revendique un piratage de données visant l'Éducation nationale fin juillet",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/zerobytes-a-l-origine-du-vol-de-donnees-du-fisc-revendique-un-piratage-de-donnees-visant-l-education-nationale-fin-juillet_8152235.html",
+      "kind": "article"
+    },
+    {
+      "label": "JDN — ZeroBytes revendique le piratage massif de données de l'Éducation nationale",
+      "url": "https://www.journaldunet.com/business/1553799-zerobytes-revendique-le-piratage-massif-de-donnees-de-l-education-nationale/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le ministère de l'Éducation nationale annonce le 31 juillet 2026 une « intrusion frauduleuse » survenue dans la nuit du 25 juillet, via l'usurpation d'un compte professionnel, dans un système dédié à la formation des personnels ; plainte déposée, ANSSI et CNIL saisies. Le 17 août, le cybercriminel ZeroBytes revendique 346 millions de lignes couvrant plus de vingt ans : 1,22 million d'élèves, 4,35 millions d'identifiants de personnels et 602 000 comptes académiques, certains fichiers contenant des empreintes de mots de passe. Le 18 août, le ministère précise que les personnels susceptibles d'être concernés ont été informés individuellement et qu'il ne confirme ni ne dément l'ampleur revendiquée.",
+  "timeline": [
+    {
+      "date": "2026-07-25",
+      "event": "Intrusion dans la nuit du 25 juillet via l'usurpation d'un compte professionnel ; le centre opérationnel de sécurité est alerté le lendemain et les accès externes suspendus."
+    },
+    {
+      "date": "2026-07-31",
+      "event": "Le ministère reconnaît une intrusion ayant pu conduire à l'exfiltration de données d'un nombre important d'agents ; plainte contre X, ANSSI et CNIL saisies."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "ZeroBytes revendique sur un forum 346 178 591 lignes (43 Go) couvrant élèves, personnels et comptes académiques ; la revendication est relayée le soir même."
+    },
+    {
+      "date": "2026-08-18",
+      "event": "Point de situation : les personnels susceptibles d'être concernés ont été informés individuellement ; le ministère ne confirme ni ne dément les publications."
+    }
+  ]
+}

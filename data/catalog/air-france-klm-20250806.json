@@ -1,0 +1,53 @@
+{
+  "slug": "air-france-klm-20250806",
+  "entity": "Air France-KLM",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-06",
+    "publication": "2025-08-07",
+    "confirmation": "2025-08-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par Air France et KLM"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro — Air France victime d'une « fuite de données » à la suite d'un « accès frauduleux »",
+      "url": "https://www.lefigaro.fr/conjoncture/air-france-victime-d-une-fuite-de-donnees-a-la-suite-d-un-acces-frauduleux-20250806",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Air France-KLM a détecté un « accès frauduleux » aux données personnelles de ses clients",
+      "url": "https://www.franceinfo.fr/economie/transports/greve-aair-france-klm-a-detecte-un-acces-frauduleux-aux-donnees-personnelles-de-ses-clients_7422742.html",
+      "kind": "article"
+    },
+    {
+      "label": "ITPro — Air France and KLM confirm customer data stolen in third-party breach",
+      "url": "https://www.itpro.com/security/data-breaches/air-france-and-klm-confirm-customer-data-stolen-in-third-party-breach",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — Air France and KLM disclose data breaches impacting customers",
+      "url": "https://www.bleepingcomputer.com/news/security/air-france-and-klm-disclose-data-breaches-impacting-customers/",
+      "kind": "article"
+    }
+  ],
+  "description": "Air France et KLM annoncent les 6 et 7 août 2025 un « accès frauduleux » à des données personnelles de certains de leurs clients, via une plateforme tierce utilisée par leurs centres de contact et compromise durant la semaine du 28 juillet. Les données concernées : prénom, nom, informations de contact, numéro et statut Flying Blue, et l'objet des demandes adressées par e-mail au service client. Les compagnies assurent que mots de passe, données de voyage, soldes de miles Flying Blue, numéros de passeport et de carte bancaire ne sont pas concernés. Le nombre de personnes touchées n'est pas communiqué. Air France a notifié la CNIL, qui déclare analyser la notification ; les clients concernés sont informés individuellement.",
+  "timeline": [
+    {
+      "date": "2025-08-06",
+      "event": "Air France et KLM annoncent un accès frauduleux à des données clients via une plateforme externe de service client ; l'accès est coupé et la CNIL est notifiée pour Air France."
+    },
+    {
+      "date": "2025-08-07",
+      "event": "La CNIL confirme être saisie et détaille les données concernées ; les compagnies contactent individuellement les clients dont les données ont pu être consultées."
+    }
+  ]
+}

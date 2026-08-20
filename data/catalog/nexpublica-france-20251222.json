@@ -1,0 +1,46 @@
+{
+  "slug": "nexpublica-france-20251222",
+  "entity": "Nexpublica France (ex-Inetum Software France)",
+  "siren": "340546993",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-22",
+    "publication": "2025-12-31",
+    "confirmation": "2025-12-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non chiffré publiquement ; la CNIL retient « le nombre de personnes concernées » et la sensibilité des données (révélant un handicap) parmi les critères de la sanction"
+  },
+  "data_types": ["identite", "sante", "documents"],
+  "sources": [
+    {
+      "label": "CNIL — Sécurité des données : sanction de 1 700 000 euros à l'encontre de la société NEXPUBLICA FRANCE",
+      "url": "https://www.cnil.fr/fr/securite-des-donnees-sanction-de-1-700-000-euros-lencontre-de-la-societe-nexpublica-france",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDnet — Pour Noël, la CNIL offre une amende de 1,7 millions d'euros à Nexpublica France",
+      "url": "https://www.zdnet.fr/actualites/pour-noel-la-cnil-offre-une-amende-de-17-millions-deuros-a-nexpublica-france-487404.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Bignon Lebray — Données sensibles : la CNIL prononce une amende de 1,7 million d'euros à l'encontre de NEXPUBLICA France (ex-INETUM)",
+      "url": "https://www.bignonlebray.com/actualites/publications/donnees-sensibles-la-cnil-prononce-amende-17-million-euros-a-nexpublica-france-ex-inetum.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La CNIL sanctionne le 22 décembre 2025 la société Nexpublica France (ex-Inetum Software France), éditrice du progiciel PCRM utilisé par des maisons départementales des personnes handicapées (MDPH), d'une amende de 1,7 million d'euros pour défaut de sécurité des données. Fin novembre 2022, des usagers du portail avaient signalé avoir accès à des documents concernant des tiers ; la MDPH du Nord notifie une violation de données à la CNIL le 29 novembre 2022. Les contrôles révèlent des vulnérabilités structurelles, connues de l'éditeur par des audits datant de 2021 et corrigées seulement après les violations. Le nombre de personnes concernées n'est pas chiffré publiquement.",
+  "timeline": [
+    {
+      "date": "2022-11-29",
+      "event": "La MDPH du Nord notifie à la CNIL une violation de données : des usagers du portail PCRM ont signalé avoir accès à des documents concernant des tiers."
+    },
+    {
+      "date": "2025-12-22",
+      "event": "La formation restreinte de la CNIL prononce une amende de 1,7 million d'euros pour défaut de sécurité, aggravé par la spécialité informatique de la société ; aucune injonction n'est prononcée, les correctifs ayant été apportés."
+    }
+  ]
+}

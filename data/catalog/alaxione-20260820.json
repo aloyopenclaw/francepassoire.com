@@ -1,0 +1,50 @@
+{
+  "slug": "alaxione-20260820",
+  "entity": "Alaxione",
+  "siren": "811197557",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 6800000,
+    "unit": "personnes",
+    "label": "6,8 millions de personnes et 10,1 millions de rendez-vous médicaux (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": ["identite", "coordonnees", "sante"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Alaxione : 6,8 millions de profils et plus de 10 millions de rendez-vous médicaux revendiqués après une cyberattaque",
+      "url": "https://frenchbreaches.com/alertes/alaxione-mt0ophzmbommap9dya",
+      "kind": "revendication"
+    },
+    {
+      "label": "RTL — Un cybercriminel revendique le piratage d'Alaxione, la plateforme de rendez-vous médicaux dément",
+      "url": "https://www.rtl.fr/actu/sciences-tech/pres-de-sept-millions-d-utilisateurs-concernes-par-une-nouvelle-fuite-de-donnees-un-cybercriminel-revendique-le-piratage-d-alaxione-la-plateforme-de-rendez-vous-medicaux-dement-7900663473",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — Cyberattaque : plus de 6,8 millions de données médicales volées après le piratage de la plateforme Alaxione",
+      "url": "https://www.ladepeche.fr/2026/08/20/cyberattaque-plus-de-68-millions-de-donnees-medicales-volees-dont-70000-numeros-de-securite-sociale-apres-le-piratage-de-la-plateforme-alaxione-13515581.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Fuites de données : un piratage massif revendiqué sur une plateforme de rendez-vous médicaux",
+      "url": "https://www.bfmtv.com/sante/video-fuites-de-donnees-un-piratage-massif-revendique-sur-une-plateforme-de-rendez-vous-medicaux_VN-202608200315.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Un cybercriminel agissant sous le pseudonyme « Angel_Batista » revendique le 20 août 2026, sur un forum de revente de données, le piratage d'Alaxione, éditeur français de solutions de prise de rendez-vous médicaux. Il affirme disposer de données sur 6,8 millions de personnes et 10,1 millions de rendez-vous : identité, coordonnées, environ 70 000 numéros de Sécurité sociale, motifs de consultation et messages échangés avec les praticiens, le tout proposé à la vente pour 5 000 dollars. Alaxione reconnaît une intrusion limitée à un serveur de test mais dément le vol de données réelles ; les volumes annoncés ne sont pas confirmés à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Le cybercriminel « Angel_Batista » publie sa revendication sur un forum spécialisé dans la nuit du 19 au 20 août, relayée dès le matin par FrenchBreaches : 6,8 millions de personnes, 10,1 millions de rendez-vous médicaux et environ 70 000 numéros de Sécurité sociale revendiqués, la base étant proposée à la vente 5 000 dollars."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "Contactée par la presse, Alaxione confirme une intrusion mais dément le vol de données : selon l'éditeur, le pirate n'aurait accédé qu'à un serveur de test sans informations réelles ; les recherches se poursuivent avec les autorités."
+    }
+  ]
+}

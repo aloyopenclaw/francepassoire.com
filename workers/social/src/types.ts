@@ -51,12 +51,31 @@ export interface Env {
   LINKEDIN_MEMBER_URN?: string;
   /** User access token TikTok Login Kit (scope video.publish, préfixe act.). */
   TIKTOK_ACCESS_TOKEN?: string;
+  /** Handle Bluesky, ex. francepassoire.bsky.social (tâche 38). */
+  BLUESKY_HANDLE?: string;
+  /**
+   * Mot de passe d'APPLICATION Bluesky (bsky.app › Réglages › Confidentialité
+   * et sécurité — jamais le mot de passe du compte lui-même, tâche 38).
+   */
+  BLUESKY_APP_PASSWORD?: string;
+  /**
+   * Secret Nostr (tâche 38) : hex 64 caractères — la valeur exacte de
+   * ~/.config/francepassoire/nostr.key — ou son équivalent nsec. Se pose via
+   * `wrangler secret put NOSTR_NSEC`.
+   */
+  NOSTR_NSEC?: string;
 }
 
-/** Plateformes gérées par ce worker — Bluesky/Nostr (T38) ont leur propre voie. */
-export type SocialPlatform = 'x' | 'linkedin' | 'tiktok';
+/** Plateformes gérées par ce worker (T38–T40 : Bluesky/Nostr, X, LinkedIn, TikTok). */
+export type SocialPlatform = 'x' | 'linkedin' | 'tiktok' | 'bluesky' | 'nostr';
 
-export const PLATFORMES: readonly SocialPlatform[] = ['x', 'linkedin', 'tiktok'];
+export const PLATFORMES: readonly SocialPlatform[] = [
+  'x',
+  'linkedin',
+  'tiktok',
+  'bluesky',
+  'nostr',
+];
 
 /**
  * Payload d'une ligne social_outbox (colonne payload, JSON sérialisé).
