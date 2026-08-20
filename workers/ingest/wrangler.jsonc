@@ -24,12 +24,12 @@
   ],
 
   // État de run par source (last_run, last_success, guid_set, circuit breaker).
-  // Id placeholder : `wrangler kv namespace create` attribuera l'id réel lors
-  // du câblage T14+ — on ne crée PAS le namespace maintenant.
+  // Id réel du namespace « francepassoire-ingest-runstate » créé le 2026-08-20
+  // (tâche 20) : `npx wrangler kv namespace create francepassoire-ingest-runstate`.
   "kv_namespaces": [
     {
       "binding": "RUN_STATE",
-      "id": "0000000000000000000000000000000"
+      "id": "3ce5bafcbfa8405faa32898ab7769c49"
     }
   ]
 

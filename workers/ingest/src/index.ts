@@ -11,6 +11,7 @@
 // par vitest avec des fakes en mémoire.
 
 import { adapters, type Candidate, type SourceAdapter } from './adapter';
+import { isDailyRateOk } from '../adapters/cnil';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -121,6 +122,13 @@ async function runSource(
   const state = await readState(env.RUN_STATE, adapter.id);
   if (state.disabled) {
     console.log(`[ingest] source ${adapter.id} désactivée (circuit breaker) — ignorée`);
+    return { adapter: adapter.id, inserted: 0, failed: false, skipped: true };
+  }
+
+  // Garde de cadence CNIL (contrat T16 : la page sanctions ne doit pas être
+  // requêtée plus d'une fois par jour UTC — c'est le runner qui porte la garde).
+  if (adapter.id === 'cnil-sanctions' && !isDailyRateOk(state.last_run, new Date())) {
+    console.log(`[ingest] source ${adapter.id} déjà requêtée aujourd'hui (cadence quotidienne) — ignorée`);
     return { adapter: adapter.id, inserted: 0, failed: false, skipped: true };
   }
 
