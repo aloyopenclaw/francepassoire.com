@@ -134,3 +134,7 @@ hibp 0 until T47 snapshot wiring); zero disabled sources; zero error events.
   D1/KV are the ground truth for soak health.
 - Pre-existing (NOT this lane): tests/social-x-queue.test.ts has 3 tsc errors
   (untracked file from a parallel wave task); full vitest suite is green regardless.
+2026-08-20 cnil-sanctions guid dedup (soak: ~790 dupes/h): mirrored rss.ts knownGuids pattern.
+cnil.ts: guidSanction() = \u0000-join of full row (date+organisme+url+decision+manquements+theme) — entity+date+URL alone collides on real page (2 distinct sanctions share it); guid embedded in raw; parseCnilSanctions(html, knownGuids?) filters + intra-page dedup (5 byte-identical rows in fixture); warn now fires only on 0 parsed rows, not 0 novel.
+cnil.test.ts: dedup test added (known guid filtered 390->389, unknown emitted, 390 unique guids); 395->390 count updated (5 page duplicates, hand-verified).
+Tests: npx vitest run tests/adapters/cnil.test.ts = 18/18 green; full npx vitest run = 321/321 green (25 files); npx tsc --noEmit exit 0.
