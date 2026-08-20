@@ -152,7 +152,7 @@ function triRecentes(fiches: readonly FicheLike[]): FicheLike[] {
 // ---------------------------------------------------------------------------
 
 export function urlFiche(slug: string): string {
-  return `/fuite/${slug}/`;
+  return `/fiche/${slug}/`;
 }
 
 export function urlSecteur(secteur: Secteur): string {

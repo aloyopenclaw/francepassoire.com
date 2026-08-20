@@ -22,7 +22,7 @@ interface Props {
 
 const envKey = import.meta.env.ASTRO_PUBLIC_TURNSTILE_SITE_KEY;
 const siteKey = Astro.props.siteKey ?? (envKey !== undefined ? envKey : '0x4AAAAAAEW8bsx9lHrEOZ1I');
-const apiReportUrl = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}/api/report`;
+const apiReportUrl = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com'}/api/report`;
 ---
 
 <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
@@ -133,7 +133,7 @@ const apiReportUrl = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}/api/report`;
     honeypot: string;
   }
 
-  const API_REPORT_URL = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}/api/report`;
+  const API_REPORT_URL = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com'}/api/report`;
 
   const form = document.getElementById('signaler-form') as HTMLFormElement | null;
   const submitBtn = document.getElementById('signaler-submit') as HTMLButtonElement | null;
