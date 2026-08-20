@@ -1,0 +1,51 @@
+{
+  "slug": "france-travail-20251201",
+  "entity": "France Travail",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-01",
+    "publication": "2025-12-01",
+    "confirmation": "2025-12-01"
+  },
+  "volume": {
+    "count": 1600000,
+    "unit": "personnes",
+    "label": "1,6 million de jeunes suivis par le réseau des Missions Locales (chiffre du communiqué conjoint France Travail et UNML)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "France Travail — Le réseau des Missions Locales et France Travail appellent à la vigilance après un acte de cyber malveillance (communiqué)",
+      "url": "https://www.francetravail.org/accueil/communiques/2025/le-reseau-des-missions-locales-et-france-travail-appellent-a-la-vigilance-apres-un-acte-de-cyber-malveillance.html?type=article",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — Piratage informatique : les données d'1,6 million de personnes « susceptibles d'être divulguées »",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/piratage-informatique-les-donnees-d-1-6-million-de-personnes-susceptibles-detre-divulguees-selon-france-travail-et-l-union-nationale-des-missions-locales_7651514.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien/AFP — France Travail : les données d'1,6 million de jeunes suivis par des missions locales « susceptibles d'être divulguées »",
+      "url": "https://www.leparisien.fr/economie/emploi/france-travail-les-donnees-d16-million-de-jeunes-suivis-par-des-missions-locales-susceptibles-detre-divulguees-01-12-2025-2B3KNTGV6FGLBMF4NLPAMGVVL4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique — 1,6 million de données volées après un piratage de France Travail",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-1-6-million-de-donnees-volees-apres-un-piratage-de-france-travail-98680.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er décembre 2025, France Travail et l'Union nationale des missions locales annoncent un acte de cybermalveillance ayant conduit à la consultation des données d'environ 1,6 million de jeunes. Le compte d'un responsable gestion de compte d'une mission locale a été piraté, permettant la création de deux comptes via ProConnect et l'accès aux dossiers des jeunes accompagnés. Les données concernent identité, date de naissance, numéro de Sécurité sociale, identifiant France Travail, adresses et téléphones. Mots de passe et coordonnées bancaires n'ont pas été extraits selon le communiqué. L'ANSSI et la CNIL sont saisies, une plainte sera déposée.",
+  "timeline": [
+    {
+      "date": "2025-12-01",
+      "event": "France Travail et l'UNML révèlent le piratage d'un compte de mission locale ayant permis la consultation des données de 1,6 million de jeunes."
+    },
+    {
+      "date": "2025-12-01",
+      "event": "Les trois comptes concernés sont suspendus, l'ANSSI et la CNIL sont notifiées et une sensibilisation obligatoire renforcée est annoncée."
+    }
+  ]
+}

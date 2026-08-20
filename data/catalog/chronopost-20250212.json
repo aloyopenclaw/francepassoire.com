@@ -1,0 +1,60 @@
+{
+  "slug": "chronopost-20250212",
+  "entity": "Chronopost",
+  "siren": "383960135",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-12",
+    "publication": "2025-02-12",
+    "confirmation": "2025-02-13"
+  },
+  "volume": {
+    "count": 210000,
+    "unit": "personnes",
+    "label": "210 000 clients concernés (chiffre annoncé par Chronopost à l'AFP le 13 février 2025)"
+  },
+  "data_types": ["identite", "coordonnees", "documents"],
+  "sources": [
+    {
+      "label": "Numerama — Chronopost victime d'un piratage massif : des millions de données clients en danger",
+      "url": "https://www.numerama.com/cyberguerre/1903243-chronopost-victime-dun-piratage-massif-des-millions-de-donnees-clients-en-danger.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech&Co — Près de 300 000 personnes concernées : important vol de données chez Chronopost et la Caisse des dépôts",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/pres-de-300-000-personnes-concernees-important-vol-de-donnees-chez-chronopost-et-la-caisse-des-depots_AD-202502130554.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Les données personnelles de 210 000 clients de Chronopost dérobées, dont la signature",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/les-donnees-personnelles-de-210-000-clients-de-chronopost-derobees-dont-la-signature-apres-une-cyberattaque-20250213",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Les données de centaines de milliers d'usagers de Chronopost et de la Caisse des dépôts piratées",
+      "url": "https://www.leparisien.fr/faits-divers/les-donnees-de-centaines-de-milliers-dusagers-de-chronopost-et-de-la-caisse-des-depots-piratees-13-02-2025-3HC42W6TTZBZVH66IAICKWPN7I.php",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Piratage Chronopost : les signatures des clients dans la nature",
+      "url": "https://www.it-connect.fr/fuite-de-donnees-chez-chronopost-les-signatures-des-clients-volees-par-les-pirates/",
+      "kind": "article"
+    }
+  ],
+  "description": "Chronopost, filiale de GeoPost (groupe La Poste), informe ses clients dès le 10 février 2025 d'un incident survenu le 29 janvier. L'entreprise confirme un « vol d'une partie des données personnelles » de certains clients. Sont concernés les nom, prénom, adresse postale, parfois numéro de téléphone, ainsi que la signature apposée sur les preuves de livraison. Le 13 février, Chronopost précise à l'AFP que 210 000 clients sont touchés. L'incident, non lié à un rançongiciel, est déclaré clos et maîtrisé. La CNIL a été notifiée et une plainte déposée avec l'appui d'experts en cybersécurité.",
+  "timeline": [
+    {
+      "date": "2025-01-29",
+      "event": "Chronopost subit un incident de sécurité ayant conduit au vol d'une partie des données personnelles de ses clients."
+    },
+    {
+      "date": "2025-02-12",
+      "event": "L'entreprise confirme la fuite à Next après l'envoi de courriels d'information aux clients concernés, sans chiffrer l'ampleur."
+    },
+    {
+      "date": "2025-02-13",
+      "event": "Chronopost annonce à l'AFP que 210 000 clients sont concernés ; la CNIL a été notifiée, une plainte est engagée et l'incident est déclaré clos."
+    }
+  ]
+}

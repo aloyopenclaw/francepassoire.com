@@ -1,0 +1,50 @@
+{
+  "slug": "urssaf-pajemploi-20251117",
+  "entity": "Urssaf (service Pajemploi)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-17",
+    "publication": "2025-11-17",
+    "confirmation": "2025-11-17"
+  },
+  "volume": {
+    "count": 1200000,
+    "unit": "personnes",
+    "label": "jusqu'à 1,2 million de salariés de particuliers employeurs (chiffre annoncé par l'Urssaf)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Urssaf — Le service Pajemploi, géré par l'Urssaf, a été victime d'un vol de données (communiqué)",
+      "url": "https://www.urssaf.org/accueil/espace-medias/communiques-et-dossiers-de-press/communiques-de-presse/2025/le-service-pajemploi%2C-gere-par-l.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro/AFP — Le service Pajemploi victime d'un vol de données, jusqu'à 1,2 million de personnes touchées",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/le-service-pajemploi-victime-d-un-vol-de-donnees-jusqu-a-1-2-million-de-personnes-touchees-20251117",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech&Co — Pajemploi a été victime d'un vol de données qui a pu concerner jusqu'à 1,2 million de salariés",
+      "url": "https://www.bfmtv.com/tech/adresses-numeros-de-secu-dates-de-naissance-pajemploi-a-ete-victime-d-un-vol-de-donnees-qui-a-pu-concerner-jusqu-a-1-2-million-de-salaries-de-particuliers-employeurs_AD-202511170604.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Fuite de données à l'Urssaf : les informations de 1,2 million de salariés piratées sur Pajemploi",
+      "url": "https://www.01net.com/actualites/fuite-donnees-urssaf-informations-12-million-salaries-ete-piratees-pajemploi.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 novembre 2025, l'Urssaf annonce que Pajemploi, service de déclaration des assistants maternels et gardes d'enfants, a subi un vol de données constaté le 14 novembre. L'acte a pu concerner jusqu'à 1,2 million de salariés de particuliers employeurs. Les données extraites comprennent nom, prénom, date et lieu de naissance, adresse postale, numéro de Sécurité sociale, nom de l'établissement bancaire, numéro Pajemploi et numéro d'agrément. Aucun IBAN, e-mail, téléphone ni mot de passe n'est concerné selon l'organisme. La CNIL et l'ANSSI sont saisies, une plainte sera déposée et les usagers seront informés individuellement.",
+  "timeline": [
+    {
+      "date": "2025-11-14",
+      "event": "L'Urssaf constate un acte de cybermalveillance sur le service Pajemploi et met fin à l'intrusion."
+    },
+    {
+      "date": "2025-11-17",
+      "event": "L'Urssaf rend public le vol de données touchant jusqu'à 1,2 million de personnes ; CNIL et ANSSI sont notifiées et une plainte est annoncée."
+    }
+  ]
+}

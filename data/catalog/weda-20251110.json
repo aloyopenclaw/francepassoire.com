@@ -1,0 +1,54 @@
+{
+  "slug": "weda-20251110",
+  "entity": "Weda",
+  "siren": "529223034",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-10",
+    "publication": "2025-11-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume de données non établi ; la plateforme revendiquait 23 000 professionnels de santé clients fin 2024"
+  },
+  "data_types": ["sante"],
+  "sources": [
+    {
+      "label": "CNIL — Vous êtes professionnel de santé et concerné par la violation de données affectant la société WEDA",
+      "url": "https://www.cnil.fr/fr/cnil-direct/question/2652",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — Un logiciel utilisé par des milliers de soignants en France suspendu pendant plusieurs jours après une cyberattaque",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/un-logiciel-utilise-par-des-milliers-de-soignants-en-france-victime-d-une-cyberattaque-l-acces-a-la-plateforme-bloque-par-precaution_7616621.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — « On soigne les patients à l'aveugle » : des milliers de médecins touchés par une cyberattaque sur un logiciel médical",
+      "url": "https://www.lefigaro.fr/social/on-soigne-les-patients-a-l-aveugle-des-milliers-de-medecins-touches-par-une-cyberattaque-sur-un-logiciel-medical-20251114",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Santé : l'éditeur du logiciel médical Weda coupe ses services « par précaution »",
+      "url": "https://www.lemagit.fr/actualites/366634311/Sante-lediteur-du-logiciel-medical-Weda-coupe-ses-services-par-precaution",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 novembre 2025 au soir, Weda, éditeur montpelliérain d'un logiciel de gestion des consultations utilisé par 23 000 professionnels de santé, suspend sa plateforme après une activité inhabituelle sur des comptes. LeMagIT rapporte que des identifiants de praticiens, compromis par des infostealers sur leurs postes, ont servi d'entrée. Selon l'éditeur, les accès malveillants auraient pu permettre une extraction partielle de données, sans ampleur ni confirmation formelle à ce stade. La CNIL et l'ANSSI sont informées, une plainte est déposée. L'exfiltration de données de santé n'est pas établie ; l'indisponibilité de plusieurs jours est avérée.",
+  "timeline": [
+    {
+      "date": "2025-11-10",
+      "event": "Weda détecte des tentatives d'accès non autorisés et coupe sa plateforme par précaution, privant des milliers de soignants de leur outil."
+    },
+    {
+      "date": "2025-11-12",
+      "event": "LeMagIT documente l'indisponibilité et une extraction partielle possible, non confirmée ; des comptes utilisateurs compromis par infostealers sont identifiés."
+    },
+    {
+      "date": "2025-11-14",
+      "event": "Un accès partiel est rétabli ; la CNIL publie une FAQ demandant aux professionnels de santé de notifier la violation de données."
+    }
+  ]
+}
