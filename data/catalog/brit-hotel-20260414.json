@@ -1,0 +1,43 @@
+{
+  "slug": "brit-hotel-20260414",
+  "entity": "Brit Hotel",
+  "siren": "433981206",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-14",
+    "publication": "2026-04-15"
+  },
+  "volume": {
+    "count": 682000,
+    "unit": "comptes",
+    "label": "682 000 membres du programme de fidélité selon la revendication, avec 10 ans d'historique"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite massive chez Brit Hotel : 682 000 clients exposés avec 10 ans d'historique",
+      "url": "https://frenchbreaches.com/blog/fuite-massive-chez-brit-hotel-682-000-clients-exposes-avec-10-ans-d-historique",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Brit Hotel : 682 000 membres du programme fidélité dans une fuite de données",
+      "url": "https://www.cyberattaque.org/brit-hotel-682-000-membres-du-programme-fidelite-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 avril 2026, une base de données liée à Brit Hotel, chaîne d'hôtels indépendants présente en France, est mise en vente sur un forum cybercriminel. L'auteur de la revendication, désigné sous le pseudonyme HexDex par les relais de veille, annonce 682 000 membres du programme de fidélité concernés, avec dix ans d'historique : identités, coordonnées et données de comptes. La chaîne est citée parmi les cibles du même hacker par le parquet de Paris. La revendication n'est pas confirmée publiquement par l'enseigne à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-04-14",
+      "event": "HexDex met en vente une base liée à Brit Hotel : 682 000 membres du programme fidélité sur 10 ans d'historique."
+    },
+    {
+      "date": "2026-04-22",
+      "event": "Le parquet de Paris cite Brithotel parmi les cibles liées à HexDex après son interpellation le 20 avril."
+    }
+  ]
+}

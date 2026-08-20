@@ -1,0 +1,56 @@
+{
+  "slug": "sia-20260324",
+  "entity": "Système d'information sur les armes (SIA)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-24",
+    "publication": "2026-03-26"
+  },
+  "volume": {
+    "count": 62511,
+    "unit": "enregistrements",
+    "label": "62 511 armes et leurs propriétaires selon la mise en vente revendiquée ; le ministère de l'Intérieur n'a pas communiqué de chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Détention d'armes à feu : le ministère de l'Intérieur confirme une fuite de données provenant de son site",
+      "url": "https://www.leparisien.fr/high-tech/detention-darmes-a-feu-le-ministere-de-linterieur-confirme-une-fuite-de-donnees-provenant-de-son-site-30-03-2026-2IWSGLB275CLJJHSNJPQSMAAEU.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Le ministère de l'Intérieur confirme que la base de données de propriétaires d'armes à feu a été compromise",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/cyberattaque-le-ministere-de-l-interieur-confirme-que-la-base-de-donnees-de-proprietaires-d-armes-a-feu-a-ete-compromise-leurs-noms-prenoms-et-adresses-auraient-ete-derobes_AN-202603300701.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Chasseur Français — Le ministère de l'intérieur confirme le vol de données d'armes sur le SIA",
+      "url": "https://www.lechasseurfrancais.com/chasse/armes-et-munitions/le-ministere-de-linterieur-confirme-le-vol-de-donnees-darmes-sur-le-sia-159457.html",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 62 511 enregistrements dans la fuite de données du SIA",
+      "url": "https://fuitesinfos.fr/article/2026-03-24-systeme-d-information-sur-les-armes-sia",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 mars 2026, un acteur nommé HexDex met en vente les données de 62 511 armes recensées au Système d'information sur les armes : types, numéros de série, identités et adresses des propriétaires, historiques des transactions. Le 30 mars, le ministère de l'Intérieur confirme un accès malveillant au compte d'une entreprise utilisatrice du SIA, une armurerie, ayant permis d'extraire des données commerciales. Le ministère précise que le SIA lui-même n'a pas été atteint, que les propriétaires concernés ont été contactés et qu'une enquête est ouverte.",
+  "timeline": [
+    {
+      "date": "2026-03-24",
+      "event": "HexDex revendique sur un forum la vente de données sur 62 511 armes et leurs propriétaires issues du SIA."
+    },
+    {
+      "date": "2026-03-30",
+      "event": "Le ministère de l'Intérieur confirme l'accès malveillant au compte d'une armurerie utilisatrice ; le parquet de Paris ouvre une enquête et la CNIL est notifiée."
+    },
+    {
+      "date": "2026-04-01",
+      "event": "La double authentification devient obligatoire pour toutes les entreprises utilisatrices du SIA."
+    }
+  ]
+}

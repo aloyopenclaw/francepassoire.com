@@ -1,0 +1,42 @@
+{
+  "slug": "lidl-20260712",
+  "entity": "Lidl France",
+  "siren": "343262622",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-12",
+    "publication": "2026-07-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; Lidl informe « une partie » de ses clients français et belges"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Lidl victime d'une fuite de données : des clients français et belges touchés",
+      "url": "https://frenchbreaches.com/blog/lidl-victime-dune-fuite-de-donnees-des-clients-francais-et-belges-touches",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Lidl : les coordonnées de clients exposées après une cyberattaque chez un prestataire",
+      "url": "https://www.cyberattaque.org/lidl-les-coordonnees-de-clients-exposes-apres-une-cyberattaque-chez-un-prestataire/",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-juillet 2026, Lidl informe une partie de ses clients français et belges d'une violation de données survenue chez l'un de ses prestataires informatiques. Les coordonnées exposées sont notamment visées, selon l'enseigne et les relais de veille. Le distributeur n'a pas communiqué le nombre de personnes concernées ni la nature exacte de la faille. L'incident s'inscrit dans une série d'attaques passant par des sous-traitants d'entreprises de distribution.",
+  "timeline": [
+    {
+      "date": "2026-07-12",
+      "event": "Une fuite de données touchant des clients français et belges de Lidl est rendue publique par les relais de veille."
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Lidl informe une partie de ses clients d'une violation de données survenue chez un prestataire informatique."
+    }
+  ]
+}

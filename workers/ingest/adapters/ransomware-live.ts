@@ -14,6 +14,13 @@
 // service ; la base documentée (www.ransomware.live/apidocs) est /v2. En
 // outre, le AAAA de api.ransomware.live sert le site HTML (404) : le runtime
 // Workers comme curl doivent résoudre en IPv4 pour joindre l'API réelle.
+//
+// DÉDUP GUID — même pattern que cnil.ts (fix soak 1f32779) : chaque
+// revendication reçoit un guid stable (jointure déterministe victim ⊕ group
+// ⊕ date de publication, cf. guidRevendication) exposé sur le candidat, et
+// fetchCandidates(fetchFn, knownGuids?) filtre les guids déjà vus (guid_set
+// KV câblé par le runner). Sans ce filtre, chaque pass réinsérait les
+// victimes FR encore présentes dans /recentvictims (constat du soak).
 
 import type { Candidate, SourceAdapter } from '../src/adapter';
 
@@ -36,23 +43,50 @@ function toSourceUrl(url: unknown): string | null {
   }
 }
 
-/** Filtre FR (insensible à la casse) + mappage vers le contrat Candidate ; null = à écarter. */
-function toCandidate(record: VictimRecord): Candidate | null {
+/**
+ * Guid stable d'une revendication : jointure déterministe victim ⊕ group ⊕
+ * date de publication, séparateur \u0000 absent des valeurs — même règle de
+ * clé que guidSanction (cnil.ts). /recentvictims n'expose pas de champ
+ * post_date : la date retenue est postdate/post_date si présente, sinon
+ * attackdate (champ effectif vérifié sur la cassette fixture 2026-08-20).
+ */
+function guidRevendication(victim: string, group: unknown, record: VictimRecord): string {
+  const groupe = typeof group === 'string' ? group : '';
+  const postDate =
+    typeof record.post_date === 'string'
+      ? record.post_date
+      : typeof record.postdate === 'string'
+        ? record.postdate
+        : typeof record.attackdate === 'string'
+          ? record.attackdate
+          : '';
+  return [victim, groupe, postDate].join('\u0000');
+}
+
+/** Filtre FR (insensible à la casse) + mappage vers le contrat Candidate
+ *  (guid toujours assigné) ; null = à écarter. */
+function toCandidate(record: VictimRecord): (Candidate & { guid: string }) | null {
   if (typeof record.country !== 'string' || record.country.trim().toUpperCase() !== 'FR') {
     return null;
   }
   const victim = typeof record.victim === 'string' ? record.victim.trim() : '';
   return {
     source: 'ransomware.live',
+    guid: guidRevendication(victim, record.group, record),
     source_url: toSourceUrl(record.url),
     raw: JSON.stringify(record),
     entity_name: victim !== '' ? victim : null,
   };
 }
 
-export const ransomwareLiveAdapter: SourceAdapter = {
+/** SourceAdapter + dédup guid optionnelle (même contrat que RssAdapter). */
+export interface RansomwareLiveAdapter extends SourceAdapter {
+  fetchCandidates(fetchFn: typeof fetch, knownGuids?: Set<string>): Promise<Candidate[]>;
+}
+
+export const ransomwareLiveAdapter: RansomwareLiveAdapter = {
   id: 'ransomware.live',
-  async fetchCandidates(fetchFn: typeof fetch): Promise<Candidate[]> {
+  async fetchCandidates(fetchFn, knownGuids?) {
     const response = await fetchFn(API_URL);
     // Non-200 (4xx comme 5xx) : rien à extraire. On ne lève pas — le circuit
     // breaker du runner (T13) ne compte que les exceptions (vraies pannes).
@@ -64,9 +98,18 @@ export const ransomwareLiveAdapter: SourceAdapter = {
       return []; // corps non-JSON (ex. page HTML servie par le mauvais vhost)
     }
     if (!Array.isArray(payload)) return [];
-    return payload
-      .filter((record): record is VictimRecord => typeof record === 'object' && record !== null)
-      .map(toCandidate)
-      .filter((candidat): candidat is Candidate => candidat !== null);
+
+    const candidats: Candidate[] = [];
+    const vus = new Set<string>();
+    for (const record of payload) {
+      if (typeof record !== 'object' || record === null) continue;
+      const candidat = toCandidate(record as VictimRecord);
+      if (candidat === null) continue;
+      if (vus.has(candidat.guid)) continue;
+      vus.add(candidat.guid);
+      if (knownGuids?.has(candidat.guid)) continue;
+      candidats.push(candidat);
+    }
+    return candidats;
   },
 };

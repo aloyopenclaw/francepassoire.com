@@ -1,0 +1,60 @@
+{
+  "slug": "ymed-20260406",
+  "entity": "YMED (plateforme SoonCare)",
+  "siren": "843016023",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-04-06",
+    "publication": "2026-04-06",
+    "confirmation": "2026-04-08"
+  },
+  "volume": {
+    "count": 253342,
+    "unit": "personnes",
+    "label": "253 342 patients et plus de 431 000 fichiers selon la revendication (132 Go) ; l'éditeur confirme un accès non autorisé sans chiffrer les victimes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "YMED — Information incident de sécurité sur le logiciel SoonCare (8 avril 2026)",
+      "url": "https://www.ymed.fr/incident-sur-le-logiciel-sooncare",
+      "kind": "officiel"
+    },
+    {
+      "label": "YMED — Complément d'information, incident de sécurité du 6 avril 2026 (SoonCare)",
+      "url": "https://www.ymed.fr/complement-d-information-incident-de-securite-du-6-avril-2026-sooncare",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — 253 342 patients exposés : une fuite massive de données médicales chez YMED",
+      "url": "https://frenchbreaches.com/blog/253-342-patients-exposes-une-fuite-massive-de-donnees-medicales-chez-ymed",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — YMED (SOONCARE) : 253 000 patients exposés, 132 Go de données médicales exfiltrés",
+      "url": "https://www.cyberattaque.org/ymed-sooncare-253-000-patients-exposes-132-go-de-donnees-medicales-exfiltres/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 avril 2026, l'éditeur bordelais YMED subit une cyberattaque exploitant une faille technique de sa plateforme SoonCare, utilisée par des établissements de santé pour la prise de rendez-vous. Des données ont été consultées ou copiées : identité, coordonnées, pièces d'identité, attestations de droits, comptes rendus d'examens et ordonnances. Le groupe XP95 revendique l'exfiltration de 132 Go concernant 253 342 patients et exige une rançon. La plateforme a été mise hors ligne définitivement, la CNIL notifiée, l'ANSSI alertée et une plainte déposée. Des établissements partenaires sont touchés.",
+  "timeline": [
+    {
+      "date": "2026-04-06",
+      "event": "Une cyberattaque exploite une faille de la plateforme SoonCare ; le groupe XP95 revendique l'exfiltration de 132 Go de données médicales."
+    },
+    {
+      "date": "2026-04-08",
+      "event": "YMED informe ses utilisateurs : accès non autorisé confirmé, serveurs mis hors ligne définitivement, CNIL notifiée et plainte déposée."
+    },
+    {
+      "date": "2026-04-16",
+      "event": "Un complément d'information précise les données concernées, dont des données de santé, et la fermeture définitive du service."
+    }
+  ]
+}

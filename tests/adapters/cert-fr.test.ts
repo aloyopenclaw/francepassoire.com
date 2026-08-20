@@ -69,6 +69,32 @@ describe('cert-fr — flux réels enregistrés', () => {
   });
 });
 
+describe('cert-fr — dédup guid (pattern cnil, fix soak)', () => {
+  it('chaque candidat porte un guid stable et distinct (jointure titre ⊕ lien)', async () => {
+    const xml = fixture('cert-fr-avis.xml');
+    const passe1 = await certFrAvisAdapter.fetchCandidates(fetchServant(xml));
+    const passe2 = await certFrAvisAdapter.fetchCandidates(fetchServant(xml));
+
+    expect(passe1).toHaveLength(40);
+    expect(passe1.map((c) => c.guid)).toEqual(passe2.map((c) => c.guid)); // stable d'une passe à l'autre
+    expect(new Set(passe1.map((c) => c.guid)).size).toBe(40); // pas de collision de jointure
+  });
+
+  it('guid connu filtré, guid inconnu émis — 40 items, un filtré → 39', async () => {
+    const xml = fixture('cert-fr-avis.xml');
+    const tous = await certFrAvisAdapter.fetchCandidates(fetchServant(xml));
+    const cible = tous[0]?.guid as string; // 40 items vérifiés au test précédent
+    expect(cible).toBeTruthy();
+
+    const dedupliques = await certFrAvisAdapter.fetchCandidates(fetchServant(xml), new Set([cible]));
+
+    // l'adapter re-parse le flux : 40 (et pas 39+réémission) prouverait un guid instable
+    expect(dedupliques).toHaveLength(39);
+    expect(dedupliques.map((c) => c.guid)).not.toContain(cible);
+    expect(dedupliques.every((c) => c.guid !== undefined)).toBe(true);
+  });
+});
+
 describe('cert-fr — heuristique entité conservatrice', () => {
   it('forme juridique française explicite → entité extraite ; sinon null', async () => {
     const xml = rssAvecTitres([
