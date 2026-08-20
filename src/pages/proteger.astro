@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PasswordChecker from '../components/PasswordChecker.astro';
+import DpoGenerator from '../components/DpoGenerator.astro';
 ---
 <Layout
   title="Se protéger - France Passoire"
@@ -83,6 +84,14 @@ import PasswordChecker from '../components/PasswordChecker.astro';
               </div>
             </div>
           </div>
+
+          <a href="#proteger-dpo" class="mt-4 flex items-center justify-between gap-4 bg-brand-paper border-2 border-brand-ink rounded-xl p-5 shadow-[3px_3px_0px_0px_#241405] hover:bg-brand-orange/10 transition-colors group">
+            <div>
+              <h4 class="font-display font-bold text-lg">Et si vos données ont déjà fuité ?</h4>
+              <p class="text-sm mt-1">Exercez vos droits RGPD : générez une lettre type pour le DPO de l'entreprise concernée.</p>
+            </div>
+            <svg width="22" height="22" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 group-hover:stroke-brand-orange"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
         </div>
 
         <!-- Scenarios -->
@@ -121,6 +130,20 @@ import PasswordChecker from '../components/PasswordChecker.astro';
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- SECTION 2BIS: EXIGER (générateur de lettre au DPO, 100 % local) -->
+    <section id="proteger-dpo" class="max-w-7xl mx-auto px-4 sm:px-6 scroll-mt-24">
+      <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
+        <span class="bg-brand-orange w-16 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-xl">2bis</span>
+        Exiger ses droits
+      </h2>
+      <p class="font-body text-lg mb-8 max-w-3xl">
+        Un mois : c'est le délai légal dont dispose une organisation pour répondre à une demande RGPD.
+        Une lettre claire, article en main, débloque la plupart des situations — générez la vôtre ci-dessous,
+        elle s'écrit entièrement dans votre navigateur.
+      </p>
+      <DpoGenerator />
     </section>
 
   </div>
