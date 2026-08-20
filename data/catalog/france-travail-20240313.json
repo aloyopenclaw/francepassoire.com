@@ -1,0 +1,64 @@
+{
+  "slug": "france-travail-20240313",
+  "entity": "France Travail",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-03-13",
+    "publication": "2024-03-13",
+    "confirmation": "2024-03-13"
+  },
+  "volume": {
+    "count": 43000000,
+    "unit": "personnes",
+    "label": "potentiellement 43 millions de personnes (inscrits et ex-inscrits des vingt dernières années, détenteurs d'un espace candidat) — chiffre annoncé par France Travail le 13 mars 2024, nombre à confirmer selon la CNIL"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "France Travail — Communiqué de presse : France Travail et Cap emploi victimes d'une cyberattaque (13 mars 2024, PDF)",
+      "url": "https://www.francetravail.org/files/live/sites/peorg/files/documents/Communiqu%c3%a9%20de%20presse/2024/CP%20-%20France%20Travail%20et%20Cap%20emploi%20victime%20d'une%20cyberattaque.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — France Travail : la CNIL enquête sur la fuite de données et donne des conseils pour se protéger (13 mars 2024)",
+      "url": "https://www.cnil.fr/fr/france-travail-la-cnil-enquete-sur-la-fuite-de-donnees-et-donne-des-conseils-pour-se-proteger",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cybermalveillance.gouv.fr — Violation de données personnelles de France Travail : mise à disposition d'un formulaire de lettre plainte (13 mars 2024)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-de-donnees-personnelles-france-travail-formulaire-lettre-plainte-202403",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Cyberattaque : les données personnelles de 43 millions d'inscrits à France Travail potentiellement exposées (13 mars 2024)",
+      "url": "https://www.lefigaro.fr/social/france-travail-victime-d-une-cyberattaque-43-millions-de-personnes-potentiellement-concernees-20240313",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Ce que l'on sait de la cyberattaque qui a touché France Travail et concerne « potentiellement » 43 millions de personnes (14 mars 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/ce-que-l-on-sait-de-la-cyberattaque-qui-a-touche-france-travail-et-concerne-potentiellement-43-millions-de-personnes_6423817.html",
+      "kind": "article"
+    }
+  ],
+  "description": "France Travail (ex-Pôle emploi) et Cap emploi annoncent le 13 mars 2024 une cyberattaque. Des attaquants ont usurpé l'identité de conseillers entre le 6 février et le 5 mars. Des données d'identification de demandeurs d'emploi ont été extraites : nom, date de naissance, numéro de Sécurité sociale, identifiant, adresses et téléphones. Potentiellement 43 millions de personnes sont concernées, inscrites ou ex-inscrites depuis vingt ans. Mots de passe et coordonnées bancaires exclus. L'organisme public a notifié la CNIL, déposé plainte ; le parquet de Paris a ouvert une enquête préliminaire.",
+  "timeline": [
+    {
+      "date": "2024-02-06",
+      "event": "Des attaquants usurpant l'identité de conseillers Cap emploi accèdent aux systèmes ; l'intrusion se poursuit jusqu'au 5 mars selon France Travail."
+    },
+    {
+      "date": "2024-03-08",
+      "event": "France Travail et Cap emploi informent la CNIL de l'intrusion dans leurs systèmes d'information."
+    },
+    {
+      "date": "2024-03-13",
+      "event": "France Travail rend l'attaque publique : jusqu'à 43 millions de personnes potentiellement concernées ; plainte déposée et enquête préliminaire ouverte au parquet de Paris."
+    },
+    {
+      "date": "2024-03-14",
+      "event": "Un système de plainte simplifiée est ouvert aux personnes concernées ; l'opérateur précise qu'aucun lien n'est établi avec l'attaque visant plusieurs ministères."
+    }
+  ]
+}

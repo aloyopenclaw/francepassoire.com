@@ -1,0 +1,60 @@
+{
+  "slug": "boulanger-20240909",
+  "entity": "Boulanger",
+  "siren": "347384570",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-09",
+    "publication": "2024-09-09",
+    "confirmation": "2024-09-09"
+  },
+  "volume": {
+    "count": 27561592,
+    "unit": "lignes",
+    "label": "27 561 592 lignes de données de livraison mises en vente sur un forum (chiffre revendiqué par le pirate, relayé par Zataz) ; l'enseigne évoque quelques centaines de milliers de clients concernés et des adresses de livraison uniquement"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — 2024, une année marquée par un nombre record de violations de données personnelles (Boulanger cité parmi les violations massives)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/2024-violations-donnees-personnelles",
+      "kind": "officiel"
+    },
+    {
+      "label": "Libération — Après une cyberattaque contre l'enseigne Boulanger, des centaines de milliers de clients touchés par une fuite de données (9 septembre 2024, archive)",
+      "url": "http://web.archive.org/web/20250202154156/https://www.liberation.fr/societe/apres-une-cyberattaque-contre-lenseigne-boulanger-des-centaines-de-milliers-de-clients-touches-par-une-fuite-de-donnees-20240909_QAV2ZX24VVH6VOT6FSM3C6ADLE/",
+      "kind": "archive"
+    },
+    {
+      "label": "ZDNet.fr — Fuites de données chez Boulanger, Cultura ou encore Truffaut : la piste du piratage d'un prestataire externe (13 septembre 2024)",
+      "url": "https://www.zdnet.fr/actualites/fuites-de-donnees-chez-boulanger-cultura-ou-encore-truffaut-la-piste-du-piratage-dun-prestataire-externe-397030.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Clients Boulanger, Cultura, GrosBill piratés ? (relais de la revendication, 9 septembre 2024)",
+      "url": "https://www.zataz.com/clients-boulanger-cultura-grosbill-pirates/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Midi Libre — Piratage massif chez Boulanger : votre adresse est peut-être entre les mains de hackers (9 septembre 2024)",
+      "url": "https://www.midilibre.fr/2024/09/09/piratage-massif-chez-boulanger-vous-etes-client-de-lenseigne-votre-adresse-est-peut-etre-entre-les-mains-de-hackers-12186205.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Boulanger informe ses clients le 9 septembre 2024 d'un « acte de cybermalveillance » survenu dans la nuit du 6 au 7 septembre. Des données « uniquement liées aux livraisons » ont été récupérées, sans aucune donnée bancaire. En parallèle, un pirate met en vente sur un forum 27,5 millions de lignes attribuées à l'enseigne, relayées par le blog Zataz. L'enseigne évoque quelques centaines de milliers de clients concernés, avertit la CNIL et contacte individuellement les personnes concernées. La presse documente la piste d'un prestataire externe ciblé aux côtés d'autres enseignes.",
+  "timeline": [
+    {
+      "date": "2024-09-06",
+      "event": "Un pirate actif depuis fin août sur un forum de revente, relayé par Zataz, revendique le vol de 27 561 592 lignes de données clients de Boulanger."
+    },
+    {
+      "date": "2024-09-09",
+      "event": "Boulanger informe par courriel les clients concernés : seules des données de livraison ont été récupérées dans la nuit du 6 au 7 septembre ; l'incident est circonscrit selon l'enseigne."
+    },
+    {
+      "date": "2024-09-13",
+      "event": "La presse documente la piste d'un prestataire externe commun à plusieurs enseignes touchées (Cultura, Truffaut, DiviaMobilités) ; Boulanger évoque quelques centaines de milliers de clients."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "ledger-20200729",
+  "entity": "Ledger",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-07-29",
+    "publication": "2020-07-29",
+    "confirmation": "2020-07-29"
+  },
+  "volume": {
+    "count": 1075382,
+    "unit": "enregistrements",
+    "label": "1 075 382 adresses e-mail et 272 853 fiches clients détaillées (nom, adresse postale, téléphone) publiées sur un forum en décembre 2020 — chiffres constatés par Ledger ; environ 292 000 fiches au total en incluant l'incident Shopify révélé en janvier 2021"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Ledger — Addressing the July 2020 e-commerce and marketing data breach (29 juillet 2020)",
+      "url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ledger (message du président) — Update on the July data breach (21 décembre 2020)",
+      "url": "https://www.ledger.com/message-ledgers-ceo-data-leak",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ledger — Efforts to Protect Your Data and Prosecute The Scammers (13 janvier 2021)",
+      "url": "https://www.ledger.com/blog/update-efforts-to-protect-your-data-and-prosecute-the-scammers",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ledger — E-commerce and Marketing data breach, FAQ officielle",
+      "url": "https://support.ledger.com/article/E-commerce-and-Marketing-data-breach-FAQ",
+      "kind": "officiel"
+    },
+    {
+      "label": "BleepingComputer — Physical addresses of 270K Ledger owners leaked on hacker forum (21 décembre 2020)",
+      "url": "https://www.bleepingcomputer.com/news/security/physical-addresses-of-270k-ledger-owners-leaked-on-hacker-forum/",
+      "kind": "article"
+    }
+  ],
+  "description": "Ledger, fabricant français de portefeuilles de crypto-actifs, annonce le 29 juillet 2020 une fuite de sa base e-commerce. Une clé d'API d'un tiers, mal configurée, en était la cause. Environ un million d'adresses e-mail et 9 500 fiches détaillées sont d'abord recensées. Le 20 décembre 2020, l'intégralité du fichier volé est publiée sur un forum. Elle contient 1 075 382 adresses et 272 853 fiches détaillées : nom, adresse postale, téléphone. Un incident connexe chez Shopify (janvier 2021) porte le total à environ 292 000 fiches. Mots de passe et coordonnées bancaires non concernés ; la CNIL a été notifiée et une plainte déposée.",
+  "timeline": [
+    {
+      "date": "2020-06-25",
+      "event": "Un accès non autorisé exploite la clé d'API d'un tiers pour lire la base e-commerce de Ledger, selon l'entreprise."
+    },
+    {
+      "date": "2020-07-14",
+      "event": "Un chercheur du programme de primes signale la faille, corrigée le jour même ; une enquête interne est ouverte avec Orange Cyberdefense."
+    },
+    {
+      "date": "2020-07-17",
+      "event": "Ledger notifie la violation à la CNIL, avant toute communication publique."
+    },
+    {
+      "date": "2020-07-29",
+      "event": "Ledger informe l'ensemble de ses clients par e-mail et la presse : environ un million d'adresses e-mail et 9 500 fiches détaillées ont fuité."
+    },
+    {
+      "date": "2020-08-05",
+      "event": "Ledger dépose plainte auprès du procureur de la République."
+    },
+    {
+      "date": "2020-12-20",
+      "event": "L'intégralité de la base volée est publiée sur un forum : 1 075 382 adresses e-mail et 272 853 fiches avec nom, adresse et numéro de téléphone."
+    },
+    {
+      "date": "2020-12-21",
+      "event": "Ledger reconnaît que le sous-ensemble de fiches détaillées est bien plus important qu'estimé en juillet et avertit les clients concernés."
+    },
+    {
+      "date": "2021-01-13",
+      "event": "Shopify notifie un incident connexe (exports d'avril et juin 2020) ; le total établi par Ledger atteint environ 292 000 fiches clients."
+    }
+  ]
+}
