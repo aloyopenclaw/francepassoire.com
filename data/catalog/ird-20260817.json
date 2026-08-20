@@ -1,0 +1,49 @@
+{
+  "slug": "ird-20260817",
+  "entity": "Institut de recherche pour le développement (IRD)",
+  "siren": "180006025",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-17",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 7500,
+    "unit": "personnes",
+    "label": "7 500 personnes (périmètre notifié par l'IRD ; exfiltration non confirmée)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "01net — Un institut français victime d'une cyberattaque : les données de 7 500 personnes compromises",
+      "url": "https://www.01net.com/actualites/institut-francais-victime-cyberattaque-donnees-7500-personnes-compromises.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données à l'IRD : 7 500 personnes concernées par une cyberattaque",
+      "url": "https://frenchbreaches.com/alertes/institut-de-recherche-pour-le-d-veloppement-ird-mt0p9vbf00szk0llqusyg",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — IRD : 7 500 personnes exposées après une intrusion dans son système d'information",
+      "url": "https://www.cyberattaque.org/ird-7-500-personnes-exposees-apres-une-intrusion-dans-son-systeme-dinformation/",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Institut de recherche pour le développement (IRD), établissement public à caractère scientifique et technologique, signale une intrusion d'origine externe dans son système d'information, détectée le 24 juillet 2026. Les investigations concluent le 6 août à un risque d'atteinte à la confidentialité des données d'environ 7 500 personnes : identité (dont numéros de Sécurité sociale), coordonnées postales, téléphoniques et électroniques professionnelles. Dans une notification datée du 17 août 2026, l'IRD précise ne pas être en mesure de confirmer une exfiltration des données ; l'organisme a déposé plainte, notifié la CNIL et isolé les serveurs concernés.",
+  "timeline": [
+    {
+      "date": "2026-07-24",
+      "event": "L'IRD détecte une intrusion d'origine externe dans son système d'information et engage des investigations."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Les investigations établissent un risque d'atteinte à la confidentialité de données personnelles ; l'événement est qualifié de violation de données."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "Dans une notification aux personnes concernées, l'IRD chiffre l'exposition à environ 7 500 personnes, indique ne pas pouvoir confirmer une exfiltration, et fait état d'une plainte, d'une notification à la CNIL, d'une cellule de crise et de l'isolement des serveurs touchés."
+    }
+  ]
+}
