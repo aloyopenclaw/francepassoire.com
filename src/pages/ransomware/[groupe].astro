@@ -8,7 +8,10 @@ export function getStaticPaths() {
 
 const { groupe } = Astro.params;
 ---
-<Layout title="Dossier de groupe - France Passoire">
+<Layout
+  title={`Dossier de groupe${groupe ? ` « ${groupe} »` : ''} - France Passoire`}
+  description="Dossier éditorial d'un groupe de ransomware actif contre la France : revendications vérifiées, victimes françaises et contexte — uniquement à partir de sources publiques."
+>
   <section class="py-16 bg-brand-paper">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4">{groupe ? `Dossier « ${groupe} »` : 'Dossier de groupe'}</h1>
