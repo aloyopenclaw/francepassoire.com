@@ -1,0 +1,39 @@
+{
+  "comment": "POST https://api.linkedin.com/v2/ugcPosts — 201 Created. Forme officielle UGC Posts (learn.microsoft.com, Share on LinkedIn) : author = URN membre, shareCommentary = texte rendu, média ARTICLE avec l'URL de la fiche, visibilité publique. Token et URN factices de test.",
+  "request": {
+    "method": "POST",
+    "url": "https://api.linkedin.com/v2/ugcPosts",
+    "headers": {
+      "Authorization": "Bearer test-linkedin-token",
+      "Content-Type": "application/json",
+      "X-Restli-Protocol-Version": "2.0.0"
+    },
+    "body": {
+      "author": "urn:li:person:TEST_MEMBRE",
+      "lifecycleState": "PUBLISHED",
+      "specificContent": {
+        "com.linkedin.ugc.ShareContent": {
+          "shareCommentary": {
+            "text": "Nouvelle fiche confirmée : Alaxione — 900 000 patients. Sources et détails : https://francepassoire.com/f/alaxione-20260820"
+          },
+          "shareMediaCategory": "ARTICLE",
+          "media": [
+            {
+              "status": "READY",
+              "originalUrl": "https://francepassoire.com/f/alaxione-20260820"
+            }
+          ]
+        }
+      },
+      "visibility": {
+        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+      }
+    }
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "id": "urn:li:share:7123456789012345678901"
+    }
+  }
+}

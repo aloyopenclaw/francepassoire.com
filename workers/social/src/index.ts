@@ -27,6 +27,8 @@
 // erreurs permanentes (401/4xx) passent DEAD immédiatement.
 
 import { MENTION_REVENDICATION } from '../../../src/lib/social-templates';
+import { send as sendLinkedIn } from '../clients/linkedin';
+import { send as sendTikTok } from '../clients/tiktok';
 import { send as sendX } from '../clients/x';
 import {
   PLATFORMES,
@@ -43,11 +45,11 @@ import {
 /** Tentatives max par ligne (1 initiale + 2 retries au fil des crons). */
 export const MAX_ATTEMPTS = 3;
 
-// Clients branchés — T39 branche X ; T40 ajoute LinkedIn et TikTok.
-// Une plateforme sans client branché reste honnêtement en file (jamais de
-// 500, jamais de perte de ligne).
-const CLIENTS: Partial<Record<SocialPlatform, SendFn>> = {
+// Clients branchés — T39 : X ; T40 : LinkedIn et TikTok.
+const CLIENTS: Record<SocialPlatform, SendFn> = {
   x: sendX,
+  linkedin: sendLinkedIn,
+  tiktok: sendTikTok,
 };
 
 export interface OutboxRow {
@@ -168,12 +170,6 @@ async function processRow(
   }
 
   const send = CLIENTS[row.platform as SocialPlatform];
-  if (send === undefined) {
-    // File honnête : le client de cette plateforme n'est pas encore branché.
-    await setStatus(env.DB, row.id, 'PENDING_KEYS');
-    console.log(`[social] ligne ${row.id} : client ${row.platform} pas encore activé, en file`);
-    return { id: row.id, platform: row.platform, status: 'PENDING_KEYS' };
-  }
 
   let result: SendResult;
   try {
