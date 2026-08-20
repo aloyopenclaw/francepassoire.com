@@ -143,4 +143,6 @@
 @media (prefers-reduced-motion: reduce) {
   .animate-droplet-fall, .ticker-slide { animation: none !important; display: none !important; }
   .count-up { transition: none !important; }
+  details[open] summary ~ * { animation: none !important; }
+  .animate-pulse { animation: none !important; }
 }

@@ -24,14 +24,14 @@ const isEmptyCatalog = items.length === 0;
     <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
     Filtrer
   </span>
-  <select id="filter-secteur" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
+  <select id="filter-secteur" aria-label="Filtrer par secteur" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
     <option value="all">Tous secteurs</option>
     <option value="Santé">Santé</option>
     <option value="Retail">Retail</option>
     <option value="Recherche publique">Recherche publique</option>
     <option value="Public">Public</option>
   </select>
-  <select id="filter-statut" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
+  <select id="filter-statut" aria-label="Filtrer par statut" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
     <option value="all">Tous statuts</option>
     <option value="Revendiquée">Revendiquée</option>
     <option value="Confirmée">Confirmée</option>
@@ -93,7 +93,7 @@ const isEmptyCatalog = items.length === 0;
             <span class="text-sm font-mono text-brand-ink/60"></span>
           </div>
           <h3 class="font-display font-extrabold text-2xl mb-2 line-clamp-2"></h3>
-          <p class="font-mono text-lg text-brand-orange drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6"></p>
+          <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6"></p>
         </div>
         <div class="flex justify-between items-end mt-auto">
           <span class="${isConfirm ? 'pill-confirmee' : 'pill-revendiquee'} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm flex items-center gap-1.5 w-max">${isConfirm ? 'Confirmée' : 'Revendiquée'}</span>

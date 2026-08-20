@@ -1,0 +1,84 @@
+---
+// Widget embarquable — Compteur National nu, destiné à une intégration
+// iframe : <iframe src="https://francepassoire.com/embed/compteur/">.
+//
+// - Sans Layout : ni header, ni footer, ni navigation — cette page ne vit
+//   que dans une iframe.
+// - Fond TRANSPARENT : la page hôte décide du fond (aucun fond papier).
+// - CSP (tâche 45, à venir) : lorsque les en-têtes CSP seront déployés,
+//   ce chemin ne doit recevoir ni `X-Frame-Options: DENY` ni
+//   `frame-ancestors 'none'`, sinon l'embed casse. Prévoir une règle
+//   dédiée pour /embed/* (frame-ancestors ouverts ouliste blanche).
+import { getCollection } from 'astro:content';
+import { computeCompteur, countUpTarget } from '../../lib/stats';
+
+const fiches = (await getCollection('catalog')).map((entry) => entry.data);
+const compteur = computeCompteur(fiches);
+const cible = countUpTarget(compteur);
+const annee = new Date().getFullYear();
+
+// État vide honnête (inatteignable en build : la porte de garde du
+// dataset fait échouer le build sur catalogue vide — tâche 35).
+const nombre = cible === null ? '0' : cible.toLocaleString('fr-FR');
+const libelle =
+  cible === null
+    ? 'aucune fiche vérifiée pour l’instant — rien d’inventé'
+    : `personnes concernées depuis le 1ᵉʳ janvier ${annee} — ${compteur.personnesLabel}`;
+---
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compteur National — FrancePassoire (embed)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400..700&display=swap" rel="stylesheet" />
+    <style>
+      /* Auto-contenu : aucun import de global.css (fond papier interdit ici). */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+      .compteur {
+        font-family: 'Spline Sans Mono', ui-monospace, 'Cascadia Mono', monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.75rem 1rem;
+        text-align: center;
+      }
+      .compteur__nombre {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-weight: 700;
+        line-height: 1;
+        color: #ff6b1a; /* brand.orange */
+        letter-spacing: -0.02em;
+      }
+      .compteur__libelle {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        color: #241405; /* brand.ink */
+      }
+      .compteur__source {
+        font-size: 0.7rem;
+        color: #241405;
+        opacity: 0.7;
+      }
+      .compteur__source a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="compteur">
+      <span class="compteur__nombre">{nombre}</span>
+      <span class="compteur__libelle">{libelle}</span>
+      <span class="compteur__source">source&nbsp;: <a href="https://francepassoire.com/">francepassoire.com</a></span>
+    </div>
+  </body>
+</html>

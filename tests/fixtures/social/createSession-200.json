@@ -1,0 +1,23 @@
+{
+  "comment": "POST https://bsky.social/xrpc/com.atproto.server.createSession — 200 OK. Forme officielle atproto (https://atproto.com/specs/xrpc, lexique com.atproto.server) : corps {identifier, password}, réponse {accessJwt, refreshJwt, handle, did}. Identifiant et mot de passe d'application factices de test — jamais de vrais identifiants.",
+  "request": {
+    "method": "POST",
+    "url": "https://bsky.social/xrpc/com.atproto.server.createSession",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "identifier": "francepassoire.bsky.social",
+      "password": "test-app-password-bsky"
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "accessJwt": "test-access-jwt-bsky",
+      "refreshJwt": "test-refresh-jwt-bsky",
+      "handle": "francepassoire.bsky.social",
+      "did": "did:plc:testdidfrancepassoire"
+    }
+  }
+}

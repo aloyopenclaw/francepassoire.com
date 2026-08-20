@@ -1,0 +1,44 @@
+{
+  "slug": "centre-hospitalier-perpignan-20260720",
+  "entity": "Centre hospitalier de Perpignan",
+  "siren": "266600022",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-20",
+    "publication": "2026-07-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes non communiqué ; l'établissement considère par précaution que l'ensemble des patients du centre de vaccination du SMIT est potentiellement concerné"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "L'Indépendant — Cyberattaque d'un service de l'hôpital de Perpignan, les données personnelles des patients piratées",
+      "url": "https://www.lindependant.fr/2026/07/20/cyberattaque-dun-service-de-lhopital-de-perpignan-les-donnees-personnelles-des-patients-piratees-13476347.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Petit Journal — Cyberattaque au centre hospitalier de Perpignan",
+      "url": "https://www.lepetitjournal.net/66-pyrenees-orientales/2026/07/21/cyberattaque-au-centre-hospitalier/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Centre hospitalier de Perpignan a informé par courriel le 20 juillet 2026 les patients de son Service des maladies infectieuses et tropicales (SMIT) d'un incident touchant SYADEM, la plateforme d'un prestataire externe qui gère les dossiers de vaccination. L'établissement, informé le 22 juin, indique qu'un tiers non autorisé a pu accéder à certaines données personnelles et en obtenir une copie : identité, coordonnées, données vaccinales et profil de santé. Ne pouvant identifier avec certitude les personnes touchées, il considère par précaution tous les patients du centre de vaccination comme concernés. L'incident, jugé résolu, a été signalé à la CNIL et a donné lieu à plainte.",
+  "timeline": [
+    {
+      "date": "2026-06-22",
+      "event": "L'établissement est informé d'un incident de sécurité touchant la plateforme externe SYADEM, utilisée pour les dossiers de vaccination du SMIT."
+    },
+    {
+      "date": "2026-07-20",
+      "event": "Par courriel aux patients, l'hôpital indique qu'un tiers a pu accéder à certaines données et en obtenir une copie ; plainte déposée, CNIL saisie, incident jugé résolu."
+    }
+  ]
+}
