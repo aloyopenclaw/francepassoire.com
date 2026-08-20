@@ -18,7 +18,8 @@
     }
   ],
 
-  // Rate limit 5/IP/h du POST /api/report (clé rl:report:<ip>, TTL 3600 s).
+  // Rate limit 5/IP/h du POST /api/report (clé rl:report:<ip>, TTL 3600 s)
+  // et 3/IP/h du POST /api/watchlist (clé rl:watchlist:<ip>, T30).
   // Id placeholder : `npx wrangler kv namespace create RATE_LIMIT --config
   // workers/api/wrangler.jsonc` attribuera l'id réel au câblage runtime (T47)
   // — on ne crée PAS le namespace maintenant.
@@ -27,15 +28,34 @@
       "binding": "RATE_LIMIT",
       "id": "cfb039dd7f6c4e25a2727aa606d80c12"
     }
-  ]
+  ],
 
-  // SECRET (PAS une var — jamais de valeur en clair ici), vérification
-  // serveur de Turnstile :
-  //   TURNSTILE_SECRET — secret du widget « francepassoire-signaler »
-  //   (créé via API T33, sitekey publique 0x4AAAAAAEW8bsx9lHrEOZ1I ;
-  //   secret quarantiné hors dépôt dans ~/.config/francepassoire/).
-  // Création au câblage runtime (T47) :
-  //   npx wrangler secret put TURNSTILE_SECRET --config workers/api/wrangler.jsonc
-  // Sans ce secret, /api/report répond 503 « protection anti-abus non
-  // configurée » (fail closed honnête — cf. src/index.ts).
+  // T31 : digest hebdo de la veille — lundi 09:00 Europe/Paris = 07:00 UTC
+  // (runWeeklyDigest dans src/watchlist.ts). Les routes fetch restent servies.
+  "triggers": {
+    "crons": ["0 7 * * 1"]
+  }
+
+  // SECRETS (PAS des vars — jamais de valeur en clair ici) :
+  //   TURNSTILE_SECRET    — secret du widget « francepassoire-signaler »
+  //                         (sitekey publique 0x4AAAAAAEW8bsx9lHrEOZ1I ;
+  //                         secret quarantiné hors dépôt). Création :
+  //                         npx wrangler secret put TURNSTILE_SECRET --config workers/api/wrangler.jsonc
+  //   BREVO_API_KEY       — clé API v3 Brevo (T30/T31, décision propriétaire
+  //                         post-T29). PRÉREQUIS PROPRIÉTAIRE : compte Brevo,
+  //                         expéditeur vérifié alerte@francepassoire.com.
+  //                         npx wrangler secret put BREVO_API_KEY --config workers/api/wrangler.jsonc
+  //   WATCHLIST_AES_KEY   — clé AES-256 en hex (64 caractères) chiffrant les
+  //                         emails (AES-GCM). Génération :
+  //                         openssl rand -hex 32
+  //                         npx wrangler secret put WATCHLIST_AES_KEY --config workers/api/wrangler.jsonc
+  //   WATCHLIST_HASH_KEY  — clé HMAC-SHA256 des liens de confirmation (24 h).
+  //                         Génération : openssl rand -hex 32
+  //                         npx wrangler secret put WATCHLIST_HASH_KEY --config workers/api/wrangler.jsonc
+  //
+  // Sans BREVO_API_KEY / WATCHLIST_* : POST /api/watchlist répond 503 « veille
+  // par email : activation en cours » AVANT toute écriture D1, et
+  // GET /api/watchlist/status répond {email_enabled:false} — l'îlot /proteger/
+  // affiche l'avis d'activation (la grille d'outils externes reste visible).
+  // Le cron digest sort proprement (log, aucun envoi, aucun crash).
 }

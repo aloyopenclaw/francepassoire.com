@@ -21,10 +21,20 @@
 // Accès D1/KV uniquement via l'env injecté — interfaces structurelles
 // minimales (pas de dépendance @cloudflare/workers-types), donc testable
 // par vitest avec des fakes en mémoire (même approche que workers/ingest).
+//
+// T30/T31 : routes /api/watchlist* + cron digest hebdo (lundi 09:00 Paris)
+// implémentées dans ./watchlist.ts (double opt-in Brevo, alertes) — ce
+// fichier ne fait que le routage et le scheduled.
+
+import { handleWatchlistRequest, runWeeklyDigest } from './watchlist';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
   run(): Promise<{ success: boolean }>;
+  /** Lecture SELECT (T30 watchlist) : fourni par le binding D1 réel ;
+   *  optionnel pour ne pas casser les fakes minimalistes des tests. */
+  first?(): Promise<unknown>;
+  all?(): Promise<unknown[]>;
 }
 
 export interface D1Database {
@@ -41,6 +51,12 @@ export interface Env {
   RATE_LIMIT: KVNamespace;
   /** Secret Turnstile (wrangler secret put TURNSTILE_SECRET) — jamais une var en clair. */
   TURNSTILE_SECRET?: string;
+  /** Clé API v3 Brevo (T30/T31) — envoi des emails de veille. */
+  BREVO_API_KEY?: string;
+  /** Clé AES-256 en hex (T30) — chiffrement des emails : openssl rand -hex 32. */
+  WATCHLIST_AES_KEY?: string;
+  /** Clé HMAC (T30) — signature des liens de confirmation 24 h. */
+  WATCHLIST_HASH_KEY?: string;
 }
 
 export interface ExecutionContext {
@@ -279,11 +295,31 @@ export async function handleRequest(
     return handleReport(request, env, options.fetchFn ?? fetch);
   }
 
+  // Routes watchlist (T30/T31) — module dédié, mêmes conventions.
+  if (
+    path === '/api/watchlist' ||
+    path === '/api/watchlist/status' ||
+    path === '/api/watchlist/confirm' ||
+    path === '/api/watchlist/prefs' ||
+    path.startsWith('/api/watchlist/unsub/')
+  ) {
+    return handleWatchlistRequest(request, env, { fetchFn: options.fetchFn });
+  }
+
   return jsonResponse(404, { ok: false, error: 'Introuvable.' }, corsHeaders(request));
 }
 
 export default {
   async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
     return handleRequest(request, env);
+  },
+  // T31 : digest hebdo de la veille — lundi 09:00 Europe/Paris
+  // (cron « 0 7 * * 1 » UTC, cf. wrangler.jsonc triggers.crons).
+  async scheduled(
+    _controller: unknown,
+    env: Env,
+    _ctx: ExecutionContext,
+  ): Promise<void> {
+    await runWeeklyDigest(env);
   },
 };

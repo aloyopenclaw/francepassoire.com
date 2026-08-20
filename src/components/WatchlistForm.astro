@@ -1,0 +1,231 @@
+---
+/**
+ * Formulaire « Activer ma veille » — /proteger/ section Surveiller (T30).
+ *
+ * Îlot client léger : l'état du service est demandé à GET /api/watchlist/status
+ * AVANT tout affichage — sans les secrets worker (Brevo/Turnstile/AES/HMAC),
+ * le formulaire reste masqué et un avis factuel d'activation prend sa place
+ * (la grille « Autres outils de veille » reste visible en dessous : la page
+ * est honnête à chaque instant, aucune promesse de date).
+ *
+ * Inscription : POST /api/watchlist {email, sectors, data_types, entities,
+ * freq} — double opt-in (email de confirmation à cliquer sous 24 h), lien de
+ * désinscription 1 clic dans chaque email. Clé de site Turnstile = publique
+ * (même widget que /signaler/, surcharge ASTRO_PUBLIC_TURNSTILE_SITE_KEY).
+ */
+import { SECTEUR_LABELS } from '../lib/opendata';
+
+interface Props {
+  siteKey?: string;
+}
+
+const envKey = import.meta.env.ASTRO_PUBLIC_TURNSTILE_SITE_KEY;
+const siteKey = Astro.props.siteKey ?? (envKey !== undefined ? envKey : '0x4AAAAAAEW8bsx9lHrEOZ1I');
+const apiBaseUrl = import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com';
+
+const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_LABELS, string]>;
+---
+
+<div class="bg-brand-paper border-2 border-brand-ink rounded-passoire p-6 sm:p-10 shadow-hard mb-8">
+  <h3 class="font-display font-bold text-2xl mb-2">Créer une alerte personnalisée</h3>
+  <p class="font-body font-medium text-brand-ink/80 mb-8">Recevez un email quand une fuite correspond à vos critères.</p>
+
+  <div id="veille-notice" class="border-2 border-brand-ink/30 rounded-xl px-4 py-3 bg-brand-cream font-mono text-sm" role="status" aria-live="polite" hidden>
+    <p class="font-bold mb-1">Veille par email&nbsp;: activation en cours.</p>
+    <p>En attendant&nbsp;: les outils de veille ci-dessous fonctionnent.</p>
+  </div>
+
+  <div id="veille-erreur-reseau" class="border-2 border-brand-ink/30 rounded-xl px-4 py-3 bg-brand-cream font-mono text-sm" role="status" aria-live="polite" hidden>
+    Impossible de vérifier l'état du service de veille. Vérifiez votre connexion, puis rechargez la page.
+  </div>
+
+  <form id="veille-form" novalidate hidden>
+    <div class="mb-6">
+      <label for="veille-email" class="block font-mono text-sm font-bold mb-2">Votre email</label>
+      <input type="email" id="veille-email" name="email" required placeholder="jean.dupont@example.com" autocomplete="email"
+        class="w-full bg-brand-cream border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+    </div>
+
+    <fieldset class="mb-6 border-0 p-0">
+      <legend class="block font-mono text-sm font-bold mb-2">Secteurs à surveiller</legend>
+      <div class="flex flex-wrap gap-2">
+        {secteurs.map(([valeur, label]) => (
+          <label class="cursor-pointer">
+            <input type="checkbox" name="sectors" value={valeur} class="peer hidden" />
+            <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-cream peer-checked:bg-brand-orange peer-checked:font-bold">{label}</span>
+          </label>
+        ))}
+      </div>
+      <p class="font-mono text-xs text-brand-ink/60 mt-2">Aucun secteur coché = tous les secteurs.</p>
+    </fieldset>
+
+    <fieldset class="mb-6 border-0 p-0">
+      <legend class="block font-mono text-sm font-bold mb-2">Fréquence</legend>
+      <div class="flex flex-wrap gap-6">
+        <label class="flex items-center gap-2 cursor-pointer font-body font-medium">
+          <input type="radio" name="freq" value="quotidien" class="w-4 h-4 accent-[#FF6B1A]"> Immédiatement
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer font-body font-medium">
+          <input type="radio" name="freq" value="hebdo" checked class="w-4 h-4 accent-[#FF6B1A]"> Récap hebdo
+        </label>
+      </div>
+    </fieldset>
+
+    {siteKey ? (
+      <>
+        <div class="cf-turnstile mb-4 flex justify-start" data-sitekey={siteKey} data-theme="light" data-language="fr" />
+        <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+      </>
+    ) : (
+      <p class="mb-4 font-mono text-sm border-2 border-brand-ink/30 rounded-xl px-4 py-3 bg-brand-cream" role="note">
+        Protection anti-robot en cours d'activation — le formulaire sera envoyable dès que la vérification sera disponible.
+      </p>
+    )}
+
+    <div id="veille-status" class="min-h-[2rem] flex items-center font-mono text-sm mb-4" role="status" aria-live="polite">
+      <noscript>Ce formulaire nécessite JavaScript pour être envoyé.</noscript>
+    </div>
+
+    <button type="submit" id="veille-submit"
+      class="w-full bg-brand-orange text-brand-ink px-8 py-4 rounded-passoire border-2 border-brand-ink shadow-[4px_4px_0px_0px_#241405] hover:bg-brand-hover font-display font-bold text-xl transition-all btn-press flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+      <svg width="22" height="22" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      Activer ma veille
+    </button>
+    <p class="text-xs font-mono text-brand-ink/60 text-center mt-4">
+      Nous gardons votre email et vos préférences. Rien d'autre. Jamais. Désinscription en un clic, dans chaque email.
+    </p>
+  </form>
+
+  <div id="veille-success" class="text-center py-8" hidden>
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#0E7A46] border-2 border-brand-ink shadow-sm mb-6" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" class="text-brand-cream" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h3 class="font-display font-bold text-2xl mb-3" tabindex="-1">Un dernier clic dans votre boîte mail.</h3>
+    <p class="max-w-md mx-auto font-body mb-2">Pour activer votre veille, ouvrez l'email de confirmation que nous venons de vous envoyer et cliquez sur le lien qu'il contient (valable 24 heures).</p>
+    <p class="max-w-md mx-auto font-body text-sm text-brand-ink/70">Pas reçu ? Vérifiez le dossier indésirables. Sans clic de confirmation, rien n'est activé et rien n'est envoyé.</p>
+  </div>
+</div>
+
+<style>
+  .veille-invalid {
+    outline: 3px solid #ff6b1a;
+    outline-offset: 2px;
+  }
+</style>
+
+<script>
+  const API_BASE = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com'}`;
+
+  const form = document.getElementById('veille-form') as HTMLFormElement | null;
+  const notice = document.getElementById('veille-notice');
+  const erreurReseau = document.getElementById('veille-erreur-reseau');
+  const statusEl = document.getElementById('veille-status');
+  const successEl = document.getElementById('veille-success');
+  const emailInput = document.getElementById('veille-email') as HTMLInputElement | null;
+  const submitBtn = document.getElementById('veille-submit') as HTMLButtonElement | null;
+
+  const ICON_WARN =
+    '<svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0" stroke="#E85A0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+
+  function setStatus(html: string): void {
+    if (!statusEl) return;
+    statusEl.innerHTML = html;
+  }
+
+  function errorHtml(message: string): string {
+    return `<span class="text-brand-ink font-bold flex items-center gap-2">${ICON_WARN} ${message}</span>`;
+  }
+
+  function basculerActivation(): void {
+    if (form) form.hidden = true;
+    if (notice) notice.hidden = false;
+  }
+
+  // État réel du service AVANT tout affichage — sans les secrets worker, le
+  // formulaire n'apparaît pas : la grille d'outils externes reste le contenu
+  // affiché (pas de formulaire mort, pas de promesse de date).
+  try {
+    const res = await fetch(`${API_BASE}/api/watchlist/status`);
+    const data = (await res.json()) as { email_enabled?: boolean };
+    if (data.email_enabled === true && form) {
+      form.hidden = false;
+    } else {
+      basculerActivation();
+    }
+  } catch {
+    if (erreurReseau) erreurReseau.hidden = false;
+  }
+
+  function turnstileToken(): string {
+    return (
+      form?.querySelector<HTMLInputElement>('input[name="cf-turnstile-response"]')?.value ?? ''
+    );
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form || !submitBtn) return;
+
+    const email = emailInput?.value.trim() ?? '';
+    const emailValide = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    emailInput?.classList.toggle('veille-invalid', !emailValide);
+    emailInput?.setAttribute('aria-invalid', emailValide ? 'false' : 'true');
+    if (!emailValide) {
+      setStatus(errorHtml('Merci de saisir une adresse email valide.'));
+      return;
+    }
+    if (!turnstileToken()) {
+      setStatus(errorHtml('Vérification anti-robot incomplète — patientez quelques secondes puis réessayez.'));
+      return;
+    }
+
+    const fd = new FormData(form);
+    const payload = {
+      email,
+      sectors: fd.getAll('sectors').map(String),
+      data_types: [] as string[],
+      entities: [] as string[],
+      freq: (fd.get('freq') as string | null) ?? 'hebdo',
+      turnstile_token: turnstileToken(),
+    };
+
+    submitBtn.disabled = true;
+    setStatus('Envoi en cours…');
+
+    try {
+      const res = await fetch(`${API_BASE}/api/watchlist`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.status === 201) {
+        form.hidden = true;
+        if (successEl) {
+          successEl.hidden = false;
+          successEl.querySelector('h3')?.focus();
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+      }
+      if (res.status === 503) {
+        basculerActivation();
+        return;
+      }
+
+      let message = `Une erreur inattendue est survenue (code ${res.status}). Merci de réessayer.`;
+      try {
+        const data = (await res.json()) as { error?: string; errors?: string[] };
+        if (data.errors?.length) message = data.errors.join(' ');
+        else if (data.error) message = data.error;
+      } catch {
+        /* réponse non JSON : message générique conservé */
+      }
+      setStatus(errorHtml(message));
+    } catch {
+      setStatus(errorHtml('Service momentanément indisponible. Vérifiez votre connexion puis réessayez.'));
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+</script>
