@@ -102,8 +102,9 @@ function envoyerAuRelais(relay, event, timeoutMs = 5000) {
 
 /**
  * Ajoute des lignes au tableau « Ancrages publiés » de docs/ancrages.md.
- * Chaque ligne : [ancrage, empreinte, idEvenement]. Idempotent : les ancrages
- * déjà présents sont ignorés (retourne les ignorés).
+ * Chaque ligne : [ancrage, empreinte, idEvenement]. UPSERT : les lignes
+ * existantes voient leur pointeur d'événement rafraîchi (les relais
+ * purgent les anciennes notes ; les empreintes, elles, sont permanentes).
  */
 function enregistrerAncrages(cheminDoc, lignes) {
   const lignesFichier = readFileSync(cheminDoc, 'utf8').split('\n');
@@ -135,38 +136,31 @@ function enregistrerAncrages(cheminDoc, lignes) {
   if (fin === debut) {
     throw new Error(`tableau Markdown absent sous « ## Ancrages publiés » dans ${cheminDoc}`);
   }
-  const existants = new Set(
-    lignesFichier
-      .slice(debut, fin)
-      .map((l) => l.split('|')[1]?.trim())
-      .filter((v) => v && !v.startsWith('-') && v !== 'ancrage'),
-  );
-  // « tête » est une référence MOBILE : à chaque append, la tête du registre
-  // change — la ligne doit être REMPLACÉE (jamais ignorée). Les lignes par
-  // fiche, elles, sont permanentes (ignorées si déjà présentes).
-  const lignesTete = lignes.filter(([ancrage]) => ancrage === 'tête');
-  const ajouts = lignes.filter(([ancrage]) => ancrage !== 'tête' && !existants.has(ancrage));
-  if (ajouts.length > 0) {
-    const rendus = ajouts.map(([a, e, id]) => `| ${a} | ${e} | ${id} |`);
-    lignesFichier.splice(fin, 0, ...rendus);
-  }
-  let teteRemplacee = 0;
-  if (lignesTete.length > 0) {
-    const [teteEmpreinte, teteId] = lignesTete[0];
-    const indexAncienne = lignesFichier.findIndex(
-      (l) => l.trim().startsWith('|') && l.split('|')[1]?.trim() === 'tête',
+  // Sémantique UPSERT : chaque passage re-signe et re-publie TOUTES les notes
+  // (les relais purgent les anciens événements — seuls les EMPREINTES sont
+  // permanentes) puis met à jour chaque ligne du tableau (ajout si absente,
+  // remplacement du pointeur d'événement sinon). La ligne « tête » suit
+  // naturellement la même règle (référence mobile).
+  const parAncrage = new Map(lignes.map(([a, e, id]) => [a, [e, id]]));
+  let misesAJour = 0;
+  let ajouts = 0;
+  for (const [ancrage, [empreinte, id]] of parAncrage) {
+    const rendu = `| ${ancrage} | ${empreinte} | ${id} |`;
+    const index = lignesFichier.findIndex(
+      (l) => l.trim().startsWith('|') && l.split('|')[1]?.trim() === ancrage,
     );
-    if (indexAncienne !== -1) {
-      lignesFichier[indexAncienne] = `| tête | ${teteEmpreinte} | ${teteId} |`;
-    } else {
-      lignesFichier.splice(fin + ajouts.length, 0, `| tête | ${teteEmpreinte} | ${teteId} |`);
+    if (index === -1) {
+      lignesFichier.splice(fin + ajouts, 0, rendu);
+      ajouts++;
+    } else if (lignesFichier[index] !== rendu) {
+      lignesFichier[index] = rendu;
+      misesAJour++;
     }
-    teteRemplacee = 1;
   }
-  if (ajouts.length > 0 || teteRemplacee > 0) {
+  if (ajouts > 0 || misesAJour > 0) {
     writeFileSync(cheminDoc, lignesFichier.join('\n'), 'utf8');
   }
-  return { ajoutes: ajouts.length, ignores: lignes.length - ajouts.length - teteRemplacee, teteRemplacee };
+  return { ajoutes: ajouts, misesAJour, ignores: 0 };
 }
 
 async function main() {
@@ -240,14 +234,12 @@ async function main() {
   }
 
   if (tousAcceptes) {
-    const { ajoutes, ignores, teteRemplacee } = enregistrerAncrages(
+    const { ajoutes, misesAJour } = enregistrerAncrages(
       opts.ancrages,
       evenements.map(({ ancrage, empreinteContenue, event }) => [ancrage, empreinteContenue, event.id]),
     );
     console.log(
-      `${opts.ancrages} : ${ajoutes} ancrage(s) enregistré(s)` +
-        (ignores > 0 ? `, ${ignores} déjà présent(s) ignoré(s)` : '') +
-        (teteRemplacee > 0 ? ', ligne « tête » remplacée' : ''),
+      `${opts.ancrages} : ${ajoutes} ancrage(s) ajouté(s), ${misesAJour} mis(es) à jour (rajeunissement des pointeurs Nostr)`,
     );
   }
   console.log('contrôle final : node scripts/verify-anchors.mjs');
