@@ -1,0 +1,63 @@
+{
+  "slug": "ficoba-20260128",
+  "entity": "FICOBA (fichier national des comptes bancaires)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-28",
+    "publication": "2026-02-18",
+    "confirmation": "2026-02-18"
+  },
+  "volume": {
+    "count": 1200000,
+    "unit": "comptes",
+    "label": "1,2 million de comptes consultés et extraits selon le ministère de l'Économie, soit moins de 1 % des coordonnées bancaires du fichier ; l'identifiant fiscal n'a pas été consulté"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "impots.gouv.fr — Accès illégitimes au fichier national des comptes bancaires (FICOBA) (publié le 18 février, modifié le 3 mars 2026)",
+      "url": "https://www.impots.gouv.fr/actualite/acces-illegitimes-au-fichier-national-des-comptes-bancaires-ficoba",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ministère de l'Économie (communiqué n° 401, 18 février 2026) — Accès illégitimes au fichier national des comptes bancaires (FICOBA)",
+      "url": "https://presse.economie.gouv.fr/acces-illegitimes-au-fichier-national-des-comptes-bancaires-ficoba/",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — Identité du titulaire, adresse, RIB/Iban… Bercy indique que les données d'1,2 million de comptes bancaires ont été consultées de manière illégitime",
+      "url": "https://www.bfmtv.com/economie/entreprises/assurance-banque/identite-du-titulaire-adresse-rib-iban-bercy-indique-que-les-donnees-d-1-2-million-de-comptes-bancaires-ont-ete-consultees-de-maniere-illegitime-par-un-acteur-malveillant_AV-202602180739.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Fuite de données au fichier FICOBA : les informations de 1,2 million de comptes bancaires consultées de manière illégitime",
+      "url": "https://www.rtl.fr/actu/sciences-tech/fuite-de-donnees-au-fichier-ficoba-les-informations-de-1-2-million-de-comptes-bancaires-consultees-de-maniere-illegitime-7900602757",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Les données d'1,2 million de comptes bancaires français consultées illégalement, les usagers concernés vont être alertés",
+      "url": "https://www.leparisien.fr/economie/les-donnees-d12-million-de-comptes-bancaires-francais-consultees-illegalement-les-usagers-concernes-vont-etre-alertes-18-02-2026-62KH3FTGINAQPPEEAKPQG4AONE.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Des investigations de la DGFiP identifient des accès illégitimes au fichier national des comptes bancaires (FICOBA), qui recense l'ensemble des comptes ouverts dans les établissements français. Du 28 janvier au 13 février 2026, un acteur malveillant ayant usurpé les identifiants d'un fonctionnaire a consulté puis extrait les données d'environ 1,2 million de comptes : RIB/IBAN, identité et adresse du titulaire. Bercy rend l'incident public le 18 février ; la CNIL est notifiée et une plainte déposée. Les usagers concernés sont informés individuellement ; les soldes et les opérations des comptes ne figurent pas dans le fichier.",
+  "timeline": [
+    {
+      "date": "2026-01-28",
+      "event": "Début des consultations illégitimes documentées par la FAQ de la DGFiP : un acteur usurpant les identifiants d'un fonctionnaire interroge le fichier jusqu'au 13 février."
+    },
+    {
+      "date": "2026-02-18",
+      "event": "Le ministère de l'Économie annonce des accès illégitimes ayant concerné environ 1,2 million de comptes ; mesures de restriction mises en œuvre, CNIL notifiée, plainte déposée."
+    },
+    {
+      "date": "2026-02-27",
+      "event": "Une FAQ publiée par la DGFiP précise le périmètre (état civil, adresse, coordonnées bancaires) et le périmètre temporel des consultations ; les usagers concernés reçoivent une information individuelle."
+    }
+  ]
+}

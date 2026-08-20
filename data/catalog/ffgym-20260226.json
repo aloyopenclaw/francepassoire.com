@@ -1,0 +1,52 @@
+{
+  "slug": "ffgym-20260226",
+  "entity": "Fédération Française de Gymnastique (FFGym)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-02-26",
+    "publication": "2026-03-02",
+    "confirmation": "2026-03-05"
+  },
+  "volume": {
+    "count": 2900000,
+    "unit": "personnes",
+    "label": "2 900 000 licenciés et anciens licenciés depuis 2004 concernés selon la fédération (données de la fiche licence ; aucune donnée bancaire ou médicale compromise)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FFGym (page d'information officielle) — Information générale cyberattaque",
+      "url": "https://www.ffgym.fr/content/2026_-_02_-_f_f_gym_-_information_generale_cyberattaque",
+      "kind": "officiel"
+    },
+    {
+      "label": "01net — Les fuites de données continuent en France avec le hack de la Fédération Française de Gymnastique",
+      "url": "https://www.01net.com/actualites/fuites-donnees-continuent-france-hack-federation-francaise-gymnastique.html",
+      "kind": "article"
+    },
+    {
+      "label": "Generation-NT — La FFGym victime d'une cyberattaque, les données de 2,9 millions de licenciés exposées",
+      "url": "https://www.generation-nt.com/actualites/ffgym-cyberattaque-donnees-licencies-2071955",
+      "kind": "article"
+    }
+  ],
+  "description": "Une annonce de vente des données de près de trois millions de membres de la FFGym paraît le 26 février 2026 sur un forum, la veille de la communication de la fédération. Celle-ci confirme une cyberattaque contre FFGym Licence, son outil de gestion : un compte club compromis par hameçonnage a donné accès aux fiches des licenciés de la saison et des quatre dernières années, et à des données réduites pour les anciens licenciés depuis 2004. Au total, 2,9 millions de personnes sont concernées selon la fédération, qui suspend le service, notifie la CNIL, saisit l'ANSSI et dépose plainte. Aucune donnée bancaire ou médicale n'est compromise.",
+  "timeline": [
+    {
+      "date": "2026-02-26",
+      "event": "Une annonce de vente des données de près de trois millions de membres de la FFGym est publiée sur BreachForums, un jour avant l'annonce officielle de la fuite selon 01net."
+    },
+    {
+      "date": "2026-03-02",
+      "event": "La fédération indique avoir été victime d'une cyberattaque avec vol de données licenciés via un compte club compromis ; le service FFGym Licence est suspendu par précaution."
+    },
+    {
+      "date": "2026-03-05",
+      "event": "Page d'information officielle : 2,9 millions de licenciés et anciens licenciés concernés depuis 2004 ; plainte déposée, CNIL et ANSSI saisies, double authentification annoncée."
+    }
+  ]
+}

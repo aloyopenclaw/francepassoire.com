@@ -1,0 +1,58 @@
+{
+  "slug": "ffe-20260708",
+  "entity": "Fédération Française d'Équitation (FFE)",
+  "siren": "344386701",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-08",
+    "publication": "2026-07-12"
+  },
+  "volume": {
+    "count": 960000,
+    "unit": "enregistrements",
+    "label": "plus de 960 000 contacts revendiqués dans une base de gestion (ainsi qu'environ 14 000 clients et plus de 10 000 licences selon la même revendication) ; la FFE ne publie aucun chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — La Fédération Française d'Équitation visée par une cyberattaque revendiquée dans un « message politique » visant les autorités françaises",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/la-federation-francaise-d-equitation-visee-par-une-cyberattaque-revendiquee-dans-un-message-politique-visant-les-autorites-francaises_8105420.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — FFE : une nouvelle fuite massive à la veille des Championnats de France",
+      "url": "https://www.zataz.com/ffe-une-nouvelle-fuite-massive-a-la-veille-des-championnats-de-france/",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Fédération Française d'Équitation : 960 000 contacts revendiqués après une compromission totale des bases",
+      "url": "https://www.cyberattaque.org/federation-francaise-dequitation-960-000-contacts-revendiques-apres-une-compromission-totale-des-bases/",
+      "kind": "article"
+    },
+    {
+      "label": "Ostraca (blog de veille) — Fuite FFE 2026 : données de licenciés exposées",
+      "url": "https://blog.ostraca.fr/fuites-de-donnees/fuite-ffe-equitation-2026/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 juillet 2026, un acteur signant « BlackHatSect0r » revendique sur un forum la compromission de l'infrastructure de la FFE, avec un message politique visant les autorités françaises. Il affirme avoir accédé à deux espaces de stockage de l'hébergeur OVH, à la base du site web avec comptes et mots de passe hachés, et à une base de gestion de plus de 960 000 contacts, soit 16 Go selon lui. Le 11 juillet, la fédération annonce à ses adhérents qu'un espace de stockage hébergé chez OVH a été piraté et que des données de licenciés ont été consultées et potentiellement copiées. L'ampleur revendiquée n'est pas confirmée ; la FFE travaille avec OVH sur les circonstances de l'attaque.",
+  "timeline": [
+    {
+      "date": "2026-07-08",
+      "event": "Un acteur revendique sur un forum la compromission des bases de la FFE, espaces de stockage OVH compris, dans un message à motivation politique ; la revendication est relayée par les sites de veille."
+    },
+    {
+      "date": "2026-07-11",
+      "event": "La FFE annonce à ses adhérents une cyberattaque ayant entraîné la compromission de données personnelles de licenciés, consultées et potentiellement copiées depuis un espace de stockage de son hébergeur."
+    },
+    {
+      "date": "2026-07-12",
+      "event": "La presse nationale relaie l'incident ; les relais de veille rappellent qu'aucun élément public ne confirme l'ampleur exacte revendiquée."
+    }
+  ]
+}

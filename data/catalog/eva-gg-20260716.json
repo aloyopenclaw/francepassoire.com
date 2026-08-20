@@ -1,0 +1,47 @@
+{
+  "slug": "eva-gg-20260716",
+  "entity": "EVA.gg",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-16",
+    "publication": "2026-07-16"
+  },
+  "volume": {
+    "count": 70424,
+    "unit": "comptes",
+    "label": "70 424 comptes utilisateurs et environ 119 361 réservations revendiqués, extraits via l'API de la plateforme selon leur auteur ; EVA n'a pas confirmé l'incident"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — EVA.gg : 70 424 comptes et 119 361 réservations revendiqués après l'exploitation de son API GraphQL",
+      "url": "https://www.cyberattaque.org/eva-gg-70-424-comptes-et-119-361-reservations-revendiques-apres-lexploitation-de-son-api-graphql/",
+      "kind": "article"
+    },
+    {
+      "label": "info.fr — 7 fuites de données en 48h : Croq'Vacances, Accor, EVA esport… (vague de revendications des 14-16 juillet 2026)",
+      "url": "https://info.fr/fuites-donnees-france-juillet-2026-croq-vacances-accor-eva-esport/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches (blog) — DGFiP, Intermarché, EVA, handball : ZeroBytes sort du silence après une série de piratages en France",
+      "url": "https://frenchbreaches.com/blog/dgfip-intermarche-eva-handball-zerobytes-sort-du-silence-apres-une-serie-de-piratages-en-france",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 16 juillet 2026, une fuite attribuée à EVA.gg, réseau français d'arènes de réalité virtuelle, est revendiquée sur un forum. L'auteur affirme avoir reconstruit le schéma de l'API GraphQL de la plateforme depuis les fichiers de son interface d'administration, puis extrait 70 424 comptes complets — identité, e-mail, téléphone, adresse, date de naissance — et environ 119 361 réservations détaillant arènes, créneaux et équipements. EVA.gg n'a pas confirmé l'incident. Le pseudonyme ZeroBytes, déjà cité dans plusieurs affaires visant des organisations françaises, est associé à cette revendication par les relais de veille.",
+  "timeline": [
+    {
+      "date": "2026-07-16",
+      "event": "Une fuite de 70 424 comptes et 119 361 réservations attribuée à EVA.gg est revendiquée sur un forum, extraite via l'API de la plateforme selon son auteur."
+    },
+    {
+      "date": "2026-07-16",
+      "event": "La revendication s'inscrit dans une série de publications visant des organisations françaises entre le 14 et le 16 juillet, relayées par les sites de veille."
+    }
+  ]
+}

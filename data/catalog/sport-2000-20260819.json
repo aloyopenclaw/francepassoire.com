@@ -1,0 +1,47 @@
+{
+  "slug": "sport-2000-20260819",
+  "entity": "Sport 2000",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-19",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 17851,
+    "unit": "enregistrements",
+    "label": "17 851 réservations du système interne Pilot publiées gratuitement selon ZeroBytes, couvrant un peu plus de 9 000 clients distincts selon l'analyse d'un relais de veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Sport 2000 : ZeroBytes publie 17 851 réservations de son outil interne Pilot",
+      "url": "https://www.cyberattaque.org/sport-2000-zerobytes-publie-17-851-reservations-de-son-outil-interne-pilot/",
+      "kind": "article"
+    },
+    {
+      "label": "Capital.fr — Après le fisc et l'Education nationale, ZeroBytes revendique le piratage de Sport 2000",
+      "url": "https://www.capital.fr/conso/apres-le-fisc-et-l-education-nationale-zerobytes-revendique-le-piratage-de-sport-2000-1529415",
+      "kind": "article"
+    },
+    {
+      "label": "Jean-Marc Morandini — Les hackers de ZEROBYTES revendiquent un autre piratage : « Nous avons extrait 17 851 fiches personnelles de Sport 2000 »",
+      "url": "https://www.jeanmarcmorandini.com/article-649696-urgent-les-hackers-de-zerobytes-qui-ont-pirate-le-fisc-et-l-education-nationales-revendiquent-ce-soir-un-autre-piratage-nous-avons-extrait-17851-fiches-personnelles-de-sport-2000-et-nous-allons-les-diffuser.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 août 2026, ZeroBytes revendique une intrusion dans Pilot, le système interne de réservation de Sport 2000, et publie gratuitement 17 851 réservations de location de matériel, couvrant un peu plus de 9 000 clients distincts selon l'analyse d'un relais de veille. Nom, adresse, e-mail, téléphone renseigné et détails des séjours — dates, magasin, matériel loué, montants payés — figurent dans les données diffusées. L'auteur dit avoir combiné une fonction d'export et un parcours manuel des dossiers annulés. Sport 2000 n'a pas confirmé la compromission à ce stade ; aucun numéro de carte bancaire n'apparaît dans les échantillons.",
+  "timeline": [
+    {
+      "date": "2026-08-19",
+      "event": "ZeroBytes revendique l'accès à Pilot, outil interne de réservation de Sport 2000, et annonce la diffusion gratuite de 17 851 réservations extraites."
+    },
+    {
+      "date": "2026-08-19",
+      "event": "Les relais de veille et la presse analysent les données diffusées : un peu plus de 9 000 clients distincts, coordonnées et détails de séjours ; l'enseigne n'a pas réagi publiquement."
+    }
+  ]
+}
