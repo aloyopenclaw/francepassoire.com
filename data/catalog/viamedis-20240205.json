@@ -1,0 +1,64 @@
+{
+  "slug": "viamedis-20240205",
+  "entity": "Viamedis",
+  "siren": "432788974",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-05",
+    "publication": "2024-02-07",
+    "confirmation": "2024-02-07"
+  },
+  "volume": {
+    "count": 33000000,
+    "unit": "personnes",
+    "label": "plus de 33 millions de personnes (assurés et leurs familles) — chiffre global annoncé par la CNIL le 7 février 2024 pour l'attaque visant conjointement Viamedis et Almerys ; le périmètre propre à chaque opérateur n'est pas publié"
+  },
+  "data_types": ["identite", "financier"],
+  "sources": [
+    {
+      "label": "CNIL — Violation de données de deux opérateurs de tiers payant : la CNIL ouvre une enquête et rappelle aux assurés les précautions à prendre (7 février 2024)",
+      "url": "https://www.cnil.fr/fr/violation-de-donnees-de-deux-operateurs-de-tiers-payant-la-cnil-ouvre-une-enquete-et-rappelle-aux",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cybermalveillance.gouv.fr — Violation de données personnelles des prestataires de tiers payant Viamedis et Almerys, formulaire de lettre plainte (9 février 2024)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-de-donnees-personnelles-viamedis-almerys-formulaire-lettre-plainte-electronique",
+      "kind": "officiel"
+    },
+    {
+      "label": "La Mutuelle Générale — Cyberattaque contre des opérateurs de tiers payant (5 février 2024)",
+      "url": "https://www.lamutuellegenerale.fr/a-propos/newsroom/cyberattaque-contre-des-operateurs-de-tiers-payant",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Vol de données à des gestionnaires du tiers payant : plus de 33 millions de personnes concernées selon la CNIL (7 février 2024)",
+      "url": "https://www.lefigaro.fr/conjoncture/vol-de-donnees-a-des-gestionnaires-du-tiers-payant-plus-de-33-millions-de-personnes-concernees-selon-la-cnil-20240207",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Vol de données de 33 millions de Français : les deux principaux opérateurs du tiers payant ciblés (8 février 2024)",
+      "url": "https://www.franceinfo.fr/sante/vol-de-donnees-de-33-millions-de-francais-les-deux-principaux-operateurs-du-tiers-payant-cibles_6353476.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Viamedis, opérateur de tiers payant pour de nombreuses complémentaires santé, est victime fin janvier 2024 d'une intrusion. Elle a été menée par hameçonnage du compte d'un professionnel de santé, selon son directeur général. La violation est rendue publique le 7 février par la CNIL, informée par Viamedis et Almerys. Plus de 33 millions de personnes sont concernées : état civil, date de naissance, numéro de Sécurité sociale, assureur santé et garanties du contrat. Ni données bancaires, ni données médicales. Les complémentaires informent individuellement les assurés ; le parquet de Paris ouvre une enquête préliminaire.",
+  "timeline": [
+    {
+      "date": "2024-02-05",
+      "event": "La Mutuelle Générale informe ses adhérents que Viamedis et Almerys, opérateurs nationaux de tiers payant, ont été la cible d'une cyberattaque."
+    },
+    {
+      "date": "2024-02-07",
+      "event": "La CNIL rend la violation publique : plus de 33 millions de personnes concernées au total ; elle ouvre des investigations sur les mesures de sécurité des deux opérateurs."
+    },
+    {
+      "date": "2024-02-08",
+      "event": "Le directeur général de Viamedis précise qu'il ne s'agit pas d'un rançongiciel : la plateforme, déconnectée à la découverte de l'intrusion, a fait l'objet d'une plainte."
+    },
+    {
+      "date": "2024-02-09",
+      "event": "Le parquet de Paris (section J3) ouvre une enquête préliminaire confiée à la brigade de lutte contre la cybercriminalité ; un formulaire de lettre-plainte est mis en ligne."
+    }
+  ]
+}

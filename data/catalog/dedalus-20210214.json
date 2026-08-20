@@ -1,0 +1,82 @@
+{
+  "slug": "dedalus-20210214",
+  "entity": "Dedalus Biologie",
+  "siren": "348585233",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-02-14",
+    "publication": "2021-02-23",
+    "confirmation": "2022-04-15"
+  },
+  "volume": {
+    "count": 491840,
+    "unit": "personnes",
+    "label": "491 840 personnes dans le fichier diffusé, « près d'un demi-million » selon la CNIL — prélèvements de 2015 à 2020 dans une trentaine de laboratoires d'analyses du Nord-Ouest de la France"
+  },
+  "data_types": ["identite", "coordonnees", "sante", "credentials"],
+  "sources": [
+    {
+      "label": "CNIL, lettre d'information n°4 (avril 2022) — Fuite de données de santé : sanction de 1,5 million d'euros à l'encontre de la société DEDALUS BIOLOGIE",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/lettre_information_cnil_avril_2022.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Libération CheckNews (23 février 2021) — Les informations confidentielles de 500 000 patients français dérobées à des laboratoires et diffusées en ligne (archive)",
+      "url": "http://web.archive.org/web/20250825053920/https://www.liberation.fr/checknews/les-informations-confidentielles-de-500-000-patients-francais-derobees-a-des-laboratoires-medicaux-et-diffusees-en-ligne-20210223_VO6W6J6IUVATZD4VOVNDLTDZBU/",
+      "kind": "archive"
+    },
+    {
+      "label": "ZDNet.fr — Fuite de données de santé : les autorités s'en mêlent (26 février 2021)",
+      "url": "https://www.zdnet.fr/actualites/fuite-de-donnees-de-sante-les-autorites-s-en-melent-39918535.htm",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr — Fuite de données de santé : la CNIL sanctionne l'éditeur logiciel Dedalus (21 avril 2022)",
+      "url": "https://www.zdnet.fr/actualites/fuite-de-donnees-de-sante-la-cnil-sanctionne-l-editeur-logiciel-dedalus-39940885.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien (avec AFP) — Fuite de données médicales : près de 500 000 victimes en France (23 février 2021)",
+      "url": "https://www.leparisien.fr/faits-divers/fuite-de-donnees-medicales-pres-de-500-000-victimes-en-france-23-02-2021-MSTSHE53PRGJHMPYY2TLEMNRFE.php",
+      "kind": "article"
+    },
+    {
+      "label": "France Inter — Ce que l'on sait de la fuite « sans précédent » de données médicales de laboratoires d'analyses (24 février 2021)",
+      "url": "https://www.radiofrance.fr/franceinter/ce-que-l-on-sait-de-la-fuite-sans-precedent-de-donnees-medicales-de-laboratoires-d-analyses-6984680",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Fuite de données médicales : la CNIL inflige 1,5 million d'euros d'amende à l'éditeur du logiciel (21 avril 2022)",
+      "url": "https://www.bfmtv.com/tech/fuite-de-donnees-medicales-la-cnil-inflige-1-5-million-d-euros-d-amende-a-l-editeur-du-logiciel_AD-202204210333.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Un fichier de 491 840 patients d'une trentaine de laboratoires d'analyses est diffusé depuis le 14 février 2021, après une mise en ligne gratuite. Un pirate l'avait publié à la suite d'une dispute. Il contient identité, numéro de Sécurité sociale, coordonnées, mots de passe et des informations de santé parfois sensibles. L'enquête de Libération remonte au logiciel Mega-Bus de l'éditeur Dedalus et à son serveur de migration, accessible sans authentification. Un échantillon était en ligne dès novembre 2020. La CNIL sanctionne Dedalus Biologie le 15 avril 2022 : 1,5 million d'euros d'amende pour défauts de sécurité à l'origine de la fuite.",
+  "timeline": [
+    {
+      "date": "2021-02-14",
+      "event": "Le blog Zataz révèle un fichier de 491 840 patients, diffusé gratuitement à plusieurs endroits du web après une dispute entre pirates."
+    },
+    {
+      "date": "2021-02-23",
+      "event": "Libération (CheckNews) identifie l'origine : le logiciel Mega-Bus de Dedalus, utilisé par une trentaine de laboratoires du Nord-Ouest ; les données couvrent 2015 à 2020."
+    },
+    {
+      "date": "2021-02-24",
+      "event": "La CNIL annonce des contrôles pour constater officiellement la mise à disposition du fichier ; le parquet de Paris ouvre une enquête confiée à l'OCLCTIC."
+    },
+    {
+      "date": "2021-02-26",
+      "event": "L'ANSSI indique avoir identifié l'origine de la fuite dès novembre 2020 et l'avoir signalée au ministère de la Santé, sans détail public."
+    },
+    {
+      "date": "2022-04-15",
+      "event": "La formation restreinte de la CNIL sanctionne Dedalus Biologie de 1,5 million d'euros pour des défauts de sécurité ayant conduit à la fuite."
+    },
+    {
+      "date": "2022-04-21",
+      "event": "La sanction est rendue publique : serveur FTP de migration sans authentification ni chiffrement, comptes partagés, aucune supervision des alertes."
+    }
+  ]
+}

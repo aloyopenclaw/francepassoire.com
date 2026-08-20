@@ -1,0 +1,55 @@
+{
+  "slug": "fff-20240326",
+  "entity": "Fédération française de football (FFF)",
+  "siren": "303742480",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-03-26",
+    "publication": "2024-03-26",
+    "confirmation": "2024-03-26"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "enregistrements",
+    "label": "potentiellement 1,5 million de données de licenciés (chiffre du parquet de Paris) — licences des saisons 2022-2023 et 2023-2024 ; les joueurs professionnels ne sont pas concernés"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — 2024, une année marquée par un nombre record de violations de données personnelles (lettre plainte mise à disposition pour la FFF)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/2024-violations-donnees-personnelles",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien — Cybersécurité : la FFF victime d'un vol de données personnelles, une plainte déposée (26 mars 2024)",
+      "url": "https://www.leparisien.fr/sports/football/cybersecurite-la-fff-victime-dun-vol-de-donnees-personnelles-une-plainte-deposee-26-03-2024-VLAGNVW5Z5GN3K2QEPRX74CG4I.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Cyberattaque à la Fédération française de football : 1,5 million de données de licenciés menacées (26 mars 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/cyberattaque-a-la-federation-francaise-de-football-1-5-million-de-donnees-de-licencies-menacees-7900367416",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — La FFF, victime d'une attaque informatique, annonce le vol de données de certains de ses adhérents (26 mars 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/la-fff-victime-d-une-attaque-informatique-annonce-le-vol-de-donnees-de-certains-de-ses-adherents_6449275.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération française de football annonce le 26 mars 2024 un vol de données de licences de football amateur. Un pirate revendiquait sur un forum des informations de licenciés, relayées par Le Parisien et Zataz. Selon le parquet de Paris, potentiellement 1,5 million de données ont été collectées frauduleusement. Sont concernés identité, représentant légal des mineurs, coordonnées, numéro de licencié et club, pour les saisons 2022-2023 et 2023-2024. Mots de passe, coordonnées bancaires, données médicales et photographies exclus. La FFF a déposé plainte, notifié la CNIL et l'ANSSI ; l'enquête est confiée à la brigade de lutte contre la cybercriminalité.",
+  "timeline": [
+    {
+      "date": "2024-03-21",
+      "event": "Le vol de données a lieu, selon la FFF ; un pirate revendique sur un forum détenir des informations de licenciés, relayé par Le Parisien et Zataz."
+    },
+    {
+      "date": "2024-03-22",
+      "event": "La FFF apprend que potentiellement 1,5 million de données de ses licenciés ont été collectées frauduleusement, selon le parquet de Paris."
+    },
+    {
+      "date": "2024-03-26",
+      "event": "La FFF rend l'attaque publique, dépose plainte et notifie la CNIL et l'ANSSI ; le parquet de Paris ouvre une enquête confiée à la BL2C."
+    }
+  ]
+}

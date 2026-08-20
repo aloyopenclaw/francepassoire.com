@@ -1,0 +1,40 @@
+{
+  "slug": "assurance-retraite-20240909",
+  "entity": "Assurance retraite (CNAV)",
+  "siren": "180035032",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-09",
+    "publication": "2024-09-13"
+  },
+  "volume": {
+    "count": 375760,
+    "unit": "lignes",
+    "label": "375 760 lignes présentées comme issues de « l'Assurance retraite » et mises en vente sur un forum, incluant les ressources mensuelles des personnes selon le pirate ; l'organisme n'a pas confirmé et n'a pas communiqué"
+  },
+  "data_types": ["financier"],
+  "sources": [
+    {
+      "label": "Zataz — Clients Boulanger, Cultura, GrosBill piratés ? (relais de la revendication, 9 septembre 2024)",
+      "url": "https://www.zataz.com/clients-boulanger-cultura-grosbill-pirates/",
+      "kind": "revendication"
+    },
+    {
+      "label": "ZDNet.fr — Fuites de données chez Boulanger, Cultura ou encore Truffaut : la piste du piratage d'un prestataire externe (13 septembre 2024)",
+      "url": "https://www.zdnet.fr/actualites/fuites-de-donnees-chez-boulanger-cultura-ou-encore-truffaut-la-piste-du-piratage-dun-prestataire-externe-397030.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Un pirate actif sur un forum de revente de données revendique début septembre 2024 la mise en vente de 375 760 lignes. Le blog Zataz relaie cette revendication. Les lignes sont présentées comme issues de « l'Assurance retraite ». Selon ses dires, le fichier inclut les ressources mensuelles des personnes enregistrées. ZDNet rapporte que l'Assurance retraite n'a pas communiqué sur cet éventuel piratage. La revendication n'est établie par aucune source officielle à ce jour. Elle s'inscrit dans une série de mises en vente visant enseignes et organismes français à la rentrée 2024.",
+  "timeline": [
+    {
+      "date": "2024-09-09",
+      "event": "Le blog Zataz relaie la revendication d'un pirate : 375 760 lignes « Assurance retraite » mises en vente, dont les ressources mensuelles des personnes selon ses dires."
+    },
+    {
+      "date": "2024-09-13",
+      "event": "ZDNet documente cette mise en vente parmi d'autres visant des enseignes françaises et rapporte l'absence de communication de l'Assurance retraite."
+    }
+  ]
+}

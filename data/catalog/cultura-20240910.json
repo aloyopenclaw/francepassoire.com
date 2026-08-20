@@ -1,0 +1,59 @@
+{
+  "slug": "cultura-20240910",
+  "entity": "Cultura",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-10",
+    "publication": "2024-09-10",
+    "confirmation": "2024-09-10"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "1,5 million de clients touchés (chiffre communiqué par Cultura le 10 septembre 2024) ; un pirate revendique séparément 2,6 millions de lignes de commandes"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — 2024, une année marquée par un nombre record de violations de données personnelles (Cultura cité parmi les violations massives)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/2024-violations-donnees-personnelles",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Cultura victime d'une cyberattaque, les données de 1,5 million de clients dérobées (10 septembre 2024)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/cultura-victime-d-une-cyberattaque-les-donnees-de-1-5-million-de-clients-derobees-20240910",
+      "kind": "article"
+    },
+    {
+      "label": "RTL (AFP) — Cyberattaque : Cultura victime d'un vol de données, 1,5 million de clients touchés (10 septembre 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/cyberattaque-cultura-victime-d-un-vol-de-donnees-1-5-millions-de-clients-touches-7900416371",
+      "kind": "article"
+    },
+    {
+      "label": "Next INpact — Fuite de données Cultura : 1,5 million de clients concernés, une plainte a été déposée (10 septembre 2024)",
+      "url": "https://next.ink/149551/boulanger-cultura-diviamobilites-les-fuites-de-donnees-se-multiplient/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr — Fuites de données chez Boulanger, Cultura ou encore Truffaut : la piste du piratage d'un prestataire externe (13 septembre 2024)",
+      "url": "https://www.zdnet.fr/actualites/fuites-de-donnees-chez-boulanger-cultura-ou-encore-truffaut-la-piste-du-piratage-dun-prestataire-externe-397030.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Cultura, enseigne de distribution culturelle, annonce le 10 septembre 2024 le vol de données de 1,5 million de clients. Les données proviennent d'un prestataire informatique victime d'une « intrusion malveillante » le 6 septembre, dans une attaque ayant ciblé plusieurs enseignes le même jour. Sont concernés : nom, prénom, identifiant client, téléphone, adresses e-mail et postale, produits achetés. Mots de passe et données bancaires exclus selon l'enseigne, qui a déposé plainte, notifié la CNIL et contacté individuellement les clients concernés. Un pirate revendique séparément 2,6 millions de lignes de commandes ; le prestataire n'a pas été identifié.",
+  "timeline": [
+    {
+      "date": "2024-09-06",
+      "event": "Un prestataire informatique de Cultura subit une intrusion malveillante, dans une attaque ayant ciblé plusieurs enseignes ce même jour, selon l'enseigne."
+    },
+    {
+      "date": "2024-09-10",
+      "event": "Cultura communique : 1,5 million de clients touchés ; plainte déposée, CNIL notifiée, clients contactés individuellement par courriel."
+    },
+    {
+      "date": "2024-09-13",
+      "event": "La mise en vente revendiquée de 2,6 millions de lignes de commandes attribuées à Cultura est documentée, dans une série visant plusieurs enseignes françaises."
+    }
+  ]
+}
