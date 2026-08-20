@@ -79,8 +79,22 @@ $ curl "http://localhost:8791/__scheduled?cron=*/10+*+*+*+*"
   [watchdog] première observation flux-rss : ok
   [watchdog] première observation registre : ok
   [watchdog] première observation api : ok
-  → baseline posée SANS note (comportement voulu : pas d'alerte sur du vide). Le cron
-  production posera la même baseline dans le KV réel à la première échéance */10.
+  → baseline posée SANS note (comportement voulu : pas d'alerte sur du vide).
+
+--- ÉTAPE 3bis : VÉRIFICATION DU CRON EN PRODUCTION (23:00 et 23:10 UTC) ---
+$ npx wrangler tail francepassoire-watchdog → "*/10 * * * *" @ 23:10:09 UTC - Ok.
+API KV directe (le CLI `wrangler kv key list` renvoyait à tort [] — lecture périmée
+du CLI 4.125 ; l'API REST est la vérité terrain) :
+  GET …/storage/kv/namespaces/fdae27fb73ac4d6fb17c3d4a99c0b179/keys → 5 clés :
+    watchdog:state:accueil = {"ok":true,"since":"2026-08-20T23:00:09.938Z",
+                              "lastCheck":"2026-08-20T23:13:50.553Z"}
+    watchdog:state:api      = {"ok":true,"since":"2026-08-20T23:00:11.230Z", …}
+    + watchdog:state:flux-rss, watchdog:state:registre, watchdog:history
+    history = 12 entrées (3 passages × 4 cibles : 23:00, 23:10, 23:13).
+  → le cron 23:00 UTC a posé la baseline, 23:10 = état stable : ZERO note
+    Nostr publiée (aucune transition) — comportement anti-spam confirmé en
+    production. Le pipeline complet (cron → sonde → KV → absence de note à
+    l'état stable) tourne.
 
 --- ÉTAPE 4 : page 404 (src/pages/404.astro) ---
 Layout standard + <meta name="robots" content="noindex" slot="head"> (le Layout n'a pas
