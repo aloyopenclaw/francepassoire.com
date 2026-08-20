@@ -26,6 +26,16 @@
 // markup modifié, CSV sans en-tête ou lignes invalides => [] (ou lignes
 // ignorées) + console.warn, jamais d'exception. Les stats trimestrielles ne
 // sont PAS des candidats (elles alimenteront /chiffres en T36).
+//
+// DÉDUP GUID — mirroir du pattern knownGuids de rss.ts : chaque ligne de
+// sanction reçoit un guid stable (jointure déterministe de toutes les
+// colonnes, cf. guidSanction) embarqué dans raw, et
+// fetchCandidates(fetchFn, knownGuids?) filtre les guids déjà vus. Les
+// lignes strictement identiques au sein d'une même page sont aussi dédupées.
+// C'est le runner (T19) qui câble le guid_set persisté en KV
+// (ingest:state:<id>) — l'adapter ne touche ni D1 ni KV. Sans ce filtre,
+// chaque pass re-insérait les sanctions identiques (constat du soak :
+// ~790 doublons/heure).
 
 import type { Candidate, SourceAdapter } from '../src/adapter';
 
@@ -84,6 +94,7 @@ function extraireManquements(html: string): string[] {
 }
 
 interface SanctionBrute {
+  guid: string;
   date: string;
   organisme: string;
   manquements: string[];
@@ -93,11 +104,38 @@ interface SanctionBrute {
 }
 
 /**
+ * Guid stable d'une ligne de sanction : jointure déterministe de TOUTES les
+ * colonnes (date ⊕ organisme ⊕ URL de décision ⊕ décision ⊕ manquements ⊕
+ * thème). La jointure réduite date ⊕ organisme ⊕ URL collisionne sur la page
+ * réelle (vérifié 2026-08-20 : deux sanctions du même organisme, même date,
+ * même décision Légifrance mais manquements distincts). Séparateur \u0000
+ * absent du contenu HTML décodé — pas de collision de jointure possible.
+ * Même règle de clé que parseCnilStats (trimestre ⊕ secteur).
+ */
+export function guidSanction(sanction: SanctionBrute): string {
+  return [
+    sanction.date,
+    sanction.organisme,
+    sanction.url_decision ?? '',
+    sanction.decision,
+    sanction.manquements.join('\u0001'),
+    sanction.theme ?? '',
+  ].join('\u0000');
+}
+
+/**
  * Parse les tableaux annuels de sanctions depuis le HTML de la page CNIL.
  * Pur : markup méconnaissable => [] + console.warn, jamais d'exception.
+ *
+ * @param knownGuids Optionnel : guids déjà vus (guid_set KV câblé par le
+ *        runner) — les lignes correspondantes sont filtrées. Le warn « 0
+ *        sanction parsée » ne se déclenche que si la page elle-même est
+ *        illisible, pas si toutes les lignes sont déjà connues.
  */
-export function parseCnilSanctions(html: string): Candidate[] {
+export function parseCnilSanctions(html: string, knownGuids?: Set<string>): Candidate[] {
   const candidats: Candidate[] = [];
+  let lignesValides = 0;
+  const vus = new Set<string>();
   const tableaux = html.match(/<table[^>]*>[\s\S]*?<\/table>/gi) ?? [];
 
   for (const tableau of tableaux) {
@@ -117,6 +155,7 @@ export function parseCnilSanctions(html: string): Candidate[] {
 
       const lienDecision = /href="([^"]+)"/.exec(celluleDecision);
       const sanction: SanctionBrute = {
+        guid: '',
         date,
         organisme,
         manquements: extraireManquements(celluleManquements ?? ''),
@@ -124,6 +163,15 @@ export function parseCnilSanctions(html: string): Candidate[] {
         url_decision: lienDecision ? decoderEntites(lienDecision[1] ?? '') : null,
       };
       if (legacy) sanction.theme = texteCellule(cellules[2] ?? '');
+      sanction.guid = guidSanction(sanction);
+
+      lignesValides++;
+      // dédup intra-page : 5 lignes strictement identiques existent dans la
+      // page réelle (vérifié à la main sur la fixture) — aucun champ ne les
+      // distingue, donc un seul candidat.
+      if (vus.has(sanction.guid)) continue;
+      vus.add(sanction.guid);
+      if (knownGuids?.has(sanction.guid)) continue;
 
       candidats.push({
         source: SOURCE_SANCTIONS,
@@ -134,7 +182,7 @@ export function parseCnilSanctions(html: string): Candidate[] {
     }
   }
 
-  if (candidats.length === 0) {
+  if (lignesValides === 0) {
     console.warn(
       '[cnil-sanctions] 0 sanction parsée — markup CNIL probablement modifié, à ré-inspecter',
       CNIL_SANCTIONS_URL,
@@ -144,16 +192,25 @@ export function parseCnilSanctions(html: string): Candidate[] {
   return candidats;
 }
 
-export const cnilSanctionsAdapter: SourceAdapter = {
+/** SourceAdapter + dédup guid optionnelle (même contrat que RssAdapter). */
+export interface CnilSanctionsAdapter extends SourceAdapter {
+  fetchCandidates(fetchFn: typeof fetch, knownGuids?: Set<string>): Promise<Candidate[]>;
+}
+
+export const cnilSanctionsAdapter: CnilSanctionsAdapter = {
   id: 'cnil-sanctions',
-  async fetchCandidates(fetchFn) {
+  /**
+   * @param knownGuids Optionnel : guids déjà vus (guid_set KV câblé par le
+   *        runner) — les sanctions correspondantes sont filtrées.
+   */
+  async fetchCandidates(fetchFn, knownGuids?) {
     // ⚠ Le runner (T19) doit garantir CNIL_MAX_RUNS_PER_DAY via isDailyRateOk.
     const response = await fetchFn(CNIL_SANCTIONS_URL);
     if (!response.ok) {
       console.warn(`[cnil-sanctions] HTTP ${response.status} — run ignoré`, CNIL_SANCTIONS_URL);
       return [];
     }
-    return parseCnilSanctions(await response.text());
+    return parseCnilSanctions(await response.text(), knownGuids);
   },
 };
 
