@@ -1,0 +1,28 @@
+{
+  "slug": "retail-lignes-2024",
+  "entity": "Enseigne Exemple (fictive)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-05",
+    "publication": "2024-11-06"
+  },
+  "volume": {
+    "count": 540000,
+    "unit": "lignes",
+    "label": "540 000 lignes"
+  },
+  "data_types": ["coordonnees"],
+  "sources": [
+    {
+      "label": "Article de presse (exemple)",
+      "url": "https://exemple.fr/article-retail",
+      "kind": "article"
+    }
+  ],
+  "description": "Fiche fictive de test : export de base clients mesuré en lignes, jamais sommé dans le compteur de personnes, revendiqué sans confirmation.",
+  "timeline": [
+    { "date": "2024-11-05", "event": "Revendication (exemple)." },
+    { "date": "2024-11-06", "event": "Article de presse (exemple)." }
+  ]
+}

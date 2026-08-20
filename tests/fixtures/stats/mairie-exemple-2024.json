@@ -1,0 +1,28 @@
+{
+  "slug": "mairie-exemple-2024",
+  "entity": "Mairie Exemple (fictive)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-02",
+    "publication": "2024-05-03"
+  },
+  "volume": {
+    "count": 8000,
+    "unit": "personnes",
+    "label": "8 000 personnes"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Communiqué municipal (exemple)",
+      "url": "https://exemple.fr/communique-mairie",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Fiche fictive de test : fichier d'usagers d'un service municipal exposé, 8 000 personnes concernées, confirmé par l'administration.",
+  "timeline": [
+    { "date": "2024-05-02", "event": "Signalement interne (exemple)." },
+    { "date": "2024-05-03", "event": "Publication du communiqué (exemple)." }
+  ]
+}
