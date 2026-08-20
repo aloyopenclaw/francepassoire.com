@@ -1,0 +1,52 @@
+{
+  "slug": "accor-20260715",
+  "entity": "Accor",
+  "siren": "602036444",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-15",
+    "publication": "2026-07-16"
+  },
+  "volume": {
+    "count": 162437,
+    "unit": "enregistrements",
+    "label": "162 437 fiches clients revendiquées, extraites d'un outil interne selon leur auteur, avec un échantillon d'environ 1 150 fiches ; Accor n'a pas communiqué publiquement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Accor : 162 437 fiches clients revendiquées après l'accès à un outil interne du groupe",
+      "url": "https://www.cyberattaque.org/accor-162-437-fiches-clients-revendiquees-apres-lacces-a-un-outil-interne-du-groupe/",
+      "kind": "article"
+    },
+    {
+      "label": "BreachNews — Accor allegedly breached as threat actor lists 162K customer records",
+      "url": "https://breachnews.com/breaches/accor-allegedly-breached-as-threat-actor-lists-162k-customer-records/",
+      "kind": "article"
+    },
+    {
+      "label": "info.fr — 7 fuites de données en 48h : Croq'Vacances, Accor, EVA esport… (vague de revendications des 14-16 juillet 2026)",
+      "url": "https://info.fr/fuites-donnees-france-juillet-2026-croq-vacances-accor-eva-esport/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 juillet 2026, un acteur publie sur un forum une base partielle de 162 437 fiches clients attribuées à Accor, avec un échantillon d'environ 1 150 fiches. Il affirme être entré via un compte employé dans un outil interne nommé LUKE, avoir extrait les fiches une par une, puis avoir été déconnecté par les systèmes de surveillance du groupe. Identité, coordonnées, données de fidélité et historique de réservations figurent parmi les données annoncées ; une minorité de fiches comporterait un numéro de pièce d'identité. Accor n'a pas communiqué publiquement sur cette revendication, que les relais de veille considèrent comme non confirmée.",
+  "timeline": [
+    {
+      "date": "2026-07-14",
+      "event": "Début de l'intrusion revendiquée : un acteur affirme avoir compromis un compte employé donnant accès à un outil interne du groupe hôtelier."
+    },
+    {
+      "date": "2026-07-15",
+      "event": "La base partielle de 162 437 fiches clients est proposée sur un forum avec un échantillon ; l'auteur indique avoir été déconnecté par les systèmes de surveillance."
+    },
+    {
+      "date": "2026-07-16",
+      "event": "Les relais de veille documentent la revendication ; le groupe n'a pas réagi publiquement et aucune confirmation officielle n'est disponible."
+    }
+  ]
+}

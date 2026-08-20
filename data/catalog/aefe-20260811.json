@@ -1,0 +1,47 @@
+{
+  "slug": "aefe-20260811",
+  "entity": "Agence pour l'enseignement français à l'étranger (AEFE)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-11",
+    "publication": "2026-08-16"
+  },
+  "volume": {
+    "count": 30594,
+    "unit": "lignes",
+    "label": "30 594 lignes d'annuaire et 135 adresses e-mail supplémentaires revendiquées (noms, fonctions, établissements, pays) ; l'agence a confirmé une intrusion dans son réseau interne selon la presse"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — L'Agence pour l'enseignement français à l'étranger piratée : plus de 30 000 personnes concernées",
+      "url": "https://frenchbreaches.com/alertes/agence-pour-l-enseignement-fran-ais-l-tranger-aefe-msp6elbt3d5a63mumeq",
+      "kind": "revendication"
+    },
+    {
+      "label": "Témoignages (La Réunion) — Rentrée scolaire : l'OCOI appelle à la vigilance face à la vague de piratages",
+      "url": "https://www.temoignages.re/developpement/education-formation/rentree-scolaire-l-ocoi-appelle-a-la-vigilance-face-a-la-vague-de-piratages",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — « L'argent est la principale motivation » : que sait-on de ZeroBytes, le mystérieux cybercriminel qui revendique le piratage du fisc ?",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/l-argent-est-la-principale-motivation-que-sait-on-de-zerobytes-le-mysterieux-cybercriminel-qui-revendique-le-piratage-du-fisc-20260817",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 août 2026, ZeroBytes revendique sur un forum la compromission de services liés au domaine de l'AEFE, opérateur public du réseau des établissements d'enseignement français à l'étranger. Via un accès au système d'authentification unique, il affirme avoir extrait un annuaire de 30 594 lignes — noms, fonctions, adresses e-mail professionnelles, établissements et pays de rattachement — et avoir accédé à une messagerie interne et à Tchap. Selon la presse, l'agence a confirmé une intrusion dans son réseau interne. L'étendue de la compromission et le nombre exact de personnes concernées restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-11",
+      "event": "ZeroBytes revendique sur un forum l'accès au SSO de l'AEFE et l'extraction d'un annuaire de 30 594 lignes, ainsi qu'un accès à une messagerie interne et à Tchap."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "La presse rapporte que l'agence a confirmé une intrusion dans son réseau interne, plus de 30 000 personnes étant concernées selon la revendication."
+    }
+  ]
+}
