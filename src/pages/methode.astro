@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {
+  NPUB_ANCRAGE,
+  RELAIS_EPINGLES,
+  raccourcirEmpreinte,
+  vueRegistre,
+} from '../lib/trust-view';
 ---
 <Layout
   title="La méthode - France Passoire"
@@ -104,20 +110,62 @@ import Layout from '../layouts/Layout.astro';
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-8 shadow-hard">
         <p class="font-body mb-8 max-w-3xl">Parce que l'information sur les fuites subit de fortes pressions, toute correction, tout ajout ou tout retrait est inscrit pour toujours — chaîné par empreintes cryptographiques et ancré hors de ce site.</p>
 
-        <!-- Chips d'empreintes : contraste plein (l'opacity-70 passait le chip
+        <!-- Chips d'empreintes réelles : contraste plein (l'opacity-70 passait le chip
              orange sous 4.5:1 — axe color-contrast, tâche 44) -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
-          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">A7B2...9F</div>
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6" aria-hidden="true">
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">{raccourcirEmpreinte(vueRegistre.empreintePremiere)}</div>
           <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
-          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">C3D4...1E</div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">{raccourcirEmpreinte(vueRegistre.empreintePrecedente)}</div>
           <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
-          <div class="border-2 border-brand-ink p-2 rounded bg-brand-orange text-brand-ink font-mono text-xs">8F9A...B2</div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-orange text-brand-ink font-mono text-xs">{raccourcirEmpreinte(vueRegistre.empreinteTete)}</div>
           <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
-          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">...</div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">…</div>
         </div>
 
-        <p class="text-center font-mono text-sm text-brand-ink/70">
-          Le registre chaîné et ses ancrages seront consultables dès les premières fiches publiées.
+        <!-- Empreinte de tête réelle, revalidée à chaque build (src/lib/trust-view) -->
+        <div class="max-w-2xl mx-auto mb-8">
+          <p class="font-mono text-xs text-center mb-2">Empreinte de tête — {vueRegistre.nbEvenements} événements, chaîne revalidée à chaque build</p>
+          <code class="block border-2 border-brand-ink rounded-xl bg-brand-paper p-4 font-mono text-xs sm:text-sm break-all text-center">{vueRegistre.empreinteTete}</code>
+        </div>
+
+        <p class="text-center">
+          <a href="https://francepassoire.com/registre.jsonl" class="inline-block border-2 border-brand-ink rounded-xl px-4 py-2 font-mono font-bold shadow-hard-sm btn-press bg-brand-orange hover:bg-brand-cream transition-colors">
+            Télécharger le registre chaîné (JSONL)
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Ancrages Nostr -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">Les ancrages Nostr</h2>
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-8 shadow-hard">
+        <p class="font-body mb-6 max-w-3xl">Chaque fiche publiée reçoit une note signée sur le réseau Nostr : « ANCRAGE », slug de la fiche, empreinte du registre. Une note d'ancre de tête suit la dernière empreinte. Retoucher une ligne du registre casserait la chaîne et rendrait les ancrages caducs — la preuve d'antériorité est publique, indépendante de ce site.</p>
+
+        <div class="max-w-2xl mx-auto space-y-4">
+          <div>
+            <p class="font-mono text-xs mb-2">Clé publique d'ancrage</p>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <code class="flex-1 block border-2 border-brand-ink rounded-xl bg-brand-paper p-3 font-mono text-xs sm:text-sm break-all">{NPUB_ANCRAGE}</code>
+              <button type="button" id="copier-npub" data-npub={NPUB_ANCRAGE} class="border-2 border-brand-ink rounded-xl px-4 py-3 font-mono font-bold shadow-hard-sm btn-press bg-brand-orange hover:bg-brand-cream transition-colors whitespace-nowrap">
+                Copier
+              </button>
+            </div>
+            <p id="copier-npub-retour" class="font-mono text-xs mt-2 min-h-[1em]" aria-live="polite"></p>
+          </div>
+
+          <div>
+            <p class="font-mono text-xs mb-2">Relais épinglés</p>
+            <ul class="space-y-1">
+              {RELAIS_EPINGLES.map((relais) => (
+                <li class="border-2 border-brand-ink rounded-xl bg-brand-paper px-3 py-2 font-mono text-xs sm:text-sm inline-block mr-2 mb-2 break-all">{relais}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <p class="font-mono text-sm text-center text-brand-ink/70 mt-6">
+          Les notes d'ancrage sont vérifiables sur n'importe quel client Nostr, avec cette clé et ces relais.
         </p>
       </div>
     </section>
@@ -142,9 +190,13 @@ import Layout from '../layouts/Layout.astro';
       <div class="bg-brand-ink text-brand-cream border-2 border-brand-ink rounded-passoire p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-[8px_8px_0px_0px_#FF6B1A]">
         <div>
           <h2 class="font-display font-extrabold text-3xl mb-2">Données ouvertes</h2>
-          <p class="font-mono text-sm opacity-80">La base de données est destinée à être accessible librement sous licence CC-BY.</p>
+          <p class="font-mono text-sm opacity-80">La base de données est accessible librement sous licence CC-BY.</p>
         </div>
-        <p class="font-mono text-xs opacity-70 text-right">Jeux de données, flux et API seront publiés ici dès la première version du catalogue.</p>
+        <div class="flex flex-wrap gap-4 font-mono text-sm">
+          <a href="/dataset/catalogue.json" class="bg-brand-cream text-brand-ink px-4 py-2 rounded-xl hover:bg-brand-paper border-2 border-brand-cream hover:border-brand-ink font-bold btn-press">Dataset complet (JSON, CC-BY)</a>
+          <a href="/feed.xml" class="bg-brand-cream text-brand-ink px-4 py-2 rounded-xl hover:bg-brand-paper border-2 border-brand-cream hover:border-brand-ink font-bold btn-press">Flux RSS</a>
+          <a href="/api/v1/fiches.json" class="bg-brand-cream text-brand-ink px-4 py-2 rounded-xl hover:bg-brand-paper border-2 border-brand-cream hover:border-brand-ink font-bold btn-press">API v1</a>
+        </div>
       </div>
     </section>
 
@@ -208,3 +260,38 @@ import Layout from '../layouts/Layout.astro';
 
   </div>
 </Layout>
+
+<script>
+  // Copie du npub d'ancrage — même repli (clipboard API → execCommand)
+  // que le générateur DPO, pour les contextes non sécurisés.
+  const bouton = document.getElementById('copier-npub') as HTMLButtonElement | null;
+  const retour = document.getElementById('copier-npub-retour');
+
+  async function copierNpub(): Promise<void> {
+    if (!bouton || !retour) return;
+    const npub = bouton.dataset.npub ?? '';
+    let copie = false;
+    try {
+      await navigator.clipboard.writeText(npub);
+      copie = true;
+    } catch {
+      const zone = document.createElement('textarea');
+      zone.value = npub;
+      zone.setAttribute('readonly', '');
+      zone.style.position = 'fixed';
+      zone.style.opacity = '0';
+      document.body.appendChild(zone);
+      zone.select();
+      try {
+        const legacyDoc = document as Document & { execCommand?: (commandId: string) => boolean };
+        copie = legacyDoc.execCommand?.('copy') ?? false;
+      } catch {
+        copie = false;
+      }
+      zone.remove();
+    }
+    retour.textContent = copie ? 'Clé copiée !' : 'Copie impossible — sélectionnez la clé manuellement.';
+  }
+
+  bouton?.addEventListener('click', copierNpub);
+</script>

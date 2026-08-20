@@ -3,12 +3,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout
   title="Mentions légales - France Passoire"
-  description="Mentions légales de FrancePassoire : éditeur, directeur de la publication, hébergement Cloudflare, propriété intellectuelle et nature du site."
+  description="Mentions légales de FrancePassoire : éditeur, directeur de la publication, hébergement Cloudflare, licence CC-BY 4.0, données ouvertes et registre public d'intégrité."
 >
   <section class="bg-brand-cream border-b-2 border-brand-ink py-12">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl">Mentions légales</h1>
-      <p class="font-mono text-sm mt-3 text-brand-ink/70">Dernière mise à jour : 20 août 2026</p>
+      <p class="font-mono text-sm mt-3 text-brand-ink/70">Dernière mise à jour : 21 août 2026</p>
     </div>
   </section>
 
@@ -65,9 +65,9 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="font-display font-extrabold text-2xl mb-3">Propriété intellectuelle</h2>
         <p class="font-body leading-relaxed mb-3">
           Les contenus du site — textes éditoriaux, méthode, design — sont publiés sous
-          licence <strong>Creative Commons Attribution (CC-BY)</strong>. Le jeu de
-          données du catalogue, dès sa publication, le sera également sous CC-BY — voir
-          <a href="/methode/" class="underline font-bold hover:text-brand-orange">La méthode</a>.
+          licence <strong>Creative Commons Attribution 4.0 (CC-BY 4.0)</strong>. Le
+          catalogue des fiches est publié en données ouvertes sous la même licence —
+          voir <a href="/dataset/LICENSE" class="underline font-bold hover:text-brand-orange">/dataset/LICENSE</a>.
         </p>
         <p class="font-body leading-relaxed mb-3">
           La marque FrancePassoire fait l'objet d'un dépôt en cours.
@@ -75,6 +75,26 @@ import Layout from '../layouts/Layout.astro';
         <p class="font-body leading-relaxed">
           Les marques et noms d'entités cités le sont à titre factuel et informatif,
           dans un but d'intérêt public ; ils appartiennent à leurs titulaires respectifs.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Données ouvertes et registre public</h2>
+        <p class="font-body leading-relaxed mb-3">
+          Le catalogue des fiches est publié en données ouvertes sous licence
+          <strong>CC-BY 4.0</strong> :
+          <a href="/dataset/catalogue.json" class="underline font-bold hover:text-brand-orange">/dataset/catalogue.json</a>
+          (texte intégral de la licence :
+          <a href="/dataset/LICENSE" class="underline font-bold hover:text-brand-orange">/dataset/LICENSE</a>).
+          Il ne contient que des métadonnées publiques — entité, date, volumes annoncés,
+          statut de vérification, sources — jamais de données personnelles de victimes.
+        </p>
+        <p class="font-body leading-relaxed">
+          Chaque opération éditoriale (ajout, correction, retrait d'une fiche) est
+          consignée dans un registre public chaîné :
+          <a href="/registre.jsonl" class="underline font-bold hover:text-brand-orange">/registre.jsonl</a>.
+          Chaque ligne porte l'empreinte de la précédente : toute modification
+          rétroactive casse la chaîne et devient détectable.
         </p>
       </div>
 
