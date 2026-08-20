@@ -1,0 +1,55 @@
+{
+  "slug": "ffr-20260317",
+  "entity": "Fédération française de rugby (FFR)",
+  "siren": "784405813",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-17",
+    "publication": "2026-03-17",
+    "confirmation": "2026-03-17"
+  },
+  "volume": {
+    "count": 530000,
+    "unit": "personnes",
+    "label": "plus de 530 000 licenciés, près d'un million de photos dont certaines de mineurs, et des copies de pièces d'identité selon la revendication relayée par la FFR"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "ffr.fr — La FFR ciblée par une attaque informatique",
+      "url": "https://www.ffr.fr/actualites/federation/la-ffr-ciblee-par-une-attaque-informatique",
+      "kind": "officiel"
+    },
+    {
+      "label": "Rugbyrama — La FFR victime d'une cyber-attaque d'ampleur : 530 000 licenciés concernés",
+      "url": "https://www.rugbyrama.fr/2026/03/17/ffr-530-000-licencies-concernes-des-cartes-didentite-en-vente-la-ffr-victime-dune-cyber-attaque-dampleur-13277247.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Rugby : la Fédération française victime d'une cyberattaque concernant ses 530 000 licenciés",
+      "url": "https://www.lefigaro.fr/sports/rugby/rugby-la-federation-francaise-victime-d-une-cyberattaque-concernant-ses-530-000-licencies-20260317",
+      "kind": "article"
+    },
+    {
+      "label": "L'Indépendant — Les données d'un demi-million de licenciés volées : la FFR visée par une cyberattaque",
+      "url": "https://www.lindependant.fr/2026/03/17/les-donnees-dun-demi-million-de-licencies-volees-la-federation-francaise-de-rugby-visee-par-une-cyberattaque-de-grande-ampleur-13277451.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 mars 2026, une base touchant la Fédération française de rugby est mise en vente sur un forum de cybercriminalité. La fédération confirme l'attaque et alerte ses licenciés. Selon la revendication, plus de 530 000 licenciés sont concernés, avec près d'un million de photos, dont certaines de mineurs, et des copies de cartes d'identité. Selon un chercheur, l'accès a pu être obtenu en itérant un identifiant dans une URL. Les investigations techniques se poursuivaient pour établir l'étendue exacte des données extraites.",
+  "timeline": [
+    {
+      "date": "2026-03-17",
+      "event": "Une base liée à la FFR est mise en vente sur un forum ; la fédération confirme l'attaque et appelle ses licenciés à la vigilance."
+    },
+    {
+      "date": "2026-03-17",
+      "event": "Les relais détaillent la revendication : 530 000 licenciés, près d'un million de photos et des copies de pièces d'identité."
+    }
+  ]
+}

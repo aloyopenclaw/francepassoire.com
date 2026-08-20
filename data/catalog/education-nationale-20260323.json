@@ -1,0 +1,51 @@
+{
+  "slug": "education-nationale-20260323",
+  "entity": "Ministère de l'Éducation nationale (base Compas)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-23",
+    "publication": "2026-03-23"
+  },
+  "volume": {
+    "count": 243000,
+    "unit": "personnes",
+    "label": "environ 243 000 agents, essentiellement des enseignants, selon le communiqué du ministère"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Numerama — Piratage à l'Éducation nationale : 243 000 profils d'enseignants dérobés sur COMPAS",
+      "url": "https://www.numerama.com/cyberguerre/2216677-piratage-a-leducation-nationale-243-000-profils-denseignants-derobes-sur-compas.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Les données personnelles de 243 000 agents de l'Éducation nationale ont été piratées",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/a-cause-de-l-usurpation-d-un-compte-externe-les-donnees-personnelles-de-243-000-agents-de-l-education-nationale-essentiellement-des-enseignants-ont-ete-piratees_AD-202603240371.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — L'Éducation nationale piratée : les données de 243 000 agents ont été volées",
+      "url": "https://www.01net.com/actualites/education-nationale-piratee-donnees-243-000-agents-volees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 mars 2026, le ministère de l'Éducation nationale révèle une intrusion datée du 15 mars dans Compas, le logiciel de ressources humaines gérant les enseignants stagiaires, rendue possible par l'usurpation d'un compte externe. Les données d'environ 243 000 agents, essentiellement des enseignants, ont été extraites : noms, prénoms, adresses postales, téléphones et périodes d'absence sans mention du motif. Un échantillon a été publié par une entité se présentant sous le pseudonyme HexDex. L'accès a été suspendu, l'ANSSI et la CNIL saisies et une plainte est en cours.",
+  "timeline": [
+    {
+      "date": "2026-03-15",
+      "event": "Un attaquant usurpe un compte externe et pénètre la base Compas, logiciel RH de gestion des enseignants stagiaires."
+    },
+    {
+      "date": "2026-03-19",
+      "event": "Le centre opérationnel de sécurité des systèmes d'information du ministère détecte l'intrusion en fin de journée ; l'accès est suspendu."
+    },
+    {
+      "date": "2026-03-23",
+      "event": "Le ministère rend public le vol de données d'environ 243 000 agents ; un échantillon circule sous le pseudonyme HexDex."
+    }
+  ]
+}

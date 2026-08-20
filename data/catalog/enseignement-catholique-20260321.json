@@ -1,0 +1,48 @@
+{
+  "slug": "enseignement-catholique-20260321",
+  "entity": "Secrétariat général de l'Enseignement catholique (SGEC)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-21",
+    "publication": "2026-03-21",
+    "confirmation": "2026-03-21"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "1,5 million de personnes selon le SGEC : 800 000 élèves du premier degré, leurs familles et 40 000 professeurs"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Enseignement catholique — Piratage informatique : communication du Sgec",
+      "url": "https://enseignement-catholique.fr/piratage-informatique-communication-sgec/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Le Secrétariat général de l'Enseignement catholique victime d'une attaque informatique",
+      "url": "https://www.lefigaro.fr/actualite-france/le-secretariat-general-de-l-enseignement-catholique-victime-d-une-attaque-informatique-20260321",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme — L'enseignement catholique victime d'une attaque informatique : des données piratées",
+      "url": "https://www.letelegramme.fr/france/lenseignement-catholique-victime-dune-attaque-informatique-des-donnees-piratees-7011076.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 mars 2026, le Secrétariat général de l'Enseignement catholique annonce une attaque contre l'application de gestion de ses établissements du premier degré. Un accès non autorisé a touché les données d'identification des utilisateurs et les coordonnées des élèves, de leurs familles et des enseignants : environ 1,5 million de personnes, dont 800 000 élèves et 40 000 professeurs. Noms, prénoms, adresses, mails, téléphones et dates de naissance sont concernés. Les services touchés ont été suspendus, les autorités saisies et une démarche engagée auprès de la CNIL.",
+  "timeline": [
+    {
+      "date": "2026-03-20",
+      "event": "Le SGEC est alerté par la direction des services informatiques du ministère de l'Éducation nationale."
+    },
+    {
+      "date": "2026-03-21",
+      "event": "Le SGEC rend l'attaque publique : accès non autorisé aux coordonnées d'élèves, familles et enseignants ; suspension des services concernés et signalement aux autorités."
+    }
+  ]
+}

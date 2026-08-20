@@ -1,0 +1,42 @@
+{
+  "slug": "logis-hotels-20260414",
+  "entity": "Logis Hôtels",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-14",
+    "publication": "2026-04-14"
+  },
+  "volume": {
+    "count": 598000,
+    "unit": "comptes",
+    "label": "environ 598 000 membres du programme de fidélité selon la revendication, avec 14 ans de données en vente"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite massive chez Logis Hotels : 600 000 clients exposés et 14 ans de données en vente",
+      "url": "https://frenchbreaches.com/blog/fuite-massive-chez-logis-hotels-600-000-clients-exposes-et-14-ans-de-donnees-en-vente",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Logis Hotels : 598 000 membres du programme fidélité exposés dans une fuite massive",
+      "url": "https://www.cyberattaque.org/logis-hotels-598-000-membres-du-programme-fidelite-exposes-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 avril 2026, une fuite touchant Logis Hôtels, réseau de plus de 6 300 hôtels et restaurants indépendants en France, est mise en vente sur un forum. Selon la revendication relayée, environ 598 000 membres du programme de fidélité sont concernés, avec quatorze ans de données : identités, coordonnées et historiques liés aux comptes. Le réseau est également cité parmi les cibles du hacker HexDex par le parquet de Paris. La revendication n'est pas confirmée publiquement par l'enseigne à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-04-14",
+      "event": "Une base présentée comme issue de Logis Hôtels est mise en vente : environ 598 000 membres du programme fidélité sur 14 ans."
+    },
+    {
+      "date": "2026-04-22",
+      "event": "Le parquet de Paris cite Logis Hôtels France parmi les cibles liées au hacker HexDex, interpellé le 20 avril en Vendée."
+    }
+  ]
+}
