@@ -1,0 +1,59 @@
+{
+  "slug": "ministere-de-l-interieur-20251212",
+  "entity": "Ministère de l'Intérieur",
+  "siren": "110014016",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-12",
+    "publication": "2025-12-12",
+    "confirmation": "2025-12-17"
+  },
+  "volume": {
+    "count": 16400000,
+    "unit": "personnes",
+    "label": "16,4 millions de personnes selon la revendication publiée sur BreachForums (chiffre revendiqué, non confirmé) ; le ministre évoque quelques dizaines de fiches extraites"
+  },
+  "data_types": ["identite"],
+  "sources": [
+    {
+      "label": "Le Parisien — Cybercriminalité : les fichiers de police piratés ?",
+      "url": "https://www.leparisien.fr/faits-divers/cybercriminalite-les-fichiers-de-police-pirates-15-12-2025-SL3KA5I3RRBQRBRLSQMXKOBVL4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Une « attaque très grave » : le ministère de l'Intérieur victime d'un piratage informatique début décembre",
+      "url": "https://www.leparisien.fr/high-tech/une-attaque-tres-grave-le-ministere-de-linterieur-victime-dun-piratage-informatique-debut-decembre-16-12-2025-KB5JJ2F65RDCTHPHL5TJKQXQUQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Cyberattaque : le ministère de l'Intérieur piraté, quelles sont les données sensibles auxquelles les hackers ont pu avoir accès ?",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaque-le-ministere-de-l-interieur-pirate-quelles-sont-les-donnees-sensibles-auxquelles-les-hackers-ont-pu-avoir-acces_7683745.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde informatique — Après la cyberattaque, le ministre de l'Intérieur reconnaît un vol de données",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-apres-la-cyberattaque-le-ministre-de-l-interieur-reconnait-un-vol-de-donnees-98831.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Une intrusion dans les messageries du ministère de l'Intérieur, partie d'un service local en Charente-Maritime dans la nuit du 11 au 12 décembre 2025, est révélée le 12 décembre puis confirmée par le ministre Laurent Nuñez. Un message publié sur BreachForums sous le pseudonyme « Indra » revendique l'accès à des fichiers policiers — dont le TAJ et le fichier des personnes recherchées — et affirme détenir des données sur 16,4 millions de personnes ; ces volumes ne sont pas confirmés. Le 17 décembre, le ministre reconnaît que des fichiers importants ont été consultés et que « quelques dizaines de fiches » ont pu être extraites. La CNIL est notifiée et une enquête judiciaire est ouverte.",
+  "timeline": [
+    {
+      "date": "2025-12-12",
+      "event": "Une intrusion détectée dans la nuit du 11 au 12 décembre, partie d'un service local en Charente-Maritime, est révélée par la presse ; le ministre reconnaît « une attaque informatique » ayant touché des messageries."
+    },
+    {
+      "date": "2025-12-13",
+      "event": "Un message publié sur BreachForums sous le pseudonyme « Indra » revendique l'accès au TAJ et au fichier des personnes recherchées et affirme détenir des données sur 16,4 millions de personnes."
+    },
+    {
+      "date": "2025-12-16",
+      "event": "Le ministère parle d'une « attaque très grave » ; selon Le Parisien, environ cent fiches du TAJ ont été consultées et extraites."
+    },
+    {
+      "date": "2025-12-17",
+      "event": "Le ministre reconnaît la consultation du TAJ et du fichier des personnes recherchées et indique que « quelques dizaines de fiches » ont pu être extraites ; la CNIL a été notifiée et une enquête est ouverte."
+    }
+  ]
+}
