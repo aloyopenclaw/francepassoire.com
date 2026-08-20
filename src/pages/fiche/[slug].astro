@@ -1,21 +1,26 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import FichePage from '../../components/FichePage.astro';
+import { labelStatut } from '../../lib/fiche-view';
 
-// Wave 0 : le catalogue de fiches est vide — aucune page n'est générée.
 export function getStaticPaths() {
-  return [];
+  return getCollection('catalog').then((entries) =>
+    entries.map((entry) => ({
+      params: { slug: entry.data.slug },
+      props: { fiche: entry.data },
+    })),
+  );
 }
 
-const { slug } = Astro.params;
+const { fiche } = Astro.props;
 
-const ficheTitle = slug ? `Fiche « ${slug} »` : 'Fiche';
-const ficheDescription =
-  'Fuite de données recensée par FrancePassoire : entité concernée, statut de vérification, données annoncées et gestes de protection. Sources citées sur la fiche.';
+const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()} recensée par FrancePassoire — ${fiche.volume.label.toLowerCase()}. Données annoncées, historique et sources citées sur la fiche.`;
 
 const articleJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: `${ficheTitle} — FrancePassoire`,
+  headline: `${fiche.entity} — fuite de données, FrancePassoire`,
   description: ficheDescription,
   author: { '@type': 'Organization', name: 'FrancePassoire' },
   publisher: { '@type': 'Organization', name: 'FrancePassoire' },
@@ -23,19 +28,7 @@ const articleJsonLd = JSON.stringify({
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
 });
 ---
-<Layout title={`${ficheTitle} - France Passoire`} description={ficheDescription}>
+<Layout title={`${fiche.entity} : la fiche - France Passoire`} description={ficheDescription}>
   <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
-  <section class="py-16 bg-brand-paper">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4">{slug ? `Fiche « ${slug} »` : 'Fiche'}</h1>
-      <p class="font-body text-lg text-brand-ink/70 leading-relaxed mb-8">
-        Cette fiche n'est pas encore publiée : les fiches du catalogue arrivent
-        au fil des fuites vérifiées, jamais avant.
-      </p>
-      <a href="/" class="font-display font-bold flex items-center gap-2 hover:text-brand-orange transition-colors w-max">
-        <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Retour aux fuites
-      </a>
-    </div>
-  </section>
+  <FichePage fiche={fiche} />
 </Layout>
