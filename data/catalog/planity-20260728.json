@@ -1,0 +1,48 @@
+{
+  "slug": "planity-20260728",
+  "entity": "Planity",
+  "siren": "821511128",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-28"
+  },
+  "volume": {
+    "count": 465828,
+    "unit": "personnes",
+    "label": "Plus d’un million d’enregistrements et 465 828 personnes uniques revendiqués ; Planity indique qu’environ 138 000 données réelles (environnement de test) ont été exposées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Planity : plus d’un million d’enregistrements et 465 828 personnes uniques potentiellement concernées",
+      "url": "https://frenchbreaches.com/alertes/planity-ms4gnp7s4p4ptre2tub",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Planity : 138 000 données exfiltrées dans une cyberattaque",
+      "url": "https://www.cyberattaque.org/planity-138-000-donnees-exfiltrees-dans-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Planity : fuite de données confirmée par l’entreprise",
+      "url": "https://fuitesinfos.fr/article/2026-07-28-planity",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 juillet 2026, un fichier attribué à Planity, plateforme française de réservation de rendez-vous beauté, est mis en vente et présenté comme contenant plus d'un million d'enregistrements couvrant 465 828 personnes uniques. Interrogée par les relais de veille, l'entreprise répond le 30 juillet : l'accès concernait un environnement de test, environ 138 000 données réelles ont été exposées — noms, prénoms, téléphones, courriels — sans mots de passe ni données bancaires, et une notification à la CNIL sera effectuée. L'écart entre volumes revendiqués et reconnus reste non expliqué.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "Mise en vente d’un fichier attribué à Planity : plus de 1,08 million d’enregistrements et 465 828 personnes uniques annoncées."
+    },
+    {
+      "date": "2026-07-30",
+      "event": "Planity répond aux relais : environnement de test concerné, environ 138 000 données réelles exposées, mots de passe et données bancaires exclus, notification CNIL à venir."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "clenet-20260818",
+  "entity": "Clenet",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; contacts clients et fournisseurs notifiés (extranet adossé à l'ERP BLG)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Clenet : des pirates exploitent une faille de son extranet et accèdent aux données clients et fournisseurs",
+      "url": "https://www.cyberattaque.org/clenet-des-pirates-exploitent-une-faille-de-son-extranet-et-accedent-aux-donnees-clients-et-fournisseurs/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Clenet informé ses contacts d’un incident de sécurité ayant affecté l’ERP BLG",
+      "url": "https://frenchbreaches.com/alertes/clenet-blgcloud-mszchi4ekakmbzdtap",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Clenet : intrusion sur l’extranet clients et fournisseurs",
+      "url": "https://fuitesinfos.fr/article/2026-08-18-clenet",
+      "kind": "article"
+    }
+  ],
+  "description": "Clenet, entreprise française de la filière machinisme agricole, a informé ses contacts d'un incident de sécurité affectant l'ERP BLG utilisé pour son extranet clients et fournisseurs. Selon la communication relayée le 18 août 2026, une intrusion malveillante détectée le 3 août a exploité une faille du mécanisme de création des comptes extranet, à l'aide d'adresses électroniques jetables, pour accéder sans autorisation à certaines données. Les mesures de sécurisation ont été prises ; les volumes ne sont pas communiqués et l'étendue exacte reste en cours d'évaluation.",
+  "timeline": [
+    {
+      "date": "2026-08-03",
+      "event": "Détection d'une intrusion malveillante sur l'extranet adossé à l'ERP BLG ; une faille de création des comptes, exploitée via des adresses électroniques jetables, aurait permis un accès non autorisé."
+    },
+    {
+      "date": "2026-08-18",
+      "event": "La notification aux contacts clients et fournisseurs est documentée par les relais de veille ; mesures de sécurisation et évaluations en cours."
+    }
+  ]
+}

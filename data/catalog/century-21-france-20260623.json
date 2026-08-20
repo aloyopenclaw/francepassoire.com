@@ -1,0 +1,42 @@
+{
+  "slug": "century-21-france-20260623",
+  "entity": "Century 21 France",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-23",
+    "publication": "2026-06-23"
+  },
+  "volume": {
+    "count": 21009,
+    "unit": "enregistrements",
+    "label": "21 009 profils de collaborateurs revendiqués (fichier JSONL ; origine exacte et authenticité non confirmées)"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Une base attribuée à Century 21 France publiée sur le dark web",
+      "url": "https://frenchbreaches.com/alertes/century-21-mqr1ct53pj2wt3n2bq",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Century 21 : plus de 21 000 collaborateurs revendiqués dans une fuite de données",
+      "url": "https://www.cyberattaque.org/century-21-plus-de-21-000-collaborateurs-revendiques-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 21 009 profils d’employés, fuite revendiquée chez Century 21 France",
+      "url": "https://fuitesinfos.fr/article/2026-06-23-century-21-france",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base de données attribuée à Century 21 France a été publiée le 23 juin 2026 sur un forum cybercriminel, au format JSONL. Selon la revendication, elle contient 21 009 enregistrements relatifs à des collaborateurs du réseau d'agences immobilières, issus d'un référentiel interne à visée RH ou professionnelle. L'origine exacte du fichier et son authenticité ne sont pas confirmées à ce stade ; le réseau n'a pas commenté publiquement.",
+  "timeline": [
+    {
+      "date": "2026-06-23",
+      "event": "Publication sur un forum cybercriminel d’un fichier JSONL attribué à Century 21 France : 21 009 enregistrements présentés comme issus d’un référentiel interne de collaborateurs."
+    }
+  ]
+}

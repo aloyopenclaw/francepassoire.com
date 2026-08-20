@@ -1,0 +1,52 @@
+{
+  "slug": "inserm-20260803",
+  "entity": "Inserm",
+  "siren": "180036048",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-03",
+    "publication": "2026-08-03"
+  },
+  "volume": {
+    "count": 192451,
+    "unit": "enregistrements",
+    "label": "192 451 enregistrements de professionnels de santé proposés à la vente (chiffre revendiqué) ; FrenchBreaches évoque jusqu’à 245 812 professionnels au total, chiffres non confirmés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage revendiqué de l'INSERM : une base de 192 451 professionnels de santé diffusée sur un forum cybercriminel",
+      "url": "https://frenchbreaches.com/alertes/inserm-mshn3qktwz0jhhrvfde",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Inserm : 189 997 profils de professionnels de santé dans une fuite massive",
+      "url": "https://www.cyberattaque.org/inserm-189-997-profils-de-professionnels-de-sante-dans-une-fuite-massive/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 119 455 professionnels concernés par une fuite revendiquée chez Inserm",
+      "url": "https://fuitesinfos.fr/article/2026-08-03-inserm",
+      "kind": "article"
+    }
+  ],
+  "description": "Une publication apparue le 3 août 2026 sur un forum cybercriminel revendique l'accès à une base associée au domaine certdc.inserm.fr ; un fichier présenté comme contenant 192 451 enregistrements de professionnels de santé est proposé à la vente. FrenchBreaches évoque ensuite jusqu'à 245 812 professionnels concernés, chiffre non confirmé. Selon le RSSI de l'Inserm, joint par les relais, les données proviendraient d'un scraping réalisé en juin 2026 via un compte utilisateur compromis d'un outil de recherche ; les données d'authentification, stockées séparément, ne sont pas concernées selon l'organisme.",
+  "timeline": [
+    {
+      "date": "2026-08-03",
+      "event": "Une publication sur un forum cybercriminel évoque un possible scraping d'environ 190 000 enregistrements associés à l'Inserm ; la revendication est relayée le jour même."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Un fichier de 192 451 enregistrements de professionnels de santé est proposé à la vente ; FrenchBreaches évoque le lendemain jusqu’à 245 812 professionnels concernés."
+    },
+    {
+      "date": "2026-08-07",
+      "event": "Le RSSI de l'Inserm précise aux relais un scraping réalisé en juin 2026 via un compte utilisateur compromis ; les données d'authentification ne sont pas concernées selon l'organisme."
+    }
+  ]
+}

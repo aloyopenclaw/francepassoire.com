@@ -1,0 +1,43 @@
+{
+  "slug": "relais-colis-20260112",
+  "entity": "Relais Colis",
+  "siren": "785792433",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-01-12",
+    "publication": "2026-01-12"
+  },
+  "volume": {
+    "count": 9526266,
+    "unit": "lignes",
+    "label": "9 526 266 lignes mises en vente sur un forum (chiffre revendiqué) ; Relais Colis confirme une fuite touchant des millions de clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 9,5 millions de fiches dans la fuite de données chez Relais Colis",
+      "url": "https://fuitesinfos.fr/article/2026-01-12-relais-colis",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Relais Colis confirme une fuite de données sur ses millions de clients",
+      "url": "https://frenchbreaches.com/alertes/relais-colis-mlgl6sx8ed8gg9ieno",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 janvier 2026, une mise en vente publiée sur le forum BreachForums présente une base attribuée à Relais Colis : 9 526 266 lignes contenant noms, adresses postales, courriels et numéros de téléphone de clients et destinataires de colis. Le 10 février, l'entreprise confirme une fuite de données sur des millions de clients à la suite d'un incident de sécurité sur l'un de ses systèmes informatiques. Les volumes revendiqués ne sont pas confirmés individuellement ; La Redoute a relié en mai une base clients à cette violation.",
+  "timeline": [
+    {
+      "date": "2026-01-12",
+      "event": "Mise en vente sur BreachForums d’une base attribuée à Relais Colis : 9 526 266 lignes, identité et coordonnées de clients et destinataires de colis."
+    },
+    {
+      "date": "2026-02-10",
+      "event": "Relais Colis confirme une fuite de données touchant des millions de clients après un incident de sécurité sur l'un de ses systèmes informatiques."
+    }
+  ]
+}

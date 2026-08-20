@@ -1,0 +1,53 @@
+{
+  "slug": "ratp-20260614",
+  "entity": "RATP",
+  "siren": "775663438",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-14",
+    "publication": "2026-06-15"
+  },
+  "volume": {
+    "count": 62208,
+    "unit": "comptes",
+    "label": "62 208 comptes internes revendiqués ; la RATP indique que le nombre réel de personnes pourrait être inférieur (doublons, périmètre groupe et filiales européennes)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Plus de 62 000 employés de la RATP apparaissent dans une base publiée sur le dark web",
+      "url": "https://frenchbreaches.com/alertes/ratp-mqe52h4iujuuzpmjtoo",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Parisien — Un cybercriminel affirme avoir dérobé les données d’employés de la RATP, la régie annonce porter plainte",
+      "url": "https://www.leparisien.fr/faits-divers/un-cybercriminel-affirme-avoir-derobe-les-donnees-demployes-la-ratp-la-regie-annonce-porter-plainte-15-06-2026-ZOQGFD7M6ZB4HBNZ3SGUWKCVBQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — RATP : les données de plus de 62 000 employés diffusées sur le dark web",
+      "url": "https://www.cyberattaque.org/ratp-les-donnees-de-plus-de-62-000-employes-diffusees-sur-le-darkweb/",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr (Orange) — RATP : des données d’employés dérobées et diffusées sur le dark web",
+      "url": "https://actu.orange.fr/societe/fait-divers/ratp-des-donnees-d-employes-derobees-et-diffusees-sur-le-dark-web-magic-CNT000002pZBqU.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 juin 2026, un cybercriminel se présentant sous le pseudonyme « misere » publie sur le dark web une base attribuée au groupe RATP et présentée comme couvrant 62 208 comptes internes : identité professionnelle, coordonnées, matricules et structure hiérarchique. La RATP confirme le 15 juin au Parisien avoir identifié une fuite concernant certains employés, signale l'incident à la CNIL et annonce porter plainte ; les données des voyageurs ne sont pas concernées selon l'entreprise, qui précise que le nombre réel de personnes pourrait être inférieur en raison de doublons et de l'inclusion de filiales européennes.",
+  "timeline": [
+    {
+      "date": "2026-06-14",
+      "event": "Le cybercriminel « misere » publie une base attribuée au groupe RATP : 62 208 comptes internes, identité professionnelle, coordonnées et structure hiérarchique."
+    },
+    {
+      "date": "2026-06-15",
+      "event": "La RATP confirme au Parisien avoir identifié une fuite concernant certains employés, signale l’événement à la CNIL et annonce porter plainte."
+    }
+  ]
+}
