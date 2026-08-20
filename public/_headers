@@ -1,0 +1,61 @@
+# ==========================================================================
+# FrancePassoire — en-têtes de sécurité + CSP (T45, Wave 6)
+#
+# Sémantique Cloudflare Pages _headers (doc officielle, vérifiée 2026-08-20) :
+#   • Une requête qui matche plusieurs règles hérite des en-têtes de TOUTES
+#     les règles matchées (union) — il n'y a PAS de « règle la plus
+#     spécifique gagne » ni d'écrasement.
+#   • Un en-tête attaché par deux règles matchées est CONCATÉNÉ avec une
+#     virgule — fatal pour une CSP (deux politiques = intersection, la plus
+#     restrictive l'emporte et bloquerait Turnstile malgré l'exception).
+#   • On détache donc explicitement l'en-tête de base sur les routes à
+#     exception (« ! Nom-En-tête ») avant d'attacher la variante de route.
+#
+# CSP — Report-Only d'abord (plan T45 : 48 h de rapports propres, puis force).
+# Bascule : décommenter les 4 lignes « #ENFORCE » ci-dessous (les détachements
+# `! Content-Security-Policy` deviennent actifs), puis supprimer les lignes
+# Content-Security-Policy-Report-Only. Une commande :
+#   sed -i '' 's/^  #ENFORCE //' public/_headers   (macOS)
+#   sed -i 's/^  #ENFORCE //' public/_headers      (Linux/CI)
+# ==========================================================================
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: DENY
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.pwnedpasswords.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+  #ENFORCE Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.pwnedpasswords.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+
+# /signaler — îlot Turnstile : script-src + frame-src challenges.cloudflare.com
+# (doc Turnstile). La CSP de base est détachée, sinon concaténée avec celle-ci.
+/signaler
+  ! Content-Security-Policy-Report-Only
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+  #ENFORCE ! Content-Security-Policy
+  #ENFORCE Content-Security-Policy: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+
+/signaler/*
+  ! Content-Security-Policy-Report-Only
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+  #ENFORCE ! Content-Security-Policy
+  #ENFORCE Content-Security-Policy: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+
+# /embed/* — exception cadrage (T35, branche feat/open-data) : iframe autorisé.
+# Pas de X-Frame-Options (détaché), frame-ancestors * dans la CSP. Bloc livré
+# dès maintenant : la route 404 sur main, il deviendra actif à la fusion sans
+# retouche. Le détachement de X-Frame-Options est LIVE (en-tête déjà en force).
+/embed
+  ! X-Frame-Options
+  ! Content-Security-Policy-Report-Only
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors *; base-uri 'self'; form-action 'self'; object-src 'none'
+  #ENFORCE ! Content-Security-Policy
+  #ENFORCE Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors *; base-uri 'self'; form-action 'self'; object-src 'none'
+
+/embed/*
+  ! X-Frame-Options
+  ! Content-Security-Policy-Report-Only
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors *; base-uri 'self'; form-action 'self'; object-src 'none'
+  #ENFORCE ! Content-Security-Policy
+  #ENFORCE Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors *; base-uri 'self'; form-action 'self'; object-src 'none'
