@@ -1,0 +1,39 @@
+// workers/watchdog/wrangler.jsonc — chien de garde autonome (T50, Wave Gate).
+//
+// Les Zone Health Checks du compte sont indisponibles au plan (erreur 1002) :
+// ce worker remplace la surveillance native — cron toutes les 10 minutes,
+// état par cible dans le KV WATCHDOG (namespace dédié : id ci-dessous, créé
+// par `npx wrangler kv namespace create WATCHDOG` — identifiant, pas un
+// secret).
+//
+// Alerte = note Nostr kind 1 depuis le npub du projet (T27). Le courriel
+// d'alerte est refusé par send_email (verdict T29 : destination non
+// vérifiée) — Nostr est LE canal du jour du lancement.
+
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "francepassoire-watchdog",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+
+  // Cron toutes les 10 minutes : sonde des 4 cibles, notes uniquement sur
+  // transition (ok→down / down→ok) — cf. src/index.ts.
+  "triggers": {
+    "crons": ["*/10 * * * *"]
+  },
+
+  "kv_namespaces": [
+    {
+      "binding": "WATCHDOG",
+      "id": "fdae27fb73ac4d6fb17c3d4a99c0b179"
+    }
+  ]
+
+  // SECRET (PAS une var — jamais de valeur en clair ici) :
+  //   npx wrangler secret put NOSTR_NSEC --config workers/watchdog/wrangler.jsonc
+  //     Valeur : le hex de ~/.config/francepassoire/nostr.key (64 caractères),
+  //     ou son équivalent nsec. C'est la clé d'ancrage du projet (T27) —
+  //     npub1c4s8aye7ye8vmwa39zllytlj8rqcz4gqwtp30vw0vlk9ksj3u5uqqyjymd.
+  // Sans ce secret : mode DÉTECTION SEULE (états KV + console.error, aucun
+  // crash) — le cron tourne dès le déploiement, clé ou pas.
+}
