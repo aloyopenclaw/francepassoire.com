@@ -1,0 +1,273 @@
+---
+/**
+ * Formulaire « Signaler une fuite » — /signaler (T33, Wave 4).
+ *
+ * Îlot client léger : validation FR locale, envoi JSON au worker API
+ * (POST /api/report — Turnstile serveur + rate limit KV + honeypot côté
+ * worker, cf. workers/api/src/index.ts).
+ *
+ * INVARIANT (contrat de design) : métadonnées publiques uniquement.
+ * L'avertissement « ne jamais coller de données volées » est visible et
+ * rattaché au champ concerné.
+ *
+ * Clé de site Turnstile = publique par conception (embarquée dans le HTML).
+ * Widget « francepassoire-signaler » créé via API en T33 ; surcharge possible
+ * par ASTRO_PUBLIC_TURNSTILE_SITE_KEY. Si la variable est définie mais vide,
+ * le widget n'est pas injecté et un avis FR honnête s'affiche — l'API exige
+ * toujours la vérification (aucune porte dérobée).
+ */
+interface Props {
+  siteKey?: string;
+}
+
+const envKey = import.meta.env.ASTRO_PUBLIC_TURNSTILE_SITE_KEY;
+const siteKey = Astro.props.siteKey ?? (envKey !== undefined ? envKey : '0x4AAAAAAEW8bsx9lHrEOZ1I');
+const apiReportUrl = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}/api/report`;
+---
+
+<div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+  <h2 class="font-display font-bold text-2xl mb-2">Signaler une fuite</h2>
+  <p class="font-body mb-6">
+    Vous avez repéré une fuite de données touchant une entité française&nbsp;? Décrivez-la ici.
+    Votre signalement rejoint la file de validation éditoriale de l'observatoire.
+  </p>
+
+  <div class="border-2 border-brand-orange bg-brand-orange/10 rounded-xl p-4 mb-6 text-sm font-body flex items-start gap-3">
+    <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0 mt-0.5 text-brand-ink" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+    <span><strong>NE JAMAIS coller de données volées.</strong> Décrivez uniquement le contexte (type de données, ordre de grandeur, source publique). FrancePassoire ne publie, n'héberge ni ne reproduit aucune donnée volée.</span>
+  </div>
+
+  <form id="signaler-form" novalidate>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+      <div>
+        <label for="signaler-entite" class="block font-mono text-sm font-bold mb-2">Entité concernée <span aria-hidden="true">*</span></label>
+        <input type="text" id="signaler-entite" name="entity" required placeholder="Ex. : Clinique Exemple" autocomplete="organization" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+      <div>
+        <label for="signaler-date" class="block font-mono text-sm font-bold mb-2">Date approximative <span class="font-normal opacity-60">(optionnel)</span></label>
+        <input type="date" id="signaler-date" name="date" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label for="signaler-details" class="block font-mono text-sm font-bold mb-2">Ce qui a fuité <span aria-hidden="true">*</span> <span class="font-normal opacity-60">(métadonnées uniquement)</span></label>
+      <textarea id="signaler-details" name="details" required rows="4" placeholder="Ex. : base de rendez-vous patients mentionnée sur le blog d'un groupe ransomware, ordre de grandeur annoncé ~30 000 lignes…" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange"></textarea>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+      <div>
+        <label for="signaler-source" class="block font-mono text-sm font-bold mb-2">URL de la source publique <span aria-hidden="true">*</span></label>
+        <input type="url" id="signaler-source" name="source_url" required placeholder="https://…" spellcheck="false" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+      <div>
+        <label for="signaler-contact" class="block font-mono text-sm font-bold mb-2">Comment vous contacter <span class="font-normal opacity-60">(optionnel)</span></label>
+        <input type="email" id="signaler-contact" name="contact_email" placeholder="vous@example.com" autocomplete="email" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+    </div>
+
+    <!-- Honeypot anti-robots : hors écran, invisible pour l'AT et la tabulation.
+         Un humain ne le remplit jamais ; le worker jette silencieusement les envois remplis. -->
+    <div class="signaler-hp" aria-hidden="true">
+      <label for="signaler-site-web">Site web</label>
+      <input type="text" id="signaler-site-web" name="site_web" tabindex="-1" autocomplete="off">
+    </div>
+
+    {
+      siteKey ? (
+        <>
+          <div class="cf-turnstile mb-4 flex justify-start" data-sitekey={siteKey} data-theme="light" data-language="fr" />
+          <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+        </>
+      ) : (
+        <p class="mb-4 font-mono text-sm border-2 border-brand-ink/30 rounded-xl px-4 py-3 bg-brand-paper" role="note">
+          Protection anti-robot en cours d'activation — le formulaire sera envoyable dès que la vérification sera disponible.
+        </p>
+      )
+    }
+
+    <div id="signaler-status" class="min-h-[2rem] flex items-center font-mono text-sm mb-4" role="status" aria-live="polite">
+      <noscript>Ce formulaire nécessite JavaScript pour être envoyé.</noscript>
+    </div>
+
+    <button type="submit" id="signaler-submit" class="bg-brand-orange border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:bg-brand-hover font-display font-bold text-xl transition-all btn-press disabled:opacity-50 disabled:cursor-not-allowed">
+      Envoyer le signalement
+    </button>
+    <p class="mt-3 font-mono text-xs text-brand-ink/60">Champs obligatoires marqués *. Protection anti-abus : vérification humaine + limite de 5 signalements par heure et par adresse.</p>
+  </form>
+
+  <div id="signaler-success" class="text-center py-8" hidden>
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#0E7A46] border-2 border-brand-ink shadow-sm mb-6" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" class="text-brand-cream" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h3 class="font-display font-bold text-2xl mb-3" tabindex="-1">Signalement bien reçu.</h3>
+    <p class="max-w-md mx-auto font-body mb-2">Merci. Votre signalement va être examiné par l'équipe éditoriale avant toute publication.</p>
+    <p class="max-w-md mx-auto font-body text-sm text-brand-ink/70">Cette page est votre seule confirmation : aucun accusé de réception par email n'est envoyé pour l'instant.</p>
+  </div>
+</div>
+
+<style>
+  .signaler-hp {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* Champ invalide : liseré orange, cohérent avec l'îlot DPO du contrat */
+  .signaler-invalid {
+    outline: 3px solid #ff6b1a;
+    outline-offset: 2px;
+  }
+</style>
+
+<script>
+  interface ReportPayload {
+    entity: string;
+    date?: string;
+    details: string;
+    source_url: string;
+    contact_email?: string;
+    turnstile_token: string;
+    honeypot: string;
+  }
+
+  const API_REPORT_URL = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}/api/report`;
+
+  const form = document.getElementById('signaler-form') as HTMLFormElement | null;
+  const submitBtn = document.getElementById('signaler-submit') as HTMLButtonElement | null;
+  const statusEl = document.getElementById('signaler-status');
+  const successEl = document.getElementById('signaler-success');
+  const entiteInput = document.getElementById('signaler-entite') as HTMLInputElement | null;
+  const detailsInput = document.getElementById('signaler-details') as HTMLTextAreaElement | null;
+  const sourceInput = document.getElementById('signaler-source') as HTMLInputElement | null;
+  const contactInput = document.getElementById('signaler-contact') as HTMLInputElement | null;
+
+  const turnstileApi = (): { reset: () => void } | undefined =>
+    (window as unknown as { turnstile?: { reset: () => void } }).turnstile;
+
+  function setStatus(html: string): void {
+    if (!statusEl) return;
+    statusEl.innerHTML = html;
+  }
+
+  function setInvalid(input: HTMLElement | null, invalid: boolean): void {
+    input?.classList.toggle('signaler-invalid', invalid);
+    if (input) input.setAttribute('aria-invalid', invalid ? 'true' : 'false');
+  }
+
+  const ICON_WARN =
+    '<svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+
+  function errorHtml(message: string): string {
+    return `<span class="text-brand-orange font-bold flex items-center gap-2">${ICON_WARN} ${message}</span>`;
+  }
+
+  function resetTurnstile(): void {
+    try {
+      turnstileApi()?.reset();
+    } catch {
+      /* widget non chargé — rien à réinitialiser */
+    }
+  }
+
+  function validate(): string[] {
+    const errors: string[] = [];
+    const entite = entiteInput?.value.trim() ?? '';
+    const details = detailsInput?.value.trim() ?? '';
+    const source = sourceInput?.value.trim() ?? '';
+    const contact = contactInput?.value.trim() ?? '';
+
+    setInvalid(entiteInput, !entite);
+    setInvalid(detailsInput, !details);
+    setInvalid(sourceInput, !source || !/^https?:\/\/\S+\.\S+/i.test(source));
+    setInvalid(contactInput, Boolean(contact) && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact));
+
+    if (!entite) errors.push("le nom de l'entité");
+    if (!details) errors.push('la description de ce qui a fuité');
+    if (!source) errors.push("l'URL de la source publique");
+    else if (!/^https?:\/\/\S+\.\S+/i.test(source)) errors.push("l'URL de la source publique (http/https valide)");
+    if (contact && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) errors.push("l'email de contact (format invalide)");
+    return errors;
+  }
+
+  function turnstileToken(): string {
+    return (
+      form?.querySelector<HTMLInputElement>('input[name="cf-turnstile-response"]')?.value ?? ''
+    );
+  }
+
+  function buildPayload(): ReportPayload {
+    const fd = new FormData(form!);
+    const payload: ReportPayload = {
+      entity: (fd.get('entity') as string | null)?.trim() ?? '',
+      details: (fd.get('details') as string | null)?.trim() ?? '',
+      source_url: (fd.get('source_url') as string | null)?.trim() ?? '',
+      turnstile_token: turnstileToken(),
+      honeypot: (fd.get('site_web') as string | null)?.trim() ?? '',
+    };
+    const date = (fd.get('date') as string | null)?.trim();
+    if (date) payload.date = date;
+    const contact = (fd.get('contact_email') as string | null)?.trim();
+    if (contact) payload.contact_email = contact;
+    return payload;
+  }
+
+  function showSuccess(): void {
+    if (!form || !successEl) return;
+    form.hidden = true;
+    successEl.hidden = false;
+    successEl.querySelector('h3')?.focus();
+    successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form || !submitBtn) return;
+
+    const errors = validate();
+    if (errors.length > 0) {
+      setStatus(errorHtml(`Merci de compléter : ${errors.join(', ')}.`));
+      return;
+    }
+    if (!turnstileToken()) {
+      setStatus(errorHtml('Vérification anti-robot incomplète — patientez quelques secondes puis réessayez.'));
+      return;
+    }
+
+    submitBtn.disabled = true;
+    setStatus('Envoi en cours…');
+
+    try {
+      const res = await fetch(API_REPORT_URL, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(buildPayload()),
+      });
+
+      if (res.status === 201) {
+        showSuccess();
+        return;
+      }
+
+      let message = `Une erreur inattendue est survenue (code ${res.status}). Merci de réessayer.`;
+      try {
+        const data = (await res.json()) as { error?: string; errors?: string[] };
+        if (data.errors?.length) message = data.errors.join(' ');
+        else if (data.error) message = data.error;
+      } catch {
+        /* réponse non JSON : message générique conservé */
+      }
+      setStatus(errorHtml(message));
+      resetTurnstile();
+    } catch {
+      setStatus(
+        errorHtml('Service momentanément indisponible. Vérifiez votre connexion puis réessayez.'),
+      );
+      resetTurnstile();
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+</script>
