@@ -1,0 +1,52 @@
+{
+  "slug": "bloctel-20260812",
+  "entity": "Bloctel",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-12",
+    "confirmation": "2026-08-12"
+  },
+  "volume": {
+    "count": 3000000,
+    "unit": "enregistrements",
+    "label": "3 millions de numéros de téléphone contenus dans les fichiers récupérés, dont 600 000 inscrits au service (bilan officiel DGCCRF du 12 août 2026)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ministère de l'Économie (DGCCRF, communiqué du 12 août 2026) — La DGCCRF met en garde les consommateurs à la suite d'une fuite de données sur Bloctel",
+      "url": "https://presse.economie.gouv.fr/la-dgccrf-met-en-garde-les-consommateurs-a-la-suite-dune-fuite-de-donnees-sur-bloctel/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien (AFP) — Trois millions de numéros de téléphones dérobés : la liste d'opposition Bloctel victime d'un piratage",
+      "url": "https://www.leparisien.fr/economie/trois-millions-de-numeros-de-telephones-derobes-la-liste-dopposition-bloctel-victime-dun-piratage-12-08-2026-4KA3ABMAJFELBHEDRMWLZQGTFU.php",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Le service d'opposition au démarchage téléphonique Bloctel a été victime d'un piratage, 3 millions de numéros ont fuité",
+      "url": "https://www.franceinfo.fr/internet/telephonie/le-service-d-opposition-au-demarchage-telephonique-bloctel-a-ete-victime-d-un-piratage-3-millions-de-numeros-de-telephones-ont-fuite_8144849.html",
+      "kind": "article"
+    },
+    {
+      "label": "Frandroid — Bloctel piraté : la DGCCRF confirme le vol de 3 millions de numéros",
+      "url": "https://www.frandroid.com/culture-tech/3210827_bloctel-pirate-la-dgccrf-confirme-le-vol-des-numeros-de-telephone-des-inscrits",
+      "kind": "article"
+    }
+  ],
+  "description": "Bloctel, la liste d'opposition au démarchage téléphonique placée sous la tutelle de la DGCCRF, a fermé définitivement le 11 août 2026. Dans un communiqué du 12 août, la DGCCRF établit qu'un accès frauduleux à un compte professionnel a permis à un cybercriminel de récupérer des fichiers contenant 3 millions de numéros de téléphone, dont 600 000 inscrits au service. Aucune autre donnée personnelle (nom, adresse) n'a été divulguée selon l'administration, qui précise que la base Bloctel elle-même n'a pas été compromise. La CNIL a été notifiée et les inscrits concernés informés par courriel ; l'administration appelle les consommateurs à la vigilance.",
+  "timeline": [
+    {
+      "date": "2026-08-12",
+      "event": "La DGCCRF rend public l'incident : un compte professionnel usurpé a permis de récupérer 3 millions de numéros, dont 600 000 inscrits ; la CNIL est notifiée."
+    },
+    {
+      "date": "2026-08-12",
+      "event": "L'administration met en garde les consommateurs face aux sollicitations suspectes, au lendemain de la fermeture définitive du service."
+    }
+  ]
+}
