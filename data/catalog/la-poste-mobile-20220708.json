@@ -1,0 +1,61 @@
+{
+  "slug": "la-poste-mobile-20220708",
+  "entity": "La Poste Mobile",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-07-08",
+    "publication": "2022-07-08"
+  },
+  "volume": {
+    "count": 533000,
+    "unit": "comptes",
+    "label": "533 000 données clients en circulation selon l'analyse du site de veille ZATAZ relayée par Univers Freebox (numéros de compte bancaire, dates de naissance, identité, coordonnées) ; chiffre non confirmé par l'opérateur, qui compte environ 2 millions de clients"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Le Parisien — Des données de clients La Poste Mobile piratées par le groupe russophone de hackers Lockbit 3.0 (8 juillet 2022)",
+      "url": "https://www.leparisien.fr/high-tech/des-donnees-de-clients-la-poste-mobile-piratees-par-le-groupe-russophone-de-hackers-lockbit-30-08-07-2022-GFFRMTTUWZE35MCWHXTF7756MQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le MagIT — Cyberattaque : La Poste Mobile victime du ransomware LockBit, un premier lot de données volées divulgué (11 juillet 2022)",
+      "url": "https://www.lemagit.fr/actualites/252522512/Cyberattaque-La-Poste-Mobile-victime-du-ransomware-LockBit",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — La Poste Mobile : les données de milliers de clients diffusées en ligne après un piratage (12 juillet 2022)",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/la-poste-mobile-les-donnees-de-milliers-de-clients-diffusees-en-ligne-apres-un-piratage_AN-202207120351.html",
+      "kind": "article"
+    },
+    {
+      "label": "Univers Freebox — Un piratage fait fuiter les données de 533 000 clients La Poste Mobile (6 septembre 2022)",
+      "url": "https://www.universfreebox.com/article/532701/un-piratage-fait-fuiter-les-donnees-de-533-000-clients-la-poste-mobile",
+      "kind": "article"
+    }
+  ],
+  "description": "La Poste Mobile, opérateur commun à La Poste et SFR comptant environ deux millions de clients, reconnaît le 8 juillet 2022 un « virus malveillant de type rançongiciel » posé le 4 juillet sur ses services administratifs. Le groupe LockBit 3.0 revendique l'attaque et publie des échantillons ; un premier lot de données est divulgué le 11 juillet. L'opérateur indique que des fichiers présents sur des ordinateurs de salariés pourraient contenir des données personnelles et porte plainte auprès du C3N. Début septembre, ZATAZ analyse un fichier de 64 Mo comptant 533 000 données clients — identité, coordonnées, numéros de compte bancaire — que l'opérateur n'a pas confirmés.",
+  "timeline": [
+    {
+      "date": "2022-07-04",
+      "event": "Un « virus malveillant de type rançongiciel » touche les services administratifs et de gestion ; le site et l'espace client ferment une dizaine de jours."
+    },
+    {
+      "date": "2022-07-08",
+      "event": "LockBit 3.0 revendique l'attaque sur son site et publie des échantillons ; La Poste Mobile reconnaît le rançongiciel, une rançon de plusieurs centaines de milliers d'euros est exigée."
+    },
+    {
+      "date": "2022-07-11",
+      "event": "Un premier lot de données volées est divulgué sur le site des attaquants ; de nouveaux lots sont promis sous quatre jours."
+    },
+    {
+      "date": "2022-07-12",
+      "event": "ZATAZ identifie « des dizaines de milliers » d'informations clients circulant sur une quinzaine de sites ; plainte déposée auprès du C3N."
+    },
+    {
+      "date": "2022-09-06",
+      "event": "Univers Freebox relaie l'analyse ZATAZ d'un fichier de 64 Mo contenant 533 000 données clients, dont des numéros de compte bancaire."
+    }
+  ]
+}

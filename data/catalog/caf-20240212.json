@@ -1,0 +1,64 @@
+{
+  "slug": "caf-20240212",
+  "entity": "Caisse nationale des allocations familiales (Cnaf)",
+  "siren": "180035065",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-12",
+    "publication": "2024-02-13",
+    "confirmation": "2024-02-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "« plusieurs milliers » de comptes allocataires visités de manière illégitime selon la Cnaf (chiffre exact non communiqué) ; la revendication de 600 000 comptes par le groupe LulzSec n'est pas attestée"
+  },
+  "data_types": ["identite", "financier"],
+  "sources": [
+    {
+      "label": "Cnaf (caf.fr) — Alerte aux mots de passe volés : la Cnaf renforce la sécurité des comptes des allocataires (février 2024)",
+      "url": "https://www.caf.fr/professionnels/presse/publications/alerte-aux-mots-de-passe-voles-la-cnaf-renforce-la-securite-des-comptes-des-allocataires",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — La CAF victime d'une cyberattaque, les hackers revendiquent 600 000 comptes touchés (13 février 2024)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/la-caf-victime-d-une-cyberattaque-les-hackers-revendiquent-600-000-comptes-touches-20240213",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique — Des centaines de milliers de comptes CAF piratés ? (13 février 2024)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire/des-centaines-de-milliers-de-comptes-caf-pirates-maj-92955.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Piratage de la CAF : des milliers de comptes finalement touchés, changement de mot de passe obligatoire (26 février 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/piratage-de-la-caf-des-milliers-de-comptes-finalement-touches-changement-de-mot-de-passe-obligatoire-7900356943",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — CAF : tous les inscrits devront changer leur mot de passe après que « plusieurs milliers de comptes » ont été compromis (27 février 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/caf-tous-les-inscrits-devront-changer-leur-mot-de-passe-apres-que-plusieurs-milliers-de-comptes-d-allocataires-ont-ete-finalement-compromis_6391552.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 février 2024, le groupe LulzSec revendique le piratage de 600 000 comptes d'allocataires et diffuse des captures d'écran, quelques jours après la fuite Viamedis-Almerys. La Cnaf ne détecte aucune faille de caf.fr : des mots de passe volés ailleurs et disponibles sur le dark web ont permis des connexions illégitimes. Le 23 février, l'organisme reconnaît une violation avérée : « plusieurs milliers de comptes » ont été visités sans autorisation, sans accès possible aux RIB. Plainte et signalement à la CNIL sont effectués, les comptes touchés sont contactés, et le changement de mot de passe devient obligatoire à partir du 8 mars.",
+  "timeline": [
+    {
+      "date": "2024-02-12",
+      "event": "Le groupe LulzSec revendique le piratage de 600 000 comptes CAF et publie des captures d'écran de comptes allocataires."
+    },
+    {
+      "date": "2024-02-13",
+      "event": "La Cnaf confirme la violation de quatre comptes, sans faille de caf.fr ; plainte et signalement CNIL ; le site est brièvement fermé par précaution."
+    },
+    {
+      "date": "2024-02-23",
+      "event": "La Cnaf reconnaît que « plusieurs milliers de comptes » ont été visités de manière illégitime avec des mots de passe volés disponibles sur le dark web."
+    },
+    {
+      "date": "2024-03-08",
+      "event": "Le changement de mot de passe devient obligatoire pour tous les allocataires qui se connectent à leur compte."
+    }
+  ]
+}

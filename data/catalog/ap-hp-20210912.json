@@ -1,0 +1,64 @@
+{
+  "slug": "ap-hp-20210912",
+  "entity": "Assistance publique – Hôpitaux de Paris (AP-HP)",
+  "siren": "267500452",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-09-12",
+    "publication": "2021-09-15",
+    "confirmation": "2021-09-15"
+  },
+  "volume": {
+    "count": 1400000,
+    "unit": "personnes",
+    "label": "environ 1,4 million de personnes ayant effectué un test de dépistage du Covid-19 en Île-de-France mi-2020 (chiffre de l'AP-HP)"
+  },
+  "data_types": ["identite", "coordonnees", "sante"],
+  "sources": [
+    {
+      "label": "AP-HP — L'AP-HP porte plainte suite à une attaque informatique sur son service sécurisé de partage de fichiers (15 septembre 2021)",
+      "url": "https://www.aphp.fr/espace-medias/liste-ressources-presse/lap-hp-porte-plainte-suite-une-attaque-informatique-sur-son",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien (avec AFP) — Cyberattaque : les Hôpitaux de Paris victimes d'un vol massif de données de santé (15 septembre 2021)",
+      "url": "https://www.leparisien.fr/societe/sante/cyberattaque-les-hopitaux-de-paris-victimes-dun-vol-massif-de-donnees-de-sante-15-09-2021-B3ZQNIZ7TNAOFK46AT7UY34SYA.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — L'AP-HP victime d'une cyberattaque : les données de 1,4 million de personnes volées (15 septembre 2021)",
+      "url": "https://www.bfmtv.com/tech/l-ap-hp-victime-d-une-cyberattaque-les-donnees-de-1-4-million-de-personnes-volees_AD-202109150384.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Vol de données à l'APHP : un pirate de 22 ans anti-passe sanitaire mis en examen (8 octobre 2021)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/vol-de-donnees-a-l-aphp-un-pirate-de-22-ans-anti-passe-sanitaire-mis-en-examen-7900083313",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Fuite de données à l'AP-HP : un opposant au pass sanitaire de 22 ans mis en examen et placé sous contrôle judiciaire (8 octobre 2021)",
+      "url": "https://www.franceinfo.fr/sante/hopital/uite-de-donnees-a-l-ap-hp-un-anti-pass-sanitaire-de-22-ans-mis-en-examen-et-place-sous-controle-judiciaire_4799999.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L'AP-HP annonce le 15 septembre 2021 une attaque informatique menée pendant l'été contre un service sécurisé de partage de fichiers, utilisé ponctuellement en septembre 2020 pour transmettre à l'Assurance maladie des données de contact tracing. Les fichiers dérobés concernent environ 1,4 million de personnes testées mi-2020 en Île-de-France : identité, numéro de Sécurité sociale, coordonnées et résultat du test. Selon RTL, le pirate a diffusé début septembre un lien vers la base, restée accessible cinq jours avant sa suppression par l'ANSSI. Un étudiant de 22 ans opposé au passe sanitaire, qui a reconnu les faits, est mis en examen le 8 octobre 2021.",
+  "timeline": [
+    {
+      "date": "2021-09-12",
+      "event": "L'AP-HP confirme une attaque conduite pendant l'été ; selon RTL, le pirate a revendiqué le vol début septembre et partagé un lien vers la base de données."
+    },
+    {
+      "date": "2021-09-15",
+      "event": "L'AP-HP porte plainte auprès du procureur de Paris et rend public le vol : environ 1,4 million de personnes concernées ; signalements à la CNIL et à l'ANSSI."
+    },
+    {
+      "date": "2021-10-06",
+      "event": "La Brigade de lutte contre la cybercriminalité interpelle un étudiant de 22 ans, qui reconnaît les faits durant sa garde à vue."
+    },
+    {
+      "date": "2021-10-08",
+      "event": "Le suspect est mis en examen pour accès frauduleux, extraction et collecte de données et divulgation illégale, puis placé sous contrôle judiciaire."
+    }
+  ]
+}

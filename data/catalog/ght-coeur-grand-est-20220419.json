@@ -1,0 +1,58 @@
+{
+  "slug": "ght-coeur-grand-est-20220419",
+  "entity": "Groupement hospitalier de territoire (GHT) Cœur Grand Est",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-04-19",
+    "publication": "2022-04-25",
+    "confirmation": "2022-04-21"
+  },
+  "volume": {
+    "count": 350000,
+    "unit": "enregistrements",
+    "label": "environ 350 000 fichiers administratifs copiés selon le directeur général du GHT, mis en vente sur la place de marché Industrial Spy après une enchère à 1,3 million de dollars ; « quasiment aucune donnée patient », mais une centaine à deux cents courriers médicaux contenant numéros de Sécurité sociale et RIB"
+  },
+  "data_types": ["identite", "financier", "sante", "credentials", "documents"],
+  "sources": [
+    {
+      "label": "GHT Cœur Grand Est — Communiqué de presse : Le GHT Cœur Grand Est victime d'une cyberattaque (21 avril 2022)",
+      "url": "https://ght-coeurgrandest.fr/wp-content/uploads/2022/04/CP_Cyberattaque_GHT_Coeur_Grand_Est_21042022.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "France 3 Régions — Marne : des données de patients en vente pour 1,3 million de dollars après une cyber-attaque à l'hôpital de Vitry-le-François (27 avril 2022)",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/marne/vitry-le-francois/marne-des-donnees-de-patients-en-vente-pour-1-3-million-de-dollars-apres-une-cyber-attaque-a-l-hopital-de-vitry-le-francois-2532104.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr — Les données d'un hôpital de la Marne mises en vente sur une place de marché illégale (26 avril 2022)",
+      "url": "https://www.zdnet.fr/actualites/les-donnees-d-un-hopital-de-la-marne-mises-en-vente-sur-une-place-de-marche-illegale-39941091.htm",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — French hospital group disconnects Internet after hackers steal data (25 avril 2022)",
+      "url": "https://www.bleepingcomputer.com/news/security/french-hospital-group-disconnects-internet-after-hackers-steal-data/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le GHT Cœur Grand Est, qui réunit notamment les centres hospitaliers de Vitry-le-François et de Saint-Dizier, découvre le 19 avril 2022 un piratage venu de l'étranger : des données ont été copiées, sans chiffrement des systèmes. Une archive de 28,7 Go est mise aux enchères pour 1,3 million de dollars sur la place de marché Industrial Spy. Le communiqué du 21 avril reconnaît le vol de données administratives ; le groupe isole tous ses accès internet et annonce une plainte. Selon le directeur général, « quasiment aucune donnée patient » figure dans le lot, hormis cent à deux cents courriers médicaux contenant numéros de Sécurité sociale et RIB.",
+  "timeline": [
+    {
+      "date": "2022-04-19",
+      "event": "La cellule de cyberveille du ministère de la Santé informe le GHT que des données étiquetées Cœur Grand Est sont mises en vente sur le dark web."
+    },
+    {
+      "date": "2022-04-20",
+      "event": "Le GHT isole du réseau internet, dès le soir, le système d'information de chacun de ses établissements."
+    },
+    {
+      "date": "2022-04-21",
+      "event": "Communiqué officiel : le piratage a permis de dérober des données administratives ; le GHT annonce porter plainte."
+    },
+    {
+      "date": "2022-04-22",
+      "event": "L'enchère de 1,3 million de dollars se termine sans acheteur ; les attaquants passent à une vente au fichier unitaire, environ 350 000 fichiers selon le directeur général."
+    }
+  ]
+}

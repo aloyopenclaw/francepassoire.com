@@ -1,0 +1,58 @@
+{
+  "slug": "centre-hospitalier-arles-20210818",
+  "entity": "Centre hospitalier d'Arles",
+  "siren": "261300222",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2021-08-18",
+    "publication": "2021-08-19"
+  },
+  "volume": {
+    "count": 53510,
+    "unit": "enregistrements",
+    "label": "plus de 53 510 documents de patients et d'hospitalisations diffusés selon les constatations du site de veille ZATAZ (fiches de liaison paramédicale, certificats médicaux, résumés d'hospitalisation) ; volume non confirmé par l'établissement"
+  },
+  "data_types": ["identite", "coordonnees", "sante", "documents"],
+  "sources": [
+    {
+      "label": "Le Parisien — Le centre hospitalier d'Arles touché par un virulent ransomware en pleine vague de Covid-19 (19 août 2021)",
+      "url": "https://www.leparisien.fr/high-tech/le-centre-hospitalier-darles-touche-par-un-virulent-ransomware-en-pleine-vague-de-covid-19-19-08-2021-KR5RYUTAMRDLDGYHCHTM6QVH3M.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Une cyberattaque vise l'hôpital d'Arles, rendant illisibles les dossiers des patients (19 août 2021)",
+      "url": "https://www.lefigaro.fr/conjoncture/une-cyberattaque-vise-l-hopital-d-arles-rendant-illisibles-les-dossiers-des-patients-20210819",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr — Ransomware : le groupe Vice Society revendique l'attaque sur le centre hospitalier d'Arles (20 août 2021)",
+      "url": "https://www.zdnet.fr/actualites/ransomware-le-groupe-vice-society-revendique-l-attaque-sur-le-centre-hospitalier-d-arles-39927873.htm",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Piratage du Centre Hospitalier d'Arles : there is nothing… ou presque (25 août 2021)",
+      "url": "https://www.zataz.com/piratage-du-centre-hospitalier-darles-there-is-nothing-ou-presque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le centre hospitalier d'Arles est touché à partir du 2 août 2021 par un rançongiciel qui chiffre des serveurs, des postes et une partie des sauvegardes ; l'établissement fonctionne en mode dégradé. Le 18 août, le groupe Vice Society revendique l'attaque et menace de publier des données volées ; l'hôpital, qui a reçu une demande de rançon qu'il refuse de payer, dépose plainte. Fin août, le site de veille ZATAZ constate la diffusion de centaines de documents médicaux volés — fiches de liaison, certificats, résumés d'hospitalisation — et évalue le lot à plus de 53 510 documents, datés de 2019 au 21 août 2021. L'établissement n'a pas confirmé ces volumes.",
+  "timeline": [
+    {
+      "date": "2021-08-02",
+      "event": "L'attaque débute : des serveurs et des postes de travail sont chiffrés, les dossiers patients informatisés deviennent inaccessibles ; l'hôpital bascule en mode dégradé."
+    },
+    {
+      "date": "2021-08-18",
+      "event": "Le groupe Vice Society revendique l'attaque sur son site et menace de publier des documents siphonnés."
+    },
+    {
+      "date": "2021-08-19",
+      "event": "La direction confirme l'attaque et une demande de rançon qu'elle refuse ; une plainte est déposée et l'enquête revient au parquet de Paris."
+    },
+    {
+      "date": "2021-08-25",
+      "event": "ZATAZ retrouve la diffusion de centaines de documents volés sur un second espace de stockage des attaquants : plus de 53 510 documents selon ses constatations."
+    }
+  ]
+}
