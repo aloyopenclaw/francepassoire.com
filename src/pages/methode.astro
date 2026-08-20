@@ -104,7 +104,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-8 shadow-hard">
         <p class="font-body mb-8 max-w-3xl">Parce que l'information sur les fuites subit de fortes pressions, toute correction, tout ajout ou tout retrait est inscrit pour toujours — chaîné par empreintes cryptographiques et ancré hors de ce site.</p>
 
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-8 opacity-70">
+        <!-- Chips d'empreintes : contraste plein (l'opacity-70 passait le chip
+             orange sous 4.5:1 — axe color-contrast, tâche 44) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
           <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">A7B2...9F</div>
           <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
           <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">C3D4...1E</div>

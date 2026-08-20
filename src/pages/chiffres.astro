@@ -1,48 +1,283 @@
 ---
+// Le Compteur National — micro-tâche T36 (finalisation tâche 44) : les chiffres
+// sont calculés au build depuis le catalogue public (collection `catalog`).
+// Catalogue vide → état vide honnête conservé (aucun chiffre publié avant
+// d'exister) ; fiches présentes → personnesYTD en grand nombre (cible de
+// l'animation count-up de countUpTarget), étiquette d'honnêteté
+// personnesLabel, barres secteur/données/année et répartition des statuts.
+// Chaque barre ne pointe que vers un hub EXISTANT (règle ≥ SEUIL_HUB de
+// hub-view.ts, tâche 28) : aucune barre vers une page non générée.
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import {
+  anneesHubbees,
+  donneesHubbees,
+  formaterNombre,
+  labelDonnee,
+  labelSecteur,
+  labelStatut,
+  secteursHubbes,
+  urlAnnee,
+  urlDonnee,
+  urlSecteur,
+} from '../lib/hub-view';
+import { computeCompteur, countUpTarget } from '../lib/stats';
+
+const fiches = (await getCollection('catalog')).map((entry) => entry.data);
+const compteur = computeCompteur(fiches);
+const cible = countUpTarget(compteur);
+const anneeCourante = new Date().getFullYear();
+
+/** Barre du contrat visuel « chiffres » : largeur relative au max, en %. */
+function pct(valeur: number, max: number): number {
+  return Math.round((valeur / max) * 100);
+}
+
+const secteursHub = secteursHubbes(fiches);
+const barresSecteur = Object.entries(compteur.sectorBars)
+  .filter(([, n]) => n > 0)
+  .sort(([a, na], [b, nb]) => nb - na || a.localeCompare(b))
+  .map(([secteur, n]) => ({
+    label: labelSecteur(secteur as keyof typeof compteur.sectorBars),
+    count: n,
+    pct: pct(n, Math.max(...Object.values(compteur.sectorBars), 1)),
+    href: secteursHub.has(secteur as keyof typeof compteur.sectorBars)
+      ? urlSecteur(secteur as keyof typeof compteur.sectorBars)
+      : null,
+  }));
+
+const donneesHub = donneesHubbees(fiches);
+const barresDonnees = Object.entries(compteur.dataTypeBars)
+  .filter(([, n]) => n > 0)
+  .sort(([a, na], [b, nb]) => nb - na || a.localeCompare(b))
+  .map(([type, n]) => ({
+    label: labelDonnee(type as keyof typeof compteur.dataTypeBars),
+    count: n,
+    pct: pct(n, Math.max(...Object.values(compteur.dataTypeBars), 1)),
+    href: donneesHub.has(type as keyof typeof compteur.dataTypeBars)
+      ? urlDonnee(type as keyof typeof compteur.dataTypeBars)
+      : null,
+  }));
+
+const anneesHub = anneesHubbees(fiches);
+const barresAnnee = Object.entries(compteur.parAnnee)
+  .sort(([a], [b]) => b.localeCompare(a))
+  .map(([annee, n]) => ({
+    label: annee,
+    count: n,
+    pct: pct(n, Math.max(...Object.values(compteur.parAnnee), 1)),
+    href: anneesHub.has(annee) ? urlAnnee(Number(annee)) : null,
+  }));
+
+const totalStatut = Math.max(compteur.fichesCount, 1);
+const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
+  label: labelStatut(statut),
+  count: compteur.statutSplit[statut],
+  pct: pct(compteur.statutSplit[statut], totalStatut),
+  classe: statut === 'confirmee' ? 'pill-confirmee' : 'pill-revendiquee',
+}));
 ---
 <Layout
   title="Les chiffres - France Passoire"
   description="Le Compteur National et les statistiques des fuites de données personnelles en France, calculées depuis le catalogue public."
 >
-  <!-- Hero : zéro fiche publiée, le compteur affiche un zéro honnête -->
-  <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
-      <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
-        <h1 class="mt-0">
-          <span class="block font-mono font-black text-7xl sm:text-8xl text-brand-orange drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter">0</span>
-          <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">fuite recensée à ce jour</span>
-        </h1>
-        <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
-          le compteur s'anime avec les premières fiches vérifiées — aucun chiffre publié avant d'exister
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- État vide honnête : les statistiques suivront le catalogue -->
-  <section class="py-16 bg-brand-paper">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-
-      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard text-center">
-        <h2 class="font-display font-extrabold text-2xl mb-2">Les statistiques suivront le catalogue</h2>
-        <p class="font-body text-brand-ink/70 max-w-2xl mx-auto leading-relaxed">
-          Fuites par secteur, données exposées, part des fuites confirmées : chaque chiffre
-          sera calculé depuis le catalogue public, avec la même méthode que les fiches.
-          Rien ne s'affichera ici avant la première donnée réelle.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4 mt-6 font-mono text-sm font-bold">
-          <a href="/" class="underline hover:text-brand-orange">→ voir le catalogue</a>
-          <a href="/methode/" class="underline hover:text-brand-orange">→ comprendre la méthode</a>
+  {cible === null ? (
+    <!-- Hero : zéro fiche publiée, le compteur affiche un zéro honnête -->
+    <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
+        <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
+          <h1 class="mt-0">
+            <span class="block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter">0</span>
+            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">fuite recensée à ce jour</span>
+          </h1>
+          <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
+            le compteur s'anime avec les premières fiches vérifiées — aucun chiffre publié avant d'exister
+          </p>
         </div>
       </div>
+    </section>
+  ) : (
+    <!-- Hero : personnesYTD en grand nombre, cible de l'animation count-up -->
+    <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
+        <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
+          <h1 class="mt-0">
+            <span class="count-up block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter" data-cible={cible}>{formaterNombre(cible)}</span>
+            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">personnes potentiellement touchées depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
+          </h1>
+          <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
+            {compteur.personnesLabel} — {formaterNombre(compteur.fichesCount)} {compteur.fichesCount > 1 ? 'fuites recensées' : 'fuite recensée'} à ce jour
+          </p>
+        </div>
+      </div>
+    </section>
+  )}
 
-      <p class="text-center font-mono text-sm text-brand-ink/60">
-        <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
-          Tous les chiffres viennent du catalogue public — même donnée, même méthode.
-        </span>
-      </p>
-    </div>
-  </section>
+  {cible === null ? (
+    <!-- État vide honnête : les statistiques suivront le catalogue -->
+    <section class="py-16 bg-brand-paper">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard text-center">
+          <h2 class="font-display font-extrabold text-2xl mb-2">Les statistiques suivront le catalogue</h2>
+          <p class="font-body text-brand-ink/70 max-w-2xl mx-auto leading-relaxed">
+            Fuites par secteur, données exposées, part des fuites confirmées : chaque chiffre
+            sera calculé depuis le catalogue public, avec la même méthode que les fiches.
+            Rien ne s'affichera ici avant la première donnée réelle.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 mt-6 font-mono text-sm font-bold">
+            <a href="/" class="underline hover:text-brand-orange">→ voir le catalogue</a>
+            <a href="/methode/" class="underline hover:text-brand-orange">→ comprendre la méthode</a>
+          </div>
+        </div>
+
+        <p class="text-center font-mono text-sm text-brand-ink/60">
+          <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
+            Tous les chiffres viennent du catalogue public — même donnée, même méthode.
+          </span>
+        </p>
+      </div>
+    </section>
+  ) : (
+    <!-- Statistiques calculées au build : barres du contrat visuel « chiffres » -->
+    <section class="py-16 bg-brand-paper">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Fuites par secteur : chaque barre lie le hub /secteur/<slug>/ s'il existe -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Fuites par secteur</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Fiches du catalogue par secteur :</p>
+          <div class="space-y-4">
+            {barresSecteur.map((barre) => barre.href ? (
+              <a href={barre.href} class="block group">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </a>
+            ) : (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Données exposées : chaque barre lie le hub /donnees/<type>/ s'il existe -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Données exposées</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Fiches par type de données annoncées :</p>
+          <div class="space-y-4">
+            {barresDonnees.map((barre) => barre.href ? (
+              <a href={barre.href} class="block group">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </a>
+            ) : (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Statut de vérification : répartition Revendiquée / Confirmée (aucun hub dédié) -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Statut de vérification</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Part des fiches confirmées par une source officielle :</p>
+          <div class="space-y-4">
+            {statuts.map((statut) => (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{statut.label}</span><span>{statut.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class={`h-full ${statut.classe === 'pill-confirmee' ? 'bg-brand-green' : 'bg-brand-orange'} border-r-2 border-brand-ink`} style={`width: ${statut.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p class="font-mono text-sm mt-6">
+            <a href="/" class="underline hover:text-brand-orange">→ voir les fiches sources</a>
+          </p>
+        </div>
+
+        <!-- Fuites par année : chaque barre lie le hub /<yyyy>/ s'il existe -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Fuites par année</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Fiches par année d'attribution :</p>
+          <div class="space-y-4">
+            {barresAnnee.map((barre) => barre.href ? (
+              <a href={barre.href} class="block group">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </a>
+            ) : (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <p class="text-center font-mono text-sm text-brand-ink/60 lg:col-span-2">
+          <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
+            Tous les chiffres viennent du catalogue public — même donnée, même méthode.
+          </span>
+        </p>
+      </div>
+    </section>
+  )}
+
+  <script>
+    // Animation count-up du Compteur National : la valeur finale est rendue
+    // côté serveur (fonctionne sans JS) ; l'animation part de 0 vers la cible
+    // et respecte prefers-reduced-motion (affichage immédiat).
+    const cibleEl = document.querySelector<HTMLElement>('.count-up');
+    const cible = Number(cibleEl?.dataset.cible ?? NaN);
+    if (cibleEl && Number.isFinite(cible)) {
+      const formater = new Intl.NumberFormat('fr-FR');
+      const reduit = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduit || cible === 0) {
+        cibleEl.textContent = formater.format(cible);
+      } else {
+        const duree = 900;
+        const debut = performance.now();
+        const tic = (t: number): void => {
+          const avance = Math.min((t - debut) / duree, 1);
+          const eased = 1 - (1 - avance) ** 3;
+          cibleEl.textContent = formater.format(Math.round(cible * eased));
+          if (avance < 1) requestAnimationFrame(tic);
+        };
+        requestAnimationFrame(tic);
+      }
+    }
+  </script>
 </Layout>
