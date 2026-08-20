@@ -1,0 +1,473 @@
+---
+/**
+ * Générateur de lettre au DPO — îlot client 100 % local.
+ * Cinq modèles RGPD (art. 15, 16, 17, 20, 21), variante FR/EN,
+ * copie presse-papier et téléchargement .txt.
+ * Aucune requête réseau : la lettre se fabrique entièrement
+ * dans le navigateur, zéro fuite de données (c'est le principe).
+ */
+---
+
+<div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+  <div class="flex flex-wrap items-start justify-between gap-4 mb-2">
+    <h3 class="font-display font-bold text-2xl">Lettre type au DPO</h3>
+    <div class="flex items-center gap-2" role="group" aria-label="Langue de la lettre">
+      <span class="font-mono text-xs font-bold" aria-hidden="true">Lettre&nbsp;:</span>
+      <button type="button" id="dpo-lang-fr" aria-pressed="true" class="px-3 py-1 rounded-md border-2 border-brand-ink font-mono text-sm font-bold bg-brand-ink text-brand-cream transition-colors">FR</button>
+      <button type="button" id="dpo-lang-en" aria-pressed="false" class="px-3 py-1 rounded-md border-2 border-brand-ink font-mono text-sm font-bold bg-brand-paper transition-colors hover:bg-brand-orange/20">EN</button>
+    </div>
+  </div>
+  <p class="font-body mb-6">Vos données ont fuité chez une entité ? Le RGPD vous donne cinq leviers directs. Choisissez un modèle, la lettre se fabrique ici même.</p>
+
+  <form id="dpo-form" novalidate>
+    <fieldset class="mb-6">
+      <legend class="block font-mono text-sm font-bold mb-2">Votre droit (modèle)</legend>
+      <div class="flex flex-wrap gap-2">
+        <label class="cursor-pointer">
+          <input type="radio" name="dpo-template" value="acces" class="peer sr-only" checked>
+          <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-paper peer-checked:bg-brand-orange peer-checked:font-bold peer-focus-visible:ring-2 peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2 ring-offset-brand-cream">Accès · Art. 15</span>
+        </label>
+        <label class="cursor-pointer">
+          <input type="radio" name="dpo-template" value="rectification" class="peer sr-only">
+          <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-paper peer-checked:bg-brand-orange peer-checked:font-bold peer-focus-visible:ring-2 peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2 ring-offset-brand-cream">Rectification · Art. 16</span>
+        </label>
+        <label class="cursor-pointer">
+          <input type="radio" name="dpo-template" value="effacement" class="peer sr-only">
+          <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-paper peer-checked:bg-brand-orange peer-checked:font-bold peer-focus-visible:ring-2 peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2 ring-offset-brand-cream">Effacement · Art. 17</span>
+        </label>
+        <label class="cursor-pointer">
+          <input type="radio" name="dpo-template" value="opposition" class="peer sr-only">
+          <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-paper peer-checked:bg-brand-orange peer-checked:font-bold peer-focus-visible:ring-2 peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2 ring-offset-brand-cream">Opposition · Art. 21</span>
+        </label>
+        <label class="cursor-pointer">
+          <input type="radio" name="dpo-template" value="portabilite" class="peer sr-only">
+          <span class="inline-block px-3 py-1 border-2 border-brand-ink rounded-md font-mono text-sm bg-brand-paper peer-checked:bg-brand-orange peer-checked:font-bold peer-focus-visible:ring-2 peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2 ring-offset-brand-cream">Portabilité · Art. 20</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+      <div>
+        <label for="dpo-name" class="block font-mono text-sm font-bold mb-2">Votre nom</label>
+        <input type="text" id="dpo-name" placeholder="Ex. : Jeanne Dupont" autocomplete="name" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+      <div>
+        <label for="dpo-entite" class="block font-mono text-sm font-bold mb-2">L'entité destinataire</label>
+        <input type="text" id="dpo-entite" placeholder="Ex. : Clinique Alaxione" autocomplete="organization" title="Pré-remplie via le lien d'une fiche (?entite=…)" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+      <div>
+        <label for="dpo-email" class="block font-mono text-sm font-bold mb-2">Votre email <span class="font-normal opacity-60">(optionnel)</span></label>
+        <input type="email" id="dpo-email" placeholder="jeanne.dupont@example.com" autocomplete="email" class="w-full bg-brand-paper border-2 border-brand-ink rounded-xl px-4 py-3 font-mono focus:outline-none focus:ring-2 focus:ring-brand-orange">
+      </div>
+    </div>
+
+    <div id="dpo-validation" class="min-h-[2rem] flex items-center font-mono text-sm mb-4" aria-live="polite"></div>
+
+    <button type="submit" class="bg-brand-orange border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:bg-brand-hover font-display font-bold text-xl transition-all btn-press">
+      Générer la lettre
+    </button>
+  </form>
+
+  <div id="dpo-letter-wrap" class="mt-8" hidden>
+    <div id="dpo-letter" class="bg-brand-paper border-2 border-brand-ink rounded-xl p-6 sm:p-8 shadow-hard-sm" aria-label="Lettre générée"></div>
+
+    <div class="flex flex-wrap items-center gap-4 mt-6">
+      <button type="button" id="dpo-copy" class="bg-brand-ink text-brand-cream px-6 py-3 rounded-xl border-2 border-brand-ink font-bold hover:bg-brand-orange hover:text-brand-ink transition-colors shadow-sm btn-press flex items-center gap-2">
+        <svg width="18" height="18" viewBox="0 0 24 24" class="flex-shrink-0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copier la lettre
+      </button>
+      <button type="button" id="dpo-download" class="bg-brand-orange px-6 py-3 rounded-xl border-2 border-brand-ink font-bold hover:bg-brand-hover transition-colors shadow-sm btn-press flex items-center gap-2">
+        <svg width="18" height="18" viewBox="0 0 24 24" class="svg-ink flex-shrink-0"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Télécharger .txt
+      </button>
+      <div id="dpo-feedback" class="font-mono text-sm font-bold" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="border-t-2 border-brand-ink/20 pt-4 mt-6 text-xs font-mono opacity-80 flex items-start gap-2">
+    <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink flex-shrink-0"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    Aucune donnée ne quitte votre navigateur : la lettre est générée localement, sans la moindre requête réseau. FrancePassoire n'en voit jamais la couleur.
+  </div>
+</div>
+
+<style>
+  /* Champ invalide : liseré orange façon « avertissement », cohérent avec le focus 3px du contrat */
+  .dpo-invalid {
+    outline: 3px solid #FF6B1A;
+    outline-offset: 2px;
+  }
+</style>
+
+<script>
+  type Lang = 'fr' | 'en';
+
+  interface LetterBody {
+    objet: string;
+    paras: string[];
+    items: string[];
+  }
+
+  interface Template {
+    slug: string;
+    fr: LetterBody;
+    en: LetterBody;
+  }
+
+  const TEMPLATES: Record<string, Template> = {
+    acces: {
+      slug: 'acces',
+      fr: {
+        objet: "Objet : Demande d'exercice du droit d'accès (RGPD, article 15)",
+        paras: [
+          "Conformément au règlement (UE) 2016/679 du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel (RGPD), et notamment en application de son article 15, je souhaite exercer mon droit d'accès aux données personnelles me concernant que vous traitez.",
+          'À ce titre, je vous demande de me communiquer l\'ensemble des informations suivantes :',
+        ],
+        items: [
+          'la copie de l\'ensemble des données personnelles me concernant que vous traitez ;',
+          'les finalités du traitement, les catégories de données concernées et les destinataires ou catégories de destinataires des données ;',
+          'la durée de conservation envisagée ou, à défaut, les critères permettant de la déterminer ;',
+          'l\'origine des données lorsque celles-ci n\'ont pas été collectées directement auprès de moi ;',
+          'l\'existence de décisions automatisées, y compris le profilage, et, le cas échéant, toute information utile sur leur logique.',
+        ],
+      },
+      en: {
+        objet: 'Subject: Subject access request (GDPR, Article 15)',
+        paras: [
+          'Pursuant to Regulation (EU) 2016/679 of 27 April 2016 (General Data Protection Regulation, “GDPR”), and in particular Article 15 thereof, I hereby exercise my right of access to the personal data concerning me that you process.',
+          'In this respect, I request that you provide me with all of the following information:',
+        ],
+        items: [
+          'a copy of all personal data concerning me that you process;',
+          'the purposes of the processing, the categories of data concerned and the recipients or categories of recipients of the data;',
+          'the envisaged retention period or, failing that, the criteria used to determine it;',
+          'the source of the data where it was not collected directly from me;',
+          'the existence of automated decision-making, including profiling, and, where applicable, meaningful information about its logic.',
+        ],
+      },
+    },
+    rectification: {
+      slug: 'rectification',
+      fr: {
+        objet: 'Objet : Demande d\'exercice du droit de rectification (RGPD, article 16)',
+        paras: [
+          "Conformément au règlement (UE) 2016/679 (RGPD), et notamment en application de son article 16, je souhaite exercer mon droit à la rectification des données personnelles me concernant que vous traitez.",
+          'Les données me concernant que vous traitez sont inexactes et/ou incomplètes. Je vous demande de les rectifier ou de les compléter sans tarder, en veillant à ce que les données rectifiées restent cohérentes avec les finalités du traitement.',
+        ],
+        items: [],
+      },
+      en: {
+        objet: 'Subject: Request to exercise the right to rectification (GDPR, Article 16)',
+        paras: [
+          'Pursuant to Regulation (EU) 2016/679 (GDPR), and in particular Article 16 thereof, I hereby exercise my right to rectification of the personal data concerning me that you process.',
+          'The personal data you process concerning me is inaccurate and/or incomplete. I request that you rectify or complete it without undue delay, ensuring that the rectified data remains consistent with the purposes of the processing.',
+        ],
+        items: [],
+      },
+    },
+    effacement: {
+      slug: 'effacement',
+      fr: {
+        objet: "Objet : Demande d'exercice du droit à l'effacement — « droit à l'oubli » (RGPD, article 17)",
+        paras: [
+          "Conformément au règlement (UE) 2016/679 (RGPD), et notamment en application de son article 17, je souhaite exercer mon droit à l'effacement des données personnelles me concernant que vous traitez.",
+          "Les données me concernant ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées et aucun fondement légitime ne justifie la poursuite de leur traitement. Je vous demande en conséquence d'effacer sans tarder l'ensemble de ces données, conformément à l'article 17 du RGPD.",
+        ],
+        items: [],
+      },
+      en: {
+        objet: 'Subject: Request to exercise the right to erasure — “right to be forgotten” (GDPR, Article 17)',
+        paras: [
+          'Pursuant to Regulation (EU) 2016/679 (GDPR), and in particular Article 17 thereof, I hereby exercise my right to erasure of the personal data concerning me that you process.',
+          'The personal data concerning me is no longer necessary for the purposes for which it was collected, and no legitimate ground justifies its continued processing. I therefore request that you erase all such data without undue delay, pursuant to Article 17 GDPR.',
+        ],
+        items: [],
+      },
+    },
+    opposition: {
+      slug: 'opposition',
+      fr: {
+        objet: "Objet : Demande d'exercice du droit d'opposition (RGPD, article 21)",
+        paras: [
+          "Conformément au règlement (UE) 2016/679 (RGPD), et notamment en application de son article 21, je m'oppose, pour des raisons tenant à ma situation particulière, au traitement de mes données personnelles fondé sur les dispositions de l'article 6, paragraphe 1, points e) ou f), du même règlement.",
+          "Je m'oppose en outre, conformément à l'article 21, paragraphe 2, du RGPD, à tout traitement de mes données personnelles à des fins de prospection, y compris au profilage lié à une telle prospection.",
+        ],
+        items: [],
+      },
+      en: {
+        objet: 'Subject: Request to exercise the right to object (GDPR, Article 21)',
+        paras: [
+          'Pursuant to Regulation (EU) 2016/679 (GDPR), and in particular Article 21 thereof, I object, for reasons relating to my particular situation, to the processing of my personal data based on point (e) or point (f) of Article 6(1) GDPR.',
+          'I further object, pursuant to Article 21(2) GDPR, to any processing of my personal data for direct marketing purposes, including profiling related to such direct marketing.',
+        ],
+        items: [],
+      },
+    },
+    portabilite: {
+      slug: 'portabilite',
+      fr: {
+        objet: "Objet : Demande d'exercice du droit à la portabilité des données (RGPD, article 20)",
+        paras: [
+          "Conformément au règlement (UE) 2016/679 (RGPD), et notamment en application de son article 20, je souhaite exercer mon droit à la portabilité des données personnelles me concernant que vous traitez de manière automatisée, lorsque ce traitement est fondé sur mon consentement ou sur l'exécution d'un contrat.",
+          'À ce titre, je vous demande de me transmettre ces données :',
+        ],
+        items: [
+          'dans un format structuré, couramment utilisé et lisible par machine ;',
+          "ou, le cas échéant, de les transmettre directement à un autre responsable de traitement que je désignerai, lorsque cela est techniquement possible.",
+        ],
+      },
+      en: {
+        objet: 'Subject: Request to exercise the right to data portability (GDPR, Article 20)',
+        paras: [
+          'Pursuant to Regulation (EU) 2016/679 (GDPR), and in particular Article 20 thereof, I hereby exercise my right to data portability of the personal data concerning me that you process by automated means, where that processing is based on my consent or on the performance of a contract.',
+          'Accordingly, I request that you transmit this data to me:',
+        ],
+        items: [
+          'in a structured, commonly used and machine-readable format;',
+          'or, where applicable, that you transmit it directly to another controller designated by me, where technically feasible.',
+        ],
+      },
+    },
+  };
+
+  const SHARED = {
+    fr: {
+      opening: 'Madame, Monsieur,',
+      dpoLine: "À l'attention du Délégué à la Protection des Données (DPO)",
+      deadline:
+        "Je vous rappelle que, conformément à l'article 12, paragraphe 3, du RGPD, vous disposez d'un mois à compter de la réception de ma demande pour me répondre. À défaut de réponse dans ce délai, je me réserve le droit de saisir la CNIL.",
+      closing: 'Je vous prie d\'agréer, Madame, Monsieur, l\'expression de mes salutations distinguées.',
+    },
+    en: {
+      opening: 'Dear Sir or Madam,',
+      dpoLine: 'For the attention of the Data Protection Officer (DPO)',
+      deadline:
+        'I remind you that, pursuant to Article 12(3) GDPR, you have one month from receipt of my request to respond. Should you fail to respond within this period, I reserve the right to lodge a complaint with the competent supervisory authority.',
+      closing: 'Yours faithfully,',
+    },
+  };
+
+  const form = document.getElementById('dpo-form') as HTMLFormElement | null;
+  const nameInput = document.getElementById('dpo-name') as HTMLInputElement | null;
+  const entiteInput = document.getElementById('dpo-entite') as HTMLInputElement | null;
+  const emailInput = document.getElementById('dpo-email') as HTMLInputElement | null;
+  const validationEl = document.getElementById('dpo-validation');
+  const letterWrap = document.getElementById('dpo-letter-wrap');
+  const letterEl = document.getElementById('dpo-letter');
+  const copyBtn = document.getElementById('dpo-copy') as HTMLButtonElement | null;
+  const downloadBtn = document.getElementById('dpo-download') as HTMLButtonElement | null;
+  const feedbackEl = document.getElementById('dpo-feedback');
+  const langFrBtn = document.getElementById('dpo-lang-fr') as HTMLButtonElement | null;
+  const langEnBtn = document.getElementById('dpo-lang-en') as HTMLButtonElement | null;
+
+  let lang: Lang = 'fr';
+  let currentKey = 'acces';
+  let currentText = '';
+
+  // Pré-remplissage de l'entité via ?entite=<nom> (liens profonds depuis les fiches)
+  const entiteParam = new URLSearchParams(window.location.search).get('entite');
+  if (entiteInput && entiteParam) entiteInput.value = entiteParam;
+
+  function selectedTemplate(): string {
+    const checked = form?.querySelector<HTMLInputElement>('input[name="dpo-template"]:checked');
+    return checked?.value ?? 'acces';
+  }
+
+  function formatDate(l: Lang): string {
+    return new Date().toLocaleDateString(l === 'fr' ? 'fr-FR' : 'en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  }
+
+  interface LetterData {
+    name: string;
+    email: string;
+    entite: string;
+    tpl: Template;
+  }
+
+  function buildText({ name, email, entite, tpl }: LetterData, l: Lang): string {
+    const s = SHARED[l];
+    const body = tpl[l];
+    const dateLine = l === 'fr' ? `Fait le ${formatDate(l)}` : formatDate(l);
+    const lines: string[] = [
+      name,
+      ...(email ? [email] : []),
+      '',
+      entite,
+      s.dpoLine,
+      '',
+      dateLine,
+      '',
+      body.objet,
+      '',
+      s.opening,
+      '',
+      ...body.paras.flatMap((p) => [p, '']),
+    ];
+    if (body.items.length > 0) lines.push(...body.items.map((i) => `— ${i}`), '');
+    lines.push(s.deadline, '', s.closing, '', name);
+    return lines.join('\n');
+  }
+
+  function el(tag: string, cls: string, text: string): HTMLElement {
+    const node = document.createElement(tag);
+    node.className = cls;
+    node.textContent = text;
+    return node;
+  }
+
+  function renderLetter({ name, email, entite, tpl }: LetterData, l: Lang): void {
+    if (!letterEl) return;
+    const s = SHARED[l];
+    const body = tpl[l];
+    const dateLine = l === 'fr' ? `Fait le ${formatDate(l)}` : formatDate(l);
+    letterEl.replaceChildren();
+
+    const head = el('div', 'flex flex-col sm:flex-row sm:justify-between gap-4 mb-6', '');
+    const from = el('div', 'font-mono text-sm leading-relaxed', '');
+    from.append(el('p', 'font-bold', name));
+    if (email) from.append(el('p', '', email));
+    const to = el('div', 'font-mono text-sm leading-relaxed sm:text-right', '');
+    to.append(el('p', 'font-bold', entite));
+    to.append(el('p', '', s.dpoLine));
+    head.append(from, to);
+    letterEl.append(head);
+
+    letterEl.append(el('p', 'font-mono text-sm mb-6 sm:text-right', dateLine));
+    letterEl.append(el('p', 'font-bold mb-6', body.objet));
+    letterEl.append(el('p', 'mb-4 leading-relaxed', s.opening));
+    for (const para of body.paras) {
+      letterEl.append(el('p', 'mb-4 leading-relaxed', para));
+    }
+    for (const item of body.items) {
+      letterEl.append(el('p', 'pl-4 mb-1 leading-relaxed', `— ${item}`));
+    }
+    if (body.items.length > 0) letterEl.append(el('div', 'mb-4', ''));
+    letterEl.append(el('p', 'mb-4 leading-relaxed', s.deadline));
+    letterEl.append(el('p', 'mb-6 leading-relaxed', s.closing));
+    letterEl.append(el('p', 'font-bold', name));
+  }
+
+  function setInvalid(input: HTMLInputElement | null, invalid: boolean): void {
+    input?.classList.toggle('dpo-invalid', invalid);
+    if (input) input.setAttribute('aria-invalid', invalid ? 'true' : 'false');
+  }
+
+  function generate(): void {
+    if (!nameInput || !entiteInput || !validationEl || !letterWrap) return;
+    const name = nameInput.value.trim();
+    const entite = entiteInput.value.trim();
+    const email = emailInput?.value.trim() ?? '';
+
+    setInvalid(nameInput, !name);
+    setInvalid(entiteInput, !entite);
+
+    if (!name || !entite) {
+      validationEl.innerHTML =
+        '<span class="text-brand-orange font-bold flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Veuillez renseigner votre nom et le nom de l\'entité destinataire.</span>';
+      letterWrap.hidden = true;
+      currentText = '';
+      if (feedbackEl) feedbackEl.textContent = '';
+      return;
+    }
+
+    validationEl.textContent = '';
+    if (feedbackEl) feedbackEl.textContent = '';
+    currentKey = selectedTemplate();
+    const data: LetterData = { name, email, entite, tpl: TEMPLATES[currentKey] ?? TEMPLATES.acces };
+    currentText = buildText(data, lang);
+    renderLetter(data, lang);
+    letterWrap.hidden = false;
+  }
+
+  function setLang(l: Lang): void {
+    lang = l;
+    for (const [btn, active] of [
+      [langFrBtn, l === 'fr'],
+      [langEnBtn, l === 'en'],
+    ] as const) {
+      if (!btn) continue;
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      btn.classList.toggle('bg-brand-ink', active);
+      btn.classList.toggle('text-brand-cream', active);
+      btn.classList.toggle('bg-brand-paper', !active);
+    }
+    // Si une lettre est affichée, elle est restituée dans la nouvelle langue
+    if (currentText) {
+      const name = nameInput?.value.trim() ?? '';
+      const entite = entiteInput?.value.trim() ?? '';
+      const email = emailInput?.value.trim() ?? '';
+      const data: LetterData = { name, email, entite, tpl: TEMPLATES[selectedTemplate()] ?? TEMPLATES.acces };
+      currentText = buildText(data, lang);
+      renderLetter(data, lang);
+    }
+  }
+
+  function slugify(value: string): string {
+    return (
+      value
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .toLowerCase() || 'entite'
+    );
+  }
+
+  async function copyLetter(): Promise<void> {
+    if (!feedbackEl) return;
+    if (!currentText) {
+      feedbackEl.textContent = '';
+      return;
+    }
+    let copied = false;
+    try {
+      await navigator.clipboard.writeText(currentText);
+      copied = true;
+    } catch {
+      // Repli pour contextes non sécurisés / anciens navigateurs
+      const ta = document.createElement('textarea');
+      ta.value = currentText;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        // API dépréciée, conservée comme repli volontaire (contextes non sécurisés)
+        const legacyDoc = document as Document & { execCommand?: (commandId: string) => boolean };
+        copied = legacyDoc.execCommand?.('copy') ?? false;
+      } catch {
+        copied = false;
+      }
+      ta.remove();
+    }
+    feedbackEl.innerHTML = copied
+      ? '<span class="text-[#0E7A46]">Lettre copiée !</span>'
+      : '<span class="text-brand-orange">Copie impossible — sélectionnez la lettre manuellement.</span>';
+  }
+
+  function downloadLetter(): void {
+    if (!currentText) return;
+    const blob = new Blob([currentText], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${lang === 'fr' ? 'lettre-rgpd' : 'gdpr-letter'}-${currentKey}-${slugify(entiteInput?.value ?? '')}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    generate();
+  });
+  copyBtn?.addEventListener('click', copyLetter);
+  downloadBtn?.addEventListener('click', downloadLetter);
+  langFrBtn?.addEventListener('click', () => setLang('fr'));
+  langEnBtn?.addEventListener('click', () => setLang('en'));
+</script>
