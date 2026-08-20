@@ -1,0 +1,60 @@
+{
+  "slug": "ldlc-20240228",
+  "entity": "Groupe LDLC",
+  "siren": "403554181",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-28",
+    "publication": "2024-03-01",
+    "confirmation": "2024-03-01"
+  },
+  "volume": {
+    "count": 1504635,
+    "unit": "personnes",
+    "label": "1 504 635 personnes selon le décompte du site de veille ZATAZ (données couvrant juin 2018 à février 2024) ; 1,5 million d'entrées revendiquées par le groupe Epsilon ; le Groupe LDLC confirme une fuite limitée aux clients des boutiques physiques"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Groupe LDLC — Information relative à un incident de cybersécurité (1er mars 2024)",
+      "url": "https://www.groupe-ldlc.com/information-relative-a-un-incident-de-cybersecurite-2/",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — Le spécialiste informatique LDLC enquête sur un possible piratage de données touchant 1,5 million de clients (1er mars 2024)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/le-specialiste-informatique-ldlc-enquete-sur-un-possible-piratage-de-donnees-touchant-1-5-million-de-clients_AV-202403010451.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Le spécialiste de l'informatique LDLC confirme un piratage des données de ses clients (1er mars 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/le-specialiste-de-l-informatique-ldlc-enquete-sur-un-possible-piratage-des-donnees-de-1-5-million-de-clients-7900358763",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Les données de 1,5 million de clients LDLC ont été piratées (1er mars 2024)",
+      "url": "https://www.01net.com/actualites/les-donnees-de-15-million-de-clients-ldlc-ont-ete-piratees.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Une base de données LDLC apparaît dans le dark web (7 août 2024)",
+      "url": "https://www.zataz.com/une-base-de-donnees-ldlc-apparait-dans-le-dark-web/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 février 2024, un pirate met en vente sur un forum une base revendiquée de LDLC ; le groupe Epsilon revendique l'exfiltration de données de 1,5 million de clients : noms, coordonnées, identifiants clients et données professionnelles. Le 1er mars, le Groupe LDLC confirme une fuite restreinte au périmètre des clients des boutiques physiques, sans donnée financière ni sensible selon lui, et déclare avoir notifié les autorités. En août 2024, le site de veille ZATAZ retrouve la base en accès libre sur le dark web et la chiffre à 1 504 635 personnes, pour des données couvrant juin 2018 à février 2024.",
+  "timeline": [
+    {
+      "date": "2024-02-28",
+      "event": "Une base revendiquée LDLC de 1,5 million d'entrées est mise en vente sur un forum du dark web, échantillons à l'appui ; le groupe Epsilon revendique le piratage."
+    },
+    {
+      "date": "2024-03-01",
+      "event": "Le Groupe LDLC confirme une fuite de données limitée aux clients des boutiques physiques, sans donnée financière ni sensible ; les autorités sont notifiées."
+    },
+    {
+      "date": "2024-08-07",
+      "event": "ZATAZ constate la diffusion gratuite de la base sur plusieurs espaces du dark web : 1 504 635 personnes, données de juin 2018 à février 2024."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "centre-hospitalier-sud-francilien-20220822",
+  "entity": "Centre hospitalier Sud Francilien (CHSF)",
+  "siren": "269100046",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-08-22",
+    "publication": "2022-08-22",
+    "confirmation": "2022-09-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; l'établissement assure la couverture sanitaire de près de 700 000 habitants ; les attaquants ont diffusé une archive de 11,7 Go d'après le CHSF"
+  },
+  "data_types": ["identite", "sante"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — Violation de données du CHSF de Corbeil-Essonnes, formulaire de lettre plainte (28 septembre 2022)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-donnees-chsf-formulaire-lettre-plainte-electronique",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien — Corbeil-Essonnes : rançon, patients réorientés… Ce que l'on sait du piratage du CHSF (22 août 2022)",
+      "url": "https://www.leparisien.fr/essonne-91/corbeil-essonnes-lhopital-du-chsf-victime-dun-piratage-informatique-une-rancon-demandee-22-08-2022-JIXPBOTJQJDJTKKW3QD6WZEQJI.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Hôpital piraté de Corbeil-Essonnes : on connaît le nom du coupable (12 septembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1109782-hopital-pirate-de-corbeil-essonnes-on-connait-le-nom-du-coupable.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Essonne : l'hôpital cyberattaqué désormais victime de chantage aux données (14 septembre 2022)",
+      "url": "https://www.lefigaro.fr/actualite-france/essonne-l-hopital-cyberattaque-desormais-victime-de-chantage-aux-donnees-20220914",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — Des données médicales du Centre Hospitalier de Corbeil-Essonnes dévoilées par Lockbit (26 septembre 2022)",
+      "url": "https://www.solutions-numeriques.com/des-donnees-medicales-du-centre-hospitalier-de-corbeil-essonnes-devoilees-par-lockbit/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Centre hospitalier Sud Francilien de Corbeil-Essonnes est frappé dans la nuit du 20 au 21 août 2022 par un rançongiciel qui paralyse ses logiciels métiers ; une rançon de 10 millions de dollars est exigée et l'hôpital déclenche son plan blanc. Le groupe LockBit revendique l'attaque le 12 septembre. Le 13, l'établissement reconnaît l'exfiltration de données à caractère personnel, dont des données de santé. Après le refus de payer, LockBit diffuse le 23 septembre une archive de 11,7 Go ; le CHSF confirme la diffusion de données administratives (dont le NIR) et de comptes rendus d'examen, le nombre de personnes concernées restant non communiqué.",
+  "timeline": [
+    {
+      "date": "2022-08-21",
+      "event": "Le rançongiciel chiffre les systèmes dans la nuit ; plan blanc déclenché, patients partiellement réorientés, plainte déposée et ANSSI saisie."
+    },
+    {
+      "date": "2022-08-22",
+      "event": "Une rançon de 10 millions de dollars est exigée ; le parquet de Paris ouvre une enquête confiée au C3N."
+    },
+    {
+      "date": "2022-09-12",
+      "event": "Le groupe LockBit officialise l'attaque sur son site du darknet et met les données en otage."
+    },
+    {
+      "date": "2022-09-13",
+      "event": "Le CHSF reconnaît l'exfiltration de données à caractère personnel, dont des données de santé ; des échantillons sont publiés en ultimatum."
+    },
+    {
+      "date": "2022-09-23",
+      "event": "LockBit diffuse une archive d'environ 11,7 Go ; le CHSF confirme le 25 la diffusion et la nature des données concernées."
+    }
+  ]
+}
