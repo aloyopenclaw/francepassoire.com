@@ -1,0 +1,125 @@
+# T15 — francepassoire-launch · Adapter RSS médias paramétré (Wave 2)
+
+Date : 2026-08-20 (Europe/Paris) · Lane : `workers/ingest/adapters/rss.ts` +
+`tests/adapters/rss.test.ts` + `tests/fixtures/adapters/rss-*.xml` (+ README).
+`workers/ingest/src/adapter.ts` NON modifié (types importés ; câblage registre en T19).
+
+## 1. Fichiers livrés
+
+- `workers/ingest/adapters/rss.ts` — `makeRssAdapter(FeedConfig)`, `rssAdapters`
+  (4 instances), `rssFeedConfigs`, `parseFeedItems`, `extractEntity`, `RssAdapter`.
+  Parseur regex minimal RSS `<item>` / Atom `<entry>` (titre, lien, guid/id,
+  pubDate/updated ; CDATA + entités HTML décodées). Headline+lien uniquement,
+  aucun scraping de corps d'article.
+- `tests/adapters/rss.test.ts` — 12 cas (voir §4).
+- `tests/fixtures/adapters/` : rss-01net.xml (30/30), rss-zdnet-fr.xml (10/10),
+  rss-jdn.xml (60→30, rognage non contigu documenté), rss-zataz.xml (10/10),
+  rss-malformed.xml (dérivée tronquée), rss-zdnet-fr-breach.xml (composée
+  d'articles réels), README-rss.md (provenance complète).
+
+## 2. URLs réelles vérifiées en direct (1 curl chacune, User-Agent navigateur)
+
+| Flux | URL du plan | URL réelle configurée | Statut |
+|---|---|---|---|
+| rss:01net | https://www.01net.com/feed | https://www.01net.com/feed/ (redir.) | 200 |
+| rss:zdnet-fr | https://www.zdnet.fr/feed/ | https://www.zdnet.fr/feed (redir.) | 200 |
+| rss:jdn | https://www.journaldunet.com/rss/thematique/cybersecurite/ | **404** → https://www.journaldunet.com/rss/ | 404 / 200 |
+| rss:zataz | https://www.zataz.com/feed/ | https://www.zataz.com/feed/ | 200 |
+
+JDN : l'URL thématique du plan est morte (404 vérifié). Variantes « sécurité »
+ZDNet testées (/feeds/rss/actualites/securite/, /feeds/rss/thematique/securite/,
+/rss/securite/) : toutes renvoient une redirection 200 vers la page d'accueil
+HTML — pas des flux réels. Flux général conservé. Écarts documentés dans
+tests/fixtures/adapters/README-rss.md.
+
+## 3. Décisions d'implémentation
+
+- Mots-clés (liste EXACTE, normalisation NFD sans accents + minuscules +
+  frontières de mots) : fuite(s), piratage(s), pirate(s), piraté(e)(s)
+  [→ pirate/piratee(s)], pirater, cyberattaque(s) + cyber-attaque(s) +
+  « cyber attaque(s) », ransomware(s), rançongiciel(s) [→ rancongiciel(s)],
+  donnée(s) [→ donnee(s)]. NB documenté : « pirate » normalisé matche aussi
+  l'anglais "pirate".
+- Entité (heuristique, jamais un mot-clé) : 1ᵉʳ guillemet valide
+  (« … » / "…" / “…” avec initiale capitale, pas un mot-clé), sinon 1ᵉʳ run
+  TitleCase ≥ 2 mots consécutifs (acronymes 3-7 capitales acceptés comme mots
+  du run), ≥ 1 mot hors stopwords français, 0 mot-clé dans le run ; sinon null.
+  Limite assumée et documentée : titres en casse phrase → entités d'un seul
+  mot (SFR, Stripe…) sortent à null — le synthétiseur (T18) décide.
+- Dédup guid : `fetchCandidates(fetchFn, knownGuids?: Set<string>)` filtre les
+  guids connus (type `RssAdapter` assignable au contrat `SourceAdapter`).
+  T19/runner câblera le guid_set KV — l'adapter ne touche ni D1 ni KV.
+- Isolement : non-200 → [] ; XML malformé (aucun item complet OU pas de
+  balise fermante </rss>/</feed>/</channel>) → [] ; jamais d'exception sur le
+  contenu. Une erreur réseau de fetchFn remonte au runner (retries/circuit
+  breaker T13 inchangés).
+- Candidats : source 'rss', source_url = lien de l'article, raw = JSON
+  {title, guid, pubDate, feed}. guid en repli = lien, puis titre.
+
+## 4. Tests — `npx vitest run tests/adapters/rss.test.ts` : 12/12 passed
+
+RED d'abord (module absent → 1 failed), puis GREEN. Cas :
+1-4. Échantillons réels porteurs (1 par flux, ≥1 candidat, source_url exact,
+  entité) : 01net SFR (entité null documentée) ; JDN « Sébastien Lecornu »
+  (entité vérifiée à l'œil, run TitleCase ≥ 2 mots, item réel n°40/60 conservé
+  dans la fixture pour ça) ; Zataz 6 candidats exacts + « Club One Casino »
+  sans mot-clé exclu ; ZDNet breach composé (1 candidat DGFiP, témoin négatif
+  « Crise cyber » exclu).
+5. Bruit : capture réelle ZDNet (0 mot-clé) → 0 candidats.
+6. Malformé → [] sans lever ; la source suivante (Zataz) produit toujours.
+7. HTTP 500 → [] sans lever.
+8. Dédup guid : knownGuids contenant le guid « Stripe visé… » → 6→5 candidats,
+  l'item filtré, les autres conservés.
+9-11. Heuristiques inline : guillemets « Orange Conseils » → entité ;
+  tolérance accents (« Piraté », « Cyberdéfense » → entité « Orange
+  Cyberdéfense ») ; « Fuite Stripe : … » → entité null (mot-clé jamais entité).
+12. rssAdapters : 4 ids + 4 URLs réels.
+
+Typecheck : `npx tsc --noEmit --strict … rss.ts rss.test.ts` → OK (LSP TS non
+installé, tsc CLI utilisé en substitution).
+
+## 5. Smoke live (évidence uniquement — node + adapter, fetch réels)
+
+| Flux | Statut | Latence | Candidats |
+|---|---|---|---|
+| rss:01net | 200 | 143 ms | 2 |
+| rss:zdnet-fr | 200 | 72 ms | 0 (aucun mot-clé dans l'instantané — bruit réel) |
+| rss:jdn | 200 | 284 ms | 7 |
+| rss:zataz | 200 | 279 ms | 6 |
+| TOTAL | — | — | 15 |
+
+Échantillons (titres réels) : 01net « Un institut français victime d'une
+cyberattaque… », « SFR confirme une fuite de données… » ; JDN « …le piratage
+des données du fisc… », « ZeroBytes revendique le piratage massif… » ; Zataz
+« Fuite Stripe : au moins 200 Français concernés », « Stripe visé par une
+fuite revendiquée de 662 bases de données ! », etc.
+
+## 6. Preuve D1 locale (comme T14)
+
+`npx wrangler d1 execute francepassoire --local` (workers/ingest) :
+- BEFORE : COUNT(*) candidates = 9 (preuves des lanes parallèles : cnil 5,
+  hibp 1, ransomware.live 3).
+- Fetch réel Zataz → 6 candidats → INSERT (id UUID, status NEW, source 'rss').
+- AFTER : source 'rss' = 6 ; COUNT(*) total = 15. Success: true.
+
+## 7. Risques / limites
+
+- Parseur regex : ne couvre pas namespaces exotiques/CDATA imbriqués → un flux
+  mal structuré sort [] (isolation), jamais de crash. Repli XMLParser si un
+  flux configuré casse (aucun des 4 ne casse aujourd'hui).
+- « données » matche du bruit tech (ex. JDN « centre de données d'IA ») —
+  filtrage attendu en aval (T18) ; volume modéré (7 candidats/feed max).
+- ZDNet /feed ne porte pas toujours d'items cyber dans l'instantané (0 candidat
+  au smoke) — comportement attendu, pas une panne.
+- JDN = flux général (l'URL thématique 404) : rapport signal/bruit plus faible
+  qu'un flux cyber dédié ; à réévaluer si JDN publie un flux dédié.
+- knownGuids optionnel : tant que T19 ne câble pas KV, chaque run re-émet les
+  candidats encore présents dans le flux (dédup idempotence = T19).
+
+## 8. Commit
+
+`feat(pipeline): media RSS adapter` — exactement : workers/ingest/adapters/rss.ts,
+tests/adapters/rss.test.ts, tests/fixtures/adapters/{rss-01net.xml,rss-zdnet-fr.xml,
+rss-jdn.xml,rss-zataz.xml,rss-malformed.xml,rss-zdnet-fr-breach.xml,README-rss.md},
+.omo/evidence/francepassoire-launch/task-15-francepassoire-launch.log.
+Pas de push. Pas d'édition de plan/boulder. src/adapter.ts intact.
