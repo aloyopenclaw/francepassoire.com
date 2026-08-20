@@ -1,0 +1,50 @@
+{
+  "slug": "le-slip-francais-20240413",
+  "entity": "Le Slip Français",
+  "siren": "539130195",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-13",
+    "publication": "2024-04-17",
+    "confirmation": "2024-04-15"
+  },
+  "volume": {
+    "count": 1495127,
+    "unit": "enregistrements",
+    "label": "1 495 127 adresses e-mail et 696 144 fiches clients complètes — noms, coordonnées, téléphones — selon la publication relayée par next.inink et le jeu de données vérifié par Have I Been Pwned"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Le Slip Français — Information importante : cyber attaque (avis officiel)",
+      "url": "https://aide.leslipfrancais.fr/fr-FR/information-importante--cyber-attaque-538983",
+      "kind": "officiel"
+    },
+    {
+      "label": "next.inink — Le Slip Français se fait trouer : 1,5 million d'e-mails et des données de 696 144 clients dérobés (17 avril 2024)",
+      "url": "https://next.ink/134646/le-slip-francais-se-fait-trouer-15-million-demails-et-des-donnees-de-696-144-clients-derobes/",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Le Slip Français victime d'une cyberattaque : des données des clients volées (17 avril 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/le-slip-francais-victime-d-une-cyberattaque-des-donnees-des-clients-volees-7900375235",
+      "kind": "article"
+    }
+  ],
+  "description": "Le samedi 13 avril 2024, un acteur surnommé « ShopifyGUY » publie sur un forum des données du Slip Français, marque parisienne de sous-vêtements. L'entreprise déclare le 15 avril avoir eu connaissance du vol d'une partie des données personnelles de ses clients. Selon next.inink et le jeu de données vérifié par Have I Been Pwned : 1,5 million d'adresses e-mail et 696 144 fiches complètes avec noms, coordonnées et téléphones. Les clients sont avertis par e-mail ; aucune donnée bancaire n'est concernée selon l'entreprise, qui a déposé plainte.",
+  "timeline": [
+    {
+      "date": "2024-04-13",
+      "event": "Un acteur surnommé « ShopifyGUY » publie sur un forum les données revendiquées du Slip Français."
+    },
+    {
+      "date": "2024-04-15",
+      "event": "L'entreprise annonce avoir eu connaissance du vol d'une partie des données personnelles de ses clients."
+    },
+    {
+      "date": "2024-04-17",
+      "event": "La presse relève l'ampleur : 1,5 million d'e-mails et 696 144 fiches clients complètes ; les clients sont avertis."
+    }
+  ]
+}

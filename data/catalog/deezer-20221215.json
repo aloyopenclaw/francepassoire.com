@@ -1,0 +1,60 @@
+{
+  "slug": "deezer-20221215",
+  "entity": "Deezer",
+  "siren": "898969852",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-15",
+    "publication": "2022-12-15",
+    "confirmation": "2023-01-04"
+  },
+  "volume": {
+    "count": 229037936,
+    "unit": "enregistrements",
+    "label": "229 037 936 adresses e-mail uniques dans le jeu de données vérifié par Have I Been Pwned ; « plus de 250 millions de comptes » revendiqués par le vendeur, dont environ 46,2 millions de comptes français selon lui ; Deezer n'a pas confirmé de décompte"
+  },
+  "data_types": ["identite", "coordonnees", "geolocalisation"],
+  "sources": [
+    {
+      "label": "Deezer — Third Party Data Breach (note officielle du support, novembre 2022)",
+      "url": "https://support.deezer.com/hc/en-gb/articles/7726141292317-Third-Party-Data-Breach",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde — Deezer : les données de 250 millions de comptes en vente sur le web (15 décembre 2022, article archivé)",
+      "url": "https://web.archive.org/web/2022/https://www.lemonde.fr/pixels/article/2022/12/15/deezer-les-donnees-de-250-millions-de-comptes-en-vente-sur-le-web_6154602_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Parisien — Deezer : les données de 250 millions d'utilisateurs, volées en 2019, fuient sur Internet (3 janvier 2023)",
+      "url": "https://www.leparisien.fr/high-tech/deezer-les-donnees-de-250-millions-dutilisateurs-volees-en-2019-fuitent-sur-internet-03-01-2023-TVFDDAWKWZGZNKF6VBHXOIFJ3A.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Les données de 250 millions d'utilisateurs de Deezer mises en vente sur Internet (2 janvier 2023)",
+      "url": "https://www.bfmtv.com/tech/les-donnees-de-250-millions-d-utilisateurs-de-deezer-mises-en-vente-sur-internet_AN-202301020211.html",
+      "kind": "article"
+    },
+    {
+      "label": "Midi Libre — Êtes-vous concernés par l'importante fuite de données sur Deezer ? (5 janvier 2023)",
+      "url": "https://www.midilibre.fr/2023/01/05/etes-vous-concernes-par-limportante-fuite-de-donnees-sur-deezer-qui-a-touche-257-millions-dutilisateurs-10906300.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Deezer, plateforme française de streaming musical, reconnaît en novembre 2022 une fuite survenue en 2019 chez un prestataire avec lequel il travaillait jusqu'en 2020 : une sauvegarde contenant des données de comptes. Le 15 décembre, la mise en vente de l'archive — plus de 250 millions de comptes revendiqués, dont 46,2 millions français — est documentée par Restore Privacy puis Le Monde. Le 23 décembre, le fichier de 260 Go est diffusé gratuitement. Le 4 janvier 2023, Deezer confirme l'authenticité : noms, e-mails, dates de naissance, IP, sans mots de passe ni données bancaires selon l'entreprise, qui a prévenu la CNIL en novembre.",
+  "timeline": [
+    {
+      "date": "2022-12-15",
+      "event": "La mise en vente d'une archive revendiquée de plus de 250 millions de comptes Deezer, issue d'une sauvegarde de 2019, est documentée par Restore Privacy puis Le Monde."
+    },
+    {
+      "date": "2022-12-23",
+      "event": "Le fichier, déjà vendu dans des espaces privés selon Zataz, est rendu accessible gratuitement sur un site connu des pirates."
+    },
+    {
+      "date": "2023-01-04",
+      "event": "Deezer confirme l'authenticité du piratage de 2019 via un partenaire ; la CNIL, prévenue en novembre, est informée des investigations."
+    }
+  ]
+}

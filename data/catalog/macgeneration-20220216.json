@@ -1,0 +1,41 @@
+{
+  "slug": "macgeneration-20220216",
+  "entity": "MacGeneration",
+  "siren": "480935048",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-16",
+    "publication": "2022-02-16",
+    "confirmation": "2022-02-16"
+  },
+  "volume": {
+    "count": 101004,
+    "unit": "comptes",
+    "label": "101 004 comptes — pseudonymes, adresses e-mail et mots de passe hachés en SHA-512 salé — selon l'annonce de MacGeneration et le jeu de données transmis à Have I Been Pwned"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "MacGeneration — MacGeneration victime d'une attaque informatique (16 février 2022)",
+      "url": "https://www.macg.co/macgeneration/2022/02/macgeneration-victime-dune-attaque-informatique-127149",
+      "kind": "officiel"
+    },
+    {
+      "label": "Have I Been Pwned — MacGeneration Data Breach (jeu de données transmis par l'entreprise)",
+      "url": "https://haveibeenpwned.com/Breach/MacGeneration",
+      "kind": "article"
+    }
+  ],
+  "description": "MacGeneration, site lyonnais d'actualité Apple, annonce le 16 février 2022 avoir été victime d'une attaque informatique visant sa base de comptes. L'incident, survenu fin janvier, expose 101 004 pseudonymes, adresses e-mail et mots de passe stockés en SHA-512 salé. Le média transmet lui-même les données à Have I Been Pwned, invite ses lecteurs à changer leur mot de passe et applique une réinitialisation. Aucune donnée bancaire n'est concernée selon l'entreprise. L'exfiltration est établie par l'annonce et la transmission officielles du média.",
+  "timeline": [
+    {
+      "date": "2022-01-29",
+      "event": "Attaque contre la base de comptes de MacGeneration, selon la date du jeu de données documenté par Have I Been Pwned."
+    },
+    {
+      "date": "2022-02-16",
+      "event": "MacGeneration annonce l'attaque, transmet le jeu de données à Have I Been Pwned et invite ses lecteurs à changer de mot de passe."
+    }
+  ]
+}

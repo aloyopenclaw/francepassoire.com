@@ -1,0 +1,46 @@
+{
+  "slug": "le-point-20241118",
+  "entity": "Le Point",
+  "siren": "722064557",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-18",
+    "publication": "2024-11-18",
+    "confirmation": "2024-11-18"
+  },
+  "volume": {
+    "count": 900000,
+    "unit": "personnes",
+    "label": "près de 900 000 abonnés, actuels et anciens, selon la base mise en vente pour 350 euros sur un forum criminel ; Le Point n'a pas publié de décompte"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "01net — Nouvelle fuite de données en France : le média Le Point essuie une cyberattaque (18 novembre 2024)",
+      "url": "https://www.01net.com/actualites/nouvelle-fuite-donnees-france-media-le-point-essuie-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Cyberattaque Le Point : comment le média a pu être frappé par les hackers (19 novembre 2024)",
+      "url": "https://www.clubic.com/actualite-544085-cyberattaque-le-point-comment-le-media-a-pu-etre-frappe-par-les-hackers-avec-de-nombreuses-donnees-derobees.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Point — Après « La Croix » et « Libération », « Le Point » victime d'un vol de données personnelles (18 novembre 2024, article archivé)",
+      "url": "https://web.archive.org/web/2024/https://www.lepoint.fr/high-tech-internet/apres-la-croix-et-liberation-le-point-victime-d-un-vol-de-donnees-personnelles-18-11-2024-2575566_47.php",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le Point, hebdomadaire français, annonce le 18 novembre 2024 à ses lecteurs un vol de données détecté sur le dark web et porte plainte. L'attaque a visé un outil de gestion de la relation client opéré par un sous-traitant, après des incidents similaires chez La Croix et l'AFP. La base — près de 900 000 abonnés, actuels et anciens, proposée à 350 euros sur un forum — contient noms, e-mails, téléphones et adresses postales, sans mots de passe ni données bancaires. La fuite a d'abord été repérée par l'ANSSI, puis confirmée par Le Point.",
+  "timeline": [
+    {
+      "date": "2024-11-18",
+      "event": "Une base de près de 900 000 abonnés du Point est proposée à la vente sur un forum criminel ; le média porte plainte."
+    },
+    {
+      "date": "2024-11-18",
+      "event": "Le Point informe ses lecteurs ; la fuite, repérée par l'ANSSI, visait un outil de gestion client d'un sous-traitant."
+    }
+  ]
+}

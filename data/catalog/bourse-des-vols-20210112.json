@@ -1,0 +1,48 @@
+{
+  "slug": "bourse-des-vols-20210112",
+  "entity": "Bourse des Vols",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2021-01-12",
+    "publication": "2021-02-19"
+  },
+  "volume": {
+    "count": 1460130,
+    "unit": "enregistrements",
+    "label": "1 460 130 adresses e-mail uniques dans une base de plus de 1 200 fichiers SQL représentant 9 Go, mise en circulation en janvier 2021 — chiffres constatés par Risk Based Security puis par le jeu de données vérifié de Have I Been Pwned ; volumes non commentés publiquement par l'entreprise"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Risk Based Security — Dark Web Roundup January 2021 (19 février 2021)",
+      "url": "https://www.riskbasedsecurity.com/2021/02/19/dark-web-roundup-january-2021/",
+      "kind": "article"
+    },
+    {
+      "label": "Auth0 — The Worst Data Breaches of 2021 (Q1 and Q2)",
+      "url": "https://www.auth0.com/blog/the-worst-data-breaches-of-2021-q1-and-q2/",
+      "kind": "article"
+    },
+    {
+      "label": "Have I Been Pwned — Bourse des Vols Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/BourseDesVols",
+      "kind": "article"
+    }
+  ],
+  "description": "En janvier 2021, une base revendiquée du site français de comparaison de vols Bourse des Vols apparaît sur un forum : plus de 1 200 fichiers SQL, 9 Go de données et 1,46 million d'adresses e-mail uniques. Y figurent noms, numéros de téléphone, adresses postales et IP, dates de naissance, historiques de vols et achats, selon Risk Based Security. L'entreprise n'a pas commenté publiquement l'incident. En juillet 2022, Have I Been Pwned publie le jeu de données après vérification : l'exfiltration est établie par la veille, pas par une source officielle.",
+  "timeline": [
+    {
+      "date": "2021-01-12",
+      "event": "Une base revendiquée de Bourse des Vols — 1 200 fichiers SQL, 9 Go — entre en circulation sur un forum, selon le jeu de données documenté par Have I Been Pwned."
+    },
+    {
+      "date": "2021-02-19",
+      "event": "Risk Based Security documente la fuite dans sa revue du dark web : 1,46 million d'adresses, identité, coordonnées, historiques de vols et d'achats."
+    },
+    {
+      "date": "2022-07-03",
+      "event": "Have I Been Pwned intègre le jeu de données vérifié : 1 460 130 adresses e-mail uniques."
+    }
+  ]
+}

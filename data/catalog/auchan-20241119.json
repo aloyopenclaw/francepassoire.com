@@ -1,0 +1,51 @@
+{
+  "slug": "auchan-20241119",
+  "entity": "Auchan",
+  "siren": "481986446",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-19",
+    "publication": "2024-11-19",
+    "confirmation": "2024-11-19"
+  },
+  "volume": {
+    "count": 500000,
+    "unit": "personnes",
+    "label": "plus de 500 000 clients titulaires d'un compte de fidélité selon Auchan (franceinfo, AFP) ; « quelques centaines de milliers » selon l'enseigne interrogée par Le Parisien"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "franceinfo — Auchan a été victime d'une cyberattaque ciblant les données personnelles de plus de 500 000 clients (19 novembre 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/auchan-a-ete-victime-d-une-cyberattaque-ciblant-les-donnees-de-centaines-de-milliers-de-clients_6906749.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Auchan : les données de « centaines de milliers de clients » dérobées lors d'une cyberattaque (19 novembre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/auchan-les-donnees-de-centaines-de-milliers-de-clients-derobees-lors-dune-cyberattaque-19-11-2024-57XBW3V5ENDPXGBFVHKKRYVKOA.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Fuite de données chez Auchan : cartes de fidélité et cagnottes de centaines de milliers de clients exposées (19 novembre 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/fuite-de-donnees-chez-auchan-les-cartes-de-fidelite-et-les-cagnottes-de-centaines-de-milliers-de-clients-exposees-7900442168",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une cyberattaque frappe Auchan : des données personnelles ont été volées (19 novembre 2024)",
+      "url": "https://www.01net.com/actualites/cyberattaque-frappe-auchan-donnees-personnelles-volees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Auchan alerte ses clients le 19 novembre 2024 : une cyberattaque a entraîné un accès non autorisé aux données des comptes de fidélité de plus de 500 000 clients. Sont dérobés noms, prénoms, adresses e-mail et postales, téléphones, composition familiale renseignée, dates de naissance, numéros de carte et montants des cagnottes. Mots de passe, codes PIN et données bancaires ne sont pas concernés selon l'enseigne, qui a déposé plainte, notifié la CNIL et circonscrit l'incident. Incident distinct de l'acte de cybermalveillance d'août 2025.",
+  "timeline": [
+    {
+      "date": "2024-11-19",
+      "event": "Auchan informe ses clients d'un accès non autorisé aux données de fidélité de plus de 500 000 comptes ; plainte et notification CNIL."
+    },
+    {
+      "date": "2024-11-19",
+      "event": "L'enseigne précise le périmètre dérobé et assure que données bancaires, mots de passe et codes PIN ne sont pas concernés."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "free-20241022",
+  "entity": "Free",
+  "siren": "421938861",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-22",
+    "publication": "2024-10-26",
+    "confirmation": "2024-10-25"
+  },
+  "volume": {
+    "count": 19192948,
+    "unit": "comptes",
+    "label": "19 192 948 fiches clients et 5,1 millions d'IBAN selon les deux bases mises en vente, relayées par l'expert SaxX ; Free n'a pas communiqué de nombre de clients touchés ; 13 926 173 adresses uniques dans le jeu de données vérifié par Have I Been Pwned (2025)"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Cybermalveillance.gouv.fr — Violation de données personnelles de l'opérateur Free (31 octobre 2024)",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/violation-de-donnees-personnelles-free-202410",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien — Free : les données personnelles de clients dérobées dans une cyberattaque (26 octobre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/free-les-donnees-personnelles-de-clients-derobees-dans-une-cyberattaque-26-10-2024-YBBY2N776ZBE7EZJSAZSSA3L7E.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Fuite de données chez Free Mobile/Freebox : 19 millions de fiches clients, 5 millions d'IBAN (26 octobre 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/fuite-de-donnees-chez-free-mobile-freebox-19-millions-de-fiches-clients-5-millions-d-iban-ce-que-l-on-sait-7900432338",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Des millions d'usagers de Free victimes d'un piratage de données bancaires (28 octobre 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaques-des-millions-d-usagers-de-free-victimes-d-un-piratage-de-donnees-bancaires_6865247.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Free, deuxième opérateur télécom français, subit une cyberattaque visant un outil de gestion le 17 octobre 2024 selon l'expert SaxX. Le 21 octobre, deux bases — 19,2 millions de fiches clients et 5,1 millions d'IBAN — sont mises aux enchères sur BreachForums. Le 25 octobre, Free confirme un accès non autorisé, notifie CNIL et ANSSI, et dépose plainte. Selon l'opérateur : noms, coordonnées, identifiants abonnés et données contractuelles ; ni mots de passe, ni cartes bancaires, ni contenus de communications. Le 28 octobre, Free reconnaît le vol d'IBAN. Les victimes peuvent porter plainte en ligne dès le 31 octobre.",
+  "timeline": [
+    {
+      "date": "2024-10-17",
+      "event": "Cyberattaque contre un outil de gestion de Free, selon l'expert SaxX ; deux bases de données sont extraites."
+    },
+    {
+      "date": "2024-10-22",
+      "event": "Deux bases mises en vente sur BreachForums — 19,2 millions de fiches et 5,1 millions d'IBAN — sont relayées par SaxX."
+    },
+    {
+      "date": "2024-10-25",
+      "event": "Free confirme la cyberattaque et l'accès non autorisé, notifie CNIL et ANSSI, et dépose plainte auprès du procureur de la République."
+    },
+    {
+      "date": "2024-10-28",
+      "event": "Free précise à ses clients que des IBAN figurent parmi les données dérobées, tout en minimisant les prélèvements possibles."
+    },
+    {
+      "date": "2024-10-31",
+      "event": "Cybermalveillance.gouv.fr publie un guide pour les victimes ; la CNIL annonce une plainte en ligne dédiée."
+    }
+  ]
+}

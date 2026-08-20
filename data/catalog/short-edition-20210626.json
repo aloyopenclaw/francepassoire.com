@@ -1,0 +1,44 @@
+{
+  "slug": "short-edition-20210626",
+  "entity": "Short Édition",
+  "siren": "530552009",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-06-26"
+  },
+  "volume": {
+    "count": 505466,
+    "unit": "enregistrements",
+    "label": "505 466 enregistrements — e-mails, noms, pseudonymes, adresses postales, téléphones, dates de naissance et mots de passe hachés — selon le jeu de données transmis par l'entreprise à Have I Been Pwned"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "Short Édition — Cyberattaque (avis officiel, version française)",
+      "url": "https://short-edition.com/fr/p/cyberattaque",
+      "kind": "officiel"
+    },
+    {
+      "label": "Short Édition — Cyber-attack (avis officiel, version anglaise)",
+      "url": "https://short-edition.com/en/p/cyber-attack",
+      "kind": "officiel"
+    },
+    {
+      "label": "Have I Been Pwned — Short Edition Data Breach (jeu de données transmis par l'entreprise)",
+      "url": "https://haveibeenpwned.com/Breach/ShortEdition",
+      "kind": "article"
+    }
+  ],
+  "description": "Short Édition, éditeur grenoblois de littérature courte et de distributeurs de nouvelles, annonce une cyberattaque survenue dimanche 26 juin 2021 en tout début de matinée sur ses serveurs d'hébergement. L'entreprise transmet elle-même à Have I Been Pwned le jeu de données concerné : 505 466 enregistrements avec e-mails, noms, pseudonymes, adresses, téléphones, dates de naissance et mots de passe hachés (SHA-1 ou SHA-512 salés). L'éditeur avertit ses utilisateurs et recommande de changer leur mot de passe. L'exfiltration est établie par l'avis et la transmission officiels de l'entreprise.",
+  "timeline": [
+    {
+      "date": "2021-06-26",
+      "event": "Cyberattaque en début de matinée sur les serveurs d'hébergement de Short Édition, selon l'avis officiel de l'entreprise."
+    },
+    {
+      "date": "2021-07-19",
+      "event": "Le jeu de données vérifié — 505 466 enregistrements — est intégré à Have I Been Pwned après transmission par l'entreprise."
+    }
+  ]
+}
