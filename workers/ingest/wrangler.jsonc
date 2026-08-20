@@ -1,0 +1,35 @@
+// workers/ingest/wrangler.jsonc — configuration propre au worker d'ingestion (T13).
+// Le wrangler.toml racine reste volontairement minimal (périmètre D1, tâche 7) :
+// ce worker possède sa propre config, comme anticipé dans son en-tête.
+// database_id n'est pas un secret (identifiant, pas un jeton).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "francepassoire-ingest",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+
+  // Cron toutes les 15 minutes : fetch → normalize → candidates (status NEW).
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  },
+
+  // Staging D1 (migrations partagées avec la racine, d'où le ../../migrations).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "francepassoire",
+      "database_id": "613f348d-fb59-478c-8f53-84a8679f1ed9",
+      "migrations_dir": "../../migrations"
+    }
+  ],
+
+  // État de run par source (last_run, last_success, guid_set, circuit breaker).
+  // Id placeholder : `wrangler kv namespace create` attribuera l'id réel lors
+  // du câblage T14+ — on ne crée PAS le namespace maintenant.
+  "kv_namespaces": [
+    {
+      "binding": "RUN_STATE",
+      "id": "0000000000000000000000000000000"
+    }
+  ]
+}
