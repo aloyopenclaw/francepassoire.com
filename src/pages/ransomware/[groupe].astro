@@ -1,28 +1,156 @@
 ---
+// Dossier de groupe ransomware (tâche 26) — contrat visuel : prototype
+// `page-qilin` de index.html (badge, intro sourcée, timeline des victimes).
+// Règle d'honnêteté : la page ne dérive QUE du catalogue (fiches dont le
+// champ `group` est renseigné). Aucune métadonnée de groupe (activité,
+// tactiques, branding) n'est publiée avant curation vérifiée : le badge du
+// prototype reste un emplacement, rempli par le seul compte de fiches.
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import {
+  classeStatut,
+  composerDossiers,
+  formaterDate,
+  formaterNombre,
+  labelSecteur,
+  labelStatut,
+  phraseDescription,
+  phraseIntro,
+  phraseUniteCourte,
+  type DossierGroupe,
+} from '../../lib/group-view';
 
-// Wave 0 : aucun dossier de groupe publié — aucune page n'est générée.
-export function getStaticPaths() {
-  return [];
+// Un dossier par groupe présent dans le catalogue (≥ 1 fiche par
+// construction) ; catalogue vide ou sans groupe → 0 page générée.
+export async function getStaticPaths() {
+  const entries = await getCollection('catalog');
+  return composerDossiers(entries.map((entry) => entry.data)).map(
+    (dossier) => ({
+      params: { groupe: dossier.slug },
+      props: { dossier },
+    }),
+  );
 }
 
-const { groupe } = Astro.params;
+interface Props {
+  dossier: DossierGroupe;
+}
+
+const { dossier } = Astro.props;
+
+const description = phraseDescription(dossier);
+
+const articleJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: `${dossier.nom} — dossier ransomware, FrancePassoire`,
+  description,
+  author: { '@type': 'Organization', name: 'FrancePassoire' },
+  publisher: { '@type': 'Organization', name: 'FrancePassoire' },
+  isAccessibleForFree: true,
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+});
+
+// Libellé d'années du titre de timeline : « (2026) » ou « (2025–2026) ».
+const anneesLabel =
+  dossier.annees.length === 0
+    ? ''
+    : dossier.annees.length === 1
+      ? ` (${dossier.annees[0]})`
+      : ` (${dossier.annees[0]}–${dossier.annees[dossier.annees.length - 1]})`;
 ---
-<Layout
-  title={`Dossier de groupe${groupe ? ` « ${groupe} »` : ''} - France Passoire`}
-  description="Dossier éditorial d'un groupe de ransomware actif contre la France : revendications vérifiées, victimes françaises et contexte — uniquement à partir de sources publiques."
->
-  <section class="py-16 bg-brand-paper">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4">{groupe ? `Dossier « ${groupe} »` : 'Dossier de groupe'}</h1>
-      <p class="font-body text-lg text-brand-ink/70 leading-relaxed mb-8">
-        Ce dossier n'est pas encore publié : les profils de groupes arrivent
-        au fil des revendications vérifiées, jamais avant.
-      </p>
-      <a href="/ransomware/" class="font-display font-bold flex items-center gap-2 hover:text-brand-orange transition-colors w-max">
-        <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+<Layout title={`${dossier.nom} : le dossier ransomware - France Passoire`} description={description}>
+  <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
+
+  <!-- Retour au panorama -->
+  <section class="bg-brand-paper border-b-2 border-brand-ink">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4">
+      <a
+        href="/ransomware/"
+        class="font-display font-bold flex items-center gap-2 hover:text-brand-orange transition-colors w-max"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         Retour au panorama
       </a>
+    </div>
+  </section>
+
+  <!-- Hero dossier -->
+  <section class="bg-brand-cream border-b-2 border-brand-ink py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-wrap items-center gap-4 mb-6">
+        <h1 class="font-display font-black text-5xl sm:text-7xl tracking-tight uppercase">{dossier.nom}</h1>
+        <!-- Emplacement du badge actif/inactif du prototype : aucune donnée
+             d'activité curatoriale n'étant vérifiée, seul le compte de fiches
+             (dérivé du catalogue) y figure. -->
+        <span class="bg-brand-paper border-2 border-brand-ink px-3 py-1 rounded font-mono text-sm font-bold shadow-sm flex items-center gap-2">
+          {dossier.fiches.length} {dossier.fiches.length > 1 ? 'fiches' : 'fiche'}
+        </span>
+      </div>
+
+      <p class="font-body text-lg leading-relaxed max-w-2xl border-l-4 border-brand-ink pl-4">
+        {phraseIntro(dossier)} Ce dossier est entièrement dérivé du catalogue : chaque ligne renvoie à une fiche sourcée.
+      </p>
+
+      <div class="mt-8 pt-8 border-t-2 border-brand-ink/20 border-dashed">
+        <p class="font-mono text-lg mb-2">Volumes annoncés (toutes victimes) :</p>
+        <p class="font-display font-extrabold text-2xl sm:text-4xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)]">
+          {dossier.volumes.map((volume) => `${formaterNombre(volume.count)} ${phraseUniteCourte(volume.unit)}`).join(' · ')}
+        </p>
+        <p class="font-mono text-sm text-brand-ink/70 mt-3 leading-relaxed">
+          {dossier.volumesLabel} ; un même individu peut être compté dans plusieurs fuites.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline des victimes françaises -->
+  <section class="py-12 bg-brand-paper">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-2xl mb-8 flex items-center gap-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Victimes françaises recensées{anneesLabel}
+      </h2>
+
+      <div class="relative pl-8 pb-4">
+        <div class="timeline-line" aria-hidden="true"></div>
+        {dossier.fiches.map((fiche) => {
+          const estConfirmee = fiche.statut === 'confirmee';
+          return (
+            <div class={`relative z-10 flex items-center mb-6 last:mb-0${estConfirmee ? ' opacity-80' : ''}`}>
+              <div
+                class={`absolute -left-[37px] w-5 h-5 border-2 border-brand-ink rounded-full${estConfirmee ? ' bg-brand-paper' : ' bg-brand-orange shadow-[2px_2px_0px_0px_#241405]'}`}
+                aria-hidden="true"
+              ></div>
+              <div class="bg-brand-cream border-2 border-brand-ink p-4 rounded-xl shadow-hard-sm w-full flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                <div>
+                  <p class="font-mono text-sm text-brand-ink/70 mb-1">
+                    <time datetime={fiche.dates.revendication}>{formaterDate(fiche.dates.revendication)}</time>
+                  </p>
+                  <a
+                    href={`/fiche/${fiche.slug}/`}
+                    class="font-display font-bold text-xl underline decoration-2 underline-offset-2 hover:text-brand-orange transition-colors"
+                  >
+                    {fiche.entity}
+                  </a>
+                  <p class="font-mono text-sm opacity-70 mt-1">Secteur : {labelSecteur(fiche.secteur)}</p>
+                </div>
+                <span class={`${classeStatut(fiche.statut)} px-3 py-1 rounded-full font-display font-bold text-xs shadow-sm self-start sm:self-auto w-max flex items-center gap-2`}>
+                  {!estConfirmee && <span class="block w-2 h-2 bg-brand-ink rounded-full animate-pulse" aria-hidden="true"></span>}
+                  {labelStatut(fiche.statut)}
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Posture éditoriale -->
+      <p class="text-center font-mono text-sm text-brand-ink/60 mt-12">
+        <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full">
+          Nous documentons les revendications publiques — aucune donnée volée n'est consultée ni reproduite. <a href="/methode/" class="underline hover:text-brand-orange">Voir la méthode</a>.
+        </span>
+      </p>
     </div>
   </section>
 </Layout>
