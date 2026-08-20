@@ -19,3 +19,4 @@ dist/
 .wrangler/
 cloudflare.txt
 *.token
+.astro/
