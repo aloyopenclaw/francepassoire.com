@@ -1,0 +1,36 @@
+{
+  "slug": "entreprise-test-sas-2026",
+  "entity": "Entreprise Test SAS",
+  "siren": "123456789",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-12",
+    "publication": "2026-05-15"
+  },
+  "volume": {
+    "count": 120000,
+    "unit": "personnes",
+    "label": "120 000 personnes"
+  },
+  "data_types": ["identite", "coordonnees", "documents"],
+  "sources": [
+    {
+      "label": "Article de presse (exemple)",
+      "url": "https://exemple.fr/article-fictif",
+      "kind": "article"
+    },
+    {
+      "label": "Dépôt CNIL (exemple)",
+      "url": "https://exemple.fr/declaration-fictive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Fiche de test générique décrivant une fuite de données fictive affectant une entreprise exemple, utilisée uniquement pour valider le schéma zod du catalogue FrancePassoire.",
+  "timeline": [
+    { "date": "2026-05-12", "event": "Apparition de la fuite sur un forum public (exemple)." },
+    { "date": "2026-05-14", "event": "Signalement à la CNIL par l'entreprise (exemple)." },
+    { "date": "2026-05-15", "event": "Publication de la fiche FrancePassoire." }
+  ],
+  "group": "Groupe Test (fictif)"
+}
