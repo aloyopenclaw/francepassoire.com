@@ -1,0 +1,48 @@
+{
+  "slug": "capgemini-engineering-20260820",
+  "entity": "Capgemini Engineering",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 722470,
+    "unit": "enregistrements",
+    "label": "13,08 Go et 722 470 fichiers revendiqués, présentés comme issus d'un référentiel interne historique hérité d'Altran selon les relais ; Capgemini n'a pas commenté"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim: Capgemini Engineering (groupe Everest, découverte le 20 août 2026)",
+      "url": "https://www.ransomware.live/id/Q2FwZ2VtaW5pIEVuZ2luZWVyaW5nQGV2ZXJlc3Q=",
+      "kind": "revendication"
+    },
+    {
+      "label": "Undercode News — Everest Ransomware Claims Capgemini Engineering as a New Victim",
+      "url": "https://undercodenews.com/everest-ransomware-claims-capgemini-engineering-as-a-new-victim-a-high-stakes-data-extortion-warning-video/",
+      "kind": "article"
+    },
+    {
+      "label": "HookPhish — Ransomware Group Everest Hits: Capgemini Engineering",
+      "url": "https://www.hookphish.com/blog/ransomware-group-everest-hits-capgemini-engineering/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 août 2026, le groupe de ransomware Everest ajoute Capgemini Engineering, branche d'ingénierie et de R&D du groupe français, à sa liste de victimes. Selon les relais qui analysent la revendication, Everest affirme détenir 13,08 Go et 722 470 fichiers associés à un référentiel interne historique hérité d'Altran : code source, documents de R&D, propositions commerciales, projets publics et fichiers de candidats et consultants. Les relais soulignent que la revendication ne prouve pas une compromission des systèmes de production actuels. Capgemini n'a pas commenté publiquement à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Everest ajoute Capgemini Engineering à son site de fuite ; le suivi des victimes relève l'ajout dans la nuit du 19 au 20 août."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "Les relais de veille analysent la revendication : 13,08 Go et 722 470 fichiers liés à un ancien référentiel Altran ; l'origine des données reste à confirmer."
+    }
+  ],
+  "group": "everest"
+}

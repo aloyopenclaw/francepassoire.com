@@ -133,7 +133,7 @@ const collectionJsonLd = JSON.stringify({
           {cartes.map(({ fiche, rang }) => (
             <li class="relative z-10">
               <div class="absolute -left-[37px] top-5 w-5 h-5 bg-brand-orange border-2 border-brand-ink rounded-full shadow-[2px_2px_0px_0px_#241405]" aria-hidden="true"></div>
-              <a href={`/fuite/${fiche.slug}/`} class="block bg-brand-cream border-2 border-brand-ink rounded-xl shadow-hard-sm card-hover transition-all p-4 sm:p-6">
+              <a href={`/fiche/${fiche.slug}/`} class="block bg-brand-cream border-2 border-brand-ink rounded-xl shadow-hard-sm card-hover transition-all p-4 sm:p-6">
                 <div class="flex flex-wrap items-center justify-between gap-2">
                   <p class="font-mono text-sm text-brand-ink/70">
                     <span class="font-bold text-brand-ink">{ordinalFuite(rang)} fuite</span>

@@ -1,0 +1,28 @@
+// workers/retention/wrangler.jsonc — worker de rétention RGPD (T46, Wave 6).
+//
+// Cron quotidien (03:17 UTC — décalé des heures pleines pour éviter les
+// pointes) : applie les règles S1/C1/E1 de docs/rgpd.md §2 et rien d'autre.
+// Séparé du worker d'ingestion : cycle de déploiement distinct (rgpd ≠
+// pipeline éditorial), aucun point d'entrée HTTP — cron privé uniquement.
+// database_id n'est pas un secret (identifiant).
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "francepassoire-retention",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+
+  // Rétention quotidienne : 03:17 UTC = 05:17 Paris (été) / 04:17 (hiver).
+  "triggers": {
+    "crons": ["17 3 * * *"]
+  },
+
+  // Staging D1 partagé (mêmes migrations que la racine).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "francepassoire",
+      "database_id": "613f348d-fb59-478c-8f53-84a8679f1ed9",
+      "migrations_dir": "../../migrations"
+    }
+  ]
+}

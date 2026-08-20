@@ -1,0 +1,58 @@
+{
+  "slug": "hubee-20260109",
+  "entity": "HubEE (plateforme de la DINUM)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-09",
+    "publication": "2026-01-16",
+    "confirmation": "2026-01-16"
+  },
+  "volume": {
+    "count": 160000,
+    "unit": "enregistrements",
+    "label": "160 000 documents issus d'environ 70 000 dossiers de démarches en ligne, dont certains contiennent des données personnelles (bilan officiel de la DINUM)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "numerique.gouv.fr (DINUM, communiqué du 16 janvier 2026) — Incident de sécurité sur HubEE",
+      "url": "https://numerique.gouv.fr/sinformer/espace-presse/incident-hubee/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Les Numériques — L'État confirme : 160 000 documents de Service-public.gouv.fr sont entre les mains de pirates",
+      "url": "https://www.lesnumeriques.com/societe-numerique/l-etat-confirme-la-catastrophe-160-000-documents-de-service-public-gouv-fr-sont-entre-les-mains-de-pirates-n249974.html",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Piratage HubEE : l'État confirme la fuite de 160 000 documents avec des données sensibles",
+      "url": "https://www.it-connect.fr/piratage-hubee-letat-confirme-la-fuite-de-160-000-documents-avec-des-donnees-sensibles/",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — 160 000 documents concernés : une plateforme pour les démarches en ligne d'administrations publiques piratée",
+      "url": "https://www.tf1info.fr/societe/cyberattaque-caf-allocations-familiales-160-000-documents-concernes-une-plateforme-pour-les-demarches-en-ligne-d-administrations-publiques-piratee-2419205.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La DINUM détecte le 9 janvier 2026 une intrusion sur HubEE, plateforme d'échange de documents qu'elle opère pour les démarches en ligne de plusieurs administrations, notamment via service-public.gouv.fr. Le service, suspendu, est rétabli le 12 janvier. Le 16 janvier, la DINUM établit l'exfiltration d'environ 70 000 dossiers représentant 160 000 documents, dont certains contiennent des données personnelles et des pièces justificatives numérisées. La DILA, la DGCS, la DGS et la CNAF sont les administrations les plus concernées. La CNIL est notifiée et une plainte déposée ; à ce jour, les données exfiltrées n'ont pas été publiées.",
+  "timeline": [
+    {
+      "date": "2026-01-09",
+      "event": "La DINUM détecte une intrusion sur HubEE et met en place des mesures conservatoires pour bloquer l'attaquant ; l'exploration aurait commencé vers le 4 janvier selon la presse."
+    },
+    {
+      "date": "2026-01-12",
+      "event": "Le service est pleinement rétabli après renforcement de l'authentification et de la surveillance ; la DINUM dépose plainte auprès de la police judiciaire."
+    },
+    {
+      "date": "2026-01-16",
+      "event": "Communiqué officiel : environ 70 000 dossiers et 160 000 documents exfiltrés, dont certains contiennent des données personnelles ; CNIL notifiée, ANSSI et Premier ministre informés."
+    }
+  ]
+}

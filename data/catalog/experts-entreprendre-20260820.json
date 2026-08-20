@@ -1,0 +1,45 @@
+{
+  "slug": "experts-entreprendre-20260820",
+  "entity": "Experts Entreprendre",
+  "siren": "433794567",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 2696108,
+    "unit": "enregistrements",
+    "label": "1,13 To de données, 2 696 108 fichiers et 744 934 dossiers revendiqués par le groupe Everest (comptabilité, fiscalité, paie, pièces d'identité) ; la société n'a pas confirmé"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque contre Experts Entreprendre : Everest revendique 1,13 To de données",
+      "url": "https://frenchbreaches.com/alertes/experts-entreprendre-rw_Ulhod1pYSjBjeUJGYm5SeVpYQnlaVzVrY21WQVpYWmxjbVZ6ZEE9PQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live — Victim: Experts Entreprendre (groupe Everest, découverte le 20 août 2026)",
+      "url": "https://www.ransomware.live/id/RXhwZXJ0cyBFbnRyZXByZW5kcmVAZXZlcmVzdA==",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 août 2026, le groupe de ransomware Everest ajoute le cabinet parisien Experts Entreprendre, spécialisé en expertise comptable, audit, fiscalité, juridique et paie, à son site de fuite. L'analyse du dépôt associé fait apparaître environ 1,13 To de données, 2,69 millions de fichiers et plus de 744 000 dossiers : documents comptables et fiscaux, relevés et coordonnées bancaires, bulletins de paie, contrats de travail, pièces d'identité, dossiers juridiques et correspondances. La société n'a pas confirmé l'incident ; la date, le vecteur d'accès et le nombre de personnes concernées ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Le groupe Everest référence Experts Entreprendre sur son site de fuite, sans publier d'échantillon ni date de compromission."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "L'analyse du dépôt par un relais de veille recense 1,13 To, 2,69 millions de fichiers et des données comptables, bancaires, de paie et d'identité ; le cabinet n'a pas réagi publiquement."
+    }
+  ],
+  "group": "everest"
+}

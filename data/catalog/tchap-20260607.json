@@ -1,0 +1,61 @@
+{
+  "slug": "tchap-20260607",
+  "entity": "Tchap (messagerie de l'État)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-07",
+    "publication": "2026-06-08"
+  },
+  "volume": {
+    "count": 73467,
+    "unit": "personnes",
+    "label": "73 467 agents concernés selon la DINUM (sur plus de 825 000 inscrits) ; l'attaquant revendique 643 459 messages et 59 386 fichiers, chiffres non confirmés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "numerique.gouv.fr (DINUM, communiqué du 8 juin 2026) — Incident de sécurité sur Tchap",
+      "url": "https://numerique.gouv.fr/sinformer/espace-presse/incident-tchap/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien (AFP) — Tchap, la messagerie chiffrée des agents publics, victime d'une cyberattaque, 73 000 agents exposés",
+      "url": "https://www.leparisien.fr/high-tech/tchap-la-messagerie-chiffree-des-agents-publics-victime-dune-cyberattaque-73-000-agents-exposes-08-06-2026-XSTG25ZJMJBPLES6CQMKQPT4FM.php",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet France — Piratage de Tchap : la Dinum déplore un accès malveillant aux salons publics",
+      "url": "https://www.zdnet.fr/actualites/piratage-de-tchap-la-dinum-deplore-un-acces-malveillant-aux-salons-publics-496392.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Tchap, la messagerie chiffrée de l'État français, a été piratée : 73 000 agents et 643 000 messages exposés",
+      "url": "https://www.lesnumeriques.com/societe-numerique/tchap-la-messagerie-chiffree-de-l-etat-francais-a-ete-piratee-73-000-agents-et-643-000-messages-exposes-n257220.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Messagerie Tchap piratée : l'État rassure et le hacker jubile",
+      "url": "https://www.numerama.com/cyberguerre/2271479-messagerie-tchap-piratee-letat-rassure-et-le-hacker-jubile-pourquoi-est-ce-si-difficile-de-denicher-la-verite.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 juin 2026, l'ANSSI détecte une compromission de Tchap, la messagerie des agents publics, après l'usurpation par ingénierie sociale d'un compte lié à l'Éducation nationale. Un cybercriminel signant « Misere » revendique l'exfiltration de trois ans de salons publics : 643 459 messages, 59 386 fichiers et les données de 73 467 agents. La DINUM confirme l'intrusion le 8 juin, bloque le compte et notifie la CNIL ; seuls les salons publics, non chiffrés, ont pu être consultés, les conversations privées restent protégées. Le parquet de Paris ouvre une enquête le 10 juin. Les volumes revendiqués ne sont pas confirmés par la DINUM.",
+  "timeline": [
+    {
+      "date": "2026-06-07",
+      "event": "L'ANSSI détecte une compromission de Tchap à la suite d'une usurpation de compte ; un acteur nommé « Misere » revendique sur un forum 643 459 messages et 73 467 comptes extraits."
+    },
+    {
+      "date": "2026-06-08",
+      "event": "La DINUM confirme l'intrusion, bloque le compte à l'origine des requêtes malveillantes et notifie la CNIL ; les conversations privées chiffrées ne sont pas accessibles."
+    },
+    {
+      "date": "2026-06-10",
+      "event": "Le parquet de Paris ouvre une enquête confiée à l'Ofac après la plainte de la DINUM dénonçant l'exportation de conversations revendues sur le darknet."
+    }
+  ]
+}
