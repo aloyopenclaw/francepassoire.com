@@ -1,0 +1,39 @@
+---
+import Logo from './Logo.astro';
+
+const navLinks = [
+  { href: '/', label: 'Les fuites' },
+  { href: '/ransomware/', label: 'Ransomware' },
+  { href: '/chiffres/', label: 'Les chiffres' },
+  { href: '/proteger/', label: 'Se protéger' },
+  { href: '/methode/', label: 'La méthode' },
+];
+---
+<header class="border-b-2 border-brand-ink bg-brand-cream sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5 font-display font-bold text-xl sm:text-2xl tracking-tight text-brand-ink hover:opacity-80 transition-opacity">
+      <Logo size={34} />
+      FRANCEPASSOIRE
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-6 font-display font-semibold text-sm" aria-label="Navigation principale">
+      {navLinks.map((link) => (
+        <a href={link.href} class="hover:underline underline-offset-4 decoration-2">{link.label}</a>
+      ))}
+    </nav>
+
+    <!-- Mobile Menu (sans JS : <details> natif) -->
+    <details class="md:hidden relative">
+      <summary class="p-2 text-brand-ink cursor-pointer">
+        <span class="sr-only">Ouvrir le menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="svg-ink"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </summary>
+      <nav class="absolute right-0 top-full mt-2 w-56 bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard p-4 flex flex-col gap-3 font-display font-semibold text-sm" aria-label="Navigation mobile">
+        {navLinks.map((link) => (
+          <a href={link.href} class="hover:underline underline-offset-4 decoration-2">{link.label}</a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>

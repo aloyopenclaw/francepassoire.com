@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="La méthode - France Passoire"
+  description="Sources, critères de vérification, registre d'intégrité et politique de retrait : la méthode de FrancePassoire."
+>
+  <!-- Hero -->
+  <section class="bg-brand-ink text-brand-cream border-b-2 border-brand-ink py-16 text-center">
+    <h1 class="font-display font-extrabold text-4xl sm:text-6xl mb-6">La méthode</h1>
+    <p class="font-mono text-lg max-w-2xl mx-auto opacity-90">Transparence, rigueur et refus de l'opacité.</p>
+  </section>
+
+  <div class="bg-brand-paper py-16 space-y-20">
+
+    <!-- Sources -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">D'où viennent nos informations</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl">
+          <h3 class="font-display font-bold text-xl mb-1">Revendications publiques</h3>
+          <p class="text-sm font-body">Les sites vitrines des groupes de ransomware ou les forums criminels (OSINT).</p>
+        </div>
+        <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl">
+          <h3 class="font-display font-bold text-xl mb-1">Médias spécialisés</h3>
+          <p class="text-sm font-body">La presse IT et cyber qui documente et investigue les incidents en direct.</p>
+        </div>
+        <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl">
+          <h3 class="font-display font-bold text-xl mb-1">Notifications officielles</h3>
+          <p class="text-sm font-body">Mails envoyés par les entreprises victimes à leurs clients, obligatoires selon le RGPD.</p>
+        </div>
+        <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl">
+          <h3 class="font-display font-bold text-xl mb-1">Décisions CNIL</h3>
+          <p class="text-sm font-body">Les sanctions et rapports publics de l'autorité de protection des données.</p>
+        </div>
+        <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl sm:col-span-2">
+          <h3 class="font-display font-bold text-xl mb-1">Signalements de la communauté</h3>
+          <p class="text-sm font-body">Les utilisateurs qui nous font suivre des notifications de fuite avec preuves.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revendiquée vs Confirmée -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">Revendiquée ou Confirmée ?</h2>
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-8 shadow-hard grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-display font-bold text-xl flex items-center gap-2 mb-2">
+              <span class="w-4 h-4 bg-brand-orange border border-brand-ink rounded-full" style="background-image: radial-gradient(circle, #241405 1px, transparent 1px); background-size: 4px 4px;"></span>
+              Revendiquée
+            </h3>
+            <p class="text-sm font-body">Un tiers l'affirme (groupe de hackers), mais la victime ne l'a pas confirmé. Les trous de la passoire sont potentiellement encore ouverts.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-xl flex items-center gap-2 mb-2">
+              <span class="w-4 h-4 bg-brand-green border border-brand-ink rounded-full"></span>
+              Confirmée
+            </h3>
+            <p class="text-sm font-body">L'entité, un média de référence ou une source officielle (CNIL, CERT) a confirmé l'incident. Le trou est techniquement colmaté.</p>
+          </div>
+        </div>
+
+        <!-- Démo pastille : bascule pure CSS (sans JavaScript) -->
+        <div class="flex flex-col items-center justify-center p-8 border-2 border-brand-ink border-dashed rounded-xl bg-brand-paper">
+          <p class="font-mono text-sm mb-6 font-bold text-center">Cliquez pour colmater la fuite</p>
+          <input type="checkbox" id="demo-pill" class="seal-toggle sr-only" aria-label="Basculer la pastille entre Revendiquée et Confirmée" />
+          <label for="demo-pill" class="seal-pill pill-revendiquee px-6 py-3 rounded-full font-display font-bold text-xl shadow-sm flex items-center gap-3 mx-auto cursor-pointer select-none transition-colors">
+            <span class="seal-open block w-4 h-4 bg-brand-ink rounded-full"></span>
+            <svg class="seal-sealed flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="seal-open">Revendiquée</span>
+            <span class="seal-sealed">Confirmée</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checklist -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">La vérification, en 4 étapes</h2>
+      <div class="space-y-4 font-mono text-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-6 h-6 rounded-full border-2 border-brand-ink flex items-center justify-center bg-brand-cream mt-0.5 flex-shrink-0">1</div>
+          <p><strong>La source est-elle crédible ?</strong> Nous surveillons uniquement les acteurs connus et documentés.</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-6 h-6 rounded-full border-2 border-brand-ink flex items-center justify-center bg-brand-cream mt-0.5 flex-shrink-0">2</div>
+          <p><strong>La revendication est-elle cohérente ?</strong> Taille des données (Go), type de fichiers exhibés en "preuve".</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-6 h-6 rounded-full border-2 border-brand-ink flex items-center justify-center bg-brand-cream mt-0.5 flex-shrink-0">3</div>
+          <p><strong>Existe-t-il une confirmation primaire ?</strong> Communiqué, article de presse, notification utilisateur.</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-6 h-6 rounded-full border-2 border-brand-ink flex items-center justify-center bg-brand-cream mt-0.5 flex-shrink-0">4</div>
+          <p><strong>Est-ce vraiment une fuite neuve ?</strong> Nous écartons les "combolists" (assemblages de vieilles fuites recyclées pour faire du volume).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registre d'intégrité -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">Le registre d'intégrité</h2>
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-8 shadow-hard">
+        <p class="font-body mb-8 max-w-3xl">Parce que l'information sur les fuites subit de fortes pressions, toute correction, tout ajout ou tout retrait est inscrit pour toujours — chaîné par empreintes cryptographiques et ancré hors de ce site.</p>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8 opacity-70">
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">A7B2...9F</div>
+          <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">C3D4...1E</div>
+          <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-orange text-brand-ink font-mono text-xs">8F9A...B2</div>
+          <div class="w-8 border-b-2 border-brand-ink border-dashed"></div>
+          <div class="border-2 border-brand-ink p-2 rounded bg-brand-paper font-mono text-xs">...</div>
+        </div>
+
+        <p class="text-center font-mono text-sm text-brand-ink/70">
+          Le registre chaîné et ses ancrages seront consultables dès les premières fiches publiées.
+        </p>
+      </div>
+    </section>
+
+    <!-- Retrait -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">La politique de retrait</h2>
+      <ul class="list-disc list-inside font-body space-y-2 mb-6">
+        <li>Erreur de notre part (identification erronée).</li>
+        <li>Information devenue inexacte suite à une enquête technique officielle.</li>
+        <li>Doublon avec une fiche existante.</li>
+        <li>Retrait sur demande (sans erreur constatée) de la victime - consigné publiquement.</li>
+        <li>Décision de justice exécutoire.</li>
+      </ul>
+      <p class="font-mono text-lg font-bold bg-brand-orange inline-block px-4 py-2 border-2 border-brand-ink rounded-full">
+        Aucun retrait discret. Jamais.
+      </p>
+    </section>
+
+    <!-- Données ouvertes -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="bg-brand-ink text-brand-cream border-2 border-brand-ink rounded-passoire p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-[8px_8px_0px_0px_#FF6B1A]">
+        <div>
+          <h2 class="font-display font-extrabold text-3xl mb-2">Données ouvertes</h2>
+          <p class="font-mono text-sm opacity-80">La base de données est destinée à être accessible librement sous licence CC-BY.</p>
+        </div>
+        <p class="font-mono text-xs opacity-70 text-right">Jeux de données, flux et API seront publiés ici dès la première version du catalogue.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display font-extrabold text-3xl mb-8 border-b-2 border-brand-ink pb-2">Questions fréquentes</h2>
+      <div class="space-y-4">
+
+        <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405]">
+          <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center">
+            Est-ce légal ?
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
+            Oui. Nous reprenons des informations factuelles et publiques (nom de l'entreprise, statut de la fuite). C'est un travail journalistique et d'intérêt public.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405]">
+          <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center">
+            Consultez-vous les données volées ?
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
+            <strong>Non — jamais.</strong> Nous nous basons uniquement sur les métadonnées (qui revendique quoi) et les échantillons fournis publiquement par les attaquants pour prouver leur méfait, mais nous ne téléchargeons ni ne conservons aucun dump de base de données.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405]">
+          <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center">
+            Que faites-vous de mon email ?
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
+            Si vous vous inscrivez aux alertes, votre email est stocké uniquement pour cet usage. Il n'est pas croisé avec des bases de données et n'est jamais revendu.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405]">
+          <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center">
+            Une entreprise peut-elle faire retirer sa fiche ?
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
+            Seulement si l'information est prouvée fausse ou via une décision de justice. Dans les autres cas, le fait qu'une entreprise soit citée publiquement dans une revendication est un fait public ineffaçable.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405]">
+          <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center">
+            Comment signaler une erreur ?
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
+            Un formulaire de contact sera publié sur ce site ; en attendant, chaque requête reçue est étudiée en exigeant des preuves factuelles pour toute modification.
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+  </div>
+</Layout>

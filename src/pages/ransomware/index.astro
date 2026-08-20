@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Ransomware - France Passoire"
+  description="Le panorama des revendications ransomware touchant la France — tableau des 7 derniers jours, groupes actifs et règle de publication."
+>
+  <!-- Hero -->
+  <section class="bg-dot-matrix border-b-2 border-brand-ink py-16 sm:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+      <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-6 sm:p-10 mb-4 transform rotate-1">
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl mb-4">
+          Ransomware — les revendications,<br>en direct.
+        </h1>
+        <p class="font-mono text-lg max-w-2xl mx-auto font-bold opacity-90">
+          Quand un groupe publie une liste de victimes françaises, la fiche apparaît ici.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-brand-paper">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- 7 derniers jours : aucune ligne non sourcée, état vide honnête -->
+      <div>
+        <h2 class="font-display font-extrabold text-2xl mb-6">7 derniers jours</h2>
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard overflow-x-auto">
+          <table class="w-full text-left border-collapse font-mono text-sm min-w-[700px]">
+            <thead>
+              <tr class="border-b-2 border-brand-ink bg-brand-paper">
+                <th class="p-4 font-bold">Date</th>
+                <th class="p-4 font-bold">Groupe</th>
+                <th class="p-4 font-bold">Victime</th>
+                <th class="p-4 font-bold">Secteur</th>
+                <th class="p-4 font-bold">Détails</th>
+                <th class="p-4 font-bold text-right">Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6" class="p-8 text-center font-body text-base text-brand-ink/70 leading-relaxed">
+                  Aucune revendication vérifiée à afficher pour l'instant — le tableau se
+                  remplira dès la première entrée passée par notre méthode de vérification.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Groupes actifs : état vide honnête, aucun nom avancé sans source -->
+      <div>
+        <h2 class="font-display font-extrabold text-2xl mb-6">Groupes actifs</h2>
+        <div class="bg-brand-cream border-2 border-dashed border-brand-ink rounded-xl p-6 text-center">
+          <p class="font-display font-bold text-lg mb-1">Dossiers par groupe en préparation</p>
+          <p class="font-body text-sm text-brand-ink/70 max-w-2xl mx-auto leading-relaxed">
+            Les profils détaillés des groupes — tactiques, techniques et chronologies des
+            victimes françaises — seront publiés au fil des données vérifiées. Aucun nom
+            avancé sans source.
+          </p>
+        </div>
+      </div>
+
+      <!-- Posture éditoriale -->
+      <div class="bg-brand-ink text-brand-cream p-6 rounded-passoire border-2 border-brand-ink shadow-hard mt-12">
+        <p class="font-mono text-sm text-center leading-relaxed">
+          <strong class="font-display text-lg tracking-wide uppercase block mb-1">Règle de publication</strong>
+          Nous documentons les revendications publiques. Nous ne consultons ni ne reproduisons aucune donnée volée. Les groupes de ransomware ne sont pas des hacktivistes, ce sont des organisations criminelles à but lucratif.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

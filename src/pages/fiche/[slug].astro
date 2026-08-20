@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Wave 0 : le catalogue de fiches est vide — aucune page n'est générée.
+export function getStaticPaths() {
+  return [];
+}
+
+const { slug } = Astro.params;
+---
+<Layout title="Fiche - France Passoire">
+  <section class="py-16 bg-brand-paper">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4">{slug ? `Fiche « ${slug} »` : 'Fiche'}</h1>
+      <p class="font-body text-lg text-brand-ink/70 leading-relaxed mb-8">
+        Cette fiche n'est pas encore publiée : les fiches du catalogue arrivent
+        au fil des fuites vérifiées, jamais avant.
+      </p>
+      <a href="/" class="font-display font-bold flex items-center gap-2 hover:text-brand-orange transition-colors w-max">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Retour aux fuites
+      </a>
+    </div>
+  </section>
+</Layout>

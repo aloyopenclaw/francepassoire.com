@@ -1,0 +1,49 @@
+---
+/**
+ * Ticker « Dernière fuite » — îlot client.
+ * Règle éditoriale : seules des fuites dont la source externe réelle est
+ * citée peuvent défiler ; chaque élément pointe vers cette source EXTERNE
+ * (jamais vers une fiche interne). Vide à ce stade : état vide honnête.
+ */
+export interface TickerItem {
+  label: string;
+  url: string;
+}
+
+interface Props {
+  items?: TickerItem[];
+}
+
+const { items = [] } = Astro.props;
+const fallbackText =
+  'aucune pour l’instant — le fil démarre à la première fuite vérifiée';
+---
+<div class="relative bg-brand-paper border-2 border-brand-ink rounded-full px-6 py-3 shadow-hard flex items-center gap-3 font-mono text-sm overflow-hidden min-w-[300px] justify-center">
+  <!-- Falling Droplet Animation -->
+  <div class="absolute -top-4 left-6 animate-droplet-fall">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="#241405" class="svg-ink" stroke="none"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+  </div>
+  <span class="text-brand-ink/60 mr-2">Dernière fuite :</span>
+  <span id="ticker-text" class="font-bold text-center leading-snug">{fallbackText}</span>
+</div>
+
+<script define:vars={{ items }}>
+  const el = document.getElementById('ticker-text');
+  if (el && Array.isArray(items) && items.length > 0) {
+    const setItem = (item) => {
+      const a = document.createElement('a');
+      a.href = item.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.className = 'underline hover:text-brand-orange';
+      a.textContent = item.label;
+      el.replaceChildren(a);
+    };
+    setItem(items[0]);
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % items.length;
+      setItem(items[i]);
+    }, 4000);
+  }
+</script>

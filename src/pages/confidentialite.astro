@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Confidentialité - France Passoire"
+  description="Politique de confidentialité de FrancePassoire : aucun cookie, aucun traceur, k-anonymité pour le vérificateur de mots de passe."
+>
+  <section class="bg-brand-cream border-b-2 border-brand-ink py-12">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl">Confidentialité</h1>
+      <p class="font-mono text-sm mt-3 text-brand-ink/70">Dernière mise à jour : 20 août 2026</p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-brand-paper">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-8">
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Ce que nous ne collectons pas</h2>
+        <p class="font-body leading-relaxed">
+          À ce stade, ce site ne dépose aucun cookie, n'embarque aucun traceur publicitaire
+          ni système de mesure d'audience, et ne collecte aucune donnée personnelle.
+          Aucun formulaire n'est actif. Nous n'avons rien à vous demander — donc rien à
+          vous faire accepter.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Le vérificateur de mot de passe</h2>
+        <p class="font-body leading-relaxed mb-3">
+          Lorsque vous utilisez le vérificateur (page
+          <a href="/proteger/" class="underline font-bold hover:text-brand-orange">Se protéger</a>),
+          votre mot de passe ne quitte jamais votre navigateur. Une empreinte SHA-1 est
+          calculée localement, et seuls les 5 premiers caractères de cette empreinte sont
+          envoyés au service indépendant Pwned Passwords (api.pwnedpasswords.com) — c'est
+          le principe de k-anonymité. Ce service ne peut pas reconstituer votre mot de
+          passe, et nous non plus.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Polices et liens externes</h2>
+        <p class="font-body leading-relaxed mb-3">
+          Les polices du site (Bricolage Grotesque, Instrument Sans, Spline Sans Mono)
+          sont chargées depuis Google Fonts, qui peut être amené à connaître votre adresse
+          IP à cette occasion.
+        </p>
+        <p class="font-body leading-relaxed">
+          Quelques liens sortent vers des services tiers — HaveIBeenPwned, Google,
+          Pwned Passwords — qui appliquent leurs propres règles de confidentialité.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Pour la suite</h2>
+        <p class="font-body leading-relaxed">
+          Quand les alertes email existeront, cette page décrira exactement ce qui est
+          stocké, pourquoi, pour combien de temps, et comment l'effacer. Aucune nouvelle
+          fonctionnalité traitant des données personnelles n'arrivera sans mise à jour
+          de cette page.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

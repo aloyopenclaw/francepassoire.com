@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/*
+  FrancePassoire — design tokens du contrat figé (index.html),
+  portés vers Tailwind CSS v4 (@theme).
+*/
+@theme {
+  --color-brand-orange: #FF6B1A;
+  --color-brand-hover: #E85A0C;
+  --color-brand-ink: #241405;
+  --color-brand-cream: #FFF6EA;
+  --color-brand-paper: #FFF9F2;
+  --color-brand-green: #0E7A46;
+
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+
+  --shadow-hard: 5px 5px 0px 0px #241405;
+  --shadow-hard-sm: 3px 3px 0px 0px #241405;
+
+  --radius-passoire: 20px;
+
+  --animate-droplet-fall: droplet 4s infinite;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes droplet {
+  0% { transform: translateY(-20px) scale(0); opacity: 0; }
+  10% { transform: translateY(0px) scale(1); opacity: 1; }
+  30% { transform: translateY(40px) scale(0.8); opacity: 0; }
+  100% { transform: translateY(40px); opacity: 0; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ===== CSS du contrat de design (index.html), repris dans les couches Tailwind v4 ===== */
+
+@layer base {
+  /* Base styles & selections */
+  ::selection { background-color: #FF6B1A; color: #241405; }
+  body { background-color: #FFF9F2; color: #241405; -webkit-font-smoothing: antialiased; }
+
+  /* Accessibility focus rings */
+  *:focus-visible {
+    outline: 3px solid #241405;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Native Accordion Reset */
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+}
+
+@layer components {
+  .btn-press:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0px 0px 0px 0px #241405 !important;
+  }
+
+  .card-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px 0px #241405;
+  }
+
+  /* Dot Matrix Patterns (The Sieve / La Passoire) */
+  .bg-dot-matrix {
+    background-color: #FF6B1A;
+    background-image: radial-gradient(circle, #241405 1.3px, transparent 1.3px);
+    background-size: 22px 22px;
+  }
+
+  .pill-revendiquee {
+    background-color: #FF6B1A;
+    background-image: radial-gradient(circle, #241405 1px, transparent 1px);
+    background-size: 8px 8px;
+    color: #241405;
+    border: 2px solid #241405;
+  }
+
+  .pill-confirmee {
+    background-color: #0E7A46;
+    color: #FFF6EA;
+    border: 2px solid #241405;
+  }
+
+  /* Custom Scrollbar for timeline */
+  .timeline-line {
+    position: absolute;
+    left: 11px;
+    top: 30px;
+    bottom: 0;
+    width: 2px;
+    background-color: #241405;
+    border-right: 1px dashed transparent; /* Gives a hand-drawn feel to the line */
+  }
+
+  /* Tooltip logic */
+  .tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .tooltip-trigger:hover .tooltip-content,
+  .tooltip-trigger:focus .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+    z-index: 50;
+  }
+
+  details[open] summary ~ * { animation: slideUp 0.3s ease-out; }
+
+  /* Démo « colmater la fuite » (La méthode) : bascule Revendiquée/Confirmée sans JavaScript */
+  .seal-pill .seal-sealed { display: none; }
+  .seal-toggle:checked ~ .seal-pill {
+    background-color: #0E7A46;
+    color: #FFF6EA;
+    background-image: none;
+  }
+  .seal-toggle:checked ~ .seal-pill .seal-open { display: none; }
+  .seal-toggle:checked ~ .seal-pill .seal-sealed { display: inline; }
+  .seal-toggle:focus-visible ~ .seal-pill {
+    outline: 3px solid #241405;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Hand-drawn icon strokes */
+  .svg-ink {
+    stroke: #241405;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+}
+
+/* Overrides d'accessibilité : non empilés pour garantir la priorité absolue */
+@media (prefers-reduced-motion: reduce) {
+  .animate-droplet-fall, .ticker-slide { animation: none !important; display: none !important; }
+  .count-up { transition: none !important; }
+}

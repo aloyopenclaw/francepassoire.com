@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Les chiffres - France Passoire"
+  description="Le Compteur National et les statistiques des fuites de données personnelles en France, calculées depuis le catalogue public."
+>
+  <!-- Hero : zéro fiche publiée, le compteur affiche un zéro honnête -->
+  <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
+      <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
+        <h1 class="mt-0">
+          <span class="block font-mono font-black text-7xl sm:text-8xl text-brand-orange drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter">0</span>
+          <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">fuite recensée à ce jour</span>
+        </h1>
+        <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
+          le compteur s'anime avec les premières fiches vérifiées — aucun chiffre publié avant d'exister
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- État vide honnête : les statistiques suivront le catalogue -->
+  <section class="py-16 bg-brand-paper">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard text-center">
+        <h2 class="font-display font-extrabold text-2xl mb-2">Les statistiques suivront le catalogue</h2>
+        <p class="font-body text-brand-ink/70 max-w-2xl mx-auto leading-relaxed">
+          Fuites par secteur, données exposées, part des fuites confirmées : chaque chiffre
+          sera calculé depuis le catalogue public, avec la même méthode que les fiches.
+          Rien ne s'affichera ici avant la première donnée réelle.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-6 font-mono text-sm font-bold">
+          <a href="/" class="underline hover:text-brand-orange">→ voir le catalogue</a>
+          <a href="/methode/" class="underline hover:text-brand-orange">→ comprendre la méthode</a>
+        </div>
+      </div>
+
+      <p class="text-center font-mono text-sm text-brand-ink/60">
+        <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
+          Tous les chiffres viennent du catalogue public — même donnée, même méthode.
+        </span>
+      </p>
+    </div>
+  </section>
+</Layout>
