@@ -1,0 +1,80 @@
+# Task 25 — Entity history pages (/entite/<slug>/) — Wave 3
+
+Lane files: src/pages/entite/[slug].astro, src/lib/entity-view.ts, tests/entity-view.test.ts.
+Design contract: index.html tokens (crème/encre, ombres dures 5px, pastilles à trous vs
+scellée verte, focus 3px, motion-safe animations) — zéro edit de fichiers partagés
+(Layout/global.css/fiche-schema importés uniquement).
+
+## Décisions dérivées (zéro curation)
+- Groupement : normalizeName (entities.ts) — « Alaxione » + « Alaxione SAS » = 1 entité.
+- slug param : entitySlug(nom normalisé), segment seul (règle T8).
+- Tri : attribution décroissante (publication ?? revendication, convention stats.ts),
+  égalité rompue par slug croissant. Dates affichées : revendication (date canonique
+  « entrée dans l'espace public », alignée sur le hero des fiches).
+- Nom d'affichage / SIREN : ceux de la fiche la plus récente qui les porte.
+- Badge récidive : ≥ 2 fiches → « Nᵉ fuite recensée » (ordinalFuite : 1ʳᵉ, 2ᵉ, 3ᵉ…).
+- SIREN : lien externe https://annuaire-entreprises.data.gouv.fr/entreprise/<siren>
+  (target _blank, rel noopener noreferrer, sr-only « nouvelle fenêtre »).
+- SEO : title « <entity> — histoire des fuites - France Passoire », description dérivée
+  (nombre + bornes), canonical via Layout, JSON-LD CollectionPage (about Organization,
+  identifier = SIREN si présent).
+
+## État A — catalogue vide (main)
+$ npm run build          → 8 page(s) built, AUCUNE page /entite/
+$ node scripts/check-sitemap.mjs → ✓ sitemap (8 URLs) == pages HTML (8)
+$ npx astro check        → 0 errors, 0 warnings (10 hints)
+$ npm test               → 24 files / 295 tests pass (dont tests/entity-view.test.ts : 16)
+
+## État B — RED-GREEN (fiches temporaires, jamais commitées)
+Copie des 3 fiches d'ancrage de fiche/anchors-preview (alaxione-20260820,
+dgfip-20260812, ird-20260817) + 1 fiche doublon d'entité (alaxione-sas-20260821,
+entité « Alaxione SAS », confirmée, 2026-08-21) :
+
+$ npm run build → 11 page(s) built :
+  /entite/alaxione/index.html
+  /entite/direction-generale-des-finances-publiques-dgfip/index.html
+  /entite/institut-de-recherche-pour-le-developpement-ird/index.html
+$ node scripts/check-sitemap.mjs → ✓ 11 == 11 (les deux états)
+
+Assertions HTML sur dist/entite/alaxione/index.html (état 2 fiches) :
+- « 2ᵉ » ×2 (badge hero « 2ᵉ fuite recensée » + carte la plus récente)
+- « 1ʳᵉ fuite » sur la carte la plus ancienne ; « 2 fuites recensées » en hero
+- pill-revendiquee + pill-confirmee présentes (variété scellée/trous)
+- <h1>Alaxione SAS</h1> (nom de la fiche la plus récente) — groupement prouvé :
+  toujours 3 pages entite (pas 4) malgré 4 fiches
+- lien carte /fuite/alaxione-sas-20260821/ présent
+- SIREN : <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/811197557"
+  target="_blank" rel="noopener noreferrer">
+État 3 fiches (avant doublon) : alaxione = 1 carte « 1ʳᵉ fuite », PAS de badge
+récidive ; dgfip/alaxione pages distinctes ; IRD avec bloc SIREN.
+
+## Preuve visuelle — task-25-francepassoire-launch.png
+Chrome headless 1280×2400 sur /entite/alaxione/ (cas 2 fiches, état B).
+Échantillonnage pixel PIL (tolérance 30) — les 5 tokens du contrat sont rendus :
+  OK orange #FF6B1A (bande héro) : 14 484 échantillons
+  OK cream  #FFF6EA (cartes)      : 171 173
+  OK paper  #FFF9F2 (fond page)   : 171 074
+  OK ink    #241405 (bordures)    : 3 997
+  OK green  #0E7A46 (pill Confirmée) : 152
+(look_at / zai-mcp vision : timeouts infrastructure ×3 — vérification objective
+par échantillonnage pixel + greps structurels à la place.)
+
+## Retour à l'état A (après suppression des 4 fiches temporaires)
+$ npm run build → 8 page(s) built, 0 page /entite/
+$ node scripts/check-sitemap.mjs → ✓ 8 == 8
+Note : une fiche temporaire d'une voie parallèle (tmp-qilin-cabinet-rhone.json,
+tâche 26) est apparue puis a disparu pendant la vérification ; son retrait a
+d'abord laissé une entrée fantôme dans le cache content-layer d'Astro
+(node_modules/.astro/data-store.json) — corrigé par rm -rf node_modules/.astro
+.astro puis rebuild (aucun fichier source touché). Mes builds d'état B
+(22:28–22:29) précèdent son apparition (22:29+) : preuve RED-GREEN non polluée.
+
+## Risques résiduels
+- Le slug DGFiP réel est /entite/direction-generale-des-finances-publiques-dgfip/
+  (nom complet normalisé, règle T8) — le raccourci « dgfip » du plan n'existe pas
+  tant que le nom catalogué reste long.
+- Récidive = nombre de fiches recensées (pas « incidents distincts confirmés ») :
+  cohérent avec l'honnêteté du catalogue (2 fiches = 2ᵉ fuite recensée).
+- Cache content-layer Astro : déletion externe de fiches pendant une voie
+  parallèle peut nécessiter un clear de node_modules/.astro (connu, sans impact
+  commit — data/catalog est vide sur main).

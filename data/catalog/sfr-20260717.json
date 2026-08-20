@@ -1,0 +1,61 @@
+{
+  "slug": "sfr-20260717",
+  "entity": "SFR",
+  "siren": "343059564",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-17",
+    "publication": "2026-07-17"
+  },
+  "volume": {
+    "count": 2104093,
+    "unit": "lignes",
+    "label": "2 104 093 lignes de dossiers clients fibre et RED (chiffre revendiqué par leur auteur ; SFR ne communique pas le nombre de clients concernés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — SFR confirme une fuite de données, 2,1 millions de lignes revendiquées par le pirate des impôts",
+      "url": "https://www.01net.com/actualites/sfr-confirme-une-fuite-de-donnees-21-millions-de-lignes-revendiquees-par-le-pirate-des-impots.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — SFR confirme son piratage de juillet 2026 : plus de 2 millions de données potentiellement concernées",
+      "url": "https://www.bfmtv.com/tech/actualites/telecoms/sfr-confirme-son-piratage-de-juillet-2026-plus-de-2-millions-de-donnees-potentiellement-concernees_AD-202608200332.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — SFR : les données d'abonnés fibre volées lors d'une cyberattaque en juillet",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/sfr-les-donnees-d-abonnes-fibre-volees-lors-d-une-cyberattaque-en-juillet-20260820",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — SFR piraté : plus de deux millions de clients touchés, le hacker des impôts frappe encore",
+      "url": "https://www.lesnumeriques.com/societe-numerique/sfr-pirate-plus-de-deux-millions-de-clients-touches-le-hacker-des-impots-frappe-encore-n260650.html",
+      "kind": "article"
+    }
+  ],
+  "description": "SFR a détecté le 2 juillet 2026 un accès frauduleux à NOVA, un outil interne d'analyse des raccordements fibre utilisé pour consulter des dossiers d'abonnés. Le 17 juillet, un acteur que plusieurs médias identifient à ZeroBytes a revendiqué sur un forum l'extraction partielle de 2 104 093 lignes commencée le 30 juin : identité, coordonnées et données techniques des lignes. Le 20 août, SFR reconnaît une accessibilité temporaire de données (adresse, e-mail, téléphone) de clients fibre SFR et RED, coupe l'accès, notifie la CNIL et dépose plainte. Le nombre de clients concernés n'est pas communiqué ; mots de passe et données bancaires ne sont pas concernés selon l'opérateur.",
+  "timeline": [
+    {
+      "date": "2026-06-30",
+      "event": "Selon la revendication relayée par 01net, l'extraction depuis l'outil interne NOVA débute le 30 juin."
+    },
+    {
+      "date": "2026-07-02",
+      "event": "Les équipes de sécurité de SFR détectent l'incident et coupent l'accès concerné, selon le courrier adressé ultérieurement aux abonnés."
+    },
+    {
+      "date": "2026-07-17",
+      "event": "Sur un forum, un acteur revendique 2 104 093 lignes extraites de l'outil NOVA ; plusieurs médias l'identifient à ZeroBytes, déjà cité dans l'affaire DGFiP."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "SFR confirme à l'AFP un « incident de sécurité » ayant rendu des données de lignes fibre temporairement accessibles ; CNIL notifiée, plainte déposée, clients informés par courrier."
+    }
+  ]
+}

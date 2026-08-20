@@ -1,0 +1,21 @@
+{
+  "comment": "POST https://bsky.social/xrpc/com.atproto.server.createSession — 401 Unauthorized. Forme officielle atproto : identifiant inconnu ou mot de passe d'application révoqué → {error, message}. Erreur PERMANENTE (identifiants morts : re-tenter ne changerait rien) — à distinguer du 401 de createRecord (jeton expiré en vol, qui vaut rafraîchissement de session).",
+  "request": {
+    "method": "POST",
+    "url": "https://bsky.social/xrpc/com.atproto.server.createSession",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "identifier": "francepassoire.bsky.social",
+      "password": "test-app-password-bsky"
+    }
+  },
+  "response": {
+    "status": 401,
+    "body": {
+      "error": "AuthenticationRequired",
+      "message": "Invalid identifier or password"
+    }
+  }
+}
