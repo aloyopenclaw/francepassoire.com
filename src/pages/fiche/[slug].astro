@@ -7,8 +7,24 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
+
+const ficheTitle = slug ? `Fiche « ${slug} »` : 'Fiche';
+const ficheDescription =
+  'Fuite de données recensée par FrancePassoire : entité concernée, statut de vérification, données annoncées et gestes de protection. Sources citées sur la fiche.';
+
+const articleJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: `${ficheTitle} — FrancePassoire`,
+  description: ficheDescription,
+  author: { '@type': 'Organization', name: 'FrancePassoire' },
+  publisher: { '@type': 'Organization', name: 'FrancePassoire' },
+  isAccessibleForFree: true,
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+});
 ---
-<Layout title="Fiche - France Passoire">
+<Layout title={`${ficheTitle} - France Passoire`} description={ficheDescription}>
+  <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
   <section class="py-16 bg-brand-paper">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl mb-4">{slug ? `Fiche « ${slug} »` : 'Fiche'}</h1>

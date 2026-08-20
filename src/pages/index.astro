@@ -8,8 +8,23 @@ import type { TickerItem } from '../components/Ticker.astro';
 // peuvent défiler. Aucune n'est sourcée pour l'instant : le ticker affiche
 // son état vide honnête.
 const tickerItems: TickerItem[] = [];
+
+const datasetJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'FrancePassoire — catalogue des fuites de données personnelles touchant la France',
+  description:
+    'Catalogue citoyen des fuites de données personnelles touchant la France : entités, statuts de vérification et métadonnées publiques, publiés sous licence CC-BY 4.0.',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'FrancePassoire' },
+  url: 'https://francepassoire.com',
+});
 ---
-<Layout title="France Passoire - On compte les trous">
+<Layout
+  title="France Passoire - On compte les trous"
+  description="Observatoire citoyen et indépendant des fuites de données personnelles en France. Le catalogue s'allumera avec les premières fiches vérifiées — aucun chiffre inventé."
+>
+  <script type="application/ld+json" set:html={datasetJsonLd} slot="head" />
   <!-- Hero -->
   <section class="bg-dot-matrix border-b-2 border-brand-ink py-16 sm:py-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
