@@ -1,0 +1,136 @@
+# Task 20 — Pipeline integration tests + production deploy + 24h soak START
+Workdir: /Users/deenson/Desktop/FrancePassoire/francepassoire.com — 2026-08-20 (UTC timestamps).
+
+## 1. KV namespace RUN_STATE — real id wired
+
+```
+$ npx wrangler kv namespace create francepassoire-ingest-runstate   # (account 8bf7b731…f8e7)
+🌀 Creating namespace with title "francepassoire-ingest-runstate"
+✨ Success!
+binding = "francepassoire_ingest_runstate"
+id = "3ce5bafcbfa8405faa32898ab7769c49"
+```
+
+workers/ingest/wrangler.jsonc: kv_namespaces → { "binding": "RUN_STATE", "id": "3ce5bafcbfa8405faa32898ab7769c49" }
+(placeholder 0000000000000000000000000000000 replaced; D1 binding untouched).
+
+⚠️ Observability note: `wrangler kv key list/get --namespace-id …` returned [] / "Value
+not found" while the namespace was actually populated — verified via direct REST API
+(GET /accounts/…/storage/kv/namespaces/<id>/keys) which lists all 9 state keys. Do not
+trust `wrangler kv key` reads here; use the API for the soak report.
+
+## 2. Integration suite — tests/pipeline-integration.test.ts (new)
+
+Full chain on a 20-candidate corpus, all fake IO (patterns reused from
+worker-skeleton.test.ts / pr-automation.test.ts):
+
+- REAL adapters on recorded fixtures: ransomware.live cassette (50 victims → 3 FR kept,
+  47 non-FR dropped), rss:zataz cassette (6 candidates), hibp snapshot diff a→b
+  (1 new .fr breach VitteAuto; modified Alaxione + non-FR Adobe/NetEase dropped),
+  rss:zdnet-fr served rss-malformed.xml (0 candidates, chain continues).
+- Corpus adapter + 10 synthetic candidates (dup-catalog 1.0, fresh PR, slug-duplicate
+  from 2nd/3rd source, borderline 0.4 pass, 0.85 threshold reject, no-entity,
+  malformed raw, non-object raw, slugless, 3rd slug-duplicate).
+- Runner T13 (fake D1/KV) → synthesize T18 (+ dedup T11 vs anchor-fiche catalog) →
+  PR decision (threshold dedup_score ≥ 0.8, slug bridge T8→T19) → openDraftPr T19
+  (FakeGithub whose created PRs become open heads — realistic duplicate collapse).
+
+Exact assertions (all green):
+- D1: exactly 20 rows, all NEW, dedup_score null, 20 distinct UUIDs, bySource
+  { ransomware.live: 4, rss: 14, hibp: 2 }; no .onion source_url; KV state
+  last_success/disabled=false for all 5 registered adapters.
+- PR decision: 20 motivated outcomes — pr:2, duplicate:2, dedup_threshold:2 (1.0 and
+  0.85), no_slug:5, no_entity:7, bad_raw:2. GitHub calls EXACTLY: 2 createRef
+  (fiche/vitteauto-20260730, fiche/alaxio-20260211), 2 putFile, 2 PR (#42, #43),
+  3 VitteAuto candidates → ONE PR. PR body carries entity/SIREN/dedup card.
+- PENDING_KEYS path: without FRANCEPASSOIRE_GH_TOKEN the ingestion run completes
+  (20 rows NEW) with zero errors and zero GitHub attempts — matches production
+  posture (secret list = []).
+- CNIL cadence guard: 2 runs same UTC day → exactly 1 fetch of cnil.fr, 2nd run
+  skipped:true (see §4).
+
+Transcript:
+```
+$ npx vitest run            # full suite
+ Test Files  21 passed (21)
+      Tests  260 passed (260)
+$ npx tsc --noEmit -p tsconfig.json   # lane files clean (pre-existing errors are
+                                      # confined to tests/social-x-queue.test.ts,
+                                      # another parallel lane's untracked file)
+```
+
+## 3. Production deploy — francepassoire-ingest
+
+```
+$ npx wrangler deploy --config workers/ingest/wrangler.jsonc
+Uploaded francepassoire-ingest (2.99 sec)
+Deployed francepassoire-ingest triggers (3.56 sec)
+  https://francepassoire-ingest.t5hsrdmmmn.workers.dev
+  schedule: */15 * * * *
+Current Version ID: a4920e84-ce80-47e7-9f65-fe90248c2482      # 19:40:18Z
+```
+Redeploy with CNIL cadence guard (see §4):
+```
+Current Version ID: fb1b5ba7-b66d-41ad-b85c-1fd1ce3c236c      # 20:05:05Z, 100%
+```
+deployments list confirms both versions; bindings RUN_STATE (3ce5bafcbfa8405faa32898ab7769c49)
++ DB (francepassoire). `wrangler secret list` → [] : FRANCEPASSOIRE_GH_TOKEN absent →
+PR-writing structurally dormant (src/index.ts never imports pr-automation — verified by
+grep: only pr-automation.ts itself references the token; the PENDING_KEYS integration
+test pins the zero-error path). No crash-loop: 3 cron firings observed, 0 error events,
+all 9 sources consecutive_failures=0, disabled=false.
+
+## 4. Deploy-requiring tweak — CNIL daily cadence guard (workers/ingest/src/index.ts)
+
+First production firings revealed cnil-sanctions fetched EVERY 15 min (110 rows/run)
+while the pinned plan constraint says "Must NOT: hit CNIL more than daily" and the
+adapter contract (T16) states the runner MUST enforce it via isDailyRateOk. Minimal
+guard added in runSource (adapter.id === 'cnil-sanctions' && !isDailyRateOk(last_run))
+→ skipped:true, no fetch, no failure counted. Verified live: cnil last_run froze at
+20:03:17Z (pre-guard run); the 20:15Z firing under fb1b5ba7 inserted 0 cnil rows while
+ransomware.live/rss/cert-fr continued normally.
+
+## 5. Early soak sample — remote D1 (cron */15 proof, NOT just exit 0)
+
+```
+$ npx wrangler d1 execute francepassoire --remote \
+    --command "SELECT source, COUNT(*) FROM candidates GROUP BY source"
+
+after run 1 (19:45Z): ransomware.live 3, rss 15                     (18 rows)
+after run 2 (20:00Z): ransomware.live 6, rss 30, cert-fr 160, cnil-sanctions 680
+after run 3 (20:15Z, guarded): rlive 9, rss 45, cert-fr 240, cnil 790 (frozen) = 1084
+```
+KV run-state (via REST API): all 9 adapters last_success set, consecutive_failures 0,
+disabled false, guid_set [].
+
+## 6. 24h soak report — instructions for the orchestrator (collect tomorrow)
+
+```
+export CLOUDFLARE_API_TOKEN="$(cat ~/.config/francepassoire/cloudflare.token)" \
+       CLOUDFLARE_ACCOUNT_ID=8bf7b7311f17611f5b95f1f4e755f8e7
+# candidates/day per source:
+npx wrangler d1 execute francepassoire --remote --json \
+  --command "SELECT source, DATE(created_at) d, COUNT(*) FROM candidates GROUP BY source, d"
+# breaker trips (any disabled=true / consecutive_failures>0 is a trip):
+curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces/3ce5bafcbfa8405faa32898ab7769c49/keys"
+# error scan over the soak window:
+npx wrangler tail --config workers/ingest/wrangler.jsonc --status error --format json
+```
+Expected: ≥1 candidate/day per active source (rlive/rss every run; cnil 1×/day;
+hibp 0 until T47 snapshot wiring); zero disabled sources; zero error events.
+
+## 7. Risks / notes for the orchestrator
+
+- Re-insertion each run (rlive 3 + rss 15 + cert-fr 80 ≈ 98 rows/15 min → ~9.4k rows/day):
+  expected until T47 wires guid_set (RSS), hibp snapshot persistence and cert-fr
+  cross-run dedup. D1 free-tier writes 100k/day — soak fits, backfill waves will not.
+- Slug bridge T8→T19 (ficheSlug emits /fuite/<slug>/, openDraftPr takes bare slug)
+  lives in the integration test's composition glue — T47 runtime wiring MUST include
+  it (both module contracts are pinned by their unit tests).
+- HIBP catalogue is fetched every run by design (state priming) — T47 should persist
+  the snapshot and gate to daily, same pattern as the CNIL guard.
+- wrangler tail shows nothing for clean scheduled runs (worker logs only on failure);
+  D1/KV are the ground truth for soak health.
+- Pre-existing (NOT this lane): tests/social-x-queue.test.ts has 3 tsc errors
+  (untracked file from a parallel wave task); full vitest suite is green regardless.
