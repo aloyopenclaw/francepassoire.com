@@ -1,0 +1,51 @@
+{
+  "slug": "mondial-relay-20251227",
+  "entity": "Mondial Relay",
+  "siren": "385218631",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-27",
+    "publication": "2025-12-27",
+    "confirmation": "2025-12-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par Mondial Relay (analyse en cours) ; 25 millions de données revendiquées par le groupe dumpsec pour Mondial Relay et Colis Privé réunis"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "franceinfo — Mondial Relay touché par une cyberattaque qui a volé les données de ses clients",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/mondial-relay-touche-par-une-cyberattaque-qui-a-vole-les-donnees-de-ses-clients_7705321.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech&Co — Mondial Relay visé par une cyberattaque, de nombreuses données personnelles d'utilisateurs volées",
+      "url": "https://www.bfmtv.com/police-justice/mondial-relay-vise-par-une-cyberattaque-de-nombreuses-donnees-personnelles-d-utilisateurs-volees_AD-202512270236.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Mondial Relay victime d'une cyberattaque, des données personnelles des clients dérobées",
+      "url": "https://www.leparisien.fr/faits-divers/mondial-relay-victime-dune-cyberattaque-des-donnees-personnelles-des-clients-derobees-27-12-2025-OC36TLCBQNBIJDKSQU5XWC7UDQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Cyberattaque contre Mondial Relay : des pirates français ont volé une montagne de données",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-mondial-relay-pirates-francais-vole-montagne-donnees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 décembre 2025, Mondial Relay, filiale du groupe InPost, révèle une cyberattaque détectée le 23 décembre contre sa plateforme en ligne de suivi des colis destinée aux e-commerçants. Des accès non autorisés ont exposé des données clients : nom, prénom, adresses e-mail et postale, téléphone, ainsi que numéros d'expédition et statuts de livraison. Aucune donnée bancaire, mot de passe ni information de paiement n'était accessible selon l'entreprise. Le gang français dumpsec a mis les données en vente sur BreachForums, rapporte 01net. La CNIL est informée, les accès frauduleux sont suspendus et une plainte est annoncée.",
+  "timeline": [
+    {
+      "date": "2025-12-23",
+      "event": "Mondial Relay détecte des accès non autorisés à sa plateforme de suivi des colis ; les données ne sont plus exposées le soir même selon l'entreprise."
+    },
+    {
+      "date": "2025-12-27",
+      "event": "L'entreprise confirme le vol de données personnelles de clients, informe la CNIL et annonce une plainte ; les données sont mises en vente par le gang dumpsec selon 01net."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "chronopost-20251219",
+  "entity": "Chronopost",
+  "siren": "383960135",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-19",
+    "publication": "2025-12-20",
+    "confirmation": "2025-12-23"
+  },
+  "volume": {
+    "count": 860000,
+    "unit": "enregistrements",
+    "label": "860 000 enregistrements de colis publiés, soit environ 630 000 adresses e-mail uniques selon les analystes ; colis déposés en points relais Pickup entre le 25 février et le 10 avril 2025"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "01net — Fuite de données chez Chronopost : les informations volées viennent « d'un incident remontant au printemps 2025 »",
+      "url": "https://www.01net.com/actualites/nouvelle-fuite-chez-chronopost-pirate-affirme-avoir-vole-donnees-860-000-francais.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération-NT — Chronopost confirme une nouvelle fuite de données via le réseau Pickup",
+      "url": "https://www.generation-nt.com/actualites/chronopost-fuite-donnees-pickup-piratage-colis-2068262",
+      "kind": "article"
+    },
+    {
+      "label": "Allo17 — Fuite massive de données : les points relais de La Poste à nouveau concernés",
+      "url": "https://allo17.fr/actualites/20/12/2025/fuite-massive-de-donnees-les-points-relais-de-la-poste-a-nouveau-concernes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 décembre 2025, un pirate publie sur BreachForums une base de 680 Mo liée aux systèmes de points relais Pickup utilisés par Chronopost. Le fichier couvre 860 000 colis déposés entre le 25 février et le 10 avril 2025, avec nom, prénom, e-mail, numéros de colis, dimensions, codes-barres et localisation des points de retrait. Des données Colissimo figurent aussi dans le répertoire, le réseau étant mutualisé. Le 23 décembre, Chronopost confirme une fuite liée à un incident « remontant au printemps 2025 », traité conformément à la réglementation. Cette fuite est distincte de celle de janvier 2025.",
+  "timeline": [
+    {
+      "date": "2025-12-19",
+      "event": "Un pirate publie sur BreachForums une base de 680 Mo extraite selon lui par scraping des systèmes de points relais Pickup, couvrant 860 000 colis."
+    },
+    {
+      "date": "2025-12-20",
+      "event": "Des analystes dont Christophe Boutry estiment les données authentiques : colis du 25 février au 10 avril 2025, données Chronopost et Colissimo mêlées."
+    },
+    {
+      "date": "2025-12-23",
+      "event": "Chronopost confirme la fuite, rattachée à un incident du printemps 2025 déjà traité conformément à la réglementation."
+    }
+  ]
+}

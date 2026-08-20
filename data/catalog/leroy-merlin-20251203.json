@@ -1,0 +1,51 @@
+{
+  "slug": "leroy-merlin-20251203",
+  "entity": "Leroy Merlin",
+  "siren": "384560942",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-03",
+    "publication": "2025-12-03",
+    "confirmation": "2025-12-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« quelques centaines de milliers de clients » selon Leroy Merlin ; chiffre exact non communiqué"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BFM Tech&Co — Leroy Merlin reconnaît avoir été victime d'une cyber attaque et annonce que des centaines de milliers de clients sont concernés",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/leroy-merlin-reconnait-avoir-ete-victime-d-une-cyber-attaque-et-annonce-que-des-centaines-de-milliers-de-clients-sont-concernes_AN-202512030877.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien/AFP — Leroy Merlin visée par une cyberattaque, des centaines de milliers de données de clients touchées",
+      "url": "https://www.leparisien.fr/high-tech/leroy-merlin-visee-par-une-cyberattaque-des-centaines-de-milliers-de-donnees-de-clients-touchees-04-12-2025-77CSSROTTNAKDHPF2S3LZ6FFTM.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Leroy Merlin victime d'une fuite de données : mails, adresses, comptes fidélité",
+      "url": "https://www.rtl.fr/actu/sciences-tech/leroy-merlin-victime-d-une-fuite-de-donnees-mails-adresses-comptes-fidelite-des-centaines-de-milliers-de-clients-concernes-7900573951",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — French DIY retail giant Leroy Merlin discloses a data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/french-diy-retail-giant-leroy-merlin-discloses-a-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 décembre 2025, Leroy Merlin confirme un acte de cybermalveillance touchant les données personnelles associées aux comptes de fidélité de quelques centaines de milliers de clients en France. Les données concernées comprennent nom, prénom, numéro de téléphone, adresses e-mail et postale, date de naissance et informations du programme de fidélité. Les données bancaires et les mots de passe ne sont pas concernés selon l'enseigne. Le chercheur Clément Domingo attribue l'attaque au groupe dumpsec, qui aurait utilisé les accès compromis d'un employé. La CNIL est notifiée, une plainte est prévue et les clients touchés ont été informés.",
+  "timeline": [
+    {
+      "date": "2025-12-03",
+      "event": "Après l'alerte du chercheur Clément Domingo, Leroy Merlin confirme une cyberattaque touchant les comptes de fidélité de quelques centaines de milliers de clients."
+    },
+    {
+      "date": "2025-12-04",
+      "event": "L'enseigne précise que seules des données de contact sont touchées, que la CNIL est notifiée et qu'une plainte sera déposée."
+    }
+  ]
+}
