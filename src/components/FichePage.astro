@@ -8,6 +8,7 @@ import {
   chipDonnee,
   classeStatut,
   explicationStatut,
+  faitsSaillants,
   formaterDate,
   formaterNombre,
   formaterSiren,
@@ -32,6 +33,9 @@ const { fiche, ton } = Astro.props;
 const prose =
   ton !== undefined ? (prosePour(fiche.slug, ton) ?? fiche.description) : fiche.description;
 const proseEstVariante = ton !== undefined && prosePour(fiche.slug, ton) !== undefined;
+
+// Ton C uniquement : bloc de mise en relief dérivé du JSON (zéro invention).
+const faits = ton === 'c' ? faitsSaillants(fiche) : [];
 
 const estConfirmee = fiche.statut === 'confirmee';
 ---
@@ -98,6 +102,16 @@ const estConfirmee = fiche.statut === 'confirmee';
             <p class="font-mono text-xs text-brand-ink/60 mb-3 border-b-2 border-dashed border-brand-ink/20 pb-3">
               Proposition de prose en préversion — non verrouillée.
             </p>
+          )}
+          {faits.length > 0 && (
+            <dl class="bg-brand-paper border-2 border-brand-ink rounded-lg px-4 py-2 mb-4 font-mono text-sm divide-y-2 divide-dashed divide-brand-ink/20">
+              {faits.map((fait) => (
+                <div class="grid grid-cols-[7.5rem_1fr] gap-x-3 py-2 first:pt-1.5 last:pb-1.5 items-baseline">
+                  <dt class="text-xs font-bold uppercase tracking-wide text-brand-ink/70">{fait.label}</dt>
+                  <dd class="leading-snug">{fait.valeur}</dd>
+                </div>
+              ))}
+            </dl>
           )}
           <p class="font-body text-lg leading-relaxed">{prose}</p>
         </div>

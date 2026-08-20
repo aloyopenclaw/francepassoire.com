@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import FichePage from '../../../components/FichePage.astro';
-import { RESUMES_TONS, TITRES_TONS } from '../../../lib/prose-tones';
+import { RESUMES_TONS, TITRES_TONS, type Ton } from '../../../lib/prose-tones';
 
 // Préversion rédactionnelle (tâche 21) : la fiche complète, rendue avec la
 // proposition de prose Ton B « Pédagogique citoyen ». Route de
@@ -18,7 +18,7 @@ export function getStaticPaths() {
 
 const { fiche } = Astro.props;
 const TON = 'b' as const;
-const AUTRE_TON = 'a' as const;
+const AUTRES_TONS = (['a', 'b', 'c'] as const).filter((ton) => ton !== TON) as readonly Ton[];
 ---
 <Layout
   title={`Aperçu ${TITRES_TONS[TON]} — ${fiche.entity} - France Passoire`}
@@ -29,7 +29,9 @@ const AUTRE_TON = 'a' as const;
       <span class="font-bold">Préversion · {TITRES_TONS[TON]}</span>
       <span class="text-brand-cream/70 hidden sm:inline">{RESUMES_TONS[TON]}</span>
       <span class="flex-1"></span>
-      <a href={`/apercu/ton-${AUTRE_TON}/${fiche.slug}/`} class="underline decoration-2 underline-offset-4 hover:text-brand-orange transition-colors">Comparer : {TITRES_TONS[AUTRE_TON]}</a>
+      {AUTRES_TONS.map((ton) => (
+        <a href={`/apercu/ton-${ton}/${fiche.slug}/`} class="underline decoration-2 underline-offset-4 hover:text-brand-orange transition-colors">Comparer : {TITRES_TONS[ton]}</a>
+      ))}
       <a href={`/fiche/${fiche.slug}/`} class="underline decoration-2 underline-offset-4 hover:text-brand-orange transition-colors">Fiche de référence</a>
     </div>
   </nav>

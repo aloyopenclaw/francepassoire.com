@@ -4,9 +4,11 @@ import Layout from '../../../layouts/Layout.astro';
 import FichePage from '../../../components/FichePage.astro';
 import { RESUMES_TONS, TITRES_TONS, type Ton } from '../../../lib/prose-tones';
 
-// Préversion rédactionnelle (tâche 21) : la fiche complète, rendue avec la
-// proposition de prose Ton A « Factuel sec ». Route de prévisualisation
-// uniquement — n'existe pas en production (décision épinglée n° 6).
+// Préversion rédactionnelle (tâche 21, round 2) : la fiche complète, rendue
+// avec la proposition de prose Ton C « A + mise en relief » — même sécheresse
+// factuelle que le Ton A, précédée d'un bloc de faits saillants dérivé du
+// JSON. Route de prévisualisation uniquement — n'existe pas en production
+// (décision épinglée n° 6).
 export function getStaticPaths() {
   return getCollection('catalog').then((entries) =>
     entries.map((entry) => ({
@@ -17,7 +19,7 @@ export function getStaticPaths() {
 }
 
 const { fiche } = Astro.props;
-const TON = 'a' as const;
+const TON = 'c' as const;
 const AUTRES_TONS = (['a', 'b', 'c'] as const).filter((ton) => ton !== TON) as readonly Ton[];
 ---
 <Layout
