@@ -172,6 +172,66 @@ export function labelGenreSource(kind: SourceKindFiche): string {
 }
 
 // ---------------------------------------------------------------------------
+// Faits saillants (Ton C — « A + mise en relief », tâche 21 round 2)
+// ---------------------------------------------------------------------------
+
+export interface FaitSaillant {
+  label: string;
+  valeur: string;
+}
+
+// Forme courte pour le bloc de mise en relief : reprend la distinction
+// revendication / confirmation sans la phrase d'explication du hero.
+const STATUT_VERIFICATION: Record<StatutFiche, string> = {
+  revendiquee: 'revendiquée — exfiltration non établie',
+  confirmee: 'confirmée par une source officielle',
+};
+
+/** Source qui établit la fiche : officielle si présente, sinon le relais de
+ * la revendication, sinon la première source citée. */
+function sourcePrimaire(fiche: Fiche): Fiche['sources'][number] {
+  return (
+    fiche.sources.find((source) => source.kind === 'officiel') ??
+    fiche.sources.find((source) => source.kind === 'revendication') ??
+    fiche.sources[0]
+  );
+}
+
+/** Cinq faits saillants dérivés du JSON de la fiche : volume, date, données,
+ * statut de vérification, source primaire. Rien d'inventé — chaque valeur
+ * remonte à un champ sourcé de la fiche. */
+export function faitsSaillants(fiche: Fiche): FaitSaillant[] {
+  const primaire = sourcePrimaire(fiche);
+  const hote = new URL(primaire.url).hostname.replace(/^www\./, '');
+  return [
+    {
+      label: 'Volume',
+      valeur: `${formaterNombre(fiche.volume.count)} ${phraseUnite(fiche.volume.unit)}`,
+    },
+    {
+      label: 'Date',
+      valeur:
+        `revendication le ${formaterDate(fiche.dates.revendication)}` +
+        (fiche.dates.confirmation
+          ? ` · confirmation le ${formaterDate(fiche.dates.confirmation)}`
+          : ''),
+    },
+    {
+      label: 'Données',
+      valeur: fiche.data_types.map((type) => chipDonnee(type).label).join(' · '),
+    },
+    {
+      label: 'Statut de vérification',
+      valeur: STATUT_VERIFICATION[fiche.statut],
+    },
+    {
+      label: 'Source primaire',
+      valeur: `${labelGenreSource(primaire.kind).toLowerCase()} · ${hote}`,
+    },
+  ];
+}
+
+// ---------------------------------------------------------------------------
 // SIREN (« 811197557 » → « 811 197 557 »), affichage uniquement
 // ---------------------------------------------------------------------------
 
