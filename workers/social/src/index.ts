@@ -27,7 +27,9 @@
 // erreurs permanentes (401/4xx) passent DEAD immédiatement.
 
 import { MENTION_REVENDICATION } from '../../../src/lib/social-templates';
+import { send as sendBluesky } from '../clients/bluesky';
 import { send as sendLinkedIn } from '../clients/linkedin';
+import { send as sendNostr } from '../clients/nostr';
 import { send as sendTikTok } from '../clients/tiktok';
 import { send as sendX } from '../clients/x';
 import {
@@ -45,11 +47,13 @@ import {
 /** Tentatives max par ligne (1 initiale + 2 retries au fil des crons). */
 export const MAX_ATTEMPTS = 3;
 
-// Clients branchés — T39 : X ; T40 : LinkedIn et TikTok.
+// Clients branchés — T38 : Bluesky et Nostr ; T39 : X ; T40 : LinkedIn et TikTok.
 const CLIENTS: Record<SocialPlatform, SendFn> = {
   x: sendX,
   linkedin: sendLinkedIn,
   tiktok: sendTikTok,
+  bluesky: sendBluesky,
+  nostr: sendNostr,
 };
 
 export interface OutboxRow {
