@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>
+		ZDNET	
+	</title>
+	<atom:link href="https://www.zdnet.fr/feed" rel="self" type="application/rss+xml" />
+	<link>
+		https://www.zdnet.fr/feed		
+	</link>
+	<description>Actualité, business et technologies pour les professionnels</description>
+	<lastBuildDate>Wed, 19 Aug 2026 18:04:01 +0000</lastBuildDate>
+	<language>fr-FR</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.5</generator>
+	<item>
+<title>Fuite à la DGFiP : après les excuses du ministre, l'urgence de revoir l'IAM face aux cyberattaques en série</title>
+<link>https://www.zdnet.fr/actualites/fuite-a-la-dgfip-apres-les-excuses-du-ministre-lurgence-de-revoir-liam-face-aux-cyberattaques-en-serie-500205.htm</link>
+<guid>https://www.zdnet.fr/actualites/fuite-a-la-dgfip-apres-les-excuses-du-ministre-lurgence-de-revoir-liam-face-aux-cyberattaques-en-serie-500205.htm</guid>
+<description><![CDATA[Article réel de la rubrique sécurité de ZDNet.fr — métadonnées publiques uniquement.]]></description>
+</item>
+<item>
+<title>Crise cyber à la DGFiP : Lecornu fouette l'Anssi par courrier</title>
+<link>https://www.zdnet.fr/actualites/crise-cyber-a-la-dgfip-lecornu-fouette-lanssi-par-courrier-500249.htm</link>
+<guid>https://www.zdnet.fr/actualites/crise-cyber-a-la-dgfip-lecornu-fouette-lanssi-par-courrier-500249.htm</guid>
+<description><![CDATA[Article réel de la rubrique sécurité de ZDNet.fr — contrôle négatif : aucun mot-clé.]]></description>
+</item>
+<item>
+		<title><![CDATA[Les meilleurs claviers bureautiques filaires en 2026 pour les pros]]></title>
+		<link>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleurs-claviers-bureautiques-filaires-en-2026-pour-les-pros-500244.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleurs-claviers-bureautiques-filaires-en-2026-pour-les-pros-500244.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 17:36:10 +0000</pubDate>
+		<dc:creator><![CDATA[Guillaume Serries]]></dc:creator>
+						<category><![CDATA[Informatique]]></category>
+		<category><![CDATA[Sélection expert ZDNET France]]></category>
+		<category><![CDATA[Claviers]]></category>
+		<category><![CDATA[Poste de travail]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleurs-claviers-bureautiques-filaires-en-2026-pour-les-pros-500244.htm</guid>
+		<description><![CDATA[L'adoption de claviers filaires répond à des exigences strictes de sécurité des données, de simplicité de déploiement IT et de durabilité matérielle. Voici notre sélection des modèles filaires de référence.]]></description>								<wfw:commentRss>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleurs-claviers-bureautiques-filaires-en-2026-pour-les-pros-500244.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/06/selection_expert_2025_zdnet_une.png" length="41760" type="image/png" />	</item>
+		<item>
+		<title><![CDATA[MainstreamOS va-t-il enfin permettre à Linux de rentrer dans les foyers ? Je l'ai testé pour le savoir]]></title>
+		<link>https://www.zdnet.fr/guide-achat/mainstreamos-va-t-il-enfin-permettre-a-linux-de-rentrer-dans-les-foyers-je-lai-teste-pour-le-savoir-500302.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/guide-achat/mainstreamos-va-t-il-enfin-permettre-a-linux-de-rentrer-dans-les-foyers-je-lai-teste-pour-le-savoir-500302.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 16:00:36 +0000</pubDate>
+		<dc:creator><![CDATA[Guillaume Serries]]></dc:creator>
+						<category><![CDATA[Guide d'achat]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logiciel Libre]]></category>
+		<category><![CDATA[Open source]]></category>
+		<category><![CDATA[Poste de travail]]></category>
+		<category><![CDATA[Système d'exploitation]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/guide-achat/mainstreamos-va-t-il-enfin-permettre-a-linux-de-rentrer-dans-les-foyers-je-lai-teste-pour-le-savoir-500302.htm</guid>
+		<description><![CDATA[Enfin, voici une distribution Linux qui simplifie l'utilisation d'Arch et d'Hyprland, tout en y ajoutant le raffinement de macOS. Comment ne pas adorer MainstreamOS ?]]></description>								<wfw:commentRss>https://www.zdnet.fr/guide-achat/mainstreamos-va-t-il-enfin-permettre-a-linux-de-rentrer-dans-les-foyers-je-lai-teste-pour-le-savoir-500302.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/mainstreamhero.webp" length="46038" type="image/webp" />	</item>
+		<item>
+		<title><![CDATA[Confidentialité : voici un classement des meilleures et des pires IA, et Vibe (Mistral AI) ne s'en sort pas si mal]]></title>
+		<link>https://www.zdnet.fr/actualites/confidentialite-voici-un-classement-des-meilleures-et-des-pires-ia-et-vibe-mistral-ai-ne-sen-sort-pas-si-mal-500310.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/confidentialite-voici-un-classement-des-meilleures-et-des-pires-ia-et-vibe-mistral-ai-ne-sen-sort-pas-si-mal-500310.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 15:45:47 +0000</pubDate>
+		<dc:creator><![CDATA[Guillaume Serries]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Cybersécurité]]></category>
+		<category><![CDATA[ChatGPT]]></category>
+		<category><![CDATA[Claude]]></category>
+		<category><![CDATA[Cyberattaque]]></category>
+		<category><![CDATA[Cybercriminalité]]></category>
+		<category><![CDATA[Gemini]]></category>
+		<category><![CDATA[IA Générative]]></category>
+		<category><![CDATA[Protection des données]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/confidentialite-voici-un-classement-des-meilleures-et-des-pires-ia-et-vibe-mistral-ai-ne-sen-sort-pas-si-mal-500310.htm</guid>
+		<description><![CDATA[Les chercheurs d'Incogni analysent 13 plateformes d'IA et les risques potentiels que chacune d'entre elles fait peser sur votre vie privée. Plus la plateforme est importante, plus le risque est élevé – à une exception près.]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/confidentialite-voici-un-classement-des-meilleures-et-des-pires-ia-et-vibe-mistral-ai-ne-sen-sort-pas-si-mal-500310.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/airanks-gettyimages-1393587777.jpg" length="199920" type="image/jpeg" />	</item>
+		<item>
+		<title><![CDATA[Standards web : seuls 2,6% des sites sont irréprochables]]></title>
+		<link>https://www.zdnet.fr/actualites/standards-web-seuls-26-des-sites-sont-irreprochables-500225.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/standards-web-seuls-26-des-sites-sont-irreprochables-500225.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 15:30:18 +0000</pubDate>
+		<dc:creator><![CDATA[Louis Adam]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Informatique]]></category>
+		<category><![CDATA[Accessibilité]]></category>
+		<category><![CDATA[Développement informatique]]></category>
+		<category><![CDATA[Internet]]></category>
+		<category><![CDATA[Programmation]]></category>
+		<category><![CDATA[Technologies Web]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/standards-web-seuls-26-des-sites-sont-irreprochables-500225.htm</guid>
+		<description><![CDATA[Sur 5000 sites testés, seuls 2,6% respectent scrupuleusement les bonnes pratiques du HTML et du CSS, et seuls 12,8% suivent le standard, selon une étude menée par l'outil en ligne ValidateHTML. ]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/standards-web-seuls-26-des-sites-sont-irreprochables-500225.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/web.jpg" length="484306" type="image/jpeg" />	</item>
+		<item>
+		<title><![CDATA[Google souhaite que vous utilisiez moins ses smartphones et davantage son IA… mais qui y croit vraiment ?]]></title>
+		<link>https://www.zdnet.fr/actualites/google-souhaite-que-vous-utilisiez-moins-ses-smartphones-et-davantage-son-ia-mais-qui-y-croit-vraiment-500298.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/google-souhaite-que-vous-utilisiez-moins-ses-smartphones-et-davantage-son-ia-mais-qui-y-croit-vraiment-500298.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 13:33:51 +0000</pubDate>
+		<dc:creator><![CDATA[Guillaume Serries]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Smartphone]]></category>
+		<category><![CDATA[Agent IA]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Intelligence artificielle (IA)]]></category>
+		<category><![CDATA[Montres connectées]]></category>
+		<category><![CDATA[Objets connectés]]></category>
+		<category><![CDATA[Pixel]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/google-souhaite-que-vous-utilisiez-moins-ses-smartphones-et-davantage-son-ia-mais-qui-y-croit-vraiment-500298.htm</guid>
+		<description><![CDATA[Google tire parti de notre rapport difficile à la technologie pour vendre ses nouveaux smartphones – ce rapport qu’il a lui-même contribué à créer.]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/google-souhaite-que-vous-utilisiez-moins-ses-smartphones-et-davantage-son-ia-mais-qui-y-croit-vraiment-500298.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/dsc05502.webp" length="38032" type="image/webp" />	</item>
+		<item>
+		<title><![CDATA[Plusieurs PC, une seule console : Norton cible les petites structures]]></title>
+		<link>https://www.zdnet.fr/publicite/plusieurs-pc-une-seule-console-norton-cible-les-petites-structures-500271.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/publicite/plusieurs-pc-une-seule-console-norton-cible-les-petites-structures-500271.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 13:00:06 +0000</pubDate>
+		<dc:creator><![CDATA[Equipe Service]]></dc:creator>
+						<category><![CDATA[Publicité]]></category>
+		<category><![CDATA[Antivirus]]></category>
+		<category><![CDATA[Cyberattaque]]></category>
+		<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Norton Antivirus]]></category>
+		<category><![CDATA[Phishing]]></category>
+		<category><![CDATA[Protection des données]]></category>
+		<category><![CDATA[Ransomware]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/publicite/plusieurs-pc-une-seule-console-norton-cible-les-petites-structures-500271.htm</guid>
+		<description><![CDATA[Norton AntiVirus Plus passe à 24,99 € la première année pour trois appareils. Une offre simple pour protéger PC, Mac, smartphone ou tablette contre les principales menaces.]]></description>								<wfw:commentRss>https://www.zdnet.fr/publicite/plusieurs-pc-une-seule-console-norton-cible-les-petites-structures-500271.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/138093-3.jpg" length="1080130" type="image/jpeg" />	</item>
+		<item>
+		<title><![CDATA[Les meilleures souris bureautiques pour les pros en 2026]]></title>
+		<link>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleures-souris-bureautiques-pour-les-pros-en-2026-500296.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleures-souris-bureautiques-pour-les-pros-en-2026-500296.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 12:54:44 +0000</pubDate>
+		<dc:creator><![CDATA[Guillaume Serries]]></dc:creator>
+						<category><![CDATA[Sélection expert ZDNET France]]></category>
+		<category><![CDATA[Accessoires]]></category>
+		<category><![CDATA[Logitech]]></category>
+		<category><![CDATA[Poste de travail]]></category>
+		<category><![CDATA[Souris]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleures-souris-bureautiques-pour-les-pros-en-2026-500296.htm</guid>
+		<description><![CDATA[L'évaluation d'une flotte de souris bureautiques professionnelles demande d'analyser la prévention des troubles musculo-squelettiques (TMS), la précision des capteurs, la flexibilité de la connectivité sans fil et les options d'intégration IT. Voici notre sélection des 5 meilleurs modèles pour les pros en 2026.]]></description>								<wfw:commentRss>https://www.zdnet.fr/selection-expert-zdnet-france/les-meilleures-souris-bureautiques-pour-les-pros-en-2026-500296.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/06/selection_expert_2026_zdnet_une.png" length="41899" type="image/png" />	</item>
+		<item>
+		<title><![CDATA[Apple se plie (enfin) aux exigences du DMA]]></title>
+		<link>https://www.zdnet.fr/actualites/apple-se-plie-enfin-aux-exigences-du-dma-500261.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/apple-se-plie-enfin-aux-exigences-du-dma-500261.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 09:34:56 +0000</pubDate>
+		<dc:creator><![CDATA[Xavier Biseul]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Gafam]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Application Mobile]]></category>
+		<category><![CDATA[DMA (Règlement sur les marchés numériques)]]></category>
+		<category><![CDATA[Europe]]></category>
+		<category><![CDATA[Réglementation]]></category>
+		<category><![CDATA[Union européenne]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/apple-se-plie-enfin-aux-exigences-du-dma-500261.htm</guid>
+		<description><![CDATA[Après plus de deux ans de bras de fer avec la Commission européenne, la firme à la pomme introduira, le 1er octobre, de nouvelles conditions tarifaires pour son App Store. Une commission de 5% sera appliquée pour les achats effectués hors de son magasin d’applications.]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/apple-se-plie-enfin-aux-exigences-du-dma-500261.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/apple-app-store-compliance-hero.jpg" length="898398" type="image/jpeg" />	</item>
+		<item>
+		<title><![CDATA[Groupe Barrière : des casinos, du luxe et 3 assistants IA]]></title>
+		<link>https://www.zdnet.fr/actualites/groupe-barriere-des-casinos-du-luxe-et-3-assistants-ia-500201.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/groupe-barriere-des-casinos-du-luxe-et-3-assistants-ia-500201.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 09:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[Christophe Auffray]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Transformation Numérique]]></category>
+		<category><![CDATA[IA Générative]]></category>
+		<category><![CDATA[Intelligence artificielle (IA)]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/groupe-barriere-des-casinos-du-luxe-et-3-assistants-ia-500201.htm</guid>
+		<description><![CDATA[Groupe familial de l'hôtellerie de luxe et des jeux, Barrière a déployé ses premiers usages de l’IA générative à destination de ses métiers avec Barrière GPT et un assistant pour call center. Le troisième outil cible l’aide aux clients.]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/groupe-barriere-des-casinos-du-luxe-et-3-assistants-ia-500201.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/getty-metamorworks-cloud2-scaled.jpg" length="335407" type="image/jpeg" />	</item>
+		<item>
+		<title><![CDATA[Meta lance son assistant IA sur Mac, avec un focus marketing et publicité]]></title>
+		<link>https://www.zdnet.fr/actualites/meta-lance-son-assistant-ia-sur-mac-avec-un-focus-marketing-et-publicite-500254.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown</link>
+		<comments>https://www.zdnet.fr/actualites/meta-lance-son-assistant-ia-sur-mac-avec-un-focus-marketing-et-publicite-500254.htm?utm_source=rss_feed&#038;utm_medium=link&#038;utm_campaign=unknown#respond</comments>
+		<pubDate>Thu, 20 Aug 2026 08:01:01 +0000</pubDate>
+		<dc:creator><![CDATA[Marc Zaffagni]]></dc:creator>
+						<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Instagram]]></category>
+		<category><![CDATA[Intelligence artificielle (IA)]]></category>
+		<category><![CDATA[MacOS]]></category>
+		<category><![CDATA[Meta]]></category>
+		<guid isPermaLink="true">https://www.zdnet.fr/actualites/meta-lance-son-assistant-ia-sur-mac-avec-un-focus-marketing-et-publicite-500254.htm</guid>
+		<description><![CDATA[L’arrivée sur desktop intervient alors que Meta AI reste en retrait face à ChatGPT et Claude, dont les applications Mac permettent déjà de contrôler directement l’ordinateur plutôt que de simplement en lire le contenu.]]></description>								<wfw:commentRss>https://www.zdnet.fr/actualites/meta-lance-son-assistant-ia-sur-mac-avec-un-focus-marketing-et-publicite-500254.htm/feed</wfw:commentRss>
+						<slash:comments>0</slash:comments>
+		<enclosure url="https://www.zdnet.fr/wp-content/uploads/zdnet/2025/06/meta.jpg" length="107332" type="image/jpeg" />	</item>
+	</channel>
+</rss>

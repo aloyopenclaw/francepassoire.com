@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+
+<channel>
+	<title>ZATAZ.COM</title>
+	<atom:link href="https://www.zataz.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.zataz.com</link>
+	<description>Depuis 1989, informer, c&#039;est déjà se sécuriser</description>
+	<lastBuildDate>Thu, 20 Aug 2026 13:25:48 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://www.zataz.com/wp-content/uploads/cropped-29-laptop-32x32.png</url>
+	<title>ZATAZ.COM</title>
+	<link>https://www.zataz.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Club One Casino revendiqué par 3AM puis PEAR</title>
+		<link>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/</link>
+					<comments>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2026 13:15:42 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[RGPD]]></category>
+		<category><![CDATA[3AM]]></category>
+		<category><![CDATA[casino]]></category>
+		<category><![CDATA[Club One Casino]]></category>
+		<category><![CDATA[CTI]]></category>
+		<category><![CDATA[cyber threat intelligence]]></category>
+		<category><![CDATA[extorsion]]></category>
+		<category><![CDATA[PEAR]]></category>
+		<category><![CDATA[renseignement cyber]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47434</guid>
+
+					<description><![CDATA[Hack Twins : Un nouveau casino apparaît chez deux groupes de pirates informatiques différents.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/Casino_twins_hack.jpg" />	</item>
+		<item>
+		<title>Fuite Stripe : au moins 200 Français concernés</title>
+		<link>https://www.zataz.com/fuite-stripe-au-moins-200-francais-concernes/</link>
+					<comments>https://www.zataz.com/fuite-stripe-au-moins-200-francais-concernes/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2026 12:04:18 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[fuite Stripe]]></category>
+		<category><![CDATA[paiement en ligne]]></category>
+		<category><![CDATA[renseignement cyber]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47428</guid>
+
+					<description><![CDATA[Fuite Stripe : ZATAZ confirme au moins 200 Français concernés et propose une vérification gratuite et humaine.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/fuite-stripe-au-moins-200-francais-concernes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/bouteille_fuite_stripe.jpg" />	</item>
+		<item>
+		<title>Stripe visé par une fuite revendiquée de 662 bases de données !</title>
+		<link>https://www.zataz.com/stripe-vise-par-une-fuite-revendiquee-de-662-bases-de-donnees/</link>
+					<comments>https://www.zataz.com/stripe-vise-par-une-fuite-revendiquee-de-662-bases-de-donnees/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Wed, 19 Aug 2026 07:20:08 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Monnaie virtuelle]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[cyber intelligence]]></category>
+		<category><![CDATA[cyberattaque]]></category>
+		<category><![CDATA[données clients]]></category>
+		<category><![CDATA[Satanic]]></category>
+		<category><![CDATA[Stripe leak]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47421</guid>
+
+					<description><![CDATA[Stripe est visé par une fuite revendiquée avec, selon le pirate, clés API et des données clients sensibles.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/stripe-vise-par-une-fuite-revendiquee-de-662-bases-de-donnees/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/stripe_satanic.jpg" />	</item>
+		<item>
+		<title>Éducation nationale : le ministère confirme le piratage</title>
+		<link>https://www.zataz.com/le-ministere-de-leducation-confirme-son-piratage/</link>
+					<comments>https://www.zataz.com/le-ministere-de-leducation-confirme-son-piratage/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2026 14:07:25 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[cyber actualité]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[Social Engineering (SE)]]></category>
+		<category><![CDATA[Créteil]]></category>
+		<category><![CDATA[cyberattaque]]></category>
+		<category><![CDATA[Éducation nationale]]></category>
+		<category><![CDATA[fuite de données]]></category>
+		<category><![CDATA[I-Prof]]></category>
+		<category><![CDATA[ingérence]]></category>
+		<category><![CDATA[Opération d’influence]]></category>
+		<category><![CDATA[stratégie de déstabilisation]]></category>
+		<category><![CDATA[Versailles]]></category>
+		<category><![CDATA[vpn]]></category>
+		<category><![CDATA[ZeroBytes]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47407</guid>
+
+					<description><![CDATA[Aprés le Ministére des Finances, le Ministére de l'Éducation confirme un piratage de son informatique. Maintenant à savoir si les informations diffusées par le pirate sont vraies.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/le-ministere-de-leducation-confirme-son-piratage/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/minedu_comm.jpg" />	</item>
+		<item>
+		<title>Intraverse : 16,9 millions d’entrées exposées</title>
+		<link>https://www.zataz.com/intraverse-169-millions-dentrees-exposees/</link>
+					<comments>https://www.zataz.com/intraverse-169-millions-dentrees-exposees/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2026 13:13:59 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Monnaie virtuelle]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[casino agréé]]></category>
+		<category><![CDATA[casino Web3]]></category>
+		<category><![CDATA[exfilar]]></category>
+		<category><![CDATA[renseignement cyber]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47404</guid>
+
+					<description><![CDATA[Un casino en ligne aurait exposé 16,9 millions d’entrées, révélant joueurs, bots, portefeuilles et infrastructure Web3.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/intraverse-169-millions-dentrees-exposees/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/Casino_leak.jpg" />	</item>
+		<item>
+		<title>Belgique : 148 251 profils exposés par un pirate</title>
+		<link>https://www.zataz.com/belgique-148-251-profils-exposes-par-un-pirate/</link>
+					<comments>https://www.zataz.com/belgique-148-251-profils-exposes-par-un-pirate/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2026 12:38:42 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[base marketing]]></category>
+		<category><![CDATA[belgique]]></category>
+		<category><![CDATA[iban]]></category>
+		<category><![CDATA[PII]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47399</guid>
+
+					<description><![CDATA[Une base belge piratée de 148 251 profils, avec IBAN et données personnelles, aurait été exposée selon un pirate sans authentification.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/belgique-148-251-profils-exposes-par-un-pirate/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/leak_be.jpg" />	</item>
+		<item>
+		<title>SpyGuard et MVT traquent les spywares mobiles</title>
+		<link>https://www.zataz.com/spyguard-et-mvt-traquent-les-spywares-mobiles/</link>
+					<comments>https://www.zataz.com/spyguard-et-mvt-traquent-les-spywares-mobiles/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2026 12:27:58 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[éducation cybersécurité]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47396</guid>
+
+					<description><![CDATA[SpyGuard et MVT aident à rechercher des traces de spyware sur smartphones grâce au réseau et à l’analyse forensique.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/spyguard-et-mvt-traquent-les-spywares-mobiles/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/analyse_telephone.jpg" />	</item>
+		<item>
+		<title>Fuite fiscale, pas de panique !</title>
+		<link>https://www.zataz.com/fuite-fiscale-pas-panique/</link>
+					<comments>https://www.zataz.com/fuite-fiscale-pas-panique/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2026 10:21:02 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[Social Engineering (SE)]]></category>
+		<category><![CDATA[DGFiP]]></category>
+		<category><![CDATA[fraude fiscale]]></category>
+		<category><![CDATA[impôts]]></category>
+		<category><![CDATA[phishing]]></category>
+		<category><![CDATA[piratage]]></category>
+		<category><![CDATA[renseignement]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47384</guid>
+
+					<description><![CDATA[Fuite DGFiP : pas de panique. Pourquoi vos réactions publiques peuvent aider les pirates à cibler leurs futures campagnes de phishing.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/fuite-fiscale-pas-panique/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/Pas_de_panique.jpg" />	</item>
+		<item>
+		<title>Éducation nationale : un pirate annonce une fuite qui exposerait des millions de données</title>
+		<link>https://www.zataz.com/education-nationale-un-pirate-annonce-une-fuite-qui-exposerait-des-millions-de-donnees/</link>
+					<comments>https://www.zataz.com/education-nationale-un-pirate-annonce-une-fuite-qui-exposerait-des-millions-de-donnees/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2026 21:41:05 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[Créteil]]></category>
+		<category><![CDATA[Cybersécurité]]></category>
+		<category><![CDATA[données scolaires]]></category>
+		<category><![CDATA[Éducation nationale]]></category>
+		<category><![CDATA[fuite de données]]></category>
+		<category><![CDATA[I-Prof]]></category>
+		<category><![CDATA[LDAP]]></category>
+		<category><![CDATA[SCONET]]></category>
+		<category><![CDATA[Versailles]]></category>
+		<category><![CDATA[ZeroBytes]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47362</guid>
+
+					<description><![CDATA[Un pirate informatique revendiqué une intrusion dans des systèmes de l’Éducation nationale : élèves et enseignants impactés ?]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/education-nationale-un-pirate-annonce-une-fuite-qui-exposerait-des-millions-de-donnees/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/Educ_nat_leak.jpg" />	</item>
+		<item>
+		<title>Cyberharcèlement : la Belgique prépare un bannissement numérique</title>
+		<link>https://www.zataz.com/cyberharcelement-la-belgique-prepare-un-bannissement-numerique/</link>
+					<comments>https://www.zataz.com/cyberharcelement-la-belgique-prepare-un-bannissement-numerique/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2026 11:54:50 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Justice]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47353</guid>
+
+					<description><![CDATA[La Belgique prépare un bannissement numérique contre le cyberharcèlement, avec identification judiciaire et contrôle des comptes.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/cyberharcelement-la-belgique-prepare-un-bannissement-numerique/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/cyberharcelement_belgique.jpg" />	</item>
+	</channel>
+</rss>

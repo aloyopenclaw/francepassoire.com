@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+
+<channel>
+	<title>ZATAZ.COM</title>
+	<atom:link href="https://www.zataz.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.zataz.com</link>
+	<description>Depuis 1989, informer, c&#039;est déjà se sécuriser</description>
+	<lastBuildDate>Thu, 20 Aug 2026 13:25:48 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://www.zataz.com/wp-content/uploads/cropped-29-laptop-32x32.png</url>
+	<title>ZATAZ.COM</title>
+	<link>https://www.zataz.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Club One Casino revendiqué par 3AM puis PEAR</title>
+		<link>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/</link>
+					<comments>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Bancal]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2026 13:15:42 +0000</pubDate>
+				<category><![CDATA[Actualités]]></category>
+		<category><![CDATA[Divers]]></category>
+		<category><![CDATA[Internet Clandestin (darknet)]]></category>
+		<category><![CDATA[Piratage]]></category>
+		<category><![CDATA[RGPD]]></category>
+		<category><![CDATA[3AM]]></category>
+		<category><![CDATA[casino]]></category>
+		<category><![CDATA[Club One Casino]]></category>
+		<category><![CDATA[CTI]]></category>
+		<category><![CDATA[cyber threat intelligence]]></category>
+		<category><![CDATA[extorsion]]></category>
+		<category><![CDATA[PEAR]]></category>
+		<category><![CDATA[renseignement cyber]]></category>
+		<guid isPermaLink="false">https://www.zataz.com/?p=47434</guid>
+
+					<description><![CDATA[Hack Twins : Un nouveau casino apparaît chez deux groupes de pirates informatiques différents.]]></description>
+		
+					<wfw:commentRss>https://www.zataz.com/club-one-casino-revendique-par-3am-puis-pear/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:thumbnail url="https://www.zataz.com/wp-content/uploads/Casino_twins_hack.jpg" />	</item>
+		<item>
+		<title>Fuite Stripe :
+<!-- fixture dérivée : XML tronqué, voir README -->
