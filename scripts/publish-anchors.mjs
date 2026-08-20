@@ -117,17 +117,27 @@ function enregistrerAncrages(cheminDoc, lignes) {
   if (iTable === -1) {
     throw new Error(`section « ## Ancrages publiés » introuvable dans ${cheminDoc}`);
   }
-  // Bornes du tableau : lignes '|' consécutives après le titre.
-  let fin = iTable + 1;
+  // Bornes du tableau : on saute le prose explicatif sous le titre (borné),
+  // puis on consomme les lignes '|' consécutives.
+  let debut = iTable + 1;
+  while (
+    debut < lignesFichier.length &&
+    !lignesFichier[debut].trim().startsWith('|') &&
+    !lignesFichier[debut].startsWith('#') &&
+    debut - iTable <= 20
+  ) {
+    debut++;
+  }
+  let fin = debut;
   while (fin < lignesFichier.length && lignesFichier[fin].trim().startsWith('|')) {
     fin++;
   }
-  if (fin === iTable + 1) {
+  if (fin === debut) {
     throw new Error(`tableau Markdown absent sous « ## Ancrages publiés » dans ${cheminDoc}`);
   }
   const existants = new Set(
     lignesFichier
-      .slice(iTable + 1, fin)
+      .slice(debut, fin)
       .map((l) => l.split('|')[1]?.trim())
       .filter((v) => v && !v.startsWith('-') && v !== 'ancrage'),
   );
