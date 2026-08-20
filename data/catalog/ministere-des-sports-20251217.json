@@ -1,0 +1,55 @@
+{
+  "slug": "ministere-des-sports-20251217",
+  "entity": "Ministère des Sports, de la Jeunesse et de la Vie associative (dispositif Pass'Sport)",
+  "siren": "130016587",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-17",
+    "publication": "2025-12-18",
+    "confirmation": "2025-12-19"
+  },
+  "volume": {
+    "count": 22445764,
+    "unit": "lignes",
+    "label": "22,4 millions de lignes de données publiées (15 Go) ; environ 3,5 millions de foyers bénéficiaires du Pass'Sport concernés selon le ministère des Sports"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "pass Sport (ministère des Sports) — Information sur l'incident de sécurité concernant le dispositif pass Sport",
+      "url": "https://www.pass.sports.gouv.fr/v2/une-question?articleId=1da8da3e-5b2d-4fc9-a565-28a46a196304",
+      "kind": "officiel"
+    },
+    {
+      "label": "RTL — Le piratage du ministère des Sports à l'origine de la fuite de données de la CAF, le Pass'Sport visé",
+      "url": "https://www.rtl.fr/actu/sciences-tech/3-5-millions-de-foyers-concernes-apres-le-ministere-de-l-interieur-le-ministere-des-sports-victime-d-une-exfiltration-massive-de-donnees-7900580833",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Cyberattaque : la fuite de données de la CAF venait du ministère des Sports",
+      "url": "https://www.leparisien.fr/faits-divers/cyberattaque-la-fuite-de-donnees-de-la-caf-venait-du-ministere-des-sports-et-dune-plate-forme-dediee-aux-associations-19-12-2025-XIK32T3LDBEJVM725SAU5PFITE.php",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Fuite de données CAF : Pass'Sport identifié, 3,5 millions de foyers exposés",
+      "url": "https://www.lesnumeriques.com/societe-numerique/exclusif-cyberattaque-massive-sur-la-caf-22-millions-de-victimes-dans-une-offensive-qui-frappe-l-etat-n248336.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 17 au 18 décembre 2025, le pirate « Indra » publie sur BreachForums 22,4 millions de lignes présentées comme issues de la CAF. La Caisse nationale d'allocations familiales dénie toute intrusion de ses systèmes. Les analyses d'experts, puis le ministère des Sports, rattachent la base au dispositif Pass'Sport, qui agrège des données CAF, MSA et Crous. Le ministère confirme le 19 décembre une exfiltration touchant 3,5 millions de foyers bénéficiaires depuis 2022. Les données comprennent identité, coordonnées et catégorie d'aide perçue. Une plainte sera déposée et la CNIL saisie ; les personnes concernées seront informées.",
+  "timeline": [
+    {
+      "date": "2025-12-17",
+      "event": "Le pirate « Indra » publie sur BreachForums un fichier de 22,4 millions de lignes présenté comme un « cadeau de Noël » issu de la CAF."
+    },
+    {
+      "date": "2025-12-18",
+      "event": "La Cnaf dénie toute intrusion ; les analyses d'experts pointent le dispositif Pass'Sport, qui croise les données CAF, MSA et Crous."
+    },
+    {
+      "date": "2025-12-19",
+      "event": "Le ministère des Sports confirme l'exfiltration depuis ses systèmes : 3,5 millions de foyers concernés, plainte à venir et saisine de la CNIL."
+    }
+  ]
+}

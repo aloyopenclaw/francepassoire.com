@@ -1,0 +1,55 @@
+{
+  "slug": "france-travail-20250722",
+  "entity": "France Travail",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-22",
+    "publication": "2025-07-23",
+    "confirmation": "2025-07-23"
+  },
+  "volume": {
+    "count": 340000,
+    "unit": "personnes",
+    "label": "340 000 demandeurs d'emploi concernés (chiffre annoncé par France Travail)"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BFM Tech&Co — France Travail : au moins 340 000 demandeurs d'emploi victimes d'un nouveau piratage",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/france-travail-au-moins-340-000-demandeurs-d-emploi-victimes-d-un-nouveau-piratage_AV-202507230252.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — France Travail de nouveau victime d'un piratage, les données de 340 000 demandeurs d'emploi compromises",
+      "url": "https://www.leparisien.fr/economie/france-travail-de-nouveau-victime-dun-piratage-les-donnees-de-340-000-demandeurs-demploi-compromises-23-07-2025-NRYEI7FQOZB4PMS4SXQ6GHEEUY.php",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Les données de 340 000 demandeurs d'emplois « consultées » : ce que l'on sait sur la cyberattaque contre France Travail",
+      "url": "https://www.tf1info.fr/societe/les-donnees-de-340-000-demandeurs-d-emplois-consultees-ce-que-l-on-sait-sur-la-cyberattaque-contre-france-travail-2384681.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — France Travail à nouveau piraté : les données de 340 000 demandeurs d'emploi compromises",
+      "url": "https://www.rtl.fr/actu/sciences-tech/france-travail-a-nouveau-pirate-les-donnees-de-340-000-demandeurs-d-emploi-compromises-7900525354",
+      "kind": "article"
+    }
+  ],
+  "description": "France Travail annonce le 23 juillet 2025 un acte de cybermalveillance détecté le 12 juillet grâce à une alerte de l'ANSSI. Le compte d'un organisme de formation de l'Isère, compromis par un infostealer, a ouvert l'accès à l'application Kairos, qui suit les formations des demandeurs d'emploi. Les données de 340 000 personnes ont été consultées : nom, prénom, date de naissance, identifiant France Travail, statut, adresses et téléphones. Mots de passe et coordonnées bancaires ne sont pas concernés selon l'organisme. Une plainte est déposée, la CNIL est saisie et le double authentification est accéléré.",
+  "timeline": [
+    {
+      "date": "2025-07-12",
+      "event": "Alerté par l'ANSSI, France Travail détecte un accès non autorisé via un compte d'organisme de formation compromis par un infostealer et ferme le portail."
+    },
+    {
+      "date": "2025-07-22",
+      "event": "Les personnes concernées commencent à être informées par courrier de la consultation de leurs données."
+    },
+    {
+      "date": "2025-07-23",
+      "event": "France Travail rend l'incident public : 340 000 demandeurs d'emploi concernés, plainte déposée et notification CNIL."
+    }
+  ]
+}

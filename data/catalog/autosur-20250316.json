@@ -1,0 +1,60 @@
+{
+  "slug": "autosur-20250316",
+  "entity": "Autosur",
+  "siren": "800628646",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-16",
+    "publication": "2025-03-23",
+    "confirmation": "2025-03-28"
+  },
+  "volume": {
+    "count": 4000000,
+    "unit": "personnes",
+    "label": "environ 4 millions de clients selon Autosur ; 10,7 à 12,3 millions de lignes revendiquées par le pirate et mises en vente entre 5 000 et 7 500 dollars"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Zataz — Fuite massive de données chez AUTOSUR : plus de 12 millions de dossiers exposés",
+      "url": "https://www.zataz.com/fuite-massive-de-donnees-chez-autosur-plus-de-12-millions-de-dossiers-exposes/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Numerama — Cyberattaque chez Autosur : quelles informations clients ont été exposées ?",
+      "url": "https://www.numerama.com/cyberguerre/1936795-cyberattaque-chez-autosur-quelles-informations-clients-ont-ete-exposees.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech&Co — Cyberattaque : Autosur confirme le vol de 4 millions de données clients",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-autosur-confirme-le-vol-de-4-millions-de-donnees-clients_AN-202503280307.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Autosur victime d'une fuite de données de grande ampleur, 4 millions de clients concernés",
+      "url": "https://www.leparisien.fr/high-tech/autosur-victime-dune-fuite-de-donnees-de-grande-ampleur-4-millions-de-clients-concernes-29-03-2025-23JBUHBKN5DCXMNKFQC3VELFUA.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Fuite de données chez Autosur : quels risques pour les 4 millions de clients potentiellement piratés",
+      "url": "https://www.rtl.fr/actu/sciences-tech/fuite-de-donnees-chez-autosur-quels-risques-pour-les-4-millions-de-clients-potentiellement-pirates-7900488569",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis le 16 mars 2025, un cybercriminel met en vente sur un forum une base présentée comme issue d'Autosur, réseau de contrôle technique automobile. Le blog Zataz relaie le 23 mars cette revendication : 10,7 à 12,3 millions de lignes contenant identité, coordonnées et plaques d'immatriculation. Fin mars, Autosur confirme un incident de sécurité ayant touché une base de données de contact. L'entreprise évalue à environ 4 millions les clients concernés, avec nom, prénom, adresses e-mail et postale, téléphone et plaque. Mots de passe et données bancaires ne sont pas concernés selon l'entreprise ; la CNIL est saisie et une plainte déposée.",
+  "timeline": [
+    {
+      "date": "2025-03-16",
+      "event": "Des données présentées comme issues d'Autosur sont mises en vente sur un forum criminel, avec un échantillon public."
+    },
+    {
+      "date": "2025-03-23",
+      "event": "Zataz documente la mise en vente : plus de 12 millions de lignes revendiquées, incluant identités, coordonnées et plaques d'immatriculation."
+    },
+    {
+      "date": "2025-03-28",
+      "event": "Autosur confirme l'incident et évalue à environ 4 millions le nombre de clients concernés ; la CNIL a été notifiée et une plainte déposée."
+    }
+  ]
+}

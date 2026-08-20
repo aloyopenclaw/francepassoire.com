@@ -3,12 +3,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout
   title="Confidentialité - France Passoire"
-  description="Politique de confidentialité de FrancePassoire : aucune donnée personnelle collectée, k-anonymité pour le vérificateur, polices Google Fonts et liens externes."
+  description="Politique de confidentialité de FrancePassoire : aucune donnée personnelle collectée, mesure d'audience sans cookie, k-anonymité pour le vérificateur, polices auto-hébergées et fiches limitées aux métadonnées publiques."
 >
   <section class="bg-brand-cream border-b-2 border-brand-ink py-12">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl">Confidentialité</h1>
-      <p class="font-mono text-sm mt-3 text-brand-ink/70">Dernière mise à jour : 20 août 2026</p>
+      <p class="font-mono text-sm mt-3 text-brand-ink/70">Dernière mise à jour : 21 août 2026</p>
     </div>
   </section>
 
@@ -18,11 +18,23 @@ import Layout from '../layouts/Layout.astro';
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Ce que nous ne collectons pas</h2>
         <p class="font-body leading-relaxed">
-          À ce stade, FrancePassoire ne collecte <strong>aucune donnée
-          personnelle</strong>. Le site ne dépose aucun cookie, n'embarque aucun
-          traceur publicitaire ni système de mesure d'audience, et aucun formulaire
-          n'est actif. Nous n'avons rien à vous demander — donc rien à vous faire
-          accepter.
+          FrancePassoire ne collecte <strong>aucune donnée personnelle</strong>. Le site
+          ne dépose aucun cookie, n'embarque aucun traceur publicitaire, et aucun
+          formulaire n'envoie de données à des tiers. La seule mesure d'audience est
+          <strong>sans cookie</strong> — détail ci-dessous. Nous n'avons rien à vous
+          demander — donc rien à vous faire accepter.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Mesure d'audience sans cookie</h2>
+        <p class="font-body leading-relaxed">
+          L'audience du site est mesurée par <strong>Cloudflare Web Analytics</strong>,
+          un dispositif <strong>sans cookie</strong> ni identifiant persistant : aucune
+          donnée n'est stockée sur votre appareil, aucune personne n'est identifiée ni
+          reconnue d'une visite à l'autre, et les statistiques ne sont consultées
+          qu'agrégées. Ce dispositif ne relève pas de l'obligation de consentement
+          préalable (aucun traceur déposé) — il n'y a donc aucun bandeau à afficher.
         </p>
       </div>
 
@@ -42,21 +54,39 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
+        <h2 class="font-display font-extrabold text-2xl mb-3">Les fiches : des métadonnées publiques, jamais de données volées</h2>
+        <p class="font-body leading-relaxed mb-3">
+          Les fiches et le jeu de données ouvert
+          (<a href="/dataset/catalogue.json" class="underline font-bold hover:text-brand-orange">/dataset/catalogue.json</a>)
+          ne contiennent que des <strong>métadonnées publiques</strong> : entité,
+          date, volumes annoncés, statut de vérification, sources. Aucune donnée
+          personnelle de victimes n'y figure, et le site ne consulte, n'héberge ni ne
+          reproduit jamais de données volées — c'est une règle absolue du projet
+          (articles 323-1 et 323-3 du code pénal).
+        </p>
+        <p class="font-body leading-relaxed">
+          Toute opération sur une fiche est inscrite dans le registre public chaîné
+          <a href="/registre.jsonl" class="underline font-bold hover:text-brand-orange">/registre.jsonl</a> —
+          voir <a href="/mentions-legales/" class="underline font-bold hover:text-brand-orange">Mentions légales</a>.
+        </p>
+      </div>
+
+      <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Polices du site</h2>
         <p class="font-body leading-relaxed">
           Les polices du site (Bricolage Grotesque, Instrument Sans, Spline Sans Mono)
-          sont chargées depuis <strong>Google Fonts</strong>. Cette requête part vers
-          un service tiers, qui peut être amené à connaître votre adresse IP à cette
-          occasion ; les textes s'affichent dans la police de substitution en attendant
-          le chargement (mode <span class="font-mono text-sm">display=swap</span>).
+          sont <strong>auto-hébergées</strong> et servies depuis le site lui-même
+          (licence SIL OFL 1.1). Aucune requête de police ne part vers un service
+          tiers : aucun service extérieur ne voit votre adresse IP à cette occasion.
         </p>
       </div>
 
       <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm">
         <h2 class="font-display font-extrabold text-2xl mb-3">Liens externes</h2>
         <p class="font-body leading-relaxed">
-          Quelques liens sortent du site — notamment vers HaveIBeenPwned et Google
-          (page <a href="/proteger/" class="underline font-bold hover:text-brand-orange">Se protéger</a>).
+          Quelques liens sortent du site — notamment vers HaveIBeenPwned (page
+          <a href="/proteger/" class="underline font-bold hover:text-brand-orange">Se protéger</a>)
+          et cloudflare.com (<a href="/mentions-legales/" class="underline font-bold hover:text-brand-orange">Mentions légales</a>).
           Une fois sur ces sites, vous êtes soumis aux politiques de confidentialité
           de leurs éditeurs respectifs, que nous vous invitons à consulter.
         </p>

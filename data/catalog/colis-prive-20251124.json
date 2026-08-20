@@ -1,0 +1,46 @@
+{
+  "slug": "colis-prive-20251124",
+  "entity": "Colis Privé",
+  "siren": "391029345",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-24",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-24"
+  },
+  "volume": {
+    "count": 15000000,
+    "unit": "enregistrements",
+    "label": "15 millions de données personnelles revendiquées par le groupe dumpsec ; volume non communiqué par Colis Privé"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "UniversFreebox — Colis Privé victime d'une grosse cyberattaque : des millions de données clients dérobées et revendiquées",
+      "url": "https://www.universfreebox.com/article/588713/colis-prive-victime-dune-grosse-cyberattaque-des-millions-de-donnees-clients-derobees-et-revendiquees-par-des-pirates",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Colis Privé piraté : une nouvelle fuite de données frappe des milliers de Français",
+      "url": "https://www.lesnumeriques.com/societe-numerique/colis-prive-pirate-une-nouvelle-fuite-de-donnees-frappe-des-milliers-de-francais-n246507.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Les données volées à Colis Privé sont sur le dark web : plusieurs millions de Français sont touchés",
+      "url": "https://www.01net.com/actualites/donnees-volees-colis-prive-sont-dark-web-plusieurs-millions-francais-sont-touches.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 22 au 23 novembre 2025, Colis Privé, transporteur distribuant environ 90 millions de colis par an, avertit ses clients d'un accès non autorisé et limité sur une partie de ses systèmes. Ses investigations confirment que des coordonnées ont été dérobées : nom, prénom, adresse postale, e-mail et téléphone. L'entreprise exclut données bancaires, mots de passe et informations sensibles. Le groupe criminel français dumpsec revendique l'attaque via le chercheur Clément Domingo et affirme détenir 15 millions de données. En janvier 2026, 01net rapporte la publication d'environ 22 millions d'enregistrements en accès libre.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "Colis Privé confirme par courriel un accès non autorisé et le vol de coordonnées clients ; le groupe dumpsec revendique le même jour détenir 15 millions de données."
+    },
+    {
+      "date": "2026-01-12",
+      "event": "01net rapporte la mise en accès libre sur BreachForums d'un répertoire d'environ 22 millions d'enregistrements attribués à Colis Privé."
+    }
+  ]
+}

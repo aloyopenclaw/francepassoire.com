@@ -1,0 +1,49 @@
+{
+  "slug": "harvest-20250228",
+  "entity": "Harvest",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-28",
+    "publication": "2025-03-19",
+    "confirmation": "2025-03-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume global non communiqué ; des clients de MAIF Solutions Financières et du groupe BPCE sont concernés, sans chiffrage publié"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "L'Agefi — Harvest : la Maif alerte ses clients sur la fuite de leurs données",
+      "url": "https://www.agefi.fr/patrimoine/les-metiers/harvest-la-maif-alerte-ses-clients-sur-la-fuite-de-donnees",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Fuite de données, paralysie du secteur financier : ce qu'il faut savoir sur la cyberattaque contre Harvest",
+      "url": "https://www.lefigaro.fr/societes/fuite-de-donnees-paralysie-du-secteur-financier-ce-qu-il-faut-savoir-sur-la-cyberattaque-contre-harvest-20250324",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Fuite de données pour les clients MAIF et Banque Populaire-Caisse d'Épargne",
+      "url": "https://www.leparisien.fr/economie/votre-argent/fuite-de-donnees-pour-les-clients-maif-et-banque-populaire-caisse-depargne-que-faire-si-vous-etes-concerne-22-03-2025-J56UD4GFSNELRANHK5ICRQ66I4.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Harvest, éditeur français de logiciels de gestion de patrimoine utilisés par une large part des conseillers, subit un rançongiciel le 27 février 2025 chez un hébergeur. Le 17 mars, il prévient ses clients de la compromission de fichiers internes et de comptes de messagerie. Ses clients institutionnels tirent ensuite l'alarme : MAIF Solutions Financières signale un accès non autorisé à des données d'état civil, situation matrimoniale, professionnelle, revenus et patrimoine. BPCE indique que identité, encours et numéros de compte-titres ont pu être consultés. Mots de passe et RIB sont épargnés selon les deux groupes ; plaintes et notifications CNIL ont été déposées.",
+  "timeline": [
+    {
+      "date": "2025-02-27",
+      "event": "Harvest est victime d'un rançongiciel dont l'origine se trouve chez un de ses prestataires d'hébergement ; les logiciels sont coupés par précaution."
+    },
+    {
+      "date": "2025-03-17",
+      "event": "Harvest informe ses clients de la compromission de fichiers internes et de messageries, susceptible d'affecter certaines données de leurs propres clients."
+    },
+    {
+      "date": "2025-03-20",
+      "event": "MAIF Solutions Financières avertit ses clients d'un accès non autorisé à leurs données ; BPCE confirme peu après des consultations similaires, sans chiffrer le nombre de personnes."
+    }
+  ]
+}

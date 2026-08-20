@@ -1,0 +1,5 @@
+# FrancePassoire — redirections Cloudflare Pages (T42).
+# Les URLs /fuite/<slug>/ ont été publiées (flux RSS, réseaux sociaux) avant que
+# la route servie ne soit /fiche/<slug>/ : rapatriement permanent.
+# La correspondance est biunivoque (même slug), aucune autre page sous /fuite/.
+/fuite/:slug/ /fiche/:slug/ 301

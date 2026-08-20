@@ -1,0 +1,60 @@
+{
+  "slug": "alain-afflelou-20250415",
+  "entity": "Alain Afflelou (groupe)",
+  "siren": "304577794",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-15",
+    "publication": "2025-04-16",
+    "confirmation": "2025-04-16"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "enregistrements",
+    "label": "1,5 million de lignes mises en vente sur un forum criminel en septembre 2025 ; volume non confirmé par Alain Afflelou"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BFM Tech&Co — L'enseigne d'opticiens Alain Afflelou victime d'une cyberattaque",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/l-enseigne-d-opticiens-alain-afflelou-victime-d-une-cyberattaque_AV-202504160579.html",
+      "kind": "article"
+    },
+    {
+      "label": "Next — Fuite de données personnelles chez Alain Afflelou",
+      "url": "https://next.ink/brief-article/fuite-de-donnees-personnelles-chez-alain-afflelou/",
+      "kind": "article"
+    },
+    {
+      "label": "KultureGeek — Piratage chez Alain Afflelou avec le vol de données clients",
+      "url": "https://kulturegeek.fr/news-330028/piratage-chez-alain-afflelou-vol-donnees-clients",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Deux millions de Français piratés ? Une montagne de données personnelles et médicales diffusées",
+      "url": "https://www.01net.com/actualites/2-millions-francais-pirates-montagne-donnees-personnelles-medicales-diffusees-forum-criminel.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération-NT — Fuite massive : les informations médicales et personnelles de 2 millions de Français en vente",
+      "url": "https://www.generation-nt.com/actualites/donnees-fuite-piratage-dark-web-securite-france-2061860",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-avril 2025, Alain Afflelou prévient ses clients et prospects qu'une faille chez un prestataire a permis un accès non autorisé à son outil de gestion de relation client. L'enseigne confirme l'exfiltration d'état civil, coordonnées et données commerciales : achats, devis, mutuelle, rendez-vous, statut parental. Elle exclut données bancaires, numéros de Sécurité sociale, mots de passe et corrections visuelles. Le nombre de personnes n'est pas précisé. Début septembre, un pirate met en vente 1,5 million de lignes attribuées à l'enseigne. Selon 01net, l'échantillon contient numéros de Sécurité sociale et données de remboursement, ce que l'enseigne réfutait.",
+  "timeline": [
+    {
+      "date": "2025-04-15",
+      "event": "Alain Afflelou annonce par courriel une faille chez un prestataire ayant conduit à l'exfiltration de données clients et prospects."
+    },
+    {
+      "date": "2025-04-16",
+      "event": "L'enseigne détaille les données concernées (état civil, coordonnées, informations commerciales) et exclut données bancaires et numéros de Sécurité sociale."
+    },
+    {
+      "date": "2025-09-02",
+      "event": "01net documente la mise en vente de 1,5 million de lignes attribuées à Alain Afflelou, dont l'échantillon contient selon le média des données médicales et d'assurance."
+    }
+  ]
+}

@@ -71,9 +71,11 @@ export function buildCatalogue(
   };
 }
 
-/** URL canonique d'une fiche (contrat d'URL de slugs.ts : /fuite/<slug>/). */
+/** URL publique d'une fiche — route servie : /fiche/<slug>/ (sitemap + canoniques).
+ *  NB : l'identifiant interne ficheSlug (slugs.ts) garde son préfixe /fuite/ ;
+ *  les URLs publiées historiques /fuite/… sont rapatriées par _redirects. */
 export function ficheUrl(fiche: FicheLike): string {
-  return `${SITE_URL}/fuite/${fiche.slug}/`;
+  return `${SITE_URL}/fiche/${fiche.slug}/`;
 }
 
 function escapeXml(text: string): string {

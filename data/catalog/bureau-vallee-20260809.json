@@ -1,0 +1,51 @@
+{
+  "slug": "bureau-vallee-20260809",
+  "entity": "Bureau Vallée",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-09",
+    "publication": "2026-08-10"
+  },
+  "volume": {
+    "count": 55949,
+    "unit": "enregistrements",
+    "label": "55 949 fiches clients diffusées gratuitement (21 921 personnes selon leur auteur) ; la direction générale évoque environ 22 000 clients concernés, enquête en cours"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage revendiqué de Bureau Vallée : près de 56 000 enregistrements clients publiés sur un forum cybercriminel",
+      "url": "https://frenchbreaches.com/alertes/bureau-vall-e-msm7y0p26cnf5r2ewtu",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Bureau Vallée : 55 949 fiches clients en fuite après une cyberattaque avortée",
+      "url": "https://www.cyberattaque.org/bureau-vallee-55-949-fiches-clients-en-fuite-apres-une-cyberattaque-avortee/",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV (Good Morning Business) — Bureau Vallée : une fuite de données en pleine rentrée (entretien du directeur général)",
+      "url": "https://www.bfmtv.com/economie/replay-emissions/good-morning-business/video-bureau-vallee-une-fuite-de-donnees-en-pleine-rentree_VN-202608180141.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 août 2026, ZeroBytes diffuse gratuitement un fichier de 55 949 fiches clients de Bureau Vallée, qu'il dit avoir extraites le 7 juillet via une API du site avant d'en perdre l'accès. Y figurent identité, e-mails, adresses de facturation et de livraison et, pour les comptes professionnels, raison sociale et SIREN ; aucun IBAN renseigné n'apparaît dans les échantillons analysés. Le 18 août, le directeur général de l'enseigne reconnaît sur BFMTV un vol de données concernant les noms, prénoms, e-mails et téléphones d'environ 22 000 clients, précisant que l'enquête se poursuit. Le lien entre les deux périmètres n'est pas précisé publiquement.",
+  "timeline": [
+    {
+      "date": "2026-07-07",
+      "event": "Date d'extraction revendiquée par l'auteur de la fuite, qui affirme avoir interrogé une API du site de l'enseigne avant d'en perdre l'accès."
+    },
+    {
+      "date": "2026-08-09",
+      "event": "ZeroBytes publie gratuitement sur un forum un fichier de 55 949 fiches clients attribuées à Bureau Vallée, avec des échantillons."
+    },
+    {
+      "date": "2026-08-18",
+      "event": "Le directeur général de Bureau Vallée indique sur BFMTV avoir été alerté d'un vol de données concernant environ 22 000 clients ; l'enquête se poursuit."
+    }
+  ]
+}

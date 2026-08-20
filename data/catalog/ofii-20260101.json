@@ -1,0 +1,57 @@
+{
+  "slug": "ofii-20260101",
+  "entity": "Office français de l'immigration et de l'intégration (OFII)",
+  "siren": "180034027",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-01-01",
+    "publication": "2026-01-05"
+  },
+  "volume": {
+    "count": 2100000,
+    "unit": "lignes",
+    "label": "2,1 millions de lignes revendiquées (identité, coordonnées, numéros de dossier et motif de séjour) ; l'OFII confirme un vol de données via un opérateur sous-traitant sans en préciser le volume"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "RTL (AFP) — L'Office français de l'immigration et de l'intégration visé par une cyberattaque : les données de ressortissants étrangers volées",
+      "url": "https://www.rtl.fr/actu/sciences-tech/l-office-francais-de-l-immigration-et-de-l-integration-vise-par-une-cyberattaque-les-donnees-de-ressortissants-etrangers-volees-7900585079",
+      "kind": "article"
+    },
+    {
+      "label": "La Croix (AFP) — Office de l'immigration : enquête ouverte après la diffusion de données confidentielles",
+      "url": "https://www.la-croix.com/societe/office-de-l-immigration-enquete-ouverte-apres-la-diffusion-de-donnees-confidentielles-20260108",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une cyberattaque a frappé l'Office français de l'immigration et de l'intégration, des millions de données volées",
+      "url": "https://www.01net.com/actualites/cyberattaque-frappe-office-francais-immigration-integration.html",
+      "kind": "article"
+    },
+    {
+      "label": "Generation-NT — L'Office français de l'immigration confirme une fuite de données massive via un de ses sous-traitants",
+      "url": "https://www.generation-nt.com/actualites/fuite-donnees-ofii-cyberattaque-prestataire-etrangers-2068546",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er janvier 2026, un pirate met en vente sur un forum une base présentée comme issue de l'OFII : identité, coordonnées, numéro de dossier et motif de séjour de ressortissants étrangers, données récentes selon les échantillons diffusés. Le 5 janvier, l'établissement reconnaît à l'AFP un vol de données commis via un opérateur chargé des cours de langue du contrat d'intégration républicaine ; il annonce une plainte et des sanctions contre l'opérateur. Le volume revendiqué de 2,1 millions de lignes n'est pas confirmé. Le parquet de Paris ouvre une enquête le 8 janvier et la confie à l'Office anti-cybercriminalité.",
+  "timeline": [
+    {
+      "date": "2026-01-01",
+      "event": "Un acteur met en vente sur un forum une base de 2,1 millions de lignes présentée comme issue de l'OFII, avec des échantillons concernant environ un millier de personnes de plusieurs nationalités."
+    },
+    {
+      "date": "2026-01-05",
+      "event": "L'OFII indique à l'AFP qu'une intrusion via un opérateur sous-traitant des cours de langue a permis le vol de données ; plainte et sanctions contre l'opérateur sont annoncées."
+    },
+    {
+      "date": "2026-01-08",
+      "event": "Le parquet de Paris ouvre une enquête après la revendication de mise en vente des données et la confie à l'Office anti-cybercriminalité."
+    }
+  ]
+}
