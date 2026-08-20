@@ -1,0 +1,41 @@
+// workers/api/wrangler.jsonc — worker API public (T33) : POST /api/report
+// (signalement → candidats D1) et GET /api/health. Séparé du worker
+// d'ingestion (workers/ingest) : cycle de déploiement et exposition
+// publique vs cron privé. database_id n'est pas un secret (identifiant).
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "francepassoire-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+
+  // Staging D1 partagé (mêmes migrations que la racine).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "francepassoire",
+      "database_id": "613f348d-fb59-478c-8f53-84a8679f1ed9",
+      "migrations_dir": "../../migrations"
+    }
+  ],
+
+  // Rate limit 5/IP/h du POST /api/report (clé rl:report:<ip>, TTL 3600 s).
+  // Id placeholder : `npx wrangler kv namespace create RATE_LIMIT --config
+  // workers/api/wrangler.jsonc` attribuera l'id réel au câblage runtime (T47)
+  // — on ne crée PAS le namespace maintenant.
+  "kv_namespaces": [
+    {
+      "binding": "RATE_LIMIT",
+      "id": "0000000000000000000000000000000"
+    }
+  ]
+
+  // SECRET (PAS une var — jamais de valeur en clair ici), vérification
+  // serveur de Turnstile :
+  //   TURNSTILE_SECRET — secret du widget « francepassoire-signaler »
+  //   (créé via API T33, sitekey publique 0x4AAAAAAEW8bsx9lHrEOZ1I ;
+  //   secret quarantiné hors dépôt dans ~/.config/francepassoire/).
+  // Création au câblage runtime (T47) :
+  //   npx wrangler secret put TURNSTILE_SECRET --config workers/api/wrangler.jsonc
+  // Sans ce secret, /api/report répond 503 « protection anti-abus non
+  // configurée » (fail closed honnête — cf. src/index.ts).
+}
