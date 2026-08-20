@@ -1,0 +1,20 @@
+# wrangler.toml — FrancePassoire, périmètre D1 uniquement (tâche 7, Wave 1).
+#
+# Décision d'architecture #1 : le catalogue publié vit dans le dépôt
+# (JSON versionnés dans data/catalog/) ; D1 n'est QU'une base de staging
+# pour le pipeline d'ingestion (candidats, événements, registre d'intégrité
+# de staging, abonnés, outbox sociale). Aucune fiche publiée ne sera jamais
+# servie depuis D1.
+#
+# Le worker d'ingestion (T13) étendra ou possédera sa propre configuration ;
+# ce fichier reste volontairement minimal et centré D1.
+# database_id n'est pas un secret (identifiant, pas un jeton).
+
+name = "francepassoire-ingest"
+compatibility_date = "2026-08-20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "francepassoire"
+database_id = "613f348d-fb59-478c-8f53-84a8679f1ed9"
+migrations_dir = "migrations"
