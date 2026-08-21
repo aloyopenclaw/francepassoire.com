@@ -30,7 +30,14 @@ const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).to
 
 // T48 : la date d'attribution désambiguïse les récidivistes (Chronopost,
 // France Travail…) — sinon deux fiches d'une même entité partagent <title>.
-const titreDocument = `${fiche.entity} : la fiche du ${formaterDate(dateAttribution(fiche))} - France Passoire`;
+// Quand l'attribution (publication) tombe le même jour pour deux incidents
+// distincts d'une même entité (sanctions CNIL rapprochées), on rabat sur la
+// date de revendication, qui elle diffère toujours.
+const dateTitre =
+  fiche.dates.publication && fiche.dates.revendication && fiche.dates.publication !== fiche.dates.revendication
+    ? fiche.dates.revendication
+    : dateAttribution(fiche);
+const titreDocument = `${fiche.entity} : la fiche du ${formaterDate(dateTitre)} - France Passoire`;
 
 const articleJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
