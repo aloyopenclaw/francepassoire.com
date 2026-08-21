@@ -1,0 +1,42 @@
+{
+  "slug": "gie-centres-commerciaux-20251113",
+  "entity": "Un groupement d'intérêt économique animant des centres commerciaux (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-13",
+    "confirmation": "2025-11-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 20 000 euros (procédure simplifiée) ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : GIE organisant des centres commerciaux, vidéoprotection (13 novembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 novembre 2025, la CNIL a infligé une amende administrative de 20 000 euros à un groupement d'intérêt économique exerçant une activité d'organisation, de développement et de promotion de centres commerciaux, dans le cadre de la procédure simplifiée. Manquements retenus : licéité des dispositifs de vidéoprotection, minimisation des données de vidéosurveillance, information des personnes, encadrement de la sous-traitance, registre des activités de traitement, sécurité des données et absence d'analyse d'impact. Le nom de l'organisme n'est pas publié : les sanctions simplifiées ne sont jamais rendues publiques. La décision figure dans le tableau officiel et dans le bilan 2025 de la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-11-13",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : vidéoprotection, minimisation, information, sous-traitance et sécurité."
+    }
+  ]
+}

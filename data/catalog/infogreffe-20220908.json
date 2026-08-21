@@ -1,0 +1,50 @@
+{
+  "slug": "infogreffe-20220908",
+  "entity": "GIE Infogreffe (groupement d'intérêt économique des greffes des tribunaux de commerce de France)",
+  "siren": "338885718",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-08",
+    "publication": "2022-09-13",
+    "confirmation": "2022-09-08"
+  },
+  "volume": {
+    "count": 3700000,
+    "unit": "comptes",
+    "label": "plus de 3,7 millions de comptes concernés par les manquements (durée de conservation, sécurité des mots de passe) ; amende de 250 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « groupement d'intérêt économique des greffes des tribunaux de commerce de France », amende de 250 000 euros (8 septembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien (AFP) — La CNIL inflige une amende de 250 000 euros au site Infogreffe (13 septembre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/la-cnil-inflige-une-amende-de-250000-euros-au-site-infogreffe-13-09-2022-LMXSL3P62NB4FIRP4SM4SVIVBE.php",
+      "kind": "article"
+    },
+    {
+      "label": "Legalplanet — CNIL, 8 septembre 2022, SAN-2022-018 (texte de la délibération relayé)",
+      "url": "https://legalplanet.pro/cnil-8-septembre-2022-san-2022-018/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 septembre 2022, la CNIL a prononcé une amende de 250 000 euros à l'encontre du GIE Infogreffe, groupement des greffiers des tribunaux de commerce éditant le site infogreffe.fr (délibération SAN-2022-018, rendue publique le 13 septembre 2022). À l'origine, la plainte d'un utilisateur visant l'accès à son mot de passe. La CNIL relève une conservation de données d'identité, de coordonnées et bancaires au-delà des 36 mois annoncés pour les comptes inactifs — un quart des utilisateurs — ainsi que des mots de passe plafonnés à huit caractères pour 3,7 millions de comptes. Le groupement a depuis lancé une purge des comptes inactifs. Un recours devant le Conseil d'État restait possible.",
+  "timeline": [
+    {
+      "date": "2022-09-08",
+      "event": "Amende de 250 000 euros (SAN-2022-018) : conservation excessive et sécurité insuffisante des mots de passe de 3,7 millions de comptes."
+    },
+    {
+      "date": "2022-09-13",
+      "event": "Publication de la délibération ; le groupement annonce la purge des comptes inactifs au-delà de 36 mois."
+    }
+  ]
+}
