@@ -1,0 +1,37 @@
+{
+  "slug": "societe-offrant-des-prestations-de-securite-privee-20250515",
+  "entity": "Société offrant des prestations de sécurité privée (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "confirmation": "2025-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; liquidation d'astreinte de 4 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société offrant des prestations de sécurité privée (procédure simplifiée) », liquidation d'astreinte de 4 000 euros (15 mai 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 mai 2025, la CNIL a prononcé la liquidation d'une astreinte de 4 000 euros à l'encontre d'une société offrant des prestations de sécurité privée, dans le cadre de la procédure simplifiée. La liquidation sanctionne la non-conformité de la société à une injonction précédemment notifiée : les mesures demandées n'ont pas été mises en œuvre à l'échéance fixée. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "event": "Liquidation d'astreinte de 4 000 euros en procédure simplifiée : non-conformité à une injonction antérieure de la CNIL."
+    }
+  ]
+}
