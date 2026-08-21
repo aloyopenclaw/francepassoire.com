@@ -1,0 +1,34 @@
+{
+  "slug": "mcdonalds-mchire-20250710",
+  "entity": "McDonald’s (plateforme de recrutement McHire)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-10",
+    "publication": "2025-07-10"
+  },
+  "volume": {
+    "count": 64000000,
+    "unit": "personnes",
+    "label": "données de contact et CV de 64 millions de candidats exposées via un compte de test au mot de passe « 123456 » (découverte de chercheurs relayée par Wired)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — L’IA de recrutement de McDonald’s utilisait 123456 comme mot de passe : les données personnelles de millions de candidats ont été exposées",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/l-ia-de-recrutement-de-mc-donald-s-utilisait-123456-comme-mot-de-passe-les-donnees-personnelles-de-millions-de-candidats-ont-ete-exposees_AV-202507100290.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Des chercheurs en sécurité, Ian Carroll et Sam Curry, révèlent dans une enquête relayée par Wired que la plateforme d’IA de recrutement McHire, utilisée par McDonald’s pour trier les candidatures, était protégée par un mot de passe administrateur trivial : « 123456 ». En trente minutes, via un compte de test, ils ont obtenu un large accès permettant de récupérer les données de 64 millions de candidats — adresses mail, noms complets et numéros de téléphone. Le chatbot « Olivia » collecte ces informations de contact ainsi que le CV avant un test de personnalité. Le nombre de candidats français éventuellement concernés n’est pas établi.",
+  "timeline": [
+    {
+      "date": "2025-07-10",
+      "event": "Wired relaie la découverte de chercheurs : le compte administrateur de McHire (IA de recrutement de McDonald’s) utilisait le mot de passe « 123456 », exposant les données de 64 millions de candidats."
+    }
+  ]
+}

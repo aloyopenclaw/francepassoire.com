@@ -1,0 +1,47 @@
+{
+  "slug": "discord-20251003",
+  "entity": "Discord",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-03",
+    "publication": "2025-10-09"
+  },
+  "volume": {
+    "count": 70000,
+    "unit": "comptes",
+    "label": "70 000 utilisateurs selon Discord, qui dénonce une tentative d’extorsion ; les pirates revendiquent 5,5 millions de comptes et 2,1 millions de pièces d’identité"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Piratage de Discord : 5,5 millions de comptes compromis, la plateforme dénonce des chiffres exagérés et une tentative d’extorsion",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/piratage-de-discord-5-5-millions-de-comptes-compromis-la-plateforme-denonce-des-chiffres-exageres-et-une-tentative-d-extorsion_AN-202510090554.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Piratage de Discord : les hackers ont commencé à mettre leurs menaces à exécution et à publier les données personnelles des comptes compromis",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/piratage-de-discord-les-hackers-ont-commence-a-mettre-leurs-menaces-a-execution-et-a-publier-les-donnees-personnelles-des-comptes-compromis_AN-202510100484.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 octobre 2025, Discord révèle un piratage survenu après la compromission d’un fournisseur tiers. Les pirates clament le vol de 5,5 millions de comptes et 2,1 millions de pièces d’identité ; Discord, qui dénonce une tentative d’extorsion, réduit le 8 octobre le périmètre à « environ 70 000 » utilisateurs ayant eu leurs pièces d’identité potentiellement compromises. Face à cette minimisation, les attaquants exécutent leurs menaces le 10 octobre : adresses mail, selfies avec pièces d’identité et numéros de téléphone sont publiés, leur authenticité étant confirmée par une source interne citée par 404 Media. Le nombre réel de victimes reste disputé.",
+  "timeline": [
+    {
+      "date": "2025-10-03",
+      "event": "Discord révèle un piratage consécutif à la compromission d’un de ses fournisseurs tiers."
+    },
+    {
+      "date": "2025-10-08",
+      "event": "Discord annonce qu’environ 70 000 utilisateurs ont eu leurs pièces d’identité potentiellement compromises et dénonce une tentative d’extorsion ; les pirates revendiquent 5,5 millions de comptes."
+    },
+    {
+      "date": "2025-10-10",
+      "event": "Les pirates publient des données personnelles — mails, numéros de téléphone, selfies avec pièces d’identité — dont l’authenticité est confirmée par une source interne."
+    }
+  ]
+}

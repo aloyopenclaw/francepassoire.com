@@ -1,0 +1,36 @@
+{
+  "slug": "gravy-analytics-20250114",
+  "entity": "Gravy Analytics (courtier de données)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-14",
+    "publication": "2025-01-14"
+  },
+  "volume": {
+    "count": 30000000,
+    "unit": "enregistrements",
+    "label": "environ 30 millions d’identifiants de localisation (plus de 10 téraoctets) mis en ligne sur un forum, avec rançon exigée (selon 404 Media)"
+  },
+  "data_types": [
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Tinder, Grindr, Candy Crush… des millions de données de géolocalisation ont été piratées",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/tinder-grinder-candy-crush-des-millions-de-donnees-de-geolocalisation-ont-ete-piratees_AV-202501140323.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le courtier de données Gravy Analytics, qui collecte et revend des données de géolocalisation d’applications mondiales comme Tinder, Grindr, Candy Crush ou MyFitnessPal, a été piraté : plus de 10 téraoctets, soit environ 30 millions d’identifiants de localisation, ont été dérobés et mis en ligne sur un forum de hackers russes, avec coordonnées GPS détaillées, historiques de déplacement et horaires. La fuite, documentée par 404 Media le 7 janvier 2025, s’accompagne d’une demande de rançon. Des identifiants auraient été localisés à la Maison Blanche, au Kremlin ou sur des bases militaires. Le nombre d’utilisateurs français concernés n’est pas établi.",
+  "timeline": [
+    {
+      "date": "2025-01-07",
+      "event": "404 Media accède à des captures dâécran des données de localisation mises en ligne par un pirate réclamant une rançon à Gravy Analytics."
+    },
+    {
+      "date": "2025-01-14",
+      "event": "La fuite de 10 To — environ 30 millions d’identifiants de localisation issus d’applications populaires — est relayée par la presse française."
+    }
+  ]
+}

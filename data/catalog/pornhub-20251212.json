@@ -1,0 +1,38 @@
+{
+  "slug": "pornhub-20251212",
+  "entity": "Pornhub (groupe Aylo)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-12",
+    "publication": "2025-12-18"
+  },
+  "volume": {
+    "count": 200000000,
+    "unit": "enregistrements",
+    "label": "plus de 200 millions de relevés et 94 Go de données revendiqués par ShinyHunters, chiffres contestés ; Pornhub évoque « certains » utilisateurs Premium sans chiffrer"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Ils hackent Pornhub, volent les données des clients Premium et font chanter le site en exigeant une rançon",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/ils-hackent-pornhub-volent-les-donnees-des-clients-premium-et-font-chanter-le-site-en-exigeant-une-rancon-pour-ne-pas-diffuser-des-informations-tres-personnelles-et-explicites_AN-202512180786.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 décembre 2025, Pornhub révèle sur une page dédiée un « incident de cybersécurité » impliquant un fournisseur tiers d’analyse de données, avec des répercussions sur certains utilisateurs de Pornhub Premium ; mots de passe et données de paiement sont assurés sécurisés. Le groupe ShinyHunters revendique le piratage et fait chanter la plateforme : il affirme détenir 94 Go comprenant plus de 200 millions de relevés d’informations personnelles, obtenus selon lui via Mixpanel — ce que l’entreprise d’analytics conteste, indiquant que ces données n’auraient pas été consultées depuis 2023. Pornhub précise ne plus travailler avec ce fournisseur depuis 2021 ; l’ampleur du vol n’est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-12-12",
+      "event": "Pornhub révèle un incident de cybersécurité impliquant un fournisseur tiers d’analyse de données, touchant certains utilisateurs Premium."
+    },
+    {
+      "date": "2025-12-18",
+      "event": "ShinyHunters revendique le piratage et exige une rançon, affirmant détenir 94 Go et plus de 200 millions de relevés ; Mixpanel conteste être la source de la fuite."
+    }
+  ]
+}
