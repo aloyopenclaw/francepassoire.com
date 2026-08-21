@@ -1,0 +1,35 @@
+{
+  "slug": "kaviari-20250603",
+  "entity": "Kaviari",
+  "siren": "315734194",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-06-03",
+    "publication": "2025-06-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; fuite via la plateforme e-commerce (revendiquée)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Kaviari victime d'une fuite de données : des données personnelles dérobées (3 juin 2025)",
+      "url": "https://frenchbreaches.com/alertes/kaviari-bec3f3183ff9",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le relais FrenchBreaches rapporte le 3 juin 2025 une fuite de données revendiquée touchant Kaviari, maison parisienne spécialisée dans le caviar, via sa plateforme e-commerce. Les données exposées comprendraient noms et prénoms, identifiants et mots de passe, adresses e-mail et postales, numéros de téléphone, dates de naissance, numéros clients, sexes et genres, et historiques de commandes. Aucun volume n'est communiqué et la fuite n'est pas confirmée indépendamment.",
+  "timeline": [
+    {
+      "date": "2025-06-03",
+      "event": "FrenchBreaches relaie une fuite revendiquée touchant la plateforme e-commerce de Kaviari ; volume non communiqué."
+    }
+  ]
+}

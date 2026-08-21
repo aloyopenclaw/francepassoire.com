@@ -1,0 +1,43 @@
+{
+  "slug": "opera-de-paris-20250221",
+  "entity": "Opéra national de Paris",
+  "siren": "784396079",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-21",
+    "publication": "2025-03-01"
+  },
+  "volume": {
+    "count": 44890,
+    "unit": "personnes",
+    "label": "44 890 identités de spectateurs proposées à la vente (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Dark Web Informer — Angel_Batista Claims to be Selling the Data of Paris Opera (21 février 2025)",
+      "url": "https://darkwebinformer.com/angel_batista-claims-to-be-selling-the-data-of-paris-opera/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — L'Opéra de Paris piraté ? (1er mars 2025)",
+      "url": "https://www.zataz.com/lopera-de-paris-pirate/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le pirate « Angel_Batista » a annoncé le 21 février 2025 la vente de données attribuées à l'Opéra de Paris, relayée par Dark Web Informer. Selon Zataz, il propose 44 890 identités issues d'un fichier JSON qui semble correspondre à la base des spectateurs : adresses électroniques et postales, numéros de téléphone et identités. Le pirate n'explique ni la méthode ni l'origine de l'exfiltration, dont la source exacte n'est pas établie. La mise en vente intervient quelques jours après la publication d'une base attribuée à l'Opéra national du Rhin.",
+  "timeline": [
+    {
+      "date": "2025-02-21",
+      "event": "« Angel_Batista » annonce vendre des données attribuées à l'Opéra de Paris, relayé par Dark Web Informer."
+    },
+    {
+      "date": "2025-03-01",
+      "event": "Zataz documente la vente : 44 890 identités de spectateurs proposées dans un fichier JSON."
+    }
+  ]
+}

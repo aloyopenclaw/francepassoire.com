@@ -1,0 +1,44 @@
+{
+  "slug": "blackstore-20250315",
+  "entity": "Blackstore",
+  "siren": "799852520",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-15",
+    "publication": "2025-03-15"
+  },
+  "volume": {
+    "count": 101979,
+    "unit": "personnes",
+    "label": "101 979 clients (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Blackstore : 102K personnes exposées en ligne (15 mars 2025)",
+      "url": "https://frenchbreaches.com/alertes/blackstore-767641140366",
+      "kind": "revendication"
+    },
+    {
+      "label": "Dark Web Informer — Alleged Data Breach of French Retail Chain BLACKSTORE Exposing 102K Customer Records (relais de janvier 2026)",
+      "url": "https://darkwebinformer.com/alleged-data-breach-of-french-retail-chain-blackstore-exposing-102k-customer-records/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une fuite de données attribuée à Blackstore, enseigne française de streetwear, a été relayée mi-mars 2025 par FrenchBreaches à partir d'une publication sur un forum cybercriminel. Le jeu de données concerne 101 979 clients : noms et prénoms, adresses e-mail et postales, numéros de téléphone, identifiants et numéros de fidélité, historiques de commandes, avis et interactions avec le service client. Début 2026, Dark Web Informer relaie à nouveau cette base d'environ 102 000 enregistrements, toujours à l'état de revendication.",
+  "timeline": [
+    {
+      "date": "2025-03-15",
+      "event": "FrenchBreaches relaie la mise en vente d'une base attribuée à Blackstore : 101 979 clients, avec données de fidélité et historiques de commandes."
+    },
+    {
+      "date": "2026-01-11",
+      "event": "Dark Web Informer relaie à nouveau la base attribuée à Blackstore (environ 102 000 enregistrements clients)."
+    }
+  ]
+}

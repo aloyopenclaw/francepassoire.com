@@ -1,0 +1,38 @@
+{
+  "slug": "osmose-dinum-20250414",
+  "entity": "Osmose (service de la DINUM)",
+  "siren": "130025265",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-04-14",
+    "publication": "2025-04-14"
+  },
+  "volume": {
+    "count": 3500,
+    "unit": "comptes",
+    "label": "plus de 3 500 profils d'agents publics exposés après scraping (relayé, non confirmé officiellement)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez osmoses.numerique.gouv.fr : 3,5K comptes (14 avril 2025)",
+      "url": "https://frenchbreaches.com/alertes/osmoses-numerique-gouv-fr-ml2vnx84jm7ebpl9ztm",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un scraping touche Osmose, service de collaboration opéré par la DINUM à destination des agents de l'État et des établissements publics, selon le relais FrenchBreaches. Plus de 3 500 profils y sont exposés : noms et prénoms, fonctions, organisations de rattachement, adresses e-mail professionnelles et numéros de téléphone et mobile. Les données ont été collectées en avril 2025, et la plateforme Osmose a été arrêtée le 14 mai 2025, environ un mois plus tard — sans que le lien entre les deux événements soit établi. Le volume n'est pas confirmé officiellement.",
+  "timeline": [
+    {
+      "date": "2025-04-14",
+      "event": "FrenchBreaches relaie un scraping touchant le service Osmose (DINUM) : plus de 3 500 profils d'agents exposés."
+    },
+    {
+      "date": "2025-05-14",
+      "event": "La plateforme Osmose est arrêtée, environ un mois après la collecte des données, selon FrenchBreaches."
+    }
+  ]
+}

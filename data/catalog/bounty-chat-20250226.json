@@ -1,0 +1,38 @@
+{
+  "slug": "bounty-chat-20250226",
+  "entity": "Bounty.chat",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-26",
+    "publication": "2025-02-26"
+  },
+  "volume": {
+    "count": 560000,
+    "unit": "comptes",
+    "label": "plus de 560 000 comptes (constat Zataz sur les fichiers publiés ; exfiltration datée du 14 février 2025)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données sur bounty.chat : 560 000 utilisateurs exposés (26 février 2025)",
+      "url": "https://www.zataz.com/fuite-de-donnees-sur-bounty-chat-560-000-utilisateurs-exposes/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Les bases de données de Bounty.chat — forum successeur du site français Coco.gg, fermé par les autorités — ont été exfiltrées et publiées en ligne, l'opération étant datée du 14 février 2025 selon Zataz. Le fichier principal couvre plus de 560 000 utilisateurs : noms d'utilisateur, e-mails, mots de passe renseignés à l'inscription, âge, genre, ville, adresse IP et date de création du compte. Une seconde base recense les comptes bannis avec leurs adresses IP. Zataz a compté 27 000 informations d'inscrits dont mots de passe et e-mails.",
+  "timeline": [
+    {
+      "date": "2025-02-14",
+      "event": "Exfiltration des bases de données de Bounty.chat, selon la datation rapportée par Zataz."
+    },
+    {
+      "date": "2025-02-26",
+      "event": "Zataz documente la publication : plus de 560 000 utilisateurs exposés, avec identifiants et mots de passe d'inscription."
+    }
+  ]
+}

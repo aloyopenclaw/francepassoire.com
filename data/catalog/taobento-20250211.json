@@ -1,0 +1,42 @@
+{
+  "slug": "taobento-20250211",
+  "entity": "Taobento",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-11",
+    "publication": "2025-02-12"
+  },
+  "volume": {
+    "count": 170000,
+    "unit": "personnes",
+    "label": "plus de 170 000 clients (chiffre revendiqué, non confirmé) ; 89 000 adresses e-mail uniques selon Zataz"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Dark Web Informer — « Lanvin » Claims to have Leaked the Data of Taobento (11 février 2025)",
+      "url": "https://darkwebinformer.com/lanvin-claims-to-have-leaked-the-data-of-taobento/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Taobento piraté : plus de 170 000 clients impactés ? (12 février 2025)",
+      "url": "https://www.zataz.com/taobento-pirate-plus-de-170-000-clients-impactes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Un pirate agissant sous le pseudonyme « Lanvin » a revendiqué le 11 février 2025 la fuite de données de Taobento, chaîne française de restauration rapide, relayée par Dark Web Informer. Selon l'analyse de Zataz portant sur les échantillons diffusés, le fichier comprend noms complets, adresses e-mail (89 000 uniques), numéros de téléphone, dates de naissance et numéros de cartes de fidélité, avec parfois des adresses postales. Plus de 170 000 clients seraient concernés. Les données bancaires ne figurent pas dans la base, proposée pour quelques euros sur un forum.",
+  "timeline": [
+    {
+      "date": "2025-02-11",
+      "event": "Le pirate « Lanvin » revendique la fuite des données clients de Taobento, relayée par Dark Web Informer."
+    },
+    {
+      "date": "2025-02-12",
+      "event": "Zataz documente la fuite à partir des échantillons : plus de 170 000 clients concernés, données bancaires absentes."
+    }
+  ]
+}
