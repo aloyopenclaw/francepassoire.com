@@ -1,0 +1,42 @@
+{
+  "slug": "groupement-regional-e-sante-20241219",
+  "entity": "Un groupement régional d'appui au développement de la e-santé (entité non nommée)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 20 000 euros (procédure simplifiée) ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « groupement régional d'appui au développement de la e-santé » (19 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a prononcé une amende administrative de 20 000 euros à l'encontre d'un groupement régional d'appui au développement de la e-santé, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect des obligations propres aux traitements de données dans le domaine de la santé et défaut d'encadrement des relations entre le responsable de traitement et son sous-traitant. Le nom de l'organisme n'est pas publié : les sanctions simplifiées ne sont jamais rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le bilan 2024 de l'action de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : obligations santé et encadrement de la sous-traitance."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "avocat-20240115",
+  "entity": "Un avocat (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-15",
+    "confirmation": "2024-01-15",
+    "publication": "2024-03-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « AVOCAT » (procédure simplifiée), amende de 5 000 euros (15 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024 (12 mars 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next (13 mars 2024) — La CNIL accélère avec sa procédure simplifiée : 15 sanctions depuis janvier 2024",
+      "url": "https://next.ink/brief-article/la-cnil-accelere-avec-sa-procedure-simplifiee-15-sanctions-depuis-janvier-2024/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 janvier 2024, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'un avocat, dans le cadre de la procédure simplifiée, pour non-respect du droit à l'effacement et défaut de coopération avec l'autorité. La dénomination n'est pas publiable dans ce cadre. Le communiqué du 12 mars 2024 recense quinze sanctions simplifiées depuis janvier 2024, pour 98 500 euros au total, en citant parmi les manquements principaux le défaut de coopération et le non-respect des droits d'effacement. La presse spécialisée relève cette accélération : quinze décisions en un trimestre, contre vingt-quatre sur toute l'année 2023.",
+  "timeline": [
+    {
+      "date": "2024-01-15",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : droit à l'effacement non respecté et défaut de coopération."
+    },
+    {
+      "date": "2024-03-12",
+      "event": "La CNIL publie son communiqué : quinze sanctions simplifiées depuis janvier 2024, 98 500 euros au total."
+    }
+  ]
+}

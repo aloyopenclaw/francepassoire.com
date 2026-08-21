@@ -1,0 +1,52 @@
+{
+  "slug": "personnalite-politique-20200903",
+  "entity": "Personnalité politique (députée ; identité retirée de la décision publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-09-03",
+    "confirmation": "2020-09-03",
+    "publication": "2020-09-22"
+  },
+  "volume": {
+    "count": 11856,
+    "unit": "personnes",
+    "label": "11 856 lycéens lauréats du baccalauréat 2019 concernés selon la délibération SAN-2020-005, dont une partie était mineure"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "ICI.fr — Données personnelles des bacheliers : la députée LREM de la Manche Sonia Krimi rappelée à l’ordre par la CNIL (22 septembre 2020)",
+      "url": "https://www.ici.fr/infos/societe/donnees-personnelles-des-bacheliers-la-deputee-lrem-de-la-manche-sonia-krimi-rappelee-a-l-ordre-par-1600791009",
+      "kind": "article"
+    },
+    {
+      "label": "eWatchers — Le rectorat de l’académie de Normandie rappelé à l’ordre pour avoir divulgué des données personnelles sur des lycéens (3 septembre 2020)",
+      "url": "https://ewatchers.org/cnil/academie-de-normandie-2020-09-03-3",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 septembre 2020, la formation restreinte de la CNIL a rappelé à l’ordre une députée pour traitement illicite de données personnelles. En juillet 2019, son équipe avait obtenu du rectorat un fichier non chiffré de 11 856 lycéens admis au baccalauréat — noms, dates de naissance, adresses, établissements et mentions — issu du fichier OCEAN, pour adresser des courriers de félicitations. La CNIL a jugé que la parlementaire n’était pas habilitée à recevoir ni traiter ces données. La décision, publiée sans identité nominative passé un délai d’un an, s’accompagne d’un rappel à l’ordre distinct pour le rectorat.",
+  "timeline": [
+    {
+      "date": "2019-07-18",
+      "event": "Le rectorat transmet par courriel non chiffré un fichier de 11 856 lauréats du baccalauréat à l’équipe de la députée."
+    },
+    {
+      "date": "2020-09-03",
+      "event": "Rappel à l’ordre pour traitement illicite de données (article 5-1-a du RGPD) ; décision rendue publique un an."
+    },
+    {
+      "date": "2020-09-22",
+      "event": "La CNIL rend publics les rappels à l’ordre visant la députée et le rectorat de l’académie de Normandie."
+    }
+  ]
+}

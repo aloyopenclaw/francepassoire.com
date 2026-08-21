@@ -1,0 +1,37 @@
+{
+  "slug": "cabinet-medical-20170518",
+  "entity": "Un cabinet médical (entité non nommée)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-05-18",
+    "confirmation": "2017-05-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique, montant non publié"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « CABINET MEDICAL », dossier médical d'un patient (18 mai 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 18/05/2017 — sanction pécuniaire publique",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 18 mai 2017, la CNIL a prononcé une sanction pécuniaire publique à l'encontre d'un cabinet médical pour non-respect du droit d'accès : le dossier médical d'un patient ne lui avait pas été communiqué, et les demandes de la CNIL étaient restées sans réponse. Le montant n'est précisé ni par le tableau actuel ni par la version archivée de la liste officielle. La dénomination n'est pas publique. Le droit d'accès à son dossier médical, garanti par la loi Informatique et Libertés, est l'un des droits les plus précieux pour les personnes : son blocage, doublé d'un silence face à l'autorité, conduit à la sanction.",
+  "timeline": [
+    {
+      "date": "2017-05-18",
+      "event": "Sanction pécuniaire publique : dossier médical non communiqué au patient et demandes de la CNIL sans réponse."
+    }
+  ]
+}

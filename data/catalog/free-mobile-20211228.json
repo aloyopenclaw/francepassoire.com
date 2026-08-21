@@ -1,0 +1,48 @@
+{
+  "slug": "free-mobile-20211228",
+  "entity": "Free Mobile",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-12-28",
+    "confirmation": "2021-12-28",
+    "publication": "2022-01-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 300 000 euros pour des manquements aux droits d’accès, de rectification et d’opposition"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CEPD — The CNIL, French Supervisory Authority, fines FREE EUR 300,000",
+      "url": "https://www.edpb.europa.eu/news/national-news/2022/cnil-french-supervisory-authority-fines-free-eur-300000_en",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — La CNIL inflige 300 000 euros d’amende à Free Mobile (4 janvier 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-donnees-personnelles-la-cnil-inflige-300-000-euros-d-amende-a-free-mobile-85312.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 décembre 2021, la CNIL a infligé une amende de 300 000 euros à Free Mobile, à la suite de 19 plaintes d’abonnés déposées entre décembre 2018 et novembre 2019. Les manquements retenus concernent le droit d’accès, le droit de rectification et le droit d’opposition à la prospection commerciale. La formation restreinte a jugé que les défaillances, quoique non systémiques, engageaient la responsabilité de l’opérateur. L’entreprise a contesté les faits en plaidant des erreurs humaines isolées.",
+  "timeline": [
+    {
+      "date": "2021-12-28",
+      "event": "Amende de 300 000 euros : droit d’accès, droit de rectification et droit d’opposition non respectés (19 plaintes)."
+    },
+    {
+      "date": "2022-01-04",
+      "event": "La sanction, dernière amende financière de 2021 pour la CNIL, est rendue publique."
+    }
+  ]
+}

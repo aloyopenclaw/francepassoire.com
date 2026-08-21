@@ -1,0 +1,38 @@
+{
+  "slug": "organisme-de-formation-destine-aux-professionnels-de-sante-20240926",
+  "entity": "Organisme de formation destiné aux professionnels de santé (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-26",
+    "confirmation": "2024-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 15 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l’action de la CNIL",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 septembre 2024, la CNIL a prononcé une amende de 15 000 euros et une injonction à l’encontre d’un organisme de formation destiné aux professionnels de santé, dans le cadre de la procédure simplifiée. Les manquements retenus : information des personnes et consentement défaillants pour les cookies, ainsi que non-respect du droit d’effacement. La dénomination n’est pas publiée et la nature précise des données n’est pas détaillée. Cette sanction figure dans le bilan 2024 de l’action répressive de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-09-26",
+      "event": "Amende de 15 000 euros et injonction (procédure simplifiée) : cookies sans consentement valable, droit d’effacement non respecté."
+    }
+  ]
+}
