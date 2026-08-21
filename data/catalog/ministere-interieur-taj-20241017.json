@@ -1,0 +1,55 @@
+{
+  "slug": "ministere-interieur-taj-20241017",
+  "entity": "Ministère de l'Intérieur et des Outre-mer (fichier TAJ)",
+  "siren": "110014016",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-17",
+    "publication": "2024-11-06",
+    "confirmation": "2024-10-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par le communiqué ; fichier policier recensant identités, adresses, professions et photographies"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Traitement d'antécédents judiciaires : la CNIL rappelle à l'ordre deux ministères (6 novembre 2024)",
+      "url": "https://www.cnil.fr/fr/traitement-dantecedents-judiciaires-la-cnil-rappelle-lordre-deux-ministeres",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « ministère », rappel à l'ordre et injonction (17 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Gazette du Palais — Fichier des antécédents judiciaires : le rappel à l'ordre de la CNIL",
+      "url": "https://www.gazette-du-palais.fr/actualites-professionnelles/fichier-des-antecedents-judiciaires-le-rappel-a-lordre-de-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 octobre 2024, la CNIL a rappelé à l'ordre le ministère de l'Intérieur et des Outre-mer, responsable du traitement d'antécédents judiciaires (TAJ), fichier de police judiciaire recensant identités, adresses, professions et photographies des victimes et des personnes mises en cause. Selon le communiqué du 6 novembre, des fiches n'étaient pas mises à jour après relaxe, acquittement, non-lieu ou classement sans suite, les parquets ne transmettant pas les décisions. L'information des personnes était lacunaire et les droits d'accès, de rectification et d'effacement difficilement effectifs. Le ministère a également reçu une injonction de mise en conformité, notamment sur l'exactitude des données.",
+  "timeline": [
+    {
+      "date": "2024-10-17",
+      "event": "Rappel à l'ordre et injonction : fiches non mises à jour après relaxe ou non-lieu, information et droits défaillants."
+    },
+    {
+      "date": "2024-11-06",
+      "event": "La CNIL rend publique la décision SAN-2024-017 visant le fichier TAJ et les deux ministères."
+    }
+  ]
+}

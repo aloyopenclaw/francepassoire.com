@@ -1,0 +1,42 @@
+{
+  "slug": "orthophoniste-astreinte-20241011",
+  "entity": "Orthophoniste (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-11",
+    "confirmation": "2024-10-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; liquidation d'astreinte de 4 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « orthophoniste » (procédure simplifiée), liquidation d'astreinte de 4 000 euros (11 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 octobre 2024, la CNIL a prononcé la liquidation d'une astreinte de 4 000 euros à l'encontre d'un orthophoniste, dans le cadre de la procédure simplifiée. Le manquement retenu est l'absence de réponse à l'injonction et la non-conformité persistante aux ordres de l'autorité. La dénomination du professionnel de santé n'est pas publiée, la procédure simplifiée ne permettant pas de rendre publics les noms des organismes sanctionnés. Le bilan 2024 de la CNIL recense 8 décisions de liquidation d'astreinte sur l'année, décrites comme le paiement d'une somme en raison du non-respect d'un ordre donné dans une décision de sanction antérieure. La nature des données concernées n'est pas précisée par la décision.",
+  "timeline": [
+    {
+      "date": "2024-10-11",
+      "event": "Liquidation d'astreinte de 4 000 euros : absence de réponse à l'injonction et non-conformité."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "foriou-20240131",
+  "entity": "Foriou",
+  "siren": "808242820",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-31",
+    "publication": "2024-03-07",
+    "confirmation": "2024-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 310 000 euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « commercialisation et gestion de programmes et cartes de fidélité », amende de 310 000 euros (31 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Delsol Avocats — Prospection commerciale : sanction de 310 000 euros à l'encontre de la société FORIOU (délibération SAN-2024-003, 7 mars 2024)",
+      "url": "https://delsolavocats.com/Prospection-commerciale-la-CNIL-reaffirme-la-responsabilite-des-societes-dans-la-conformite-de-leurs-partenaires-Sanction-de-310-000-euros-a-l-encontre-de-la-societe-FORIOU",
+      "kind": "article"
+    },
+    {
+      "label": "GRC Report — FORIOU faces fine from CNIL for unlawful use of data",
+      "url": "https://www.grcreport.com/post/foriou-faces-fine-from-cnil-for-unlawful-use-of-data",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 janvier 2024, la formation restreinte de la CNIL a prononcé une amende de 310 000 euros à l'encontre de Foriou, société française de démarchage téléphonique qui commercialise des programmes et cartes de fidélité. Selon la délibération SAN-2024-003 relatée par Delsol Avocats, la société utilisait à des fins de prospection des données fournies par des courtiers en données et des éditeurs de jeux-concours, sans vérifier que les personnes avaient valablement consenti. Les formulaires de collecte, à l'apparence trompeuse, ne permettaient pas un consentement libre et univoque : la prospection téléphonique ne disposait donc d'aucune base légale. L'amende représente environ 1 % du chiffre d'affaires selon les relais juridiques.",
+  "timeline": [
+    {
+      "date": "2024-01-31",
+      "event": "Délibération SAN-2024-003 : amende de 310 000 euros pour prospection téléphonique sans base légale."
+    },
+    {
+      "date": "2024-03-07",
+      "event": "Le cabinet Delsol Avocats publie une analyse de la décision nommant la société Foriou."
+    }
+  ]
+}
