@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-une-activite-d-agence-immobiliere-20241219",
+  "entity": "Société exerçant une activité d'agence immobilière (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19",
+    "publication": "2025-02-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 40 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a prononcé une amende de 40 000 euros à l'encontre d'une société exerçant une activité d'agence immobilière. Les manquements retenus : atteinte au principe de minimisation et à la licéité pour un dispositif de vidéosurveillance, défauts d'information des personnes et de sécurité des données, et absence de registre des activités de traitement. La vidéosurveillance disproportionate est un motif récurrent des sanctions de la CNIL, qui rappelle qu'une surveillance permanente doit être justifiée par des circonstances exceptionnelles. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "Amende de 40 000 euros : vidéosurveillance non minimisée, défauts d'information, de sécurité et de registre."
+    },
+    {
+      "date": "2025-02-05",
+      "event": "La CNIL publie son bilan 2024 des sanctions et mesures correctrices."
+    }
+  ]
+}
