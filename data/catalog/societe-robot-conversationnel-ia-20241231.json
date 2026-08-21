@@ -1,0 +1,42 @@
+{
+  "slug": "societe-robot-conversationnel-ia-20241231",
+  "entity": "Société gérant un robot conversationnel utilisant l'intelligence artificielle (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-31",
+    "confirmation": "2024-12-31",
+    "publication": "2025-02-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société gérant un robot conversationnel utilisant l'intelligence artificielle (procédure simplifiée) », amende de 5 000 euros (31 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 décembre 2024, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société gérant un robot conversationnel utilisant l'intelligence artificielle, dans le cadre de la procédure simplifiée. Manquement retenu : défaut de coopération avec la CNIL, obligation légale rappelée par l'article 18 de la loi Informatique et Libertés. La dénomination n'est pas publiée et la nature des données en cause n'est pas précisée par la décision. Le bilan 2024 recense 41 sanctions simplifiées sur l'année.",
+  "timeline": [
+    {
+      "date": "2024-12-31",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : défaut de coopération avec la CNIL."
+    },
+    {
+      "date": "2025-02-05",
+      "event": "Le bilan 2024 de la CNIL recense 41 sanctions simplifiées pour 715 500 euros au total."
+    }
+  ]
+}

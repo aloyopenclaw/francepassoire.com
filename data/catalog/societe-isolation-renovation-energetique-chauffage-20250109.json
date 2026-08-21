@@ -1,0 +1,47 @@
+{
+  "slug": "societe-isolation-renovation-energetique-chauffage-20250109",
+  "entity": "Société réalisant des travaux d'isolation, de rénovation énergétique et de chauffage (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-09",
+    "confirmation": "2025-01-09",
+    "publication": "2025-05-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 15 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société réalisant des travaux d'isolation, de rénovation énergétique et de chauffage (procédure simplifiée) », amende de 15 000 euros et injonction (9 janvier 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dix nouvelles sanctions prononcées par la CNIL en 2025 dans le cadre de la procédure simplifiée (22 mai 2025)",
+      "url": "https://www.cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 9 janvier 2025, la CNIL a prononcé une amende de 15 000 euros assortie d'une injonction à l'encontre d'une société de travaux d'isolation, de rénovation énergétique et de chauffage, dans le cadre de la procédure simplifiée. Manquements retenus : prospection commerciale sans base licite, collecte non minimisée et traitement de données inexactes. La dénomination n'est pas publiée. Le communiqué du 22 mai 2025 recense dix sanctions simplifiées depuis janvier 2025, pour 104 000 euros cumulés.",
+  "timeline": [
+    {
+      "date": "2025-01-09",
+      "event": "Amende de 15 000 euros et injonction (procédure simplifiée) : prospection illicite, minimisation et exactitude défaillantes."
+    },
+    {
+      "date": "2025-05-22",
+      "event": "La CNIL publie un communiqué sur dix sanctions simplifiées en 2025, pour 104 000 euros cumulés."
+    }
+  ]
+}

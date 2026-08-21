@@ -1,0 +1,42 @@
+{
+  "slug": "societe-hebergement-tourisme-20260326",
+  "entity": "Société ayant pour activité l'hébergement de tourisme (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-26",
+    "confirmation": "2026-03-26",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société ayant pour activité l'hébergement de tourisme (procédure simplifiée) », amende de 3 000 euros (26 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 mars 2026, la CNIL a prononcé une amende de 3 000 euros à l'encontre d'une société d'hébergement de tourisme, dans le cadre de la procédure simplifiée. Manquements retenus : minimisation des données, durée de conservation excessive et absence d'encadrement contractuel du sous-traitant. La dénomination n'est pas publiée. Depuis janvier 2026, la CNIL a prononcé 23 sanctions simplifiées pour un montant cumulé de 133 750 euros, dont plusieurs dans l'hébergement et le tourisme.",
+  "timeline": [
+    {
+      "date": "2026-03-26",
+      "event": "Amende de 3 000 euros (procédure simplifiée) : minimisation, conservation et encadrement du sous-traitant défaillants."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie un bilan de 23 sanctions simplifiées depuis janvier 2026, pour 133 750 euros cumulés."
+    }
+  ]
+}
