@@ -45,5 +45,6 @@
       "date": "2022-11-14",
       "event": "Conforama Iberia reconnaît « un accès non autorisé au système » sans indice d'accès à des données sensibles de clients."
     }
-  ]
+  ],
+  "group": "blackcat"
 }
