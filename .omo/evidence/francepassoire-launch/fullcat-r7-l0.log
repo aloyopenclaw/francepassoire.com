@@ -1,0 +1,129 @@
+==============================================================================
+RAFALE 7 — LANE 0 — PRESSE NATIONALE & TECH 2023 (Le Monde, Figaro,
+Numerama, ZDnet, BFM) — 20 fiches — worktree fp-r7l0
+==============================================================================
+Date : 21/08/2026. Branche : fiche/rafale7-l0 (base ff388a2).
+
+[1] PÉRIMÈTRE
+  20 fiches d'incidents 2023 touchant la France. 53 fiches 2023 déjà
+  publiées sur main (grep préalable : zéro collision de slug).
+
+[2] SOURCES MINÉES (index)
+  - Sitemap Zataz intégral (6 020 posts ; 759 datés 2023) — dates
+    réelles via JSON-LD datePublished (le lastmod trompe : la
+    « Poste Mobile Dec 2023 » = article 2022 mis à jour ; Private
+    SportShop/Motoblouz = 2019 ; Vidal.fr = 2021 ; avocats = 2020).
+  - FrenchBreaches : sitemap 957 alertes curlées — seulement 2 datées
+    2023 (Mutuelle LMP, EIVP) ; page /ransomware/alphv (11 victimes
+    françaises 2021-2024) décisive pour FCBA.
+  - konbriefing.com « Cyberattacks France » Q1-Q4 2023 : index par
+    trimestre avec liens sources officiels/presse — a fourni CAFPI,
+    BRL, CCI Nice, AEFE/Élap, Hortensias, Cotentin, Séché, FPV…
+  - Sitemaps Numerama (post-sitemap 65-77) : liste 2023 par slugs.
+  - ~25 requêtes web ciblées (websearch) + annuaire-entreprises
+    (SIREN résolus : Nuxe 642060123, BMW 722000965, CAFPI 510302953,
+    Engie 542107651, Arkopharma 307378489, Baccarat 760800060,
+    Cotentin 393932314, FCBA 775680903, BRL 550200661, CCI Nice
+    180600017, Corsica Ferries 496320151 ; omis : Econocom &
+    Automatic Systems (entités belges), Free (précédent catalogue),
+    entités publiques).
+
+[3] FICHES LIVRÉES (20)
+  01 air-france-klm-flying-blue-20230106 — confirmee — Numerama,
+     SecurityWeek, Zataz (comptes Flying Blue, janv. 2023)
+  02 academie-de-lille-20230112 — revendiquee — Zataz + LMI (900
+     identifiants agents sur Discord ; compilation d'anciennes fuites)
+  03 nuxe-20230112 — revendiquee, lockbit — Le Parisien, Numerama,
+     ZDnet (29-30 Go / ~16 000 fichiers, rançon 300 k$)
+  04 bmw-france-20230328 — revendiquee, play — The Record, Arctic
+     Wolf, Zataz (concessionnaire local selon BMW Group)
+  05 brl-20230324 — revendiquee, lockbit — communiqué BRL + LMI +
+     InCyber (deadline 21 avril, exfiltration anticipée)
+  06 cafpi-20230430 — confirmee, vice-society — FAQ officielle + BFM
+     + Zataz (pièces d'identité, données en ligne, CNIL)
+  07 automatic-systems-20230612 — revendiquee, blackcat — Numerama +
+     The Cyber Express (121 pièces dont passeports, NDAs, RATP/Thales)
+  08 engie-20230823 — confirmee — Numerama, BFM, GSM (110 000 pers.,
+     monespaceprime.engie.fr, « HommedeLombre »)
+  09 econocom-20230820 — confirmee — 2 communiqués officiels + ZDnet
+     + LeMagIT (Stormous/GhostSec, poste prestataire, SharePoint)
+  10 cci-nice-cote-d-azur-20230831 — revendiquee, lockbit — communiqué
+     CCI + Nice Matin + relais Domingo (CNIL 31/08, plainte 01/09, J3)
+  11 arkopharma-20230904 — revendiquee, inc-ransom — Zataz + Presse83
+     (3 documents dont un passeport)
+  12 free-20230912 — revendiquee — Zataz + 20 Minutes + Développez
+     (14 M revendiqués par « Dépressif », 2,9 Go ; Free : « faux »)
+  13 idfm-20231002 — confirmee — communiqué IDFM + CommentCaMarche
+     (Worldline, milliers d'identifiants, plainte, CNIL)
+  14 baccarat-20231016 — revendiquee, blackbasta — BFM, Numerama,
+     Est Républicain (données employés publiées)
+  15 ehpad-les-hortensias-20231024 — revendiquee, medusa — France
+     Inter/AFP + La Presse de la Manche (95 k€, pièces d'identité et
+     attestations médicales de résidents)
+  16 snu-20231122 — confirmee — question AN + LMI + Zataz (150 000
+     personnes confirmées par le ministère ; vente depuis le 22/11)
+  17 corsica-ferries-20231101 — revendiquee, blackcat — Zataz + France
+     3 (fichiers bancaires, factures, plans diffusés via OSHI)
+  18 aefe-20231105 — confirmee — communication AEFE + question Sénat
+     (fuite effective confirmée le 19/11 par ELAP ; ANSSI, CNIL)
+  19 polyclinique-du-cotentin-20231116 — confirmee, lockbit — communiqué
+     + actu.fr + Tendance Ouest + DPO Partage (3 300 pers., NIR et
+     données de santé, 31 Go LockBit 3.0)
+  20 fcba-20231011 — revendiquee, blackcat — The Cyber Express + page
+    FrenchBreaches /ransomware/alphv (revendication sans détail)
+
+[4] CANDIDATS EXAMINÉS PUIS ÉCARTÉS (motifs)
+  - Intrusions SANS fuite documentée (data_types insourçables) :
+    Virbac (attaque confirmée, aucune exfiltration documentée), Groupe
+    SEB (« aucune fuite identifiée »), Vinovalie (« aucune donnée
+    sensible n'a fui »), Bouygues OnCloud (« aucune fuite constatée »),
+    Habitat Audois, Synlab France (communiqué disparu, pas de fuite),
+    CHRU Brest (« aucune fuite » France 3), CH Bourg-en-Bresse,
+    Fondation Vincent de Paul (« données préservées »), Fondation de
+    France (diagnostic en cours, aucun vol), Morlaix, Coaxis (données
+    techniques seulement), Lacroix (usines fermées, pas de vol).
+  - 1 seule source identifiée : Mutuelle LMP (FB), EIVP (FB+RL mais
+    données non décrites), Daregal, Group DIS, SAGAM (FB alphv), Scara
+    (L'Est Éclair 403 sans archive), Somagic (Le JSL seul), Orange
+    Belgique août 2023 (Zataz seul ; presse = incident 2025), ameli
+    oct. 2023 (revente vague, Zataz sceptique), Colipays.
+  - Hors période / doublons / introuvables : Europcar « 50 M » (janv.
+    2024, hors rafale), Deezer (déjà fiché deezer-20221215), Conforama
+    Alphv (doublon de conforama-20221106), Mazars (entité Brésil),
+    SMACL/Clariane/Club Med/Qwant/La Banque Postale/Yves Rocher/
+    Hubside-PlayCustomer/Pronote 2023 (souvenirs non vérifiables dans
+    les archives consultées → zéro invention), La Poste Mobile
+    (LockBit = juillet 2022, déjà fichée), Sopra Steria (Ryuk 2020),
+    Université d'Angers (incident 2026), Pôle emploi/Zataz août 2023
+    (déjà fiché pole-emploi-majorel-20230823), CCI AMP (retenue la
+    CCI de Nice, 3 sources, même campagne LockBit).
+  - Séché Environnement (LockBit confirmé) : 1 source accessible
+    (InCyber) ; Ouest-France en 403 sans archive vérifiée.
+
+[5] VÉRIFICATIONS
+  - zod (temp-vitest tests/tmp-r7l0-validation.test.ts, retiré avant
+    commit) : 2/2 (schéma + slug=fichier, ≥2 sources, 2023, timeline
+    triée). Suite intégrale `npx vitest run` : 30 fichiers /
+    1 176 tests verts.
+  - check-doublons --base main : « 0 collision (±45 j, même entité
+    normalisée) », exit 0. Catalogue branche : 811 fiches.
+  - Sondage URLs : 54/54 sources distinctes HTTP 200 (curl -L, UA
+    navigateur). Ouest-France/Figaro évités d'office (403/404 récurrents,
+    leçon r6) ; Tendance Ouest et LinkedIn Domingo vérifiés 200.
+  - Risques résiduels : (a) relais LinkedIn C. Domingo (200 mais
+    authwall possible selon session) pour l'attribution LockBit CCI
+    Nice ; (b) laique.eu = blog local pour Arkopharma (indépendant,
+    daté, mais faible audience) ; (c) URL Tendance Ouest conserve le
+    slug d'origine « -violees » (titre éditeur ; label neutralisé en
+    « dérobées »).
+
+[6] CONFORMITÉ CONTRAT
+  ≥2 sources indépendantes par fiche (officiel si confirmée : CAFPI,
+  Engie [presse+confirmation entreprise], Econocom, IDFM, SNU, AEFE,
+  Cotentin, AF-KLM). Zéro invention : tout fait tracé aux URLs ;
+  volumes absents → count 0 + label explicatif ; « autre » réservé
+  aux revendications sans détail public (précédents le-toit-forezien,
+  tarnaise-des-panneaux). group : lockbit, play, blackcat, blackbasta,
+  medusa, inc-ransom, vice-society (formes existantes du catalogue).
+  Aucune donnée volée consultée/reproduite ; forums criminels jamais
+  liés en direct (relais presse/veille uniquement).

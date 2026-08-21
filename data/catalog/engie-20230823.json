@@ -1,0 +1,53 @@
+{
+  "slug": "engie-20230823",
+  "entity": "Engie",
+  "siren": "542107651",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-23",
+    "publication": "2023-08-23",
+    "confirmation": "2023-08-30"
+  },
+  "volume": {
+    "count": 110000,
+    "unit": "personnes",
+    "label": "110 000 personnes selon Engie ; environ 140 000 clients revendiqués par le hacktiviste « HommedeLombre »"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Numerama — Engie victime d'une fuite de données clients : 110 000 personnes sont concernées (30 août 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1486298-engie-victime-dune-fuite-de-donnees-clients-110-000-personnes-sont-concernees.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Engie : des hackers ont dérobé les données de 110 000 clients « en réponse à l'inflation » (31 août 2023)",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/engie-des-hackers-ont-derobe-les-donnees-de-110-000-clients-en-reponse-a-l-inflation_AV-202308310373.html",
+      "kind": "article"
+    },
+    {
+      "label": "Global Security Mag — Hacktivisme : Engie victime d'une fuite de données touchant plus de 110 000 personnes (2023)",
+      "url": "https://www.globalsecuritymag.fr/Hacktivisme-Engie-victime-d-une-fuite-de-donnees-touchant-plus-de-110-000.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 août 2023, un hacktiviste nommé « HommedeLombre » publie sur un forum de hackers une base clients d'Engie, acte qu'il justifie par « l'inflation du prix du gaz en France ». Les données, obtenues via une faille sur le site monespaceprime.engie.fr opéré par un prestataire, comprennent noms, prénoms, e-mails, villes, numéros de téléphone et numéros client, exploités selon le pirate en avril 2023. Le 30 août, Engie confirme auprès de Numerama l'acte de cybermalveillance, précise que la fuite ne concerne ni coordonnées bancaires ni mots de passe, porte plainte et commence à informer les personnes concernées, comme l'exige le RGPD.",
+  "timeline": [
+    {
+      "date": "2023-08-23",
+      "event": "Publication sur un forum de hackers d'une base clients Engie issue du site monespaceprime.engie.fr géré par un prestataire."
+    },
+    {
+      "date": "2023-08-30",
+      "event": "Engie confirme la cyberattaque, évalue le périmètre à 110 000 personnes, porte plainte et notifie les victimes."
+    },
+    {
+      "date": "2023-08-31",
+      "event": "BFMTV et Global Security Mag relayent la confirmation et le contexte hacktiviste."
+    }
+  ]
+}

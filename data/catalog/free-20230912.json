@@ -1,0 +1,51 @@
+{
+  "slug": "free-20230912",
+  "entity": "Free (Free SAS)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-09-12",
+    "publication": "2023-09-13"
+  },
+  "volume": {
+    "count": 14000000,
+    "unit": "personnes",
+    "label": "14 millions de clients revendiqués par le vendeur « Dépressif » (base de 2,9 Go) ; authenticité contestée par Free ; échantillon limité à environ un millier de clients parisiens"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Un pirate annonce commercialiser des millions de clients Free (13 septembre 2023)",
+      "url": "https://www.zataz.com/un-pirate-annonce-commercialiser-14-millions-de-clients-free/",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — Free : les données personnelles de 14 millions de clients sont en vente sur un forum de hackers (14 septembre 2023)",
+      "url": "https://www.20minutes.fr/high-tech/4053049-20230914-free-donnees-personnelles-14-millions-clients-vente-forum-hackers",
+      "kind": "article"
+    },
+    {
+      "label": "Développez.com — Free : les données personnelles de 14 millions de clients en vente sur le dark Web ? « Faux », affirme Free (septembre 2023)",
+      "url": "https://securite.developpez.com/actu/348409/Free-les-donnees-personnelles-de-14-millions-de-clients-en-vente-sur-le-dark-Web-faux-affirme-Free/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 septembre 2023, un vendeur se faisant appeler « Dépressif » met en vente sur un forum clandestin une base de 2,9 Go présentée comme celle des 14 millions de clients de Free, contenant identités, numéros de téléphone, adresses électroniques et adresses postales. La vente, réservée à un unique acheteur et payable en cryptomonnaie, est repérée par le service veille de Zataz : l'échantillon consulté ne contient qu'environ un millier de clients, tous parisiens, dont d'anciens abonnés. Free répond publiquement que ces données sont fausses ; l'opérateur ne confirme aucune fuite. L'incident reste une revendication non établie.",
+  "timeline": [
+    {
+      "date": "2023-09-12",
+      "event": "Mise en vente sur un forum clandestin d'une base revendiquée de 14 millions de clients Free."
+    },
+    {
+      "date": "2023-09-13",
+      "event": "Zataz documente l'annonce et l'échantillon restreint à des clients parisiens."
+    },
+    {
+      "date": "2023-09-14",
+      "event": "20 Minutes relaie la vente ; Free conteste l'authenticité des données."
+    }
+  ]
+}

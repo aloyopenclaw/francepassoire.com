@@ -1,0 +1,52 @@
+{
+  "slug": "cci-nice-cote-d-azur-20230831",
+  "entity": "CCI Nice Côte d'Azur",
+  "siren": "180600017",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "lockbit",
+  "dates": {
+    "revendication": "2023-08-31",
+    "publication": "2023-09-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication LockBit relayée début septembre par des chercheurs ; nature et volume des données non détaillés publiquement"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CCI Nice Côte d'Azur — Acte de cyberattaque à la Chambre de Commerce et d'Industrie Nice Côte d'Azur (5 septembre 2023)",
+      "url": "https://www.cote-azur.cci.fr/cyberattaque-ccinca/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Nice Matin — La Chambre de commerce et d'industrie Nice Côte d'Azur victime d'une cyberattaque (5 septembre 2023)",
+      "url": "https://www.nicematin.com/faits-divers/la-chambre-de-commerce-et-dindustrie-nice-cote-dazur-victime-dune-cyberattaque-870770",
+      "kind": "article"
+    },
+    {
+      "label": "Clément Domingo (veille cybersécurité) — LockBit : CCI Nice Côte d'Azur et Marseille attaquées (1er septembre 2023)",
+      "url": "https://fr.linkedin.com/posts/clementdomingo_lockbit-cci-nice-activity-7103669753411428352-uc7A",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 30 au 31 août 2023, la CCI Nice Côte d'Azur subit une cyberattaque ciblant l'ensemble de son réseau informatique ; l'établissement coupe son système d'information pour protéger les données et circonscrire la propagation. Une notification est envoyée à la CNIL le 31 août, une plainte est déposée dès le 1er septembre auprès de la gendarmerie et de la police nationale, et l'ANSSI est saisie ; la section cybercriminalité J3 du parquet de Paris se saisit du dossier. Le groupe LockBit revendique l'attaque début septembre, revendication relayée par des chercheurs en cybersécurité. La nature exacte des données visées n'est pas détaillée publiquement.",
+  "timeline": [
+    {
+      "date": "2023-08-31",
+      "event": "Cyberattaque détectée : systèmes coupés, notification CNIL le jour même."
+    },
+    {
+      "date": "2023-09-01",
+      "event": "Plainte déposée, ANSSI saisie ; le C3N et la section J3 du parquet de Paris prennent le relais."
+    },
+    {
+      "date": "2023-09-05",
+      "event": "La CCI rend l'attaque publique ; la revendication LockBit est relayée par des veilleurs."
+    }
+  ]
+}

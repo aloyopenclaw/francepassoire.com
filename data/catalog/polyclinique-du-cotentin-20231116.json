@@ -1,0 +1,60 @@
+{
+  "slug": "polyclinique-du-cotentin-20231116",
+  "entity": "Polyclinique du Cotentin",
+  "siren": "393932314",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "group": "lockbit",
+  "dates": {
+    "revendication": "2023-11-16",
+    "publication": "2023-12-29",
+    "confirmation": "2023-12-19"
+  },
+  "volume": {
+    "count": 3300,
+    "unit": "personnes",
+    "label": "un peu plus de 3 000 patients (hospitalisations complètes) et environ 400 personnels, sur 40 000 à 50 000 patients suivis entre 2018 et 2023 ; 31 Go de données publiés par LockBit 3.0 selon DPO Partage"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Polyclinique du Cotentin — Cyber intrusion (communication officielle)",
+      "url": "https://www.polyclinique-cotentin.fr/cyber-intrusion/",
+      "kind": "officiel"
+    },
+    {
+      "label": "La Presse de la Manche/actu.fr — La Polyclinique du Cotentin victime d'une cyberattaque : les données de plus de 3 000 patients et 400 personnels exfiltrées (janvier 2024)",
+      "url": "https://actu.fr/normandie/cherbourg-en-cotentin_50129/numerique-la-polyclinique-du-cotentin-victime-d-une-cyberattaque_60577410.html",
+      "kind": "article"
+    },
+    {
+      "label": "Tendance Ouest — Près de Cherbourg. Une polyclinique victime d'une cyberattaque, les données de 3 300 personnes dérobées (2024)",
+      "url": "https://www.tendanceouest.com/actualite-415779-pres-de-cherbourg-une-polyclinique-victime-dune-cyberattaque-les-donnees-de-3-300-personnes-violees",
+      "kind": "article"
+    },
+    {
+      "label": "DPO Partage — Polyclinique du Cotentin victime de LockBit 3.0 (29 décembre 2023)",
+      "url": "https://www.dpo-partage.fr/polyclinique-du-cotentin-victime-de-lockbit-3-0/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 novembre 2023, la Polyclinique du Cotentin (Cherbourg) subit une cyber-intrusion entraînant le chiffrement d'une partie de son système d'information. Les pirates fixent leur ultimatum de paiement au 18 décembre ; dès le lendemain, l'établissement confirme l'exfiltration de données accessibles depuis son serveur de centralisation de fichiers. Pour les patients sont concernées les données d'identité, le numéro de sécurité sociale, le numéro de téléphone et les données de santé du séjour ; environ 400 personnels sont aussi touchés, soit un peu plus de 3 300 personnes sur les 40 000 à 50 000 patients suivis entre 2018 et 2023. L'établissement dépose plainte pour captation de données informatiques, saisit l'ARS, le CERT Santé et la CNIL, et envoie des courriers individuels ; le groupe LockBit 3.0 publie environ 31 Go de données. Aucune donnée bancaire n'est concernée.",
+  "timeline": [
+    {
+      "date": "2023-11-16",
+      "event": "Cyber-intrusion et chiffrement d'une partie du système d'information de la Polyclinique du Cotentin."
+    },
+    {
+      "date": "2023-12-18",
+      "event": "Ultimatum de paiement des pirates ; publication d'environ 31 Go de données revendiquée par LockBit 3.0."
+    },
+    {
+      "date": "2023-12-19",
+      "event": "Confirmation de l'exfiltration : identité, NIR, téléphone et données de santé de séjours ; plainte, ARS, CERT Santé et CNIL saisis."
+    }
+  ]
+}

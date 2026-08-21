@@ -1,0 +1,38 @@
+{
+  "slug": "academie-de-lille-20230112",
+  "entity": "Académie de Lille",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-01-12",
+    "publication": "2023-01-12"
+  },
+  "volume": {
+    "count": 900,
+    "unit": "comptes",
+    "label": "plus de 900 couples adresses électroniques / identifiants-mots de passe du personnel, diffusés sur Discord ; compilation d'anciennes fuites selon Zataz"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données pour l'Académie de Lille ? (12 janvier 2023)",
+      "url": "https://www.zataz.com/fuite-de-donnees-pour-lacademie-de-lille/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique — Des données sensibles du personnel de l'Académie de Lille publiées (12 janvier 2023)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-des-donnees-sensibles-du-personnel-de-l-academie-de-lille-publiees-89185.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 janvier 2023, Zataz révèle la diffusion, sur la messagerie Discord, d'un fichier contenant plus de 900 adresses électroniques, IP, identifiants et mots de passe du personnel de l'Académie de Lille, relayé le jour même par Le Monde Informatique. Selon ces relais, il s'agirait d'une compilation d'anciennes fuites de données (Adobe, Badoo, Animoto) plutôt que du fruit d'un piratage récent du rectorat. Des identifiants de connexion d'agents publics restent toutefois exploitables pour des tentatives d'intrusion, ce qui motive l'alerte auprès de l'académie. Le volume exact de comptes encore valides n'est pas établi.",
+  "timeline": [
+    {
+      "date": "2023-01-12",
+      "event": "Zataz puis Le Monde Informatique documentent la diffusion sur Discord de plus de 900 identifiants et mots de passe du personnel de l'Académie de Lille."
+    }
+  ]
+}
