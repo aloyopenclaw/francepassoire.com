@@ -1,0 +1,44 @@
+{
+  "slug": "mauron-20251120",
+  "entity": "Ville de Mauron (plateforme de prise de rendez-vous RDV360)",
+  "siren": "215601279",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-20",
+    "publication": "2025-11-20",
+    "confirmation": "2025-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; usagers ayant pris rendez-vous en ligne pour des titres d’identité auprès de la commune (Morbihan)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France — Des mairies bretonnes victimes d’une fuite massive de données personnelles via une application de rendez-vous en ligne (20 novembre 2025)",
+      "url": "https://www.ouest-france.fr/bretagne/des-mairies-bretonnes-victimes-dune-fuite-massive-de-donnees-personnelles-via-une-application-de-rendez-vous-en-ligne-9a3346a0-c633-11f0-a196-a9dcf76600e4",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
+      "url": "https://www.letelegramme.fr/bretagne/on-en-sait-plus-sur-la-vaste-fuite-de-donnees-qui-a-touche-plusieurs-municipalites-en-bretagne-6934738.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-novembre 2025, la commune de Mauron (Morbihan) figure parmi les mairies bretonnes victimes d’une fuite massive de données personnelles via RDV360, l’application de rendez-vous en ligne dédiée aux démarches d’identité en mairie. Les données concernées sont l’identité et les coordonnées des usagers — nom, prénom, code postal, adresse e-mail, numéro de téléphone — associées aux demandes de cartes d’identité et de passeports. Le fournisseur de l’application a reconnu une intrusion malveillante. Recensée par Ouest-France puis Le Télégramme, l’alerte de Mauron s’inscrit dans la même fuite que celles de Ploërmel, Josselin, Brest, Quimper, Guipavas ou Sérent.",
+  "timeline": [
+    {
+      "date": "2025-11-20",
+      "event": "Ouest-France recense la fuite via RDV360 ; Mauron compte parmi les communes alertées, aux côtés de Ploërmel et Josselin."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Le Télégramme confirme l’alerte lancée par la commune de Mauron dans la fuite multi-communes."
+    }
+  ]
+}
