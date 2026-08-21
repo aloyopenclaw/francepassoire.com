@@ -274,7 +274,9 @@ describe('POST /api/watchlist — inscription double opt-in', () => {
     expect(body.sender).toEqual({ name: 'FrancePassoire', email: 'alerte@francepassoire.com' });
     expect(brevoCalls[0]!.headers['api-key']).toBe('brevo-key-test');
     expect(body.to).toEqual([{ email: 'jeanne@example.com' }]);
-    expect(body.subject).toBe('Confirmez votre veille FrancePassoire');
+    expect(body.subject).toBe('🏷️ Confirmez votre veille FrancePassoire (24 h)');
+    expect(body.htmlContent).toContain('Activer ma veille');
+    expect(body.htmlContent).toContain('#FF6B1A');
     expect(body.textContent).toContain('https://francepassoire.com/api/watchlist/confirm?token=');
   });
 
