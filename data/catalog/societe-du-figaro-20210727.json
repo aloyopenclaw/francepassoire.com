@@ -1,0 +1,58 @@
+{
+  "slug": "societe-du-figaro-20210727",
+  "entity": "Société du Figaro",
+  "siren": "542077755",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-07-27",
+    "publication": "2021-07-29",
+    "confirmation": "2021-07-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 50 000 euros ; aucun volume de personnes concernées communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « PRESSE », consentement des personnes (cookies), sanction pécuniaire de 50 000 euros (27 juillet 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Cookies : sanction de 50 000 euros à l'encontre de la Société du Figaro (communiqué du 29 juillet 2021, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20210729070527/https://www.cnil.fr/fr/cookies-sanction-de-50-000-euros-lencontre-de-la-societe-du-figaro",
+      "kind": "archive"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2021-013 du 27 juillet 2021 (texte officiel ; page courante protégée contre les robots, capture vérifiée)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000043867129",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde du droit — Sanction cookies : responsabilité de l'éditeur d'un site dans le dépôt de cookies tiers de partenaires commerciaux",
+      "url": "https://www.lemondedudroit.fr/decryptages/76982-sanction-cookies-responsabilite-editeur-site-depot-de-cookies-tiers-partenaires-commerciaux.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : « Brico Privé et Le Figaro : l'internaute doit pouvoir accepter les cookies non essentiels avant leur dépôt »",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 juillet 2021, la formation restreinte de la CNIL a sanctionné la Société du Figaro d'une amende de 50 000 euros (délibération SAN-2021-013). La société édite le site d'actualités lefigaro.fr. À la suite d'une plainte, des contrôles menés entre 2020 et 2021 ont constaté que des partenaires y déposaient automatiquement des cookies publicitaires. Ce dépôt intervenait sans action de l'internaute, et parfois malgré son refus. L'éditeur devait s'assurer que ces traceurs n'étaient déposés qu'après le recueil du consentement. La CNIL a rendu sa décision publique.",
+  "timeline": [
+    {
+      "date": "2021-07-27",
+      "event": "Amende de 50 000 euros (SAN-2021-013) : cookies publicitaires déposés par des partenaires avant le consentement des internautes, ou malgré leur refus."
+    },
+    {
+      "date": "2021-07-29",
+      "event": "La CNIL rend publique la décision, ouverte à la suite d'une plainte et de contrôles menés entre 2020 et 2021."
+    }
+  ]
+}
