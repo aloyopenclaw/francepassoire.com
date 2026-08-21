@@ -3,18 +3,28 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FichePage from '../../components/FichePage.astro';
 import { labelStatut } from '../../lib/fiche-view';
-import { dateAttribution, formaterDate } from '../../lib/hub-view';
+import {
+  anneeFiche,
+  dateAttribution,
+  ficheHubLinks,
+  formaterDate,
+  labelSecteur,
+} from '../../lib/hub-view';
 
 export function getStaticPaths() {
-  return getCollection('catalog').then((entries) =>
-    entries.map((entry) => ({
+  return getCollection('catalog').then((entries) => {
+    // Rétroliens : l'existence d'un hub dépend du catalogue ENTIER (règle
+    // ≥ SEUIL_HUB de hub-view.ts, appliquée par ficheHubLinks) — zéro lien
+    // vers une page hub non générée.
+    const fiches = entries.map((entry) => entry.data);
+    return entries.map((entry) => ({
       params: { slug: entry.data.slug },
-      props: { fiche: entry.data },
-    })),
-  );
+      props: { fiche: entry.data, liens: ficheHubLinks(entry.data, fiches) },
+    }));
+  });
 }
 
-const { fiche } = Astro.props;
+const { fiche, liens } = Astro.props;
 
 const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()} recensée par FrancePassoire — ${fiche.volume.label.toLowerCase()}. Données annoncées, historique et sources citées sur la fiche.`;
 
@@ -32,8 +42,42 @@ const articleJsonLd = JSON.stringify({
   isAccessibleForFree: true,
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
 });
+
+// Rétroliens fiche → hubs (Ton A, factuel sec) : un lien par hub EXISTANT
+// auquel cette fiche appartient — ficheHubLinks a déjà écarté les hubs sous
+// le seuil, la liste peut donc être vide (aucun bloc rendu).
+const retroliens = [
+  ...(liens.secteur
+    ? [{ url: liens.secteur.url, texte: `→ secteur ${labelSecteur(fiche.secteur)}` }]
+    : []),
+  ...liens.donnees.map((donnee) => ({
+    url: donnee.url,
+    texte: `→ données ${donnee.label}`,
+  })),
+  ...(liens.annee
+    ? [{ url: liens.annee.url, texte: `→ année ${anneeFiche(fiche)}` }]
+    : []),
+];
 ---
 <Layout title={titreDocument} description={ficheDescription}>
   <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
   <FichePage fiche={fiche} />
+
+  <!-- Rétroliens vers les hubs existants, après les sources -->
+  {retroliens.length > 0 && (
+    <section class="bg-brand-paper pb-12">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-hard-sm">
+          <p class="font-mono text-xs font-bold uppercase tracking-wide text-brand-ink/70 mb-3">Voir aussi</p>
+          <div class="flex flex-wrap gap-3">
+            {retroliens.map((lien) => (
+              <a href={lien.url} class="inline-block bg-brand-paper border-2 border-brand-ink rounded-md px-3 py-1.5 font-mono text-sm shadow-[2px_2px_0px_0px_#241405] hover:text-brand-orange transition-colors">
+                {lien.texte}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 </Layout>
