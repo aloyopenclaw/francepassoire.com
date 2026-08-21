@@ -1,0 +1,59 @@
+{
+  "slug": "departement-la-reunion-20241113",
+  "entity": "Conseil départemental de La Réunion",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-13",
+    "publication": "2024-11-14",
+    "confirmation": "2024-11-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur non chiffrée ; l'institution parle d'une « fuite de données limitée » portant sur des données administratives, sans diffusion constatée des fichiers dérobés"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Département de La Réunion — Le Département victime d'une cyber attaque (page officielle de suivi, 14 novembre 2024)",
+      "url": "https://www.departement974.fr/actualite/departement-victime-dune-cyber-attaque-2024",
+      "kind": "officiel"
+    },
+    {
+      "label": "Réunion la 1ère (franceinfo) — Un mois après, ce que l'on sait de la cyberattaque qui a frappé le Conseil départemental de La Réunion (23 décembre 2024)",
+      "url": "https://la1ere.franceinfo.fr/reunion/un-mois-apres-ce-que-l-on-sait-de-la-cyberattaque-qui-a-frappe-le-conseil-departemental-de-la-reunion-1544995.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Un nouveau groupe de hackers revendique la cyberattaque contre le département de La Réunion (groupe Termite)",
+      "url": "https://www.numerama.com/cyberguerre/1851840-un-nouveau-groupe-de-hackers-revendique-la-cyberattaque-contre-le-departement-de-la-reunion.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zinfos974 — Le Département victime d'une cyberattaque : des données ont fuité de manière limitée (novembre 2024)",
+      "url": "https://www.zinfos974.com/le-departement-victime-dune-cyberattaque-des-donnees-ont-fuite-de-maniere-limitee/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 novembre 2024, le Conseil départemental de La Réunion constate une intrusion dans ses systèmes d'information, qui rend plusieurs services informatiques indisponibles — dont la messagerie @cg974.fr — et perturbe l'instruction d'aides sociales comme les subventions FEADER. Une cellule de crise est activée, la CNIL est informée et une plainte est déposée ; l'office anti-cybercriminalité (OFAC) ouvre une enquête. Selon la collectivité, une « fuite de données limitée » a été repérée — c'est un apprenti du Département qui a signalé la fuite, selon Réunion la 1ère. Début décembre, le groupe de rançongiciel Termite, jusque-là inconnu, revendique l'attaque sur un site du darknet sans publier d'échantillon des données dérobées ; le mode opératoire décrit par Numerama est celui d'une double extorsion. Un mois après, la remise en état se poursuit.",
+  "timeline": [
+    {
+      "date": "2024-11-13",
+      "event": "Intrusion détectée dans les systèmes d'information du Conseil départemental ; services indisponibles, cellule de crise activée."
+    },
+    {
+      "date": "2024-11-14",
+      "event": "L'institution publie une page de suivi : « fuite de données limitée », plainte déposée, CNIL informée."
+    },
+    {
+      "date": "2024-12-13",
+      "event": "Le président du Département raconte qu'un apprenti a repéré et signalé la fuite de données ; l'enquête est confiée à l'OFAC."
+    },
+    {
+      "date": "2024-12-23",
+      "event": "Réunion la 1ère dresse le bilan à un mois : remise en état toujours en cours ; le groupe Termite a revendiqué l'attaque sans divulguer de données."
+    }
+  ],
+  "group": "termite"
+}
