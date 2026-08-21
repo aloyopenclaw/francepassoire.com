@@ -1,0 +1,58 @@
+{
+  "slug": "ministere-europe-affaires-etrangeres-visas-20231211",
+  "entity": "Ministère de l'Europe et des Affaires étrangères (portail Réseau mondial Visas 2)",
+  "siren": "110006012",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-11",
+    "publication": "2024-01-31",
+    "confirmation": "2023-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; rappel à l'ordre (licéité, exactitude, sécurité) sur le portail des visas Schengen"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « ministère de l'Europe et des Affaires étrangères », rappel à l'ordre (11 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Phenix Privacy — CNIL : récapitulatif des sanctions de décembre 2023 (7 mars 2024)",
+      "url": "https://phenix-privacy.com/cnil-sanctions-decembre-2023/",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech — Copies illégales : la CNIL sanctionne les ministères de l'Intérieur et des Affaires étrangères (31 janvier 2024)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/copies-illegales-la-cnil-sanctionne-les-ministeres-de-l-interieur-et-des-affaires-etrangeres_AV-202401310640.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Deux ministères français sanctionnés par la CNIL pour leur gestion des demandes de visas (1er février 2024)",
+      "url": "https://www.clubic.com/actualite-517648-deux-ministeres-francais-sanctionnes-par-la-cnil-pour-leur-gestion-un-peu-hasardeuse-des-demandes-de-visas.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2023, la CNIL a rappelé à l'ordre le ministère de l'Europe et des Affaires étrangères, avec le ministère de l'Intérieur et des Outre-mer, pour le fonctionnement du portail « Réseau mondial Visas 2 », qui centralisait les demandes, délivrances et refus de visas ainsi que des titres de voyage. Selon les relais de la décision, les deux ministères conservaient des copies nationales interdites du fichier Schengen et traitaient des données inexactes. La CNIL a retenu des manquements aux obligations de licéité, d'exactitude et de sécurité ; le portail a été remplacé par le système conforme France-Visas.",
+  "timeline": [
+    {
+      "date": "2023-12-11",
+      "event": "Rappel à l'ordre : copies nationales interdites du fichier Schengen et données inexactes du portail des visas."
+    },
+    {
+      "date": "2024-01-31",
+      "event": "La presse tech relaie la sanction des deux ministères et le remplacement du portail par France-Visas."
+    }
+  ]
+}

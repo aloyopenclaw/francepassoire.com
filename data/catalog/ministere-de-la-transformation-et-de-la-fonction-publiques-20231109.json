@@ -1,0 +1,52 @@
+{
+  "slug": "ministere-de-la-transformation-et-de-la-fonction-publiques-20231109",
+  "entity": "Ministère de la Transformation et de la Fonction publiques (message sur la réforme des retraites)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-09",
+    "publication": "2023-11-14",
+    "confirmation": "2023-11-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; rappel à l'ordre pour détournement des finalités"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « ministère de la Transformation et de la Fonction publiques », rappel à l'ordre (9 novembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Global Security Mag — Message adressé aux agents publics sur la réforme des retraites : la CNIL rappelle publiquement à l'ordre deux ministères",
+      "url": "https://www.globalsecuritymag.fr/Message-adresse-aux-agents-publics-sur-la-reforme-des-retraites-la-CNIL.html",
+      "kind": "article"
+    },
+    {
+      "label": "France Inter (radiofrance.fr) — La CNIL rappelle à l'ordre deux ministères après un message aux fonctionnaires sur la réforme des retraites (14 novembre 2023)",
+      "url": "https://www.radiofrance.fr/franceinter/la-cnil-rappelle-a-l-ordre-deux-ministeres-apres-un-message-aux-fonctionnaires-sur-la-reforme-des-retraites-4327926",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 9 novembre 2023, la formation restreinte de la CNIL a rappelé à l'ordre le ministère de la Transformation et de la Fonction publiques, avec le ministère de l'Économie et des Finances, pour avoir utilisé les coordonnées d'agents publics afin de leur adresser un message présentant le projet de réforme des retraites. Selon le bilan 2023 de la CNIL, ce détournement des finalités du traitement a desservi une communication institutionnelle : des données collectées pour la gestion des agents ont servi à l'envoi de ce message. Le rappel à l'ordre, rendu public, n'emporte pas d'amende.",
+  "timeline": [
+    {
+      "date": "2023-11-09",
+      "event": "Rappel à l'ordre : coordonnées d'agents publics utilisées pour un message sur la réforme des retraites (détournement de finalités)."
+    },
+    {
+      "date": "2023-11-14",
+      "event": "La presse, dont France Inter, relaie la sanction des deux ministères."
+    }
+  ]
+}
