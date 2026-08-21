@@ -1,0 +1,42 @@
+{
+  "slug": "attractive-world-samadhi-sas-20161215",
+  "entity": "Attractive World (Samadhi SAS)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-12-15",
+    "confirmation": "2016-12-15",
+    "publication": "2017-01-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume publié ; sanction pécuniaire publique de 10 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « site de rencontres », sanction pécuniaire publique (15 décembre 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Haas Avocats — Sites de rencontre : Meetic et Attractive World sanctionnés par la CNIL",
+      "url": "https://www.haas-avocats.com/plateformes/ecommerce/sites-de-rencontre-meetic-et-attractive-world-sanctionnes-par-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 décembre 2016, la formation restreinte de la CNIL a condamné Samadhi SAS, éditrice du site de rencontres attractiveworld.net, à une sanction pécuniaire publique de 10 000 euros. La case d'inscription unique, valant acceptation des conditions d'utilisation, majorité et consentement au traitement de données sensibles dont l'orientation sexuelle, ne recueillait pas un consentement exprès. La société a déployé une case distincte fin 2016, après la mise en demeure de juin 2015. Le tableau officiel des sanctions désigne l'entité sous l'appellation « site de rencontres » ; Meetic, sanctionnée le même jour, est cataloguée séparément.",
+  "timeline": [
+    {
+      "date": "2015-06-01",
+      "event": "La CNIL met en demeure les éditeurs de remédier au défaut de consentement exprès après les contrôles de fin 2014."
+    },
+    {
+      "date": "2016-12-15",
+      "event": "Sanction pécuniaire publique de 10 000 euros contre Samadhi SAS ; une case de consentement distincte est déployée fin 2016."
+    }
+  ]
+}
