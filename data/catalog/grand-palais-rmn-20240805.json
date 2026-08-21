@@ -1,0 +1,47 @@
+{
+  "slug": "grand-palais-rmn-20240805",
+  "entity": "Réunion des musées nationaux - Grand Palais",
+  "siren": "692041585",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-05",
+    "publication": "2024-08-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "une quarantaine de boutiques et librairies de musées privées de systèmes pendant plusieurs jours ; le Grand Palais assure qu'aucune donnée n'a été volée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — JO 2024 : le Grand Palais assure qu'aucune donnée n'a été volée après la cyberattaque (7 août 2024)",
+      "url": "https://www.leparisien.fr/jo-paris-2024/jo-paris-2024-le-grand-palais-assure-quaucune-donnee-na-ete-volee-apres-la-cyberattaque-dont-il-a-ete-victime-07-08-2024-JC4ELY4IM5FBJO5CVPS6MHJMKM.php",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Une attaque par rançongiciel contre le Grand Palais et une quarantaine de boutiques-librairies d'autres musées (août 2024)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/une-attaque-par-rancongiciel-contre-le-grand-palais-et-une-quarantaine-de-boutiques-librairies-d-autres-musees-2313391.html",
+      "kind": "article"
+    },
+    {
+      "label": "Huffington Post — JO de Paris 2024 : le Grand Palais et 40 autres musées en France victimes d'une attaque par rançongiciel (août 2024)",
+      "url": "https://www.huffingtonpost.fr/france/article/jo-de-paris-2024-le-grand-palais-et-40-autres-musees-en-france-victimes-d-une-attaque-par-rancongiciel_237995.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 3 au 4 août 2024, en pleine épreuve olympique d'escrime, une attaque par rançongiciel frappe le Grand Palais-RMN : les accès aux serveurs de l'établissement sont coupés et, par ricochet, une quarantaine de boutiques et librairies de musées — dont celles du Louvre et du château de Versailles — restent hors service plusieurs jours, incapables d'encaisser. Les attaquants réclament une rançon aux institutions visées. Le 7 août, le Grand Palais assure qu'aucune donnée n'a été volée ; l'attaque n'est pas revendiquée publiquement.",
+  "timeline": [
+    {
+      "date": "2024-08-04",
+      "event": "Attaque par rançongiciel dans la nuit du 3 au 4 août : accès aux serveurs du Grand Palais-RMN coupés, rançon exigée."
+    },
+    {
+      "date": "2024-08-07",
+      "event": "Le Grand Palais assure qu'aucune donnée n'a été volée ; une quarantaine de boutiques de musées restent perturbées."
+    }
+  ]
+}
