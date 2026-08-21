@@ -1,0 +1,51 @@
+{
+  "slug": "ratp-20211029",
+  "entity": "RATP",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-10-29",
+    "confirmation": "2021-10-29"
+  },
+  "volume": {
+    "count": 16000,
+    "unit": "personnes",
+    "label": "fichiers d'évaluation couvrant environ 16 000 agents, selon la délibération SAN-2021-019"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 42e rapport d'activité 2021 (PDF, chronologie des sanctions)",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Les Numériques — La Cnil inflige 400 000 euros d'amende à la RATP (5 novembre 2021)",
+      "url": "https://www.lesnumeriques.com/vie-du-net/la-cnil-inflige-400-000-euros-d-amende-a-la-ratp-n170847.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 octobre 2021, la CNIL a infligé une amende de 400 000 euros à la RATP (délibération SAN-2021-019). Saisie en mai 2020 d'une plainte syndicale, l'autorité a constaté que les fichiers d'évaluation utilisés pour les avancements de carrière individualisaient le nombre de jours de grève parmi les absences, contrairement au principe de minimisation. Les données étaient conservées plus de trois ans dans une base accessible à de nombreux agents, au-delà des dix-huit mois prévus. La formation restreinte a relevé des manquements aux principes de minimisation, de responsabilité, de limitation des durées de conservation et de sécurité.",
+  "timeline": [
+    {
+      "date": "2020-05-01",
+      "event": "Une organisation syndicale saisit la CNIL de la présence de jours de grève dans les fichiers d'avancement."
+    },
+    {
+      "date": "2021-10-29",
+      "event": "Amende de 400 000 euros (SAN-2021-019) : minimisation, responsabilité, conservation et sécurité."
+    },
+    {
+      "date": "2021-11-05",
+      "event": "La sanction est rendue publique et relayée par la presse spécialisée."
+    }
+  ]
+}

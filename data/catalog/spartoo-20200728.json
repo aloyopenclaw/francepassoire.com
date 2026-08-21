@@ -1,0 +1,53 @@
+{
+  "slug": "spartoo-20200728",
+  "entity": "Spartoo SAS",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-07-28",
+    "publication": "2020-08-05",
+    "confirmation": "2020-07-28"
+  },
+  "volume": {
+    "count": 5790121,
+    "unit": "personnes",
+    "label": "5 790 121 anciens clients inactifs depuis plus de cinq ans et 25 911 675 prospects conservés sans durée définie, selon la délibération SAN-2020-003"
+  },
+  "data_types": [
+    "identite",
+    "credentials",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport d'activité 2020 (PDF, tableau des sanctions)",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDNet — Spartoo visée par une sanction de 250 000 euros pour manquements au RGPD (5 août 2020)",
+      "url": "https://www.zdnet.fr/actualites/spartoo-visee-par-une-sanction-de-250-000-euros-pour-manquements-au-rgpd-39907763.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 juillet 2020, la CNIL sanctionne Spartoo, vendeur de chaussures en ligne présent dans treize pays, d'une amende de 250 000 euros assortie d'une injonction sous astreinte. Le contrôle de mai 2018 avait relevé l'enregistrement permanent des appels du service client, avec conservation de coordonnées bancaires, l'absence de durées de conservation, des mots de passe trop simples et des copies de cartes bancaires conservées six mois en clair. Plus de trois millions d'anciens clients et près de 26 millions de prospects étaient conservés sans justification. Première sanction prononcée par la CNIL comme autorité chef de file européenne.",
+  "timeline": [
+    {
+      "date": "2018-05-31",
+      "event": "Contrôle de la CNIL dans les locaux de la société, quelques jours après l'entrée en vigueur du RGPD."
+    },
+    {
+      "date": "2020-07-28",
+      "event": "Amende de 250 000 euros et injonction de mise en conformité sous astreinte (délibération SAN-2020-003)."
+    },
+    {
+      "date": "2020-08-05",
+      "event": "La CNIL rend la décision publique en qualité d'autorité chef de file, en coopération avec les autorités européennes concernées."
+    }
+  ]
+}

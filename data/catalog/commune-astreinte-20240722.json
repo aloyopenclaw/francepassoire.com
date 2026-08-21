@@ -1,0 +1,37 @@
+{
+  "slug": "commune-astreinte-20240722",
+  "entity": "Une commune (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-22",
+    "confirmation": "2024-07-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "liquidation d'astreinte ; aucun volume de données concerné"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 22 juillet 2024, la CNIL a prononcé la liquidation d'astreinte de 6 900 euros à l'encontre d'une commune. La collectivité n'avait pas répondu à l'injonction prononcée dans une procédure antérieure et demeurait non conforme. L'astreinte liquidée sanctionne cette absence de mise en conformité, non un nouveau manquement. L'entité n'est pas nommée dans le tableau officiel des sanctions. Le bilan 2024 de la CNIL recense six liquidations d'astreinte de ce type sur l'année, marque d'un durcissement contre les organismes qui ignorent ses injonctions après mise en demeure.",
+  "timeline": [
+    {
+      "date": "2024-07-22",
+      "event": "Liquidation d'astreinte de 6 900 euros pour absence de réponse à l'injonction et non-conformité persistante."
+    }
+  ]
+}
