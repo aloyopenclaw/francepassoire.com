@@ -1,0 +1,52 @@
+{
+  "slug": "slimpay-20211228",
+  "entity": "Slimpay",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-12-28",
+    "confirmation": "2021-12-28"
+  },
+  "volume": {
+    "count": 12000000,
+    "unit": "personnes",
+    "label": "données d'environ 12 millions de personnes restées stockées sur un serveur accessible librement depuis internet, selon la délibération SAN-2021-020"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 42e rapport d'activité 2021 (PDF, chronologie des sanctions)",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Bignon Lebray — Violation de données : sanction de 180 000 euros à l'encontre de la société SLIMPAY",
+      "url": "https://www.bignonlebray.com/actualites/publications/cnil-sanction-slimpay-violation-de-donnees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 décembre 2021, la CNIL a sanctionné Slimpay, établissement de paiement agréé, d'une amende de 180 000 euros (SAN-2021-020). En 2015, un projet de recherche interne avait réutilisé des données personnelles pour mettre au point un mécanisme anti-fraude. Les données, relatives à environ 12 millions de personnes, sont restées stockées sur un serveur dépourvu de mesures de sécurité, librement accessible depuis internet. Alertée en février 2020, la société a notifié la violation puis isolé le serveur. La CNIL a retenu l'absence d'encadrement des sous-traitants, le défaut de sécurité et la non-information des personnes concernées.",
+  "timeline": [
+    {
+      "date": "2015-01-01",
+      "event": "Un projet de recherche interne réutilise des données personnelles, copiées sur un serveur sans mesures de sécurité."
+    },
+    {
+      "date": "2020-02-01",
+      "event": "Alertée par un client, la société notifie la violation à la CNIL et isole le serveur concerné."
+    },
+    {
+      "date": "2021-12-28",
+      "event": "Amende de 180 000 euros (SAN-2021-020) : sous-traitance, sécurité et information des personnes."
+    }
+  ]
+}

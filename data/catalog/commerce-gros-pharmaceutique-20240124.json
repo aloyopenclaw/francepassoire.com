@@ -1,0 +1,42 @@
+{
+  "slug": "commerce-gros-pharmaceutique-20240124",
+  "entity": "Société de commerce de gros pharmaceutique (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-24",
+    "confirmation": "2024-01-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros, plafond de la procédure simplifiée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « activité de commerce de gros pharmaceutiques » (procédure simplifiée), amende de 20 000 euros (24 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 24 janvier 2024, la CNIL a prononcé une amende de 20 000 euros — le plafond de la procédure simplifiée — à l'encontre d'une société exerçant une activité de commerce de gros pharmaceutique. Les manquements retenus : défaut de sécurité des données, défaut de coopération avec la CNIL, absence de registre des activités de traitement et recours à des sous-traitants sans garanties suffisantes. La dénomination n'est pas publiée et la nature des données n'est pas précisée. En 2024, un manquement à la sécurité des données a été retenu contre 11 organismes selon le bilan annuel de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-01-24",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : sécurité, coopération, registre des traitements et encadrement des sous-traitants en cause."
+    }
+  ]
+}

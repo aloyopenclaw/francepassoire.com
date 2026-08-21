@@ -1,9 +1,10 @@
 ---
 /**
  * Ticker « Dernière fuite » — îlot client.
- * Règle éditoriale : seules des fuites dont la source externe réelle est
- * citée peuvent défiler ; chaque élément pointe vers cette source EXTERNE
- * (jamais vers une fiche interne). Vide à ce stade : état vide honnête.
+ * Règle éditoriale Wave 0 satisfaite : chaque fiche du catalogue cite ses
+ * sources externes réelles ; les items pointent donc vers les FICHES
+ * publiées (liens internes /fiche/<slug>/). Rotation toutes les 4 s ;
+ * le premier item est rendu au build, l'état vide honnête reste prévu.
  */
 export interface TickerItem {
   label: string;
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const { items = [] } = Astro.props;
+const premier = items[0];
 const fallbackText =
   'aucune pour l’instant — le fil démarre à la première fuite vérifiée';
 ---
@@ -24,7 +26,13 @@ const fallbackText =
     <svg width="14" height="14" viewBox="0 0 24 24" fill="#241405" class="svg-ink" stroke="none"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
   </div>
   <span class="text-brand-ink/60 mr-2">Dernière fuite :</span>
-  <span id="ticker-text" class="font-bold text-center leading-snug">{fallbackText}</span>
+  <span id="ticker-text" class="font-bold text-center leading-snug">
+    {premier ? (
+      <a href={premier.url} class="underline hover:text-brand-orange">{premier.label}</a>
+    ) : (
+      fallbackText
+    )}
+  </span>
 </div>
 
 <script define:vars={{ items }}>
@@ -33,8 +41,6 @@ const fallbackText =
     const setItem = (item) => {
       const a = document.createElement('a');
       a.href = item.url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
       a.className = 'underline hover:text-brand-orange';
       a.textContent = item.label;
       el.replaceChildren(a);

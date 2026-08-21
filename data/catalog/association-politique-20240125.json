@@ -1,0 +1,42 @@
+{
+  "slug": "association-politique-20240125",
+  "entity": "Association à caractère politique (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-25",
+    "confirmation": "2024-01-25",
+    "publication": "2024-03-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros, plafond de la procédure simplifiée"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association à caractère politique » (procédure simplifiée), amende de 20 000 euros (25 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024 (12 mars 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 janvier 2024, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une association à caractère politique, dans le cadre de la procédure simplifiée. Selon le communiqué du 12 mars 2024, la campagne de prospection électorale menée pendant les élections présidentielles et législatives de 2022 manquait à ses obligations d'information : mentions absentes ou incomplètes sur les sites de l'association, messages vocaux, SMS, courriers postaux ou électroniques envoyés sans information sur le droit d'opposition. La dénomination n'est pas publiée. Les coordonnées démarchées — téléphones, adresses — sont les données concernées.",
+  "timeline": [
+    {
+      "date": "2024-01-25",
+      "event": "Amende de 20 000 euros (procédure simplifiée) pour manquement à l'information en matière de prospection politique."
+    },
+    {
+      "date": "2024-03-12",
+      "event": "La CNIL publie un communiqué détaillant la campagne de 2022 : sites incomplets et messages sans mention du droit d'opposition."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+# /proteger fidélité 2 — corrections après revue owner du site live
+Date: 2026-08-21
+
+## FIX 1 — Vérifier : colonne droite = 3 cartes (fidèle template.html)
+- Template lignes 928-950 : cartes en <h4 class="font-display font-bold text-xl"> (PAS h3).
+  → h3→h4 corrigé sur cartes 1 et 3 ; carte 2 ajoutée avec le markup exact du template.
+- Cartes DOM vérifiées (playwright, 1280px) : 3 <a> empilés, colonne 600×358 :
+  1. « Votre email » → https://haveibeenpwned.com (flèche diagonale, template L928)
+  2. « Votre numéro de téléphone » — « Guide : les outils qui existent pour vérifier. »
+     → https://www.cybermalveillance.gouv.fr — SEUL ÉCART vs template (template: href="#" mort,
+     règle « jamais de lien mort »). Curl -L : 200. (ssi.gouv.fr/entreprise/par-quel-commencer/ : 404 → rejeté.)
+     Flèche → droite du template (line 5,12→19,12) conservée : grep dist = 1.
+  3. « Votre nom / adresse » → https://myactivity.google.com/results-about-you (inchangé)
+- Copy des 3 cartes verbatim template.
+
+## FIX 2 — Surveiller épuré
+- Supprimé : h3 « Autres outils de veille » + sous-titre, grille 4 cartes (HIBP notifications,
+  CNIL signalement, flux RSS, « Vigilance au quotidien »), paragraphe intro « ou appuyez-vous sur
+  les outils gratuits », paragraphe « panorama national → tous les chiffres ». Aucun wrapper vide.
+- Reste (ordre template L1036-1073 : form → slot DPO) : WatchlistForm + bloc #proteger-dpo (DpoGenerator).
+- DOM : autresOutils=false, cnil=false, rss=false, vigilance=false, form=true, dpo=true.
+
+## QA
+- npm run build : 547 pages, ✓ Complete.
+- curl preview http://localhost:4321/proteger/ → 200.
+- grep dist/proteger/index.html : 'Votre numéro de téléphone'=1, 'Autres outils'=0,
+  'CNIL — signalement'=0, 'Vigilance au quotidien'=0. Sweep dist/ complet : 0 fichiers restants.
+- node scripts/link-sweep.mjs : exit 0 (15580 liens, 0 mort). NB : 1er passage signalait un href="#"
+  → c'était le commentaire HTML citant le template ; rewordé, sweep repassé propre.
+- Chosen phone URL : https://www.cybermalveillance.gouv.fr → curl 200.
+- Screenshot : proteger-fidelite2.png (896×2056 = colonne Vérifier + Surveiller complet, 1280px).
+  Vérification visuelle par inspection DOM (modèle sans lecture d'image) : 3 cartes empilées crème
+  bordées, icônes flèches à droite ; Surveiller = titre numéroté + formulaire + générateur DPO seul.
+- Console navigateur : erreurs Turnstile 110200 sur localhost (WatchlistForm, préexistant, hors lane).
+
+## Commit
+fix(site): /proteger fidélité 2 — 3 cartes Vérifier + Surveiller épuré
