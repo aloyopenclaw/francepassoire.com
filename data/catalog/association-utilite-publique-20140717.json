@@ -1,0 +1,37 @@
+{
+  "slug": "association-utilite-publique-20140717",
+  "entity": "Une association d'utilité publique (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-07-17",
+    "confirmation": "2014-07-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique de 3 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « ASSOCIATION D'UTILITÉ PUBLIQUE », publication de résultats de compétitions (17 juillet 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 17/07/2014 — sanction pécuniaire publique de 3 000 euros",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 17 juillet 2014, la CNIL a prononcé une sanction pécuniaire publique de 3 000 euros contre une association d'utilité publique qui publiait les résultats de compétitions sur son site internet, avec un double manquement : défaut d'information des personnes concernées et défaut de sécurité et de confidentialité des données. Le montant, absent du tableau actuel du site CNIL, est établi par la version archivée de la liste officielle. La dénomination n'est pas publique. Publier des résultats de compétitions sans informer les participants ni sécuriser les données collectées cumule deux obligations que l'autorité vérifie systématiquement.",
+  "timeline": [
+    {
+      "date": "2014-07-17",
+      "event": "Sanction pécuniaire publique de 3 000 euros : résultats de compétitions publiés sans information ni sécurité des données."
+    }
+  ]
+}
