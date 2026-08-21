@@ -61,7 +61,7 @@ const SITEVERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverif
 const BREVO_SEND_URL = 'https://api.brevo.com/v3/smtp/email';
 const FICHES_URL = 'https://francepassoire.com/api/v1/fiches.json';
 const SENDER_EMAIL = 'alerte@francepassoire.com';
-const SENDER_NAME = 'FrancePassoire';
+const SENDER_NAME = 'France Passoire';
 
 const RATE_LIMIT_MAX = 3;
 const RATE_LIMIT_WINDOW_S = 3600;
