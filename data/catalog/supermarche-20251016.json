@@ -1,0 +1,37 @@
+{
+  "slug": "supermarche-20251016",
+  "entity": "Un supermarché (entité non nommée)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-16",
+    "confirmation": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 20 000 euros et injonction (procédure simplifiée) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SUPERMARCHE (procédure simplifiée) », amende administrative de 20 000 euros et injonction (16 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 16 octobre 2025, la CNIL a sanctionné un supermarché d'une amende administrative de 20 000 euros et d'une injonction, dans le cadre de la procédure simplifiée. Manquements retenus : dispositif de vidéoprotection illicite, collecte non minimisée de données de vidéosurveillance et défaut d'information des personnes. Le montant atteint le plafond des sanctions simplifiées. Le nom de l'enseigne n'est pas publié : ces décisions ne sont jamais rendues publiques nominativement. La décision figure au tableau officiel des sanctions. La vidéoprotection en magasin reste une priorité correctrice de la CNIL, qui exige proportionnalité du dispositif et information des clients.",
+  "timeline": [
+    {
+      "date": "2025-10-16",
+      "event": "Amende de 20 000 euros et injonction (procédure simplifiée) : vidéoprotection illicite, minimisation et information défaillantes."
+    }
+  ]
+}

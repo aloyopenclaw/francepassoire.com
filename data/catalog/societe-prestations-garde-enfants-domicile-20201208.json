@@ -1,0 +1,44 @@
+{
+  "slug": "societe-prestations-garde-enfants-domicile-20201208",
+  "entity": "Une société de prestations de garde d'enfants à domicile (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-08",
+    "confirmation": "2020-12-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "injonction sous astreinte prononcée sans amende ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE PRESTATIONS DE GARDE D'ENFANTS À DOMICILE », injonction sous astreinte (8 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport d'activité 2020 (PDF officiel) : injonction sous astreinte non associée à une amende contre une société de garde d'enfants à domicile",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Numerama — Google, Amazon, Carrefour : la CNIL dresse le bilan des amendes infligées en 2020 (18 mai 2021)",
+      "url": "https://www.numerama.com/tech/712182-google-amazon-carrefour-la-cnil-dresse-le-bilan-des-amendes-infligees-en-2020.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 décembre 2020, la formation restreinte de la CNIL a prononcé une injonction sous astreinte, sans amende, à l'encontre d'une société de prestations de garde d'enfants à domicile. Manquements retenus : non-respect du principe de minimisation, durées de conservation excessives et sécurité insuffisante des données. L'organisme n'est pas nommé. Le 41e rapport annuel de la CNIL recense cette décision comme l'unique injonction sous astreinte de 2020 non assortie d'une amende. Les données des familles clientes, identité, coordonnées et informations sur les enfants, étaient en jeu. L'astreinte contraignait la société à mettre ses traitements en conformité dans le délai fixé.",
+  "timeline": [
+    {
+      "date": "2020-12-08",
+      "event": "Injonction sous astreinte sans amende : minimisation, durée de conservation et sécurité des données en cause."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "criteo-20230615",
+  "entity": "Criteo SA",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-15",
+    "publication": "2023-06-22",
+    "confirmation": "2023-06-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 40 millions d'euros ; volume d'internautes concernés non chiffré par la décision"
+  },
+  "data_types": [
+    "identite",
+    "geolocalisation",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ SPÉCIALISÉE DANS L'AFFICHAGE DE PUBLICITÉS CIBLÉES SUR LE WEB », amende de 40 millions d'euros (15 juin 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Bignon Lebray — Publicité personnalisée : la CNIL sanctionne Criteo (délibération SAN-2023-009 du 15 juin 2023)",
+      "url": "https://www.bignonlebray.com/actualites/publications/cnil-sanction-criteo.html",
+      "kind": "article"
+    },
+    {
+      "label": "Legalplanet — CNIL, 15 juin 2023, SAN-2023-009 (retargeting publicitaire, réidentification, consentement)",
+      "url": "https://legalplanet.pro/cnil-15-juin-2023-san-2023-009/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 juin 2023, la formation restreinte de la CNIL a infligé une amende de 40 millions d'euros à Criteo SA (délibération SAN-2023-009), spécialiste du reciblage publicitaire. Les plaintes de Privacy International et de NOYB, fin 2018, ont déclenché les contrôles. La CNIL écarte la thèse de l'anonymisation : adresses électroniques hachées, adresses IP et identifiants multiples permettent de réidentifier les internautes avec des moyens raisonnables. Manquements retenus : consentement non vérifié, défaut d'information et de transparence, droit d'accès non respecté, retraits de consentement et effacements incomplets, encadrement insuffisant des responsabilités conjointes avec les sites partenaires.",
+  "timeline": [
+    {
+      "date": "2023-06-15",
+      "event": "Amende de 40 millions d'euros (SAN-2023-009) : données de reciblage requalifiées en données personnelles, consentement et droits non respectés."
+    },
+    {
+      "date": "2023-06-22",
+      "event": "Publication de la délibération sur Légifrance."
+    }
+  ]
+}

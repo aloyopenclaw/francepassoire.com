@@ -1,0 +1,100 @@
+# fullcat-r2-l3 — Rafale 2, lane 3 (CNIL, toutes années) — evidence
+Date : 2026-08-21 (UTC+2) · Worktree : fp-r2l3 · Branche : fiche/rafale2-l3 · Base : 2eea8cc (main, 420 fiches)
+
+## 1. Pool assigné
+/tmp/cnil2-slice-3.txt — 24 lignes (lues via read tool uniquement), désignations anonymisées
+CNIL. Toutes années (décisions 2012→2024). Recoupement slices 0,1,2,4,5 : disjoints sauf
+1 désignation (« SOCIETE D'EDITION DE LOGICIELS APPLICATIFS ») présente aussi dans le
+slice 4 — voir §7 risques.
+
+## 2. Méthode
+1. Tableau officiel curl-vérifié (HTTP 200, UA navigateur) :
+   https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil — 395 lignes de décisions
+   analysées (pages 1 et ?page=1 identiques en contenu, pagination non requise). Les lignes
+   anciennes (2012-2017) ont 5 colonnes (date/désignation/thème/manquements/sanction), les
+   récentes 4 (date/désignation/manquements/sanction) — parsing calibré sur le HTML brut.
+2. 24/24 désignations du pool retrouvées dans le tableau (normalisation accents + apostrophes
+   ’ vs '). 26 décisions correspondantes (2 lignes « SITE DE RENCONTRES » le 15/12/2016 =
+   délibérations 2016-405 et 2016-406 ; 2 lignes « PLATEFORME D'APPELS » le 23/05/2024).
+3. Dédup vs main (420 fiches) : slug théorique + collisions par date. 7 décisions exclues
+   (§4). Les 17 autres livrées.
+4. Identification d'entités : nommage uniquement via source citée curl-200 (AP News, EDPB,
+   Haas Avocats, presse) ; sinon désignation verbatim + « (dénomination non publiée par la
+   CNIL) ». Les communiqués CNIL d'EDF/TotalEnergies/Google ont été anonymisés par la CNIL
+   après leur fenêtre de 2 ans (vérifié : page EDF 200 mais sans occurrence « EDF ») →
+   nommage établi via EDPB (officiel UE) et presse.
+5. Fiches écrites — statut `confirmee` (source officielle cnil.fr), Ton A (factuel sec,
+   chronologie d'abord), pas de siren (entités anonymes ou non immatriculées en France),
+   data_types=[autre] sauf données explicites (financier : FICP, données bancaires taxis ;
+   coordonnees : prospection). Garde locale : description ≤ 120 mots, phrases ≤ 40 mots,
+   events ≤ 40 mots (bornes Ton A ; le catalogue existant tolère jusqu'à 65 mots/phrase).
+
+## 3. Fiches livrées (17)
+| slug | entité | désignation CNIL (verbatim) | décision | date |
+|---|---|---|---|---|
+| google-20211231 | Google (Google LLC et Google Ireland Limited) | SERVICES INTERNET (MOTEUR DE RECHERCHE…) | 150 M€ + injonction | 31/12/2021 |
+| meetic-20161215 | Meetic (Meetic SAS) | SITE DE RENCONTRES | 20 000 € (dél. 2016-406) | 15/12/2016 |
+| attractive-world-samadhi-sas-20161215 | Attractive World (Samadhi SAS) | SITE DE RENCONTRES | 10 000 € (dél. 2016-405) | 15/12/2016 |
+| societe-assurant-…-gestion-logistique-20241219 | anonyme (p.s.) | SOCIETE ASSURANT DES ACTIVITES DE SECURITE PRIVE… | 8 000 € | 19/12/2024 |
+| societe-d-analyse-…-e-commerce-20150518 | anonyme | SOCIETE D'ANALYSE DES COMMANDES… | sanction pécuniaire non publique | 18/05/2015 |
+| societe-d-edition-de-logiciels-applicatifs-20210603 | anonyme | SOCIÉTÉ D'ÉDITION DE LOGICIELS APPLICATIFS | 10 000 € | 03/06/2021 |
+| societe-d-entretien-…-automobiles-20220122 | anonyme | SOCIETE D'ENTRETIEN ET DE REPARATION DE VEHICULES AUTOMOBILES | 3 000 € + injonction | 22/01/2022 |
+| societe-d-entretien-et-reparation-de-vehicules-20220613 | anonyme | SOCIETE D'ENTRETIEN ET REPARATION DE VEHICULES | liquidation d'astreinte 3 900 € | 13/06/2022 |
+| societe-de-credit-a-la-consommation-20140807 | anonyme | SOCIETE DE CREDIT A LA CONSOMMATION | avertissement public | 07/08/2014 |
+| societe-de-diagnostics-immobiliers-20120112 | anonyme | SOCIETE DE DIAGNOSTICS IMMOBILIERS | 20 000 € publique | 12/01/2012 |
+| societe-de-distribution-de-produits-optiques-20151105 | anonyme | SOCIETE DE DISTRIBUTION DE PRODUITS OPTIQUES | 50 000 € publique | 05/11/2015 |
+| societe-de-presse-20150601 | anonyme | SOCIETE DE PRESSE | 15 000 € publique | 01/06/2015 |
+| societe-de-raffinage-20130411 | anonyme | SOCIETE DE RAFFINAGE | avertissement public | 11/04/2013 |
+| societe-de-taxis-20170413 | anonyme | SOCIETE DE TAXIS | sanction pécuniaire publique (montant n.p.) | 13/04/2017 |
+| societe-d-adduction-et-de-traitement-de-l-eau-20120622 | anonyme | SOCIETE D'ADDUCTION ET DE TRAITEMENT DE L'EAU | 10 000 € publique | 22/06/2012 |
+| edf-20221124 | EDF (Électricité de France) | SOCIETE FOURNISSANT DE l'ELECTRICITE, DU GAZ ET DES SERVICES | 600 000 € | 24/11/2022 |
+| totalenergies-electricite-et-gaz-france-20220623 | TotalEnergies Électricité et Gaz France | SOCIETE FOURNITURE ET PRODUCTION D'ELECTRICITE ET DE GAZ | 1 000 000 € | 23/06/2022 |
+
+## 4. Exclusions (7 décisions)
+Doublons déjà catalogués (5) :
+- CRYPTOMONNAIE 10/10/2024 750 k€ = ledger-20241010 (nommée).
+- PRODUITS ELECTRONIQUES 29/12/2022 8 M€ = apple-distribution-international-20221229.
+- ISOLATION 21/11/2019 500 k€ = futura-internationale-20191121.
+- EDITION DE LOGICIELS APPLICATIFS 15/04/2022 1,5 M€ = décision SAN-2022-009 (Dedalus
+  Biologie) déjà cataloguée par la fiche incident dedalus-20210214 (confirmation 2022-04-15).
+- ROBOT CONVERSATIONNEL 31/12/2024 ; PLATEFORME D'APPELS 23/05/2024 ×2 ; SALLE DE SPORT
+  19/12/2024 = societe-robot-conversationnel-ia-20241231, societe-plateforme-appels-
+  secretariat{,-2}-20240523, societe-salle-de-sport-20241219 (slugs raccourcis existants).
+Hors périmètre sanction (2) :
+- EXTENSION COORDONNEES PRO 20/12/2022 : « non lieu à sanctionner » — aucun manquement
+  sanctionné, contrat de fiche non rempli.
+- SOCIETE DE RESTAURATION 17/07/2014 : « relaxe » — acquisition, pas de sanction.
+
+## 5. Sources (8 URLs uniques, toutes curl 200 le 21/08/2026, UA navigateur)
+- https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil (tableau officiel — fait primaire des 17 fiches)
+- https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil (fiche sécurité privée)
+- https://apnews.com/article/technology-business-europe-france-media-b649f6f8060861dbe935d3ed110f85ab (Google : contenus 150 M/60 M/3 mois/youtube vérifiés dans le HTML)
+- https://www.edpb.europa.eu/news/national-news/2022/commercial-prospecting-and-rights-individuals-edf-france-fined-600-000_en (EDF, nommant)
+- https://www.lemondeinformatique.fr/actualites/lire-la-cnil-inflige-une-amende-de-600-000-eteuro-a-edf-88747.html (EDF)
+- https://www.lefigaro.fr/societes/prospection-commerciale-la-cnil-inflige-une-amende-d-un-million-d-euros-a-totalenergies-20220630 (TotalEnergies)
+- https://www.numerama.com/tech/1025008-la-cnil-force-totalenergies-a-rentrer-dans-le-rang-avec-une-amende-dun-million-deuros.html (TotalEnergies)
+- https://www.haas-avocats.com/plateformes/ecommerce/sites-de-rencontre-meetic-et-attractive-world-sanctionnes-par-la-cnil/ (Meetic 20 k€ / Attractive World 10 k€, mises en demeure 06/2015)
+Non citées : pages EDPB-Google (contenu non confirmé, JS), communiqués CNIL EDF/TotalEnergies/
+Google (anonymisés par la CNIL après 2 ans — la page EDF ne contient plus l'occurrence « EDF »),
+légifrance (403 curl), vie-publique (réponse 283 octets = coquille de redirection).
+
+## 6. Validation
+- npx vitest run (worktree, npm ci préalable) : 29 fichiers, 799 tests passés — porte zod
+  pr-fiches sur les 437 fiches (420 + 17).
+- npx astro build : 917 pages ; les 17 pages /fiche/<slug>/ et les hubs /entite/ (google,
+  meetic, attractive-world-samadhi-sas, edf, totalenergies-electricite-et-gaz-france)
+  présents dans dist ; statut « Confirmée » rendu.
+- Slug rule : normalizeSlug(désignation sans « (procédure simplifiée) ») + AAAAMMJJ ;
+  zéro collision avec les 420 existantes ; suffixe -2 non requis (2e SITE DE RENCONTRES
+  traité par entités nommées distinctes).
+
+## 7. Écarts vs consigne et risques
+- Pool 24 lignes → 17 fiches + 7 exclusions documentées (5 doublons, 2 non-sanctions).
+- Risque inter-lanes : la désignation « SOCIETE D'EDITION DE LOGICIELS APPLICATIFS » figure
+  aussi dans /tmp/cnil2-slice-4.txt. J'ai catalogué les 2 décisions de cette désignation
+  (03/06/2021 livrée ; 15/04/2022 exclue comme doublon Dedalus). La lane 4 doit re-vérifier
+  ce point à sa dédup pour éviter une double fiche.
+- Ton A : bornes phrase du draft prose-style (25 mots) non contraignantes (document non
+  verrouillé ; le catalogue existant dépasse couramment) — garde appliquée à 40 mots.
+- Secteur « taxis » mappé industrie (transport) par cohérence avec la fiche existante
+  societe-de-transport-ambulancier-20241231 (industrie).

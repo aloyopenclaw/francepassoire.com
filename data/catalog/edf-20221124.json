@@ -1,0 +1,47 @@
+{
+  "slug": "edf-20221124",
+  "entity": "EDF (Électricité de France)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-24",
+    "confirmation": "2022-11-24",
+    "publication": "2022-11-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; amende administrative de 600 000 euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société fournissant de l'électricité, du gaz et des services », amende de 600 000 euros (24 novembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "EDPB — Commercial prospecting and rights of individuals: EDF France fined 600 000 euros",
+      "url": "https://www.edpb.europa.eu/news/national-news/2022/commercial-prospecting-and-rights-individuals-edf-france-fined-600-000_en",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — La CNIL inflige une amende de 600 000 € à EDF (29 novembre 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-la-cnil-inflige-une-amende-de-600-000-eteuro-a-edf-88747.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 novembre 2022, la formation restreinte de la CNIL a sanctionné EDF d'une amende administrative de 600 000 euros, rendue publique le 29 novembre. Les manquements : prospection commerciale par courrier électronique sans preuve de consentement (article L. 34-5 du CPCE et article 7 du RGPD), défauts d'information, non-respect des droits d'accès et d'opposition, et défaut de sécurité portant sur les mots de passe des comptes clients. La CNIL n'a pas prononcé d'injonction, la société ayant pris des mesures de mise en conformité. Le tableau officiel désigne l'entité sous l'appellation « société fournissant de l'électricité, du gaz et des services ».",
+  "timeline": [
+    {
+      "date": "2022-11-24",
+      "event": "Amende administrative de 600 000 euros : prospection sans consentement prouvé, défauts d'information, de droits et de sécurité."
+    },
+    {
+      "date": "2022-11-29",
+      "event": "La CNIL rend publique la décision contre EDF."
+    }
+  ]
+}

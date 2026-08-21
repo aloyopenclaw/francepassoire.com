@@ -1,0 +1,48 @@
+{
+  "slug": "bouygues-telecom-20181226",
+  "entity": "Bouygues Telecom",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-12-26",
+    "confirmation": "2018-12-26",
+    "publication": "2018-12-27"
+  },
+  "volume": {
+    "count": 2000000,
+    "unit": "personnes",
+    "label": "plus de deux millions de clients B&You concernés, dont les contrats et factures sont restés accessibles plus de deux ans, selon la CNIL"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (archive) — Bouygues Telecom : sanction pécuniaire pour manquement à la sécurité des données clients (27 décembre 2018)",
+      "url": "https://web.archive.org/web/20190411134418/https://www.cnil.fr/fr/bouygues-telecom-sanction-pecuniaire-pour-manquement-la-securite-des-donnees-clients",
+      "kind": "archive"
+    },
+    {
+      "label": "ZDNet France — Sanction CNIL : Bouygues Telecom n’a pas sécurisé les données de 2 millions de clients (27 décembre 2018)",
+      "url": "https://www.zdnet.fr/actualites/sanction-cnil-bouygues-telecom-n-a-pas-securise-les-donnees-de-2-millions-de-clients-39878493.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 décembre 2018, la formation restreinte de la CNIL a sanctionné Bouygues Telecom de 250 000 euros pour manquement à l’obligation de sécurité. Un signalement de mars 2018 avait révélé que les contrats et factures de plus de deux millions de clients B&You étaient accessibles par simple modification d’une adresse URL, une fonction d’authentification ayant été oubliée après une phase de tests. Les données exposées comprenaient noms, prénoms, dates de naissance, adresses électroniques et postales et numéros de téléphone. La CNIL a tenu compte de la réactivité de l’opérateur.",
+  "timeline": [
+    {
+      "date": "2018-12-26",
+      "event": "Sanction pécuniaire de 250 000 euros : données de plus de deux millions de clients accessibles via des URL prévisibles."
+    },
+    {
+      "date": "2018-12-27",
+      "event": "La CNIL rend la sanction publique ; la faille, corrigée dès le contrôle, datait de plus de deux ans."
+    }
+  ]
+}

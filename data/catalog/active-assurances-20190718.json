@@ -1,0 +1,45 @@
+{
+  "slug": "active-assurances-20190718",
+  "entity": "Active Assurances (courtage en assurance automobile)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-07-18",
+    "publication": "2019-07-25",
+    "confirmation": "2019-07-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "défaut de sécurité affectant les comptes de plusieurs milliers de clients et d'anciens clients ; amende de 180 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ INTERMÉDIAIRE EN ASSURANCE », sanction pécuniaire de 180 000 euros (18 juillet 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — RGPD : Active Assurances écope de 180 000 € d'amende (25 juillet 2019)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-rgpd-active-assurances-ecope-de-180-000-eteuro-d-amende-76005.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 juillet 2019, la formation restreinte de la CNIL a infligé une amende de 180 000 euros à Active Assurances, intermédiaire en assurance automobile vendant en ligne, pour atteinte à la sécurité des données (article 32 du RGPD). En juin 2018, un client signale pouvoir accéder aux données d'autres clients : comptes référencés par les moteurs de recherche, documents accessibles en modifiant les numéros d'URL. Copies de permis de conduire, cartes grises, relevés bancaires et informations sur des infractions étaient exposés. Les mots de passe correspondaient à la date de naissance et étaient transmis en clair par courriel. La réactivité de la société a été prise en compte.",
+  "timeline": [
+    {
+      "date": "2019-07-18",
+      "event": "Amende de 180 000 euros : comptes clients accessibles via moteurs de recherche et URL devinables, mots de passe en clair."
+    },
+    {
+      "date": "2019-07-25",
+      "event": "La CNIL rend publique la sanction."
+    }
+  ]
+}

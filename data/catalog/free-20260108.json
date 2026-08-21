@@ -1,0 +1,44 @@
+{
+  "slug": "free-20260108",
+  "entity": "Free (Free SAS)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-08",
+    "confirmation": "2026-01-08",
+    "publication": "2026-01-14"
+  },
+  "volume": {
+    "count": 24000000,
+    "unit": "comptes",
+    "label": "24 millions de contrats d’abonnés concernés par l’intrusion d’octobre 2024 selon la CNIL (périmètre commun aux sociétés Free Mobile et Free)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Violation de données : sanction de 42 millions d’euros à l’encontre des sociétés FREE MOBILE et FREE (14 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/sanction-free-2026",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 8 janvier 2026, la formation restreinte de la CNIL a prononcé une amende de 15 millions d’euros à l’encontre de la société Free, responsable des données de ses propres abonnés. En octobre 2024, un attaquant avait accédé à des données concernant 24 millions de contrats, dont des IBAN lorsque les personnes étaient clientes à la fois de Free et de Free Mobile. La CNIL, saisie de plus de 2 500 plaintes, a relevé des manquements aux obligations de sécurité, de conservation et de communication de la violation aux personnes concernées. Une injonction accompagne l’amende.",
+  "timeline": [
+    {
+      "date": "2026-01-08",
+      "event": "Amende de 15 millions d’euros et injonction : sécurité, durée de conservation et notification de la violation d’octobre 2024."
+    },
+    {
+      "date": "2026-01-14",
+      "event": "La CNIL publie son communiqué détaillant les deux décisions visant Free Mobile et Free."
+    }
+  ]
+}

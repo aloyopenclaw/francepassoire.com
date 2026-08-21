@@ -1,0 +1,38 @@
+{
+  "slug": "station-radiophonique-20170413",
+  "entity": "Une station radiophonique (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-04-13",
+    "confirmation": "2017-04-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement non public ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « STATION RADIOPHONIQUE », avertissement non public (13 avril 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 13/04/2017 — commentaires excessifs sur les auditeurs d'une radio",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 13 avril 2017, la formation restreinte de la CNIL a adressé un avertissement non public à une station radiophonique. Le traitement visait des commentaires excessifs consignés sur les auditeurs de la radio. Manquements retenus : non-pertinence, non-adéquation et caractère excessif des données, collecte de données sensibles, absence de définition et de respect des durées de conservation. La dénomination n'est pas publique. Le tableau officiel des sanctions et sa version archivée de novembre 2018 décrivent la décision sans nommer l'organisme. L'affaire illustre la doctrine de la CNIL sur les fichiers de relation client contenant des appréciations subjectives.",
+  "timeline": [
+    {
+      "date": "2017-04-13",
+      "event": "Avertissement non public : commentaires excessifs sur les auditeurs, données sensibles collectées, durées de conservation non tenues."
+    }
+  ]
+}

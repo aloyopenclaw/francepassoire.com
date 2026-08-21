@@ -1,0 +1,146 @@
+# fullcat rafale 2 — lane 4 — fiches CNIL-confirmées (pool /tmp/cnil2-slice-4.txt)
+date: 2026-08-21 09:45 UTC | branche: fiche/rafale2-l4 | base main 2eea8cc (420 fiches)
+worktree: /var/folders/1s/l8h5vn997437p2zwl835gkw80000gn/T/opencode/fp-r2l4 (supprimé en fin de run)
+
+## Méthode
+- Pool = 24 lignes, intitulés verbatim de la colonne « Type d'organisme » du
+  tableau officiel CNIL « Les sanctions prononcées par la CNIL »
+  (https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil, HTTP 200,
+  parsée localement : 412 <tr>).
+- Appariement normalisé (accents/casse/typos CNIL « LAFABRICATION »,
+  « TELECOMUNICATION » préservés) ligne → décisions : 25 décisions
+  (L21 porte 2 décisions), toutes résolues.
+- DEDUP ls data/catalog (420 fiches main) + contrôle narratif :
+  - 12 lignes déjà couvertes (décision identique) → skip.
+  - L21a (SAN-2022-009, 1,5 M€, 15/04/2022) : décision DÉJÀ fichée comme
+    événement de confirmation de dedalus-20210214 (timeline 2022-04-15 +
+    dates.confirmation) → skip, zéro double saisie.
+  - L3 = liquidation d'astreinte 4 000 € (15/05/2025), suivi de l'injonction
+    de la décision 05/12/2024 déjà fichée → skip (précédent rafale 1 L0 L17
+    / rafale 2 L0 skips).
+  - 11 décisions non couvertes → 11 fiches ci-dessous.
+- Découverte clé 1 : lignes anciennes du tableau vivant = 5 colonnes
+  (Date | Type | Thème | Manquements | Décision) ; L1 (2012) résolue :
+  thème « Travail », décision « Avertissement public » (dél. 2012-176),
+  confirmée par l'archive 2018 de la liste (même lecture que rafale 2 L0).
+- Découverte clé 2 : L7 « SOCIETE PROPOSANT DES SERVICES DE
+  TELECOMUNICATION » 29/12/2023 10 M€ = Yahoo EMEA (SAN-2023-024, ex-Verizon
+  Media) — déjà fichée (yahoo-emea-20231229) → skip après vérification
+  croisée (legifrance ID distinct des autres décisions du même jour).
+- Découverte clé 3 : L20 « plateformes de distribution de contenus »
+  5 M€ 29/12/2022 = TikTok (SAN-2022-027, TikTok UK 2,5 M€ + TikTok
+  Ireland 2,5 M€) — nommé par la lettre d'information CNIL de janvier 2023.
+- Legifrance = 403 (Cloudflare) en curl, comme en rafale 2 L1 → sourcing
+  via cnil.fr vivant (tableau, communiqués, lettres d'information, PDF de
+  délibérations), Conseil d'État, archives web.archive.org et presse.
+- Zéro identification déductive : 3 fiches anonymisées par construction
+  (2012, 2019, 2021 — entités non nommées dans toute source consultée).
+
+## Fiches (11, statut confirmée, Ton A, 80-120 mots, timeline ≤ 40 mots)
+| # | slug | décision | sanction | entité | sources |
+|---|------|----------|----------|--------|---------|
+| 1 | societe-informatique-20120621 | 21/06/2012 | Avertissement public | anonyme | tableau + archive 2018 |
+| 2 | ns-cards-france-20231229 | 29/12/2023 | 105 000 € (90+15) | NS Cards France (Neosurf) | tableau + relais délib. + presse |
+| 3 | caloga-20250515 | 15/05/2025 | 80 000 € | Caloga (courtier en données) | communiqué + tableau + cabinet |
+| 4 | gers-20240828 | 28/08/2024 | 800 000 € (SAN-2024-010) | GERS (groupe Cegedim) | tableau + Conseil d'État + CE 498628 + cabinet |
+| 5 | santestat-20240828 | 28/08/2024 | 200 000 € (SAN-2024-011) | Santestat (absorbée par GERS) | tableau + CE 498628 + cabinet |
+| 6 | accor-20220803 | 03/08/2022 | 600 000 € (100+500, SAN-2022-017) | Accor SA | délib. PDF cnil + lettre CNIL + presse |
+| 7 | tiktok-20221229 | 29/12/2022 | 2 × 2,5 M€ (SAN-2022-027) | TikTok UK + Ireland | lettre CNIL + tableau + relais délib. + presse |
+| 8 | performeclic-20201207 | 07/12/2020 | 7 300 € + injonction (astreinte 1 000 €/j) | Performeclic | tableau + 2 cabinets |
+| 9 | nestor-20201208 | 08/12/2020 | 20 000 € + injonction (astreinte 500 €/j) | Nestor | tableau + relais délib. + cabinet |
+| 10 | societe-photographies-petite-enfance-20191010 | 10/10/2019 | sanction pécuniaire (montant non publié) + injonction | anonyme | tableau + 40e rapport annuel |
+| 11 | societe-edition-logiciels-applicatifs-20210603 | 03/06/2021 | 10 000 € | anonyme | tableau + archive 2022 |
+Années : 2012, 2019, 2020×2, 2021, 2022×2, 2023, 2024×2, 2025×2 (décisions).
+
+## Skips documentés (13 des 24 lignes du pool + 1 décision L21)
+- DEDUP stricte (12 lignes, décision identique déjà fichée) : L2 sécurité
+  privée (20241205), L5 art divinatoire = Cosmospace (20240926), L6 conseil
+  systèmes/logiciels (20240926), L7 télécom = Yahoo EMEA (20231229),
+  L9 isolation (20250109), L10 campagnes publicitaires (20241205),
+  L13 clôtures (20240905), L14 portails internet (20241219), L15 superettes
+  (20250403), L17 logiciels médecins = Cegedim Santé (20240905), L18 gestion
+  immo/contenus journalistiques (20240627), L19 cosmétiques (20241205).
+- L21a : SAN-2022-009 (Dedalus Biologie, 1,5 M€) déjà portée par
+  dedalus-20210214 (confirmation 2022-04-15) → aucune fiche jumelle.
+- L3 : liquidation d'astreinte (suivi d'injonction) — précédent rafale 2 L0.
+
+## Nommage (5 fiches sur 11)
+- Source officielle vivante : Caloga (communiqué CNIL), Accor (délibération
+  PDF cnil.fr + lettre d'information CNIL), TikTok (lettre d'information
+  CNIL), GERS/Santestat (décision Conseil d'État n° 498628 du 13/02/2026).
+- NS Cards France : aucun communiqué CNIL vivant retrouvé (3 slugs devinés
+  → 404 ; page décision legifrance bloquée 403) → nommé par le texte
+  intégral de la délibération SAN-2023-023 relayé par Armingaud Avocat (200)
+  + Le Monde Informatique (200) — même écart documenté que Numericable/
+  Infogreffe en rafale 2 L1, zéro identification déductive.
+- Performeclic, Nestor : décisions 2020 anonymisées sur legifrance depuis
+  fin 2022 → nommées par relais de délibération (Legalplanet) et cabinets
+  d'avocats (Data Legal Drive, Derriennic Associés, Dalloz Actualité) —
+  écart documenté, même standard que rafale 2 L1.
+- 3 fiches anonymisées par construction : societe-informatique-20120621,
+  societe-photographies-petite-enfance-20191010 (montant non publié),
+  societe-edition-logiciels-applicatifs-20210603.
+
+## Sources — CURL 21/21 HTTP 200 (UA navigateur, 2026-08-21, après écriture)
+  200 cnil.fr/fr/les-sanctions-prononcees-par-la-cnil            (tableau, ×11 fiches)
+  200 web.archive.org/web/20181122143420/cnil.fr/...sanctions    (archive 2018)
+  200 web.archive.org/web/20220120095548/cnil.fr/...sanctions    (archive 2022)
+  200 armingaud-avocat.fr/...SAN-2023-023...NS-CARDS-FRANCE       (délib. intégrale)
+  200 lemondeinformatique.fr/...ns-cards-france-92639.html
+  200 cnil.fr/fr/sanction-de-80-000-euros-societe-caloga         (communiqué)
+  200 agilit.law/.../caloga-sanctionnee-par-la-cnil/
+  200 conseil-etat.fr/fr/arianeweb/CE/decision/2026-02-13/498628 (décision CE)
+  200 gers-sas.com/Communiques/GERS-SAS_EDS_SOG_HEALTH_03102024_FR.pdf
+  200 life-avocats.com/...groupe-cegedim-ce-13-fevr-2026-n-498628/
+  200 cnil.fr/.../deliberation_..._san-2022-017_..._accor_sa.pdf  (délib. intégrale)
+  200 cnil.fr/.../lettre_information_cnil_aout_2022.html
+  200 lemondeinformatique.fr/...accor-87705.html
+  200 cnil.fr/.../lettre_information_cnil_janvier_2023.html
+  200 armingaud-avocat.fr/...SAN-2022-027...                      (délib. intégrale)
+  200 lesnumeriques.com/...tiktok-...-n203385.html
+  200 datalegaldrive.com/...cnil-vs-performeclic-7-decembre-2020/
+  200 derriennic.com/...amende-de-7-300-euros/
+  200 legalplanet.pro/cnil-8-decembre-2020-n-2020-123/
+  200 derriennic.com/nestor-condamnee-par-la-cnil-...-20-000-e/
+  200 cnil.fr/.../cnil-40e_rapport_annuel_2019.pdf
+  Exclus : legifrance (403 ×8, Cloudflare « Just a moment »), communiqué
+  CNIL NS Cards (404 ×3 slugs devinés), bfmtv (non testé, presse de repli
+  suffisante), dalloz-actualite.fr (paywall, non retenu).
+
+## Validation zod (transcript, worktree)
+  $ npx vitest run tests/rafale2-l4.temp.test.ts   (temporaire, supprimé)
+    → Test Files 1 passed | Tests 8/8 passed
+      11 fichiers présents ; 0 chevauchement main (git ls-tree origin/main,
+      420) ; catalogue = 431 ; 11 × ficheSchema zod OK ; suffixe slug = date
+      de décision ×11 ; statut confirmée ×11 ; source cnil.fr officiel ×11 ;
+      descriptions 80-120 mots ; événements ≤ 40 mots ; slugs uniques.
+  $ npx vitest run tests/pr-fiches.test.ts tests/content-schema.test.ts
+    → Test Files 2 passed | Tests 433/433 passed
+  $ npx astro build → 903 page(s) built in 2.68s
+    (dist/fiche/ : les 11 nouvelles pages présentes, spot-check OK)
+
+## Livraison
+  commit « feat(catalog): rafale 2 — CNIL L4 » — data/catalog/ ×11 + ce log.
+  PR « Rafale 2 L4 » (créée après commit) —
+  ⛔ NE PAS MERGER — chaîne d'abord (l'orchestrateur chaîne les lanes).
+  JAMAIS merge par la lane. Aucun post social (règle respectée).
+
+## Risques résiduels
+  1. Nommage NS Cards / Performeclic / Nestor fondé sur relais de
+     délibération + presse (aucune source officielle nominative vivante
+     en ligne — legifrance 403 puis anonymisation) : écart au standard
+     rafale 1, documenté et traçable (précédent rafale 2 L1).
+  2. 3 fiches anonymisées par construction (2012, 2019, 2021) ; 2 sans
+     montant publié (photos petite enfance 2019 ; avertissement 2012 sans
+     amende par nature).
+  3. L7 résolue par identification Yahoo EMEA (type « télécom » du tableau
+     CNIL, ex-Verizon Media) : correction triviale si l'orchestrateur visait
+     une autre décision du même intitulé (aucune autre occurrence dans le
+     tableau vivant).
+  4. L21 a produit 1 seule fiche (03/06/2021) : la décision du 15/04/2022
+     est portée par dedalus-20210214 — à splitter si le catalogue doit
+     couvrir chaque décision atomique.
+  5. GERS/Santestat : pas de communiqué CNIL dédié aux délibérations du
+     28/08/2024 retrouvé (seuls le tableau vivant + la décision du Conseil
+     d'État n° 498628 + la fiche Cegedim) ; volumes selon le Conseil d'État.
+  6. CI GitHub possiblement bloquée (billing) — équivalence locale ci-dessus.

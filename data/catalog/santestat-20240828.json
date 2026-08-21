@@ -1,0 +1,46 @@
+{
+  "slug": "santestat-20240828",
+  "entity": "Santestat (SARL dissoute, sanction notifiée au GERS venant aux droits de Santestat)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-28",
+    "confirmation": "2024-08-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 78 millions d'identifiants clients issus d'environ 8 500 pharmacies dans la base « Gers Études clients », selon le Conseil d'État"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETE SPECIALISEE DANS LA GESTION DES FLUX DE DONNEES DE SANTE », amende de 200 000 euros (28 août 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 498628 du 13 février 2026 (GERS, GERS venant aux droits de Santestat, Cegedim Santé) : délibération SAN-2024-011, amende de 200 000 euros confirmée",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-02-13/498628",
+      "kind": "officiel"
+    },
+    {
+      "label": "Life Avocats (5 mars 2026) — Données de santé et anonymisation : le Conseil d'État confirme les sanctions visant les sociétés du groupe CEGEDIM",
+      "url": "https://www.life-avocats.com/donnees-de-sante-et-anonymisation-le-conseil-detat-confirme-les-sanctions-visant-les-societes-du-groupe-cegedim-ce-13-fevr-2026-n-498628/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 août 2024, la formation restreinte de la CNIL a sanctionné la société Santestat, absorbée entre-temps par le GERS, d'une amende de 200 000 euros pour traitement de données de santé sans autorisation. Selon le Conseil d'État, la base « Gers Études clients », alimentée via un module intégré aux logiciels de 8 500 pharmacies, regroupait environ 78 millions d'identifiants clients. Ces données de délivrance, rattachées à l'année de naissance et au sexe, ont été jugées pseudonymisées et réidentifiables. La société soutenait leur anonymisation ; le Conseil d'État a confirmé l'analyse de la CNIL le 13 février 2026. La sanction vise « le GERS venant aux droits de Santestat ».",
+  "timeline": [
+    {
+      "date": "2024-08-28",
+      "event": "Délibération SAN-2024-011 : amende de 200 000 euros, notifiée au GERS venant aux droits de la SARL Santestat dissoute."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "Le Conseil d'État confirme la sanction et la qualification de données pseudonymisées, réidentifiables."
+    }
+  ]
+}

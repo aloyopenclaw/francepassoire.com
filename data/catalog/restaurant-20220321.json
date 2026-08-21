@@ -1,0 +1,39 @@
+{
+  "slug": "restaurant-20220321",
+  "entity": "Restaurant (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-21",
+    "confirmation": "2022-03-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2022 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2022-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 mars 2022, la formation restreinte de la CNIL a prononcé une amende de 10 000 euros à l’encontre d’un restaurant. Les manquements retenus : non-respect du principe de minimisation des données, durées de conservation excessives et défaut d’information des personnes. La dénomination n’est pas publiée et la nature précise des données n’est pas détaillée par la liste officielle. Cette sanction figure dans le bilan 2022 de l’action répressive de la CNIL.",
+  "timeline": [
+    {
+      "date": "2022-03-21",
+      "event": "Amende de 10 000 euros : minimisation non respectée, durées de conservation excessives, défaut d’information."
+    }
+  ]
+}

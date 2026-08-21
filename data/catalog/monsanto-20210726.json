@@ -1,0 +1,43 @@
+{
+  "slug": "monsanto-20210726",
+  "entity": "Monsanto Company",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-07-26",
+    "confirmation": "2021-07-26"
+  },
+  "volume": {
+    "count": 201,
+    "unit": "personnes",
+    "label": "fichier de 201 personnes résidant en France (« French Monsanto stakeholders database ») ; amende de 400 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ SPECIALISÉE DANS LES BIOTECHNOLOGIES AGRICOLES », sanction pécuniaire de 400 000 euros (26 juillet 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Fichier de lobbying : sanction de 400 000 euros à l'encontre de la société Monsanto (communiqué officiel)",
+      "url": "https://www.cnil.fr/fr/fichier-de-lobbying-sanction-de-400-000-euros-lencontre-de-la-societe-monsanto",
+      "kind": "officiel"
+    },
+    {
+      "label": "Delsol Avocats — Fichage à des fins de lobbying et défaut d'information : la CNIL sanctionne la société MONSANTO COMPANY (délibération SAN-2021-012)",
+      "url": "https://www.delsolavocats.com/Fichage-a-des-fins-de-lobbying-et-defaut-d-information-la-CNIL-sanctionne-la-societe-MONSANTO-COMPANY",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 juillet 2021, la formation restreinte de la CNIL a sanctionné Monsanto Company de 400 000 euros (délibération SAN-2021-012). Donneuse d'ordre d'une agence de relations publiques, la société avait fait constituer un fichier de 201 personnalités impliquées dans le débat sur le renouvellement du glyphosate : journalistes, élus, scientifiques, agriculteurs, avec une évaluation d'influence notée de un à cinq. La CNIL retient un défaut d'information des personnes et l'absence d'acte juridique encadrant la prestation. La constitution d'un fichier de lobbying n'est pas illégale en soi. Sept plaintes avaient suivi les révélations de mai 2019.",
+  "timeline": [
+    {
+      "date": "2021-07-26",
+      "event": "Amende de 400 000 euros (SAN-2021-012) : fichier de lobbying de 201 personnalités sans information ni contrat de sous-traitance conforme."
+    }
+  ]
+}

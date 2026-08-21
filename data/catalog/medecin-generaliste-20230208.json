@@ -1,0 +1,37 @@
+{
+  "slug": "medecin-generaliste-20230208",
+  "entity": "Médecin généraliste (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-02-08",
+    "confirmation": "2023-02-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 3 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 8 février 2023, la CNIL a prononcé une amende de 3 000 euros et une injonction à l’encontre d’un médecin généraliste, dans le cadre de la procédure simplifiée. Les manquements retenus : non-respect du droit d’accès et défaut de coopération avec l’autorité. La dénomination n’est pas publiée ; la nature des données demandées n’est pas précisée par la décision. Cette sanction figure dans le bilan 2023 de l’action répressive de la CNIL.",
+  "timeline": [
+    {
+      "date": "2023-02-08",
+      "event": "Amende de 3 000 euros et injonction (procédure simplifiée) : droit d’accès non respecté et défaut de coopération."
+    }
+  ]
+}

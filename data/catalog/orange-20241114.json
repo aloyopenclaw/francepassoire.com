@@ -1,0 +1,51 @@
+{
+  "slug": "orange-20241114",
+  "entity": "Orange",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-14",
+    "confirmation": "2024-11-14",
+    "publication": "2024-12-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 50 millions d’euros et injonction de cesser la lecture des cookies après retrait du consentement"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Publicités insérées entre les courriels : sanction de 50 millions d’euros à l’encontre de la société ORANGE (10 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/publicites-inserees-entre-les-courriels-sanction-de-50-millions-deuros-orange",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Clôture de l’injonction prononcée à l’encontre de la société ORANGE (18 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/cloture-de-linjonction-prononcee-lencontre-de-la-societe-orange",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 14 novembre 2024, la CNIL a sanctionné Orange de 50 millions d’euros. L’opérateur affichait des publicités entre les courriels de la messagerie de ses clients sans recueillir leur consentement, en violation de l’article L. 34-5 du code des postes et des communications électroniques. Lorsque les utilisateurs du site orange.fr retiraient leur consentement aux cookies, ceux-ci continuaient d’être lus. Une injonction de cesser cette lecture, sous astreinte de 100 000 euros par jour, a été clôturée le 11 septembre 2025, l’opérateur s’étant mis en conformité.",
+  "timeline": [
+    {
+      "date": "2024-11-14",
+      "event": "Amende de 50 millions d’euros et injonction : publicités entre les courriels sans consentement, cookies lus après retrait du consentement."
+    },
+    {
+      "date": "2024-12-10",
+      "event": "La CNIL publie le communiqué détaillant la sanction (délibération SAN-2024-019)."
+    },
+    {
+      "date": "2025-09-11",
+      "event": "La formation restreinte clôture l’injonction, Orange ayant mis fin à la lecture des cookies après retrait du consentement."
+    }
+  ]
+}
