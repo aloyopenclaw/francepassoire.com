@@ -1,0 +1,41 @@
+{
+  "slug": "grdf-20250829",
+  "entity": "GRDF",
+  "siren": "444786511",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-29",
+    "publication": "2025-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« centaines de clients » de GRDF selon l'enquête relayée par la presse ; volume exact non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Un hacker de 18 ans soupçonné d'avoir piraté GRDF pour voler les données clients",
+      "url": "https://www.usine-digitale.fr/article/un-hacker-de-18-ans-soupconne-d-avoir-pirate-grdf-pour-voler-les-donnees-clients.N2236733",
+      "kind": "article"
+    }
+  ],
+  "description": "Un étudiant en informatique de 18 ans, connu sous le pseudonyme « Sombreofficiel », a été placé en garde à vue le 26 août 2025 à la police judiciaire de Paris, selon des informations du Parisien relayées par L'Usine Digitale. Il est soupçonné d'avoir piraté les serveurs de GRDF, gestionnaire du réseau de distribution de gaz naturel, entre juin 2024 et janvier 2025, et d'avoir revendu les données personnelles de « centaines de clients ». Le service de sécurité informatique de GRDF avait donné l'alerte le 3 juillet 2024 après la découverte d'un canal Telegram proposant un accès administrateur à son application RH pour 60 euros. Le vol reste allégué ; l'enquête est en cours.",
+  "timeline": [
+    {
+      "date": "2024-07-03",
+      "event": "Le service de sécurité informatique de GRDF découvre un canal Telegram proposant un accès administrateur à son application RH pour 60 euros."
+    },
+    {
+      "date": "2025-08-26",
+      "event": "Un homme de 18 ans est placé en garde à vue à la police judiciaire de Paris dans l'enquête sur le piratage de GRDF."
+    },
+    {
+      "date": "2025-08-29",
+      "event": "La presse révèle la garde à vue ; le pirateur est soupçonné d'avoir dérobé les données de « centaines de clients »."
+    }
+  ]
+}

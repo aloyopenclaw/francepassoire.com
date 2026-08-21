@@ -1,0 +1,49 @@
+{
+  "slug": "coinbase-20250515",
+  "entity": "Coinbase",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "publication": "2025-05-16",
+    "confirmation": "2025-05-15"
+  },
+  "volume": {
+    "count": 70000,
+    "unit": "personnes",
+    "label": "près de 70 000 clients (moins de 1 % des clients selon Coinbase) : noms, coordonnées, pièces d'identité et données de comptes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Capital — Cryptomonnaies : Coinbase victime d'une cyberattaque qui pourrait lui coûter très cher",
+      "url": "https://www.capital.fr/crypto/cryptomonnaies-coinbase-victime-d-une-cyberattaque-qui-pourrait-lui-couter-tres-cher-1513886",
+      "kind": "article"
+    },
+    {
+      "label": "Challenges — L'ingénierie sociale derrière l'attaque de Coinbase : des employés soudoyés (et des données peu protégées)",
+      "url": "https://www.challenges.fr/la-verticale-cyber/lingenierie-sociale-derriere-lattaque-de-coinbase-des-employes-soudoyes-et-des-donnees-peu-protegees_605174",
+      "kind": "article"
+    }
+  ],
+  "description": "La plateforme américaine d'échange de cryptomonnaies Coinbase signale les faits le 15 mai 2025 à la SEC, le gendarme boursier américain. Des cybercriminels ont soudoyé des employés ou entrepreneurs de ses services support basés à l'étranger, qui leur ont transmis les données personnelles de près de 70 000 clients : noms, coordonnées, copies de documents d'identité, solde et historique des comptes. Les attaquants ont exigé 20 millions de dollars, que Coinbase refuse de payer, annonçant le remboursement des clients lésés et un coût total estimé entre 180 et 400 millions de dollars. Les clients sont exposés à des campagnes de phishing et de vishing.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "event": "Coinbase déclare l'incident à la SEC : des données d'environ 70 000 clients ont été transmises par des employés soudoyés."
+    },
+    {
+      "date": "2025-05-16",
+      "event": "La plateforme annonce publiquement le refus de payer la rançon de 20 millions de dollars et promet de rembourser les clients lésés."
+    },
+    {
+      "date": "2025-05-28",
+      "event": "Challenges détaille la corruption du support externalisé et les données concernées, dont des pièces d'identité."
+    }
+  ]
+}
