@@ -1,0 +1,37 @@
+{
+  "slug": "ants-20250920",
+  "entity": "Agence nationale des titres sécurisés (ANTS)",
+  "siren": "130003262",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-20",
+    "publication": "2025-09-20"
+  },
+  "volume": {
+    "count": 12000000,
+    "unit": "enregistrements",
+    "label": "12 à 13 millions de données d’état civil selon une base mise en vente sur le dark web et présentée comme provenant de l’ANTS ; l’agence dément toute intrusion"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme — « Aucune intrusion n’a été identifiée » : l’ANTS dément avoir subi une fuite de données d’état civil",
+      "url": "https://www.letelegramme.fr/france/aucune-intrusion-na-ete-identifiee-lants-dement-avoir-subi-une-fuite-de-donnees-detat-civil-6893359.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 septembre 2025, l’Agence nationale des titres sécurisés (ANTS) dément tout piratage après avoir été citée sur les réseaux sociaux dans le cadre d’une fuite présumée d’état civil. Une base présentée comme provenant de l’agence, contenant 12 à 13 millions de données, est mise en vente sur le dark web, avec un échantillon librement accessible. L’ANTS indique qu’« aucune intrusion n’a été identifiée » dans ses systèmes comme dans ceux du ministère de l’Intérieur, et relève « de nombreuses incohérences » dans l’échantillon diffusé. L’ANSSI est saisie pour des investigations techniques et un dépôt de plainte est annoncé.",
+  "timeline": [
+    {
+      "date": "2025-09-20",
+      "event": "L’ANTS dément toute intrusion ; une base de 12 à 13 millions de données d’état civil est mise en vente sur le dark web à son nom."
+    },
+    {
+      "date": "2025-09-20",
+      "event": "L’ANSSI est saisie ; l’agence annonce un dépôt de plainte, y compris contre toute attribution erronée des données."
+    }
+  ]
+}

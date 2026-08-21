@@ -1,0 +1,44 @@
+{
+  "slug": "josselin-20251120",
+  "entity": "Ville de Josselin (plateforme de prise de rendez-vous RDV360)",
+  "siren": "215600917",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-20",
+    "publication": "2025-11-20",
+    "confirmation": "2025-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; usagers ayant pris rendez-vous en ligne pour des titres d’identité auprès de la commune (Morbihan)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France — Des mairies bretonnes victimes d’une fuite massive de données personnelles via une application de rendez-vous en ligne (20 novembre 2025)",
+      "url": "https://www.ouest-france.fr/bretagne/des-mairies-bretonnes-victimes-dune-fuite-massive-de-donnees-personnelles-via-une-application-de-rendez-vous-en-ligne-9a3346a0-c633-11f0-a196-a9dcf76600e4",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
+      "url": "https://www.letelegramme.fr/bretagne/on-en-sait-plus-sur-la-vaste-fuite-de-donnees-qui-a-touche-plusieurs-municipalites-en-bretagne-6934738.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-novembre 2025, la commune de Josselin (Morbihan) est touchée par la fuite de données liée à RDV360, l’application de rendez-vous en ligne des mairies, utilisée pour les demandes de titres d’identité. Le maire, Nicolas Jagoudet, dénonce publiquement dans Ouest-France la prise en charge de l’incident par le prestataire, qu’il juge difficile à joindre. Les données exfiltrées se limitent à l’identité et aux coordonnées des usagers — nom, prénom, code postal, e-mail, téléphone — associées à leurs rendez-vous. Le fournisseur a reconnu une intrusion malveillante à l’origine de cette fuite multi-communes.",
+  "timeline": [
+    {
+      "date": "2025-11-20",
+      "event": "Ouest-France recense la fuite via RDV360 ; le maire de Josselin dénonce la réaction du prestataire."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Le Télégramme confirme l’alerte lancée par la commune de Josselin dans la fuite multi-communes."
+    }
+  ]
+}

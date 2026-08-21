@@ -1,0 +1,40 @@
+{
+  "slug": "serent-20251124",
+  "entity": "Ville de Sérent (plateforme de prise de rendez-vous RDV360)",
+  "siren": "215602442",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-24",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; usagers ayant pris rendez-vous en ligne pour des démarches d’état civil auprès de la commune (Morbihan)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
+      "url": "https://www.letelegramme.fr/bretagne/on-en-sait-plus-sur-la-vaste-fuite-de-donnees-qui-a-touche-plusieurs-municipalites-en-bretagne-6934738.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Fuite de données dans le pays de Ploërmel : les communes de Josselin, Mauron et Sérent également concernées",
+      "url": "https://actu.fr/bretagne/ploermel_56165/fuite-de-donnees-personnelles-a-ploermel-des-milliers-de-personnes-concernees_63454088.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin novembre 2025, la commune de Sérent (Morbihan) alerte ses administrés après une fuite de données liée à RDV360, la plateforme de prise de rendez-vous en ligne utilisée pour les démarches en mairie. Les données exfiltrées sont de type identité et coordonnées : nom, prénom, adresse e-mail, code postal et numéro de téléphone des usagers ayant sollicité un rendez-vous d’état civil. Le quotidien Le Télégramme recense l’alerte le 24 novembre parmi celles de plusieurs communes bretonnes touchées par la même intrusion chez le prestataire. Les usagers concernés sont invités à la vigilance face aux tentatives de démarchage et de phishing.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "Le Télégramme recense l’alerte lancée par la commune de Sérent dans la fuite multi-communes liée à la plateforme RDV360."
+    }
+  ]
+}
