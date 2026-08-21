@@ -27,6 +27,13 @@ const fiches = (await getCollection('catalog'))
 
 const compteur = computeCompteur(fiches);
 
+// Bandeau compteurs (une ligne) : enregistrements YTD + total fuites + ransomware.
+const anneeYTD = String(new Date().getFullYear());
+const enregistrementsYTD = fiches
+  .filter((f) => (f.dates.publication ?? f.dates.revendication).startsWith(anneeYTD))
+  .reduce((somme, f) => somme + f.volume.count, 0);
+const nbRansomware = fiches.filter((f) => f.group).length;
+
 /** Volume court pour ticker et cartes : « 162 437 enregistrements », ou
  *  « volume non chiffré » quand aucun chiffre n'est annoncé (count = 0). */
 function volumeCourt(volume: FicheLike['volume']): string {
@@ -52,7 +59,6 @@ const cards: LeakCard[] = fiches.map((fiche) => ({
   url: urlFiche(fiche.slug),
 }));
 
-const anneeCourante = new Date().getFullYear();
 
 const datasetJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -83,18 +89,24 @@ const datasetJsonLd = JSON.stringify({
     </div>
   </section>
 
-  <!-- Bandeau compteurs : agrégats du catalogue réel (computeCompteur) -->
+  <!-- Bandeau compteurs : une seule ligne, trois agrégats du catalogue réel -->
   <section class="bg-brand-ink text-brand-cream border-b-2 border-brand-ink py-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="font-mono text-center text-sm sm:text-base tracking-wide leading-relaxed flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+      <p class="font-mono text-sm sm:text-base tracking-wide whitespace-normal sm:whitespace-nowrap text-center flex flex-wrap sm:flex-nowrap justify-center items-baseline gap-x-3 sm:gap-x-4">
         <span>
-          <strong class="text-brand-orange text-lg">{formaterNombre(compteur.personnesYTD)}</strong> personnes touchées depuis janvier {anneeCourante}
-          <span class="text-brand-cream/70"> — {compteur.personnesLabel}</span>
+          <strong class="text-brand-orange text-xl sm:text-2xl font-black">{formaterNombre(enregistrementsYTD)}</strong>
+          <span class="ml-1">enregistrements fuités depuis janvier {anneeYTD}</span>
         </span>
-        <span class="hidden sm:inline text-brand-orange text-xl" aria-hidden="true">•</span>
-        <span><strong class="text-brand-orange text-lg">{formaterNombre(compteur.fichesCount)}</strong> fiches publiées</span>
-        <span class="hidden sm:inline text-brand-orange text-xl" aria-hidden="true">•</span>
-        <span><strong class="text-brand-orange text-lg">{formaterNombre(compteur.statutSplit.confirmee)}</strong> confirmées · <strong class="text-brand-orange text-lg">{formaterNombre(compteur.statutSplit.revendiquee)}</strong> revendiquées</span>
+        <span class="text-brand-orange text-xl" aria-hidden="true">•</span>
+        <span>
+          <strong class="text-brand-orange text-xl sm:text-2xl font-black">{formaterNombre(compteur.fichesCount)}</strong>
+          <span class="ml-1">fuites de données recensées</span>
+        </span>
+        <span class="text-brand-orange text-xl" aria-hidden="true">•</span>
+        <span>
+          <strong class="text-brand-orange text-xl sm:text-2xl font-black">{formaterNombre(nbRansomware)}</strong>
+          <span class="ml-1">attaques par ransomware</span>
+        </span>
       </p>
     </div>
   </section>

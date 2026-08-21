@@ -21,7 +21,7 @@ interface Props {
 
 const envKey = import.meta.env.ASTRO_PUBLIC_TURNSTILE_SITE_KEY;
 const siteKey = Astro.props.siteKey ?? (envKey !== undefined ? envKey : '0x4AAAAAAEW8bsx9lHrEOZ1I');
-const apiBaseUrl = import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com';
+const apiBaseUrl = import.meta.env.ASTRO_PUBLIC_API_URL ?? '';
 
 const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_LABELS, string]>;
 ---
@@ -114,7 +114,7 @@ const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_L
 </style>
 
 <script>
-  const API_BASE = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? 'https://api.francepassoire.com'}`;
+  const API_BASE = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? ''}`;
 
   const form = document.getElementById('veille-form') as HTMLFormElement | null;
   const notice = document.getElementById('veille-notice');
