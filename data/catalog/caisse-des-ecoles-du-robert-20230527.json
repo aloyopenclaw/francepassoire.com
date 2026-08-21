@@ -1,0 +1,38 @@
+{
+  "slug": "caisse-des-ecoles-du-robert-20230527",
+  "entity": "Caisse des écoles du Robert (Martinique)",
+  "siren": "269720561",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-05-27",
+    "publication": "2023-05-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "non communiqué ; données du serveur chiffrées et rançon exigée des dirigeants (communiqué de la ville)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ZayActu — La Caisse des écoles du Robert également victime d'une cyberattaque avec demande de rançon (27 mai 2023)",
+      "url": "https://www.zayactu.org/actu/la-caisse-des-ecoles-du-robert-egalement-victime-dune-cyberattaque-avec-demande-de-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "KonBriefing Research — Cyber attacks on local governments & public sector (fiche Caisse des écoles du Robert)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-public-administration.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La Caisse des écoles du Robert, en Martinique, a été victime d'une cyberattaque révélée le 27 mai 2023. L'incident survient quelques jours après celui visant la Collectivité territoriale de Martinique. Selon le communiqué de la ville relayé par ZayActu, les données du serveur ont été chiffrées. Une rançon a été adressée aux dirigeants pour les récupérer. La restauration de la base a nécessité une intervention délicate en plusieurs étapes. Un plan de continuité a encadré les inscriptions et paiements des activités scolaires, avec un retour à la normale visé pour mi-juin.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "event": "Chiffrement des données du serveur et demande de rançon révélés ; plan de continuité du service public activé."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "lycees-publics-hauts-de-france-20251010",
+  "entity": "Lycées publics des Hauts-de-France (système d'information régional)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-10",
+    "publication": "2025-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plus de 200 établissements visés (80 % des lycées publics) selon la presse ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Hauts-de-France : 80 % des lycées de la région victimes d'une cyberattaque par rançongiciel (10 octobre 2025)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/hauts-de-france-80-des-lycees-de-la-region-victimes-d-une-cyberattaque-par-rancongiciel_AV-202510100621.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Les lycées des Hauts-de-France visés par une cyberattaque, une cellule de crise ouverte (10 octobre 2025)",
+      "url": "https://actu.fr/societe/les-lycees-des-hauts-de-france-vises-par-une-cyberattaque-une-cellule-de-crise-ouverte_63284297.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Cyberattaque contre la Région des Hauts-de-France : les lycées impactés (16 octobre 2025)",
+      "url": "https://www.zataz.com/cyberattaque-contre-la-region-des-hauts-de-france-les-lycees-impactes/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Lycées des Hauts-de-France : fuite de données revendiquée (octobre 2025)",
+      "url": "https://frenchbreaches.com/alertes/lycees-des-hauts-de-france-5ba1a9c00a08",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 10 octobre 2025, une cyberattaque par rançongiciel a touché le système d'information des lycées publics des Hauts-de-France. Jusqu'à 80 % des établissements, plus de 200 lycées, ont été impactés, avec suspension de l'accès à Internet selon BFM. La région a ouvert une cellule de crise et porté plainte. Selon le service de veille de Zataz, l'attaque est liée au groupe Qilin. Celui-ci a mis en ligne des milliers de documents : pièces d'identité, relevés de notes et CV.",
+  "timeline": [
+    {
+      "date": "2025-10-10",
+      "event": "Rançongiciel contre le système d'information des lycées publics ; 80 % des établissements touchés, Internet suspendu."
+    },
+    {
+      "date": "2025-10-13",
+      "event": "Les établissements doivent garder les ordinateurs éteints ; cours et administratif « à l'ancienne » selon les relais presse."
+    },
+    {
+      "date": "2025-10-16",
+      "event": "Zataz constate des fichiers publiés par Qilin : pièces d'identité, relevés de notes, CV ; la Région porte plainte."
+    }
+  ],
+  "group": "qilin"
+}
