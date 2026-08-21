@@ -1,0 +1,88 @@
+# fullcat rafale 4 — lane 0 — presse 2025 PROFONDE L0 (archives Numerama/ZDnet page 2+, 20 fiches)
+date: 2026-08-21 15:15 UTC | branche: fiche/rafale4-l0 | base main da13724 (596 fiches)
+worktree: /var/folders/1s/l8h5vn997437p2zwl835gkw80000gn/T/opencode/fp-r4l0 (supprimé en fin de run)
+
+## Méthode — archives PROFONDES (la rafale 3 avait gratté la surface)
+- Numerama : catégorie /cyberguerre/ paginée page 2 → 60 (719 articles extraits, IDs 1.74M→2.30M,
+  couvrant juin 2024 → août 2026 ; datation par article datePublished). ZDnet.fr : catégorie
+  /cybersecurite-3900046206q.htm paginée /page/2→33 (286 articles 2025 datés via datetime).
+  Croisement : sitemap Zataz (708 posts 2025), 01net page-liste cyberattaques, FrenchBreaches
+  API (api/articles_api.php?year=2025 → 170 alertes structurées : dates/volumes/dataTypes),
+  BonjourLaFuite (tracker imirhil — 2e relais indépendant), hginfoandco (fuitesinfos),
+  ransomware.live, DarkWebInformer, presse (Caradisiac, WWD, Futura, VdN/Nordlittoral → 403).
+- Focus H1 2025 (janv.–juin) : la rafale 3 venait surtout du 2d semestre. 11/20 fiches sont
+  janv.–juin, 9 juil.–déc.
+- DEDUP ls data/catalog (596) : skips documentés ci-dessous.
+- Règle statut : 20/20 revendiquee — aucune source de genre « officiel » vérifiable par curl
+  dans le périmètre (VdN/Nordlittoral 403-bot pour Nord Emploi ; lettre Chanel citée par WWD
+  mais sans URL officielle citable). Machine à états respectée : jamais de confirmee sans
+  source officielle.
+- Zéro invention : chaque fait trace à une URL de sources[]. Paires de relais indépendants
+  (FrenchBreaches + BonjourLaFuite/hginfoandco/ransomware.live) selon le précédent rafale 3
+  (FB + BreachSense, salve Qilin du 15/10).
+- SIREN résolus via annuaire-entreprises.data.gouv.fr : 14 renseignés, 6 omis (FFMoto fédération
+  nationale non résolue, Côté Sushi ambigu, Laforêt réseau sans siège unique, Carrefour Mobile
+  (groupe non résolu sans ambiguïté), Reporterre (0 établissement ouvert), UFOLEP national).
+
+## Fiches (20 — rafale 4 L0)
+| # | slug | date rév. | secteur | volume (revendiqué) | sources |
+|---|------|-----------|---------|---------------------|---------|
+| 1 | ffmoto-20250124 | 24/01 | services | 462 912 licenciés (CNI, cert. médicaux) | Zataz + Caradisiac |
+| 2 | nord-emploi-20250226 | 26/02 | public | 200 000 comptes (CV, formulaires RSA/CAF) | FB + BonjourLaFuite |
+| 3 | sdis-86-20250219 | 19/02 | public | 22 233 identifiants (mdp hachés) | FB + hginfoandco |
+| 4 | viseo-20250219 | 19/02 | services | volumes non précisés (Fog) | FB + ransomware.live |
+| 5 | cote-sushi-20250304 | 04/03 | retail | 600 000 comptes (→1,1 M cité) | FB + BonjourLaFuite |
+| 6 | laforet-20250313 | 13/03 | services | 20 000 dossiers (CNI, RIB) | FB + BonjourLaFuite |
+| 7 | eedf-20250320 | 20/03 | services | 44 000 adhérents (mineurs) | FB + BonjourLaFuite |
+| 8 | reporterre-20250401 | 01/04 | media | 24 312 comptes | FB + BonjourLaFuite |
+| 9 | carrefour-mobile-20250424 | 24/04 | media | 64 000 clients (passeports cités) | Zataz + BonjourLaFuite |
+| 10 | chanel-20250725 | 25/07 | retail | non communiqué (notification maison) | Zataz + WWD |
+| 11 | optic-2000-20250808 | 08/08 | retail | ≈ 1,5 M dossiers (NIR, vue) | FB + BonjourLaFuite |
+| 12 | mairie-de-chatou-20251124 | 24/11 | public | ≈ 8 500 fiches usagers (via RDV360) | FB + BonjourLaFuite |
+| 13 | clinique-du-millenaire-20251125 | 25/11 | sante | ≈ 45 000 dossiers patients (via Weda) | FB + BLF + hginfoandco |
+| 14 | proxiserve-20251125 | 25/11 | services | 294 639 clients | FB + BonjourLaFuite |
+| 15 | la-centrale-du-financement-20251128 | 28/11 | finance | ≈ 85 000 dossiers de prêt (KYC) | FB + BonjourLaFuite |
+| 16 | ufolep-20251210 | 10/12 | services | ≈ 350 000 membres (via Exalto) | FB + BLF + hginfoandco |
+| 17 | parashop-20251217 | 17/12 | retail | ≈ 140 000 clients (12 ans de données) | FB + BonjourLaFuite |
+| 18 | paytrip-20251227 | 27/12 | finance | 74 877 clients (IBAN, soldes) | FB + BonjourLaFuite |
+| 19 | europages-20251228 | 28/12 | services | 205 403 contacts B2B | FB + BonjourLaFuite |
+| 20 | allegro-musique-20251228 | 28/12 | services | 45 000 à 161 412 selon recensements | FB + BonjourLaFuite |
+
+Groupes : fog (VISEO, nommé par ransomware.live). Sub-victimes par prestataire : Chatou (RDV360)
+et Clinique du Millénaire (Weda) — précédent SynBird rafale 3 (villes fichées séparément).
+
+## Vérifications (worktree fp-r4l0, node_modules symlinké)
+- zod : npx vitest run tests/pr-fiches.test.ts → 616 passed (596 + 20).
+- suite complète : npx vitest run → 29 fichiers / 979 tests passed.
+- build : npm run build → 1 282 pages, Complete!
+- URLs sources (30 uniques) : curl -L UA navigateur → 29/30 HTTP 200 ; cyberbreaches.org → 503
+  (exclu des fiches, comme les 403 en r3) ; cyberlegal.fr → 000 (exclu). VdN + Nordlittoral
+  (403 bot) non citées — Nord Emploi reposé sur FB+BLF, statut repassé revendiquee.
+- SIREN : 14 résolus via API annuaire, 6 omis (jamais inventés).
+
+## Skips documentés (périmètre ou dédup)
+- Déjà fichés détectés via les scans : Free (avril 2025 = resurfacing nov. 2024 fiché), Auchan
+  (fév. 2025 Pologne, même entité), SFR, Chronopost, Meilleurtaux, Louis Vuitton, Cartier,
+  Sorbonne, Autosur/Intersport (fenêtre mars–avr.), Adidas, Steam, Naval Group (juil. = déjà
+  fiché 28/07 + WarLock août = même dossier), Orange France (28/07 fiché, publication WarLock
+  d'août couverte par confirmation 22/08), Bouygues, Air France-KLM, Mango, FFTir, Weda (fiche
+  principale), Resana, DGFiP, Ficoba, ANTS (buzz sept.), La Poste (DDoS déc.), FFN/FFT/karaté
+  (vague déc. fichée côté FFN), Education nationale (juin = même entité), Indigo (avril =
+  fenêtre proche fiche mai), Michelin, Colis Privé, Adecco (verdict sept. = fiche déc.),
+  Kering, Inovie Labosud, CH Haute-Comté, lycées Hauts-de-France, La Licra (volume 194 pers.,
+  sous le seuil de pertinence retenu pour cette lane), UTwin (date contradictoire FB 05/03 vs
+  BLF 07/04 — écartée par prudence), Blackstore (daté 12/01/2026 par BLF vs 15/03/2025 FB —
+  hors lane 2025 par prudence), Doctolib (démenti Zataz : scraping de données publiques),
+  Schneider Electric Hellcat (revendication oct.–nov. 2024, hors lane 2025), concessionnaire
+  auto du Nord (identité tuee par Zataz — divulgation responsable), « caisses de retraite »
+  mai 2025 (onze institutions non identifiées), Intermarché nov. 2025 (ambiguïté avec le
+  dossier Drive août 2026 déjà fiché — même entité), La Poste élection du timbre (fiché),
+  osmoses.numerique.gouv.fr (FB seul, BLF ne le recense pas — mono-relais), TheSqua.re
+  (mono-relais vérifiable), Kaviari/Oui Heberg/La Licra/PayTrip-2e (relais unique ou marginal
+  — remplacés par des candidats mieux sourcés).
+- Hors périmètre : Workday, Salesloft, Plex, Logitech, Jaguar Land Rover, Allianz Life, Coupang,
+  SoundCloud (hors France), NordVPN (démenti), fausse fuite 16 Mds identifiants (compilation).
+
+## Non-fusion
+PR ouverte, JAMAIS mergée par la lane — chaîne d'intégrité + merge unique en Vague C.
+Aucun post social. Registre/ancrages : hors périmètre L0 (lane trust dédiée après merge).

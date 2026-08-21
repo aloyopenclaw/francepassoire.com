@@ -1,0 +1,38 @@
+{
+  "slug": "optic-2000-20250808",
+  "entity": "Optic 2000",
+  "siren": "326980018",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-08"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "≈ 1,5 million de dossiers clients revendiqués (identité, coordonnées, NIR, historique d'équipement ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Optic 2000 : fuite de données concernant 1,5M comptes",
+      "url": "https://frenchbreaches.com/alertes/optic-2000-2398bfa8cc6c",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Optic 2000, 8 août 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 8 août 2025, une fuite revendiquée d'environ 1,5 million de dossiers clients d'Optic 2000, l'un des premiers réseaux d'opticiens de France, est recensée : identités, coordonnées, civilités, dates de naissance, numéros de Sécurité sociale, historique des équipements (verres, montures) et magasins de référence. Ces données médicalisées de vue facilitent des escrogeries très crédibles. L'enseigne n'a pas confirmé publiquement l'incident à ce stade ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-08-08",
+      "event": "Une base revendiquée d'environ 1,5 million de dossiers clients d'Optic 2000 est recensée par les veilles cyber."
+    }
+  ]
+}

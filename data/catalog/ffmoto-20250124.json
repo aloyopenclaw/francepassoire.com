@@ -1,0 +1,47 @@
+{
+  "slug": "ffmoto-20250124",
+  "entity": "Fédération française de motocyclisme (FFMoto)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-07-15"
+  },
+  "volume": {
+    "count": 462912,
+    "unit": "personnes",
+    "label": "462 912 licenciés (chiffre revendiqué ; une remise en vente en août 2026 évoque 472 760 adhérents, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — FFMOTO piratée : la Fédération Française de Motocyclisme victime d'une nouvelle fuite massive de données ? (15 juillet 2025)",
+      "url": "https://www.zataz.com/ffmoto-piratee-la-federation-francaise-de-motocyclisme-victime-dune-nouvelle-fuite-massive-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "Caradisiac — Piratage informatique : des centaines de milliers de données de la Fédération Française de Moto en vente sur le dark web (19 août 2026)",
+      "url": "https://www.caradisiac.com/piratage-informatique-des-centaines-de-milliers-de-donnees-de-la-federation-francaise-de-moto-en-vente-sur-le-dark-web-223608.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 janvier 2025, un pirate agissant sous le pseudonyme « TheFrenchGuy » annonce avoir accédé, via un compte administrateur compromis chez le prestataire Exalto, aux systèmes de la Fédération française de motocyclisme, et exfiltrer les données de 462 912 licenciés : identités, coordonnées, photos, parfois copies de cartes d'identité et certificats médicaux. En juillet 2025, une nouvelle annonce de revente de ces données apparaît sur un forum ; en août 2026, la base est de nouveau proposée à la vente, avec environ 472 760 adhérents cités. La fédération a reconnu une cyberattaque touchant l'intranet fédéral via son prestataire ; l'exfiltration n'est pas officiellement établie.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "Le pirate « TheFrenchGuy » revendique l'accès aux systèmes gérés par le prestataire Exalto et l'exfiltration de données de 462 912 licenciés."
+    },
+    {
+      "date": "2025-07-15",
+      "event": "Une nouvelle annonce de revente des données FFMoto est repérée sur un forum, documentée par Zataz."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "La base réapparaît en vente sur le dark web avec environ 472 760 adhérents cités."
+    }
+  ]
+}

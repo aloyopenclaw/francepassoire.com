@@ -1,0 +1,37 @@
+{
+  "slug": "reporterre-20250401",
+  "entity": "Reporterre",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-04-01"
+  },
+  "volume": {
+    "count": 24312,
+    "unit": "comptes",
+    "label": "24 312 comptes revendiqués (abonnés et lecteurs ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Reporterre : 24,3K comptes compromis",
+      "url": "https://frenchbreaches.com/alertes/reporterre-42a8dd121b8f",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Reporterre, 1er avril 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er avril 2025, une fuite revendiquée touchant Reporterre, quotidien en ligne d'information sur l'écologie, est recensée : 24 312 comptes avec noms, prénoms, adresses e-mail et postales. Base de lecteurs d'un média d'investigation, ces données peuvent servir des campagnes d'hameçonnage ciblées. Le média n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-04-01",
+      "event": "Une base revendiquée de 24 312 comptes lecteurs de Reporterre est recensée par les veilles cyber."
+    }
+  ]
+}

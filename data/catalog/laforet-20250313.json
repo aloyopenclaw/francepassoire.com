@@ -1,0 +1,38 @@
+{
+  "slug": "laforet-20250313",
+  "entity": "Laforêt Immobilier",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-13"
+  },
+  "volume": {
+    "count": 20000,
+    "unit": "comptes",
+    "label": "20 000 dossiers revendiqués (dossiers locataires, pièces d'identité, RIB ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Laforêt : 20K comptes compromis dans une cyberattaque",
+      "url": "https://frenchbreaches.com/alertes/laforet-33a8241323be",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Laforêt, 13 mars 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 13 mars 2025, une fuite revendiquée touchant le réseau immobilier Laforêt est recensée par les veilles cyber : environ 20 000 dossiers dont des dossiers locataires, des pièces d'identité et des RIB. La nature immobilière des données — justificatifs de revenus et documents d'identité fréquemment exigés pour un dossier de location — en fait un vivier pour des escrogeries ciblées. Le réseau n'a pas confirmé publiquement l'incident ; les volumes et le périmètre restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-03-13",
+      "event": "Une base revendiquée d'environ 20 000 dossiers (dont pièces d'identité et RIB) touchant Laforêt est recensée."
+    }
+  ]
+}

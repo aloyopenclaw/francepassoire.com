@@ -1,0 +1,39 @@
+{
+  "slug": "la-centrale-du-financement-20251128",
+  "entity": "La Centrale du Financement (LCF)",
+  "siren": "791400005",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-28"
+  },
+  "volume": {
+    "count": 85000,
+    "unit": "personnes",
+    "label": "≈ 85 000 dossiers de prêt exfiltrés (avis d'imposition, pièces KYC, RIB ; revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "financier",
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez La Centrale du Financement : 85K comptes",
+      "url": "https://frenchbreaches.com/alertes/la-centrale-du-financement-b6835d05c01e",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — La Centrale du Financement, 28 novembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 novembre 2025, une fuite revendiquée touche le courtier en crédit La Centrale du Financement : environ 85 000 dossiers de prêt contenant avis d'imposition, justificatifs de revenus, pièces d'identité (KYC), RIB et détails des projets immobiliers. Concentré de données financières et patrimoniales, ce type de fichier alimente des escroqueries à l'emprunt et à l'usurpation d'identité. Le courtier n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-28",
+      "event": "Une base revendiquée d'environ 85 000 dossiers de prêt de LCF est recensée par les veilles cyber."
+    }
+  ]
+}

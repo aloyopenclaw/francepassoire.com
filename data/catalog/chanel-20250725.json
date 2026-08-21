@@ -1,0 +1,43 @@
+{
+  "slug": "chanel-20250725",
+  "entity": "Chanel",
+  "siren": "542052766",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-25",
+    "publication": "2025-08-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; données de contact de clients du service client d'Amérique du Nord (notification de la maison)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Chanel victime d'une cyberattaque via une faille CRM (7 août 2025)",
+      "url": "https://www.zataz.com/chanel-victime-dune-cyberattaque-via-une-faille-crm/",
+      "kind": "article"
+    },
+    {
+      "label": "WWD — Chanel Reports Data Breach Impacting U.S. Client Database (lettre aux clients)",
+      "url": "https://wwd.com/business-news/retail/chanel-data-break-u-s-client-database-1238026491/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 juillet 2025, Chanel détecte une activité anormale sur une base de données du service client de sa filiale américaine, opérée par un prestataire via la plateforme Salesforce. La maison notifie ses clients : un tiers non autorisé a accédé à des noms, adresses e-mail et postales et numéros de téléphone de personnes ayant contacté le service ; aucune donnée financière n'est concernée a priori. L'incident s'inscrit dans la vague d'attaques par ingénierie sociale visant des écosystèmes CRM de grands groupes, attribuée à la mouvance ShinyHunters. Chanel a reconnu l'intrusion ; l'ampleur exacte du vol n'est pas communiquée.",
+  "timeline": [
+    {
+      "date": "2025-07-25",
+      "event": "Chanel détecte un accès non autorisé à une base du service client nord-américain hébergée chez un prestataire."
+    },
+    {
+      "date": "2025-08-07",
+      "event": "La presse spécialisée documente la brèche et son lien avec la campagne visant les écosystèmes Salesforce."
+    }
+  ]
+}
