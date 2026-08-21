@@ -1,0 +1,53 @@
+{
+  "slug": "baccarat-20231016",
+  "entity": "Baccarat",
+  "siren": "760800060",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "blackbasta",
+  "dates": {
+    "revendication": "2023-10-16",
+    "publication": "2023-09-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "début de publication de la base : pièces d'identité d'employés, fichiers administratifs et plaintes internes ; volume total non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — La cristallerie de luxe Baccarat victime d'une cyberattaque (27 septembre 2023)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/la-cristallerie-de-luxe-baccarat-victime-d-une-cyberattaque_AD-202309270502.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Des hackers publient les données des employés de la cristallerie Baccarat (16 octobre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1533432-des-hackers-publient-les-donnees-des-employes-de-la-cristallerie-baccarat.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Est Républicain — Cybercriminalité : des documents de la maison Baccarat dévoilés (22 octobre 2023)",
+      "url": "https://www.estrepublicain.fr/economie/2023/10/22/cybercriminalite-des-documents-de-la-maison-baccarat-devoiles",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 septembre 2023, la cristallerie de luxe Baccarat est frappée par un rançongiciel qui chiffre une partie de ses données ; l'entreprise évoque alors une « indisponibilité » sans indice de compromission de données clients, salariés ou partenaires. Le 16 octobre, le groupe Black Basta revendique l'attaque et commence à publier des données dérobées : pièces d'identité d'employés, fichiers administratifs et plaintes internes, vérifiées par Numerama puis relayées par L'Est Républicain. L'entreprise ne confirme pas l'exfiltration, mais les publications des cybercriminels se poursuivent.",
+  "timeline": [
+    {
+      "date": "2023-09-27",
+      "event": "Rançongiciel détecté chez Baccarat : activité réduite, une partie des données indisponible."
+    },
+    {
+      "date": "2023-10-16",
+      "event": "Black Basta revendique l'attaque et publie un premier lot de données d'employés."
+    },
+    {
+      "date": "2023-10-22",
+      "event": "L'Est Républicain documente la divulgation de documents internes."
+    }
+  ]
+}

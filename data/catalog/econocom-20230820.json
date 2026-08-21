@@ -1,0 +1,61 @@
+{
+  "slug": "econocom-20230820",
+  "entity": "Econocom",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-20",
+    "publication": "2023-08-28",
+    "confirmation": "2023-08-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données jugées « peu sensibles » par Econocom, extraites de deux partages SharePoint ; données privées d'une personne et données de connexion de comptes techniques"
+  },
+  "data_types": [
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Econocom — Information cybersécurité : mise à jour de la communication du 23 août 2023 (24 août 2023)",
+      "url": "https://www.econocom.com/fr/newsroom/information-cybersecurite-mise-jour-communication-23-aout-2023-jeudi-24-aout-2023-17h00",
+      "kind": "officiel"
+    },
+    {
+      "label": "Econocom — Information cybersécurité : point de situation au 28 août 2023 (28 août 2023)",
+      "url": "https://www.econocom.com/fr/newsroom/information-cybersecurite-point-situation-28-aout-2023-8h30",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDnet France — Fuite de données visant Econocom : le poste d'un prestataire avait été compromis (2023)",
+      "url": "https://www.zdnet.fr/actualites/fuite-de-donnees-visant-econocom-le-poste-d-un-prestataire-avait-ete-compromis-39961022.htm",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Stormous et GhostSec tentent de faire chanter Econocom (28 août 2023)",
+      "url": "https://www.lemagit.fr/actualites/366549472/Stormous-et-GhostSec-tentent-de-faire-chanter-Econocom",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 août 2023, le groupe Stormous revendique sur Twitter un piratage d'Econocom et commence à publier des données. Les investigations internes remontent vers le poste d'un prestataire disposant d'un accès VPN : les pirates de GhostSec et Stormous ont copié le contenu de deux partages SharePoint à usage individuel, jugés peu sensibles, hormis les données privées d'une personne et des données de connexion de comptes techniques. Econocom confirme l'attaque le 23 août, dépose plainte, n'a reçu aucune demande de rançon, et identifie le 25 août la trace d'une attaque similaire contre l'un de ses serveurs, contenue sans fuite. Aucune donnée interne sensible du groupe n'est identifiée comme compromise à ce stade.",
+  "timeline": [
+    {
+      "date": "2023-08-20",
+      "event": "Stormous revendique le piratage d'Econocom sur Twitter et publie des données."
+    },
+    {
+      "date": "2023-08-22",
+      "event": "Des données plus récentes sont retrouvées sur deux partages SharePoint ; dispositif de gestion de crise cyber activé."
+    },
+    {
+      "date": "2023-08-23",
+      "event": "Econocom confirme l'attaque et engage un dépôt de plainte."
+    },
+    {
+      "date": "2023-08-25",
+      "event": "Trace d'une attaque identique contre un serveur interne, contenue sans fuite selon l'entreprise."
+    }
+  ]
+}

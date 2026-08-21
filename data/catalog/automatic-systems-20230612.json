@@ -1,0 +1,45 @@
+{
+  "slug": "automatic-systems-20230612",
+  "entity": "Automatic Systems (groupe Bolloré)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "blackcat",
+  "dates": {
+    "revendication": "2023-06-12",
+    "publication": "2023-06-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "121 pièces jointes publiées en échantillon ; 48 heures laissées avant de nouvelles publications ; volume total non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Numerama — Une filiale du groupe Bolloré victime de cyberattaque : des documents confidentiels en ligne (juin 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1413154-une-filiale-du-groupe-bollore-victime-de-cyberattaque-des-documents-confidentiels-en-ligne.html",
+      "kind": "article"
+    },
+    {
+      "label": "The Cyber Express — ALPHV Claims the Automatic Systems Ransomware Attack (13 juin 2023)",
+      "url": "https://thecyberexpress.com/alphv-automatic-systems-ransomware-attack/",
+      "kind": "article"
+    }
+  ],
+  "description": "Automatic Systems, fabricant de portiques d'accès filiale du groupe Bolloré, reconnaît le 3 juin 2023 une cyberattaque et mobilise des experts externes. Le 12 juin, le groupe ALPHV/BlackCat revendique l'opération sur son site darknet et lance un compte à rebours de 48 heures ; 121 pièces jointes sont publiées en échantillon. Selon les données mises en ligne et consultées par Numerama et The Cyber Express figurent des passeports de salariés, des contrats de confidentialité, des données financières et bancaires, ainsi que des échanges avec des clients dont la RATP, Alibaba, Engie et Thales. L'ampleur de l'exfiltration n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2023-06-03",
+      "event": "Automatic Systems reconnaît une cyberattaque et engage des experts en cybersécurité."
+    },
+    {
+      "date": "2023-06-12",
+      "event": "ALPHV/BlackCat revendique l'attaque, publie 121 fichiers en échantillon et lance un ultimatum de 48 heures."
+    }
+  ]
+}

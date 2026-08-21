@@ -1,0 +1,43 @@
+{
+  "slug": "fcba-20231011",
+  "entity": "Institut technologique FCBA",
+  "siren": "775680903",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "group": "blackcat",
+  "dates": {
+    "revendication": "2023-10-11",
+    "publication": "2023-10-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication ALPHV sans détail public sur la nature ou le volume des données"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "The Cyber Express — ALPHV Ransomware Group Claims FCBA Cyberattack (12 octobre 2023)",
+      "url": "https://thecyberexpress.com/alphv-ransomware-group-claims-fcba-cyberattack/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Ransomware Alphv : les victimes en France (FCBA revendiqué le 11 octobre 2023)",
+      "url": "https://frenchbreaches.com/ransomware/alphv",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 11 octobre 2023, le groupe de rançongiciel ALPHV/BlackCat liste l'Institut technologique FCBA, centre français de recherche et d'innovation pour la forêt, le bois, l'ameublement et la construction, sur son site de fuite. La revendication est relayée par The Cyber Express et recensée par FrenchBreaches. L'institut n'a pas répondu aux sollicitations de la presse spécialisée et aucun détail public sur la nature ou le volume des données exfiltrées n'est publié ; l'exfiltration n'est pas confirmée par l'organisation.",
+  "timeline": [
+    {
+      "date": "2023-10-11",
+      "event": "ALPHV/BlackCat affiche l'Institut technologique FCBA sur son site de fuite."
+    },
+    {
+      "date": "2023-10-12",
+      "event": "The Cyber Express relaie la revendication ; aucune réponse de l'institut."
+    }
+  ]
+}

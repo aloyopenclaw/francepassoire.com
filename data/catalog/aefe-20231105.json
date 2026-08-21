@@ -1,0 +1,52 @@
+{
+  "slug": "aefe-20231105",
+  "entity": "Agence pour l'enseignement français à l'étranger (AEFE)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-05",
+    "publication": "2023-12-05",
+    "confirmation": "2023-11-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données d'établissements, de personnels détachés, de services centraux, de personnels recrutés localement et de fournisseurs ; l'analyse vise à recenser les données exfiltrées, dont potentiellement des copies de pièces d'identité et des coordonnées bancaires"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "AEFE — Communication AEFE : cyberattaque et mesures de précaution à mettre en place (5 décembre 2023)",
+      "url": "https://aefe.gouv.fr/fr/actualites/communication-aefe-cyberattaque-et-mesures-de-precaution-mettre-en-place",
+      "kind": "officiel"
+    },
+    {
+      "label": "Sénat — Question écrite n° 231209616 : cyberattaques contre l'AEFE (28 décembre 2023)",
+      "url": "https://www.senat.fr/questions/base/2023/qSEQ231209616.html",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 novembre 2023, une application financière éditée par la société ELAP et utilisée par l'AEFE est frappée par un incident de sécurité. Les investigations menées par ELAP confirment le 19 novembre que l'AEFE est le seul client touché et qu'une fuite de données a été effective. Sont concernées des données d'établissements, de personnels détachés auprès de l'agence, des services centraux, de personnels recrutés localement et de fournisseurs ; certaines données exfiltrées pourraient inclure des copies de pièces d'identité ou des coordonnées bancaires. L'AEFE signale l'incident à l'ANSSI, porte plainte et déclare la violation à la CNIL, avant de publier une communication large le 5 décembre avec des mesures de précaution pour le réseau. Début décembre, une seconde cyberattaque vise le prestataire Scola Concept et perturbe la commission nationale des bourses.",
+  "timeline": [
+    {
+      "date": "2023-11-05",
+      "event": "Incident de sécurité sur l'application financière ELAP utilisée par l'AEFE."
+    },
+    {
+      "date": "2023-11-19",
+      "event": "ELAP confirme que l'AEFE est le seul client touché et qu'une fuite de données a eu lieu."
+    },
+    {
+      "date": "2023-12-05",
+      "event": "L'AEFE publie une communication : ANSSI, plainte, CNIL saisie, mesures de précaution pour le réseau."
+    },
+    {
+      "date": "2023-12-13",
+      "event": "Une attaque du prestataire Scola Concept empêche la tenue de la commission nationale des bourses des 13 et 14 décembre."
+    }
+  ]
+}
