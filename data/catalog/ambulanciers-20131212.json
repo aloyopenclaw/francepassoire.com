@@ -1,0 +1,37 @@
+{
+  "slug": "ambulanciers-20131212",
+  "entity": "Des ambulanciers (entité non nommée)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-12-12",
+    "confirmation": "2013-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique de 10 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « AMBULANCIERS », vidéosurveillance (12 décembre 2013)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 12/12/2013 — sanction pécuniaire publique de 10 000 euros",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 12 décembre 2013, la CNIL a infligé une sanction pécuniaire publique de 10 000 euros à des ambulanciers en raison de leur dispositif de vidéosurveillance : défaut de formalités préalables, défaut d'information des personnes et absence de réponse aux demandes de l'autorité. Le montant, absent du tableau actuel du site CNIL, est établi par la version archivée de la liste officielle des sanctions. La dénomination n'est pas publique. Ce dossier s'inscrit dans la doctrine constante de la CNIL sur la vidéosurveillance : dispositifs déclarés, personnes informées et réponses effectives dues à l'autorité de contrôle.",
+  "timeline": [
+    {
+      "date": "2013-12-12",
+      "event": "Sanction pécuniaire publique de 10 000 euros : vidéosurveillance, défaut de formalités, d'information et de coopération."
+    }
+  ]
+}
