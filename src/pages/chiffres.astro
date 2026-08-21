@@ -105,10 +105,10 @@ const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
         <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
           <h1 class="mt-0">
             <span class="count-up block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter" data-cible={cible}>{formaterNombre(cible)}</span>
-            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">personnes potentiellement touchées depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
+            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">expositions cumulées depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
           </h1>
           <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
-            {compteur.personnesLabel} — {formaterNombre(compteur.fichesCount)} {compteur.fichesCount > 1 ? 'fuites recensées' : 'fuite recensée'} à ce jour
+            en cumulant les volumes annoncés des {formaterNombre(compteur.fichesCount)} fuites recensées (une même personne peut apparaître dans plusieurs fuites)
           </p>
         </div>
       </div>
