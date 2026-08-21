@@ -1,0 +1,68 @@
+{
+  "slug": "carrefour-20201118",
+  "entity": "Carrefour France",
+  "siren": "672050085",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-11-18",
+    "publication": "2020-11-26",
+    "confirmation": "2020-11-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 2 250 000 euros ; plusieurs millions de clients inactifs du programme de fidélité concernés selon la décision relayée par le cabinet Bouchara & Associés"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « GRANDE DISTRIBUTION », sanction pécuniaire de 2 250 000 euros (18 novembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), bilan des sanctions : Carrefour France, 2 250 000 euros le 18 novembre 2020 ; publication annoncée le 26 novembre",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2020-008 du 18 novembre 2020 (texte officiel ; page courante protégée contre les robots, capture Wayback du 22 janvier 2025 vérifiée)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000042563756",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cabinet Ledieu — Jurisprudence CNIL cookies novembre-décembre 2020 : SAN-2020-008, « 39 cookies automatiques dès l'arrivée sur la page d'accueil » (16 décembre 2020)",
+      "url": "https://ledieu-avocats.fr/jurisprudence-cnil-cookie-traceur-nov-dec-2020/",
+      "kind": "article"
+    },
+    {
+      "label": "Cabinet Bouchara & Associés — Carrefour fined €3M : conservation de 5 à 10 ans des données de fidélité, copies de pièces d'identité, factures accessibles sans authentification (29 mars 2022)",
+      "url": "https://www.cabinetbouchara.com/en/carrefour-fined-e3m/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 novembre 2020, la formation restreinte de la CNIL a sanctionné Carrefour France d'une amende de 2 250 000 euros (délibération SAN-2020-008). L'enquête a suivi une quinzaine de plaintes déposées entre juin 2018 et avril 2019. Selon la décision relayée par le cabinet Bouchara, les données de plusieurs millions de clients inactifs étaient conservées cinq à dix ans. Des copies de pièces d'identité étaient archivées jusqu'à six ans. Des factures étaient accessibles sans authentification sur carrefour.fr. Trente-neuf cookies étaient déposés avant toute action de l'internaute. La CNIL a publié la sanction le 26 novembre.",
+  "timeline": [
+    {
+      "date": "2018-06-01",
+      "event": "Premières plaintes de personnes contre l'enseigne ; elles portent sur l'accès, l'effacement et la désinscription, selon Bélot Malan & Associés."
+    },
+    {
+      "date": "2019-07-31",
+      "event": "Contrôles de la CNIL entre mai et juillet 2019 : un contrôle en ligne et quatre sur sites pour Carrefour France."
+    },
+    {
+      "date": "2020-11-18",
+      "event": "Amende de 2 250 000 euros (SAN-2020-008) : conservation excessive, droits non respectés, sécurité insuffisante, cookies sans consentement."
+    },
+    {
+      "date": "2020-11-26",
+      "event": "Publication de la sanction, selon la chronologie du 41e rapport annuel de la CNIL."
+    }
+  ]
+}
