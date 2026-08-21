@@ -1,0 +1,54 @@
+{
+  "slug": "maif-20250321",
+  "entity": "MAIF",
+  "siren": "775709702",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-21",
+    "publication": "2025-03-21",
+    "confirmation": "2025-03-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non chiffrés ; « une partie des clients » notifiée par l'assureur, seule la filiale MAIF Solutions Financières étant concernée (données d'état civil et de comptes-titres, après la cyberattaque contre le fournisseur de logiciels Harvest fin février 2025)"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — État-civil, comptes-titres : des clients de MAIF et Banque populaire-Caisse d'Épargne victimes d'une fuite de données (21 mars 2025)",
+      "url": "https://www.leparisien.fr/economie/etat-civil-comptes-titres-des-clients-de-maif-et-banque-populaire-caisse-depargne-victimes-dune-fuite-de-donnees-21-03-2025-RZLASHOGHRCFJFPLDVCK6S532M.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Fuite de données pour les clients MAIF et Banque Populaire-Caisse d'Épargne : que faire si vous êtes concerné ? (22 mars 2025)",
+      "url": "https://www.leparisien.fr/economie/votre-argent/fuite-de-donnees-pour-les-clients-maif-et-banque-populaire-caisse-depargne-que-faire-si-vous-etes-concerne-22-03-2025-J56UD4GFSNELRANHK5ICRQ66I4.php",
+      "kind": "article"
+    },
+    {
+      "label": "IdProtect — Cyberattaque chez Harvest : des milliers de clients MAIF et BPCE exposés à des risques d'usurpation d'identité",
+      "url": "https://idprotect.fr/cyberattaque-chez-harvest-des-milliers-de-clients-maif-et-bpce-exposes-a-des-risques-dusurpation-didentite/",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Piratage Banque Populaire, Caisse d'Épargne et MAIF : les données de clients ont été dérobées",
+      "url": "https://www.commentcamarche.net/securite/piratage/34119-piratage-banque-populaire-caisse-d-epargne-et-maif-les-donnees-de-clients-ont-ete-derobees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 mars 2025, Le Parisien révèle que la MAIF a notifié une fuite de données à une partie de ses clients. Un porte-parole confirme au quotidien que seule la filiale MAIF Solutions Financières est concernée, pas la mutuelle dans son ensemble. L'information, initiée par l'Agefi, fait suite à la cyberattaque contre Harvest, fournisseur de logiciels aux banques et assurances, intervenue fin février 2025. Selon les premières descriptions, des données d'état civil et des informations liées aux comptes-titres sont en cause. L'assureur appelle ses clients à la vigilance contre l'hameçonnage ; aucun volume n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2025-03-21",
+      "event": "La MAIF notifie une fuite de données à une partie de ses clients ; Le Parisien, sur information de l'Agefi, publie la révélation et la confirmation de l'assureur."
+    },
+    {
+      "date": "2025-03-22",
+      "event": "Le Parisien détaille les réflexes conseillés aux clients concernés, en particulier la méfiance face aux sollicitations frauduleuses exploitant les données dérobées."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "martigues-20251121",
+  "entity": "Ville de Martigues (plateforme de prise de rendez-vous Synbird)",
+  "siren": "211300561",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-21",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué à l'échelle de la commune ; Martigues est citée parmi les villes clientes de Synbird touchées par la fuite des rendez-vous d'octobre 2025 (environ 300 000 données extraites au total chez l'éditeur selon son président)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Démarches en mairie : La Rochelle, Clichy, Brest… Une fuite de données repérée dans 1 300 communes (24 novembre 2025)",
+      "url": "https://www.leparisien.fr/high-tech/demarches-en-mairie-la-rochelle-clichy-brest-une-fuite-de-donnees-reperee-dans-1300-communes-24-11-2025-QRSBCFWF55GVLHNMEL6NYWAFAQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — États-civils, téléphones, adresses… 1 300 mairies touchées par une fuite de données liée à des rendez-vous pris en octobre (24 novembre 2025)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/etats-civils-telephones-adresses-1-300-mairies-touchees-par-une-fuite-de-donnees-liee-a-des-rendez-vous-pris-en-octobre-7900570725",
+      "kind": "article"
+    },
+    {
+      "label": "Banque des Territoires — Fuite de données dans 1 300 communes : les prestataires en cause (28 novembre 2025)",
+      "url": "https://www.banquedesterritoires.fr/fuite-de-donnees-dans-1300-communes-les-prestataires-en-cause",
+      "kind": "article"
+    }
+  ],
+  "description": "Martigues figure parmi les communes clientes de Synbird, l'éditeur chambérien de prise de rendez-vous en ligne utilisé pour les démarches d'état civil. Le 21 novembre 2025, un courriel signale aux usagers des 1 300 mairies concernées un incident de sécurité affectant l'applicatif. La fuite se limite aux rendez-vous d'octobre : noms, prénoms, code postal, adresse électronique et téléphone. Selon RTL, relayant Le Parisien, l'attaquant a exploité un mot de passe d'employé municipal réutilisé, puis une faille de l'éditeur, corrigée depuis. Synbird a saisi la CNIL et déposé plainte ; aucun mot de passe ni donnée bancaire n'a été compromis.",
+  "timeline": [
+    {
+      "date": "2025-11-21",
+      "event": "Courriel aux usagers des mairies clientes de Synbird : un incident de sécurité a affecté l'applicatif de prise de rendez-vous, avec les données d'octobre."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Le Parisien puis RTL révèlent la fuite touchant 1 300 mairies ; Martigues est citée parmi les communes clientes de l'éditeur."
+    },
+    {
+      "date": "2025-11-28",
+      "event": "La Banque des Territoires recense Martigues parmi les victimes de la fuite ; Synbird a saisi la CNIL et déposé plainte en gendarmerie."
+    }
+  ]
+}
