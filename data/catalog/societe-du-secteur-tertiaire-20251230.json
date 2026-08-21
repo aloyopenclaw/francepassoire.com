@@ -1,0 +1,43 @@
+{
+  "slug": "societe-du-secteur-tertiaire-20251230",
+  "entity": "Société du secteur tertiaire (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-30",
+    "confirmation": "2025-12-30",
+    "publication": "2026-01-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 3 500 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Transmission de données à un réseau social à des fins publicitaires : sanction de 3,5 millions d'euros (22 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/transmission-de-donnees-un-reseau-social-des-fins-publicitaires-sanction",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 décembre 2025, la CNIL a prononcé une amende de 3,5 millions d'euros à l'encontre d'une société du secteur tertiaire pour avoir transmis les données de membres de son programme de fidélité à un réseau social à des fins de ciblage publicitaire, sans consentement valable. Les contrôles ont aussi relevé un défaut d'information des personnes, un stockage inadéquat des mots de passe et l'absence d'analyse d'impact obligatoire au regard des croisements de données. La décision a été adoptée en coopération avec seize homologues européens de la CNIL, des personnes résidant dans ces pays étant concernées. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2025-12-30",
+      "event": "Amende de 3,5 millions d'euros : données de fidélité transmises à un réseau social sans consentement valable, sécurité et analyse d'impact défaillantes."
+    },
+    {
+      "date": "2026-01-22",
+      "event": "La CNIL publie le communiqué détaillant la sanction, prise en coopération avec seize autorités européennes."
+    }
+  ]
+}

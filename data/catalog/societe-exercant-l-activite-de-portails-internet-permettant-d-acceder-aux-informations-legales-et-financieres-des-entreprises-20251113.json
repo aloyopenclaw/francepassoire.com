@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-l-activite-de-portails-internet-permettant-d-acceder-aux-informations-legales-et-financieres-des-entreprises-20251113",
+  "entity": "Société exerçant l'activité de « portails internet » permettant d'accéder aux informations légales et financières des entreprises (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-13",
+    "confirmation": "2025-11-13",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 novembre 2025, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société exerçant une activité de portails internet d'accès aux informations légales et financières des entreprises, dans le cadre de la procédure simplifiée. Les manquements retenus portent sur le consentement et l'information des personnes en matière de cookies et autres traceurs. Les traceurs constituent l'un des principaux sujets des sanctions 2025 : la CNIL recense 21 organismes sanctionnés pour des manquements aux règles régissant les cookies. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-11-13",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : information et consentement aux cookies non conformes."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 : 21 organismes sanctionnés au titre des traceurs."
+    }
+  ]
+}
