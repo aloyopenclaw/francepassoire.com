@@ -1,0 +1,48 @@
+{
+  "slug": "murfy-20251121",
+  "entity": "Murfy",
+  "siren": "832233571",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-21",
+    "publication": "2025-11-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; des champs techniques liés aux paiements figurent dans la base selon les analyses de veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Murfy — Information importante, incident de sécurité concernant vos données personnelles",
+      "url": "https://murfy.fr/information-violation-donnees",
+      "kind": "officiel"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez Murfy France",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/murfy-france/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Murfy",
+      "url": "https://frenchbreaches.com/alertes/murfy-3d43fadbd187",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Murfy, entreprise française de réparation d’électroménager, a subi une « démarche frauduleuse » permettant un accès non autorisé à des données clients. L’intrusion a été identifiée et stoppée le 9 novembre 2025, selon la notice publiée par l’entreprise. Noms, prénoms, adresses e-mail et postale et numéros de téléphone sont concernés. Les données bancaires et les mots de passe sont exclus. Une plainte a été déposée et la CNIL informée. Le 21 novembre, une base attribuée à l’enseigne est documentée en ligne. Les analyses de veille y relèvent aussi des champs techniques liés aux paiements et aux historiques de réparation.",
+  "timeline": [
+    {
+      "date": "2025-11-09",
+      "event": "Murfy identifie et stoppe une intrusion ayant permis un accès non autorisé à certaines données clients."
+    },
+    {
+      "date": "2025-11-21",
+      "event": "Une base attribuée à l’enseigne est documentée en ligne, avec des champs techniques liés aux paiements selon les analyses de veille."
+    }
+  ]
+}

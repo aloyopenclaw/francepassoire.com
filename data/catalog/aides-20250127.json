@@ -1,0 +1,50 @@
+{
+  "slug": "aides-20250127",
+  "entity": "AIDES",
+  "siren": "349496174",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-27",
+    "publication": "2025-01-27",
+    "confirmation": "2025-01-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué par l’association"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — Aides.org piraté : données personnelles et bancaires (IBAN) dans la nature",
+      "url": "https://next.ink/167384/aides-org-pirate-donnees-personnelles-et-bancaires-iban-dans-la-nature/",
+      "kind": "article"
+    },
+    {
+      "label": "AIDES (Remaides) — Mémoires vives : un incendie volontaire de notre histoire",
+      "url": "https://www.aides.org/actualite/lactu-remaides-memoires-vives-incendie-volontaire-histoire",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données AIDES",
+      "url": "https://frenchbreaches.com/alertes/aides-a869a2039fb7",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 13 janvier 2025, AIDES, première association française de lutte contre le VIH et les hépatites, subit un rançongiciel. L’attaque vise l’extorsion de données stockées dans les messageries et sur les serveurs. Elle a causé la perte irrécupérable d’une partie des archives numériques, documentée par la revue associative Remaides. Le 27 janvier, l’association prévient ses membres : un serveur sécurisé de partage de fichiers a été visé. Identité, coordonnées et IBAN pourraient être concernés. AIDES déclare avoir notifié la CNIL, saisi la justice et renforcé ses systèmes. Le nombre de personnes concernées n’a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2025-01-13",
+      "event": "AIDES subit une attaque par rançongiciel visant l’extorsion de données de ses messageries et serveurs ; les autorités sont saisies."
+    },
+    {
+      "date": "2025-01-27",
+      "event": "L’association prévient ses membres : identité, coordonnées et IBAN pourraient être concernés ; CNIL notifiée et plainte déposée."
+    }
+  ]
+}

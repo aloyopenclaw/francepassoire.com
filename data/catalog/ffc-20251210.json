@@ -1,0 +1,49 @@
+{
+  "slug": "ffc-20251210",
+  "entity": "Fédération française de cyclisme (FFC)",
+  "siren": "784448763",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-10",
+    "publication": "2025-12-10",
+    "confirmation": "2025-12-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; la base documentaire et les pièces d’identité de l’Espace FFC ne sont pas concernées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FFC — Attention : attaque informatique détectée, réinitialisez votre mot de passe",
+      "url": "https://structures.ffc.fr/incident-securite-informatique/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next.ink — Tennis, spéléologie : nouvelles fuites de données chez les fédérations sportives",
+      "url": "https://next.ink/218887/tennis-speleologie-nouvelles-fuites-de-donnees-chez-les-federations-sportives/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fédération Française de Cyclisme (FFC)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-cyclisme-ffc-bdb136c76838",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 décembre 2025, la Fédération française de cyclisme détecte une intrusion non autorisée sur son système d’information. L’attaque a ciblé la page d’enregistrement des demandes de licences via des comptes compromis. Noms, prénoms, dates de naissance, nationalité, adresses postale et électronique et numéros de téléphone ont pu être consultés. La base documentaire et les pièces d’identité de l’Espace FFC ne sont pas concernées. La fédération a prévenu l’ANSSI et la CNIL, déposé plainte et imposé la réinitialisation des mots de passe. Une authentification multi-facteurs est déployée.",
+  "timeline": [
+    {
+      "date": "2025-12-10",
+      "event": "La FFC détecte une intrusion survenue dans la nuit, via des comptes compromis sur la page d’enregistrement des licences."
+    },
+    {
+      "date": "2025-12-10",
+      "event": "La fédération alerte ses licenciés, saisit ANSSI et CNIL, dépose plainte et impose la réinitialisation des mots de passe."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "la-nef-20250925",
+  "entity": "La Nef",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-25",
+    "publication": "2025-09-25",
+    "confirmation": "2025-09-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "adresses e-mail d’une partie des quelque 50 000 sociétaires ; nombre exact non communiqué"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — La banque coopérative La Nef alerte ses clients au sujet d’une fuite d’adresses email",
+      "url": "https://next.ink/201451/la-banque-cooperative-la-nef-alerte-ses-clients-au-sujet-dune-fuite-dadresses-email/",
+      "kind": "article"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez La Nef (banque coopérative)",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/la-nef-banque-cooperative/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — La Nef",
+      "url": "https://frenchbreaches.com/alertes/la-nef-014ef00fbf88",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 septembre 2025, La Nef, banque coopérative éthétique revendiquant 50 000 sociétaires, alerte une partie de ses usagers. Une fuite d’adresses e-mail a été confirmée le 9 septembre, grâce à la vigilance de sociétaires. Elle provient de SLIB, fournisseur de la solution de vote en ligne Agathe, utilisée deux ans pour les assemblées générales. Un outil de statistiques d’envoi d’e-mails du prestataire a subi une cyberattaque. Seules les adresses utilisées pour les convocations sont concernées. Coordonnées bancaires, pièces d’identité et mots de passe sont exclus. La Nef a notifié la CNIL et exigé un audit du prestataire.",
+  "timeline": [
+    {
+      "date": "2025-09-09",
+      "event": "La Nef confirme un incident chez SLIB, fournisseur de la solution de vote Agathe : un outil de statistiques d’envoi d’e-mails a été attaqué."
+    },
+    {
+      "date": "2025-09-25",
+      "event": "La banque alerte ses sociétaires : seules des adresses e-mail de convocation ont fuité ; CNIL notifiée et audit exigé."
+    }
+  ]
+}

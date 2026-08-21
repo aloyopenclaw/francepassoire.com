@@ -1,0 +1,58 @@
+{
+  "slug": "la-poste-election-timbre-20250302",
+  "entity": "La Poste",
+  "siren": "356000000",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-02",
+    "publication": "2025-03-07",
+    "confirmation": "2025-03-07"
+  },
+  "volume": {
+    "count": 50000,
+    "unit": "personnes",
+    "label": "près de 50 000 utilisateurs du site Élection du timbre selon La Poste"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données à La Poste : l’entreprise alerte les clients impactés",
+      "url": "https://www.zataz.com/fuite-de-donnees-a-la-poste-lentreprise-alerte-les-clients-impactes/",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Piratage La Poste : les données de 50 000 utilisateurs en vente sur le Dark Web",
+      "url": "https://www.commentcamarche.net/securite/piratage/33949-piratage-la-poste-les-donnees-de-50-000-utilisateurs-en-vente-sur-le-dark-web/",
+      "kind": "article"
+    },
+    {
+      "label": "01net — La Poste prévient ses clients d’une fuite de données",
+      "url": "https://www.01net.com/actualites/poste-previent-clients-fuite-donnees.html",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Geek — Alerte chez La Poste : des milliers d’utilisateurs victimes d’une fuite de données",
+      "url": "https://www.journaldugeek.com/2025/03/07/alerte-chez-la-poste-des-milliers-dutilisateurs-victimes-dune-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début mars 2025, le pirate « h4tr3d w0rld » met en vente les données de près de 50 000 utilisateurs de La Poste. Il affirme les avoir extraites le 25 février du site Élection du timbre, consacré au vote pour les timbres de l’année. Zataz alerte sur cette vente, un échantillon circule. Cinq jours plus tard, La Poste confirme l’intrusion et prévient les clients concernés. Noms, prénoms, adresses e-mail et postale, années de naissance et téléphones ont été dérobés. L’entreprise exclut les données bancaires et les mots de passe. Elle a notifié la CNIL et déposé plainte ; le site a été mis en maintenance.",
+  "timeline": [
+    {
+      "date": "2025-02-25",
+      "event": "Le pirate « h4tr3d w0rld » affirme avoir extrait un fichier CSV de données clients du site Élection du timbre."
+    },
+    {
+      "date": "2025-03-02",
+      "event": "Zataz alerte sur la mise en vente des données de près de 50 000 utilisateurs d’une « sub-division » de La Poste."
+    },
+    {
+      "date": "2025-03-07",
+      "event": "La Poste informe les clients concernés ; CNIL notifiée, plainte déposée, site mis en maintenance."
+    }
+  ]
+}

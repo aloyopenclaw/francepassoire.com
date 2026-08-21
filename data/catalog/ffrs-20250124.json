@@ -1,0 +1,58 @@
+{
+  "slug": "ffrs-20250124",
+  "entity": "Fédération française de roller et skateboard (FFRS)",
+  "siren": "378467864",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-01-24",
+    "confirmation": "2025-01-27"
+  },
+  "volume": {
+    "count": 570000,
+    "unit": "comptes",
+    "label": "plus de 570 000 comptes concernés selon la FFRS ; 577 061 licenciés revendiqués par le pirate"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — [MàJ] Fuites de données : les dessous de l’attaque contre des fédérations françaises de sport",
+      "url": "https://next.ink/166951/fuites-de-donnees-les-dessous-de-lattaque-contre-des-federations-francaises-de-sport/",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Les données de 4,5 millions de Français en vente sur un forum de pirates",
+      "url": "https://www.01net.com/actualites/donnees-45-millions-francais-vente-forum-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "ici.fr — La Fédération Française de Roller et Skateboard victime d’un gros piratage informatique",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/la-federation-francaise-de-roller-et-skateboard-victime-d-un-gros-piratage-informatique-4690884",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Piratage massif des fédérations sportives françaises : 4,5 millions de données vendues",
+      "url": "https://www.zataz.com/piratage-massif-des-federations-sportives-francaises-45-millions-de-donnees-vendues/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 janvier 2025, un pirate baptisé « TheFrenchGuy » met en vente sur BreachForums les bases de huit fédérations sportives françaises. Celle de la FFRS y figure avec 577 061 licenciés revendiqués. Les données proviennent d’Exalto, prestataire gérant les licences de dizaines de fédérations. Le 27 janvier, la FFRS confirme à Next une cyberattaque survenue début janvier, touchant plus de 570 000 comptes. Noms, dates et lieux de naissance, coordonnées et numéros de licence ont été exposés. La fédération a notifié la CNIL, déposé plainte et informé ses licenciés. En février, elle rappelle ses adhérents à la vigilance face au phishing.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "Le pirate « TheFrenchGuy » met en vente sur BreachForums les bases de huit fédérations, dont la FFRS (577 061 licenciés revendiqués)."
+    },
+    {
+      "date": "2025-01-27",
+      "event": "La FFRS confirme à Next une cyberattaque « début janvier » touchant plus de 570 000 comptes ; plainte déposée, CNIL notifiée, licenciés informés."
+    },
+    {
+      "date": "2025-02-11",
+      "event": "La fédération envoie un rappel de vigilance à ses licenciés après la mise en vente des données."
+    }
+  ]
+}

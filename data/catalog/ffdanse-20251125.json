@@ -1,0 +1,58 @@
+{
+  "slug": "ffdanse-20251125",
+  "entity": "Fédération française de danse (FFDanse)",
+  "siren": "784622367",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-25",
+    "publication": "2025-11-25",
+    "confirmation": "2025-12-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de licenciés non communiqué ; une mise en vente relayée en août 2026 affiche 435 903 adhérents"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FFDanse Grand Est — Cyberattaque sur l’extranet FFDanse : accès limité et recommandations",
+      "url": "https://www.ffdanse-grandest.fr/post/cyberattaque-sur-l-extranet-ffdanse-acc%C3%A8s-limit%C3%A9-et-recommandations",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez la Fédération Française de Danse (FFDanse)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-danse-ffdanse-aa9619dd4335",
+      "kind": "revendication"
+    },
+    {
+      "label": "BFMTV — Les fédérations françaises de moto et de danse ont été piratées en 2024 et 2025",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/les-federations-francaises-de-moto-et-de-danse-ont-ete-piratees-en-2024-et-2025-les-donnees-de-pres-d-un-million-de-licencies-sont-desormais-mises-en-vente-sur-le-darkweb_AN-202608170310.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-novembre 2025, l’extranet de la Fédération française de danse subit une cyberattaque qui endommage le serveur. Nom, prénom, date de naissance, coordonnées, numéro de licence et mot de passe crypté sont affectés, selon un comité régional. Le paiement par carte est resté coupé plusieurs semaines. Le 25 novembre, FrenchBreaches documente la fuite des données de licenciés. La fédération a déposé plainte et informé la CNIL ; un plan de remise en route et de sécurisation est engagé. En août 2026, BFM rapporte la mise en vente des données de 435 903 adhérents, aux côtés de celles de la FFM.",
+  "timeline": [
+    {
+      "date": "2025-11-15",
+      "event": "L’extranet FFDanse, endommagé par une cyberattaque mi-novembre, redevient accessible aux structures ; le paiement par carte reste coupé."
+    },
+    {
+      "date": "2025-11-25",
+      "event": "FrenchBreaches documente la fuite des données des licenciés (identité, coordonnées, numéro de licence, mot de passe crypté)."
+    },
+    {
+      "date": "2025-12-16",
+      "event": "Un comité régional publie le bilan : plainte déposée, CNIL informée, sécurisation en cours, code de sécurité envoyé aux structures."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "BFMTV rapporte la mise en vente des données de 435 903 adhérents FFDanse, aux côtés de celles de la FFM."
+    }
+  ]
+}

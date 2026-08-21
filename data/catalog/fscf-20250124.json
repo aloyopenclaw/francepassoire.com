@@ -1,0 +1,48 @@
+{
+  "slug": "fscf-20250124",
+  "entity": "Fédération sportive et culturelle de France (FSCF)",
+  "siren": "784714255",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-01-24"
+  },
+  "volume": {
+    "count": 1334442,
+    "unit": "personnes",
+    "label": "1 334 442 licenciés revendiqués par le pirate, la plus grosse base de la vague (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Les données de 4,5 millions de Français en vente sur un forum de pirates",
+      "url": "https://www.01net.com/actualites/donnees-45-millions-francais-vente-forum-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Les données de 4,5 millions de sportifs français piratées",
+      "url": "https://www.commentcamarche.net/securite/piratage/33513-les-donnees-de-4-5-millions-de-sportifs-francais-piratees/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Piratage massif des fédérations sportives françaises : 4,5 millions de données vendues",
+      "url": "https://www.zataz.com/piratage-massif-des-federations-sportives-francaises-45-millions-de-donnees-vendues/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération sportive et culturelle de France est la plus grosse base de la vague de janvier 2025. Le pirate « TheFrenchGuy » met ses données en vente le 24 janvier sur BreachForums : 1 334 442 licenciés revendiqués, sur un total de 4,5 millions d’annoncés pour huit fédérations. L’attaque a exploité une faille chez Exalto, prestataire des espaces licences. Noms, dates de naissance, adresses et téléphones sont les données citées. Seules deux fédérations de la liste ont confirmé l’attaque à l’époque. La FSCF n’a pas communiqué publiquement et le volume annoncé reste non confirmé.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "La FSCF figure parmi les huit fédérations mises en vente sur BreachForums : 1 334 442 licenciés revendiqués."
+    },
+    {
+      "date": "2025-06-02",
+      "event": "01net rapporte que les répertoires volés refont surface sur le dark web après la fermeture de BreachForums."
+    }
+  ]
+}

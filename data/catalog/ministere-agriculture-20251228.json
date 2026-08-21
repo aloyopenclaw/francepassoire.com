@@ -1,0 +1,47 @@
+{
+  "slug": "ministere-agriculture-20251228",
+  "entity": "Ministère de l’Agriculture et de l’Alimentation",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-28",
+    "publication": "2025-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "61 Go et 97 210 fichiers publiés ; nombre de personnes concernées non évalué"
+  },
+  "data_types": [
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Infinity Area — Ministère de l’Agriculture piraté : 61 Go de données en ligne",
+      "url": "https://infinity-area.com/article/ministere-de-l-agriculture-pirate-61-go-de-donnees-en-ligne",
+      "kind": "article"
+    },
+    {
+      "label": "Dark Web Informer — LAPSUS$ Group Claims 60GB Data Leak from French Ministry of Agriculture",
+      "url": "https://darkwebinformer.com/lapsus-group-claims-60gb-data-leak-from-french-ministry-of-agriculture/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Ministère de l’Agriculture (France)",
+      "url": "https://frenchbreaches.com/alertes/ministere-de-l-agriculture-france-403186032bcb",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 décembre 2025, un groupe se présentant comme « LAPSUS$ » revendique la compromission du ministère de l’Agriculture et de l’Alimentation. Il publie gratuitement une archive de 61 Go : 97 210 fichiers dans 1 250 dossiers. Les contenus décrits incluent listes FTP, journaux de connexion de 32 départements, bases SQL et dix-neuf applications internes. Le ministère n’a pas confirmé l’intrusion à ce stade. Les médias spécialisés relèvent la dimension stratégique de la cible, en pleine série d’attaques contre des institutions françaises. Le nombre de personnes concernées n’est pas évalué.",
+  "timeline": [
+    {
+      "date": "2025-12-28",
+      "event": "Le groupe « LAPSUS$ » revendique la compromission du ministère et publie 61 Go de données (97 210 fichiers, 32 départements)."
+    },
+    {
+      "date": "2025-12-29",
+      "event": "Les médias spécialisés relèvent identifiants FTP, bases SQL et journaux de connexion ; le ministère n’a pas confirmé."
+    }
+  ]
+}

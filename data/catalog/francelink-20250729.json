@@ -1,0 +1,57 @@
+{
+  "slug": "francelink-20250729",
+  "entity": "FranceLink (France Link Interactive)",
+  "siren": "339946212",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-29",
+    "publication": "2025-08-18",
+    "confirmation": "2025-07-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur de l’extraction inconnue ; près de 93 % des serveurs de l’hébergeur ont été chiffrés"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FranceLink — Rapport d’incident, cyberattaque du 28/07/2025",
+      "url": "https://status.francelink.net/rapport-dincident-cyberattaque-du-28-07-2025/",
+      "kind": "officiel"
+    },
+    {
+      "label": "FranceLink — Incident de cybersécurité du 13 novembre : suivi (mise à jour du 6 août)",
+      "url": "https://status.francelink.net/rapport-dincident-cyberattaque-du-28-07-2025-2/",
+      "kind": "officiel"
+    },
+    {
+      "label": "CyberVeille — Rapport d’incident status.francelink.net : AKIRA chiffre 93 % des serveurs et les sauvegardes",
+      "url": "https://cyberveille.ch/posts/2025-08-18-rapport-dincident-status-francelink-net-akira-chiffre-93-des-serveurs-et-les-sauvegardes/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FranceLink",
+      "url": "https://frenchbreaches.com/alertes/france-link-interactive-francelink-026ee2293fda",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 juillet 2025 à 20 h 30, l’hébergeur et opérateur télécom français FranceLink subit une attaque du groupe AKIRA. Environ 93 % des serveurs sont chiffrés, production et sauvegardes comprises. La quasi-totalité des services d’hébergement et des clients est affectée. FranceLink coupe son infrastructure, engage deux prestataires de récupération et rebâtit son parc sur Azure. Selon ses rapports publics, une extraction de données est « très probable », conforme au mode opératoire du groupe. L’ampleur réelle de la fuite reste inconnue. L’entreprise a notifié la CNIL, l’ANSSI et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2025-07-28",
+      "event": "Une attaque du groupe AKIRA chiffre production et sauvegardes de l’hébergeur ; environ 93 % des serveurs sont impactés."
+    },
+    {
+      "date": "2025-07-29",
+      "event": "FranceLink isole son infrastructure, ferme son standard et informe ses clients ; les services sont interrompus."
+    },
+    {
+      "date": "2025-08-07",
+      "event": "Une première vague de récupération partielle de données démarre, après l’échec d’un premier prestataire."
+    }
+  ]
+}
