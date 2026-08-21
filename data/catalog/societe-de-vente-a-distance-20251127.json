@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-vente-a-distance-20251127",
+  "entity": "Société de vente à distance",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-27",
+    "confirmation": "2025-11-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 500 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de vente à distance », Amende administrative de 500 000 euros et injonction (27 novembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 novembre 2025, la CNIL a prononcé une amende administrative de 500 000 euros et une injonction à l'encontre d'une société de vente à distance, désignée de façon anonymisée dans la liste officielle. Les manquements retenus portent sur le consentement des personnes et l'information en matière de cookies. La dénomination n'est pas publiée. La décision fait partie des 83 sanctions prononcées par la CNIL en 2025, pour un montant cumulé de 486 839 500 euros d'amendes selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2025-11-27",
+      "event": "Amende de 500 000 euros et injonction : consentement et information des personnes en matière de cookies."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "Le bilan 2025 de la CNIL recense 83 sanctions pour 486 839 500 euros d'amendes cumulées."
+    }
+  ]
+}
