@@ -1,0 +1,42 @@
+{
+  "slug": "societe-de-commerce-de-detail-d-articles-de-sport-en-magasin-specialise-20250410",
+  "entity": "Société de commerce de détail d'articles de sport en magasin spécialisé",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-10",
+    "publication": "2025-05-22",
+    "confirmation": "2025-04-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dix nouvelles sanctions prononcées en 2025 dans le cadre de la procédure simplifiée (22 mai 2025)",
+      "url": "https://www.cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 10 avril 2025, dans le cadre de la procédure simplifiée, une amende de 20 000 euros contre un magasin spécialisé dans la vente d'articles de sport, désigné anonymement. Les manquements portent sur la vidéosurveillance : minimisation et durées de conservation non respectées, information incomplète, registre des traitements absent. Selon le communiqué du 22 mai 2025, le mot de passe du dispositif vidéo, long de dix caractères, n'avait jamais été renouvelé et était identique à celui du précédent directeur ; des personnes non habilitées pouvaient visionner les images depuis le bureau du directeur. Le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-04-10",
+      "event": "Amende de 20 000 euros en procédure simplifiée : minimisation, conservation, information et registre (vidéosurveillance), défaut de sécurité des données."
+    },
+    {
+      "date": "2025-05-22",
+      "event": "La CNIL détaille le manquement de sécurité : mot de passe du dispositif vidéo jamais renouvelé, partagé avec le précédent directeur, et accès aux images non restreints aux personnes habilitées."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "commerce-surgeles-20230928",
+  "entity": "Un commerce interentreprises de produits surgelés (entité non nommée)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-28",
+    "confirmation": "2023-09-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité RGPD ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce dix nouvelles sanctions dans le cadre de sa procédure simplifiée (7 novembre 2023)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-dix-nouvelles-sanctions-dans-le-cadre-de-sa-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 septembre 2023, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'un commerce interentreprises de produits surgelés, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du principe de minimisation, durées de conservation excessives, traitement de données relatives aux infractions et aux condamnations, défaut d'information des personnes, absence de registre des activités de traitement et défaut de sécurité. L'entité n'est pas nommée : les sanctions simplifiées ne peuvent pas être rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le bilan des décisions simplifiées annoncé le 7 novembre 2023.",
+  "timeline": [
+    {
+      "date": "2023-09-28",
+      "event": "Amende de 20 000 euros (procédure simplifiée) pour minimisation, conservation, données d'infractions, information, registre et sécurité."
+    }
+  ]
+}

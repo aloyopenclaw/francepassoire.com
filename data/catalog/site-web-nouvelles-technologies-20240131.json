@@ -1,0 +1,37 @@
+{
+  "slug": "site-web-nouvelles-technologies-20240131",
+  "entity": "Un éditeur de site web d'actualités sur les nouvelles technologies (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-31",
+    "confirmation": "2024-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 janvier 2024, la CNIL a prononcé une amende administrative de 20 000 euros à l'encontre de l'éditeur d'un site web d'actualités dans le domaine des nouvelles technologies, dans le cadre de la procédure simplifiée. Manquement retenu : le défaut de sécurité des données personnelles. L'entité n'est pas nommée, les sanctions simplifiées n'étant jamais publiques. Le communiqué de la CNIL sur les quinze sanctions simplifiées prononcées depuis janvier 2024 recense le défaut de sécurité parmi les manquements les plus fréquents, avec des mots de passe insuffisamment robustes et des habilitations d'accès mal encadrées.",
+  "timeline": [
+    {
+      "date": "2024-01-31",
+      "event": "Amende de 20 000 euros (procédure simplifiée) pour défaut de sécurité des données."
+    }
+  ]
+}

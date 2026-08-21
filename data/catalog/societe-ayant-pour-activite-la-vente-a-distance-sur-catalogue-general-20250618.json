@@ -1,0 +1,33 @@
+{
+  "slug": "societe-ayant-pour-activite-la-vente-a-distance-sur-catalogue-general-20250618",
+  "entity": "Société ayant pour activité la vente à distance sur catalogue général",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-18",
+    "confirmation": "2025-06-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 18 juin 2025, dans le cadre de la procédure simplifiée, une amende de 3 000 euros contre une société de vente à distance sur catalogue général, désignée anonymement. Le manquement retenu porte sur le consentement des personnes pour les cookies : des traceurs soumis à consentement ont été déposés sans que celui-ci soit valablement recueilli. Le nom de la société n'est pas publié, la procédure simplifiée interdisant à la CNIL de le divulguer ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-06-18",
+      "event": "Amende de 3 000 euros en procédure simplifiée pour dépôt de cookies sans consentement valable des personnes."
+    }
+  ]
+}

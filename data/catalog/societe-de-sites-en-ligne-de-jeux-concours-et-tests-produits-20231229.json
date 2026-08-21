@@ -1,0 +1,46 @@
+{
+  "slug": "societe-de-sites-en-ligne-de-jeux-concours-et-tests-produits-20231229",
+  "entity": "Société de sites en ligne de jeux-concours et tests produits",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-29",
+    "confirmation": "2023-12-29",
+    "publication": "2024-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données de prospects collectées via des formulaires de jeux-concours ; volume non précisé"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de sites en ligne de jeux-concours et tests produits », Amende de 75 000 euros et injonction (29 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Courtiers en données : sanction de 75 000 euros à l’encontre de la société TAGADAMEDIA (30 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/courtiers-en-donnees-sanction-de-75-000-euros-lencontre-de-la-societe-tagadamedia",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2023, la CNIL a prononcé une amende de 75 000 euros et une injonction à l'encontre d'une société de sites en ligne de jeux-concours et tests produits, identifiée comme TAGADAMEDIA dans son communiqué. Les manquements de la liste officielle : prospection commerciale illicite et registre des activités de traitement manquant. Selon la CNIL, la société collectait des données de prospects sans consentement valide, en raison de l'apparence trompeuse de ses formulaires. Par une décision du 20 mai 2026, le Conseil d'État a réformé la délibération et ramené la sanction à 50 000 euros.",
+  "timeline": [
+    {
+      "date": "2023-12-29",
+      "event": "Amende de 75 000 euros et injonction : prospection commerciale illicite et registre des traitements manquant."
+    },
+    {
+      "date": "2024-01-30",
+      "event": "Communiqué CNIL (TAGADAMEDIA) : données de prospects collectées sans consentement valide via des formulaires trompeurs."
+    },
+    {
+      "date": "2026-05-20",
+      "event": "Le Conseil d'État réforme la délibération et ramène la sanction à 50 000 euros."
+    }
+  ]
+}
