@@ -1,0 +1,44 @@
+{
+  "slug": "altitude-infra-20251125",
+  "entity": "Altitude Infra",
+  "siren": "922350418",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-25",
+    "publication": "2025-11-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "lignes",
+    "label": "5,76 Go de fichiers internes (52 fichiers) proposés à la vente 2 000 dollars sur un forum cybercriminel ; contenus non vérifiés — documentation d'infrastructure et identités de prospects selon les relais"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Botcrawl — Altitude Infra Data Breach Exposes 5.76 GB of French Fiber Infrastructure Files (25 novembre 2025)",
+      "url": "https://botcrawl.com/altitude-infra-data-breach-exposes-5-76-gb-of-french-fiber-infrastructure-files/",
+      "kind": "article"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Altitude Infra, 5,76 Go / 3,8 millions de clients, 22 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 novembre 2025, Botcrawl documente la mise en vente sur un forum cybercriminel de 5,76 Go de fichiers internes attribués à Altitude Infra. L'entreprise est un opérateur français d'infrastructure fibre issu de Covage. Le lot de 52 fichiers est proposé 2 000 dollars via un robot de vente automatisé. Selon le relais, les contenus suggérés couvrent des documents d'ingénierie, des cartes de réseau, des données de partenaires FAI et des identités de prospects. Le tracker BonjourLaFuite rattache l'exfiltration à un extranet utilisé avec les opérateurs clients. L'entreprise n'a pas confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2025-11-25",
+      "event": "Botcrawl documente la vente de 5,76 Go (52 fichiers) attribués à Altitude Infra pour 2 000 dollars sur un forum cybercriminel."
+    },
+    {
+      "date": "2025-12-22",
+      "event": "Le tracker BonjourLaFuite relie l'exfiltration à un extranet partenaire et évoque des données touchant jusqu'à 3,8 millions de clients."
+    }
+  ]
+}

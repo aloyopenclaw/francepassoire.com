@@ -1,0 +1,45 @@
+{
+  "slug": "euromatik-20251212",
+  "entity": "Euromatik",
+  "siren": "420463085",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-12"
+  },
+  "volume": {
+    "count": 12000,
+    "unit": "personnes",
+    "label": "≈ 12 000 clients de la base e-commerce (revendiqué ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Euromatik : 12K personnes exposées en ligne (12 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/euromatik-8a81a24fd8a5",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données Euromatik : informations et protection (relais fuitesinfos.fr, 12 décembre 2025)",
+      "url": "https://hginfoandco.com/fuite/147-euromatik",
+      "kind": "revendication"
+    },
+    {
+      "label": "Clément Domingo (CYBERALERT FRANCE) — Euromatik victime d'une cyberattaque : un défaut de conservation légale des données personnelles pointé (décembre 2025)",
+      "url": "https://fr.linkedin.com/posts/clementdomingo_cyberalert-france-euromatik-victime-activity-7405522091459977216-qniH",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 12 décembre 2025, une fuite revendiquée touche la base e-commerce d'Euromatik, spécialiste français de la motorisation de volets roulants et de portails basé à Chennevières-sur-Marne. Environ 12 000 clients sont recensés par la veille : noms et prénoms, adresses postales et e-mails, numéros de téléphone, données contractuelles et mots de passe chiffrés. Le chercheur Clément Domingo relève un défaut de conservation légale des données. L'entreprise n'a pas publié de communication confirmant l'incident ; les volumes annoncés restent non établis.",
+  "timeline": [
+    {
+      "date": "2025-12-12",
+      "event": "Une fuite revendiquée d'environ 12 000 fiches de la base e-commerce d'Euromatik est recensée par la veille."
+    }
+  ]
+}

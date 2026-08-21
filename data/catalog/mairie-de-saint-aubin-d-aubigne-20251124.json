@@ -1,0 +1,43 @@
+{
+  "slug": "mairie-de-saint-aubin-d-aubigne-20251124",
+  "entity": "Ville de Saint-Aubin-d'Aubigné",
+  "siren": "213502511",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-24"
+  },
+  "volume": {
+    "count": 3200,
+    "unit": "enregistrements",
+    "label": "≈ 3 200 enregistrements usagers (plateforme de prise de rendez-vous via le prestataire RDV360 ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Mairie de Saint-Aubin-d'Aubigné touchée par une fuite de données : 3,2K personnes (24 novembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/mairie-de-saint-aubin-d-aubigne-ec209bfe454d",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données Mairie de Saint-Aubin-d'Aubigné (relais fuitesinfos.fr, 24 novembre 2025)",
+      "url": "https://hginfoandco.com/fuite/167-mairie-de-saint-aubin-daubigne",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Mairie de Saint-Aubin d'Aubigné, via RDV360, 24 novembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 novembre 2025, une fuite revendiquée touche la commune bretonne de Saint-Aubin-d'Aubigné (Ille-et-Vilaine). L'incident passe par la plateforme de prise de rendez-vous RDV360, déjà visée le même mois par une revendication concernant des centaines de mairies. Environ 3 200 enregistrements usagers sont recensés : noms et prénoms, e-mails, numéros de téléphone, codes postaux et villes. La municipalité n'a pas confirmé publiquement l'exfiltration ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "Une base revendiquée d'environ 3 200 enregistrements usagers de la ville de Saint-Aubin-d'Aubigné, via le prestataire RDV360, est recensée."
+    }
+  ]
+}
