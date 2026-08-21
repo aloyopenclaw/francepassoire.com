@@ -1,0 +1,41 @@
+{
+  "slug": "societe-developpant-un-logiciel-de-reconnaissance-faciale-20221017",
+  "entity": "Société développant un logiciel de reconnaissance faciale",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-17",
+    "confirmation": "2022-10-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 millions d'euros"
+  },
+  "data_types": [
+    "biometrique"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société développant un logiciel de reconnaissance faciale », Amende de 20 millions d'euros et injonction sous astreinte (17 octobre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2022 de l’action de la CNIL (31 janvier 2023)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2022-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 17 octobre 2022, la CNIL a prononcé une amende de 20 millions d'euros et une injonction sous astreinte à l'encontre d'une société développant un logiciel de reconnaissance faciale, désignée de façon anonymisée dans la liste officielle. Les manquements retenus : défaut de base légale, non-respect des droits d'accès et d'effacement, et défaut de coopération avec la CNIL. Le 17 avril 2023, la CNIL a liquidé l'astreinte à 5 200 000 euros pour absence de réponse à l'injonction. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2022-10-17",
+      "event": "Amende de 20 millions d'euros et injonction sous astreinte : base légale, droits d'accès et d'effacement, coopération en cause."
+    },
+    {
+      "date": "2023-04-17",
+      "event": "Liquidation de l'astreinte à 5 200 000 euros pour absence de réponse à l'injonction (liste officielle)."
+    }
+  ]
+}

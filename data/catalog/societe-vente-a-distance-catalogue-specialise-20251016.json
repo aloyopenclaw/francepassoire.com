@@ -1,0 +1,42 @@
+{
+  "slug": "societe-vente-a-distance-catalogue-specialise-20251016",
+  "entity": "Société exerçant une activité de vente à distance sur catalogue spécialisé (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-16",
+    "confirmation": "2025-10-16",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société exerçant une activité de vente à distance sur catalogue spécialisé (procédure simplifiée) », amende de 3 000 euros (16 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 16 octobre 2025, la CNIL a prononcé une amende de 3 000 euros à l'encontre d'une société de vente à distance sur catalogue spécialisé, dans le cadre de la procédure simplifiée. Manquement retenu : consentement des personnes pour le dépôt de cookies, à la suite de contrôles en ligne. La dénomination n'est pas publiée. Il s'agit d'une décision distincte de celle du 12 mars 2026 frappant le même descripteur d'activité. En 2025, la CNIL a prononcé 42 sanctions dans le cadre de la procédure simplifiée.",
+  "timeline": [
+    {
+      "date": "2025-10-16",
+      "event": "Amende de 3 000 euros (procédure simplifiée) : consentement aux cookies défaillant après contrôles en ligne."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "Le bilan annuel 2025 de la CNIL recense 42 sanctions simplifiées sur l'année."
+    }
+  ]
+}

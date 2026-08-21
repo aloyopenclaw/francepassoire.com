@@ -1,0 +1,37 @@
+{
+  "slug": "societe-ayant-pour-activite-la-promotion-immobiliere-de-logements-20250903",
+  "entity": "Société ayant pour activité la promotion immobilière de logements (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-03",
+    "confirmation": "2025-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; la décision porte sur une demande d'accès non honorée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 3 septembre 2025, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société de promotion immobilière de logements, non nommée dans la décision. L'autorité retient le non-respect du droit d'accès. La sanction relève de la procédure simplifiée. Selon le bilan 2025 de la CNIL, quatorze décisions de l'année portent sur la non-prise en compte de demandes d'effacement, d'opposition ou d'accès émanant des personnes concernées.",
+  "timeline": [
+    {
+      "date": "2025-09-03",
+      "event": "La CNIL prononce une amende de 20 000 euros contre une société de promotion immobilière non nommée (non-respect du droit d'accès)."
+    }
+  ]
+}

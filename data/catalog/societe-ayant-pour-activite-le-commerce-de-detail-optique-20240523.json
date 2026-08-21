@@ -1,0 +1,32 @@
+{
+  "slug": "societe-ayant-pour-activite-le-commerce-de-detail-optique-20240523",
+  "entity": "Société ayant pour activité le commerce de détail optique",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-23",
+    "confirmation": "2024-05-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 23 mai 2024, dans le cadre de la procédure simplifiée, la liquidation d'une astreinte de 4 000 euros contre une société ayant pour activité le commerce de détail optique, désignée anonymément dans le tableau officiel des sanctions. La décision sanctionne une réponse tardive à une mise en demeure dans le cadre d'une procédure d'injonction. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2024-05-23",
+      "event": "Liquidation d'une astreinte de 4 000 euros pour réponse tardive à une mise en demeure (procédure d'injonction)."
+    }
+  ]
+}

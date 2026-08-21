@@ -1,13 +1,58 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Ticker from '../components/Ticker.astro';
-import CatalogFilters from '../components/CatalogFilters.astro';
+import CatalogFilters, { type LeakCard } from '../components/CatalogFilters.astro';
 import type { TickerItem } from '../components/Ticker.astro';
+import {
+  classeStatut,
+  dateAttribution,
+  formaterDate,
+  formaterNombre,
+  labelSecteur,
+  labelStatut,
+  urlFiche,
+} from '../lib/hub-view';
+import { computeCompteur, type FicheLike } from '../lib/stats';
 
-// Règle Wave 0 : seules des fuites dont la source externe réelle est citée
-// peuvent défiler. Aucune n'est sourcée pour l'instant : le ticker affiche
-// son état vide honnête.
-const tickerItems: TickerItem[] = [];
+// Catalogue réel : toutes les fiches publiées, les plus récentes d'abord
+// (attribution desc, puis slug asc — même ordre déterministe que les hubs).
+const fiches = (await getCollection('catalog'))
+  .map((entry) => entry.data)
+  .sort(
+    (a, b) =>
+      dateAttribution(b).localeCompare(dateAttribution(a)) ||
+      a.slug.localeCompare(b.slug),
+  );
+
+const compteur = computeCompteur(fiches);
+
+/** Volume court pour ticker et cartes : « 162 437 enregistrements », ou
+ *  « volume non chiffré » quand aucun chiffre n'est annoncé (count = 0). */
+function volumeCourt(volume: FicheLike['volume']): string {
+  return volume.count > 0
+    ? `${formaterNombre(volume.count)} ${volume.unit}`
+    : 'volume non chiffré';
+}
+
+// Ticker : les 8 dernières fuites, chaque item pointe vers la fiche publiée.
+const tickerItems: TickerItem[] = fiches.slice(0, 8).map((fiche) => ({
+  label: `${fiche.entity} — ${volumeCourt(fiche.volume)}`,
+  url: urlFiche(fiche.slug),
+}));
+
+// Cartes du catalogue : view models sérialisés pour l'îlot client.
+const cards: LeakCard[] = fiches.map((fiche) => ({
+  name: fiche.entity,
+  sector: labelSecteur(fiche.secteur),
+  size: volumeCourt(fiche.volume),
+  status: labelStatut(fiche.statut),
+  statusClasse: classeStatut(fiche.statut),
+  time: formaterDate(dateAttribution(fiche)),
+  url: urlFiche(fiche.slug),
+}));
+
+const anneeCourante = new Date().getFullYear();
 
 const datasetJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -38,12 +83,18 @@ const datasetJsonLd = JSON.stringify({
     </div>
   </section>
 
-  <!-- Bandeau compteurs : état vide honnête (aucun chiffre inventé) -->
+  <!-- Bandeau compteurs : agrégats du catalogue réel (computeCompteur) -->
   <section class="bg-brand-ink text-brand-cream border-b-2 border-brand-ink py-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="font-mono text-center text-sm sm:text-base tracking-wide leading-relaxed flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
-        <span>Les compteurs s'allumeront avec les premières fiches vérifiées —</span>
-        <strong class="text-brand-orange text-lg">rien d'inventé ici</strong>
+        <span>
+          <strong class="text-brand-orange text-lg">{formaterNombre(compteur.personnesYTD)}</strong> personnes touchées depuis janvier {anneeCourante}
+          <span class="text-brand-cream/70"> — {compteur.personnesLabel}</span>
+        </span>
+        <span class="hidden sm:inline text-brand-orange text-xl" aria-hidden="true">•</span>
+        <span><strong class="text-brand-orange text-lg">{formaterNombre(compteur.fichesCount)}</strong> fiches publiées</span>
+        <span class="hidden sm:inline text-brand-orange text-xl" aria-hidden="true">•</span>
+        <span><strong class="text-brand-orange text-lg">{formaterNombre(compteur.statutSplit.confirmee)}</strong> confirmées · <strong class="text-brand-orange text-lg">{formaterNombre(compteur.statutSplit.revendiquee)}</strong> revendiquées</span>
       </p>
     </div>
   </section>
@@ -55,7 +106,7 @@ const datasetJsonLd = JSON.stringify({
            visuellement masqué : le contrat visuel figé n'a pas de titre ici -->
       <h2 class="sr-only">Le catalogue des fuites recensées</h2>
 
-      <CatalogFilters items={[]} />
+      <CatalogFilters items={cards} />
 
       <!-- CTA -->
       <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mt-12">

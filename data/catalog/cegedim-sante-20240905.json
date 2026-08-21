@@ -1,0 +1,52 @@
+{
+  "slug": "cegedim-sante-20240905",
+  "entity": "Cegedim Santé",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-05",
+    "confirmation": "2024-09-05",
+    "publication": "2024-09-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de patients non chiffré par la décision ; environ 25 000 cabinets médicaux et 500 centres de santé équipés selon la CNIL"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société spécialisée dans l'édition et la vente de logiciels de gestion aux médecins », amende de 800 000 euros (5 septembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Données de santé : sanction de 800 000 euros à l'encontre de la société CEGEDIM SANTÉ (12 septembre 2024)",
+      "url": "https://www.cnil.fr/fr/donnees-de-sante-sanction-de-800-000-euros-societe-cegedim-sante",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 498628 du 13 février 2026 (rejet des recurs du groupe Cegedim, confirmation des sanctions)",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-02-13/498628",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 septembre 2024, la CNIL a prononcé une amende de 800 000 euros à l'encontre de Cegedim Santé, éditrice de logiciels de gestion utilisés par environ 25 000 cabinets médicaux et 500 centres de santé. Les contrôles de 2021 ont révélé un traitement sans autorisation de données de santé pseudonymisées et réidentifiables, collectées via un « observatoire » de médecins pour produire études et statistiques, ainsi qu'une aspiration automatique de l'historique de remboursements via le téléservice HRi. Le Conseil d'État a confirmé la sanction le 13 février 2026.",
+  "timeline": [
+    {
+      "date": "2024-09-05",
+      "event": "Amende de 800 000 euros : entrepôt de données de santé sans autorisation et traitement illicite via l'observatoire de médecins."
+    },
+    {
+      "date": "2024-09-12",
+      "event": "La CNIL publie son communiqué ; aucune injonction, la société n'étant plus responsable de traitement depuis juillet 2024."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "Le Conseil d'État rejette les recours du groupe Cegedim et confirme les sanctions de 2024."
+    }
+  ]
+}

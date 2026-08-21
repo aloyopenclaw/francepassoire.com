@@ -1,0 +1,37 @@
+{
+  "slug": "comite-social-economique-20231227",
+  "entity": "Comité social et économique d'entreprises (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-27",
+    "confirmation": "2023-12-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « comité social et économique d'entreprises » (procédure simplifiée), amende de 10 000 euros (27 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 décembre 2023, la CNIL a prononcé une amende de 10 000 euros à l'encontre d'un comité social et économique d'entreprises, dans le cadre de la procédure simplifiée. Les manquements retenus portent tous sur le délégué à la protection des données : absence d'association aux questions de protection des données, absence d'aide à l'exercice de ses missions et impossibilité pour les personnes concernées de le contacter. La dénomination n'est pas publiée et la nature des données n'est pas précisée. Les noms des organismes sanctionnés ne peuvent pas être rendus publics dans cette procédure.",
+  "timeline": [
+    {
+      "date": "2023-12-27",
+      "event": "Amende de 10 000 euros (procédure simplifiée) : manquements tous liés au délégué à la protection des données (DPO)."
+    }
+  ]
+}

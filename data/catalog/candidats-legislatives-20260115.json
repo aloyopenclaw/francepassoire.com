@@ -1,0 +1,42 @@
+{
+  "slug": "candidats-legislatives-20260115",
+  "entity": "Candidats aux élections législatives (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-15",
+    "confirmation": "2026-01-15",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 2 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « candidats aux élections législatives » (procédure simplifiée), amende de 2 000 euros et injonction (15 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 janvier 2026, la CNIL a prononcé une amende de 2 000 euros assortie d'une injonction à l'encontre de candidats aux élections législatives, dans le cadre de la procédure simplifiée. Les manquements retenus : défaut d'information des personnes sur l'exercice de leurs droits et non-respect du droit d'accès. La dénomination n'est pas publiée et la nature des données n'est pas précisée. Le communiqué du 6 juillet 2026 compte cette décision parmi 23 sanctions simplifiées depuis janvier 2026, dont huit pour non-respect des droits d'accès ou d'effacement.",
+  "timeline": [
+    {
+      "date": "2026-01-15",
+      "event": "Amende de 2 000 euros et injonction (procédure simplifiée) : information des personnes et droit d'accès non respectés."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, dont huit pour droits d'accès ou d'effacement."
+    }
+  ]
+}
