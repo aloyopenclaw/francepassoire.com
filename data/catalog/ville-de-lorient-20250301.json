@@ -1,0 +1,54 @@
+{
+  "slug": "ville-de-lorient-20250301",
+  "entity": "Ville de Lorient",
+  "siren": "777842279",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-01",
+    "publication": "2025-03-10",
+    "confirmation": "2025-03-10"
+  },
+  "volume": {
+    "count": 5429,
+    "unit": "personnes",
+    "label": "5 429 agents et personnes liées à la Ville et au CCAS de Lorient (nom, prénom, e-mail professionnel, fonction ; identifiants et mots de passe hachés selon Zataz)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données : les municipalités de Les Lilas et Lorient victimes d'un piratage (1er mars 2025)",
+      "url": "https://www.zataz.com/fuite-de-donnees-les-municipalites-de-les-lilas-et-lorient-victimes-dun-piratage/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Numerama — Cyberattaque sur Lorient : des données d'agents municipaux publiées sur un forum de pirates (13 mars 2025)",
+      "url": "https://www.numerama.com/cyberguerre/1924725-cyberattaque-sur-lorient-des-donnees-dagents-municipaux-publiees-sur-un-forum-de-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Une grande ville bretonne victime d'une cyberattaque : risque de fraude bancaire par les malfaiteurs (11 mars 2025)",
+      "url": "https://actu.fr/bretagne/lorient_56121/une-grande-ville-bretonne-victime-dune-cyberattaque-risque-de-fraude-bancaire-par-les-malfaiteurs_62355595.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er mars 2025, le pirate « ups » publie sur le forum Breached une base de données de la Ville de Lorient : coordonnées professionnelles de 5 429 agents de la Ville et du CCAS — nom, prénom, e-mail, fonction — accompagnées, selon Zataz, d'identifiants et de mots de passe hachés. Un extrait est diffusé librement et le reste proposé à bas prix. Le 10 mars, la municipalité confirme dans un communiqué le vol de cette liste, dépose plainte et appelle usagers et agents à la vigilance face aux tentatives de fraude. Aucun service n'est impacté.",
+  "timeline": [
+    {
+      "date": "2025-03-01",
+      "event": "Le pirate « ups » publie sur Breached la base des agents municipaux de Lorient, avec un extrait en libre accès."
+    },
+    {
+      "date": "2025-03-10",
+      "event": "La Ville confirme le vol d'une liste d'informations professionnelles des agents (Ville et CCAS) et dépose plainte."
+    },
+    {
+      "date": "2025-03-11",
+      "event": "La presse locale et nationale relaie le communiqué ; environ 5 400 personnes sont concernées."
+    }
+  ]
+}

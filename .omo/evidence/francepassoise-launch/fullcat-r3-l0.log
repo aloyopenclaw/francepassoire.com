@@ -1,0 +1,96 @@
+# fullcat rafale 3 — lane 0 — presse 2025 L0 (Numerama/ZDnet, 20 fiches)
+date: 2026-08-21 14:10 UTC | branche: fiche/rafale3-l0 | base main b04bac9 (531 fiches)
+worktree: /var/folders/1s/l8h5vn997437p2zwl835gkw80000gn/T/opencode/fp-r3l0 (supprimé en fin de run)
+
+## Méthode
+- Vivier : archives 2025 Numerama.com + ZDnet.fr (rubriques cyberguerre/fuites/cybersécurité)
+  croisées avec Zataz, 01net, Clubic, Génération NT, LeMagIT (Cyberhebdos + bilans
+  mensuels ransomware), FrenchBreaches, presse nationale et locale (actu.fr, La Dépêche,
+  RTL, Le Parisien, franceinfo, Sud Ouest/groupe, TICsanté, ARS, mairies, communiqués).
+  Outils : sitemaps WordPress (Numerama ~220 fiches 2025 balayées, Zataz, FrenchBreaches),
+  Google News RSS par fenêtres de dates, recherches ciblées, API annuaire-entreprises
+  (SIREN), archives BreachSense (victimes .fr d'octobre 2025).
+- DEDUP `ls data/catalog` (531 fiches) : skips massifs documentés ci-dessous. Deux
+  collisions détectées à l'écriture (chi-haute-comte-20251019, synbird-20251027 —
+  existaient déjà sur main, écrasées par erreur puis RESTAURÉES via git checkout ;
+  doublons retirés) → remplacées par le-toit-forezien et roger-renard.
+- Règle statut appliquée : confirmee quand l'entité confirme elle-même l'incident
+  (communiqué/FAQ/déclaration citée) ; revendiquee sinon (revendication criminelle
+  seule, entité silencieuse ou démentant). Précédents : lens/gers (confirmee, vol non
+  établi), saint-claude/elne/afpa (revendiquee), chronopost-20250212 (démenti fiché).
+- Zéro invention : chaque fait trace à une URL de sources[]. Fiches « vol non établi »
+  (Fumel, Poitiers, Font-Romeu, DLSI, Wibaie, LGM unités) suivent le précédent
+  ville-lens/gers : data_types ['autre'/'sante'], count 0, label explicite.
+- SIREN résolus via annuaire-entreprises.data.gouv.fr ; omis quand ambigu (EDF, CHI
+  Haute-Comté deux numéros, RDV360, FFAéromodélisme).
+
+## Fiches (20 — rafale 3 L0, presse 2025)
+| # | slug | statut | groupe | fait saillant | sources |
+|---|------|--------|--------|---------------|---------|
+| 1 | essec-20250108 | confirmee | — | 120 000 personnes, noms/e-mails exfiltrés, plainte+ANSSI | ESSEC (officiel) + LMI + Zataz |
+| 2 | edf-20250203 | revendiquee | — | vente « Varun » 6,3 M clients ; EDF dément, ~100 connexions anormales | 01net + Zataz |
+| 3 | ville-du-pont-de-claix-20250203 | revendiquee | — | base municipale dans le lot Varun, non confirmée | 01net + Zataz |
+| 4 | conforama-20250202 | revendiquee | — | 9,3 M lignes en vente ; « possible vol » évoqué, données anciennes | 01net + Zataz |
+| 5 | ville-de-lorient-20250301 | confirmee | — | 5 429 agents (Ville+CCAS) publiés sur Breached par « ups », plainte | Zataz + Numerama + actu.fr |
+| 6 | lgm-group-20250506 | confirmee | termite | 550 Go/700k fichiers revendiqués ; entreprise confirme le vol, ANSSI | ZDnet + Ransomware.live (Bluesky) |
+| 7 | reduction-impots-fr-20250514 | revendiquee | — | fichier fiscal 2 M vendu 3 000 $ ; cabinet dément | 01net + Sud Ouest |
+| 8 | wibaie-20250710 | confirmee | qilin | usine 600 salariés à l'arrêt, chômage technique ; Qilin revendique | Clubic + maville + SaxX |
+| 9 | ville-de-poitiers-grand-poitiers-20250829 | confirmee | — | rançongiciel bloqué (250 sites), aucune donnée perso identifiée | ici.fr + BFM |
+| 10 | syma-mobile-20250902 | revendiquee | — | 117 000 lignes en vente (pièces d'identité), Altice ne confirme pas | 01net + Clubic + GenNT |
+| 11 | federation-francaise-d-aeromodelisme-20250902 | revendiquee | — | 132 000 membres diffusés gratuitement | 01net + GenNT |
+| 12 | profil-search-20250902 | revendiquee | — | 100 000 profils cabinet de recrutement en accès libre | 01net + FrenchBreaches |
+| 13 | fumel-20251003 | confirmee | dragonforce | rançon refusée, ville informée, plainte, ~5 000 hab | actu + Dépêche + LeMagIT + TF1 |
+| 14 | dlsi-20251012 | confirmee | — | filiales PRESTIM/ML Intérim, données récupérées, CNIL+plainte | DLSI (officiel) + LeMagIT |
+| 15 | font-romeu-odeillo-via-20251015 | revendiquee | qilin | attaque 07/09 confirmée par la mairie, salve Qilin du 15/10 | mairie (officiel) + franceinfo + actu |
+| 16 | alu-perpignan-20251015 | revendiquee | qilin | 3 semaines d'arrêt, ~3 mois de CA perdus | Deefense + BreachSense |
+| 17 | partitio-20251027 | confirmee | inc-ransom | INC Ransom, filiale Konica Minolta reconnaît l'attaque | LeMagIT + FrenchBreaches |
+| 18 | rdv360-20251124 | revendiquee | dumpsec | 500-600 mairies, 7 M citoyens revendiqués, plainte ANSSI-Ofac | Banque des Territoires + RTL |
+| 19 | le-toit-forezien-20251015 | revendiquee | qilin | salve Qilin du 15/10 (table Zataz) | Zataz + BreachSense |
+| 20 | roger-renard-20251015 | revendiquee | qilin | salve Qilin du 15/10 (table Zataz) | Zataz + BreachSense |
+
+Répartition : 10 confirmee / 10 revendiquee — toutes 2025 (janv.→nov.), 6 groupes
+renseignés (qilin ×5, termite, dragonforce, inc-ransom, dumpsec) uniquement quand la
+source nomme le groupe.
+
+## Vérifications (worktree fp-r3l0, node_modules symlinké du repo principal)
+- zod : npx vitest run tests/pr-fiches.test.ts → 551 passed (531 + 20).
+- suite complète : npx vitest run → 29 fichiers / 913 tests passed.
+- build : npm run build → 1 145 pages, Complete!
+- URLs sources (37 uniques) : curl -L UA navigateur → 37/37 HTTP 200.
+  Écartées en cours de route (403/bots) : lesechos.fr, ouest-france.fr (couvert via
+  maville.com), usine-digitale.fr, industrialcyber.co, staffingindustry.com,
+  france3-regions.francetvinfo.fr (404, remplacé ARS/TICsanté/L'Informaticien).
+- SIREN : résolution API annuaire (12 renseignés, 8 omis — jamais inventés).
+
+## Skips documentés (périmètre ou dédup)
+- Déjà fichés détectés : CAF/Pass'Sport (ministere-des-sports-20251217), DGFiP,
+  France Travail (×3+Stormous), Intérieur, Bouygues, Orange+WarLock, Air France-KLM,
+  Auchan, Mango, Michelin, Intermarché, Sorbonne, CNFPT, Chronopost (et son démenti
+  févr. fiché), Harvest/MAIF/BPCE, Autosur, Intersport, Dior, Cartier, Disneyland
+  (Anubis), HPL/Ramsay, UNSS, FFTir (vol d'oct. fiché), Elne, Saint-Claude, VW France,
+  Pajemploi, Itélis, Weda, MédecinDirect, Schmidt/Cuisinella, Leroy Merlin, Mondial
+  Relay, Brest, Quimper (même dossier Synbird côté client), La Poste (mars =
+  la-poste-election-timbre-202502 ; déc. = DDoS sans fuite), Resana (20251118),
+  Cegedim Santé (le « 3 M » d'oct. 2025 = amorce du dossier fiché 20260226),
+  e-leclerc-20250127 (fenêtre Varun trop proche), alain-afflelou-20250415,
+  chi-haute-comte + synbird (collisions restaurées — cf. Méthode).
+- Démentis/bluffs non fichés (précédent ANTS sept. 2025) : Naval Group, ANTS « 13 M »,
+  Waltio déc. (fichier sans lien), Atos/Space Bears, NordVPN, Showroomprivé (attaque
+  repoussée), Intermarché févr. (fausse alerte), AP-HP févr. (communiqué 2021 mis à
+  jour — piège datation) et AP-HP déc. (alerte levée), Carrefour 2024, EDF-DPIH mars
+  (même dossier bluff que févr.).
+- Hors périmètre France/perso : Tea (app US), Adidas/Stellantis/Gravy Analytics/
+  Steam/Discord/Salesforce/SharePoint-Storm-26 (global sans ancrage FR établi),
+  Pontarlier-aéroports/Collins (FR non touchée), La Poste déc. (DDoS), Ubisoft (pas
+  de données perso), Bybit/Asahi/SoundCloud/Plex/Logitech/OpenAI/Meta (hors France),
+  Ramsay janv. (tentatives d'intrusion sans vol), Darty (2026), ENI (revendication
+  août mono-source ; hack confirmé en janv. 2026, hors lane), AYOMI/Les Lilas/
+  AAA DATA/Wibaie-data/ENI (mono-source à la date des faits), Poitiers d'abord
+  écarté puis retenu (précédent lens retenu : attaque confirmée, vol non établi).
+- Qilin salve 15/10 : autres victimes FR (H. Gascon, Canapés Mobilier Décoration,
+  Prim Saveurs, Urban Linker…) réservées — non retenues faute de 2e source à date
+  (table Zataz + BreachSense seulement).
+
+## Non-fusion
+PR ouverte, JAMAIS mergée par la lane — chaîne d'intégrité + merge unique en Vague C.
+Aucun post social. Registre/ancrages : hors périmètre L0 (lane trust dédiée après merge).

@@ -1,0 +1,49 @@
+{
+  "slug": "syma-mobile-20250902",
+  "entity": "Syma Mobile",
+  "siren": "440697753",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-02",
+    "publication": "2025-09-02"
+  },
+  "volume": {
+    "count": 117000,
+    "unit": "lignes",
+    "label": "117 000 lignes revendiquées sur DarkForums ; ni Syma Mobile ni sa maison-mère Altice n'ont confirmé de brèche"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "01net — Deux millions de Français piratés ? Une montagne de données personnelles et médicales diffusées sur un forum criminel (2 septembre 2025)",
+      "url": "https://www.01net.com/actualites/2-millions-francais-pirates-montagne-donnees-personnelles-medicales-diffusees-forum-criminel.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Alerte cybersécurité : des bases de données d'Alain Afflelou, de Syma Mobile et du SNU mises en vente sur le dark web (2 septembre 2025)",
+      "url": "https://www.clubic.com/actualite-577542-alerte-cybersecurite-des-bases-de-donnees-d-alain-afflelou-de-syma-mobile-et-du-snu-mises-en-vente-sur-le-dark-web.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération NT — Fuite de données massive : les informations de près de deux millions de Français dans la nature (3 septembre 2025)",
+      "url": "https://www.generation-nt.com/actualites/donnees-fuite-piratage-dark-web-securite-france-2061860",
+      "kind": "article"
+    }
+  ],
+  "description": "Début septembre 2025, le vendeur « nopeyourtoolate » met en vente sur le forum DarkForums une base de 117 000 lignes attribuée à Syma Mobile, opérateur mobile virtuel français filiale d'Altice. Les échantillons montrent noms, prénoms, e-mails, adresses postales, téléphones, dates de naissance et même des pièces d'identité comme des passeports ou des cartes nationales. Le vendeur affirme que les données ont été piratées quelques mois plus tôt. Ni Syma Mobile ni Altice n'ont confirmé la moindre brèche ; la revendication n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-09-02",
+      "event": "Mise en vente sur DarkForums d'une base de 117 000 lignes attribuée à Syma Mobile, avec échantillons incluant des pièces d'identité."
+    },
+    {
+      "date": "2025-09-03",
+      "event": "01net, Clubic et Génération NT documentent la vente dans un lot touchant aussi Alain Afflelou et le SNU ; l'opérateur ne confirme pas."
+    }
+  ]
+}

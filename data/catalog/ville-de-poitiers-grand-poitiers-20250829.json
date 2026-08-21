@@ -1,0 +1,47 @@
+{
+  "slug": "ville-de-poitiers-grand-poitiers-20250829",
+  "entity": "Ville de Poitiers et Grand Poitiers",
+  "siren": "890900087",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-29",
+    "publication": "2025-09-02",
+    "confirmation": "2025-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 250 sites informatiques touchés ; aucune donnée personnelle identifiée à ce stade selon les collectivités, des données techniques ayant pu migrer vers les attaquants"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ici (Radio France) — « On a évité le pire » : on en sait plus après la cyberattaque contre la mairie de Poitiers (4 septembre 2025)",
+      "url": "https://www.ici.fr/infos/societe/on-a-evite-le-pire-on-en-sait-plus-apres-la-cyberattaque-contre-la-mairie-de-poitiers-8568309",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — La mairie de Poitiers victime d'une cyberattaque, les pirates voulaient réclamer une rançon (8 septembre 2025)",
+      "url": "https://www.bfmtv.com/vienne/la-mairie-de-poitiers-victime-d-une-cyberattaque-les-pirates-voulaient-reclamer-une-rancon_AN-202509080604.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2025 à 10 h 26, une attaque par rançongiciel touche les réseaux de la Ville de Poitiers, de son CCAS et de Grand Poitiers. En coupant l'accès à Internet, les équipes contiennent l'attaque : aucune donnée n'est chiffrée et les pirates ne prennent pas contact, bien que l'objectif fût, selon les collectivités, de crypter les données et d'exiger une rançon. Environ 250 sites sont affectés ; aucune donnée personnelle n'est identifiée comme subtilisée, mais certaines données techniques semblent avoir migré vers les attaquants. La confirmation publique n'intervient que le 2 septembre, à la demande des autorités.",
+  "timeline": [
+    {
+      "date": "2025-08-29",
+      "event": "Attaque détectée à 10 h 26 ; le réseau est isolé d'Internet, l'activité informatique des collectivités reste dégradée."
+    },
+    {
+      "date": "2025-09-02",
+      "event": "Ville et métropole reconnaissent une attaque informatique malveillante, après avoir d'abord évoqué une panne."
+    },
+    {
+      "date": "2025-09-04",
+      "event": "Conférence de presse : objectif de rançon selon les collectivités, aucune donnée personnelle identifiée, données techniques ayant pu migrer."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "federation-francaise-d-aeromodelisme-20250902",
+  "entity": "Fédération Française d'Aéromodélisme",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-02",
+    "publication": "2025-09-02"
+  },
+  "volume": {
+    "count": 132000,
+    "unit": "personnes",
+    "label": "plus de 132 000 membres visés par la base diffusée en accès libre ; fédération sans communication publique, origine des données incertaine"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Deux millions de Français piratés ? Une montagne de données personnelles et médicales diffusées sur un forum criminel (2 septembre 2025)",
+      "url": "https://www.01net.com/actualites/2-millions-francais-pirates-montagne-donnees-personnelles-medicales-diffusees-forum-criminel.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération NT — Fuite de données massive : les informations de près de deux millions de Français dans la nature (3 septembre 2025)",
+      "url": "https://www.generation-nt.com/actualites/donnees-fuite-piratage-dark-web-securite-france-2061860",
+      "kind": "article"
+    }
+  ],
+  "description": "Début septembre 2025, un cybercriminel diffuse gratuitement sur DarkForums une base de plus de 132 000 personnes attribuée à la Fédération Française d'Aéromodélisme, riche de données personnelles et de coordonnées. La diffusion s'inscrit dans un lot de bases françaises mises en vente ou en accès libre le même jour. On ignore si ces données proviennent de la vague de piratages ayant visé les fédérations sportives françaises via un prestataire commun depuis 2024. La fédération n'a pas communiqué publiquement ; la revendication n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-09-02",
+      "event": "Diffusion en accès libre sur DarkForums d'une base de plus de 132 000 membres attribuée à la FFAé."
+    },
+    {
+      "date": "2025-09-03",
+      "event": "01net et Génération NT documentent la diffusion ; l'origine exacte des données reste inconnue."
+    }
+  ]
+}
