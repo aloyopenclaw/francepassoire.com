@@ -1,0 +1,40 @@
+{
+  "slug": "evy-20260815",
+  "entity": "Evy",
+  "siren": "902019819",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-15",
+    "publication": "2026-08-16"
+  },
+  "volume": {
+    "count": 13870,
+    "unit": "personnes",
+    "label": "Environ 13 870 membres, 16 bases et 2 645 tables (238 Mo) revendiqués, incluant contrats, transactions et données de paiement ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données revendiquée visant evy.eu : bases, comptes, transactions et données de paiement potentiellement exposés",
+      "url": "https://frenchbreaches.com/alertes/evy-msvpts753it09fb7vvf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Evy : 13 870 comptes et contrats d’assurance revendiqués dans une fuite",
+      "url": "https://www.cyberattaque.org/evy-13-870-comptes-et-contrats-dassurance-revendiques-dans-une-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une publication du 15 août 2026 attribuée à « diable1fire - X-VDP-X » revendique la compromission d'une infrastructure associée au domaine evy.eu, celle d'Evy, entreprise française de protection et d'assurance de produits distribuées par des commerçants. Selon la revendication, l'accès aurait permis d'obtenir 16 bases, 2 645 tables et environ 238 Mo de données — 13 870 membres, abonnements, transactions, informations de paiement, contrats et sinistres — ainsi qu'un accès administrateur et des identifiants SMTP. Ces éléments ne sont pas confirmés par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2026-08-15",
+      "event": "Publication revendiquant la compromission d’evy.eu : 16 bases, 2 645 tables, environ 13 870 membres et des données de contrats, transactions et paiement annoncées."
+    }
+  ]
+}

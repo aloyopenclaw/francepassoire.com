@@ -1,0 +1,49 @@
+{
+  "slug": "blgcloud-20260808",
+  "entity": "BlgCloud (éditeur BLG)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-08",
+    "publication": "2026-08-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "159 environnements clients sur environ 230 revendiqués compromis (millions de documents) ; volumes par entité non consolidés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — BlgCloud : les données de 159 entreprises revendiquées, des milliers de documents en fuite",
+      "url": "https://www.cyberattaque.org/blgcloud-les-donnees-de-159-entreprises-pirate-des-millions-de-documents-en-fuite/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Roussel Agri 62 : première publication de la série BlgCloud",
+      "url": "https://frenchbreaches.com/alertes/roussel-agri-62-blgcloud-mskjsgirjuladgvz0sj",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — BlgCloud : compromission massive revendiquée",
+      "url": "https://fuitesinfos.fr/article/2026-08-08-blg",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis le 8 août 2026, un acteur identifié comme ChimeraZ publie progressivement des données issues d'entreprises clientes de BlgCloud, éditeur français d'un ERP SaaS utilisé par le machinisme agricole, la manutention, la location et les travaux publics. L'auteur affirme avoir accédé à 159 environnements clients sur environ 230 et extrait CRM, courriels, documents internes, informations commerciales, coordonnées professionnelles et coordonnées bancaires. Plusieurs entreprises sont ciblées tour à tour ; l'authenticité de l'ensemble des données reste à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-08",
+      "event": "Premières publications de données attribuées à un client de BlgCloud (Roussel Agri 62) ; la série de fuites s’ouvre."
+    },
+    {
+      "date": "2026-08-09",
+      "event": "La revendication est précisée par les relais : accès à environ 159 environnements clients sur 230, CRM, courriels, documents, informations commerciales et coordonnées bancaires extraites selon l’auteur."
+    }
+  ]
+}

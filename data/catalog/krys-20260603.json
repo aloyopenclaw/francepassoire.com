@@ -1,0 +1,48 @@
+{
+  "slug": "krys-20260603",
+  "entity": "KRYS",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-03",
+    "publication": "2026-06-04"
+  },
+  "volume": {
+    "count": 203446,
+    "unit": "personnes",
+    "label": "Environ 203 446 personnes (201 202 selon FrenchBreaches) ; 192 833 commandes, 5 684 devis, 119 588 cartes de mutuelle et 34 087 ordonnances revendiqués"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez l’opticien Krys : plus de 200 000 clients, 119 588 cartes de mutuelle et 34 087 ordonnances concernées",
+      "url": "https://frenchbreaches.com/alertes/krys-mpvw2un0laxad9kf2r",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — KRYS : 200 000 clients exposés dans une fuite de données",
+      "url": "https://www.cyberattaque.org/krys-200-000-clients-exposes-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 203 446 personnes concernées par une fuite de données revendiquée chez KRYS",
+      "url": "https://fuitesinfos.fr/article/2026-06-03-krys",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base attribuée à l'écosystème KRYS, l'un des principaux réseaux d'opticiens français, a été publiée début juin 2026 sur le dark web. Selon la revendication, elle couvre environ 201 200 à 203 400 personnes, avec 192 833 commandes, 5 684 devis, 119 588 cartes de mutuelle et 34 087 ordonnances ; identité, coordonnées et données de santé administrative figurent dans les échantillons présentés. L'auteur de la revendication affirme avoir été détecté au cours de l'extraction. Ces chiffres ne sont pas confirmés par le groupe.",
+  "timeline": [
+    {
+      "date": "2026-06-03",
+      "event": "Publication sur le dark web d’une base attribuée à l’écosystème KRYS : commandes, devis, cartes de mutuelle et ordonnances revendiqués."
+    },
+    {
+      "date": "2026-06-04",
+      "event": "Les relais chiffrent la revendication : environ 201 200 personnes et 294 206 enregistrements selon FrenchBreaches, 203 446 selon Fuites Infos ; l’auteur affirme avoir été détecté pendant l’extraction."
+    }
+  ]
+}

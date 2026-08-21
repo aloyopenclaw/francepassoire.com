@@ -1,0 +1,48 @@
+{
+  "slug": "stych-20251107",
+  "entity": "Stych (auto-école en ligne)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-07",
+    "publication": "2025-11-07",
+    "confirmation": "2025-11-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré lors de la notification ; 1,34 million d’enregistrements revendiqués en mars 2026 par un acteur malveillant"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Rotek — Stych : l’auto-école en ligne victime d’un piratage (13 novembre 2025)",
+      "url": "https://rotek.fr/stych-auto-ecole-en-ligne-victime-piratage/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Stych : incident de sécurité confirmé par courriel aux utilisateurs",
+      "url": "https://frenchbreaches.com/alertes/stych-mmi8nxz8ve3t7xrbme",
+      "kind": "article"
+    },
+    {
+      "label": "DarkWeb Informer — Stych allegedly breached: 1.34M customer database entries exposed",
+      "url": "https://darkwebinformer.com/stych-allegedly-breached-1-34m-customer-database-entries-exposed-from-french-mobility-service-records/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 7 novembre 2025, Stych, plateforme française d’auto-école en ligne, a informé ses utilisateurs d’une récente violation de données ayant compromis certaines informations personnelles. Selon le courriel adressé aux utilisateurs, les données bancaires, les documents personnels et les mots de passe n’ont pas été compromis. Les informations dérobées comprennent identité — nom, prénom, date de naissance — et coordonnées : e-mail, numéro de téléphone et adresse postale. L’entreprise indique avoir renforcé ses mesures de sécurité et informé la CNIL. En mars 2026, un acteur malveillant a revendiqué la mise en vente d’environ 1,34 million d’enregistrements clients issus de la plateforme.",
+  "timeline": [
+    {
+      "date": "2025-11-07",
+      "event": "Stych notifie ses utilisateurs d’une violation de données ; CNIL informée et sécurité renforcée."
+    },
+    {
+      "date": "2026-03-08",
+      "event": "Un acteur malveillant revendique 1,34 million d’enregistrements clients en vente sur un forum."
+    }
+  ]
+}

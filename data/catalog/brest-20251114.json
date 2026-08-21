@@ -1,0 +1,43 @@
+{
+  "slug": "brest-20251114",
+  "entity": "Ville de Brest (plateforme de prise de rendez-vous papiers d’identité)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-14",
+    "publication": "2025-11-14",
+    "confirmation": "2025-11-14"
+  },
+  "volume": {
+    "count": 50000,
+    "unit": "lignes",
+    "label": "environ 50 000 lignes de contacts (demandes de papiers d’identité du 2 octobre 2023 au 14 novembre 2025) selon la Ville"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Brest (communiqué officiel) — Fuite de données personnelles : la ville appelle à la vigilance (14 novembre 2025)",
+      "url": "https://brest.fr/actualites/fuite-de-donnees-personnelles-la-ville-de-brest-appelle-la-vigilance",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Ville de Brest (prestataire RDV) : 50 000 fiches de rendez-vous (14 novembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/ville-de-brest-prestataire-rdv-7f29157f1e7f",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 14 novembre 2025, la ville de Brest a détecté une intrusion malveillante sur la plateforme informatique de prise de rendez-vous préalable à la délivrance des cartes nationales d’identité et des passeports. Environ 50 000 lignes de contacts sont concernées, pour des demandes de pièces d’identité adressées à la mairie ou à ses six mairies de quartier entre le 2 octobre 2023 et novembre 2025. Les données exposées comprennent nom et prénom et, si les rubriques ont été renseignées, genre, adresse postale, adresse e-mail et numéro de téléphone. La ville a notifié la CNIL, annoncé une plainte et interrompu l’application de prise de rendez-vous. D’autres villes en Bretagne et en France ont subi les mêmes incidents.",
+  "timeline": [
+    {
+      "date": "2025-11-14",
+      "event": "Détection de l’intrusion sur la plateforme de rendez-vous ; ≈50 000 lignes de contacts concernées."
+    },
+    {
+      "date": "2025-11-15",
+      "event": "L’application est interrompue ; la CNIL est notifiée et une information individuelle des usagers concernés est annoncée par la ville."
+    }
+  ]
+}

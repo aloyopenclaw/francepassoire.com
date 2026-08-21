@@ -1,0 +1,49 @@
+{
+  "slug": "ffn-20251206",
+  "entity": "Fédération française de natation (FFN)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-06",
+    "publication": "2025-12-06",
+    "confirmation": "2025-12-06"
+  },
+  "volume": {
+    "count": 400000,
+    "unit": "personnes",
+    "label": "partie des licenciés concernée non chiffrée ; la fédération compte plus de 400 000 licenciés ; 1,3 million d’adhérents revendiqués par la mise en vente du 23 décembre (veille)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FFN (communiqué officiel) — Vol de données Extranat (décembre 2025)",
+      "url": "https://www.ffnatation.fr/actualites/actu-reseau/communique-ffn-vol-de-donnees-extranat",
+      "kind": "officiel"
+    },
+    {
+      "label": "Mac4ever — La Fédération française de natation piratée : les données des licenciés dans la nature (28 janvier 2026)",
+      "url": "https://www.mac4ever.com/securite/194345-la-federation-francaise-de-natation-piratee-les-donnees-des-licencies-dans-la-nature",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FFN : 1,3 million d’adhérents revendiqués (23 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-natation-ffn-0789a5991525",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 6 au 7 décembre 2025, Extranat, la plateforme de gestion administrative de la Fédération française de natation, a subi une cyberattaque avec vol de données. Dès la découverte, les serveurs ont été placés en maintenance. Les données exposées comprennent identité et état civil, coordonnées, numéro de licencié et possiblement des éléments de vie fédérale comme résultats, performances et diplômes. Aucune donnée bancaire n’a été identifiée et aucun dossier médical n’est stocké dans les systèmes visés, selon la fédération. Une plainte a été déposée ; la CNIL et l’ANSSI ont été informées. La fédération compte plus de 400 000 licenciés ; une mise en vente a ensuite revendiqué 1,3 million d’adhérents.",
+  "timeline": [
+    {
+      "date": "2025-12-06",
+      "event": "Cyberattaque et vol de données sur Extranat dans la nuit du 6 au 7 décembre ; serveurs placés en maintenance."
+    },
+    {
+      "date": "2025-12-23",
+      "event": "Une mise en vente revendique les données de 1,3 million d’adhérents selon la veille."
+    }
+  ]
+}

@@ -30,6 +30,8 @@ export const BSKY_CREATE_RECORD_ENDPOINT =
 export const BSKY_POST_COLLECTION = 'app.bsky.feed.post';
 /** Titre fixe de la carte de lien app.bsky.embed.external. */
 export const BSKY_EMBED_TITLE = 'FrancePassoire — fiche de fuite de données';
+export const BSKY_EMBED_DESCRIPTION =
+  'Observatoire citoyen et indépendant des fuites de données personnelles en France';
 
 interface SessionBsky {
   accessJwt?: string;
@@ -135,7 +137,14 @@ async function creerRecord(
           createdAt: new Date().toISOString(),
           embed: {
             $type: 'app.bsky.embed.external',
-            external: { uri: payload.url, title: BSKY_EMBED_TITLE },
+            external: {
+              uri: payload.url,
+              title: BSKY_EMBED_TITLE,
+              // Lexicon app.bsky.embed.external : « description » est REQUISE
+              // (une chaîne vide passe, son ABSENCE vaut 400 InvalidRequest →
+              // classé permanent → DEAD — bug du premier post, corrigé ici).
+              description: BSKY_EMBED_DESCRIPTION,
+            },
           },
         },
       }),

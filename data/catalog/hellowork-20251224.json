@@ -1,0 +1,50 @@
+{
+  "slug": "hellowork-20251224",
+  "entity": "HelloWork (plateforme de recrutement)",
+  "siren": "428843130",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-24",
+    "publication": "2025-12-27",
+    "confirmation": "2025-12-27"
+  },
+  "volume": {
+    "count": 2800000,
+    "unit": "enregistrements",
+    "label": "≈2,8 millions de profils candidats selon l’annonce de mise en vente ; HelloWork n’a pas communiqué de chiffre officiel"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "TPE Actu — HelloWork victime d’un vol de données massif via sa CVthèque (27 décembre 2025)",
+      "url": "https://tpeactu.fr/2025/12/27/hello-work-vol-donnees-cvtheque/",
+      "kind": "article"
+    },
+    {
+      "label": "Presse83 — Fuites informatiques : qui cible les entreprises ce 27 décembre ? (28 décembre 2025)",
+      "url": "https://presse83.fr/2025/12/28/fuites-informatiques-qui-cible-les-entreprises-ce-27-decembre/",
+      "kind": "article"
+    },
+    {
+      "label": "FunInformatique — Fuite de données HelloWork : la CVthèque aspirée via un compte recruteur",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/hellowork/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 décembre 2025 en fin d’après-midi, HelloWork, plateforme de recrutement basée à Rennes, a détecté la mise en vente de données attribuées à sa CVthèque sur des canaux frauduleux. Le 27 décembre, le directeur général a informé les utilisateurs par courriel. Selon la plateforme, l’incident ne résulte pas d’une intrusion dans ses systèmes mais de l’utilisation frauduleuse d’un compte disposant d’un accès recruteur, qui a permis d’aspirer un volume important de profils. Les données exposées comprennent identité, e-mail, métier recherché, qualification, expérience, secteurs ciblés, type de contrat et zones de mobilité. Mots de passe et données bancaires ne sont pas concernés. La mise en vente revendique environ 2,8 millions de profils.",
+  "timeline": [
+    {
+      "date": "2025-12-24",
+      "event": "Détection d’une mise en vente de données de la CVthèque HelloWork sur des canaux frauduleux."
+    },
+    {
+      "date": "2025-12-27",
+      "event": "Courriel du directeur général aux utilisateurs : compte recruteur détourné, profils considérés compromis."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "ffta-20250120",
+  "entity": "Fédération française de tir à l’arc (FFTA)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-20",
+    "publication": "2025-01-24",
+    "confirmation": "2025-01-22"
+  },
+  "volume": {
+    "count": 77000,
+    "unit": "personnes",
+    "label": "près de 77 000 licenciés (saison 2024-2025) exposés selon RTL ; volume exact non communiqué par la fédération"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "RTL — Boxe, tir à l’arc, escalade… Les données de plusieurs fédérations sportives françaises piratées (4 février 2025)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/boxe-tir-a-l-arc-escalade-les-donnees-de-plusieurs-federations-sportives-francaises-piratees-7900465434",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite de données à la Fédération française de tir à l’arc",
+      "url": "https://www.zataz.com/fuite-de-donnees-a-la-federation-francaise-de-tir-a-larc/",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Geek — Importante fuite de données pour des milliers de licenciés de fédérations sportives françaises (4 février 2025)",
+      "url": "https://www.journaldugeek.com/2025/02/04/importante-fuite-de-donnees-pour-des-milliers-de-licencies-de-federations-sportives-francaises/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 janvier 2025, la Fédération française de tir à l’arc a prévenu ses licenciés d’un incident de données personnelles. Selon l’information envoyée aux adhérents, un pirate a dérobé nom et prénom, sexe, date de naissance, adresse postale, téléphone, e-mail et photo de profil. La fédération a déposé plainte et informé la CNIL. La presse spécialisée relie l’incident à une même vague touchant plusieurs fédérations début janvier, avec un prestataire informatique commun visé par une cyberattaque. RTL indique que la FFTA comptait près de 77 000 licenciés pour la saison 2024-2025. L’attaque aurait eu lieu début janvier et n’aurait été découverte que vers le 20 du mois.",
+  "timeline": [
+    {
+      "date": "2025-01-20",
+      "event": "Découverte de l’attaque, survenue début janvier selon la presse ; les données de licenciés sont en vente."
+    },
+    {
+      "date": "2025-01-22",
+      "event": "La FFTA notifie ses licenciés ; plainte déposée et CNIL informée."
+    },
+    {
+      "date": "2025-02-04",
+      "event": "RTL et le Journal du Geek documentent la vague touchant boxe, tir à l’arc et escalade."
+    }
+  ]
+}

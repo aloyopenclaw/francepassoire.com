@@ -1,0 +1,53 @@
+{
+  "slug": "itelis-20251112",
+  "entity": "Itelis (réseau de soins optique)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-12",
+    "publication": "2025-11-18",
+    "confirmation": "2025-11-24"
+  },
+  "volume": {
+    "count": 1600000,
+    "unit": "personnes",
+    "label": "environ 1,6 million de bénéficiaires estimés par la presse spécialisée ; volume non communiqué par Itelis"
+  },
+  "data_types": [
+    "identite",
+    "sante",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFM Business (Tech&Co) — La plateforme Itelis victime d’un piratage : données liées aux remboursements optique dérobées (24 novembre 2025)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/la-plateforme-itelis-a-ete-victime-d-un-piratage-les-donnees-privees-d-utilisateurs-liees-aux-remboursements-de-frais-d-optique-ont-ete-derobees-attention-aux-campagnes-de-phishing_AV-202511240584.html",
+      "kind": "article"
+    },
+    {
+      "label": "Next — Fuite de données personnelles chez Itelis (Axa) : nom, dossier, correction, numéro sécu (26 novembre 2025)",
+      "url": "https://next.ink/brief-article/fuite-de-donnees-personnelles-chez-itelis-axa-nom-dossier-correction-numero-secu/",
+      "kind": "article"
+    },
+    {
+      "label": "Acuité — La plateforme de soins Itélis victime d’une cyberattaque concernant des données de santé sensibles (18 novembre 2025)",
+      "url": "https://www.acuite.fr/actualites/profession/regime-obligatoire/la-plateforme-de-soins-itelis-victime-dune-323834",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 novembre 2025, la plateforme Itelis, réseau de soins optique utilisé par plusieurs mutuelles dont AXA, Malakoff Humanis et AG2R, a subi une cyberattaque. Selon l’entreprise, un usurpateur a exploité les accès légitimes d’un opticien partenaire pour extraire des données de prise en charge optique de 2020 au premier trimestre 2022 : identité, date de naissance, numéro de Sécurité sociale, remboursements et données de correction visuelle. Les données bancaires, les e-mails et les adresses postales ne sont pas concernés. La plateforme a été fermée puis rouverte le 18 novembre. Itelis a notifié la CNIL et déposé plainte. Les mutuelles ont commencé à alerter leurs assurés à partir du 24 novembre.",
+  "timeline": [
+    {
+      "date": "2025-11-12",
+      "event": "Cyberattaque sur la plateforme Itelis via l’usurpation des accès d’un opticien partenaire ; le portail est fermé."
+    },
+    {
+      "date": "2025-11-18",
+      "event": "La plateforme est rouverte ; la presse spécialisée révèle l’incident et les données concernées."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Les mutuelles notifient leurs assurés ; BFM documente l’usurpation d’identité à l’origine de la fuite."
+    }
+  ]
+}
