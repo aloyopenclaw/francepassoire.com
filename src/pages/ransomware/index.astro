@@ -1,5 +1,25 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { composerDossiers, formaterDate } from '../../lib/group-view';
+
+// Cartes « Groupes actifs » : dérivées du catalogue (fiches avec `group`),
+// triées par nombre de victimes françaises puis date de dernière revendication.
+const dossiers = (await getCollection('catalog')).map((entry) => entry.data);
+const groupesActifs = composerDossiers(dossiers).sort(
+  (a, b) =>
+    b.fiches.length - a.fiches.length ||
+    b.fiches[0].dates.revendication.localeCompare(a.fiches[0].dates.revendication),
+);
+const maintenant = Date.now();
+const IL_Y_A_7_JOURS = 7 * 24 * 3600 * 1000;
+const dernieres7j = dossiers
+  .filter(
+    (fiche) =>
+      fiche.group &&
+      maintenant - Date.parse(`${fiche.dates.revendication}T00:00:00Z`) <= IL_Y_A_7_JOURS,
+  )
+  .sort((a, b) => b.dates.revendication.localeCompare(a.dates.revendication));
 ---
 <Layout
   title="Ransomware - France Passoire"
@@ -22,7 +42,7 @@ import Layout from '../../layouts/Layout.astro';
   <section class="py-12 bg-brand-paper">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-      <!-- 7 derniers jours : aucune ligne non sourcée, état vide honnête -->
+      <!-- 7 derniers jours : lignes dérivées du catalogue (fiches groupées ≤ 7 j) -->
       <div>
         <h2 class="font-display font-extrabold text-2xl mb-6">7 derniers jours</h2>
         <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard overflow-x-auto">
@@ -38,28 +58,58 @@ import Layout from '../../layouts/Layout.astro';
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td colspan="6" class="p-8 text-center font-body text-base text-brand-ink/70 leading-relaxed">
-                  Aucune revendication vérifiée à afficher pour l'instant — le tableau se
-                  remplira dès la première entrée passée par notre méthode de vérification.
-                </td>
-              </tr>
+              {dernieres7j.length === 0 ? (
+                <tr>
+                  <td colspan="6" class="p-8 text-center font-body text-base text-brand-ink/70 leading-relaxed">
+                    Aucune revendication vérifiée sur les 7 derniers jours — le tableau se
+                    remplit dès la première entrée passée par notre méthode de vérification.
+                  </td>
+                </tr>
+              ) : (
+                dernieres7j.map((fiche) => (
+                  <tr class="border-b border-brand-ink/10">
+                    <td class="p-4">{formaterDate(fiche.dates.revendication)}</td>
+                    <td class="p-4">
+                      <a href={`/ransomware/${fiche.group ? fiche.group.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-') : ''}/`} class="underline decoration-2 hover:text-brand-orange">{fiche.group}</a>
+                    </td>
+                    <td class="p-4">
+                      <a href={`/fiche/${fiche.slug}/`} class="underline decoration-2 hover:text-brand-orange">{fiche.entity}</a>
+                    </td>
+                    <td class="p-4">{fiche.secteur}</td>
+                    <td class="p-4">{fiche.volume.label.slice(0, 48)}</td>
+                    <td class="p-4 text-right">
+                      <span class={fiche.statut === 'confirmee' ? 'pill-confirmee inline-block' : 'pill-revendiquee inline-block'}>{fiche.statut === 'confirmee' ? 'Confirmée' : 'Revendiquée'}</span>
+                    </td>
+                  </tr>
+                ))
+              )}
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- Groupes actifs : état vide honnête, aucun nom avancé sans source -->
+      <!-- Groupes actifs : cartes dérivées du catalogue, lien vers chaque dossier -->
       <div>
         <h2 class="font-display font-extrabold text-2xl mb-6">Groupes actifs</h2>
-        <div class="bg-brand-cream border-2 border-dashed border-brand-ink rounded-xl p-6 text-center">
-          <p class="font-display font-bold text-lg mb-1">Dossiers par groupe en préparation</p>
-          <p class="font-body text-sm text-brand-ink/70 max-w-2xl mx-auto leading-relaxed">
-            Les profils détaillés des groupes — tactiques, techniques et chronologies des
-            victimes françaises — seront publiés au fil des données vérifiées. Aucun nom
-            avancé sans source.
-          </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {groupesActifs.slice(0, 8).map((dossier) => (
+            <a href={`/ransomware/${dossier.slug}/`} class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all text-left">
+              <div class="flex justify-between items-start mb-4">
+                <span class="font-display font-black text-xl">{dossier.nom}</span>
+              </div>
+              <p class="font-mono text-sm mb-1">
+                <strong class="text-brand-orange text-lg">{dossier.fiches.length}</strong>
+                {dossier.fiches.length > 1 ? 'victimes FR recensées' : 'victime FR recensée'}
+              </p>
+              <p class="font-mono text-xs opacity-70">Dernière : {formaterDate(dossier.fiches[0].dates.revendication)}</p>
+            </a>
+          ))}
         </div>
+        {groupesActifs.length > 8 && (
+          <p class="font-mono text-sm mt-4 text-brand-ink/70">
+            + {groupesActifs.length - 8} autre{groupesActifs.length - 8 > 1 ? 's' : ''} groupe{groupesActifs.length - 8 > 1 ? 's' : ''} documenté{groupesActifs.length - 8 > 1 ? 's' : ''} — voir les dossiers complets sur chaque fiche.
+          </p>
+        )}
       </div>
 
       <!-- Posture éditoriale -->
