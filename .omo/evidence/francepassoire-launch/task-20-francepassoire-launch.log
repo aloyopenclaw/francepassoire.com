@@ -148,3 +148,15 @@ Tests: worker-skeleton +2 (fake adapter ignorant knownGuids: run1 insère 2 & gu
 Tests: npx vitest run = 387/387 green (26 fichiers) ; npx tsc --noEmit exit 0.
 Note: toCandidate(ransomware.live) retourne (Candidate & { guid: string }) | null — guid optionnel dans le contrat mais toujours assigné par cet adapter, évite les narrows défensifs dans la boucle de dédup.
 Résiduel assumé: cap 500 FIFO → un item très ancien réapparaissant après éviction serait réinséré (borné, volume d'un flux max) ; hibp reste amorçage (renvoie [], pas de guid) — diff réel = T47.
+
+--- 21/08 13:40 — CAUSE RACINE CNIL TROUVÉE ET CORRIGÉE (suite du bilan soak) ---
+Le fix guid du 21/08 matin (1f32779) était incomplet : guidSanction était calculé
+mais le champ n'était PAS embarqué au niveau supérieur du Candidate — le runner
+ne déduplie QUE via candidate.guid. guid_set KV restait vide → chaque run
+quotidien réinsérait la page entière (734 lignes pour 390 sanctions).
+Correctif 27a2685 : test RED→GREEN (guid top-level + cohérence raw), champ
+embarqué, suite 894/894, ingest redéployé (a299f8c9 puis c41e5b9e avec */30).
+Nettoyage D1 : 734 → 390 (343 dupes groupés par json_extract(raw,$.guid),
+1 straggler pré-schéma). KV guid_set pré-ensemencé : 390 guids (relu et
+vérifié). Cron ingest */15→*/30 (864→432 écritures/jour ; total projeté
+~672/jour, plafond 1000 — alerte 50% de Cloudflare traitée structurellement).
