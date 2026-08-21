@@ -1,0 +1,56 @@
+{
+  "slug": "clearview-ai-20230417",
+  "entity": "Clearview AI",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-17",
+    "publication": "2023-05-10",
+    "confirmation": "2023-04-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; astreinte liquidée de 5 200 000 euros pour défaut de conformité à la décision d'octobre 2022"
+  },
+  "data_types": [
+    "biometrique"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « société développant un logiciel de reconnaissance faciale (Clearview AI, nommée par les relais presse) », liquidation de l'astreinte de 5 200 000 euros (17 avril 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "TechCrunch — Clearview fined again in France for failing to comply with CNIL order (10 mai 2023)",
+      "url": "https://techcrunch.com/2023/05/10/clearview-ai-another-cnil-gspr-fine/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNET France — Clearview AI fait la sourde oreille : la CNIL réclame 5,2 millions d'euros de plus (12 mai 2023)",
+      "url": "https://www.zdnet.fr/actualites/clearview-ai-fait-la-sourde-oreille-la-cnil-reclame-52-millions-d-euros-de-plus-39958234.htm",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 17 avril 2023, la formation restreinte de la CNIL a liquidé à 5,2 millions d'euros l'astreinte prononcée contre Clearview AI, société américaine de reconnaissance faciale. La CNIL lui reprochait de n'avoir fourni aucune preuve de conformité aux injonctions de sa décision du 17 octobre 2022, qui sanctionnait par 20 millions d'euros d'amende la collecte de données biométriques sans base légale. Selon les relais presse, l'entreprise n'a réglé ni l'amende initiale ni l'astreinte et n'a pas désigné de représentant en France. Cette liquidation est l'une des deux recensées par le bilan 2023 de la CNIL.",
+  "timeline": [
+    {
+      "date": "2022-10-17",
+      "event": "La CNIL condamne Clearview AI à 20 millions d'euros d'amende et l'enjoint de cesser la collecte de données biométriques sans base légale."
+    },
+    {
+      "date": "2023-04-17",
+      "event": "Liquidation de l'astreinte : 5,2 millions d'euros pour défaut de preuve de conformité aux injonctions de 2022."
+    },
+    {
+      "date": "2023-05-10",
+      "event": "TechCrunch puis ZDNet relaient la liquidation ; selon ZDNet, l'amende de 2022 demeure non réglée."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "commune-de-kourou-20231212",
+  "entity": "Commune de Kourou",
+  "siren": "219733045",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-12",
+    "publication": "2023-12-19",
+    "confirmation": "2023-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; amende publique de 5 000 euros et injonction sous astreinte de 150 euros par jour de retard"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « commune de Kourou », amende de 5 000 euros et injonction (12 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Data Legal Drive — [Délibération commentée] CNIL c. Kourou, 12 décembre 2023 (19 décembre 2023)",
+      "url": "https://datalegaldrive.com/deliberation-commentee-cnil-vs-kourou-12-decembre-2023/",
+      "kind": "article"
+    },
+    {
+      "label": "Seban & Associés — La CNIL sanctionne la commune de Kourou pour son absence de désignation d'un délégué à la protection des données et son manque de coopération (18 janvier 2024)",
+      "url": "https://www.seban-associes.avocat.fr/la-cnil-sanctionne-la-commune-de-kourou-pour-son-absence-de-designation-dun-delegue-a-la-protection-des-donnees-et-son-manque-de-cooperation/",
+      "kind": "article"
+    },
+    {
+      "label": "Phenix Privacy — CNIL : récapitulatif des sanctions de décembre 2023 (7 mars 2024)",
+      "url": "https://phenix-privacy.com/cnil-sanctions-decembre-2023/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 décembre 2023, la formation restreinte de la CNIL a infligé à la commune de Kourou, en Guyane, une amende publique de 5 000 euros assortie d'une injonction, pour absence de désignation d'un délégué à la protection des données et défaut de coopération. Selon les commentaires de la délibération SAN-2023-018, la commune, mise en demeure en avril 2022 puis frappée d'une amende non publique en février 2023, n'avait toujours pas désigné de délégué. L'injonction est assortie d'une astreinte de 150 euros par jour de retard et de l'obligation d'afficher un message d'information sur le site de la commune.",
+  "timeline": [
+    {
+      "date": "2023-12-12",
+      "event": "Amende publique de 5 000 euros, injonction sous astreinte de 150 euros par jour et affichage d'information (délibération SAN-2023-018)."
+    },
+    {
+      "date": "2023-12-19",
+      "event": "Data Legal Drive publie un commentaire de la délibération sanctionnant Kourou."
+    }
+  ]
+}
