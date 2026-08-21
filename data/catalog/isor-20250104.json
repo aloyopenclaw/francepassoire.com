@@ -1,0 +1,37 @@
+{
+  "slug": "isor-20250104",
+  "entity": "ISOR (propreté et services industriels)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "1 600 Go (1,6 To) de données revendiqués par Cicada 3301 (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — ISOR data breach : acteur Cicada3301, 1 600 Go, découverte 4 janvier 2025",
+      "url": "https://www.breachsense.com/breaches/isor-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (ISOR, 3 janvier, groupe Cicada3301)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début janvier 2025, le rançongiciel Cicada 3301 liste ISOR, prestataire national français de propreté et de services industriels (domaine isor.fr), sur son site de fuite. La revendication, enregistrée par les veilleurs le 4 janvier, avance un volume de 1 600 gigaoctets de données dérobées — un chiffre invérifié. L'entreprise ne communique pas publiquement sur l'incident et la nature des données concernées n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-01-04",
+      "event": "Cicada 3301 liste ISOR sur son site de fuite ; 1 600 Go annoncés (relais Breachsense)."
+    }
+  ],
+  "group": "cicada3301"
+}

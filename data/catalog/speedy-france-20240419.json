@@ -1,0 +1,52 @@
+{
+  "slug": "speedy-france-20240419",
+  "entity": "Speedy France (réseau d'entretien automobile)",
+  "siren": "421363979",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-19",
+    "publication": "2024-04-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; compromission de « certaines données personnelles » annoncée par l'entreprise"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Speedy France victime d'une cyberattaque, des données personnelles compromises (22 avril 2024)",
+      "url": "https://www.usine-digitale.fr/article/speedy-france-victime-d-une-cyberattaque-des-donnees-personnelles-compromises.N2211860",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Speedy France victime d'une cyberattaque : que faire si vous êtes client (21 avril 2024)",
+      "url": "https://www.clubic.com/actualite-524667-speedy-france-victime-d-une-cyberattaque-que-faire-si-vous-etes-clients.html",
+      "kind": "article"
+    },
+    {
+      "label": "DPO Partage — Speedy France face au piratage de 8base (23 avril 2024)",
+      "url": "https://www.dpo-partage.fr/speedy-france-face-au-piratage-de-8base/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 avril 2024, Speedy France, réseau d'environ 600 centres d'entretien et de réparation automobile, annonce à ses clients un « incident de cybersécurité » ayant compromis « certaines données personnelles », sans préciser leur nature ni la date de l'attaque. La prise de rendez-vous en ligne est interrompue et l'entreprise notifie l'incident à la CNIL. Le groupe de rançongiciel 8base revendique ensuite l'attaque sur les serveurs de l'enseigne.",
+  "timeline": [
+    {
+      "date": "2024-04-19",
+      "event": "Speedy France informe ses clients d'un incident de cybersécurité ; des données personnelles sont compromises."
+    },
+    {
+      "date": "2024-04-21",
+      "event": "La presse spécialisée relaie l'incident et l'indisponibilité de la prise de rendez-vous en ligne."
+    },
+    {
+      "date": "2024-04-23",
+      "event": "Le rançongiciel 8base revendique l'attaque (relais DPO Partage)."
+    }
+  ],
+  "group": "8base"
+}

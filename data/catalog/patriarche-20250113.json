@@ -1,0 +1,37 @@
+{
+  "slug": "patriarche-20250113",
+  "entity": "Patriarche (cabinet d'architecture)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; revendication Hunters sans détail public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — Patriarche data breach : acteur Hunters, découverte 13 janvier 2025",
+      "url": "https://www.breachsense.com/breaches/patriarche-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (Patriarche Office of Architecture, 11 janvier, groupe Hunters)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-janvier 2025, l'enseigne de rançongiciel Hunters International liste Patriarche, cabinet français d'architecture intégrant conception, réalisation et exploitation de projets (domaine patriarche.fr), sur son site de fuite. La revendication, relevée par les veilleurs le 13 janvier 2025, ne détaille ni la nature ni le volume des données impliquées ; le cabinet n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2025-01-13",
+      "event": "Hunters liste Patriarche sur son site de fuite (relais Breachsense)."
+    }
+  ],
+  "group": "hunters"
+}

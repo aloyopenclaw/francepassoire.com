@@ -1,0 +1,47 @@
+{
+  "slug": "cts-strasbourg-20241121",
+  "entity": "Compagnie des Transports Strasbourgeois (CTS)",
+  "siren": "568500680",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-21",
+    "publication": "2024-11-22"
+  },
+  "volume": {
+    "count": 100,
+    "unit": "comptes",
+    "label": "une centaine de comptes clients consultés frauduleusement sur environ 350 000 comptes (chiffres CTS relayés par France 3)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Grand Est — Fuite de données : des comptes clients de la CTS victimes d'accès frauduleux (25 novembre 2024)",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/strasbourg-0/fuite-de-donnees-des-comptes-clients-de-la-compagnie-des-transports-strasbourgeois-vises-par-des-acces-frauduleux-3065767.html",
+      "kind": "article"
+    },
+    {
+      "label": "DNA — La CTS victime d'un accès frauduleux à certains comptes de ses clients (23 novembre 2024)",
+      "url": "https://www.dna.fr/faits-divers-justice/2024/11/23/la-cts-victime-d-un-acces-frauduleux-de-certains-comptes-ses-clients",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Companie de Transport Strasbourgeoise exposée dans une fuite de données (22 novembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/companie-de-transport-strasbourgeoise-blf_697f831a59bba",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 21 novembre 2024, la Compagnie des Transports Strasbourgeois (CTS) informe l'ensemble de ses clients d'une « consultation anormale » d'une centaine de comptes clients, sur environ 350 000, à la suite d'accès frauduleux rendus possibles par une fuite de données indépendante du réseau de l'opérateur strasbourgeois de bus et de tramways. La régie invite ses usagers à modifier leur mot de passe et rappelle ses règles de sécurité ; la nature exacte des données consultées n'est pas détaillée publiquement.",
+  "timeline": [
+    {
+      "date": "2024-11-21",
+      "event": "La CTS alerte tous ses clients : une centaine de comptes a fait l'objet d'une consultation anormale."
+    },
+    {
+      "date": "2024-11-22",
+      "event": "La veille cyber FrenchBreaches recense la fuite ; la presse régionale relaie le 23 novembre."
+    }
+  ]
+}

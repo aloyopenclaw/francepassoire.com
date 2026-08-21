@@ -1,0 +1,47 @@
+{
+  "slug": "norauto-20241202",
+  "entity": "Norauto France (groupe Mobivia)",
+  "siren": "480470152",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-02",
+    "publication": "2024-12-03"
+  },
+  "volume": {
+    "count": 78000,
+    "unit": "lignes",
+    "label": "78 000 lignes de données mises en vente 50 dollars sur BreachForums (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Norauto victime d'une cyberattaque, les pièces d'identité de ses clients exposées (3 décembre 2024)",
+      "url": "https://www.usine-digitale.fr/article/norauto-victime-d-une-cyberattaque-les-pieces-d-identite-de-ses-clients-exposes.N2223610",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Norauto : des données personnelles dérobées (alerte du 2 décembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/norauto-blf_697f831a59b78",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début décembre 2024, Norauto France prévient par e-mail ses clients d'un « acte de cybermalveillance » ayant entraîné le vol de données liées à son service de location : noms, prénoms, adresses postales et électroniques, numéros de téléphone et numéros de pièces d'identité. L'enseigne d'entretien automobile assure que mots de passe et données bancaires ne sont pas concernés, notifie la CNIL et dépose plainte. La semaine précédente, un cybercriminel affichait sur BreachForums la vente de 78 000 lignes de données présentées comme appartenant à Norauto — un chiffre invérifié compte tenu du prix modique et du faible échantillon publié.",
+  "timeline": [
+    {
+      "date": "2024-11-25",
+      "event": "Un cybercriminel met en vente 78 000 lignes de données « Norauto » sur BreachForums (semaine du 25 novembre)."
+    },
+    {
+      "date": "2024-12-02",
+      "event": "Norauto informe ses clients du vol de données liées à son service location et notifie la CNIL."
+    },
+    {
+      "date": "2024-12-03",
+      "event": "L'Usine Digitale révèle l'exposition de numéros de pièces d'identité."
+    }
+  ]
+}
