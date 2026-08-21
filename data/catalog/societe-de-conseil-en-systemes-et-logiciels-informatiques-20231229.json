@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-conseil-en-systemes-et-logiciels-informatiques-20231229",
+  "entity": "Société de conseil en systèmes et logiciels informatiques",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-29",
+    "confirmation": "2023-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 29 décembre 2023 une amende de 100 000 euros contre une société de conseil en systèmes et logiciels informatiques, désignée anonymément dans le tableau officiel des sanctions. Intervenant en qualité de sous-traitant, la société a recruté un autre sous-traitant sans l'autorisation préalable du responsable de traitement et a manqué à ses obligations de sécurité des données. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-12-29",
+      "event": "Amende de 100 000 euros : recrutement d'un sous-traitant sans autorisation du responsable de traitement et défaut de sécurité des données."
+    }
+  ]
+}

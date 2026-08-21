@@ -1,0 +1,33 @@
+{
+  "slug": "societe-ayant-pour-activite-la-vente-a-distance-de-mobilier-decoration-et-d-equipements-domestiques-20250703",
+  "entity": "Société ayant pour activité la vente à distance de mobilier, décoration et d'équipements domestiques",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-03",
+    "confirmation": "2025-07-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La formation restreinte de la CNIL a prononcé le 3 juillet 2025 une amende de 600 000 euros contre une société de vente à distance de mobilier, décoration et équipements domestiques, désignée anonymement dans le tableau officiel des sanctions. L'autorité retient une durée de conservation excessive des données, des défauts d'information des personnes, une information et un consentement mal recueillis pour les cookies, ainsi que de la prospection commerciale par voie électronique menée sans consentement valable (article L. 34-5 du CPCE). Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-07-03",
+      "event": "La formation restreinte de la CNIL prononce une amende de 600 000 euros pour durée de conservation excessive, défauts d'information, manquements aux règles des cookies et prospection sans consentement valable."
+    }
+  ]
+}
