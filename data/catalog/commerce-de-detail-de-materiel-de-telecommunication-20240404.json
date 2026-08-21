@@ -1,0 +1,37 @@
+{
+  "slug": "commerce-de-detail-de-materiel-de-telecommunication-20240404",
+  "entity": "Commerce de détail de matériel de télécommunication (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-04",
+    "confirmation": "2024-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 525 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « commerce de détail de matériel de télécommunication », amende de 525 000 euros (4 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — The sanctions issued by the CNIL : « retail sale of telecommunication equipment », fine of €525,000 (4 avril 2024)",
+      "url": "https://www.cnil.fr/en/investigation-powers-cnil/sanctions-issued-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 4 avril 2024, la CNIL a prononcé une amende de 525 000 euros à l'encontre d'un commerce de détail de matériel de télécommunication. Les manquements retenus : prospection commerciale par voie électronique sans consentement valide, défaut de base légale et défaut d'information des personnes. La dénomination de l'enseigne n'est pas publiée par l'autorité. Cette sanction figure parmi les amendes notables prononcées en 2024 contre des acteurs du commerce.",
+  "timeline": [
+    {
+      "date": "2024-04-04",
+      "event": "La CNIL prononce une amende de 525 000 euros contre un commerce de détail de matériel de télécommunication (prospection commerciale sans consentement, défaut de base légale et d'information)."
+    }
+  ]
+}
