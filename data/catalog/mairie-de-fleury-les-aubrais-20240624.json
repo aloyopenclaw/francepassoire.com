@@ -1,0 +1,42 @@
+{
+  "slug": "mairie-de-fleury-les-aubrais-20240624",
+  "entity": "Commune de Fleury-les-Aubrais",
+  "siren": "214501470",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-06-24",
+    "publication": "2024-06-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "intégralité des ordinateurs et serveurs bloquée ; rançon exigée sans montant précisé, aucun vol de données chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ici (France Bleu) — La mairie de Fleury-les-Aubrais entièrement paralysée par une cyberattaque majeure (25 juin 2024)",
+      "url": "https://www.francebleu.fr/infos/faits-divers-justice/la-mairie-de-fleury-les-aubrais-entierement-paralysee-par-une-cyberattaque-majeure-8094912",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 juin 2024, la mairie de Fleury-les-Aubrais (Loiret) subit une cyberattaque qualifiée de « majeure » par sa maire : après des troubles de la messagerie le matin, un fichier en anglais accompagné d'une demande de rançon payable en trois fois est découvert sur un serveur. L'intégralité des ordinateurs et serveurs est débranchée, paralysant état civil, cantine, inscriptions scolaires et urbanisme — jusqu'à l'organisation du premier tour des législatives. La Ville travaille avec le CSIRT régional ; aucun vol de données n'est chiffré.",
+  "timeline": [
+    {
+      "date": "2024-06-24",
+      "event": "Découverte d'un message de rançon sur un serveur ; ordinateurs et serveurs débranchés, services municipaux paralysés."
+    },
+    {
+      "date": "2024-06-25",
+      "event": "France Bleu relate la paralysie « entière » de la commune, trois jours avant le premier tour des législatives ; le CSIRT régional mobilisé."
+    }
+  ]
+}

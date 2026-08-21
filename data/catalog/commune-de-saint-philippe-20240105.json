@@ -1,0 +1,42 @@
+{
+  "slug": "commune-de-saint-philippe-20240105",
+  "entity": "Commune de Saint-Philippe (La Réunion)",
+  "siren": "219740172",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-05",
+    "publication": "2024-01-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur non chiffrée ; la commune évoque une cyberattaque « d'ampleur » par rançongiciel, sans vol de données confirmé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Imazpress — La mairie de Saint-Philippe victime d'une cyberattaque (janvier 2024)",
+      "url": "https://imazpress.com/actus-reunion/la-mairie-de-saint-philippe-victime-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "La 1ère (franceinfo) — Touchée par une cyberattaque, la mairie de Saint-Philippe revient aux documents papier",
+      "url": "https://la1ere.franceinfo.fr/reunion/saint-philippe/touchee-par-une-cyberattaque-la-mairie-de-saint-philippe-revient-aux-documents-papier-1456034.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 31 décembre 2023 au 1er janvier 2024, la mairie de Saint-Philippe, commune du sud de La Réunion, est frappée par une cyberattaque d'ampleur menée par rançongiciel. Les services de la collectivité basculent en mode dégradé : plus de connexion internet, un fonctionnement revenu aux documents papier. La commune, qui a déposé plainte selon la presse locale, n'a pas communiqué de volume de données concernées ; aucun vol n'est confirmé à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "event": "Dans la nuit du 31 décembre au 1er janvier, un rançongiciel paralyse les systèmes d'information de la mairie de Saint-Philippe."
+    },
+    {
+      "date": "2024-01-05",
+      "event": "La commune annonce l'attaque ; Imazpress puis La 1ère relatent le fonctionnement en mode dégradé et le retour au papier."
+    }
+  ]
+}

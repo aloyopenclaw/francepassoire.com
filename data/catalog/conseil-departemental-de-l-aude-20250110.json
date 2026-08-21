@@ -1,0 +1,47 @@
+{
+  "slug": "conseil-departemental-de-l-aude-20250110",
+  "entity": "Conseil départemental de l'Aude",
+  "siren": "221100019",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-10",
+    "publication": "2025-01-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "téléphonie, messageries et visioconférences bloquées pendant une nuit ; aucune donnée volée communiquée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Dépêche — Le conseil départemental victime d'une cyberattaque (11 janvier 2025)",
+      "url": "https://www.ladepeche.fr/2025/01/11/le-conseil-departemental-victime-dune-cyberattaque-12438628.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Indépendant — Les services du conseil départemental de l'Aude victimes d'une cyberattaque (10 janvier 2025)",
+      "url": "https://www.lindependant.fr/2025/01/10/les-services-du-conseil-departemental-de-laude-victimes-dune-cyberattaque-12437509.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Écho des Tribunes (Aude) — Cyber-attaque : le Département est passé « tout près de la grosse punition » (2025)",
+      "url": "https://echo-des-tribunes.com/aude-tribune/articles/cyber-attaque-le-departement-est-passe-tout-pres-de-la-grosse-punition",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le 9 et le 10 janvier 2025, le conseil départemental de l'Aude subit une cyberattaque qui bloque totalement ses moyens de communication : lignes téléphoniques, messageries et visioconférences sont coupées à partir de 19 heures pendant toute une nuit, avant un retour à la normale le 10 vers 11 heures. Une tentative d'intrusion avait déjà été interceptée le 1er janvier, selon La Dépêche. Aucune revendication ni fuite de données n'est rapportée ; la presse locale évoque un incident d'impact limité selon le Département.",
+  "timeline": [
+    {
+      "date": "2025-01-10",
+      "event": "Retour à la normale vers 11 heures après une nuit de coupures des téléphonie, messageries et visioconférences du Département."
+    },
+    {
+      "date": "2025-01-11",
+      "event": "La presse locale relate l'attaque ; une tentative d'intrusion avait été interceptée le 1er janvier."
+    }
+  ]
+}

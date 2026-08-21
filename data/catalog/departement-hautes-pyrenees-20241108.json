@@ -1,0 +1,48 @@
+{
+  "slug": "departement-hautes-pyrenees-20241108",
+  "entity": "Département des Hautes-Pyrénées",
+  "siren": "226500015",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-08",
+    "publication": "2024-11-08",
+    "confirmation": "2025-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "exfiltration de « certains documents » confirmée par le Département ; volume non chiffré"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Département des Hautes-Pyrénées — Cyber attaque : vigilance renforcée suite à l'incident de novembre 2024 (4 avril 2025)",
+      "url": "https://www.hautespyrenees.fr/actualite/general/cyber-attaque-au-departement-des-hautes-pyrenees-renforcement-de-la-vigilance-suite-a-lincident-de-cybersecurite-de-novembre-2024/",
+      "kind": "officiel"
+    },
+    {
+      "label": "La Dépêche — Une cyberattaque paralyse la messagerie du Département des Hautes-Pyrénées (8 novembre 2024)",
+      "url": "https://www.ladepeche.fr/2024/11/08/une-cyberattaque-sur-la-messagerie-du-departement-des-hautes-pyrenees-12311658.php",
+      "kind": "article"
+    },
+    {
+      "label": "Tarbes Infos — Cyberattaque : la messagerie du Département des Hautes-Pyrénées paralysée (novembre 2024)",
+      "url": "http://tarbes-infos.com/spip.php?article39520",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 novembre 2024 au matin, une cyberattaque paralyse la messagerie et une partie des systèmes du conseil départemental des Hautes-Pyrénées ; le site du Département est également perturbé. La collectivité confirme l'incident sans chiffrer alors d'impact. Le 4 avril 2025, elle reconnaît que « l'exfiltration de certains documents a pu récemment être confirmée » et annonce des protocoles renforcés. La nature précise des documents exfiltrés et le volume concerné ne sont pas rendus publics.",
+  "timeline": [
+    {
+      "date": "2024-11-08",
+      "event": "La messagerie du Département est paralysée depuis la veille au matin ; le site internet est perturbé."
+    },
+    {
+      "date": "2025-04-04",
+      "event": "Le Département confirme l'exfiltration de « certains documents » et annonce des protocoles renforcés."
+    }
+  ]
+}

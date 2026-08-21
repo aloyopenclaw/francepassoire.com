@@ -1,0 +1,53 @@
+{
+  "slug": "cci-pau-bearn-20240513",
+  "entity": "CCI Pau Béarn",
+  "siren": "186400024",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-05-13",
+    "publication": "2024-05-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "chiffrement des systèmes constaté ; aucun volume de données volées communiqué, plainte déposée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CCI Pau Béarn (communiqué via Aéroport Pau-Pyrénées) — Attaque par rançongiciel dans la nuit du 12 au 13 mai 2024 (PDF)",
+      "url": "https://www.pau.aeroport.fr/fichiers/get/communique-presse-cybersecurite-13-mai-20224-177.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Sud Ouest — Pau : l'aéroport et l'école de commerce victimes d'une cyberattaque (mai 2024)",
+      "url": "https://www.sudouest.fr/economie/cybersecurite/info-sud-ouest-pau-l-aeroport-et-l-ecole-de-commerce-victimes-d-une-cyberattaque-19716881.php",
+      "kind": "article"
+    },
+    {
+      "label": "ici — L'aéroport et l'école de commerce de Pau victimes d'une cyberattaque (15 mai 2024)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/l-aeroport-et-l-ecole-de-commerce-de-pau-victimes-d-une-cyberattaque-6303207",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Le ransomware Monti fait trois victimes en France, à Pau (mai 2024)",
+      "url": "https://www.it-connect.fr/cyberattaques-ransomware-monti-trois-victimes-en-france-a-pau-mai-2024/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 12 au 13 mai 2024, une attaque par rançongiciel frappe les systèmes de la CCI Pau Béarn et de ses entités : l'aéroport Pau-Pyrénées, l'école de commerce eklore-ed et le campus numérique voient leurs accès coupés et leurs données chiffrées, selon le communiqué de la CCI. L'attaque est attribuée au groupe Monti par la presse spécialisée. La CCI, qui a isolé ses systèmes par précaution, porte plainte le 15 mai ; aucun vol de données n'est chiffré à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-05-13",
+      "event": "Rançongiciel dans la nuit du 12 au 13 mai : chiffrement des systèmes de la CCI, de l'aéroport Pau-Pyrénées, de l'école eklore-ed et du campus numérique."
+    },
+    {
+      "date": "2024-05-15",
+      "event": "La CCI Béarn annonce avoir porté plainte après l'attaque revendiquée par le groupe Monti selon IT-Connect."
+    }
+  ],
+  "group": "monti"
+}

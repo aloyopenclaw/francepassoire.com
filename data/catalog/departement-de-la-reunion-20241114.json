@@ -1,0 +1,49 @@
+{
+  "slug": "departement-de-la-reunion-20241114",
+  "entity": "Département de La Réunion",
+  "siren": "229740014",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-14",
+    "publication": "2024-11-14",
+    "confirmation": "2024-11-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« fuite de données limitée » constatée par le Département ; volume non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Département de La Réunion — Le Département victime d'une cyber attaque (suivi officiel, 13 novembre 2024)",
+      "url": "https://www.departement974.fr/actualite/departement-victime-dune-cyber-attaque-2024",
+      "kind": "officiel"
+    },
+    {
+      "label": "La 1ère (franceinfo) — Un mois après, ce que l'on sait de la cyberattaque qui a frappé le conseil départemental de La Réunion (décembre 2024)",
+      "url": "https://la1ere.franceinfo.fr/reunion/un-mois-apres-ce-que-l-on-sait-de-la-cyberattaque-qui-a-frappe-le-conseil-departemental-de-la-reunion-1544995.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Un nouveau groupe de hackers revendique la cyberattaque contre le département de La Réunion (novembre 2024)",
+      "url": "https://www.numerama.com/cyberguerre/1851840-un-nouveau-groupe-de-hackers-revendique-la-cyberattaque-contre-le-departement-de-la-reunion.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 novembre 2024, le conseil départemental de La Réunion est victime d'une cyberattaque : les réseaux sont coupés de l'extérieur, la messagerie suspendue et plusieurs téléservices — bourses des étudiants, demandes de subventions, laboratoires — indisponibles. Le lendemain, la collectivité reconnaît « une fuite de données limitée », dépose plainte et notifie la CNIL. Le groupe Termite revendique ensuite l'intrusion, sans publier de données selon Numerama. Un mois après, les conséquences sur les services se faisaient encore sentir ; la nature des données fuitées n'a pas été précisée.",
+  "timeline": [
+    {
+      "date": "2024-11-14",
+      "event": "Le Département annonce l'attaque de la veille : « fuite de données limitée » constatée, plainte et notification CNIL."
+    },
+    {
+      "date": "2024-11-14",
+      "event": "Messagerie suspendue, téléservices indisponibles ; les paiements sociaux sont maintenus selon la collectivité."
+    }
+  ],
+  "group": "termite"
+}
