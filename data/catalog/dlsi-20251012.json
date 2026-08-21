@@ -1,0 +1,43 @@
+{
+  "slug": "dlsi-20251012",
+  "entity": "Groupe DLSI (filiales PRESTIM et ML Intérim)",
+  "siren": "389486754",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-12",
+    "publication": "2025-10-15",
+    "confirmation": "2025-10-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur non communiquée ; le groupe indique avoir récupéré la totalité de ses données sans altération, plainte déposée et CNIL notifiée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe DLSI — Cyberattaque dans deux filiales du Groupe (communiqué)",
+      "url": "https://groupedlsi.com/groupe-dlsi-cyberattaque-dans-deux-filiales-du-groupe/",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT — Cyberhebdo du 17 octobre 2025 (attaque des filiales PRESTIM et ML Intérim, données récupérées sans altération)",
+      "url": "https://www.lemagit.fr/actualites/366632903/Cyberhebdo-du-17-octobre-2025-encore-une-semaine-particulierement-violente",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 octobre 2025, le groupe DLSI, spécialiste français du recrutement coté à Paris, détecte une cyberattaque sur deux de ses filiales, PRESTIM et ML Intérim. Dans un communiqué, l'entreprise annonce avoir pu récupérer la totalité de ses données sans altération, précise que les autres sociétés du groupe ne sont pas impactées, dépose plainte et notifie l'incident à la CNIL. La nature et l'ampleur exactes de l'atteinte ne sont pas détaillées publiquement.",
+  "timeline": [
+    {
+      "date": "2025-10-12",
+      "event": "Une cyberattaque est détectée sur les filiales PRESTIM et ML Intérim du groupe DLSI."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Le groupe publie un communiqué : données récupérées sans altération, plainte déposée, CNIL notifiée."
+    }
+  ]
+}

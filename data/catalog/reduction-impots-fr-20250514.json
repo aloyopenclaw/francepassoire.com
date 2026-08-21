@@ -1,0 +1,43 @@
+{
+  "slug": "reduction-impots-fr-20250514",
+  "entity": "Conseils en Réductions d'Impôts (reduction-impots.fr)",
+  "siren": "803903038",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-14",
+    "publication": "2025-05-14"
+  },
+  "volume": {
+    "count": 2000000,
+    "unit": "personnes",
+    "label": "2 millions de personnes selon la mise en vente ; le cabinet bordelais conteste être à l'origine du fichier"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "01net — Les données fiscales de 2 millions de Français ont été vendues sur le dark web (14 mai 2025)",
+      "url": "https://www.01net.com/actualites/donnees-fiscales-2-millions-francais-volees-diffusees-dark-web.html",
+      "kind": "article"
+    },
+    {
+      "label": "Sud Ouest — « C'est une fake news ! » Une société de Bordeaux réfute être à l'origine de la fuite des données fiscales de deux millions de Français",
+      "url": "https://www.sudouest.fr/gironde/bordeaux/c-est-une-fake-news-une-societe-de-bordeaux-refute-etre-a-l-origine-de-la-fuite-des-donnees-fiscales-de-deux-millions-de-francais-24441041.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Un fichier contenant les informations fiscales de plus de deux millions de personnes, débusqué par Zataz, est vendu 3 000 dollars sur un marché noir, puis revendu à un autre cybercriminel. Le répertoire est attribué par le vendeur à Reduction-impots.fr, cabinet bordelais spécialisé en défiscalisation, qui aurait été piraté à l'automne 2024. Contacté par 01net, le fondateur de la société dément avoir été victime d'une cyberattaque et estime que les données ne proviennent pas de son fichier client, évoquant une opération de promotion du répertoire. L'origine exacte des données reste incertaine.",
+  "timeline": [
+    {
+      "date": "2025-05-14",
+      "event": "01net révèle la vente d'un fichier fiscal de 2 millions de personnes attribué à Reduction-impots.fr, découvert par Zataz."
+    },
+    {
+      "date": "2025-05-14",
+      "event": "Le fondateur du cabinet dément avoir été piraté ; l'origine des données reste indéterminée."
+    }
+  ]
+}

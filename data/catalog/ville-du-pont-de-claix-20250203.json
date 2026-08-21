@@ -1,0 +1,42 @@
+{
+  "slug": "ville-du-pont-de-claix-20250203",
+  "entity": "Ville du Pont-de-Claix (Isère)",
+  "siren": "213803174",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-03",
+    "publication": "2025-02-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "base présentée comme issue de la mairie du Pont-de-Claix mise en vente sur BreachForums ; volume et nature des données non précisés, revendication non confirmée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "01net — Fuite de données chez EDF et Conforama ? 15 millions de Français concernés (4 février 2025, cite la mairie du Pont-de-Claix parmi les bases vendues)",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-edf-conforama-donnees-15-millions-francais-vente.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite chez EDF ? Entre bluff et baroud d'honneur des derniers membres de Kernel (4 février 2025, cite la mairie du Pont-de-Claix)",
+      "url": "https://www.zataz.com/fuite-chez-edf-entre-bluff-et-baroud-dhonneur-des-derniers-membres-de-kernel/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début février 2025, le vendeur « Varun » propose sur BreachForums plusieurs bases présentées comme françaises, dont une attribuée à la mairie du Pont-de-Claix, aux côtés de celles d'EDF et de Conforama. Ni le volume ni la nature exacte des données communales ne sont précisés dans l'annonce. Les analyses de Zataz suggèrent qu'il s'agit d'un recyclage de données anciennes issues de compromissions antérieures. La commune n'a pas communiqué publiquement sur cette revendication, qui n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-02-03",
+      "event": "Une base présentée comme issue de la mairie du Pont-de-Claix est mise en vente sur BreachForums par le vendeur « Varun »."
+    },
+    {
+      "date": "2025-02-04",
+      "event": "01net et Zataz documentent la vente ; les échantillons suggèrent des données anciennes recyclées."
+    }
+  ]
+}

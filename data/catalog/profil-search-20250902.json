@@ -1,0 +1,43 @@
+{
+  "slug": "profil-search-20250902",
+  "entity": "Profil Search",
+  "siren": "791341951",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-02",
+    "publication": "2025-09-02"
+  },
+  "volume": {
+    "count": 100000,
+    "unit": "personnes",
+    "label": "environ 100 000 personnes issues d'une plateforme de recrutement, diffusées en accès libre ; cabinet sans communication publique"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Deux millions de Français piratés ? Une montagne de données personnelles et médicales diffusées sur un forum criminel (2 septembre 2025)",
+      "url": "https://www.01net.com/actualites/2-millions-francais-pirates-montagne-donnees-personnelles-medicales-diffusees-forum-criminel.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Profil Search : 100K comptes compromis (relais de la revendication)",
+      "url": "https://frenchbreaches.com/alertes/profil-search-mopvcouuhkdyk7dfs2o",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début septembre 2025, le même vendeur du forum DarkForums offre en accès libre un répertoire attribué à Profil Search, cabinet de recrutement français : environ 100 000 personnes y figurent avec des données personnelles et professionnelles combinées. 01net relève que l'ancienneté des données n'empêche pas leur exploitation pour du phishing ciblé lié à l'emploi ou de l'usurpation d'identité professionnelle. Le cabinet n'a pas communiqué publiquement sur cette diffusion ; la revendication n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-09-02",
+      "event": "Diffusion en accès libre sur DarkForums d'une base d'environ 100 000 profils attribuée à Profil Search."
+    },
+    {
+      "date": "2025-09-02",
+      "event": "01net documente la vente dans le lot de bases françaises du forum ; le cabinet ne commente pas."
+    }
+  ]
+}
