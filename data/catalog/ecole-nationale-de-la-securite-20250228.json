@@ -1,0 +1,38 @@
+{
+  "slug": "ecole-nationale-de-la-securite-20250228",
+  "entity": "École Nationale de la Sécurité (E.N.S.)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-28",
+    "publication": "2025-02-28"
+  },
+  "volume": {
+    "count": 29103,
+    "unit": "enregistrements",
+    "label": "29 103 enregistrements revendiqués (30 000 personnes selon un autre recensement) ; volume non confirmé par l'établissement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — École Nationale de la Sécurité (E.N.S.) touchée par une fuite de données (28 février 2025)",
+      "url": "https://frenchbreaches.com/alertes/ecole-nationale-de-la-securite-e-n-s-603f39d30a9d",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — École Nationale de la Sécurité, 28 février 2025, 30 000 personnes, NIR et identifiants Pôle emploi",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 février 2025, une fuite de données attribuée à l'École Nationale de la Sécurité, organisme de formation aux métiers de la sécurité, est recensée sur les traqueurs de fuites. Les 29 103 enregistrements revendiqués comprendraient civilité, nom, prénom, date et lieu de naissance, nationalité, adresse postale, téléphone, e-mail et numéro de sécurité sociale ; un recensement indépendant évoque aussi des numéros Pôle emploi et des numéros de carte VTC, cohérents avec la population formée. L'établissement n'a pas communiqué publiquement sur cette fuite, dont le volume et l'authenticité ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2025-02-28",
+      "event": "Une base de 29 103 enregistrements attribués à l'École Nationale de la Sécurité circule ; la revendication n'est pas confirmée."
+    }
+  ]
+}
