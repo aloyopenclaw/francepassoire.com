@@ -1,0 +1,39 @@
+{
+  "slug": "orange-roumanie-20250225",
+  "entity": "Orange Roumanie (groupe Orange)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-25",
+    "publication": "2025-02-25",
+    "confirmation": "2025-02-25"
+  },
+  "volume": {
+    "count": 380000,
+    "unit": "enregistrements",
+    "label": "380 000 documents mis en ligne (6,5 Go) : adresses mail, code source, factures, contrats, données de clients et d’employés (vol confirmé par Orange)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Orange confirme avoir été victime d’un piratage de données (mais pas en France)",
+      "url": "https://www.bfmtv.com/tech/actualites/telecoms/orange-confirme-avoir-ete-victime-d-un-piratage-de-donnees-mais-pas-en-france_AV-202502250425.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 février 2025, Orange confirme un vol de données touchant principalement sa filiale roumaine et sa filiale locale de crédit Yoxo, révélé par Bleeping Computer : 380 000 documents — adresses mail, code source, factures, contrats, informations sur des clients et employés — sont mis à disposition sur un forum de pirates dans un fichier de 6,5 Go. L’auteur affirme avoir accédé aux serveurs pendant plus d’un mois via des vulnérabilités du logiciel Jira et exfiltré les données en trois heures ; il affirme aussi avoir tenté de rançonner Orange, sans succès. L’opérateur a lancé une enquête et indique que certaines données seraient caduques.",
+  "timeline": [
+    {
+      "date": "2025-02-25",
+      "event": "Bleeping Computer documente un fichier de 6,5 Go issu d’Orange Roumanie ; Orange confirme le vol et une tentative de rançon restée sans suite."
+    },
+    {
+      "date": "2025-02-25",
+      "event": "Selon l’auteur de la fuite, il a accédé aux serveurs pendant plus d’un mois via des failles du logiciel d’identification Jira, décrit comme « non critique », et exfiltré les données en trois heures."
+    }
+  ]
+}

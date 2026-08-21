@@ -1,0 +1,33 @@
+{
+  "slug": "google-shinyhunters-20250814",
+  "entity": "Google",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-14",
+    "publication": "2025-08-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non chiffré ; « une partie des données des clients » de l’entreprise saisie par les pirates, selon franceinfo"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — Cybersécurité : Google victime d’un piratage par des hackers se revendiquant du célèbre groupe cybercriminel ShinyHunters",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cybersecurite-google-victime-d-un-piratage-par-des-hackers-se-revendiquant-du-celebre-groupe-cybercriminel-shinyhunters_7431766.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Franceinfo révèle le 14 août 2025 que Google a été victime en juin d’un piratage revendiqué par des hackers se réclamant du groupe ShinyHunters, qui se sont emparés d’une partie des données clients de l’entreprise. L’attaque repose sur du « vishing » : un salarié appelé par un faux support informatique télécharge une copie frauduleuse du logiciel Salesforce Data Loader, ouvrant l’accès à la base clients — noms, adresses, numéros de téléphone. Les cybercriminels exigent une rançon en bitcoin sous 72 heures et menacent de revendre les données sur le dark web. Google, dont le service Threat Intelligence avait documenté cette campagne, n’a pas chiffré les personnes concernées.",
+  "timeline": [
+    {
+      "date": "2025-08-14",
+      "event": "Franceinfo révèle un piratage de Google survenu en juin via une campagne de « vishing », revendiqué par des hackers se réclamant de ShinyHunters, avec rançon exigée sous 72 heures."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "universite-limoges-20250627",
+  "entity": "Université de Limoges",
+  "siren": "198706699",
+  "secteur": "recherche",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-27",
+    "publication": "2025-06-27",
+    "confirmation": "2025-11-07"
+  },
+  "volume": {
+    "count": 15,
+    "unit": "personnes",
+    "label": "une quinzaine dâétudiants et de personnels (fichiers personnels, dont des photos intimes, retrouvés sur l’ordinateur d’un agent)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Régions (Limoges) — « Une intrusion dans notre vie privée » : affaire de vol de données personnelles à l’Université de Limoges",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/haute-vienne/limoges/temoignages-une-intrusion-dans-notre-vie-privee-affaire-de-vol-de-donnees-personnelles-a-l-universite-de-limoges-ce-que-l-on-sait-3178572.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Régions (Limoges) — Vol de données personnelles à l’Université de Limoges : le ministère saisi, ce que l’on sait de la procédure",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/haute-vienne/limoges/vol-de-donnees-personnelles-a-l-universite-de-limoges-le-ministere-saisi-ce-que-l-on-sait-de-la-procedure-3245650.html",
+      "kind": "article"
+    }
+  ],
+  "description": "France 3 révèle le 27 juin 2025 une affaire de vol de données personnelles à l’Université de Limoges : à la suite d’une plainte dâétudiante déposée en novembre 2024, une perquisition au printemps a retrouvé sur l’ordinateur d’un agent de la faculté de Lettres des dizaines de photos personnelles, dont des clichés intimes, concernant une quinzaine dâétudiants et de personnels. L’agent avait pour habitude d’emprunter les ordinateurs pour y installer des logiciels crackés. L’université a ouvert une instruction interne ; le ministère de l’Enseignement supérieur a engagé une instruction disciplinaire en novembre. L’enquête préliminaire se poursuit ; l’agent est présumé innocent.",
+  "timeline": [
+    {
+      "date": "2025-06-27",
+      "event": "France 3 révèle qu’une perquisition a retrouvé sur l’ordinateur d’un agent de l’université des photos personnelles d’une quinzaine dâétudiants et personnels, après une plainte déposée en novembre 2024."
+    },
+    {
+      "date": "2025-11-07",
+      "event": "Le ministère de l’Enseignement supérieur ouvre une instruction disciplinaire contre l’agent mis en cause ; l’enquête préliminaire de police se poursuit."
+    }
+  ]
+}

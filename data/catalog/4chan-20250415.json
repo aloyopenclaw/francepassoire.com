@@ -1,0 +1,42 @@
+{
+  "slug": "4chan-20250415",
+  "entity": "4chan",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-04-15",
+    "publication": "2025-04-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "liste des modérateurs et « concierges » du forum publiée avec leurs adresses électroniques ; effectif total non chiffré"
+  },
+  "data_types": [
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Inaccessible, le forum controversé 4chan a-t-il été piraté ?",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/inaccessible-le-forum-controverse-4chan-a-t-il-ete-pirate_AN-202504160390.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — « Les dégâts étaient catastrophiques » : le forum controversé 4chan de retour après avoir été piraté",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/les-degats-etaient-catastrophiques-le-forum-controverse-4chan-de-retour-apres-avoir-ete-pirate_AN-202504280528.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 avril 2025, le forum anonyme 4chan devient totalement inaccessible après un piratage révélé par l'apparition du message « U GOT HACKED » sur une section abandonnée du site. Un compte de Soyjak.party, plateforme rivale, explique que le pirate serait resté dans les systèmes plus d'un an. La fuite s'accompagne d'une divulgation : liste des modérateurs et « concierges » avec leurs adresses électroniques, suivie d'un doxxing — photos et informations personnelles —, ainsi que des captures du code source. Un « concierge » joint par TechCrunch assure que les données divulguées sont « toutes réelles ». Le forum est revenu en ligne fin avril.",
+  "timeline": [
+    {
+      "date": "2025-04-15",
+      "event": "4chan devient inaccessible ; un message « U GOT HACKED » et des publications rivales révèlent le piratage, avec divulgation des adresses des modérateurs et du code source."
+    },
+    {
+      "date": "2025-04-28",
+      "event": "Le forum est de retour en ligne ; un modérateur contacté par TechCrunch confie que les données et captures diffusées sont « toutes réelles »."
+    }
+  ]
+}
