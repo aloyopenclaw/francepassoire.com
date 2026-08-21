@@ -1,0 +1,38 @@
+{
+  "slug": "clyo-systems-20251230",
+  "entity": "CLYO Systems",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-30"
+  },
+  "volume": {
+    "count": 147820,
+    "unit": "comptes",
+    "label": "147 820 comptes — « fuite froide » : données datées de 2016 à septembre 2023 (revendiqué ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données CLYO Systems : 147,8K personnes exposées en ligne (30 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/clyo-systems-f17cf0c062f0",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données CLYO Systems : informations et protection (relais fuitesinfos.fr, 30 décembre 2025)",
+      "url": "https://hginfoandco.com/fuite/123-clyo-systems",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 30 décembre 2025, la veille recense une « fuite froide » touchant CLYO Systems, éditeur français de solutions de caisse pour restaurants et commerces. Les données de 147 820 comptes couvrent la période 2016 à septembre 2023. Les champs exposés incluent noms et prénoms, dates de naissance, e-mails, téléphones mobiles et mots de passe en clair. Figurent aussi des jetons de connexion tiers — Google, Facebook ou Edenred selon le relais. L'éditeur n'a pas publié de communication confirmant l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-30",
+      "event": "Un ensemble de 147 820 comptes CLYO Systems, données datées de 2016 à septembre 2023 avec mots de passe en clair, est recensé par la veille."
+    }
+  ]
+}

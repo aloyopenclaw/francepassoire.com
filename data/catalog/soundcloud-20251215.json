@@ -1,0 +1,61 @@
+{
+  "slug": "soundcloud-20251215",
+  "entity": "SoundCloud",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-15",
+    "publication": "2025-12-16",
+    "confirmation": "2025-12-15"
+  },
+  "volume": {
+    "count": 26000000,
+    "unit": "comptes",
+    "label": "26 millions de comptes, soit environ 20 % de la base selon SoundCloud ; adresses e-mail et données de profil public uniquement selon l'entreprise ; près de 29,8 millions d'adresses recensées in fine par Have I Been Pwned"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "SoundCloud — Protecting Our Users and Our Service (note officielle, 15 décembre 2025, mise à jour 24 février 2026)",
+      "url": "https://soundcloud.com/playbook-articles/protecting-our-users-and-our-service",
+      "kind": "officiel"
+    },
+    {
+      "label": "IT-Connect — SoundCloud : une fuite de données impacte 28 millions de comptes ! (16 décembre 2025)",
+      "url": "https://www.it-connect.fr/soundcloud-une-fuite-de-donnees-impacte-28-millions-de-comptes/",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — 26 millions de comptes touchés : SoundCloud confirme officiellement une cyberattaque massive (31 janvier 2026)",
+      "url": "https://www.clubic.com/actualite-598378-streaming-musical-cette-plateforme-victime-de-fuites-etes-vous-concerne.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données SoundCloud : 26M personnes exposées en ligne (16 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/soundcloud-7a0cc1fd9a4e",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 15 décembre 2025, SoundCloud annonce une activité non autorisée dans le tableau de bord d'un service annexe, contenue par l'entreprise. Selon la plateforme, les données se limitent à des adresses e-mail et des informations déjà publiques des profils. Environ 20 % des utilisateurs sont concernés, soit 26 millions de comptes selon les relais presse. Aucun mot de passe ni donnée bancaire n'est concerné selon l'entreprise. Un groupe se revendiquant auteur de l'incident a ensuite harcelé utilisateurs et employés par envois massifs de mails. SoundCloud maintient qu'aucune donnée sensible n'a été prise et clôt l'enquête le 24 février 2026.",
+  "timeline": [
+    {
+      "date": "2025-12-15",
+      "event": "SoundCloud révèle une activité non autorisée dans un tableau de bord de service annexe, contenue, avec un accès limité à des e-mails et données de profils publics (≈ 20 % des utilisateurs)."
+    },
+    {
+      "date": "2025-12-16",
+      "event": "La presse française et FrenchBreaches relaient la fuite en citant 26 millions de comptes ; des attaques par déni de service suivent."
+    },
+    {
+      "date": "2026-01-13",
+      "event": "SoundCloud signale les demandes de rançon et le harcèlement par e-mail du groupe se revendiquant auteur, et dément toute donnée sensible prise."
+    },
+    {
+      "date": "2026-02-24",
+      "event": "L'enquête tiers est close : confirmation finale qu'aucune donnée sensible n'a été prise."
+    }
+  ]
+}

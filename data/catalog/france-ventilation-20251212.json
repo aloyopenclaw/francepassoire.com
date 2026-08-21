@@ -1,0 +1,42 @@
+{
+  "slug": "france-ventilation-20251212",
+  "entity": "France Ventilation",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-12"
+  },
+  "volume": {
+    "count": 8500,
+    "unit": "enregistrements",
+    "label": "≈ 8 500 transactions bancaires visées par un skimming de type Magecart sur le site e-commerce (revendiqué ; non confirmé)"
+  },
+  "data_types": [
+    "financier",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez France Ventilation : fuite de données bancaire (12 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/france-ventilation-6d6adc7dc0a0",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données France Ventilation : informations et protection (relais fuitesinfos.fr, 12 décembre 2025)",
+      "url": "https://hginfoandco.com/fuite/148-france-ventilation",
+      "kind": "revendication"
+    },
+    {
+      "label": "Clément Domingo (SaxX) — France Ventilation victime d'une cyberattaque (décembre 2025)",
+      "url": "https://x.com/_SaxX_/status/1999499427099136245",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 12 décembre 2025, la veille recense une attaque de type Magecart contre le site e-commerce de France Ventilation, spécialiste français de la VMC. Un script de capture a été inséré sur le tunnel de paiement. Environ 8 500 transactions bancaires sont visées : numéros de cartes, dates d'expiration, CVV et noms des porteurs. Le chercheur Clément Domingo relaie l'incident. L'entreprise n'a pas publié de communication confirmant la compromission ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-12",
+      "event": "Un skimming de type Magecart visant ≈ 8 500 transactions bancaires du site France Ventilation est recensé par la veille."
+    }
+  ]
+}
