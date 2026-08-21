@@ -1,0 +1,51 @@
+{
+  "slug": "chirurgien-dentiste-20240131",
+  "entity": "Chirurgien-dentiste (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-31",
+    "confirmation": "2024-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « chirurgien-dentiste » (procédure simplifiée), amende de 5 000 euros (31 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024 (12 mars 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 janvier 2024, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'un chirurgien-dentiste, dans le cadre de la procédure simplifiée. Le tableau officiel des sanctions retient deux manquements : un défaut de sécurité des données et le non-respect du droit d'accès portant sur des données de santé. La dénomination du praticien n'est pas publiée, la procédure simplifiée ne permettant pas de rendre publics les noms des organismes sanctionnés. Cette décision fait partie des quinze sanctions simplifiées recensées depuis janvier 2024 par le communiqué du 12 mars, qui cite parmi les manquements la sécurité des données et le droit d'accès aux dossiers médicaux. Le bilan 2024 recense 69 sanctions de ce type sur l'année.",
+  "timeline": [
+    {
+      "date": "2024-01-31",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : défaut de sécurité et droit d'accès non respecté (données de santé)."
+    },
+    {
+      "date": "2024-03-12",
+      "event": "La CNIL publie le bilan de ses quinze sanctions simplifiées depuis janvier 2024."
+    }
+  ]
+}

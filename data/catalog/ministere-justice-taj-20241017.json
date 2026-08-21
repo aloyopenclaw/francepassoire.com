@@ -1,0 +1,55 @@
+{
+  "slug": "ministere-justice-taj-20241017",
+  "entity": "Ministère de la Justice (fichier TAJ)",
+  "siren": "110010014",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-17",
+    "publication": "2024-11-06",
+    "confirmation": "2024-10-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par le communiqué ; fichier policier recensant identités, adresses, professions et photographies"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Traitement d'antécédents judiciaires : la CNIL rappelle à l'ordre deux ministères (6 novembre 2024)",
+      "url": "https://www.cnil.fr/fr/traitement-dantecedents-judiciaires-la-cnil-rappelle-lordre-deux-ministeres",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « ministère », rappel à l'ordre et injonction (17 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Lhermet — Fichier des antécédents judiciaires : deux ministères sanctionnés par la CNIL (délibération SAN-2024-017)",
+      "url": "https://lhermet.com/actualites/fichier-des-antecedents-judiciaires-deux-ministeres-sanctionnes-par-la-cnil",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 octobre 2024, la CNIL a également rappelé à l'ordre le ministère de la Justice, co-visé par la décision SAN-2024-017 sur le traitement d'antécédents judiciaires (TAJ). Selon le communiqué du 6 novembre, le code de procédure pénale confie à la Justice un rôle essentiel dans la mise à jour du fichier : de nombreux parquets ne transmettaient pas automatiquement les décisions de relaxe, d'acquittement, de non-lieu ou de classement sans suite, si bien que les fiches n'étaient ni effacées ni mentionnées. Ces absences peuvent peser sur les enquêtes administratives et les concours de la fonction publique. Le ministère a reçu injonction de garantir l'exactitude des données du TAJ.",
+  "timeline": [
+    {
+      "date": "2024-10-17",
+      "event": "Rappel à l'ordre et injonction : décisions de relaxe ou de non-lieu non transmises au gestionnaire du TAJ."
+    },
+    {
+      "date": "2024-11-06",
+      "event": "La CNIL rend publique la décision SAN-2024-017 visant le fichier TAJ et les deux ministères."
+    }
+  ]
+}

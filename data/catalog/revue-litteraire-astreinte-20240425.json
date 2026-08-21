@@ -1,0 +1,42 @@
+{
+  "slug": "revue-litteraire-astreinte-20240425",
+  "entity": "Revue littéraire française (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-25",
+    "confirmation": "2024-04-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; liquidation d'astreinte de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « revue littéraire française » (procédure simplifiée), liquidation d'astreinte de 3 000 euros (25 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 avril 2024, la CNIL a prononcé la liquidation d'une astreinte de 3 000 euros à l'encontre d'une revue littéraire française, dans le cadre de la procédure simplifiée. Le manquement retenu est une conformité tardive en matière de droit à l'effacement, dans le cadre d'une procédure d'injonction : l'astreinte liquidée rémunère le retard apporté à exécuter l'ordre donné par l'autorité. La dénomination de la revue n'est pas publiée, les noms des organismes sanctionnés par procédure simplifiée n'étant pas rendus publics. Le bilan 2024 recense 8 liquidations d'astreinte sur l'année et 23 décisions sanctionnant le non-respect d'une demande d'effacement, d'opposition ou d'accès.",
+  "timeline": [
+    {
+      "date": "2024-04-25",
+      "event": "Liquidation d'astreinte de 3 000 euros : conformité tardive sur le droit à l'effacement."
+    }
+  ]
+}
