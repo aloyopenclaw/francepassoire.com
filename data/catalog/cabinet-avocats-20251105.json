@@ -1,0 +1,42 @@
+{
+  "slug": "cabinet-avocats-20251105",
+  "entity": "Cabinet d'avocats (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-05",
+    "confirmation": "2025-11-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « cabinet d'avocats » (procédure simplifiée), amende de 5 000 euros (5 novembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 novembre 2025, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'un cabinet d'avocats, dans le cadre de la procédure simplifiée. Les manquements retenus : non-respect du droit d'effacement et défaut de coopération avec l'autorité. La dénomination n'est pas publiée et la nature des données n'est pas précisée. En 2025, le non-respect des droits des personnes et le défaut de coopération ont chacun motivé 14 décisions de sanction simplifiée, selon le bilan annuel de la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-11-05",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : droit d'effacement non respecté et défaut de coopération."
+    }
+  ]
+}
