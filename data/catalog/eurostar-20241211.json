@@ -1,0 +1,43 @@
+{
+  "slug": "eurostar-20241211",
+  "entity": "Eurostar",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-11",
+    "publication": "2024-12-12"
+  },
+  "volume": {
+    "count": 93000,
+    "unit": "enregistrements",
+    "label": "93 000 dossiers revendiqués en vente sur BreachForums ; Eurostar conteste et ne reconnaît que des données secondaires de prestataire"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "01net — Une fuite de données touche Eurostar : les arnaques risquent de se multiplier (12 décembre 2024)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-frappe-eurostar-risques-arnaques-ligne.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Une fuite de données d'Eurostar déraille dans le darknet (décembre 2024)",
+      "url": "https://www.zataz.com/une-fuite-de-donnees-deurostar-deraille-dans-le-darknet/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 décembre 2024, un cybercriminel met en vente sur BreachForums 93 000 dossiers liés à Eurostar, compagnie ferroviaire reliant Paris, Londres, Bruxelles et Amsterdam. L'annonce mentionne noms, adresses e-mail, destinations, historiques de transactions, billets et codes QR, et évoque des données bancaires. Selon 01net et Zataz, les données proviennent d'une intrusion survenue en juin 2024 chez le prestataire de paiement du prestataire de service à bord. Eurostar dément toute fuite de données clients ou confidentielles : seules des informations secondaires, montant et nature de l'achat, ont été concernées selon la compagnie.",
+  "timeline": [
+    {
+      "date": "2024-12-11",
+      "event": "Mise en vente annoncée sur BreachForums de 93 000 dossiers liés à Eurostar, avec échantillon publié."
+    },
+    {
+      "date": "2024-12-12",
+      "event": "01net publie le démenti d'Eurostar : données secondaires du prestataire de paiement uniquement ; Zataz recense ensuite 92 points de partage de la base."
+    }
+  ]
+}

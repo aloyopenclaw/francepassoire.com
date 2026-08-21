@@ -1,0 +1,47 @@
+{
+  "slug": "ambulances-trois-cantons-20221206",
+  "entity": "Ambulances des Trois Cantons",
+  "siren": "444428940",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-12-06",
+    "publication": "2022-12-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de patients concernés non chiffré ; fichiers, rendez-vous et numéros de téléphone perdus"
+  },
+  "data_types": [
+    "sante",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — Landes : victime d'une cyberattaque, une société d'ambulances lance un appel à sa patientèle (7 décembre 2022)",
+      "url": "https://www.sudouest.fr/landes/peyrehorade/landes-victime-d-une-cyberattaque-une-ambulance-de-peyrehorade-lance-un-appel-a-sa-patientele-13291069.php",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Landes : les ambulances d'une petite commune visées par une cyberattaque avec demande de rançon (8 décembre 2022)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/video-reportage-tf1-landes-les-ambulances-d-une-petite-commune-visees-par-une-cyberattaque-avec-demande-de-rancon-2241227.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 décembre 2022 en fin d'après-midi, les Ambulances des Trois Cantons subissent une cyberattaque avec demande de rançon. La société de transport sanitaire, basée à Peyrehorade (Landes), perd tous ses fichiers, agendas et rendez-vous, ainsi que les numéros de téléphone de ses patients. Le suivi de facturation est hors service. La société appelle sa patientèle à recontacter le centre et alerte l'Agence régionale de santé et la CPAM. L'exploitation fonctionne « au crayon et au papier » les jours suivants. Le rançongiciel en cause et d'éventuelles exfiltrations ne sont pas précisés.",
+  "timeline": [
+    {
+      "date": "2022-12-06",
+      "event": "Cyberattaque avec demande de rançon vers 17 h 30 : fichiers, rendez-vous et numéros de téléphone sont perdus, les deux logiciels touchés."
+    },
+    {
+      "date": "2022-12-07",
+      "event": "La société lance un appel à sa patientèle via Sud Ouest ; l'ARS et la CPAM sont alertées, l'exploitation reprend sur papier."
+    },
+    {
+      "date": "2022-12-08",
+      "event": "TF1 Info diffuse un reportage sur l'attaque visant cette société de transport sanitaire."
+    }
+  ]
+}

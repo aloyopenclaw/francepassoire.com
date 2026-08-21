@@ -1,0 +1,43 @@
+{
+  "slug": "id-logistics-20230319",
+  "entity": "ID Logistics",
+  "siren": "439986704",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-19",
+    "publication": "2023-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 3.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — La logistique, un secteur de choix pour les cyberattaques ? (22 mars 2023, mis à jour 30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — victime id-logistics.com revendiquée par LockBit3 (19 mars 2023)",
+      "url": "https://www.ransomware.live/id/aWQtbG9naXN0aWNzLmNvbUBsb2NrYml0Mw==",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 mars 2023, la franchise LockBit 3.0 publie ID Logistics, groupe français de logistique contractuelle, sur son site de fuite et revendique l'attaque. LeMagIT recense la revendication parmi les attaques ayant visé des spécialistes de la logistique en France en ce début 2023, aux côtés des Transports Douaud. Le groupe ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2023-03-19",
+      "event": "LockBit 3.0 publie id-logistics.com sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-03-22",
+      "event": "LeMagIT recense la revendication dans son panorama des attaques visant la logistique française."
+    }
+  ],
+  "group": "lockbit"
+}
