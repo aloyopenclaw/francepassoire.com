@@ -1,0 +1,46 @@
+{
+  "slug": "volkswagen-group-france-20251014",
+  "entity": "Volkswagen Group France",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-14",
+    "publication": "2025-10-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 2 000 fichiers / 150 Go revendiqués : propriétaires de véhicules (noms, adresses, e-mails, VIN, plaques d’immatriculation), identifiants SSO de salariés ; non confirmé par la filiale"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim: Volkswagen Group France (Qilin, 14 octobre 2025)",
+      "url": "https://www.ransomware.live/id/Vm9sa3N3YWdlbiBHcm91cCBGcmFuY2VAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "ICSSTRIVE — Ransomware Attack at Volkswagen Group France (novembre 2025)",
+      "url": "https://icsstrive.com/incident/ransomware-attack-at-volkswagen-group-france/",
+      "kind": "article"
+    },
+    {
+      "label": "Made in Perpignan — La ville d’Elne piratée (16 octobre 2025, rappelle l’attaque revendiquée contre Volkswagen France : 2 000 fichiers, 150 Go)",
+      "url": "https://madeinperpignan.com/elne-pirate-attaque-russe-rancon/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 octobre 2025, le groupe Qilin revendique une attaque contre Volkswagen Group France (Villers-Cotterêts), importateur des marques Audi, SEAT, CUPRA, Škoda et VW utilitaires. Le gang affirme avoir exfiltré environ 2 000 fichiers pour 150 Go et publie des échantillons : coordonnées de propriétaires de véhicules avec numéros de châssis et plaques d’immatriculation, journaux d’activité de salariés et identifiants SSO. La filiale n’a pas confirmé publiquement l’incident.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "Qilin revendique le vol d’environ 2 000 fichiers / 150 Go chez Volkswagen Group France et publie des échantillons."
+    }
+  ],
+  "group": "qilin"
+}

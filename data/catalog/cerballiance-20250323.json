@@ -1,0 +1,43 @@
+{
+  "slug": "cerballiance-20250323",
+  "entity": "Cerballiance (réseaux Provence-Azur et Alpes-Durance)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-23",
+    "publication": "2025-03-23",
+    "confirmation": "2025-04-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs milliers de patients des réseaux Provence-Azur et Alpes-Durance : noms, prénoms, e-mails, numéros de téléphone ; données de santé non atteintes selon le groupe"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "ici (Radio France) — Cyberattaque contre les laboratoires azuréens de Cerballiance (23 mars 2025)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/cyberattaque-contre-les-laboratoire-azureens-de-cerballiance-6681298",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Après une cyberattaque, les laboratoires Cerballiance invitent leurs clients à changer leurs mots de passe (1er mai 2025)",
+      "url": "https://www.leparisien.fr/high-tech/apres-une-cyberattaque-les-laboratoires-cerballiance-invitent-leurs-clients-a-changer-leurs-mots-de-passe-01-05-2025-H3IMBK36DRCPPKSYRT6IXJMRO4.php",
+      "kind": "article"
+    }
+  ],
+  "description": "À la mi-mars 2025, les laboratoires Cerballiance (réseaux Provence-Azur, 20 unités dans les Alpes-Maritimes, et Alpes-Durance) détectent un accès non autorisé à des données administratives de clients sur un serveur hébergé par leur partenaire informatique. Noms, prénoms, e-mails et numéros de portable de plusieurs milliers de patients ont pu être consultés ; les données de santé et de Sécurité sociale ne sont pas atteintes selon le groupe. Plainte déposée, CNIL et ANSSI saisies, personnes concernées contactées individuellement et invitées à changer leurs mots de passe.",
+  "timeline": [
+    {
+      "date": "2025-03-23",
+      "event": "Révélation publique de l’accès non autorisé sur un serveur du partenaire informatique : milliers de données administratives de patients concernées."
+    },
+    {
+      "date": "2025-04-30",
+      "event": "Courriel aux clients : mots de passe à changer, vigilance anti-arnaque ; incident signalé à la CNIL et à l’ANSSI."
+    }
+  ]
+}

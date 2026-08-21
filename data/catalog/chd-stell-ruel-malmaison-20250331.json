@@ -1,0 +1,52 @@
+{
+  "slug": "chd-stell-ruel-malmaison-20250331",
+  "entity": "Centre hospitalier Stell de Rueil-Malmaison (CHD Stell)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-31",
+    "publication": "2025-10-14",
+    "confirmation": "2025-10-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs serveurs Windows chiffrés ; gestion administrative des patients indisponible ; exfiltration de données personnelles « possible » selon le CERT Santé, aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CERT Santé (ANS) — Compromission du SI et ransomware au CHD Stell, retour d’expérience (14 octobre 2025)",
+      "url": "https://cyberveille.esante.gouv.fr/retours-d-experience/compromission-du-si-et-ransomware-au-chd-stell-2025-10-14",
+      "kind": "officiel"
+    },
+    {
+      "label": "Silicon.fr — Comment un ransomware s’est infiltré au CH Rueil-Malmaison (13 novembre 2025)",
+      "url": "https://www.silicon.fr/cybersecurite-1371/ransomware-centre-hospitalier-rueil-malmaison-224345",
+      "kind": "article"
+    },
+    {
+      "label": "TICsanté — Les leçons tirées de la cyberattaque contre le CH de Rueil-Malmaison",
+      "url": "https://www.ticsante.com/story?ID=7931",
+      "kind": "article"
+    }
+  ],
+  "description": "En mars 2025, le centre hospitalier Stell de Rueil-Malmaison est victime d’un rançongiciel : un ancien compte de test au mot de passe faible, doté de privilèges d’administrateur, est exploité à partir du 17 mars via VPN ; le chiffrement est déployé le 28 et constaté le 31. La gestion administrative des patients est indisponible et des données personnelles ont possiblement été exfiltrées. L’ANSSI et le CERT Santé interviennent sur site ; l’Agence du numérique en santé publie un retour d’expérience détaillé le 14 octobre 2025.",
+  "timeline": [
+    {
+      "date": "2025-03-17",
+      "event": "Accès initial via un compte de test réactivé à privilèges élevés ; latéralisation vers le contrôleur de domaine."
+    },
+    {
+      "date": "2025-03-31",
+      "event": "Chiffrement constaté ; VPN coupés, serveurs isolés, sauvegardes mises hors réseau ; ANSSI et CERT Santé sur site."
+    },
+    {
+      "date": "2025-10-14",
+      "event": "Le CERT Santé publie le retour d’expérience : exfiltration de données personnelles jugée possible."
+    }
+  ]
+}

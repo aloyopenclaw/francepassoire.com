@@ -1,0 +1,44 @@
+{
+  "slug": "michelin-20251121",
+  "entity": "Michelin",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-21",
+    "publication": "2026-03-11",
+    "confirmation": "2026-03-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plus de 315 Go d’archives publiées par Cl0p (campagne Oracle E-Business Suite) ; Michelin confirme un accès à des fichiers mais un « volume faible, localisé », sans donnée sensible selon l’entreprise"
+  },
+  "data_types": [
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "SecurityWeek — Michelin Confirms Data Breach Linked to Oracle EBS Attack (11 mars 2026)",
+      "url": "https://www.securityweek.com/michelin-confirms-data-breach-linked-to-oracle-ebs-attack/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: MICHELIN.COM (Cl0p, 21 novembre 2025)",
+      "url": "https://www.ransomware.live/id/TUlDSEVMSU4uQ09NQGNsb3A",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 21 novembre 2025, le groupe Cl0p inscrit Michelin sur son site d’extorsion dans sa campagne exploitant une faille zéro-day d’Oracle E-Business Suite. Le gang publie ensuite plus de 315 Go d’archives présentées comme exfiltrées du fabricant de pneumatiques. En mars 2026, Michelin confirme qu’une faille Oracle EBS a bien été exploitée et que des fichiers ont été consultés, tout en estimant qu’il s’agit d’un « volume faible, localisé », sans donnée sensible ni impact sur ses systèmes ; aucun rançongiciel n’a été déployé selon l’entreprise.",
+  "timeline": [
+    {
+      "date": "2025-11-21",
+      "event": "Cl0p liste Michelin sur son site d’extorsion (campagne Oracle EBS) et menace de publier les données."
+    },
+    {
+      "date": "2026-03-11",
+      "event": "Michelin confirme l’exploitation du zéro-day Oracle EBS et un accès à des fichiers, de « volume faible, localisé » ; plus de 315 Go publiés par le gang."
+    }
+  ],
+  "group": "clop"
+}

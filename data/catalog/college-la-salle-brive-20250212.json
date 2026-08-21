@@ -1,0 +1,43 @@
+{
+  "slug": "college-la-salle-brive-20250212",
+  "entity": "Collège La Salle (Brive-la-Gaillarde)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-12",
+    "publication": "2025-02-12",
+    "confirmation": "2025-02-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données de l’établissement chiffrées et volées, dont l’ensemble des bulletins scolaires ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Nouvelle-Aquitaine — « Le montant de la rançon était de 8 000 euros. » Ce collège perd tous les bulletins des élèves après une cyberattaque (12 février 2025)",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/correze/brive/le-montant-de-la-rancon-qui-etait-de-8-000-euros-ce-college-perd-tous-les-bulletins-des-eleves-apres-une-cyberattaque-3107128.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — « Nous avons perdu tous les bulletins scolaires »… Après une cyberattaque, les malfrats réclament une rançon à ce collège privé (14 février 2025)",
+      "url": "https://www.ladepeche.fr/2025/02/14/nous-avons-perdu-tous-les-bulletins-scolaires-apres-une-cyberattaque-les-malfrats-reclament-une-rancon-a-ce-college-prive-12513326.php",
+      "kind": "article"
+    }
+  ],
+  "description": "En janvier 2025, le collège privé La Salle de Brive-la-Gaillarde est frappé par un rançongiciel introduit par un courriel piégé ouvert par un salarié. Toutes les données de l’établissement sont chiffrées et volées, dont les bulletins scolaires de toutes les années, définitivement perdus. Une rançon de 8 000 euros est exigée puis refusée. L’établissement investit ensuite 25 000 euros dans un serveur de sauvegarde indépendant ; le rectorat conserve les diplômes mais pas les bulletins. L’incident est révélé par France 3 le 12 février 2025 et confirmé par la cheffe d’établissement.",
+  "timeline": [
+    {
+      "date": "2025-02-12",
+      "event": "Révélation de l’attaque survenue en janvier 2025 (jour exact non communiqué) : rançongiciel introduit par courriel piégé, données et bulletins scolaires chiffrés, rançon de 8 000 euros refusée."
+    },
+    {
+      "date": "2025-04-21",
+      "event": "France 3 fait le point : bulletins définitivement perdus, 25 000 euros investis dans un serveur de sauvegarde indépendant."
+    }
+  ]
+}

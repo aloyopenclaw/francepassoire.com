@@ -1,0 +1,44 @@
+{
+  "slug": "semco-technologies-20250630",
+  "entity": "SEMCO Technologies",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-30",
+    "publication": "2025-07-07",
+    "confirmation": "2025-07-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données personnelles de salariés (passeports, factures) publiées sur le darknet ; volume non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "La Tribune — Semi-conducteurs : Semco Technologies touchée par une cyberattaque de hackers russes (7 juillet 2025)",
+      "url": "https://www.latribune.fr/technos-medias/informatique/semi-conducteurs-semco-technologies-touchee-par-une-cyberattaque-de-hackers-russes-1029150.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: semco-tech.com (Qilin, 30 juin 2025)",
+      "url": "https://www.ransomware.live/id/c2VtY28tdGVjaC5jb21AcWlsaW4",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début juillet 2025, au moment de son introduction en Bourse sur Euronext Growth, la société héraultaise SEMCO Technologies (composants pour semi-conducteurs) est visée par une attaque du groupe russophone Qilin. Des données personnelles de salariés — passeports, factures — sont exfiltrées puis publiées sur le darknet, consulté par La Tribune. La société confirme l’attaque, indique avoir déployé « toutes les mesures nécessaires » et précise que ni les équipements ni l’entrée en Bourse n’ont été remis en cause.",
+  "timeline": [
+    {
+      "date": "2025-06-30",
+      "event": "Qilin revendique l’attaque contre semco-tech.com."
+    },
+    {
+      "date": "2025-07-07",
+      "event": "La Tribune révèle la revendication et la publication de données de salariés ; SEMCO confirme l’attaque."
+    }
+  ],
+  "group": "qilin"
+}

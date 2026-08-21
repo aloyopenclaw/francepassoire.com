@@ -1,0 +1,42 @@
+{
+  "slug": "mnhn-20250731",
+  "entity": "Muséum national d’Histoire naturelle",
+  "secteur": "recherche",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-31",
+    "publication": "2025-07-31",
+    "confirmation": "2025-08-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aspiration de données jugée « possible » par la présidence ; outils de recherche, bibliothèques et bases de collections indisponibles ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Tribune — Une cyberattaque cible le Muséum national d’Histoire naturelle, la recherche française affectée (31 juillet 2025)",
+      "url": "https://www.latribune.fr/technos-medias/informatique/une-cyberattaque-cible-le-museum-national-d-histoire-naturelle-la-recherche-francaise-affectee-1030706.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Le Muséum national d’Histoire naturelle de Paris victime d’une cyberattaque « sévère », une plainte déposée (12 août 2025)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/le-museum-national-d-histoire-naturelle-de-paris-victime-d-une-cyberattaque-severe-une-plainte-deposee_7430356.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin juillet 2025, La Tribune révèle une attaque informatique « sévère » contre le Muséum national d’Histoire naturelle (MNHN), établissement de recherche et d’enseignement. Depuis plusieurs semaines, une partie du réseau et des services en ligne — outils de recherche, bibliothèques, consultation des collections, inventaire national du patrimoine naturel — est indisponible. Le 12 août, la présidence parle d’une attaque « massive », juge « possible » une aspiration de données et confirme le dépôt de plainte, confirmé par le parquet de Paris. Pas de rançon payée.",
+  "timeline": [
+    {
+      "date": "2025-07-31",
+      "event": "Révélation par La Tribune d’une cyberattaque en cours contre le MNHN ; plateformes de recherche coupées."
+    },
+    {
+      "date": "2025-08-12",
+      "event": "Le MNHN confirme une attaque « massive », une aspiration de données « possible » et un dépôt de plainte (parquet de Paris)."
+    }
+  ]
+}

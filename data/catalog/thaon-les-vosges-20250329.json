@@ -1,0 +1,57 @@
+{
+  "slug": "thaon-les-vosges-20250329",
+  "entity": "Commune de Thaon-les-Vosges",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-29",
+    "publication": "2025-04-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "9,15 Go de documents internes diffusés sur le darkweb selon Zataz (état civil, personnel, listes de jurés d’assises) ; la commune conteste tout vol de données"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Des pirates diffusent des données volées de la mairie de Thaon-les-Vosges (7 avril 2025)",
+      "url": "https://www.zataz.com/des-pirates-diffusent-des-donnees-volees-de-la-mairie-de-thaon-les-vosges/",
+      "kind": "article"
+    },
+    {
+      "label": "Vosges Télévision — Cyberattaque à Thaon : aucune preuve pour l’heure d’un vol (9 avril 2025)",
+      "url": "https://www.vosgestelevision.tv/Info-en-plus/Cyberattaque-Thaon-aucune-preuve-pour-heure-un-vol-KPVVrF7vrD.html",
+      "kind": "article"
+    },
+    {
+      "label": "Vosges Matin — Épinal : les collectivités font face à la menace croissante des cyberattaques (18 octobre 2025)",
+      "url": "https://www.vosgesmatin.fr/societe/2025/10/18/epinal-les-collectivites-font-face-a-la-menace-croissante-des-cyberattaques",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: Thaon-les-Vosges (DragonForce, 29 mars 2025)",
+      "url": "https://www.ransomware.live/id/VGhhb24tbGVzLVZvc2dlc0BkcmFnb25mb3JjZQ",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Mi-mars 2025, la mairie de Thaon-les-Vosges subit une cyberattaque : les ordinateurs sont bloqués et une rançon de plusieurs millions d’euros est exigée. Le groupe DragonForce revendique l’attaque le 29 mars ; début avril, 9 Go de documents internes — état civil, données d’employés et d’élus, listes de jurés d’assises — sont diffusés sur le darkweb selon Zataz. La commune conteste tout vol : elle ne constate aucun fichier manquant et l’enquête (gendarmerie, cybersécurité Grand Est) se poursuit. Plainte déposée.",
+  "timeline": [
+    {
+      "date": "2025-03-29",
+      "event": "DragonForce revendique l’attaque de la commune ; rançon de plusieurs millions d’euros exigée pour débloquer les postes."
+    },
+    {
+      "date": "2025-04-07",
+      "event": "Zataz documente la diffusion de 9,15 Go de documents internes sur le darkweb (état civil, personnel, jurés d’assises)."
+    },
+    {
+      "date": "2025-04-09",
+      "event": "La commune répond n’avoir aucun fichier manquant sur 1 000 Go ; aucune preuve d’un vol à ce stade."
+    }
+  ],
+  "group": "dragonforce"
+}

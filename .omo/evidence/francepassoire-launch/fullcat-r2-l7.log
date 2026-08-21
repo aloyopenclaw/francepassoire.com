@@ -1,0 +1,96 @@
+# fullcat rafale 2 — lane 7 — fiches 2025 presse spécialisée hors CNIL (20 livrées / 20 demandées)
+date: 2026-08-21 09:35 UTC | branche: fiche/rafale2-l7 | worktree: fp-r2l7 | base: 2eea8cc (main, 420 fiches)
+
+## Méthode
+- Axe manquant du catalogue : incidents 2025 non issus des sanctions CNIL — revendiqués (ransomware.live)
+  et/ou confirmés via presse. Aucune fiche CNIL, aucune fiche 2026 (événements déclencheurs 2025 uniquement ;
+  confirmation Michelin en 2026-03 admise car la revendication Cl0p date de 2025-11).
+- Enumération : API https://api.ransomware.live/victims/2025 (1 req/min, 8 147 victimes, 189 France)
+  + agrégateur konbriefing.com (liste France 2025) + recherches presse par candidat.
+- DEDUP vs main (420 fiches, `ls data/catalog | sort`, lecture des fiches ambiguës
+  pierre-vacances-20260515 / cerballiance-20260325 / sorbonne-universite-20250606 / cnfpt-20250704 /
+  france-travail-20250722 / harvest-20250228) : les doublons CNIL-2025 déjà catalogués (Intersport, Kiabi,
+  Chronopost, Caisse des dépôts, Dior, Indigo, Autosur, Afflelou, Easy Cash, FFF, Sorbonne-juin, CNFPT,
+  France Travail-juillet, Hôpital privé Loire, Bouygues, Orange, Kering/Cartier/AFK, Clarins, Afpa,
+  Région HdF, Atalian, Weda…) sont exclus. Cibles approchées puis ÉCARTÉES pour cause de doublon,
+  d'absence de fuite de données (DDoS NoName : Aude-janv, Côte-d'Or, BdR, CCI HdF, Enercoop, Bourget),
+  d'événement 2026 (Pronote, Éducation nationale-avril, Cnous/MesRDV, RED by SFR, RN, Collège de France,
+  maeva/P&V-2026, Cerballiance-2026), de tentative sans compromission (CHPF Polynésie, Showroomprivé,
+  BPCE CNAME = fausse alerte documentée 01net/commentcamarche), de nature non-données-perso (Naval Group,
+  Salon du Bourget) ou de sources insuffisantes (< 2 indépendantes : Compagnons du Devoir, CESI, Mazars,
+  Sodexo FR, Air Liquide, Top4Fans, Janvier Labs, Eurofins, Christofle, BCR, Typologie/Paris Rétina Vision/
+  EURORDIS hors couverture individuelle, Lorient, Pézenas, AKTO, Delfingen, Bain-de-Bretagne, Ostheim,
+  Font-Romeu, Boostheat, Linedata-WarLock non-vérifiable).
+- Filtre qualité : ≥ 2 sources indépendantes par fiche (presse whitelistée en priorité : Le Parisien,
+  La Dépêche, ZDnet.fr, 01net, franceinfo/France 3/ici, BFM ; sinon presse régionale/national reconnue
+  (Sud Ouest, La Tribune, Ouest-France via France 3, L'Indépendant, actu.fr, Le Dauphiné, Vosges
+  Matin/Télévision, Silicon, LeMagIT, TICsanté, ChannelNews, SecurityWeek, ICSSTRIVE, DailyDarkWeb,
+  Leakd, DarkWebInformer, Made in Perpignan), communiqués officiels (Linedata, France terre d'asile,
+  CERT Santé/ANS) et pages victimes ransomware.live (kind revendication)).
+- Chaque URL source curl-ée (UA navigateur, suivi redirections) : HTTP 200 + mot-clé entité greppé dans
+  le HTML (résultats ci-dessous). Sources 403/503 (bots : ouest-france.fr ×1, usine-digitale.fr ×3,
+  cybernews.com, cyberbreaches.org) remplacées par des équivalents vérifiés ou retirées.
+- Zéro invention : volumes non chiffrés → count 0 + label honnête ; seuls chiffrés retenus (MGP 5 000
+  personnes, Center Parcs 20 000) ; date d'attaque inconnue (La Salle Brive, « janvier 2025 ») → date de
+  première médiatisation utilisée, jour exact explicitement marqué non communiqué ; position de
+  l'entité contestatrice toujours rapportée (Thaon, Elne, Michelin, Gers, FTDA).
+- Bornes Ton A : 20/20 descriptions ≤ 120 mots (max 91) ; timeline ≤ 40 mots/événement (max 31).
+
+## Fiches (20)
+| # | slug | événement | statut | sources (kind) |
+|---|------|-----------|--------|----------------|
+| 1 | college-la-salle-brive-20250212 | ransomware collège privé Brive, bulletins perdus, rançon 8 k€ | confirmee | France 3 + La Dépêche |
+| 2 | commune-de-berson-20250221 | ransomware mairie (Gironde), chiffrement + menace Tor | confirmee | Sud Ouest + actu.fr + France 3 |
+| 3 | metropole-du-grand-paris-20250306 | extraction frauduleuse, ≈ 5 000 pers. (agents/élus/partenaires) | confirmee | Le Parisien + ici |
+| 4 | cerballiance-20250323 | accès non autorisé serveur partenaire, milliers de patients | confirmee | ici + Le Parisien |
+| 5 | universite-de-rennes-20250308 | FunkSec revendique 50 Go ; incident « portée limitée » | revendiquee | France 3 + ransomware.live |
+| 6 | thaon-les-vosges-20250329 | DragonForce, 9,15 Go diffusés (Zataz), commune conteste | revendiquee | Zataz + Vosges TV + Vosges Matin + RL |
+| 7 | chd-stell-ruel-malmaison-20250331 | ransomware CH Stell, REX CERT Santé, exfil possible | confirmee | CERT Santé (officiel) + Silicon + TICsanté |
+| 8 | departement-hauts-de-seine-20250520 | cyberattaque grande ampleur, SI coupés | confirmee | ZDnet + La Tribune + franceinfo |
+| 9 | center-parcs-20250604 | intrusion réservations tél., ≈ 20 000 clients, CNIL saisie | confirmee | 01net + Zataz |
+| 10 | semco-technologies-20250630 | Qilin, passeports/factures salariés publiés, société confirme | confirmee | La Tribune + RL |
+| 11 | mnhn-20250731 | attaque « sévère/massive », données peut-être aspirées, plainte | confirmee | La Tribune + franceinfo |
+| 12 | centre-hospitalier-du-gers-20250806 | incident possiblement ransomware, DPI dégradé | confirmee | La Dépêche + LeMagIT |
+| 13 | linedata-20250811 | chiffrement domaine Asset Management (Icon), plainte | confirmee | Linedata (officiel) + ChannelNews |
+| 14 | compagnie-des-guides-de-chamonix-20250815 | vol e-mails base clients, chantage refusé, radar revendique | confirmee | Le Dauphiné + ici + RL |
+| 15 | pathoquest-20250901 | Qilin publie 147 Go / 171 577 fichiers | revendiquee | DailyDarkWeb + Leakd + RL |
+| 16 | ville-de-saint-claude-20251006 | Qilin revendique mairie (Jura), volume inconnu | revendiquee | RL + DarkWebInformer + actu.fr |
+| 17 | volkswagen-group-france-20251014 | Qilin, ≈ 2 000 fichiers / 150 Go (propriétaires, VIN, SSO) | revendiquee | RL + ICSSTRIVE + Made in Perpignan |
+| 18 | ville-elne-20251015 | SI paralysé 4-5 oct., Qilin revendique, mairie conteste | revendiquee | L'Indépendant + actu.fr + franceinfo |
+| 19 | michelin-20251121 | Cl0p (Oracle EBS), > 315 Go publiés, Michelin confirme accès limité | confirmee | SecurityWeek + RL |
+| 20 | france-terre-d-asile-20251201 | Qilin ; ransomware confirmé par communiqué, plainte + CNIL | confirmee | FTDA (officiel) + RL |
+
+Répartition statuts : 13 confirmee / 7 revendiquee — toutes 2025 (janv.→déc.).
+
+## Vérifications
+- zod (vitest 4.1.11, worktree, node_modules symlinké du repo principal) :
+  tests/pr-fiches.test.ts → Test Files 1 passed, Tests 440 passed (420 existantes + 20 nouvelles).
+- suite complète : npx vitest run → 29 fichiers / 802 tests passed.
+- URLs sources (curl -L, UA navigateur ; « code occurrences motif ») :
+  200 47 lsb1  France 3 Brive (Brive) ; 200 3 lsb2  La Dépêche Brive
+  200 46 berson1  Sud Ouest ; 200 14 berson2  actu.fr ; 200 9 berson3  France 3
+  200 2 mgp1  Le Parisien ; 200 5 mgp2  ici (Radio France)
+  200 5 cerba2  ici Cerballiance ; 200 2 cerba1  Le Parisien
+  200 19 rlrennes  RL univ-rennes ; 200 53 rennes1  France 3 Rennes
+  200 67 thaon1  Zataz ; 200 21 thaon2  Vosges Télévision ; 200 8 thaon3  Vosges Matin ; 200 16 rlthaon  RL
+  200 4 rueil1  CERT Santé (officiel) ; 200 24 rueil2  Silicon ; 200 4 rueil3  TICsanté
+  200 15 hds1  ZDnet ; 200 2 hds2  La Tribune ; 200 25 hds3  franceinfo
+  200 13 cp1  01net ; 200 17 cp2  Zataz
+  200 2 semco1  La Tribune ; 200 15 rlsemco  RL
+  200 2 mnhn1  La Tribune ; 200 56 mnhn2  franceinfo
+  200 50 gers1  La Dépêche ; 200 1 gers2  LeMagIT
+  200 159 linedata1  Linedata (officiel) ; 200 14 linedata2  ChannelNews
+  200 34 cham1  Le Dauphiné ; 200 6 cham2  ici ; 200 15 rlcham  RL radar
+  200 24 pq1  DailyDarkWeb ; 200 10 pq2  Leakd ; 200 15 rlpq  RL
+  200 1 sc1  DarkWebInformer ; 200 1 rlsc  RL Saint-Claude
+  200 15 rlvw  RL VW ; 200 4 vw1  ICSSTRIVE ; 200 1 vw2  Made in Perpignan
+  200 47 elne1  L'Indépendant ; 200 11 elne2  actu.fr ; 200 45 elne3  franceinfo (Qilin)
+  200 35 mic1  SecurityWeek ; 200 15 rlmic  RL Michelin/Cl0p
+  200 68 ftda1  france-terre-asile.org (officiel) ; 200 16 rlftda  RL
+  Écartées (non 2xx ou bots) : ouest-france.fr (403), usine-digitale.fr ×3 (403), cybernews.com (403),
+  cyberbreaches.org (503), zataz.com/apres-la-cyberattaque-lhopital-stell… (404 ; remplacé TICsanté).
+- API ransomware.live /victims/2025 : 200, 8 147 entrées, 189 FR (rate-limit 1/min respecté).
+
+## Non-fusion
+PR ouverte, JAMAIS mergée par la lane — chaîne d'intégrité + merge unique en Vague C.
+Aucun post social. Registre/ancrages : hors périmètre L7 (lane trust dédiée après merge).
