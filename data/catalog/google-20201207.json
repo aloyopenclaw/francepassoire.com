@@ -1,0 +1,53 @@
+{
+  "slug": "google-20201207",
+  "entity": "Google LLC et Google Ireland Limited",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-07",
+    "publication": "2020-12-10",
+    "confirmation": "2020-12-07"
+  },
+  "volume": {
+    "count": 47000000,
+    "unit": "personnes",
+    "label": "au moins 47 millions d'utilisateurs de google.fr concernés selon la délibération ; amendes de 60 et 40 millions d'euros"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE SERVICES TECHNOLOGIQUES », sanctions pécuniaires de 60 et 40 millions d'euros et injonctions sous astreinte (7 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport d'activité 2020 (PDF officiel) : sanctions d'un total de 100 millions d'euros à l'encontre de Google pour manquements aux règles des cookies",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d'État, décision n° 449209 du 28 janvier 2022 — requête de Google LLC et Google Ireland Limited contre la délibération SAN-2020-012 rejetée",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-01-28/449209",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cabinet Ledieu — Jurisprudence CNIL cookies et traceurs novembre-décembre 2020 (délibération SAN-2020-012, 7 cookies déposés avant toute action)",
+      "url": "https://ledieu-avocats.fr/jurisprudence-cnil-cookie-traceur-nov-dec-2020/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 décembre 2020, la formation restreinte de la CNIL a sanctionné Google LLC de 60 millions d'euros et Google Ireland Limited de 40 millions d'euros (délibération SAN-2020-012). À l'arrivée sur google.fr, sept cookies étaient déposés avant toute action de l'internaute. La CNIL retient un défaut d'information, l'absence de consentement préalable et un mécanisme d'opposition partiellement défaillant. Une injonction sous astreinte de 100 000 euros par jour de retard accompagne les amendes. Selon la décision, google.fr comptait au moins 47 millions d'utilisateurs en France. Le Conseil d'État a rejeté le recours le 28 janvier 2022.",
+  "timeline": [
+    {
+      "date": "2020-12-07",
+      "event": "Amendes de 60 et 40 millions d'euros (SAN-2020-012) : cookies déposés sans consentement ni information suffisante sur google.fr."
+    },
+    {
+      "date": "2022-01-28",
+      "event": "Le Conseil d'État rejette la requête d'annulation formée par Google LLC et Google Ireland Limited."
+    }
+  ]
+}

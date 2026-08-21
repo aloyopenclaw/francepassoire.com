@@ -1,0 +1,37 @@
+{
+  "slug": "syndicat-de-coproprietaires-20130110",
+  "entity": "Un syndicat de copropriétaires (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-01-10",
+    "confirmation": "2013-01-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction pécuniaire non chiffrée publiquement et injonction à cesser le traitement ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SYNDICAT DE COPROPRIETAIRES », sanction pécuniaire et injonction à cesser le traitement (10 janvier 2013, vidéosurveillance)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 10/01/2013 — vidéosurveillance, non-respect de proportionnalité du dispositif",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 10 janvier 2013, la formation restreinte de la CNIL a sanctionné un syndicat de copropriétaires d'une sanction pécuniaire et d'une injonction à cesser le traitement, sur fond de vidéosurveillance. Le manquement retenu : non-respect de la proportionnalité du dispositif installé dans l'immeuble. La dénomination et le montant ne sont pas publics. Le tableau officiel des sanctions, dont la version archivée de novembre 2018 confirme la teneur, décrit la décision au thème vidéosurveillance. La proportionnalité des caméras en copropriété — périmètre restreint aux zones justifiées, information des occupants, durées limitées — constitue depuis une doctrine constante de la CNIL en matière de vidéoprotection privée.",
+  "timeline": [
+    {
+      "date": "2013-01-10",
+      "event": "Sanction pécuniaire et injonction à cesser le traitement : dispositif de vidéosurveillance disproportionné en copropriété."
+    }
+  ]
+}

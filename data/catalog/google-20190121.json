@@ -1,0 +1,40 @@
+{
+  "slug": "google-20190121",
+  "entity": "Google LLC",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-01-21",
+    "publication": "2019-01-21",
+    "confirmation": "2019-01-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 50 millions d'euros ; nombre de personnes concernées non chiffré par la décision"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ÉDITEUR DE SYSTÈME D'EXPLOITATION », sanction pécuniaire de 50 millions d'euros (21 janvier 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 40e rapport d'activité 2019 (PDF officiel) : la formation restreinte prononce une sanction de 50 millions d'euros à l'encontre de la société Google LLC",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-40e_rapport_annuel_2019.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 janvier 2019, la formation restreinte de la CNIL a prononcé une sanction pécuniaire de 50 millions d'euros à l'encontre de Google LLC (délibération SAN-2019-001), première grande amende française fondée sur le RGPD. À l'origine, deux plaintes collectives déposées par La Quadrature du Net et None Of Your Business. Manquements retenus : manque de transparence, information insatisfaisante et absence de consentement valable pour la personnalisation publicitaire lors de la création d'un compte Android. Le 40e rapport annuel de la CNIL présente alors cette sanction comme la plus lourde jamais prononcée en Europe par une autorité de protection des données.",
+  "timeline": [
+    {
+      "date": "2019-01-21",
+      "event": "Amende de 50 millions d'euros (SAN-2019-001) : transparence, information et consentement défaillants lors de la création d'un compte Android."
+    }
+  ]
+}

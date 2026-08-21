@@ -1,0 +1,50 @@
+{
+  "slug": "kg-com-20230608",
+  "entity": "KG COM (société de voyance en téléconsultation)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-08",
+    "publication": "2023-06-15",
+    "confirmation": "2023-06-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 150 000 euros (120 000 RGPD + 30 000 cookies) ; l'exposition de 2020, environ 8 millions de personnes selon Numerama, a déclenché les contrôles"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE VOYANCE », amende de 150 000 euros (8 juin 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — Données personnelles : la CNIL inflige une amende de 150 000 euros à une société de voyance en ligne (KG COM, 16 juin 2023)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/donnees-personnelles-la-cnil-inflige-une-amende-de-150-000-euros-a-une-societe-de-voyance-en-ligne_AD-202306160169.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde du Droit — Voyance en ligne : fuite de données personnelles (délibération SAN-2023-008 du 8 juin 2023, KG COM)",
+      "url": "https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/87775-voyance-en-ligne-fuite-de-donnees-personnelles.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 juin 2023, la formation restreinte de la CNIL a sanctionné KG COM, société de voyance par téléphone et par internet, de 150 000 euros (délibération SAN-2023-008) : 120 000 euros pour les manquements au RGPD et 30 000 euros pour les cookies. Les contrôles faisaient suite à la révélation, en 2020, de l'exposition des données d'environ 8 millions de personnes selon Numerama. La CNIL relève l'enregistrement systématique des appels, la collecte de données sensibles sans consentement, la conservation de données bancaires, un défaut de sécurité et une violation non documentée. La situation financière déficitaire de la société a été prise en compte.",
+  "timeline": [
+    {
+      "date": "2023-06-08",
+      "event": "Amende de 150 000 euros (SAN-2023-008) : données sensibles sans consentement, sécurité insuffisante, cookies non conformes."
+    },
+    {
+      "date": "2023-06-15",
+      "event": "La CNIL annonce la sanction ; la société exerçait en chef de file européen pour huit autorités concernées."
+    }
+  ]
+}

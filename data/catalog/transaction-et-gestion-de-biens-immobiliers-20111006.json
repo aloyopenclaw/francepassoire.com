@@ -1,0 +1,39 @@
+{
+  "slug": "transaction-et-gestion-de-biens-immobiliers-20111006",
+  "entity": "Une société de transaction et de gestion de biens immobiliers (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2011-10-06",
+    "confirmation": "2011-10-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement non public ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « TRANSACTION ET GESTION DE BIENS IMMOBILIERS », avertissement non public (6 octobre 2011)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 06/10/2011 — immobilier, formalités préalables et défaut de réponse",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 6 octobre 2011, la formation restreinte de la CNIL a adressé un avertissement non public à une société de transaction et de gestion de biens immobiliers. Manquements retenus : défaut de formalités préalables et absence de réponse aux demandes de la CNIL. La dénomination n'est pas publique. Le tableau officiel des sanctions, vérifié dans sa version archivée de novembre 2018, rattache la décision au thème immobilier. Ce même jour, une société de gestion immobilière recevait elle aussi un avertissement non public, pour des commentaires excessifs et des données de santé et opinions religieuses consignées dans son fichier de relation.",
+  "timeline": [
+    {
+      "date": "2011-10-06",
+      "event": "Avertissement non public : formalités préalables non accomplies et défaut de réponse à la CNIL."
+    }
+  ]
+}

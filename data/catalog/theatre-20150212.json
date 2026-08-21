@@ -1,0 +1,38 @@
+{
+  "slug": "theatre-20150212",
+  "entity": "Un théâtre (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2015-02-12",
+    "confirmation": "2015-02-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement public (délibération n° 2015-040) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « THEATRE* », avertissement public (12 février 2015, prospection politique — astérisque : recours pendant devant le Conseil d'État selon le tableau)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 12/02/2015 — prospection politique, données incompatibles avec la finalité de collecte",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 12 février 2015, la formation restreinte de la CNIL a rendu public un avertissement prononcé à l'encontre d'un théâtre (délibération n° 2015-040). L'affaire portait sur de la prospection politique : des données collectées pour une finalité avaient été réutilisées pour une finalité incompatible avec celle de la collecte initiale. Le tableau officiel des sanctions signale d'un astérisque qu'un recours était alors pendant devant le Conseil d'État. La dénomination n'est pas publique. Le même jour, deux personnes physiques ont reçu des avertissements non publics pour des traitements comparables de prospection politique, inscrits à la même table annuelle.",
+  "timeline": [
+    {
+      "date": "2015-02-12",
+      "event": "Avertissement public (délibération 2015-040) : réutilisation de données pour une prospection politique incompatible avec la finalité d'origine."
+    }
+  ]
+}
