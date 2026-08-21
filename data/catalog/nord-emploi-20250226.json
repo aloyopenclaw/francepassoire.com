@@ -1,0 +1,39 @@
+{
+  "slug": "nord-emploi-20250226",
+  "entity": "Nord Emploi (Département du Nord)",
+  "siren": "225900018",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-26"
+  },
+  "volume": {
+    "count": 200000,
+    "unit": "comptes",
+    "label": "200 000 comptes revendiqués en vente sur un forum (périmètre non confirmé par le Département du Nord)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Nord Emploi : fuite de données concernant 200K comptes",
+      "url": "https://frenchbreaches.com/alertes/nord-emploi-62a0e156a6ea",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Nord Emploi, 26 février 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début février 2025, le site Nord Emploi (emploi.lenord.fr), service du conseil départemental du Nord, est la cible d'une cyberattaque relayée par la presse régionale. Le 26 février 2025, une base revendiquée d'environ 200 000 comptes apparaît en vente sur un forum : identités, coordonnées, CV, mais aussi formulaires RSA et CAF, numéros d'allocataire et organismes référents. La sensibilité sociale de ces données expose les personnes concernées à des tentatives d'hameçonnage ciblées. L'exfiltration est revendiquée par un tiers ; elle n'est pas confirmée publiquement par le Département.",
+  "timeline": [
+    {
+      "date": "2025-02-26",
+      "event": "Une base revendiquée d'environ 200 000 comptes du site Nord Emploi est documentée en vente sur un forum."
+    }
+  ]
+}

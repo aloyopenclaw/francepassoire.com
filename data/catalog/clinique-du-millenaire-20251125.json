@@ -1,0 +1,43 @@
+{
+  "slug": "clinique-du-millenaire-20251125",
+  "entity": "Clinique du Millénaire (Marseille)",
+  "siren": "458800349",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-25"
+  },
+  "volume": {
+    "count": 45000,
+    "unit": "personnes",
+    "label": "≈ 45 000 dossiers patients exfiltrés via l'éditeur Weda (revendiqué, non confirmé par l'établissement)"
+  },
+  "data_types": [
+    "sante",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez la Clinique du Millénaire (via Weda) : 45K comptes",
+      "url": "https://frenchbreaches.com/alertes/clinique-du-millenaire-via-weda-4e9afb72a47a",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Clinique du Millénaire, via Weda, 25 novembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données Clinique du Millénaire (via Weda)",
+      "url": "https://hginfoandco.com/fuite/162-clinique-du-millenaire-via-weda",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 novembre 2025, dans le sillage de la cyberattaque contre l'éditeur de logiciels médicaux Weda, une base revendiquée d'environ 45 000 dossiers patients de la clinique du Millénaire à Marseille est recensée : antécédents médicaux, comptes rendus, identités complètes et numéros de Sécurité sociale. L'établissement figure parmi les structures dont les données transitaient par la plateforme de l'éditeur ; il n'a pas confirmé publiquement ce périmètre. Les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-25",
+      "event": "Une base revendiquée d'environ 45 000 dossiers patients de la clinique du Millénaire, via Weda, est recensée."
+    }
+  ]
+}

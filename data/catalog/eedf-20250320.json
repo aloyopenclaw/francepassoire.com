@@ -1,0 +1,38 @@
+{
+  "slug": "eedf-20250320",
+  "entity": "Éclaireuses et Éclaireurs de France (EEDF)",
+  "siren": "775675598",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-20"
+  },
+  "volume": {
+    "count": 44000,
+    "unit": "personnes",
+    "label": "44 000 adhérents (dont des mineurs) revendiqués, non confirmés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Éclaireuses et Éclaireurs de France (EEDF) touché par une fuite de données",
+      "url": "https://frenchbreaches.com/alertes/eclaireuses-et-eclaireurs-de-france-eedf-8e6bfd6c28b2",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Éclaireuses et Éclaireurs de France, 20 mars 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 mars 2025, une fuite revendiquée de l'association de scoutisme laïque Éclaireuses et Éclaireurs de France est recensée : environ 44 000 adhérents, avec identités, dates et lieux de naissance, professions, adresses postales, e-mails et téléphones. La présence de mineurs parmi les licenciés accentue le risque d'exploitation malveillante de ces données. L'association n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-03-20",
+      "event": "Une base revendiquée d'environ 44 000 adhérents de l'EEDF est recensée par les veilles cyber."
+    }
+  ]
+}
