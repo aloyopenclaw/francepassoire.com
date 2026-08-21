@@ -1,0 +1,38 @@
+{
+  "slug": "groupe-cloue-20260810",
+  "entity": "Groupe Cloué",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-10",
+    "publication": "2026-08-10"
+  },
+  "volume": {
+    "count": 9146,
+    "unit": "enregistrements",
+    "label": "6,7 Go et 9 146 fichiers revendiqués, présentés comme le « BlgCloud Leak #3 » ; messagerie et CRM de l’entreprise (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque BlgCloud : Groupe Cloué visé par une nouvelle publication de données",
+      "url": "https://frenchbreaches.com/alertes/groupe-clou-blgcloud-msnd05otu1hyrbmzqy",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Groupe Cloué : 6,7 Go de données et plus de 9 000 fichiers publiés après une cyberattaque",
+      "url": "https://www.cyberattaque.org/groupe-cloue-67-go-de-donnees-et-plus-de-9-000-fichiers-publies-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 août 2026, troisième volet de la série « BlgCloud Leak » consécutive à la compromission revendiquée de l’ERP BlgCloud : des données attribuées au Groupe Cloué sont publiées sur un forum cybercriminel — environ 6,7 Go répartis dans 9 146 fichiers. Les échantillons montrent des informations issues de la messagerie et du CRM de l’entreprise, dont des adresses e-mail professionnelles, des métadonnées et objets de messages, des identifiants internes et des références à des documents. Selon la revendication, la fuite provient de l’environnement ou du compte BlgCloud du groupe et non d’une compromission directe de son système d’information ; l’authenticité de l’ensemble et le nombre de personnes concernées restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-10",
+      "event": "Publication du « BlgCloud Leak #3 » attribué au Groupe Cloué : 6,7 Go et 9 146 fichiers annoncés."
+    }
+  ]
+}

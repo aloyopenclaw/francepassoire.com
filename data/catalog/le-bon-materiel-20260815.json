@@ -1,0 +1,40 @@
+{
+  "slug": "le-bon-materiel-20260815",
+  "entity": "Le Bon Matériel",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-15",
+    "publication": "2026-08-15"
+  },
+  "volume": {
+    "count": 48290,
+    "unit": "enregistrements",
+    "label": "13,8 Go et 48 290 fichiers revendiqués, présentés comme le « BlgCloud Leak #7 » ; messagerie professionnelle et CRM de l’entreprise (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque BlgCloud : Le Bon Matériel visé par une fuite de 13,8 Go et 48 290 fichiers",
+      "url": "https://frenchbreaches.com/alertes/le-bon-mat-riel-blgcloud-mstkb430kht3b29drb",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Lebonmateriel.fr : 13,8 Go et 48 290 fichiers diffusés après le piratage de son compte BlgCloud",
+      "url": "https://www.cyberattaque.org/lebonmateriel-fr-138-go-et-48-290-fichiers-diffuses-apres-le-piratage-de-son-compte-blgcloud/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 août 2026, septième volet de la série « BlgCloud Leak » issue de la compromission revendiquée de l’ERP BlgCloud : l’auteur publie des données attribuées à Le Bon Matériel (lebonmateriel.fr), entreprise française de vente de matériels agricoles, machines, pièces détachées et équipements professionnels. La publication annonce 13,8 Go et 48 290 fichiers ; les échantillons montrent une messagerie professionnelle (objets, destinataires, contenus de messages), des données CRM avec noms, e-mails, téléphones et coordonnées professionnelles, des références à des devis et documents PDF, ainsi que des éléments de configuration d’un compte de messagerie. Comme pour les autres victimes de la série, la compromission passerait par l’instance BlgCloud de l’entreprise ; les volumes restent non confirmés.",
+  "timeline": [
+    {
+      "date": "2026-08-15",
+      "event": "Publication du « BlgCloud Leak #7 » attribué à Le Bon Matériel : 13,8 Go et 48 290 fichiers annoncés, avec messagerie et CRM en échantillons."
+    }
+  ]
+}

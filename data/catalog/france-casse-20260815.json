@@ -1,0 +1,39 @@
+{
+  "slug": "france-casse-20260815",
+  "entity": "France Casse",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-15",
+    "publication": "2026-08-16"
+  },
+  "volume": {
+    "count": 512,
+    "unit": "comptes",
+    "label": "512 comptes clients revendiqués ; l’examen des fichiers par Cyberattaque.org relève des données massivement répétées et ne permet pas d’établir qu’une nouvelle compromission a eu lieu (revendiqué, contesté)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données France Casse : une base contenant les informations de 512 utilisateurs revendiquée",
+      "url": "https://frenchbreaches.com/alertes/france-casse-msv87fj5v652mg9x2mn",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — France Casse : 500 comptes clients, adresses et commandes revendiqués dans une nouvelle fuite",
+      "url": "https://www.cyberattaque.org/francecasse-500-comptes-clients-adresses-et-commandes-exposes-dans-une-nouvelle-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 août 2026, une publication sur un forum cybercriminel revendique une nouvelle compromission de France Casse, plateforme française de mise en relation autour des pièces automobiles d’occasion et des centres de véhicules hors d’usage : 512 comptes ou utilisateurs annoncés, avec adresses e-mail, noms, prénoms, adresses postales, téléphones, données de comptes et commandes. L’examen des fichiers par Cyberattaque.org révèle toutefois d’importantes anomalies : les mêmes données y sont répétées massivement, ce qui gonfle artificiellement le volume apparent de la base. En l’état, rien ne permet d’établir qu’une nouvelle compromission de France Casse a réellement eu lieu ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2026-08-15",
+      "event": "Revendication d’une nouvelle fuite France Casse : 512 comptes annoncés ; l’examen des fichiers fait ensuite douter de la réalité d’une nouvelle compromission."
+    }
+  ]
+}

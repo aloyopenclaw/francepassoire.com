@@ -1,0 +1,38 @@
+{
+  "slug": "clcv-20260808",
+  "entity": "CLCV (Consommation, Logement et Cadre de Vie)",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-08",
+    "publication": "2026-08-08"
+  },
+  "volume": {
+    "count": 80031,
+    "unit": "personnes",
+    "label": "80 031 lignes et dossiers de consommateurs (JSON, 108,8 Mo) incluant coordonnées et contenu détaillé des demandes adressées à l’association (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage revendiqué de la CLCV : les données de plus de 80 000 personnes seraient compromises",
+      "url": "https://frenchbreaches.com/alertes/clcv-consommation-logement-et-cadre-de-vie-mskk2jbes84h2ad5fra",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — CLCV : 80 031 dossiers de consommateurs revendiqués avec leurs litiges et coordonnées",
+      "url": "https://www.cyberattaque.org/cyberattaque-association-nationale-de-consommateurs-et-usagers/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 août 2026, un hacker publie sur un forum cybercriminel une base attribuée à la CLCV, association nationale de défense des consommateurs et usagers : 80 031 lignes au format JSON pour environ 108,8 Mo. L’échantillon diffusé montre des noms, prénoms, numéros de téléphone, adresses e-mail et codes postaux, accompagnés d’informations détaillées sur les demandes et litiges adressés à l’association — motifs, résumés de situations, statuts de traitement, professionnels mis en cause et méthodes de vente ou de paiement. Cette combinaison rend les personnes identifiées et leurs litiges de consommation particulièrement sensibles ; l’authenticité de la base, son origine et le nombre réel de personnes concernées ne sont pas vérifiés indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-08",
+      "event": "Publication sur un forum cybercriminel d’une base attribuée à la CLCV : 80 031 lignes avec coordonnées et contenu des dossiers de consommateurs."
+    }
+  ]
+}

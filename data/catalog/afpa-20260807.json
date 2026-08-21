@@ -1,0 +1,38 @@
+{
+  "slug": "afpa-20260807",
+  "entity": "Afpa",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-07",
+    "publication": "2026-08-07"
+  },
+  "volume": {
+    "count": 101,
+    "unit": "comptes",
+    "label": "101 comptes utilisateurs d’AFPABox revendiqués, avec diffusion d’identifiants présentés comme administrateurs (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage revendiqué de l’AFPA : des données liées à la plateforme AFPABox diffusées sur un forum cybercriminel",
+      "url": "https://frenchbreaches.com/alertes/afpa-msj805wnmw8zz6kstul",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — AFPA piraté : 101 comptes exposés et un accès administrateur publié",
+      "url": "https://www.cyberattaque.org/afpa-pirate-101-comptes-exposes-et-un-acces-administrateur-publie/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 août 2026, l’acteur Cybernox publie sur un forum cybercriminel une revendication visant une plateforme liée à l’Afpa (Agence nationale pour la formation professionnelle des adultes) : il affirme avoir récupéré les données de 101 comptes utilisateurs d’AFPABox et diffuse surtout des identifiants présentés comme permettant d’accéder à l’interface d’administration du service. L’échantillon montre des éléments relatifs à un utilisateur — identité, statut, activité, métadonnées de compte. L’élément le plus sensible reste ces identifiants administrateur, dont aucune valeur n’est reproduite ici ; il n’est pas établi que l’accès fonctionne toujours. L’authenticité des données, l’origine exacte de la compromission et le nombre de personnes concernées ne sont pas vérifiés indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-07",
+      "event": "Cybernox revendique la compromission d’AFPABox : 101 comptes et des identifiants présentés comme administrateurs publiés sur un forum cybercriminel."
+    }
+  ]
+}

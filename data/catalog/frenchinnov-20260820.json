@@ -1,0 +1,39 @@
+{
+  "slug": "frenchinnov-20260820",
+  "entity": "FrenchInnov",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 1600,
+    "unit": "enregistrements",
+    "label": "Environ 1 600 fiches CRM d’établissements clients (« CRM DATA (1.6K) ») contenant coordonnées de contacts, notes privées et identifiants techniques (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — FrenchInnov : des données CRM de près de 1 600 établissements revendiquées après un piratage",
+      "url": "https://frenchbreaches.com/alertes/frenchinnov-mt1qw0kfdhmqb8emex",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — FrenchInnov : 1 600 fiches CRM avec coordonnées de restaurants diffusées dans une fuite",
+      "url": "https://www.cyberattaque.org/frenchinnov-1-600-fiches-crm-avec-coordonnees-de-restaurants-diffusees-dans-une-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 août 2026, une publication sur un forum cybercriminel revendique un accès aux données CRM de FrenchInnov, éditeur français de solutions de gestion pour restaurants et points de vente (caisse, stocks, planning, commandes Uber Eats ou Deliveroo). Intitulée « CRM DATA (1.6K) », l’extraction couvrirait environ 1 600 fiches d’établissements : noms, adresses, téléphones, e-mails et notes privées, accompagnées d’identifiants d’accès à distance, mots de passe et clés API particulièrement sensibles. Les données visées concernent surtout des clients professionnels, mais incluent des coordonnées identifiant des personnes physiques. L’authenticité de l’extraction et son périmètre exact ne sont pas confirmés indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Publication sur un forum cybercriminel d’une extraction « CRM DATA (1.6K) » attribuée à FrenchInnov, avec identifiants d’accès à distance et clés API."
+    }
+  ]
+}

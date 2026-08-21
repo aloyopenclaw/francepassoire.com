@@ -1,0 +1,39 @@
+{
+  "slug": "heypulse-20260811",
+  "entity": "HeyPulse",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-11",
+    "publication": "2026-08-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de comptes non chiffré ; base de données complète et code source revendiqués ; l’échantillon montre des comptes professionnels avec e-mails et mots de passe hachés bcrypt (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque revendiquée contre HeyPulse : la base de données et le code source potentiellement compromis",
+      "url": "https://frenchbreaches.com/alertes/heypulse-msogur4agznhs274b3r",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — HeyPulse : la base client et le code source en fuite après une cyberattaque",
+      "url": "https://www.cyberattaque.org/heypulse-la-base-client-et-le-code-source-en-fuite-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 août 2026, un acteur signé slvsh3r publie sur un forum cybercriminel une revendication intitulée « HeyPulse Database + Source Code » visant HeyPulse.fr, plateforme française B2B de gamification marketing destinée aux commerces (avis Google, visibilité locale). L’auteur affirme détenir à la fois la base de données et le code source de la plateforme. L’échantillon publié montre des comptes d’établissements professionnels — restaurants, fast-foods, pizzerias, salons de coiffure — dans plusieurs villes françaises, avec noms d’établissements, libellés de comptes, adresses e-mail et mots de passe hachés en bcrypt. Le nombre total de comptes concernés n’est pas déterminable ; la compromission n’est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2026-08-11",
+      "event": "Revendication « HeyPulse Database + Source Code » sur un forum cybercriminel ; échantillon de comptes professionnels avec e-mails et hashes bcrypt."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "le-mans-fc-20260808",
+  "entity": "Le Mans FC",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-08",
+    "publication": "2026-08-09"
+  },
+  "volume": {
+    "count": 2479,
+    "unit": "comptes",
+    "label": "2 481 lignes annoncées et 2 479 comptes WordPress observés sur un ancien domaine du club (MUC 72), dont environ 2 478 adresses e-mail distinctes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Le Mans FC : les données de près de 2 500 comptes publiées sur un forum cybercriminel",
+      "url": "https://frenchbreaches.com/alertes/le-mans-fc-msm10s9d7aa7x3v9wvi",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Le Mans FC : une base de 2 481 enregistrements diffusée après une fuite de données",
+      "url": "https://www.cyberattaque.org/le-mans-fc-une-base-de-2-481-enregistrements-diffusee-apres-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 août 2026, une publication sur un forum cybercriminel diffuse une base présentée comme issue d’un ancien domaine associé au Le Mans FC, club de football professionnel — l’identité MUC 72, remplacée par Le Mans FC en 2010-2011. Le fichier correspond à un export de la table WordPress des comptes utilisateurs : adresses e-mail, identifiants de connexion, mots de passe hachés (phppass) et clés d’activation pour certains comptes. L’analyse du lot fait apparaître 2 479 enregistrements et environ 2 478 adresses e-mail distinctes, contre 2 481 lignes annoncées. L’origine exacte du fichier, les circonstances de son obtention et son rattachement aux infrastructures actuelles du club restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-08",
+      "event": "Diffusion sur un forum cybercriminel d’une base de comptes WordPress liée à un ancien domaine du Le Mans FC (MUC 72) : 2 481 lignes annoncées."
+    }
+  ]
+}

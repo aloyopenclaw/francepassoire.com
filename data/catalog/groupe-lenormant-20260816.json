@@ -1,0 +1,39 @@
+{
+  "slug": "groupe-lenormant-20260816",
+  "entity": "Groupe Lenormant",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-16"
+  },
+  "volume": {
+    "count": 38968,
+    "unit": "enregistrements",
+    "label": "20,6 Go et 38 968 fichiers revendiqués, présentés comme le « BlgCloud Leak #9 » ; CRM, comptes internes et documents commerciaux (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données BlgCloud : Lenormant visé par une publication de 20,6 Go",
+      "url": "https://frenchbreaches.com/alertes/groupe-lenormant-blgcloud-msw8bjc0qn0hi4pzoxa",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Lenormant : 20,6 Go de données et près de 39 000 fichiers internes diffusés après une cyberattaque",
+      "url": "https://www.cyberattaque.org/lenormant-206-go-de-donnees-et-pres-de-39-000-fichiers-internes-diffuses-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 août 2026, neuvième volet de la série « BlgCloud Leak » : des données attribuées au Groupe Lenormant, entreprise française de vente et de distribution de matériels, machines, outillage et pièces détachées, sont publiées sur un forum cybercriminel — environ 20,6 Go répartis dans 38 968 fichiers. Les échantillons contiennent des données issues d’un CRM, des comptes utilisateurs internes, des coordonnées professionnelles, des informations sur des activités commerciales et des relations entre contacts et entreprises, ainsi que des références à des documents PDF et devis. La publication confirme la série annoncée après Cravero ; l’authenticité de l’ensemble, le nombre de personnes concernées et l’origine technique précise de la fuite restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-16",
+      "event": "Publication du « BlgCloud Leak #9 » attribué au Groupe Lenormant : 20,6 Go et 38 968 fichiers annoncés."
+    }
+  ]
+}

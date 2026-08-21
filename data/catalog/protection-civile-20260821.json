@@ -1,0 +1,40 @@
+{
+  "slug": "protection-civile-20260821",
+  "entity": "Fédération nationale de Protection Civile (FNPC)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 525000,
+    "unit": "personnes",
+    "label": "Plus de 525 000 profils et environ 15 000 photographies, dont des mineurs « cadets » (chiffres issus d’une revendication de mars 2026 et d’analyses de veille, non confirmés par la FNPC)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Protection Civile piratée : plus de 525 000 profils et 15 000 photos potentiellement exposés",
+      "url": "https://frenchbreaches.com/alertes/protection-civile-mt27j64epv2smy5m0g",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Protection Civile : plus de 525 000 personnes touchées par une cyberattaque",
+      "url": "https://www.cyberattaque.org/protection-civile-plus-de-525-000-personnes-touchees-par-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération nationale de Protection Civile (FNPC) annonce à ses bénévoles, dans une communication relayée le 21 août 2026, une cyberattaque survenue en mars 2026 contre sa plateforme eProtec, ayant permis un accès non autorisé à des données personnelles. L’organisation confirme l’incident, dépose plainte auprès de la section de lutte contre la cybercriminalité du parquet de Paris et rapproche cette attaque d’une série visant plusieurs fédérations. Selon la revendication d’un hacker datée de mars et les analyses de FrenchBreaches, plus de 525 000 profils (noms, dates de naissance, téléphones, professions, identifiants) et environ 15 000 photographies, dont des mineurs, auraient été exfiltrés ; ces volumes ne sont pas confirmés par la FNPC.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "La FNPC confirme auprès de ses bénévoles une cyberattaque de mars 2026 contre sa plateforme eProtec ; plainte déposée auprès du parquet de Paris."
+    }
+  ]
+}

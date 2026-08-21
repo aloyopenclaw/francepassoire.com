@@ -1,0 +1,39 @@
+{
+  "slug": "leroch-distribution-20260812",
+  "entity": "Leroch Distribution",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-12"
+  },
+  "volume": {
+    "count": 9897,
+    "unit": "enregistrements",
+    "label": "3,3 Go et 9 897 fichiers revendiqués, présentés comme le « BlgCloud Leak #5 » ; messagerie professionnelle, CRM et documents PDF (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque BlgCloud : Leroch Distribution visé par une fuite de données de 3,3 Go",
+      "url": "https://frenchbreaches.com/alertes/leroch-distribution-blgcloud-msp7xthowhtnkmx2fk",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Leroch Distribution : 3,3 Go de données publiées après le piratage de son compte BlgCloud",
+      "url": "https://www.cyberattaque.org/leroch-distribution-33-go-de-donnees-publiees-apres-le-piratage-de-son-compte-blgcloud/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 août 2026, la série « BlgCloud Leak » issue de la compromission revendiquée de l’ERP BlgCloud s’étend à Leroch Distribution, entreprise française d’importation, de vente et de location de matériel agricole, présentée comme le cinquième volet : 3,3 Go et 9 897 fichiers annoncés. Les échantillons diffusés exposent des données de messagerie professionnelle, des informations CRM, des coordonnées de contacts et d’entreprises et des références à des documents PDF, ainsi que des éléments de configuration de comptes de messagerie. Comme pour les autres victimes de la série, la fuite proviendrait du compte ou de l’instance BlgCloud de l’entreprise et non d’une compromission directe de son système ; les volumes restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-12",
+      "event": "Publication du « BlgCloud Leak #5 » attribué à Leroch Distribution : 3,3 Go et 9 897 fichiers annoncés."
+    }
+  ]
+}
