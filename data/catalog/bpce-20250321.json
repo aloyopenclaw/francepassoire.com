@@ -1,0 +1,54 @@
+{
+  "slug": "bpce-20250321",
+  "entity": "Groupe Banque populaire-Caisse d'Épargne (BPCE)",
+  "siren": "493455042",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-21",
+    "publication": "2025-03-21",
+    "confirmation": "2025-03-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non chiffrés ; un « nombre limité de banques du groupe » touché selon BPCE, avec données d'état civil et de comptes-titres, après la cyberattaque contre le fournisseur de logiciels Harvest fin février 2025"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — État-civil, comptes-titres : des clients de MAIF et Banque populaire-Caisse d'Épargne victimes d'une fuite de données (21 mars 2025)",
+      "url": "https://www.leparisien.fr/economie/etat-civil-comptes-titres-des-clients-de-maif-et-banque-populaire-caisse-depargne-victimes-dune-fuite-de-donnees-21-03-2025-RZLASHOGHRCFJFPLDVCK6S532M.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Fuite de données pour les clients MAIF et Banque Populaire-Caisse d'Épargne : que faire si vous êtes concerné ? (22 mars 2025)",
+      "url": "https://www.leparisien.fr/economie/votre-argent/fuite-de-donnees-pour-les-clients-maif-et-banque-populaire-caisse-depargne-que-faire-si-vous-etes-concerne-22-03-2025-J56UD4GFSNELRANHK5ICRQ66I4.php",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Piratage Banque Populaire, Caisse d'Épargne et MAIF : les données de clients ont été dérobées",
+      "url": "https://www.commentcamarche.net/securite/piratage/34119-piratage-banque-populaire-caisse-d-epargne-et-maif-les-donnees-de-clients-ont-ete-derobees/",
+      "kind": "article"
+    },
+    {
+      "label": "IdProtect — Cyberattaque chez Harvest : des milliers de clients MAIF et BPCE exposés à des risques d'usurpation d'identité",
+      "url": "https://idprotect.fr/cyberattaque-chez-harvest-des-milliers-de-clients-maif-et-bpce-exposes-a-des-risques-dusurpation-didentite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe Banque populaire-Caisse d'Épargne est touché par la cyberattaque contre Harvest, fournisseur de logiciels aux banques et aux assurances, survenue fin février 2025. Le 21 mars, Le Parisien rapporte que des notifications de fuite de données ont été envoyées à une partie de ses clients. L'information, initiée par l'Agefi, est confirmée par le groupe : un « nombre limité de banques » est concerné. Les données en cause comprennent l'état civil et des informations de comptes-titres. Le groupe recommande la vigilance face aux tentatives d'hameçonnage ; aucun volume n'est publié.",
+  "timeline": [
+    {
+      "date": "2025-03-21",
+      "event": "BPCE notifie une fuite de données à une partie de ses clients après l'attaque contre Harvest ; la révélation, initiée par l'Agefi, est reprise par Le Parisien."
+    },
+    {
+      "date": "2025-03-22",
+      "event": "Le Parisien publie les conseils aux clients concernés, notamment la prudence contre les sollicitations par courriel ou téléphone exploitant les données dérobées."
+    }
+  ]
+}
