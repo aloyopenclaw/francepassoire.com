@@ -1,0 +1,50 @@
+{
+  "slug": "asahi-group-20250929",
+  "entity": "Asahi Group Holdings",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-29",
+    "publication": "2025-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "27 gigaoctets de données revendiqués par le gang Qilin (documents financiers, contrats, informations sur les salariés) ; volume non confirmé"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Le brasseur japonais Asahi suspend ses activités après une cyberattaque",
+      "url": "https://www.usine-digitale.fr/article/le-brasseur-japonais-asahi-suspend-ses-activites-apres-une-cyberattaque.N2238619",
+      "kind": "article"
+    },
+    {
+      "label": "Archive — L'Usine Digitale, Asahi (snapshot du 30 septembre 2025)",
+      "url": "https://web.archive.org/web/20250930143400/https://www.usine-digitale.fr/article/le-brasseur-japonais-asahi-suspend-ses-activites-apres-une-cyberattaque.N2238619",
+      "kind": "archive"
+    },
+    {
+      "label": "L'Usine Digitale — La cyberattaque du japonais Asahi revendiquée par le gang russe Qilin",
+      "url": "https://www.usine-digitale.fr/article/la-cyberattaque-du-japonais-asahi-revendiquee-par-le-gang-russe-qilin.N2239001",
+      "kind": "article"
+    }
+  ],
+  "description": "Le brasseur japonais Asahi Group annonce le 29 septembre 2025 une attaque informatique qui paralyse une partie de ses opérations au Japon : suspension des commandes et des expéditions, arrêt temporaire des centres d'appels. Le groupe présente ses excuses et précise, à ce stade, n'avoir pas constaté de fuite de données personnelles ou commerciales. Le 8 octobre, l'agence Bloomberg rapporte que le gang de rançongiciels russophone Qilin revendique le vol d'environ 27 gigaoctets de données, incluant des documents financiers, des contrats et des informations sur les salariés. Asahi refuse de commenter cette revendication ; l'exfiltration n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-09-29",
+      "event": "Asahi Group annonce une attaque informatique paralysant une partie de ses opérations au Japon et présente ses excuses."
+    },
+    {
+      "date": "2025-09-30",
+      "event": "Le groupe indique n'avoir, à ce stade, constaté aucune fuite de données personnelles ou commerciales."
+    },
+    {
+      "date": "2025-10-08",
+      "event": "Selon Bloomberg relayée par L'Usine Digitale, le gang Qilin revendique le vol de 27 gigaoctets de données ; Asahi refuse de commenter."
+    }
+  ]
+}
