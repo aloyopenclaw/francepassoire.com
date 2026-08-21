@@ -1,0 +1,41 @@
+{
+  "slug": "groupe-gm-20250103",
+  "entity": "Groupe GM (commodités et accessoires cosmétiques pour l'hôtellerie)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "28 Go de données revendiqués par RansomHub (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — Groupe GM data breach : acteur RansomHub, 28 Go, découverte 3 janvier 2025",
+      "url": "https://www.breachsense.com/breaches/groupe-gm-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (groupegm.com, 2 janvier, groupe Ransomhub)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début janvier 2025, le rançongiciel RansomHub revendique une attaque contre le Groupe GM, acteur international français de la conception et de la distribution de commodités et d'accessoires cosmétiques pour les hôtels et les spas, en affichant le domaine groupegm.com sur son site de fuite. Le groupe criminel avance un volume de 28 gigaoctets de données volées, un chiffre invérifié ; l'entreprise n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2025-01-02",
+      "event": "RansomHub liste groupegm.com sur son site de fuite (relais DPO Partage)."
+    },
+    {
+      "date": "2025-01-03",
+      "event": "Breachsense enregistre la revendication : 28 Go de données annoncés."
+    }
+  ],
+  "group": "ransomhub"
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "atos-20241228",
+  "entity": "Atos",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-28",
+    "publication": "2024-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "« base de données Atos » revendiquée par Space Bears ; aucune preuve de compromission selon Atos"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Atos Group — Security Statement : Space Bears claims to have compromised an Atos database (28 décembre 2024)",
+      "url": "https://www.atosgroup.com/en/press/security-statement-2",
+      "kind": "officiel"
+    },
+    {
+      "label": "SecurityWeek — IT Giant Atos Responds to Ransomware Group's Data Theft Claims (6 janvier 2025)",
+      "url": "https://www.securityweek.com/it-giant-atos-responds-to-ransomware-groups-data-theft-claims/",
+      "kind": "article"
+    },
+    {
+      "label": "Paperjam — Atos denies breach amid ransomware group allegations (décembre 2024)",
+      "url": "https://en.paperjam.lu/article/atos-denies-breach-amid-ransomware-group-allegations",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 décembre 2024, le groupe de rançongiciel Space Bears affirme avoir compromis une base de données d'Atos et fixe une échéance de publication début janvier 2025. Le groupe français des services numériques, sous-traitant d'organismes publics sensibles, publie aussitôt un communiqué : ses premières analyses ne montrent « aucune preuve de compromission ni de rançongiciel » dans ses systèmes ou ceux d'Eviden, et aucune demande de rançon n'a été reçue. La revendication, non étayée publiquement, n'est confirmée par aucune source indépendante.",
+  "timeline": [
+    {
+      "date": "2024-12-28",
+      "event": "Space Bears revendique la compromission d'une base de données Atos."
+    },
+    {
+      "date": "2024-12-29",
+      "event": "Atos publie un communiqué : aucune preuve de compromission ni demande de rançon à ce stade."
+    },
+    {
+      "date": "2025-01-06",
+      "event": "La presse spécialisée fait le point sur la revendication et son déni par Atos."
+    }
+  ],
+  "group": "space-bears"
+}

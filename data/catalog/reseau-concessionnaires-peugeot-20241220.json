@@ -1,0 +1,51 @@
+{
+  "slug": "reseau-concessionnaires-peugeot-20241220",
+  "entity": "Réseau des concessionnaires Peugeot (France)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-20",
+    "publication": "2024-12-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "plusieurs dizaines de gigaoctets aspirées selon L'Informé ; 40 Go revendiqués par Cicada 3301 (chiffre non confirmé)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Informé — Le réseau des concessionnaires Peugeot victime d'une fuite massive de données (20 décembre 2024)",
+      "url": "https://www.linforme.com/transports-auto/article/le-reseau-des-concessionnaires-peugeot-victime-d-une-fuite-massive-de-donnees_2398.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Les pirates du groupe Cicada 3301 revendiquent une attaque contre les concessions Peugeot (22 décembre 2024)",
+      "url": "https://www.zataz.com/les-pirates-du-groupe-cicada-3301-revendiquent-une-attaque-contre-les-concessions-peugeot/",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — Peugeot visé par une cyberattaque avec demande de rançon (26 décembre 2024)",
+      "url": "https://www.20minutes.fr/high-tech/4130958-20241226-peugeot-sait-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 décembre 2024, L'Informé révèle qu'au moins un gros concessionnaire Peugeot — réseau qui compte plus de 360 points de vente en France — a subi une fuite de données de plusieurs dizaines de gigaoctets, avec un risque de propagation aux systèmes connectés. Stellantis confirme être « au courant » et enquêter. Le groupe de rançongiciel Cicada 3301 revendique l'attaque deux jours plus tard, affirmant détenir 40 Go de données issues des concessions et fixant des échéances de publication ; des médias évoquent une demande de rançon. La nature précise des données n'est pas établie publiquement.",
+  "timeline": [
+    {
+      "date": "2024-12-20",
+      "event": "L'Informé révèle une fuite massive chez un gros concessionnaire Peugeot ; Stellantis confirme enquêter."
+    },
+    {
+      "date": "2024-12-22",
+      "event": "Cicada 3301 revendique le vol de 40 Go de données des concessions Peugeot (relais Zataz)."
+    },
+    {
+      "date": "2024-12-26",
+      "event": "20 Minutes évoque une cyberattaque avec demande de rançon visant le réseau."
+    }
+  ],
+  "group": "cicada3301"
+}
