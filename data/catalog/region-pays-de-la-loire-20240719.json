@@ -1,0 +1,43 @@
+{
+  "slug": "region-pays-de-la-loire-20240719",
+  "entity": "Région Pays de la Loire",
+  "siren": "234400034",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-19",
+    "publication": "2024-07-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "échantillons de documents administratifs publiés sur le site d'extorsion ; rançon exigée avant le 4 août, volumes totaux non chiffrés"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Informaticien — La Région Pays de la Loire attaquée par LockBit (19 juillet 2024)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/62280-la-region-pays-de-la-loire-attaquee-par-lockbit.html",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Figaro — Cyberattaque : le Département de Loire-Atlantique et la Région des Pays de la Loire visés la même semaine (19 juillet 2024)",
+      "url": "https://www.lefigaro.fr/nantes/cyberattaque-le-departement-de-loire-atlantique-et-la-region-des-pays-de-la-loire-vises-la-meme-semaine-20240719",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 juillet 2024, le groupe de rançongiciel LockBit affiche la Région Pays de la Loire sur son site d'extorsion et publie des échantillons de documents administratifs dérobés à la collectivité, exigeant une rançon avant le 4 août sous peine de publier l'intégralité des données. Le même matin, le site de la Région affichait un message de « problème technique exceptionnel ». La même semaine, le Département de Loire-Atlantique était visé par une tentative d'intrusion. Le vol de données n'est pas confirmé par la collectivité, contactée sans réponse immédiate.",
+  "timeline": [
+    {
+      "date": "2024-07-19",
+      "event": "LockBit publie des échantillons de documents administratifs de la Région et fixe sa deadline de rançon au 4 août."
+    },
+    {
+      "date": "2024-07-19",
+      "event": "Le Figaro relève que le Département de Loire-Atlantique et la Région ont été visés la même semaine."
+    }
+  ],
+  "group": "lockbit"
+}

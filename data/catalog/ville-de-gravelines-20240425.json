@@ -1,0 +1,42 @@
+{
+  "slug": "ville-de-gravelines-20240425",
+  "entity": "Ville de Gravelines",
+  "siren": "215902735",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-25",
+    "publication": "2024-04-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur du préjudice inconnue ; un cryptovirus avait été déposé sur un serveur selon la Ville"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ici (France Bleu) — La ville de Gravelines victime d'une cyberattaque (26 avril 2024)",
+      "url": "https://www.francebleu.fr/infos/faits-divers-justice/la-ville-de-gravelines-victime-d-une-cyber-attaque-4679642",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 avril 2024, la Ville de Gravelines (Nord) découvre en fin de matinée des serveurs « en surchauffe » et des fichiers qui disparaissent : un cryptovirus a été déposé sur l'un d'eux. Tous les serveurs sont déconnectés et les ordinateurs éteints ; les services communaux travaillent sans informatique pendant au moins une semaine. La Ville dépose plainte et signale l'incident à la CNIL et à l'ANSSI ; une filiale de cybersécurité d'Orange ouvre les investigations. L'ampleur du préjudice reste inconnue et aucun vol de données n'est établi.",
+  "timeline": [
+    {
+      "date": "2024-04-25",
+      "event": "Découverte d'un cryptovirus déposé sur un serveur ; déconnexion de tous les serveurs et passage en mode dégradé."
+    },
+    {
+      "date": "2024-04-26",
+      "event": "France Bleu relate l'attaque : plainte déposée, signalement CNIL et ANSSI, investigations confiées à une filiale d'Orange."
+    }
+  ]
+}

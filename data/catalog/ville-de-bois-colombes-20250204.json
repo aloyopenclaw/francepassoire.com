@@ -1,0 +1,38 @@
+{
+  "slug": "ville-de-bois-colombes-20250204",
+  "entity": "Ville de Bois-Colombes",
+  "siren": "219200094",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-04",
+    "publication": "2025-02-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "réseau municipal indisponible ; messagerie et portail famille impactés, aucun volume de données chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Bois-Colombes — Le réseau informatique de la ville est momentanément indisponible (notification officielle, 4 février 2025)",
+      "url": "https://www.bois-colombes.fr/notification/le-reseau-informatique-de-la-ville-est-momentanement-indisponible/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 février 2025, la Ville de Bois-Colombes (Hauts-de-Seine) signale sur son site officiel que son réseau informatique est momentanément indisponible : une intrusion touche le réseau municipal et impacte la messagerie des agents ainsi que le portail famille utilisé pour les démarches et inscriptions périscolaires. La commune informe les usagers des perturbations de ses services en ligne. Aucun volume de données concernées n'est communiqué et l'origine de l'intrusion n'est pas précisée.",
+  "timeline": [
+    {
+      "date": "2025-02-04",
+      "event": "Notification officielle : réseau municipal indisponible, intrusion avec messagerie et portail famille impactés."
+    }
+  ]
+}

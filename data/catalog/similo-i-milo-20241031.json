@@ -1,0 +1,52 @@
+{
+  "slug": "similo-i-milo-20241031",
+  "entity": "Similo (Worldline) — plateforme I-Milo des missions locales",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-31",
+    "publication": "2024-11-04",
+    "confirmation": "2024-10-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par le ministère ; états civils et coordonnées de jeunes suivis ou anciennement suivis par les missions locales"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ministère du Travail — Un prestataire des missions locales victime d'un acte de cyber-malveillance (communiqué)",
+      "url": "https://travail-emploi.gouv.fr/un-prestataire-des-missions-locales-victime-dun-acte-de-cyber-malveillance",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — Les missions locales visées par une cyberattaque (4 novembre 2024)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-les-missions-locales-visees-par-une-cyberattaque-95159.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — L'application i-Milo et le décisionnel Similo piratés, une cyberattaque ciblant les missions locales (2 novembre 2024)",
+      "url": "https://www.zataz.com/pirate-informatique-lapplication-i-milo-et-le-decisionnel-similo-pirates-une-cyberattaque-ciblant-les-missions-locales/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 23 au 24 octobre 2024, les serveurs de Similo — filiale de Worldline assurant par délégation de service public la plateforme I-Milo, dossier numérique des jeunes en insertion — subissent une attaque aboutissant à une fuite de données. Le ministère du Travail révèle la violation fin octobre : noms, prénoms, dates de naissance, nationalités, e-mails, adresses et téléphones de jeunes suivis par les 440 missions locales ont été aspirés ; IBAN, numéros de Sécurité sociale et pièces d'identité ne sont pas concernés. CNIL et ANSSI sont saisies, une plainte est déposée et les jeunes concernés sont informés.",
+  "timeline": [
+    {
+      "date": "2024-10-23",
+      "event": "Attaque dans la nuit du 23 au 24 octobre sur les serveurs de Similo ; fuite de données des dossiers I-Milo."
+    },
+    {
+      "date": "2024-10-31",
+      "event": "Le ministère du Travail publie un communiqué : risque de divulgation, CNIL et ANSSI saisies, plainte déposée."
+    },
+    {
+      "date": "2024-11-04",
+      "event": "La presse spécialisée détaille les données aspirées ; une communication spécifique vise les jeunes concernés."
+    }
+  ]
+}

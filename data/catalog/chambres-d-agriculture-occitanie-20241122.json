@@ -1,0 +1,41 @@
+{
+  "slug": "chambres-d-agriculture-occitanie-20241122",
+  "entity": "Chambres d'agriculture d'Occitanie",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-22",
+    "publication": "2024-12-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "systèmes d'information perturbés, plainte déposée ; aucune donnée concernée chiffrée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Petit Journal (65) — Cyberattaque chambre d'agriculture des Hautes-Pyrénées : « la situation est maîtrisée d'un point de vue sécurité » (communiqué du 22 novembre, publié le 1er décembre 2024)",
+      "url": "https://www.lepetitjournal.net/65-hautes-pyrenees/2024/12/01/la-situation-est-maitrisee-dun-point-de-vue-securite/",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "En milieu de semaine du 18 novembre 2024, les chambres d'agriculture d'Occitanie — dont celle des Hautes-Pyrénées — sont victimes d'une cyberattaque qui perturbe leurs systèmes d'information. Dans un communiqué daté du 22 novembre, la chambre des Hautes-Pyrénées indique que « la situation est maîtrisée d'un point de vue sécurité », qu'un certain niveau de fonctionnement a été retrouvé et qu'une plainte est déposée ; la direction nationale des systèmes d'information et l'ANSSI sont mobilisées. La chambre de Lozère, également touchée, a signalé un piratage perturbant ses systèmes internes.",
+  "timeline": [
+    {
+      "date": "2024-11-22",
+      "event": "Communiqué de la chambre d'agriculture des Hautes-Pyrénées : attaque « en ce début de semaine », plainte déposée, ANSSI mobilisée."
+    },
+    {
+      "date": "2024-12-01",
+      "event": "La presse locale relaie le communiqué ; la chambre d'agriculture de Lozère a signalé un piratage le 20 novembre."
+    }
+  ]
+}

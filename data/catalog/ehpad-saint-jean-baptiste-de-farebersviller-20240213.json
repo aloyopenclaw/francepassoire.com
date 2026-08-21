@@ -1,0 +1,37 @@
+{
+  "slug": "ehpad-saint-jean-baptiste-de-farebersviller-20240213",
+  "entity": "Ehpad Saint-Jean-Baptiste de Farébersviller",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-02-13",
+    "publication": "2024-02-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "système d'information paralysé avec demande de rançon ; aucun volume de données volées communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Républicain lorrain — Région de Forbach : après la cyberattaque de l'Ehpad de Farébersviller, craintes des conséquences des cyberattaques (13 février 2024)",
+      "url": "https://www.republicain-lorrain.fr/faits-divers-justice/2024/02/13/region-de-forbach-craignez-vous-les-consequences-des-cyberattaques-qui-se-multiplient-dans-le-domaine-de-la-sante-ou-des-services-publics",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Début février 2024, l'Ehpad Saint-Jean-Baptiste de Farébersviller (Moselle) subit une cyberattaque d'envergure avec demande de rançon : « tout le système d'information est paralysé », relate le Républicain lorrain le 13 février. L'établissement, qui héberge des personnes âgées dépendantes, poursuit la prise en charge de ses résidents en mode dégradé. L'incident s'inscrit dans une série d'attaques visant des Ehpad et établissements de santé français ; aucun vol de données n'est chiffré et aucune revendication n'est rendue publique.",
+  "timeline": [
+    {
+      "date": "2024-02-13",
+      "event": "Le Républicain lorrain révèle qu'une cyberattaque avec demande de rançon a neutralisé « la semaine dernière » le système d'information de l'Ehpad."
+    }
+  ]
+}

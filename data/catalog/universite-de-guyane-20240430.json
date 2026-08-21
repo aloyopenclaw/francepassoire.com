@@ -1,0 +1,47 @@
+{
+  "slug": "universite-de-guyane-20240430",
+  "entity": "Université de Guyane",
+  "siren": "130020597",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-30",
+    "publication": "2024-05-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "site internet détruit et applications paralysées ; analyse en cours « pour quantifier et identifier les données compromises » selon l'université"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Université de Guyane — Rapport d'activité 2024 (rançongiciel du 30 avril 2024, arrêt brutal des services numériques)",
+      "url": "https://www.univ-guyane.fr/ugfm/docs/universite/rapport-d-activite-2024-ug.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "France Guyane — L'Université de Guyane victime d'une cyberattaque (mai 2024)",
+      "url": "https://www.franceguyane.fr/actualite/education-sante-environnement/luniversite-de-guyane-victime-dune-cyberattaque-986312.php",
+      "kind": "article"
+    },
+    {
+      "label": "Peyi Guyane — L'Université de Guyane victime d'une cyberattaque d'ampleur (mai 2024)",
+      "url": "https://www.peyiguyane.com/post/securite/l-universite-de-guyane-victime-d-une-cyberattaque-d-ampleur-1715094081",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 avril 2024, l'Université de Guyane est victime d'une cyberattaque par rançongiciel qui provoque « l'arrêt brutal de l'ensemble des services numériques », selon son rapport d'activité 2024 : site internet détruit, applications paralysées. L'établissement suspend ses services, organise la continuité pédagogique puis annonce des mesures de renforcement de ses infrastructures. Selon France Guyane, une analyse est engagée pour quantifier et identifier les données compromises ; le vol de données n'est pas confirmé à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-04-30",
+      "event": "Un rançongiciel provoque l'arrêt brutal des services numériques de l'université ; le site internet est détruit."
+    },
+    {
+      "date": "2024-05-07",
+      "event": "La presse guyanaise relate l'attaque et la continuité pédagogique ; une analyse des données compromise potentielles est en cours."
+    }
+  ]
+}
