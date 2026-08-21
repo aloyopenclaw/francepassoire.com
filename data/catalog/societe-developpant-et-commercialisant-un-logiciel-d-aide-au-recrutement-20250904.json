@@ -1,0 +1,47 @@
+{
+  "slug": "societe-developpant-et-commercialisant-un-logiciel-d-aide-au-recrutement-20250904",
+  "entity": "Société développant et commercialisant un logiciel d'aide au recrutement (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-04",
+    "confirmation": "2025-09-04",
+    "publication": "2025-10-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 7 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société développant et commercialisant un logiciel d'aide au recrutement (procédure simplifiée) », Amende administrative de 7 000 euros (4 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce 16 nouvelles sanctions dans le cadre de la procédure simplifiée (13 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-16-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 4 septembre 2025, la CNIL a prononcé une amende administrative de 7 000 euros à l'encontre d'une société développant et commercialisant un logiciel d'aide au recrutement, dans le cadre de la procédure simplifiée. Les manquements retenus : encadrement des relations avec le sous-traitant, registre des activités de traitement, défaut de sécurité et violation de données non documentée. La dénomination n'est pas publiée. La décision fait partie des seize sanctions simplifiées annoncées le 13 octobre 2025, pour 108 000 euros cumulés.",
+  "timeline": [
+    {
+      "date": "2025-09-04",
+      "event": "Amende de 7 000 euros (procédure simplifiée) : sous-traitant, registre, sécurité et violation non documentée en cause."
+    },
+    {
+      "date": "2025-10-13",
+      "event": "Communiqué CNIL : seize sanctions simplifiées depuis mai 2025 (108 000 euros)."
+    }
+  ]
+}

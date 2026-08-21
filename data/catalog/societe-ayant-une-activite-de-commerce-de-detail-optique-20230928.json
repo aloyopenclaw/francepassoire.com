@@ -1,0 +1,32 @@
+{
+  "slug": "societe-ayant-une-activite-de-commerce-de-detail-optique-20230928",
+  "entity": "Société ayant une activité de commerce de détail optique",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-28",
+    "confirmation": "2023-09-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 28 septembre 2023, dans le cadre de la procédure simplifiée, une amende de 20 000 euros et une injonction contre une société ayant une activité de commerce de détail optique, désignée anonymément dans le tableau officiel des sanctions. Le manquement retenu est un défaut de coopération avec la CNIL. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-09-28",
+      "event": "Amende de 20 000 euros et injonction en procédure simplifiée pour défaut de coopération avec la CNIL."
+    }
+  ]
+}
