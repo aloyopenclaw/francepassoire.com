@@ -1,0 +1,35 @@
+{
+  "slug": "groupe-zephir-20250228",
+  "entity": "Groupe Zéphir",
+  "siren": "350460754",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-28",
+    "publication": "2025-02-28"
+  },
+  "volume": {
+    "count": 67000,
+    "unit": "personnes",
+    "label": "67 000 personnes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Zéphir (Groupe Zéphir) : fuite de données (28 février 2025)",
+      "url": "https://frenchbreaches.com/alertes/zephir-groupe-zephir-3fca2c0b4971",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le relais FrenchBreaches rapporte le 28 février 2025 une fuite de données revendiquée touchant le Groupe Zéphir, groupe français de courtage d'assurance. Le fichier concernerait 67 000 personnes et comprendrait noms et prénoms, adresses e-mail, numéros de téléphone et IBAN. La revendication circule via un relais de veille sur les fuites touchant la France ; ni le volume ni la présence des coordonnées bancaires ne sont confirmés indépendamment.",
+  "timeline": [
+    {
+      "date": "2025-02-28",
+      "event": "FrenchBreaches relaie une fuite revendiquée touchant le Groupe Zéphir : 67 000 personnes, avec identité, coordonnées et IBAN."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ville-des-lilas-20250301",
+  "entity": "Ville des Lilas",
+  "siren": "219300456",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-01",
+    "publication": "2025-03-01"
+  },
+  "volume": {
+    "count": 11000,
+    "unit": "personnes",
+    "label": "environ 11 000 personnes (revendiqué, non confirmé ; copie datée de juillet 2024 selon le pirate)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données : les municipalités de Les Lilas et Lorient victimes d'un piratage ? (1er mars 2025)",
+      "url": "https://www.zataz.com/fuite-de-donnees-les-municipalites-de-les-lilas-et-lorient-victimes-dun-piratage/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le pirate « ups » a publié le 1er mars 2025 sur le forum Breached une base de données attribuée à la ville des Lilas (Seine-Saint-Denis), aux côtés de celle de la Ville de Lorient. Selon Zataz, environ 11 000 personnes y figurent avec noms, prénoms et adresses électroniques et, dans certains cas, des mots de passe hachés. Le pirate indique que la copie daterait de juillet 2024 ; il ne précise ni sa méthode de collecte ni la confirmation de la mairie.",
+  "timeline": [
+    {
+      "date": "2025-03-01",
+      "event": "Le pirate « ups » publie sur Breached une base attribuée à la ville des Lilas (environ 11 000 personnes), aux côtés de celle de Lorient."
+    },
+    {
+      "date": "2025-03-01",
+      "event": "Selon le pirate, la copie des données daterait de juillet 2024 ; la méthode de collecte n'est pas précisée."
+    }
+  ]
+}

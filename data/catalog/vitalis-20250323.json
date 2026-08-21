@@ -1,0 +1,37 @@
+{
+  "slug": "vitalis-20250323",
+  "entity": "Vitalis",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-23",
+    "publication": "2025-03-23"
+  },
+  "volume": {
+    "count": 202579,
+    "unit": "lignes",
+    "label": "202 579 lignes extraites (dont environ 136 000 numéros de téléphone uniques) ; personnes passées par un formulaire de l'entreprise, pas forcément tous des clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite massive de données chez Vitalis : plus de 202 000 clients compromis (23 mars 2025)",
+      "url": "https://www.zataz.com/fuite-massive-de-donnees-chez-vitalis-plus-de-202-000-clients-compromis/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une injection SQL exploitée le 18 mars 2025 sur un sous-domaine de Vitalis — une société de marketing fournisseur de services clients, sans lien avec le réseau de transport du Grand Poitiers — a permis d'extraire une base de 202 579 lignes, mise en vente pour quelques euros selon Zataz. Les données comprennent noms complets, adresses électroniques et numéros de téléphone : environ 136 000 numéros uniques et 3 000 adresses e-mail uniques ont été comptés dans les échantillons. Zataz précise que les personnes touchées sont passées par un formulaire de l'entreprise, sans forcément en être clientes.",
+  "timeline": [
+    {
+      "date": "2025-03-18",
+      "event": "Un acteur malveillant extrait par injection SQL une base de Vitalis via un sous-domaine de l'entreprise."
+    },
+    {
+      "date": "2025-03-23",
+      "event": "Zataz documente la publication de la base de 202 579 lignes, mise en vente sur un forum pirate."
+    }
+  ]
+}
