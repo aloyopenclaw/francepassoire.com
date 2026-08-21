@@ -54,10 +54,10 @@ if (existsSync(fichesPath)) {
     compteApi =
       typeof dataset.count === 'number' ? dataset.count : (dataset.fiches ?? []).length;
   } catch (e) {
-    echec(`dist/api/v1/fiches.json illisible : ${e.message}`);
+    echec(`dist/opendata/v1/fiches.json illisible : ${e.message}`);
   }
 } else {
-  echec('dist/api/v1/fiches.json introuvable.');
+  echec('dist/opendata/v1/fiches.json introuvable.');
 }
 
 // --- 2. Cohérence catalogue : fiches API vs URLs /fiche/ du sitemap --------

@@ -1,11 +1,2 @@
-# FrancePassoire — redirections Cloudflare Pages (T42).
-# Les URLs /fuite/<slug>/ ont été publiées (flux RSS, réseaux sociaux) avant que
-# la route servie ne soit /fiche/<slug>/ : rapatriement permanent.
-# La correspondance est biunivoque (même slug), aucune autre page sous /fuite/.
+/api/v1/fiches.json /opendata/v1/fiches.json 301
 /fuite/:slug/ /fiche/:slug/ 301
-
-# Proxy même-origine vers le worker API (Pages proxy 200) : immunise
-# /api/* contre les interceptions TLS réseau (ex. Fortinet qui casse
-# api.francepassoire.com en local) et supprime le cross-origin — même
-# comportement sur pages.dev et francepassoire.com.
-/api/* https://api.francepassoire.com/api/:splat 200
