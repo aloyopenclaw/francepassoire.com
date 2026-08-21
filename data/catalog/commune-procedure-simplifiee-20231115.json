@@ -1,0 +1,42 @@
+{
+  "slug": "commune-procedure-simplifiee-20231115",
+  "entity": "Une commune (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-15",
+    "confirmation": "2023-11-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 6 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « commune », amende de 6 000 euros (15 novembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 novembre 2023, la CNIL a sanctionné une commune d'une amende de 6 000 euros, dans le cadre de la procédure simplifiée. Les manquements retenus par le tableau officiel des sanctions sont l'obligation de traiter les données de façon licite, la durée de conservation et un défaut de sécurité des données. Le nom de la commune n'est pas publié : les sanctions simplifiées ne sont pas rendues publiques. Le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-11-15",
+      "event": "Amende de 6 000 euros en procédure simplifiée : licéité, durée de conservation et sécurité des données en cause."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "ministere-interieur-visas-20231211",
+  "entity": "Ministère de l'Intérieur et des Outre-mer (portail Réseau mondial Visas 2)",
+  "siren": "110014016",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-11",
+    "publication": "2024-01-31",
+    "confirmation": "2023-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; rappel à l'ordre (licéité, exactitude, sécurité) sur le portail des visas Schengen"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « ministère de l'Intérieur et des Outre-mer », rappel à l'ordre (11 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Phenix Privacy — CNIL : récapitulatif des sanctions de décembre 2023 (7 mars 2024)",
+      "url": "https://phenix-privacy.com/cnil-sanctions-decembre-2023/",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech — Copies illégales : la CNIL sanctionne les ministères de l'Intérieur et des Affaires étrangères (31 janvier 2024)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/copies-illegales-la-cnil-sanctionne-les-ministeres-de-l-interieur-et-des-affaires-etrangeres_AV-202401310640.html",
+      "kind": "article"
+    },
+    {
+      "label": "Next (NextINPACT) — Jusqu'en 2023, le système français d'accès aux données de demandes de visas Schengen était dans l'illégalité (1er février 2024)",
+      "url": "https://next.ink/126153/jusquen-2023-le-systeme-francais-dacces-aux-donnees-de-demandes-de-visas-schengen-etait-dans-lillegalite/",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2023, la CNIL a rappelé à l'ordre le ministère de l'Intérieur et des Outre-mer, avec le ministère de l'Europe et des Affaires étrangères, pour la gestion du portail « Réseau mondial Visas 2 », système français d'accès aux données des demandes de visas Schengen exploité jusqu'en 2023. Selon les relais de la décision, les deux ministères conservaient des copies nationales interdites du fichier Schengen et traitaient des données inexactes. La CNIL relève des manquements aux obligations de licéité, d'exactitude et de sécurité ; le portail a été remplacé par l'application conforme France-Visas.",
+  "timeline": [
+    {
+      "date": "2023-12-11",
+      "event": "Rappel à l'ordre : copies nationales interdites du fichier Schengen et données inexactes du portail des visas."
+    },
+    {
+      "date": "2024-01-31",
+      "event": "BFM Tech puis NextINPACT relaient la sanction et le remplacement du portail par France-Visas."
+    }
+  ]
+}

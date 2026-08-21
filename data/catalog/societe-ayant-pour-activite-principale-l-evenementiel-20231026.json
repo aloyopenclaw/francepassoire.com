@@ -1,0 +1,42 @@
+{
+  "slug": "societe-ayant-pour-activite-principale-l-evenementiel-20231026",
+  "entity": "Société ayant pour activité principale l'événementiel",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-26",
+    "confirmation": "2023-10-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 2 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « société ayant pour activité principale l'événementiel », amende de 2 000 euros (26 octobre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 octobre 2023, la CNIL a infligé une amende de 2 000 euros à une société ayant pour activité principale l'événementiel, dans le cadre de la procédure simplifiée. Le tableau officiel des sanctions retient quatre manquements : non-respect du principe de minimisation des données, défauts d'information des personnes, absence de registre des activités de traitement et défaut de sécurité des données. La dénomination de la société n'est pas publiée et le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-10-26",
+      "event": "Amende de 2 000 euros en procédure simplifiée : minimisation, information, registre des traitements et sécurité en cause."
+    }
+  ]
+}
