@@ -1,0 +1,39 @@
+{
+  "slug": "seclin-20251128",
+  "entity": "Ville de Seclin (plateforme de prise de rendez-vous RDV360)",
+  "siren": "215905605",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-28",
+    "publication": "2025-11-28",
+    "confirmation": "2025-11-28"
+  },
+  "volume": {
+    "count": 19000,
+    "unit": "personnes",
+    "label": "19 000 habitants concernés selon La Voix du Nord ; données collectées présentées comme non sensibles (identité et coordonnées de rendez-vous d’état civil)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "La Voix du Nord — Cyberattaque en mairie : les données de 19 000 habitants piratées (28 novembre 2025)",
+      "url": "https://www.lavoixdunord.fr/1651066/article/2025-11-28/cyberattaque-en-mairie-les-donnees-de-19000-habitants-piratees",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 novembre 2025, le logiciel RDV360, utilisé par de nombreuses mairies pour les rendez-vous d’état civil, fait l’objet d’une cyberattaque. Avertie par la Métropole européenne de Lille, la ville de Seclin (Nord) publie une alerte sur son site pour prévenir ses habitants : des données ont été collectées mais ne sont pas sensibles, précise la municipalité. Le titre de La Voix du Nord évoque les données de 19 000 habitants. Comme les autres communes utilisatrices, Seclin invite à la vigilance contre les sollicitations inhabituelles par téléphone, e-mail ou SMS susceptibles d’exploiter ces informations d’identité et de contact.",
+  "timeline": [
+    {
+      "date": "2025-11-26",
+      "event": "Le logiciel de rendez-vous en mairie RDV360 fait l’objet d’une cyberattaque, rapporte La Voix du Nord."
+    },
+    {
+      "date": "2025-11-28",
+      "event": "Avertie par la Métropole européenne de Lille, la ville de Seclin publie une alerte sur son site internet."
+    }
+  ]
+}
