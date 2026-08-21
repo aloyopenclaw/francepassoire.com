@@ -1,0 +1,43 @@
+{
+  "slug": "wizishop-dropizi-20260819",
+  "entity": "WiziShop (Dropizi)",
+  "siren": "503594525",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-19",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; factures clients des boutiques Dropizi couvrant la période 2009-2026, téléchargées via une faille selon la communication de WiziShop"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage de Dropizi : des factures clients compromises depuis 2009 (19 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/wizishop-dropizi-mszyv230fxhdpsb7ppo",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — WiziShop (Dropizi et Evolup) piratés : des factures clients depuis 2009 récupérées par un hacker",
+      "url": "https://www.cyberattaque.org/wizishop-dropizi-et-evolup-pirates-des-factures-clients-depuis-2009-recuperees-par-un-hacker/",
+      "kind": "article"
+    }
+  ],
+  "description": "WiziShop, éditeur niçois de solutions e-commerce, a alerté ses clients le 17 août 2026 d'un incident touchant Dropizi, sa solution de création de boutiques en ligne. Selon la communication adressée aux personnes concernées, un tiers malveillant a exploité une faille de sécurité pour télécharger un volume important de factures. Certaines remontent à 2009 : dénomination du client, adresse postale, numéro de client, références et dates de facturation, montants facturés. L'entreprise indique avoir corrigé la faille le jour même et notifié la CNIL. Les données des acheteurs des boutiques, les coordonnées bancaires ainsi que les identifiants et mots de passe ne sont pas concernés selon WiziShop.",
+  "timeline": [
+    {
+      "date": "2026-08-17",
+      "event": "WiziShop est alertée de l'exploitation d'une faille permettant le téléchargement massif de factures ; la correction est déployée le jour même."
+    },
+    {
+      "date": "2026-08-19",
+      "event": "L'incident et la notification à la CNIL sont documentés par les relais de veille ; les factures concernées couvrent la période depuis 2009."
+    }
+  ]
+}

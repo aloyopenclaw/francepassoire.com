@@ -1,0 +1,55 @@
+{
+  "slug": "ceva-logistics-20260810",
+  "entity": "CEVA Logistics",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-10",
+    "publication": "2026-08-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué ; notifications envoyées aux acheteurs européens de matériel Steam, puis aux clients européens du Pokémon Center"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuites de données Steam : des données personnelles de clients européens compromises via CEVA Logistics (10 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/steam-msndgcya2ase84mzxi6",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Steam : une fuite chez CEVA expose des clients européens",
+      "url": "https://www.zataz.com/steam-une-fuite-chez-ceva-expose-des-clients-europeens/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Pokémon Center touché par la cyberattaque d'un prestataire (21 août 2026)",
+      "url": "https://www.zataz.com/pokemon-center-touche-par-la-cyberattaque-dun-prestataire/",
+      "kind": "article"
+    }
+  ],
+  "description": "CEVA Logistics, transporteur du groupe CMA CGM chargé des expéditions de matériel Steam en Europe, a été compromis entre le 29 juillet et le 1er août 2026. Selon la notification envoyée par Valve à ses clients, relayée par la veille, les attaquants ont obtenu une partie des informations confiées pour la livraison. Y figuraient identité, adresse postale, numéro de téléphone, adresse électronique et détail de la commande avec son montant. Les mots de passe Steam, les informations de paiement et les codes Steam Guard ne sont pas concernés selon Valve. Le 21 août, des clients européens du Pokémon Center reçoivent un avertissement similaire après cette même cyberattaque visant CEVA Logistics.",
+  "timeline": [
+    {
+      "date": "2026-07-29",
+      "event": "Début de la période d'incident chez CEVA Logistics selon la notification de Valve ; des données de livraison sont extraites jusqu'au 1er août."
+    },
+    {
+      "date": "2026-08-07",
+      "event": "Valve indique avoir été informée que des informations confidentielles de ses clients avaient probablement été compromises."
+    },
+    {
+      "date": "2026-08-10",
+      "event": "Les notifications aux clients Steam européens sont documentées par les relais de veille ; mots de passe et données de paiement exclus selon Valve."
+    },
+    {
+      "date": "2026-08-21",
+      "event": "Des clients européens du Pokémon Center sont avertis à leur tour, la compromission chez CEVA Logistics touchant plusieurs enseignes."
+    }
+  ]
+}

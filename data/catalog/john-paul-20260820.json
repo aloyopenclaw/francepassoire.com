@@ -1,0 +1,46 @@
+{
+  "slug": "john-paul-20260820",
+  "entity": "John Paul",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 4179,
+    "unit": "personnes",
+    "label": "4 179 clients des Banques Populaires et Caisses d'Épargne concernés selon la communication du groupe BPCE ; d'autres banques clientes du prestataire seraient touchées selon la presse"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données John Paul : 4 179 clients Visa Infinite et Platinum concernés (20 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/john-paul-mt1g0ll5v5vh0u0syq8",
+      "kind": "revendication"
+    },
+    {
+      "label": "Capital — Piratage chez un prestataire de Visa : 4 179 clients de BPCE touchés et d'autres banques concernées (21 août 2026)",
+      "url": "https://www.capital.fr/economie-politique/piratage-chez-un-prestataire-de-visa-4-179-clients-de-bpce-touches-et-d-autres-banques-concernees-1529465",
+      "kind": "article"
+    }
+  ],
+  "description": "John Paul, société de conciergerie associée aux cartes bancaires haut de gamme, a détecté le 5 août 2026 la compromission d'un compte de messagerie professionnel. L'attaque faisait suite à un hameçonnage. Selon la communication transmise au sein du groupe BPCE et relayée par la presse, un acteur externe a accédé à des données de clients de la conciergerie. Pour les Banques Populaires et les Caisses d'Épargne, 4 179 clients sont concernés, et d'autres banques clientes du prestataire seraient touchées. L'incident serait circonscrit à ce seul compte de messagerie ; les catégories exactes de données consultées ne sont pas détaillées publiquement.",
+  "timeline": [
+    {
+      "date": "2026-08-05",
+      "event": "John Paul détecte la compromission d'un compte de messagerie professionnel après une attaque par hameçonnage."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "La communication du groupe BPCE relayée par les services de veille chiffre à 4 179 les clients concernés des Banques Populaires et Caisses d'Épargne."
+    },
+    {
+      "date": "2026-08-21",
+      "event": "La presse économique relève que d'autres banques clientes du prestataire de conciergerie seraient concernées."
+    }
+  ]
+}

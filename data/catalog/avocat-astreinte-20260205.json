@@ -1,0 +1,42 @@
+{
+  "slug": "avocat-astreinte-20260205",
+  "entity": "Avocat (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-02-05",
+    "confirmation": "2026-02-05",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; liquidation d'astreinte de 1 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « avocat » (procédure simplifiée), liquidation d'astreinte de 1 000 euros (5 février 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 février 2026, la CNIL a prononcé la liquidation d'une astreinte de 1 000 euros à l'encontre d'un avocat. La décision intervient dans le cadre de la procédure simplifiée, pour absence de réponse à une injonction antérieure. La dénomination n'est pas publiée ; le tableau officiel ne précise ni la nature des données concernées ni l'objet de la mise en demeure initiale. Le même jour, une décision identique visait un médecin. Ces liquidations s'inscrivent dans la série des 23 sanctions simplifiées recensées par la CNIL depuis janvier 2026, dont plusieurs sanctionnent un défaut de coopération avec l'autorité.",
+  "timeline": [
+    {
+      "date": "2026-02-05",
+      "event": "Liquidation d'astreinte de 1 000 euros (procédure simplifiée) : absence de réponse à l'injonction."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, dont quatre liées à un défaut de coopération."
+    }
+  ]
+}
