@@ -1,0 +1,42 @@
+{
+  "slug": "societe-de-fabrication-de-produits-de-consommation-courante-en-matieres-plastiques-20230928",
+  "entity": "Société de fabrication de produits de consommation courante en matières plastiques (procédure simplifiée)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-28",
+    "confirmation": "2023-09-28",
+    "publication": "2023-11-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de fabrication de produits de consommation courante en matières plastiques (procédure simplifiée) », Amende de 20 000 euros (28 septembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce dix nouvelles sanctions dans le cadre de sa procédure simplifiée (7 novembre 2023)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-dix-nouvelles-sanctions-dans-le-cadre-de-sa-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 septembre 2023, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société de fabrication de produits de consommation courante en matières plastiques, dans le cadre de la procédure simplifiée. Les manquements retenus : atteinte au principe de minimisation des données, défaut d'information des personnes et de transparence, et défaut de sécurité des données. La dénomination n'est pas publiée. Dans son communiqué du 7 novembre 2023, la CNIL indique avoir prononcé dix sanctions simplifiées sur deux mois, pour 97 000 euros, principalement pour des atteintes à la minimisation, dont la vidéosurveillance des salariés.",
+  "timeline": [
+    {
+      "date": "2023-09-28",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : minimisation, information et sécurité des données en cause."
+    },
+    {
+      "date": "2023-11-07",
+      "event": "Communiqué CNIL : dix sanctions simplifiées sur deux mois (97 000 euros), centrées sur la minimisation et la surveillance des salariés."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-transport-de-fret-aerien-20230918",
+  "entity": "Société de transport de fret aérien",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-18",
+    "confirmation": "2023-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 200 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de transport de fret aérien », Amende de 200 000 euros (18 septembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive (16 février 2024)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 18 septembre 2023, la CNIL a prononcé une amende de 200 000 euros à l'encontre d'une société de transport de fret aérien. Les manquements retenus : atteinte au principe de minimisation, interdiction de traiter des catégories particulières de données, collecte ou traitement de données relatives aux infractions, aux condamnations et aux mesures de sûreté, et défaut de coopération avec la CNIL. La dénomination n'est pas publiée. La décision compte parmi les 42 sanctions de 2023, pour 89 179 500 euros au total.",
+  "timeline": [
+    {
+      "date": "2023-09-18",
+      "event": "Amende de 200 000 euros : minimisation, données relatives aux infractions et coopération avec la CNIL en cause."
+    },
+    {
+      "date": "2024-02-16",
+      "event": "Le bilan 2023 de la CNIL recense 42 sanctions pour 89 179 500 euros d'amendes cumulées."
+    }
+  ]
+}

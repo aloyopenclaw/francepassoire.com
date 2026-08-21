@@ -1,0 +1,47 @@
+{
+  "slug": "societe-de-vente-a-distance-sur-catalogue-specialise-20250911",
+  "entity": "Société de vente à distance sur catalogue spécialisé (procédure simplifiée)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-11",
+    "confirmation": "2025-09-11",
+    "publication": "2025-10-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de vente à distance sur catalogue spécialisé (procédure simplifiée) », Amende administrative de 5 000 euros (11 septembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce 16 nouvelles sanctions dans le cadre de la procédure simplifiée (13 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-16-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 septembre 2025, la CNIL a prononcé une amende administrative de 5 000 euros à l'encontre d'une société de vente à distance sur catalogue spécialisé, dans le cadre de la procédure simplifiée. Le manquement retenu est un défaut de coopération avec la CNIL. La dénomination n'est pas publiée. La décision fait partie des seize sanctions simplifiées annoncées le 13 octobre 2025, pour 108 000 euros cumulés, dont plusieurs pour des manquements à la coopération lors de demandes d'exercice des droits.",
+  "timeline": [
+    {
+      "date": "2025-09-11",
+      "event": "Amende administrative de 5 000 euros (procédure simplifiée) pour défaut de coopération avec la CNIL."
+    },
+    {
+      "date": "2025-10-13",
+      "event": "Communiqué CNIL : seize sanctions simplifiées depuis mai 2025 (108 000 euros), dont des défauts de coopération."
+    }
+  ]
+}
