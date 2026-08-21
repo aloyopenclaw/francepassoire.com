@@ -1,0 +1,48 @@
+{
+  "slug": "frisquet-20251012",
+  "entity": "Frisquet (fabricant de chaudières)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-12",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; attaque estimée au 12 septembre 2025 par ransomware.live"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Frisquet (groupe Qilin, découverte 12 octobre 2025, attaque estimée 12 septembre)",
+      "url": "https://www.ransomware.live/id/RnJpc3F1ZXRAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Cyberattaque contre la Région des Hauts-de-France : tableau des victimes françaises de Qilin, dont Frisquet (16 octobre 2025)",
+      "url": "https://www.zataz.com/cyberattaque-contre-la-region-des-hauts-de-france-les-lycees-impactes/",
+      "kind": "article"
+    },
+    {
+      "label": "Hendy Adrian — Ransom! FRISQUET : suivi de la revendication Qilin (12 octobre 2025)",
+      "url": "https://www.hendryadrian.com/ransom-frisquet/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 octobre 2025, Frisquet, dernier fabricant de chaudières entièrement français, fondé en 1936 et basé à Willems (Nord), apparaît sur le site de fuite du rançongiciel Qilin, qui estime l’attaque au 12 septembre 2025. Aucun volume n’est annoncé, mais l’entrée s’inscrit dans la série française d’octobre de la franchise — entreprises, mairies et lycées — documentée par les veilleurs. Pour un industriel du chauffage à l’approche de la saison de pointe, une attaque par double extorsion menace à la fois la production, le suivi après-vente et les données des réseaux de plombiers-installateurs. L’entreprise n’a pas communiqué publiquement ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-09-12",
+      "event": "Date d’attaque estimée par ransomware.live pour l’intrusion chez Frisquet."
+    },
+    {
+      "date": "2025-10-12",
+      "event": "Frisquet listé sur le site de fuite de Qilin, sans volume annoncé."
+    }
+  ],
+  "group": "qilin"
+}

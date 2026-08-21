@@ -1,0 +1,131 @@
+================================================================
+full-catalog-completion — RAFALE 3, LANE 3 (ransomware 2025, longue
+traîne) — 20 fiches
+Worktree : /var/folders/.../T/opencode/fp-r3l3 (supprimé en fin de run)
+Branche  : fiche/rafale3-l3  (base main b04bac9, 531 fiches)
+================================================================
+
+[1] SOURCE PRIMAIRE — API ransomware.live (historique 2025)
+  curl -sL https://api.ransomware.live/victims/2025 → 200 (7,2 Mo)
+  Parsing : 8 147 victimes 2025 toutes nationalités, dont 189 FR
+  (188 intitulés distincts — cf. /tmp/opencode/r3l3/fr2025.json).
+  Page victime canonique par entrée : https://www.ransomware.live/
+  id/{base64(titre@groupe)} — utilisé comme source « revendication »
+  de chaque fiche (testée 200 individuellement).
+
+[2] SÉLECTION / DÉDUP vs CATALOGUE MAIN (531 fiches publiées)
+  Exclusions d'office (déjà cataloguées, vérifiées par grep slugs) :
+  5àSec, Afpa, Air France-KLM, Atalian, Cartier, Clarins, Guides de
+  Chamonix, Disneyland Paris, France terre d'asile, FranceLink,
+  Harvest, Indigo, Kering, Michelin, PathoQuest, Région Hauts-de-
+  France, Semco, Sorbonne, Thaon-les-Vosges, Univ. Rennes, UPPA,
+  Elne, Saint-Claude, Volkswagen France, Orange (28/07), Éducation
+  nationale (10/06), France Travail-Stormous, Selartex (mars 2025
+  déjà catalogué ; l'entrée r.live du 23/08 traitée en re-listing).
+  Exclusions éditoriales :
+  - ADULLACT (fog) : piratage démenti publiquement (communiqué,
+    LeMagIT 25/02) → « contestation fondée », pas de fiche.
+  - Eurofins (nova) : entrée marquée « Duplicate », pays LU sur la
+    fiche id ; l'incident réel (Clinical Diagnostics NL, 485 000 à
+    941 000 patientes) n'est pas une attaque d'entité française.
+  - Sodexo France (babuk2) : revendication d'un acteur assimilé à
+    une opération de ré-extorsion sans preuve (Analyst1) ; Mazars
+    retenu seul pour documenter ce motif, avec réserve en description.
+  - Doumen, Nutripack, Janvier Labs, Houra, Typology, OGI, Sogedis,
+    Elitt, Menway, Black Star, Mission Locale Montpellier, Groupe GM,
+    BoostHeat, Ophtazon, Top4Fans, Sneg, H. Gascon, EURORDIS… :
+    candidats écartés faute de relais presse vérifiables (curl 200)
+    dans le budget de la lane — reste du pool pour lanes suivantes.
+  → 0 doublon créé (test temp : ls-tree origin/main = 531, overlap []).
+
+[3] FICHES LIVRÉES (20 — 19 revendiquées + 1 confirmée, Ton A,
+    groupe renseigné ×20, descriptions 80-120 mots)
+  01 air-liquide-20250210          industrie  clop         10/02
+  02 cesi-20250211                 services   termite      11/02
+  03 ayomi-20250213                finance    fog          13/02
+  04 omydoo-20250213               services   fog          13/02
+  05 centrale-nantes-20250326      recherche  ralord       26/03
+  06 forvis-mazars-20250310        services   babuk2       10/03
+  07 groupe-delcourt-20250406      media      hunters      06/04  CONFIRMÉE
+  08 hci-20250502                  services   qilin        02/05
+  09 itinsell-20250515             services   qilin        15/05
+  10 compagnons-du-devoir-20250516 services   qilin        16/05
+  11 evolupharm-20250707           sante      payoutsking  07/07
+  12 bm-expertise-20250718         services   cicada3301   18/07
+  13 peggy-sage-20250815           retail     datacarry    15/08
+  14 frisquet-20251012             industrie  qilin        12/10
+  15 alu-perpignan-20251014        industrie  qilin        14/10
+  16 corneilhan-20251020           public     ciphbit      20/10
+  17 prova-20251104                industrie  qilin        04/11
+  18 christofle-20251125           retail     qilin        25/11
+  19 numalliance-20251203          industrie  qilin        03/12
+  20 village-sante-st-joseph-20251209 sante   devman       09/12
+  13 groupes distincts : qilin ×9, fog ×2, clop, termite, ralord,
+  babuk2, hunters, payoutsking, cicada3301, datacarry, ciphbit,
+  devman. Secteurs : industrie ×5, services ×6, sante ×2, retail ×2,
+  finance, recherche, media, public.
+  Delcourt = confirmee (direction confirme à ActuaLitté 04/04/2025,
+  CNIL notifiée, plainte déposée, données identité/sécu listées).
+
+[4] SOURCES — CURL 54/54 HTTP 200 (UA navigateur, après écriture)
+  Chaque fiche : ransomware.live id (revendication) + 1 à 2 relais.
+  Relais FR : LeMagIT ×3 (Termite/Reunion, Fog nébuleuses, via
+  contexte), ZDNET.fr (Termite ×2 victimes), Zataz ×2 (Ayomi,
+  tableau Qilin France), ActuaLitté (Delcourt), dpo-partage.fr
+  (Clop février), deefense.fr (Alu Perpignan), HAS officiel
+  (identification Village Santé St Joseph, FINESS 490000700).
+  Relais EN spécialisés : RedPacket Security ×6, Breachsense ×8,
+  breach.house ×3, DeXpose ×4, DarkWeb Informer, DailyDarkWeb,
+  Botcrawl, Hendy Adrian ×2, TechCrunch (contexte Cleo/Clop).
+  Exclus avant commit : cyberpress.org (403), analyst1.com (403),
+  gurucul.com (403), crawler.darkeye.io (timeout) — remplacés.
+  ÉCART vs consigne « 01net/JDN archives » : recherche serveur 01net
+  (le paramètre q est ignoré côté serveur) et moteur web dédié →
+  aucune couverture 01net/JDN dédiée trouvée pour ces 20 victimes
+  de longue traîne (01net a couvert Qilin/VW France, déjà catalogué).
+  Relais FR équivalents (Zataz, LeMagIT, ZDNet, ActuaLitté…)
+  substitués — écart documenté ici et dans la PR.
+
+[5] VALIDATION ZOD (transcript)
+  $ npx vitest run tests/rafale3-l3.temp.test.ts  (temporaire, supprimé)
+    → Test Files 1 passed | Tests 6/6 passed
+      20 fichiers présents ; 0 chevauchement origin/main (531 entrées) ;
+      20 × ficheSchema zod OK ; suffixe slug = date de revendication ;
+      group renseigné ×20 ; statut revendiquee ×19 + confirmee ×1
+      (Delcourt) ; source ransomware.live + relais ≥ 2 sources ×20 ;
+      descriptions 80-120 mots ; événements ≤ 40 mots.
+  $ npx vitest run  (suite complète, temp retiré)
+    → Test Files 30 passed | Tests 919/919 passed
+  $ npx astro build
+    → 1154 page(s) built in 7.10s — 551 fiches générées (531+20),
+      spot-check dist/fiche/ : les 20 pages présentes ; Delcourt
+      rend « Confirmée » ; hubs /entite/ générés (ex. christofle-
+      maison-dorfevrerie, frisquet-fabricant-de-chaudieres).
+
+[6] LIVRAISON
+  git commit « feat(catalog): rafale 3 — ransomware+tech L3 (20 fiches) »
+    — 21 fichiers : 20 JSON data/catalog/ + ce journal.
+  git push -u origin fiche/rafale3-l3 → ok.
+  gh pr create --base main --title « Rafale 3 L3 — ransomware 2025 + tech »
+    (corps : checklist 20 fiches, dédup, sourcing, écarts, risques,
+    avertissement NE PAS MERGER — chaîne d'abord).
+  JAMAIS MERGE par la lane (décision #6 respectée). Worktree supprimé.
+  Aucun post social (consigne lane).
+
+[7] RISQUES RÉSIDUELS (repris dans la PR)
+  1. 19 fiches sur 20 restent au statut « revendiquée » : la
+     revendication ransomware.live est documentée, l'exfiltration
+     n'est confirmée par aucune source officielle — posture assumée
+     de l'observatoire (pastille « passoire qui fuit »).
+  2. Forvis Mazars (babuk2) : acteur assimilé à de la ré-extorsion
+     de données antérieures ; fiche volontairement factuelle, sans
+     assertion d'intrusion, contexte 2023 (Alphv) rappelé.
+  3. Ayomi/Omydoo (fog) : campagne GitLab jugée « nébuleuse » par
+     LeMagIT — réserve citée dans les descriptions ; Ayomi documentée
+     surtout par l'extorsion de juin (Zataz).
+  4. Aucun SIREN résolu (sources presse/leak non officielles) ;
+     champs omis conformément au schéma optionnel.
+  5. Écart sourcing 01net/JDN (cf. [4]) : relais FR équivalents +
+     agrégateurs EN ; correction triviale si des URL 01net/JDN
+     émergent.
+  6. CI GitHub possiblement bloquée (billing) — équivalence locale [5].

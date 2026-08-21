@@ -1,0 +1,44 @@
+{
+  "slug": "peggy-sage-20250815",
+  "entity": "Peggy Sage (marque de cosmétiques)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-15",
+    "publication": "2025-08-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "archive de 11,3 Go publiée en premier lot par Datacarry ; volume total non précisé"
+  },
+  "data_types": [
+    "documents",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Peggy Sage (groupe Datacarry, découverte 15 août 2025)",
+      "url": "https://www.ransomware.live/id/UGVnZ3kgU2FnZUBkYXRhY2Fycnk",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — Datacarry Ransomware Attack on French Beauty Brand Peggy Sage (16 août 2025)",
+      "url": "https://www.dexpose.io/datacarry-ransomware-attack-on-french-beauty-brand-peggy-sage/",
+      "kind": "article"
+    },
+    {
+      "label": "Daily Dark Web — French Cosmetics Giant Peggy Sage Allegedly Hit by Datacarry (15 août 2025)",
+      "url": "https://dailydarkweb.net/french-cosmetics-giant-peggy-sage-allegedly-hit-by-datacarry-ransomware-group/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 août 2025, Peggy Sage, marque française de cosmétiques et de soins professionnels fondée en 1925 (vernis, maquillage, soins, formation et distribution en instituts), est revendiquée par le groupe de rançongiciel Datacarry, apparu en mai 2025. Les attaquants publient directement une première archive de 11,3 Go de données sensibles et menacent de tout diffuser si l’entreprise n’engage pas de dialogue sous 72 heures. Le modèle du groupe est la double extorsion : exfiltration, puis publication progressive. La marque, dont la clientèle mêle particuliers et professionnels de la beauté, n’a pas communiqué publiquement ; l’exfiltration n’est pas confirmée au-delà du lot publié.",
+  "timeline": [
+    {
+      "date": "2025-08-15",
+      "event": "Datacarry revendique Peggy Sage : archive de 11,3 Go publiée, ultimatum de 72 heures."
+    }
+  ],
+  "group": "datacarry"
+}

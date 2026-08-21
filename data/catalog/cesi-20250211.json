@@ -1,0 +1,52 @@
+{
+  "slug": "cesi-20250211",
+  "entity": "CESI (groupe privé d’enseignement supérieur)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-11",
+    "publication": "2025-02-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré par la revendication ; l’école revendique 25 campus et 2 500 étudiants au moment de l’attaque"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : CESI (groupe Termite, découverte 11 février 2025)",
+      "url": "https://www.ransomware.live/id/Q0VTSUB0ZXJtaXRl",
+      "kind": "revendication"
+    },
+    {
+      "label": "LeMagIT — Ransomware : que sait-on de Termite, qui a attaqué le département de La Réunion ? (12 février 2025)",
+      "url": "https://www.lemagit.fr/actualites/366616976/Ransomware-que-sait-on-de-Termite-qui-a-attaque-le-departement-de-la-Reunion",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNET.fr — Les cybercriminels de Termite font une nouvelle victime dans l’Hexagone (9 mai 2025)",
+      "url": "https://www.zdnet.fr/actualites/les-cybercriminels-de-termite-font-une-nouvelle-victime-dans-lhexagone-474834.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le samedi 1er février 2025, le CESI, groupe privé d’enseignement supérieur formant ingénieurs, cadres et techniciens, est victime d’une cyberattaque : l’accès à Internet est coupé, une cellule de crise est activée et les étudiants sont invités à rester chez eux. Les cours reprennent le 3 février avec des mesures de continuité pédagogique et les autorités sont saisies. Dix jours plus tard, le 11 février, l’enseigne de rançongiciel Termite revendique l’attaque sur son site vitrine. Selon LeMagIT, Termite, découverte en novembre 2024, utilise une version modifiée de Babuk et compte alors trois victimes françaises, dont le département de La Réunion. Le vol de données n’est pas confirmé publiquement.",
+  "timeline": [
+    {
+      "date": "2025-02-01",
+      "event": "Cyberattaque un samedi : coupure d’accès à Internet, cellule de crise, étudiants invités à rester chez eux."
+    },
+    {
+      "date": "2025-02-03",
+      "event": "Reprise des cours avec mesures de continuité pédagogique ; autorités compétentes saisies."
+    },
+    {
+      "date": "2025-02-11",
+      "event": "Termite revendique l’attaque du CESI sur son site vitrine."
+    }
+  ],
+  "group": "termite"
+}
