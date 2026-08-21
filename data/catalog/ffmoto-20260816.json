@@ -1,0 +1,56 @@
+{
+  "slug": "ffmoto-20260816",
+  "entity": "Fédération Française de Motocyclisme (FFM)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-17"
+  },
+  "volume": {
+    "count": 472760,
+    "unit": "enregistrements",
+    "label": "472 760 enregistrements d'adhérents mis en vente (chiffre analysé par FrenchBreaches ; doublons possibles, données couvrant 2024-2025)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Une fuite de données liée à la FFM refait surface : 472 760 enregistrements",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-motocyclisme-msvj2szkiclvx2gaoc",
+      "kind": "revendication"
+    },
+    {
+      "label": "BFMTV — Les fédérations françaises de moto et de danse piratées : près d'un million de licenciés mis en vente",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/les-federations-francaises-de-moto-et-de-danse-ont-ete-piratees-en-2024-et-2025-les-donnees-de-pres-d-un-million-de-licencies-sont-desormais-mises-en-vente-sur-le-darkweb_AN-202608170310.html",
+      "kind": "article"
+    },
+    {
+      "label": "Caradisiac — Piratage à la FFM : des centaines de milliers de données en vente sur le dark web",
+      "url": "https://www.caradisiac.com/piratage-informatique-des-centaines-de-milliers-de-donnees-de-la-federation-francaise-de-moto-en-vente-sur-le-dark-web-223608.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Revolution Magazine — FFM piratée : près de 473 000 données circulent sur le dark web",
+      "url": "https://www.revolutionmagazine.com/federation-francaise-motocyclisme-piratage-donnees-dark-web.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base présentée comme issue de la Fédération Française de Motocyclisme refait surface le 16 août 2026 sur un forum cybercriminel. Selon l'analyse relayée par FrenchBreaches, elle contient 472 760 enregistrements d'adhérents couvrant 2024 et 2025 : noms, prénoms, e-mails, téléphones, nationalités et adresses postales complètes. Un incident touchant le prestataire de l'intranet de la fédération avait déjà été signalé en janvier 2025 ; le lien exact entre les deux événements n'est pas établi. Selon BFMTV, la fédération a informé les personnes concernées et déployé la double authentification. Le nombre de personnes uniques reste inconnu.",
+  "timeline": [
+    {
+      "date": "2025-01-01",
+      "event": "Un incident touchant le prestataire de l'intranet FFM est signalé auprès des licenciés ; le lien avec la base d'août 2026 n'est pas établi."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "Une base de 472 760 enregistrements d'adhérents 2024-2025 est mise en vente sur un forum cybercriminel."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La presse relaie la mise en vente ; les fédérations concernées ont contacté les personnes et déployé la double authentification."
+    }
+  ]
+}

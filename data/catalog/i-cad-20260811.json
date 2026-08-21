@@ -1,0 +1,52 @@
+{
+  "slug": "i-cad-20260811",
+  "entity": "I-CAD (Ingenium Animalis)",
+  "siren": "439548165",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-10",
+    "publication": "2026-08-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; adresses e-mail d'usagers du fichier (42 millions d'animaux enregistrés) ; communication publique faute de notification individuelle possible"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "I-CAD — Communication publique : information aux usagers concernant un incident de sécurité",
+      "url": "https://i-cad.fr/articles/Communication_Securite_Donnees",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — I-CAD révèle une cyberattaque… un an après",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/dans-l-impossibilite-technique-de-notifier-les-utilisateurs-le-gestionnaire-du-fichier-national-d-identification-des-chiens-chats-et-furets-i-cad-revele-avoir-ete-victime-d-une-cyberattaque-un-an-apres_AV-202608100375.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Une arnaque cible les propriétaires de chats, chiens et furets après la cyberattaque du fichier I-Cad",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/une-arnaque-cible-les-proprietaires-de-chats-chiens-et-furets-apres-la-cyberattaque-du-fichier-i-cad-20260811",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — I-CAD : incident révélé près d'un an après",
+      "url": "https://fuitesinfos.fr/article/2026-08-11-i-cad",
+      "kind": "article"
+    }
+  ],
+  "description": "Le gestionnaire du fichier national d'identification des chiens, chats et furets révèle le 10 août 2026, par une communication publique, une vulnérabilité identifiée en septembre 2025 ayant pu permettre l'interrogation automatisée d'enregistrements de la base : des adresses e-mail d'usagers ont pu être récupérées. Une vague de phishing ciblant des propriétaires d'animaux a remis l'affaire sur le devant de la scène. Ingenium Animalis, qui avait notifié la CNIL en 2025, invoque l'impossibilité technique de contacter individuellement les usagers. Aucune donnée sensible au sens du RGPD n'est concernée selon l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-09-01",
+      "event": "Une vulnérabilité est identifiée sur le fichier I-CAD et circonscrite ; la CNIL est notifiée, selon le communiqué publié en août 2026."
+    },
+    {
+      "date": "2026-08-10",
+      "event": "Communication publique d'Ingenium Animalis : des e-mails d'usagers ont pu être récupérés ; une vague de phishing cible les propriétaires d'animaux."
+    }
+  ]
+}

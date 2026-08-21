@@ -1,0 +1,58 @@
+{
+  "slug": "cerballiance-20260325",
+  "entity": "Cerballiance",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-25",
+    "publication": "2026-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; 2,5 millions de lignes recensées pour Cerballiance par le veilleur SaxX (chiffre non confirmé) ; le réseau suit environ 28 millions de patients par an"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Cerballiance : accès non autorisé via un serveur de prestataire",
+      "url": "https://fuitesinfos.fr/article/2026-03-25-cerballiance",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Un prestataire du réseau de laboratoires Cerballiance visé par une cyberattaque",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/un-prestataire-du-reseau-de-laboratoires-de-biologie-medicale-cerballiance-vise-par-une-cyberattaque_7898153.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Les laboratoires Cerballiance visés par un vol massif de données",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/les-laboratoires-de-biologie-medicale-cerballiance-vises-par-un-vol-massif-de-donnees_7900568.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Les laboratoires Cerballiance victimes d'une attaque informatique",
+      "url": "https://www.leparisien.fr/high-tech/analyses-medicales-numeros-de-securite-sociale-les-laboratoires-cerballiance-victimes-dune-attaque-informatique-09-04-2026-5XAYWHUYMBBY5JMGMA6Z5QG5A4.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le réseau Cerballiance, environ 700 laboratoires de biologie médicale, a prévenu ses patients le 25 mars 2026 d'un accès non autorisé à des données personnelles, sur un serveur hébergé par l'un de ses prestataires. Selon les notifications relayées, sont concernés l'état civil, les identifiants et mots de passe cryptés de l'espace patient, certains comptes rendus d'analyses et des numéros de Sécurité sociale. L'entreprise indique avoir fait fermer le serveur, saisi la CNIL, l'ANSSI et l'ARS, et déposé plainte. Le nombre de personnes touchées n'est pas communiqué ; un veilleur recense 2,5 millions de lignes, chiffre non confirmé.",
+  "timeline": [
+    {
+      "date": "2026-03-25",
+      "event": "Courriels de notification aux patients : accès non autorisé sur un serveur d'un prestataire ; états civils, identifiants, comptes rendus d'analyses et NIR concernés."
+    },
+    {
+      "date": "2026-03-27",
+      "event": "La presse nationale relaie l'incident ; l'entreprise dit avoir fait fermer le serveur et saisi CNIL, ANSSI et ARS."
+    },
+    {
+      "date": "2026-04-09",
+      "event": "Selon Le Parisien, les notifications se poursuivent par région ; un veilleur recense 2,5 millions de lignes pour Cerballiance, chiffre non confirmé."
+    }
+  ]
+}

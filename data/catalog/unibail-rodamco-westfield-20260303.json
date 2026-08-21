@@ -1,0 +1,49 @@
+{
+  "slug": "unibail-rodamco-westfield-20260303",
+  "entity": "Unibail-Rodamco-Westfield",
+  "siren": "682024096",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-03",
+    "publication": "2026-03-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; inscrits aux programmes de fidélité et newsletters de 93 centres commerciaux (plusieurs millions de profils potentiels selon les relais)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — 93 centres commerciaux piratés : des millions de données clients d'Unibail potentiellement exposées",
+      "url": "https://frenchbreaches.com/blog/93-centres-commerciaux-pirates-des-millions-de-donnees-clients-dunibail-potentiellement-exposees",
+      "kind": "revendication"
+    },
+    {
+      "label": "Actu Lyon — Les centres Part-Dieu et Confluence victimes d'une cyberattaque massive",
+      "url": "https://actu.fr/auvergne-rhone-alpes/lyon_69123/lyon-les-centres-part-dieu-et-confluence-victimes-d-une-cyberattaque-massive-des-clients-concernes_63921358.html",
+      "kind": "article"
+    },
+    {
+      "label": "Lyon Capitale — Les centres Part-Dieu et Confluence victimes d'une cyberattaque",
+      "url": "https://www.lyoncapitale.fr/actualite/lyon-les-centres-commerciaux-de-la-part-dieu-et-de-confluence-victimes-d-une-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe Unibail-Rodamco-Westfield, qui exploite 93 centres commerciaux en Europe, a informé ses clients début mars 2026 d'un accès non autorisé à l'une de ses bases de données, révélé le 3 mars. Les inscrits aux programmes de fidélité et aux newsletters sont concernés : identité, e-mail, téléphone, code postal, date de naissance et, le cas échéant, plaque d'immatriculation. Selon le courriel relayé par la presse, aucune donnée bancaire ni mot de passe n'est concerné. Le groupe indique avoir pris les mesures nécessaires et travailler avec les autorités compétentes. Le volume exact n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-03-03",
+      "event": "Des courriels d'Unibail-Rodamco-Westfield informent les inscrits fidélité et newsletters d'un accès non autorisé à une base de données clients."
+    },
+    {
+      "date": "2026-03-03",
+      "event": "La presse régionale relaie la notification ; le groupe exclut les données bancaires et les mots de passe."
+    }
+  ]
+}

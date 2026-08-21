@@ -1,0 +1,44 @@
+{
+  "slug": "synlab-france-20260307",
+  "entity": "Synlab France",
+  "siren": "752317107",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-07",
+    "publication": "2026-03-07"
+  },
+  "volume": {
+    "count": 327000000,
+    "unit": "lignes",
+    "label": "327 millions de lignes et plus d'un million de documents revendiqués (161 Go ; données internes à dominante financière et industrielle selon la revendication, sans dossier patient établi)"
+  },
+  "data_types": [
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — SYNLAB France : 161 Go de données revendiqués",
+      "url": "https://fuitesinfos.fr/article/2026-03-07-synlab-france",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite massive chez Synlab France : 1 M de documents et 327 M de lignes revendiquées",
+      "url": "https://frenchbreaches.com/blog/fuite-massive-chez-synlab-france-plus-d1-million-de-documents-et-327-millions-de-lignes-de-donnees-revendiquees-par-un-hacker",
+      "kind": "revendication"
+    },
+    {
+      "label": "Secuslice — Synlab France piraté ? 161 Go de données de santé dans la nature",
+      "url": "https://secuslice.com/2026/03/fuite-donnees-sante-synlab-france-par-hexdex/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 mars 2026, l'acteur HexDex revendique sur un forum l'exfiltration de 161 Go de données internes de Synlab France, réseau de laboratoires d'analyses médicales : environ 1,2 million de documents et 327 millions de lignes, proposés à la vente. Selon la revendication, le corpus comprend documents internes, exports de bases, courriels professionnels et tableurs, à dominante financière et industrielle plutôt que des dossiers patients. Aucune confirmation officielle n'est intervenue à ce stade ; l'authenticité des données et l'étendue réelle de la compromission restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-03-07",
+      "event": "HexDex revendique 161 Go (1,2 M documents, 327 M lignes) issus de Synlab France et propose la base à la vente ; aucun échantillon de dossier patient n'est établi."
+    }
+  ]
+}
