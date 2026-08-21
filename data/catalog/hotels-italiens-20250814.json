@@ -1,0 +1,38 @@
+{
+  "slug": "hotels-italiens-20250814",
+  "entity": "Hôtels en Italie (dizaines dâétablissements)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-14",
+    "publication": "2025-08-14"
+  },
+  "volume": {
+    "count": 100000,
+    "unit": "enregistrements",
+    "label": "près de 100 000 scans haute résolution de passeports et pièces d’identité mis en vente sur le dark web (alerte Agid)"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Mauvaise nouvelle pour les touristes : des dizaines de milliers de passeports piratés dans des hôtels italiens",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/mauvaise-nouvelle-pour-le-touristes-des-dizaines-de-milliers-de-passeports-pirates-dans-des-hotels-italiens_AD-202508140379.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — En Italie, des dizaines de milliers de passeports ont été piratés dans des hôtels",
+      "url": "https://www.franceinfo.fr/monde/italie/en-italie-des-dizaines-de-milliers-de-passeports-ont-ete-pirates-dans-des-hotels_7435228.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L’Agence italienne pour le numérique (Agid) alerte le 14 août 2025 sur la vente sur le dark web de dizaines de milliers de scans haute résolution de passeports, cartes d’identité et autres documents utilisés par des clients lors de check-in dans des hôtels italiens — près de 100 000 documents au total. Le vendeur, connu sous le pseudonyme « mydocs », affirme les avoir obtenus par des « accès non autorisés » entre juin et août 2025 ; dix hôtels sont concernés et « d’autres cas pourraient émerger ». L’Agid met en garde contre la création de faux documents et l’usurpation d’identité numérique, conséquences potentiellement graves pour les victimes.",
+  "timeline": [
+    {
+      "date": "2025-08-14",
+      "event": "L’Agid annonce avoir détecté la vente d’environ 100 000 scans de pièces d’identité dérobés dans dix hôtels italiens, obtenus entre juin et août 2025 selon le vendeur « mydocs »."
+    }
+  ]
+}

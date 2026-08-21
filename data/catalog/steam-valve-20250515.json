@@ -1,0 +1,36 @@
+{
+  "slug": "steam-valve-20250515",
+  "entity": "Valve (plateforme Steam)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "publication": "2025-05-15"
+  },
+  "volume": {
+    "count": 89000000,
+    "unit": "comptes",
+    "label": "89 millions de comptes Steam revendiqués par le pirate « Machine1337 », base proposée à 5 000 dollars ; Valve dément toute violation de ses systèmes"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Fuite de données de 89 millions de comptes Steam : son propriétaire, Valve, dément le piratage",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/fuite-de-donnees-de-89-millions-de-comptes-steam-son-proprietaire-valve-dement-le-piratage_AN-202505150624.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Un pirate connu sous le pseudonyme « Machine1337 » affirme sur le dark web avoir piraté 89 millions de comptes Steam et met la base en vente pour 5 000 dollars. Interrogée le 15 mai 2025, Valve dément toute violation de ses systèmes : après examen de lâéchantillon, l’entreprise conclut que la fuite provient « d’anciens SMS contenant des codes à usage unique valables 15 minutes » et des numéros de téléphone destinataires, sans association avec des comptes, mots de passe ou données de paiement. Valve n’impose aucun changement de mot de passe et invite à activer la double authentification. L’origine exacte de la fuite reste indéterminée.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "event": "Un pirate affirme sur le dark web détenir 89 millions de comptes Steam et propose la base à la vente pour 5 000 dollars."
+    },
+    {
+      "date": "2025-05-15",
+      "event": "Valve dément toute violation : la fuite concernerait d’anciens SMS de double authentification et des numéros de téléphone, non associés aux comptes."
+    }
+  ]
+}

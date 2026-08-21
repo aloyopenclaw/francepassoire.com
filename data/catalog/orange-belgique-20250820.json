@@ -1,0 +1,38 @@
+{
+  "slug": "orange-belgique-20250820",
+  "entity": "Orange Belgique (groupe Orange)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-20",
+    "publication": "2025-08-20",
+    "confirmation": "2025-08-20"
+  },
+  "volume": {
+    "count": 850000,
+    "unit": "personnes",
+    "label": "850 000 clients (chiffre annoncé par Orange Belgique) : nom, prénom, numéro de téléphone, numéro de carte SIM, code PUK et plan tarifaire consultés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — La cyberattaque contre Orange Belgique fin juillet a touché 850 000 clients de l’opérateur",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/la-cyberattaque-contre-orange-belgique-fin-juillet-a-touche-850-000-clients-de-l-operateur_AD-202508200377.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 août 2025, Orange Belgique, filiale du groupe français Orange, annonce avoir détecté fin juillet une cyberattaque ayant permis l’accès aux données de 850 000 clients. Le pirate a consulté un système contenant noms, prénoms, numéros de téléphone, numéros de carte SIM, codes PUK et plans tarifaires ; mots de passe, adresses mail et coordonnées bancaires ne sont pas concernés selon l’opérateur, qui a déposé plainte auprès des autorités judiciaires. Les clients sont invités à rester vigilants face à toute communication suspecte. Il s’agit d’une nouvelle intrusion confirmée dans le groupe Orange en 2025, après celle touchant sa filiale roumaine en février.",
+  "timeline": [
+    {
+      "date": "2025-08-20",
+      "event": "Orange Belgique annonce qu’une cyberattaque détectée fin juillet a touché 850 000 clients : identité, numéro de téléphone, carte SIM, code PUK et plan tarifaire."
+    },
+    {
+      "date": "2025-08-20",
+      "event": "L’opérateur exclut toute compromission de mots de passe ou de coordonnées bancaires et indique avoir déposé plainte auprès des autorités judiciaires."
+    }
+  ]
+}

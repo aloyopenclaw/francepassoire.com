@@ -1,0 +1,37 @@
+{
+  "slug": "adidas-20250527",
+  "entity": "Adidas",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-27",
+    "publication": "2025-05-27",
+    "confirmation": "2025-05-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non chiffré ; données de consommateurs ayant contacté le service client, issues d’un système opéré par un prestataire tiers"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — L’allemand Adidas annonce avoir été victime d’une fuite de données",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/l-allemand-adidas-annonce-avoir-ete-victime-d-une-fuite-de-donnees_AV-202505270498.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 mai 2025, Adidas annonce avoir été victime d’une fuite de données consécutive à un vol survenu sur un système opéré par un prestataire tiers traitant les données de ses clients. Les informations touchées concernent des consommateurs ayant contacté le service client ; l’entreprise n’en précise ni le nombre ni les marchés concernés. Elle assure que les mots de passe, numéros de cartes bancaires et informations de paiement ne sont pas exposés, et indique avoir alerté le gendarme des données personnelles allemand conformément à la réglementation. Une enquête approfondie est prévue et des mesures correctrices ont été prises ; l’ampleur exacte de la fuite n’est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-05-27",
+      "event": "Adidas annonce une fuite de données via un prestataire tiers, touchant des consommateurs ayant contacté son service client, sans chiffrer les personnes concernées."
+    },
+    {
+      "date": "2025-05-27",
+      "event": "Le groupe indique avoir alerté le gendarme des données allemand, écarté toute donnée bancaire ou mot de passe, et engagé une enquête approfondie."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "cgn-leman-20250902",
+  "entity": "Compagnie générale de navigation sur le lac Léman (CGN)",
+  "siren": "775752314",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-02",
+    "publication": "2025-09-04",
+    "confirmation": "2025-09-04"
+  },
+  "volume": {
+    "count": 400,
+    "unit": "personnes",
+    "label": "près de 400 clients ayant effectué des opérations du 28 août au 2 septembre, invités à vérifier leurs relevés bancaires et à contacter leur banque"
+  },
+  "data_types": [
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Régions (Haute-Savoie) — La Compagnie générale de navigation du Léman ciblée par une cyberattaque, près de 400 clients concernés",
+      "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/haute-savoie/la-compagnie-generale-de-navigation-du-leman-ciblee-par-une-cyberattaque-pres-de-400-clients-concernes-3211604.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La Compagnie générale de navigation sur le lac Léman (CGN) indique le 4 septembre 2025 que son site internet a été la cible d’un « script malveillant », actif cinq jours avant sa détection le 2 septembre ; le site a été immédiatement désactivé puis réactivé après identification de l’attaque. Près de 400 clients ayant réalisé des opérations du 28 août au 2 septembre ont été informés et invités à vérifier leurs relevés de transaction et à contacter leur banque, ce qui suggère une compromission potentielle de données de paiement. La régie franco-suisse transporte quotidiennement de nombreux travailleurs frontaliers entre Lausanne, Genève, Évian et Thonon.",
+  "timeline": [
+    {
+      "date": "2025-09-02",
+      "event": "La CGN détecte un « script malveillant » actif depuis cinq jours sur son site et le désactive immédiatement."
+    },
+    {
+      "date": "2025-09-04",
+      "event": "La CGN informe près de 400 clients des opérations du 28 août au 2 septembre et les invite à vérifier leurs relevés ; le site est réactivé."
+    }
+  ]
+}
