@@ -1,0 +1,44 @@
+{
+  "slug": "cy-cergy-paris-universite-20260731",
+  "entity": "CY Cergy Paris Université",
+  "siren": "130025976",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-31",
+    "publication": "2026-08-01"
+  },
+  "volume": {
+    "count": 37,
+    "unit": "personnes",
+    "label": "37 personnes annoncées dans une archive d'environ 1,2 Go revendiquée (chiffres non confirmés par l'établissement)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 37 personnes concernées par une fuite revendiquée chez CY Cergy Paris Université",
+      "url": "https://fuitesinfos.fr/article/2026-07-31-cy-cergy-paris-universite",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque revendiquée contre CY Cergy Paris Université : 1 Go de données diffusé",
+      "url": "https://frenchbreaches.com/alertes/cy-cergy-paris-universit-msanv9saq6mlky1jlg",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une publication apparue le 31 juillet 2026 sur un forum cybercriminel revendique le piratage du domaine étudiant etu.cyu.fr de CY Cergy Paris Université et propose une archive d'environ 1,2 Go. Selon les recensements, elle contiendrait des supports de cours de CY Tech, des dossiers des relations internationales, des procédures de stages et des tableaux nominatifs de suivi d'étudiants ; 37 personnes seraient annoncées, avec noms, e-mails et téléphones. À ce stade, l'établissement n'a pas confirmé publiquement l'incident ; l'authenticité du dépôt et l'étendue des données restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Revendication sur un forum : compromission du domaine étudiant etu.cyu.fr, archive d'environ 1,2 Go proposée au téléchargement."
+    },
+    {
+      "date": "2026-08-01",
+      "event": "Les veilleurs recensent l'annonce : 37 personnes annoncées, données scolaires et coordonnées citées ; aucun commentaire de l'établissement."
+    }
+  ]
+}

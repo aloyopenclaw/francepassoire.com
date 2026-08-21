@@ -1,0 +1,54 @@
+{
+  "slug": "olympique-de-marseille-20260223",
+  "entity": "Olympique de Marseille",
+  "siren": "381280601",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-23",
+    "publication": "2026-02-24"
+  },
+  "volume": {
+    "count": 400000,
+    "unit": "comptes",
+    "label": "400 000 comptes de la billetterie et de la boutique en ligne revendiqués (chiffre du vendeur ; des veilleurs jugent les échantillons authentiques)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Olympique de Marseille : 400 000 comptes annoncés sur un forum",
+      "url": "https://fuitesinfos.fr/article/2026-02-23-olympique-de-marseille",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — L'OM victime d'une grosse fuite de données : 400 000 personnes compromises",
+      "url": "https://www.clubic.com/actualite-601900-l-om-a-jamais-le-premier-a-etre-victime-d-une-grosse-fuite-de-donnees-les-infos-de-400-000-personnes-compromises.html",
+      "kind": "article"
+    },
+    {
+      "label": "RMC Sport — L'OM victime d'une cyberattaque, les données de 400 000 supporters concernées",
+      "url": "https://rmcsport.bfmtv.com/football/clubs/olympique-marseille/l-om-victime-d-une-cyberattaque-les-donnees-de-400-000-supporters-concernees_AV-202602240607.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — L'Olympique de Marseille a été piraté : les données de 400 000 supporters compromises",
+      "url": "https://www.01net.com/actualites/lolympique-marseille-pirate-donnees-400-000-supporters-compromises.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 février 2026, un cybercriminel met en vente sur un forum les données de 400 000 comptes liés à la billetterie et à la boutique de l'Olympique de Marseille : identités, adresses, téléphones, historiques de commandes, comptes de fidélité et informations sur des membres du personnel. Des veilleurs jugent les échantillons authentiques. Le club répond le 24 février par un communiqué évoquant une tentative d'intrusion rapidement maîtrisée, sans mot de passe ni donnée bancaire compromis, avec information de la CNIL et plainte à venir. L'ampleur exacte de l'exfiltration n'est pas confirmée par le club.",
+  "timeline": [
+    {
+      "date": "2026-02-23",
+      "event": "Mise en vente revendiquée de 400 000 comptes sur un forum ; des captures de la page de connexion du club circulent."
+    },
+    {
+      "date": "2026-02-24",
+      "event": "L'OM publie un communiqué : tentative d'intrusion maîtrisée, mots de passe et données bancaires exclus, CNIL informée, plainte prévue."
+    }
+  ]
+}

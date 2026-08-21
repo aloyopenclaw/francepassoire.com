@@ -1,0 +1,53 @@
+{
+  "slug": "le-petit-vapoteur-20260328",
+  "entity": "Le Petit Vapoteur",
+  "siren": "539694364",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-28",
+    "publication": "2026-03-30"
+  },
+  "volume": {
+    "count": 3307087,
+    "unit": "personnes",
+    "label": "3 307 087 clients et 599 employés revendiqués (2012-2026) ; l'entreprise indique que moins de 2 % de la base est impactée et a notifié l'ensemble de ses clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Le Petit Vapoteur : fuite confirmée par l'entreprise",
+      "url": "https://fuitesinfos.fr/article/2026-03-28-le-petit-vapoteur",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Le Petit Vapoteur piraté : 3,3 millions de données dans la nature",
+      "url": "https://frenchbreaches.com/blog/le-petit-vapoteur-pirate-33-millions-de-donnees-dans-la-nature",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Le Petit Vapoteur : 3,3 millions de clients exposés",
+      "url": "https://www.cyberattaque.org/le-petit-vapoteur-33-millions-de-clients-exposes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 mars 2026, un pirate baptisé « undef » met en vente la base présentée comme complète du Petit Vapoteur, enseigne française de vapotage : 3 307 087 clients et 599 employés couvrant 2012 à 2026, avec identité, coordonnées et journaux de connexion. L'entreprise, qui avait détecté des signes d'intrusion le 20 mars, confirme le 30 mars un accès non autorisé à sa base clients, l'évalue à moins de 2 % des comptes, notifie l'ensemble de sa clientèle et saisit la CNIL. Selon elle, aucun mot de passe ni donnée bancaire n'est concerné. L'écart entre les deux chiffres n'est pas résolu.",
+  "timeline": [
+    {
+      "date": "2026-03-20",
+      "event": "L'entreprise détecte des signes d'intrusion sur ses outils internes, selon les relais."
+    },
+    {
+      "date": "2026-03-28",
+      "event": "Mise en vente revendiquée de la base complète (3 307 087 clients, 599 employés, 2012-2026)."
+    },
+    {
+      "date": "2026-03-30",
+      "event": "L'entreprise confirme un accès non autorisé, notifie l'ensemble de ses clients par précaution et déclare l'incident à la CNIL."
+    }
+  ]
+}
