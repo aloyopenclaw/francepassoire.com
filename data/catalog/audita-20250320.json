@@ -1,0 +1,36 @@
+{
+  "slug": "audita-20250320",
+  "entity": "Audita",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-20",
+    "publication": "2025-03-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« intégralité des données clients » selon le pirate ; volume non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — L'assureur Audita victime d'une cyberattaque (20 mars 2025)",
+      "url": "https://www.zataz.com/lassureur-audita-victime-dune-cyberattaque/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le pirate « Djahid » a revendiqué en mars 2025 une intrusion chez Audita, entreprise d'assurance, et affirme avoir accédé à l'intégralité des données clients. Selon Zataz, il a signé son passage par un message publié directement sur le site audita.fr, puis a diffusé un courriel d'alerte via la newsletter de l'entreprise, qu'un lecteur a confirmé avoir reçu. Le pirate déclare n'avoir « aucune intention » d'exploiter ou de divulguer ces données. Aucun volume n'est chiffré et la nature exacte des données accessibles n'est pas détaillée.",
+  "timeline": [
+    {
+      "date": "2025-03-20",
+      "event": "Zataz relaie la revendication du pirate « Djahid » : intrusion chez Audita et accès revendiqué à l'intégralité des données clients."
+    },
+    {
+      "date": "2025-03-22",
+      "event": "Selon Zataz, la trace du pirate est toujours visible sur le site 48 heures après l'attaque."
+    }
+  ]
+}

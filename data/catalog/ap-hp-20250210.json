@@ -1,0 +1,43 @@
+{
+  "slug": "ap-hp-20250210",
+  "entity": "Assistance publique – Hôpitaux de Paris (AP-HP)",
+  "siren": "267500452",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-10",
+    "publication": "2025-02-10",
+    "confirmation": "2025-02-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; vol de données confirmé officiellement (service sécurisé de partage de fichiers, comptes Ameli)"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "AP-HP — L'AP-HP porte plainte suite à une attaque informatique sur son service sécurisé de partage de fichiers (10 février 2025)",
+      "url": "https://www.aphp.fr/actualites/lap-hp-porte-plainte-suite-une-attaque-informatique-sur-son-service-securise-de-partage",
+      "kind": "officiel"
+    },
+    {
+      "label": "AP-HP — Compte Ameli / Vol de données à la suite d'une attaque informatique (10 février 2025)",
+      "url": "https://www.aphp.fr/actualites/compte-ameli-vol-de-donnees-la-suite-dune-attaque-informatique",
+      "kind": "officiel"
+    }
+  ],
+  "description": "L'Assistance publique – Hôpitaux de Paris a publié le 10 février 2025 deux communiqués : l'un annonce que l'établissement porte plainte à la suite d'une attaque informatique visant son service sécurisé de partage de fichiers ; l'autre, adressé aux usagers, traite d'un vol de données survenu à la suite d'une attaque impliquant des comptes Ameli. L'établissement établit ainsi officiellement un vol de données lié à cette attaque. Le nombre de personnes concernées et la nature précise des données ne sont pas détaillés dans ces communiqués.",
+  "timeline": [
+    {
+      "date": "2025-02-10",
+      "event": "L'AP-HP annonce porter plainte à la suite d'une attaque informatique sur son service sécurisé de partage de fichiers."
+    },
+    {
+      "date": "2025-02-10",
+      "event": "L'AP-HP publie une information usagers sur un vol de données à la suite d'une attaque impliquant des comptes Ameli."
+    }
+  ]
+}

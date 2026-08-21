@@ -1,0 +1,40 @@
+{
+  "slug": "opera-national-du-rhin-20250227",
+  "entity": "Opéra national du Rhin",
+  "siren": "256701160",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-27",
+    "publication": "2025-02-28"
+  },
+  "volume": {
+    "count": 203597,
+    "unit": "lignes",
+    "label": "203 597 lignes de données de spectateurs publiées sur un forum (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — L'Opéra national du Rhin se retrouve sans voix après un piratage (28 février 2025)",
+      "url": "https://www.zataz.com/lopera-national-du-rhin-se-retrouve-sans-voix-apres-un-piratage/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Des pirates se présentant comme « Arkeliaad » et « Jomsvykr » ont publié sur BreachForums une base de données attribuée à l'Opéra national du Rhin (Strasbourg, Mulhouse, Colmar), extraite selon eux la veille de sa publication. Selon leur message relayé par Zataz, le fichier contient 203 597 lignes sur des spectateurs : numéros de téléphone, adresses, e-mails, dates de naissance, fins de numéros de cartes bancaires, mots de passe en clair, détails de commandes et messages envoyés. Les deux pirates s'affichent membres d'un groupe pro-palestinien.",
+  "timeline": [
+    {
+      "date": "2025-02-27",
+      "event": "Publication sur BreachForums d'un dump de 203 597 lignes attribué à l'Opéra national du Rhin, extrait la veille selon les pirates."
+    },
+    {
+      "date": "2025-02-28",
+      "event": "Zataz relaie et analyse la publication ; les pirates s'affichent membres d'un groupe pro-palestinien."
+    }
+  ]
+}

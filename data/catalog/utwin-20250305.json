@@ -1,0 +1,34 @@
+{
+  "slug": "utwin-20250305",
+  "entity": "UTwin",
+  "siren": "821873734",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-05",
+    "publication": "2025-03-05"
+  },
+  "volume": {
+    "count": 42000,
+    "unit": "personnes",
+    "label": "42 000 personnes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données UTwin : 42K personnes exposées en ligne (5 mars 2025)",
+      "url": "https://frenchbreaches.com/alertes/utwin-23cc28f0fe33",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le relais FrenchBreaches rapporte le 5 mars 2025 une fuite de données revendiquée touchant UTwin, société française de courtage d'assurance en ligne. Le fichier exposé concernerait 42 000 personnes, avec des données d'identité (noms et prénoms), des adresses e-mail et des numéros de téléphone. La revendication circule via un relais de veille sur les fuites touchant la France ; le volume et le périmètre exacts ne sont pas confirmés indépendamment.",
+  "timeline": [
+    {
+      "date": "2025-03-05",
+      "event": "FrenchBreaches relaie une fuite revendiquée touchant UTwin : 42 000 personnes, avec identité, e-mails et téléphones."
+    }
+  ]
+}
