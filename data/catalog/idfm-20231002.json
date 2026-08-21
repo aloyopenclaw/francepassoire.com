@@ -1,0 +1,46 @@
+{
+  "slug": "idfm-20231002",
+  "entity": "Île-de-France Mobilités (IDFM Connect)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-02",
+    "publication": "2023-10-09",
+    "confirmation": "2023-10-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "milliers d'identifiants électroniques et mots de passe actifs utilisés pour se connecter à des comptes ; volume exact non chiffré"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Île-de-France Mobilités — IDFM porte plainte pour tentative d'accès frauduleux sur des comptes Île-de-France Mobilités Connect (communiqué)",
+      "url": "https://presse.iledefrance-mobilites.fr/ile-de-france-mobilites-porte-plainte-pour-tentative-dacces-frauduleux-sur-des-comptes-ile-de-france-mobilites-connect/",
+      "kind": "officiel"
+    },
+    {
+      "label": "CommentCaMarche — Piratage IDF Mobilités : les identifiants de milliers de comptes d'usagers dérobés (9 octobre 2023)",
+      "url": "https://www.commentcamarche.net/securite/piratage/29169-piratage-idf-mobilites-les-identifiants-de-milliers-de-comptes-d-usagers-derobes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2023, Worldline, prestataire d'Île-de-France Mobilités chargé de la sécurisation des paiements, constate qu'un acteur malveillant utilise des milliers de couples e-mails / mots de passe actifs pour se connecter à des comptes du service IDF Mobilités Connect. Notifiée le 4 octobre, IDFM fait appliquer les mesures techniques pour mettre fin aux tentatives, impose la réinitialisation des mots de passe des comptes concernés par des courriels individualisés, porte plainte auprès du procureur de la République pour collecte frauduleuse de données et notifie la CNIL. L'organisme ne précise pas l'origine des identifiants ni le sort réservé aux comptes consultés.",
+  "timeline": [
+    {
+      "date": "2023-10-02",
+      "event": "Worldline constate l'utilisation frauduleuse de milliers d'identifiants sur des comptes IDF Mobilités Connect."
+    },
+    {
+      "date": "2023-10-04",
+      "event": "IDFM est notifiée, exige des mesures techniques et engage plainte et notification CNIL."
+    },
+    {
+      "date": "2023-10-09",
+      "event": "CommentCaMarche révèle l'incident et les réinitialisations de mots de passe."
+    }
+  ]
+}

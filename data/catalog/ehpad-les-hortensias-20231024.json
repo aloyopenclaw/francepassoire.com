@@ -1,0 +1,40 @@
+{
+  "slug": "ehpad-les-hortensias-20231024",
+  "entity": "Ehpad Les Hortensias (Marigny-le-Lozon)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "group": "medusa",
+  "dates": {
+    "revendication": "2023-10-24",
+    "publication": "2023-10-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "échantillon de fichiers publié (pièces d'identité et attestations médicales de résidents) ; rançon d'environ 95 000 euros exigée sous huit jours ; volume total non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "France Inter/AFP — Les données d'un Ehpad normand volées par des cybercriminels qui réclament une rançon (24 octobre 2023)",
+      "url": "https://www.radiofrance.fr/franceinter/victime-d-une-cyberattaque-les-donnees-d-un-ehpad-normand-publiees-par-des-hackers-6787802",
+      "kind": "article"
+    },
+    {
+      "label": "La Presse de la Manche/actu.fr — Manche. Un Ehpad victime d'une cyberattaque, des pirates demandent 95 000 euros (25 octobre 2023)",
+      "url": "https://actu.fr/normandie/marigny-le-lozon_50292/manche-un-ehpad-victime-d-une-cyberattaque-des-pirates-demandent-95-000-euros_60251288.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin octobre 2023, l'Ehpad Les Hortensias de Marigny-le-Lozon (Manche) subit une attaque par rançongiciel revendiquée le 24 octobre par le collectif Medusa, qui exige environ 95 000 euros sous huit jours. Pour faire pression, les cybercriminels publient sur le darknet un échantillon de documents internes vérifié par France Inter : pièces d'identité et attestations médicales de résidents, documents administratifs et tableaux de fonctionnement. L'établissement continue de fonctionner et les données restantes sont menacées de diffusion. Medusa revendique dans le même temps un autre établissement de santé.",
+  "timeline": [
+    {
+      "date": "2023-10-24",
+      "event": "Medusa revendique l'attaque de l'Ehpad, exige environ 95 000 euros et publie des pièces d'identité et attestations médicales de résidents."
+    }
+  ]
+}

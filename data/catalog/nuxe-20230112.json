@@ -1,0 +1,48 @@
+{
+  "slug": "nuxe-20230112",
+  "entity": "Laboratoire Nuxe",
+  "siren": "642060123",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "lockbit",
+  "dates": {
+    "revendication": "2023-01-12",
+    "publication": "2023-01-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "29 à 30 Go de données revendiqués par LockBit 3.0, soit près de 16 000 fichiers ; rançon d'environ 300 000 dollars exigée ; volume de personnes non chiffré"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Nuxe victime d'une cyberattaque : des hackers russophones de Lockbit font chanter le géant des cosmétiques (12 janvier 2023)",
+      "url": "https://www.leparisien.fr/high-tech/nuxe-victime-dune-cyberattaque-des-hackers-russophones-de-lockbit-font-chanter-le-geant-des-cosmetiques-12-01-2023-2IJG7X4DBBEOVOFWU3P4435LM4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Des hackers russophones attaquent le géant français des cosmétiques Nuxe (12 janvier 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1236584-des-hackers-russophones-attaquent-le-geant-francais-des-cosmetiques-nuxe.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZDnet France — Le gang LockBit tente de faire chanter l'entreprise Nuxe (janvier 2023)",
+      "url": "https://www.zdnet.fr/actualites/le-gang-lockbit-tente-de-faire-chanter-l-entreprise-nuxe-39952564.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 janvier 2023, le groupe de rançongiciel LockBit 3.0 revendique sur son blog une cyberattaque contre le Laboratoire Nuxe, industriel français de la cosmétique, et exige environ 300 000 dollars sous 13 jours, menaçant de publier 29 à 30 Go de données — près de 16 000 fichiers. Un échantillon est mis en ligne, comprenant des analyses d'un laboratoire sur un produit cosmétique consultées par Le Parisien. Nuxe reconnaît une attaque sur certains de ses logiciels, rétablis rapidement, dépose plainte et ouvre une enquête avec des experts en cybersécurité. L'exfiltration de données n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2023-01-12",
+      "event": "LockBit 3.0 revendique l'attaque de Nuxe, exige 300 000 dollars et publie un échantillon de fichiers volés."
+    },
+    {
+      "date": "2023-01-12",
+      "event": "Nuxe reconnaît une attaque informatique sur certains logiciels, dépose plainte et mobilise des experts."
+    }
+  ]
+}

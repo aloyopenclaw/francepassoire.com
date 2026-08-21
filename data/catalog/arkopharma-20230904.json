@@ -1,0 +1,40 @@
+{
+  "slug": "arkopharma-20230904",
+  "entity": "Laboratoires Arkopharma",
+  "siren": "307378489",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "inc-ransom",
+  "dates": {
+    "revendication": "2023-09-04",
+    "publication": "2023-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "trois documents présentés comme extraits des systèmes d'Arkopharma, dont un passeport ; volume total non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Des pirates informatiques menacent le laboratoire Arkopharma (4 septembre 2023)",
+      "url": "https://www.zataz.com/des-pirates-informatiques-menacent-le-laboratoire-arkopharma/",
+      "kind": "article"
+    },
+    {
+      "label": "Presse83/Laique — Arkopharma sous la menace des hackers : le laboratoire pharmaceutique français en alerte (5 septembre 2023)",
+      "url": "https://laique.eu/2023/09/05/arkopharma-sous-la-menace-des-hackers-le-laboratoire-pharmaceutique-francais-en-alerte/professionnel/hyeres/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début septembre 2023, le groupe de maîtres chanteurs INC Ransom, apparu fin juin 2023, liste le laboratoire pharmaceutique français Arkopharma sur son site de fuite et présente trois documents prétendument extraits de ses systèmes, dont un passeport. Aucune demande de rançon n'est formulée à ce stade, selon les deux relais. Contacté par Zataz, le service de presse du laboratoire renvoie vers sa direction informatique. La réalité de l'exfiltration n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2023-09-04",
+      "event": "INC Ransom affiche Arkopharma parmi ses victimes et publie trois documents dont un passeport."
+    }
+  ]
+}
