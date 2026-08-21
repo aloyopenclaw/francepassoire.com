@@ -1,0 +1,63 @@
+{
+  "slug": "la-rochelle-20251121",
+  "entity": "Ville de La Rochelle (plateforme de prise de rendez-vous Synbird)",
+  "siren": "211703004",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-21",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-27"
+  },
+  "volume": {
+    "count": 400,
+    "unit": "personnes",
+    "label": "environ 400 personnes selon les relais de veille (rendez-vous d'état civil pris en octobre 2025) ; la mairie a porté plainte ; volume communal non communiqué par la Ville"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Démarches en mairie : La Rochelle, Clichy, Brest… Une fuite de données repérée dans 1 300 communes (24 novembre 2025)",
+      "url": "https://www.leparisien.fr/high-tech/demarches-en-mairie-la-rochelle-clichy-brest-une-fuite-de-donnees-reperee-dans-1300-communes-24-11-2025-QRSBCFWF55GVLHNMEL6NYWAFAQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Des centaines de mairies touchées par des fuites de données personnelles massives (2 décembre 2025)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/des-centaines-de-mairies-touchees-par-des-fuites-de-donnees-personnelles-massives-20251202",
+      "kind": "article"
+    },
+    {
+      "label": "Sud Ouest — Fuite de données chez Synbird : La Rochelle touchée comme 1 300 communes de France (27 novembre 2025)",
+      "url": "https://www.sudouest.fr/charente-maritime/la-rochelle/fuite-de-donnees-chez-synbird-la-rochelle-touchee-comme-1-300-communes-de-france-26875312.php",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez La Rochelle (via Synbird), environ 400 personnes concernées",
+      "url": "https://frenchbreaches.com/alertes/la-rochelle-via-synbird-da73a45b11ab",
+      "kind": "revendication"
+    },
+    {
+      "label": "Inf-info — La Rochelle : la mairie porte plainte après une fuite de données concernant plusieurs centaines d'usagers",
+      "url": "https://inf-info.fr/la-rochelle-la-mairie-porte-plainte-apres-une-fuite-de-donnees-concernant-plusieurs-centaines-dusagers/",
+      "kind": "article"
+    }
+  ],
+  "description": "La ville de La Rochelle utilise Synbird, éditeur chambérien de prise de rendez-vous en ligne pour les démarches d'état civil. Le 21 novembre 2025, les usagers de 1 300 mairies clientes reçoivent un courriel annonçant qu'un incident de sécurité a affecté l'applicatif. La fuite, circonscrite aux rendez-vous d'octobre, expose noms, prénoms, code postal, adresse électronique et téléphone. Sud Ouest confirme le 27 novembre que La Rochelle est touchée ; les relais de veille évaluent à environ 400 le nombre de personnes concernées et la mairie porte plainte. Synbird, qui a saisi la CNIL, précise qu'aucun mot de passe ni donnée bancaire n'a été compromis.",
+  "timeline": [
+    {
+      "date": "2025-11-21",
+      "event": "Courriel aux usagers des mairies clientes : « Un incident de sécurité a récemment affecté notre applicatif Synbird », avec les données des rendez-vous d'octobre."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Le Parisien révèle l'ampleur : 1 300 mairies concernées ; l'éditeur évoque un mot de passe d'employé municipal réutilisé et une faille depuis corrigée."
+    },
+    {
+      "date": "2025-11-27",
+      "event": "Sud Ouest confirme La Rochelle parmi les communes touchées ; environ 400 personnes concernées selon la veille ; la mairie porte plainte."
+    }
+  ]
+}
