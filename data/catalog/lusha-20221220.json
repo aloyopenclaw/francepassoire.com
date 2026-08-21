@@ -1,0 +1,45 @@
+{
+  "slug": "lusha-20221220",
+  "entity": "Lusha",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-20",
+    "confirmation": "2022-12-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; non-lieu à sanctionner, le RGPD ayant été jugé non applicable"
+  },
+  "data_types": ["coordonnees"],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2022) : « société assurant la commercialisation d'une extension permettant d'obtenir des coordonnées professionnelles », non lieu à sanctionner (20 décembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2022-024 de la formation restreinte du 20 décembre 2022 (texte intégral)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046775564",
+      "kind": "officiel"
+    },
+    {
+      "label": "Bignon Lebray — Collecte de données par Lusha, la CNIL estime que le RGPD n'est pas applicable (31 janvier 2023)",
+      "url": "https://www.bignonlebray.com/actualites/publications/lusha-cnil-rgpd-non-applicable.html",
+      "kind": "article"
+    },
+    {
+      "label": "DSM Avocats — Une délibération surprenante concernant l'utilisation de données de personnes sur le territoire de l'Union européenne sans applicabilité du RGPD",
+      "url": "https://www.dsm.legal/fr/une-deliberation-surprenante-a-ete-prise-par-la-cnil-le-20-decembre-2022-concernant-utilisation-de-donnees-de-personnes-sur-le-territoire-de-lunion-europeenne-sans-applicabilite-du-rgpd/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 décembre 2022, la formation restreinte de la CNIL a prononcé un non-lieu à sanctionner à l'encontre de Lusha, société américaine sans établissement dans l'Union européenne. L'extension de navigateur commercialisée par la société révèle à ses clients les coordonnées professionnelles des personnes dont ils consultent le profil sur LinkedIn ou Salesforce ; trois applications de gestion de contacts développées par ses filiales aspiraient les carnets d'adresse de leurs utilisateurs pour alimenter la base. À la suite d'une plainte déposée en janvier 2018, la CNIL a examiné un défaut de base légale et un non-respect du droit d'accès, mais a estimé que le RGPD n'était pas applicable à la société : son offre et le suivi du comportement ne visaient pas les personnes concernées au sens de l'article 3. La décision figure anonymisée dans le tableau officiel des sanctions ; Lusha est nommée dans les analyses juridiques publiées de la décision.",
+  "timeline": [
+    {
+      "date": "2022-12-20",
+      "event": "Non-lieu à sanctionner : défaut de base légale et non-respect du droit d'accès examinés, mais le RGPD est jugé non applicable à la société américaine."
+    }
+  ]
+}
