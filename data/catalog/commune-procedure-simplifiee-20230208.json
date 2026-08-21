@@ -1,0 +1,42 @@
+{
+  "slug": "commune-procedure-simplifiee-20230208",
+  "entity": "Une commune (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-02-08",
+    "confirmation": "2023-02-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2023) : « commune », amende de 5 000 euros et injonction (8 février 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 8 février 2023, la CNIL a sanctionné une commune d'une amende de 5 000 euros assortie d'une injonction, dans le cadre de la procédure simplifiée. Les manquements retenus sont l'absence de désignation d'un délégué à la protection des données et un défaut de coopération avec la CNIL. Le nom de la commune n'est pas publié : les sanctions simplifiées ne sont pas rendues publiques. La décision figure dans le tableau officiel des sanctions, et le bilan 2023 de la CNIL recense 42 sanctions sur l'année, dont 24 prononcées dans ce cadre simplifié.",
+  "timeline": [
+    {
+      "date": "2023-02-08",
+      "event": "Amende de 5 000 euros et injonction en procédure simplifiée : absence de délégué à la protection des données et défaut de coopération."
+    }
+  ]
+}
