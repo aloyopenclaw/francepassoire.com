@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-presse-20150601",
+  "entity": "Société de presse (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2015-06-01",
+    "confirmation": "2015-06-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; sanction pécuniaire publique de 15 000 euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société de presse », sanction pécuniaire publique de 15 000 euros (1er juin 2015)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 1er juin 2015, la CNIL a prononcé une sanction pécuniaire publique de 15 000 euros à l'encontre d'une société de presse, désignée anonymement, à la suite d'un contrôle sur sa prospection commerciale. Les manquements retenus : non-respect des dispositions de l'article L. 34-5 du Code des postes et des communications électroniques, défaut d'information des personnes et non-respect d'une durée de conservation. Le volume de personnes concernées n'est pas communiqué et la nature des données n'est pas précisée.",
+  "timeline": [
+    {
+      "date": "2015-06-01",
+      "event": "Sanction pécuniaire publique de 15 000 euros : prospection illicite, défaut d'information, durée de conservation non respectée."
+    }
+  ]
+}

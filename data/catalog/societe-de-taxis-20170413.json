@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-taxis-20170413",
+  "entity": "Société de taxis (dénomination non publiée par la CNIL)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-04-13",
+    "confirmation": "2017-04-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; sanction pécuniaire publique, montant non publié"
+  },
+  "data_types": [
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société de taxis », sanction pécuniaire publique (13 avril 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 avril 2017, la CNIL a prononcé une sanction pécuniaire publique à l'encontre d'une société de taxis, désignée anonymement ; le montant n'est pas publié dans le tableau officiel des sanctions. Le contrôle portait sur les données bancaires des clients. Les manquements retenus : absence d'une durée de conservation des données et défaut de sécurité et de confidentialité. Le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2017-04-13",
+      "event": "Sanction pécuniaire publique (montant non publié) : données bancaires conservées sans durée limite, défaut de sécurité."
+    }
+  ]
+}

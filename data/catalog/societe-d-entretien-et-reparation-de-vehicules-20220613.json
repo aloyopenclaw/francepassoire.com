@@ -1,0 +1,36 @@
+{
+  "slug": "societe-d-entretien-et-reparation-de-vehicules-20220613",
+  "entity": "Société d'entretien et réparation de véhicules (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-06-13",
+    "confirmation": "2022-06-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; liquidation de l'astreinte de 3 900 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société d'entretien et réparation de véhicules », liquidation de l'astreinte de 3 900 euros (13 juin 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 juin 2022, la CNIL a prononcé la liquidation de l'astreinte de 3 900 euros à l'encontre d'une société d'entretien et réparation de véhicules, désignée anonymement. La décision fait suite à l'injonction prononcée le 22 janvier 2022 contre la même désignation, la CNIL ayant constaté une absence de conformité. La dénomination n'est pas publiée et le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2022-01-22",
+      "event": "Injonction sous astreinte prononcée contre la même désignation pour défaut de coopération."
+    },
+    {
+      "date": "2022-06-13",
+      "event": "Liquidation de l'astreinte de 3 900 euros : absence de conformité constatée après l'injonction de janvier."
+    }
+  ]
+}

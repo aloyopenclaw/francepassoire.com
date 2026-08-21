@@ -1,0 +1,32 @@
+{
+  "slug": "societe-d-analyse-des-commandes-des-consommateurs-sur-site-e-commerce-20150518",
+  "entity": "Société d'analyse des commandes des consommateurs sur site e-commerce (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2015-05-18",
+    "confirmation": "2015-05-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non publié ; sanction pécuniaire non publique"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société d'analyse des commandes des consommateurs sur site e-commerce », sanction pécuniaire non publique (18 mai 2015)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 18 mai 2015, la CNIL a prononcé une sanction pécuniaire non publique à l'encontre d'une société d'analyse des commandes des consommateurs sur un site de commerce électronique. Le contrôle portait sur la lutte contre la fraude à la carte bancaire. Le manquement retenu est le non-respect des formalités préalables à la mise en œuvre du traitement. La dénomination n'est pas publiée, le montant n'est pas rendu public et la nature des données n'est pas précisée dans le tableau officiel des sanctions.",
+  "timeline": [
+    {
+      "date": "2015-05-18",
+      "event": "Sanction pécuniaire non publique : non-respect des formalités préalables d'un traitement de lutte contre la fraude à la carte bancaire."
+    }
+  ]
+}
