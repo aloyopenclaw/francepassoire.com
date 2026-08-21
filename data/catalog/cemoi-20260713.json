@@ -1,0 +1,43 @@
+{
+  "slug": "cemoi-20260713",
+  "entity": "Cémoi",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-13",
+    "publication": "2026-07-13"
+  },
+  "group": "qilin",
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "Volumes et catégories de données non communiqués à ce stade ; compte à rebours précédant une divulgation annoncée (revendication ransomware, non confirmée)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Cémoi : une attaque ransomware revendiquée en ligne (13 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/c-moi-rw_UTJWdGIybEFjV2xzYVc0PQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "Tech Insider — Ransomware Qilin vise Cemoi : 338 victimes [2026]",
+      "url": "https://tech-insider.org/fr/ransomware-qilin-cemoi-2026/",
+      "kind": "article"
+    },
+    {
+      "label": "GalaxyWarden — Cemoi listed by qilin ransomware group (juillet 2026)",
+      "url": "https://www.galaxywarden.com/blog/breach/cemoi-qilin-2026-07",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 juillet 2026, le groupe de ransomware Qilin ajoute Cémoi à son site de fuite et revendique la compromission des systèmes de l'acteur historique français de la chocolaterie (fabrication, transformation du cacao, distribution). Une fiche dédiée est mise en ligne avec un compte à rebours précédant une divulgation annoncée ; aucun échantillon ni catégorie précise de données n'est publié à ce stade. L'entreprise n'a pas communiqué publiquement sur l'incident à date des premières publications.",
+  "timeline": [
+    {
+      "date": "2026-07-13",
+      "event": "Qilin liste Cémoi sur son site de fuite avec un compte à rebours précédant une divulgation annoncée."
+    }
+  ]
+}

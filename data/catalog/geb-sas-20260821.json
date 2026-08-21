@@ -1,0 +1,37 @@
+{
+  "slug": "geb-sas-20260821",
+  "entity": "GEB SAS",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "Volume non communiqué ; revendication ransomware TheGentlemen et interruption préventive des systèmes confirmée par l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Geb Sas (TheGentlemen, découvert le 21 août 2026)",
+      "url": "https://www.ransomware.live/id/R2ViIFNhc0B0aGVnZW50bGVtZW4=",
+      "kind": "revendication"
+    },
+    {
+      "label": "GEB SAS (Instagram officiel) — « La société GEB fait actuellement face à un incident de cybersécurité » (août 2026)",
+      "url": "https://www.instagram.com/gebsas/p/Db-7jT0M2fS/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 août 2026, le groupe TheGentleman ajoute GEB à son site de fuite. GEB SAS est une entreprise familiale française fondée en 1860, spécialisée dans la fabrication de produits d'étanchéité, de colles et d'adhésifs pour les professionnels de la plomberie et du chauffage. L'entreprise confirme de son côté sur les réseaux sociaux faire face à un incident de cybersécurité et indique avoir temporairement interrompu ses systèmes par précaution ; la nature et le volume des données éventuellement exfiltrées restent inconnus.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "TheGentleman revendique une attaque contre GEB ; l'entreprise annonce une interruption préventive de ses systèmes."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "allobebe-20260821",
+  "entity": "Allobébé",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 1136058,
+    "unit": "personnes",
+    "label": "2 175 216 lignes associées à 1 136 058 personnes revendiquées (850 Mo), couvrant 2006 à 2026, dont 1,2 million d'adresses et 898 000 commandes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Allobébé : plus d'un million de clients dans une fuite couvrant vingt ans (21 août 2026)",
+      "url": "https://www.cyberattaque.org/allobebe-plus-dun-million-de-clients-dans-une-fuite-couvrant-vingt-ans/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Allobébé et Made in Bébé : près de 2,1 millions de clients visés par deux fuites de données",
+      "url": "https://frenchbreaches.com/blog/allobebe-et-made-in-bebe-pres-de-21-millions-de-clients-vises-par-deux-fuites-de-donnees",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Puériculture : trois bases clients revendiquées en 2026 (21 août 2026)",
+      "url": "https://www.zataz.com/puericulture-trois-bases-clients-revendiquees-en-2026/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 août 2026, ChimeraZ publie une archive d'environ 850 Mo attribuée à Allobébé, site français de vente en ligne spécialisé dans la puériculture : 2 175 216 lignes associées à 1 136 058 personnes, dont environ 1,2 million d'adresses et 898 000 commandes couvrant vingt ans (2006-2026). Les échantillons examinés montrent identité, coordonnées, adresses de livraison et de facturation, historique d'achats détaillé (produits, montants) et type de moyen de paiement. Ce contexte d'achat en puériculture rend particulièrement crédibles les tentatives d'hameçonnage personnalisées ; les volumes restent déclarés par leur auteur.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "ChimeraZ diffuse une base attribuée à Allobébé : 2,17 millions de lignes couvrant 2006-2026, avec échantillons."
+    }
+  ]
+}

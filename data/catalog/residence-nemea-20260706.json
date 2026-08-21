@@ -1,0 +1,39 @@
+{
+  "slug": "residence-nemea-20260706",
+  "entity": "Résidence Nemea",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-06",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 84853,
+    "unit": "enregistrements",
+    "label": "84 853 réservations revendiquées, présentées comme une deuxième attaque visant le groupe Nemea (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : plus de 84 000 réservations de Nemea revendiquées sur un forum cybercriminel (6 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/r-sidence-nemea-mr98h8cdhnjnzcyuwop",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Nemea Appart'Étud : plus de 84 000 réservations revendiquées (6 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-06-nemea-appart-etud",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 juillet 2026, misere et ChimeraZ publient une base attribuée à residence-nemea.com, site du groupe français Nemea (résidences de tourisme, affaires et services) : 84 853 enregistrements de réservations, présentés comme une deuxième attaque visant le groupe. Les échantillons détaillent identité, coordonnées, situation familiale, profession et revenus déclarés des clients, ainsi que les informations de leurs garants et les éléments financiers des séjours (loyer, dépôt de garantie). Cette profondeur documentaire accroît le risque d'escroqueries ciblées sur le logement.",
+  "timeline": [
+    {
+      "date": "2026-07-06",
+      "event": "misere et ChimeraZ publient 84 853 réservations attribuées au groupe Nemea, présentées comme une seconde attaque."
+    }
+  ]
+}

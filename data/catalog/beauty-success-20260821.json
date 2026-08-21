@@ -1,0 +1,38 @@
+{
+  "slug": "beauty-success-20260821",
+  "entity": "Beauty Success",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 5169727,
+    "unit": "enregistrements",
+    "label": "10 279 819 lignes brutes revendiquées, dont 5 169 727 fiches présentées comme uniques après déduplication, avec échantillon de 10 000 lignes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Beauty Success : plus de 5,16 millions de fiches clients revendiquées dans une fuite massive (21 août 2026)",
+      "url": "https://www.cyberattaque.org/beauty-success-plus-de-516-millions-de-fiches-clients-revendiquees-dans-une-fuite-massive/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Beauty Success : une fuite de données revendiquée concernant les clients de l'enseigne",
+      "url": "https://frenchbreaches.com/blog/beauty-success-une-fuite-de-donnees-revendiquee-concernant-plus-de-516-millions-de-clients",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 21 août 2026, le pirate misere met en vente une base attribuée à beautysuccess.fr, enseigne française de parfumerie et cosmétiques : 10 279 819 lignes brutes dont 5 169 727 présentées comme uniques. L'échantillon de 10 000 lignes fourni contient noms, prénoms, adresses électroniques, dates de naissance complètes, identifiants clients et attributs de comptes. La combinaison identité, e-mail et date de naissance sur une même fiche facilite l'hameçonnage ciblé et l'usurpation d'identité ; le nombre réel de personnes distinctes n'est pas vérifiable à partir de la seule revendication.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "misere met en vente une base attribuée à Beauty Success : 10,28 millions de lignes dont 5,17 millions d'unicques."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "chat-coco-20260802",
+  "entity": "Chat Coco",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-02",
+    "publication": "2026-08-03"
+  },
+  "volume": {
+    "count": 14260,
+    "unit": "comptes",
+    "label": "environ 14 260 comptes exposés avec adresses e-mail, pseudonymes, adresses IP, photographies et conversations privées (revendiqué)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Chat Coco : 14 260 comptes et messages privés exposés sur l'héritier du controversé Coco.gg (3 août 2026)",
+      "url": "https://www.cyberattaque.org/chat-coco-14-260-comptes-et-messages-prives-exposes-sur-lheritier-du-controverse-coco-gg/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Des pirates revendiquent le piratage d'un miroir de Coco (août 2026)",
+      "url": "https://www.zataz.com/des-pirates-revendiquent-le-piratage-dun-miroir-de-coco/",
+      "kind": "article"
+    },
+    {
+      "label": "Conso-Confiance — Piratage de Chat Coco : 14 500 comptes exposés, ce que vous pouvez faire",
+      "url": "https://conso-confiance.fr/piratage-chat-coco-fuite-donnees-vos-droits/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 août 2026, Chat Coco, tchat anonyme français qui revendique l'héritage de Coco.gg (fermé par la justice en juin 2024), est entièrement compromis : le site est remplacé par une page de piratage renvoyant vers une copie de sa base. Environ 14 260 comptes sont concernés, avec adresses e-mail, pseudonymes, adresses IP, photographies de profils et conversations privées. Les données publiques laissent craindre des risques d'extorsion et d'atteinte à la vie privée des utilisateurs ; l'infrastructure du service n'a pas été rétablie immédiatement après l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-02",
+      "event": "Chat Coco est défacé et une copie de sa base d'environ 14 260 comptes est diffusée."
+    },
+    {
+      "date": "2026-08-03",
+      "event": "Les relais spécialisés documentent l'exposition d'e-mails, d'adresses IP, de photos et de conversations privées."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "cci-nice-cote-d-azur-20260718",
+  "entity": "CCI Nice Côte d'Azur",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-07-18",
+    "publication": "2026-07-31",
+    "confirmation": "2026-07-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes non communiqué ; données RH de candidats et d'entreprises potentiellement consultées via un compte administrateur de la plateforme eDRH"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — CCI Nice Côte d'Azur : un compte administrateur piraté, les données RH de candidats exportées (1er août 2026)",
+      "url": "https://www.cyberattaque.org/cci-nice-cote-dazur-un-compte-administrateur-pirate-les-donnees-rh-de-candidats-exportees/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Incident de cybersécurité à la CCI Nice Côte d'Azur : des données de candidats et d'entreprises potentiellement consultées (31 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/chambre-de-commerce-et-d-industrie-nice-c-te-d-azur-ms9972qijqoesdq8cu",
+      "kind": "article"
+    }
+  ],
+  "description": "La Chambre de Commerce et d'Industrie Nice Côte d'Azur confirme un incident de sécurité affectant sa plateforme eDRH : le 18 juillet 2026, un accès non autorisé à un compte administrateur a permis de consulter et d'exporter des données de ressources humaines, concernant des candidats en recrutement et des entreprises utilisatrices. L'établissement consulaire a informé les personnes concernées et sécurisé la plateforme. Le nombre exact de personnes touchées n'a pas été communiqué ; l'incident illustre l'exposition des systèmes RH des établissements publics consulaires.",
+  "timeline": [
+    {
+      "date": "2026-07-18",
+      "event": "Accès non autorisé à un compte administrateur de la plateforme eDRH de la CCI Nice Côte d'Azur."
+    },
+    {
+      "date": "2026-07-31",
+      "event": "La CCI informe les utilisateurs et confirme l'incident ; les relais spécialisés le documentent."
+    }
+  ]
+}
