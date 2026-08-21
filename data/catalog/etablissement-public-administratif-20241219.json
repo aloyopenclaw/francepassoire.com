@@ -1,0 +1,37 @@
+{
+  "slug": "etablissement-public-administratif-20241219",
+  "entity": "Un établissement public administratif (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rappel à l'ordre ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a prononcé un rappel à l'ordre à l'encontre d'un établissement public administratif, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du droit d'accès et défaut de coopération avec la CNIL. Le rappel à l'ordre est la mesure la plus légère du catalogue répressif ; il est néanmoins comptabilisé parmi les sanctions. L'entité n'est pas nommée, les sanctions simplifiées ne pouvant être rendues publiques. Le bilan 2024 recense un seul rappel à l'ordre de ce type sur l'année, aux côtés de cinquante amendes et de six liquidations d'astreinte.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "Rappel à l'ordre (procédure simplifiée) : droit d'accès non respecté et défaut de coopération."
+    }
+  ]
+}

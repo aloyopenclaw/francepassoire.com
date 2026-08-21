@@ -1,0 +1,51 @@
+{
+  "slug": "oph-rennes-archipel-habitat-20180724",
+  "entity": "OPH Rennes métropole (Archipel Habitat)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-07-24",
+    "publication": "2018-07-31",
+    "confirmation": "2018-07-24"
+  },
+  "volume": {
+    "count": 16000,
+    "unit": "personnes",
+    "label": "environ 16 000 locataires destinataires du courrier, selon la délibération"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDNet — La CNIL met à l'amende l'OPH de Rennes sur la question des APL (31 juillet 2018)",
+      "url": "https://www.zdnet.fr/actualites/la-cnil-met-a-l-amende-l-oph-de-rennes-sur-la-question-des-apl-39871887.htm",
+      "kind": "article"
+    },
+    {
+      "label": "ITLAW Avocats — Non respect de la finalité d'un traitement : sanction pécuniaire prononcée par la CNIL",
+      "url": "https://itlaw.fr/non-respect-de-la-finalite-d-un-traitement-sanction-pecuniaire-prononcee-par-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 juillet 2018, la CNIL a infligé une sanction pécuniaire de 30 000 euros à l'Office public de l'habitat de Rennes (Archipel Habitat). En octobre 2017, sa présidente, également maire de Rennes, avait utilisé le fichier des locataires pour adresser à environ 16 000 destinataires un courrier critiquant la baisse des aides personnalisées au logement. La CNIL a jugé cet usage incompatible avec la finalité de gestion du parc social : un détournement de finalité. La décision a été rendue publique. Le Conseil d'État a rejeté le recours de l'office en 2020.",
+  "timeline": [
+    {
+      "date": "2017-10-01",
+      "event": "Courrier adressé à environ 16 000 locataires via le fichier de l'office, critiquant la réforme des APL ; une plainte est déposée."
+    },
+    {
+      "date": "2018-07-24",
+      "event": "Sanction pécuniaire de 30 000 euros pour détournement de finalité, décision rendue publique."
+    },
+    {
+      "date": "2020-10-05",
+      "event": "Le Conseil d'État rejette le recours de l'office et confirme la sanction."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "chirurgien-dentiste-20251230",
+  "entity": "Chirurgien-dentiste (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-30",
+    "confirmation": "2025-12-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; rappel à l'ordre, mesure la plus légère de la procédure simplifiée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « chirurgien-dentiste » (procédure simplifiée), rappel à l'ordre (30 décembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 décembre 2025, la CNIL a prononcé un rappel à l'ordre à l'encontre d'un chirurgien-dentiste, dans le cadre de la procédure simplifiée. Le manquement retenu : défaut de coopération avec l'autorité. Le rappel à l'ordre est la mesure la plus légère de cette procédure, aux côtés de l'injonction sous astreinte et de l'amende ; la CNIL n'en a prononcé que deux en 2025. La dénomination n'est pas publiée et la nature des données n'est pas précisée. Quatorze organismes ont été sanctionnés en 2025 pour n'avoir pas répondu aux demandes de la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-12-30",
+      "event": "Rappel à l'ordre (procédure simplifiée) pour défaut de coopération avec la CNIL ; l'un des deux seuls rappels à l'ordre de 2025."
+    }
+  ]
+}

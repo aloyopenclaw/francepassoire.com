@@ -1,0 +1,37 @@
+{
+  "slug": "site-web-presse-20231023",
+  "entity": "Un éditeur de site web dédié à la presse (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-23",
+    "confirmation": "2023-10-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce dix nouvelles sanctions dans le cadre de sa procédure simplifiée (7 novembre 2023)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-dix-nouvelles-sanctions-dans-le-cadre-de-sa-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 23 octobre 2023, la CNIL a prononcé une amende de 5 000 euros assortie d'une injonction à l'encontre de l'éditeur d'un site web dédié à la presse, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du droit d'opposition et défaut de coopération avec la CNIL. L'entité n'est pas nommée, les sanctions simplifiées ne pouvant être rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le communiqué du 7 novembre 2023 sur les dix décisions simplifiées rendues sur deux mois, largement consacrées aux droits des personnes et à la coopération.",
+  "timeline": [
+    {
+      "date": "2023-10-23",
+      "event": "Amende de 5 000 euros et injonction (procédure simplifiée) : droit d'opposition non respecté, défaut de coopération."
+    }
+  ]
+}

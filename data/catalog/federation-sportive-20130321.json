@@ -1,0 +1,32 @@
+{
+  "slug": "federation-sportive-20130321",
+  "entity": "Une fédération sportive (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-03-21",
+    "confirmation": "2013-03-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichiers de licenciés et liste d'exclusion ; volume non communiqué"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 mars 2013, la CNIL a sanctionné une fédération sportive à la suite de contrôles portant sur la gestion de ses licenciés, une liste d'exclusion et un dispositif de vidéosurveillance. Manquements relevés : défaut de formalités préalables, données inadéquates, non pertinentes et excessives, absence de durée de conservation définie, défaut d'information des personnes et défaut de sécurité. Le type de sanction n'est pas précisé dans le tableau public, qui ne nomme pas l'entité. Les fichiers de licenciés et les listes d'exclusion demeurent un point de vigilance de la CNIL pour le mouvement sportif.",
+  "timeline": [
+    {
+      "date": "2013-03-21",
+      "event": "Sanction : formalités préalables manquantes, données excessives, conservation non définie, information et sécurité défaillantes."
+    }
+  ]
+}
