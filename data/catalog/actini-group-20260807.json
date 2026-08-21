@@ -1,0 +1,39 @@
+{
+  "slug": "actini-group-20260807",
+  "entity": "Actini Group (ACTINI SAS)",
+  "siren": "398147637",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-07",
+    "publication": "2026-08-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "70,98 Go de données revendiqués exfiltrés et publiés par le groupe krybit ; nombre de personnes concernées non vérifiable"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "group": "krybit",
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Actini Group : 71 Go de données dérobés par le groupe krybit (7 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/actini-group-rw_ZDNkM0xtRmpkR2x1YVM1amIyMUFhM0o1WW1sMA",
+      "kind": "revendication"
+    },
+    {
+      "label": "ransomware.live — Fiche victime www.actini.com (groupe krybit, France)",
+      "url": "https://www.ransomware.live/id/d3d3LmFjdGluaS5jb21Aa3J5Yml0",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 7 août 2026, le groupe de rançongiciels krybit revendique la compromission des systèmes d'Actini. Ce fabricant français de machines industrielles pour la chimie et l'agroalimentaire est établi en Haute-Savoie. Les attaquants affirment avoir exfiltré environ 70,98 Go de données et affichent la publication comme effectuée sur leur infrastructure de fuite. La nature exacte des fichiers, le nombre de personnes potentiellement concernées et les circonstances techniques de la compromission n'ont pas été vérifiés indépendamment. Actini n'a pas communiqué publiquement sur l'incident au moment des relais de veille. Le groupe dispose d'implantations en Amérique du Nord et en Asie, ce qui élargit le périmètre potentiel des données concernées.",
+  "timeline": [
+    {
+      "date": "2026-08-07",
+      "event": "Le groupe krybit revendique l'exfiltration d'environ 71 Go de données chez Actini et affiche leur publication sur son site de fuite."
+    }
+  ]
+}

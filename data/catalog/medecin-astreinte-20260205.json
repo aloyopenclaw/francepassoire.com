@@ -1,0 +1,42 @@
+{
+  "slug": "medecin-astreinte-20260205",
+  "entity": "Médecin (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-02-05",
+    "confirmation": "2026-02-05",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; liquidation d'astreinte de 1 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « médecin » (procédure simplifiée), liquidation d'astreinte de 1 000 euros (5 février 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 février 2026, la CNIL a prononcé la liquidation d'une astreinte de 1 000 euros à l'encontre d'un médecin. La décision intervient dans le cadre de la procédure simplifiée, pour absence de réponse à une injonction antérieure. La dénomination n'est pas publiée ; ni la nature des données en cause ni l'objet de l'injonction initiale ne sont précisés par le tableau officiel. Cette décision illustre la phase d'exécution des sanctions simplifiées. Le bilan publié le 6 juillet 2026 recense 23 sanctions depuis janvier 2026, dont quatre assorties d'un défaut de coopération avec la CNIL.",
+  "timeline": [
+    {
+      "date": "2026-02-05",
+      "event": "Liquidation d'astreinte de 1 000 euros (procédure simplifiée) : absence de réponse à l'injonction."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, dont quatre liées à un défaut de coopération."
+    }
+  ]
+}

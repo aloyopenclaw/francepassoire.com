@@ -1,0 +1,43 @@
+{
+  "slug": "achat-or-et-argent-20260617",
+  "entity": "Achat-Or-Et-Argent.fr",
+  "siren": "982642282",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-17",
+    "publication": "2026-06-17"
+  },
+  "volume": {
+    "count": 50000,
+    "unit": "personnes",
+    "label": "plus de 50 000 clients selon la communication relayée en août 2026 ; l'entreprise n'a pas communiqué de chiffre officiel"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Achat-Or-Et-Argent.fr : accès non autorisé détecté (17 juin 2026, mis à jour le 17 août)",
+      "url": "https://fuitesinfos.fr/article/2026-06-17-achat-or-et-argent-fr",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Achat Or et Argent : les données de plus de 50 000 clients concernées (16 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/achat-or-et-argent-mqguqijb2kwf64ad0w7",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Achat-Or-Et-Argent.fr, site français d'achat et de vente d'or et d'argent, a annoncé le 17 juin 2026 un accès non autorisé à son système d'information. L'entreprise indique l'avoir détecté puis interrompu. Selon l'annonce, l'accès aurait pu concerner des informations d'identification, des coordonnées et l'historique de commandes. Les coordonnées bancaires, les mots de passe, les documents réglementaires ainsi que les serveurs et bases centraux ne sont pas signalés comme compromis. Le 16 août, une communication adressée aux personnes concernées et relayée par la veille évalue à plus de 50 000 les clients touchés ; l'entreprise ne publie pas de chiffre officiel.",
+  "timeline": [
+    {
+      "date": "2026-06-17",
+      "event": "L'entreprise annonce avoir détecté et interrompu un accès non autorisé ; identification, coordonnées et historique de commandes potentiellement concernés."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "La communication aux personnes concernées, relayée par la veille, évalue à plus de 50 000 clients l'ampleur de la fuite."
+    }
+  ]
+}

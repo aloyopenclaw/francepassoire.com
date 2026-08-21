@@ -1,0 +1,49 @@
+{
+  "slug": "france-travail-20260122",
+  "entity": "France Travail",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-22",
+    "confirmation": "2026-01-22",
+    "publication": "2026-01-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "chiffre officiel de la sanction : amende de 5 millions d'euros et injonction sous astreinte de 5 000 euros par jour de retard ; le manquement sanctionné a exposé les données d'inscrits et d'ex-inscrits des vingt dernières années"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : établissement public administratif, amende de 5 millions d'euros et injonction, défaut de sécurité des données (22 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (version anglaise) — Data breach: FRANCE TRAVAIL fined €5 million (communiqué du 29 janvier 2026)",
+      "url": "https://www.cnil.fr/en/data-breach-5million-fine-france-travail",
+      "kind": "officiel"
+    },
+    {
+      "label": "BleepingComputer — France fines unemployment agency €5 million over data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/france-fines-unemployment-agency-5-million-over-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 janvier 2026, la CNIL prononce une amende de 5 millions d'euros à l'encontre de France Travail. L'amende est assortie d'une injonction de justifier les mesures correctives, sous astreinte de 5 000 euros par jour de retard. La décision sanctionne un défaut de sécurité à l'origine de l'intrusion du premier trimestre 2024, conduite par ingénierie sociale via des comptes de conseillers Cap Emploi. Selon le communiqué de la CNIL, les attaquants ont accédé aux données des personnes inscrites ou ex-inscrites sur vingt ans et des comptes candidats ; y figuraient numéro de Sécurité sociale, adresses e-mail et postales et téléphones. La formation restreinte relève des procédures d'authentification insuffisantes, des journaux de surveillance inadaptés et des habilitations trop larges.",
+  "timeline": [
+    {
+      "date": "2026-01-22",
+      "event": "Amende de 5 millions d'euros, injonction de justifier les mesures correctives et astreinte de 5 000 euros par jour de retard (formation restreinte)."
+    },
+    {
+      "date": "2026-01-29",
+      "event": "La CNIL publie son communiqué : le défaut de sécurité a permis l'accès aux données des inscrits et ex-inscrits des vingt dernières années."
+    }
+  ]
+}
