@@ -1,0 +1,51 @@
+{
+  "slug": "yahoo-emea-20231229",
+  "entity": "Yahoo EMEA Limited",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-29",
+    "confirmation": "2023-12-29",
+    "publication": "2024-01-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "27 plaintes à l'origine de l'instruction ; nombre de personnes concernées non chiffré par la décision"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société proposant des services de télécommunication », amende de 10 millions d'euros (29 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "droitdu.net — Cookies : la CNIL sanctionne Yahoo ! d'une amende de 10 millions d'euros (1er février 2024)",
+      "url": "https://droitdu.net/2024/02/cookies-la-cnil-sanctionne-yahoo-dune-amende-de-10-millions-deuros/",
+      "kind": "article"
+    },
+    {
+      "label": "Armingaud Avocat — Délibération de la formation restreinte n° SAN-2023-024 du 29 décembre 2024 concernant la société YAHOO EMEA LIMITED",
+      "url": "https://armingaud-avocat.fr/SiteMap/2-Case-Law/Sanctions-CNIL/CNIL---D%C3%A9lib%C3%A9ration-de-la-formation-restreinte-n%C2%B0SAN-2023-024-du-29-d%C3%A9cembre-2023-concernant-la-soci%C3%A9t%C3%A9-YAHOO-EMEA-LIMITED",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 décembre 2023, la CNIL a prononcé une amende de 10 millions d'euros à l'encontre de Yahoo EMEA Limited, éditrice de yahoo.com et de la messagerie Yahoo Mail, rendue publique le 18 janvier 2024. À la suite de 27 plaintes et de contrôles en ligne d'octobre 2020 et juin 2021, la CNIL a constaté le dépôt d'une vingtaine de cookies publicitaires sans consentement préalable et des messages dissuadant de retirer le consentement sous peine de perdre l'accès à la messagerie. La décision est publiée avec anonymisation du nom au bout de deux ans.",
+  "timeline": [
+    {
+      "date": "2019-06-12",
+      "event": "Vingt-sept plaignants saisissent la CNIL sur les cookies de yahoo.com et de Yahoo Mail."
+    },
+    {
+      "date": "2023-12-29",
+      "event": "Amende de 10 millions d'euros : cookies publicitaires déposés sans consentement et retrait du consentement dissuadé."
+    },
+    {
+      "date": "2024-01-18",
+      "event": "La CNIL rend publique la sanction ; Yahoo EMEA annonce étudier les suites à donner."
+    }
+  ]
+}

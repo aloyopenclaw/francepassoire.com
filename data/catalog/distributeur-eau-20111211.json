@@ -1,0 +1,33 @@
+{
+  "slug": "distributeur-eau-20111211",
+  "entity": "Un distributeur d'eau et d'assainissement (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2011-12-11",
+    "confirmation": "2011-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichiers de gestion clients ; volume non communiqué"
+  },
+  "data_types": [
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2011, la CNIL a sanctionné un distributeur d'eau et d'assainissement à la suite de contrôles sur sa gestion des clients. L'autorité avait relevé des commentaires excessifs dans les fiches clients, ainsi que la présence de données de santé et de données relatives aux infractions sans base légale. Le type de sanction n'est pas précisé dans le tableau public, qui ne nomme pas l'entité. Ce dossier illustre la doctrine constante de la CNIL sur les fichiers de gestion clients : seules les données nécessaires à la finalité poursuivie sont admissibles, sans appréciations subjectives ni données sensibles injustifiées.",
+  "timeline": [
+    {
+      "date": "2011-12-11",
+      "event": "Sanction pour commentaires excessifs et données de santé et d'infractions dans les fichiers clients."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "telegame-20240926",
+  "entity": "Telegame",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-26",
+    "confirmation": "2024-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "base commune aux deux sociétés sanctionnées : données de plus de 1,5 million de personnes selon la CNIL ; quote-part propre à Telegame non publiée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Voyance en ligne : sanctions de 250 000 et 150 000 euros à l’encontre des sociétés COSMOSPACE et TELEMAQUE",
+      "url": "https://www.cnil.fr/fr/voyance-en-ligne-sanctions-de-250-000-et-150-000-euros-cosmospace-telemaque",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La formation restreinte de la CNIL a sanctionné le 26 septembre 2024 la société Telegame, active dans la voyance en ligne, d'une amende de 150 000 euros, aux côtés de Cosmospace (250 000 euros). Les deux sociétés partageaient une base contenant les données de plus de 1,5 million de personnes. La CNIL retient des durées de conservation de six ans en base active, là où trois ans sont recommandés, la collecte de données sensibles — orientation sexuelle, convictions religieuses, santé — sans consentement explicite, et des campagnes de prospection par courriel et SMS fondées sur des formulaires à l'apparence trompeuse. Les décisions ont été adoptées en coopération avec une quinzaine d'autorités européennes.",
+  "timeline": [
+    {
+      "date": "2024-09-26",
+      "event": "Amende de 150 000 euros contre Telegame et 250 000 euros contre Cosmospace : conservation excessive, données sensibles sans consentement explicite, prospection sans consentement valable."
+    }
+  ]
+}

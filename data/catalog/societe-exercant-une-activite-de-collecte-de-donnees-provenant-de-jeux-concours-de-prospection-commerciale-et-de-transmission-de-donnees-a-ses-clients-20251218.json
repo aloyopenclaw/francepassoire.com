@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-une-activite-de-collecte-de-donnees-provenant-de-jeux-concours-de-prospection-commerciale-et-de-transmission-de-donnees-a-ses-clients-20251218",
+  "entity": "Société exerçant une activité de collecte de données provenant de jeux concours, de prospection commerciale et de transmission de données à ses clients (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-18",
+    "confirmation": "2025-12-18",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 18 décembre 2025, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société collectant des données via des jeux concours et de la prospection commerciale, puis les transmettant à ses clients, dans le cadre de la procédure simplifiée. Les manquements retenus : consentement non valable à la prospection commerciale par voie électronique, durées de conservation excessives et défaut de sécurité des données. La prospection non conforme est l'un des sujets récurrents des sanctions 2025 recensés par la CNIL. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-12-18",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : prospection sans consentement valable, conservation excessive et sécurité défaillante."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices."
+    }
+  ]
+}

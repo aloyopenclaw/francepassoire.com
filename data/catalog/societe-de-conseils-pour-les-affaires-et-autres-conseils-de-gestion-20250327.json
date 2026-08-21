@@ -1,0 +1,42 @@
+{
+  "slug": "societe-de-conseils-pour-les-affaires-et-autres-conseils-de-gestion-20250327",
+  "entity": "Société de conseils pour les affaires et autres conseils de gestion",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-27",
+    "publication": "2025-05-22",
+    "confirmation": "2025-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dix nouvelles sanctions prononcées en 2025 dans le cadre de la procédure simplifiée (22 mai 2025)",
+      "url": "https://www.cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 27 mars 2025, dans le cadre de la procédure simplifiée, une amende de 6 000 euros contre une société de conseils pour les affaires et autres conseils de gestion, désignée anonymément. Les manquements portent sur un dispositif de vidéoprotection et de vidéosurveillance : traitement illicite, atteinte au principe de minimisation et information insuffisante des personnes. Le communiqué du 22 mai 2025 rattache cette décision aux sanctions liées à la surveillance des salariés, rappelant que la filmer en permanence n'est pas justifié sans circonstances exceptionnelles. Le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-03-27",
+      "event": "Amende de 6 000 euros en procédure simplifiée : vidéoprotection illicite, minimisation et information des personnes en cause."
+    },
+    {
+      "date": "2025-05-22",
+      "event": "La CNIL publie son bilan des dix premières sanctions simplifiées de 2025, marquées par la surveillance des salariés."
+    }
+  ]
+}

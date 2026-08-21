@@ -1,0 +1,36 @@
+{
+  "slug": "societe-de-gestion-immobiliere-20190528",
+  "entity": "Société de gestion immobilière",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-05-28",
+    "confirmation": "2019-05-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; sanction pécuniaire de 400 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de gestion immobilière », Sanction pécuniaire de 400 000 euros (28 mai 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 mai 2019, la formation restreinte de la CNIL a prononcé une sanction pécuniaire de 400 000 euros à l'encontre d'une société de gestion immobilière, désignée de façon anonymisée dans la liste officielle. Les manquements retenus : défaut de sécurité des données personnelles et non-respect des durées de conservation. Le 31 janvier 2019, la même désignation apparaît dans la liste pour un abandon des poursuites sur des griefs voisins. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2019-01-31",
+      "event": "Abandon des poursuites concernant la sécurité et les durées de conservation des données (liste officielle)."
+    },
+    {
+      "date": "2019-05-28",
+      "event": "Sanction pécuniaire de 400 000 euros pour défaut de sécurité des données et durées de conservation non respectées."
+    }
+  ]
+}
