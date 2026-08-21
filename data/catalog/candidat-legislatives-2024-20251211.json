@@ -1,0 +1,52 @@
+{
+  "slug": "candidat-legislatives-2024-20251211",
+  "entity": "Candidat aux élections législatives de 2024 (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "confirmation": "2025-12-11",
+    "publication": "2025-12-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; SMS envoyés aux numéros de téléphone des patients du candidat"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « candidat aux élections législatives de 2024 » (procédure simplifiée), amende de 5 500 euros (11 décembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Prospection politique : la CNIL sanctionne cinq candidats aux élections européennes et législatives 2024 (18 décembre 2025)",
+      "url": "https://cnil.fr/fr/prospection-politique-sanction-candidats-2024",
+      "kind": "officiel"
+    },
+    {
+      "label": "DataSecurityBreach — Prospection politique : la CNIL sanctionne cinq candidats",
+      "url": "https://www.datasecuritybreach.fr/prospection-politique-la-cnil-sanctionne-cinq-candidats/",
+      "kind": "article"
+    },
+    {
+      "label": "Portail-RGPD — La CNIL sanctionne cinq candidats aux élections européennes et législatives 2024 pour prospection politique non conforme",
+      "url": "https://veille.portail-rgpd.com/actu/cnil-sanction-candidats-elections-prospection-politique/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 décembre 2025, la CNIL a prononcé une amende de 5 500 euros à l'encontre d'un candidat aux élections législatives de 2024 exerçant la profession de santé, dans le cadre de la procédure simplifiée. Selon le communiqué du 18 décembre 2025, il a utilisé les numéros de téléphone de ses patients, recueillis pour ses consultations, pour leur adresser un SMS promouvant sa candidature : un usage jugé incompatible avec la finalité de collecte. S'y ajoutent des défauts d'information, de droit d'opposition et d'encadrement du sous-traitant. Trois autres candidats ont été sanctionnés le même jour. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2025-12-11",
+      "event": "Amende de 5 500 euros (procédure simplifiée) : numéros de téléphone de patients réutilisés pour un SMS de campagne, parmi d'autres manquements."
+    },
+    {
+      "date": "2025-12-18",
+      "event": "La CNIL détaille le cas des cinq candidats sanctionnés, pour un montant cumulé de 23 500 euros."
+    }
+  ]
+}

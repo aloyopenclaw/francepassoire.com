@@ -1,0 +1,42 @@
+{
+  "slug": "boulangerie-20240610",
+  "entity": "Boulangerie (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-06-10",
+    "confirmation": "2024-06-10",
+    "publication": "2024-10-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « boulangerie » (procédure simplifiée), amende de 5 000 euros (10 juin 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 10 juin 2024, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une boulangerie, dans le cadre de la procédure simplifiée. Les manquements retenus : minimisation insuffisante des données de vidéosurveillance, traitement non licite et défaut d'information des personnes. La dénomination n'est pas publiée ; les données concernées sont les images du dispositif vidéo. Dans son communiqué du 8 octobre 2024 couvrant cette période, la CNIL rappelle que la surveillance vidéo permanente, non justifiée par des circonstances exceptionnelles liées à la sécurité ou au vol, porte atteinte au principe de minimisation.",
+  "timeline": [
+    {
+      "date": "2024-06-10",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : minimisation, licéité et information critiquées pour la vidéosurveillance."
+    },
+    {
+      "date": "2024-10-08",
+      "event": "La CNIL publie son communiqué sur onze sanctions simplifiées depuis juin 2024, centré sur la minimisation et la vidéosurveillance."
+    }
+  ]
+}

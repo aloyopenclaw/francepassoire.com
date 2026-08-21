@@ -1,0 +1,42 @@
+{
+  "slug": "acces-aux-soins-20241219",
+  "entity": "Organisme d'accès aux soins (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « accès aux soins » (procédure simplifiée), amende de 5 000 euros (19 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a prononcé une amende de 5 000 euros, dans le cadre de la procédure simplifiée, à l'encontre d'un organisme d'accès aux soins dont la dénomination n'est pas publiée. Le seul manquement retenu est le défaut de coopération avec l'autorité. La nature des données personnelles concernées n'est pas précisée dans la décision. Ce manquement a été le premier motif de sanction simplifiée en 2024 : 27 organismes ont été sanctionnés pour n'avoir pas répondu aux sollicitations de la CNIL, selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "La CNIL prononce une amende de 5 000 euros (procédure simplifiée) pour défaut de coopération ; la dénomination n'est pas publiée."
+    }
+  ]
+}
