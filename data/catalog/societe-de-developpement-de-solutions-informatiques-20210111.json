@@ -1,0 +1,37 @@
+{
+  "slug": "societe-de-developpement-de-solutions-informatiques-20210111",
+  "entity": "Une société de développement de solutions informatiques (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-01-11",
+    "confirmation": "2021-01-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 75 000 euros (décision du 11 janvier 2021) ; aucun volume de personnes concernées communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE DÉVELOPPEMENT DE SOLUTIONS INFORMATIQUES », sanction pécuniaire de 75 000 euros (11 janvier 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : 18 sanctions prononcées, dont 12 rendues publiques, pour 214 106 000 euros",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 janvier 2021, la formation restreinte de la CNIL a prononcé une sanction pécuniaire de 75 000 euros. La société visée développe des solutions informatiques. Le manquement retenu est un défaut de sécurité des données. La décision n'a pas été rendue publique nominativement : le tableau officiel des sanctions désigne l'entité par son seul secteur d'activité. Le rapport annuel 2021 de la CNIL recense dix-huit sanctions cette année-là, dont douze rendues publiques.",
+  "timeline": [
+    {
+      "date": "2021-01-11",
+      "event": "Sanction pécuniaire de 75 000 euros pour défaut de sécurité des données ; l'entité est désignée anonymement dans le tableau officiel."
+    }
+  ]
+}

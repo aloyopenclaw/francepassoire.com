@@ -1,0 +1,42 @@
+{
+  "slug": "organisme-prive-astreinte-20211028",
+  "entity": "Un organisme privé (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-10-28",
+    "confirmation": "2021-10-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "liquidation d'astreinte de 65 000 euros, en sus d'une amende initiale de 7 300 euros ; entité non nommée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ORGANISME PRIVÉ », liquidation de l'astreinte de 65 000 euros (28 octobre 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : première décision de liquidation d'astreinte, société initialement sanctionnée d'une amende de 7 300 euros",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Bilan des sanctions et mises en demeure 2021 (page conservée par la Wayback Machine, 28 janvier 2022)",
+      "url": "https://web.archive.org/web/20220128143219/https://www.cnil.fr/fr/bilan-sanctions-mises-en-demeure-2021",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 28 octobre 2021, la formation restreinte de la CNIL a prononcé la première liquidation d'astreinte de son histoire. Un organisme privé, initialement sanctionné d'une amende de 7 300 euros, a dû payer 65 000 euros supplémentaires. Selon le rapport annuel 2021, la société n'avait pas procédé aux modifications de son traitement demandées dans la décision de sanction initiale. L'entité n'est pas nommée dans le tableau officiel des sanctions.",
+  "timeline": [
+    {
+      "date": "2021-10-28",
+      "event": "Première liquidation d'astreinte prononcée par la CNIL : 65 000 euros supplémentaires pour un organisme privé qui n'avait pas obtempéré (amende initiale de 7 300 euros)."
+    }
+  ]
+}
