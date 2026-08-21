@@ -1,0 +1,35 @@
+{
+  "slug": "medecin-20250703",
+  "entity": "Médecin (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-03",
+    "confirmation": "2025-07-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 3 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": ["autre"],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2025) : « médecin » (procédure simplifiée), 3 juillet 2025, amende de 3 000 euros et injonction",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 3 juillet 2025, la CNIL a prononcé, dans le cadre de la procédure simplifiée, une amende administrative de 3 000 euros assortie d'une injonction à l'encontre d'un médecin dont la dénomination n'est pas publiée. Le manquement retenu est un défaut de coopération avec la CNIL : le praticien n'a pas répondu aux sollicitations de l'autorité de contrôle dans le cadre de ses missions. La procédure simplifiée, réservée aux manquements les moins graves, plafonne la sanction à 20 000 euros et interdit la publication du nom de la personne concernée.",
+  "timeline": [
+    {
+      "date": "2025-07-03",
+      "event": "Amende de 3 000 euros et injonction pour défaut de coopération avec la CNIL (procédure simplifiée)."
+    }
+  ]
+}
