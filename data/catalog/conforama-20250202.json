@@ -1,0 +1,43 @@
+{
+  "slug": "conforama-20250202",
+  "entity": "Conforama France",
+  "siren": "414819409",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-02",
+    "publication": "2025-02-04"
+  },
+  "volume": {
+    "count": 9300000,
+    "unit": "lignes",
+    "label": "9,3 millions de lignes revendiquées sur BreachForums ; l'enseigne évoque un « possible vol », les analyses pointant des données anciennes recyclées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Fuite de données chez EDF et Conforama ? 15 millions de Français concernés (4 février 2025)",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-edf-conforama-donnees-15-millions-francais-vente.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite chez EDF ? Entre bluff et baroud d'honneur des derniers membres de Kernel (4 février 2025, couvre aussi la vente Conforama)",
+      "url": "https://www.zataz.com/fuite-chez-edf-entre-bluff-et-baroud-dhonneur-des-derniers-membres-de-kernel/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 2 février 2025, le cybercriminel « Varun » met en vente sur BreachForums une base de 9,3 millions de lignes présentée comme issue de Conforama : noms, adresses complètes, téléphones, e-mails, historiques de commandes, dates de naissance et cartes de fidélité. L'enseigne évoque publiquement un « possible vol » de données clients sans le confirmer. Les analyses de Zataz et de 01net orientent vers une opération de bourrage d'identifiants recyclant des compromissions antérieures, attribuées à l'écosystème « Kernel » déjà responsable de fuites ayant touché d'autres enseignes françaises.",
+  "timeline": [
+    {
+      "date": "2025-02-02",
+      "event": "Mise en vente sur BreachForums d'une base de 9,3 millions de lignes présentée comme Conforama, relayée par le compte de veille SaxX."
+    },
+    {
+      "date": "2025-02-04",
+      "event": "L'enseigne évoque un « possible vol » ; 01net et Zataz documentent une probable opération de credential stuffing sur données anciennes."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "alu-perpignan-20251015",
+  "entity": "Alu Perpignan",
+  "siren": "303376743",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-15",
+    "publication": "2025-11-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non précisés ; chiffrement des systèmes et menace de divulgation revendiqués par Qilin, trois semaines d'arrêt de l'activité"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Deefense — Cyberattaque par le rançongiciel Qilin contre la PME Alu Perpignan : analyse (10 novembre 2025)",
+      "url": "https://deefense.fr/cyber-et-it/cyberattaque-rancongiciel-qilin",
+      "kind": "article"
+    },
+    {
+      "label": "BreachSense — Data breaches in October 2025 (fiche victime alu-perpignan.fr, acteur Qilin, découverte 15 octobre 2025)",
+      "url": "https://www.breachsense.com/breaches/2025/october/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Mi-octobre 2025, le groupe de rançongiciel Qilin ajoute la PME Alu Perpignan, spécialiste des menuiseries en aluminium et PVC en Occitanie, à son site clandestin : systèmes chiffrés, demande de rançon et menace de divulguer des données sensibles. L'entreprise cesse toute activité pendant trois semaines, avec un manque à gagner estimé à trois mois de chiffre d'affaires selon un retour d'expérience publié en novembre. L'entreprise n'a pas communiqué publiquement ; la revendication et les volumes de données impliqués ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2025-10-15",
+      "event": "Qilin inscrit Alu Perpignan sur son site de fuite et revendique le chiffrement des systèmes avec menace de divulgation."
+    },
+    {
+      "date": "2025-11-10",
+      "event": "Un retour d'expérience documente trois semaines d'arrêt total et environ trois mois de chiffre d'affaires perdus."
+    }
+  ],
+  "group": "qilin"
+}

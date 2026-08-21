@@ -1,0 +1,38 @@
+{
+  "slug": "roger-renard-20251015",
+  "entity": "Roger Renard Entreprise",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-15",
+    "publication": "2025-10-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non précisés ; revendication Qilin sans détail public, l'entreprise n'a pas communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Cyberattaque contre la Région des Hauts-de-France : tableau des victimes françaises de Qilin (Roger Renard Entreprise, 15 octobre 2025)",
+      "url": "https://www.zataz.com/cyberattaque-contre-la-region-des-hauts-de-france-les-lycees-impactes/",
+      "kind": "revendication"
+    },
+    {
+      "label": "BreachSense — Data breaches in October 2025 (victime roger-renard.fr, acteur Qilin, découverte 15 octobre 2025)",
+      "url": "https://www.breachsense.com/breaches/2025/october/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 15 octobre 2025, le groupe de rançongiciel Qilin ajoute Roger Renard Entreprise (roger-renard.fr) à son site de fuite, dans la même salve que Volkswagen Group France, Le Toit Forézien ou les communes d'Elne et de Saint-Claude. La revendication, relevée par le tableau de veille de Zataz et les fiches de BreachSense, ne précise ni les volumes ni la nature des données concernées. L'entreprise n'a pas communiqué publiquement sur l'incident, qui n'est pas confirmé à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-10-15",
+      "event": "Qilin inscrit Roger Renard Entreprise sur son site de fuite dans la salve du 15 octobre."
+    }
+  ],
+  "group": "qilin"
+}

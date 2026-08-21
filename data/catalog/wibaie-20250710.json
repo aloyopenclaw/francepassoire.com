@@ -1,0 +1,52 @@
+{
+  "slug": "wibaie-20250710",
+  "entity": "Wibaie (groupe Liébot)",
+  "siren": "330630872",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-10",
+    "publication": "2025-07-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "usine de 600 salariés mise à l'arrêt complet, chômage technique ; vol de données non établi, chiffrage revendiqué par Qilin"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — Une cyberattaque bloque complètement une usine de 600 salariés en France, au chômage technique depuis jeudi (11 juillet 2025)",
+      "url": "https://www.clubic.com/actualite-572604-une-cyberattaque-bloque-completement-une-usine-de-600-salaries-en-france-au-chomage-technique-depuis-jeudi.html",
+      "kind": "article"
+    },
+    {
+      "label": "cholet.maville.com — Une cyberattaque paralyse cette grande entreprise de Maine-et-Loire : l'usine à l'arrêt (10 juillet 2025)",
+      "url": "https://cholet.maville.com/actu/actudet_-une-cyberattaque-paralyse-cette-grande-entreprise-de-maine-et-loire-l-usine-a-l-arret-_loc-6895004_actu.Htm",
+      "kind": "article"
+    },
+    {
+      "label": "SaxX (X) — La cyberattaque de Wibaie (groupe Liébot) : Qilin a déposé un rançongiciel dans les systèmes (revendication relayée)",
+      "url": "https://x.com/_SaxX_/status/1947564360718495807",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 juillet 2025, le fabricant de menuiseries Wibaie (groupe Liébot, Cholet) est victime d'une cyberattaque qui bloque complètement son usine : les 600 salariés sont placés au chômage technique et la production s'arrête. Le groupe de rançongiciel Qilin revendique l'intrusion avec dépôt d'un rançongiciel dans les systèmes. L'entreprise remet progressivement en marche ses outils ; la presse locale fait état d'une dizaine de jours d'arrêt forcé. Un vol de données n'est pas établi publiquement à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-07-10",
+      "event": "Cyberattaque dans la nuit du 9 au 10 juillet : l'usine Wibaie de Cholet est mise à l'arrêt complet, 600 salariés en chômage technique."
+    },
+    {
+      "date": "2025-07-22",
+      "event": "Le compte de veille SaxX relève la revendication de Qilin (rançongiciel déposé dans les systèmes)."
+    },
+    {
+      "date": "2025-09-22",
+      "event": "cholet.maville.com (groupe Ouest-France) revient sur dix jours de mise à l'arrêt forcée au cœur de l'été."
+    }
+  ],
+  "group": "qilin"
+}

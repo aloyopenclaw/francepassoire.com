@@ -1,0 +1,38 @@
+{
+  "slug": "le-toit-forezien-20251015",
+  "entity": "Le Toit Forézien",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-15",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non précisés ; revendication Qilin sans détail public, l'organisme n'a pas communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Cyberattaque contre la Région des Hauts-de-France : tableau des victimes françaises de Qilin (Le Toit Forézien, 15 octobre 2025)",
+      "url": "https://www.zataz.com/cyberattaque-contre-la-region-des-hauts-de-france-les-lycees-impactes/",
+      "kind": "revendication"
+    },
+    {
+      "label": "BreachSense — Data breaches in October 2025 (victime toitforezien.fr, acteur Qilin, découverte 16 octobre 2025)",
+      "url": "https://www.breachsense.com/breaches/2025/october/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 15 octobre 2025, le groupe de rançongiciel Qilin inscrit Le Toit Forézien (Loire), dans une salve d'une quarantaine de victimes dans le monde, aux côtés notamment des communes de Saint-Claude, d'Elne et de Volkswagen Group France — un enchaînement documenté par le tableau de veille de Zataz et les fiches de BreachSense. La revendication ne précise ni les volumes ni la nature des données concernées, et l'organisme n'a pas communiqué publiquement sur l'incident. Elle n'est pas confirmée à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-10-15",
+      "event": "Qilin inscrit Le Toit Forézien sur son site de fuite dans une salve visant une quarantaine d'organismes."
+    }
+  ],
+  "group": "qilin"
+}
