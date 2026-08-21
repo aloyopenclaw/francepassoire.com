@@ -1,0 +1,51 @@
+{
+  "slug": "ecritel-20241208",
+  "entity": "Ecritel (hébergeur et cloud souverain)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-08",
+    "publication": "2024-12-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "270 Go de données revendiqués par Hunters International, dont des documents clients (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "next.ink — L'hébergeur et fournisseur de cloud Ecritel victime d'une cyberattaque (décembre 2024)",
+      "url": "https://next.ink/brief-article/lhebergeur-et-fournisseur-de-cloud-ecritel-victime-dune-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Cyberattaque contre Ecritel : le géant du cloud français a subi un vol de données (18 décembre 2024)",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-ecritel-geant-cloud-francais-repousse-attaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Ecritel : Hunters International divulgue des données de clients, dont l'Anssi (19 décembre 2024)",
+      "url": "https://www.lemagit.fr/actualites/366617337/Ransomware-Ecritel-victime-dune-cyberattaque-impliquant-Hunters-International",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 décembre 2024, Ecritel, hébergeur et infogéreur cloud français, subit une « attaque majeure » sur ses systèmes. L'enseigne de cyber extorsion Hunters International revendique l'intrusion et affirme avoir volé 270 gigaoctets de données, avant de divulguer des éléments issus de clients de l'ESN — parmi lesquels l'Agence nationale de la sécurité des systèmes d'information (Anssi). L'entreprise indique avoir repoussé l'attaque et contenu l'incident, mais la divulgation touche des données internes et clients.",
+  "timeline": [
+    {
+      "date": "2024-12-08",
+      "event": "Attaque majeure contre Ecritel, hébergeur cloud français (communication de l'entreprise)."
+    },
+    {
+      "date": "2024-12-18",
+      "event": "01net relaie la revendication de Hunters International : 270 Go de données volés."
+    },
+    {
+      "date": "2024-12-19",
+      "event": "LeMagIT documente la divulgation de données de clients d'Ecritel, dont l'Anssi."
+    }
+  ],
+  "group": "hunters"
+}

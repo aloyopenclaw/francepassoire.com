@@ -1,0 +1,39 @@
+{
+  "slug": "menway-20250130",
+  "entity": "Menway (services aux entreprises et RH)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "plus de 20 Go de documents internes revendiqués par Akira (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Ransomware chez Menway : des données sensibles compromises par Akira (30 janvier 2025)",
+      "url": "https://frenchbreaches.com/alertes/menway-rw_VFdWdWQyRjVRR0ZyYVhKaA",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (Menway, 30 janvier, groupe Akira)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 janvier 2025, le rançongiciel Akira revendique une attaque contre Menway, société de services aux entreprises et aux salariés (accompagnement RH). Selon la revendication relayée par les veilleurs, les cybercriminels se disent prêts à publier plus de 20 gigaoctets de documents internes : accords de confidentialité, documents RH, numéros de téléphone et adresses e-mail de salariés et de clients, ainsi que des données financières. Ces éléments ne sont pas confirmés publiquement par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-01-30",
+      "event": "Akira revendique l'attaque de Menway et annonce plus de 20 Go de documents internes (relais FrenchBreaches)."
+    }
+  ],
+  "group": "akira"
+}

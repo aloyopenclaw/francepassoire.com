@@ -1,0 +1,49 @@
+{
+  "slug": "schneider-electric-20241104",
+  "entity": "Schneider Electric",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-04",
+    "publication": "2024-11-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "40 Go de données compressées et plus de 400 000 lignes de données utilisateur revendiqués, dont 75 000 adresses e-mail uniques (chiffres non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Cybersécurité : Schneider Electric victime d'une nouvelle fuite de données (5 novembre 2024)",
+      "url": "https://www.usine-digitale.fr/article/cybersecurite-schneider-electric-victime-d-une-nouvelle-fuite-de-donnees.N2221763",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Schneider Electric (France) : victime revendiquée par le groupe hellcat (4 novembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/schneider-electric-france-rw_VTJOb2JtVnBaR1Z5SUVWc1pXTjBjbWxqSUMwZ1JuSmhibU5sUUdobGJHeGpZWFE9",
+      "kind": "revendication"
+    },
+    {
+      "label": "CyberScoop — Schneider Electric reports cyberattack, its third incident in 18 months (novembre 2024)",
+      "url": "https://cyberscoop.com/schneider-electric-energy-ransomware-hellcat/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début novembre 2024, Schneider Electric annonce enquêter sur un accès non autorisé à une plateforme interne de suivi de l'exécution de projets, après qu'un acteur lié au gang Hellcat a revendiqué le piratage du serveur Atlassian Jira de l'équipementier. Selon la revendication relayée par la presse, les cybercriminels auraient extrait environ 40 gigaoctets de données compressées — projets, plugins et plus de 400 000 lignes de données utilisateur, dont 75 000 adresses e-mail uniques de clients et de salariés — et réclamé une rançon de 125 000 dollars en monero. L'entreprise précise que le fonctionnement de ses produits et services n'est pas impacté.",
+  "timeline": [
+    {
+      "date": "2024-11-04",
+      "event": "Hellcat revendique l'accès au serveur Jira de Schneider Electric ; le groupe confirme enquêter sur un accès non autorisé."
+    },
+    {
+      "date": "2024-11-05",
+      "event": "L'Usine Digitale détaille la revendication : 40 Go et plus de 400 000 lignes de données utilisateur."
+    }
+  ],
+  "group": "hellcat"
+}

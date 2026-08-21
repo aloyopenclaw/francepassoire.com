@@ -1,0 +1,37 @@
+{
+  "slug": "atos-20240716",
+  "entity": "Atos",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "710 Go de données revendiqués par Black Basta, dont des informations personnelles et des fichiers confidentiels (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — Atos data breach : acteur Black Basta, 710 Go, découverte 16 juillet 2024",
+      "url": "https://www.breachsense.com/breaches/atos-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "SecurityWeek — IT Giant Atos Responds to Ransomware Group's Data Theft Claims (rappel du listing Black Basta de juillet 2024)",
+      "url": "https://www.securityweek.com/it-giant-atos-responds-to-ransomware-groups-data-theft-claims/",
+      "kind": "article"
+    }
+  ],
+  "description": "Mi-juillet 2024, le groupe de rançongiciel Black Basta liste le groupe français des services numériques Atos sur son site de fuite et revendique le vol de 710 gigaoctets de données, comprenant selon le groupe criminel des informations personnelles et des fichiers d'entreprise confidentiels. Atos ne répond pas publiquement à cette revendication, que rien ne vient confirmer ; l'ESN français fera ensuite l'objet d'une seconde revendication non confirmée, par Space Bears, en décembre 2024.",
+  "timeline": [
+    {
+      "date": "2024-07-16",
+      "event": "Black Basta liste Atos sur son site de fuite et revendique 710 Go de données (relais Breachsense)."
+    }
+  ],
+  "group": "blackbasta"
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "arsoe-20241215",
+  "entity": "Arsoé de Soual (coopérative de services numériques aux éleveurs)",
+  "siren": "777263112",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-15",
+    "publication": "2024-12-23"
+  },
+  "volume": {
+    "count": 30000,
+    "unit": "personnes",
+    "label": "environ 30 000 éleveurs privés d'accès à leurs outils dans 22 départements du Sud-Ouest et en Corse (La France Agricole)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La France Agricole — 30 000 éleveurs touchés par une cyberattaque (23 décembre 2024)",
+      "url": "https://www.lafranceagricole.fr/elevage/article/876452/30-000-eleveurs-touches-par-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Nouvelle-Aquitaine — Cette cyberattaque qui rend la vie impossible aux éleveurs du Sud-Ouest depuis la mi-décembre (2024)",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/haute-vienne/limoges/impossible-d-acceder-a-cette-page-cette-cyberattaque-qui-rend-la-vie-impossible-aux-eleveurs-du-sud-ouest-depuis-la-mi-decembre-3085180.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — L'Arsoé, spécialiste des services numériques aux éleveurs, victime d'une cyberattaque (27 décembre 2024)",
+      "url": "https://www.ladepeche.fr/2024/12/27/agriculture-larsoe-specialiste-des-services-numeriques-aux-eleveurs-victime-dune-cyberattaque-12413861.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 14 au 15 décembre 2024, l'Arsoé de Soual (Tarn), coopérative numérique qui gère les outils informatiques des organismes d'élevage du grand Sud-Ouest, est victime d'une cyberattaque qui paralyse ses services : environ 30 000 éleveurs de 22 départements perdent l'accès au logiciel Synel d'identification du bétail et aux déclarations obligatoires, revenant temporairement au papier. Les attaquants contactent la structure via une messagerie chiffrée, et la reconstruction des outils s'étale sur plusieurs semaines. Aucune exfiltration chiffrée de données n'est rendue publique.",
+  "timeline": [
+    {
+      "date": "2024-12-15",
+      "event": "Cyberattaque détectée à l'Arsoé de Soual : les services numériques aux éleveurs sont bloqués."
+    },
+    {
+      "date": "2024-12-23",
+      "event": "La France Agricole chiffre à 30 000 le nombre d'éleveurs touchés dans 22 départements."
+    },
+    {
+      "date": "2024-12-27",
+      "event": "La Dépêche décrit la paralysie des services et le retour temporaire au papier."
+    }
+  ]
+}
