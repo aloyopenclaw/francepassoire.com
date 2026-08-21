@@ -1,0 +1,51 @@
+{
+  "slug": "chirurgien-dentiste-20240229",
+  "entity": "Chirurgien-dentiste (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-29",
+    "confirmation": "2024-02-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 4 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « chirurgien-dentiste » (procédure simplifiée), amende de 4 000 euros (29 février 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024 (12 mars 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 février 2024, la CNIL a prononcé une amende de 4 000 euros à l'encontre d'un chirurgien-dentiste, dans le cadre de la procédure simplifiée. Le tableau officiel des sanctions retient un défaut de coopération avec l'autorité et le non-respect du droit d'accès portant sur des données de santé. La dénomination du praticien n'est pas publiée. La décision figure dans la série des quinze sanctions simplifiées couvrant le début 2024, dont le communiqué du 12 mars liste les thèmes : coopération avec la CNIL et exercice des droits des personnes, notamment l'accès aux dossiers médicaux. Selon le bilan annuel, le défaut de coopération a concerné 27 organismes sanctionnés en 2024, premier motif de sanction simplifiée.",
+  "timeline": [
+    {
+      "date": "2024-02-29",
+      "event": "Amende de 4 000 euros (procédure simplifiée) : défaut de coopération et droit d'accès non respecté (données de santé)."
+    },
+    {
+      "date": "2024-03-12",
+      "event": "La CNIL publie le bilan de ses quinze sanctions simplifiées depuis janvier 2024."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ministere-duree-conservation-20240709",
+  "entity": "Un ministère (dénomination non publiée par la CNIL)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-09",
+    "confirmation": "2024-07-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; rappel à l'ordre et injonction (décision de la formation restreinte)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « ministère », rappel à l'ordre et injonction (9 juillet 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 9 juillet 2024, la formation restreinte de la CNIL a prononcé un rappel à l'ordre et une injonction à l'encontre d'un ministère, dont la dénomination n'est pas publiée par l'autorité. Le tableau officiel des sanctions retient deux manquements : une durée de conservation des données non conforme et un défaut de licéité du traitement. Le rappel à l'ordre est la mesure la plus légère du catalogue répressif de la CNIL ; il est complété d'une injonction de mise en conformité. Le bilan 2024 recense 4 rappels à l'ordre sur l'année, dont 3 visent des ministères, notamment pour l'exactitude des données de leurs bases. La nature des données concernées n'est pas précisée.",
+  "timeline": [
+    {
+      "date": "2024-07-09",
+      "event": "Rappel à l'ordre et injonction : durée de conservation excessive et traitement licite non assuré."
+    }
+  ]
+}

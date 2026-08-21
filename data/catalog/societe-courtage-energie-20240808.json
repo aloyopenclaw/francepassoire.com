@@ -1,0 +1,51 @@
+{
+  "slug": "societe-courtage-energie-20240808",
+  "entity": "Société de courtage en énergie (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-08",
+    "confirmation": "2024-08-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « société de courtage en énergie » (procédure simplifiée), amende de 20 000 euros et injonction (8 août 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 8 août 2024, la CNIL a prononcé une amende de 20 000 euros assortie d'une injonction à l'encontre d'une société de courtage en énergie, dans le cadre de la procédure simplifiée. Le tableau officiel retient un manquement au principe de minimisation des données, un défaut d'information des personnes en matière de prospection commerciale et l'absence de registre des activités de traitement. La dénomination n'est pas publiée. Cette décision fait partie des onze sanctions simplifiées recensées depuis juin 2024, dont le communiqué du 8 octobre cite l'absence de registre et les manquements à l'information des personnes. L'amende atteint le plafond de 20 000 euros de la procédure simplifiée.",
+  "timeline": [
+    {
+      "date": "2024-08-08",
+      "event": "Amende de 20 000 euros et injonction (procédure simplifiée) : minimisation, information en prospection, registre absent."
+    },
+    {
+      "date": "2024-10-08",
+      "event": "La CNIL publie le bilan de ses onze sanctions simplifiées depuis juin 2024."
+    }
+  ]
+}

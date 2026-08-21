@@ -1,0 +1,47 @@
+{
+  "slug": "hubside-store-20240404",
+  "entity": "HUBSIDE.STORE",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-04",
+    "publication": "2024-04-09",
+    "confirmation": "2024-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 525 000 euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « commerce de détail de matériel de télécommunication », amende de 525 000 euros (4 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFM Tech — La Cnil inflige 525.000 euros d'amende à Hubside Store pour manquements sur les données personnelles (9 avril 2024)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/la-cnil-inflige-525-000-euros-d-amende-a-hubside-store-pour-manquements-sur-les-donnees-personnelles_AV-202404090382.html",
+      "kind": "article"
+    },
+    {
+      "label": "Global Security Mag — Prospection commerciale : sanction de 525 000 euros de la CNIL",
+      "url": "https://www.globalsecuritymag.fr/prospection-commerciale-sanction-de-525-000-euros-a-l-encontre-de-la-societe.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 avril 2024, la formation restreinte de la CNIL a prononcé une amende de 525 000 euros à l'encontre de HUBSIDE.STORE, distributeur de matériel de téléphonie. Le tableau officiel retient trois manquements : prospection commerciale par voie électronique sans consentement valable (article L. 34-5 du code des postes et des communications électroniques), défaut de base légale et information incomplète des personnes. Selon BFM Tech et Global Security Mag, la société avait utilisé pour ses campagnes de SMS et d'appels des données transmises par des courtiers en données, sans vérifier le consentement des personnes. L'amende représente environ 2 % du chiffre d'affaires selon ces relais. La décision a été rendue publique le 9 avril 2024.",
+  "timeline": [
+    {
+      "date": "2024-04-04",
+      "event": "Amende de 525 000 euros : prospection par SMS et appels sans consentement valable ni base légale."
+    },
+    {
+      "date": "2024-04-09",
+      "event": "La sanction est rendue publique ; BFM Tech et Global Security Mag nomment HUBSIDE.STORE."
+    }
+  ]
+}
