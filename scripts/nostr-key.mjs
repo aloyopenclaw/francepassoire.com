@@ -25,6 +25,9 @@ export const RELAIS_EPINGLES = [
   'wss://relay.damus.io',
   'wss://nos.lol',
   'wss://relay.primal.net',
+  // 4e relais (21/08) : damus rate-limitait les rafales de republication,
+  // laissant certains ancrages à 1/3 — redondance rétablie à 4.
+  'wss://relay.dottore.eu',
 ];
 
 const HEX_RE = /^[0-9a-f]{64}$/;
