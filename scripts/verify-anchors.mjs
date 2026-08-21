@@ -208,10 +208,24 @@ async function main() {
   }
 
   // Présence relais : chaque ancre doit revenir de ≥2 relais, signée par notre npub.
+  // Les relais plafonnent la longueur du filtre {"ids":[…]} (~100-256) : au-delà
+  // la REQ entière est ignorée et TOUT revient absent (bug 21/08 : 512 ids → 0/4).
+  // On interroge donc par LOTS de 64 ids et on fusionne les résultats par relais.
+  const TAILLE_LOT = 64;
+  const tousLesIds = ancres.map((a) => a.idEvenement);
+  const lots = [];
+  for (let i = 0; i < tousLesIds.length; i += TAILLE_LOT) {
+    lots.push(tousLesIds.slice(i, i + TAILLE_LOT));
+  }
   const reponses = await Promise.all(
-    opts.relays.map((r) =>
-      interrogerRelais(r, ancres.map((a) => a.idEvenement), opts.timeoutMs),
-    ),
+    opts.relays.map(async (r) => {
+      const fusion = new Map();
+      for (const lot of lots) {
+        const { events } = await interrogerRelais(r, lot, opts.timeoutMs);
+        for (const [id, event] of events) fusion.set(id, event);
+      }
+      return { relay: r, events: fusion };
+    }),
   );
   let toutTrouve = true;
   for (const { ancrage, empreinte, idEvenement } of ancres) {
