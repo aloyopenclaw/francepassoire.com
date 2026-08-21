@@ -1,0 +1,37 @@
+{
+  "slug": "edf-20250204",
+  "entity": "EDF",
+  "siren": "552081317",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-04",
+    "publication": "2025-02-04"
+  },
+  "volume": {
+    "count": 6300000,
+    "unit": "personnes",
+    "label": "6,3 millions de clients selon des publications virales sur les réseaux sociaux, chiffre démenti par EDF ; une centaine de connexions illicites constatées"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Cyberattaque : EDF reconnaît des connexions « illicites » mais dément un piratage massif",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-edf-reconnait-des-connexions-illicites-mais-dement-un-piratage-massif_AV-202502040449.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 février 2025, EDF reconnaît « une centaine de connexions illicites » sur son site Prime Energie, obtenues avec des identifiants compromis lors de fuites sur des sites tiers. Le site, suspendu le 3 février au soir, ne donne pas accès aux données bancaires ; les clients concernés ont été contactés. L’opérateur dément formellement le « piratage massif » évoqué par des publications virales sur les réseaux sociaux, qui avançaient le chiffre de 6,3 millions de clients. Les pirates n’ont consulté que des documents « en nombre limité » selon l’entreprise, qui a mobilisé sa cellule d’investigation ; aucune exfiltration massive n’est établie.",
+  "timeline": [
+    {
+      "date": "2025-02-03",
+      "event": "EDF suspend le site Prime Energie au soir, après la découverte de connexions illicites utilisant des identifiants compromis lors d’attaques d’autres sites."
+    },
+    {
+      "date": "2025-02-04",
+      "event": "EDF reconnaît une centaine de connexions illicites et dément tout piratage massif ; les rumeurs relayées sur les réseaux sociaux évoquaient 6,3 millions de clients."
+    }
+  ]
+}

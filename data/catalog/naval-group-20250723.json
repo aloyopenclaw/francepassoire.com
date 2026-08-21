@@ -1,0 +1,51 @@
+{
+  "slug": "naval-group-20250723",
+  "entity": "Naval Group",
+  "siren": "441133808",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-23",
+    "publication": "2025-07-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "1 téraoctet de données confidentielles revendiqué (échantillon de 13 Go publié) ; Naval Group dément toute intrusion dans ses systèmes"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — Un hacker assure avoir dérobé à Naval Group des données confidentielles, l’entreprise dément",
+      "url": "https://www.franceinfo.fr/faits-divers/un-hacker-assure-avoir-derobe-a-naval-group-des-donnees-confidentielles-l-entreprise-dement_7399069.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Régions (Lorient) — Cyberattaque chez Naval Group : « on ne cédera pas face au chantage »",
+      "url": "https://france3-regions.franceinfo.fr/bretagne/morbihan/lorient/cyberattaque-chez-naval-group-on-ne-cedera-pas-face-au-chantage-le-leader-de-la-construction-maritime-de-defense-en-proie-a-un-hackeur-3193617.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Régions (Cherbourg) — Naval Group ciblé par un hacker, une enquête se poursuit",
+      "url": "https://france3-regions.franceinfo.fr/normandie/manche/cherbourg-cotentin/naval-group-cible-par-un-hacker-une-enquete-se-poursuit-3193521.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 juillet 2025, un hacker annonce sur un forum du dark web détenir un téraoctet de données confidentielles de Naval Group, mettant en ligne un échantillon de 13 Go — dont, selon le relais de l’expert SaxX, du code source du système d’armes STORM et un guide du CMS du sous-marin Le Vigilant. Il exige dâêtre contacté avant le 26 juillet, sous peine de divulgation gratuite. Naval Group dépose plainte le 25 juillet au parquet de Paris et dénonce une « attaque réputationnelle » : aucune intrusion n’a été détectée dans ses environnements, et rien nâétablit que le pirate détient réellement ces données.",
+  "timeline": [
+    {
+      "date": "2025-07-23",
+      "event": "Un hacker publie sur le dark web un échantillon de 13 Go et affirme détenir un téraoctet de données confidentielles de Naval Group, avec ultimatum au 26 juillet."
+    },
+    {
+      "date": "2025-07-25",
+      "event": "Naval Group dépose plainte au parquet de Paris, dénonce une attaque réputationnelle et indique qu’aucune intrusion n’a été détectée dans ses environnements."
+    },
+    {
+      "date": "2025-07-26",
+      "event": "L’ultimatum expire ; des données sont publiées gratuitement sur un forum selon l’expert SaxX, sans que leur appartenance réelle soit vérifiée par l’entreprise."
+    }
+  ]
+}

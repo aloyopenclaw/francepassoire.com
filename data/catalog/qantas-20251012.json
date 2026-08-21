@@ -1,0 +1,38 @@
+{
+  "slug": "qantas-20251012",
+  "entity": "Qantas",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-12",
+    "publication": "2025-10-12",
+    "confirmation": "2025-10-12"
+  },
+  "volume": {
+    "count": 5700000,
+    "unit": "personnes",
+    "label": "5,7 millions de clients (chiffre Qantas) : noms, e-mails, numéros de téléphone et dates de naissance publiés sur le dark web"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "franceinfo — Les données de millions de clients de la compagnie aérienne australienne Qantas fuitent après une cyberattaque",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/les-donnees-de-millions-de-clients-de-la-compagnie-aerienne-australienne-qantas-fuitent-apres-une-cyberattaque_7547740.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 octobre 2025, Qantas reconnaît la divulgation sur internet des données personnelles de 5,7 millions de clients, volées lors d’une cyberattaque de juillet visant une plateforme tierce : noms, adresses électroniques, numéros de téléphone et dates de naissance ont été publiés sur le dark web. Les numéros de passeport et de cartes bancaires nâétaient pas présents dans le système, selon la compagnie australienne, qui enquête avec des spécialistes pour déterminer quelles données précisément ont été divulguées. Des analystes relient cette fuite au groupe Scattered Lapsus$ Hunters, qui avait fixé un ultimatum de rançon ; des données de Vietnam Airlines et de Fujifilm ont été publiées simultanément.",
+  "timeline": [
+    {
+      "date": "2025-10-12",
+      "event": "Qantas reconnaît la publication sur le dark web des données de 5,7 millions de clients volées en juillet via une plateforme tierce (noms, e-mails, téléphones, dates de naissance)."
+    },
+    {
+      "date": "2025-10-12",
+      "event": "Des analystes attribuent la fuite au groupe Scattered Lapsus$ Hunters, après un ultimatum de rançon ; Vietnam Airlines et Fujifilm sont touchées simultanément."
+    }
+  ]
+}

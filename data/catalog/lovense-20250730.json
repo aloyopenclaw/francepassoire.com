@@ -1,0 +1,37 @@
+{
+  "slug": "lovense-20250730",
+  "entity": "Lovense (fabricant de sextoys connectés)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-30",
+    "publication": "2025-07-30"
+  },
+  "volume": {
+    "count": 20000000,
+    "unit": "personnes",
+    "label": "plus de 20 millions d’utilisateurs dans le monde concernés par deux failles exposant adresses mail et comptes (signalement BobDaHacker)"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Le fabricant de sextoys connectés Lovense a laissé fuiter les adresses mail de ses utilisateurs depuis plusieurs mois",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/le-fabricant-de-sextoys-connectes-lovense-a-laisse-fuiter-les-adresses-mail-de-ses-utilisateurs-depuis-plusieurs-mois_AN-202507300275.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le chercheur en sécurité BobDaHacker révèle fin juillet 2025 deux failles majeures chez Lovense, fabricant de sextoys connectés : la première associe n’importe quel nom d’utilisateur à l’adresse mail du compte — en moins d’une seconde une fois automatisée —, la seconde permet de créer des jetons d’authentification et de prendre le contrôle d’un compte à partir d’une simple adresse mail. Plus de 20 millions de personnes dans le monde sont concernées, avec un risque particulier pour les créatrices de contenu partageant publiquement leur pseudonyme. Les failles, signalées en mars 2025, ont été corrigées après plusieurs mois ; aucune exploitation malveillante n’est documentée.",
+  "timeline": [
+    {
+      "date": "2025-07-30",
+      "event": "Un chercheur publie deux failles Lovense : association nom d’utilisateur-adresse mail et prise de contrôle de compte sans mot de passe, touchant plus de 20 millions d’utilisateurs."
+    },
+    {
+      "date": "2025-07-30",
+      "event": "Les failles avaient été signalées à Lovense en mars 2025 ; l’entreprise a attendu plusieurs mois avant de les corriger, selon le chercheur."
+    }
+  ]
+}
