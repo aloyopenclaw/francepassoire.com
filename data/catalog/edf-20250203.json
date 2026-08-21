@@ -1,0 +1,43 @@
+{
+  "slug": "edf-20250203",
+  "entity": "EDF",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-03",
+    "publication": "2025-02-04"
+  },
+  "volume": {
+    "count": 6300000,
+    "unit": "personnes",
+    "label": "6,3 millions de clients revendiqués par le vendeur « Varun » sur BreachForums ; EDF dément toute fuite massive et évoque une centaine de connexions anormales sur Prime Énergies"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "01net — Fuite de données chez EDF et Conforama ? 15 millions de Français concernés (4 février 2025, mise à jour créditée du démenti)",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-edf-conforama-donnees-15-millions-francais-vente.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite chez EDF ? Entre bluff et baroud d'honneur des derniers membres de Kernel (4 février 2025)",
+      "url": "https://www.zataz.com/fuite-chez-edf-entre-bluff-et-baroud-dhonneur-des-derniers-membres-de-kernel/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 3 février 2025, le cybercriminel « Varun » met en vente sur BreachForums une base présentée comme issue d'EDF et couvrant 6,3 millions de clients : identité, coordonnées, références de dossiers et données liées aux primes énergétiques. EDF dément tout piratage massif : l'entreprise reconnaît une centaine de connexions anormales sur son site Prime Énergies, imputables à du bourrage d'identifiants. Zataz montre que les échantillons proviennent de compromissions antérieures (2020-2023) attribuables à l'écosystème « Kernel ». La revendication n'est pas confirmée et ressemble à un recyclage de fuites anciennes.",
+  "timeline": [
+    {
+      "date": "2025-02-03",
+      "event": "Mise en vente sur BreachForums d'une base présentée comme EDF (6,3 millions de clients), relayée par le compte de veille SaxX."
+    },
+    {
+      "date": "2025-02-04",
+      "event": "EDF dément une fuite massive, reconnaît une centaine de connexions anormales sur Prime Énergies ; Zataz pointe des données anciennes recyclées."
+    }
+  ]
+}

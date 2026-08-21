@@ -1,0 +1,42 @@
+{
+  "slug": "rdv360-20251124",
+  "entity": "RDV360",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-24",
+    "publication": "2025-11-24"
+  },
+  "volume": {
+    "count": 7000000,
+    "unit": "personnes",
+    "label": "7 millions de citoyens revendiqués par le groupe dumpsec pour 500 à 600 mairies utilisant la plateforme ; l'éditeur n'a pas publié de communication publique"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Banque des Territoires — Fuite de données dans 1.300 communes, les prestataires en cause (28 novembre 2025, détaille RDV360 et la revendication dumpsec)",
+      "url": "https://www.banquedesterritoires.fr/fuite-de-donnees-dans-1300-communes-les-prestataires-en-cause",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — 1.300 mairies touchées par une fuite de données liée à des rendez-vous pris en octobre (24 novembre 2025, évoque la plateforme RDV360 en Bretagne)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/etats-civils-telephones-adresses-1-300-mairies-touchees-par-une-fuite-de-donnees-liee-a-des-rendez-vous-pris-en-octobre-7900570725",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin novembre 2025, une seconde plateforme de prise de rendez-vous d'état civil, RDV360, très utilisée par les mairies bretonnes, est identifiée comme compromise après des alertes locales début novembre — à Josselin, un courriel suspect laisse entendre qu'un export de données a été réalisé. Selon le chercheur SaxX, relayant le groupe cybercriminel dumpsec, 500 à 600 mairies et les données de 7 millions de citoyens seraient concernés pour ce seul éditeur. RDV360 a déposé plainte et travaille avec l'ANSSI et l'Ofac du parquet de Paris, sans publier de communication ; la revendication n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "RTL et Le Parisien révèlent la fuite touchant 1 300 communes via Synbird et évoquent la plateforme bretonne RDV360, également compromise."
+    },
+    {
+      "date": "2025-11-28",
+      "event": "La Banque des Territoires documente la revendication dumpsec : 500 à 600 mairies, 7 millions de citoyens ; plainte et coordination ANSSI-Ofac."
+    }
+  ],
+  "group": "dumpsec"
+}

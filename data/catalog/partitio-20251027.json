@@ -1,0 +1,44 @@
+{
+  "slug": "partitio-20251027",
+  "entity": "Partitio (groupe Konica Minolta Business France)",
+  "siren": "449876739",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-27",
+    "publication": "2025-10-31",
+    "confirmation": "2025-10-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication illustrée suggérant un vol de données ; volumes non précisés, impact sur les services limité selon LeMagIT"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — ESN : Partitio victime d'une cyberattaque (31 octobre 2025)",
+      "url": "https://www.lemagit.fr/actualites/366633917/ESN-Partitio-victime-dune-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez partitio.com : une attaque ransomware revendiquée (relais, 27 octobre 2025)",
+      "url": "https://frenchbreaches.com/alertes/partitio-com-rw_Y0dGeWRHbDBhVzh1WTI5dFFHbHVZM0poYm5OdmJRPT0",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 octobre 2025, la revendication d'une cyberattaque contre Partitio, ESN toulousaine filiale de Konica Minolta Business France hébergeant notamment des données de santé, apparaît sur le site de fuite du groupe INC Ransom, avec des illustrations suggérant un vol de données. L'incident remonterait à fin septembre et l'impact sur les services semble limité. Le président de Partitio reconnaît l'attaque, évoque des analyses techniques approfondies, la coopération avec les autorités et l'information complète des collaborateurs et clients.",
+  "timeline": [
+    {
+      "date": "2025-10-27",
+      "event": "INC Ransom publie la revendication contre Partitio, illustrations à l'appui ; l'incident remonterait à fin septembre."
+    },
+    {
+      "date": "2025-10-31",
+      "event": "Le groupe Konica Minolta reconnaît l'attaque : analyses en cours, autorités saisies, clients et salariés informés."
+    }
+  ],
+  "group": "inc-ransom"
+}

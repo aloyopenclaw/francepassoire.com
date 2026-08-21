@@ -1,0 +1,53 @@
+{
+  "slug": "essec-20250108",
+  "entity": "ESSEC Business School",
+  "siren": "878417617",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-08",
+    "publication": "2025-01-15",
+    "confirmation": "2025-01-08"
+  },
+  "volume": {
+    "count": 120000,
+    "unit": "personnes",
+    "label": "120 000 personnes concernées selon Le Monde Informatique ; l'école confirme l'exfiltration de noms, prénoms et adresses e-mail"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "ESSEC — Incident de cybersécurité au sein des systèmes d'information de l'ESSEC : état des lieux",
+      "url": "https://www.essec.edu/fr/actualites/incident-de-cybersecurite-au-sein-des-systemes-dinformation-de-lessec-etat/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — Un piratage à l'Essec entraîne le vol de données de 120 000 personnes",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire/un-piratage-a-l-essec-entraine-le-vol-de-donnees-de-120-000-personnes-95766.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Cyberattaques : des établissements d'enseignement supérieur français attaqués (20 février 2025, cite l'incident ESSEC)",
+      "url": "https://www.zataz.com/cyberattaques-des-etablissements-denseignement-superieur-francais-attaques/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 janvier 2025, l'ESSEC Business School est informée d'un accès non autorisé à ses systèmes d'information. L'école confirme dans un communiqué l'exfiltration de données personnelles — noms, prénoms et adresses e-mail — de membres de ses communautés, qui ont été informés, et précise qu'aucune donnée sensible ni bancaire n'a été compromise. Une plainte est déposée et l'ANSSI, accompagnée d'experts externes, appuie les investigations. Le Monde Informatique évalue le périmètre à 120 000 personnes. Zataz relie cet incident à une série de mises en vente de bases d'établissements d'enseignement supérieur français observées début 2025.",
+  "timeline": [
+    {
+      "date": "2025-01-08",
+      "event": "L'ESSEC constate un accès non autorisé, sécurise ses systèmes, dépose plainte et alerte l'ANSSI ; les personnes concernées sont informées."
+    },
+    {
+      "date": "2025-01-15",
+      "event": "Le Monde Informatique révèle le vol de données concernant 120 000 personnes."
+    },
+    {
+      "date": "2025-02-20",
+      "event": "Zataz documente des mises en vente visant plusieurs écoles françaises, replaçant l'incident ESSEC dans ce contexte."
+    }
+  ]
+}

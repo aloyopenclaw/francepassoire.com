@@ -1,0 +1,52 @@
+{
+  "slug": "font-romeu-odeillo-via-20251015",
+  "entity": "Ville de Font-Romeu-Odeillo-Via (Pyrénées-Orientales)",
+  "siren": "216601245",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-15",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "vol de données non établi ; la commune confirme une cyberattaque dans la nuit du 7 septembre 2025, Qilin l'inscrit à son tableau de chasse en octobre"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Mairie de Font-Romeu-Odeillo-Via — Communiqué : cyberattaque dans la nuit du 7 septembre 2025 (plainte déposée)",
+      "url": "https://www.mairie-fontromeu.fr/cyberattaque-du-07-09-2025/",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — Lycées paralysés, mairies visées… On vous présente Qilin Ransomware (16 octobre 2025, cite Font-Romeu-Odeillo-Via)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/lycees-paralyses-mairies-visees-on-vous-presente-qilin-ransomware-a-l-origine-de-nombreuses-cyberattaques-en-france-et-dans-le-monde_7564588.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — « On a reçu une demande de rançon » : plusieurs villes des Pyrénées-Orientales attaquées (16 octobre 2025)",
+      "url": "https://actu.fr/occitanie/elne_66065/on-a-recu-une-demande-de-rancon-des-hackers-russes-connus-attaquent-les-pyrenees-orientales_63306503.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 7 septembre 2025, vers 2 heures, le réseau informatique de la commune de Font-Romeu-Odeillo-Via est la cible d'une cyberattaque malveillante. Les services municipaux restent opérationnels dès le lundi et une plainte est déposée, annonce le maire dans un communiqué. Le 15 octobre, le groupe Qilin inscrit la commune des Pyrénées-Orientales aux côtés d'Elne dans une salve d'une quarantaine de victimes dans le monde ; franceinfo, citant La Tribune, relève un mode opératoire similaire. Un vol de données n'est pas établi publiquement.",
+  "timeline": [
+    {
+      "date": "2025-09-07",
+      "event": "Cyberattaque dans la nuit : le réseau communal est ciblé vers 2 heures ; les services reprennent le lundi matin."
+    },
+    {
+      "date": "2025-09-11",
+      "event": "Le maire publie un communiqué confirmant l'attaque et le dépôt de plainte."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Qilin ajoute Font-Romeu-Odeillo-Via à son site de fuite, aux côtés d'Elne, dans une salve mondiale."
+    }
+  ],
+  "group": "qilin"
+}

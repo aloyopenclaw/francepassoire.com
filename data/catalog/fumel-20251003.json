@@ -1,0 +1,54 @@
+{
+  "slug": "fumel-20251003",
+  "entity": "Ville de Fumel (Lot-et-Garonne)",
+  "siren": "444423859",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-03",
+    "publication": "2025-10-03",
+    "confirmation": "2025-10-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "vol de données non établi ; rançongiciel avec demande de rançon refusée, services municipaux paralysés, environ 5 000 habitants"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "actu.fr — « C'est le bordel » : cette petite ville du Lot-et-Garonne victime d'une cyber attaque avec demande de rançon (3 octobre 2025)",
+      "url": "https://actu.fr/nouvelle-aquitaine/fumel_47106/c-est-le-bordel-cette-petite-ville-du-lot-et-garonne-victime-d-une-cyber-attaque-avec-demande-de-rancon_63249599.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — La mairie de Fumel victime d'une cyberattaque, les services municipaux paralysés (3 octobre 2025)",
+      "url": "https://www.ladepeche.fr/2025/10/03/la-mairie-de-fumel-victime-d-une-cyberattaque-les-services-municipaux-paralyses-12969283.php",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberhebdo du 10 octobre 2025 (recense l'attaque de Fumel avec l'enseigne DragonForce impliquée)",
+      "url": "https://www.lemagit.fr/actualites/366632622/Cyberhebdo-du-10-octobre-2025-une-semaine-particulierement-violente",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — « On ne s'y attendait pas » : la petite commune de Fumel piratée par un cartel malaisien (octobre 2025)",
+      "url": "https://www.tf1info.fr/regions/video-reportage-on-ne-s-attendait-pas-a-ca-la-petite-commune-du-lot-et-garonne-fumel-piratee-par-un-cartel-malaisien-2398897.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2025 au matin, les agents de la mairie de Fumel découvrent sur leurs ordinateurs un message en anglais exigeant une rançon : la ville de 5 000 habitants est victime d'un rançongiciel qui paralyse ses services. La Ville informe ses usagers le 3 octobre, refuse de payer, dépose plainte et active son assurance cyber. L'enseigne DragonForce, que TF1 présente comme un cartel malaisien, est impliquée selon la veille de LeMagIT. Un vol de données n'est pas établi publiquement à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-10-02",
+      "event": "Message de rançon découvert sur les postes de la mairie de Fumel ; plusieurs services municipaux sont bloqués."
+    },
+    {
+      "date": "2025-10-03",
+      "event": "La Ville informe ses usagers, refuse de payer la rançon et dépose plainte ; l'enseigne DragonForce est identifiée."
+    }
+  ],
+  "group": "dragonforce"
+}

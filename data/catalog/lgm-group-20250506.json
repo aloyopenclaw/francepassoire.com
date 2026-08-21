@@ -1,0 +1,44 @@
+{
+  "slug": "lgm-group-20250506",
+  "entity": "LGM Group",
+  "siren": "505320762",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-06",
+    "publication": "2025-05-09",
+    "confirmation": "2025-05-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 550 Go / 700 000 fichiers revendiqués par Termite ; l'entreprise confirme un vol de données dont l'ampleur reste à vérifier"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ZDnet.fr — Les cybercriminels de Termite font une nouvelle victime dans l'Hexagone (9 mai 2025)",
+      "url": "https://www.zdnet.fr/actualites/les-cybercriminels-de-termite-font-une-nouvelle-victime-dans-lhexagone-474834.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — ajout de LGM aux victimes de Termite (publication Bluesky du 6 mai 2025)",
+      "url": "https://bsky.app/profile/did:plc:hh3brnksirhma2rymwtpnp5w/post/3lohfdcsn252l",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 6 mai 2025, le groupe de rançongiciel Termite revendique une attaque contre LGM Group, société d'ingénierie francilienne de 1 500 salariés, et affirme avoir volé environ 550 Go de données, soit 700 000 fichiers. Contactée par ZDnet.fr, l'entreprise confirme une attaque informatique soldée par un vol de données — sans chiffrement de son système —, dépose plainte et se fait accompagner par l'ANSSI ; la production continue. Le site de l'entreprise reste indisponible plusieurs jours. Termite, repéré à l'automne 2024, avait déjà visé des organisations françaises.",
+  "timeline": [
+    {
+      "date": "2025-05-06",
+      "event": "Termite ajoute LGM Group à son site de fuite et revendique le vol d'environ 550 Go de données."
+    },
+    {
+      "date": "2025-05-09",
+      "event": "LGM confirme à ZDnet.fr l'attaque et le vol de données, dépose plainte et poursuit ses activités accompagnée par l'ANSSI."
+    }
+  ],
+  "group": "termite"
+}
