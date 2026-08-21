@@ -1,0 +1,38 @@
+{
+  "slug": "europages-20251228",
+  "entity": "Europages",
+  "siren": "338631930",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-28"
+  },
+  "volume": {
+    "count": 205403,
+    "unit": "enregistrements",
+    "label": "205 403 contacts B2B revendiqués (≈ 210 000 selon un recensement ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Europages : 210K comptes compromis",
+      "url": "https://frenchbreaches.com/alertes/europages-cf6360691ba5",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Europages, 28 décembre 2025, 205 403 prospects",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 décembre 2025, une fuite revendiquée touche Europages, l'annuaire européen d'entreprises basé en France : 205 403 contacts professionnels avec noms, fonctions, sociétés, numéros de TVA, SIRET, adresses et coordonnées. Recoupés avec d'autres fichiers, ces identifiants professionnels alimentent des campagnes de fraude au président et d'hameçonnage B2B. La société n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-28",
+      "event": "Une base revendiquée de 205 403 contacts B2B d'Europages est recensée par les veilles cyber."
+    }
+  ]
+}

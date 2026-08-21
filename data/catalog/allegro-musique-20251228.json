@@ -1,0 +1,38 @@
+{
+  "slug": "allegro-musique-20251228",
+  "entity": "Allegro Musique",
+  "siren": "479624132",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-28"
+  },
+  "volume": {
+    "count": 45000,
+    "unit": "personnes",
+    "label": "≈ 45 000 professeurs et élèves selon un recensement (161 412 adhérents selon un autre ; revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Allegro Musique : fuite de données concernant 45K comptes",
+      "url": "https://frenchbreaches.com/alertes/allegro-musique-248e554aeb37",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Allegro Musique, 28 décembre 2025, 161 412 adhérents",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 28 décembre 2025, une fuite revendiquée touche Allegro Musique, réseau français d'écoles de musique à domicile : identités, adresses, téléphones, e-mails et historiques d'annonces des professeurs et élèves, avec des numéros de Sécurité sociale cités dans certains fichiers. Les recensements divergent sur le volume — environ 45 000 personnes pour l'un, 161 412 adhérents pour l'autre. L'école n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-28",
+      "event": "Une base revendiquée touchant Allegro Musique (45 000 à 161 412 personnes selon les recensements) est mise en circulation."
+    }
+  ]
+}
