@@ -1,0 +1,54 @@
+{
+  "slug": "medecindirect-20251128",
+  "entity": "MédecinDirect (Teladoc Health France)",
+  "siren": "508346673",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-28",
+    "publication": "2025-12-03",
+    "confirmation": "2025-12-03"
+  },
+  "volume": {
+    "count": 285000,
+    "unit": "personnes",
+    "label": "environ 285 000 personnes notifiées par MédecinDirect ; 323 069 patients revendiqués par le groupe « Dumpsec » selon Libération (CheckNews)"
+  },
+  "data_types": [
+    "sante",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "MédecinDirect (page officielle) — Incident récent de sécurité informatique : informations sur la réponse de MédecinDirect",
+      "url": "https://www.medecindirect.fr/blog/incident-securite-medecindirect-informations",
+      "kind": "officiel"
+    },
+    {
+      "label": "Caducée — MédecinDirect : fuite de données de santé, jusqu’à 323 069 patients concernés (8 décembre 2025)",
+      "url": "https://www.caducee.net/actualite-medicale/16715/medecindirect-fuite-de-donnees-de-sante-jusqu-a-323-069-patients-concernes.html",
+      "kind": "article"
+    },
+    {
+      "label": "L’Informaticien — Les données de 285 000 utilisateurs de MédecinDirect exposées (9 décembre 2025)",
+      "url": "https://www.linformaticien.com/magazine-linfo-cyber-risques/menaces/64238-les-donnees-de-285-000-utilisateurs-de-medecindirect-exposees-2.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 novembre 2025, la plateforme de téléconsultation MédecinDirect, filiale française de Teladoc Health, a détecté puis neutralisé une intrusion informatique. Les personnes concernées ont été informées dès le 3 décembre, après confirmation du périmètre. Environ 285 000 personnes sont concernées : données d’identité et de contact, motif de la téléconsultation, réponses aux questionnaires, échanges écrits entre patients et médecins et, dans un nombre limité de cas, numéros de Sécurité sociale. Les vidéos de consultation ne sont ni enregistrées ni concernées. La CNIL a été notifiée le 28 novembre et une plainte déposée auprès du procureur de Paris. Un groupe cybercriminel a revendiqué un volume légèrement supérieur.",
+  "timeline": [
+    {
+      "date": "2025-11-28",
+      "event": "Détection et neutralisation de l’intrusion ; notification immédiate à la CNIL."
+    },
+    {
+      "date": "2025-12-03",
+      "event": "Le périmètre confirmé permet l’information individuelle d’environ 285 000 personnes."
+    },
+    {
+      "date": "2025-12-05",
+      "event": "La CNIL reçoit une mise à jour ; la presse relaie la revendication de 323 069 patients par un groupe cybercriminel."
+    }
+  ]
+}

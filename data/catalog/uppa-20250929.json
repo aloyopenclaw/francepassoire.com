@@ -1,0 +1,47 @@
+{
+  "slug": "uppa-20250929",
+  "entity": "Université de Pau et des pays de l’Adour (UPPA)",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-29",
+    "publication": "2025-09-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "80 Go de fichiers internes revendiqués par le groupe Nova ; exfiltration non confirmée publiquement par l’université"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "GalaxyWarden — Université de Pau et des Pays de l’Adour listed by Nova ransomware group (29 septembre 2025)",
+      "url": "https://www.galaxywarden.com/blog/breach/universite-de-pau-et-du-pays-de-ladour-nova-2025-09",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Leak and RaaS : the Nova group exposes its victims, dont une fuite de 80 Go attribuée à l’UPPA (2 octobre 2025)",
+      "url": "https://www.zataz.com/leak-and-raas-the-nova-group-exposes-its-victims/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — UPPA : rançongiciel Nova, 80 Go revendiqués (29 septembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/universite-de-pau-et-du-pays-de-ladour-rw_Vlc1cGRtVnljMmwwWlNCa1pTQlFZWFVnWlhRZ1pIVWdVR0Y1Y3lCa1pTQnNRV1J2ZFhKQWJtOTJZUT09",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 29 septembre 2025, l’Université de Pau et des pays de l’Adour est apparue sur le site de fuite du groupe de rançongiciel Nova. Les attaquants revendiquent le vol de 80 Go de fichiers internes : documents, rapports, factures, plans et données complètes d’étudiants et d’enseignants, avec des identifiants privés. Le groupe publie des extraits en preuve et propose ses services en ransomware-as-a-service. À ce jour, l’université n’a pas confirmé publiquement l’exfiltration. Zataz relève que Nova, qui revendique 23 victimes, expose ainsi des établissements publics dans une logique de double extorsion industrialisée. La revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-09-29",
+      "event": "L’UPPA apparaît sur le site de fuite du groupe Nova ; 80 Go de fichiers revendiqués avec extraits."
+    },
+    {
+      "date": "2025-10-02",
+      "event": "Zataz analyse l’infrastructure de Nova et sa liste de victimes ; pas de confirmation publique de l’université."
+    }
+  ]
+}

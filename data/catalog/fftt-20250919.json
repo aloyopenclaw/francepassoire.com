@@ -1,0 +1,48 @@
+{
+  "slug": "fftt-20250919",
+  "entity": "Fédération française de tennis de table (FFTT)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-19",
+    "publication": "2025-09-19",
+    "confirmation": "2025-09-19"
+  },
+  "volume": {
+    "count": 2743627,
+    "unit": "personnes",
+    "label": "récupération en masse confirmée par la FFTT ; 2 743 627 adhérents revendiqués par le pirate, chiffre non confirmé par la fédération"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FFTT (communiqué officiel) — Cyberattaque et vol de données (19 septembre 2025)",
+      "url": "https://www.fftt.com/actualites/federation/communique-cyberattaque-et-vol-de-donnees/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ostraca — FFTT : vol de données de licenciés (2025)",
+      "url": "https://blog.ostraca.fr/fuites-de-donnees/fuite-fftt-tennis-de-table-2025/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FFTT : un pirate revendique 2 743 627 adhérents en vente (19 septembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-tennis-de-table-fftt-956467001ece",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 septembre 2025, la Fédération française de tennis de table a confirmé par communiqué une cyberattaque avec vol de données. Un accès non autorisé, obtenu via un compte compromis, a permis une récupération en masse d’informations dans la base des licenciés : numéro de licence, identité, genre, date et lieu de naissance, nationalité, adresse postale, e-mail et téléphone. La fédération précise qu’aucune coordonnée bancaire ni donnée de santé n’a été atteinte. Une plainte a été déposée, l’ANSSI et la CNIL informées. Un pirate a revendiqué la mise en vente de 2 743 627 adhérents, avec extraits publiés en preuve ; la fédération n’a pas confirmé ce volume.",
+  "timeline": [
+    {
+      "date": "2025-09-19",
+      "event": "Communiqué officiel : accès non autorisé via un compte compromis et récupération en masse dans la base des licenciés."
+    },
+    {
+      "date": "2025-09-19",
+      "event": "Un pirate revendique la mise en vente de 2 743 627 adhérents ; plainte déposée, ANSSI et CNIL informées."
+    }
+  ]
+}

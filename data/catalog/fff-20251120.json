@@ -1,0 +1,58 @@
+{
+  "slug": "fff-20251120",
+  "entity": "Fédération française de football (FFF)",
+  "siren": "303742480",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-20",
+    "publication": "2025-11-26",
+    "confirmation": "2025-11-26"
+  },
+  "volume": {
+    "count": 2000000,
+    "unit": "personnes",
+    "label": "nombre exact non communiqué par la FFF ; estimations de presse entre 2 et 2,3 millions de licenciés potentiels"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "TF1 Info — La FFF victime d’un nouveau piratage massif, des données de licenciés volées (27 novembre 2025)",
+      "url": "https://www.tf1info.fr/sport/football-la-federation-francaise-fff-victime-d-un-nouveau-piratage-massif-des-donnees-de-licencies-volees-2409384.html",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — La FFF victime d’un piratage : des données de licenciés volées (1er décembre 2025)",
+      "url": "https://www.it-connect.fr/la-federation-francaise-de-football-fff-victime-dun-piratage-des-donnees-de-licencies-volees/",
+      "kind": "article"
+    },
+    {
+      "label": "Génération-NT — La Fédération française de football de nouveau victime d’un vol de données (28 novembre 2025)",
+      "url": "https://www.generation-nt.com/actualites/fff-cyberattaque-donnees-licencies-phishing-2066895",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FFF : ≈1,5 million de licenciés, nouveau dump distinct de celui de février",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-football-fff-890d79e8abcb",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 novembre 2025, la Fédération française de football a détecté un accès frauduleux au logiciel de gestion administrative utilisé par les clubs, notamment pour les licenciés. Le 26 novembre, elle a confirmé un vol de données par communiqué. Selon la fédération, un compte utilisateur compromis a permis d’extraire nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro de licencié. Le compte a été désactivé, les mots de passe réinitialisés. Une plainte a été déposée, l’ANSSI et la CNIL saisies. C’est le troisième piratage en moins de deux ans, après mars 2024 et février 2025. Les estimations de presse évoquent plus de deux millions de licenciés.",
+  "timeline": [
+    {
+      "date": "2025-11-20",
+      "event": "Détection d’un accès frauduleux via un compte compromis au logiciel de gestion des licenciés."
+    },
+    {
+      "date": "2025-11-26",
+      "event": "Communiqué de la FFF : vol de données d’identité et de contact confirmé, plainte déposée, ANSSI et CNIL saisies."
+    },
+    {
+      "date": "2025-11-27",
+      "event": "La presse nationale relaie ce troisième piratage en moins de deux ans pour la fédération."
+    }
+  ]
+}
