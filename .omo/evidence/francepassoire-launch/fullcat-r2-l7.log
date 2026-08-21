@@ -94,3 +94,18 @@ Répartition statuts : 13 confirmee / 7 revendiquee — toutes 2025 (janv.→dé
 ## Non-fusion
 PR ouverte, JAMAIS mergée par la lane — chaîne d'intégrité + merge unique en Vague C.
 Aucun post social. Registre/ancrages : hors périmètre L7 (lane trust dédiée après merge).
+
+## Addendum (post-PR) — échec CI pr-validate : infra runner, pas les fiches
+- PR #27 : job `validate` FAIL en 3 s — 0 step exécuté, runner_name vide (API jobs/96702842879),
+  logs indisponibles (BlobNotFound). Rerun tenté (job 96703878621) : échec identique.
+- Constat systémique : les 15 dernières exécutions pr-validate.yml du dépôt échouent pareil
+  (3-5 s, 0 step), y compris les lanes rafale 1 dont les PR sont déjà mergées → panne
+  infrastructure GitHub Actions du dépôt, indépendante du contenu L7.
+- Contre-vérification locale des 3 portes du workflow (worktree fp-r2l7, node_modules du repo
+  principal) :
+  - Porte 1 zod : npx vitest run tests/pr-fiches.test.ts → 440 passed.
+  - Porte 2 build : npm run build → 924 pages, Complete!
+  - Porte 3 spot-check : node scripts/spot-check-sources.mjs $(20 fiches) → 5/5 URL vivantes,
+    REAL_EXIT=0 (table HEAD/GET conforme).
+- Action pour la Vague C : reruner pr-validate après retour à la normale du runner ; les portes
+  sont prouvées vertes localement sur le commit 24d6e06.
