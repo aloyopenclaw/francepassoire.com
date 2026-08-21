@@ -1,0 +1,44 @@
+{
+  "slug": "free-mobile-20260108",
+  "entity": "Free Mobile",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-08",
+    "confirmation": "2026-01-08",
+    "publication": "2026-01-14"
+  },
+  "volume": {
+    "count": 24000000,
+    "unit": "comptes",
+    "label": "24 millions de contrats d’abonnés concernés par l’intrusion d’octobre 2024 selon la CNIL (périmètre commun aux sociétés Free Mobile et Free)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Violation de données : sanction de 42 millions d’euros à l’encontre des sociétés FREE MOBILE et FREE (14 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/sanction-free-2026",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 8 janvier 2026, la formation restreinte de la CNIL a prononcé une amende de 27 millions d’euros à l’encontre de Free Mobile, pour des mesures de sécurité inadaptées. En octobre 2024, un attaquant s’était infiltré dans le système d’information et avait accédé à des données relatives à 24 millions de contrats d’abonnés, dont des IBAN pour les clients communs aux deux sociétés du groupe. Suivant plus de 2 500 plaintes, la CNIL a relevé des manquements à la sécurité, à la durée de conservation et à l’obligation de communiquer la violation aux personnes concernées.",
+  "timeline": [
+    {
+      "date": "2026-01-08",
+      "event": "Amende de 27 millions d’euros et injonction : sécurité, durée de conservation et notification de la violation d’octobre 2024."
+    },
+    {
+      "date": "2026-01-14",
+      "event": "La CNIL publie son communiqué : 24 millions de contrats concernés, plus de 2 500 plaintes déposées."
+    }
+  ]
+}

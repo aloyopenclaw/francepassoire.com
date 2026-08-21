@@ -1,0 +1,42 @@
+{
+  "slug": "meetic-20161215",
+  "entity": "Meetic (Meetic SAS)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-12-15",
+    "confirmation": "2016-12-15",
+    "publication": "2017-01-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume publié ; sanction pécuniaire publique de 20 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « site de rencontres », sanction pécuniaire publique (15 décembre 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Haas Avocats — Sites de rencontre : Meetic et Attractive World sanctionnés par la CNIL",
+      "url": "https://www.haas-avocats.com/plateformes/ecommerce/sites-de-rencontre-meetic-et-attractive-world-sanctionnes-par-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 décembre 2016, la formation restreinte de la CNIL a condamné Meetic SAS, éditrice du site de rencontres meetic.fr, à une sanction pécuniaire publique de 20 000 euros. Lors de l'inscription, une case unique valait à la fois acceptation des conditions d'utilisation, attestation de majorité et consentement au traitement de données sensibles, dont l'orientation sexuelle. Après un contrôle fin 2014 et une mise en demeure en juin 2015, la CNIL a jugé ce consentement non exprès. Le tableau officiel des sanctions désigne l'entité sous l'appellation « site de rencontres » ; Attractive World, sanctionnée le même jour, est cataloguée séparément.",
+  "timeline": [
+    {
+      "date": "2015-06-01",
+      "event": "Après un contrôle fin 2014, la CNIL met en demeure les éditeurs de remédier au défaut de consentement exprès."
+    },
+    {
+      "date": "2016-12-15",
+      "event": "Sanction pécuniaire publique de 20 000 euros contre Meetic SAS : consentement aux données sensibles non recueilli de façon exprès."
+    }
+  ]
+}

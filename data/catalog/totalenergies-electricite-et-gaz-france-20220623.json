@@ -1,0 +1,47 @@
+{
+  "slug": "totalenergies-electricite-et-gaz-france-20220623",
+  "entity": "TotalEnergies Électricité et Gaz France",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-06-23",
+    "confirmation": "2022-06-23",
+    "publication": "2022-06-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; amende administrative d'un million d'euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société fourniture et production d'électricité et de gaz », amende administrative d'un million d'euros (23 juin 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — Prospection commerciale : la CNIL inflige une amende d'un million d'euros à TotalEnergies (30 juin 2022)",
+      "url": "https://www.lefigaro.fr/societes/prospection-commerciale-la-cnil-inflige-une-amende-d-un-million-d-euros-a-totalenergies-20220630",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — La CNIL force TotalEnergies à rentrer dans le rang, avec une amende d'un million d'euros (30 juin 2022)",
+      "url": "https://www.numerama.com/tech/1025008-la-cnil-force-totalenergies-a-rentrer-dans-le-rang-avec-une-amende-dun-million-deuros.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 juin 2022, la formation restreinte de la CNIL a sanctionné TotalEnergies Électricité et Gaz France d'une amende administrative d'un million d'euros, rendue publique le 30 juin. Après plusieurs plaintes de clients, la CNIL a relevé plusieurs manquements : prospection commerciale sans possibilité d'opposition lors de la souscription en ligne ; défaut d'information des personnes démarchées par téléphone ; non-respect des droits d'accès et d'opposition, avec des réponses tardives ou erronées. Aucune injonction n'a été prononcée, la société ayant pris des mesures de mise en conformité en cours de procédure. Le tableau officiel désigne l'entité sous l'appellation « société fourniture et production d'électricité et de gaz ».",
+  "timeline": [
+    {
+      "date": "2022-06-23",
+      "event": "Amende administrative d'un million d'euros : prospection sans opposition possible, défauts d'information et d'exercice des droits."
+    },
+    {
+      "date": "2022-06-30",
+      "event": "La CNIL rend publique la décision contre TotalEnergies Électricité et Gaz France."
+    }
+  ]
+}

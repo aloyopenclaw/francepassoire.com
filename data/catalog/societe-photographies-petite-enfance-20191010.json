@@ -1,0 +1,37 @@
+{
+  "slug": "societe-photographies-petite-enfance-20191010",
+  "entity": "Une société de photographies liées à la petite enfance (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-10-10",
+    "confirmation": "2019-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire d'un montant non publié et injonction sous astreinte"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIÉTÉ DE PHOTOGRAPHIES LIÉES À LA PETITE ENFANCE », sanction pécuniaire et injonction sous astreinte (10 octobre 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 40e rapport annuel 2019 (PDF, annexe des sanctions) : 10/10/2019, société de photographies liées à la petite enfance",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-40e_rapport_annuel_2019.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 10 octobre 2019, la CNIL a prononcé une sanction pécuniaire, dont le montant n'est pas publié, accompagnée d'une injonction sous astreinte, à l'encontre d'une société de photographies liées à la petite enfance. Le 40e rapport annuel recense trois manquements : non-respect du droit d'accès, non-respect du droit à l'effacement et défaut de sécurité et de confidentialité des données. La dénomination de la société n'est pas publique et le volume des données n'est pas précisé. Le tableau officiel des sanctions et le rapport annuel de 2019 sont les deux seules sources publiques identifiées pour cette décision.",
+  "timeline": [
+    {
+      "date": "2019-10-10",
+      "event": "Sanction pécuniaire (montant non publié) et injonction sous astreinte : droits d'accès et d'effacement non respectés, défaut de sécurité."
+    }
+  ]
+}

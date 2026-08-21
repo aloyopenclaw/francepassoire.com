@@ -1,0 +1,48 @@
+{
+  "slug": "caloga-20250515",
+  "entity": "Caloga (courtier en données)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "publication": "2025-05-27",
+    "confirmation": "2025-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de prospects non chiffré par la CNIL ; quatre bases de données (Caloga, Zeplan, Basylo, Vozeko) ; société en cessation d'activité depuis 2024"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Courtiers en données : sanction de 80 000 euros à l'encontre de la société CALOGA (communiqué, 15 mai 2025)",
+      "url": "https://www.cnil.fr/fr/sanction-de-80-000-euros-societe-caloga",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETE REALISANT DES OPERATIONS DE PROSPECTION COMMERCIALE PAR VOIE ELECTRONIQUE POUR LE COMPTE D'ANNONCEURS, AVEC UNE ACTIVITE DE COURTIER EN DONNEES », amende de 80 000 euros (15 mai 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "AGIL'IT (29 mai 2025) — Prospection par voie électronique et consentement : CALOGA sanctionnée par la Cnil",
+      "url": "https://www.agilit.law/donnees-caractere-personnel/prospection-par-voie-electronique-et-consentement-caloga-sanctionnee-par-la-cnil/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 mai 2025, la CNIL a sanctionné la société Caloga, courtière en données, d'une amende de 80 000 euros rendue publique. Selon son communiqué, la société démarchait par courriel des prospects dont les données venaient de formulaires de jeux-concours aux allures trompeuses, sans consentement valable. Elle adossait la transmission de fichiers à des partenaires annonceurs sur l'intérêt légitime, sans base légale. Le retrait du consentement exigeait un courriel au délégué à la protection des données pour quatre bases : Caloga, Zeplan, Basylo et Vozeko. La CNIL relève aussi une conservation excessive au-delà de douze mois. La société a cessé son activité en 2024.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "event": "Amende de 80 000 euros : prospection sans consentement, transmission sans base légale, retrait et conservation défaillants."
+    },
+    {
+      "date": "2025-05-27",
+      "event": "La CNIL publie le communiqué « Courtiers en données : sanction de 80 000 euros à l'encontre de la société Caloga »."
+    }
+  ]
+}

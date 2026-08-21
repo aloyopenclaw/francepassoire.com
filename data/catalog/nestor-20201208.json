@@ -1,0 +1,48 @@
+{
+  "slug": "nestor-20201208",
+  "entity": "Nestor (préparation et livraison de repas en entreprise)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-08",
+    "publication": "2021-01-06",
+    "confirmation": "2020-12-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "653 033 courriels de prospection adressés sans consentement préalable selon la décision relayée par Legalplanet ; nombre de personnes non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIÉTÉ DE LIVRAISON DE REPAS », sanction pécuniaire de 20 000 euros et injonction sous astreinte (8 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Legalplanet — CNIL, 8 décembre 2020, n° 2020-123 (Nestor) : amende de 20 000 euros pour prospection commerciale non conforme",
+      "url": "https://legalplanet.pro/cnil-8-decembre-2020-n-2020-123/",
+      "kind": "article"
+    },
+    {
+      "label": "Derriennic Associés (6 janvier 2021) — Nestor condamnée par la CNIL à une amende de 20 000 € pour prospection commerciale illicite",
+      "url": "https://derriennic.com/nestor-condamnee-par-la-cnil-a-une-amende-de-20-000-e-pour-prospection-commerciale-illicite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 décembre 2020, la CNIL a sanctionné la société Nestor, qui prépare et livre des repas aux employés de bureaux, d'une amende de 20 000 euros avec injonction sous astreinte. Selon la décision relayée par Legalplanet, 653 033 courriels de prospection ont été adressés sans consentement préalable, à partir de données enrichies par des prestataires. La CNIL a écarté l'intérêt légitime comme base légale de la prospection par courriel et relevé des manquements à l'information et à la sécurité. Derriennic Associés rapporte des plaintes reçues dès 2018. La délibération SAN-2020-018 a été publiée au Journal officiel le 6 janvier 2021.",
+  "timeline": [
+    {
+      "date": "2020-12-08",
+      "event": "Délibération SAN-2020-018 : amende de 20 000 euros, injonction de mise en conformité sous trois mois, astreinte de 500 euros par jour."
+    },
+    {
+      "date": "2021-01-06",
+      "event": "Publication de la délibération au Journal officiel."
+    }
+  ]
+}

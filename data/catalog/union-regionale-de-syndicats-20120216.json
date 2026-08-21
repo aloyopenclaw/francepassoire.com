@@ -1,0 +1,38 @@
+{
+  "slug": "union-regionale-de-syndicats-20120216",
+  "entity": "Une union régionale de syndicats (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-02-16",
+    "confirmation": "2012-02-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction pécuniaire publique de 5 000 euros ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « UNION REGIONALE DE SYNDICATS », sanction pécuniaire publique de 5 000 euros (16 février 2012, prospection syndicale)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 16/02/2012 — prospection syndicale, collecte déloyale et droit d'opposition non respecté",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 16 février 2012, la formation restreinte de la CNIL a prononcé une sanction pécuniaire publique de 5 000 euros à l'encontre d'une union régionale de syndicats. L'affaire portait sur de la prospection syndicale. Manquements retenus : collecte déloyale, non-respect du droit d'opposition et défaut de réponse à la CNIL. La dénomination n'est pas publique dans le tableau officiel des sanctions ; le texte de la délibération est publié sur Légifrance. La publicité de la sanction rappelait les règles de la prospection : opposition gratuite et effective à tout moment, information sur l'origine des données et réponse aux demandes de l'autorité de contrôle.",
+  "timeline": [
+    {
+      "date": "2012-02-16",
+      "event": "Sanction pécuniaire publique de 5 000 euros : prospection syndicale, collecte déloyale, droit d'opposition bafoué, défaut de réponse."
+    }
+  ]
+}

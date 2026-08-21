@@ -1,0 +1,32 @@
+{
+  "slug": "moteur-de-recherche-20120601",
+  "entity": "Moteur de recherche (dénomination non publiée par la liste CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-06-01",
+    "confirmation": "2012-06-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction ancienne dont le montant et la nature exacte ne sont plus détaillés par la liste officielle"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 1er juin 2012, la CNIL a inscrit à son tableau des sanctions une décision concernant un moteur de recherche. Les manquements relevés : défaut de mise à jour des données, non-respect du droit d’opposition et défaut de coopération avec l’autorité. La liste officielle ne précise ni le montant ni la nature exacte de la sanction, et ne publie pas la dénomination de l’entité. Aucune page officielle vivante ne documente cette décision ancienne.",
+  "timeline": [
+    {
+      "date": "2012-06-01",
+      "event": "Décision inscrite à la liste des sanctions : défaut de mise à jour des données, non-respect du droit d’opposition, défaut de coopération."
+    }
+  ]
+}

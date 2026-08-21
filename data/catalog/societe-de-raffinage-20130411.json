@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-raffinage-20130411",
+  "entity": "Société de raffinage (dénomination non publiée par la CNIL)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-04-11",
+    "confirmation": "2013-04-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société de raffinage », avertissement public (11 avril 2013)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 avril 2013, la formation restreinte de la CNIL a prononcé un avertissement public à l'encontre d'une société de raffinage, désignée anonymement, à la suite d'un contrôle portant sur un dispositif de vote électronique. Le manquement retenu est un défaut de sécurité des données. La dénomination n'est pas publiée, le volume de personnes concernées n'est pas communiqué et la nature des données n'est pas précisée dans le tableau officiel des sanctions.",
+  "timeline": [
+    {
+      "date": "2013-04-11",
+      "event": "Avertissement public : défaut de sécurité des données d'un dispositif de vote électronique."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "particuliers-20241231",
+  "entity": "Particuliers (dénominations non publiées par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-31",
+    "confirmation": "2024-12-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l’action de la CNIL",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 décembre 2024, la CNIL a prononcé une amende de 5 000 euros à l’encontre de particuliers, dans le cadre de la procédure simplifiée. Le manquement retenu : défaut de coopération avec l’autorité. La liste officielle ne précise ni le nombre de personnes concernées ni la nature des données. La dénomination n’est pas publiée.",
+  "timeline": [
+    {
+      "date": "2024-12-31",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : défaut de coopération avec la CNIL."
+    }
+  ]
+}

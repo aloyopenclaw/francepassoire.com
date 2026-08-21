@@ -1,0 +1,38 @@
+{
+  "slug": "syndicat-20120524",
+  "entity": "Un syndicat (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-05-24",
+    "confirmation": "2012-05-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement public (délibération n° 2012-079) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SYNDICAT », avertissement public (24 mai 2012, fichier d'exclusion)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 24/05/2012 — fichier d'exclusion, délibération n° 2012-079",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 24 mai 2012, la formation restreinte de la CNIL a rendu public un avertissement prononcé à l'encontre d'un syndicat titulaire d'un fichier d'exclusion (délibération n° 2012-079). Manquements retenus : défaut de formalités préalables, collecte déloyale, défaut d'information et durée de conservation non définie. La dénomination n'est pas rendue publique dans le tableau officiel des sanctions. Le même jour, la CNIL a aussi statué sur deux sociétés de ventes aux enchères exploitant des fichiers d'exclusion comparables. Les fichiers d'exclusion restent licites ; ils imposent information des personnes, loyauté de la collecte et durées de conservation définies, contrôlées depuis par la CNIL.",
+  "timeline": [
+    {
+      "date": "2012-05-24",
+      "event": "Avertissement public (délibération 2012-079) : fichier d'exclusion sans formalités préalables ni durée de conservation définie."
+    }
+  ]
+}
