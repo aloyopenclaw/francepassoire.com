@@ -1,0 +1,37 @@
+{
+  "slug": "societe-realisant-des-operations-de-prospection-commerciale-par-voie-electronique-pour-le-compte-d-annonceurs-avec-une-activite-de-courtier-en-donnees-20250515",
+  "entity": "Société réalisant des opérations de prospection commerciale par voie électronique pour le compte d'annonceurs, avec une activité de courtier en données (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "confirmation": "2025-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 80 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société réalisant des opérations de prospection commerciale par voie électronique pour le compte d'annonceurs, avec une activité de courtier en données », amende de 80 000 euros (15 mai 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 mai 2025, la CNIL a prononcé une amende de 80 000 euros à l'encontre d'une société réalisant des opérations de prospection commerciale par voie électronique pour le compte d'annonceurs, exerçant également une activité de courtier en données. Manquements retenus : recueil du consentement des personnes pour la prospection par voie électronique, prise en compte du retrait du consentement, défaut de base légale et durée de conservation excessive. La décision du même jour contre Solocal Marketing Services s'inscrit dans la même thématique prioritaire de contrôle des courtiers en données. La dénomination de la société n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "event": "Amende de 80 000 euros : consentement, retrait du consentement, base légale et durée de conservation (prospection par voie électronique)."
+    }
+  ]
+}

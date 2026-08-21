@@ -1,0 +1,248 @@
+================================================================
+full-catalog-completion — RAFALE 7, LANE 5 REDISPATCH (T23,
+T2 2025 AVRIL-JUIN, PRESSE NATIONALE) — 2/20 fiches
+(pool presse nationale T2 2025 épuisé aux standards du
+contrat ; complément CNIL in-window, cf. §5)
+Worktree : /var/folders/.../T/opencode/fp-r7l5b
+Branche  : fiche/rafale7-l5 (recréée sur main 2fd9ef5 après
+           avancement chaîne L0-L4, 855 fiches)
+Commit   : feat(catalog): rafale 7 — T2 2025 L5 (2 fiches —
+           pool presse nationale épuisé, 20 demandées)
+Sources  : presse nationale générale+tech (Google News RSS
+           fenêtré avril/mai/juin : cyberattaque, piratage,
+           piraté, fuite de données, données volées, vol de
+           données, données dark web, rançongiciel, cartes
+           bancaires, ×~40 requêtes) + sitemaps intégraux
+           FrenchBreaches (1 529 URLs, 22 alertes T2 2025),
+           Zataz (4 sub-sitemaps, 183 posts T2 2025 lus),
+           HG Info & Co (604 fuites, 14 T2 2025), HIBP
+           (PwnedWebsites intégral), FuitesInfos (601 URLs,
+           zéro article 2025 — actif depuis 2026) + CNIL
+           (tableau intégral des sanctions, fenêtre
+           03/04→30/06 re-lue ligne à ligne) + agrégateurs
+           (Ostraca, 01net, cm-alliance, konbriefing HS).
+================================================================
+
+[0] RÉSUMÉ
+  Consigne : 20 fiches T2 2025 (avril-juin 2025, presse
+  nationale), ≥2 sources vivantes, zod, zéro invention, Ton A
+  ≤120 mots, jamais merge. Constat de run : le T2 2025 est la
+  fenêtre la plus minée du catalogue — les rafales 1-6 ont
+  déjà fiché les 40 incidents T2 2025 couverts par la presse
+  nationale (Intersport, Afflelou, Easy Cash, Indigo, Carrefour
+  Mobile, Dior, réduction-impots.fr, Roubaix, Hauts-de-Seine,
+  Adidas, Cartier, Kaviari, Center Parcs, Sorbonne, Éducation
+  nationale, Académie de Lyon, Disneyland Paris, Limoges, UNSS,
+  Semco, HCI, LGM, Solocal, Caloga, Itinsell, Osmose, Coinbase,
+  Steam, Reporterre, Delcourt…) ET les re-publications 2025
+  d'incidents antérieurs (Free→HIBP, Boulanger, Chronopost janv.,
+  Taobento, Ayomi, Thaon, CH Stell, boxe/force UNSS-fédérations,
+  licenciés sportifs Exalto, Adecco-procès, Louis Vuitton T3).
+  Après balayage systématique (§1) et arbitrage (§2), l'espace
+  presse nationale in-window hors catalogue est ÉPUISÉ. Complément
+  livré : 2 sanctions CNIL T2 2025 non fichées (anonymisées,
+  famille « enforcement CNIL », précédents superettes/édition/
+  courtage-énergie/Boursorama-MED).
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  - Catalogue main (855 fiches après chain-merges L0-L4) :
+    dump slug::entity::date → index de dédup réel ; les 40
+    fiches datées T2 2025 + fiches antérieures couvrant les
+    re-publications listées en [0].
+  - Google News RSS fenêtré after:/before: avril, mai, juin
+    2025 × requêtes {cyberattaque, piratage, piraté, fuite de
+    données, données volées, vol de données, données dark web,
+    rançongiciel, cartes bancaires, entreprise, clients} +
+    ciblés {site:next.ink, site:lemagit.fr, site:generationnt,
+    Stellantis, Intermarché, Cora, Fleury Michon, PULSY, MNT,
+    Thesqua, In Extenso, Baccarat, Doctrine} → tout incident
+    national nommé du trimestre est soit déjà fiché, soit
+    rejeté en §2 avec motif.
+  - FrenchBreaches : sitemap intégral (22 alertes T2 2025)
+    → non couvertes et examinées : pulsy-grades-grand-est
+    (05/13), thesqua-re (06/01), catwatchful (06/09), hertz
+    (04/02), harvest (re-post), indigo-group (±45 j de
+    indigo-20250422) → arbitrages §2.
+  - Zataz : 4 sous-sitemaps, 183 posts T2 2025 listés un à un,
+    articles incidences lus (Chronopost 3,6 M, Fleury-Michon
+    MHA, MDPH 92, Hertz, géant du sport, licenciés, 2,5 M
+    dossiers Indonésie, France Titres, Electropolis, gouv
+    Stormous, boxe/force, Victoria's Secret, concessionnaire,
+    Ayomi, Baccarat-rétrospective, CH Armentières) → §2.
+  - HG Info & Co : 604 fuites filtrées T2 2025 (14 entrées) →
+    toutes déjà fichées sauf TheSqua.re/MNT/Catwatchful (§2) ;
+    source interne « BonjourLaFuite » JS non citable (CDX
+    web.archive.org vide sur le domaine).
+  - HIBP PwnedWebsites intégral : T2 2025 = TheSqua.re (107 k,
+    Jun 2025), Catwatchful (61,6 k), Creams/MaReads/Ualabee
+    (non FR) → §2.
+  - FuitesInfos : sitemap 601 URLs 100 % datées 2026 → zéro
+    article publié in-window ; HG crédite « FuitesInfos » pour
+    des incidents T2 via des rétro-articles 2026 (non citables
+    pour la fenêtre).
+  - CNIL : tableau intégral « Les sanctions prononcées par la
+    CNIL », fenêtre 03/04→30/06/2025 lue ligne à ligne :
+    12 décisions in-window, 9 déjà fichées (superettes,
+    courtage-travaux, articles de sport, restauration [L3,
+    eca368a], site de rencontres, SOMS/Solocal 900 k€ nommée,
+    pharma, MCO, édition, VPC catalogue), 2 NON fichées →
+    livrées ; mises en demeure re-balayées (page 404 côté
+    CNIL ; L4 avait conclu « aucune MED in-window hors
+    Boursorama », fichée).
+  - Légifrance : liens des 2 décisions du 15/05 (CNILTEXT
+    000051630617 / 000051660380) → 403 anti-bot en curl ;
+    remplacés par tableau CNIL + bilan sanctions 2025 (200).
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS ET REJETS EXPLICITES
+  Base : main 2fd9ef5 (855 fiches).
+  `node scripts/check-doublons.mjs --base main` → « 0 collision
+  (±45 j, même entité normalisée) », exit 0 (2 nouvelles).
+  Candidats presse/veille examinés puis ÉCARTÉS avec motif :
+  - pulsy-grades-grand-est-20250513 (FB « crédible », ≤6 M
+    patients, données de santé détaillées) : corps d'article
+    absent du HTML statique (rendu JS) ; AUCUN relais presse
+    identifiable in-window (la grosse exfiltration Pulsy 5,8 M
+    est l'incident du 18/06/2026, dsih/Ouest-France/Ticsanté —
+    hors fenêtre, pool 2026) → 1 source, insuffisant.
+  - thesqua-re-20250601 (FB + HIBP 107 k, Jun 2025) : société
+    de location d'appartements siègeant à Londres, base
+    mondiale ; aucune source ne chiffre un périmètre France →
+    écarté au motif Santander/Activa (périmètre FR non sourcé).
+  - catwatchful-20250609 (FB + HIBP 61,6 k, mots de passe en
+    clair) : stalkerware opérateur non identifié, victimes
+    mondiales, ancrage France non sourcé → écarté.
+  - mnt-20250412 (920 k assurés, NSS, garanties — HG
+    « Revendiquée crédible ») : source primaire =
+    BonjourLaFuite (site JS, slug inconnu, CDX vide) ; aucun
+    relais presse ni Zataz in-window → 1 source (rejet
+    confirmé, précédent r7-l4 §2).
+  - france-titres-20250625 (10 M fiches d'état civil, Zataz) :
+    « rien d'officiel » dans l'article lui-même ; ventes
+    ultérieures démontées comme mascarade (Zataz 09/2025
+    « La mascarade des ventes… ») et recadrage ANSSI via
+    next.ink ; l'épisode établi de la même chaîne est fiché
+    côté ANTS sept. 2025 → refus de ficher une vente
+    contestée.
+  - fleury-michon (Zataz 16/06, vente d'accès internes « MHA »,
+    10 $) : aucun relais ; l'incident malware public de la
+    marque date d'avril 2019 (CIO-Online 17/04/2019), l'étude
+    LeMagIT y revient → vente d'accès ≠ fuite établie, 1
+    source → écarté.
+  - doctrine-20250507/09 (Forseti/Doctrine.fr, TC Paris 09/05 :
+    ex-salarié condamné, 52 000 décisions exfiltrées au TJ
+    Poitiers en mai 2018 ; CA Paris 07/05 : concurrence
+    déloyale) : presse nationale présente (Le Point 09/05,
+    ActuaLitté 10/05) MAIS l'extraction date de 2018 et était
+    déjà publique (flagrant délit, feuilleton judiciaire) →
+    datation T2 2025 artificielle, contredit la convention
+    dates.revendication = entrée dans l'espace public → écarté.
+  - chronopost-20250511 (Zataz « 3,6 M, la même fuite que
+    janvier 2025 ? ») : re-publication de l'incident du
+    17/01/2025 — fiché par L3 (chronopost-20250511) au motif
+    élargi de la lane retail ; pas de seconde fiche ici
+    (1 incident = 1 fiche).
+  - stellantis-20250526 (L'Avenir, Belux) : courriers Stellantis
+    Financial Services BELUX, périmètre Belgique/Luxembourg ;
+    l'incident Amérique du Nord est fiché (stellantis-20250921)
+    → écarté (pas de périmètre France sourcé).
+  - louis-vuitton (accès 07/06/2025, ~419 k clients Corée/UK/
+    Turquie/Italie/Suède, ShinyHunters/Salesforce) : entrée
+    publique (divulgation filiale Corée + confirmation LV)
+    = 10-18/07/2025 → T3, hors fenêtre (Usine Digitale
+    N2234681, BleepingComputer, ThaiCERT 18/07).
+  - in-extenso (Dauphiné 25/06 « rançon 5 M€ ») : rétrospective
+    de l'attaque REvil d'avril 2021 (LeMagIT 252499315) →
+    hors fenêtre.
+  - baccarat (LeMagIT 25/04 « côté pile et côté face ») :
+    rétrospective de la cyberattaque de septembre 2023 (Luxus
+    Plus 29/09/2023) → hors fenêtre, non fiché à ce jour
+    (à réserver au pool 2023).
+  - ch-armentieres-20250407 (Zataz, BlackOut) : incident de
+    février 2024 (« depuis le début ») → hors fenêtre.
+  - mdph-92-20250618 (Zataz) : même incident que
+    departement-hauts-de-seine-20250520 (cyberattaque du
+    20/05, Zataz le documente lui-même) → 1 incident = 1
+    fiche.
+  - molotov-20250624 (Frandroid 10,8 M) : mêmes volumes que
+    molotov-20241113 (intrusion oct. 2024 révélée 13/11/2024)
+    → re-publication, déjà fiché.
+  - victoria's-secret / electropolis / 2,5 M dossiers
+    médicaux Yogyakarta / UBS-Pictet (CH, via Chain IQ) /
+    CNSS Maroc / Tawtik notaires Maroc / 3R imagerie (CH) :
+    aucun périmètre France sourcé → écartés (NB :
+    electropolis-20250625 a été fiché par L3 au motif élargi
+    de sa lane).
+  - « géant du sport français » 600 $ (Zataz 16/05),
+    concessionnaire du Nord 202 864 (Zataz 01/06), « géant de
+    l'électronique » (= Electropolis), « plusieurs ministères/
+    Urssaf » Stormous-Gold Rabbit (Zataz 13/06), 16/22/23 M
+    identifiants (combilists), Kaspersky 2,3 M CB (étude),
+    Surfshark 11,4 M comptes T2 (étude), licenciés sportifs/
+    boxe-force (re-diffusion Exalto janv. 2025, fiché) :
+    entités non nommées, compilations ou études → non
+    fichables.
+  - solocal-marketing-services-20250515 : la ligne anonymisée
+    « marketing et conception de sites web, 900 000 € » du
+    tableau CNIL = SOMS (communiqué CNIL 21/05/2025, nommé) →
+    DÉJÀ fichée (solocal-marketing-services-20250515) ; la
+    ligne « restauration 10/04/2025 » est fichée par L3
+    (eca368a) → doublons évités de justesse (re-base sur
+    main 2fd9ef5 après chain-merge).
+
+[3] FICHES LIVRÉES (2) — famille « enforcement CNIL »
+  01 societe-offrant-des-prestations-de-securite-privee-
+     20250515 — liquidation d'astreinte 4 000 € (procédure
+     simplifiée), non-conformité à une injonction — confirmée
+     — tableau CNIL + bilan sanctions 2025 (officiels, 200).
+     Précédents : courtage-en-energie-20250130 (astreinte),
+     societe-exercant-une-activite-de-securite-privee-20230303.
+  02 societe-realisant-des-operations-de-prospection-
+     commerciale-par-voie-electronique-pour-le-compte-d-
+     annonceurs-avec-une-activite-de-courtier-en-donnees-
+     20250515 — amende 80 000 € (consentement, retrait, base
+     légale, durée de conservation) ; même journée de
+     sanctions « courtiers en données » que SOMS 900 k€ —
+     confirmée — tableau CNIL + bilan sanctions 2025.
+     Délibérations Légifrance 403 anti-bot en curl → non
+     citées, remplacées par les pages CNIL vivantes.
+
+[4] VÉRIFICATIONS
+  - zod (tests/tmp-r7l5-validation.test.ts, retiré avant
+    commit) : 2/2 tests (schéma ; slug=fichier ; fenêtre
+    2025-04..06 ; sources 100 % officielles cnil.fr ; pas de
+    champ group).
+  - `npx vitest run` intégral (worktree, node_modules symlinké
+    sur le checkout principal, base main 2fd9ef5) : 30
+    fichiers / 1 221 tests verts, dont pr-fiches validant les
+    856 JSON du catalogue.
+  - check-doublons --base main : « 0 collision (±45 j, même
+    entité normalisée) », exit 0 ; nouvelles=2 vérifié par
+    réplique du filtre (base 854 slugs uniques / branche
+    856). NB : main contient 855 fichiers pour 854 slugs
+    uniques — anomalie préexistante hors périmètre L5.
+  - `ls data/catalog | sort | uniq -d` → 0 doublon de nom.
+  - Sondage d'URLs : 3 URLs sources distinctes (cnil.fr :
+    tableau sanctions, bilan 2025) + communiqué 22/05 (re-
+    vérifié pendant l'arbitrage L3) → toutes HTTP 200 via
+    curl ; Légifrance ×2 → 403 anti-bot, écartées du champ
+    sources.
+
+[5] ÉCART 2/20 — POOL PRESSE NATIONALE T2 2025 ÉPUISÉ
+  (précédents : r7-l1 « 7 fiches, 20 demandées » ; r7-l2
+  « 12/20 » ; r7-l4 « 4/20 »)
+  Le T2 2025 est la fenêtre la plus couverte du catalogue
+  après six rafales : chaque incident nommé, français et
+  couvert par la presse nationale d'avril à juin 2025 figure
+  déjà sur main, soit comme fiche T2, soit comme fiche de
+  l'incident d'origine (re-publications Free/HIBP, Boulanger,
+  Taobento, Ayomi, Molotov, fédérations sportives, Adecco,
+  Chronopost). Les exclus du pool restant sont : veille à 1
+  source (PULSY, MNT, Fleury-Michon, France Titres), périmètre
+  France non sourcé (TheSqua.re, Catwatchful, Hertz, Stellantis
+  Belux, Victoria's Secret, UBS/Pictet), entités anonymes
+  (concessionnaire, géant du sport), hors fenêtre stricte
+  (Louis Vuitton 07/2025, PULSY 2026, Baccarat 2023, In Extenso
+  2021, CH Armentières 2024) ou datation contraire à la
+  convention (Doctrine, incident 2018). Le complément CNIL a
+  livré les 2 dernières sanctions in-window non fichées.
+================================================================
