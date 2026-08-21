@@ -1,0 +1,37 @@
+{
+  "slug": "societe-exercant-une-activite-de-restauration-20250410",
+  "entity": "Société exerçant une activité de restauration (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-10",
+    "confirmation": "2025-04-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 6 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société exerçant une activité de restauration », amende de 6 000 euros (10 avril 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — The sanctions issued by the CNIL : « company operating a catering business », fine of €6,000 (10 avril 2025)",
+      "url": "https://www.cnil.fr/en/investigation-powers-cnil/sanctions-issued-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 10 avril 2025, la CNIL a prononcé une amende de 6 000 euros contre une société de restauration, en procédure simplifiée. Manquements retenus : minimisation des données en vidéosurveillance, défaut d'information des personnes, registre des activités de traitement manquant et absence d'analyse d'impact. La dénomination de l'enseigne n'est pas publiée par l'autorité. La décision figure dans la liste officielle des sanctions de l'année 2025.",
+  "timeline": [
+    {
+      "date": "2025-04-10",
+      "event": "Amende de 6 000 euros (procédure simplifiée) : minimisation et information en matière de vidéosurveillance, registre et analyse d'impact manquants."
+    }
+  ]
+}

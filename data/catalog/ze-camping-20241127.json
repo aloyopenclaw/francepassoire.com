@@ -1,0 +1,39 @@
+{
+  "slug": "ze-camping-20241127",
+  "entity": "Ze Camping",
+  "siren": "802869701",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-27",
+    "publication": "2024-11-27"
+  },
+  "volume": {
+    "count": 1600000,
+    "unit": "personnes",
+    "label": "1,6 millions d'utilisateurs concernés selon les relais de veille (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Ze Camping : 1,6 millions d'utilisateurs (27 novembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/ze-camping-blf_697f831a59b87",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite — Ze Camping, 1,6 millions d'utilisateurs : identités, logins et mots de passe hashés (entrée du 26 novembre 2024)",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 novembre 2024, FrenchBreaches relaie une fuite touchant Ze Camping, site français de vente d'articles de camping et d'équipements de plein air. La base concernerait 1,6 millions d'utilisateurs. Les données listées par les traqueurs incluent noms, prénoms, logins, mots de passe hashés et dates de naissance. Le traqueur BonjourLaFuite classe la fuite comme crédible. Ni la méthode de compromission ni une confirmation de l'entreprise ne sont rapportées à ce stade ; les volumes restent des chiffres revendiqués.",
+  "timeline": [
+    {
+      "date": "2024-11-27",
+      "event": "FrenchBreaches relaie une fuite attribuée à Ze Camping : 1,6 millions d'utilisateurs, avec identités, logins et mots de passe hashés."
+    }
+  ]
+}

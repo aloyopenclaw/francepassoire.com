@@ -1,0 +1,44 @@
+{
+  "slug": "cybertek-20240906",
+  "entity": "Cybertek",
+  "siren": "408772960",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-06",
+    "publication": "2024-09-12",
+    "confirmation": "2024-09-12"
+  },
+  "volume": {
+    "count": 684966,
+    "unit": "enregistrements",
+    "label": "684 966 données clients revendiquées pour Grosbill et Cybertek, deux enseignes du même groupe (chiffre combiné, non ventilé) ; plus de 600 000 comptes selon les relais"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Clients Boulanger, Cultura, GrosBill piratés ? La vague Horror404x touche aussi Cybertek et Grosbill (15 septembre 2024)",
+      "url": "https://www.zataz.com/clients-boulanger-cultura-grosbill-pirates/",
+      "kind": "revendication"
+    },
+    {
+      "label": "next.ink — Fuites de données : Cybertek et Grosbill entrent dans la danse (12 septembre 2024)",
+      "url": "https://next.ink/149926/fuites-de-donnees-cybertek-et-grosbill-entrent-dans-la-danse-truffaut-refuse-de-donner-des-details/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 septembre 2024, le pirate Horror404x revendique sur un forum le vol de 684 966 données clients de GrosBill et CyberTek. Ces enseignes françaises d'informatique appartiennent au même groupe. Cybertek alerte ses clients d'une « tentative d'accès non autorisé ». Celle-ci a « possiblement » compromis noms, prénoms, téléphones et adresses e-mail et postales. L'enseigne précise que mots de passe et informations bancaires ne sont pas concernés. Cette revendication s'inscrit dans la même vague que les fuites Boulanger, Cultura et Truffaut de septembre 2024, relayées par Zataz et next.ink.",
+  "timeline": [
+    {
+      "date": "2024-09-06",
+      "event": "Le pirate Horror404x revendique 684 966 données clients de GrosBill et CyberTek sur le forum Breached."
+    },
+    {
+      "date": "2024-09-12",
+      "event": "Cybertek notifie à ses clients une tentative d'accès non autorisé ayant possiblement compromis identités et coordonnées, sans mot de passe ni donnée bancaire."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "lc-pass-20240114",
+  "entity": "LC Pass",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-14",
+    "publication": "2024-01-17"
+  },
+  "volume": {
+    "count": 312000,
+    "unit": "lignes",
+    "label": "plus de 312 000 lignes de données mises en vente (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — La boutique en ligne LC Pass, spécialisée dans les coupons et tickets de recharge, infiltrée par un pirate (17 janvier 2024)",
+      "url": "https://www.zataz.com/un-site-francais-de-vente-de-cartes-prepayees-pirate/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 janvier 2024, un pirate annonce sur un forum détenir la base de données de LC Pass. Cette boutique en ligne française vend coupons et tickets de recharge pour Amazon, Neosurf, PlayStation ou Xbox. La vente affiche plus de 312 000 lignes. Les échantillons consultés par Zataz montrent identité, adresse IP, tokens de session, adresse électronique et mots de passe hashés. Une date d'achat visible dans les extraits remonte au 28 décembre 2023. Le responsable de la société, alerté par le Protocole d'Alerte Zataz, a réagi rapidement. Il a demandé à ses clients de réinitialiser leur mot de passe. Aucune donnée bancaire n'est proposée.",
+  "timeline": [
+    {
+      "date": "2024-01-14",
+      "event": "Un pirate annonce sur un forum la mise en vente de plus de 312 000 lignes de données issues de la boutique LC Pass."
+    },
+    {
+      "date": "2024-01-17",
+      "event": "Zataz relaie la vente et les échantillons ; l'entreprise alertée demande la réinitialisation des mots de passe clients."
+    }
+  ]
+}

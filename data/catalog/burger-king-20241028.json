@@ -1,0 +1,33 @@
+{
+  "slug": "burger-king-20241028",
+  "entity": "Burger King (Russie)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-10-28",
+    "publication": "2024-10-28"
+  },
+  "volume": {
+    "count": 5627676,
+    "unit": "personnes",
+    "label": "5 627 676 clients dans la base diffusée gratuitement, sur 30 millions d'enregistrements revendiqués au total ; des clients français présents selon le relais Zataz"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données chez Burger King : 5,6 millions de clients affectés, base issue de l'application mobile (28 octobre 2024)",
+      "url": "https://www.zataz.com/fuite-de-donnees-chez-burger-king-56-millions-de-clients-affectes/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fin octobre 2024, une base de données de la chaîne de restauration rapide Burger King circule sur le web. L'annonce avait été observée dès août 2024 dans des espaces surveillés par Zataz. La base couvre la période de mai 2018 à août 2024. Elle aurait été exfiltrée via l'application mobile de l'enseigne en Russie, dont les données sont gérées par la plateforme Mindbox. L'échantillon gratuit compte 5 627 676 clients : identité, date de naissance, adresse électronique, genre et historique de commandes. Des clients français figurent dans la base selon le service de veille de Zataz. Aucune donnée bancaire ni mot de passe n'est concerné.",
+  "timeline": [
+    {
+      "date": "2024-10-28",
+      "event": "La base de 5 627 676 clients de Burger King Russie est diffusée après échec de la vente ; le reste des 30 millions de lignes reste proposé au paiement."
+    }
+  ]
+}

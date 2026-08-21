@@ -1,0 +1,41 @@
+{
+  "slug": "vinted-20230327",
+  "entity": "Vinted",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-25",
+    "publication": "2023-03-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs centaines de comptes visés selon la presse ; nombre exact non communiqué par la plateforme"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "TF1 Info — Plateforme Vinted : comment des cybercriminels ont pu pirater des centaines de comptes (25 mars 2023)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/video-plateforme-vinted-comment-des-cybercriminels-ont-ils-pu-pirater-des-centaines-de-comptes-2252057.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Piratage de comptes Vinted : une histoire de combos (27 mars 2023)",
+      "url": "https://www.zataz.com/piratage-de-comptes-vinted-une-histoire-de-combos/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin mars 2023, plusieurs centaines d'utilisateurs européens de Vinted constatent que leur compte a été piraté et leur cagnotte vidée, rapporte TF1 Info. Selon l'analyse de Zataz, ces prises de contrôle reposent sur du « credential stuffing ». Des identifiants dérobés sur d'autres sites sont rejoués sur la plateforme de vente d'occasion. Celle-ci revendique 23 millions d'utilisateurs en France. Les pirates recourent ensuite au chantage sur les comptes accédés. Vinted n'a pas décrit de fuite de ses propres systèmes ; le volume exact de comptes visés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-03-25",
+      "event": "TF1 Info relaie le piratage de plusieurs centaines de comptes Vinted et le vol de cagnottes d'utilisateurs européens."
+    },
+    {
+      "date": "2023-03-27",
+      "event": "Zataz attribue ces prises de contrôle à du « credential stuffing » à partir d'identifiants volés sur d'autres plateformes."
+    }
+  ]
+}

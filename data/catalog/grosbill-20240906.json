@@ -1,0 +1,44 @@
+{
+  "slug": "grosbill-20240906",
+  "entity": "Grosbill (groupe Cybertek)",
+  "siren": "408772960",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-06",
+    "publication": "2024-09-12",
+    "confirmation": "2024-09-12"
+  },
+  "volume": {
+    "count": 684966,
+    "unit": "enregistrements",
+    "label": "684 966 données clients revendiquées pour GrosBill et CyberTek, deux enseignes du même groupe (chiffre combiné, non ventilé) ; plus de 600 000 comptes selon les relais"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Clients Boulanger, Cultura, GrosBill piratés ? La vague Horror404x touche aussi Cybertek et Grosbill (15 septembre 2024)",
+      "url": "https://www.zataz.com/clients-boulanger-cultura-grosbill-pirates/",
+      "kind": "revendication"
+    },
+    {
+      "label": "next.ink — Fuites de données : Cybertek et Grosbill entrent dans la danse (12 septembre 2024)",
+      "url": "https://next.ink/149926/fuites-de-donnees-cybertek-et-grosbill-entrent-dans-la-danse-truffaut-refuse-de-donner-des-details/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 septembre 2024, le pirate Horror404x revendique le vol de 684 966 données clients de GrosBill et CyberTek, enseignes d'informatique du même groupe. Grosbill notifie à ses clients une « tentative d'intrusion ». Elle aurait pu compromettre noms, prénoms, téléphones et adresses e-mail et postales. Les mots de passe et informations bancaires ne sont pas concernés, selon l'enseigne. La revendication s'ajoute à celles touchant Boulanger, Cultura, Truffaut ou DiviaMobilités le même mois. Les chiffres des pirates ne correspondent pas à ceux qu'avancent les enseignes, relève next.ink.",
+  "timeline": [
+    {
+      "date": "2024-09-06",
+      "event": "Le pirate Horror404x revendique 684 966 données clients de GrosBill et CyberTek sur le forum Breached."
+    },
+    {
+      "date": "2024-09-12",
+      "event": "Grosbill notifie à ses clients une tentative d'intrusion ayant possiblement compromis identités et coordonnées."
+    }
+  ]
+}
