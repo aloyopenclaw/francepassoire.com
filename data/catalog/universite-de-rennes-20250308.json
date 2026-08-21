@@ -1,0 +1,44 @@
+{
+  "slug": "universite-de-rennes-20250308",
+  "entity": "Université de Rennes",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-08",
+    "publication": "2025-03-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "50 Go de données revendiqués par FunkSec (PDF, CSV, bases, e-mails, téléphones, mots de passe, clés SSH) ; l’université évoque un incident « à portée limitée » sans confirmer le vol"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Bretagne — L’Université de Rennes victime d’une cyberattaque (10 mars 2025)",
+      "url": "https://france3-regions.franceinfo.fr/bretagne/ille-et-vilaine/rennes/l-universite-de-rennes-victime-d-une-cyberattaque-3120118.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: univ-rennes.fr (FunkSec, 8 mars 2025)",
+      "url": "https://www.ransomware.live/id/dW5pdi1yZW5uZXMuZnJAZnVua3NlYw",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 8 mars 2025, une « action informatique malveillante » est détectée sur un sous-réseau pédagogique de l’Université de Rennes (32 000 étudiants). Le groupe FunkSec revendique l’attaque et prétend détenir 50 Go de données — PDF, CSV, bases, adresses e-mail, numéros de téléphone, mots de passe, clés SSH — qu’il menace de publier le 19 mars. L’université confirme un incident « à portée limitée » mais pas le vol de données. Quelques jours plus tôt, FunkSec avait visé Sorbonne Université.",
+  "timeline": [
+    {
+      "date": "2025-03-08",
+      "event": "Détection d’une action malveillante sur un sous-réseau pédagogique ; FunkSec revendique l’attaque et 50 Go de données."
+    },
+    {
+      "date": "2025-03-10",
+      "event": "L’université confirme l’incident « à portée limitée » ; le vol de données n’est pas confirmé, publication menacée le 19 mars."
+    }
+  ],
+  "group": "funksec"
+}

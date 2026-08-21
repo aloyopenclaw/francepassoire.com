@@ -1,0 +1,47 @@
+{
+  "slug": "center-parcs-20250604",
+  "entity": "Center Parcs (groupe Pierre & Vacances-Center Parcs)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-04",
+    "publication": "2025-06-18",
+    "confirmation": "2025-06-18"
+  },
+  "volume": {
+    "count": 20000,
+    "unit": "personnes",
+    "label": "environ 20 000 clients européens : noms, prénoms, e-mails et détails de réservation (numéro, site, durée du séjour) ; ni données bancaires, ni mots de passe, ni adresses postales"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Une cyberattaque touche Center Parcs : les données de milliers de clients ont été compromises (18 juin 2025)",
+      "url": "https://www.01net.com/actualites/cyberattaque-touche-center-parcs-donnees-milliers-clients-compromises.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Center Parcs victime d’une cyberattaque : 20 000 clients concernés (16 juin 2025)",
+      "url": "https://www.zataz.com/center-parcs-victime-dune-cyberattaque-20-000-clients-concernes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 juin 2025, Center Parcs (sept villages en France) détecte une intrusion dans son système de gestion des réservations téléphoniques. L’accès est suspendu et l’attaque stoppée le 6 juin, mais environ 20 000 clients européens sont concernés : noms, prénoms, e-mails et détails des séjours ont été consultés. Ni coordonnées bancaires, ni mots de passe, ni adresses postales. L’incident est signalé à la CNIL, les personnes concernées sont prévenues, et aucune réutilisation frauduleuse n’est constatée à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-06-04",
+      "event": "Intrusion détectée dans le système de réservation téléphonique ; accès suspendu."
+    },
+    {
+      "date": "2025-06-06",
+      "event": "Attaque stoppée ; environ 20 000 clients concernés, CNIL saisie."
+    },
+    {
+      "date": "2025-06-18",
+      "event": "Médiatisation (01net) ; clients prévenus, plainte envisagée."
+    }
+  ]
+}

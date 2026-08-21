@@ -1,0 +1,45 @@
+{
+  "slug": "france-terre-d-asile-20251201",
+  "entity": "France terre d’asile",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-01",
+    "publication": "2025-12-03",
+    "confirmation": "2025-12-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "chiffrement d’un serveur interne ; fichiers administratifs et sociaux d’anciens usagers et de salariés potentiellement exposés ; aucune fuite identifiée à ce stade selon l’association"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "France terre d’asile — Communiqué : incident informatique survenu chez France terre d’asile (3 décembre 2025)",
+      "url": "https://www.france-terre-asile.org/actualites/lactualite-france-terre-dasile/communique-incident-informatique-survenu",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ransomware.live — Victim: France terre d’asile (Qilin, 1er décembre 2025)",
+      "url": "https://www.ransomware.live/id/RnJhbmNlIHRlcnJlIGQnYXNpbGVAcWlsaW4",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er décembre 2025, le groupe Qilin revendique une attaque contre France terre d’asile, association d’accompagnement des demandeurs d’asile. Un ransomware a chiffré une partie des fichiers d’un serveur interne : des informations administratives et sociales d’anciennes personnes accompagnées et des dossiers RH d’anciens salariés ont pu être exposés. Le 3 décembre, l’association publie un communiqué : plainte déposée, CNIL saisie, expert mandaté ; aucune fuite ni utilisation frauduleuse n’est identifiée à ce stade, et les usagers ne pouvant être contactés individuellement sont informés publiquement.",
+  "timeline": [
+    {
+      "date": "2025-12-01",
+      "event": "Qilin revendique l’attaque sur le darkweb et menace de publier les données de l’association."
+    },
+    {
+      "date": "2025-12-03",
+      "event": "Communiqué de France terre d’asile : chiffrement constaté, plainte, déclaration CNIL, exposition potentielle de données d’anciens usagers et salariés."
+    }
+  ],
+  "group": "qilin"
+}

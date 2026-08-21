@@ -1,0 +1,46 @@
+{
+  "slug": "linedata-20250811",
+  "entity": "Linedata",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-11",
+    "publication": "2025-08-14",
+    "confirmation": "2025-08-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "chiffrement malveillant d’un domaine de la business line Asset Management (dont le logiciel Icon) ; données hébergées concernées ; aucune exfiltration confirmée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Linedata — Communiqué : Linedata victime d’une cyberattaque sur une de ses activités (14 août 2025)",
+      "url": "https://fr.linedata.com/linedata-victime-dune-cyberattaque-sur-une-de-ses-activites",
+      "kind": "officiel"
+    },
+    {
+      "label": "ChannelNews — Linedata touchée par une cyberattaque (22 août 2025)",
+      "url": "https://www.channelnews.fr/linedata-touchee-par-une-cyberattaque-150179",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 août 2025, Linedata, éditeur français de solutions SaaS pour l’asset management, l’assurance et le crédit (700 clients dans 50 pays), subit une cyberattaque. L’enquête révèle un cryptage malveillant de données hébergées sur un domaine de la business line Asset Management — dont le logiciel Icon —, interrompant certains services clients. Les autres domaines ne sont pas concernés. La société contient la menace, porte plainte, informe ses clients et reconstruit ensuite son infrastructure ; les opérations sont rétablies fin septembre.",
+  "timeline": [
+    {
+      "date": "2025-08-11",
+      "event": "Cyberattaque détectée : chiffrement malveillant d’un domaine Asset Management, services interrompus pour certains clients."
+    },
+    {
+      "date": "2025-08-14",
+      "event": "Communiqué : mesures de confinement, plainte déposée, clients informés."
+    },
+    {
+      "date": "2025-09-30",
+      "event": "L’éditeur annonce la maîtrise de l’incident et la reconstruction de l’infrastructure sur AWS."
+    }
+  ]
+}

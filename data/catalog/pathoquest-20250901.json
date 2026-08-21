@@ -1,0 +1,44 @@
+{
+  "slug": "pathoquest-20250901",
+  "entity": "PathoQuest",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-01",
+    "publication": "2025-09-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "147 Go / 171 577 fichiers publiés par Qilin : données personnelles de salariés, informations clients, recherche propriétaire et documents financiers ; non confirmé par l’entreprise"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Daily Dark Web — Qilin Ransomware Allegedly Breaches Biotechnology Firm PathoQuest, Leaks 147GB of Data (1er septembre 2025)",
+      "url": "https://dailydarkweb.net/qilin-ransomware-allegedly-breaches-biotechnology-firm-pathoquest-leaks-147gb-of-data/",
+      "kind": "article"
+    },
+    {
+      "label": "Leakd — 147GB Data Breach: Qilin Targets French Biotech Firm PathoQuest (1er septembre 2025)",
+      "url": "https://leakd.com/leaks/147gb-data-breach-qilin-targets-french-biotech-firm-pathoquest/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: PathoQuest (Qilin, 1er septembre 2025)",
+      "url": "https://www.ransomware.live/id/UGF0aG9RdWVzdC1CaW90ZWNobm9sb2d5IFJlc2VhcmNoQHFpbGlu",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er septembre 2025, le groupe Qilin revendique une attaque contre PathoQuest, biotech parisienne spécialisée en biosécurité par séquençage nouvelle génération. Le gang publie 147 Go de données — 171 577 fichiers — présentés comme couvrant la vie de l’entreprise, ses clients, sa recherche propriétaire, des documents financiers et les données personnelles de ses salariés, avec des captures incluant des informations d’identification. La revendication n’est pas confirmée publiquement par l’entreprise.",
+  "timeline": [
+    {
+      "date": "2025-09-01",
+      "event": "Qilin revendique l’attaque et publie 147 Go / 171 577 fichiers présentés comme exfiltrés de PathoQuest."
+    }
+  ],
+  "group": "qilin"
+}

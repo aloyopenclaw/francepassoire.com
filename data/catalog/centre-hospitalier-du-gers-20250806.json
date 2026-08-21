@@ -1,0 +1,42 @@
+{
+  "slug": "centre-hospitalier-du-gers-20250806",
+  "entity": "Centre hospitalier du Gers (Auch)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-06",
+    "publication": "2025-08-07",
+    "confirmation": "2025-08-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "dossier patient informatisé et logiciels métiers en mode dégradé ; « aucune donnée ne semble avoir été compromise à ce stade » selon l’établissement"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "La Dépêche — Le Centre hospitalier du Gers ciblé par une cyberattaque, une enquête est en cours (7 août 2025)",
+      "url": "https://www.ladepeche.fr/2025/08/07/le-centre-hospitalier-du-gers-cible-par-une-cyberattaque-une-enquete-est-en-cours-12865493.php",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberhebdo du 8 août 2025 : un hôpital français touché",
+      "url": "https://www.lemagit.fr/actualites/366628717/Cyberhebdo-du-8-aout-2025",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 août 2025 en fin de matinée, le Centre hospitalier du Gers (Auch) est victime d’un incident informatique possiblement lié à un rançongiciel. Pour éviter toute propagation, l’accès à certains fichiers professionnels est suspendu : plusieurs logiciels métiers, dont le dossier patient informatisé, fonctionnent en mode dégradé. Les admissions et les soins se poursuivent normalement. Selon l’établissement, aucune donnée ne semble compromise à ce stade ; une enquête est ouverte avec les services de l’État et une cellule de suivi se réunit quotidiennement.",
+  "timeline": [
+    {
+      "date": "2025-08-06",
+      "event": "Incident informatique détecté, possiblement un rançongiciel ; accès aux fichiers suspendu, DPI en mode dégradé."
+    },
+    {
+      "date": "2025-08-07",
+      "event": "Communiqué : aucune donnée semble compromise à ce stade, enquête en cours avec les services de l’État."
+    }
+  ]
+}

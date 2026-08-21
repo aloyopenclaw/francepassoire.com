@@ -1,0 +1,51 @@
+{
+  "slug": "ville-elne-20251015",
+  "entity": "Ville d’Elne",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-15",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "système d’information municipal paralysé le week-end des 4-5 octobre ; volume de données revendiqué inconnu ; la commune dit n’avoir perdu aucune donnée grâce à ses sauvegardes"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L’Indépendant — « On n’avait plus rien, tout était bloqué » : la mairie d’Elne victime d’une cyberattaque revendiquée par des hackers russes (16 octobre 2025)",
+      "url": "https://www.lindependant.fr/2025/10/16/on-navait-plus-rien-tout-etait-bloque-la-mairie-delne-victime-dune-cyberattaque-revendiquee-par-des-hackers-russes-12996051.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — « On a reçu une demande de rançon » : plusieurs villes des Pyrénées-Orientales visées (16 octobre 2025)",
+      "url": "https://actu.fr/occitanie/elne_66065/on-a-recu-une-demande-de-rancon-des-hackers-russes-connus-attaquent-les-pyrenees-orientales_63306503.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Lycées paralysés, mairies visées… On vous présente Qilin Ransomware (22 octobre 2025)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/lycees-paralyses-mairies-visees-on-vous-presente-qilin-ransomware-a-l-origine-de-nombreuses-cyberattaques-en-france-et-dans-le-monde_7564588.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end des 4-5 octobre 2025, le système informatique de la mairie d’Elne (Pyrénées-Orientales) est paralysé : plus d’internet, plus de télétransmissions, logiciels bloqués. La commune porte plainte et la police nationale se déplace ; grâce à des sauvegardes, aucune donnée n’est perdue selon le maire. Le 15 octobre, le groupe Qilin revendique l’attaque sur le darkweb et menace de publier les données, un volume inconnu à ce jour. La revendication reste non confirmée par la commune.",
+  "timeline": [
+    {
+      "date": "2025-10-04",
+      "event": "Paralysie du SI municipal le week-end ; plainte déposée, unité cybercriminalité de la police nationale saisie."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Qilin revendique l’attaque d’Elne dans une salve mondiale visant une quarantaine d’organismes."
+    },
+    {
+      "date": "2025-10-16",
+      "event": "Médiatisation (La Tribune, L’Indépendant, actu.fr) ; le maire relativise la revendication."
+    }
+  ],
+  "group": "qilin"
+}

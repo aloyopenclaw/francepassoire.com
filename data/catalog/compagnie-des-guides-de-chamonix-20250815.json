@@ -1,0 +1,53 @@
+{
+  "slug": "compagnie-des-guides-de-chamonix-20250815",
+  "entity": "Compagnie des Guides de Chamonix",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-11",
+    "publication": "2025-08-16",
+    "confirmation": "2025-08-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "adresses e-mail et informations associées de la base clients volées, données d’un serveur supprimées ; volume non chiffré ; rançon refusée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Dauphiné — Une cyberattaque cible la compagnie des guides de Chamonix le jour de sa fête (16 août 2025)",
+      "url": "https://www.ledauphine.com/faits-divers-justice/2025/08/16/une-cyberattaque-cible-la-compagnie-des-guides-le-jour-de-sa-fete",
+      "kind": "article"
+    },
+    {
+      "label": "ici (Radio France) — La Compagnie des guides de Chamonix victime d’une attaque informatique, des informations personnelles volées (16 août 2025)",
+      "url": "https://www.ici.fr/auvergne-rhone-alpes/haute-savoie-74/chamonix-mont-blanc/la-compagnie-des-guides-de-chamonix-victime-d-une-attaque-informatique-des-informations-personnelles-volees-7817555",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: Compagnie des Guides de Chamonix (radar, 11 septembre 2025)",
+      "url": "https://www.ransomware.live/id/Q29tcGFnbmllIGRlcyBHdWlkZXMgZGUgQ2hhbW9uaXhAcmFkYXI",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le week-end du 9 au 15 août 2025, la Compagnie des Guides de Chamonix, plus vieille compagnie de guides au monde, subit une intrusion : après un faux lien ouvert par inadvertance, des pirates prennent le contrôle d’un poste donnant accès à la centrale de réservation et à des bases clients. Ils volent puis suppriment les données d’un serveur — principalement adresses e-mail — et tentent un chantage financier, que la compagnie refuse. Plainte est déposée à la gendarmerie de Chamonix ; les clients sont prévenus.",
+  "timeline": [
+    {
+      "date": "2025-08-15",
+      "event": "Intrusion constatée : vol puis suppression de données d’un serveur (adresses e-mail et informations associées), tentative de chantage."
+    },
+    {
+      "date": "2025-08-16",
+      "event": "La direction confirme l’attaque, prévient clients et partenaires, porte plainte à Chamonix."
+    },
+    {
+      "date": "2025-09-11",
+      "event": "Le groupe radar revendique l’attaque sur son site de fuite."
+    }
+  ],
+  "group": "radar"
+}

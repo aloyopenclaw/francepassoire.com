@@ -1,0 +1,52 @@
+{
+  "slug": "commune-de-berson-20250221",
+  "entity": "Commune de Berson (Gironde)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-21",
+    "publication": "2025-02-28",
+    "confirmation": "2025-02-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichiers municipaux chiffrés (état civil, urbanisme, factures, salaires) avec menace de publication sur Tor ; volume non chiffré, aucune exfiltration confirmée"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — « Même nos sauvegardes ne nous sont plus accessibles » : en Gironde, ce village victime d’une cyberattaque (28 février 2025)",
+      "url": "https://www.sudouest.fr/gironde/berson/meme-nos-sauvegardes-ne-nous-sont-plus-accessibles-en-gironde-ce-village-victime-d-une-cyberattaque-23443299.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Suite à une cyberattaque, une mairie de Gironde a perdu des données officielles : « On nous réclame une rançon » (1er mars 2025)",
+      "url": "https://actu.fr/nouvelle-aquitaine/berson_33047/suite-a-une-cyberattaque-une-mairie-de-gironde-a-perdu-des-donnees-officielles-on-nous-reclame-une-rancon_62315310.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Nouvelle-Aquitaine — « On pense que c’est un hackeur russe » : victime d’une cyberattaque, les services de la mairie sont paralysés (4 mars 2025)",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/on-pense-que-c-est-un-hackeur-russe-victime-d-une-cyberattaque-les-services-de-la-mairie-sont-paralyses-200-communes-touchees-3116668.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 20 au 21 février 2025, la mairie de Berson (1 800 habitants, Gironde) est victime d’un rançongiciel : tous les fichiers du serveur sont chiffrés, y compris les sauvegardes en ligne, et une rançon est exigée avec menace de publication des données sur Tor. Le maire porte plainte et refuse de payer. État civil, urbanisme, cadastre et comptabilité restent inaccessibles plusieurs semaines. La gendarmerie appelle les communes à ne rien payer ; France 3 rappelle que plus de 200 communes ont été attaquées sur un an.",
+  "timeline": [
+    {
+      "date": "2025-02-21",
+      "event": "Chiffrement des serveurs de la mairie, rançon exigée, menace de publication sur Tor ; les sauvegardes cloud sont aussi inaccessibles."
+    },
+    {
+      "date": "2025-02-28",
+      "event": "Plainte déposée à la gendarmerie de Blaye ; la presse relate la paralysie des services municipaux."
+    },
+    {
+      "date": "2025-03-24",
+      "event": "La commune annonce encore ne pas pouvoir accéder à une grande partie de ses données (cérémonies d’état civil)."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "ville-de-saint-claude-20251006",
+  "entity": "Ville de Saint-Claude (Jura)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-06",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données personnelles d’habitants et de touristes, documents financiers et plans d’immeubles revendiqués par Qilin ; volume inconnu, non confirmé par la commune"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim: ville-saintclaude.fr (Qilin, 6 octobre 2025)",
+      "url": "https://www.ransomware.live/id/dmlsbGUtc2FpbnRjbGF1ZGUuZnJAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "Dark Web Informer — Saint-Claude Town Hall Falls Victim to Qilin Ransomware (6 octobre 2025)",
+      "url": "https://darkwebinformer.com/saint-claude-town-hall-falls-victim-to-qilin-ransomware/",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — « On a reçu une demande de rançon » : des hackers russes connus attaquent les Pyrénées-Orientales (16 octobre 2025, cite Saint-Claude parmi les victimes)",
+      "url": "https://actu.fr/occitanie/elne_66065/on-a-recu-une-demande-de-rancon-des-hackers-russes-connus-attaquent-les-pyrenees-orientales_63306503.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 octobre 2025, le groupe Qilin inscrit la mairie de Saint-Claude (Jura, environ 8 500 habitants) sur son site de fuite et revendique le vol de données personnelles d’habitants et de touristes, de documents financiers et de plans. La revendication s’inscrit dans une salve d’octobre visant plusieurs collectivités françaises, dont Elne. La commune n’a pas confirmé publiquement l’exfiltration ; le volume revendiqué est inconnu.",
+  "timeline": [
+    {
+      "date": "2025-10-06",
+      "event": "Qilin revendique l’attaque de la mairie de Saint-Claude : données d’habitants, documents financiers et plans."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Nouvelle inscription « Commune de Saint Claude » dans la salve Qilin du 15 octobre visant une quarantaine d’organismes."
+    }
+  ],
+  "group": "qilin"
+}
