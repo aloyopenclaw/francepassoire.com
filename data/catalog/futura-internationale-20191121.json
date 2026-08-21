@@ -1,0 +1,49 @@
+{
+  "slug": "futura-internationale-20191121",
+  "entity": "Futura Internationale",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-11-21",
+    "publication": "2019-11-26",
+    "confirmation": "2019-11-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes démarchées non chiffré publiquement ; les fichiers contenaient des commentaires excessifs ou liés à la santé des clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL (archive) — FUTURA INTERNATIONALE : sanction de 500 000 euros pour démarchage téléphonique illégal",
+      "url": "http://web.archive.org/web/20191209210208/https://www.cnil.fr/fr/futura-internationale-sanction-de-500-000-euros-pour-demarchage-telephonique-illegal",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Monde Informatique — RGPD : amende de 500 K€ pour Futura Internationale (26 novembre 2019)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-rgpd-amende-de-500-keteuro-pour-futura-internationale-77202.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 novembre 2019, la formation restreinte de la CNIL a sanctionné Futura Internationale, spécialiste de l'isolation thermique des logements, d'une amende de 500 000 euros (délibération SAN-2019-010), rendue publique le 26 novembre. À la suite de la plainte d'une personne démarchée malgré l'exercice de son droit d'opposition, un contrôle avait relevé cinq manquements : absence de prise en compte du droit d'opposition, commentaires excessifs ou liés à la santé dans le fichier client, information insuffisante des personnes démarchées, défaut de coopération avec la CNIL et encadrement insuffisant des transferts vers des centres d'appels situés hors Union européenne. Le nombre de personnes concernées n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2019-11-21",
+      "event": "Délibération SAN-2019-010 : amende de 500 000 euros pour cinq manquements au RGPD liés au démarchage téléphonique."
+    },
+    {
+      "date": "2019-11-26",
+      "event": "La CNIL rend la décision publique et rappelle l’attention portée au respect du droit d’opposition au démarchage."
+    }
+  ]
+}

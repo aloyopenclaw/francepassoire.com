@@ -1,0 +1,32 @@
+{
+  "slug": "etablissement-public-gestion-usagers-20140925",
+  "entity": "Un établissement public (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-09-25",
+    "confirmation": "2014-09-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichiers de gestion des usagers ; volume non communiqué"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 septembre 2014, la CNIL a sanctionné un établissement public à la suite de contrôles sur sa gestion des usagers. Manquements relevés : durée de conservation des données excessive, défaut de sécurité et de confidentialité. Le type de sanction n'est pas précisé dans le tableau officiel, qui ne nomme pas l'entité. Les fichiers d'usagers des établissements publics comptent parmi les priorités de contrôle de la CNIL : ils contiennent des données d'identification, parfois sensibles, dont la conservation doit être limitée à la durée nécessaire aux finalités déclarées et l'accès restreint aux personnes habilitées.",
+  "timeline": [
+    {
+      "date": "2014-09-25",
+      "event": "Sanction pour durée de conservation excessive et défaut de sécurité dans la gestion des usagers."
+    }
+  ]
+}

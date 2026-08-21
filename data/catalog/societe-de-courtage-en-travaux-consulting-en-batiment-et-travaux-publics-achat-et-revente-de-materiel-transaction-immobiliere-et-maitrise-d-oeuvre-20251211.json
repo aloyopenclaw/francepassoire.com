@@ -1,0 +1,36 @@
+{
+  "slug": "societe-de-courtage-en-travaux-consulting-en-batiment-et-travaux-publics-achat-et-revente-de-materiel-transaction-immobiliere-et-maitrise-d-oeuvre-20251211",
+  "entity": "Société de courtage en travaux, consulting en bâtiment et travaux publics, achat et revente de matériel, transaction immobilière et maîtrise d'œuvre",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "confirmation": "2025-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 11 décembre 2025 la liquidation d'une astreinte de 3 000 euros contre la société de courtage en travaux déjà sanctionnée le 3 avril 2025, désignée anonymément dans le tableau officiel des sanctions. Cette décision sanctionne la non-exécution de l'injonction prononcée avec l'amende précédente. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-04-03",
+      "event": "Amende de 10 000 euros et injonction pour défaut d’information des personnes et défaut de coopération."
+    },
+    {
+      "date": "2025-12-11",
+      "event": "Liquidation d'une astreinte de 3 000 euros pour non-exécution de l'injonction."
+    }
+  ]
+}

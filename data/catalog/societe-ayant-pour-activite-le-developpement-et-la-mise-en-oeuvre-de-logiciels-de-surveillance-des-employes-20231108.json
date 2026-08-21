@@ -1,0 +1,32 @@
+{
+  "slug": "societe-ayant-pour-activite-le-developpement-et-la-mise-en-oeuvre-de-logiciels-de-surveillance-des-employes-20231108",
+  "entity": "Société ayant pour activité le développement et la mise en œuvre de logiciels de surveillance des employés",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-08",
+    "confirmation": "2023-11-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 8 novembre 2023 une amende de 20 000 euros contre une société développant et mettant en œuvre des logiciels de surveillance des employés, désignée anonymément dans le tableau officiel des sanctions. Le manquement retenu est un défaut de coopération avec la CNIL : la société n'a pas répondu à ses sollicitations dans le cadre de ses missions. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-11-08",
+      "event": "Amende de 20 000 euros pour défaut de coopération avec la CNIL."
+    }
+  ]
+}

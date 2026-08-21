@@ -1,0 +1,32 @@
+{
+  "slug": "etablissement-bancaire-ficp-20130619",
+  "entity": "Un établissement bancaire (entité non nommée)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-06-19",
+    "confirmation": "2013-06-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "inscriptions au FICP maintenues à tort ; nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 juin 2013, la CNIL a sanctionné un établissement bancaire pour défaut de mise à jour des données. La banque maintenait des inscriptions au fichier des incidents de remboursement des crédits aux particuliers alors que les personnes concernées avaient régularisé leur situation. Ces inscriptions obsolètes exposaient les clients à des refus de crédit injustifiés. Le type de sanction n'est pas précisé dans le tableau public des sanctions, qui ne nomme pas l'établissement. L'exactitude et la mise à jour des données figurent parmi les principes que la CNIL fait respecter en priorité auprès des acteurs bancaires.",
+  "timeline": [
+    {
+      "date": "2013-06-19",
+      "event": "Sanction pour maintien d'inscriptions FICP malgré la régularisation des situations : défaut de mise à jour des données."
+    }
+  ]
+}
