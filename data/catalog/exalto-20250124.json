@@ -1,0 +1,47 @@
+{
+  "slug": "exalto-20250124",
+  "entity": "Exalto (extranets e-licence des fédérations sportives)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-01-24"
+  },
+  "volume": {
+    "count": 4500000,
+    "unit": "enregistrements",
+    "label": "4,5 millions de données revendiquées par le pirate à travers huit fédérations clientes ; l'ampleur réelle de l'exfiltration n'est pas établie"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next — Fuites de données : les dessous de l'attaque contre des fédérations françaises de sport (MàJ 27 janvier 2025)",
+      "url": "https://next.ink/166951/fuites-de-donnees-les-dessous-de-lattaque-contre-des-federations-francaises-de-sport/",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Boxe, tir à l'arc, escalade… Les données de plusieurs fédérations sportives françaises piratées (24 janvier 2025)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/boxe-tir-a-l-arc-escalade-les-donnees-de-plusieurs-federations-sportives-francaises-piratees-7900465434",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Piratage massif des fédérations sportives françaises : 4,5 millions de données vendues",
+      "url": "https://www.zataz.com/piratage-massif-des-federations-sportives-francaises-45-millions-de-donnees-vendues/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 janvier 2025, un pirate prénommé « TheFrenchGuy » met en vente sur BreachForums les données de huit fédérations sportives françaises : boxe, sport automobile, motocyclisme, roller et skateboard, tir à l'arc, montagne et escalade, FSCF et force. Le pirate affirme avoir exploité une erreur de configuration chez un prestataire gérant les espaces licences de plusieurs fédérations. Le 27 janvier, Next identifie ce prestataire : Exalto, société diffusant son portail e-licence auprès d'une quarantaine de fédérations. Son président Jean-Carl Fossati confirme une attaque via des comptes utilisateurs compromis, présentée comme la première réussie en plus de vingt ans d'activité ; 45 fédérations sont clientes selon lui. Plusieurs fédérations (tir à l'arc, boxe, roller) reconnaissent de leur côté des violations de données. Le périmètre exact de l'exfiltration n'est pas établi.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "Mise en vente sur BreachForums de bases de huit fédérations sportives, attribuées à une faille chez un prestataire d'extranets licences."
+    },
+    {
+      "date": "2025-01-27",
+      "event": "Next identifie le prestataire Exalto ; son président confirme une attaque via des comptes compromis, la première réussie en plus de vingt ans."
+    }
+  ]
+}
