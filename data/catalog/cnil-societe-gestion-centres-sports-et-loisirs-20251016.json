@@ -1,0 +1,42 @@
+{
+  "slug": "cnil-societe-gestion-centres-sports-et-loisirs-20251016",
+  "entity": "Société exerçant une activité de gestion de centres de sports et de loisirs (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-16",
+    "publication": "2026-02-09",
+    "confirmation": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : société gérant des centres de sports et de loisirs, défaut de sécurité des données (16 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 16 octobre 2025, la CNIL a prononcé une amende de 20 000 euros assortie d'une injonction à l'encontre d'une société exerçant une activité de gestion de centres de sports et de loisirs, dans le cadre de la procédure simplifiée. Les manquements retenus portent notamment sur un défaut de sécurité des données, un défaut d'information des personnes et des manquements au régime des cookies. La dénomination de l'entité n'est pas publiée par l'autorité et la nature des données concernées n'est pas précisée. Les sanctions simplifiées de 2025 ont principalement visé la vidéosurveillance des salariés, les cookies et le non-respect des droits des personnes.",
+  "timeline": [
+    {
+      "date": "2025-10-16",
+      "event": "Amende de 20 000 euros et injonction (procédure simplifiée) : défaut de sécurité des données, information des personnes et cookies."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices."
+    }
+  ]
+}

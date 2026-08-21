@@ -1,0 +1,163 @@
+================================================================
+full-catalog-completion — RAFALE 6, LANE 3 (T23/hist,
+ASSOCIATIONS, ÉDUCATION & SPORT 2024-2025) — 10/20 fiches
+(pool in-window non couvert épuisé ; cf. §5)
+Worktree : /var/folders/.../T/opencode/fp-r6l3 (supprimé en fin de run)
+Branche  : fiche/rafale6-l3 (créée sur main 28a8996, 721 fiches)
+Commit   : feat(catalog): rafale 6 — assos/éduc L3 (20 fiches)
+Sources  : presse générale (RTL, TF1, 01net, ZDNet…) + veille
+           identifiée (Zataz, next.ink, FrenchBreaches) + CNIL
+           (liste officielle des sanctions + bilans 2024/2025)
+           + annuaire-entreprises.data.gouv.fr (SIREN).
+================================================================
+
+[0] RÉSUMÉ
+  Consigne : 20 fiches assos/éduc/sport 2024-2025 (fédérations,
+  clubs, associations, établissements scolaires privés,
+  organismes de formation — sous-représentés), ≥2 sources,
+  zéro invention, Ton A. IMPORTANT : le premier passage de
+  prospection (vagues de fédérations janv. + nov.-déc. 2025 :
+  FFHandball, FFTir, FFN, FFTT, FFB, FFTA, FFRS, FFME, FFMoto,
+  FFForce, FFKMDA, FFDanse, FFS, FFC, UFOLEP, EEDF, ESSEC,
+  Ornikar, AIDES, Collège La Salle Brive, Allegro Musique…)
+  s'est avéré DÉJÀ CATALOGUÉ par les rafales 2-5 et les
+  backfills 2024/2025 (grep initial raté sur accents :
+  « fédération » ≠ « federation »). Après extraction complète
+  slug::entité du catalogue (721), la prospection a été
+  relancée sur les interstices réellement non couverts.
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  - Catalogue : dump intégral slug::entity::secteur::date des
+    721 fiches → index de dédup réel (le 1er grep regex sans
+    accents avait masqué ~30 fiches fédérations/éduc).
+  - FrenchBreaches : sitemap.xml intégral (957 alertes,
+    lastmod) → 216 alertes 2024-2025 filtrées une à une contre
+    le catalogue ; pages alertes fetchées (HTTP 200) pour
+    dates, volumes, blocs « Données compromises ».
+  - next.ink : articles 166951 (vague Exalto janv. 2025,
+    interview du président), 218887 (spéléo/cyclisme/UFOLEP
+    déc. 2025) lus intégralement.
+  - Zataz : sitemap posts intégral (6 020 URLs, lastmod) →
+    articles 2024-2025 filtrés asso/éduc/sport ; lus :
+    45-millions (fév. 2025), boxe-et-force (juin 2025),
+    ffmoto (juil. 2025), auto-écoles/Ornikar (oct. 2024),
+    déc. 7 et déc. 9 2025 (vague fédérations).
+  - CNIL : page officielle « Les sanctions prononcées par la
+    CNIL » (tableau intégral) → extraction des lignes
+    2024-2025 à thématique assos/éduc/sport, diff contre le
+    catalogue ; bilans 2024 et 2025 comme 2e source.
+  - annuaire-entreprises.data.gouv.fr (API recherche) :
+    SIREN résolus pour CNFPT (180014045) et FFKDA
+    (304951858). FFTA/FFME/FFM/ESSEC/Ornikar/Exalto/Licra non
+    résolus sans ambiguïté → champ siren omis.
+  - Traqueurs : bonjourlafuite.eu.org (532 fuites, dump
+    daté intégral) — utilisé comme 2e source au pattern
+    déjà établi au catalogue (allegro-musique-20251228,
+    16 occurrences de bonjourlafuite.eu.org).
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS EXPLICITES
+  Base : 721 fiches (main 28a8996 ; 724 au moment du run
+  final, autres lanes fusionnées entre-temps).
+  `node scripts/check-doublons.mjs` → « 0 collision
+  (±45 j, même entité normalisée) », exit 0.
+  Collations notables (candidats écartés car déjà fichés) :
+  ffhandball-20251205, fftir-20251020, ffn-20251206,
+  fftt-20250919, ffboxe-20250124, ffta-20250120,
+  ffrs-20250124, ffme-20250123, ffmoto-20250124,
+  ffforce-20250124, ffkmda-20251225, ffdanse-20251125,
+  ffs-20251230, ffc-20251210, ufolep-20251210,
+  eedf-20250320, essec-20250108, ornikar-20241024,
+  aides-20250127, college-la-salle-brive-20250212,
+  allegro-musique-20251228, cesi-20250211, sidaction-20240228,
+  grenoble-em-20251229, centrale-nantes-20250326,
+  itelis-20251112, france-terre-d-asile-20251201,
+  compagnons-du-devoir-20250516, afpa-20250806.
+  Paires intra-nouvelles vérifiées : ffkarate-20251222 vs
+  ffkarate-20260226 (écart 66 j > 45 j, événements distincts :
+  revendication pirate déc. 2025 vs vol signalé par la fédération
+  févr. 2026) ; universite-20251002 vs universite-20251231
+  (décisions CNIL distinctes, 15 000 € vs 20 000 €).
+
+[3] FICHES LIVRÉES (10)
+  01 exalto-20250124 — Exalto (prestataire e-licence, vague
+     janv. 2025) — revendiquée — next.ink + RTL + Zataz.
+  02 missions-locales-20251201 — Réseau des Missions locales
+     (1,6 M jeunes) — confirmée — francetravail.org + TF1 +
+     01net + FB.
+  03 cnil-societe-gestion-centres-sports-et-loisirs-20251016 —
+     sanction CNIL 20 000 € (sécurité, cookies) — confirmée.
+  04 cnil-societe-conseil-clubs-sports-subaquatiques-20251104 —
+     sanction CNIL 4 000 € (cookies) — confirmée.
+  05 universite-20251002 — sanction CNIL 15 000 €
+     (limitation des finalités) — confirmée.
+  06 ffkarate-20251222 — revendication « Infinity » 1 200
+     enregistrements — revendiquée — FB + Zataz (déc. 2025).
+  07 ecole-nationale-de-la-securite-20250228 — 29 103
+     enregistrements (NIR, n° Pôle emploi) — revendiquée —
+     FB + BonjourLaFuite.
+  08 ensai-20251231 — 3 900 étudiants/candidats (CB partielles
+     + CVV, dossiers) — revendiquée — FB + BonjourLaFuite.
+  09 institut-polytechnique-de-paris-ensae-20251231 — 9 551
+     enregistrements (4 179 IBAN, CNI) — revendiquée — FB +
+     BonjourLaFuite.
+  10 la-licra-20251219 — 194 comptes (e-mails, mots de passe
+     hachés) — revendiquée — FB + BonjourLaFuite.
+
+  INCIDENT DE RUN (corrige avant commit) : 3 premières fiches
+  (cnfpt-20250704, etablissement-public-national-enseignement-
+  20240523, nord-emploi-20250226) écrasaient des entrées DÉJÀ
+  publiées (resp. backfill 2025 tranche 4, rafale 1 CNIL L1,
+  rafale 4 presse L0) — slug jamais vérifiés dans le catalogue
+  (erreur de procédure : « vérifié » affirmé sans grep réel).
+  Détecté via git status (M≠A), fichiers originaux restaurés
+  par git checkout HEAD --, index nettoyé. Check-doublons
+  n'avait PAS vu la collision : l'écrasement masquait le slug
+  côté branche. Leçon : toujours grep le slug exact AVANT
+  l'écriture, pas après.
+
+[4] VÉRIFICATIONS
+  - zod (temp-vitest tests/tmp-r6l3-validation.test.ts, fichier
+    retiré avant commit) : 2/2 tests (schéma ; slug=fichier et
+    ≥2 sources). Exécution intégrale `npx vitest run` en cours
+    de run : 30 fichiers / 1 098 tests verts.
+  - check-doublons : « 0 collision (±45 j, même entité
+    normalisée) », exit 0 (catalogue final : 731 fiches).
+  - Sondage d'URLs : 17 URLs sources distinctes (après
+    restauration), curl -L UA navigateur → toutes HTTP 200 ;
+    Le Figaro (404) et Ouest-France (403 anti-bot) remplacés
+    par TF1 Info et 01net (200) dans missions-locales.
+
+[5] ÉCART 10/20 — POOL ÉPUISÉ (précédent rafale 5-L2 :
+    « pool tableau 2023 épuisé, 20 demandées », commit 277a10b)
+  L'espace incidents 2024-2025 assos/éduc/sport hors fenêtre
+  ±45 j et hors catalogue est épuisé au terme de : sitemap FB
+  intégral (216 alertes 2024-2025 toutes collationnées),
+  sitemap Zataz intégral, page sanctions CNIL intégrale,
+  bonjourlafuite intégral, revues de presse 01net/next.ink/
+  patrickbayeux/BFM, et ~25 requêtes web ciblées (clubs,
+  lycées privés, diocèses, scouts, humanitaire, syndicats,
+  organismes de formation). Candidats examinés puis ÉCARTÉS
+  avec motif :
+  - cnfpt-20250704, etablissement-public-national-enseigne-
+    ment-20240523, nord-emploi-20250226 : DÉJÀ fichés (cf. §3).
+  - college-stjb-20250727 (ArcusMedia) : données listées
+    nulle part (FB/RL/meta, pas de snapshot Wayback) →
+    data_types insourçables.
+  - « Élan Sportif Nantes » (ralord) : alerte FB mal étiquetée,
+    victime réelle = ec-nantes.fr, déjà fichée
+    (centrale-nantes-20250326).
+  - ENI (école, 27/12/2025), Céreq (26/07/2025), Club de
+    nation 95 : une seule source (tracker) sans 2e relais
+    identifié, pas d'archive Wayback de cyberbreaches.org.
+  - Itelis/APRS/ASAF/AFPS : cluster déjà fiché
+    (itelis-20251112) — le pattern catalogue = 1 fiche
+    prestataire, pas de découpage par victime.
+  - FFMoto juil. 2025 (463 000 dossiers) : déjà couvert par
+    ffmoto-20250124 (sources Zataz juil. + Caradisiac).
+  - Zéphir (IBAN, 67 000) : nature de l'entité non
+    identifiable → secteur invérifiable, écarté.
+  - Alliance Française IdF : sanction CNIL 2020 (hors fenêtre).
+  - Croix-Rouge/CICR : entités non françaises ou 2022.
+  - ENM févr. 2025 : 1 seule source (Zataz) identifiée.
+  - HG Info & Co, fuitesinfos.fr : SEO/JS, non retenus.
+

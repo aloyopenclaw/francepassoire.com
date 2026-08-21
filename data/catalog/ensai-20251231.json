@@ -1,0 +1,40 @@
+{
+  "slug": "ensai-20251231",
+  "entity": "École nationale de la statistique et de l'analyse de l'information (ENSAI)",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-31",
+    "publication": "2025-12-31"
+  },
+  "volume": {
+    "count": 3900,
+    "unit": "personnes",
+    "label": "3 900 étudiants et candidats revendiqués ; volume non confirmé par l'école"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez l'ENSAI : données bancaires et dossiers d'inscription (31 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/ecole-nationale-de-la-statistique-et-de-l-analyse-de-l-information-ensai-b142df080c5a",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — École Nationale de la statistique et de l'analyse de l'information, 31 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 31 décembre 2025, une fuite de données attribuée à l'ENSAI, école publique de statistique implantée à Rennes, est recensée sur les traqueurs de fuites. Les données de 3 900 étudiants et candidats sont concernées selon la revendication : nom, prénom, e-mail, adresse postale, téléphone, photo d'identité, résultats d'évaluation et dossiers d'inscription, ainsi que des données de carte bancaire partielles avec cryptogramme visuel et date d'expiration. Cette publication s'inscrit dans une série de fuites touchant l'enseignement supérieur français fin 2025, dont une base de l'Institut Polytechnique de Paris mise en vente le même jour. L'école n'a pas communiqué publiquement et le volume annoncé n'est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2025-12-31",
+      "event": "Mise en circulation d'une base de 3 900 dossiers d'étudiants et candidats attribuée à l'ENSAI ; revendication non confirmée."
+    }
+  ]
+}

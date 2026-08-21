@@ -1,0 +1,38 @@
+{
+  "slug": "la-licra-20251219",
+  "entity": "Licra (Ligue internationale contre le racisme et l'antisémitisme)",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-19",
+    "publication": "2025-12-19"
+  },
+  "volume": {
+    "count": 194,
+    "unit": "personnes",
+    "label": "186 abonnés et 8 administrateurs d'une liste de diffusion ; volume restreint, non confirmé par l'association"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — La Licra exposée dans une fuite de données : intrusion et données d'une liste de diffusion (19 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/la-licra-e5c41befe466",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — La Licra, 19 décembre 2025, 186 abonnés et 8 administrateurs",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 décembre 2025, une fuite de données attribuée à la Licra, association de lutte contre le racisme et l'antisémitisme, est recensée sur les traqueurs de fuites. Les données exposées concernent un périmètre restreint : adresses e-mail, mots de passe hachés et niveaux d'accès de 186 abonnés et 8 administrateurs d'une liste de diffusion. La présence de mots de passe, même hachés, expose les personnes concernées à des attaques par remplissage d'identifiants si elles réutilisent leurs mots de passe. L'association n'a pas communiqué publiquement sur cette revendication, qui n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-12-19",
+      "event": "Mise en circulation des identifiants (e-mails, mots de passe hachés) de 194 comptes d'une liste de diffusion attribuée à la Licra."
+    }
+  ]
+}
