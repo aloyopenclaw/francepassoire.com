@@ -1,0 +1,52 @@
+{
+  "slug": "google-20140103",
+  "entity": "Google (Google Inc.)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-01-03",
+    "confirmation": "2014-01-03",
+    "publication": "2014-01-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire de 150 000 euros, montant maximal alors prononçable, et publication d’un communiqué sur google.fr"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d’État — Sanction prononcée par la CNIL à l’encontre de la société Google Inc. (dél. n° 2013-420 du 3 janvier 2014)",
+      "url": "https://www.conseil-etat.fr/actualites/sanction-prononcee-par-la-cnil-a-l-encontre-de-la-societe-google-inc",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next INpact — Pourquoi la CNIL a infligé une amende de 150 000 euros à Google (9 janvier 2014)",
+      "url": "https://next.ink/25894/85283-pourquoi-cnil-a-inflige-amende-150-000-euros-a-google/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 janvier 2014, la formation restreinte de la CNIL a sanctionné Google Inc. de 150 000 euros, montant maximal alors possible, après l’unification de ses règles de confidentialité intervenue le 1er mars 2012. L’autorité relève un défaut d’information sur les finalités des traitements, l’absence de consentement valable au dépôt de cookies, l’absence de durées de conservation et une combinaison des données de l’ensemble des services sans base légale. La CNIL a aussi ordonné l’affichage d’un communiqué sur google.fr ; le juge des référés du Conseil d’État a refusé de suspendre cette mesure.",
+  "timeline": [
+    {
+      "date": "2012-03-01",
+      "event": "Google fusionne en une politique unique les règles de confidentialité d’environ soixante services."
+    },
+    {
+      "date": "2014-01-03",
+      "event": "Sanction pécuniaire de 150 000 euros et injonction de publication d’un communiqué sur google.fr."
+    },
+    {
+      "date": "2014-01-09",
+      "event": "La sanction, rendue publique, est couverte par la presse spécialisée ; Google n’exclut pas un recours."
+    }
+  ]
+}

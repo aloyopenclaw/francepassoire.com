@@ -1,0 +1,48 @@
+{
+  "slug": "dailymotion-20180724",
+  "entity": "Dailymotion",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-07-24",
+    "confirmation": "2018-07-24",
+    "publication": "2018-08-02"
+  },
+  "volume": {
+    "count": 82500000,
+    "unit": "comptes",
+    "label": "82,5 millions d’adresses électroniques et 18,3 millions de mots de passe chiffrés extraits en 2016, selon la CNIL"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (archive) — Dailymotion : sanction de 50 000 € pour une atteinte à la sécurité des données des utilisateurs (2 août 2018)",
+      "url": "https://web.archive.org/web/20180817110729/https://www.cnil.fr/fr/dailymotion-sanction-de-50000eu-pour-une-atteinte-la-securite-des-donnees-des-utilisateurs",
+      "kind": "archive"
+    },
+    {
+      "label": "Numerama — Pourquoi la CNIL ne sanctionne Dailymotion qu’à hauteur de 50 000 euros (2 août 2018)",
+      "url": "https://www.numerama.com/politique/403048-piratage-et-vol-de-donnees-pourquoi-la-cnil-ne-sanctionne-dailymotion-qua-hauteur-de-50-000-euros.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 juillet 2018, la formation restreinte de la CNIL a sanctionné Dailymotion de 50 000 euros pour manquement à son obligation de sécurité. En décembre 2016, un article de presse avait révélé une fuite concernant la plateforme. Des attaquants avaient exploité des identifiants d’un compte administrateur stockés en clair sur l’outil de développement. Ils en avaient extrait 82,5 millions d’adresses électroniques et 18,3 millions de mots de passe chiffrés. La CNIL a tenu compte du caractère sophistiqué de l’attaque, de la coopération de la société et du nombre limité de catégories de données concernées.",
+  "timeline": [
+    {
+      "date": "2018-07-24",
+      "event": "Sanction pécuniaire de 50 000 euros : mots de passe d’administration en clair et accès distants insuffisamment sécurisés."
+    },
+    {
+      "date": "2018-08-02",
+      "event": "La CNIL rend la sanction publique et détaille le piratage de 2016 (82,5 millions d’adresses, 18,3 millions de mots de passe chiffrés)."
+    }
+  ]
+}
