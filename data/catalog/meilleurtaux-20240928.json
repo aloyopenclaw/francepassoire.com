@@ -1,0 +1,46 @@
+{
+  "slug": "meilleurtaux-20240928",
+  "entity": "Meilleurtaux",
+  "siren": "424264281",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-28",
+    "publication": "2024-09-30",
+    "confirmation": "2024-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non communiqué ; clients et prospects concernés ; identité, coordonnées postales et téléphoniques, situation familiale et professionnelle, revenus, date et pays de naissance, nationalité ; l'entreprise écarte mots de passe et données bancaires"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "BFM Tech&Co — Revenus, situation familiale… MeilleurTaux victime d'une fuite de données de ses clients (30 septembre 2024)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/revenus-situation-familiale-meilleur-taux-victime-d-une-fuite-de-donnees-de-ses-clients_AV-202409300553.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Le site Meilleurtaux a subi une cyberattaque, attention aux tentatives de phishing (30 septembre 2024)",
+      "url": "https://www.numerama.com/cyberguerre/1817354-le-site-meilleurtaux-a-subi-une-cyberattaque-attention-aux-tentatives-de-phishing.html",
+      "kind": "article"
+    },
+    {
+      "label": "InCyber — Meilleurtaux victime d'un vol de données, dont certaines très sensibles (10 octobre 2024)",
+      "url": "https://incyber.org/article/meilleurtaux-victime-vol-donnees-dont-certaines-tres-sensibles/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin septembre 2024, le courtier en crédits Meilleurtaux informe ses clients d'une « attaque externe » ayant touché les systèmes d'un franchisé. Les données exposées couvrent l'identité, les coordonnées, la situation familiale et professionnelle, les revenus, la date et le pays de naissance et la nationalité — de clients comme de prospects ; mots de passe et données bancaires sont écartés. L'entreprise confirme la fuite, lance une enquête avec des prestataires spécialisés et informe les personnes concernées. Le nombre de victimes n'est pas communiqué ; le niveau de détail financier expose à des tentatives d'hameçonnage ciblées.",
+  "timeline": [
+    {
+      "date": "2024-09-28",
+      "event": "Meilleurtaux envoie un e-mail à ses clients : une attaque externe sur les systèmes d'un franchisé a exposé leurs données personnelles."
+    },
+    {
+      "date": "2024-09-30",
+      "event": "L'entreprise confirme la fuite auprès de la presse ; enquête en cours avec des prestataires cybersécurité, personnes impactées informées."
+    }
+  ]
+}

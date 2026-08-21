@@ -1,0 +1,49 @@
+{
+  "slug": "conforama-20221106",
+  "entity": "Conforama",
+  "siren": "414819409",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-11-06",
+    "publication": "2022-11-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plus d'un téraoctet revendiqué par le groupe ALPHV/BlackCat, dont « bases clients et informations personnelles » et « données de cartes bancaires » selon son message ; Conforama France conteste : documents de 2015 à 2019 issus des seules filiales espagnole et portugaise ; personnes non chiffrées"
+  },
+  "data_types": ["identite", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Le Parisien — Vol de données : des hackers tentent de faire chanter Conforama (10 novembre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/vol-de-donnees-des-hackers-tentent-de-faire-chanter-conforama-10-11-2022-ZX2Z2KN76RBNJN7J73DYRCRCWA.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien — Vol de données : BlackCat menace Conforama (14 novembre 2022)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60264-vol-de-donnees-blackcat-menace-conforama.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNN Portugal — Conforama reage a ataque informático (14 novembre 2022)",
+      "url": "https://cnnportugal.iol.pt/conforama/ataque-informatico/conforama-reage-a-ataque-informatico-nao-temos-indicios-que-tenham-sido-acedidos-dados-sensiveis-de-clientes/20221114/637271bd0cf27230dc175776",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 novembre 2022, le groupe ALPHV, dit BlackCat, publie une note de revendication contre Conforama : plus d'un téraoctet dérobé, incluant selon lui documents financiers, « données de cartes bancaires de clients », bases clients et courriels internes, avec un ultimatum de 48 heures et un échantillon. Conforama France répond ne pas avoir constaté d'intrusion dans ses systèmes : les documents, anciens (2015-2019), proviendraient des filiales espagnole et portugaise. Conforama Iberia reconnaît de son côté « un accès non autorisé » sans indice de données clients sensibles touchées. L'ampleur réelle de la fuite n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2022-11-06",
+      "event": "ALPHV/BlackCat revendique le vol de plus d'un téraoctet et publie un échantillon de documents internes, avec 48 heures pour contacter."
+    },
+    {
+      "date": "2022-11-10",
+      "event": "Conforama France indique n'avoir constaté ni chiffrement ni demande de rançon et lance une enquête interne ; filiales ibériques évoquées."
+    },
+    {
+      "date": "2022-11-14",
+      "event": "Conforama Iberia reconnaît « un accès non autorisé au système » sans indice d'accès à des données sensibles de clients."
+    }
+  ]
+}

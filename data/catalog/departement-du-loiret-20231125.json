@@ -1,0 +1,50 @@
+{
+  "slug": "departement-du-loiret-20231125",
+  "entity": "Département du Loiret",
+  "siren": "224500017",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-13",
+    "publication": "2023-11-14",
+    "confirmation": "2023-11-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "240 Go de données revendiqués par LockBit 3.0, sur 170 To détenus par la collectivité selon le message de rançon ; fichiers publiés le 25 novembre, extraits de l'historique du site archives-loiret.fr ; aucune donnée sensible identifiée à ce stade selon le Département"
+  },
+  "data_types": ["documents"],
+  "sources": [
+    {
+      "label": "Département du Loiret — Cyberattaque contre le Département du Loiret (actualité officielle, 27 novembre 2023)",
+      "url": "https://www.loiret.fr/actualite/cyberattaque-contre-le-departement-du-loiret",
+      "kind": "officiel"
+    },
+    {
+      "label": "France 3 Centre-Val de Loire — Cyberattaque contre le département du Loiret : une rançon exigée après le vol de 240 gigaoctets de données (16 novembre 2023)",
+      "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/cyberattaque-contre-le-departement-du-loiret-une-rancon-exigee-apres-le-vol-de-240-gigaoctets-de-donnees-2873483.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberattaque au Loiret : une revendication du vol de 240 Go de données (14 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/366559398/Cyberattaque-au-Loiret-une-revendication-du-vol-de-240-Go-de-donnees",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 4 au 5 novembre 2023, une cyberattaque par rançongiciel paralyse le Département du Loiret : réseaux coupés, plainte, gendarmerie, parquet de Paris, CNIL et ANSSI saisis, investigation avec Orange Cyberdefense. Le 13 novembre, la vitrine de LockBit 3.0 revendique l'attaque et un vol de 240 Go, accompagné d'une demande de rançon. Le 25 novembre, des fichiers dérobés sont mis en ligne : l'analyse du Département montre qu'ils proviennent de l'historique du site archives-loiret.fr, sans donnée sensible identifiée à ce stade. Une cellule reste mobilisée pour d'éventuelles nouvelles divulgations.",
+  "timeline": [
+    {
+      "date": "2023-11-05",
+      "event": "Rançongiciel détecté le week-end du 4 au 5 novembre ; réseaux interrompus, plainte déposée, CNIL, ANSSI et parquet de Paris saisis."
+    },
+    {
+      "date": "2023-11-13",
+      "event": "LockBit 3.0 revendique le vol de 240 Go et exige une rançon ; le Département étudie la véracité du message."
+    },
+    {
+      "date": "2023-11-25",
+      "event": "Des fichiers dérobés sont publiés sur le dark web ; ils proviennent de l'historique du site archives-loiret.fr selon le Département."
+    }
+  ]
+}

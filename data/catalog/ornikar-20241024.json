@@ -1,0 +1,45 @@
+{
+  "slug": "ornikar-20241024",
+  "entity": "Ornikar",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-22",
+    "publication": "2024-10-24",
+    "confirmation": "2024-10-24"
+  },
+  "volume": {
+    "count": 4300000,
+    "unit": "comptes",
+    "label": "4,3 millions de comptes mis en vente sur un forum selon le chercheur SaxX ; Ornikar n'a pas précisé le nombre de clients touchés ; aucun mot de passe ni donnée bancaire selon l'entreprise"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "RTL — La plateforme d'auto-école en ligne Ornikar victime d'une fuite de données (24 octobre 2024)",
+      "url": "https://www.rtl.fr/actu/economie-consommation/la-plateforme-d-auto-ecole-en-ligne-ornikar-victime-d-une-fuite-de-donnees-7900432625",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — L'auto-école en ligne Ornikar victime à son tour d'une fuite de données (25 octobre 2024)",
+      "url": "https://www.clubic.com/actualite-541655-l-auto-ecole-en-ligne-ornikar-victime-a-son-tour-d-une-fuite-de-donnees-ce-que-l-on-sait.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale — Cybersécurité : l'auto-école en ligne Ornikar victime d'une fuite de données personnelles (24 octobre 2024, article archivé)",
+      "url": "https://web.archive.org/web/2024/https://www.usine-digitale.fr/article/cybersecurite-l-auto-ecole-en-ligne-ornikar-victime-d-une-fuite-de-donnees-personnelles.N2221131",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 24 octobre 2024, Ornikar informe ses clients d'une « intrusion externe » dans son système d'information : noms, prénoms, e-mails, numéros de téléphone, dates de naissance et adresses postales ont été exposés. L'entreprise écarte les mots de passe et les données bancaires, saisit la CNIL et renforce ses infrastructures. Deux jours plus tôt, un cybercriminel revendiquait l'attaque et mettait en vente une base de 4,3 millions de comptes, chiffre avancé par le chercheur SaxX et non confirmé par l'entreprise ; seuls trois profils avaient été diffusés en échantillon.",
+  "timeline": [
+    {
+      "date": "2024-10-22",
+      "event": "Un cybercriminel revendique l'intrusion et met en vente une base de 4,3 millions de comptes attribuée à Ornikar, avec un échantillon de trois profils."
+    },
+    {
+      "date": "2024-10-24",
+      "event": "Ornikar confirme l'intrusion à ses clients : identité et coordonnées exposées ; CNIL saisie et mesures de sécurité renforcées."
+    }
+  ]
+}

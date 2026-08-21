@@ -1,0 +1,54 @@
+{
+  "slug": "sfr-20240713",
+  "entity": "SFR",
+  "siren": "343059564",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-12",
+    "publication": "2024-07-14"
+  },
+  "volume": {
+    "count": 1445683,
+    "unit": "lignes",
+    "label": "1 445 683 lignes clients mises en vente sur un forum : noms, prénoms, numéros de téléphone, adresses postales incomplètes, coordonnées géographiques et dates de naissance selon l'annonce ; exfiltration datée du 7 juin 2024 selon le vendeur, non confirmée par SFR"
+  },
+  "data_types": ["identite", "coordonnees", "geolocalisation"],
+  "sources": [
+    {
+      "label": "01net — SFR piraté : 1,4 million de données d'abonnés auraient été dérobées (15 juillet 2024)",
+      "url": "https://www.01net.com/actualites/sfr-pirate-14-million-donnees-abonnes-derobees.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — SFR dans la tourmente : 1,4 million de données de clients de l'opérateur mis en vente par des cybercriminels (14 juillet 2024)",
+      "url": "https://www.clubic.com/actualite-532422-sfr-dans-la-tourmente-1-4-million-de-donnees-de-clients-de-l-operateur-mis-en-vente-par-des-cybercriminels.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — SFR : plus de 1,4 million de clients touchés par une fuite de données personnelles (15 juillet 2024)",
+      "url": "https://www.lesnumeriques.com/societe-numerique/sfr-plus-de-1-4-million-de-clients-touches-par-une-fuite-de-donnees-personnelles-n224143.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Une base de données SFR réapparaît dans le darkweb (9 août 2024)",
+      "url": "https://www.zataz.com/une-base-de-donnees-sfr-reapparait-dans-le-darkweb/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 juillet 2024, un cybercriminel pseudo « KevAdams » met en vente sur BreachForums une base présentée comme issue de SFR : 1 445 683 lignes clients, exfiltrées le 7 juin selon lui, avec noms, numéros de téléphone, adresses incomplètes, coordonnées géographiques et dates de naissance. La découverte est relayée par le chercheur SaxX puis par la presse. SFR ne confirme ni n'infirme la fuite. Début août, le service de veille ZATAZ constate que la base circule gratuitement sur plusieurs espaces du dark web ; l'opérateur n'a pas commenté publiquement ce volume.",
+  "timeline": [
+    {
+      "date": "2024-06-07",
+      "event": "Date d'exfiltration avancée par le vendeur pour la base de données clients mise en vente un mois plus tard, selon l'annonce relayée par le chercheur SaxX."
+    },
+    {
+      "date": "2024-07-12",
+      "event": "Une base de 1 445 683 lignes attribuées à SFR est mise en vente sur BreachForums ; SFR ne commente pas."
+    },
+    {
+      "date": "2024-08-09",
+      "event": "ZATAZ constate la diffusion gratuite de la base sur plusieurs espaces du dark web et fait fermer trois des sept stockages repérés."
+    }
+  ]
+}

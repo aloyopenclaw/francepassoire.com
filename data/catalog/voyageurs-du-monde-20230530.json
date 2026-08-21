@@ -1,0 +1,55 @@
+{
+  "slug": "voyageurs-du-monde-20230530",
+  "entity": "Voyageurs du Monde",
+  "siren": "315459016",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-30",
+    "publication": "2023-05-31",
+    "confirmation": "2023-05-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 8 000 photocopies de passeports publiées selon un expert, « 10 000 passeports » revendiqués par LockBit ; 2 % de la clientèle concernée selon le voyagiste (activité voyages collectifs) ; nombre de personnes non communiqué"
+  },
+  "data_types": ["identite", "coordonnees", "documents"],
+  "sources": [
+    {
+      "label": "Voyageurs du Monde — Communiqué « Cyber attack : additional information » (30 mai 2023)",
+      "url": "https://www.voyageursdumonde.fr/voyage-sur-mesure/Img/institutionnel/info-fi/data/2023/PR_VoyageursduMonde_300523.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — L'agence Voyageurs du monde victime d'une cyberattaque provoquant une fuite de milliers de passeports sur le darknet (6 juin 2023)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/info-franceinfo-l-agence-de-voyage-voyageurs-du-monde-victime-d-une-cyberattaque-provoquant-une-fuite-de-milliers-de-passeports-sur-le-darkweb_5870111.html",
+      "kind": "article"
+    },
+    {
+      "label": "TourMaG — Cyberattaque Voyageurs du Monde : « les données de certains passeports dérobées et publiées » (31 mai 2023)",
+      "url": "https://www.tourmag.com/Cyberattaque-Voyageurs-du-Monde-les-donnees-de-certains-passeports-derobees-et-publiees_a118880.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale — 8 000 passeports publiés en ligne après une cyberattaque contre Voyageurs du Monde (31 mai 2023, article archivé)",
+      "url": "https://web.archive.org/web/2023/https://www.usine-digitale.fr/article/8000-passeports-publies-en-ligne-apres-une-cyberattaque-contre-voyageurs-du-monde.N2137297",
+      "kind": "archive"
+    }
+  ],
+  "description": "Dans la nuit du 15 au 16 mai 2023, le voyagiste Voyageurs du Monde subit une attaque du groupe LockBit. Le groupe refuse de payer la rançon ; le 30 mai, LockBit publie environ 8 000 photocopies de passeports de clients — accompagnées de numéros de téléphone et d'adresses e-mail — ainsi que des documents internes, et revendique « 10 000 passeports ». Le voyagiste confirme la publication dans un communiqué : seules les données de l'activité voyages collectifs, soit 2 % de la clientèle, sont concernées, sans données biométriques ni bancaires. Le parquet de Paris ouvre une enquête pour extorsion en bande organisée.",
+  "timeline": [
+    {
+      "date": "2023-05-16",
+      "event": "Cyberattaque de LockBit dans la nuit du 15 au 16 mai ; l'entreprise active une cellule de crise et alerte la CNIL."
+    },
+    {
+      "date": "2023-05-30",
+      "event": "Après refus de la rançon, LockBit publie environ 8 000 passeports ; Voyageurs du Monde confirme la divulgation dans un communiqué."
+    },
+    {
+      "date": "2023-06-05",
+      "event": "Le parquet de Paris ouvre une enquête pour extorsion en bande organisée et association de malfaiteurs."
+    }
+  ]
+}

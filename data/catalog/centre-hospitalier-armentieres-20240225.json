@@ -1,0 +1,55 @@
+{
+  "slug": "centre-hospitalier-armentieres-20240225",
+  "entity": "Centre hospitalier d'Armentières",
+  "siren": "265906743",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-25",
+    "publication": "2024-02-27",
+    "confirmation": "2024-02-28"
+  },
+  "volume": {
+    "count": 300000,
+    "unit": "personnes",
+    "label": "« autour de 300 000 patients » selon l'hôpital — listes de coordonnées, dates de venue et secteurs de prise en charge ; le groupe Blackout revendique une base de 900 000 patients avec antécédents médicaux, non établie ; aucun dossier patient informatisé divulgué selon l'établissement"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "ICI par Radio France — Cyberattaque à l'hôpital d'Armentières : les fichiers dérobés concernent moins de 300 000 patients (28 février 2024)",
+      "url": "https://www.ici.fr/infos/sante-sciences/cyberattaque-a-l-hopital-d-armentieres-les-fichiers-derobes-concernent-moins-de-300-000-patients-9520460",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Cyberattaque à l'hôpital d'Armentières : les données des patients ont-elles été diffusées ? (27 février 2024)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/cyberattaque-a-l-hopital-d-armentieres-les-donnees-des-patients-ont-elles-ete-diffusees-7900357418",
+      "kind": "article"
+    },
+    {
+      "label": "Le Journal de Saône-et-Loire avec AFP — Cyberattaque à l'hôpital d'Armentières : les fichiers de 300 000 patients dérobés (28 février 2024)",
+      "url": "https://www.lejsl.com/faits-divers-justice/2024/02/28/cyberattaque-a-l-hopital-d-armentieres-les-fichiers-de-300-000-patients-derobes",
+      "kind": "article"
+    },
+    {
+      "label": "CERT Santé — Cyberattaque du centre hospitalier d'Armentières suite à la compromission d'un compte VPN (retour d'expérience)",
+      "url": "https://cyberveille.esante.gouv.fr/retours-d-experience/cyberattaque-du-centre-hospitalier-darmentieres-suite-la-compromission-dun",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Dans la nuit du 10 au 11 février 2024, un rançongiciel chiffre les serveurs du centre hospitalier d'Armentières après la compromission d'un compte VPN ; le plan blanc est déclenché et les urgences fermées 48 heures. Le 25 février, le groupe Blackout, qui réutilise des outils de LockBit, publie des fichiers en revendiquant une base de 900 000 patients avec antécédents médicaux. Le 28 février, l'hôpital établit que « autour de 300 000 patients » sont concernés, par des listes de coordonnées, dates de venue et secteurs de prise en charge ; aucun dossier patient informatisé n'est divulgué. La CNIL a ouvert une instruction après notification.",
+  "timeline": [
+    {
+      "date": "2024-02-11",
+      "event": "Rançongiciel déployé dans la nuit du 10 au 11 février via un compte VPN compromis ; plan blanc, urgences fermées 48 heures, plainte déposée."
+    },
+    {
+      "date": "2024-02-25",
+      "event": "Le groupe Blackout publie des fichiers et revendique une base de 900 000 patients avec adresses, téléphones et antécédents médicaux."
+    },
+    {
+      "date": "2024-02-28",
+      "event": "L'hôpital confirme que « autour de 300 000 patients » sont concernés par des listes de coordonnées ; la CNIL ouvre une instruction."
+    }
+  ]
+}

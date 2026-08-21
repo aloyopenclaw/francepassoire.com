@@ -1,0 +1,48 @@
+{
+  "slug": "intersport-20221205",
+  "entity": "Intersport France",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-12-05",
+    "publication": "2022-12-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non chiffré ; le groupe Hive publie un premier lot : passeports de salariés, bulletins de paie et listes d'informations sur des clients, principalement des magasins des Hauts-de-France ; attaque circonscrite à un groupement régional selon la direction"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Numerama — Des hackers criminels revendiquent une cyberattaque contre Intersport (6 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1201250-des-hackers-criminels-revendiquent-une-cyberattaque-contre-intersport.html",
+      "kind": "article"
+    },
+    {
+      "label": "DataBreachToday — Hive Ransomware Group Leaks Data From European Retailer (8 décembre 2022)",
+      "url": "https://www.databreachtoday.com/hive-ransomware-group-leaks-data-from-european-retailer-a-20667",
+      "kind": "article"
+    },
+    {
+      "label": "Bitdefender — Hive ransomware gang claims responsibility for attack on Intersport that left cash registers disabled (12 décembre 2022)",
+      "url": "https://www.bitdefender.com/en-gb/blog/hotforsecurity/hive-ransomware-gang-claims-responsibility-for-attack-on-intersport-that-left-cash-registers-disabled",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 novembre 2022, en pleine semaine du Black Friday, un rançongiciel du groupe Hive frappe Intersport : les caisses de magasins français sont bloquées et le personnel travaille à la main. La direction reconnaît une cyberattaque touchant « un groupement de magasins sur la région Nord », une « infime partie » des 780 magasins français. Le 5 décembre, Hive revendique l'opération sur son site et publie un premier lot : passeports de salariés, bulletins de paie et listes d'informations sur des clients, majoritairement des Hauts-de-France. L'enseigne indique ne pas croire à un accès aux données clients ; le volume publié n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2022-11-23",
+      "event": "Rançongiciel Hive détecté le 23 novembre, en semaine de Black Friday ; caisses et services bloqués dans des magasins du Nord."
+    },
+    {
+      "date": "2022-12-05",
+      "event": "Hive revendique l'attaque sur son site darknet et publie passeports, bulletins de paie et listes clients en échantillon."
+    },
+    {
+      "date": "2022-12-06",
+      "event": "La direction confirme une attaque circonscrite à un groupement régional et dit ne pas croire à un accès aux données clients."
+    }
+  ]
+}
