@@ -1,0 +1,42 @@
+{
+  "slug": "societe-campagnes-publicitaires-20241205",
+  "entity": "Société spécialisée dans l'élaboration et l'organisation de campagnes publicitaires (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-05",
+    "confirmation": "2024-12-05",
+    "publication": "2025-02-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société spécialisée dans l'élaboration et l'organisation de campagnes publicitaires (procédure simplifiée) », amende de 20 000 euros (5 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 décembre 2024, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société spécialisée dans l'élaboration et l'organisation de campagnes publicitaires, dans le cadre de la procédure simplifiée, au plafond des amendes de cette procédure. Manquements retenus : prospection commerciale par voie électronique sans consentement (article L. 34-5 CPCE), durées de conservation excessives et information insuffisante des personnes. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2024-12-05",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : prospection sans consentement, conservation excessive, information lacunaire."
+    },
+    {
+      "date": "2025-02-05",
+      "event": "Le bilan 2024 de la CNIL recense 41 sanctions simplifiées pour 715 500 euros au total."
+    }
+  ]
+}

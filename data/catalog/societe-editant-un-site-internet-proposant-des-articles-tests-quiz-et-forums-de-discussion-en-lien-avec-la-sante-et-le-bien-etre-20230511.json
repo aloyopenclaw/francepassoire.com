@@ -1,0 +1,32 @@
+{
+  "slug": "societe-editant-un-site-internet-proposant-des-articles-tests-quiz-et-forums-de-discussion-en-lien-avec-la-sante-et-le-bien-etre-20230511",
+  "entity": "Société éditant un site internet proposant des articles, tests, quiz et forums de discussion en lien avec la santé et le bien-être (dénomination retirée de la publication à l'issue du délai fixé par la décision)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-11",
+    "confirmation": "2023-05-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 380 000 euros (280 000 euros au titre du RGPD et 100 000 euros au titre des traceurs)"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 mai 2023, la CNIL a prononcé une amende de 380 000 euros à l'encontre d'une société éditant un site francophone d'articles, tests, quiz et forums sur la santé et le bien-être, à la suite d'une plainte d'une association. Les manquements retenus : durées de conservation excessives des réponses aux tests et des adresses IP, collecte de données de santé sans consentement, absence de contrat encadrant des responsabilités conjointes, sécurité insuffisante — protocole non chiffré et mots de passe mal protégés — et dépôt de cookies sans consentement valable. La décision ayant fixé un délai après lequel la société n'est plus identifiée, la dénomination est retirée du tableau officiel.",
+  "timeline": [
+    {
+      "date": "2023-05-11",
+      "event": "Amende de 380 000 euros : données de santé collectées sans consentement via des tests en ligne, conservation excessive et cookies non conformes."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "cosmospace-20240926",
+  "entity": "Cosmospace",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-26",
+    "confirmation": "2024-09-26",
+    "publication": "2024-10-10"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "plus de 1,5 million de personnes dans la base de données commune Cosmospace/Telemaque selon le communiqué CNIL"
+  },
+  "data_types": [
+    "coordonnees",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société proposant des services à distance d'art divinatoire », amende de 250 000 euros (26 septembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Voyance en ligne : sanctions de 250 000 et 150 000 euros à l'encontre des sociétés COSMOSPACE et TELEMAQUE (10 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/voyance-en-ligne-sanctions-de-250-000-et-150-000-euros-cosmospace-telemaque",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 septembre 2024, la CNIL a prononcé une amende de 250 000 euros à l'encontre de Cosmospace, société de voyance à distance par téléphone, en coopération avec une quinzaine d'autorités européennes. Manquements retenus : enregistrement systématique et intégral des appels, conservation des clients six ans après la relation commerciale, collecte de données sensibles (santé, orientation sexuelle, convictions) sans consentement explicite et prospection par mail et SMS sans consentement valable. La base commune avec Telemaque contient les données de plus de 1,5 million de personnes.",
+  "timeline": [
+    {
+      "date": "2024-09-26",
+      "event": "Amende de 250 000 euros : enregistrement systématique des appels, conservation excessive, données sensibles sans consentement."
+    },
+    {
+      "date": "2024-10-10",
+      "event": "La CNIL publie son communiqué : Cosmospace et Telemaque sanctionnées pour 250 000 et 150 000 euros, plus d'1,5 million de personnes concernées."
+    }
+  ]
+}

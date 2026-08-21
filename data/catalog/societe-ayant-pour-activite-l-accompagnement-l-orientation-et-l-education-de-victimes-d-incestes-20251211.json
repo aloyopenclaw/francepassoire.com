@@ -1,0 +1,37 @@
+{
+  "slug": "societe-ayant-pour-activite-l-accompagnement-l-orientation-et-l-education-de-victimes-d-incestes-20251211",
+  "entity": "Société ayant pour activité l'accompagnement, l'orientation et l'éducation de victimes d'incestes (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "confirmation": "2025-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume publié ; la décision vise des opérations de prospection commerciale par voie électronique"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2025, la CNIL a sanctionné d'une amende de 20 000 euros, assortie d'une injonction, une société d'accompagnement, d'orientation et d'éducation de victimes d'incestes, qu'elle n'a pas nommée. Trois manquements sont retenus : des opérations de prospection commerciale par voie électronique menées sans consentement valable, un défaut d'information des personnes et le non-respect du droit d'accès. Selon le bilan 2025 de la CNIL, la prospection, commerciale ou politique, a motivé dix décisions de sanction dans l'année.",
+  "timeline": [
+    {
+      "date": "2025-12-11",
+      "event": "La CNIL prononce une amende de 20 000 euros et une injonction contre une société d'accompagnement de victimes d'incestes, non nommée (prospection, information, droit d'accès)."
+    }
+  ]
+}

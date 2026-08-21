@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-une-activite-d-edition-de-journaux-20251229",
+  "entity": "Société exerçant une activité d'édition de journaux (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-29",
+    "confirmation": "2025-12-29",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2025, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société exerçant une activité d'édition de journaux, dans le cadre de la procédure simplifiée. Le manquement retenu porte sur le consentement des personnes au dépôt de cookies et autres traceurs. Le tableau officiel recense une seconde décision au même descripteur le même jour, assortie d'une injonction, prononcée à l'encontre d'une autre entité. Les traceurs constituent l'un des principaux sujets des sanctions 2025 selon le bilan de la CNIL. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-12-29",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : consentement aux cookies non recueilli conformément."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices."
+    }
+  ]
+}

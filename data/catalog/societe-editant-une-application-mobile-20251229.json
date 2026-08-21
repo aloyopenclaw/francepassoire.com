@@ -1,0 +1,42 @@
+{
+  "slug": "societe-editant-une-application-mobile-20251229",
+  "entity": "Société éditant une application mobile (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-29",
+    "confirmation": "2025-12-29",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 270 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2025, la CNIL a prononcé une amende de 270 000 euros à l'encontre d'une société éditant une application mobile, désignée anonymement dans le tableau officiel des sanctions. Trois familles de manquements sont retenues : défaut de sécurité des données, consentement non valable au traitement de données sensibles et méconnaissance des règles applicables aux cookies et autres traceurs. Ces motifs correspondent aux principaux sujets des sanctions 2025 recensés par la CNIL dans son bilan — cookies, sécurité des données et consentement. Le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-12-29",
+      "event": "Amende de 270 000 euros : sécurité défaillante, données sensibles et traceurs sans consentement valable."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices."
+    }
+  ]
+}

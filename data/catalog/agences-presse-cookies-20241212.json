@@ -1,0 +1,37 @@
+{
+  "slug": "agences-presse-cookies-20241212",
+  "entity": "Deux sociétés d'agences de presse (entités non nommées)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-12",
+    "confirmation": "2024-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; visiteurs des sites, volume non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 décembre 2024, la CNIL a prononcé deux amendes administratives de 5 000 euros chacune à l'encontre de deux sociétés exerçant des activités d'agences de presse, dans le cadre de la procédure simplifiée. Manquement retenu : l'absence de consentement des personnes pour le dépôt de cookies et autres traceurs. Les entités ne sont pas nommées, les sanctions simplifiées n'étant jamais rendues publiques. Le bilan 2024 de la CNIL recense onze organismes sanctionnés cette année-là pour des manquements liés aux cookies, dont le refus rendu plus complexe que l'acceptation.",
+  "timeline": [
+    {
+      "date": "2024-12-12",
+      "event": "Deux amendes de 5 000 euros (procédure simplifiée) pour défaut de consentement aux cookies et traceurs."
+    }
+  ]
+}

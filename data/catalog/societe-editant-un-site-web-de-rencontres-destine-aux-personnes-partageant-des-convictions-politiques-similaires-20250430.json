@@ -1,0 +1,42 @@
+{
+  "slug": "societe-editant-un-site-web-de-rencontres-destine-aux-personnes-partageant-des-convictions-politiques-similaires-20250430",
+  "entity": "Société éditant un site web de rencontres destiné aux personnes partageant des convictions politiques similaires (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-30",
+    "confirmation": "2025-04-30",
+    "publication": "2025-05-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dix nouvelles sanctions prononcées par la CNIL en 2025 dans le cadre de la procédure simplifiée (22 mai 2025)",
+      "url": "https://cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 avril 2025, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société éditant un site de rencontres destiné aux personnes partageant des convictions politiques similaires, dans le cadre de la procédure simplifiée. Les manquements retenus : durées de conservation excessives, consentement non valable pour le traitement de données sensibles — les opinions politiques —, défauts d'information et encadrement insuffisant des relations avec le sous-traitant. Cette décision figure parmi les dix sanctions simplifiées prononcées depuis janvier 2025, pour un montant cumulé de 104 000 euros.",
+  "timeline": [
+    {
+      "date": "2025-04-30",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : conservation excessive et données sensibles traitées sans consentement valable."
+    },
+    {
+      "date": "2025-05-22",
+      "event": "La CNIL publie le bilan de dix sanctions simplifiées prononcées en 2025, pour 104 000 euros cumulés."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "societe-diffusant-des-contenus-journalistiques-20240610",
+  "entity": "Société diffusant des contenus journalistiques (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-06-10",
+    "confirmation": "2024-06-10",
+    "publication": "2024-10-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 10 juin 2024, la CNIL a prononcé une amende de 3 000 euros assortie d'une injonction à l'encontre d'une société diffusant des contenus journalistiques, dans le cadre de la procédure simplifiée. Le manquement retenu porte sur l'information des personnes et le consentement aux cookies et autres traceurs. Cette décision figure parmi les onze sanctions simplifiées recensées par la CNIL depuis juin 2024, dont le montant cumulé atteint 129 000 euros et dont les principaux motifs sont la collecte excessive de données et la méconnaissance des règles applicables aux traceurs.",
+  "timeline": [
+    {
+      "date": "2024-06-10",
+      "event": "Amende de 3 000 euros et injonction (procédure simplifiée) : information et consentement aux cookies non conformes."
+    },
+    {
+      "date": "2024-10-08",
+      "event": "La CNIL publie le bilan de onze sanctions simplifiées depuis juin 2024, pour 129 000 euros cumulés."
+    }
+  ]
+}

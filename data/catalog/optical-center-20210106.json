@@ -1,0 +1,51 @@
+{
+  "slug": "optical-center-20210106",
+  "entity": "Optical Center",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-01-06",
+    "confirmation": "2021-01-06"
+  },
+  "volume": {
+    "count": 200000,
+    "unit": "personnes",
+    "label": "données d'environ 200 000 clients divulguées lors de l'attaque de janvier 2019, dont le numéro de Sécurité sociale pour 23 000 d'entre elles (délibération SAN-2021-001)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 449284 du 26 avril 2022 (délibération CNIL SAN-2021-001 confirmée)",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-04-26/449284",
+      "kind": "officiel"
+    },
+    {
+      "label": "eWatchers — L'opticien OPTICAL CENTER sanctionné pour n'avoir pas correctement sécurisé son site",
+      "url": "https://ewatchers.org/cnil/optical-center-2021-01-06-52",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 janvier 2019, Optical Center notifie à la CNIL une attaque contre son site de vente en ligne. Des données d'environ 200 000 clients sont divulguées : identité, coordonnées, date de naissance et, pour 23 000 personnes, le numéro de Sécurité sociale. Les contrôles de 2019 établissent l'absence de suivi du sous-traitant chargé de la sécurité du site et une politique de mots de passe trop faible. Le 6 janvier 2021, la formation restreinte prononce une amende de 250 000 euros et une injonction sous astreinte de 500 euros par jour pour manquements aux articles 12 et 32 du RGPD. Le Conseil d'État rejette le recours le 26 avril 2022.",
+  "timeline": [
+    {
+      "date": "2019-01-04",
+      "event": "Optical Center notifie à la CNIL une attaque ayant divulgué les données d'environ 200 000 clients de son site de vente en ligne."
+    },
+    {
+      "date": "2021-01-06",
+      "event": "Amende de 250 000 euros et injonction sous astreinte de 500 euros par jour (délibération SAN-2021-001)."
+    },
+    {
+      "date": "2022-04-26",
+      "event": "Le Conseil d'État rejette le recours de la société et confirme la sanction."
+    }
+  ]
+}

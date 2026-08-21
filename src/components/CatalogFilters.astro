@@ -1,23 +1,34 @@
 ---
 /**
  * Catalogue des fuites + filtres — îlot client.
- * Les cartes proviennent du catalogue validé : vide à ce stade, la grille
- * affiche l'état vide honnête « Catalogue en préparation ».
+ * Les 24 premières cartes sont rendues au build (SSR, liens /fiche/<slug>/) ;
+ * les filtres secteur/statut et « Afficher plus » travaillent côté client
+ * sur le jeu complet passé en props (define:vars). L'état vide n'existe que
+ * pour un filtre sans résultat : « Aucune fuite ne correspond à ces critères ».
  */
 export interface LeakCard {
   name: string;
   sector: string;
   size: string;
-  status: 'Revendiquée' | 'Confirmée';
+  status: string;
+  statusClasse: string;
   time: string;
+  url: string;
 }
 
 interface Props {
   items?: LeakCard[];
+  /** Cartes rendues au build — les suivantes via « Afficher plus ». */
+  initialCount?: number;
 }
 
-const { items = [] } = Astro.props;
-const isEmptyCatalog = items.length === 0;
+const { items = [], initialCount = 24 } = Astro.props;
+const step = 24;
+
+// Options de secteur dérivées du catalogue réel (libellés déjà résolus).
+const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
+  a.localeCompare(b, 'fr'),
+);
 ---
 <div class="flex flex-wrap items-center gap-4 mb-8 bg-brand-cream border-2 border-brand-ink rounded-passoire p-4 shadow-hard-sm">
   <span class="font-display font-bold flex items-center gap-2">
@@ -26,10 +37,9 @@ const isEmptyCatalog = items.length === 0;
   </span>
   <select id="filter-secteur" aria-label="Filtrer par secteur" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
     <option value="all">Tous secteurs</option>
-    <option value="Santé">Santé</option>
-    <option value="Retail">Retail</option>
-    <option value="Recherche publique">Recherche publique</option>
-    <option value="Public">Public</option>
+    {secteurs.map((secteur) => (
+      <option value={secteur}>{secteur}</option>
+    ))}
   </select>
   <select id="filter-statut" aria-label="Filtrer par statut" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
     <option value="all">Tous statuts</option>
@@ -40,39 +50,66 @@ const isEmptyCatalog = items.length === 0;
 </div>
 
 <div id="leaks-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 mb-12">
-  {isEmptyCatalog && (
-    <div class="col-span-full bg-brand-cream border-2 border-dashed border-brand-ink rounded-passoire p-8 sm:p-12 text-center">
-      <h3 class="font-display font-extrabold text-2xl mb-2">Catalogue en préparation</h3>
-      <p class="font-body text-brand-ink/70 max-w-xl mx-auto leading-relaxed">
-        Aucune fiche n'est publiée pour l'instant : les premières fuites recensées arriveront
-        une fois passées par notre vérification en 4 étapes. Aucune donnée inventée ici.
-      </p>
-      <a href="/methode/" class="inline-block mt-4 font-mono text-sm font-bold underline hover:text-brand-orange">→ comprendre la méthode de vérification</a>
-    </div>
-  )}
+  {items.slice(0, initialCount).map((card) => (
+    <a href={card.url} class="block bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard p-6 card-hover transition-all">
+      <div>
+        <div class="flex justify-between items-start mb-4 gap-2">
+          <span class="font-mono text-sm font-bold border-b-2 border-brand-ink pb-1">{card.sector}</span>
+          <span class="font-mono text-sm text-brand-ink/60">{card.time}</span>
+        </div>
+        <h3 class="font-display font-extrabold text-2xl mb-2 line-clamp-2">{card.name}</h3>
+        <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6">{card.size}</p>
+      </div>
+      <span class={`${card.statusClasse} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm inline-flex items-center gap-1.5`}>
+        <span class={`block w-2 h-2 rounded-full ${card.status === 'Confirmée' ? 'bg-brand-cream' : 'bg-brand-ink motion-safe:animate-pulse'}`} aria-hidden="true"></span>
+        {card.status}
+      </span>
+    </a>
+  ))}
 </div>
 
-<script define:vars={{ items }}>
+{items.length > initialCount && (
+  <div class="flex justify-center mb-12">
+    <button id="leaks-more" type="button" class="bg-brand-cream text-brand-ink px-6 py-3 rounded-passoire border-2 border-brand-ink shadow-hard hover:bg-brand-paper btn-press transition-all font-display font-bold text-lg flex items-center gap-2">
+      <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      Afficher plus
+    </button>
+  </div>
+)}
+
+<script define:vars={{ items, initialCount, step }}>
   const grid = document.getElementById('leaks-grid');
   const filterSecteur = document.getElementById('filter-secteur');
   const filterStatut = document.getElementById('filter-statut');
   const resetButton = document.getElementById('filter-reset');
+  const moreButton = document.getElementById('leaks-more');
   if (grid && filterSecteur && filterStatut && resetButton) {
-    const prepState = () => {
-      const prep = document.createElement('div');
-      prep.className = 'col-span-full bg-brand-cream border-2 border-dashed border-brand-ink rounded-passoire p-8 sm:p-12 text-center';
-      const h3 = document.createElement('h3');
-      h3.className = 'font-display font-extrabold text-2xl mb-2';
-      h3.textContent = 'Catalogue en préparation';
-      const p = document.createElement('p');
-      p.className = 'font-body text-brand-ink/70 max-w-xl mx-auto leading-relaxed';
-      p.textContent = "Aucune fiche n'est publiée pour l'instant : les premières fuites recensées arriveront une fois passées par notre vérification en 4 étapes. Aucune donnée inventée ici.";
+    let visible = initialCount;
+
+    const card = (leak) => {
+      const isConfirm = leak.status === 'Confirmée';
       const a = document.createElement('a');
-      a.href = '/methode/';
-      a.className = 'inline-block mt-4 font-mono text-sm font-bold underline hover:text-brand-orange';
-      a.textContent = '→ comprendre la méthode de vérification';
-      prep.append(h3, p, a);
-      return prep;
+      a.href = leak.url;
+      a.className = 'block bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard p-6 card-hover transition-all';
+      a.innerHTML = `
+        <div>
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <span class="font-mono text-sm font-bold border-b-2 border-brand-ink pb-1"></span>
+            <span class="font-mono text-sm text-brand-ink/60"></span>
+          </div>
+          <h3 class="font-display font-extrabold text-2xl mb-2 line-clamp-2"></h3>
+          <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6"></p>
+        </div>
+        <span class="${leak.statusClasse} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm inline-flex items-center gap-1.5">
+          <span class="block w-2 h-2 rounded-full ${isConfirm ? 'bg-brand-cream' : 'bg-brand-ink motion-safe:animate-pulse'}" aria-hidden="true"></span>
+        </span>`;
+      const header = a.firstElementChild.firstElementChild;
+      header.children[0].textContent = leak.sector;
+      header.children[1].textContent = leak.time;
+      a.querySelector('h3').textContent = leak.name;
+      a.querySelector('p').textContent = leak.size;
+      a.lastElementChild.append(leak.status);
+      return a;
     };
 
     const noMatchState = () => {
@@ -82,56 +119,47 @@ const isEmptyCatalog = items.length === 0;
       return d;
     };
 
-    const card = (leak) => {
-      const isConfirm = leak.status === 'Confirmée';
-      const el = document.createElement('article');
-      el.className = 'bg-brand-cream border-2 border-brand-ink rounded-passoire shadow-hard p-6 flex flex-col justify-between h-full cursor-default opacity-90 transition-all';
-      el.innerHTML = `
-        <div>
-          <div class="flex justify-between items-start mb-4">
-            <span class="font-mono text-sm font-bold border-b-2 border-brand-ink pb-1 inline-block"></span>
-            <span class="text-sm font-mono text-brand-ink/60"></span>
-          </div>
-          <h3 class="font-display font-extrabold text-2xl mb-2 line-clamp-2"></h3>
-          <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6"></p>
-        </div>
-        <div class="flex justify-between items-end mt-auto">
-          <span class="${isConfirm ? 'pill-confirmee' : 'pill-revendiquee'} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm flex items-center gap-1.5 w-max">${isConfirm ? 'Confirmée' : 'Revendiquée'}</span>
-        </div>`;
-      el.querySelector('span.font-mono.text-sm.font-bold').textContent = leak.sector;
-      el.querySelector('.text-brand-ink\\/60').textContent = leak.time;
-      el.querySelector('h3').textContent = leak.name;
-      el.querySelector('p.font-mono.text-lg').textContent = leak.size;
-      return el;
+    const filtered = () =>
+      items.filter((leak) =>
+        (filterSecteur.value === 'all' || leak.sector === filterSecteur.value) &&
+        (filterStatut.value === 'all' || leak.status === filterStatut.value)
+      );
+
+    // Met à jour le bouton sans toucher à la grille (l'état SSR reste intact
+    // jusqu'à la première interaction filtre).
+    const updateMore = () => {
+      if (!moreButton) return;
+      const total = filtered().length;
+      if (total > visible) {
+        moreButton.classList.remove('hidden');
+        moreButton.lastChild.textContent = ` Afficher plus (${total - visible} restantes)`;
+      } else {
+        moreButton.classList.add('hidden');
+      }
     };
 
-    const render = (data) => {
+    const render = () => {
+      const data = filtered().slice(0, visible);
       grid.replaceChildren();
-      if (items.length === 0) {
-        grid.append(prepState());
-        return;
-      }
       if (data.length === 0) {
         grid.append(noMatchState());
-        return;
+      } else {
+        data.forEach((leak) => grid.append(card(leak)));
       }
-      data.forEach((leak) => grid.append(card(leak)));
+      updateMore();
     };
 
-    const applyFilters = () => {
-      const sVal = filterSecteur.value;
-      const stVal = filterStatut.value;
-      render(items.filter((leak) =>
-        (sVal === 'all' || leak.sector === sVal) && (stVal === 'all' || leak.status === stVal)
-      ));
-    };
-
-    filterSecteur.addEventListener('change', applyFilters);
-    filterStatut.addEventListener('change', applyFilters);
+    updateMore();
+    filterSecteur.addEventListener('change', () => { visible = step; render(); });
+    filterStatut.addEventListener('change', () => { visible = step; render(); });
     resetButton.addEventListener('click', () => {
       filterSecteur.value = 'all';
       filterStatut.value = 'all';
-      render(items);
+      visible = step;
+      render();
     });
+    if (moreButton) {
+      moreButton.addEventListener('click', () => { visible += step; render(); });
+    }
   }
 </script>

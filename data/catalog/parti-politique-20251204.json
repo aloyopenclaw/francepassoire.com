@@ -1,0 +1,37 @@
+{
+  "slug": "parti-politique-20251204",
+  "entity": "Parti politique (procédure simplifiée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-04",
+    "confirmation": "2025-12-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; la CNIL n'a pas nommé le parti sanctionné"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 4 décembre 2025, la CNIL a prononcé une amende de 5 000 euros et une injonction à l'encontre d'un parti politique, non nommé dans la décision publiée. Trois manquements sont retenus : une durée de conservation excessive des données, le non-respect du droit d'accès et un défaut de sécurité des données. La sanction a été prononcée dans le cadre de la procédure simplifiée. Le bilan annuel de la CNIL recense 83 sanctions en 2025, dont quatorze pour la non-prise en compte de demandes d'effacement, d'opposition ou d'accès.",
+  "timeline": [
+    {
+      "date": "2025-12-04",
+      "event": "La CNIL prononce une amende de 5 000 euros et une injonction contre un parti politique non nommé (conservation, droit d'accès, sécurité des données)."
+    }
+  ]
+}

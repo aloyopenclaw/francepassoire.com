@@ -1,0 +1,47 @@
+{
+  "slug": "societe-gestion-immobiliere-contenus-journalistiques-20240627",
+  "entity": "Société spécialisée en gestion immobilière et en exploitation commerciale, diffusant des contenus journalistiques (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-06-27",
+    "confirmation": "2024-06-27",
+    "publication": "2024-10-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 12 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société spécialisée en gestion immobilière et en exploitation commerciale, société diffusant des contenus journalistiques (procédure simplifiée) », amende de 12 000 euros (27 juin 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 juin 2024, la CNIL a prononcé une amende de 12 000 euros à l'encontre d'une société spécialisée en gestion immobilière et exploitation commerciale qui diffuse des contenus journalistiques, dans le cadre de la procédure simplifiée. Manquement retenu : information des personnes et consentement pour les cookies, constatés lors de contrôles en ligne. La dénomination n'est pas publiée. Le communiqué du 8 octobre 2024 recense onze sanctions simplifiées depuis juin 2024, dont l'absence de refus des cookies aussi simple que l'acceptation.",
+  "timeline": [
+    {
+      "date": "2024-06-27",
+      "event": "Amende de 12 000 euros (procédure simplifiée) : information et consentement cookies non conformes."
+    },
+    {
+      "date": "2024-10-08",
+      "event": "La CNIL publie un communiqué sur onze sanctions simplifiées depuis juin 2024, pour 129 000 euros."
+    }
+  ]
+}

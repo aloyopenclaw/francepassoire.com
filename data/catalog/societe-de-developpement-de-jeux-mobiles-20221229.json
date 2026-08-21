@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-developpement-de-jeux-mobiles-20221229",
+  "entity": "Société de développement de jeux mobiles",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-29",
+    "confirmation": "2022-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 3 millions d'euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de développement de jeux mobiles », Amende de 3 millions d'euros (29 décembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2022 de l’action de la CNIL (31 janvier 2023)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2022-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2022, la CNIL a prononcé une amende de 3 millions d'euros à l'encontre d'une société de développement de jeux mobiles, désignée de façon anonymisée dans la liste officielle. Le manquement retenu porte sur le consentement des personnes pour les cookies et autres traceurs. La dénomination n'est pas publiée. Ce montant figure parmi les 21 sanctions prononcées par la CNIL en 2022, pour un total de 101 277 900 euros d'amendes selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2022-12-29",
+      "event": "La CNIL prononce une amende de 3 millions d'euros pour manquement au consentement des personnes (cookies et traceurs)."
+    },
+    {
+      "date": "2023-01-31",
+      "event": "Le bilan 2022 de la CNIL recense 21 sanctions pour 101 277 900 euros d'amendes cumulées."
+    }
+  ]
+}
