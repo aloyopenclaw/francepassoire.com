@@ -49,5 +49,6 @@
       "date": "2026-03-02",
       "event": "L'UNSS confirme le piratage ; la presse révèle l'exposition de données de collégiens et lycéens sur le darknet."
     }
-  ]
+  ],
+  "group": "dumpsec"
 }

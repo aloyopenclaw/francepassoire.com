@@ -64,5 +64,6 @@
       "date": "2022-09-23",
       "event": "LockBit diffuse une archive d'environ 11,7 Go ; le CHSF confirme le 25 la diffusion et la nature des données concernées."
     }
-  ]
+  ],
+  "group": "lockbit"
 }

@@ -57,5 +57,6 @@
       "date": "2022-09-06",
       "event": "Univers Freebox relaie l'analyse ZATAZ d'un fichier de 64 Mo contenant 533 000 données clients, dont des numéros de compte bancaire."
     }
-  ]
+  ],
+  "group": "lockbit"
 }

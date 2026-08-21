@@ -40,5 +40,6 @@
       "date": "2026-03-07",
       "event": "HexDex revendique 161 Go (1,2 M documents, 327 M lignes) issus de Synlab France et propose la base à la vente ; aucun échantillon de dossier patient n'est établi."
     }
-  ]
+  ],
+  "group": "hexdex"
 }
