@@ -1,0 +1,55 @@
+{
+  "slug": "gers-20240828",
+  "entity": "GERS (Groupement pour l'élaboration et la réalisation de statistiques, groupe Cegedim)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-28",
+    "confirmation": "2024-08-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "4 millions de codes patients et 13,4 millions de consultations dans la base « Thin » fin mars 2021, selon le Conseil d'État"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETE SPECIALISEE DANS LA REALISATION D'ETUDES STATISTIQUES EN MATIERE DE DONNEES DE SANTE », amende de 800 000 euros (28 août 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 498628 du 13 février 2026 (GERS, GERS venant aux droits de Santestat, Cegedim Santé) : délibération SAN-2024-010, amende de 800 000 euros confirmée",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-02-13/498628",
+      "kind": "officiel"
+    },
+    {
+      "label": "GERS SAS (communiqué, 3 octobre 2024) — Création de l'entrepôt de données de santé SOG Health dédié à la recherche, autorisé par la CNIL",
+      "url": "https://www.gers-sas.com/Communiques/GERS-SAS_EDS_SOG_HEALTH_03102024_FR.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Life Avocats (5 mars 2026) — Données de santé et anonymisation : le Conseil d'État confirme les sanctions visant les sociétés du groupe CEGEDIM",
+      "url": "https://www.life-avocats.com/donnees-de-sante-et-anonymisation-le-conseil-detat-confirme-les-sanctions-visant-les-societes-du-groupe-cegedim-ce-13-fevr-2026-n-498628/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 août 2024, la formation restreinte de la CNIL a sanctionné le GERS, société du groupe Cegedim, d'une amende de 800 000 euros pour avoir traité des données de santé sans autorisation. Selon le Conseil d'État, la base « Thin », alimentée par des données issues de logiciels médicaux, contenait fin mars 2021 13,4 millions de consultations liées à 4 millions de codes patients. La CNIL a qualifié ces données de pseudonymisées, donc réidentifiables, et d'entrepôt de données de santé soumis à autorisation. Le 13 février 2026, le Conseil d'État a rejeté le recours et confirmé l'amende. En octobre 2024, le GERS a reçu une autorisation pour un nouvel entrepôt.",
+  "timeline": [
+    {
+      "date": "2024-08-28",
+      "event": "Délibération SAN-2024-010 : amende de 800 000 euros pour absence de demande d'autorisation d'entrepôt de données de santé."
+    },
+    {
+      "date": "2024-10-03",
+      "event": "Le GERS annonce la création de l'entrepôt SOG Health, autorisé par la CNIL, à partir de données pseudonymes de pharmacies."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "Le Conseil d'État rejette les recours du groupe Cegedim et confirme les amendes de 800 000 et 200 000 euros."
+    }
+  ]
+}

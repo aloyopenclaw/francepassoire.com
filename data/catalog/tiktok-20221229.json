@@ -1,0 +1,52 @@
+{
+  "slug": "tiktok-20221229",
+  "entity": "TikTok (TikTok Information Technologies UK et TikTok Ireland)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-29",
+    "publication": "2023-01-12",
+    "confirmation": "2022-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "13,9 millions de visiteurs uniques en France selon la délibération relayée par Armingaud Avocat, dont 38 % de 13-17 ans ; contrôles de mai 2020 à juin 2022"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Lettre d'information n° 13, janvier 2023 : cookies, la CNIL sanctionne TIKTOK à hauteur de 5 millions d'euros",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/lettre_information_cnil_janvier_2023.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETES EXPLOITANT UNE GAMME DE PLATEFORMES DE DISTRIBUTION DE CONTENUS », amende de 5 millions d'euros (29 décembre 2022, SAN-2022-027)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Armingaud Avocat — Délibération de la formation restreinte n° SAN-2022-027 du 29 décembre 2022 (texte intégral)",
+      "url": "https://armingaud-avocat.fr/SiteMap/2-Case-Law/Sanctions-CNIL/CNIL---D%C3%A9lib%C3%A9ration-de-la-formation-restreinte-n%C2%B0SAN-2022-027-du-29-d%C3%A9cembre-2022",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques (12 janvier 2023) — La Cnil inflige à TikTok une amende de 5 millions d'euros, une première",
+      "url": "https://www.lesnumeriques.com/vie-du-net/la-cnil-inflige-a-tiktok-une-amende-de-5-millions-d-euros-une-premiere-n203385.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 décembre 2022, la CNIL a sanctionné TikTok de 5 millions d'euros au total pour ses cookies : 2,5 millions contre TikTok Information Technologies UK, 2,5 millions contre TikTok Ireland. Selon la lettre d'information de la CNIL, refuser les cookies exigeait au moins trois clics contre un pour accepter, jusqu'au bouton « Tout refuser » de février 2022. L'information sur les finalités des traceurs a aussi été jugée insuffisamment précise. La décision, rendue publique le 12 janvier 2023, ne vise que le site tiktok.com, pas l'application. Selon la décision relayée par Armingaud Avocat, 13,9 millions de visiteurs uniques français étaient concernés, dont 38 % de 13-17 ans.",
+  "timeline": [
+    {
+      "date": "2022-12-29",
+      "event": "Délibération SAN-2022-027 : 2 × 2,5 millions d'euros contre les entités TikTok UK et TikTok Ireland (cookies)."
+    },
+    {
+      "date": "2023-01-12",
+      "event": "La sanction est rendue publique ; elle ne concerne que le site tiktok.com, pas l'application mobile."
+    }
+  ]
+}

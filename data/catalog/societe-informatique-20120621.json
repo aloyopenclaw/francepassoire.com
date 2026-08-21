@@ -1,0 +1,37 @@
+{
+  "slug": "societe-informatique-20120621",
+  "entity": "Une société informatique (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-06-21",
+    "confirmation": "2012-06-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; avertissement public, sans sanction pécuniaire"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETE INFORMATIQUE », défaut de sécurité et de confidentialité (21 juin 2012, délibération n° 2012-176)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 21/06/2012 — avertissement public, thème « Travail »",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 21 juin 2012, la CNIL a prononcé un avertissement public à l'encontre d'une société informatique, pour défaut de sécurité et de confidentialité des données. Le tableau officiel rattache la décision au thème du travail : les faits concernaient des données de personnel. La délibération n° 2012-176 est citée par la liste officielle des sanctions ; sa fiche Légifrance d'origine n'est plus accessible. La dénomination de la société n'est pas publique et le volume de données n'est pas précisé. La version archivée de 2018 de la liste officielle confirme le type de décision : avertissement public, sans sanction pécuniaire.",
+  "timeline": [
+    {
+      "date": "2012-06-21",
+      "event": "Avertissement public de la CNIL : défaut de sécurité et de confidentialité des données, dans un contexte de données du travail."
+    }
+  ]
+}

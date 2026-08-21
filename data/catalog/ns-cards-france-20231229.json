@@ -1,0 +1,49 @@
+{
+  "slug": "ns-cards-france-20231229",
+  "entity": "NS Cards France (service de paiement en ligne Neosurf)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-29",
+    "publication": "2024-01-11",
+    "confirmation": "2023-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 700 000 comptes utilisateurs au moment des contrôles de 2021, selon la délibération SAN-2023-023 relayée par Armingaud Avocat ; près de 50 000 mots de passe conservés en clair"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIETE PERMETTANT D'EFFECTUER DES PAIEMENTS EN LIGNE », amende de 105 000 euros (29 décembre 2023, SAN-2023-023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Armingaud Avocat — Délibération de la formation restreinte n° SAN-2023-023 du 29 décembre 2023 concernant la société NS CARDS FRANCE (texte intégral)",
+      "url": "https://armingaud-avocat.fr/SiteMap/2-Case-Law/Sanctions-CNIL/CNIL---D%C3%A9lib%C3%A9ration-de-la-formation-restreinte-n%C2%B0SAN-2023-023-du-29-d%C3%A9cembre-2023-concernant-la-soci%C3%A9t%C3%A9-NS-CARDS-FRANCE",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique (11 janvier 2024) — La Cnil inflige 105 000 € d'amende à NS Cards France",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-la-cnil-inflige-105-000-eteuro-d-amende-a-ns-cards-france-92639.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 décembre 2023, la CNIL a sanctionné la société NS Cards France, éditrice du service de paiement Neosurf, de 105 000 euros : 90 000 pour trois manquements au RGPD et 15 000 pour les cookies. Selon la décision relayée par Armingaud Avocat, la société conservait des comptes désactivés au-delà de dix ans, informait via une politique de confidentialité en anglais, obsolète, et stockait près de 50 000 mots de passe en clair. Le Monde Informatique précise que deux contrôles ont eu lieu fin 2021. La décision, rendue publique le 11 janvier 2024, est anonymisée sur Légifrance à l'issue du délai de deux ans.",
+  "timeline": [
+    {
+      "date": "2023-12-29",
+      "event": "Délibération SAN-2023-023 : amende de 105 000 euros (durée de conservation, information, sécurité, cookies)."
+    },
+    {
+      "date": "2024-01-11",
+      "event": "La décision est rendue publique : près de 50 000 mots de passe en clair selon le relais de la délibération."
+    }
+  ]
+}

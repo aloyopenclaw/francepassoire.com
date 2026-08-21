@@ -1,0 +1,48 @@
+{
+  "slug": "accor-20220803",
+  "entity": "Accor SA (groupe hôtelier)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-08-03",
+    "publication": "2022-08-17",
+    "confirmation": "2022-08-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "5 plaintes françaises et 5 plaintes d'autorités européennes à l'origine de la procédure ; nombre de clients concernés non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Délibération de la formation restreinte n° SAN-2022-017 du 3 août 2022 concernant la société ACCOR SA (PDF, texte intégral)",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/deliberation_de_la_formation_restreinte_no_san-2022-017_du_3_aout_2022_concernant_la_societe_accor_sa.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Lettre d'information d'août 2022 : prospection commerciale et droits des personnes, sanction de 600 000 euros à l'encontre d'ACCOR",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/lettre_information_cnil_aout_2022.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique (17 août 2022) — Prospection commerciale : la Cnil inflige une amende de 600 K€ à Accor",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-prospection-commerciale-la-cnil-inflige-une-amende-de-600-keteuro-a-accor-87705.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 août 2022, la CNIL a sanctionné la société Accor SA de 600 000 euros : 100 000 pour prospection commerciale sans consentement, 500 000 pour les manquements au RGPD. Selon la délibération SAN-2022-017, la case d'inscription à la lettre d'information « All » était pré-cochée lors des réservations, et les désinscriptions ont dysfonctionné durablement. Des plaintes relayées par cinq autorités européennes ont alimenté la procédure, avec un réexamen du montant par le CEPD. La CNIL relève aussi des refus de droit d'accès et des mots de passe insuffisamment robustes. Une autre fiche documente en 2026 la publication revendiquée d'une base de clients attribuée à Accor.",
+  "timeline": [
+    {
+      "date": "2022-08-03",
+      "event": "Délibération SAN-2022-017 : amende de 600 000 euros, prospection commerciale et droits des personnes."
+    },
+    {
+      "date": "2022-08-17",
+      "event": "La sanction est rendue publique ; la lettre d'information de la CNIL et la presse la relatent."
+    }
+  ]
+}

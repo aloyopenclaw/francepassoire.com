@@ -1,0 +1,48 @@
+{
+  "slug": "performeclic-20201207",
+  "entity": "Performeclic (agence de démarchage commercial)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-07",
+    "publication": "2020-12-31",
+    "confirmation": "2020-12-07"
+  },
+  "volume": {
+    "count": 5000000,
+    "unit": "personnes",
+    "label": "environ 5 millions de prospects dont les coordonnées étaient conservées plus de trois ans après la simple ouverture d'un courriel, selon la décision relayée par Derriennic Associés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « SOCIÉTÉ DE DÉMARCHAGE COMMERCIAL », sanction pécuniaire de 7 300 euros et injonction sous astreinte (7 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Data Legal Drive — Délibération commentée : CNIL contre Performeclic, 7 décembre 2020 (SAN-2020-016)",
+      "url": "https://datalegaldrive.com/deliberation-commentee-cnil-vs-performeclic-7-decembre-2020/",
+      "kind": "article"
+    },
+    {
+      "label": "Derriennic Associés (14 janvier 2021) — Prospection commerciale : la CNIL condamne une agence de marketing à une amende de 7 300 euros",
+      "url": "https://derriennic.com/prospection-commerciale-la-cnil-condamne-une-agence-de-marketing-a-une-amende-de-7-300-euros/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 décembre 2020, la CNIL a sanctionné la société Performeclic d'une amende de 7 300 euros, avec injonction sous astreinte de 1 000 euros par jour. Selon les commentaires de la décision, l'agence de démarchage adressait des courriels de prospection sans preuve de consentement, en s'appuyant sur des bases achetées. La CNIL a relevé des données non nécessaires, une conservation supérieure à trois ans d'environ 5 millions de prospects après simple ouverture d'un courriel, et l'absence d'encadrement contractuel des sous-traitants. La société figurait régulièrement en tête des émetteurs signalés comme spam. La délibération SAN-2020-016 a été publiée au Journal officiel le 31 décembre 2020.",
+  "timeline": [
+    {
+      "date": "2020-12-07",
+      "event": "Délibération SAN-2020-016 : amende de 7 300 euros et injonction à se mettre en conformité sous deux mois, astreinte de 1 000 euros par jour."
+    },
+    {
+      "date": "2020-12-31",
+      "event": "Publication de la délibération au Journal officiel ; la décision est commentée par des cabinets d'avocats."
+    }
+  ]
+}
