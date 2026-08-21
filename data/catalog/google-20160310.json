@@ -1,0 +1,65 @@
+{
+  "slug": "google-20160310",
+  "entity": "Google (Google Inc.)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-03-10",
+    "confirmation": "2016-03-10",
+    "publication": "2016-03-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 100 000 euros, annulée par le Conseil d’État le 27 mars 2020"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dossier de presse, bilan 2016 et enjeux 2017 : sanction de 100 000 € à l’encontre de Google sur le déréférencement (24 mars 2016)",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/dossier_de_presse_cnil_bilan_2016_et_enjeux_2017.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CJUE — Communiqué de presse n° 112/19, Google LLC contre CNIL (C-507/17), 24 septembre 2019",
+      "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2019-09/cp190112fr.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Challenges — « Droit à l’oubli » : la CNIL sanctionne Google d’une amende de 100 000 euros (24 mars 2016)",
+      "url": "https://www.challenges.fr/entreprise/tech-numerique/droit-a-l-oubli-la-cnil-sanctionne-google-d-une-amende-de-100-000-euros_29170",
+      "kind": "article"
+    },
+    {
+      "label": "Legalis — Conseil d’État, 27 mars 2020 : annulation de la sanction de 100 000 euros prononcée contre Google Inc.",
+      "url": "https://www.legalis.net/jurisprudences/conseil-detat-section-du-contentieux-10eme-et-9eme-ch-reunies-decision-du-27-mars-2020/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 mars 2016, la formation restreinte de la CNIL a condamné Google Inc. à 100 000 euros pour avoir refusé d’étendre le déréférencement à toutes les extensions de son moteur de recherche, à la suite d’une mise en demeure du 21 mai 2015. La Cour de justice de l’Union européenne, saisie par le Conseil d’État, a jugé en 2019 que le droit européen n’impose pas un déréférencement mondial. Le 27 mars 2020, le Conseil d’État a annulé la sanction pour erreur de droit, sans exiger de nouvelle mise en balance.",
+  "timeline": [
+    {
+      "date": "2015-05-21",
+      "event": "La présidente de la CNIL met en demeure Google d’étendre le déréférencement à toutes les extensions du moteur."
+    },
+    {
+      "date": "2016-03-10",
+      "event": "Amende de 100 000 euros pour non-exécution de la mise en demeure sur le déréférencement."
+    },
+    {
+      "date": "2019-09-24",
+      "event": "La CJUE (affaire C-507/17) juge que le déréférencement mondial n’est pas imposé par le droit de l’Union."
+    },
+    {
+      "date": "2020-03-27",
+      "event": "Le Conseil d’État annule la sanction de 100 000 euros pour erreur de droit."
+    }
+  ]
+}
