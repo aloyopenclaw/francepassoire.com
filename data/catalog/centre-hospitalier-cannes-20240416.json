@@ -1,0 +1,70 @@
+{
+  "slug": "centre-hospitalier-cannes-20240416",
+  "entity": "Centre hospitalier de Cannes Simone-Veil",
+  "siren": "260600200",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-01",
+    "publication": "2024-05-01",
+    "confirmation": "2024-05-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; LockBit publie une archive de 61 Go de données de l'établissement (cartes d'identité, bilans de santé, RIB, bulletins de salaire)"
+  },
+  "data_types": ["identite", "sante", "financier", "documents"],
+  "sources": [
+    {
+      "label": "CH Cannes Simone-Veil — Informations cyberattaque (page officielle, mai 2024)",
+      "url": "https://www.ch-cannes.fr/informations-cyberattaque/",
+      "kind": "officiel"
+    },
+    {
+      "label": "franceinfo — Cyberattaque à l'hôpital de Cannes : cartes d'identité, bilans médicaux, bulletins de salaire… 61 gigaoctets de données publiées sur Internet (2 mai 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaque-a-l-hopital-de-cannes-cartes-d-identite-bilans-medicaux-bulletins-de-salaire-61-gigaoctets-de-donnees-publiees-sur-internet_6520946.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Cyberattaque de l'hôpital de Cannes : des milliers de données confidentielles mises en ligne par les hackers (2 mai 2024)",
+      "url": "https://www.lefigaro.fr/nice/cyberattaque-de-l-hopital-de-cannes-des-milliers-de-donnees-confidentielles-mises-en-ligne-par-les-hackers-20240502",
+      "kind": "article"
+    },
+    {
+      "label": "ICI — Bilans de santé, RIB, cartes d'identité : l'hôpital de Cannes confirme que 61 gigaoctets de données ont été dévoilés (2 mai 2024)",
+      "url": "https://ici.fr/infos/faits-divers-justice/bilans-de-sante-rib-cartes-d-identite-l-hopital-de-cannes-confirme-que-61-gigaoctets-de-donnees-ont-ete-devoiles-6970681",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Provence-Alpes-Côte d'Azur — Cyberattaque à l'hôpital de Cannes : le groupe de hackers Lockbit 3.0 demande une rançon (mai 2024)",
+      "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/cyberattaque-a-l-hopital-de-cannes-le-groupe-de-hackers-lockbit3-0-demande-une-rancon-2963300.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Cannes : les hackers « ressuscités » de LockBit diffusent les données internes de l'hôpital piraté (2 mai 2024)",
+      "url": "https://www.leparisien.fr/high-tech/cannes-les-hackers-ressuscites-de-lockbit-diffusent-les-donnees-internes-de-lhopital-pirate-02-05-2024-ZX6LDI2AJ5B6ZMONEL2CAIYSLI.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Cyberattaque de l'hôpital de Cannes : des données confidentielles diffusées sur le web (2 mai 2024)",
+      "url": "https://www.bfmtv.com/cote-d-azur/cyberattaque-de-l-hopital-de-cannes-des-donnees-confidentielles-diffusees-sur-le-web_AN-202405020356.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le centre hospitalier de Cannes Simone-Veil est frappé dans la nuit du 15 au 16 avril 2024 par un rançongiciel qui chiffre ses données médicales et administratives ; les opérations non urgentes sont suspendues. LockBit 3.0 revendique l'attaque et exige une rançon. Après le refus de payer, le groupe publie dans la soirée du 1er mai une archive de 61 Go : cartes d'identité, bilans de santé, RIB et bulletins de salaire. Le 2 mai, l'établissement confirme que les données publiées lui appartiennent, dépose plainte et alerte la CNIL et l'ANSSI.",
+  "timeline": [
+    {
+      "date": "2024-04-16",
+      "event": "Un rançongiciel chiffre les systèmes dans la nuit du 15 au 16 avril ; l'hôpital suspend les opérations non urgentes et bascule en mode dégradé."
+    },
+    {
+      "date": "2024-05-01",
+      "event": "LockBit 3.0, qui exige une rançon, publie dans la soirée une archive de 61 Go de données de l'établissement."
+    },
+    {
+      "date": "2024-05-02",
+      "event": "Le centre hospitalier confirme que les données publiées lui appartiennent ; plainte déposée, CNIL et ANSSI alertées."
+    }
+  ]
+}

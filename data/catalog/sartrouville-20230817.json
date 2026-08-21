@@ -1,0 +1,56 @@
+{
+  "slug": "sartrouville-20230817",
+  "entity": "Ville de Sartrouville",
+  "siren": "217805860",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-22",
+    "publication": "2023-08-22",
+    "confirmation": "2023-08-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données d'agents municipaux mises en ligne par Medusa ; rançon de 500 000 dollars exigée ; environ 200 000 euros de préjudice chiffré par la mairie selon Le Parisien"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Le Parisien — Cyberattaques : la mairie de Sartrouville paralysée par des hackers (18 août 2023)",
+      "url": "https://www.leparisien.fr/yvelines-78/cyberattaques-la-mairie-de-sartrouville-paralysee-par-des-hackers-18-08-2023-OXH2PLRX5JACPMODLW5LR55FFQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Cyberattaque : des données d'agents de la mairie de Sartrouville sont en ligne (22 août 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1479452-cyberattaque-des-donnees-dagents-de-la-mairie-de-sartrouville-sont-en-ligne.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien — La mairie de Sartrouville victime d'un ransomware (23 août 2023)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61111-la-mairie-de-sartrouville-victime-d-un-ransomware.html",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — Mairie de Sartrouville : la PJ saisie pour enquêter sur la cyberattaque (août 2023)",
+      "url": "https://www.solutions-numeriques.com/mairie-de-sartrouville-la-pj-saisie-pour-enqueter-sur-la-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "The Record — French town of Sartrouville recovering from cyberattack (août 2023)",
+      "url": "https://therecord.media/french-town-hit-by-cyberattack",
+      "kind": "article"
+    }
+  ],
+  "description": "La mairie de Sartrouville est paralysée par une cyberattaque mi-août 2023 : serveurs, postes et sauvegardes chiffrés, services publics perturbés, 200 000 euros de préjudice, et la police judiciaire saisie. Le groupe de rançongiciel Medusa réclame 500 000 dollars, avec un ultimatum fixé au 31 août. Le 22 août, des données d'agents municipaux sont constatées en ligne par Numerama. Quelques jours plus tard, la ville voisine de Betton subit la même frappe du groupe Medusa.",
+  "timeline": [
+    {
+      "date": "2023-08-18",
+      "event": "La paralysie de la mairie est rendue publique ; la police judiciaire est saisie et un préjudice de 200 000 euros est chiffré."
+    },
+    {
+      "date": "2023-08-22",
+      "event": "Medusa exige une rançon de 500 000 dollars avec ultimatum au 31 août ; des données d'agents sont constatées en ligne."
+    }
+  ]
+}

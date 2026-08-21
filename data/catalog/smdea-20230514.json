@@ -1,0 +1,49 @@
+{
+  "slug": "smdea-20230514",
+  "entity": "SMDEA (Syndicat mixte départemental d'eau et d'assainissement de l'Ariège)",
+  "siren": "250901873",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-16",
+    "publication": "2023-06-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "informations volées diffusées par les attaquants sur le darknet ; volume non communiqué par le syndicat"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "SMDEA — Le SMDEA victime d'une cyberattaque (communiqué officiel, mai 2023)",
+      "url": "https://smdea09.fr/le-smdea-victime-dune-cyberattaque/",
+      "kind": "officiel"
+    },
+    {
+      "label": "La Dépêche — Le syndicat départemental de l'eau de l'Ariège victime d'une cyberattaque (25 mai 2023)",
+      "url": "https://www.ladepeche.fr/2023/05/25/le-syndicat-departemental-de-leau-de-lariege-victime-dune-cyberattaque-11219575.php",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Les pirates du syndicat public SMDEA diffusent les informations volées (16 juin 2023)",
+      "url": "https://www.zataz.com/les-pirates-du-syndicat-public-smdea-diffusent-les-informations-volees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 14 mai 2023, le SMDEA, syndicat public qui gère l'eau et l'assainissement en Ariège, est victime d'une cyberattaque sur son infrastructure informatique. Une réunion de crise se tient en préfecture le lendemain et le syndicat officialise l'incident. Un mois plus tard, mi-juin, des pirates diffusent sur le darknet les informations dérobées au syndicat, documenté par ZATAZ. Le volume exact des données exfiltrées n'a pas été communiqué ; la continuité du service public de l'eau a été maintenue.",
+  "timeline": [
+    {
+      "date": "2023-05-14",
+      "event": "Le SMDEA est victime d'une cyberattaque sur son infrastructure informatique ; une réunion de crise est organisée en préfecture le lendemain."
+    },
+    {
+      "date": "2023-05-25",
+      "event": "La presse régionale relaie l'incident officiellement confirmé par le syndicat."
+    },
+    {
+      "date": "2023-06-16",
+      "event": "Les attaquants diffusent sur le darknet les informations volées au syndicat public."
+    }
+  ]
+}

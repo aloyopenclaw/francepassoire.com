@@ -1,0 +1,54 @@
+{
+  "slug": "metropole-aix-marseille-provence-20200314",
+  "entity": "Métropole d'Aix-Marseille-Provence",
+  "siren": "200054807",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2020-09-04",
+    "publication": "2020-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; les attaquants diffusent deux archives d'environ 20 Go de documents internes (budgets, marchés publics, courriers d'habitants)"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "La Gazette des communes — Fuite de données six mois après la cyberattaque contre la métropole d'Aix-Marseille-Provence (4 septembre 2020, article archivé)",
+      "url": "https://web.archive.org/web/2023/https://www.lagazettedescommunes.com/693768/fuite-de-donnees-six-mois-apres-la-cyberattaque-contre-la-metropole-daix-marseille-provence/",
+      "kind": "archive"
+    },
+    {
+      "label": "ZATAZ — Piratage de la métropole Aix-Marseille-Provence : les pirates sont de retour (septembre 2020)",
+      "url": "https://www.zataz.com/piratage-de-la-metropole-aix-marseille-provence-les-pirates-sont-de-retour/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde informatique — L'Anssi décrit la cyberattaque qui a frappé Aix-Marseille-Provence (avril 2020)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-l-anssi-decrit-la-cyberattaque-qui-a-frappe-aix-marseille-provence-78492.html",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — Marseille et sa Métropole affectées depuis un mois par le ransomware Mespinoza/Pysa, sans outil de déchiffrement (avril 2020)",
+      "url": "https://www.solutions-numeriques.com/marseille-et-sa-metropole-affectees-depuis-un-mois-le-ransomware-mespinoza-pysa-sans-outil-de-dechiffrement/",
+      "kind": "article"
+    }
+  ],
+  "description": "La métropole d'Aix-Marseille-Provence est frappée le 14 mars 2020 par une cyberattaque massive au rançongiciel Mespinoza/Pysa : environ 90 % des serveurs sont chiffrés et les agents privés de leurs outils pendant des mois, avec l'appui de l'Anssi et d'Orange Cyberdefense. Six mois plus tard, début septembre 2020, les pirates publient deux archives d'environ 20 Go — analyses budgétaires, suivis de marchés publics, courriers d'habitants — repérées par ZATAZ et consultées par la Gazette des communes. La métropole n'a pas communiqué de nombre de personnes concernées.",
+  "timeline": [
+    {
+      "date": "2020-03-14",
+      "event": "Un rançongiciel Mespinoza/Pysa chiffre environ 90 % des serveurs ; la métropole coupe ses réseaux et l'activité des agents est paralysée."
+    },
+    {
+      "date": "2020-03-15",
+      "event": "La métropole reconnaît une attaque « d'ampleur sans précédent » ; plainte déposée, Anssi saisie et Orange Cyberdefense mobilisée."
+    },
+    {
+      "date": "2020-09-04",
+      "event": "Les pirates diffusent deux archives d'environ 20 Go sur un hébergeur de fichiers, repérées par ZATAZ et analysées par la presse."
+    }
+  ]
+}

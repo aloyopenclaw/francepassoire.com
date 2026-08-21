@@ -1,0 +1,65 @@
+{
+  "slug": "ville-betton-20230916",
+  "entity": "Ville de Betton",
+  "siren": "213500242",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-01",
+    "publication": "2023-09-16",
+    "confirmation": "2023-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données confidentielles d'habitants diffusées sur le darknet ; la municipalité précise que les pièces fournies pour les demandes de carte d'identité et de passeport ne sont pas concernées ; nombre de personnes non communiqué"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Ouest-France — Cyberattaque de Betton : Medusa a mis à exécution sa menace et diffuse des données confidentielles (septembre 2023, article archivé)",
+      "url": "https://web.archive.org/web/202309/https://www.ouest-france.fr/bretagne/rennes-35000/cyberattaque-de-betton-medusa-a-mis-a-execution-sa-menace-et-diffuse-des-donnees-confidentielles-e77558ca-5486-11ee-8035-ee7b2b5b2a57",
+      "kind": "archive"
+    },
+    {
+      "label": "ZDNet France — Après Sartrouville, la ville de Betton victime des cybercriminels de Medusa (septembre 2023)",
+      "url": "https://www.zdnet.fr/actualites/apres-sartrouville-la-ville-de-betton-victime-des-cybercriminels-de-medusa-39961130.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Europe 1 — Cyberattaque d'une commune bretonne : des données privées diffusées (septembre 2023)",
+      "url": "https://www.europe1.fr/faits-divers/cyberattaque-dune-commune-bretonne-des-donnees-privees-diffusees-4204278",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — Ille-et-Vilaine : les données confidentielles de milliers d'habitants diffusées sur le web (18 septembre 2023)",
+      "url": "https://www.20minutes.fr/faits_divers/4053504-20230918-ille-vilaine-donnees-confidentielles-milliers-habitants-diffusees-web",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Qui est Medusa, le groupe de hackers derrière la cyberattaque de Betton (septembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1509490-qui-est-medusa-le-groupe-de-hacker-derriere-la-cyberattaque-de-betton-ille-et-vilaine.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberattaque contre la ville de Betton : que mijote le groupe Medusa (5 septembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/366550880/Cyberattaque-contre-la-ville-de-Betton-que-mijote-le-groupe-Medusa",
+      "kind": "article"
+    }
+  ],
+  "description": "La ville de Betton, près de Rennes, annonce le 1er septembre 2023 avoir été victime d'une « attaque d'ampleur » ; le groupe de rançongiciel Medusa exige 100 000 dollars et menace de publier les données volées. Le 16 septembre au matin, Medusa met sa menace à exécution et diffuse sur le darknet des données confidentielles d'habitants, repérées par le hacker éthique SaxX. La municipalité, accompagnée par le CSIRT Breizh Cyber, précise que les pièces fournies pour les demandes de carte d'identité et de passeport ne sont pas concernées.",
+  "timeline": [
+    {
+      "date": "2023-09-01",
+      "event": "La ville de Betton reconnaît une attaque « d'ampleur » ; le groupe Medusa exige une rançon de 100 000 dollars."
+    },
+    {
+      "date": "2023-09-16",
+      "event": "Medusa met sa menace à exécution et diffuse des données confidentielles d'habitants sur le darknet."
+    },
+    {
+      "date": "2023-09-18",
+      "event": "La diffusion est relayée par la presse nationale ; la municipalité précise le périmètre des données concernées."
+    }
+  ]
+}

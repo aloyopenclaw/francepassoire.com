@@ -1,0 +1,35 @@
+{
+  "slug": "ucar-20210401",
+  "entity": "UCAR",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2021-04-01",
+    "publication": "2021-04-01"
+  },
+  "volume": {
+    "count": 134000,
+    "unit": "comptes",
+    "label": "134 000 comptes clients mis en vente moins de 10 euros sur un marché noir anglophone ; contenus couvrant novembre 2008 à novembre 2020 ; UCAR n'a pas confirmé publiquement"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "ZATAZ — Diffusion d'une base de données volée à la société UCAR (1er avril 2021)",
+      "url": "https://www.zataz.com/diffusion-dune-base-de-donnees-volee-a-la-societe-ucar/",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Un assureur et un géant du nettoyage dans la tourmente des pirates d'Avaddon (janvier 2021, contexte du rançonnage Sodinokibi visant UCAR)",
+      "url": "https://www.zataz.com/un-assureur-et-un-geant-du-nettoyage-dans-la-tourmente-des-pirates-davaddon/",
+      "kind": "article"
+    }
+  ],
+  "description": "En janvier 2021, le loueur de véhicules UCAR fait face au groupe de rançongiciel Sodinokibi, qui annonce s'être emparé de documents de l'entreprise. Trois mois plus tard, le 1er avril 2021, une base de données de 134 000 comptes clients est mise en vente pour moins de 10 euros sur un marché noir anglophone, révélée par ZATAZ : identités, téléphones, adresses physiques et électroniques, dates de réservation, kilomètres parcourus, dates de naissance et numéros de permis de conduire, couvrant novembre 2008 à novembre 2020. Le vendeur n'indique pas sa méthode ; UCAR n'a pas confirmé publiquement la fuite.",
+  "timeline": [
+    {
+      "date": "2021-04-01",
+      "event": "Une base de 134 000 comptes clients UCAR est mise en vente sur un marché noir anglophone, après le rançonnage Sodinokibi ayant visé l'entreprise en janvier."
+    }
+  ]
+}

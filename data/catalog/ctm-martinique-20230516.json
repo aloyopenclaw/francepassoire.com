@@ -1,0 +1,55 @@
+{
+  "slug": "ctm-martinique-20230516",
+  "entity": "Collectivité territoriale de Martinique (CTM)",
+  "siren": "200055507",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-06-06",
+    "publication": "2023-06-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données volées mises en vente aux enchères par le groupe Rhysida ; volume non communiqué ; sixième incident en un an et demi selon la collectivité"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "La 1ère (franceinfo) — Un groupe de hackers revendique une cyberattaque contre la Collectivité territoriale de Martinique (juin 2023)",
+      "url": "https://la1ere.franceinfo.fr/un-groupe-de-hackers-revendique-une-cyberattaque-contre-la-collectivite-territoriale-de-martinique-1403590.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet France — Le gang Rhysida revendique l'attaque contre la Collectivité territoriale de Martinique (juin 2023)",
+      "url": "https://www.zdnet.fr/actualites/le-gang-rhysida-revendique-l-attaque-contre-la-collectivite-territoriale-de-martinique-39959066.htm",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Les pirates de Rhysida annoncent le piratage de la Collectivité territoriale de Martinique (6 juin 2023)",
+      "url": "https://www.zataz.com/les-pirates-de-rhysida-annoncent-le-piratage-de-la-collectivite-territoriale-de-martinique/",
+      "kind": "article"
+    },
+    {
+      "label": "France Antilles Martinique — Cyberattaque à la CTM : les investigations menées ont confirmé (juin 2023)",
+      "url": "https://www.martinique.franceantilles.fr/actualite/societe/un-gang-de-hackeurs-aurait-revendique-la-cyberattaque-de-la-ctm-939078.php",
+      "kind": "article"
+    },
+    {
+      "label": "InCyber — Rhysida revendique la cyberattaque contre la Martinique (juin 2023)",
+      "url": "https://incyber.org/article/rhysida-revendique-la-cyberattaque-contre-la-martinique/",
+      "kind": "article"
+    }
+  ],
+  "description": "Tôt le matin du 16 mai 2023, le système informatique de la Collectivité territoriale de Martinique est frappé par une cyberattaque qui bloque une partie de son activité — le sixième incident en un an et demi selon la collectivité. Le président Serge Letchimy reconnaît un risque de « black-out informatique ». Début juin, le groupe de rançongiciel Rhysida, apparu en mai 2023, revendique l'intrusion et met les données dérobées en vente aux enchères sur son site. Les investigations internes se poursuivent pour établir le périmètre exact de l'exfiltration.",
+  "timeline": [
+    {
+      "date": "2023-05-16",
+      "event": "La CTM est frappée par une cyberattaque vers 4 heures du matin ; une partie de l'informatique est bloquée et une réunion se tient en préfecture."
+    },
+    {
+      "date": "2023-06-06",
+      "event": "Le groupe Rhysida revendique l'attaque et met les données volées en vente aux enchères, documenté par ZATAZ puis la presse locale."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "ville-saint-cloud-20220121",
+  "entity": "Ville de Saint-Cloud",
+  "siren": "219200649",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-27",
+    "publication": "2022-02-10",
+    "confirmation": "2022-02-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; la ville évoque un « nombre très restreint » de données sensibles d'habitants (campagne de vaccination Covid-19) au sein de documents internes majoritairement publics"
+  },
+  "data_types": ["identite", "sante", "documents"],
+  "sources": [
+    {
+      "label": "actu.fr — Cyberattaque de la mairie de Saint-Cloud : les hackeurs diffusent des documents internes (11 février 2022)",
+      "url": "https://actu.fr/ile-de-france/saint-cloud_92064/cyberattaque-de-la-mairie-de-saint-cloud-les-hackeurs-diffusent-des-documents-internes_48627402.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Les hackers de Lockbit 2.0 revendiquent la cyberattaque contre la mairie de Saint-Cloud (27 janvier 2022)",
+      "url": "https://www.leparisien.fr/hauts-de-seine-92/les-hackers-de-lockbit-20-revendiquent-la-cyberattaque-contre-la-mairie-de-saint-cloud-27-01-2022-UDTAX2BSFJHUVBP72STFYULFRY.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Le ministère de la Justice et la ville de Saint-Cloud visés par une cyberattaque (27 janvier 2022)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/le-ministere-de-la-justice-et-la-ville-de-saint-cloud-vises-par-une-cyberattaque-20220127",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — LockBit 2.0 menace de divulguer des données de la Justice française (janvier 2022)",
+      "url": "https://www.lemagit.fr/actualites/252512561/LockBit-20-menace-de-divulguer-des-donnees-de-la-Justice-francaise",
+      "kind": "article"
+    }
+  ],
+  "description": "La mairie de Saint-Cloud est frappée dans la nuit du 20 au 21 janvier 2022 par une cyberattaque « inédite par son intensité », revendiquée le 27 janvier par le groupe LockBit 2.0, qui exige une rançon. La ville refuse de payer. Le 10 février, les pirates publient sur le darknet des documents internes : majoritairement des actes publics, mais aussi des données sensibles d'habitants collectées pendant la campagne de vaccination contre le Covid-19, en « nombre très restreint » selon la municipalité. Le DPO contacte les personnes concernées ; aucun décompte global n'est publié.",
+  "timeline": [
+    {
+      "date": "2022-01-21",
+      "event": "Une cyberattaque paralyse les systèmes de la mairie dans la nuit du 20 au 21 janvier ; la ville parle d'une attaque « inédite par son intensité »."
+    },
+    {
+      "date": "2022-01-27",
+      "event": "LockBit 2.0 revendique l'attaque sur son blog de fuite et menace de publier les données dérobées si aucune rançon n'est payée."
+    },
+    {
+      "date": "2022-02-10",
+      "event": "Après le refus de payer, les pirates publient des documents internes, dont des données de la campagne de vaccination ; le DPO contacte les habitants concernés."
+    }
+  ]
+}
