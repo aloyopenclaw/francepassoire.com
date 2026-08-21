@@ -20,7 +20,13 @@ import WatchlistForm from '../components/WatchlistForm.astro';
 
   <!-- Bandeau retour veille : ?veille=confirmee|invalide|desinscrit (T30) -->
   <div id="veille-banner" class="max-w-4xl mx-auto px-4 sm:px-6 mt-8" role="status" aria-live="polite" hidden>
-    <p id="veille-banner-text" class="border-2 border-brand-ink rounded-xl px-5 py-4 font-body font-medium"></p>
+    <div id="veille-banner-card" class="border-2 border-brand-ink rounded-passoire shadow-hard bg-brand-cream overflow-hidden">
+      <div id="veille-banner-strip" class="bg-brand-orange border-b-2 border-brand-ink px-5 py-2 flex items-center gap-2" style="background-image:radial-gradient(circle,#241405 1.3px,transparent 1.3px);background-size:22px 22px;">
+        <span data-pastille class="w-3 h-3 rounded-full border-2 border-brand-ink bg-brand-ink"></span>
+        <span id="veille-banner-icon" class="font-mono text-xs font-bold text-brand-ink bg-brand-paper border-2 border-brand-ink rounded-full px-2 py-0.5"></span>
+      </div>
+      <p id="veille-banner-text" class="px-5 py-4 font-body font-medium text-brand-ink leading-relaxed"></p>
+    </div>
   </div>
 
   <div class="bg-brand-paper space-y-24 py-16">
@@ -182,15 +188,21 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       var textes = {
         confirmee: {
           texte: 'Veille confirmée. Vous recevrez vos alertes selon la fréquence choisie — désinscription en un clic dans chaque email.',
-          classe: 'bg-brand-green/10 border-brand-green'
+          badge: 'VEILLE ACTIVE',
+          pastille: 'bg-brand-green',
+          strip: 'bg-brand-green'
         },
         invalide: {
           texte: 'Lien de confirmation invalide ou expiré (validité 24 heures). Relancez une inscription ci-dessous pour recevoir un nouveau lien.',
-          classe: 'bg-brand-orange/10 border-brand-hover'
+          badge: 'LIEN EXPIRE',
+          pastille: 'bg-brand-hover',
+          strip: 'bg-brand-hover'
         },
         desinscrit: {
           texte: 'Vous êtes désinscrit de la veille email. Votre adresse et vos préférences ont été supprimées.',
-          classe: 'bg-brand-cream border-brand-ink'
+          badge: 'DESINSCRIT',
+          pastille: 'bg-brand-ink',
+          strip: 'bg-brand-ink'
         }
       };
       var conf = textes[veille];
@@ -200,9 +212,17 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       window.history.replaceState(null, '', window.location.pathname + (propre ? '?' + propre : '') + window.location.hash);
       var banner = document.getElementById('veille-banner');
       var texte = document.getElementById('veille-banner-text');
+      var strip = document.getElementById('veille-banner-strip');
+      var badge = document.getElementById('veille-banner-icon');
+      var pastille = strip ? strip.querySelector('[data-pastille]') : null;
       if (banner && texte) {
         texte.textContent = conf.texte;
-        texte.className = 'border-2 border-brand-ink rounded-xl px-5 py-4 font-body font-medium ' + conf.classe;
+        if (strip) {
+          strip.classList.remove('bg-brand-orange');
+          strip.classList.add(conf.strip);
+        }
+        if (badge) badge.textContent = conf.badge;
+        if (pastille) pastille.className = 'w-3 h-3 rounded-full border-2 border-brand-ink ' + conf.pastille;
         banner.hidden = false;
         banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
