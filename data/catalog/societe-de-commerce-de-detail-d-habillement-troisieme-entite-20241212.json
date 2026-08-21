@@ -1,0 +1,43 @@
+{
+  "slug": "societe-de-commerce-de-detail-d-habillement-troisieme-entite-20241212",
+  "entity": "Société de commerce de détail d'habillement — troisieme entité (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-12",
+    "confirmation": "2024-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; amende de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « société de commerce de détail d'habillement » (procédure simplifiée), amende de 3 000 euros (12 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 décembre 2024, la CNIL a prononcé une amende de 3 000 euros à l'encontre d'une société de commerce de détail d'habillement, la troisième sanctionnée ce jour-là pour le même manquement : le consentement des personnes n'a pas été recueilli conformément aux règles applicables aux cookies et autres traceurs. La dénomination n'est pas publiée, le tableau officiel désignant anonymement les quatre enseignes d'habillement condamnées le même jour pour des montants de 3 000 à 20 000 euros. Selon le bilan 2024, onze organismes ont été sanctionnés en 2024 pour avoir rendu le refus des cookies plus complexe que leur acceptation.",
+  "timeline": [
+    {
+      "date": "2024-12-12",
+      "event": "Amende de 3 000 euros (procédure simplifiée) : consentement des personnes non respecté pour les cookies."
+    }
+  ]
+}

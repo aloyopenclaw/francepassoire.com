@@ -1,0 +1,42 @@
+{
+  "slug": "societe-gestion-appels-telephoniques-20241017",
+  "entity": "Société de prestation de gestion d'appels téléphoniques (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-17",
+    "confirmation": "2024-10-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « fourniture de prestations de service (gestion d'appels téléphoniques) » (procédure simplifiée), amende de 20 000 euros (17 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 17 octobre 2024, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société de gestion d'appels téléphoniques, dans le cadre de la procédure simplifiée. Le tableau officiel retient un défaut d'information des personnes lié à la vidéosurveillance et aux enregistrements téléphoniques, le non-respect du droit d'opposition et un défaut de sécurité des données. La dénomination n'est pas publiée. Le bilan 2024 de la CNIL cite parmi les manquements sanctionnés l'enregistrement systématique et intégral de conversations téléphoniques et la surveillance vidéo de salariés, retenus dans 10 décisions pour atteinte au principe de minimisation. L'amende atteint le plafond de la procédure simplifiée.",
+  "timeline": [
+    {
+      "date": "2024-10-17",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : information, droit d'opposition et sécurité défaillants."
+    }
+  ]
+}

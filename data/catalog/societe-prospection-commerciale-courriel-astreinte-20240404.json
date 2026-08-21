@@ -1,0 +1,42 @@
+{
+  "slug": "societe-prospection-commerciale-courriel-astreinte-20240404",
+  "entity": "Société de prospection commerciale par courriel pour le compte d'annonceurs (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-04",
+    "confirmation": "2024-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; liquidation d'astreinte de 25 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « prospection commerciale par courriel pour le compte d'annonceurs », liquidation d'astreinte de 25 000 euros (4 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 4 avril 2024, la CNIL a prononcé la liquidation d'une astreinte de 25 000 euros à l'encontre d'une société de prospection commerciale par courriel pour le compte d'annonceurs, dont la dénomination n'est pas publiée. Le manquement retenu est l'absence de réponse à l'injonction qui lui avait été notifiée : la liquidation sanctionne le non-respect d'un ordre donné par la CNIL dans une décision antérieure, et non un nouveau traitement de données. Le bilan 2024 de la CNIL recense 8 décisions de liquidation d'astreinte sur l'année, décrites comme le paiement d'une somme en raison du non-respect d'un ordre de l'autorité. La prospection commerciale figure parmi les principaux thèmes des sanctions de l'année.",
+  "timeline": [
+    {
+      "date": "2024-04-04",
+      "event": "Liquidation d'astreinte de 25 000 euros : absence de réponse à l'injonction prononcée par la CNIL."
+    }
+  ]
+}

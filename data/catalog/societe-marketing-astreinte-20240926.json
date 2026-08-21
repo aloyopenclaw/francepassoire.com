@@ -1,0 +1,47 @@
+{
+  "slug": "societe-marketing-astreinte-20240926",
+  "entity": "Société de marketing (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-26",
+    "confirmation": "2024-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; liquidation d'astreinte de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « société de marketing » (procédure simplifiée), liquidation d'astreinte de 3 000 euros (26 septembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 septembre 2024, la CNIL a prononcé la liquidation d'une astreinte de 3 000 euros à l'encontre d'une société de marketing, dans le cadre de la procédure simplifiée. Le manquement retenu est l'absence de réponse à l'injonction et la non-conformité persistante : la liquidation sanctionne le retard à exécuter un ordre déjà donné par l'autorité dans une procédure d'injonction. La dénomination de la société n'est pas publiée. La décision s'inscrit dans la série des onze sanctions simplifiées recensées depuis juin 2024 par le communiqué du 8 octobre. Le bilan annuel de la CNIL recense 8 liquidations d'astreinte en 2024, sur un total de 69 sanctions simplifiées pour 715 500 euros d'amendes.",
+  "timeline": [
+    {
+      "date": "2024-09-26",
+      "event": "Liquidation d'astreinte de 3 000 euros : absence de réponse à l'injonction et non-conformité."
+    }
+  ]
+}

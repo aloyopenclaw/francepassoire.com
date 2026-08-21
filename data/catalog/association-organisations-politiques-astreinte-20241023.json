@@ -1,0 +1,42 @@
+{
+  "slug": "association-organisations-politiques-astreinte-20241023",
+  "entity": "Association participant aux activités des organisations politiques (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-23",
+    "confirmation": "2024-10-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; liquidation d'astreinte de 4 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2024) : « association participant aux activités des organisations politiques » (procédure simplifiée), liquidation d'astreinte de 4 000 euros (23 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 23 octobre 2024, la CNIL a prononcé la liquidation d'une astreinte de 4 000 euros à l'encontre d'une association participant aux activités des organisations politiques, dans le cadre de la procédure simplifiée. Le manquement retenu est l'absence de réponse à l'injonction et la non-conformité persistante. La dénomination n'est pas publiée. Une autre association du même type avait déjà été sanctionnée le 25 avril 2024 pour défaut de base légale, et la prospection politique a fait l'objet de plusieurs amendes simplifiées en 2024. Le bilan annuel recense 8 liquidations d'astreinte sur l'année et 69 sanctions simplifiées pour un total de 715 500 euros d'amendes. La nature des données n'est pas précisée.",
+  "timeline": [
+    {
+      "date": "2024-10-23",
+      "event": "Liquidation d'astreinte de 4 000 euros : absence de réponse à l'injonction et non-conformité."
+    }
+  ]
+}
