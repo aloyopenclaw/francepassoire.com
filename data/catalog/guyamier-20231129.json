@@ -1,0 +1,46 @@
+{
+  "slug": "guyamier-20231129",
+  "entity": "Guyamier",
+  "siren": "300164381",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-11-29",
+    "publication": "2023-11-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués ; équipements informatiques complètement à l'arrêt, exploitation paralysée environ une semaine"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Tribune — Coaxis et Guyamier frappées par de violentes cyberattaques au rançongiciel (17 janvier 2024)",
+      "url": "https://www.latribune.fr/business/2024-01-17/guyamier-et-coaxis-frappees-par-de-violentes-cyberattaques-au-rancongiciel-987511.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — La logistique, un secteur de choix pour les cyberattaques ? (30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 novembre 2023, les sociétés de transport du groupe Guyamier, en Nouvelle-Aquitaine, sont touchées par une cyberattaque par rançongiciel. Leurs équipements informatiques sont complètement à l'arrêt. « Nous n'avons plus rien », résume le président Nicolas Guyamier, cité par Sud Ouest via LeMagIT. La Tribune rapporte en janvier 2024 que le transporteur a été paralysé une semaine. Aucun volume de données volées n'est communiqué et aucune revendication publique d'un groupe criminel n'est relevée ; l'incident s'inscrit dans une série d'attaques visant la logistique française en 2023.",
+  "timeline": [
+    {
+      "date": "2023-11-29",
+      "event": "Cyberattaque par rançongiciel : les équipements informatiques des sociétés du groupe Guyamier sont complètement à l'arrêt."
+    },
+    {
+      "date": "2023-11-30",
+      "event": "LeMagIT recense l'attaque, citant Sud Ouest ; le patron du groupe décrit la perte de l'ensemble des systèmes."
+    },
+    {
+      "date": "2024-01-17",
+      "event": "La Tribune rapporte que le transporteur a été paralysé une semaine par l'attaque, sans communication de volumes de données."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "geodis-20240418",
+  "entity": "GEODIS",
+  "siren": "384139689",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-18",
+    "publication": "2024-04-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "bases de données SQL de la filiale GEODIS Thai revendiquées exposées par Alphalocker (volumes non communiqués)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — victime geodis.com revendiquée par Alphalocker (18 avril 2024)",
+      "url": "https://www.ransomware.live/id/aHR0cHM6Ly9nZW9kaXMuY29tQGFscGhhbG9ja2Vy",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — GEODIS piraté : analyse de la cyberattaque et conséquences (20 avril 2024)",
+      "url": "https://www.dpo-partage.fr/geodis-se-serait-fait-pirater/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 avril 2024, le groupe Alphalocker revendique une cyberattaque contre geodis.com et publie l'entrée sur son site de fuite ; la revendication vise GEODIS Thai, filiale thaïlandaise de GEODIS, groupe français de transport et de logistique. Le 20 avril, le site de veille DPO Partage rapporte que l'attaque aurait exposé l'ensemble des bases de données SQL de la filiale. GEODIS ne commente pas publiquement l'incident ; les volumes et la nature des données éventuellement concernées ne sont pas connus. Rien, au-delà de la revendication, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2024-04-18",
+      "event": "Alphalocker publie geodis.com sur son site de fuite ; la revendication porte sur la filiale GEODIS Thai."
+    },
+    {
+      "date": "2024-04-20",
+      "event": "DPO Partage rapporte que l'attaque aurait exposé l'ensemble des bases SQL de GEODIS Thai, sans confirmation du groupe."
+    }
+  ]
+}
