@@ -1,0 +1,44 @@
+{
+  "slug": "pharmacie-orleans-20240701",
+  "entity": "Pharmacie Orléans (Saumur)",
+  "siren": "453173874",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-01",
+    "publication": "2024-07-02"
+  },
+  "volume": {
+    "count": 50000,
+    "unit": "personnes",
+    "label": "près de 50 000 personnes (nom, prénom, adresse postale, téléphone, adresse IP, mots de passe) publiées gratuitement sur un forum cybercriminel selon le chercheur SaxX ; l'officine contactée dit ignorer l'attaque"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "France 3 Centre-Val de Loire — Cyberattaque visant une pharmacie : les informations personnelles de 50 000 patients se retrouvent en ligne (2 juillet 2024)",
+      "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/cyberattaque-visant-une-pharmacie-les-informations-personnelles-de-50-000-patients-se-retrouvent-en-ligne-2997827.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ventury Technology — Cyberattaque visant une pharmacie : le fichier de la Pharmacie d'Orléans (Saumur) repéré le 2 juillet 2024 sur « l'Amazon de la cybercriminalité »",
+      "url": "https://venturytechnology.fr/cyberattaque-pharmacie/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er juillet 2024, le chercheur en cybersécurité Clément Domingo (« SaxX ») repère sur un forum cybercriminel surnommé « l'Amazon de la cybercriminalité » un fichier de près de 50 000 lignes attribué à la Pharmacie Orléans, une officine de Saumur. Le tableau contient noms, prénoms, adresses postales, numéros de téléphone, adresses IP et mots de passe. L'extraction daterait du 30 juin. Le vecteur reste incertain : collecte automatisée ou exploitation d'une vulnérabilité. Les victimes résident à Saumur, Saran, Orléans et jusqu'à Zurich ou Marseille. Contactée par France 3, l'équipe de l'officine déclare ne pas avoir connaissance d'une cyberattaque ; la compromission n'est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2024-06-30",
+      "event": "Extraction supposée du fichier client de la Pharmacie Orléans de Saumur, selon la lecture du dépôt par le chercheur SaxX."
+    },
+    {
+      "date": "2024-07-01",
+      "event": "Le fichier de près de 50 000 entrées (identité, coordonnées, adresses IP, mots de passe) est publié gratuitement sur un forum fréquenté par les cybercriminels."
+    },
+    {
+      "date": "2024-07-02",
+      "event": "France 3 publie l'alerte relayée de SaxX ; l'officine contactée indique ne pas avoir eu connaissance de la cyberattaque."
+    }
+  ]
+}
