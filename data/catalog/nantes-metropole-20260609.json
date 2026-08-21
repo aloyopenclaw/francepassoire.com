@@ -1,0 +1,43 @@
+{
+  "slug": "nantes-metropole-20260609",
+  "entity": "Nantes Métropole",
+  "siren": "244400404",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-08",
+    "publication": "2026-06-09"
+  },
+  "volume": {
+    "count": 5274,
+    "unit": "personnes",
+    "label": "5 274 entrées d'un annuaire d'agents (Ville de Nantes et Nantes Métropole) publiées sur un forum ; coordonnées professionnelles et rattachements hiérarchiques"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Nantes Métropole : 5 274 agents concernés par une fuite revendiquée",
+      "url": "https://fuitesinfos.fr/article/2026-06-09-nantes-metropole",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Métropole de Nantes : fuite de données, plus de 5 000 agents exposés",
+      "url": "https://frenchbreaches.com/alertes/m-tropole-de-nantes-mq5oczl0z8sgr0m5yl8",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un fichier nommé annuaire_agents_nantes_v2.csv est publié le 8 juin 2026 sur un forum par l'acteur « misere », déjà observé dans la revendication liée à la messagerie Tchap. Selon les recensements, il contient 5 274 entrées d'agents de la Ville de Nantes et de Nantes Métropole : noms, fonctions, services, rattachements hiérarchiques, e-mails et téléphones professionnels, adresses professionnelles incluses. L'auteur attribue la fuite à une prétendue erreur humaine, sans détails. À ce stade, l'authenticité complète du fichier n'est pas confirmée publiquement ; les agents concernés restent exposés au démarchage ciblé.",
+  "timeline": [
+    {
+      "date": "2026-06-08",
+      "event": "Publication sur un forum d'un annuaire de 5 274 agents de la Ville de Nantes et de Nantes Métropole, revendiquée par l'acteur « misere »."
+    },
+    {
+      "date": "2026-06-09",
+      "event": "Les veilleurs recensent la publication : identités, fonctions, services et coordonnées professionnelles exposées."
+    }
+  ]
+}

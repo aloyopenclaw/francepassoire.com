@@ -1,0 +1,53 @@
+{
+  "slug": "florajet-20260303",
+  "entity": "Florajet",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-03",
+    "publication": "2026-03-06"
+  },
+  "volume": {
+    "count": 1457473,
+    "unit": "enregistrements",
+    "label": "1 457 473 bons de commande 2023-2026 (environ 136 Go) mis en vente ; 952 000 téléphones et 1,2 million d'adresses uniques revendiqués"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1 457 473 commandes concernées par une fuite revendiquée chez Florajet",
+      "url": "https://fuitesinfos.fr/article/2026-03-03-florajet",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Florajet victime d'une cyberattaque : plus d'un million de messages accompagnant des bouquets exposés",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/florajet-victime-d-une-cyberattaque-plus-d-un-million-de-messages-intimes-accompagnant-des-bouquets-exposes-20260306",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — 1,45 million de commandes Florajet en vente : 952 000 téléphones et 1,2 million d'adresses exposées",
+      "url": "https://frenchbreaches.com/blog/145-million-de-commandes-florajet-en-vente-952-000-telephones-et-12-million-dadresses-exposees",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 3 mars 2026, un acteur baptisé HexDex met en vente 1 457 473 bons de commande de Florajet, service de livraison de fleurs, couvrant 2023-2026 et représentant environ 136 Go : noms et coordonnées des expéditeurs et destinataires, détails des commandes et messages personnels accompagnant les bouquets. Florajet reconnaît le 5 mars un accès non autorisé à son outil BtoB utilisé par ses fleuristes partenaires : des bons de commande en PDF ont été consultés et une partie rendue accessible en ligne. L'entreprise bloque les accès, réduit la rétention des documents et exclut données bancaires et mots de passe.",
+  "timeline": [
+    {
+      "date": "2026-03-03",
+      "event": "Mise en vente revendiquée de 1 457 473 bons de commande (136 Go), échantillon de 1 000 lignes et 1 000 PDF publié."
+    },
+    {
+      "date": "2026-03-05",
+      "event": "Florajet confirme un accès non autorisé à son outil BtoB : des bons de commande PDF ont été consultés et une partie rendue accessible en ligne."
+    },
+    {
+      "date": "2026-03-06",
+      "event": "Le Figaro relaie l'incident et le contenu des messages personnels exposés."
+    }
+  ]
+}

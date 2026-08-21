@@ -1,0 +1,55 @@
+{
+  "slug": "ffdanse-20260816",
+  "entity": "Fédération Française de Danse (FFD)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-17"
+  },
+  "volume": {
+    "count": 435903,
+    "unit": "personnes",
+    "label": "435 903 adhérents mis en vente (chiffre relayé par BFMTV selon FrenchBreaches ; doublons possibles, mineurs concernés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FF Danse Grand Est — Cyberattaque sur l'extranet FFDanse : accès limité et recommandations",
+      "url": "https://www.ffdanse-grandest.fr/post/cyberattaque-sur-l-extranet-ffdanse-acc%C3%A8s-limit%C3%A9-et-recommandations",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — Les fédérations françaises de moto et de danse piratées : près d'un million de licenciés mis en vente",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/les-federations-francaises-de-moto-et-de-danse-ont-ete-piratees-en-2024-et-2025-les-donnees-de-pres-d-un-million-de-licencies-sont-desormais-mises-en-vente-sur-le-darkweb_AN-202608170310.html",
+      "kind": "article"
+    },
+    {
+      "label": "Police & Réalités — Fédérations de moto et de danse piratées : près d'un million d'adhérents circulent",
+      "url": "https://policeetrealites.com/2026/08/17/federations-francaises-de-moto-et-de-danse-piratees-les-donnees-de-pres-dun-million-de-leurs-adherents-circulent-sur-le-darkweb/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base présentée comme liée à la Fédération Française de Danse est mise en vente le 16 août 2026 sur un forum spécialisé : 435 903 adhérents selon les relais, mineurs compris, avec noms, dates de naissance, e-mails, téléphones et adresses. La fédération avait reconnu en décembre 2025 une cyberattaque survenue mi-novembre sur son extranet, ayant affecté des données personnelles de licenciés, avec plainte et information de la CNIL. Selon BFMTV, les personnes concernées ont été contactées et la double authentification déployée. Le lien entre la base mise en vente et cet incident n'est pas établi.",
+  "timeline": [
+    {
+      "date": "2025-11-15",
+      "event": "Cyberattaque sur l'extranet FFDanse, selon le communiqué relayé en décembre ; le serveur est endommagé et des données personnelles affectées."
+    },
+    {
+      "date": "2025-12-16",
+      "event": "La fédération déplore l'incident dans une note aux licenciés, dépose plainte et informe la CNIL."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "Une base de 435 903 adhérents présentée comme liée à la FFDanse est mise en vente sur un forum cybercriminel."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La presse relaie la mise en vente ; la fédération a contacté les personnes concernées et déployé la double authentification."
+    }
+  ]
+}

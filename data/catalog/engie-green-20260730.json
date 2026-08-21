@@ -1,0 +1,39 @@
+{
+  "slug": "engie-green-20260730",
+  "entity": "ENGIE Green",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-30",
+    "publication": "2026-07-30"
+  },
+  "volume": {
+    "count": 621019,
+    "unit": "personnes",
+    "label": "621 019 fiches clients revendiquées (chantage à la divulgation) ; l'échantillon publié ne montre que des comptes WordPress du site, sans preuve du volume annoncé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — ENGIE Green : 621 019 clients revendiqués",
+      "url": "https://fuitesinfos.fr/article/2026-07-30-engie-green",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — ENGIE Green : 621 019 clients en fuite après une intrusion par injection SQL",
+      "url": "https://www.cyberattaque.org/engie-green-621-019-clients-en-fuite-apres-une-intrusion-par-injection-sql/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 juillet 2026, un acteur baptisé « xxsdead » revendique sur un forum une compromission du site engie-green.fr par injection SQL et menace de publier un export complet de la base et des documents internes faute de prise de contact. Il avance 621 019 fiches clients. L'échantillon publié ne montre que des comptes WordPress d'administration du site, avec e-mails professionnels et mots de passe hachés, créés entre 2020 et 2021 ; il n'étaye ni le volume annoncé ni une compromission du système d'information. ENGIE Green n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-07-30",
+      "event": "Revendication d'une compromission par injection SQL de engie-green.fr : 621 019 fiches avancées, publication conditionnelle à une prise de contact."
+    }
+  ]
+}

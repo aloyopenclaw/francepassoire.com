@@ -1,0 +1,58 @@
+{
+  "slug": "mutuelle-generale-de-prevoyance-20260807",
+  "entity": "Mutuelle Générale de Prévoyance (MGP)",
+  "siren": "337682660",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-07",
+    "publication": "2026-08-08"
+  },
+  "volume": {
+    "count": 198127,
+    "unit": "personnes",
+    "label": "198 127 identités et 133 018 IBAN uniques revendiqués (45 771 téléphones, 24 489 e-mails) ; la mutuelle confirme une cyberattaque sans pouvoir confirmer ces chiffres"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Mutuelle Générale de Prévoyance : près de 200 000 identités et 133 018 IBAN",
+      "url": "https://fuitesinfos.fr/article/2026-08-07-mutuelle-generale-de-prevoyance",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Mutuelle Générale de Prévoyance : fuite massive mise en vente",
+      "url": "https://frenchbreaches.com/alertes/mutuelle-g-n-rale-de-pr-voyance-msjkkufska3mdj2z8xb",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Figaro — La Mutuelle générale de prévoyance touchée par une cyberattaque via un prestataire",
+      "url": "https://www.lefigaro.fr/flash-eco/la-mutuelle-generale-de-prevoyance-touchee-par-une-cyberattaque-via-un-prestataire-20260818",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Près de 200 000 personnes potentiellement concernées à la MGP",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/pres-de-200-000-personnes-potentiellement-concernees-la-mutuelle-generale-de-prevoyance-a-son-tour-touchee-par-une-cyberattaque_AD-202608190211.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 août 2026, un acteur baptisé « yiranet » met en vente deux tables présentées comme issues de la Mutuelle Générale de Prévoyance : 198 127 identités, 133 018 IBAN, 45 771 téléphones et 24 489 e-mails. La mutuelle, qui couvre 480 000 adhérents, confirme le 18 août une cyberattaque touchant l'un de ses prestataires, sans pouvoir déterminer les données compromises ni confirmer ces chiffres. Elle exclut les données de santé et les informations de prestations, informe individuellement les personnes concernées depuis le 17 août et dépose plainte contre X. L'origine exacte reste sous investigation.",
+  "timeline": [
+    {
+      "date": "2026-08-07",
+      "event": "Mise en vente revendiquée de deux bases MGP : 198 127 identités et 133 018 IBAN uniques."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La mutuelle entame l'information individuelle des personnes concernées."
+    },
+    {
+      "date": "2026-08-18",
+      "event": "La MGP confirme une cyberattaque via un prestataire, ne peut confirmer les chiffres, exclut les données de santé et dépose plainte contre X."
+    }
+  ]
+}

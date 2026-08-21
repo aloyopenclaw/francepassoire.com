@@ -1,0 +1,48 @@
+{
+  "slug": "medoucine-20260312",
+  "entity": "Medoucine",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-12",
+    "publication": "2026-03-12"
+  },
+  "volume": {
+    "count": 813866,
+    "unit": "personnes",
+    "label": "813 866 utilisateurs revendiqués, dont environ 6 500 praticiens (653 982 e-mails et 804 983 téléphones uniques) ; la plateforme confirme une extraction sans communiquer de volume"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 813 866 utilisateurs concernés par la fuite de données chez Medoucine",
+      "url": "https://fuitesinfos.fr/article/2026-03-12-medoucine",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — 813 000 personnes concernées : fuite massive sur la plateforme santé Medoucine",
+      "url": "https://frenchbreaches.com/blog/813-000-personnes-concernees-fuite-massive-de-donnees-sur-la-plateforme-sante-medoucine",
+      "kind": "revendication"
+    },
+    {
+      "label": "Egora — La plateforme Médoucine visée par une cyberattaque",
+      "url": "https://www.egora.fr/actus-pro/sante-numerique/la-plateforme-medoucine-visee-par-une-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 mars 2026, l'acteur HexDex met en vente une base de 813 866 utilisateurs de Medoucine, plateforme de mise en relation avec des praticiens de médecines douces, dont environ 6 500 praticiens. Sont cités noms, e-mails, téléphones et compteurs de réservations couvrant 2021-2026. La plateforme confirme le jour même une extraction de données par un acte malveillant via une faille, corrigée depuis, et exclut les mots de passe et les motifs de consultation. La CNIL, saisie, confirme recevoir la notification ; une plainte est déposée. Medoucine ne communique pas de volume ; le chiffre vendu reste revendiqué.",
+  "timeline": [
+    {
+      "date": "2026-03-12",
+      "event": "Mise en vente revendiquée de la base (813 866 utilisateurs, 653 982 e-mails, 804 983 téléphones uniques) ; Medoucine confirme une extraction via une faille corrigée."
+    },
+    {
+      "date": "2026-03-18",
+      "event": "La CNIL confirme à la presse spécialisée avoir reçu la notification, en cours d'instruction."
+    }
+  ]
+}
