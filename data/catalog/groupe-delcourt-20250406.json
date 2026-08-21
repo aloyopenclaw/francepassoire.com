@@ -1,0 +1,50 @@
+{
+  "slug": "groupe-delcourt-20250406",
+  "entity": "Groupe Delcourt (éditeur de bande dessinée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-06",
+    "publication": "2025-04-04",
+    "confirmation": "2025-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "3,7 To de données revendiqués par Hunters ; selon l’éditeur : nom, prénom, date de naissance, numéro de sécurité sociale, adresses e-mail et postale, numéros de téléphone potentiellement exposés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "ActuaLitté — Cyberattaque chez Delcourt : des données personnelles potentiellement exposées (4 avril 2025)",
+      "url": "https://actualitte.com/article/123036/technologie/cyberattaque-chez-delcourt-des-donnees-personnelles-potentiellement-exposees",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim : Groupe Delcourt (groupe Hunters, découverte 6 avril 2025, données exfiltrées et chiffrées)",
+      "url": "https://www.ransomware.live/id/R3JvdXBlIERlbGNvdXJ0QGh1bnRlcnM",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense — Groupe Delcourt Data Breach : acteur Hunters, 3,7 To (7 avril 2025)",
+      "url": "https://www.breachsense.com/breaches/groupe-delcourt-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début avril 2025, le groupe Delcourt, premier éditeur indépendant français de bande dessinée, racheté par Editis fin décembre 2024, révèle avoir été victime d’une cyberattaque revendiquée par Hunters International, collectif opérant en ransomware-as-a-service. Selon la direction, l’extraction de données sensibles avant chiffrement des systèmes visait à exercer une pression de double extorsion. Les investigations concluent à une exposition possible de nom, prénom, date de naissance, numéro de sécurité sociale, adresses e-mail et postale et numéros de téléphone. Delcourt notifie la CNIL, dépose plainte et recommande la vigilance contre le hameçonnage et l’usurpation d’identité. Les agrégateurs évaluent le lot revendiqué à 3,7 To.",
+  "timeline": [
+    {
+      "date": "2025-04-04",
+      "event": "Delcourt confirme l’attaque de Hunters International ; CNIL notifiée, plainte déposée."
+    },
+    {
+      "date": "2025-04-06",
+      "event": "Entrée « Groupe Delcourt » indexée sur le site de fuite : données exfiltrées et chiffrées."
+    }
+  ],
+  "group": "hunters"
+}

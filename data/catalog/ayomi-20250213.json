@@ -1,0 +1,53 @@
+{
+  "slug": "ayomi-20250213",
+  "entity": "Ayomi (plateforme de financement des entreprises)",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-13",
+    "publication": "2025-06-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "7 Go de données revendiqués par Fog ; un extorqueur cite des documents d’investisseurs (cartes d’identité, IBAN) dans des courriels envoyés à des clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Ayomi (groupe Fog, découverte 13 février 2025)",
+      "url": "https://www.ransomware.live/id/QXlvbWlAZm9n",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Le site AYOMI piraté ? Un pirate menace les clients ! (14 juin 2025, mis à jour 16 juin 2025)",
+      "url": "https://www.zataz.com/le-site-ayomi-pirate-un-pirate-menace-les-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Ransomware : les revendications nébuleuses de Fog (25 février 2025)",
+      "url": "https://www.lemagit.fr/actualites/366619443/Ransomware-les-revendications-nebuleuses-de-Fog",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 février 2025, la plateforme française Ayomi, qui aide les entreprises à financer leurs projets, est citée par le groupe de rançongiciel Fog dans une série de revendications visant des instances GitLab, aux côtés d’Omydoo et de l’Adullact. LeMagIT relève que ces revendications, environ cinquante, appellent la prudence : pas d’instance affectée trouvée chez les victimes désignées. Le 14 juin, des clients d’Ayomi reçoivent des courriels d’un pirate se présentant comme « Gewko » : il affirme avoir piraté le site en avril, fournit des preuves (cartes d’identité, IBAN) et réclame 200 euros sous 96 heures. Selon Zataz, Ayomi n’a pas reconnu de piratage de ses services.",
+  "timeline": [
+    {
+      "date": "2025-02-13",
+      "event": "Fog revendique Ayomi avec Omydoo et l’Adullact dans sa série d’attaques d’instances GitLab."
+    },
+    {
+      "date": "2025-02-25",
+      "event": "LeMagIT documente le caractère « nébuleux » de la campagne Fog ; l’Adullact dément tout piratage."
+    },
+    {
+      "date": "2025-06-14",
+      "event": "Un pirate extorque des clients d’Ayomi : données d’investisseurs citées en preuve, 200 € réclamés."
+    }
+  ],
+  "group": "fog"
+}

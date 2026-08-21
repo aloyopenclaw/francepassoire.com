@@ -1,0 +1,51 @@
+{
+  "slug": "air-liquide-20250210",
+  "entity": "Air Liquide",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-10",
+    "publication": "2025-03-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume ni type de données précisés par la revendication ; airliquide.com listé sur le site de fuite de Clop"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : AIRLIQUIDE.COM (groupe Clop, découverte 10 février 2025)",
+      "url": "https://www.ransomware.live/id/QUlSTElRVUlERS5DT01AY2xvcA",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de février 2025 en France : AIRLIQUIDE.COM parmi les victimes françaises de Clop (12 mars 2025)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-fevrier-qui-est-concerne-groupes-responsables-et-solutions-concretes-de-protection/",
+      "kind": "article"
+    },
+    {
+      "label": "TechCrunch — Clop ransomware gang names dozens of victims hit by Cleo mass-hack (16 janvier 2025)",
+      "url": "https://techcrunch.com/2025/01/16/clop-ransomware-gang-names-dozens-of-victims-hit-by-cleo-mass-hack-but-several-firms-dispute-breaches/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 février 2025, le domaine airliquide.com apparaît sur le site de fuite du groupe de rançongiciel Clop, dans la suite de la campagne d’exploitation massive d’une faille zéro-day du logiciel de transfert de fichiers Cleo (LexiCom, VLTransfer, Harmony), activée depuis décembre 2024. Clop avait annoncé en janvier 2025 une liste de 59 organisations et menacé de publier les données prétendument volées ; plusieurs entreprises listées ont contesté toute intrusion. Air Liquide n’a pas communiqué publiquement sur cette revendication. Le groupe industriel français des gaz, technologies et services pour l’industrie et la santé, présent dans 80 pays, reste une victime revendiquée non confirmée.",
+  "timeline": [
+    {
+      "date": "2024-12-01",
+      "event": "Exploitation massive de la faille Cleo observée ; Clop recourt à son schéma de rançongiciel de transfert de fichiers."
+    },
+    {
+      "date": "2025-01-16",
+      "event": "Clop publie une première liste de 59 organisations prétendument compromises ; plusieurs contestent."
+    },
+    {
+      "date": "2025-02-10",
+      "event": "airliquide.com listé sur le site de fuite de Clop ; aucune confirmation publique d’Air Liquide."
+    }
+  ],
+  "group": "clop"
+}

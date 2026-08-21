@@ -1,0 +1,44 @@
+{
+  "slug": "bm-expertise-20250718",
+  "entity": "B&M Expertise (cabinet d’expertise comptable et d’audit)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-18",
+    "publication": "2025-07-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "233 Go de données revendiqués par Cicada3301"
+  },
+  "data_types": [
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : B&M - Expertise - Audit (groupe Cicada3301, découverte 18 juillet 2025)",
+      "url": "https://www.ransomware.live/id/QiZNIC0gRXhwZXJ0aXNlIC0gQXVkaXRAY2ljYWRhMzMwMQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "RedPacket Security — [CICADA3301] Ransomware Victim: B&M – Expertise – Audit (18 juillet 2025)",
+      "url": "https://www.redpacketsecurity.com/cicada3301-ransomware-victim-b-m-expertise-audit/",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense — B & M Expertise Data Breach : acteur Cicada3301, 233 Go (21 juillet 2025)",
+      "url": "https://www.breachsense.com/breaches/b-m-expertise-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 juillet 2025, B&M Expertise (bmexpertise.fr), cabinet français d’expertise comptable, d’audit et de conseil proposant aussi des outils de gestion numérique, est listé sur le site de fuite du rançongiciel Cicada3301 avec un volume revendiqué de 233 Go. La revendication s’accompagne d’une capture de documents internes et d’un compte à rebours avant publication intégrale. Un cabinet comptable concentre dossiers fiscales, paies et pièces clients, ce qui rend sensible un tel lot. L’entreprise n’a pas communiqué publiquement sur l’incident et l’exfiltration n’a pas été confirmée au-delà de la revendication et de ses relais spécialisés.",
+  "timeline": [
+    {
+      "date": "2025-07-18",
+      "event": "B&M Expertise listée par Cicada3301 : 233 Go revendiqués, capture de documents internes."
+    }
+  ],
+  "group": "cicada3301"
+}
