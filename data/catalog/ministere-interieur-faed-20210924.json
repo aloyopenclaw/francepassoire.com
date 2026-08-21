@@ -1,0 +1,52 @@
+{
+  "slug": "ministere-interieur-faed-20210924",
+  "entity": "Ministère de l'Intérieur",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-09-24",
+    "publication": "2021-09-30",
+    "confirmation": "2021-09-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rappel à l'ordre public et sept injonctions (échéance au 31 octobre 2021) ; aucune amende possible contre l'État ; aucun volume communiqué"
+  },
+  "data_types": [
+    "biometrique",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « MINISTÈRE », rappel à l'ordre et injonction (24 septembre 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Fichier automatisé des empreintes digitales : rappel à l'ordre du ministère de l'Intérieur (communiqué du 30 septembre 2021, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20211022034021/https://www.cnil.fr/fr/fichier-automatise-des-empreintes-digitales-rappel-lordre-du-ministere-de-linterieur",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : « Une mauvaise gestion du fichier automatisé des empreintes digitales (FAED) »",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 24 septembre 2021, la formation restreinte de la CNIL a publiquement rappelé à l'ordre le ministère de l'Intérieur pour sa gestion du FAED. Ce fichier de police judiciaire recense les empreintes digitales de personnes mises en cause. Cinq manquements ont été relevés. Des données non prévues par les textes et des durées de conservation dépassées figuraient au FAED. Les mentions des personnes acquittées, relaxées ou bénéficiant d'un non-lieu y étaient conservées. Un mot de passe peu robuste protégeait l'accès, et les personnes n'étaient pas informées. Sept injonctions accompagnent le rappel à l'ordre, avec une échéance au 31 octobre 2021. La CNIL ne peut prononcer d'amende contre l'État.",
+  "timeline": [
+    {
+      "date": "2021-09-24",
+      "event": "Rappel à l'ordre public et sept injonctions : données non prévues, durées dépassées, mentions après acquittement ou non-lieu, sécurité insuffisante, information absente."
+    },
+    {
+      "date": "2021-09-30",
+      "event": "La CNIL rend publique sa décision, rendue à l'issue de contrôles auprès des services de police technique et scientifique et de juridictions."
+    },
+    {
+      "date": "2021-10-31",
+      "event": "Échéance imposée au ministère pour se mettre en conformité, hors suppression de l'ancien « fichier manuel », attendue fin 2022."
+    }
+  ]
+}
