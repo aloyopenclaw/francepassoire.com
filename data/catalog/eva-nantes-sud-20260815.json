@@ -1,0 +1,47 @@
+{
+  "slug": "eva-nantes-sud-20260815",
+  "entity": "EVA Nantes Sud",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-15",
+    "publication": "2026-08-15"
+  },
+  "volume": {
+    "count": 20274,
+    "unit": "enregistrements",
+    "label": "20 274 lignes associées à l'établissement nantais revendiquées par leur auteur ; 275 comptes seulement seraient communs avec la fuite nationale EVA.gg de juillet (affirmation non vérifiée)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — EVA Nantes Sud piraté : les données de plus de 20 000 joueurs concernées (15 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/eva-nantes-sud-mstk3dvhzt4kjp61n2",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — EVA.gg : 20 274 comptes exposés quelques jours après une première fuite (13 août 2026)",
+      "url": "https://www.cyberattaque.org/eva-gg-nantes-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — EVA visée par une nouvelle fuite de données",
+      "url": "https://www.zataz.com/eva-visee-par-une-nouvelle-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 août 2026, un acteur utilisant le pseudonyme « 4me1 » annonce avoir compromis une base attribuée à EVA Nantes Sud. L'établissement appartient au réseau français d'arènes de réalité virtuelle EVA. Le fichier de 20 274 lignes, publié deux jours plus tard sur un forum, contient selon lui identité, pseudonymes et date de naissance. S'y ajoutent genre, téléphone et adresse postale complète. L'auteur affirme détenir également cartes cadeaux, transferts d'argent, réservations et données fournisseurs, sans publier l'intégralité. Il situe sa compromission au 13 août et soutient que seuls 275 comptes sont communs avec la fuite nationale EVA.gg de juillet. L'enseigne n'a pas communiqué publiquement.",
+  "timeline": [
+    {
+      "date": "2026-08-13",
+      "event": "L'auteur « 4me1 » situe la compromission de la base attribuée à EVA Nantes Sud ; les relais de veille la distinguent de la fuite nationale de juillet."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Publication revendiquée de 20 274 lignes : identité, coordonnées, et selon l'auteur cartes cadeaux, transferts d'argent et données fournisseurs."
+    }
+  ]
+}

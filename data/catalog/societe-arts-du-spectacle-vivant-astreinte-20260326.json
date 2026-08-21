@@ -1,0 +1,42 @@
+{
+  "slug": "societe-arts-du-spectacle-vivant-astreinte-20260326",
+  "entity": "Société exerçant une activité d'arts du spectacle vivant (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-26",
+    "confirmation": "2026-03-26",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; liquidation d'astreinte de 850 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société exerçant une activité d'arts du spectacle vivant » (procédure simplifiée), liquidation d'astreinte de 850 euros (26 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 mars 2026, la CNIL a prononcé la liquidation d'une astreinte de 850 euros à l'encontre d'une société exerçant une activité d'arts du spectacle vivant. La décision intervient dans le cadre de la procédure simplifiée, pour absence de réponse à une injonction. La dénomination n'est pas publiée ; les données en cause ne sont pas précisées. La fiche du 11 décembre 2025 pour le même descripteur mentionnait déjà cette liquidation à venir, sans pouvoir établir qu'il s'agit de la même entité. Le même jour, la CNIL prononçait une amende de 15 000 euros contre un organisateur d'évènements et une amende de 3 000 euros contre un hébergeur touristique.",
+  "timeline": [
+    {
+      "date": "2026-03-26",
+      "event": "Liquidation d'astreinte de 850 euros (procédure simplifiée) : absence de réponse à l'injonction."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, dont quatre liées à un défaut de coopération."
+    }
+  ]
+}

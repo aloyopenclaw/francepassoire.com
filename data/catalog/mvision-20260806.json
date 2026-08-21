@@ -1,0 +1,40 @@
+{
+  "slug": "mvision-20260806",
+  "entity": "MVision",
+  "siren": "448286617",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-08-06"
+  },
+  "volume": {
+    "count": 2100,
+    "unit": "personnes",
+    "label": "plus de 2 100 dossiers RH revendiqués, associés à des NIR, passeports et données de santé (chiffre de l'auteur, estimation fondée sur l'échantillon)"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage d'une entreprise de prestations audiovisuelles : plus de 2 000 personnes concernées (6 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/mvision-msgwx7wpe04lm2vdg5t",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — MVision : plus de 2 100 dossiers RH revendiqués avec NIR, passeports et données de santé",
+      "url": "https://www.cyberattaque.org/mvision-plus-de-2-100-dossiers-rh-revendiques-avec-nir-passeports-et-donnees-de-sante/",
+      "kind": "article"
+    }
+  ],
+  "description": "MVision, entreprise de prestations audiovisuelles, met à disposition des techniciens pour des évènements. Elle est visée le 6 août 2026 par une revendication de fuite publiée sur un forum. L'auteur affirme avoir compromis le système d'information et diffuse un échantillon présenté comme issu de la base interne de gestion des collaborateurs et des candidatures. Plus de 2 100 personnes y seraient associées à des numéros de Sécurité sociale, des passeports et des données de santé. Ces champs proviennent de l'examen du relais de veille. Un lien de téléchargement de l'ensemble des données accompagne la publication. Ces éléments reposent sur les seules déclarations de l'auteur ; l'authenticité n'est pas confirmée indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-06",
+      "event": "Revendication de fuite contre MVision : échantillon de la base RH diffusé et ensemble des données proposé au téléchargement ; non confirmé."
+    }
+  ]
+}

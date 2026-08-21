@@ -1,0 +1,43 @@
+{
+  "slug": "armurerie-lavaux-20260806",
+  "entity": "Armurerie Lavaux",
+  "siren": "503383101",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-08-06"
+  },
+  "volume": {
+    "count": 91900,
+    "unit": "personnes",
+    "label": "91 900 personnes selon le relais de veille ; récapitulatifs de commandes enregistrées depuis 2025 extraits selon l'entreprise"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Armurerie Lavaux : plusieurs dizaines de milliers de clients concernés (6 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/armurerie-lavaux-mseypxv2fdmjdlqaj78",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Détenteurs d'armes à nouveau dans le viseur : l'Armurerie Lavaux confirme une cyberattaque (6 août 2026)",
+      "url": "https://www.cyberattaque.org/detenteurs-darmes-a-nouveau-dans-le-viseur-larmurerie-lavaux-confirme-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Armurerie Lavaux, armurier professionnel installé à Neufchâteau dans les Vosges depuis 1979, a révélé une cyberattaque ciblée contre son site marchand, signalée le 1er août 2026. Selon l'entreprise, des récapitulatifs de commandes enregistrées depuis 2025 ont été extraits : ils associent noms, adresses postales et numéros de téléphone au détail des produits commandés. Le caractère sensible tient à la nature des produits : le rapprochement d'une adresse et d'un achat d'arme ou de munition peut permettre de repérer des détenteurs. Selon l'entreprise, les numéros SIA, numéros d'armes, documents transmis, adresses e-mail, mots de passe et données bancaires ne sont pas concernés. Elle appelle les détenteurs des catégories B, C et D à la vigilance.",
+  "timeline": [
+    {
+      "date": "2026-08-01",
+      "event": "L'incident est signalé à l'Armurerie Lavaux ; des investigations sont engagées sur l'origine de l'attaque."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "L'entreprise confirme l'extraction de récapitulatifs de commandes depuis 2025 ; le relais de veille chiffre l'ampleur à 91 900 personnes."
+    }
+  ]
+}
