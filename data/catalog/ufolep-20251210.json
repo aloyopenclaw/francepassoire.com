@@ -1,0 +1,43 @@
+{
+  "slug": "ufolep-20251210",
+  "entity": "UFOLEP",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-10"
+  },
+  "volume": {
+    "count": 350000,
+    "unit": "personnes",
+    "label": "≈ 350 000 membres et encadrants revendiqués (dont certificats médicaux cités ; via le prestataire Exalto, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données UFOLEP : 350K personnes exposées en ligne",
+      "url": "https://frenchbreaches.com/alertes/ufolep-65e6f1d15545",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — UFOLEP, via Exalto, 10 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données UFOLEP : informations et protection",
+      "url": "https://hginfoandco.com/fuite/149-ufolep",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 10 décembre 2025, une fuite revendiquée touche l'UFOLEP, première fédération sportive éducative multisports de France : environ 350 000 membres et encadrants, avec identités, dates et lieux de naissance, nationalités, coordonnées et responsables légaux ; certains fichiers citent des certificats médicaux. La fuite passerait par le prestataire Exalto, déjà mis en cause dans le dossier FFMoto de janvier 2025. La fédération n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-10",
+      "event": "Une base revendiquée d'environ 350 000 membres de l'UFOLEP, via le prestataire Exalto, est recensée."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "carrefour-mobile-20250424",
+  "entity": "Carrefour Mobile (groupe Carrefour)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-04-24",
+    "publication": "2025-04-24"
+  },
+  "volume": {
+    "count": 64000,
+    "unit": "personnes",
+    "label": "64 000 clients recensés (fichier en circulation ; ampleur exacte non déterminée par l'enseigne)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite massive chez Carrefour Mobile : des milliers de données personnelles en danger ? (24 avril 2025)",
+      "url": "https://www.zataz.com/fuite-massive-chez-carrefour-mobile-des-milliers-de-donnees-personnelles-en-danger/",
+      "kind": "article"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Carrefour Mobile, 24 avril 2025, 64 000 clients",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fin avril 2025, un fichier contenant des données d'abonnés de Carrefour Mobile, l'opérateur virtuel de l'enseigne, circule en ligne : identités, coordonnées, données techniques d'identification (numéro d'abonné, IMSI), identifiants de l'espace client, réponses aux questions de sécurité et, pour certains clients, numéros de passeport. L'enseigne ferme temporairement le portail client et ouvre une enquête avec un prestataire spécialisé, sans pouvoir déterminer l'ampleur exacte de la brèche ; elle écarte une fuite de données bancaires. Ce dossier avait été précédé, en janvier, d'une revente revendiquée démentie par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-04-24",
+      "event": "Un fichier de données d'abonnés Carrefour Mobile circule en ligne ; l'enseigne ferme le portail client et ouvre une enquête externe."
+    }
+  ]
+}

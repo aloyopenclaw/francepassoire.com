@@ -1,0 +1,38 @@
+{
+  "slug": "mairie-de-chatou-20251124",
+  "entity": "Ville de Chatou",
+  "siren": "217801463",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-24"
+  },
+  "volume": {
+    "count": 8500,
+    "unit": "personnes",
+    "label": "≈ 8 500 fiches usagers revendiquées (plateforme de prise de rendez-vous via le prestataire RDV360 ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Mairie de Chatou touchée par une fuite de données : 8,5K personnes",
+      "url": "https://frenchbreaches.com/alertes/mairie-de-chatou-cb871af0f85f",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Mairie de Chatou, via RDV360, 24 novembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 novembre 2025, une fuite revendiquée touche la ville de Chatou (Yvelines) via la plateforme de prise de rendez-vous RDV360, déjà visée le même mois par une revendication concernant des centaines de mairies : environ 8 500 fiches usagers avec identités, coordonnées, codes postaux et objets des rendez-vous. La municipalité n'a pas confirmé publiquement l'exfiltration ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "Une base revendiquée d'environ 8 500 fiches usagers de la mairie de Chatou, via le prestataire RDV360, est recensée."
+    }
+  ]
+}

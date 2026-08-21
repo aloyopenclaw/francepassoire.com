@@ -1,0 +1,38 @@
+{
+  "slug": "viseo-20250219",
+  "entity": "VISEO",
+  "siren": "793288010",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non précisés ; chiffrement des systèmes et vol de données revendiqués par le groupe de rançongiciel Fog"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — VISEO cible d'une cyberattaque : une fuite de données revendiquée en ligne",
+      "url": "https://frenchbreaches.com/alertes/viseo-rw_VmtsVFJVOUFabTlu",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live — Victim: VISEO, claimed by Fog (19 février 2025)",
+      "url": "https://www.ransomware.live/id/VklTRU9AZm9n",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 février 2025, le groupe de rançongiciel Fog ajoute VISEO, entreprise française de services numériques (ESN) employant plus d'un millier de collaborateurs, à sa liste de victimes : chiffrement des systèmes et exfiltration de données revendiqués, dans une période où Fog frappe plusieurs structures en France. L'entreprise n'a pas communiqué publiquement sur l'incident ; les volumes de données impliqués ne sont pas précisés par la revendication. Les conséquences opérationnelles et l'exfiltration ne sont pas confirmées.",
+  "timeline": [
+    {
+      "date": "2025-02-19",
+      "event": "Le groupe Fog inscrit VISEO sur son site de fuite et revendique le chiffrement et le vol de données."
+    }
+  ],
+  "group": "fog"
+}

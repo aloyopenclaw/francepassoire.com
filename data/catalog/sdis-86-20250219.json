@@ -1,0 +1,38 @@
+{
+  "slug": "sdis-86-20250219",
+  "entity": "SDIS de la Vienne (SDIS 86)",
+  "siren": "283700110",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-19"
+  },
+  "volume": {
+    "count": 22233,
+    "unit": "comptes",
+    "label": "22 233 identifiants (adresses e-mail, logins, mots de passe hachés) diffusés (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez le SDIS de la Vienne",
+      "url": "https://frenchbreaches.com/alertes/service-departemental-d-incendie-et-de-secours-de-la-vienne-sdis-86-0588ab580c3e",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données SDIS 86 : informations et protection",
+      "url": "https://hginfoandco.com/fuite/254-service-departemental-d-incendie-et-de-secours-de-la-vienne-sdis-86",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 février 2025, un cybercriminel diffuse une base revendiquée du Service départemental d'incendie et de secours de la Vienne : 22 233 identifiants comprenant adresses e-mail, logins et mots de passe hachés, touchant des personnels et membres du SDIS 86. Le site internet du service est désactivé à titre de précaution, selon la veille cyber qui documente l'incident. La diffusion de ces identifiants expose les pompiers concernés à des attaques par réutilisation de mots de passe. L'authenticité de la base et l'exfiltration ne sont pas confirmées officiellement.",
+  "timeline": [
+    {
+      "date": "2025-02-19",
+      "event": "Diffusion sur un forum d'une base revendiquée de 22 233 identifiants du SDIS 86 ; le site du service est désactivé en précaution."
+    }
+  ]
+}

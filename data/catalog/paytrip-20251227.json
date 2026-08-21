@@ -1,0 +1,39 @@
+{
+  "slug": "paytrip-20251227",
+  "entity": "PayTrip",
+  "siren": "833745748",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-27"
+  },
+  "volume": {
+    "count": 74877,
+    "unit": "personnes",
+    "label": "74 877 clients revendiqués (IBAN, soldes des comptes, identités ; non confirmé)"
+  },
+  "data_types": [
+    "financier",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez PayTrip : 74,9K comptes compromis",
+      "url": "https://frenchbreaches.com/alertes/paytrip-1be9256fe48c",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — PayTrip, 27 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 décembre 2025, une fuite revendiquée touche la fintech française PayTrip : 74 877 clients avec identités, coordonnées, IBAN et soldes des comptes. La combinaison d'un moyen de paiement et de son historique rend possibles des tentatives de prélèvements frauduleux et des usurpations bancaires précises. La société n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-12-27",
+      "event": "Une base revendiquée de 74 877 clients de PayTrip est recensée par les veilles cyber."
+    }
+  ]
+}

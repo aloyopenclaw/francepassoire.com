@@ -1,0 +1,38 @@
+{
+  "slug": "proxiserve-20251125",
+  "entity": "ProxiServe",
+  "siren": "334873726",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-25"
+  },
+  "volume": {
+    "count": 294639,
+    "unit": "personnes",
+    "label": "294 639 clients revendiqués (base complète : identité, coordonnées, historique des interventions ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez ProxiServe : fuite de données concernant 294,6K comptes",
+      "url": "https://frenchbreaches.com/alertes/proxiserve-0483b06d90b1",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — ProxiServe, 25 novembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 novembre 2025, une base revendiquée du spécialiste de la maintenance résidentielle ProxiServe (chaudières, plomberie, électricité) est recensée sur un forum : 294 639 clients avec identités, coordonnées, dates et motifs d'interventions et détails techniques des logements. La connaissance des équipements d'un foyer rend possibles des escroqueries au dépannage très crédibles. L'entreprise n'a pas confirmé publiquement l'incident ; les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-25",
+      "event": "Une base revendiquée de 294 639 clients de ProxiServe apparaît sur un forum."
+    }
+  ]
+}
