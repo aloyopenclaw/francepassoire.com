@@ -1,0 +1,48 @@
+{
+  "slug": "compagnons-du-devoir-20250516",
+  "entity": "Association ouvrière des Compagnons du Devoir et du Tour de France",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-16",
+    "publication": "2025-05-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 150 Go de données revendiqués ; « toutes les données » promises en téléchargement le 25 mai 2025"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : compagnons-du-devoir.com (groupe Qilin, découverte 16 mai 2025)",
+      "url": "https://www.ransomware.live/id/Y29tcGFnbm9ucy1kdS1kZXZvaXIuY29tQHFpbGlu",
+      "kind": "revendication"
+    },
+    {
+      "label": "RedPacket Security — [QILIN] Ransomware Victim: compagnons-du-devoir.com (16 mai 2025)",
+      "url": "https://www.redpacketsecurity.com/qilin-ransomware-victim-compagnons-du-devoir-com/",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense — Compagnons du Devoir Data Breach : acteur Qilin, 150 Go (19 mai 2025)",
+      "url": "https://www.breachsense.com/breaches/compagnons-du-devoir-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 mai 2025, l’Association ouvrière des Compagnons du Devoir et du Tour de France, association loi 1901 qui forme des jeunes en alternance et en communauté dans les métiers du bâtiment et de l’industrie, apparaît sur le site de fuite du rançongiciel Qilin. Les attaquants annoncent que « toutes les données » de l’organisation seront téléchargeables le 25 mai 2025 ; les agrégateurs évaluent le lot à environ 150 Go. Des traces d’infostealers (Raccoon, RedLine, Lumma) touchant environ 300 comptes liés au domaine sont associées à l’entrée. L’association n’a pas communiqué publiquement sur la revendication, qui reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-05-16",
+      "event": "Qilin liste les Compagnons du Devoir ; publication intégrale promise pour le 25 mai."
+    },
+    {
+      "date": "2025-05-25",
+      "event": "Date butoir de mise en ligne des données brandie par les attaquants."
+    }
+  ],
+  "group": "qilin"
+}

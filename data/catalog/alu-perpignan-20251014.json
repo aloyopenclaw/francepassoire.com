@@ -1,0 +1,44 @@
+{
+  "slug": "alu-perpignan-20251014",
+  "entity": "Alu Perpignan (PME de menuiseries aluminium et PVC)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-14",
+    "publication": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré par la revendication"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Alu Perpignan (groupe Qilin, découverte 14 octobre 2025)",
+      "url": "https://www.ransomware.live/id/QWx1IFBlcnBpZ25hbkBxaWxpbg==",
+      "kind": "revendication"
+    },
+    {
+      "label": "Deefense — Cyberattaque par le rançongiciel Qilin contre la PME Alu Perpignan (octobre 2025)",
+      "url": "https://deefense.fr/cyber-et-it/cyberattaque-rancongiciel-qilin",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Cyberattaque contre la Région des Hauts-de-France : tableau des victimes françaises de Qilin, dont Alu Perpignan (16 octobre 2025)",
+      "url": "https://www.zataz.com/cyberattaque-contre-la-region-des-hauts-de-france-les-lycees-impactes/",
+      "kind": "article"
+    }
+  ],
+  "description": "En octobre 2025, Alu Perpignan, PME occitane spécialisée dans la fabrication et la pose de menuiseries en aluminium et PVC, est victime d’une cyberattaque revendiquée par le rançongiciel Qilin, qui liste l’entreprise le 14 octobre. Le dossier de veille de Deefense documente l’impact opérationnel d’une attaque par double extorsion sur une PME industrielle : chiffrement des postes et du serveur, arrêt de la production et des chiffrages d’affaires, données clients, devis et plans menacées de publication. La PME n’a pas communiqué publiquement sur l’incident. La revendication s’ajoute à la vague française de Qilin d’octobre 2025, qui visait aussi des mairies et des lycées.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "Alu Perpignan listée par Qilin au sein de la vague française d’octobre 2025."
+    }
+  ],
+  "group": "qilin"
+}

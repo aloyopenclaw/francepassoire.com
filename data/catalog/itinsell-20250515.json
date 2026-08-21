@@ -1,0 +1,48 @@
+{
+  "slug": "itinsell-20250515",
+  "entity": "ITinSell (éditeur de logiciels e-logistique)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-15",
+    "publication": "2025-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; documents financiers, bordereaux de paiement clients et journaux de transactions revendiqués"
+  },
+  "data_types": [
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : ITinSell group (groupe Qilin, découverte 15 mai 2025, attaque estimée 10 mai)",
+      "url": "https://www.ransomware.live/id/SVRpblNlbGwgZ3JvdXBAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "RedPacket Security — [QILIN] Ransomware Victim: ITinSell group (15 mai 2025)",
+      "url": "https://www.redpacketsecurity.com/qilin-ransomware-victim-itinsell-group/",
+      "kind": "article"
+    },
+    {
+      "label": "DarkWeb Informer — ITinSell Falls Victim to Qilin Ransomware Group (15 mai 2025)",
+      "url": "https://darkwebinformer.com/itinsell-falls-victim-to-qilin-ransomware-group/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 mai 2025, ITinSell, groupe français d’édition de logiciels d’e-logistique et d’hébergement cloud pour le commerce en ligne (collecte, structuration et sécurisation de données), est revendiqué par le groupe de rançongiciel Qilin, pour une attaque estimée au 10 mai. Les attaquants affirment avoir exfiltré et chiffré des documents d’entreprise : enregistrements financiers, bordereaux de paiement de clients, journaux de transactions et rapports internes, illustrés par un échantillon de tableurs, formulaires scannés et factures. Aucune communication publique de l’entreprise n’a suivi. La revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-05-10",
+      "event": "Date d’attaque estimée par les agrégateurs pour l’intrusion chez ITinSell."
+    },
+    {
+      "date": "2025-05-15",
+      "event": "Qilin liste ITinSell : documents financiers et données clients revendiqués, échantillon diffusé."
+    }
+  ],
+  "group": "qilin"
+}

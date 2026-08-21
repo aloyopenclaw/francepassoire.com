@@ -1,0 +1,47 @@
+{
+  "slug": "forvis-mazars-20250310",
+  "entity": "Forvis Mazars (France)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-10",
+    "publication": "2025-03-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume ni échantillon avancé par les attaquants ; deux domaines listés (mazars.fr, forvismazars.com.fr)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : mazars.fr (groupe Babuk2, découverte 10 mars 2025)",
+      "url": "https://www.ransomware.live/id/bWF6YXJzLmZyQGJhYnVrMg",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live — Victim : forvismazars.com.fr (mazars.fr) (groupe Babuk2, découverte 11 mars 2025)",
+      "url": "https://www.ransomware.live/id/Zm9ydmlzbWF6YXJzLmNvbS5mciAoIG1hemFycy5mciApQGJhYnVrMg==",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense — Forvis Mazars Data Breach : acteur Babuk, découvert 11 mars 2025",
+      "url": "https://www.breachsense.com/breaches/forvis-mazars-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Les 10 et 11 mars 2025, les domaines mazars.fr puis forvismazars.com.fr — le réseau français d’audit, d’expertise comptable et de conseil devenu Forvis Mazars après la fusion internationale de 2024 — sont listés sur le site de fuite de « Babuk2 ». Aucun volume ni échantillon de données n’accompagne ces entrées, et l’entreprise n’a pas communiqué publiquement. Des chercheurs ont documenté que « Babuk2 », apparu en janvier 2025, recycle des données volées par d’autres groupes et multiplie les revendications croisées sans preuve d’intrusion réelle. Rappel : Mazars avait déjà été visé par une revendication d’Alphv/BlackCat en mai 2023, non commentée par le groupe.",
+  "timeline": [
+    {
+      "date": "2025-03-10",
+      "event": "mazars.fr listé sur le site de fuite de « Babuk2 », sans échantillon ni volume."
+    },
+    {
+      "date": "2025-03-11",
+      "event": "forvismazars.com.fr listé à son tour par le même acteur ; aucune confirmation de l’entreprise."
+    }
+  ],
+  "group": "babuk2"
+}
