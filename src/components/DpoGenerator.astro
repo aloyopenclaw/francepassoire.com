@@ -167,7 +167,7 @@
     effacement: {
       slug: 'effacement',
       fr: {
-        objet: "Objet : Demande d'exercice du droit à l'effacement — « droit à l'oubli » (RGPD, article 17)",
+        objet: "Objet : Demande d'exercice du droit à l'effacement · « droit à l'oubli » (RGPD, article 17)",
         paras: [
           "Conformément au règlement (UE) 2016/679 (RGPD), et notamment en application de son article 17, je souhaite exercer mon droit à l'effacement des données personnelles me concernant que vous traitez.",
           "Les données me concernant ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées et aucun fondement légitime ne justifie la poursuite de leur traitement. Je vous demande en conséquence d'effacer sans tarder l'ensemble de ces données, conformément à l'article 17 du RGPD.",
@@ -175,7 +175,7 @@
         items: [],
       },
       en: {
-        objet: 'Subject: Request to exercise the right to erasure — “right to be forgotten” (GDPR, Article 17)',
+        objet: 'Subject: Request to exercise the right to erasure · “right to be forgotten” (GDPR, Article 17)',
         paras: [
           'Pursuant to Regulation (EU) 2016/679 (GDPR), and in particular Article 17 thereof, I hereby exercise my right to erasure of the personal data concerning me that you process.',
           'The personal data concerning me is no longer necessary for the purposes for which it was collected, and no legitimate ground justifies its continued processing. I therefore request that you erase all such data without undue delay, pursuant to Article 17 GDPR.',
@@ -306,7 +306,7 @@
       '',
       ...body.paras.flatMap((p) => [p, '']),
     ];
-    if (body.items.length > 0) lines.push(...body.items.map((i) => `— ${i}`), '');
+    if (body.items.length > 0) lines.push(...body.items.map((i) => `· ${i}`), '');
     lines.push(s.deadline, '', s.closing, '', name);
     return lines.join('\n');
   }
@@ -342,7 +342,7 @@
       letterEl.append(el('p', 'mb-4 leading-relaxed', para));
     }
     for (const item of body.items) {
-      letterEl.append(el('p', 'pl-4 mb-1 leading-relaxed', `— ${item}`));
+      letterEl.append(el('p', 'pl-4 mb-1 leading-relaxed', `· ${item}`));
     }
     if (body.items.length > 0) letterEl.append(el('div', 'mb-4', ''));
     letterEl.append(el('p', 'mb-4 leading-relaxed', s.deadline));
@@ -446,7 +446,7 @@
     }
     feedbackEl.innerHTML = copied
       ? '<span class="text-[#0E7A46]">Lettre copiée !</span>'
-      : '<span class="text-brand-ink">Copie impossible — sélectionnez la lettre manuellement.</span>';
+      : '<span class="text-brand-ink">Copie impossible · sélectionnez la lettre manuellement.</span>';
   }
 
   function downloadLetter(): void {

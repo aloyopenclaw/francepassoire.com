@@ -78,7 +78,7 @@ const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_L
       </>
     ) : (
       <p class="mb-4 font-mono text-sm border-2 border-brand-ink/30 rounded-xl px-4 py-3 bg-brand-cream" role="note">
-        Protection anti-robot en cours d'activation — le formulaire sera envoyable dès que la vérification sera disponible.
+        Protection anti-robot en cours d'activation · le formulaire sera envoyable dès que la vérification sera disponible.
       </p>
     )}
 
@@ -92,7 +92,7 @@ const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_L
       Activer ma veille
     </button>
     <p class="text-xs font-mono text-brand-ink/60 text-center mt-4">
-      Votre email, vos critères, rien d'autre — pas de revente, pas de croisement. Un clic dans n'importe quel email et on vous laisse tranquille.
+      Votre email, vos critères, rien d'autre · pas de revente, pas de croisement. Un clic dans n'importe quel email et on vous laisse tranquille.
     </p>
   </form>
 
@@ -175,7 +175,7 @@ const secteurs = Object.entries(SECTEUR_LABELS) as Array<[keyof typeof SECTEUR_L
       return;
     }
     if (!turnstileToken()) {
-      setStatus(errorHtml('Vérification anti-robot incomplète — patientez quelques secondes puis réessayez.'));
+      setStatus(errorHtml('Vérification anti-robot incomplète · patientez quelques secondes puis réessayez.'));
       return;
     }
 
