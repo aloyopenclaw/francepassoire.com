@@ -1,0 +1,40 @@
+{
+  "slug": "msp-du-pre-vicinal-20251125",
+  "entity": "MSP du Pré Vicinal (Cugnaux)",
+  "siren": "951772441",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-25",
+    "publication": "2025-11-25"
+  },
+  "volume": {
+    "count": 15000,
+    "unit": "personnes",
+    "label": "≈ 15 000 personnes recensées via l'éditeur Weda (revendiqué, non confirmé par la maison de santé)"
+  },
+  "data_types": ["identite", "coordonnees", "sante"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite chez MSP du Pré Vicinal (via Weda) : 15 000 personnes (25 novembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/msp-du-pre-vicinal-via-weda-9a4d9a615acd",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données MSP du Pré Vicinal (via Weda), référence fuitesinfos (25 novembre 2025)",
+      "url": "https://hginfoandco.com/fuite/165-msp-du-pre-vicinal-via-weda",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 novembre 2025, dans le sillage de la cyberattaque contre l'éditeur de logiciels médicaux Weda du 10 novembre, une base revendiquée d'environ 15 000 personnes de la maison de santé pluriprofessionnelle du Pré Vicinal, à Cugnaux (Haute-Garonne), est recensée : noms et prénoms, coordonnées, numéros de Sécurité sociale, comptes rendus médicaux et ordonnances. La structure figure parmi les cabinets utilisateurs de la plateforme dont des comptes ont fait l'objet d'activités malveillantes ; l'extraction n'est pas confirmée publiquement. Les volumes annoncés restent des revendications non établies.",
+  "timeline": [
+    {
+      "date": "2025-11-10",
+      "event": "Weda détecte une activité malveillante sur des comptes utilisateurs dans la nuit du 10 novembre et coupe l'accès à sa plateforme, utilisée par la MSP du Pré Vicinal."
+    },
+    {
+      "date": "2025-11-25",
+      "event": "FrenchBreaches recense une base revendiquée d'environ 15 000 personnes de la MSP via Weda : identité, NIR, comptes rendus médicaux, ordonnances."
+    }
+  ]
+}
