@@ -1,0 +1,194 @@
+================================================================
+full-catalog-completion — RAFALE 7, LANE 4 (T23/24,
+FINANCE & ASSURANCE 2023-2025) — 4/20 fiches
+(pool in-window non couvert épuisé aux standards du contrat ;
+cf. §5)
+Worktree : /var/folders/.../T/opencode/fp-r7l4
+Branche  : fiche/rafale7-l4 (créée sur main ff388a2, 791 fiches)
+Commit   : feat(catalog): rafale 7 — finance L4 (20 fiches)
+Sources  : presse éco (La Tribune/L'Informé via dumps locaux
+           lt-*/li-*, 24k URLs 2024 passées au crible) + presse
+           générale/tech (BFM, Le Figaro, LeMagIT, LMI, next.ink,
+           MoneyVox, Capital, 24matins, Zataz) + CNIL (tableau
+           intégral des sanctions 2023-2026 + pages
+           mises-en-demeure) + trackers de revendications
+           (FrenchBreaches sitemap 957 alertes daté, HG Info & Co,
+           Wayback CDX L'Argus de l'assurance) + annuaire
+           entreprises.data.gouv.fr (SIREN).
+================================================================
+
+[0] RÉSUMÉ
+  Consigne : 20 fiches finance & assurance 2023-2025 (banques,
+  assurances, fintechs, courtiers — secteur sous-représenté),
+  ≥2 sources vivantes, zod, zéro invention, Ton A, jamais merge.
+  Constat de run : le secteur finance compte 33 fiches sur main
+  (791) après les rafales 1-6, et l'espace 2023-2025 hors
+  catalogue est ÉPUISÉ au terme d'une prospection systématique
+  (§1). La majorité des incidents finance 2024-2025 visibles
+  chez les trackers est DÉJÀ fichée (Harvest/BPCE/MAIF, CDC,
+  Mutuelle des Motards, UTwin, Ayomi, Zéphir, Audita, Direct
+  Assurance, NS Cards, AmEx, LCF, La Nef, PayPal, Coinbase,
+  Itelis, réduction-impots.fr…). Les incidents 2023 connus de la
+  presse sont soit déjà fichés, soit rejetés pour motifs
+  contractuels (§2). 4 fiches livrées.
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  - Catalogue : dump intégral slug::entity::secteur::date des
+    791 fiches → index de dédup réel (grep préalable de chaque
+    slug AVANT écriture, leçon r6-l3).
+  - CNIL : page « Les sanctions prononcées par la CNIL » (tableau
+    intégral 412 lignes, 2023-2026 re-lues ligne à ligne) ;
+    27/12/2023+29/12/2023, 08/08/2024, 30/01/2025, 03/04/2025,
+    15/05/2025, 11/09/2025, 13/11/2025, 27/11/2025 = déjà
+    fichées (NS Cards 105 k€ 29/12/2023 ; AmEx 1,5 M€ 27/11/2025)
+    ou hors finance ; pages « mise en demeure » balayées →
+    aucune autre MED finance que Boursorama (fiche livrée).
+  - FrenchBreaches : sitemap intégral (957 alertes, lastmod) →
+    159 alertes 2023-2025 non utilisées listées une à une ;
+    seules finance = mutuelle-lmp 2023-07-03 (rejetée §2) et
+    alertes déjà couvertes (banque-de-france, meilleurtaux,
+    assurance-retraite, direct-assurance, harvest/maif/bpce,
+    mutuelle-des-motards, caisse-des-depots, itelis) ; alertes
+    2026 (Sofinco 06/2026, Cetelem, Assurea, Maxance, IMH,
+    Verspieren, Goodvest, BeBunk, EVY…) hors fenêtre.
+  - Zataz : sitemap posts intégral (6 020 URLs, lastmod) → tous
+    les posts finance 2023-2025 lus (CAFPI ✓, LC Pass, mutuelle
+    LMP, cartes bancaires ×2, Activa, caisses de retraite,
+    Allianz Life, Almerys-2026, Direct Assurance) ;
+    cyberattaque.org (489 posts) = tout 2026, hors fenêtre.
+  - L'Argus de l'assurance : sweep Wayback CDX intégral
+    (cyberattaque/fuite/piratage/rancongiciel/courtier,
+    2023-2026) → Uniprévoyance (rejetée §2), Alptis (rejetée §2),
+    La MIF ✓, Verlingue/Génération (2021, hors fenêtre),
+    « un courtier touché » 25/11/2024 (paywall+403, entité non
+    identifiable, 1 seule source → écarté).
+  - HG Info & Co : liste intégrale des 604 fuites lue une à une
+    → MNT (rejetée §2), Perlefinance/Prélys/achat-or (2026),
+    Allianz France 3,4 M (25/02/2026), Santander 2024 (Espagne/
+    Chili/Uruguay, sans périmètre France → écarté), IMH (2026).
+  - Google News RSS par fenêtres after:/before: (≈30 requêtes :
+    banque/assurance/mutuelle/courtier/fintech/néobanque/
+    crédit/paiement/épargne × 2023, 2024, 2025) + La Tribune
+    (24 120 URLs 2024) et L'Informé (1 047 URLs 2024) des dumps
+    locaux passés au crible → CAFPI ✓, Boursorama ✓,
+    Sofinco 10/2024 ✓, La MIF ✓, Assurance retraite 05/2025
+    (1 seule source Génération NT, secteur public → écarté),
+    tarneaud/sylvea/santiane/premunia/younited/floa/oney :
+    aucun incident vérifiable (recherches infructueuses).
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS ET REJETS EXPLICITES
+  Base : 791 fiches (main ff388a2).
+  `node scripts/check-doublons.mjs` → « 0 collision (±45 j,
+  même entité normalisée) », exit 0 (4 nouvelles).
+  Candidats examinés puis ÉCARTÉS avec motif :
+  - mutuelle-lmp-20230703 (Medusa 03/07/2023) : FB + GalaxyWarden
+    + référent-cybersécurité consultés — AUCUN type de données
+    listé nulle part (GalaxyWarden : « does not quantify […]
+    nor list specific data types ») → data_types insourçables.
+  - lc-pass-20240114 (Zataz 17/01/2024, 312 000 lignes de la
+    boutique de coupons LC Pass) : une seule source identifiée
+    (absent de FB/HG/Zataz-sitemap-2e-passe) → < 2 sources.
+  - mnt-20250412 (Mutuelle Nationale Territoriale, 920 000
+    assurés, 12/04/2025) : un seul relais vivant (HG Info & Co,
+    qui relaie BonjourLaFuite — site JS non énumérable, slug
+    inconnu) ; aucun relais presse ni Zataz → 1 source.
+  - uniprevoyance-20240520 (rançongiciel détecté 20/05/2024,
+    « confidentialité de données compromise » confirmée par
+    l'institution, Argus 14/06/2024 + snapshot Wayback de la
+    home) : aucun type de données listé dans le communiqué ni
+    dans la presse → data_types insourçables (précédent
+    college-stjb, r6-l3 §5).
+  - alptis-20230831 (credential stuffing 24/08/2023, espace
+    client suspendu, communication de crise — Argus 12/06/2024) :
+    « nombre de comptes piratés et durée de l'attaque inconnus »,
+    aucun type de données listé → data_types insourçables.
+  - panorabanques (2 340 422 personnes, base « revendiquée en
+    août 2025 ») : date de revendication connue au mois près
+    seulement ; première date publique précise = publication
+    FrenchBreaches 10/01/2026 (hors fenêtre) → pas de date
+    traçable au jour en 2025, refus d'inventer un jour.
+  - assurance-retraite mai 2025 (vente darkweb, Génération NT
+    29/05/2025) : distincte de assurance-retraite-20240909 mais
+    une seule source, entité secteur public (hors lane).
+  - Activa Assurances (BlackCat, avr. 2023) : assureur
+    panafricain basé au Cameroun, sans périmètre France.
+  - Santander (mai 2024, via Snowflake) : Espagne/Chili/Uruguay,
+    pays INTL, pas de périmètre France sourcé.
+  - Verlingue/Génération/Adelaïde (nov. 2021), MMA (2021),
+    MNH (2022) : hors fenêtre 2023-2025.
+  - Direct Assurance 11-12/2024 (Argus 20/11/2024, Usine
+    Digitale, Zataz 01/12/2024) : même incident que
+    direct-assurance-20250318 déjà publiée (piratage
+    fournisseur, 15 000 clients) — pas de seconde fiche
+    (pattern 1 incident = 1 fiche).
+  - Sofinco 2026, Cetelem/Assurea/Maxance/IMH/Goodvest/
+    Verspieren/BeBunk/EVY 2026 : hors fenêtre.
+  - dumps de cartes bancaires Zataz 2023 (150 000 CB ; 2,16 M
+    données dont 19 000 FR) : carding sans entité française
+    identifiable.
+  - « caisses de retraite » (Zataz 24/05/2025) : 11 institutions
+    non nommées → pas d'entité fichable.
+  - OCRI (août 2025) : régulateur canadien des investissements.
+  - Crédit Mutuel « CNIL avertit » (Challenges) : article de
+    2012 (Euro Information), fausse fraîcheur Google News.
+
+[3] FICHES LIVRÉES (4)
+  01 cafpi-20230522 — Cafpi (courtier en crédits, 230 agences),
+     Vice Society, intrusion détectée 30/04/2023, données
+     compromises et mises en ligne confirmées par Cafpi —
+     confirmée — cafpi.fr (FAQ officielle) + LeMagIT + BFM +
+     LMI. SIREN 510302953.
+  02 boursorama-20230829 — Boursorama Banque, mise en demeure
+     CNIL du 29/08/2023 pour collecte des identifiants
+     impots.gouv.fr (prêts conso/PEA, depuis juin 2022) —
+     confirmée — next.ink + BFM + Le Figaro. SIREN 351058151.
+     NB : première fiche du catalogue portant sur une mise en
+     demeure (mesure correctrice publique CNIL, non une
+     sanction pécuniaire) — famille « enforcement CNIL » déjà
+     établie (ns-cards, amex, courtage-énergie) ; signalée
+     comme risque éditorial mineur dans la PR.
+  03 sofinco-20241016 — Sofinco (Crédit agricole), courriel
+     clients du 16/10/2024 : coordonnées postales/téléphoniques/
+     bancaires + copies de pièces d'identité exposées via un
+     partenaire — confirmée — Capital/Yahoo Finance +
+     L'Informaticien. siren omis (deux entités « SOFINCO » à
+     l'annuaire, marque opérée par CA Consumer Finance —
+     résolution ambiguë, précédent r6-l3).
+  04 la-mif-20241021 — La MIF (Mutuelle d'Ivry la Fraternelle,
+     assurance vie, 185 000 clients), cyberattaque week-end du
+     12/10/2024, fuite partielle confirmée (identité, adresse,
+     e-mail, téléphone), CNIL informée — confirmée — MoneyVox +
+     24matins. SIREN 310259221.
+     (Chiffre « près de 200 000 documents » de L'Argus 403
+     anti-bot non cité : URL non vivante.)
+
+[4] VÉRIFICATIONS
+  - zod (tests/tmp-r7l4-validation.test.ts, retiré avant
+    commit) : 4/4 tests (schéma ; slug=fichier ; ≥2 sources).
+  - `npx vitest run` intégral (worktree, node_modules symlinké
+    sur le checkout principal) : 29 fichiers / 1 158 tests
+    verts, dont pr-fiches validant les 795 JSON du catalogue.
+  - check-doublons : « 0 collision (±45 j, même entité
+    normalisée) », exit 0.
+  - Sondage d'URLs : 11 URLs sources distinctes, curl -L UA
+    navigateur → toutes HTTP 200 (Ouest-France/Usine Digitale/
+    L'Argus 403 anti-bot remplacés par Yahoo Finance/
+    L'Informaticien/MoneyVox+24matins).
+
+[5] ÉCART 4/20 — POOL ÉPUISÉ (précédents : r6-l2 « 2 fiches,
+    20 demandées », commit 48d4c28 ; r6-l3 « 10/20 », §5)
+  L'espace finance & assurance 2023-2025 hors catalogue et hors
+  fenêtre ±45 j est épuisé au terme de : tableau sanctions CNIL
+  intégral + pages mises-en-demeure, sitemap FrenchBreaches
+  intégral daté (toutes alertes finance 2023-2025 collationnées
+  une à une), sitemap Zataz intégral (6 020 posts filtrés
+  finance 2023-2025, articles lus), cyberattaque.org intégral
+  (0 post 2025), Wayback CDX L'Argus de l'assurance (sweeps
+  cyberattaque/fuite/piratage/courtier 2023-2026), liste HG
+  Info & Co intégrale (604 fuites), dumps La Tribune 2024
+  (24 120 URLs) et L'Informé 2024 (1 047 URLs), et ≈30 requêtes
+  Google News RSS fenêtrées 2023/2024/2025 (banque, assurance,
+  mutuelle, courtier, fintech, néobanque, crédit, paiement,
+  épargne, noms propres). Les incidents finance restants
+  visibles sont 2026 (rafale future) ou déjà fichés.
+================================================================

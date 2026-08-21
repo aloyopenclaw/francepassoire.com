@@ -1,0 +1,50 @@
+{
+  "slug": "boursorama-20230829",
+  "entity": "Boursorama Banque",
+  "siren": "351058151",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-29",
+    "publication": "2023-08-30",
+    "confirmation": "2023-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients ayant transmis leurs identifiants impots.gouv.fr non communiqué ; la collecte, proposée depuis juin 2022, visait les demandes de prêt et d'ouverture de PEA"
+  },
+  "data_types": ["credentials"],
+  "sources": [
+    {
+      "label": "next.ink (30 août 2023) — Boursorama demande les identifiants et mots de passe des impôts, la CNIL la met en demeure",
+      "url": "https://next.ink/899/boursorama-demande-identifiants-et-mots-passe-impots-cnil-met-en-demeure/",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech (31 août 2023) — Boursorama mise en demeure par la Cnil pour avoir demandé le mot de passe des impôts de ses clients",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/boursorama-mise-en-demeure-par-la-cnil-pour-avoir-demande-le-mot-de-passe-des-impots-de-ses-clients_AD-202308310775.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro (31 août 2023) — Boursorama mise en demeure par la Cnil pour avoir demandé le mot de passe des impôts",
+      "url": "https://www.lefigaro.fr/societes/boursorama-mise-en-demeure-par-la-cnil-pour-avoir-demande-le-mot-de-passe-des-impots-20230831",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis juin 2022, la banque en ligne Boursorama proposait à des clients demandant un prêt à la consommation ou ouvrant un PEA de lui fournir leur identifiant et mot de passe du site impots.gouv.fr, afin d'aller vérifier les justificatifs à la source. Le 29 août 2023, la CNIL met la banque en demeure de cesser ce traitement, avec deux mois pour se mettre en conformité. La décision, révélée le 30 août par next.ink puis confirmée à l'AFP, n'est pas publique. La banque déclare avoir « bien l'intention » de s'y conformer. Le nombre de clients concernés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-08-29",
+      "event": "La CNIL met Boursorama en demeure de cesser le traitement des identifiants de connexion à impots.gouv.fr."
+    },
+    {
+      "date": "2023-08-30",
+      "event": "next.ink révèle la mise en demeure, consultée via le courriel adressé à un plaignant."
+    },
+    {
+      "date": "2023-08-31",
+      "event": "L'AFP confirme la procédure ; la banque annonce son intention de se mettre en conformité."
+    }
+  ]
+}

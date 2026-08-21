@@ -1,0 +1,40 @@
+{
+  "slug": "sofinco-20241016",
+  "entity": "Sofinco",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-16",
+    "publication": "2024-10-17",
+    "confirmation": "2024-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« quantité infime » de clients concernés parmi les onze millions de Sofinco, selon sa porte-parole (Capital) ; décompte non communiqué"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Capital via Yahoo Finance (17 octobre 2024) — Une fuite importante de données a touché Sofinco, êtes-vous concerné ?",
+      "url": "https://fr.finance.yahoo.com/actualites/fuite-importante-donn%25C3%25A9es-touch%25C3%25A9-sofinco-171905241.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien (21 octobre 2024) — Des données bancaires dans la nature après une cyberattaque visant Sofinco",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/62584-des-donnees-bancaires-dans-la-nature-apres-une-cyberattaque-visant-sofinco.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 octobre 2024, Sofinco, la filiale du Crédit agricole spécialisée dans le crédit à la consommation, informe par courriel des clients avoir détecté « une atteinte à la sécurité de ses systèmes informatiques ». Les données exposées comprennent des coordonnées postales, téléphoniques et bancaires ainsi que des copies de pièces d'identité. La société situe l'incident chez un partenaire et le qualifie de circonscrit, parlant d'une « quantité infime » de clients touchés parmi ses onze millions. Le décompte n'est pas communiqué. Les personnes concernées sont invitées à surveiller leurs comptes.",
+  "timeline": [
+    {
+      "date": "2024-10-16",
+      "event": "Courriel de Sofinco à des clients : certaines données personnelles exposées lors d'un incident survenu chez un partenaire."
+    },
+    {
+      "date": "2024-10-17",
+      "event": "La presse relaie la fuite ; Sofinco confirme l'atteinte à Ouest-France et parle d'une quantité infime de clients concernés."
+    }
+  ]
+}
