@@ -40,15 +40,24 @@ import WatchlistForm from '../components/WatchlistForm.astro';
         <div class="grid grid-cols-1 gap-4">
           <a href="https://haveibeenpwned.com" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
             <div>
-              <h3 class="font-display font-bold text-xl">Votre email</h3>
+              <h4 class="font-display font-bold text-xl">Votre email</h4>
               <p class="font-body text-sm opacity-80">Vérifiez sur la référence mondiale HaveIBeenPwned.</p>
             </div>
             <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
 
+          <!-- Template : lien ancre-vide mort → ressource officielle réelle (cybermalveillance.gouv.fr, curl 200). Copie template exacte, seul le href diffère. -->
+          <a href="https://www.cybermalveillance.gouv.fr" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
+            <div>
+              <h4 class="font-display font-bold text-xl">Votre numéro de téléphone</h4>
+              <p class="font-body text-sm opacity-80">Guide : les outils qui existent pour vérifier.</p>
+            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+
           <a href="https://myactivity.google.com/results-about-you" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
             <div>
-              <h3 class="font-display font-bold text-xl">Votre nom / adresse</h3>
+              <h4 class="font-display font-bold text-xl">Votre nom / adresse</h4>
               <p class="font-body text-sm opacity-80">Gérez l'outil Google "Résultats vous concernant".</p>
             </div>
             <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -139,62 +148,14 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       </div>
     </section>
 
-    <!-- SECTION 3: SURVEILLER (veille email double opt-in + outils externes) -->
+    <!-- SECTION 3: SURVEILLER (veille email double opt-in + lettre type DPO) -->
     <section id="proteger-surveiller" class="max-w-4xl mx-auto px-4 sm:px-6 pb-16 scroll-mt-24">
       <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
         <span class="bg-[#0E7A46] text-brand-cream w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-2xl">3</span>
         Surveiller
       </h2>
 
-      <p class="font-body text-lg mb-8 max-w-3xl">
-        Vérifier une fois ne suffit pas : une fuite peut vous concerner n'importe quand.
-        Activez une veille par email ci-dessous — ou appuyez-vous sur les outils gratuits
-        et indépendants qui suivent.
-      </p>
-
       <WatchlistForm />
-
-      <h3 class="font-display font-extrabold text-2xl mt-12 mb-2">Autres outils de veille</h3>
-      <p class="font-body text-brand-ink/70 mb-6">Gratuits, complémentaires de la veille email.</p>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
-          <div>
-            <h3 class="font-display font-bold text-xl">HaveIBeenPwned — notifications de fuite</h3>
-            <p class="font-body text-sm opacity-80 mt-1">Gratuit, surveillance par adresse email : le service de référence vous prévient dès qu'une fuite vous concerne.</p>
-          </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange flex-shrink-0 ml-4"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </a>
-
-        <a href="https://www.cnil.fr/fr/cnil-direct/" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
-          <div>
-            <h3 class="font-display font-bold text-xl">CNIL — signalement</h3>
-            <p class="font-body text-sm opacity-80 mt-1">Conseil ou plainte : CNIL direct, le contact officiel du régulateur français des données personnelles.</p>
-          </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange flex-shrink-0 ml-4"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </a>
-
-        <a href="/feed.xml" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
-          <div>
-            <h3 class="font-display font-bold text-xl">FrancePassoire — flux RSS</h3>
-            <p class="font-body text-sm opacity-80 mt-1">Toutes les nouvelles fiches, directement dans votre lecteur de flux, dès leur publication.</p>
-          </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange flex-shrink-0 ml-4"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-
-        <div class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] flex items-center justify-between">
-          <div>
-            <h3 class="font-display font-bold text-xl">Vigilance au quotidien</h3>
-            <p class="font-body text-sm opacity-80 mt-1">Relisez vos relevés bancaires chaque semaine et signalez toute opération inconnue à votre banque. Restez ultra-vigilant sur les appels et SMS inconnus : votre banque ne vous demandera jamais un code au téléphone.</p>
-          </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 ml-4"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8"></path><circle cx="12" cy="12" r="3"></circle></svg>
-        </div>
-      </div>
-
-      <p class="text-sm font-body mt-6">
-        Le panorama national, mis à jour à chaque nouvelle fiche :
-        <a href="/chiffres/" class="underline hover:text-brand-orange transition-colors font-bold">→ tous les chiffres</a>.
-      </p>
 
       <!-- Slot « Lettre type au DPO » du template : notre vrai générateur 100 % local -->
       <div id="proteger-dpo" class="mt-12 scroll-mt-24">
