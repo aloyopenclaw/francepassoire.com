@@ -1,0 +1,44 @@
+{
+  "slug": "stellantis-20250921",
+  "entity": "Stellantis",
+  "siren": "879786085",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-21",
+    "publication": "2025-09-24",
+    "confirmation": "2025-09-21"
+  },
+  "volume": {
+    "count": 18000000,
+    "unit": "enregistrements",
+    "label": "18 millions d'enregistrements revendiqués par ShinyHunters, noms et coordonnées de clients (non confirmés) ; Stellantis reconnaît l'exposition de données de contact"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Stellantis signale une fuite de données personnelles",
+      "url": "https://www.usine-digitale.fr/article/stellantis-signale-une-fuite-de-donnees-personnelles.N2238255",
+      "kind": "article"
+    },
+    {
+      "label": "Archive — L'Usine Digitale, Stellantis (snapshot du 25 septembre 2025)",
+      "url": "https://web.archive.org/web/20250925171914/https://www.usine-digitale.fr/article/stellantis-signale-une-fuite-de-donnees-personnelles.N2238255",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 21 septembre 2025, Stellantis indique avoir été victime d'un incident de sécurité affectant la plateforme d'un prestataire externe soutenant son service client en Amérique du Nord. Selon le constructeur, seules des données de contact de clients ont été exposées, sans informations financières ni données dites sensibles ; autorités et clients potentiellement concernés sont prévenus. Selon BleepingComputer relayé par L'Usine Digitale, l'incident s'inscrit dans une campagne visant des environnements Salesforce via des jetons OAuth compromis : le groupe ShinyHunters revendique plus de 18 millions d'enregistrements liés à Stellantis. Ce volume n'est pas confirmé par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-09-21",
+      "event": "Stellantis reconnaît un accès non autorisé chez un prestataire du service client nord-américain et l'exposition de données de contact."
+    },
+    {
+      "date": "2025-09-24",
+      "event": "La presse spécialisée rapporte la revendication de ShinyHunters : 18 millions d'enregistrements volés via des jetons OAuth Salesforce compromis."
+    }
+  ]
+}

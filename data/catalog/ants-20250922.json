@@ -1,0 +1,43 @@
+{
+  "slug": "ants-20250922",
+  "entity": "Agence nationale des titres sécurisés (ANTS)",
+  "siren": "130003262",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-22",
+    "publication": "2025-09-22"
+  },
+  "volume": {
+    "count": 13000000,
+    "unit": "enregistrements",
+    "label": "12 à 13 millions de données d'état civil proposées à la vente sur le dark web, présentées comme issues de l'ANTS ; l'agence dément toute intrusion"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — Des données d'état civil en vente sur le dark web, l'ANTS dément toute implication",
+      "url": "https://www.usine-digitale.fr/article/des-donnees-d-etat-civil-en-vente-sur-le-dark-web-l-ants-dement-toute-implication.N2238190",
+      "kind": "article"
+    },
+    {
+      "label": "Archive — L'Usine Digitale, ANTS (snapshot du 22 septembre 2025)",
+      "url": "https://web.archive.org/web/20250922174115/https://www.usine-digitale.fr/article/des-donnees-d-etat-civil-en-vente-sur-le-dark-web-l-ants-dement-toute-implication.N2238190",
+      "kind": "archive"
+    }
+  ],
+  "description": "Une base de 12 à 13 millions de données d'état civil est proposée à la vente sur le dark web, avec un échantillon accessible gratuitement, rapporte L'Usine Digitale le 22 septembre 2025. Elle est présentée comme provenant de l'Agence nationale des titres sécurisés (ANTS), qui dément formellement toute intrusion dans ses systèmes et signale des incohérences dans les données diffusées. L'établissement annonce des investigations techniques et le dépôt d'une plainte contre les auteurs de la diffusion comme contre toute personne attribuant faussement la fuite à l'ANTS. Un recyclage d'anciennes fuites ou une agrégation de bases hétérogènes demeurent possibles ; l'origine n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-09-22",
+      "event": "Une base de 12 à 13 millions de données d'état civil est proposée à la vente sur le dark web, présentée comme issue de l'ANTS."
+    },
+    {
+      "date": "2025-09-22",
+      "event": "L'ANTS dément toute intrusion, signale des incohérences dans les données et annonce une plainte avec investigations en cours."
+    }
+  ]
+}
