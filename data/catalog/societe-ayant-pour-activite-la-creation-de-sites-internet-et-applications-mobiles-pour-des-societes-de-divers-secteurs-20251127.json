@@ -1,0 +1,37 @@
+{
+  "slug": "societe-ayant-pour-activite-la-creation-de-sites-internet-et-applications-mobiles-pour-des-societes-de-divers-secteurs-20251127",
+  "entity": "Société ayant pour activité la création de sites internet et applications mobiles pour des sociétés de divers secteurs (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-27",
+    "confirmation": "2025-11-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume publié ; la décision ne comporte pas d'amende, uniquement l'obligation de réaliser une analyse d'impact"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 novembre 2025, la CNIL a rendu une décision obligeant une société de création de sites internet et d'applications mobiles, non nommée, à réaliser une analyse d'impact relative à la protection des données. L'autorité relève également un défaut de sécurité des données. Aucune amende ne figure au tableau des sanctions pour cette décision rendue en procédure simplifiée. Le bilan 2025 de la CNIL cite la sécurisation insuffisante des données parmi les trois principaux motifs de sanction de l'année.",
+  "timeline": [
+    {
+      "date": "2025-11-27",
+      "event": "La CNIL oblige une société de création de sites internet, non nommée, à réaliser une analyse d'impact et relève un défaut de sécurité des données."
+    }
+  ]
+}

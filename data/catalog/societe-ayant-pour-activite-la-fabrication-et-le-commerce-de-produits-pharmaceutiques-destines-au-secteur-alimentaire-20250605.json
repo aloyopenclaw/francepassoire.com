@@ -1,0 +1,46 @@
+{
+  "slug": "societe-ayant-pour-activite-la-fabrication-et-le-commerce-de-produits-pharmaceutiques-destines-au-secteur-alimentaire-20250605",
+  "entity": "Société ayant pour activité la fabrication et le commerce de produits pharmaceutiques destinés au secteur alimentaire (procédure simplifiée)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-05",
+    "confirmation": "2025-06-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "salariés filmés par le dispositif de vidéosurveillance ; effectif non publié, entité non nommée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce 16 nouvelles sanctions dans le cadre de la procédure simplifiée (13 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-16-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 juin 2025, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société de fabrication et de commerce de produits pharmaceutiques destinés au secteur alimentaire, non nommée dans la décision. Le manquement retenu est une atteinte au principe de minimisation dans un dispositif de vidéosurveillance. Selon le communiqué de la CNIL du 13 octobre 2025, cette société, avec un établissement hospitalier également sanctionné, avait filmé l'accès et l'entrée d'un local syndical. L'autorité rappelle que les caméras ne doivent jamais filmer les locaux syndicaux ou leurs accès directs.",
+  "timeline": [
+    {
+      "date": "2025-06-05",
+      "event": "La CNIL prononce une amende de 5 000 euros contre une société du secteur pharmaceutique non nommée (minimisation, vidéosurveillance)."
+    },
+    {
+      "date": "2025-10-13",
+      "event": "Un communiqué de la CNIL précise que les caméras filmaient l'accès et l'entrée d'un local syndical, avec un établissement hospitalier aussi sanctionné."
+    }
+  ]
+}
