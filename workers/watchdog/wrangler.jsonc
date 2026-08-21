@@ -19,7 +19,7 @@
   // Cron toutes les 10 minutes : sonde des 4 cibles, notes uniquement sur
   // transition (ok→down / down→ok) — cf. src/index.ts.
   "triggers": {
-    "crons": ["*/10 * * * *"]
+    "crons": ["13,43 * * * *"]
   },
 
   "kv_namespaces": [
