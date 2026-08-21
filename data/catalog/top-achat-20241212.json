@@ -1,0 +1,48 @@
+{
+  "slug": "top-achat-20241212",
+  "entity": "Top Achat",
+  "siren": "952723716",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-12",
+    "publication": "2024-12-14",
+    "confirmation": "2024-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; l'enseigne indique qu'aucune donnée financière ou sensible n'est concernée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe LDLC — Information relative à un incident de cyber-sécurité (avis officiel)",
+      "url": "https://www.groupe-ldlc.com/information-relative-a-un-incident-de-cybersecurite-3/",
+      "kind": "officiel"
+    },
+    {
+      "label": "01net — Fuite de données chez Top Achat (14 décembre 2024)",
+      "url": "https://www.01net.com/actualites/cyberattaques-france-dernieres-fuites-donnees-entreprises-touchees.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Top Achat (12 décembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/top-achat-blf_697f831a59b50",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Début décembre 2024, Top Achat reconnaît un « incident de cybersécurité ». Ce site e-commerce d'informatique a été racheté par le groupe LDLC en 2020. L'incident a abouti au vol d'une partie des informations clients. L'enseigne précise qu'aucune donnée financière ou sensible n'est concernée. Les clients seront informés si leurs données sont touchées. Les investigations sont menées avec les autorités dans le cadre du RGPD. Au 14 décembre, les données n'avaient pas fait surface sur les marchés noirs. Elles pourraient servir à des campagnes de phishing ciblant les acheteurs, relève 01net.",
+  "timeline": [
+    {
+      "date": "2024-12-12",
+      "event": "Top Achat informe ses clients d'un incident de cybersécurité ayant entraîné le vol d'une partie de leurs informations, sans donnée financière ou sensible."
+    },
+    {
+      "date": "2024-12-14",
+      "event": "01net relaie l'incident et met en garde contre le risque de phishing exploitant les données de commandes."
+    }
+  ]
+}

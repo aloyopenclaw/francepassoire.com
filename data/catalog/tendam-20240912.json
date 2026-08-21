@@ -1,0 +1,36 @@
+{
+  "slug": "tendam-20240912",
+  "entity": "Tendam (Cortefiel, Springfield, Women'secret)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-12",
+    "publication": "2024-09-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "724,59 Go de données revendiqués par le groupe Medusa (rançon de 800 000 dollars exigée) ; nombre de clients non chiffré, données non détaillées"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Le géant espagnol de la mode Tendam victime d'une cyberattaque : 724 Go de données sensibles volés (12 septembre 2024)",
+      "url": "https://www.zataz.com/le-geant-espagnol-de-la-mode-tendam-victime-dune-cyberattaque-724-go-de-donnees-sensibles-volees/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "En septembre 2024, le groupe de mode espagnol Tendam est visé par le groupe ransomware Medusa. Propriétaire de Cortefiel, Springfield et Women'secret, il est présent en France par ses boutiques et sites marchands. Les pirates revendiquent le vol de 724,59 Go de données. Ils exigent 800 000 dollars de rançon avant le 17 septembre, sous menace de publication. L'entreprise pilote plus de 1 750 points de vente dans 80 pays. Elle mène une analyse d'impact et n'exclut pas que des données clients aient été compromises. Le détail des données et le nombre de personnes ne sont pas établis.",
+  "timeline": [
+    {
+      "date": "2024-09-12",
+      "event": "Le groupe Medusa revendique le vol de 724,59 Go de données chez Tendam et exige 800 000 dollars de rançon."
+    },
+    {
+      "date": "2024-09-17",
+      "event": "Échéance fixée par les rançonneurs pour le paiement, sous menace de publication ou de vente des données."
+    }
+  ]
+}

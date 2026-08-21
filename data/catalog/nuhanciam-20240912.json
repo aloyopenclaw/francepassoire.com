@@ -1,0 +1,44 @@
+{
+  "slug": "nuhanciam-20240912",
+  "entity": "Nuhanciam",
+  "siren": "520729856",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-12",
+    "publication": "2024-09-12"
+  },
+  "volume": {
+    "count": 156000,
+    "unit": "personnes",
+    "label": "plus de 156 000 profils clients mis en vente (chiffre revendiqué, non confirmé par la marque)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Le site Nuhanciam piraté ? Une base de plus de 156 000 profils clients en vente (12 septembre 2024)",
+      "url": "https://www.zataz.com/le-site-nuhanciam-pirate/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Nuhanciam : plus de 156 000 clients exposés dans une fuite visant la marque de cosmétiques (relais de mai 2026)",
+      "url": "https://www.cyberattaque.org/nuhanciam-plus-de-156-000-clients-exposes-dans-une-fuite-visant-la-marque-de-cosmetiques/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une cybercriminelle annonce début juin 2024 sur Telegram, puis sur un forum spécialisé, la vente de la base clients de Nuhanciam. Cette marque française de soins dermatologiques et cosmétiques vend principalement en ligne. La base comprendrait plus de 156 000 profils. Les extraits observés incluent noms, prénoms, adresses e-mail et postales, dates de naissance, téléphones, mots de passe chiffrés et historiques de commandes. Le laboratoire n'a pas confirmé la compromission à la publication de l'article de Zataz. La même base réapparaît en 2026 sur les relais de veille, toujours à l'état de revendication.",
+  "timeline": [
+    {
+      "date": "2024-09-12",
+      "event": "Zataz relaie la mise en vente d'une base attribuée à Nuhanciam : plus de 156 000 profils clients, annonce détectée début juin sur Telegram."
+    },
+    {
+      "date": "2026-05-12",
+      "event": "La base attribuée à Nuhanciam circule à nouveau sur un forum cybercriminel, documentée par un relais de veille."
+    }
+  ]
+}

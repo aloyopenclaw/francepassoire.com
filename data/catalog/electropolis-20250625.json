@@ -1,0 +1,32 @@
+{
+  "slug": "electropolis-20250625",
+  "entity": "Electropolis",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-06-25",
+    "publication": "2025-06-25"
+  },
+  "volume": {
+    "count": 100000,
+    "unit": "personnes",
+    "label": "plus de 100 000 clients répartis dans plusieurs pays dont la France (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Vente d'une base de données d'un géant de l'électronique : Electropolis visé, clients français concernés (25 juin 2025)",
+      "url": "https://www.zataz.com/vente-dune-base-de-donnees-dun-geant-de-lelectronique/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 juin 2025, Zataz repère sur un forum russophone la vente des données d'Electropolis, boutique en ligne espagnole d'électronique, de gadgets et de cadeaux. Le pirate affirme fournir le code source de l'application, le dump de toutes les bases de données et l'accès au CRM de facturation. Plus de 100 000 clients seraient concernés, répartis au Portugal, en Espagne, en Pologne, en Italie, en France et aux États-Unis. Le détail des champs et le nombre exact de clients français ne sont pas précisés. La compromision n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2025-06-25",
+      "event": "Un pirate met en vente sur un forum russophone les données d'Electropolis : plus de 100 000 clients de plusieurs pays, dont la France."
+    }
+  ]
+}
