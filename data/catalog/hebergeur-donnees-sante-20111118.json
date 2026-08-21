@@ -1,0 +1,32 @@
+{
+  "slug": "hebergeur-donnees-sante-20111118",
+  "entity": "Un hébergeur de données de santé (entité non nommée)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2011-11-18",
+    "confirmation": "2011-11-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement non public ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « hébergeur de données de santé », avertissement non public (18 novembre 2011)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 18 novembre 2011, la CNIL a adressé un avertissement non public à un hébergeur de données de santé. Manquements retenus : collecte illicite de données, défaut de sécurité et de confidentialité, dans le domaine des traitements de données de santé. La décision n'est pas publiée nominativement : elle figure de façon anonyme dans le tableau officiel des sanctions prononcées par la CNIL. Aucun volume de données ni aucun autre détail public n'est disponible pour cette décision ancienne, antérieure au RGPD, qui relève de la loi Informatique et Libertés d'alors.",
+  "timeline": [
+    {
+      "date": "2011-11-18",
+      "event": "Avertissement non public de la CNIL : collecte illicite, défaut de sécurité et de confidentialité (données de santé)."
+    }
+  ]
+}
