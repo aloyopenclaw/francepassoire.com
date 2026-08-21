@@ -1,0 +1,52 @@
+{
+  "slug": "schneider-electric-20240117",
+  "entity": "Schneider Electric",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-17",
+    "publication": "2024-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "1,5 téraoctet de données d'entreprise revendiqué par le groupe Cactus (chiffre non confirmé)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Heimdalsecurity (relais du communiqué Schneider) — Cactus Ransomware behind Schneider Electric data breach (incident du 17 janvier 2024)",
+      "url": "https://heimdalsecurity.com/blog/cactus-schneider-electric-data-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale — Schneider Electric touché par le ransomware Cactus, plusieurs téraoctets de données volés (30 janvier 2024)",
+      "url": "https://www.usine-digitale.fr/article/cybersecurite-l-equipementier-francais-schneider-electric-touche-par-le-ransomware-cactus.N2207250",
+      "kind": "article"
+    },
+    {
+      "label": "SecurityWeek — Cactus Ransomware Group Confirms Hacking Schneider Electric (revendication de 1,5 To)",
+      "url": "https://www.securityweek.com/cactus-ransomware-group-confirms-hacking-schneider-electric/",
+      "kind": "article"
+    },
+    {
+      "label": "The Record — Schneider Electric confirms ransomware attack on sustainability division (janvier 2024)",
+      "url": "https://therecord.media/schneider-electric-ransomware-attack-sustainability-division",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 janvier 2024, Schneider Electric, spécialiste français de la gestion de l'énergie et de l'automatisation industrielle, est touché par un rançongiciel au sein de sa division « Sustainability Business », qui exploite la plateforme cloud Resource Advisor utilisée par de grands clients entreprises. L'équipementier confirme l'incident et précise que la division attaquée fonctionne sur une infrastructure réseau isolée. Le groupe de cyber extorsion Cactus revendique l'opération et affirme avoir dérobé 1,5 téraoctet de données d'entreprise, menaçant de les publier en cas de non-paiement ; ces volumes ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2024-01-17",
+      "event": "Un rançongiciel touche la division Sustainability Business de Schneider Electric (communiqué du groupe)."
+    },
+    {
+      "date": "2024-01-30",
+      "event": "L'Usine Digitale documente l'attaque et la revendication de Cactus avec plusieurs téraoctets volés."
+    }
+  ],
+  "group": "cactus"
+}

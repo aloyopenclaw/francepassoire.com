@@ -1,0 +1,46 @@
+{
+  "slug": "etesia-20240202",
+  "entity": "Etesia (fabricant de tracteurs-tondeuses, Wissembourg)",
+  "siren": "343510996",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-02-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; rançongiciel ayant rendu l'essentiel du SI et des serveurs indisponibles"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ICSSTRIVE — French ride-on mower manufacturer tries to recover from ransomware attack (attaque du 2 février 2024)",
+      "url": "https://icsstrive.com/incident/french-ride-on-mower-manufacturer-tries-to-recover-from-ransomware-attack/",
+      "kind": "article"
+    },
+    {
+      "label": "Les Échos PME (archive) — Espaces verts : Etesia tente de se relever de sa cyberattaque (février 2024)",
+      "url": "https://web.archive.org/web/20240405134248/https://www.lesechos.fr/pme-regions/grand-est/espaces-verts-etesia-tente-de-se-relever-de-sa-cyberattaque-2087045",
+      "kind": "archive"
+    },
+    {
+      "label": "DNA — Deux ans après une cyberattaque, Etesia sort du redressement judiciaire (2 février 2026)",
+      "url": "https://www.dna.fr/economie/2026/02/02/deux-ans-apres-une-cyberattaque-etesia-sort-du-redressement-judiciaire",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 février 2024, Etesia, fabricant alsacien de tracteurs-tondeuses employé à Wissembourg (Bas-Rhin), est victime d'une cyberattaque par rançongiciel qui rend quasi indisponible l'ensemble de son système d'information : mails, téléphonie et données serveurs. L'activité industrielle et commerciale de la PME est stoppée net, puis l'entreprise est placée en redressement judiciaire — un enchaînement que la presse régionale relie directement à l'attaque. Aucune exfiltration chiffrée de données n'a été rendue publique.",
+  "timeline": [
+    {
+      "date": "2024-02-02",
+      "event": "Rançongiciel détecté chez Etesia : l'essentiel du SI et des données serveurs devient indisponible."
+    },
+    {
+      "date": "2026-02-02",
+      "event": "La presse régionale relate la sortie de redressement judiciaire deux ans après l'attaque."
+    }
+  ]
+}

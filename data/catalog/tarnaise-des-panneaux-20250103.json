@@ -1,0 +1,37 @@
+{
+  "slug": "tarnaise-des-panneaux-20250103",
+  "entity": "Tarnaise des Panneaux (fabricant de panneaux de fibres de bois)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; revendication 8Base sans détail public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — Tarnaise des Panneaux data breach : acteur 8Base, découverte 3 janvier 2025",
+      "url": "https://www.breachsense.com/breaches/tarnaise-des-panneaux-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (Tarnaise des Panneaux SAS, 3 janvier, groupe 8base)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 janvier 2025, le rançongiciel 8Base liste la Tarnaise des Panneaux SAS, fabricant tarnais de panneaux de fibres de bois denses (type Isorel), sur son site de fuite. La PME industrielle, dont les produits sont distribués pour l'emballage et l'industrie, ne communique publiquement pas sur l'incident : ni la nature des données concernées, ni d'éventuels volumes exfiltrés ne sont établis à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-01-03",
+      "event": "8Base ajoute la Tarnaise des Panneaux à son site de fuite (relais Breachsense / DPO Partage)."
+    }
+  ],
+  "group": "8base"
+}

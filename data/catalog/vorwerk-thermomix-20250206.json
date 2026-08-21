@@ -1,0 +1,51 @@
+{
+  "slug": "vorwerk-thermomix-20250206",
+  "entity": "Vorwerk (forum de recettes Thermomix Rezeptwelt)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-06",
+    "publication": "2025-02-06"
+  },
+  "volume": {
+    "count": 3300000,
+    "unit": "comptes",
+    "label": "3,3 millions de comptes du forum exposés dans sept pays, dont la France (Bitdefender)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — Le fabricant du Thermomix victime d'une cyberattaque : quels sont les risques (6 février 2025)",
+      "url": "https://www.clubic.com/actualite-552725-le-fabricant-du-thermomix-victime-d-une-cyberattaque-il-explique-quels-sont-les-risques.html",
+      "kind": "article"
+    },
+    {
+      "label": "Bitdefender (Hot for Security) — Recettes Thermomix : la violation de données du forum expose 3,3 millions d'utilisateurs (2025)",
+      "url": "https://www.bitdefender.com/fr-fr/blog/hotforsecurity/recettes-thermomix-la-violation-de-donnees-du-forum-expose-3-3-millions-dutilisateurs",
+      "kind": "article"
+    },
+    {
+      "label": "Notre Temps — Vous possédez un Thermomix ? Vos données personnelles sont peut-être compromises (2025)",
+      "url": "https://www.notretemps.com/vie-pratique/cuisine/vous-possedez-un-thermomix-attention-vos-donnees-personnelles-sont-peut-etre-compromises-108039",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le 30 janvier et le 3 février 2025, une faille sur un serveur secondaire géré par un prestataire externe expose les données des utilisateurs du forum communautaire de recettes du Thermomix (Rezeptwelt) et de ses déclinaisons dans sept pays, dont la France. Le fabricant Vorwerk annonce l'incident le 6 février 2025 : prénoms et noms, adresses, dates de naissance, numéros de téléphone et adresses e-mail — ainsi que des préférences culinaires — ont pu être consultés, tandis que mots de passe, données bancaires, plateforme Cookidoo et boutiques en ligne sont préservés selon l'entreprise. Au total, 3,3 millions de comptes sont recensés comme exposés par les analyses relayées par la presse.",
+  "timeline": [
+    {
+      "date": "2025-01-30",
+      "event": "Début de la fenêtre d'accès non autorisé au forum de recettes (serveur d'un prestataire externe)."
+    },
+    {
+      "date": "2025-02-03",
+      "event": "Fin de la fenêtre d'accès ; la faille est colmatée dès sa découverte selon Vorwerk."
+    },
+    {
+      "date": "2025-02-06",
+      "event": "Vorwerk annonce la fuite ; 3,3 millions de comptes exposés dans sept pays dont la France."
+    }
+  ]
+}

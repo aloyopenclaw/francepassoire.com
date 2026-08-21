@@ -1,0 +1,37 @@
+{
+  "slug": "datasociete-20250127",
+  "entity": "DataSociete (plateforme d'information sur les entreprises françaises)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; revendication KillSec sans détail public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Breachsense — DataSociete data breach : acteur KillSecurity, découverte 27 janvier 2025",
+      "url": "https://www.breachsense.com/breaches/datasociete-data-breach/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (DataSociete, 25 janvier, groupe Killsec)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin janvier 2025, le groupe KillSec revendique une attaque contre DataSociete, plateforme francophone d'information sur les entreprises (analyses financières, documents officiels, données de dirigeants, domaine datasociete.net). La revendication est enregistrée par les veilleurs le 27 janvier 2025, sans détail public sur la nature ou le volume des données concernées ; la plateforme n'a pas communiqué sur l'incident.",
+  "timeline": [
+    {
+      "date": "2025-01-27",
+      "event": "KillSec liste DataSociete sur son site de fuite (relais Breachsense)."
+    }
+  ],
+  "group": "killsec"
+}

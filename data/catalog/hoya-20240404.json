@@ -1,0 +1,56 @@
+{
+  "slug": "hoya-20240404",
+  "entity": "Hoya Lens France (Hoya Vision Care / Seiko Optical France)",
+  "siren": "307035725",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-04",
+    "publication": "2024-04-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "1,7 million de fichiers, soit environ 2 To, revendiqués par Hunters International (chiffres non confirmés)"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Acuité — Hoya et Seiko victimes d'une cyberattaque, la production de verres optiques suspendue (4 avril 2024)",
+      "url": "https://www.acuite.fr/actualites/profession/hoya-et-seiko-victimes-dune-cyberattaque-la-279988",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Ransomware : Hunters International demande 10 millions de dollars à Hoya (10 avril 2024)",
+      "url": "https://www.lemagit.fr/actualites/366580339/Ransomware-Hunters-International-demande-10-millions-de-dollars-a-Hoya",
+      "kind": "article"
+    },
+    {
+      "label": "Opticien-Lunetier — Cyber-incident chez Hoya et Seiko : quel impact pour les opticiens (5 avril 2024)",
+      "url": "https://opticien-lunetier.media/2024/04/05/cyber-incident-chez-hoya-et-seiko-quel-impact-pour-les-opticiens/",
+      "kind": "article"
+    },
+    {
+      "label": "Fréquence Optique — « Cyber-incident » Hoya : quelles conséquences sur les délais de livraison en France (2024)",
+      "url": "https://www.frequenceoptic.fr/actualites/cyber-incident-hoya-quelles-consequences-sur-les-delais-de-livraison-en-france.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin mars 2024, le groupe japonais de l'optique Hoya — dont la division verres ophtalmiques produit en France à Émerainville (Seine-et-Marne), avec la marque Seiko Optical France — constate une anomalie sur ses serveurs, « très probablement due à un accès non autorisé ». La production et les livraisons de verres destinés aux opticiens français sont suspendues plusieurs jours. L'enseigne de rançongiciel Hunters International s'implique dans l'attaque, exige une rançon initiale de 10 millions de dollars et affirme avoir dérobé plus de 1,7 million de fichiers, soit environ 2 téraoctets de données.",
+  "timeline": [
+    {
+      "date": "2024-03-30",
+      "event": "Hoya constate un incident système affectant certains serveurs, attribué à un accès non autorisé."
+    },
+    {
+      "date": "2024-04-04",
+      "event": "Hoya communique sur l'incident ; la presse spécialisée décrit la production de verres suspendue."
+    },
+    {
+      "date": "2024-04-10",
+      "event": "LeMagIT révèle l'implication de Hunters International, une rançon de 10 M$ et 1,7 million de fichiers dérobés."
+    }
+  ]
+}

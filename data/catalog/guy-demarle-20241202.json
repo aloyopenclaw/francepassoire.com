@@ -1,0 +1,41 @@
+{
+  "slug": "guy-demarle-20241202",
+  "entity": "Guy Demarle (ustensiles de cuisine en vente directe)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-02",
+    "publication": "2024-12-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; « une partie des informations clients » partiellement copiées selon l'entreprise"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "01net — Nouveau hack en France : les données de l'enseigne Guy Demarle ont été volées (2 décembre 2024)",
+      "url": "https://www.01net.com/actualites/nouveau-hack-en-france-les-donnees-de-lenseigne-guy-demarle-ont-ete-volees.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Cyberattaque chez Guy Demarle : des données personnelles compromises (2024)",
+      "url": "https://www.zataz.com/cyberattaque-chez-guy-demarle-des-donnees-personnelles-compromises/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 12 au 13 octobre 2024, Guy Demarle, entreprise marnaise spécialisée dans les moules en silicone et ustensiles de cuisine vendus en vente directe, subit un « acte de cybermalveillance » aboutissant à la copie partielle d'informations clients. L'enseigne informe sa clientèle et la CNIL début décembre 2024 et met en garde contre les tentatives de phishing. La nature précise et le volume des données copiées ne sont pas détaillés publiquement.",
+  "timeline": [
+    {
+      "date": "2024-10-12",
+      "event": "Acte de cybermalveillance dans la nuit du 12 au 13 octobre : une partie des informations clients est copiée."
+    },
+    {
+      "date": "2024-12-02",
+      "event": "Guy Demarle alerte ses clients et la CNIL ; la presse spécialisée relaie la fuite."
+    }
+  ]
+}
