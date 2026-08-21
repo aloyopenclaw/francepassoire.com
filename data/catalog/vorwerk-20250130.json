@@ -1,0 +1,43 @@
+{
+  "slug": "vorwerk-20250130",
+  "entity": "Vorwerk (forum communautaire Thermomix)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-30",
+    "publication": "2025-02-06"
+  },
+  "volume": {
+    "count": 3100000,
+    "unit": "personnes",
+    "label": "3,1 millions de comptes du forum de recettes (chiffre revendiqué par le relais FrenchBreaches, non confirmé ; Vorwerk ne publie pas de volume)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Thermomix Recipe World Forum touché par une fuite de données : 3,1 M (30 janvier 2025)",
+      "url": "https://frenchbreaches.com/alertes/thermomix-recipe-world-forum-079eabeb2f7c",
+      "kind": "revendication"
+    },
+    {
+      "label": "Clubic — Le fabricant du Thermomix victime d'une cyberattaque : il explique quels sont les risques (6 février 2025)",
+      "url": "https://www.clubic.com/actualite-552725-le-fabricant-du-thermomix-victime-d-une-cyberattaque-il-explique-quels-sont-les-risques.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Vorwerk, fabricant du Thermomix, a annoncé le 6 février 2025 une cyberattaque visant son forum communautaire de recettes (Rezeptwelt et ses déclinaisons), touché entre le 30 janvier et le 3 février dans sept pays dont la France. Selon l'entreprise, relayée par Clubic, la faille se situe sur un serveur secondaire géré par un prestataire externe ; les mots de passe et les données bancaires auraient été préservés. Le relais FrenchBreaches évoque pour sa part 3,1 millions de comptes exposés — noms, e-mails, téléphones, adresses et identifiants —, chiffre revendiqué et non confirmé.",
+  "timeline": [
+    {
+      "date": "2025-01-30",
+      "event": "Début de la fenêtre d'exposition du forum de recettes Thermomix (30 janvier – 3 février 2025), selon l'annonce de Vorwerk."
+    },
+    {
+      "date": "2025-02-06",
+      "event": "Vorwerk annonce la cyberattaque, décrit une exposition limitée au forum et indique que mots de passe et données bancaires sont préservés."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "showroomprive-20250114",
+  "entity": "Showroomprivé",
+  "siren": "538811837",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-14",
+    "publication": "2025-01-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "attaque par « credential stuffing » bloquée avant toute exfiltration annoncée ; nombre de comptes ciblés non communiqué"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — Kiabi et Showroomprivé victimes d'une cyberattaque d'un genre très particulier, on vous explique (14 janvier 2025)",
+      "url": "https://www.clubic.com/actualite-550079-kiabi-et-showroomprive-victimes-d-une-cyberattaque-d-un-genre-tres-particulier-on-vous-explique.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération NT — Alerte pour des clients de Kiabi et Showroomprivé (14 janvier 2025)",
+      "url": "https://www.generation-nt.com/actualites/showroomprive-kiabi-cyberattaque-credential-stuffing-2054205",
+      "kind": "article"
+    }
+  ],
+  "description": "L'e-commerçant Showroomprivé a subi début janvier 2025 une attaque par « credential stuffing » : des pirates ont testé sur le site des identifiants issus d'autres fuites, avec une série de connexions suspectes détectées entre le 3 et le 6 janvier. Selon Clubic, l'entreprise a réinitialisé les mots de passe des comptes ciblés et bloqué les comportements suspects avant toute exfiltration de données sensibles. Aucun volume de comptes concernés n'est communiqué et aucun vol de données n'est décrit par les relais.",
+  "timeline": [
+    {
+      "date": "2025-01-06",
+      "event": "Showroomprivé détecte une série de connexions suspectes sur des comptes clients entre le 3 et le 6 janvier (attaque par « credential stuffing »)."
+    },
+    {
+      "date": "2025-01-14",
+      "event": "La presse spécialisée relaie l'attaque ; les mots de passe des comptes ciblés ont été réinitialisés, aucune exfiltration n'est annoncée."
+    }
+  ]
+}
