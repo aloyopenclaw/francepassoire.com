@@ -1,0 +1,62 @@
+{
+  "slug": "hospi-grand-ouest-20241002",
+  "entity": "Groupe hospitalier Grand Ouest (HGO)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-02",
+    "publication": "2024-10-07",
+    "confirmation": "2024-10-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de patients concernés non communiqué par le groupe ; une rançon de plus de 650 000 euros a été exigée selon Le Parisien"
+  },
+  "data_types": ["identite", "sante"],
+  "sources": [
+    {
+      "label": "Le Figaro — Cyberattaque sur le groupe de santé Hospi Grand Ouest : des opérations en suspens à Nantes et Saint-Nazaire (7 octobre 2024)",
+      "url": "https://www.lefigaro.fr/nantes/cyberattaque-sur-le-groupe-de-sante-hospi-grand-ouest-des-operations-en-suspens-a-nantes-et-saint-nazaire-20241007",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — L'ancien responsable informatique d'un groupe hospitalier soupçonné d'être à l'origine d'une cyberattaque visant neuf établissements (23 décembre 2024)",
+      "url": "https://www.leparisien.fr/faits-divers/lancien-responsable-informatique-dun-groupe-hospitalier-soupconne-detre-a-lorigine-dune-cyberattaque-visant-neuf-etablissements-23-12-2024-M7Q6YUBODVHPVFQE3YTYHCKVLI.php",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Pays de la Loire — Cyberattaque chez Hospi Grand Ouest : retour aux dossiers papier et plannings chamboulés à la clinique de Saint-Nazaire",
+      "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/loire-atlantique/saint-nazaire/cyberattaque-chez-hospi-grand-ouest-retour-aux-dossiers-papier-et-des-plannings-d-intervention-chamboules-a-la-clinique-de-saint-nazaire-3042482.html",
+      "kind": "article"
+    },
+    {
+      "label": "Libération — Arnaqueur ou hackeur au grand cœur ? Après une cyberattaque d'ampleur, l'ex-employé d'un groupe hospitalier au tribunal (6 février 2025)",
+      "url": "https://www.liberation.fr/societe/police-justice/arnaqueur-ou-hackeur-au-grand-coeur-apres-une-cyberattaque-dampleur-lex-employe-dun-groupe-hospitalier-au-tribunal-20250206_EZDK4BEOAJHMNHEVUN4WSDVUGI/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2024, le groupe hospitalier Grand Ouest (HGO), gestionnaire de neuf établissements de santé mutualistes en Bretagne, Pays de la Loire et Vendée — dont la clinique La Sagesse à Rennes —, subit une cyberattaque d'envergure, de type DDoS assortie d'une « compromission interne ». Le 4 octobre, les systèmes d'information de La Sagesse sont totalement paralysés : les soignants travaillent hors ligne, sans accès aux dossiers patients, et plusieurs interventions chirurgicales sont reportées ; des déprogrammations « au cas par cas » sont évoquées pour les cliniques Jules Verne (Nantes) et de l'Estuaire (Saint-Nazaire). Les cybercriminels exigent une rançon de plus de 650 000 euros. Le C3N met rapidement fin à la menace ; les enquêteurs de l'Unité nationale cyber identifient une compromission interne et interpellent en décembre 2024 un ancien responsable de la sécurité des systèmes d'information du groupe, jugé en février 2025.",
+  "timeline": [
+    {
+      "date": "2024-10-02",
+      "event": "Cyberattaque d'envergure contre le groupe HGO ; la clinique mutualiste La Sagesse à Rennes est principalement touchée."
+    },
+    {
+      "date": "2024-10-04",
+      "event": "Les systèmes d'information de La Sagesse sont paralysés : retour au papier, report d'interventions ; une rançon de plus de 650 000 euros est exigée ; le C3N prend l'enquête en main."
+    },
+    {
+      "date": "2024-10-07",
+      "event": "La presse relate l'attaque et ses répercussions possibles sur les cliniques Jules Verne et de l'Estuaire ; le groupe assure avoir contenu l'attaque au réseau de La Sagesse."
+    },
+    {
+      "date": "2024-12-23",
+      "event": "La gendarmerie annonce l'interpellation de l'auteur présumé : un ancien RSSI du groupe, l'enquête ayant révélé une compromission interne."
+    },
+    {
+      "date": "2025-02-06",
+      "event": "L'ex-employé, auteur présumé de l'attaque, comparaît devant le tribunal correctionnel de Rennes."
+    }
+  ]
+}

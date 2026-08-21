@@ -1,0 +1,45 @@
+{
+  "slug": "ehpad-champdeniers-20251208",
+  "entity": "Ehpad La Résidence du Parc (Champdeniers-Saint-Denis, Deux-Sèvres)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-08",
+    "publication": "2025-12-10",
+    "confirmation": "2025-12-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "établissement de 90 résidents géré par le CCAS ; le pirate réclame une rançon de 5 millions de dollars ; aucune donnée médicale des résidents compromise selon la direction"
+  },
+  "data_types": ["autre"],
+  "sources": [
+    {
+      "label": "La Nouvelle République — « Une demande de rançon de 5 millions de dollars » : une maison de retraite des Deux-Sèvres visée par un pirate informatique (décembre 2025)",
+      "url": "https://www.lanouvellerepublique.com/deux-sevres/commune/champdeniers-saint-denis/une-demande-de-rancon-de-5-millions-de-dollars-une-maison-de-retraite-des-deux-sevres-visee-par-un-pirate-informatique-1765387940",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberhebdo du 12 décembre 2025 : un EHPAD frappé par rançongiciel (12 décembre 2025)",
+      "url": "https://www.lemagit.fr/actualites/366636210/Cyberhebdo-du-12-decembre-2025-un-Ehpad-frappe-par-rancongiciel",
+      "kind": "article"
+    },
+    {
+      "label": "Geroscopie — Cyberattaque EHPAD Deux-Sèvres : 5 millions de dollars de rançon demandés (15 décembre 2025, citant La Nouvelle République et ICI Poitou)",
+      "url": "https://www.geroscopie.fr/cyberattaque-ehpad-deux-sevres-5-millions-de-dollars-de-rancon-demandes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 décembre 2025, l'Ehpad La Résidence du Parc à Champdeniers-Saint-Denis (Deux-Sèvres), établissement de 90 résidents géré par le CCAS, est frappé par un rançongiciel : à leur arrivée, les équipes découvrent des systèmes informatiques en partie inopérants et des fichiers de gestion chiffrés. Le pirate réclame une rançon de 5 millions de dollars. Selon le directeur de l'établissement, les données de gestion de l'établissement ont été perdues, mais aucune donnée médicale des résidents n'a été compromise, pas plus que la comptabilité, les ressources humaines et la facturation, gérées dans une autre base. La continuité des soins est maintenue et l'ensemble des familles et proches des résidents sont informés, avec des recommandations de vigilance contre l'hameçonnage et l'usurpation d'identité.",
+  "timeline": [
+    {
+      "date": "2025-12-08",
+      "event": "Rançongiciel : systèmes en partie inopérants et fichiers de gestion chiffrés ; demande de rançon de 5 millions de dollars."
+    },
+    {
+      "date": "2025-12-10",
+      "event": "La presse locale révèle l'attaque : aucune donnée médicale compromise selon la direction, familles informées, continuité des soins assurée."
+    }
+  ]
+}

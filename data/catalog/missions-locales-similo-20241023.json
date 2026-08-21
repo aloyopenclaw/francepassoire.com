@@ -1,0 +1,54 @@
+{
+  "slug": "missions-locales-similo-20241023",
+  "entity": "Réseau des missions locales (via le prestataire des outils i-Milo et Similo)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-23",
+    "publication": "2024-10-31",
+    "confirmation": "2024-10-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de jeunes concernés non chiffré ; le ministère du Travail évoque un risque de divulgation des données des jeunes accompagnés par les missions locales sur tout le territoire"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Ministère du Travail — Un prestataire des missions locales victime d'un acte de cyber-malveillance (31 octobre 2024)",
+      "url": "https://travail-emploi.gouv.fr/un-prestataire-des-missions-locales-victime-dun-acte-de-cyber-malveillance",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien — Missions locales : les données personnelles de jeunes dérobées dans une cyberattaque (31 octobre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/missions-locales-les-donnees-personnelles-de-jeunes-derobees-dans-une-cyberattaque-31-10-2024-3DCJGNICUFFKTFQOBST2YKNR2E.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde informatique — Les missions locales visées par une cyberattaque (31 octobre 2024)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-les-missions-locales-visees-par-une-cyberattaque-95159.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Pirate informatique : l'application i-Milo et le décisionnel Similo piratés, une cyberattaque ciblant les Missions Locales (8 novembre 2024)",
+      "url": "https://www.zataz.com/pirate-informatique-lapplication-i-milo-et-le-decisionnel-similo-pirates-une-cyberattaque-ciblant-les-missions-locales/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 23 au 24 octobre 2024, le prestataire hébergeant l'application i-Milo et le module décisionnel Similo — les outils de suivi des parcours des jeunes utilisés par les 440 missions locales de France — est victime d'un acte de cyber-malveillance. Le ministère du Travail et de l'Emploi révèle l'incident le 31 octobre : nom, prénom, date de naissance, nationalité, numéro de téléphone, adresses électronique et postale des jeunes accompagnés sont susceptibles d'avoir été dérobés. L'IBAN, le numéro de sécurité sociale et la pièce d'identité ne sont pas concernés, et les systèmes d'information des missions locales elles-mêmes ne sont pas en cause. Selon Zataz, l'intrusion a permis le vol de données couvrant des millions d'enregistrements. La CNIL est notifiée et une enquête est ouverte chez le prestataire ; ZDNet relève que l'appel d'offres correspondant avait été remporté par Similo, une filiale de Worldline.",
+  "timeline": [
+    {
+      "date": "2024-10-23",
+      "event": "Attaque dans la nuit du 23 au 24 octobre contre le prestataire des outils i-Milo et Similo, utilisés par le réseau des missions locales."
+    },
+    {
+      "date": "2024-10-31",
+      "event": "Le ministère du Travail rend public l'incident : risque de divulgation de données personnelles de jeunes accompagnés ; les jeunes concernés ou leurs représentants légaux sont informés ; notification à la CNIL."
+    },
+    {
+      "date": "2024-11-08",
+      "event": "Zataz documente l'ampleur du vol sur i-Milo et Similo : des millions d'enregistrements et d'identités selon le service de veille."
+    }
+  ]
+}

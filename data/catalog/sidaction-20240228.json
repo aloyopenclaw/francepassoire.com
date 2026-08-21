@@ -1,0 +1,41 @@
+{
+  "slug": "sidaction-20240228",
+  "entity": "Sidaction",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-02-28",
+    "publication": "2024-02-28",
+    "confirmation": "2024-02-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "moins de 20 % des personnes ayant fait un don depuis janvier 2023 selon l'association (nombre exact non publié) ; coordonnées IBAN/BIC concernées pour près de 3 % des données impactées"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Le Parisien — Sidaction : le site de l'association piraté, les données bancaires des donateurs ciblées (28 février 2024)",
+      "url": "https://www.leparisien.fr/faits-divers/sidaction-le-site-de-lassociation-pirate-les-donnees-bancaires-des-donateurs-ciblees-28-02-2024-R3TWPBCLFVCJNMF5CZI4JUOROQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Cyberattaque : Sidaction s'inquiète d'un possible vol de coordonnées bancaires de donateurs (28 février 2024)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-sidaction-s-inquiete-d-un-possible-vol-de-coordonnees-bancaires-de-donateurs_AN-202402280811.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — L'association Sidaction touchée par une cyberattaque, avec « un risque éventuel » de divulgation de données personnelles de certains donateurs (28 février 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/l-association-sidaction-touchee-par-une-cyberattaque-avec-un-risque-eventuel-de-divulgation-de-donnees-personnelles-de-certains-donateurs_6393982.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 février 2024, l'association Sidaction, organisatrice de la collecte de fonds contre le sida, annonce dans un communiqué une « cyber-malveillance » : la violation du système d'hébergement d'un de ses prestataires expose un risque de divulgation de données personnelles de donateurs. Moins de 20 % des personnes ayant fait un don depuis janvier 2023 sont concernées : noms, prénoms, adresses postales, courriels, numéros de téléphone et montants des dons. Les coordonnées bancaires IBAN/BIC seraient visées pour près de 3 % des données impactées ; les données de cartes bancaires ne sont pas concernées. L'attaque survient deux semaines après les fuites Viamedis/Almerys et l'attaque de l'hôpital d'Armentières.",
+  "timeline": [
+    {
+      "date": "2024-02-28",
+      "event": "Sidaction rend publique la violation du système d'hébergement d'un prestataire : identité, coordonnées et montants des dons de donateurs potentiellement exposés, IBAN/BIC pour environ 3 % des données impactées."
+    }
+  ]
+}
