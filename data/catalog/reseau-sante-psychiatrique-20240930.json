@@ -1,0 +1,42 @@
+{
+  "slug": "reseau-sante-psychiatrique-20240930",
+  "entity": "Association créatrice d'un réseau de santé psychiatrique (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-30",
+    "confirmation": "2024-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 3 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association pour la création d'un réseau de santé psychiatrique » (procédure simplifiée), amende de 3 000 euros (30 septembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 septembre 2024, la CNIL a prononcé une amende de 3 000 euros à l'encontre d'une association ayant pour objet la création d'un réseau de santé psychiatrique, dans le cadre de la procédure simplifiée. Les manquements retenus : non-respect du droit d'accès et défaut de coopération avec l'autorité. La dénomination n'est pas publiée et la nature des données n'est pas précisée. En 2024, le défaut de coopération a été le premier motif de sanction simplifiée avec 27 organismes concernés, selon le bilan annuel de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-09-30",
+      "event": "Amende de 3 000 euros (procédure simplifiée) : non-respect du droit d'accès et défaut de coopération avec la CNIL."
+    }
+  ]
+}

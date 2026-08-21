@@ -1,0 +1,58 @@
+# fullcat rafale 1 — lane 0 — 25 fiches CNIL-confirmées
+date: 2026-08-21 02:01 UTC | branche: fiche/rafale1-l0 | pool: /tmp/cnil-slice-0.txt lignes 1-40
+
+## Méthode
+- Pool = descripteurs de la liste officielle CNIL « Les sanctions prononcées par la CNIL » (https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil, HTTP 200, parsée localement).
+- Chaque ligne du pool rapprochée de sa décision (date, manquements, sanction) sur la page officielle — procédure simplifiée : dénominations non publiables, fiche à entité anonymisée.
+- Sources par fiche : liste officielle CNIL (kind officiel) + communiqué/bilan CNIL dédié quand la fenêtre temporelle et les manquements correspondent (vérifiés par recoupement des montants cumulés : dix=104 000 € = somme exacte des 10 décisions jan-avr 2025 ; candidats=23 500 € = 8 000+5 500+5 000+2 500+2 500) + presse indépendante quand trouvée (candidats : DataSecurityBreach, Landot, Portail-RGPD).
+- Lignes pool NON retenues : L03/L05/L06/L07/L09/L10/L11/L18/L21/L27/L37/L38/L39/L40 (décisions anciennes 2011-2018 à entités nommées, hors périmètre anonymisé, identification/dedup inter-lanes à traiter séparément) ; L17 (doublon probable de L16 — liquidation d'astreinte 05/03/2026 suite à l'injonction L16).
+- DEDUP : ls data/catalog (264 fiches) — aucune collision de slug/entité.
+
+## Fiches (25)
+| # | slug | décision | sanction | sources officielles | presse |
+|---|------|----------|----------|---------------------|--------|
+| 1 | acces-aux-soins-20241219 | 2024-12-19 | La CNIL prononce une amende de 5 000 euros (procédure simpli | liste + 2 | 0 |
+| 2 | agence-communication-audiovisuelle-20241212 | 2024-12-12 | Amende de 6 000 euros | liste + 2 | 0 |
+| 3 | armurerie-20240919 | 2024-09-19 | Amende de 20 000 euros | liste + 2 | 0 |
+| 4 | association-action-sociale-20241126 | 2024-11-26 | Amende de 10 000 euros | liste + 2 | 0 |
+| 5 | association-commune-20231227 | 2023-12-27 | Amende de 5 000 euros et injonction | liste + 1 | 0 |
+| 6 | association-droits-fondamentaux-20250825 | 2025-08-25 | Amende de 10 000 euros et injonction | liste + 2 | 0 |
+| 7 | association-lycee-internat-20250911 | 2025-09-11 | Amende de 7 000 euros et injonction | liste + 1 | 0 |
+| 8 | association-organisations-politiques-20240425 | 2024-04-25 | Amende de 16 000 euros et injonction | liste + 2 | 0 |
+| 9 | association-politique-20240125 | 2024-01-25 | Amende de 20 000 euros | liste + 1 | 0 |
+| 10 | association-religieuse-20260129 | 2026-01-29 | Amende de 10 000 euros et injonction | liste + 1 | 0 |
+| 11 | association-soins-dentaires-20260305 | 2026-03-05 | Amende de 6 000 euros et injonction | liste + 1 | 0 |
+| 12 | avocat-20250717 | 2025-07-17 | Amende de 3 000 euros et injonction | liste + 1 | 0 |
+| 13 | boulangerie-20240610 | 2024-06-10 | Amende de 5 000 euros | liste + 1 | 0 |
+| 14 | cabinet-avocats-20251105 | 2025-11-05 | Amende de 5 000 euros | liste + 2 | 0 |
+| 15 | candidat-legislatives-2024-20251211 | 2025-12-11 | Amende de 5 500 euros | liste + 1 | 2 |
+| 16 | candidat-parlement-europeen-2024-20251127 | 2025-11-27 | Amende de 8 000 euros et injonction | liste + 1 | 2 |
+| 17 | candidats-legislatives-20260115 | 2026-01-15 | Amende de 2 000 euros et injonction | liste + 1 | 0 |
+| 18 | centre-appel-20241219 | 2024-12-19 | Amende de 20 000 euros | liste + 2 | 0 |
+| 19 | centre-formation-apprentis-20250116 | 2025-01-16 | Amende de 10 000 euros et injonction | liste + 1 | 0 |
+| 20 | chirurgien-dentiste-20251230 | 2025-12-30 | Rappel à l'ordre | liste + 2 | 0 |
+| 21 | clinique-20241205 | 2024-12-05 | Amende de 15 000 euros | liste + 2 | 0 |
+| 22 | collectivite-territoriale-20251104 | 2025-11-04 | Amende de 4 000 euros | liste + 2 | 0 |
+| 23 | comite-social-economique-20231227 | 2023-12-27 | Amende de 10 000 euros | liste + 1 | 0 |
+| 24 | commerce-gros-pharmaceutique-20240124 | 2024-01-24 | Amende de 20 000 euros | liste + 2 | 0 |
+| 25 | reseau-sante-psychiatrique-20240930 | 2024-09-30 | Amende de 3 000 euros | liste + 2 | 0 |
+
+## Vérifications
+- zod (vitest, worktree) : tests/pr-fiches.test.ts → 289 passed (264 existantes + 25 nouvelles).
+- suite complète : npx vitest run → 29 passed / 651 passed.
+- URLs sources (curl, toutes 200) :
+  200 https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil
+  200 https://cnil.fr/fr/la-procedure-de-sanction-simplifiee
+  200 https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil
+  200 https://www.cnil.fr/fr/bilan-sanctions-2025
+  200 https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier
+  200 https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee
+  200 https://cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee
+  200 https://cnil.fr/fr/la-cnil-prononce-16-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee
+  200 https://cnil.fr/fr/prospection-politique-sanction-candidats-2024
+  200 https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees
+  200 https://www.datasecuritybreach.fr/prospection-politique-la-cnil-sanctionne-cinq-candidats/
+  200 https://blog.landot-avocats.net/2025/12/19/prospection-politique-la-cnil-sanctionne-cinq-candidats-aux-elections-europeennes-et-legislatives-2024/
+  200 https://veille.portail-rgpd.com/actu/cnil-sanction-candidats-elections-prospection-politique/
+- Bornes Ton A : 25/25 descriptions ≤ 120 mots (max constaté 105) ; timeline ≤ 40 mots/événement.
+- Zéro invention : volumes non précisés → count 0 + label honnête ; data_types limités aux catégories explicites (coordonnees pour prospection/SMS, autre sinon).
