@@ -1,0 +1,45 @@
+{
+  "slug": "airsoft-entrepot-20260321",
+  "entity": "Airsoft Entrepot",
+  "siren": "519294201",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-21",
+    "publication": "2026-03-21"
+  },
+  "volume": {
+    "count": 363000,
+    "unit": "personnes",
+    "label": "363 000 clients uniques revendiqués (2013 au 17 mars 2026 ; une présentation concurrente évoque 383 000) avec 2,9 millions de commandes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 363 000 clients concernés par une fuite de données chez Airsoft-Entrepot",
+      "url": "https://fuitesinfos.fr/article/2026-03-21-airsoft-entrepot",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Piratage massif d'Airsoft Entrepot : 363 000 clients exposés, 13 ans de données",
+      "url": "https://frenchbreaches.com/blog/piratage-massif-dairsoft-entrepot-363-000-clients-exposes-et-13-ans-de-donnees-en-fuite",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cybersecurite-info.fr — Airsoft Entrepot piraté : 363 000 clients exposés, 13 ans de commandes",
+      "url": "https://cybersecurite-info.fr/architecture-de-securite/protection-des-donness/airsoft-entrepot-pirate-363-000-clients-exposes-13-ans-de-commandes-et-des-risques-tres-concrets/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 mars 2026, l'acteur HexDex met en vente plusieurs bases présentées comme issues d'Airsoft Entrepot, boutique en ligne d'équipement d'airsoft : 363 000 clients uniques, 333 000 adresses, 328 000 e-mails, 243 000 téléphones, 2,9 millions de commandes et des fichiers comptables, couvrant 2013 au 17 mars 2026. Une présentation concurrente évoque 383 000 profils. Des échantillons sont publiés comme preuves. À ce stade, l'incident n'a pas été confirmé publiquement par l'entreprise et l'ampleur réelle reste à établir.",
+  "timeline": [
+    {
+      "date": "2026-03-21",
+      "event": "HexDex met en vente plusieurs bases Airsoft Entrepot (363 000 clients, 2,9 M commandes, 2013-2026) avec échantillons publiés."
+    }
+  ]
+}

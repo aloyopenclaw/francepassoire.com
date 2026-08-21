@@ -28,7 +28,8 @@
 
 import { MENTION_REVENDICATION } from '../../../src/lib/social-templates';
 import { send as sendBluesky } from '../clients/bluesky';
-import { send as sendLinkedIn } from '../clients/linkedin';
+import { send as sendLinkedInDirect } from '../clients/linkedin';
+import { send as sendLinkedInMake } from '../clients/make-linkedin';
 import { send as sendNostr } from '../clients/nostr';
 import { send as sendTikTok } from '../clients/tiktok';
 import { send as sendX } from '../clients/x';
@@ -50,7 +51,10 @@ export const MAX_ATTEMPTS = 3;
 // Clients branchés — T38 : Bluesky et Nostr ; T39 : X ; T40 : LinkedIn et TikTok.
 const CLIENTS: Record<SocialPlatform, SendFn> = {
   x: sendX,
-  linkedin: sendLinkedIn,
+  // LinkedIn page société : délégation Make.com (partenaire LinkedIn) — le
+  // chemin direct (sendLinkedInDirect, API + w_organization_social) est mort
+  // sans entreprise enregistrée ; conservé pour référence/future association.
+  linkedin: sendLinkedInMake,
   tiktok: sendTikTok,
   bluesky: sendBluesky,
   nostr: sendNostr,

@@ -1,0 +1,47 @@
+{
+  "slug": "alltricks-20250811",
+  "entity": "Alltricks",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-11",
+    "publication": "2025-08-12",
+    "confirmation": "2025-08-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de comptes non communiqué ; l’incident est circonscrit au système d’envoi d’e-mails"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — Alltricks piraté : de faux mails avec de vrais pièges envoyés aux clients",
+      "url": "https://next.ink/195409/alltricks-pirate-de-faux-mails-avec-de-vrais-pieges-envoyes-aux-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Intrusion chez Alltricks : comment des mails frauduleux ont passé tous les filtres",
+      "url": "https://www.zataz.com/intrusion-chez-alltricks-comment-des-mails-frauduleux-ont-passe-tous-les-filtres/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Alltricks",
+      "url": "https://frenchbreaches.com/alertes/alltricks-a0d5393f8210",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 11 août 2025, des clients d’Alltricks, boutique en ligne spécialisée dans le cyclisme, reçoivent des courriels de phishing parfaitement authentifiés. Les messages passent SPF, DKIM et DMARC car ils partent du compte Brevo (Sendinblue) de l’enseigne, via ses sous-domaines légitimes. Le soir même, Alltricks publie une alerte : une intrusion a affecté son système d’envoi d’e-mails. L’entreprise exclut les données bancaires et de paiement. Une enquête est ouverte pour vérifier d’éventuelles exfiltrations et l’entreprise dit se rapprocher de la CNIL. L’exfiltration de données n’est pas établie à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-08-11",
+      "event": "Des courriels de phishing passant tous les filtres sont envoyés via le compte Brevo (Sendinblue) d’Alltricks ; l’enseigne publie une alerte le soir."
+    },
+    {
+      "date": "2025-08-12",
+      "event": "Next.ink documente l’intrusion ; l’enseigne exclut les données bancaires et dit se rapprocher de la CNIL."
+    }
+  ]
+}

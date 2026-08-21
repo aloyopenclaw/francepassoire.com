@@ -1,0 +1,52 @@
+{
+  "slug": "afpa-20250806",
+  "entity": "Afpa",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-06",
+    "publication": "2025-08-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "5 téraoctets de données revendiqués par INC Ransom ; aucune donnée diffusée à ce jour"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Afpa ciblée : 5 To de données en otage par INC Ransom",
+      "url": "https://www.zataz.com/afpa-ciblee-5-to-de-donnees-en-otage-par-inc-ransom/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Victim: Afpa",
+      "url": "https://www.ransomware.live/id/QWZwYUBpbmNyYW5zb20",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Afpa",
+      "url": "https://frenchbreaches.com/alertes/afpa-rw_UVdad1lVQnBibU55WVc1emIyMD0",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 6 août 2025, le groupe INC Ransom revendique une attaque contre l’Afpa, leader français de la formation professionnelle des adultes. Les cybercriminels affirment détenir 5 téraoctets de données sensibles et menacent de les publier. Les fichiers évoqués incluent données personnelles, documents internes et correspondances électroniques de l’organisme, qui forme plus de 150 000 stagiaires par an. Aucun échantillon n’a été publié. Depuis le 16 août, les blogs de fuite d’INC Ransom sont hors service, selon Zataz. L’Afpa n’a pas communiqué publiquement sur l’incident et la revendication n’est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-08-06",
+      "event": "INC Ransom revendique une attaque contre l’Afpa et annonce détenir 5 To de données sensibles."
+    },
+    {
+      "date": "2025-08-16",
+      "event": "Les blogs de fuite d’INC Ransom sont constatés hors service ; aucune donnée n’a été diffusée."
+    },
+    {
+      "date": "2025-08-17",
+      "event": "Zataz documente la revendication, sans échantillon publié à l’appui."
+    }
+  ]
+}

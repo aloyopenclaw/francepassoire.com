@@ -1,0 +1,52 @@
+{
+  "slug": "disneyland-paris-20250620",
+  "entity": "Disneyland Paris (Euro Disney)",
+  "siren": "397471822",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-06-20",
+    "publication": "2025-06-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "64 Go et 39 000 fichiers revendiqués par Anubis ; clients et salariés a priori non concernés"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "01net — Fuite de données chez Disneyland Paris ? Des pirates diffusent « des milliers d’informations sensibles »",
+      "url": "https://www.01net.com/actualites/fuite-donnees-chez-disneyland-paris-pirates-diffusent-milliers-information-sensibles.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Disneyland Paris : les hackers publient sans pitié les données très sensibles volées au parc d’attractions",
+      "url": "https://www.clubic.com/actualite-570654-disneyland-paris-les-hackers-publient-sans-pitie-les-donnees-tres-sensibles-volees-au-parc-d-attractions.html",
+      "kind": "article"
+    },
+    {
+      "label": "Génération-NT — Disneyland Paris : 64 Go de données sensibles partagées par les hackers !",
+      "url": "https://www.generation-nt.com/actualites/disneyland-paris-hackers-donnees-publiees-anubis-2059636",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque Disneyland Paris",
+      "url": "https://frenchbreaches.com/alertes/disneyland-paris-63d3fe29c3a2",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 juin 2025, le groupe de rançongiciel Anubis inscrit Disneyland Paris sur son site de fuite. Il revendique 64 Go de données et 39 000 fichiers liés à la construction et à la rénovation du parc. Les données proviendraient d’un partenaire de Disneyland, selon le groupe. Plans techniques d’attractions, photos et vidéos de coulisses, contrats et normes de sécurité sont cités. Le 27 juin, après l’échec apparent des négociations, Anubis publie l’intégralité du butin. Les clients et les salariés ne sont pas visés selon les analyses. Contacté, le parc n’a pas confirmé l’incident.",
+  "timeline": [
+    {
+      "date": "2025-06-20",
+      "event": "Anubis inscrit Disneyland Paris sur son site de fuite : 64 Go et 39 000 fichiers revendiqués, obtenus via un partenaire du parc."
+    },
+    {
+      "date": "2025-06-27",
+      "event": "Anubis publie l’intégralité des données (plans, photos, vidéos, contrats) après l’échec apparent des négociations."
+    }
+  ]
+}

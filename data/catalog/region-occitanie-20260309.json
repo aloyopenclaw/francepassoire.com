@@ -1,0 +1,58 @@
+{
+  "slug": "region-occitanie-20260309",
+  "entity": "Région Occitanie",
+  "siren": "200053791",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-09",
+    "publication": "2026-03-12"
+  },
+  "volume": {
+    "count": 310000,
+    "unit": "personnes",
+    "label": "310 000 lignes d'utilisateurs et 270 783 photos (41,7 Go) revendiquées (DumpSec) ; une diffusion ultérieure évoque 318 751 dossiers ; la Région confirme un accès non autorisé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Région Occitanie (Carte Jeune) : 310 000 personnes exposées",
+      "url": "https://fuitesinfos.fr/article/2026-03-09-region-occitanie",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Les données de 310 000 jeunes Français ont été piratées",
+      "url": "https://www.01net.com/actualites/donnees-310-000-jeunes-piratees-vente-dark-web.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — 41 Go de photos dont des mineurs : fuite massive de la Carte Jeune Occitanie",
+      "url": "https://frenchbreaches.com/blog/41-go-de-photos-dont-des-mineurs-fuite-massive-de-donnees-de-la-carte-jeune-occitanie",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Region Occitanie (carte jeune) : 310 000 personnes exposées",
+      "url": "https://frenchbreaches.com/alertes/region-occitanie-carte-jeune-mml41ghtbwn748ie0ll",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le groupe DumpSec met en vente le 9 mars 2026 une base liée à la Carte Jeune Région Occitanie : 310 000 lignes d'utilisateurs et 270 783 photos, soit 41,7 Go, un dispositif destiné aux 15-29 ans et largement utilisé par des lycéens. La Région confirme par courriel un accès non autorisé touchant identité et coordonnées des bénéficiaires et de leurs représentants légaux, saisit la CNIL et dépose plainte, en excluant données bancaires, mots de passe et pièces d'identité. Une diffusion ultérieure, en juin, évoque 318 751 dossiers d'élèves avec photos, dont des mineurs.",
+  "timeline": [
+    {
+      "date": "2026-03-09",
+      "event": "DumpSec met en vente une base Carte Jeune (310 000 lignes, 270 783 photos) ; la Région notifie les utilisateurs d'un accès non autorisé."
+    },
+    {
+      "date": "2026-03-12",
+      "event": "La presse nationale relaie : identité et coordonnées des bénéficiaires et représentants légaux concernés, CNIL saisie et plainte déposée."
+    },
+    {
+      "date": "2026-06-22",
+      "event": "Une nouvelle diffusion attribuée au portail régional évoque 318 751 dossiers d'élèves et des photographies, dont des mineurs."
+    }
+  ]
+}

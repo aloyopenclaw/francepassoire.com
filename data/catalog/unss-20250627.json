@@ -1,0 +1,48 @@
+{
+  "slug": "unss-20250627",
+  "entity": "Union nationale du sport scolaire (UNSS)",
+  "siren": "775675655",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-06-27",
+    "publication": "2025-06-27"
+  },
+  "volume": {
+    "count": 7795940,
+    "unit": "comptes",
+    "label": "près de 7,8 millions de profils sur sept saisons selon l’enquête du Parisien relayée (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "ID Protect — 7 millions de jeunes concernés : fuite de données chez l’UNSS",
+      "url": "https://idprotect.fr/fuite-donnees-unss-7-millions-de-jeunes/",
+      "kind": "article"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez UNSS (Union nationale du sport scolaire)",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/unss-union-nationale-du-sport-scolaire/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données UNSS",
+      "url": "https://frenchbreaches.com/alertes/union-nationale-du-sport-scolaire-unss-dc6a48c58f33",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 juin 2025, une enquête du Parisien révèle le piratage de l’intranet de l’UNSS, la fédération du sport scolaire. Deux adolescents de 13 et 17 ans auraient extrait environ 7,8 millions de profils, « pour s’amuser ». Les données couvrent la saison en cours et six saisons d’archives : noms, dates de naissance, établissements scolaires et coordonnées. Selon ID Protect, un compte d’agent de l’académie de Bordeaux, compromis par un infostealer, a servi de point d’entrée. Les deux auteurs affirmaient avoir scrapé les données via des accès administrateurs. L’UNSS n’a pas confirmé publiquement l’ampleur de l’extraction à cette date.",
+  "timeline": [
+    {
+      "date": "2025-06-27",
+      "event": "Une enquête du Parisien révèle que deux adolescents ont extrait environ 7,8 millions de profils de l’intranet UNSS."
+    },
+    {
+      "date": "2025-07-14",
+      "event": "ID Protect rapporte qu’un accès agent de l’académie de Bordeaux, compromis par infostealer, a servi de point d’entrée."
+    }
+  ]
+}

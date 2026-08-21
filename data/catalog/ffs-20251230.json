@@ -1,0 +1,48 @@
+{
+  "slug": "ffs-20251230",
+  "entity": "Fédération française de spéléologie (FFS)",
+  "siren": "448124792",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-30",
+    "publication": "2026-01-13",
+    "confirmation": "2025-12-31"
+  },
+  "volume": {
+    "count": 63000,
+    "unit": "personnes",
+    "label": "63 000 licenciés et abonnés selon la mise en vente (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — Tennis, spéléologie : nouvelles fuites de données chez les fédérations sportives",
+      "url": "https://next.ink/218887/tennis-speleologie-nouvelles-fuites-de-donnees-chez-les-federations-sportives/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fédération Française de Spéléologie (FFS)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-speleologie-ffs-bb363bec0f32",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fin décembre 2025, la Fédération française de spéléologie subit deux attaques coup sur coup. Un premier incident, signalé le 31 décembre, touche le portail de souscription d’assurances, coupé plusieurs jours. Identité, coordonnées, informations fédérales et métier ont été exposés. Le 30 décembre, une mise en vente des données de 63 000 licenciés et abonnés est signalée par FrenchBreaches. Le 10 janvier, le président informe les adhérents d’un second incident, sur le portail d’adhésions : noms, naissance, nationalité, coordonnées et licences. Les mots de passe ne sont pas concernés selon la fédération.",
+  "timeline": [
+    {
+      "date": "2025-12-30",
+      "event": "Une mise en vente des données de la FFS est signalée : 63 000 licenciés et abonnés selon l’annonce."
+    },
+    {
+      "date": "2025-12-31",
+      "event": "Un premier incident est signalé sur le portail d’assurances, coupé plusieurs jours (identité, coordonnées, informations fédérales, métier)."
+    },
+    {
+      "date": "2026-01-10",
+      "event": "Le président annonce par mail un second incident sur le portail d’adhésions ; les mots de passe ne sont pas concernés."
+    }
+  ]
+}

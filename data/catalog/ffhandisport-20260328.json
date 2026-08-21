@@ -1,0 +1,45 @@
+{
+  "slug": "ffhandisport-20260328",
+  "entity": "Fédération Française Handisport",
+  "siren": "785307315",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-28",
+    "publication": "2026-03-28"
+  },
+  "volume": {
+    "count": 197276,
+    "unit": "personnes",
+    "label": "197 276 adhérents revendiqués (116 993 e-mails et 107 528 téléphones uniques), avec le type de handicap annoncé dans les données"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 197 276 adhérents : fuite de données à la Fédération Française Handisport",
+      "url": "https://fuitesinfos.fr/article/2026-03-28-federation-francaise-handisport",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Piratage Fédération Française Handisport : près de 200 000 victimes potentielles",
+      "url": "https://frenchbreaches.com/blog/piratage-federation-francaise-handisport-pres-de-200-000-victimes-potentielles",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Handisport : près de 200 000 licenciés touchés par une cyberattaque",
+      "url": "https://www.cyberattaque.org/handisport-pres-de-200-000-licencies-touches-par-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 mars 2026, l'acteur HexDex met en vente une base présentée comme issue de la Fédération Française Handisport : 197 276 adhérents avec 116 993 e-mails et 107 528 téléphones, état civil complet, coordonnées et données de licence. La revendication évoque aussi le type de handicap des licenciés, ce qui rend l'ensemble particulièrement sensible. Un échantillon est publié comme preuve. À ce stade, la fédération n'a pas confirmé publiquement l'incident ; l'authenticité complète de la base et son origine exacte restent à établir, dans la vague touchant les fédérations sportives.",
+  "timeline": [
+    {
+      "date": "2026-03-28",
+      "event": "HexDex met en vente une base Fédération Française Handisport : 197 276 adhérents, type de handicap évoqué, échantillon publié."
+    }
+  ]
+}

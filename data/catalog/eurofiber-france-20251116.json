@@ -1,0 +1,65 @@
+{
+  "slug": "eurofiber-france-20251116",
+  "entity": "Eurofiber France",
+  "siren": "530018639",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-16",
+    "publication": "2025-11-17",
+    "confirmation": "2025-11-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "quelque 10 000 entreprises clientes concernées selon le pirate ; volume non communiqué par l’opérateur"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Eurofiber France — Incident de cybersécurité chez Eurofiber France",
+      "url": "https://www.eurofiber.com/fr-fr/actualites/incident-de-cybersecurite-chez-eurofiber-france",
+      "kind": "officiel"
+    },
+    {
+      "label": "Eurofiber France — Incident du 13 novembre : enseignements et actions engagées",
+      "url": "https://www.eurofiber.com/fr-fr/actualites/incident-de-cybersecurite-du-13-novembre-enseignements-et-actions-engagees",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — Le fournisseur de VPN pro de Thales, du ministère de l’Intérieur, d’Airbus, de la SNCF et d’Orange se fait pirater",
+      "url": "https://www.clubic.com/actualite-587701-le-fournisseur-de-vpn-pro-de-thales-du-ministere-de-l-interieur-d-airbus-de-la-sncf-et-d-orange-se-fait-pirater.html",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — Eurofiber France warns of breach after hacker tries to sell customer data",
+      "url": "https://www.bleepingcomputer.com/news/security/eurofiber-france-warns-of-breach-after-hacker-tries-to-sell-customer-data/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Eurofiber France",
+      "url": "https://frenchbreaches.com/alertes/eurofiber-france-91aadb1add49",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 13 novembre 2025, Eurofiber France, opérateur de fibre et de cloud employé par de grands comptes français, détecte une attaque. Sa plateforme de ticketing, visée par injections SQL, a subi une exfiltration via l’API. Le 16 novembre, l’opérateur annonce l’incident : CNIL et ANSSI notifiées, plainte pour extorsion déposée. Identité, mots de passe hachés, contenus de tickets et pièces jointes ont perdu leur confidentialité. Le pirate « ByteToBreach » met en vente le butin, concernant selon lui 10 000 entreprises. Les services réseau et cloud sont restés opérationnels selon l’entreprise.",
+  "timeline": [
+    {
+      "date": "2025-11-13",
+      "event": "Eurofiber France détecte une activité suspecte sur sa plateforme de ticketing ; la faille est corrigée le jour même."
+    },
+    {
+      "date": "2025-11-16",
+      "event": "L’opérateur annonce l’exfiltration de données, notifie CNIL et ANSSI, et dépose plainte pour extorsion."
+    },
+    {
+      "date": "2025-11-17",
+      "event": "Le pirate « ByteToBreach » met en vente le butin, concernant selon lui quelque 10 000 entreprises clientes."
+    }
+  ]
+}

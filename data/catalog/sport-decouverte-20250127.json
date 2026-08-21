@@ -1,0 +1,42 @@
+{
+  "slug": "sport-decouverte-20250127",
+  "entity": "Sport Découverte (sport-decouverte.com)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-27",
+    "publication": "2025-02-17"
+  },
+  "volume": {
+    "count": 488023,
+    "unit": "personnes",
+    "label": "488 023 personnes selon l’analyse FrenchBreaches de la base mise en vente (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next.ink — [MàJ] Fuites de données : les dessous de l’attaque contre des fédérations françaises de sport",
+      "url": "https://next.ink/166951/fuites-de-donnees-les-dessous-de-lattaque-contre-des-federations-francaises-de-sport/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Sport Découverte : fuite de données concernant 488K personnes",
+      "url": "https://frenchbreaches.com/alertes/sport-decouverte-c04894a8d6da",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Sport Découverte, plateforme française de vente d’activités sportives et de loisirs, apparaît dans la vague de fuites de janvier 2025. Le 27 janvier, Next.ink rapporte que ses données figurent dans les ventes du pirate « TheFrenchGuy ». Elles côtoient celles de huit fédérations sportives. Le 17 février, FrenchBreaches documente la base : 488 023 personnes concernées selon son analyse. Noms, dates de naissance, adresses postales et numéros de téléphone sont exposés. L’entreprise n’a pas communiqué publiquement sur l’incident et le volume annoncé n’est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2025-01-27",
+      "event": "Next.ink rapporte que les données de sport-decouverte.com figurent dans les ventes du pirate « TheFrenchGuy », aux côtés des fédérations."
+    },
+    {
+      "date": "2025-02-17",
+      "event": "FrenchBreaches documente la fuite : 488 023 personnes concernées selon l’analyse de la base."
+    }
+  ]
+}
