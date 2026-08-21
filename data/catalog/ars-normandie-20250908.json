@@ -1,0 +1,38 @@
+{
+  "slug": "ars-normandie-20250908",
+  "entity": "Agence régionale de santé Normandie (services numériques régionaux de santé)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-08",
+    "publication": "2025-09-08",
+    "confirmation": "2025-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données d'identité de patients d'hôpitaux publics de Normandie (nom, prénom, âge, numéro de téléphone, adresse e-mail) ; volume non chiffré par l'ARS"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "TF1 Info/LCI — Cyberattaques : les données de patients d'hôpitaux publics dérobées dans « plusieurs régions de France » (8 septembre 2025)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/cyberattaques-les-donnees-de-patients-d-hopitaux-publics-derobees-dans-plusieurs-regions-de-france-2393393.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 septembre 2025, l'agence régionale de santé de Normandie révèle, aux côtés de celle des Hauts-de-France, une cyberattaque survenue la semaine précédente contre des serveurs hébergeant les données d'identité de patients d'hôpitaux publics. Le ou les pirates se sont introduits en usurpant l'identité d'un professionnel de santé et ont dérobé des données administratives d'usagers : nom, prénom, âge, parfois numéro de téléphone ou adresse e-mail. Les agences assurent qu'aucune donnée des dossiers médicaux n'est concernée et que le fonctionnement des hôpitaux n'est pas remis en cause. Les comptes compromis ont été neutralisés, une campagne de vigilance vise les professionnels de santé, la CNIL a été notifiée et des plaintes déposées.",
+  "timeline": [
+    {
+      "date": "2025-09-08",
+      "event": "L'ARS Normandie communique sur un vol de données d'identité de patients via l'usurpation d'un professionnel de santé, en parallèle de l'attaque touchant les Hauts-de-France."
+    },
+    {
+      "date": "2025-09-08",
+      "event": "Comptes compromis neutralisés, dossiers médicaux annoncés épargnés, signalement CNIL et plaintes déposés."
+    }
+  ]
+}

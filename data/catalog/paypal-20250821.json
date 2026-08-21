@@ -1,0 +1,37 @@
+{
+  "slug": "paypal-20250821",
+  "entity": "PayPal (plateforme de paiement)",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-21",
+    "publication": "2025-08-21"
+  },
+  "volume": {
+    "count": 15800000,
+    "unit": "comptes",
+    "label": "15,8 millions d'identifiants (adresses e-mail Gmail, Yahoo ou Hotmail associées à des mots de passe) mis en vente 750 dollars sur le dark web par « Chucky_B », qui évoque un vol en mai 2025 ; origine contestée, probablement agrégée de sites marchands compromis selon Troy Hunt"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Europe 1 — Suspicion de fuite de données : 15,8 millions d'identifiants et mots de passe PayPal en vente sur le dark web (21 août 2025)",
+      "url": "https://www.europe1.fr/Police-Justice/suspicion-de-fuite-de-donnees-158-millions-didentifiants-et-mots-de-passe-paypal-en-vente-sur-le-dark-web-769708",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 août 2025, un individu s'affichant sous le pseudonyme « Chucky_B » met en vente sur le dark web une base revendiquée de 15,8 millions de comptes PayPal — des couples e-mail/mot de passe — pour 750 dollars, en évoquant un vol survenu en mai. Relayée par 01net puis Europe 1, la proposition n'est ni confirmée ni infirmée par la plateforme de paiement. Troy Hunt, fondateur de Have I Been Pwned, juge probable que ces identifiants proviennent de sites marchands compromis plutôt que des serveurs de PayPal, qui ne stocke pas les mots de passe ; Zataz abonde. Vigilance recommandée : changement de mot de passe et double authentification.",
+  "timeline": [
+    {
+      "date": "2025-08-21",
+      "event": "« Chucky_B » propose 15,8 millions d'identifiants PayPal à la vente pour 750 dollars sur le dark web ; Europe 1 relaie l'information de 01net."
+    },
+    {
+      "date": "2025-08-21",
+      "event": "PayPal ne confirme ni n'infirme ; Troy Hunt et Zataz estiment les données probablement agrégées depuis des sites marchands compromis."
+    }
+  ]
+}

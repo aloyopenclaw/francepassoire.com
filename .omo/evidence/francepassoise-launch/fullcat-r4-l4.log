@@ -1,0 +1,210 @@
+================================================================
+full-catalog-completion — RAFALE 4, LANE 4 (radio/TV 2025) — 2/20 fiches
+Worktree : /var/folders/.../T/opencode/fp-r4l4 (supprimé en fin de run)
+Branche  : fiche/rafale4-l4  (rebasée sur main d531601, 615 fiches)
+Commit   : feat(catalog): rafale 4 — radio/TV L4 (2 fiches — pool 2025
+           des 5 antennes épuisé, 20 demandées — voir §7)
+Sources  : europe1.fr + tf1info.fr (LCI) — rubriques cyber/high-tech 2025
+================================================================
+
+[0] RÉSUMÉ — LIVRAISON PARTIELLE ASSUMÉE (2 fiches, pas 20)
+  La consigne demandait 20 fiches 2025 sourcées via Europe 1, RMC,
+  France Inter, M6/TF1 info et RTL. Énumération EXHAUSTIVE du corpus
+  2025 de ces 5 antennes (méthode §1) : presque tous les incidents
+  avec fuite de données couverts par ces médias en 2025 sont DÉJÀ
+  catalogués (596 fiches à la base da13724 ; 615 après les fusions
+  rafale 3/4 parallèles). Seulement 3 incidents nouveaux passent le
+  filtre « fuite de données établie + source radio/TV 2025 », dont
+  un (Marks & Spencer) rejeté sur le principe d'exclusion lane
+  (rançongiciel sans vol établi à la date de l'article — précédent
+  Collins Aerospace/La Poste). Livré : 2 fiches. Analyse §7.
+
+[1] SOURCES PRIMAIRES — ÉNUMÉRATION COMPLÈTE PAR ANTENNE
+  RMC (rmc.bfmtv.com) :
+  - sitemap_index_arbo_contenu.xml → 12 fichiers mensuels 2025
+    décompressés (35 259 URLs, 8 257 articles hors replay/vidéo).
+  - Double filtre thématique (pirat|cyber|fuite|vol|hack|donnees|
+    darknet|leak|rancon|breach|arnaqu|phishing|usurp puis relecture
+    intégrale) → 274 URLs candidates, ~90 articles réels passés en
+    revue un par un.
+  TF1 Info / LCI (tf1info.fr) :
+  - sitemap.xml → 70 shards sitemap-contents-*.xml ; shards 0-41
+    téléchargés (2025 présent dans 35-41) ; extraction par mots-clés
+    (pirat|cyber|fuite|donnees|volees|derobees|exposees|hack|rancongiciel|
+    darknet|intrusion|info-tf1-lci…) → 272 URLs, relecture ciblée.
+    NB : lastmod des shards = date de régénération (inutilisable),
+    dates vérifiées article par article.
+  RTL (rtl.fr) :
+  - sitemap-newses.xml = 84 URLs récentes seulement ; pages sujet
+    /sujet/piratage + /sujet/cybersecurite + /sujet/hackers lues
+    intégralement (le tag piratage liste tout le corpus incidents
+    2024-2025) ; complément par requêtes ciblées site:rtl.fr.
+  Europe 1 (europe1.fr) :
+  - sitemap.xml/goooglenews.xml bloqués par Cloudflare pour curl ;
+    pages dossiers /dossiers/piratage + /dossiers/cyber-attaque lues
+    (gelées début 2025) ; corpus 2025 reconstitué par requêtes
+    site:europe1.fr (piratage, fuite, cyberattaque, données…).
+  France Inter (radiofrance.fr/franceinter) :
+  - sitemap mensuels 2025 (12 fichiers, 20 671 URLs) : après
+    exclusion podcasts/émissions (20 280), 391 slugs éditoriaux,
+    ZÉRO article cyber/incident (France Inter ne publie pas
+    d'articles d'actu cyber — « L'info de France Inter » = podcasts).
+  M6 (m6.fr) :
+  - sitemap.xml = programmes/static seulement ; pas de base
+    d'articles. L'actualité M6 info est vidéo (Facebook/6play) et
+    la news textuelle du groupe M6 vit sur RTL (déjà couvert).
+  Découverte transverse (pour le dédoublonnage, hors périmètre
+  sources) : listes agrégées jedha.co, 01net (page rolling) et
+  invictis.fr croisées avec le catalogue.
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS EXPLICITES
+  Base initiale da13724 (596 fiches, entities-dedup.txt recopié du
+  worktree fp-r4l0) ; branche REBASÉE sur main d531601 (615 fiches,
+  fusion rafale 3 L1 + rafale 4 L2) — re-vérification après rebase :
+  paypal-20250821 et ars-normandie-20250908 absents de main.
+  node scripts/check-doublons.mjs → ✓ 0 collision (entité normalisée
+  ±45 j).
+  Incidents 2025 couverts par les 5 antennes MAIS déjà catalogués
+  (exclusions principales, tous vérifiés dans le 596/615) :
+  France Travail ×3 2025 (Kairos 340k, Stormous 31k, Missions
+  Locales 1,6M), Orange 07/2025 + Belgique + Roumanie, Bouygues
+  Telecom 08/2025, Auchan 08/2025, Air France-KLM 08/2025, Dior,
+  Cartier, Kering, Louis Vuitton (ShinyHunters), Disneyland Paris,
+  Center Parcs 06/2025, Sorbonne Université, Wibaie, Autosur,
+  Easy Cash, Intersport, Alain Afflelou, Indigo, Harvest,
+  Chronopost ×2, Conforama 02/2025, Kiabi, FFF ×2 (fév + nov),
+  fédérations de janvier (boxe, tir à l'arc, escalade, roller,
+  force, auto, FSCF), FFTir 10/2025, Lorient, Thaon-les-Vosges,
+  Poitiers, Hauts-de-Seine 05/2025, Hôpital privé Loire 07/2025,
+  CH Gers 08/2025, hôpitaux publics HDF (Inéa) 09/2025
+  [ars-20250908 : HDF+PdL+Bretagne — ma fiche = la entité SŒUR
+  Normandie, même vague, fiche séparée cf. §4], CH Haute-Comté
+  Pontarlier, Weda 11/2025, Pajemploi 11/2025, Colis Privé,
+  Eurofiber, MédecinDirect, Mondial Relay 12/2025, Leroy Merlin
+  12/2025, Intérieur 12/2025, Sports/Pass'Sport 12/2025,
+  SFR 12/2025, CAF 12/2025 (Indra), ministère Agriculture 12/2025,
+  Santé publique France (80 k prestataire = révélé 11/08/2026,
+  fiche 20260811 existante — la date « 24/10/2025 » vue en marge
+  d'un snippet LCI était un lien voisin, pas la date de l'article).
+  Exclusions de PRINCIPE (couverts par les antennes mais pas des
+  fuites de données établies — précédents lane r3-l1) :
+  - X/Twitter « cyberattaque massive » 03/2025 (RMC) : DDoS revendiqué,
+    aucune donnée — précédent La Poste.
+  - Bybit 02/2025 (RTL) : vol d'actifs crypto, pas de données perso.
+  - Aéroports européens 10/2025 (LCI ×2) : DDoS/perturbations.
+  - Marks & Spencer 05/2025 (LCI 2368410, 01/05/2025) : à la date de
+    l'article, rançongiciel + paralysie commerciale SANS vol de
+    données établi (le vol n'a été confirmé par M&S que le 09/05,
+    hors médias de la lane) — précédent Collins Aerospace. Rejeté.
+  - « 16 milliards d'identifiants » 06/2025 (RTL/Bancal) :
+    compilation Cybernews multi-fuites, sans entité victime.
+  - Game Freak 01/2025 (Europe 1) : incident d'octobre 2024, hors
+    périmètre « fiches 2025 ».
+  - Adecco procès 06/2025 (RMC/RTL) : suite judiciaire du hack déjà
+    traité par la décision CNIL (adecco-france-20251224).
+  - CNIL France Travail 5 M€ (LCI 2421560) : sanction relative à la
+    fuite 2024 déjà cataloguée (france-travail-20240313) ; les
+    décisions CNIL 2025 ont été balayées par les rafales 1-2.
+  Incidents 2025 réels MAIS sans couverture radio/TV (donc hors
+  lane, signalés aux lanes presse/Zataz) : Cdiscount 22/11/2025
+  (01net/Invictis), Cerba Healthcare 06→09/2025 (presse
+  spécialisée), caisses de retraite ×11 05/2025 (Zataz),
+  Normand'e-Santé « nom GIP » (Ouest-France/paris-normandie — couvert
+  ici via le communiqué ARS Normandie sur LCI), SNCF Taïga 07/2025
+  (presse spécialisée, exfiltration non établie), Coinbase 05/2025
+  (BFMTV — hors bucket L4), Carrefour 13 M démenti 01/2025 (01net),
+  Cdiscount cadre 33 M (RTL 2026, dossier judiciaire).
+
+[3] FICHES LIVRÉES (2 ; 1 revendiquée, 1 confirmée ; Ton A, 80-120 mots)
+  01 paypal-20250821        21/08/2025  revendiquée  15,8 M comptes en vente
+        750 $ sur dark web par « Chucky_B » ; PayPal sans commentaire ;
+        Troy Hunt/Zataz : agrégation probable de sites marchands (Europe 1)
+  02 ars-normandie-20250908 08/09/2025  confirmée    données d'identité de
+        patients d'hôpitaux publics de Normandie via usurpation d'un
+        professionnel de santé ; dossiers médicaux épargnés ; CNIL+plaintes
+        (TF1 Info/LCI 08/09/2025 — communiqués ARS Normandie & HDF)
+  group : 0 — aucun groupe sourcé dans ce lot.
+  SIREN : aucun (PayPal = plateforme étrangère ; ARS Normandie =
+  établissement public — règle du contrat appliquée : pas de siren
+  pour l'étranger ; ARS omis par cohérence avec ars-20250908).
+
+[4] NOTE ARS NORMANDIE ↔ ars-20250908 (HDF/PdL/Bretagne)
+  Même vague d'attaques (usurpation de professionnels de santé,
+  08/09/2025), entités victimes distinctes : la fiche main couvre
+  les ARS HDF+PdL+Bretagne, la mienne documente le volet Normandie
+  (communiqué ARS Normandie, données administratives d'usagers).
+  Schéma identique aux vagues fédérations sportives janvier 2025
+  (une fiche par fédération) et aux villes Synbird (une par ville).
+  check-doublons : 0 collision (entités normalisées différentes).
+
+[5] VALIDATION ZOD (transcript)
+  $ npx vitest run tests/rafale4-l4.temp.test.ts   (temporaire, supprimé)
+    → Test Files 1 passed | Tests 7/7 passed
+      2 fichiers présents ; 0 chevauchement main (git ls-tree main,
+      615 fiches après rebase) ; 2 × ficheSchema zod OK ; suffixe slug
+      = date de revendication ; descriptions 80-120 mots ; événements
+      ≤ 40 mots ; sources radio/TV uniquement (europe1.fr, tf1info.fr) ;
+      statuts/dates cohérents.
+  $ node scripts/check-doublons.mjs
+    → ✓ 0 collision (±45 j, entité normalisée) — outil main d531601.
+  $ npx vitest run tests/pr-fiches.test.ts tests/content-schema.test.ts
+    → Test Files 2 passed | Tests 619/619 passed
+  $ npx astro build
+    → 1277 page(s) built in 3.42s (617 fiches, spot-check dist/fiche/ :
+    paypal-20250821 et ars-normandie-20250908 présents).
+
+[6] SOURCES — CURL 2/2 HTTP 200 (UA navigateur, après commit)
+  200 https://www.europe1.fr/Police-Justice/suspicion-de-fuite-de-
+      donnees-158-millions-didentifiants-et-mots-de-passe-paypal-en-
+      vente-sur-le-dark-web-769708
+  200 https://www.tf1info.fr/justice-faits-divers/cyberattaques-les-
+      donnees-de-patients-d-hopitaux-publics-derobees-dans-plusieurs-
+      regions-de-france-2393393.html
+
+[7] BLOCAGE STRUCTUREL — POURQUOI 2/20 (décision orchestrateur requise)
+  Le bucket « radio/TV 2025 » est saturé de doublons : les 5 antennes
+  ont couvert en 2025 essentiellement (a) les incidents déjà
+  catalogués par les rafales 1-3 (BFM/franceinfo/presse/CNIL/
+  ransomware.live balayés avant), (b) des DDoS/vols d'actifs sans
+  données personnelles, (c) des compilations sans entité. France
+  Inter n'a aucune base d'articles cyber ; M6 non plus (news = RTL).
+  Options pour atteindre 20 :
+  1. Élargir le bucket sources L4 à franceinfo.fr/France Bleu
+     (articles régionaux non couverts par r3-l1, ex. Normand'e-Santé
+     GIP, CHU locaux) — risque de collision avec la lane presse.
+  2. Accepter un mixage sources (1 article radio/TV + 1 presse
+     spécialisée par fiche) : débloque Cdiscount 11/2025, Cerba
+     2025, Coinbase 05/2025, Carrefour 01/2025 (démenti), caisses
+     de retraite 05/2025 — ~5 fiches de plus au bucket L4 seul.
+  3. Étendre aux incidents 2026 couverts par ces antennes et non
+     catalogués (fisc-cadastre ~2 M propriétaires, Breach3D/ANTS
+     volets non couverts, X d'ici…) — dévie de « fiches 2025 ».
+  4. Scinder le quota L4 entre les autres lanes (pool presse/
+     Zataz/Capital encore fournis d'après les worktrees voisins).
+
+[8] LIVRAISON
+  git commit « feat(catalog): rafale 4 — radio/TV L4 (2 fiches — pool
+  radio/TV 2025 épuisé, 20 demandées) » — 2 fichiers + evidence,
+  data/catalog/ uniquement, aucun fichier existant modifié.
+  git push -u origin fiche/rafale4-l4 → ok.
+  gh pr create → PR « Rafale 4 L4 — radio/TV 2025 » (corps : tableau,
+  dédup, sourcing, analyse de blocage §7, avertissement NE PAS
+  MERGER — chaîne d'abord).
+  JAMAIS MERGE par la lane. Aucun post social. Worktree supprimé.
+
+[9] RISQUES RÉSIDUELS (repris dans la PR)
+  1. Livraison partielle 2/20 — voir §7, décision orchestrateur.
+  2. PayPal : revendication non confirmée (statut revendiquee, prose
+     attribuée ; Hunt/Zataz penchent pour une agrégation de sites
+     marchands) ; plateforme mondiale sans chiffre France établi —
+     précédents Steam/Discord.
+  3. ARS Normandie : même vague que ars-20250908 (HDF/PdL/Bretagne),
+     entité distincte (cf. §4) ; volume non chiffré par l'agence.
+  4. Monofiche à 1 source (contrainte « sources radio/TV
+     uniquement » — cf. r3-l1 « sources presse BFM/franceinfo
+     uniquement ») ; 01net (PayPal) et Ouest-France/paris-normandie
+     (Normandie) écartés du champ par charte de lane.
+  5. Collision possible avec les lanes rafale 4 parallèles si elles
+     créaient paypal-* ou ars-normandie-* (check-doublons à la
+     fusion l'attrapera).
+  6. CI GitHub possiblement bloquée (billing) — équivalence locale [5].
