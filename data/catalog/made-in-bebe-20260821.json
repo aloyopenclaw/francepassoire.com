@@ -1,0 +1,43 @@
+{
+  "slug": "made-in-bebe-20260821",
+  "entity": "Made in Bébé",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 960106,
+    "unit": "personnes",
+    "label": "1 359 546 lignes associées à 960 106 personnes revendiquées (base JSON de 1,45 Go ; revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Made in Bébé : plus de 960 000 personnes en fuite après une cyberattaque (21 août 2026)",
+      "url": "https://www.cyberattaque.org/made-in-bebe-plus-de-960-000-personnes-en-fuite-apres-une-cyberattaque/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Allobébé et Made in Bébé : près de 2,1 millions de clients visés par deux fuites de données",
+      "url": "https://frenchbreaches.com/blog/allobebe-et-made-in-bebe-pres-de-21-millions-de-clients-vises-par-deux-fuites-de-donnees",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Puériculture : trois bases clients revendiquées en 2026 (21 août 2026)",
+      "url": "https://www.zataz.com/puericulture-trois-bases-clients-revendiquees-en-2026/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 août 2026, ChimeraZ met en vente une base JSON de 1,45 Go attribuée à Made in Bébé, site français de commerce en ligne dédié à l'univers du bébé et de l'enfant : 1 359 546 lignes associées à 960 106 personnes. Les échantillons examinés relient identité, adresses de facturation et de livraison, historique complet des commandes (produits, quantités, prix, remises, frais de livraison) et type de moyen de paiement. Aucun numéro de carte complet n'a été identifié ; les volumes, donnés par l'auteur, ne sont pas confirmés indépendamment. Cette fuite fait suite, dans la même journée, à celle d'Allobébé.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "ChimeraZ met en vente une base de 1,36 million de lignes attribuée à Made in Bébé, publiée peu après celle d'Allobébé."
+    }
+  ]
+}

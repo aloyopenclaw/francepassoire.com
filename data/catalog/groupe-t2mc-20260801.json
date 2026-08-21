@@ -1,0 +1,39 @@
+{
+  "slug": "groupe-t2mc-20260801",
+  "entity": "Groupe T2MC",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-01",
+    "publication": "2026-08-02"
+  },
+  "volume": {
+    "count": 82000,
+    "unit": "personnes",
+    "label": "26 Go de documents justificatifs et une base RH revendiqués, incluant des pièces d'identité et des RIB pour environ 82 000 personnes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Groupe T2MC : une cyberattaque revendiquée expose des pièces d'identité et des RIB (1er août 2026)",
+      "url": "https://frenchbreaches.com/alertes/groupe-t2mc-msatleltiim1uf4u47g",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Groupe T2MC : 82 000 cartes d'identité et RIB exposés dans une fuite massive (2 août 2026)",
+      "url": "https://www.cyberattaque.org/groupe-t2mc-82-000-cartes-didentite-et-rib-exposes-dans-une-fuite-massive/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er août 2026, un acteur utilisant le pseudonyme Alduinn publie sur un forum cybercriminel une base liée aux processus de recrutement et de gestion des ressources humaines du Groupe T2MC, entreprise française de propreté, de nettoyage industriel et d'accueil, accompagnée d'environ 26 Go de documents justificatifs. Les éléments publiés comprennent des pièces d'identité et des relevés d'identité bancaire pour environ 82 000 personnes selon les relais. La combinaison de documents d'identité et de coordonnées bancaires expose les salariés et candidats à des fraudes documentaires et bancaires ; les volumes restent déclarés par leur auteur.",
+  "timeline": [
+    {
+      "date": "2026-08-01",
+      "event": "Alduinn diffuse une base RH et 26 Go de documents attribués au Groupe T2MC, avec pièces d'identité et RIB."
+    }
+  ]
+}

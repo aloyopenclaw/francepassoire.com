@@ -1,0 +1,38 @@
+{
+  "slug": "lions-france-20260705",
+  "entity": "Lions Clubs de France",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-05",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 135581,
+    "unit": "enregistrements",
+    "label": "135 581 enregistrements revendiqués, base présentée comme plus complète qu'une fuite antérieure et collectée au 1er mars 2026 (revendiqué)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : une base attribuée à Lions-France.org revendiquée sur un forum cybercriminel (6 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/lions-france-mr588slq0kifhrtybrzp",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Lions Clubs de France : base de membres revendiquée après une première fuite (3 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-03-lions-clubs-de-france-dm103",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 juillet 2026, misere publie une base attribuée à Lions-France.org, portail officiel des Lions Clubs de France : 135 581 enregistrements présentés comme plus complets qu'une fuite antérieure et collectés au 1er mars 2026. Les échantillons montrent identité, date de naissance, adresse postale, e-mails, téléphones, profession, employeur, club d'appartenance et numéro de membre. L'association n'a pas commenté publiquement ; la structure relationnelle des données facilite des sollicitations ciblées prenant l'appui du réseau associatif.",
+  "timeline": [
+    {
+      "date": "2026-07-05",
+      "event": "misere publie une base de 135 581 enregistrements attribuée aux Lions Clubs de France, présentée comme plus complète qu'une fuite antérieure."
+    }
+  ]
+}

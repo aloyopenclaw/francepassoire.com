@@ -1,0 +1,38 @@
+{
+  "slug": "ministere-culture-20260705",
+  "entity": "Ministère de la Culture",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-05",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 45362,
+    "unit": "enregistrements",
+    "label": "45 362 enregistrements revendiqués (fichier culture.jsonl), principalement des données professionnelles d'agents et de contacts (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données attribuée au ministère de la Culture revendiquée sur un forum cybercriminel (6 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/minist-re-de-la-culture-mr8fgj8hukpv9n8h6e",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Ministère de la Culture : 45 362 enregistrements professionnels en fuite (5 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-05-ministere-de-la-culture",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 juillet 2026, misere publie sur un forum cybercriminel un fichier culture.jsonl attribué au portail www.culture.gouv.fr : 45 362 enregistrements composés principalement de données professionnelles. Les échantillons montrent noms, prénoms, civilités, téléphones et e-mails professionnels, structures de rattachement, identifiants internes et chemins d'annuaire. Si les données sont authentiques, elles permettraient des campagnes d'hameçonnage ciblant les agents du ministère ; l'administration n'a pas confirmé l'incident à date de publication des relais.",
+  "timeline": [
+    {
+      "date": "2026-07-05",
+      "event": "misere publie une base de 45 362 enregistrements attribuée au portail du ministère de la Culture."
+    }
+  ]
+}
