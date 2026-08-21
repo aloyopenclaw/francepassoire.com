@@ -1,0 +1,38 @@
+{
+  "slug": "pcs-creacard-20250225",
+  "entity": "PCS (CréaCard)",
+  "siren": "520833302",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-25",
+    "publication": "2025-02-25",
+    "confirmation": "2025-02-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "« plusieurs centaines de clients concernés » selon l’éditeur, avec quelques milliers de transactions frauduleuses pour des dizaines de milliers d’euros ; 95 % des clients remboursés"
+  },
+  "data_types": [
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — Un piratage national vise les cartes PCS : « Il n’y a aucune sécurité », déplore une victime bordelaise",
+      "url": "https://www.sudouest.fr/gironde/bordeaux/un-piratage-national-vise-les-cartes-pcs-il-n-y-a-aucune-securite-deplore-une-victime-bordelaise-23344056.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 février 2025, Sud Ouest révèle une vague d’opérations frauduleuses visant les cartes prépayées PCS, émises par la société française CréaCard. Selon son dirigeant, des paiements frauduleux à l’étranger sont remontés à partir de décembre 2024, puis l’ampleur s’est accélérée début février. Des numéros de carte ont été usurpés et utilisés avec le code de la bande magnétique pour des achats dans le monde entier. L’origine du vol de données, possiblement chez des sites marchands, reste à établir. L’entreprise évoque plusieurs centaines de clients concernés et quelques milliers de transactions ; 95 % des clients auraient été remboursés.",
+  "timeline": [
+    {
+      "date": "2025-02-15",
+      "event": "Une utilisatrice bordelaise constate 400 euros d’achats non réalisés sur son compte ; le service client évoque des « paiements frauduleux »."
+    },
+    {
+      "date": "2025-02-25",
+      "event": "Sud Ouest révèle la fraude ; CréaCard reconnaît l’usurpation de numéros de carte et indique que 95 % des clients sont remboursés."
+    }
+  ]
+}
