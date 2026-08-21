@@ -10,7 +10,7 @@
 
   // Cron toutes les 15 minutes : fetch → normalize → candidates (status NEW).
   "triggers": {
-    "crons": ["*/15 * * * *"]
+    "crons": ["7,37 * * * *"]
   },
 
   // Staging D1 (migrations partagées avec la racine, d'où le ../../migrations).
