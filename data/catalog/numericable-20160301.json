@@ -1,0 +1,47 @@
+{
+  "slug": "numericable-20160301",
+  "entity": "Numericable (fournisseur d'accès à internet)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-03-01",
+    "publication": "2016-03-08",
+    "confirmation": "2016-03-01"
+  },
+  "volume": {
+    "count": 1,
+    "unit": "personnes",
+    "label": "un abonné identifié à tort 1 531 fois auprès de la Hadopi et 7 fois auprès de services de police et de gendarmerie entre 2013 et 2014"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « fournisseur d'accès à internet », avertissement public (1er mars 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDNet.fr — Erreur critique : quand Numericable signale 1531 fois un client innocent à la Hadopi et la police (8 mars 2016)",
+      "url": "https://www.zdnet.fr/actualites/erreur-critique-quand-numericable-signale-1531-fois-un-client-innocent-a-la-hadopi-et-la-police-39833778.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique — Numericable déchaîne les foudres de la CNIL pour avoir dénoncé à tort un abonné (9 mars 2016)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-numericable-dechaine-les-foudres-de-la-cnil-pour-avoir-denonce-a-tort-un-abonne-64152.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er mars 2016, la CNIL a prononcé un avertissement public à l'encontre de Numericable pour n'avoir pas veillé à l'exactitude des données personnelles de ses abonnés. Une application qui traitait les demandes d'identification de la Hadopi, de la police et de la gendarmerie renvoyait par défaut vers un même abonné lorsqu'elle ne parvenait pas à associer une adresse IP à une personne. Cet abonné a été identifié à tort 1 531 fois pour des faits de contrefaçon et désigné à sept reprises dans des enquêtes pénales entre 2013 et 2014, avec perquisitions et saisies de matériel. L'erreur n'a été corrigée qu'après le signalement par un service de police. La CNIL, saisie par la Hadopi, souligne un préjudice important.",
+  "timeline": [
+    {
+      "date": "2016-03-01",
+      "event": "Avertissement public de la CNIL : données d'identification inexactes, un abonné désigné à tort 1 531 fois."
+    },
+    {
+      "date": "2016-03-08",
+      "event": "Publication de l'avertissement et couverture presse (ZDNet, Le Monde Informatique)."
+    }
+  ]
+}

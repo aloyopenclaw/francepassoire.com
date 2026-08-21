@@ -1,0 +1,42 @@
+{
+  "slug": "hebergeur-site-web-20240820",
+  "entity": "Un hébergeur de site web (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-20",
+    "confirmation": "2024-08-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 8 000 euros (procédure simplifiée) ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « hébergeur de site web », amende de 8 000 euros (20 août 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 20 août 2024, la CNIL a sanctionné un hébergeur de site web d'une amende administrative de 8 000 euros, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du droit à l'effacement et défaut de coopération avec la CNIL. Le nom de l'organisme n'est pas publié : les sanctions simplifiées ne sont jamais rendues publiques, le plafond de l'amende étant fixé à 20 000 euros. La décision figure dans le tableau officiel des sanctions et dans le bilan 2024 de l'action de la CNIL, qui recense les mesures correctrices prononcées sur l'année.",
+  "timeline": [
+    {
+      "date": "2024-08-20",
+      "event": "Amende de 8 000 euros (procédure simplifiée) : droit à l'effacement non respecté et défaut de coopération."
+    }
+  ]
+}
