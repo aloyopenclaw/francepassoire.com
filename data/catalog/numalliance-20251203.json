@@ -1,0 +1,43 @@
+{
+  "slug": "numalliance-20251203",
+  "entity": "Numalliance (concepteur de machines-outils)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-03",
+    "publication": "2025-12-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; perturbations opérationnelles signalées par les veilleurs"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : NUMALLIANCE (groupe Qilin, découverte 3 décembre 2025)",
+      "url": "https://www.ransomware.live/id/TlVNQUxMSUFOQ0VAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "Hendy Adrian — Ransom! NUMALLIANCE (4 décembre 2025, monitoring des revendications Qilin)",
+      "url": "https://www.hendryadrian.com/ransom-numalliance/",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense — Numalliance Data Breach : acteur Qilin (5 décembre 2025)",
+      "url": "https://www.breachsense.com/breaches/numalliance-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 décembre 2025, Numalliance, entreprise française qui conçoit et fabrique des machines-outils automatisées et des solutions clés en main pour la transformation à froid du fil, du tube et du profilé (cintreuse, découpe, soudure), est listée sur le site de fuite du rançongiciel Qilin. Les veilleurs signalent des perturbations opérationnelles consécutives à l’attaque, sans volume de données précisé. Qilin clôt ainsi une année 2025 durant laquelle la France est devenue son deuxième terrain de chasse derrière les États-Unis, avec une prédilection pour l’industrie et les services professionnels. L’entreprise n’a pas communiqué publiquement ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-12-03",
+      "event": "Numalliance listée par Qilin ; perturbations opérationnelles signalées par les veilleurs."
+    }
+  ],
+  "group": "qilin"
+}

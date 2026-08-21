@@ -1,0 +1,38 @@
+{
+  "slug": "hci-20250502",
+  "entity": "HCI (ESN, Perpignan)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-02",
+    "publication": "2025-05-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; capture d’écran de documents internes publiée en preuve"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : HCI Informatique d’entreprise (groupe Qilin, découverte 2 mai 2025)",
+      "url": "https://www.ransomware.live/id/SENJIEluZm9ybWF0aXF1ZSBkJ2VudHJlcHJpc2VAcWlsaW4",
+      "kind": "revendication"
+    },
+    {
+      "label": "RedPacket Security — [QILIN] Ransomware Victim: HCI Informatique d’entreprise (2 mai 2025)",
+      "url": "https://www.redpacketsecurity.com/qilin-ransomware-victim-hci-informatique-d-entreprise/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 mai 2025, HCI, entreprise de services du numérique créée en 1998 et basée à Perpignan (ingénierie réseau, maintenance, installation et supervision), est listée sur le site de fuite du groupe de rançongiciel Qilin. La revendication s’accompagne d’une capture d’écran présentée comme extraite de documents internes, sans volume chiffré ni inventaire précis des données. Qilin, franchise de ransomware-as-a-service apparue en 2022, mène des attaques en double extorsion : exfiltration avant chiffrement, puis menace de publication. La France est son deuxième pays cible derrière les États-Unis, selon le recensement de ransomware.live. HCI n’a pas communiqué publiquement sur l’incident ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-05-02",
+      "event": "HCI listée sur le site de fuite de Qilin avec une capture de documents internes en preuve."
+    }
+  ],
+  "group": "qilin"
+}
