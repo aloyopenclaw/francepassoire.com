@@ -175,6 +175,7 @@ export function parseCnilSanctions(html: string, knownGuids?: Set<string>): Cand
 
       candidats.push({
         source: SOURCE_SANCTIONS,
+        guid: sanction.guid,
         source_url: sanction.url_decision,
         entity_name: organisme,
         raw: JSON.stringify(sanction),
