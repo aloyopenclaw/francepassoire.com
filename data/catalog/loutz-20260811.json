@@ -1,0 +1,39 @@
+{
+  "slug": "loutz-20260811",
+  "entity": "Loutz",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-11",
+    "publication": "2026-08-12"
+  },
+  "volume": {
+    "count": 9897,
+    "unit": "enregistrements",
+    "label": "3,4 Go et 9 897 fichiers revendiqués, présentés comme le « BlgCloud Leak #4 » ; messagerie professionnelle, CRM et documents internes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque BlgCloud : Loutz visé par une nouvelle fuite de données de 3,4 Go",
+      "url": "https://frenchbreaches.com/alertes/loutz-blgcloud-msp7qzkjgh0uwodlovb",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Loutz : 3,4 Go de données, e-mails et documents internes diffusés après une cyberattaque",
+      "url": "https://www.cyberattaque.org/loutz-34-go-de-donnees-e-mails-et-documents-internes-diffuses-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 août 2026, l’auteur de la série « BlgCloud Leak » publiée après la compromission revendiquée de l’ERP BlgCloud diffuse des données attribuées à Loutz (Loutz.com), quatrième entreprise de la série : 3,4 Go et 9 897 fichiers annoncés. Un échantillon expose la configuration d’un compte de messagerie professionnelle — adresse e-mail, paramètres SMTP et éléments liés à l’authentification — ainsi que des e-mails et des documents internes issus de l’instance BlgCloud utilisée par l’entreprise. L’auteur affirme que des vulnérabilités seraient toujours présentes chez BlgCloud et annonce d’autres publications ; ces affirmations et les volumes restent non confirmés.",
+  "timeline": [
+    {
+      "date": "2026-08-11",
+      "event": "Publication du « BlgCloud Leak #4 » attribué à Loutz : 3,4 Go et 9 897 fichiers annoncés, avec configuration de messagerie en échantillon."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "chupin-20260813",
+  "entity": "Chupin",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-13",
+    "publication": "2026-08-13"
+  },
+  "volume": {
+    "count": 70974,
+    "unit": "enregistrements",
+    "label": "16 Go et 70 974 fichiers revendiqués, présentés comme le « BlgCloud Leak #6 » ; messagerie et CRM de l’entreprise (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque BlgCloud : Chupin victime d’une fuite de données de 16 Go",
+      "url": "https://frenchbreaches.com/alertes/chupin-blgcloud-mssm9jvahrr2e2nsh7u",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Chupin SARL : 16 Go et plus de 70 000 fichiers publiés après le piratage de son compte BlgCloud",
+      "url": "https://www.cyberattaque.org/chupin-sarl-16-go-et-plus-de-70-000-fichiers-publies-apres-le-piratage-de-son-compte-blgcloud/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 août 2026, sixième volet de la série « BlgCloud Leak » issue de la compromission revendiquée de l’ERP BlgCloud : l’auteur publie des données attribuées à Chupin, entreprise française de vente et de réparation de matériels agricoles — 16 Go et 70 974 fichiers annoncés. Les échantillons diffusés montrent des e-mails professionnels, des informations issues du CRM et des références à des factures et documents PDF. Comme pour les autres entreprises de la série, les informations auraient été récupérées via le compte ou l’instance BlgCloud utilisée par l’entreprise, sans démonstration d’une compromission directe de son système informatique ; l’authenticité de l’intégralité des 16 Go et le nombre de personnes affectées restent à confirmer.",
+  "timeline": [
+    {
+      "date": "2026-08-13",
+      "event": "Publication du « BlgCloud Leak #6 » attribué à Chupin : 16 Go et 70 974 fichiers annoncés."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ville-de-gagny-20260810",
+  "entity": "Ville de Gagny",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-10",
+    "publication": "2026-08-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Périmètre non chiffré ; la Ville confirme un accès non autorisé à des données d’identité et de coordonnées d’usagers, sans pouvoir identifier individuellement les personnes touchées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque contre la Ville de Gagny : la mairie confirme un accès à des données personnelles",
+      "url": "https://frenchbreaches.com/alertes/ville-de-gagny-msmim65d87im5z51ho4",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Cyberattaque à Gagny : la Ville confirme un accès non autorisé à des données personnelles",
+      "url": "https://www.cyberattaque.org/cyberattaque-a-gagny-la-ville-confirme-un-acces-non-autorise-a-des-donnees-personnelles/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Ville de Gagny (Seine-Saint-Denis) confirme le 10 août 2026 avoir subi une cyberattaque ayant affecté une partie de son système d’information : des personnes non autorisées ont pu accéder à certaines données personnelles traitées par les services municipaux — noms, prénoms, adresses postales et électroniques, numéros de téléphone, dates et lieux de naissance, ainsi que des informations administratives liées aux démarches. La municipalité indique qu’aucun accès aux pièces justificatives (cartes d’identité, passeports, RIB, données de santé) n’a été mis en évidence et qu’aucune utilisation frauduleuse ne lui a été signalée ; elle ne peut toutefois pas déterminer individuellement les personnes concernées, et les investigations se poursuivent.",
+  "timeline": [
+    {
+      "date": "2026-08-10",
+      "event": "La Ville de Gagny confirme une cyberattaque avec accès non autorisé à des données personnelles d’usagers ; aucune pièce justificative concernée selon la mairie."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+================================================================
+full-catalog-completion — RAFALE 5, LANE 4 (REDISPATCH T22/T23,
+récentes juillet-août 2026) — 20/20 fiches
+Worktree : /var/folders/.../T/opencode/fp-r5l4b (supprimé en fin de run)
+Branche  : fiche/rafale5-l4 (créée sur main 28a8996, 721 fiches)
+Commit   : feat(catalog): rafale 5 — récentes L4 (20 fiches)
+Sources  : D1 live (candidates rss/ransomware.live — requêtes
+           filtrées par source et created_at) + FrenchBreaches
+           (feed.xml 100 items du 28/07 au 21/08 + pages alertes)
+           + cyberattaque.org (API WP /wp-json/wp/v2/posts 100
+           articles 27/07→21/08 + articles) + Zataz (feed 21/08)
+================================================================
+
+[0] RÉSUMÉ — REDISPATCH (la 1re exécution a timeouté en file)
+  Consigne : 20 fiches RÉCENTES (juillet-août 2026) depuis le D1
+  live + presse du jour, ≥2 sources indépendantes, zéro invention.
+  Le minage D1 strict (created_at DESC 150, puis filtres source
+  rss/ransomware.live et created_at ≥ 2026-07-01, 400 lignes) est
+  dominé par le backfill cnil-sanctions (390 lignes, incidents
+  2011-2022, hors périmètre « récentes ») : il ne reste que ~12
+  entités récentes, dont 9 déjà cataloguées ou bloquées par la
+  fenêtre ±45 j de check-doublons (collations §2). La fenêtre a
+  donc été élargie aux incidents juillet-août 2026 documentés par
+  la veille spécialisée (FrenchBreaches + cyberattaque.org, chaque
+  alerte doublée d'un article indépendant), conformément à
+  l'esprit de la lane (« presse du jour »).
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  D1 live (wrangler d1 execute --remote, base francepassoire) :
+  - SELECT DISTINCT entity_name/source/source_url/raw ORDER BY
+    created_at DESC LIMIT 150 : dominé par cnil-sanctions (ancien).
+  - SELECT ... WHERE source IN ('rss','ransomware.live') OU
+    created_at ≥ 2026-07-01 LIMIT 400 : 3 leads rss du jour
+    (Pokémon Center/prestataire Zataz, SFR récidive, casinos
+    européens) + ransomware.live (Geb Sas, Experts Entreprendre,
+    Capgemini Engineering, Hottinguer — tous déjà fichés).
+  - Répartition candidats par source : cert-fr 174,
+    cnil-sanctions 390, ransomware.live 7, rss 42.
+  FrenchBreaches : feed.xml intégral (100 items, 28/07→21/08)
+  → pool 26/07-21/08 ; pages alertes individuelles fetchées
+  (21 × HTTP 200) pour dates, volumes, tags « données
+  compromises » et citations exactes.
+  cyberattaque.org : API WordPress /wp-json/wp/v2/posts?after=
+  2026-07-26 (100 articles) → croisement 1:1 avec FB ; 20
+  articles individuels fetchés (20 × HTTP 200) comme 2e source
+  indépendante + date de publication exacte à l'heure.
+  Zataz : feed (10 derniers articles du 21/08) — article
+  « Deux millions de données françaises » lu intégralement :
+  AUCUNE entité nommée → écarté (pas de fiche possible sans
+  invention). FuitesInfos : index inaccessible au scraping
+  simple (JS) → non retenu comme 3e source.
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS EXPLICITES
+  Base : 721 fiches (main 28a8996). `ls data/catalog | sort`
+  comparé aux candidats ; node scripts/check-doublons.mjs
+  --base main → « 0 collision (±45 j, même entité normalisée) »,
+  exit 0. Vérifié notamment : aucun geotec/terveo/heypulse/
+  gagny/lemans/clcv/loutz/leroch/taveau/chupin/cravero/lenormant/
+  cloue/roussel/le-bon-materiel/france-casse/gedimat/frenchinnov/
+  protection-civile/duvignau dans data/catalog.
+  Leads D1/presse ÉCARTÉS comme doublons ou bloqués ±45 j :
+  - SFR 20-21/08 (ZDNET « récidive » 2,1 M lignes, 01net) :
+    sfr-20260717 publiée (34 j d'écart → collision check-doublons).
+  - Éducation nationale ZeroBytes 17-20/08 (Zataz, JDN, 346 M
+    lignes) : education-nationale-20260731 publiée (17 j d'écart).
+  - DGFiP cadastre/SPDC 2 M propriétaires (14/08 FB, CA 14+18/08)
+    : dgfip-20260812 publiée (même entité à 2 j).
+  - FICOBA/Bercy (Le Monde 14/08) : suite du dossier DGFiP.
+  - Bureau Vallée 4,82 M (21/08 FB) : bureau-vallee-20260809
+    publiée (12 j d'écart, même entité).
+  - Suez prestataire (01net 21/08) : suez-eau-france-20260820.
+  - Capgemini Engineering, Experts Entreprendre (Everest),
+    Geb Sas (TheGentlemen), Alaxione, IRD, Scalingo, Stripe,
+    Questel, T2MC, Chat Coco, Xplor Resamania, Beauty Success,
+    Allobébé, Made in Bébé, Intermarché Drive, Inserm, Bloctel,
+    MGP, Biosynex, HCL, Bloctel-KparK, Actis, Clenet, SamBoat,
+    EVY, France VAE, LaSante.net, AEFE, SpF, I-CAD, FFHandball,
+    FFDanse : déjà publiées par les lanes précédentes. AFPA :
+    afpa-20250806 = incident 2025 distinct (écart 366 j, hors
+    fenêtre) → incident AFPABox 2026 RETENU. Sport 2000,
+    Reserver, WiziShop/Dropizi, Foodtrack : déjà publiées.
+  Exclusions de PRINCIPE (zéro invention / périmètre) :
+  - Géotec (21/08, exfiltration confirmée par communiqué MAIS
+    aucune catégorie de données listée par aucune source →
+    data_types min(1) impossible sans invention) : ÉCARTÉ,
+    remplacé par Duvignau (BlgCloud Leak #2).
+  - Pokémon Center (Zataz 21/08) : angle français non établi,
+    pas de 2e source indépendante à date. - Casinos européens
+    (Zataz 21/08) : entités françaises non nommées. - Target
+    (Zataz 21/08) : US sans angle FR. - DYSPHOR1A, SovCali
+    (Zataz) : groupes sans victime FR identifiée. - C.Hunters
+    (Zataz) : service, pas une fuite. - « 2 M données FR »
+    (Zataz) : aucune entité. - Klaro, UTTP Tarbes, Sun Form,
+    SDE 03, Marennes, Bija, Jone, Reflet 2000, Petit Gramme,
+    Son-Video, Aastrio, Publica, Voxaly, Setic Pourtier (LockBit
+    5.0), Rinxent (Krybit), Emploi Docteur Imago, Avocats-
+    Étrangers, Amicale Police et Patrimoine, Nantes Université,
+    Resaclick, Erdil, Injoux-Génissiat, Orisha CIM, 5doigts2pieds,
+    Lire Demain, ENGIE Green, Steam/CEVA, EVA (gg/Charleroi) :
+    seconde source indépendante non trouvée à temps ou hors
+    périmètre FR → écartés, pool suffisant sans eux.
+
+[3] FICHES LIVRÉES (20 ; 18 revendiquées, 2 confirmées ; Ton A ≤120 mots)
+  01 protection-civile-20260821  21/08/2026 revendiquée FNPC :
+        eProtec mars 2026, 525 k profils + 15 k photos revendiqués
+        (mars), FNPC confirme l'accès + plainte parquet de Paris
+  02 frenchinnov-20260820       20/08/2026 revendiquée « CRM DATA
+        (1.6K) » : ~1 600 fiches CRM + clés API/identifiants
+  03 taveau-20260818            18/08/2026 revendiquée BlgCloud
+        Leak #10 : 21,2 Go / 107 125 fichiers (matériel agricole)
+  04 gedimat-20260811           11/08/2026 CONFIRMÉE  divulgation
+        données d'identification comptes gedimat.fr (Orange
+        Business), CNIL notifiée art. 33
+  05 loutz-20260811             11/08/2026 revendiquée BlgCloud
+        Leak #4 : 3,4 Go / 9 897 fichiers, config SMTP
+  06 leroch-distribution-20260812 12/08/2026 revendiquée BlgCloud
+        Leak #5 : 3,3 Go / 9 897 fichiers
+  07 heypulse-20260811          11/08/2026 revendiquée base +
+        code source, slvsh3r, hashes bcrypt (SaaS B2B)
+  08 groupe-cloue-20260810      10/08/2026 revendiquée BlgCloud
+        Leak #3 : 6,7 Go / 9 146 fichiers (messagerie + CRM)
+  09 ville-de-gagny-20260810    10/08/2026 revendiquée mairie
+        confirme accès non autorisé ; pièces justificatives non
+        touchées selon la Ville
+  10 le-mans-fc-20260808        08/08/2026 revendiquée wp_users
+        ancien domaine MUC 72 : 2 479 comptes / ~2 478 e-mails
+  11 clcv-20260808              08/08/2026 revendiquée 80 031
+        dossiers de consommateurs avec litiges (JSON 108,8 Mo)
+  12 roussel-agri-62-20260808   08/08/2026 revendiquée 1er lot
+        BlgCloud : 9,33 Go / 45 684 fichiers, IBAN en échantillon
+  13 le-bon-materiel-20260815   15/08/2026 revendiquée BlgCloud
+        Leak #7 : 13,8 Go / 48 290 fichiers
+  14 cravero-motoculture-20260816 16/08/2026 revendiquée BlgCloud
+        Leak #8 : 3,7 Go / 49 168 fichiers / ~8 500 personnes
+  15 groupe-lenormant-20260816  16/08/2026 revendiquée BlgCloud
+        Leak #9 : 20,6 Go / 38 968 fichiers
+  16 france-casse-20260815      15/08/2026 revendiquée 512
+        comptes ; examen CA = données répétées, compromission
+        NON établie (doutes documentés dans la fiche)
+  17 chupin-20260813            13/08/2026 revendiquée BlgCloud
+        Leak #6 : 16 Go / 70 974 fichiers
+  18 afpa-20260807              07/08/2026 revendiquée Cybernox :
+        101 comptes AFPABox + identifiants admin publiés
+        (afpa-20250806 = incident 2025 distinct, écart 366 j)
+  19 terveo-20260730            30/07/2026 revendiquée intrusion
+        19-25/07, accès confirmé, copie non établie (notification)
+  20 duvignau-20260809          09/08/2026 revendiquée BlgCloud
+        Leak #2 : CRM/messagerie/config/documents (volume non
+        chiffré par les sources)
+
+  Champ `group` : ABSENT partout — 9 fiches BlgCloud suivent le
+  pattern établi par blgcloud-20260808/bergerat-rent-20260820
+  (série citée dans volume.label/description, pas de group) ;
+  les autres sont des fiches isolées (aucun groupe multi-victimes
+  FR sourcé hors dossier BlgCloud déjà fiché).
+
+[4] VALIDATION
+  zod temp-vitest (tests/tmp-r5l4-validate.test.ts, supprimé
+  avant commit) : 21/21 tests verts — safeParse des 20 fiches,
+  slug = <entite>-<aaaammjj> == dates.revendication, ≥2 sources
+  https, description ≤ 120 mots. Sortie : « Test Files 1 passed
+  (1), Tests 21 passed (21) ».
+  Suite complète : npx vitest run → « Test Files 30 passed (30),
+  Tests 1125 passed (1125) ».
+  Doublons : node scripts/check-doublons.mjs --base main →
+  « ✓ check-doublons : 0 collision (±45 j, même entité
+  normalisée) », exit 0 (721 → 741 fiches).
+  URLs : sweep final 41/41 HTTP 200 (21 FrenchBreaches + 20
+  cyberattaque.org), curl -L, 21/08/2026 19:45 CEST.
+
+[5] RISQUES / NOTES POUR LA REVUE
+  - France Casse : revendication CONTESTÉE (données répétées
+    selon CA) — la fiche le documente explicitement ; statut
+    revendiquee, volume « contesté » dans le label.
+  - Le Mans FC : base sur un ANCIEN domaine (MUC 72) ; rattache-
+    ment aux infrastructures actuelles non établi — noté en
+    description.
+  - FNPC : volumes (525 k / 15 k photos) issus de la revendica-
+    tion de mars et de l'analyse FB, pas de la FNPC — nuance
+    portée par volume.label et description ; date de revendica-
+    tion mars inconnue au jour près → timeline limitée au 21/08
+    (date sourcée), attaque de mars décrite en prose.
+  - Gedimat : notification datée du 11/08 (communication), FB
+    publié le 13/08 → dates.revendication=11/08 (kpark precedent),
+    publication=13/08.
+  - Secteur BlgCloud « industrie » : cohérent avec le cluster
+    machinisme/BTP établi (bergerat-rent-20260820) ; Gagny public,
+    Gedimat/France Casse/Terveo retail, FNPC services (précédent
+    ffdanse), CLCV autre (précédent lions-france), HeyPulse/
+    FrenchInnov/Afpa/Le Mans FC services.
+  - JAMAIS MERGE (décision orchestrateur) ; aucun post social.

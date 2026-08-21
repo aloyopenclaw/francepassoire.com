@@ -1,0 +1,39 @@
+{
+  "slug": "cravero-motoculture-20260816",
+  "entity": "Cravero Motoculture",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-16"
+  },
+  "volume": {
+    "count": 8500,
+    "unit": "personnes",
+    "label": "3,7 Go et 49 168 fichiers revendiqués ; un peu plus de 8 500 personnes seraient concernées (série BlgCloud, « Leak #8 » ; revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données BlgCloud : Cravero Motoculture visé par une publication de 3,7 Go",
+      "url": "https://frenchbreaches.com/alertes/cravero-motoculture-blgcloud-msv33dq9e4pzz9hsrts",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Motoculture Cravero : 49 168 fichiers et les données de plus de 8 500 personnes diffusés",
+      "url": "https://www.cyberattaque.org/motoculture-cravero-49-168-fichiers-et-les-donnees-de-plus-de-8-500-personnes-diffuses/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 août 2026, huitième publication de la série « BlgCloud Leak » consécutive à la compromission revendiquée de l’ERP BlgCloud : des données attribuées à Cravero Motoculture sont diffusées sur un forum cybercriminel — 3,7 Go et 49 168 fichiers annoncés, concernant selon les relais un peu plus de 8 500 personnes. Les échantillons montrent des données structurées issues d’un CRM, des coordonnées professionnelles, des noms et prénoms, des adresses postales, ainsi que des références à des documents PDF et propositions commerciales de l’entreprise. L’auteur annonce dans la même publication une prochaine divulgation visant Lenormant ; rien ne permet de confirmer indépendamment l’ensemble des volumes ou le nombre exact de personnes concernées.",
+  "timeline": [
+    {
+      "date": "2026-08-16",
+      "event": "Publication du « BlgCloud Leak #8 » attribué à Cravero Motoculture : 3,7 Go, 49 168 fichiers et plus de 8 500 personnes annoncés."
+    }
+  ]
+}

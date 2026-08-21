@@ -1,0 +1,38 @@
+{
+  "slug": "taveau-20260818",
+  "entity": "Taveau",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-18"
+  },
+  "volume": {
+    "count": 107125,
+    "unit": "enregistrements",
+    "label": "21,2 Go et 107 125 fichiers revendiqués, présentés comme le « BlgCloud Leak #10 » ; e-mails, CRM, factures et documents logistiques (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Taveau.fr : 21,2 Go et plus de 107 000 fichiers revendiqués",
+      "url": "https://frenchbreaches.com/alertes/taveau-blgcloud-msyvca8i1xz1mwgxx1",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Taveau : plus de 107 000 fichiers internes diffusés après une cyberattaque",
+      "url": "https://www.cyberattaque.org/taveau-plus-de-107-000-fichiers-internes-diffuses-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 août 2026, dixième volet de la série « BlgCloud Leak » consécutive à la compromission revendiquée de l’ERP BlgCloud : l’auteur de la série publie des données attribuées à Taveau, entreprise française de vente et de distribution de matériels agricoles neufs et d’occasion — 21,2 Go et 107 125 fichiers annoncés. Les échantillons montrent des e-mails professionnels, des données CRM, des coordonnées, des factures et des documents logistiques issus de l’environnement BlgCloud utilisé par l’entreprise, et non d’une compromission directe de son système d’information. Taveau avait été explicitement annoncée comme prochaine cible après la publication visant Lenormant ; les volumes restent non confirmés.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Publication du « BlgCloud Leak #10 » attribué à Taveau : 21,2 Go et 107 125 fichiers annoncés, avec échantillons."
+    }
+  ]
+}

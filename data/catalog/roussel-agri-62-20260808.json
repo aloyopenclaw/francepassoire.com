@@ -1,0 +1,40 @@
+{
+  "slug": "roussel-agri-62-20260808",
+  "entity": "Roussel Agri 62",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-08",
+    "publication": "2026-08-08"
+  },
+  "volume": {
+    "count": 45684,
+    "unit": "enregistrements",
+    "label": "9,33 Go et 45 684 fichiers revendiqués, dont 29 127 e-mails, 23 816 enregistrements CRM et 45 681 documents ; premier lot de la série BlgCloud (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données liée à BlgCloud : Agri62 voit 9,33 Go de données publiés sur un forum cybercriminel",
+      "url": "https://frenchbreaches.com/alertes/roussel-agri-62-blgcloud-mskjsgirjuladgvz0sj",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Roussel Agri62 ouvre la série de fuites BlgCloud avec 9,33 Go de données exposées",
+      "url": "https://www.cyberattaque.org/roussel-agri62-ouvre-la-serie-de-fuites-blgcloud-avec-933-go-de-donnees-exposees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 août 2026, après la revendication d’un accès massif à l’ERP SaaS BlgCloud, l’auteur de la série publie son premier lot de données clients : 9,33 Go attribués à Agri62 / Roussel Agri 62, entreprise de machinisme agricole — 29 127 e-mails, 23 816 enregistrements CRM et 45 681 documents. Les échantillons montrent des contenus d’e-mails, des contacts professionnels, des données d’entreprises, des coordonnées bancaires et des IBAN, ainsi qu’un bon de commande. La publication ouvre une série de fuites issues des environnements BlgCloud revendiqués compromis ; le nombre de personnes concernées et l’exhaustivité des informations diffusées restent à déterminer.",
+  "timeline": [
+    {
+      "date": "2026-08-08",
+      "event": "Premier lot de la série BlgCloud publié sous le nom Agri62 / Roussel Agri : 9,33 Go, dont 29 127 e-mails et 23 816 enregistrements CRM."
+    }
+  ]
+}

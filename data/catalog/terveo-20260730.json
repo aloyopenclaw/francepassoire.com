@@ -1,0 +1,38 @@
+{
+  "slug": "terveo-20260730",
+  "entity": "TERVEO",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-30",
+    "publication": "2026-08-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes non chiffré ; accès possible aux données du site entre le 19 et le 25 juillet 2026, copie non établie (notification de l’entreprise)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Incident de cybersécurité chez TERVEO : des données clients potentiellement consultées lors d’une intrusion",
+      "url": "https://frenchbreaches.com/alertes/terveo-msb0jbxnwduz5ngrumi",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Terveo : les données clients et historiques de commandes exposés dans une cyberattaque",
+      "url": "https://www.cyberattaque.org/terveo-les-donnees-clients-et-historiques-de-commandes-exposes-dans-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "TERVEO, entreprise française de vente en ligne spécialisée dans l’aménagement extérieur — dont les bains nordiques et saunas —, publie le 30 juillet 2026 une communication confirmant une intrusion sur son site entre le 19 et le 25 juillet, adressée par courriel aux clients le 31 juillet : une personne extérieure a pu accéder à certaines données enregistrées. Selon le profil des comptes figurent noms et prénoms, adresses électroniques, numéros de téléphone, adresses de facturation et de livraison et historique des commandes. L’entreprise précise ne disposer d’aucune preuve que les informations ont été copiées, sans pouvoir l’exclure, et a choisi de notifier l’ensemble des personnes potentiellement concernées conformément au RGPD.",
+  "timeline": [
+    {
+      "date": "2026-07-30",
+      "event": "TERVEO publie une notification d’intrusion (19-25 juillet) : accès possible aux données clients, copie non établie, notification RGPD des personnes concernées."
+    }
+  ]
+}
