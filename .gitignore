@@ -20,3 +20,6 @@ dist/
 cloudflare.txt
 *.token
 .astro/
+
+# État interne orchestration (runbook publicité : jamais publié)
+.omo/
