@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-credit-a-la-consommation-20140807",
+  "entity": "Société de crédit à la consommation (dénomination non publiée par la CNIL)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-08-07",
+    "confirmation": "2014-08-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société de crédit à la consommation », avertissement public (7 août 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 7 août 2014, la formation restreinte de la CNIL a prononcé un avertissement public à l'encontre d'une société de crédit à la consommation, désignée anonymement. La décision concerne des inscriptions illicites et le maintien d'inscriptions au FICP, fichier des incidents de remboursement des crédits aux particuliers, malgré la régularisation de la situation des personnes. Les manquements retenus portent sur l'absence de mise à jour des données, une collecte illicite et un défaut de sécurité et de confidentialité. Le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2014-08-07",
+      "event": "Avertissement public : inscriptions illicites au FICP maintenues malgré régularisation, collecte illicite, défaut de sécurité."
+    }
+  ]
+}
