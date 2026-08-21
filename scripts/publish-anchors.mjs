@@ -33,8 +33,9 @@ function analyserArgs(argv) {
     ancrages: 'docs/ancrages.md',
     relays: RELAIS_EPINGLES,
     dryRun: false,
+    tout: false,
   };
-  const connus = new Set(['--registre', '--ancrages', '--relays', '--dry-run']);
+  const connus = new Set(['--registre', '--ancrages', '--relays', '--dry-run', '--tout']);
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--help' || a === '-h') {
@@ -48,6 +49,10 @@ function analyserArgs(argv) {
     }
     if (a === '--dry-run') {
       opts.dryRun = true;
+      continue;
+    }
+    if (a === '--tout') {
+      opts.tout = true;
       continue;
     }
     const valeur = argv[++i];
@@ -106,6 +111,32 @@ function envoyerAuRelais(relay, event, timeoutMs = 5000) {
  * existantes voient leur pointeur d'événement rafraîchi (les relais
  * purgent les anciennes notes ; les empreintes, elles, sont permanentes).
  */
+
+// Lecture du tableau « Ancrages publiés » → Map(ancrage → empreinte).
+// Utilisée par le mode lacunaire : ne republier QUE ce qui manque.
+function lireAncragesTableau(cheminDoc) {
+  try {
+    const lignesFichier = readFileSync(cheminDoc, 'utf8').split('\n');
+    let iTable = -1;
+    for (let i = 0; i < lignesFichier.length; i++) {
+      if (lignesFichier[i].includes('Ancrages publiés')) { iTable = i; break; }
+    }
+    if (iTable === -1) return [];
+    const paires = [];
+    for (let i = iTable + 1; i < lignesFichier.length; i++) {
+      const l = lignesFichier[i].trim();
+      if (!l.startsWith('|')) { if (paires.length > 0) break; continue; }
+      const cols = l.split('|').map((c) => c.trim());
+      if (cols[1] && cols[1] !== 'ancrage' && !cols[1].startsWith('-') && /^[0-9a-f]{64}$/.test(cols[2] ?? '')) {
+        paires.push([cols[1], cols[2]]);
+      }
+    }
+    return paires;
+  } catch {
+    return [];
+  }
+}
+
 function enregistrerAncrages(cheminDoc, lignes) {
   const lignesFichier = readFileSync(cheminDoc, 'utf8').split('\n');
   let iTable = -1;
@@ -197,7 +228,17 @@ async function main() {
     contenu: `ANCRAGE TETE ${resultat.empreinteTete} — FrancePassoire, tête du registre (${resultat.nbEvenements} événements)`,
   });
 
-  const evenements = modeles.map(({ ancrage, empreinte, contenu }) => {
+  // MODE LACUNAIRE (21/08) : re-publier TOUT le troupeau à chaque append
+  // faisait throttler les relais (damus/primal) et empêchait les NOUVEAUX
+  // ancres de coller. Par défaut on ne publie plus que : la tête + les
+  // ancrages absents du tableau ou dont l'empreinte a changé. --tout force
+  // l'ancien comportement complet.
+  const existants = new Map(lireAncragesTableau(opts.ancrages));
+  const aPublier = opts.tout
+    ? modeles
+    : modeles.filter((m) => existants.get(m.ancrage) !== m.empreinte);
+
+  const evenements = aPublier.map(({ ancrage, empreinte, contenu }) => {
     const event = finalizeEvent({ kind: 1, created_at: maintenant, tags: tag, content: contenu }, secret);
     if (!verifyEvent(event)) {
       throw new Error(`signature invalide pour l'ancrage ${ancrage} — clé corrompue ?`);
