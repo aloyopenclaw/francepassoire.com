@@ -1,0 +1,43 @@
+{
+  "slug": "adecco-france-20251224",
+  "entity": "Adecco France",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-24",
+    "publication": "2026-01-05"
+  },
+  "volume": {
+    "count": 800000,
+    "unit": "lignes",
+    "label": "≈ 800 000 lignes dont ≈ 750 000 CV revendiquées par le pirate (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Nouvelle fuite de données chez Adecco ?",
+      "url": "https://www.zataz.com/nouvelle-fuite-de-donnees-chez-adecco/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Adecco France",
+      "url": "https://frenchbreaches.com/alertes/adecco-france-76b7f7cee935",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fin décembre 2025, un pirate affirme avoir exfiltré des données attribuées à Adecco France, géant du travail temporaire. L’extraction, datée du 20 au 22 décembre, aurait été menée via un outil interne. Le volume estimé atteint environ 800 000 lignes, dont près de 750 000 CV. Le diffuseur a publié des captures d’écran et un échantillon de 10 000 entrées pour prouver ses dires. Zataz relève le contexte judiciaire d’une affaire Adecco antérieure et deux scénarios : recyclage d’anciennes données ou scraping récent. Adecco n’a pas communiqué sur l’annonce et la revendication n’est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-12-20",
+      "event": "Un pirate affirme avoir extrait, entre les 20 et 22 décembre, ≈ 800 000 lignes dont 750 000 CV via un outil interne Adecco."
+    },
+    {
+      "date": "2026-01-05",
+      "event": "Zataz documente la mise en vente ; Adecco n’a pas communiqué sur l’annonce."
+    }
+  ]
+}
