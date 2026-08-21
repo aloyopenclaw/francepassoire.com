@@ -1,0 +1,38 @@
+{
+  "slug": "ventes-aux-encheres-20120524",
+  "entity": "Des sociétés de ventes aux enchères (entités non nommées)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-05-24",
+    "confirmation": "2012-05-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "deux avertissements non publics prononcés le même jour ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « VENTES AUX ENCHERES », deux avertissements non publics (24 mai 2012, fichiers d'exclusion)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décisions du 24/05/2012 — fichiers d'exclusion, formalités, information et sécurité défaillantes",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 24 mai 2012, la formation restreinte de la CNIL a adressé deux avertissements non publics à des sociétés de ventes aux enchères exploitant des fichiers d'exclusion. Manquements retenus : défaut de formalités préalables, défaut d'information et défaut de sécurité ; la seconde décision ajoute l'absence de mise à jour des données et l'absence de durée de conservation définie. Les dénominations ne sont pas publiques. Le tableau officiel des sanctions inscrit les deux décisions à la même date, décrites également par la version archivée de 2018. Le même jour, la CNIL rendait public l'avertissement frappant un syndicat pour un fichier d'exclusion comparable.",
+  "timeline": [
+    {
+      "date": "2012-05-24",
+      "event": "Deux avertissements non publics : fichiers d'exclusion sans formalités, information ou sécurité suffisantes."
+    }
+  ]
+}

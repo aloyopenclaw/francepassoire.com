@@ -1,0 +1,37 @@
+{
+  "slug": "societe-organisant-des-evenements-par-la-promotion-et-la-vente-de-billets-20260326",
+  "entity": "Une société organisant des événements par la promotion et la vente de billets (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-26",
+    "confirmation": "2026-03-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 15 000 euros et injonction (procédure simplifiée) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ ORGANISANT DES ÉVÈNEMENTS PAR LA PROMOTION ET LA VENTE DE BILLETS (procédure simplifiée) », amende administrative de 15 000 euros et injonction (26 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (bilan officiel, juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 26 mars 2026, la CNIL a sanctionné une société organisant des événements par la promotion et la vente de billets d'une amende administrative de 15 000 euros et d'une injonction, dans le cadre de la procédure simplifiée. Manquements retenus : durées de conservation excessives, traitements illicites, défaut d'information des personnes, non-respect du droit à l'effacement et cookies déposés sans consentement valable. Le nom de l'organisme n'est pas publié : les sanctions simplifiées, plafonnées à 20 000 euros, ne sont jamais rendues publiques nominativement. La décision figure au tableau officiel des sanctions et au bilan des procédures simplifiées publié en juillet 2026.",
+  "timeline": [
+    {
+      "date": "2026-03-26",
+      "event": "Amende de 15 000 euros et injonction (procédure simplifiée) : conservation, licéité, effacement et cookies en cause."
+    }
+  ]
+}

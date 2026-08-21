@@ -1,0 +1,39 @@
+{
+  "slug": "vente-de-mobilier-sur-internet-et-en-magasins-20211230",
+  "entity": "Une société de vente de mobilier sur internet et en magasin (entité non nommée)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-12-30",
+    "confirmation": "2021-12-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 120 000 euros (délibération SAN-2021-022) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « VENTE DE MOBILIER SUR INTERNET ET EN MAGASIN », sanction pécuniaire de 120 000 euros (30 décembre 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Délibération SAN-2021-022 du 30 décembre 2021 (texte officiel publié par le CEPD ; anonymisé à l'expiration du délai de publicité de deux ans)",
+      "url": "https://www.edpb.europa.eu/system/files/2022-02/fr_2021-12_decisionpublic.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 décembre 2021, la formation restreinte de la CNIL a infligé une amende de 120 000 euros à une société de vente de mobilier sur internet et en magasin (délibération SAN-2021-022). Créée en 2007, active en France et dans plusieurs pays de l'Union européenne, l'enseigne exploitait deux magasins par une filiale. Manquements retenus : durées de conservation excessives, défaut d'information des personnes, demandes d'effacement non respectées, relations avec les sous-traitants non encadrées et sécurité insuffisante. Le texte public, anonymisé à l'expiration du délai de publicité de deux ans, ne permet plus d'identifier la société.",
+  "timeline": [
+    {
+      "date": "2021-12-30",
+      "event": "Amende de 120 000 euros (SAN-2021-022) : conservation, information, effacement, sous-traitance et sécurité en cause."
+    }
+  ]
+}

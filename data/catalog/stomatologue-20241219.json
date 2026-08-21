@@ -1,0 +1,42 @@
+{
+  "slug": "stomatologue-20241219",
+  "entity": "Un stomatologue (entité non nommée)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 5 000 euros (procédure simplifiée) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « STOMATOLOGUE (procédure simplifiée) », amende administrative de 5 000 euros (19 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a sanctionné un stomatologue d'une amende administrative de 5 000 euros, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du droit d'accès à un dossier médical et défaut de coopération avec la CNIL. Le nom du praticien n'est pas publié : les sanctions simplifiées, plafonnées à 20 000 euros, ne sont pas rendues publiques nominativement. La décision figure au tableau officiel des sanctions et au bilan 2024 de l'action de la CNIL, qui recense les mesures correctrices prononcées sur l'année. Le refus d'accès aux données de santé compte parmi les manquements les plus fréquemment sanctionnés en matière médicale.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : droit d'accès au dossier médical non respecté, coopération défaillante."
+    }
+  ]
+}

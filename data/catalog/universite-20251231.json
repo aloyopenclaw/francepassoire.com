@@ -1,0 +1,42 @@
+{
+  "slug": "universite-20251231",
+  "entity": "Une université (entité non nommée)",
+  "secteur": "recherche",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-31",
+    "confirmation": "2025-12-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende administrative de 20 000 euros (procédure simplifiée) ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « UNIVERSITE (procédure simplifiée) », amende administrative de 20 000 euros (31 décembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 décembre 2025, la CNIL a sanctionné une université d'une amende administrative de 20 000 euros, dans le cadre de la procédure simplifiée. Manquement retenu : non-respect du principe de limitation des finalités. Le montant atteint le plafond des sanctions simplifiées. Le nom de l'établissement n'est pas publié : ces décisions ne sont jamais rendues publiques nominativement. Le tableau officiel recense deux autres sanctions de même nature contre des universités, prononcées le 29 décembre 2022 pour 10 000 euros et le 2 octobre 2025 pour 15 000 euros, toutes motivées par des détournements de finalité. La réutilisation de données étudiantes hors finalité déclarée reste surveillée.",
+  "timeline": [
+    {
+      "date": "2025-12-31",
+      "event": "Amende de 20 000 euros, plafond de la procédure simplifiée : principe de limitation des finalités non respecté."
+    }
+  ]
+}

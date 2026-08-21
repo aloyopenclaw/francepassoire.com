@@ -1,0 +1,38 @@
+{
+  "slug": "snaf-20210915",
+  "entity": "Société nouvelle de l'annuaire français (SNAF)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-09-15",
+    "confirmation": "2021-09-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 3 000 euros ; seize plaintes à l'origine de la procédure"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ RÉGIE PUBLICITAIRE », sanction pécuniaire de 3 000 euros (15 septembre 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanction de 3 000 euros à l'encontre de la société SNAF (communiqué officiel)",
+      "url": "https://www.cnil.fr/fr/sanction-de-3-000-euros-lencontre-de-la-societe-nouvelle-de-lannuaire-francais-snaf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 septembre 2021, la formation restreinte de la CNIL a infligé une amende de 3 000 euros à la Société nouvelle de l'annuaire français, micro-entreprise d'un salarié (délibération SAN-2021-014). Seize plaintes, entre 2018 et 2019, signalaient des difficultés à faire rectifier ou effacer des données. Après une mise en demeure du 21 juillet 2020 restée sans effet complet, la CNIL retient le non-respect des droits de rectification et d'effacement, l'absence de registre des activités de traitement et un défaut de coopération. Le montant tient compte de la taille et de la situation financière de la société. La publicité de la sanction était prévue pour deux ans.",
+  "timeline": [
+    {
+      "date": "2021-09-15",
+      "event": "Amende de 3 000 euros (SAN-2021-014) : rectification et effacement non respectés, registre absent, coopération défaillante."
+    }
+  ]
+}
