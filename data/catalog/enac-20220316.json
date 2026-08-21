@@ -1,0 +1,59 @@
+{
+  "slug": "enac-20220316",
+  "entity": "École nationale de l'aviation civile (ENAC)",
+  "siren": "193112562",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-03-16",
+    "publication": "2022-03-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "non communiqué ; rançon de 1,2 million de dollars exigée puis portée à 2 millions (LeMagIT)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — L'École Nationale de l'Aviation Civile frappée avec le ransomware Hive (16-20 mars 2022)",
+      "url": "https://www.lemagit.fr/actualites/252514685/LEcole-Nationale-de-lAviation-Civile-paralysee-par-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques (AFP) — L'ENAC victime d'une cyberattaque avec demande de rançon (18 mars 2022)",
+      "url": "https://www.solutions-numeriques.com/lecole-nationale-de-laviation-civile-victime-dune-cyberattaque-avec-demande-de-rancon/",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Occitanie — Rançongiciel : les pirates à l'origine de la cyberattaque contre l'ENAC piratés à leur tour par le FBI",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/rancongiciel-les-pirates-a-l-origine-de-la-cyber-attaque-contre-l-enac-toulouse-pirates-a-leur-tour-par-le-fbi-2704066.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L'École nationale de l'aviation civile (ENAC) a été frappée par un rançongiciel durant le week-end du 12 mars 2022. De nombreux services numériques sont devenus indisponibles, jusqu'à affecter l'accès physique aux sites et les vols programmés. Selon LeMagIT, les cyberdélinquants ont ouvert un espace de dialogue. Ils ont exigé une rançon de 1,2 million de dollars, puis 2 millions. L'attaque impliquait le ransomware Hive. La DGAC a accompagné l'école dans la gestion de l'incident. L'exfiltration de données n'a pas été documentée publiquement.",
+  "timeline": [
+    {
+      "date": "2022-03-13",
+      "event": "L'ENAC est touchée durant le week-end ; services numériques indisponibles, la communication évoque des « anomalies »."
+    },
+    {
+      "date": "2022-03-16",
+      "event": "LeMagIT révèle l'attaque ; la direction confirme ensuite l'implication d'un rançongiciel."
+    },
+    {
+      "date": "2022-03-19",
+      "event": "Le ransomware Hive est identifié ; rançon de 1,2 million de dollars en bitcoin confirmée à LeMagIT."
+    },
+    {
+      "date": "2022-03-20",
+      "event": "Les assaillants portent la rançon exigée à 2 millions de dollars."
+    },
+    {
+      "date": "2023-01-26",
+      "event": "Le FBI annonce le démantèlement de Hive, qui comptait l'ENAC parmi ses victimes en France."
+    }
+  ]
+}

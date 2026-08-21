@@ -1,0 +1,47 @@
+{
+  "slug": "pole-leonard-de-vinci-20220927",
+  "entity": "Pôle universitaire Léonard de Vinci (Courbevoie)",
+  "siren": "402850226",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-09-27",
+    "publication": "2022-09-27"
+  },
+  "volume": {
+    "count": 20000,
+    "unit": "personnes",
+    "label": "près de 20 000 victimes potentielles selon la direction : 8 000 élèves et 12 000 anciens étudiants (BFM Paris, comptabilisation en cours)"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "BFM Paris — Hauts-de-Seine : le pôle universitaire Léonard de Vinci touché par une cyberattaque (27 septembre 2022)",
+      "url": "https://www.bfmtv.com/paris/hauts-de-seine-le-pole-universitaire-leonard-de-vince-touche-par-une-cyberattaque_AV-202209270698.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Trois suspects mis en examen pour une cyberattaque contre le pôle Léonard de Vinci (30 mai 2023)",
+      "url": "https://www.zataz.com/trois-suspects-mis-en-examen-pour-une-cyberattaque-contre-le-pole-leonard-de-vinci-de-la-defense/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le pôle universitaire Léonard de Vinci, à Courbevoie, a été la cible d'une cyberattaque durant le week-end du 24 septembre 2022. Des données ont été dérobées : coordonnées bancaires, états civils et notes des élèves, selon BFM Paris. Près de 20 000 personnes seraient concernées, dont 8 000 élèves et 12 000 anciens étudiants. La direction a déposé plainte au parquet de Paris et recherché les failles exploitées. En mai 2023, trois hommes de 23 à 25 ans ont été mis en examen pour cette attaque, selon Zataz.",
+  "timeline": [
+    {
+      "date": "2022-09-25",
+      "event": "Cyberattaque durant le week-end : coordonnées bancaires, états civils et notes dérobées selon BFM Paris."
+    },
+    {
+      "date": "2022-09-27",
+      "event": "La direction informe élèves et partenaires ; près de 20 000 victimes potentielles ; plainte au parquet de Paris."
+    },
+    {
+      "date": "2023-05-30",
+      "event": "Trois suspects sont mis en examen à Paris pour atteinte à un système automatisé et extorsion (Zataz)."
+    }
+  ]
+}
