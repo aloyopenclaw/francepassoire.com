@@ -1,0 +1,44 @@
+{
+  "slug": "samboat-20260816",
+  "entity": "SamBoat",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; personnes concernées notifiées individuellement par la plateforme"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — SamBoat confirme une fuite de données personnelles",
+      "url": "https://fuitesinfos.fr/article/2026-08-16-samboat",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — SamBoat confirme une fuite de données personnelles après un acte de cybermalveillance",
+      "url": "https://frenchbreaches.com/alertes/samboat-mswbi07qx6mqo23f4un",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — SamBoat : la plateforme de location de bateaux frappée par une cyberattaque majeure",
+      "url": "https://www.cyberattaque.org/samboat-la-plateforme-de-location-de-bateaux-frappee-par-une-cyberattaque-majeure/",
+      "kind": "article"
+    }
+  ],
+  "description": "SamBoat, plateforme française de location de bateaux entre particuliers et professionnels, a confirmé le 16 août 2026 un acte de cybermalveillance ayant entraîné un accès non autorisé à ses systèmes et la copie de certaines données : prénom, nom, date de naissance, adresse électronique, numéro de téléphone et documents d'identité. L'entreprise précise que les coordonnées bancaires, non stockées sur ses serveurs, ne sont pas concernées. L'incident a été signalé aux autorités compétentes et les investigations se poursuivent ; les volumes ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-08-16",
+      "event": "SamBoat notifie les personnes concernées : accès non autorisé et copie de certaines données (identité, coordonnées, documents d’identité) ; coordonnées bancaires non concernées, autorités saisies."
+    }
+  ]
+}

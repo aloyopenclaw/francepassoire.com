@@ -14,7 +14,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
     <div class="flex flex-wrap justify-center gap-6 px-4">
       <a href="#proteger-verifier" class="bg-brand-orange border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">1. Vérifier</a>
       <a href="#proteger-agir" class="bg-brand-paper border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">2. Agir</a>
-      <a href="#proteger-surveiller" class="bg-brand-green text-brand-cream border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">3. Surveiller</a>
+      <a href="#proteger-surveiller" class="bg-[#0E7A46] text-brand-cream border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">3. Surveiller</a>
     </div>
   </section>
 
@@ -139,24 +139,10 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       </div>
     </section>
 
-    <!-- SECTION 2BIS: EXIGER (générateur de lettre au DPO, 100 % local) -->
-    <section id="proteger-dpo" class="max-w-7xl mx-auto px-4 sm:px-6 scroll-mt-24">
-      <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
-        <span class="bg-brand-orange w-16 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-xl">2bis</span>
-        Exiger ses droits
-      </h2>
-      <p class="font-body text-lg mb-8 max-w-3xl">
-        Un mois : c'est le délai légal dont dispose une organisation pour répondre à une demande RGPD.
-        Une lettre claire, article en main, débloque la plupart des situations — générez la vôtre ci-dessous,
-        elle s'écrit entièrement dans votre navigateur.
-      </p>
-      <DpoGenerator />
-    </section>
-
     <!-- SECTION 3: SURVEILLER (veille email double opt-in + outils externes) -->
-    <section id="proteger-surveiller" class="max-w-4xl mx-auto px-4 sm:px-6 scroll-mt-24">
+    <section id="proteger-surveiller" class="max-w-4xl mx-auto px-4 sm:px-6 pb-16 scroll-mt-24">
       <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
-        <span class="bg-brand-green text-brand-cream w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-2xl">3</span>
+        <span class="bg-[#0E7A46] text-brand-cream w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-2xl">3</span>
         Surveiller
       </h2>
 
@@ -209,6 +195,17 @@ import WatchlistForm from '../components/WatchlistForm.astro';
         Le panorama national, mis à jour à chaque nouvelle fiche :
         <a href="/chiffres/" class="underline hover:text-brand-orange transition-colors font-bold">→ tous les chiffres</a>.
       </p>
+
+      <!-- Slot « Lettre type au DPO » du template : notre vrai générateur 100 % local -->
+      <div id="proteger-dpo" class="mt-12 scroll-mt-24">
+        <h3 class="font-display font-extrabold text-2xl mb-2">Et si vos données ont déjà fuité ? Exiger ses droits</h3>
+        <p class="font-body mb-8 max-w-3xl">
+          Un mois : c'est le délai légal dont dispose une organisation pour répondre à une demande RGPD.
+          Une lettre claire, article en main, débloque la plupart des situations — générez la vôtre ci-dessous,
+          elle s'écrit entièrement dans votre navigateur.
+        </p>
+        <DpoGenerator />
+      </div>
     </section>
 
   </div>

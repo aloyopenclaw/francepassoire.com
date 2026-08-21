@@ -1,0 +1,108 @@
+# Task 49 — Runbook de lancement + projet d'annonce (LAUNCH GATE)
+# Exécuté le vendredi 21 août 2026 (Sisyphus-Junior, catégorie unspecified-high).
+
+## 1. Livrables
+- docs/launch-runbook.md (PROJET/DRAFT, EN ATTENTE marqués) :
+  §0 préambule env wrangler · §1 GO/NO-GO (14 critères + preuves + commandes,
+  4 points EN ATTENTE) · §2 rollback (Pages dashboard+API, registre
+  append-only invariant, DNS payloads exacts, workers wrangler rollback) ·
+  §3 procédure annonce (humain, ordre Nostr auto/site/LinkedIn manuel/presse
+  sans promesse) · §4 checklist publicité repo (pré-requis T47 + secrets) ·
+  §5 surveillance J+7 (watchdog, sweep, digest lundi 24/08, quota Brevo
+  300/j, D1, registre) · §6 décision finale.
+- docs/announcement-draft.md (3 variantes Ton A, règles T41) :
+  courte 281 c · moyenne 578 c · longue 1294 c. Chiffres vérifiés au dépôt :
+  134 fiches (ls data/catalog/*.json | wc -l = 134), 83 confirmées /
+  51 revendiquées (comptage python sur les JSON), couverture 2020-2026
+  (1/5/6/2/17/50/53). Signature [Prénom Nom] EN ATTENTE (directeur de la
+  publication).
+
+## 2. Commandes du runbook TESTÉES ce jour (« dernier état connu »)
+Toutes exécutées depuis la racine, Node ≥ 22, exit codes consignés.
+
+$ node scripts/verify-registry.mjs registre.jsonl
+  registre intact — 134 événements vérifiés
+  empreinte de tête : 92a2b578c9958b862dd7549503ab05ef43e72429246f1de66fcd49a5e8da2e5e
+  exit=0
+
+$ node scripts/verify-anchors.mjs
+  tous les ancrages retrouvés ≥2/3 relais (nos.lol, relay.primal.net sur
+  l'échantillon affiché) — exit=0
+
+$ curl -s https://francepassoire.com/registre.jsonl (comparaison dépôt)
+  134 lignes en production, diff -q registre.jsonl → identique (octet-identique)
+
+$ node scripts/link-sweep.mjs
+  ✓ 292 pages · 7672 liens internes vérifiés · 0 lien mort · 0 href="#"
+  453/524 externes joignables (HEAD, repli GET), 429 WAF presse documentés — exit=0
+
+$ node scripts/seo-audit.mjs https://francepassoire.com
+  Récapitulatif : 291 pages crawlées, 0 erreur(s), 0 avertissement(s).
+  ✓ gate pré-lancement OK — exit=0
+
+$ node scripts/launch-sweep.mjs
+  ## Bilan : 294/294 sondes OK, 0 échec(s) — exit=0 (inclut api/health 200)
+
+$ node scripts/check-headers.mjs
+  ✗ 45/46 vérifications OK — 1 échec(s) — exit=1
+  Écart unique : /embed/compteur → 308 vers /embed/compteur/ (200 au suivi,
+  curl -L vérifié) ; le vérificateur ne suit pas les redirections. Tous les
+  EN-TÊTES passent. Consigné comme non bloquant dans le runbook §1.1 #11.
+
+$ curl 404/home production
+  /inexistant-runbook → 404 ; / → 200
+
+$ npx wrangler pages deployment list --project-name francepassoire (env posée)
+  production : 0dcd53f2-f2e3-4997-8f4c-e6151410ed09 (commit 65cb146)
+  précédent  : 74614392-a57a-48c8-9744-32971e7d4047 (commit 47c3491)
+
+$ npx wrangler deployments list -c workers/api/wrangler.jsonc
+  OK (lecture seule) — dernière version 2026-08-20T23:32:39Z = fe54f8a2
+  (API deployments : version_id fe54f8a2-1d81-489c-b5ed-2267ee3e9f64 ;
+  watchdog : 4d0a71f8-52fd-4464-b65e-6a2e4d0663b2, 2026-08-20T22:57Z)
+
+$ DNS records (API zones/55f7a20e65f02cedd5fbd88511e6ab75/dns_records)
+  16 enregistrements listés ; payloads exacts des 2 CNAME proxied + TXT SPF
+  recopiés dans le runbook §2.3 ; AAAA api.francepassoire.com → 100:: confirmé
+  = domaine personnalisé du worker francepassoire-api (API workers/domains).
+
+$ npx wrangler d1 execute francepassoire --remote --json \
+    --command "SELECT COUNT(*) AS abonnes_confirmes FROM subscribers WHERE confirmed_at IS NOT NULL"
+  [{'abonnes_confirmes': 0}] — commande copiable-collable validée.
+
+$ node scripts/publish-anchors.mjs --registre registre.jsonl --dry-run
+  134 événements, tête 92a2b578…, 135 notes kind-1 simulées — exit=0
+  (syntaxe du runbook §2.2 prouvée SANS effet de bord).
+
+## 3. Commandes NON exécutées (mutations, laissées à l'exécution du runbook)
+- rollback Pages (dashboard + POST …/deployments/{id}/rollback) — endpoint
+  confirmé dans la spec OpenAPI Cloudflare (Rollback deployment).
+- npx wrangler rollback <version-id> (workers) — syntaxe confirmée par
+  `npx wrangler rollback --help`.
+- publish-anchors sans --dry-run, append-registry (usage confirmé :
+  --fiches-dir data/catalog, idempotent par slug, type ajout uniquement).
+- git rm -r --cached .omo + .gitignore (publicité du dépôt, décision owner).
+
+## 4. QA markdown + contenus
+- Tableaux : comptage de pipes homogène par bloc sur les 2 fichiers → OK.
+- Longueurs variantes mesurées (whitespace réduit) : 281 / 578 / 1294 —
+  cibles ~280 / ~600 / ~1200, écarts 0 % / −4 % / +8 % (tolérance « ~ »).
+- Zéro point d'exclamation dans les variantes ; aucune formulation
+  alarmiste ; chaque chiffre vérifié au dépôt le 21/08/2026.
+- Chiffres du runbook : compte fiches, statuts, années, tête de chaîne,
+  ids de déploiement, ids de versions workers — tous relevés ce jour des
+  sources réelles (API/filesystem), aucun de mémoire.
+
+## 5. EN ATTENTE (reportés honnêtement dans le runbook §1.2)
+1. X/LinkedIn/TikTok — décisions propriétaire (Postiz hosted à l'étude) ;
+   workers en file PENDING_KEYS, non bloquant (décision épinglée #5).
+2. Publicité du repo → T47 CI final (facturation GitHub Actions repo privé).
+3. Nom du directeur de la publication (mentions légales, R1 héritée T42).
+4. Premier digest réel lundi 24/08/2026 09:00 Paris (cochera T31).
+
+## 6. Commit
+Message : docs(launch): runbook + projet d'annonce
+Fichiers (3, exactement) : docs/launch-runbook.md,
+docs/announcement-draft.md,
+.omo/evidence/francepassoire-launch/task-49-francepassoire-launch.log.
+Hash consigné par `git log -1` à la vérification post-commit (aucun push).
