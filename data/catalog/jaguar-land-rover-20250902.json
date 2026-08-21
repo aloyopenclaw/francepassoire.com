@@ -1,0 +1,59 @@
+{
+  "slug": "jaguar-land-rover-20250902",
+  "entity": "Jaguar Land Rover",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-02",
+    "publication": "2025-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; Jaguar Land Rover reconnaît que « certaines données ont été affectées » ; production mondiale à l'arrêt pendant près de trois semaines"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Usine Digitale — La production de Jaguar Land Rover toujours paralysée après sa cyberattaque au mois d'août",
+      "url": "https://www.usine-digitale.fr/article/la-production-de-jaguar-land-rover-toujours-paralysee-apres-sa-cyberattaque-au-mois-d-aout.N2237959",
+      "kind": "article"
+    },
+    {
+      "label": "Archive — L'Usine Digitale, Jaguar Land Rover (snapshot du 19 septembre 2025)",
+      "url": "https://web.archive.org/web/20250919173501/https://www.usine-digitale.fr/article/la-production-de-jaguar-land-rover-toujours-paralysee-apres-sa-cyberattaque-au-mois-d-aout.N2237959",
+      "kind": "archive"
+    },
+    {
+      "label": "Capital — Jaguar Land Rover frappé par une cyberattaque : les données des clients ont-elles été volées ?",
+      "url": "https://www.capital.fr/auto/jaguar-land-rover-frappe-par-une-cyberattaque-les-donnees-des-clients-ont-elles-ete-volees-1517884",
+      "kind": "article"
+    },
+    {
+      "label": "La Tribune — Comment une cyberattaque contre Jaguar Land Rover a fait chuter la croissance britannique",
+      "url": "https://www.latribune.fr/article/economie/international/10221734708870/comment-une-cyberattaque-contre-jaguar-land-rover-a-fait-chuter-la-croissance-britannique",
+      "kind": "article"
+    }
+  ],
+  "description": "Le constructeur automobile britannique Jaguar Land Rover, filiale de Tata Motors, détecte une cyberattaque le 1er septembre 2025 et ferme proactivement une partie de ses systèmes, arrêtant toutes ses lignes de production. Selon la presse, la compagnie déclare ensuite que « certaines données ont été affectées » et prévient les autorités. Une chaîne Telegram associant Scattered Spider, Lapsus$ et ShinyHunters revendique l'attaque, rapporte L'Usine Digitale. La BBC estime les pertes entre 5 et 10 millions de livres par jour. Capital indique que le groupe-mère a d'abord assuré qu'aucune donnée client n'avait été volée ; les volumes concernés ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2025-09-01",
+      "event": "Jaguar Land Rover détecte une cyberattaque et ferme proactivement une partie de son infrastructure informatique."
+    },
+    {
+      "date": "2025-09-02",
+      "event": "L'entreprise annonce publiquement l'incident ; les activités de production sont à l'arrêt."
+    },
+    {
+      "date": "2025-09-16",
+      "event": "Un communiqué informe salariés, fournisseurs et partenaires que l'arrêt de production se prolonge jusqu'au 24 septembre."
+    },
+    {
+      "date": "2025-09-18",
+      "event": "L'Usine Digitale rapporte la revendication d'une chaîne Telegram liée à Scattered Spider, Lapsus$ et ShinyHunters, et des pertes estimées entre 103 et 206 millions d'euros selon la BBC."
+    }
+  ]
+}
