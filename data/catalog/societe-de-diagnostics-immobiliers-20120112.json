@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-diagnostics-immobiliers-20120112",
+  "entity": "Société de diagnostics immobiliers (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-01-12",
+    "confirmation": "2012-01-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; sanction pécuniaire publique de 20 000 euros"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société de diagnostics immobiliers », sanction pécuniaire publique de 20 000 euros (12 janvier 2012)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 janvier 2012, la CNIL a prononcé une sanction pécuniaire publique de 20 000 euros à l'encontre d'une société de diagnostics immobiliers, désignée anonymement, à la suite d'un contrôle sur sa prospection commerciale. Les manquements retenus : défaut de consentement préalable au démarchage, défaut de consentement des personnes et non-respect du droit d'opposition. Le volume de personnes concernées n'est pas communiqué et la nature des données n'est pas précisée.",
+  "timeline": [
+    {
+      "date": "2012-01-12",
+      "event": "Sanction pécuniaire publique de 20 000 euros : prospection commerciale sans consentement valable, droit d'opposition non respecté."
+    }
+  ]
+}
