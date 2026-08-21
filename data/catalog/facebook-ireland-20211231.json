@@ -1,0 +1,48 @@
+{
+  "slug": "facebook-ireland-20211231",
+  "entity": "Facebook Ireland (Meta)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-12-31",
+    "confirmation": "2021-12-31",
+    "publication": "2022-01-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré par la décision ; amende de 60 millions d’euros et injonction sous astreinte de 100 000 euros par jour de retard"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Lettre d’information n° 1, janvier 2022 : cookies — la CNIL sanctionne Google de 150 millions d’euros et Facebook de 60 millions d’euros",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/lettre_information_cnil_janvier_2022.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "DLA Piper — Cookies : CNIL fines Facebook Ireland 60 million euros and Google 150 million euros (8 janvier 2022)",
+      "url": "https://privacymatters.dlapiper.com/2022/01/france-cookies-new-record-sanctions-for-tech-giants-cnil-fines-facebook-ireland-60-million-euros-and-google-150-million-euros/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 décembre 2021, la formation restreinte de la CNIL a condamné Facebook Ireland à 60 millions d’euros : le site facebook.com n’offrait pas de moyen de refuser les cookies aussi simple que celui de les accepter. Plusieurs clics étaient nécessaires pour tout refuser, contre un seul pour accepter. L’autorité, qui avait déjà alerté l’entreprise en février 2021, a assorti la sanction d’une injonction de mise en conformité sous trois mois, avec une astreinte de 100 000 euros par jour de retard. La sanction a été annoncée publiquement le 6 janvier 2022.",
+  "timeline": [
+    {
+      "date": "2021-12-31",
+      "event": "Amende de 60 millions d’euros et injonction sous astreinte : refus des cookies moins simple que l’acceptation."
+    },
+    {
+      "date": "2022-01-06",
+      "event": "La CNIL annonce la sanction ; Google écope parallèlement de 150 millions d’euros pour les mêmes manquements."
+    }
+  ]
+}

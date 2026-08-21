@@ -1,0 +1,49 @@
+{
+  "slug": "facebook-20170427",
+  "entity": "Facebook (Facebook Inc. et Facebook Ireland)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-04-27",
+    "confirmation": "2017-04-27",
+    "publication": "2017-05-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire de 150 000 euros, maximum légal de l’époque"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — La CNIL condamne Facebook à payer 150 000 euros d’amende (16 mai 2017)",
+      "url": "https://www.bfmtv.com/economie/entreprises/services/la-cnil-condamne-facebook-a-payer-150-000-euros-d-amende_AN-201705160135.html",
+      "kind": "article"
+    },
+    {
+      "label": "Derriennc Associés — Facebook sanctionnée par la CNIL pour de nombreux manquements à la loi Informatique et Libertés",
+      "url": "https://derriennic.com/facebook-sanctionnee-par-la-cnil-pour-de-nombreux-manquements-a-la-loi-informatique-et-libertes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 avril 2017, la formation restreinte de la CNIL a sanctionné Facebook de 150 000 euros, montant maximal de l’époque, pour de nombreux manquements à la loi Informatique et Libertés. L’autorité relève une combinaison massive des données à des fins de ciblage publicitaire sans base légale. Elle pointe aussi une collecte déloyale via le cookie « datr », déposé sur les internautes membres ou non membres, un défaut d’information et l’absence de consentement exprès pour des données sensibles. La conservation des adresses IP n’était pas justifiée. La décision, rendue publique le 16 mai 2017, confirme l’application de la loi française au groupe.",
+  "timeline": [
+    {
+      "date": "2017-04-27",
+      "event": "Délibération SAN-2017-006 : sanction de 150 000 euros pour défaut d’information, collecte déloyale et combinaison de données sans base légale."
+    },
+    {
+      "date": "2017-05-16",
+      "event": "La CNIL rend la sanction publique ; Facebook conteste la décision."
+    }
+  ]
+}
