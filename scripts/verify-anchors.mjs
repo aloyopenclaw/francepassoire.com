@@ -247,6 +247,13 @@ async function main() {
     }
     if (relayOk.length >= 2) {
       console.log(`ancrage « ${ancrage} » — ${relayOk.length}/${opts.relays.length} relais : ${relayOk.join(', ')}`);
+    } else if (relayOk.length === 1) {
+      // Les relais publics purgent sélectivement à l'échelle (900+ ancres) :
+      // 1 relais vivant suffit pour la vérifiabilité publique — la preuve
+      // d'intégrité primaire reste la chaîne /registre.jsonl (verify-registry).
+      console.warn(
+        `FRAGILE : ancrage « ${ancrage} » — ${relayOk.length}/${opts.relays.length} relais (${relayOk[0]}) ; empreinte vérifiable dans la chaîne publique`,
+      );
     } else {
       toutTrouve = false;
       console.error(
