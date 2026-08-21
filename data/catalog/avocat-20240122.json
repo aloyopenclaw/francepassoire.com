@@ -1,0 +1,47 @@
+{
+  "slug": "avocat-20240122",
+  "entity": "Un avocat (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-22",
+    "confirmation": "2024-01-22",
+    "publication": "2024-03-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 500 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « AVOCAT » (procédure simplifiée), amende de 500 euros (22 janvier 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024 (12 mars 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next (13 mars 2024) — La CNIL accélère avec sa procédure simplifiée : 15 sanctions depuis janvier 2024",
+      "url": "https://next.ink/brief-article/la-cnil-accelere-avec-sa-procedure-simplifiee-15-sanctions-depuis-janvier-2024/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 janvier 2024, la CNIL a prononcé une amende de 500 euros à l'encontre d'un avocat, dans le cadre de la procédure simplifiée, pour seul défaut de coopération avec l'autorité. La dénomination n'est pas publiable dans ce cadre. Une semaine après une autre décision visant la même profession pour effacement et coopération, ce dossier rappelle la constance de la CNIL : ne pas répondre à ses demandes constitue en soi un manquement sanctionnable. Le communiqué du 12 mars 2024, recensant quinze sanctions simplifiées depuis janvier 2024 pour 98 500 euros, cite le défaut de coopération parmi les manquements principaux.",
+  "timeline": [
+    {
+      "date": "2024-01-22",
+      "event": "Amende de 500 euros (procédure simplifiée) : défaut de coopération avec la CNIL."
+    },
+    {
+      "date": "2024-03-12",
+      "event": "La CNIL publie son communiqué : quinze sanctions simplifiées depuis janvier 2024, 98 500 euros au total."
+    }
+  ]
+}
