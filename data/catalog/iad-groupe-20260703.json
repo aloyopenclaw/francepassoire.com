@@ -1,0 +1,40 @@
+{
+  "slug": "iad-groupe-20260703",
+  "entity": "Groupe iad",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-03",
+    "publication": "2026-07-03"
+  },
+  "volume": {
+    "count": 3800000,
+    "unit": "personnes",
+    "label": "archive de 966 Go concernant plus de 3,8 millions de personnes et seconde archive de 397 779 documents PDF revendiquées (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : une base de 966 Go attribuée au groupe iad revendiquée sur le dark web (3 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/iad-groupe-mr1iumodr3zkls2u7z",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Groupe iad : 966 Go de données revendiqués sur le dark web (3 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-03-iad-group",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 juillet 2026, ChimeraZ met en vente sur une plateforme du dark web une base attribuée au groupe iad, réseau immobilier fondé en France s'appuyant sur des milliers de conseillers indépendants : une archive de 966 Go concernant plus de 3,8 millions de personnes, complétée d'une seconde archive de près de 398 000 documents PDF. Les échantillons publiés couvrent identité, coordonnées personnelles et professionnelles, activité commerciale et immobilière du groupe. Les volumes, déclarés par leur auteur, ne sont pas confirmés indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-07-03",
+      "event": "ChimeraZ met en vente 966 Go de données attribués au groupe iad, avec échantillons et seconde archive PDF."
+    }
+  ]
+}

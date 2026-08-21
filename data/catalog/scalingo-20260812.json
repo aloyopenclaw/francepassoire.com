@@ -1,0 +1,39 @@
+{
+  "slug": "scalingo-20260812",
+  "entity": "Scalingo",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-12",
+    "confirmation": "2026-08-12"
+  },
+  "volume": {
+    "count": 90000,
+    "unit": "personnes",
+    "label": "environ 90 000 personnes concernées selon la confirmation de Scalingo, après la compromission de son instance interne de Metabase"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Scalingo : les données de 90 000 personnes volées via une faille critique de Metabase (13 août 2026)",
+      "url": "https://www.cyberattaque.org/scalingo-les-donnees-de-90-000-personnes-volees-via-une-faille-critique-de-metabase/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Scalingo : données volées via une faille Metabase (12 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-12-scalingo",
+      "kind": "article"
+    }
+  ],
+  "description": "Scalingo, hébergeur cloud français (PaaS), confirme le 12 août 2026 une fuite de données concernant environ 90 000 personnes après l'exploitation d'une faille critique affectant son instance interne de l'outil d'analytique Metabase. Des attaquants ont accédé à des données personnelles via cette instance avant que l'accès ne soit comblé. L'entreprise a informé les personnes concernées et les autorités ; l'incident touche un acteur de l'infrastructure numérique français dont la clientèle inclut startups et administrations.",
+  "timeline": [
+    {
+      "date": "2026-08-12",
+      "event": "Scalingo confirme une fuite touchant environ 90 000 personnes via la compromission de son instance interne Metabase."
+    }
+  ]
+}

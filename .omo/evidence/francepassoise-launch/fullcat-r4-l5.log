@@ -1,0 +1,184 @@
+================================================================
+full-catalog-completion — RAFALE 4, LANE 5 (récentes 2026) — 20/20 fiches
+Worktree : /var/folders/.../T/opencode/fp-r4l5 (supprimé en fin de run)
+Branche  : fiche/rafale4-l5 (créée sur main 698e309, 615 fiches)
+Commit   : feat(catalog): rafale 4 — récentes 2026 L5 (20 fiches)
+Sources  : D1 live (candidates rss/ransomware.live) + FrenchBreaches
+           (feed.xml 750 items + sitemap 1 529 URLs + pages alertes)
+           + cyberattaque.org (index /type/attaque 82 articles) +
+           fuitesinfos.fr (index /articles/ 587 articles) + Zataz
+           (archives 2026/07 + 2026/08 + articles) + presse
+           généraliste (Le Parisien) + trackers (ransomware.live,
+           Cyber Insider, Brinztech, Tech Insider, GalaxyWarden)
+================================================================
+
+[0] RÉSUMÉ — LIVRAISON COMPLÈTE (20 fiches, juillet-août 2026)
+  Consigne : convertir les candidats rss/ransomware.live accumulés
+  dans D1 (incidents juillet-août 2026 non attrapés par les rafales
+  précédentes) + vérification web ≥2 sources chacun. Le minage D1
+  strict (created_at > 2026-08-20, sources rss/ransomware.live) ne
+  donne que 6 entités distinctes (Geb Sas, SFR-août, Lecornu/DGFiP,
+  Hottinguer, Capgemini, Experts Entreprendre), dont 3 déjà
+  cataloguées et SFR-août = confirmation courrier du même incident
+  NOVA de juillet (sfr-20260717 existante) ; DGFiP/Lecornu = suite
+  du piratage déjà fiché (dgfip-20260812) ; RDV médicaux 6,8 M =
+  Alaxione (alaxione-20260820) ; institut 7 500 = IRD
+  (ird-20260817) ; Éduc nationale ZeroBytes = education-
+  nationale-20260731. La fenêtre D1 a donc été ÉLARGIE (§1) aux
+  incidents juillet-août 2026 documentés par la veille spécialisée,
+  conformément à l'esprit de la lane (« 2026 = forte actualité,
+  presse abondante »).
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  D1 live (wrangler d1 execute --remote, base francepassoire) :
+  - SELECT candidats rss/ransomware.live créés > 2026-08-20 :
+    400 candidats totaux, 6 entités distinctes utiles (§0).
+  - SELECT candidats entity NULL (191 : 160 cert-fr = vulnérabilités,
+    pas des fiches ; 31 rss = titres bruts) → lecture des 31 titres
+    rss → leads SFR récidive, Stripe ×2, Éduc nationale, IRD,
+    Alaxione, SovCali, Belgique (hors périmètre).
+  FrenchBreaches : feed.xml complet (1,68 Mo, 750 items — stale au
+    06/07 : items 29/06-06/07 exploités directement depuis le feed) ;
+    sitemap.xml (1 529 URLs) pour les alertes août ; pages alertes
+    individuelles fetchées (questel, drancy ×2, cémoi, t2mc,
+    herblain) + blog (allobebe/madeinbebe, beauty success).
+  cyberattaque.org : index /type/attaque/ pages 1-4 (82 articles)
+    + articles individuels fetchés (allobebe, made-in-bebe, beauty-
+    success, chat-coco, t2mc, impact, cci-nice, scalingo) avec
+    datePublished/dateModified extraits pour dater précisément.
+  fuitesinfos.fr : index /articles/ intégral (587 articles) →
+    secondes sources vérifiées pour iad, pacha, 1001coques,
+    culture, lions, nemea, herblain, scalingo.
+  Zataz : archives /2026/08/ + /2026/07/ + articles Stripe ×2 et
+    puériculture (identifie le trio 2026 : Made in Bébé, Allobébé,
+    + Babyvista antérieure).
+  Requêtes ciblées : Le Parisien (Drancy), Cyber Insider (Questel —
+    confirmation M365 officielle), Brinztech (ShinyHunters portal),
+    ransomware.live API victim (Geb SAS → groupe thegentlemen),
+    Instagram officiel GEB SAS, tech-insider + galaxywarden (Cémoi),
+    sophianet/journal-des-entreprises (écartés, voir §2).
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS EXPLICITES
+  Base : 615 fiches (main 698e309). Aucun des 20 slugs/entités
+  n'existe (génération avec assert not exists + tests pr-fiches/
+  slugs/entities verts : 680 tests). Vérifié notamment : aucun
+  "culture", "drancy", "herblain", "cci", "questel", "scalingo",
+  "cemoi", "iad", "pacha", "coques", "lions", "nemea", "bridge",
+  "stripe", "hottinguer", "geb", "allobebe", "bebe", "beauty",
+  "t2mc", "coco" dans data/catalog.
+  Leads D1/rss ÉCARTÉS comme doublons d'incidents déjà fichés :
+  - SFR 20-21/08/2026 (ZDNet « récidive » + 01net 2,1 M lignes) :
+    même incident NOVA que sfr-20260717 (détection 02/07, ZeroBytes
+    17/07) — la nouveauté d'août = le courrier aux clients.
+  - Lecornu cellule de crise / excuses Comptes publics / contact
+    des 678 000 victimes : suite du piratage dgfip-20260812.
+  - Plateforme RDV médicaux 6,8 M (01net 21/08) : Alaxione =
+    alaxione-20260820. - Institut 7 500 (01net 20/08) : IRD =
+    ird-20260817. - Éduc nationale ZeroBytes + confirmation
+    ministère : education-nationale-20260731. - Capgemini
+    Engineering / Experts Entreprendre (Everest) : fiches du
+    2026-08-20 déjà en catalogue.
+  Exclusions de PRINCIPE (pas des fuites de données établies ou
+  périmètre) :
+  - SovCali (Zataz 21/08) : annonce d'un nouveau groupe ransomware,
+    aucune victime française identifiée. - C.Hunters (Zataz) :
+    service pirate, pas une fuite. - Belgique 148 251 (Zataz) :
+    hors France. - Terr'Alta + The Burning Descent (FB 05-06/07) :
+    fuites de code source, seules données de test personnelles —
+    précédent exclus. - Mercor (Zataz) : biométrie mais société
+    US sans angle FR établi. - ExfilSquad (Zataz) : CRM municipaux
+    US (Houston/Atlanta). - « 240 bases françaises » (Zataz 07/07) :
+    agrégat multi-fuites sans entité victime unique. - Macronleaks
+    2017 ressortis : incident 2017. - ENI CRM (Zataz ~27/07) :
+    retenu en réserve, seconde source indépendante non trouvée à
+    temps. - Aastrio/Monday : base 2018 refaisant surface.
+  RETRAIT en cours de run : Impact Centre Chrétien (Qilin 08/08,
+    cyberattaque.org le décrivait comme megachurch de Torcy) : les
+    trackers internationaux (HookPhish « based in HT », X/LinkedIn
+    « in Haiti », Breachsense « Canada ») attribuent la cible à
+    Haïti/Canada — homonymie non résolue, fiche retirée par
+    prudence et remplacée par Ville de Saint-Herblain.
+
+[3] FICHES LIVRÉES (20 ; 16 revendiquées, 4 confirmées ; Ton A)
+  01 stripe-20260818            18/08/2026  revendiquée  662 bases,
+        1 033 clés API, 6,16 M e-mails (1,35 M uniques), 688 k fiches
+        clients, ≥200 FR (Zataz ×2)
+  02 philippe-hottinguer-finan… 19/08/2026  revendiquée  Qilin, volumes
+        non communiqués (cyberattaque.org + FB + ransomware.live) [qilin]
+  03 geb-sas-20260821           21/08/2026  revendiquée  TheGentlemen ;
+        GEB (étanchéité/colles, 1860) confirme incident + systèmes
+        coupés (ransomware.live + Instagram officiel)
+  04 allobebe-20260821          21/08/2026  revendiquée  2 175 216 lignes
+        / 1 136 058 pers., 850 Mo, 2006-2026, ChimeraZ (CA + FB + Zataz)
+  05 made-in-bebe-20260821      21/08/2026  revendiquée  1 359 546 lignes
+        / 960 106 pers., 1,45 Go JSON, ChimeraZ (CA + FB + Zataz)
+  06 beauty-success-20260821    21/08/2026  revendiquée  10 279 819 lignes
+        / 5 169 727 uniques, misere (CA + FB)
+  07 questel-20260802           02/08/2026  confirmée    ShinyHunters :
+        21 M enreg. Salesforce + 147 Go, ultimatum 04/08 ; Questel
+        confirme 13/08 intrusion M365 par vishing (FB + Cyber Insider
+        + Brinztech)
+  08 ville-de-drancy-20260722   22/07/2026  revendiquée  Qilin publie
+        02/08 : 210 Go / 241 705 fichiers ; mairie confirme l'attaque
+        (Le Parisien 23/07 + FB ×2) [qilin]
+  09 chat-coco-20260802         02/08/2026  revendiquée  14 260 comptes,
+        e-mails/IP/photos/MP ; héritier de Coco.gg défacé (CA + Zataz
+        + Conso-Confiance)
+  10 scalingo-20260812          12/08/2026  confirmée    ~90 000 pers.
+        via faille Metabase interne ; Scalingo confirme (CA + FI)
+  11 groupe-t2mc-20260801       01/08/2026  revendiquée  RH + 26 Go,
+        ~82 000 CNI et RIB, Alduinn (FB + CA)
+  12 cci-nice-cote-d-azur-2026… 18/07/2026  confirmée    compte admin
+        eDRH, données RH candidats/entreprises ; CCI informe les
+        personnes (CA + FB)
+  13 cemoi-20260713             13/07/2026  revendiquée  Qilin, compte à
+        rebours, aucun échantillon (FB + Tech Insider + GalaxyWarden) [qilin]
+  14 iad-groupe-20260703        03/07/2026  revendiquée  966 Go / 3,8 M
+        pers. + 397 779 PDF, ChimeraZ dark web (FB + FI)
+  15 pacha-tours-20260701       01/07/2026  revendiquée  2,2 M lignes /
+        31 087 pers., passeports + mots de passe en clair (FB + FI)
+  16 1001coques-20260706        06/07/2026  revendiquée  404 427 enreg. /
+        327 511 pers., ChimeraZ (FB + FI)
+  17 ministere-culture-20260705 05/07/2026  revendiquée  45 362 enreg.
+        pro (culture.jsonl), misere (FB + FI)
+  18 lions-france-20260705      05/07/2026  revendiquée  135 581 enreg.
+        membres, 2e fuite, misere (FB + FI)
+  19 residence-nemea-20260706   06/07/2026  revendiquée  84 853
+        réservations + garants + revenus, 2e attaque (FB + FI)
+  20 ville-de-saint-herblain-2… 18/07/2026  revendiquée  annuaire interne
+        1 232 agents en accès libre (FB + FI)
+  group : qilin ×4 (Hottinguer, Drancy, Cémoi + préexistante Stade
+  Français). Stripe/ShinyHunters sans group (précédent
+  google-shinyhunters-20250814 sans group). SIREN : aucun (règle du
+  contrat : pas de siren pour ces entités privées/publiques).
+
+[4] VALIDATION
+  npx vitest run tests/pr-fiches.test.ts tests/slugs.test.ts
+  tests/entities.test.ts → 680 passed (chaque JSON du catalogue
+  passe ficheSchema zod : iso dates, enums fermés secteur/statut/
+  volume/data_types/source kind, description ≥50, timeline ≥1,
+  sources ≥1 — chaque fiche livrée en a ≥2).
+  npx vitest run (suite complète) → 29 fichiers, 998 tests passed.
+  NB : node_modules symlinké depuis le repo principal dans le
+  worktree (aucun fichier du repo modifié).
+
+[5] DÉCISIONS & RISQUES
+  - Stripe : entité US mais ≥200 personnes françaises identifiées
+    dans les lots (Zataz) — retenu au titre des personnes en France
+    (précédents Google/TikTok/Steam du catalogue).
+  - Chat Coco : plateforme française anonyme héritière de Coco.gg
+    (fermé par la justice 06/2024) — secteur media, statut
+    revendiquée (pas de confirmation de l'opérateur).
+  - Dates « revendication » : = date de première publication de la
+    revendication constatée (feed FB / article CA / Le Parisien) ;
+    Chat Coco compromis le 02/08 documenté le 03/08 (revendication
+    02/08, publication 03/08) ; CCI Nice : accès du 18/07 révélé le
+    31/07 (revendication = 18/07, confirmation = 31/07).
+  - Volumes : tous issus des revendications (non vérifiés
+    indépendamment), formulés « revendiqué » dans les labels ;
+    confirmées (Questel/Scalingo/CCI) : volumes entreprise quand
+    communiqués.
+  - Risque résiduel : homonymies (Impact retiré) ; volumes
+    dupliqués lignes/personnes signalés dans les labels (Beauty
+    Success 10,28 M brutes vs 5,17 M uniques) ; liens Le Parisien/
+    Instagram stables à date du run.

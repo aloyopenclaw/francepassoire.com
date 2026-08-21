@@ -1,0 +1,44 @@
+{
+  "slug": "philippe-hottinguer-finance-20260819",
+  "entity": "Philippe Hottinguer Finance",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-19",
+    "publication": "2026-08-19"
+  },
+  "group": "qilin",
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "Volumes et catégories de données non communiqués par le groupe Qilin à ce stade (revendication ransomware, non confirmée)"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Philippe Hottinguer Finance ciblé par le ransomware Qilin (19 août 2026)",
+      "url": "https://www.cyberattaque.org/philippe-hottinguer-finance-cible-par-le-ransomware-qilin/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Ransomware chez Philippe Hottinguer Finance",
+      "url": "https://frenchbreaches.com/alertes/philippe-hottinguer-finance-rw_VUdocGJHbHdjR1VnU0c5MGRHbHVaM1ZsY2lCR2FXNWhibU5sUUhGcGJHbHU",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live — Victim : Philippe Hottinguer Finance (Qilin, découvert le 19 août 2026)",
+      "url": "https://ransomware.live/id/UGhpbGlwcGUgSG90dGluZ3VlciBGaW5hbmNlQHFpbGlu",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 août 2026, le groupe de ransomware Qilin ajoute Philippe Hottinguer Finance, société française de gestion de patrimoine et de conseils financiers, à son site de fuite et revendique la compromission de ses systèmes d'information. Aucun volume de données ni échantillon n'est publié à ce stade, et l'entreprise n'a pas communiqué publiquement. La revendication s'inscrit dans une série française revendiquée par Qilin durant l'été 2026 (Stade Français, Cémoi, Ville de Drancy, Impact Centre Chrétien).",
+  "timeline": [
+    {
+      "date": "2026-08-19",
+      "event": "Qilin liste Philippe Hottinguer Finance sur son site de fuite et revendique un vol de données ; aucun détail publié."
+    }
+  ]
+}

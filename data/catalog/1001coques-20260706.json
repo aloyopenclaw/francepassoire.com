@@ -1,0 +1,39 @@
+{
+  "slug": "1001coques-20260706",
+  "entity": "1001coques",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-06",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 327511,
+    "unit": "personnes",
+    "label": "404 427 enregistrements correspondant à 327 511 personnes revendiqués, avec échantillons de factures et commandes (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : plus de 327 000 clients de 1001coques concernés par une base revendiquée (6 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/1001coques-mr70sa9aoekv6yygwrf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 1001coques.fr : plus de 327 000 clients dans une fuite revendiquée (6 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-06-1001coques-fr",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 juillet 2026, ChimeraZ diffuse une base attribuée à 1001coques, site français de vente en ligne de coques et accessoires pour smartphones et tablettes : 404 427 enregistrements correspondant à 327 511 personnes. Les échantillons montrent des informations de facturation et de commande : identité, adresse postale complète, numéro de téléphone, références de factures et de commandes, dates et montants. Ces éléments permettent des hameçonnages crédibles imitant le marchand ou un transporteur ; les volumes restent déclarés par leur auteur.",
+  "timeline": [
+    {
+      "date": "2026-07-06",
+      "event": "ChimeraZ publie une base de 404 427 enregistrements attribuée à 1001coques (327 511 personnes)."
+    }
+  ]
+}
