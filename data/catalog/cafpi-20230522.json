@@ -1,0 +1,55 @@
+{
+  "slug": "cafpi-20230522",
+  "entity": "Cafpi",
+  "siren": "510302953",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-22",
+    "publication": "2023-05-23",
+    "confirmation": "2023-05-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non quantifiés : Cafpi n'a pas établi le nombre de clients concernés ; Vice Society a diffusé des captures d'écran de données identifiables (LeMagIT)"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Cafpi — FAQ Intrusion : « Mes données ont-elles été volées ? Si oui, quelles données ? » (page officielle)",
+      "url": "https://www.cafpi.fr/faq-intrusion",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT (23 mai 2023) — Ransomware : CAFPI a été attaqué fin avril par Vice Society",
+      "url": "https://www.lemagit.fr/actualites/366538284/Ransomware-CAFPI-a-ete-attaque-fin-avril-par-Vice-Society",
+      "kind": "article"
+    },
+    {
+      "label": "BFM Tech&Co (24 mai 2023) — Cyberattaque : des données très privées de clients du courtier Cafpi ont été dérobées",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-des-donnees-tres-privees-de-clients-du-courtier-cafpi-ont-ete-derobees_AV-202305240621.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique (25 mai 2023) — Le groupe de ransomware Vice Society se paye Cafpi",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-groupe-de-ransomware-vice-society-se-paye-cafpi-90531.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 avril 2023, le courtier en crédits Cafpi, qui compte 230 agences en France, détecte une intrusion dans son système d'information. Le 22 mai, le groupe de rançongiciel Vice Society revendique l'attaque et diffuse des captures d'écran de données identifiables, jusqu'à la documentation interne de la DSI. Cafpi reconnaît sur son site que « certaines données de nos clients ont été compromises » et « mises en ligne » : documents d'identité, coordonnées de contact et informations transmises lors de demandes de financement. Une déclaration à la CNIL est effectuée et une plainte déposée. Le nombre de clients concernés n'est pas établi.",
+  "timeline": [
+    {
+      "date": "2023-04-30",
+      "event": "Cafpi détecte un incident laissant présager une intrusion ; la gestion de crise est déclenchée."
+    },
+    {
+      "date": "2023-05-22",
+      "event": "Vice Society publie sa revendication, accompagnée de captures d'écran de données personnelles identifiables."
+    },
+    {
+      "date": "2023-05-24",
+      "event": "Cafpi confirme à Tech&Co l'attaque du 30 avril et reconnaît des données compromises, dont certaines mises en ligne."
+    }
+  ]
+}
