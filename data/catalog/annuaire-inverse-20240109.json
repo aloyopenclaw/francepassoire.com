@@ -1,0 +1,38 @@
+{
+  "slug": "annuaire-inverse-20240109",
+  "entity": "Un éditeur de site web d'annuaire inversé (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-09",
+    "confirmation": "2024-01-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 9 janvier 2024, la CNIL a prononcé une amende administrative de 1 500 euros à l'encontre de l'éditeur d'un site web d'annuaire inversé, dans le cadre de la procédure simplifiée. Manquements retenus : défaut de coopération avec la CNIL, non-respect du droit d'accès et non-respect du droit d'opposition. L'entité n'est pas nommée, les sanctions simplifiées ne pouvant être rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le bilan des quinze sanctions simplifiées prononcées depuis janvier 2024, qui fait des droits des personnes un motif récurrent de sanction.",
+  "timeline": [
+    {
+      "date": "2024-01-09",
+      "event": "Amende de 1 500 euros (procédure simplifiée) : coopération, droit d'accès et droit d'opposition non respectés."
+    }
+  ]
+}

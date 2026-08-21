@@ -1,0 +1,37 @@
+{
+  "slug": "site-web-transports-20240829",
+  "entity": "Un éditeur de site web dans le domaine des transports (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-29",
+    "confirmation": "2024-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 août 2024, la CNIL a prononcé une amende administrative de 300 000 euros à l'encontre d'un éditeur de site web dans le domaine des transports. Manquements retenus : absence d'analyse d'impact sur la protection des données, défaut d'information et de consentement des personnes, et traitements dépourvus de base légale. La décision relève de la procédure ordinaire, mais l'entité n'est pas nommée dans le tableau officiel des sanctions. C'est l'une des dix-huit sanctions ordinaires de 2024, année où la CNIL a prononcé 87 sanctions pour un total de 55,2 millions d'euros.",
+  "timeline": [
+    {
+      "date": "2024-08-29",
+      "event": "Amende de 300 000 euros : analyse d'impact absente, information et consentement défaillants, base légale manquante."
+    }
+  ]
+}

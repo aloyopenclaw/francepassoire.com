@@ -1,0 +1,37 @@
+{
+  "slug": "cooperative-commercants-20201118",
+  "entity": "Une coopérative de commerçants détaillants (entité non nommée)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-11-18",
+    "confirmation": "2020-11-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport d'activité 2020 (PDF, tableau des sanctions)",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 18 novembre 2020, la CNIL a prononcé une sanction pécuniaire de 150 000 euros à l'encontre d'une coopérative de commerçants détaillants pour manquement à l'obligation d'assurer la sécurité des données personnelles. L'entité n'est pas nommée : la décision apparaît sous ce seul intitulé dans le tableau officiel des sanctions et dans le rapport d'activité 2020 de la CNIL. Cette sanction a été adoptée le même jour que celles, rendues publiques, de 2 250 000 euros contre Carrefour France et de 800 000 euros contre Carrefour Banque, elles aussi liées notamment à la sécurité et aux cookies.",
+  "timeline": [
+    {
+      "date": "2020-11-18",
+      "event": "Sanction pécuniaire de 150 000 euros pour défaut de sécurité des données personnelles."
+    }
+  ]
+}
