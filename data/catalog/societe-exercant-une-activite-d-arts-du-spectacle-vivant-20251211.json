@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-une-activite-d-arts-du-spectacle-vivant-20251211",
+  "entity": "Société exerçant une activité d'arts du spectacle vivant (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "confirmation": "2025-12-11",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2025, la CNIL a prononcé une amende de 5 000 euros assortie d'une injonction à l'encontre d'une société exerçant une activité d'arts du spectacle vivant, dans le cadre de la procédure simplifiée. Les manquements retenus portent sur l'information des personnes et le consentement aux cookies et autres traceurs. Le tableau officiel recense par ailleurs, pour le même descripteur, une liquidation d'astreinte prononcée le 26 mars 2026 pour absence de réponse à une injonction, sans qu'il soit possible d'établir qu'il s'agit de la même entité. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-12-11",
+      "event": "Amende de 5 000 euros et injonction (procédure simplifiée) : information et consentement aux cookies non conformes."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 : les traceurs figurent parmi les principaux motifs de sanction."
+    }
+  ]
+}

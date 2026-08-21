@@ -1,0 +1,42 @@
+{
+  "slug": "association-religieuse-20260129",
+  "entity": "Association religieuse (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-01-29",
+    "confirmation": "2026-01-29",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association religieuse » (procédure simplifiée), amende de 10 000 euros et injonction (29 janvier 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 janvier 2026, la CNIL a prononcé une amende de 10 000 euros assortie d'une injonction à l'encontre d'une association religieuse, dans le cadre de la procédure simplifiée. Les manquements retenus : traitement non licite des données du dispositif de vidéoprotection et défaut d'information des personnes filmées. La dénomination n'est pas publiée ; les données concernées sont les images du dispositif vidéo. Le communiqué du 6 juillet 2026 classe cette décision parmi 23 sanctions simplifiées depuis janvier 2026, marquées notamment par une vidéosurveillance excessive.",
+  "timeline": [
+    {
+      "date": "2026-01-29",
+      "event": "Amende de 10 000 euros et injonction (procédure simplifiée) : vidéoprotection non licite et défaut d'information des personnes."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, marquées par une vidéosurveillance excessive."
+    }
+  ]
+}

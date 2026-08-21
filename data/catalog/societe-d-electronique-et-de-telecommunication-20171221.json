@@ -1,0 +1,33 @@
+{
+  "slug": "societe-d-electronique-et-de-telecommunication-20171221",
+  "entity": "Société d'électronique et de télécommunication",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-12-21",
+    "confirmation": "2017-12-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 décembre 2017, la CNIL a sanctionné une société d'électronique et de télécommunication, désignée anonymément dans le tableau officiel des sanctions, pour défaut de sécurité des données. Des données de clients étaient librement accessibles sur le web, constituant une violation de données personnelles. Le tableau officiel ne précise ni le nom de la société, ni la nature de la sanction prononcée, ni le volume de personnes concernées.",
+  "timeline": [
+    {
+      "date": "2017-12-21",
+      "event": "Sanction pour défaut de sécurité : des données de clients étaient en libre accès sur le web (violation de données)."
+    }
+  ]
+}

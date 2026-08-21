@@ -1,0 +1,48 @@
+{
+  "slug": "ledger-20241010",
+  "entity": "Ledger",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-10",
+    "publication": "2024-10-23",
+    "confirmation": "2024-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "les fuites de 2020 à l'origine de la sanction sont déjà recensées (fiche du 29 juillet 2020) ; la CNIL ne publie pas de volume propre à la sanction"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "The Big Whale — Exclusif. Ledger sanctionné par la CNIL à hauteur de 750 000 euros (23 octobre 2024)",
+      "url": "https://www.thebigwhale.io/fr/article/exclusive-ledger-fined-750-000-by-cnil",
+      "kind": "article"
+    },
+    {
+      "label": "La Lettre — French Tech : la CNIL inflige une amende de 750 000 euros à Ledger (23 octobre 2024)",
+      "url": "https://www.lalettre.fr/fr/entreprises_tech-et-telecoms/2024/10/23/french-tech--la-cnil-inflige-une-amende-de-750-000-euros-a-ledger,110331107-art",
+      "kind": "article"
+    }
+  ],
+  "description": "La CNIL a prononcé le 10 octobre 2024 une amende de 750 000 euros contre Ledger, fabricant français de portefeuilles de crypto-actifs, décision anonymisée dans le tableau officiel des sanctions et révélée par la presse le 23 octobre. Elle fait suite à une cinquantaine de plaintes de clients déposées après les piratages de 2020, qui avaient touché environ 290 000 fiches via la plateforme e-commerce puis environ un million de personnes via une clé API, selon The Big Whale. L'autorité retient des manquements à la durée de conservation des données et à leur sécurité. Ledger confirme la sanction et rappelle que ses produits n'ont pas été exposés.",
+  "timeline": [
+    {
+      "date": "2024-10-10",
+      "event": "Délibération de la CNIL : amende de 750 000 euros pour durée de conservation et sécurité des données, à la suite de plaintes de clients."
+    },
+    {
+      "date": "2024-10-23",
+      "event": "The Big Whale puis La Lettre révèlent la sanction ; la CNIL et Ledger la confirment auprès de la presse."
+    }
+  ]
+}

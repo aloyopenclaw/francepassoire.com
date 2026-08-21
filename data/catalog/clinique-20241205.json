@@ -1,0 +1,42 @@
+{
+  "slug": "clinique-20241205",
+  "entity": "Clinique (dénomination non publiée par la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-05",
+    "confirmation": "2024-12-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 15 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « clinique » (procédure simplifiée), amende de 15 000 euros (5 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 décembre 2024, la CNIL a prononcé une amende de 15 000 euros à l'encontre d'une clinique, dans le cadre de la procédure simplifiée. Le seul manquement retenu : défaut de coopération avec l'autorité, qui n'a pas obtenu de réponse à ses sollicitations. La dénomination n'est pas publiée et la nature des données n'est pas précisée. Le défaut de coopération a été le premier motif de sanction simplifiée en 2024 avec 27 organismes concernés, selon le bilan annuel de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-12-05",
+      "event": "Amende de 15 000 euros (procédure simplifiée) pour seul manquement le défaut de coopération avec la CNIL."
+    }
+  ]
+}

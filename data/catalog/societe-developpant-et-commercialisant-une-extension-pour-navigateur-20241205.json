@@ -1,0 +1,56 @@
+{
+  "slug": "societe-developpant-et-commercialisant-une-extension-pour-navigateur-20241205",
+  "entity": "Société développant et commercialisant une extension pour navigateur",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-05",
+    "confirmation": "2024-12-05",
+    "publication": "2024-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "coordonnées d'utilisateurs de LinkedIn collectées ; volume non précisé"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société développant et commercialisant une extension pour navigateur », Amende administrative de 240 000 euros et injonction (5 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Aspiration de données : sanction de 240 000 euros à l’encontre de la société KASPR (19 décembre 2024)",
+      "url": "https://www.cnil.fr/fr/aspiration-de-donnees-sanction-de-240-000-euros-lencontre-de-la-societe-kaspr",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Clôture de l’injonction prononcée à l’encontre de la société KASPR (6 mars 2026)",
+      "url": "https://www.cnil.fr/fr/cloture-de-linjonction-prononcee-lencontre-de-la-societe-kaspr",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l’action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 décembre 2024, la CNIL a prononcé une amende de 240 000 euros et une injonction à l'encontre d'une société développant et commercialisant une extension pour navigateur, identifiée comme KASPR dans son communiqué. Selon la CNIL, la société collectait sur LinkedIn les coordonnées d'utilisateurs qui avaient choisi d'en limiter la visibilité. La liste officielle retient des manquements sur la base légale, la durée de conservation, l'information et le droit d'accès. Par délibération du 4 mars 2026, la CNIL a clôturé l'injonction.",
+  "timeline": [
+    {
+      "date": "2024-12-05",
+      "event": "Amende de 240 000 euros et injonction : base légale, conservation, information et droit d'accès en cause."
+    },
+    {
+      "date": "2024-12-19",
+      "event": "Communiqué CNIL (KASPR) : collecte de coordonnées LinkedIn malgré une visibilité limitée par les utilisateurs."
+    },
+    {
+      "date": "2026-03-04",
+      "event": "La CNIL clôture l'injonction prononcée en décembre 2024."
+    }
+  ]
+}

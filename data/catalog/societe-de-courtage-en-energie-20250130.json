@@ -1,0 +1,42 @@
+{
+  "slug": "societe-de-courtage-en-energie-20250130",
+  "entity": "Société de courtage en énergie",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-30",
+    "publication": "2025-05-22",
+    "confirmation": "2025-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Dix nouvelles sanctions prononcées en 2025 dans le cadre de la procédure simplifiée (22 mai 2025)",
+      "url": "https://www.cnil.fr/fr/dix-nouvelles-sanctions-2025-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 30 janvier 2025, dans le cadre de la procédure simplifiée, la liquidation d'une astreinte de 4 000 euros contre une société de courtage en énergie, désignée anonymément. Cette décision sanctionne la non-réponse à l'injonction prononcée par une précédente décision du 8 août 2024, qui avait assorti une amende de 20 000 euros d'une injonction de se mettre en conformité. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2024-08-08",
+      "event": "Amende de 20 000 euros et injonction contre la société de courtage en énergie (décision antérieure du tableau officiel des sanctions)."
+    },
+    {
+      "date": "2025-01-30",
+      "event": "Liquidation d'une astreinte de 4 000 euros pour non-réponse à l'injonction."
+    }
+  ]
+}

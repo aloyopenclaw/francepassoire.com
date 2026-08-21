@@ -1,0 +1,37 @@
+{
+  "slug": "association-commune-20231227",
+  "entity": "Association promouvant des actions au sein d'une commune (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-27",
+    "confirmation": "2023-12-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 5 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association promouvant des actions au sein d'une commune » (procédure simplifiée), amende de 5 000 euros et injonction (27 décembre 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 27 décembre 2023, la CNIL a prononcé une amende de 5 000 euros assortie d'une injonction à l'encontre d'une association promouvant des actions au sein d'une commune, dans le cadre de la procédure simplifiée. Le manquement retenu : défaut de coopération avec l'autorité. La dénomination n'est pas publiée et la nature des données personnelles concernées n'est pas précisée. La procédure simplifiée, créée en 2022, plafonne les amendes à 20 000 euros et interdit la publication des noms des organismes sanctionnés.",
+  "timeline": [
+    {
+      "date": "2023-12-27",
+      "event": "Amende de 5 000 euros et injonction (procédure simplifiée) pour défaut de coopération avec la CNIL."
+    }
+  ]
+}
