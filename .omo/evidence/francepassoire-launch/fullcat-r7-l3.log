@@ -228,3 +228,18 @@ Sources  : presse éco/tech (Usine Digitale, LSA, La Tribune)
   - JAMAIS merge : la PR reste ouverte pour la chaîne
     (append-registry → publish-anchors → verify-registry
     exit 0) avant toute fusion.
+
+[6] ADDENDUM (post-PR #54)
+  - CI GitHub « PR validation fiches » : échec en 3 s SANS AUCUNE
+    étape exécutée (steps: []) sur TOUS les runs du dépôt à cet
+    instant (rafales 7 L1/L2/L4 + deploys Cloudflare Pages) →
+    panne Actions/billing côté GitHub, indépendante de la PR.
+  - Les 3 portes du workflow rejouées localement dans le
+    worktree :
+      Porte 1 : npx vitest run tests/pr-fiches.test.ts →
+                811/811 fiches valides (catalogue complet).
+      Porte 2 : npx astro build → 1 657 pages.
+      Porte 3 : node scripts/spot-check-sources.mjs <20 fiches>
+                → 4/4 URL vivantes (échantillon 10 %), exit 0.
+  - À rejouer/rebasculer en vert côté GitHub une fois la panne
+    Actions résolue ; les portes locales font foi en attendant.
