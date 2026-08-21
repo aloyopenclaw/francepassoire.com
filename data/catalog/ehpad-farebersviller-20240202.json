@@ -1,0 +1,39 @@
+{
+  "slug": "ehpad-farebersviller-20240202",
+  "entity": "Ehpad Saint-Jean-Baptiste de Farébersviller",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-02-02",
+    "publication": "2024-02-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de résidents et salariés concernés non communiqué par l'établissement"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Républicain Lorrain — Farébersviller : l'Ehpad victime d'une cyberattaque avec demande de rançon (10 février 2024)",
+      "url": "https://www.republicain-lorrain.fr/faits-divers-justice/2024/02/10/farebersviller-l-ehpad-victime-d-une-cyberattaque-avec-demande-de-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha — Liste des organisations victimes d'une cyberattaque en 2024 : Ehpad Saint-Jean-Baptiste de Farébersviller, 2 février 2024, rançongiciel",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 2 au 3 février 2024, les serveurs de l'Ehpad Saint-Jean-Baptiste de Farébersviller (Moselle), établissement associatif, sont frappés par une cyberattaque de grande ampleur avec demande de rançon. Le logiciel de suivi des résidents devient inaccessible et les soignants repassent au papier ; la direction des soins indique que la qualité des soins n'est pas affectée. Selon le Républicain Lorrain, des données personnelles de résidents ou de salariés — documents d'identité, factures — ont probablement été piratées, ainsi que des documents internes d'organisation. Une cellule de crise est activée et une plainte est déposée à la gendarmerie. Le nombre de personnes concernées n'a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2024-02-02",
+      "event": "Cyberattaque dans la nuit du 2 au 3 février : les serveurs de l'Ehpad sont paralysés et une rançon est exigée ; le logiciel de soins n'est plus accessible le samedi matin."
+    },
+    {
+      "date": "2024-02-10",
+      "event": "Le Républicain Lorrain révèle l'attaque : suivi des résidents sur papier, plainte déposée à la gendarmerie, données personnelles (identité, factures) probablement dérobées."
+    }
+  ]
+}

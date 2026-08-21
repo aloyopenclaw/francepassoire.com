@@ -1,0 +1,35 @@
+{
+  "slug": "societe-accompagnement-victimes-incestes-20251211",
+  "entity": "Société d'accompagnement, d'orientation et d'éducation de victimes d'incestes (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-11",
+    "confirmation": "2025-12-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 20 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": ["coordonnees"],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2025) : « société ayant pour activité l'accompagnement, l'orientation et l'éducation de victimes d'incestes » (procédure simplifiée), 11 décembre 2025, 20 000 euros",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 décembre 2025, la CNIL a prononcé, dans le cadre de la procédure simplifiée, une amende administrative de 20 000 euros — le plafond de cette procédure — assortie d'une injonction à l'encontre d'une société dont l'activité est l'accompagnement, l'orientation et l'éducation de victimes d'incestes, dont la dénomination n'est pas publiée. Les manquements retenus touchent à la prospection commerciale par voie électronique sans consentement valable, au défaut d'information des personnes et au non-respect du droit d'accès. La sanction concerne une structure du champ social et de l'accompagnement de victimes, secteur particulièrement sensible au regard des données traitées.",
+  "timeline": [
+    {
+      "date": "2025-12-11",
+      "event": "Amende de 20 000 euros et injonction : prospection commerciale sans consentement valable, défaut d'information et non-respect du droit d'accès (procédure simplifiée)."
+    }
+  ]
+}
