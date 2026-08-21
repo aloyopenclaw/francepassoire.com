@@ -1,0 +1,32 @@
+{
+  "slug": "personne-physique-20150212",
+  "entity": "Personne physique (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2015-02-12",
+    "confirmation": "2015-02-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; collecte et traitement illicite de données à des fins de prospection politique"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 février 2015, la CNIL a inscrit à son tableau des sanctions une décision concernant une personne physique. Le manquement retenu : collecte et traitement illicite de données personnelles à des fins de prospection politique. La liste officielle affiche deux lignes identiques à cette date ; l’autorité ne précise pas si elles concernent la même personne. La dénomination n’est pas publiée et le détail de la sanction n’est plus accessible sur une page officielle vivante.",
+  "timeline": [
+    {
+      "date": "2015-02-12",
+      "event": "Décision inscrite à la liste des sanctions : collecte et traitement illicite de données (prospection politique)."
+    }
+  ]
+}

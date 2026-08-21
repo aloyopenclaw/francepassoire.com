@@ -1,0 +1,32 @@
+{
+  "slug": "fournisseur-acces-internet-tv-20111201",
+  "entity": "Un fournisseur d'accès à internet et de télévision (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2011-12-01",
+    "confirmation": "2011-12-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "avertissement non public ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « fournisseur d'accès à internet, TV », avertissement non public (1er décembre 2011)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 1er décembre 2011, la CNIL a adressé un avertissement non public à un fournisseur d'accès à internet et de télévision. Le manquement retenu : un défaut de sécurité et de confidentialité, dans le domaine des traitements liés à internet. La décision n'est pas publiée nominativement et la nature des données concernées n'est pas précisée. Elle figure dans le tableau officiel des sanctions rendues par la CNIL, qui recense les mesures prononcées depuis 2011. Aucun volume de données ni aucun détail supplémentaire n'est disponible publiquement pour cette décision ancienne, antérieure au RGPD.",
+  "timeline": [
+    {
+      "date": "2011-12-01",
+      "event": "Avertissement non public de la CNIL pour défaut de sécurité et de confidentialité (traitements internet)."
+    }
+  ]
+}

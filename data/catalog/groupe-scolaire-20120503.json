@@ -1,0 +1,32 @@
+{
+  "slug": "groupe-scolaire-20120503",
+  "entity": "Un groupe scolaire (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-05-03",
+    "confirmation": "2012-05-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction pécuniaire non publique de 1 000 euros ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « groupe scolaire », sanction pécuniaire non publique (3 mai 2012)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 3 mai 2012, la CNIL a prononcé une sanction pécuniaire non publique de 1 000 euros à l'encontre d'un groupe scolaire, à la suite de constats portant sur un dispositif de vidéosurveillance. Manquements retenus : caractère excessif des données collectées et défaut d'information des personnes. Le nom de l'établissement n'est pas publié : la décision est répertoriée de façon anonyme dans le tableau officiel des sanctions de la CNIL. Aucune autre source publique ne détaille ce dossier ancien : ni les volumes de données, ni la nature des images concernées, ni l'ampleur du dispositif de caméras.",
+  "timeline": [
+    {
+      "date": "2012-05-03",
+      "event": "Sanction pécuniaire non publique de 1 000 euros : vidéosurveillance, données excessives et défaut d'information."
+    }
+  ]
+}

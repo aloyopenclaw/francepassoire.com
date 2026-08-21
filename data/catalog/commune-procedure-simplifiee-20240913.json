@@ -1,0 +1,42 @@
+{
+  "slug": "commune-procedure-simplifiee-20240913",
+  "entity": "Une commune (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-13",
+    "confirmation": "2024-09-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 20 000 euros et injonction (procédure simplifiée) ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (sanctions non publiques, plafond de 20 000 euros)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 septembre 2024, la CNIL a sanctionné une commune d'une amende administrative de 20 000 euros assortie d'une injonction, dans le cadre de la procédure simplifiée. Manquements retenus : obligation de traiter les données de façon licite, durée de conservation, registre des activités de traitement, désignation d'un délégué à la protection des données et coopération avec la CNIL. Le nom de la commune n'est pas publié : les sanctions simplifiées ne sont jamais rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le bilan 2024 de l'action de la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-09-13",
+      "event": "Amende de 20 000 euros et injonction (procédure simplifiée) : licéité, conservation, registre, DPD et coopération."
+    }
+  ]
+}

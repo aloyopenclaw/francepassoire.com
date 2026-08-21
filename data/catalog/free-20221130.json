@@ -1,0 +1,43 @@
+{
+  "slug": "free-20221130",
+  "entity": "Free (Free SAS)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-30",
+    "confirmation": "2022-11-30",
+    "publication": "2022-12-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; amende de 300 000 euros et injonction sous astreinte de 500 euros par jour de retard"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Iredic — CNIL : Free de nouveau sanctionné d’une amende de 300 000 euros pour manquements au RGPD (15 décembre 2022)",
+      "url": "https://iredic.fr/2022/12/15/cnil-free-de-nouveau-sanctionne-dune-amende-de-300-000-euros-pour-manquements-au-rgpd/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 novembre 2022, la formation restreinte de la CNIL a sanctionné la société Free de 300 000 euros, à la suite de 41 plaintes déposées entre octobre 2018 et novembre 2019. Les manquements retenus : prospection par courriel et SMS en décembre 2019 sans preuve du consentement des prospects, dont les données provenaient d’un courtier ; refus de communiquer l’identité de ce courtier aux personnes exerçant leur droit d’accès ; défauts de sécurité, dont des disques de Freebox réutilisés sans effacement complet ; violation non documentée. Une injonction sous astreinte de 500 euros par jour accompagne l’amende.",
+  "timeline": [
+    {
+      "date": "2022-11-30",
+      "event": "Amende de 300 000 euros et injonction sous astreinte : prospection sans consentement prouvé, droit d’accès entravé, sécurité défaillante."
+    },
+    {
+      "date": "2022-12-08",
+      "event": "La CNIL rend publique la délibération SAN-2022-022, qui ne nomme plus la société depuis."
+    }
+  ]
+}

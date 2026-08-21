@@ -1,0 +1,32 @@
+{
+  "slug": "societe-d-entretien-et-de-reparation-de-vehicules-automobiles-20220122",
+  "entity": "Société d'entretien et de réparation de véhicules automobiles (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-22",
+    "confirmation": "2022-01-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « société d'entretien et de réparation de véhicules automobiles », amende de 3 000 euros et injonction sous astreinte (22 janvier 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 22 janvier 2022, la CNIL a prononcé une amende de 3 000 euros, assortie d'une injonction sous astreinte, à l'encontre d'une société d'entretien et de réparation de véhicules automobiles, désignée anonymement dans le tableau officiel des sanctions. Le manquement retenu est un défaut de coopération avec la CNIL. Le volume de personnes concernées n'est pas communiqué et la nature des données n'est pas précisée. La liquidation de l'astreinte, prononcée le 13 juin 2022 contre la même désignation, est cataloguée séparément.",
+  "timeline": [
+    {
+      "date": "2022-01-22",
+      "event": "Amende de 3 000 euros et injonction sous astreinte : défaut de coopération avec la CNIL."
+    }
+  ]
+}

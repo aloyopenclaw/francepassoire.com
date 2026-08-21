@@ -1,0 +1,185 @@
+# fullcat rafale 2 — lane 2 — fiches CNIL-confirmées (26 livrées)
+date: 2026-08-21 09:40 UTC | branche: fiche/rafale2-l2 | worktree: fp-r2l2 | base: 2eea8cc (main, 420 fiches)
+pool: /tmp/cnil2-slice-2.txt lignes 1-24 (lues via read tool uniquement)
+
+## Méthode (identique rafale 1, lanes 0-6)
+- Liste officielle CNIL « Les sanctions prononcées par la CNIL »
+  (https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil, HTTP 200, UA navigateur,
+  page unique, 385 lignes uniques 2012→2026) parsée localement (date | désignation |
+  manquements | décision | liens légifrance).
+- Les 24 lignes du pool appariées EXACTEMENT (cannonisation accents/apostrophes) au
+  tableau vivant : 24/24 lignes appariées couvrant 31 décisions distinctes (descripteurs
+  à décisions multiples : MEDECIN ×3, MEDECIN GENERALISTE ×4, MOTEUR DE RECHERCHE ×4,
+  NOTAIRE ×2, OPERATEUR TELECOMS ×2, ORTHOPHONISTE ×2, RESEAU SOCIAL ×2, REVUE ×2 ;
+  lignes jumelles identiques : MEDECIN 29/12/2022 ×2, PERSONNE PHYSIQUE 12/02/2015 ×2).
+- DEDUP :
+  - intra-pool : « MEDECIN (p.s.) » = « MÉDECIN (p.s.) » (même descripteur, orthographe
+    du tableau) → 23 descripteurs distincts.
+  - vs main (420 fiches, scan identité de décision date+montant sur tout le JSON) : zéro
+    décision déjà cataloguée (les mêmes dates présentes concernent d'autres décisions :
+    boulangerie-20240610, slimpay-20211228, societe-de-transport-ambulancier-20241231,
+    etc.). Slugs des 26 fiches : zéro collision avec data/catalog (420).
+  - inter-lanes : slices cnil2 disjoints par plages alphabétiques (l0 A→CENTRE D'APPEL,
+    l1 CENTRE DE FORMATION→HEBERGEUR, l2 MEDECIN→SERVICE EN LIGNE, l3 SERVICES INTERNET→…,
+    l4, l5) ; branches fiche/rafale2-* vérifiées à la poussée.
+- Politique 1 fiche par décision pour les entités NOMMÉES (précédent sfr ×4,
+  cegedim-sante ×2, google-20250901) ; 1 fiche par descripteur anonymisé (précédent
+  lane 5 : « entité distincte non rattachable ») pour la première sanction, les
+  décisions distinctes ultérieures restant disponibles pour un re-slicing futur.
+
+## Résolution des entités (nommage uniquement sur source vivante)
+- OPÉRATEUR DE TÉLÉPHONIE MOBILE 08/01/2026 27 M€ = FREE MOBILE ; OPÉRATEUR DE
+  TÉLÉPHONIE FIXE 08/01/2026 15 M€ = FREE (SAS) — communiqué vivant sanction-free-2026
+  (14/01/2026, décisions rendues le 13/01 selon le communiqué, inscrites au 08/01 sur la
+  liste : date de liste retenue comme date de décision, communiqué en timeline).
+- OPÉRATEUR DE TÉLÉCOMMUNICATIONS 14/11/2024 50 M€ = ORANGE (SAN-2024-019, publicité
+  entre courriels + cookies) — communiqués vivants (10/12/2024 + clôture 18/09/2025 pour
+  la délibération du 11/09/2025 en timeline).
+- OPÉRATEUR DE TÉLÉPHONIE 28/12/2021 300 k€ = FREE MOBILE (19 plaintes déc 2018-nov
+  2019, droits d'accès/opposition) — CEPD (officiel UE, vivant) + Le Monde Informatique.
+- OPÉRATEUR DE TÉLÉCOMMUNICATION FIXE 30/11/2022 300 k€ = FREE (SAN-2022-022, prospection
+  via courtier en données, 41 plaintes, astreinte 500 €/j) — index des délibérations CNIL
+  (« concernant la société FREE », bloqué curl derrière challenge → nommage retenu sur
+  presse juridique vivante iredic.fr 15/12/2022).
+- OPÉRATEUR DE TÉLÉCOMMUNICATIONS 26/12/2018 = BOUYGUES TELECOM (250 k€, 2 M+ clients
+  B&You exposés >2 ans, URLs prévisibles) — communiqué CNIL archivé (kind archive,
+  snapshot 20190411134418, 200) + ZDNet vivant.
+- MOTEUR DE RECHERCHE 10/03/2016 = GOOGLE INC. (100 k€, déréférencement mondial, mise en
+  demeure 21/05/2015, CJUE C-507/17 24/09/2019, CE 27/03/2020 ANNULATION en timeline) —
+  dossier de presse CNIL 2016 (PDF vivant) + communiqué CJUE (officiel) + Challenges +
+  Legalis.
+- MOTEUR DE RECHERCHE 03/01/2014 = GOOGLE INC. (150 k€, dél. 2013-420, règles de
+  confidentialité unifiées 01/03/2012) — Conseil d'État (page vivante) + Next INpact.
+- MOTEUR DE RECHERCHE 01/06/2012 : entité NON identifiable via une source officielle
+  vivante (légifrance 403 anti-bot, aucun communiqué/presse trouvé) → désignation
+  anonymisée du tableau conservée (zéro invention), liste seule en source.
+- MOTEUR DE RECHERCHE 31/01/2019 « abandon des poursuites » (déréférencement) :
+  rattachement au dossier 2016 incertain → NON intégré (précédent lane 5 « non
+  rattachée »), noté ici.
+- RESEAU SOCIAL 31/12/2021 60 M€ = FACEBOOK IRELAND (cookies, injonction 3 mois,
+  astreinte 100 k€/j) — lettre d'information CNIL janvier 2022 (fichier cnil.fr vivant,
+  nomme FACEBOOK) + DLA Piper ; le communiqué dédié dédié 404.
+- RESEAU SOCIAL 27/04/2017 = FACEBOOK INC./IRELAND (SAN-2017-006, 150 k€ max légal,
+  public 16/05/2017) — BFMTV + Derriennc Associés vivants (communiqué CNIL 2017 mort,
+  aucun snapshot CDX utilisable).
+- PLATEFORME D'HERBERGEMENT DE CONTENUS VIDEO 24/07/2018 = DAILYMOTION (50 k€, piratage
+  2016 : 82,5 M adresses + 18,3 M mots de passe chiffrés, identifiants admin en clair sur
+  GitHub) — communiqué CNIL archivé (snapshot 20180817110729, 200, texte intégral
+  vérifié) + Numerama.
+- SERVICE EN LIGNE DE DEMARCHES ADMINISTRATIVES 16/11/2017 = WEB EDITIONS (SAN-2017-012,
+  25 k€, 4 sites, jusqu'à 717 893 personnes) — La Tribune + Le Monde du Droit vivants
+  (communiqué CNIL 22/11/2017 mort, aucun snapshot CDX).
+- PERSONNALITÉ POLITIQUE 03/09/2020 (rappel à l'ordre) : délibération SAN-2020-005
+  anonymisée PAR CONSTRUCTION après 1 an (11 856 lycéens, fichier OCEAN, rectorat de
+  Normandie co-sanctionné) → identité NON nommée dans la fiche bien que la presse locale
+  (ici.fr, vivante, citée en source) l'ait publiée en 2020 — cohérent avec
+  l'anonymisation CNIL (précédent lane 4 Voodoo/Cityscoot).
+- Anonymisés (procédure simplifiée ou désignation non publiée) : MEDECIN, MEDECIN
+  GENERALISTE, MEDECIN PEDIATRE, NOTAIRE, ORGANISME DE FORMATION SANTÉ, ORTHOPHONISTE,
+  PARTICULIER, PARTICULIERS, PERSONNALITE POLITIQUE (2023), PERSONNE PHYSIQUE,
+  RESTAURANT, REVUE LITTERAIRE FRANCAISE.
+
+## Décisions NON retenues (disponibles re-slicing futur)
+- ORGANISME PRIVÉ 28/10/2021 : ligne « liquidation de l'astreinte de 65 000 € » sans
+  décision mère sous ce descripteur dans le tableau → non rattachable, aucune fiche
+  (précédent lanes 0/5/6 : une liquidation ne porte jamais de fiche propre).
+- MEDECIN (p.s.) : 03/07/2025 (3 k€, entité distincte non rattachable), 05/02/2026
+  (liquidation 1 k€, injonction d'origine non identifiable) — fiche sur 29/12/2022.
+- MEDECIN GENERALISTE (p.s.) : 10/06/2024 (4 k€), 19/12/2024 (liquidation 2 k€),
+  11/09/2025 (3 k€) — fiche sur 08/02/2023.
+- Liquidations rattachées en timeline (même descripteur, délai court, précédent lanes 4/6) :
+  NOTAIRE 24/03/2022 (1 k€, 5 mois), ORTHOPHONISTE 11/10/2024 (4 k€, 11 mois),
+  REVUE LITTERAIRE 25/04/2024 (3 k€, 7 mois).
+- Lignes jumelles identiques (MEDECIN 29/12/2022 ×2, PERSONNE PHYSIQUE 12/02/2015 ×2) :
+  1 fiche, mention explicite dans la description.
+
+## Fiches (26)
+| # | slug | décision | sanction | sources |
+|---|------|----------|----------|---------|
+| 1 | medecin-20221229 | 2022-12-29 | 5 000 € + inj. sous astreinte (p.s.) | liste + bilan p.s. 2022 |
+| 2 | medecin-generaliste-20230208 | 2023-02-08 | 3 000 € + inj. (p.s.) | liste + bilan 2023 |
+| 3 | medecin-pediatre-20231227 | 2023-12-27 | 1 000 € (p.s.) | liste + bilan 2023 |
+| 4 | moteur-de-recherche-20120601 | 2012-06-01 | décision non détaillée | liste |
+| 5 | google-20140103 | 2014-01-03 | 150 000 € + publication google.fr | liste + Conseil d'État + Next INpact |
+| 6 | google-20160310 | 2016-03-10 | 100 000 € (annulée CE 27/03/2020) | liste + dossier presse CNIL 2016 + CJUE + Challenges + Legalis |
+| 7 | facebook-20170427 | 2017-04-27 | 150 000 € (SAN-2017-006) | liste + BFMTV + Derriennc |
+| 8 | facebook-ireland-20211231 | 2021-12-31 | 60 M€ + inj. (astreinte 100 k€/j) | liste + lettre CNIL 01/2022 + DLA Piper |
+| 9 | free-mobile-20211228 | 2021-12-28 | 300 000 € | liste + CEPD + Le Monde Informatique |
+| 10 | free-20221130 | 2022-11-30 | 300 000 € + inj. (astreinte 500 €/j) | liste + Iredic |
+| 11 | dailymotion-20180724 | 2018-07-24 | 50 000 € | liste + archive CNIL + Numerama |
+| 12 | bouygues-telecom-20181226 | 2018-12-26 | 250 000 € | liste + archive CNIL + ZDNet |
+| 13 | web-editions-20171116 | 2017-11-16 | 25 000 € (SAN-2017-012) | liste + La Tribune + Le Monde du Droit |
+| 14 | orange-20241114 | 2024-11-14 | 50 M€ + inj. (SAN-2024-019) | liste + communiqués CNIL ×2 |
+| 15 | free-mobile-20260108 | 2026-01-08 | 27 M€ + inj. | liste + communiqué CNIL |
+| 16 | free-20260108 | 2026-01-08 | 15 M€ + inj. | liste + communiqué CNIL |
+| 17 | notaire-20211021 | 2021-10-21 | 3 000 € + inj. (liq. 1 k€ 24/03/2022) | liste |
+| 18 | organisme-de-formation-destine-aux-professionnels-de-sante-20240926 | 2024-09-26 | 15 000 € + inj. (p.s.) | liste + bilan 2024 |
+| 19 | orthophoniste-20231122 | 2023-11-22 | 5 000 € + inj. (liq. 4 k€ 11/10/2024) | liste + bilan 2023 |
+| 20 | particulier-20240131 | 2024-01-31 | 500 € (p.s.) | liste + bilan 2024 |
+| 21 | particuliers-20241231 | 2024-12-31 | 5 000 € (p.s.) | liste + bilan 2024 |
+| 22 | personnalite-politique-20231211 | 2023-12-11 | 3 000 € + inj. (p.s.) | liste + bilan 2023 |
+| 23 | personnalite-politique-20200903 | 2020-09-03 | Rappel à l'ordre (SAN-2020-005) | liste + ici.fr + eWatchers |
+| 24 | personne-physique-20150212 | 2015-02-12 | collecte/traitement illicite | liste |
+| 25 | restaurant-20220321 | 2022-03-21 | 10 000 € | liste + bilan 2022 |
+| 26 | revue-litteraire-francaise-20230928 | 2023-09-28 | 10 000 € + inj. (liq. 3 k€ 25/04/2024) | liste + bilan 2023 |
+
+## Vérifications
+- zod (vitest, worktree) : tests/pr-fiches.test.ts → 446 passed (420 existantes + 26 nouvelles).
+- suite complète : npx vitest run → 29 files / 808 tests passés.
+- npx astro build → 929 pages ; spot-check pages /fiche/<slug>/ : « Confirmée » présent
+  sur les 8 tirées (medecin-20221229, google-20160310, facebook-ireland-20211231,
+  free-mobile-20260108 [« 27 millions » dans le HTML], orange-20241114,
+  dailymotion-20180724 [« 82,5 millions »], web-editions-20171116, personnalite-politique-20200903).
+- URLs sources (curl UA navigateur, 29 URL distinctes des 26 fiches, toutes 200) :
+  200 https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil
+  200 https://www.cnil.fr/fr/procedure-de-sanction-simplifiee-la-cnil-presente-son-premier-bilan-2022
+  200 https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2022-de-son-action-repressive
+  200 https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive
+  200 https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil
+  200 https://www.cnil.fr/fr/sanction-free-2026
+  200 https://www.cnil.fr/fr/publicites-inserees-entre-les-courriels-sanction-de-50-millions-deuros-orange
+  200 https://www.cnil.fr/fr/cloture-de-linjonction-prononcee-lencontre-de-la-societe-orange
+  200 https://www.cnil.fr/sites/cnil/files/atoms/files/lettre_information_cnil_janvier_2022.html
+  200 https://www.cnil.fr/sites/default/files/atoms/files/dossier_de_presse_cnil_bilan_2016_et_enjeux_2017.pdf
+  200 https://www.conseil-etat.fr/actualites/sanction-prononcee-par-la-cnil-a-l-encontre-de-la-societe-google-inc
+  200 https://curia.europa.eu/jcms/upload/docs/application/pdf/2019-09/cp190112fr.pdf
+  200 https://www.edpb.europa.eu/news/national-news/2022/cnil-french-supervisory-authority-fines-free-eur-300000_en
+  200 https://web.archive.org/web/20180817110729/https://www.cnil.fr/fr/dailymotion-sanction-de-50000eu-pour-une-atteinte-la-securite-des-donnees-des-utilisateurs
+  200 https://web.archive.org/web/20190411134418/https://www.cnil.fr/fr/bouygues-telecom-sanction-pecuniaire-pour-manquement-la-securite-des-donnees-clients
+  200 https://next.ink/25894/85283-pourquoi-cnil-a-inflige-amende-150-000-euros-a-google/
+  200 https://www.challenges.fr/entreprise/tech-numerique/droit-a-l-oubli-la-cnil-sanctionne-google-d-une-amende-de-100-000-euros_29170
+  200 https://www.legalis.net/jurisprudences/conseil-detat-section-du-contentieux-10eme-et-9eme-ch-reunies-decision-du-27-mars-2020/
+  200 https://www.bfmtv.com/economie/entreprises/services/la-cnil-condamne-facebook-a-payer-150-000-euros-d-amende_AN-201705160135.html
+  200 https://derriennic.com/facebook-sanctionnee-par-la-cnil-pour-de-nombreux-manquements-a-la-loi-informatique-et-libertes/
+  200 https://privacymatters.dlapiper.com/2022/01/france-cookies-new-record-sanctions-for-tech-giants-cnil-fines-facebook-ireland-60-million-euros-and-google-150-million-euros/
+  200 https://www.lemondeinformatique.fr/actualites/lire-donnees-personnelles-la-cnil-inflige-300-000-euros-d-amende-a-free-mobile-85312.html
+  200 https://iredic.fr/2022/12/15/cnil-free-de-nouveau-sanctionne-dune-amende-de-300-000-euros-pour-manquements-au-rgpd/
+  200 https://www.numerama.com/politique/403048-piratage-et-vol-de-donnees-pourquoi-la-cnil-ne-sanctionne-dailymotion-qua-hauteur-de-50-000-euros.html
+  200 https://www.zdnet.fr/actualites/sanction-cnil-bouygues-telecom-n-a-pas-securise-les-donnees-de-2-millions-de-clients-39878493.htm
+  200 https://www.latribune.fr/technos-medias/donnees-personnelles-la-cnil-sanctionne-plusieurs-sites-de-documents-administratifs-759561.html
+  200 https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/54769-demarches-administratives-en-ligne-sanction-de-la-cnil-pour-atteinte-a-la-securite-des-donnees.html
+  200 https://www.ici.fr/infos/societe/donnees-personnelles-des-bacheliers-la-deputee-lrem-de-la-manche-sonia-krimi-rappelee-a-l-ordre-par-1600791009
+  200 https://ewatchers.org/cnil/academie-de-normandie-2020-09-03-3
+- Légifrance : 403 anti-bot en curl et en lecture serveur → aucun lien légifrance cité ;
+  identités établies uniquement via pages officielles vivantes (cnil.fr, conseil-etat.fr,
+  curia.europa.eu, edpb.europa.eu), archives web.archive.org (kind archive) ou presse
+  spécialisée vivante — conformément au contrat fiche (source vérifiée vivante ou
+  équivalent archivé).
+- Bornes Ton A : 26/26 descriptions ≤ 120 mots (max 106) ; timeline ≤ 40 mots/événement
+  (max 22) ; phrases déclaratives courtes (max 40 mots, cohérent avec la base existante,
+  cible 25 non verrouillée — docs/prose-style.md statut DRAFT) ; passé composé + présent ;
+  aucun futur ; aucune donnée volée reproduite.
+- Zéro invention : volumes non précisés → count 0 + label honnête ; « MOTEUR DE
+  RECHERCHE 2012 » sans montant → sanction non détaillée par la liste, aucune date de
+  publication estimée ; identité de la députée 2020 non nommée (anonymisation CNIL) bien
+  que sourcée en presse ; aucune date inventée dans les timelines (événements sans jour
+  précis exclus).
+
+## Écarts vs consigne
+- Aucun quota chiffré imposé pour cette lane (pool de 24 lignes) : 26 fiches livrées
+  (23 descripteurs − 1 ORGANISME PRIVÉ non rattachable, + 4 fiches issues de descripteurs
+  à décisions multiples contre des entités nommées distinctes : Google ×2, Facebook ×2,
+  Free/Free Mobile/télcos ×4 au total).
+- Règle « cnil.fr source primaire → confirmée » respectée sur 26/26 ; presse indépendante
+  présente sur 14/26 quand trouvable et vivante (aucune presse vivante pour les
+  décisions anonymisées de procédure simplifiée).

@@ -1,0 +1,41 @@
+{
+  "slug": "revue-litteraire-francaise-20230928",
+  "entity": "Revue littéraire française (dénomination non publiée par la CNIL)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-28",
+    "confirmation": "2023-09-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 septembre 2023, la CNIL a prononcé une amende de 10 000 euros et une injonction à l’encontre d’une revue littéraire française, dans le cadre de la procédure simplifiée. Les manquements retenus : défaut d’information et de transparence envers les personnes et défaut de coopération avec l’autorité. Le 25 avril 2024, une astreinte a été liquidée pour 3 000 euros, la formation restreinte constatant une conformité tardive aux demandes d’effacement. La dénomination n’est pas publiée.",
+  "timeline": [
+    {
+      "date": "2023-09-28",
+      "event": "Amende de 10 000 euros et injonction (procédure simplifiée) : information des personnes et coopération défaillantes."
+    },
+    {
+      "date": "2024-04-25",
+      "event": "Liquidation d’astreinte de 3 000 euros : conformité tardive en matière de demandes d’effacement."
+    }
+  ]
+}
