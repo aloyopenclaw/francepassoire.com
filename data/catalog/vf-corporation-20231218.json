@@ -1,0 +1,56 @@
+{
+  "slug": "vf-corporation-20231218",
+  "entity": "VF Corporation (Vans, The North Face, Timberland, Napapijri)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-18",
+    "publication": "2023-12-18",
+    "confirmation": "2024-03-21"
+  },
+  "volume": {
+    "count": 35500000,
+    "unit": "personnes",
+    "label": "35,5 millions de consommateurs touchés selon l'évaluation de VF Corporation transmise au régulateur américain (janvier 2024)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données pour des marques telles que Timberland, Vans ou Napapijri : VF Corporation alerte ses clients (25 mars 2024)",
+      "url": "https://www.zataz.com/fuite-de-donnees-pour-des-marques-telles-que-timberland-vans-ou-napapijri/",
+      "kind": "article"
+    },
+    {
+      "label": "The Record — Apparel giant VF sends out breach letters to millions (21 mars 2024)",
+      "url": "https://therecord.media/vf-apparel-sends-breach-notifications-2023-incident",
+      "kind": "article"
+    },
+    {
+      "label": "Cybersecurity Dive — VF Corp. cyberattack impacted 35.5M consumers (23 janvier 2024)",
+      "url": "https://www.cybersecuritydive.com/news/north-face-vans-parent-vf-corp-cyberattack-hits-millions-shoppers/705329/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 décembre 2023, VF Corporation, propriétaire de Vans, The North Face, Timberland et Napapijri, détecte une activité non autorisée dans ses systèmes. Le groupe ransomware ALPHV revendique l'attaque et menace de publier les données volées. L'environnement est sécurisé le 15 décembre. L'entreprise évalue ensuite l'incident à 35,5 millions de consommateurs touchés. Les alertes aux clients de mars 2024 listent adresses e-mail, noms, téléphones et adresses de facturation et de livraison. Parfois figurent aussi l'historique de commandes et le type de moyen de paiement. Les mots de passe et données bancaires complètes ne sont pas concernés.",
+  "timeline": [
+    {
+      "date": "2023-12-13",
+      "event": "VF Corporation détecte une activité non autorisée dans ses systèmes ; le groupe ALPHV revendique l'attaque dans la foulée."
+    },
+    {
+      "date": "2023-12-15",
+      "event": "L'entreprise sécurise son environnement informatique, 48 heures après la détection."
+    },
+    {
+      "date": "2024-01-23",
+      "event": "Un dépôt réglementaire américain évalue à 35,5 millions le nombre de consommateurs touchés."
+    },
+    {
+      "date": "2024-03-21",
+      "event": "VF envoie des notifications de violation de données aux clients concernés, relayées par la presse."
+    }
+  ]
+}

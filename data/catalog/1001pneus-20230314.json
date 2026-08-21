@@ -1,0 +1,40 @@
+{
+  "slug": "1001pneus-20230314",
+  "entity": "1001pneus",
+  "siren": "513577429",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-14",
+    "publication": "2023-03-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; suspicion d'exposition d'une partie des données clients, ayant conduit à la réinitialisation de tous les mots de passe"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Nouveau piratage pour le site 1001Pneus : alerte aux clients et notification à la CNIL (14 mars 2023)",
+      "url": "https://www.zataz.com/nouveau-piratage-pour-le-site-1001-pneus/",
+      "kind": "article"
+    }
+  ],
+  "description": "En mars 2023, le site de vente de pneus 1001pneus.fr alerte ses clients d'un « acte de malveillance externe » ayant visé ses serveurs. L'enseigne évoque une suspicion d'exposition de certaines données : nom, prénom, date de naissance, adresses postale et électronique, mot de passe et coordonnées bancaires. Les mots de passe des comptes clients ont été réinitialisés par précaution et l'incident a été notifié à la CNIL. Une précédente fuite impliquant le site avait été relayée par Zataz en 2019. Le volume exact de clients concernés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-03-14",
+      "event": "1001pneus alerte ses clients d'un acte de malveillance externe et d'une suspicion d'exposition de données personnelles et bancaires."
+    },
+    {
+      "date": "2023-03-14",
+      "event": "Les mots de passe des comptes clients sont réinitialisés et l'incident est notifié à la CNIL, relaie Zataz."
+    }
+  ]
+}

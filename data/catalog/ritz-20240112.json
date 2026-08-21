@@ -1,0 +1,37 @@
+{
+  "slug": "ritz-20240112",
+  "entity": "La Boutique du Ritz (Ritz Paris)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-12",
+    "publication": "2024-01-12"
+  },
+  "volume": {
+    "count": 17000,
+    "unit": "comptes",
+    "label": "plus de 17 000 comptes clients revendiqués (chiffre du pirate, non confirmé) ; une centaine diffusés en échantillon"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — La boutique du Ritz piratée ? Un pirate commercialise plus de 17 000 comptes clients (12 janvier 2024)",
+      "url": "https://www.zataz.com/la-boutique-du-ritz-piratee/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 janvier 2024, Zataz révèle qu'un pirate commercialise plus de 17 000 comptes d'acheteurs de la boutique en ligne de l'hôtel parisien Ritz. Les données couvriraient la période 2011 à 2023 : noms, prénoms, adresses électroniques, pays et numéros de téléphone. Une centaine de comptes diffusés en échantillon a permis de vérifier de vrais clients, dont une Française ayant acheté en septembre 2023. La DPO du Ritz confirme le 3 janvier une enquête en cours pour une malveillance détectée en octobre 2023, avec déclaration aux autorités. Aucune donnée bancaire ni adresse postale n'apparaît dans la vente.",
+  "timeline": [
+    {
+      "date": "2024-01-03",
+      "event": "La DPO du Ritz confirme à Zataz une enquête en cours pour une malveillance détectée en octobre 2023, avec déclaration aux autorités."
+    },
+    {
+      "date": "2024-01-12",
+      "event": "Un pirate met en vente plus de 17 000 comptes de la boutique en ligne du Ritz ; Zataz vérifie plusieurs victimes réelles sur l'échantillon."
+    }
+  ]
+}

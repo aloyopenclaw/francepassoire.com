@@ -1,0 +1,39 @@
+{
+  "slug": "chronopost-20250511",
+  "entity": "Chronopost",
+  "siren": "383960135",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-05-11",
+    "publication": "2025-05-11"
+  },
+  "volume": {
+    "count": 3636700,
+    "unit": "personnes",
+    "label": "environ 3,64 millions d'adresses e-mail uniques dont 1,9 million en « .fr », dans un fichier de 1,93 Go (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Chronopost : plus de trois millions de données personnelles en fuite (11 mai 2025)",
+      "url": "https://www.zataz.com/chronopost-plus-de-trois-millions-de-donnees-personnelles-en-fuite/",
+      "kind": "revendication"
+    },
+    {
+      "label": "BrinzTech — The alleged database of Chronopost is leaked : 4,1 millions d'enregistrements",
+      "url": "https://www.brinztech.com/breach-alerts/brinztech-alert-the-alleged-database-of-chronopost-is-leaked/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 11 mai 2025, Zataz relève sur un marché noir la diffusion d'une base attribuée au transporteur Chronopost. Le fichier de 1,93 Go compterait 3 636 700 adresses e-mail uniques, dont 1 902 895 en « .fr ». Il comprendrait aussi 3,7 millions de numéros clients et des données d'identification professionnelle : numéros SIRET et codes d'activité. Un relais anglophone évoque 4,1 millions d'enregistrements. Chronopost n'a pas confirmé cette base. En février 2025, le transporteur avait démenti des revendications similaires d'un autre pirate. Cette fuite n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-05-11",
+      "event": "Un pirate diffuse sur un marché noir une base attribuée à Chronopost : 1,93 Go, environ 3,6 millions d'e-mails uniques et 3,7 millions de numéros clients."
+    }
+  ]
+}

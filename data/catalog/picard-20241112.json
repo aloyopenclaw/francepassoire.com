@@ -1,0 +1,46 @@
+{
+  "slug": "picard-20241112",
+  "entity": "Picard",
+  "siren": "784939688",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-12",
+    "publication": "2024-11-12",
+    "confirmation": "2024-11-12"
+  },
+  "volume": {
+    "count": 45000,
+    "unit": "personnes",
+    "label": "45 000 clients membres du programme de fidélité, selon le décompte communiqué par l'enseigne"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Nom, prénom, coordonnées... 45 000 clients de Picard touchés par une fuite de données (12 novembre 2024)",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/nom-prenom-coordonnees-45-000-clients-de-picard-touches-par-une-fuite-de-donnees_AN-202411120936.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — L'enseigne de surgelés Picard à son tour victime d'une cyberattaque, des milliers de clients concernés (12 novembre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/lenseigne-de-surgeles-picard-a-son-tour-victime-dune-cyberattaque-des-milliers-de-clients-concernes-12-11-2024-J7MO6PXXVBHXZHIPNPAXUHBW5U.php",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Picard : 45 000 personnes, données de fidélité et historiques de commandes (12 novembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/picard-blf_697f831a59c26",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 12 novembre 2024, Picard avertit par courriel 45 000 clients de son programme de fidélité d'un « accès non autorisé » à leurs comptes. Les pirates ont pu consulter noms, prénoms, dates de naissance, adresses e-mail et postales et numéros de téléphone. Ces éléments viennent de l'enseigne, reprise par BFM TV et Le Parisien. Les historiques de commandes et éléments de fidélité figurent parmi les données exposées selon les relais de veille. L'enseigne de surgelés recommande la vigilance face au phishing. Aucune donnée bancaire n'est concernée.",
+  "timeline": [
+    {
+      "date": "2024-11-12",
+      "event": "Picard notifie à 45 000 clients fidélité un accès non autorisé à leurs données personnelles ; la presse nationale relaie l'alerte le jour même."
+    }
+  ]
+}

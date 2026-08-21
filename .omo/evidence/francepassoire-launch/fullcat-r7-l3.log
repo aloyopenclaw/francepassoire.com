@@ -1,0 +1,230 @@
+================================================================
+full-catalog-completion — RAFALE 7, LANE 3 (T23/24, RETAIL &
+E-COMMERCE 2023-2025 : ENSEIGNES, PLATEFORMES DE VENTE,
+LIVRAISON) — 20/20 fiches
+Worktree : /var/folders/.../T/opencode/fp-r7l3
+Branche  : fiche/rafale7-l3 (créée sur main ff388a2, 791 fiches)
+Commit   : feat(catalog): rafale 7 — retail L3 (20 fiches)
+Sources  : presse éco/tech (Usine Digitale, LSA, La Tribune)
+           + presse générale (BFM, TF1, Le Parisien, Figaro)
+           + presse tech (01net, next.ink, Zataz, Numerama,
+           The Record, Cybersecurity Dive) + veille identifiée
+           (FrenchBreaches, BonjourLaFuite, Cyberattaque.org)
+           + CNIL (listes officielles FR/EN des sanctions)
+           + annuaire-entreprises.data.gouv.fr (SIREN).
+================================================================
+
+[0] RÉSUMÉ
+  Consigne : 20 fiches retail/e-commerce 2023-2025 (enseignes,
+  plateformes de vente, livraison — au-delà des grandes déjà
+  prises), zéro invention, Ton A, JAMAIS merge. Livré : 20/20
+  (13 revendiquées, 7 confirmées ; 2 en 2023, 12 en 2024,
+  6 en 2025 ; enseignes 15, plateformes e-commerce 3,
+  livraison 1, sanctions CNIL retail anonymisées 3 —
+  NB: livraison Mondial Relay/Colis Privé déjà couverte sur
+  main par r7-l2, voir §3 incident de run).
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  - Catalogue : dump intégral slug::entity::secteur::date des
+    791 fiches de main → index de dédup réel (grep slug AVANT
+    chaque écriture + git status M≠A après).
+  - FrenchBreaches : sitemap.xml intégral (1 529 URLs, 957
+    alertes) → 218 alertes 2023-2025 toutes collationnées une
+    à une contre le catalogue ; pages alertes fetchées (HTTP
+    200) pour dates, volumes, blocs « Données compromises ».
+  - Zataz : sitemap wp-sitemap intégral (6 020 URLs, lastmod)
+    → filtre 2023-2025 + lecture intégrale de ~35 articles
+    candidats (vague Horror404x sept. 2024, hoarder déc. 2024,
+    CNIL, livraison déc. 2025…).
+  - CNIL : tableaux intégraux FR + EN « sanctions prononcées »
+    → 53 lignes retail 2023-2025 diffées contre le catalogue,
+    ligne par ligne.
+  - BonjourLaFuite : dump daté intégral (532 fuites) → 30
+    candidats retail 2023-2025 extraits, cross-check volumes
+    et types de données ; URLs sources des entrées extraites
+    (dont la page officielle groupe-ldlc.com pour Top Achat).
+  - 01net : page vivante « Cyberattaques en France : les
+    dernières fuites » (chronologie 2024-2026) lue intégralement
+    → confirmations Top Achat, Colis Privé, Mondial Relay
+    (DumpSec), Picard, Kiabi, Lidl…
+  - next.ink : articles 149551 et 149926 (vague sept. 2024)
+    lus intégralement → notifications officielles Cybertek/
+    Grosbill, démentis Action/Temu/Darty (données recyclées).
+  - ~30 requêtes web ciblées (picard, go sport, decathlon,
+    vinted, cdiscount, fnac, darty, carrefour, monoprix,
+    galeries/printemps, vertbaudet/sarenza/rakuten, deliveroo/
+    stuart/uber eats, mondial relay, colis privé, chronopost
+    mai, CNIL 525 k€, CNIL 3,5 M€ DPD→Amazon France
+    Logistique, Ritz, VF Corporation, tendam, but…).
+  - annuaire-entreprises.data.gouv.fr (API recherche) :
+    SIREN résolus pour 1001pneus (513577429), Cybertek/Grosbill
+    (408772960 — même groupe confirmé par l'annuaire ET
+    next.ink), Picard Surgelés (784939688), Ze Camping
+    (802869701), Top Achat/Goodachat (952723716), Electro
+    Dépôt France (433744539), Nuhanciam (520729856), Chronopost
+    (383960135). Omis quand non résolus sans ambiguïté (Ritz,
+    LC Pass, VF Corporation, Tendam, Burger King Russie,
+    Electropolis, Vinted, Batterie-de-Portable.fr).
+
+[2] DÉDUP vs CATALOGUE — COLLATIONS EXPLICITES
+  Base : 791 fiches (main ff388a2 ; les 12 fiches r7-l2
+  transport/logistique y sont déjà, dont colis-prive-20251124
+  et mondial-relay-20251227).
+  `node scripts/check-doublons.mjs` → « 0 collision (±45 j,
+  même entité normalisée) », exit 0 (catalogue final : 811).
+  Collations notables (candidats écartés car déjà fichés ou
+  hors barre) :
+  - Déjà fichés sur main : Norauto (2024-12-02), Kiabi Seconde
+    Main (2025-01-14), Blackstore (2025-03-15), Intersport
+    (2025-03-19), Afflelou (2025-04-15), Optic 2000 (2025-08-08),
+    Adidas (2025-05-27), Mango (2025-10-14), Parashop, Schmidt,
+    Leroy Merlin, Taobento (fév. 2025 = même événement que la
+    reprise Zataz d'avril), Chronopost (2025-02-12, 2025-12-19),
+    Colis Privé (2025-11-24), Mondial Relay (2025-12-27),
+    Amazon France Logistique (= « société de support
+    logistique » 32 M€, 2023-12-27), La Poste (2025-03-02),
+    Zadig & Voltaire (2024-06-05), Le Slip Français, Cultura,
+    Boulanger, Truffaut, GIE centres commerciaux (2025-11-13),
+    jeux dématérialisés CNIL (2024-12-19), superettes (2025),
+    détaillant sport CNIL (2025-04-10)…
+  - Recirculations du MÊME incident (barre « événement
+    distinct » du précédent r6-l3 — ffmoto) : Boulanger mars
+    2024 puis avril 2025 (mêmes données 27 M), LDLC déc. 2024
+    (re-vente de la base fév. 2024, fiche ldlc-20240228),
+    Sport 2000 août et déc. 2024 (base avr. 2024), Auchan
+    déc. 2024 « cagnottes » (fiche auchan-20241119, écart 12 j),
+    Chronopost fév. 2025 vente des données de janvier (01net
+    26-27/02 : même affaire, démenti du transporteur).
+  - Démentis formels / données recyclées (exclus) : Action,
+    Darty (ZeroBytes 3 M), Temu (next.ink 24/09/2024 :
+    CheckPoint confirme des données étrangères recyclées),
+    Carrefour janv. 2025 (13 M, démenti 23/01), Go Sport
+    déc. 2024 (DailyDarkWeb : pas de fuite), Decathlon « 888 »
+    mai 2024 (relais non-FR, aucun détail de données).
+  - Hors périmètre/pays : La Source (Canada), Benetton
+    (boutique indienne, clients Inde), IKEA Fourlis (Grèce/
+    Roumanie/Chypre/Bulgarie), KFC/Pizza Hut UK (Yum!),
+    Uber/Genova Burns (US), Schenkyou (Allemagne), Coupang,
+    Rakuten TV (média), RMN boutiques de musées (EPIC →
+    secteur public, hors lane), Electropolis retenu (clients
+    France explicitement listés par Zataz), Burger King Russie
+    retenu (Français présents dans la base selon le relais).
+  - Entités non nommées par les sources (infichables) :
+    « groupement de pharmaciens » 150 000 (Zataz janv. 2023),
+    plateforme running 190 000, agence de voyage 1,4 M,
+    « géant du sport français » accès admin 600 $ (Zataz
+    refuse de nommer), PepeJeans 2 707 064 (types de données
+    nulle part listés → data_types insourçables, écarté).
+  - CNIL 2023-2025 : 53 lignes retail diffées ; seules 3
+    manquaient au catalogue (télécoms 525 k€, restauration
+    6 k€, grande distribution 75 k€) → fichées.
+
+[3] FICHES LIVRÉES (20)
+  01 1001pneus-20230314 — 1001pneus.fr — revendiquée —
+     alerte clients + CNIL (Zataz) ; mdp + coordonnées
+     bancaires dans le périmètre annoncé.
+  02 vinted-20230327 — Vinted — revendiquée — credential
+     stuffing, cagnottes vidées (TF1 + Zataz).
+  03 vf-corporation-20231218 — VF Corporation (Vans, The
+     North Face, Timberland, Napapijri) — confirmée — ALPHV ;
+     35,5 M consommateurs (dépôt réglementaire US) ; alertes
+     clients mars 2024 (Zataz + The Record + Cybersecurity
+     Dive).
+  04 ritz-20240112 — La Boutique du Ritz — revendiquée —
+     17 000 comptes en vente (Zataz ; DPO confirme une enquête).
+  05 lc-pass-20240114 — LC Pass — revendiquée — 312 000
+     lignes en vente (Zataz).
+  06 commerce-de-detail-de-materiel-de-telecommunication-
+     20240404 — sanction CNIL 525 000 € (prospection sans
+     consentement) — confirmée.
+  07 cybertek-20240906 — vague Horror404x — confirmée
+     (notification officielle de l'enseigne) — Zataz + next.ink.
+  08 grosbill-20240906 — idem, enseigne du même groupe
+     (SIREN 408772960 commun) — confirmée — Zataz + next.ink.
+  09 tendam-20240912 — Medusa, 724,59 Go, rançon 800 k$
+     — revendiquée — Zataz.
+  10 nuhanciam-20240912 — 156 000 profils — revendiquée —
+     Zataz + Cyberattaque.org (relais 2026 de la même base).
+  11 burger-king-20241028 — Burger King Russie — revendiquée
+     — 5 627 676 clients diffusés / 30 M revendiquées, via
+     appli + Mindbox, Français présents (Zataz).
+  12 picard-20241112 — 45 000 clients fidélité — confirmée —
+     BFM + Le Parisien + FrenchBreaches.
+  13 ze-camping-20241127 — 1,6 M utilisateurs — revendiquée —
+     FrenchBreaches + BonjourLaFuite.
+  14 top-achat-20241212 — incident reconnu par l'enseigne —
+     confirmée — groupe-ldlc.com (officiel) + 01net + FB.
+  15 electro-depot-20241220 — collection « data hoarder »
+     déc. 2024 — revendiquée — FB + BLF.
+  16 chronopost-20250511 — base 1,93 Go / 3,64 M e-mails
+     (dont 1,9 M .fr) — revendiquée, non confirmée, démenti
+     févr. 2025 rappelé en description — Zataz + BrinzTech.
+     Distincte des fiches 2025-02-12 (210 000 signatures) et
+     2025-12-19 (860 000 colis Pickup) : périmètres de données
+     différents, écarts 88 j et 222 j.
+  17 electropolis-20250625 — 100 000 clients multi-pays dont
+     France — revendiquée — Zataz.
+  18 societe-exercant-une-activite-de-restauration-20250410 —
+     sanction CNIL 6 000 € (vidéosurveillance) — confirmée.
+  19 societe-exercant-une-activite-de-grande-distribution-
+     20250904 — sanction CNIL 75 000 € (vidéoprotection) —
+     confirmée.
+  20 batterie-de-portable-20251228 — ~120 000 clients notifiés
+     — confirmée — FrenchBreaches + BonjourLaFuite.
+
+  INCIDENT DE RUN (corrigé avant commit) : les fiches
+  colis-prive-20251119 et mondial-relay-20251226 ont d'abord
+  été écrites avant que `check-doublons` ne révèle (exit 1)
+  les fiches PUBLIÉES colis-prive-20251124 et
+  mondial-relay-20251227 (rafales précédentes, secteur
+  industrie). Cause : grep du dump catalogue sur les mauvais
+  mots-clés (« colissimo|chrono|dpd » sans « colis-prive|
+  mondial-relay ») au moment de la prospection livraison.
+  Fiches retirées, remplacées par les 2 sanctions CNIL retail
+  manquantes (18, 19). Leçon : grep slug ET nom d'entité
+  AVANT écriture, check-doublons tôt, pas seulement en fin.
+
+[4] VÉRIFICATIONS
+  - zod (temp-vitest tests/tmp-r7l3-validation.test.ts, exécuté
+    depuis le dépôt principal sur le worktree, fichier retiré
+    après passage) : 20/20 fiches valides, slug=fichier,
+    secteur retail, fenêtre 2023-2025, catalogue 811, slugs
+    uniques, timelines croissantes.
+  - `npx vitest run` dans le worktree (node_modules symlinké)
+    : 29 fichiers / 1 174 tests verts.
+  - `node scripts/check-doublons.mjs` : « 0 collision (±45 j,
+    même entité normalisée) », exit 0.
+  - Gate Ton A (script ad hoc) : 0 violation — descriptions
+    64-105 mots, phrases ≤ 25 mots, événements ≤ 40 mots.
+  - Sondage d'URLs : 29 URLs sources distinctes, curl -L UA
+    navigateur → toutes HTTP 200. Les URLs Usine Digitale
+    (403 anti-bot) et Ouest-France/LSA (403) ont été écartées
+    des fiches au profit de TF1/BFM/Le Parisien (200).
+  - `npx astro build` : 1 657 pages, les 20 slugs présents
+    dans dist/fiche/.
+  - SIREN résolus via l'API annuaire-entreprises.data.gouv.fr
+    (8 fiches) ; omis ailleurs par prudence.
+
+[5] RISQUES RÉSIDUELS
+  - Fiches mono-source (précédent catalogue : adidas-20250527,
+    79 fiches à 1 source) : 1001pneus, ritz, lc-pass, tendam,
+    burger-king, electropolis — toutes sur articles Zataz
+    détaillés avec chiffres et données listées.
+  - Chronopost mai 2025 : base non confirmée, entité ayant
+    démenti des revendications voisines — statut revendiquée,
+    démenti rappelé en description.
+  - Burger King (Russie) : France-link = « des Français
+    présents dans la base » selon le service veille de Zataz ;
+    entité étrangère, revendication non confirmée.
+  - Tendam/Electropolis : groupes étrangers présents en
+    France (Springfield FR ; clients France listés par Zataz
+    pour Electropolis) — précédents Mango/Adidas/Lovense.
+  - VF Corporation : statut confirmée appuyé sur les
+    notifications officielles aux clients et le dépôt
+    réglementaire US (35,5 M) relayés par la presse.
+  - Les volumes « count=0 » suivent le précédent des fiches
+    sanction CNIL (volume non précisé par la décision).
+  - Aucun post social émis (sanction permanente respectée).
+  - JAMAIS merge : la PR reste ouverte pour la chaîne
+    (append-registry → publish-anchors → verify-registry
+    exit 0) avant toute fusion.

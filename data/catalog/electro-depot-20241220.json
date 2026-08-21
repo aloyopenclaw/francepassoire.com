@@ -1,0 +1,38 @@
+{
+  "slug": "electro-depot-20241220",
+  "entity": "Electro Dépôt",
+  "siren": "433744539",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-12-20",
+    "publication": "2024-12-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; enseigne française citée dans une collection de données françaises exposées par un « collectionneur »"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : Electro Dépôt cité dans la collection d'un « data hoarder » (20 décembre 2024)",
+      "url": "https://frenchbreaches.com/alertes/electro-depot-blf_697f831a59b2d",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite — Electro Dépôt, fuite recensée (entrée du 20 décembre 2024)",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 décembre 2024, FrenchBreaches et BonjourLaFuite recensent une fuite attribuée à Electro Dépôt. Cette enseigne française déstocke de l'électroménager et du high-tech. Les données apparaissent dans une collection de bases françaises constituée par un acteur surnommé « collectionneur de données » par la presse spécialisée. Ce dernier a également cité Go Sport et Sport 2000 le même jour. Le volume et la nature exacte des enregistrements ne sont pas détaillés par les relais. L'enseigne n'a pas publié de communication confirmant la compromission à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-12-20",
+      "event": "Les traqueurs FrenchBreaches et BonjourLaFuite recensent une fuite attribuée à Electro Dépôt au sein d'une collection de données françaises."
+    }
+  ]
+}
