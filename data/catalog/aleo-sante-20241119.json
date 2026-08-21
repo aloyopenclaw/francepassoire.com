@@ -1,0 +1,50 @@
+{
+  "slug": "aleo-sante-20241119",
+  "entity": "Aléo Santé",
+  "siren": "316778505",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-19",
+    "publication": "2024-11-19"
+  },
+  "volume": {
+    "count": 758912,
+    "unit": "enregistrements",
+    "label": "758 912 dossiers patients mis en vente selon le vendeur « near2tlg » ; données issues d'un seul établissement selon l'éditeur Softway Medical ; groupe Aléo Santé identifié par la presse (14 cliniques et centres de santé, Paris et sud francilien)"
+  },
+  "data_types": ["identite", "coordonnees", "sante"],
+  "sources": [
+    {
+      "label": "01net — Les dossiers médicaux de 750 000 Français ont été piratés (19 novembre 2024)",
+      "url": "https://www.01net.com/actualites/vol-donnees-france-dossiers-medicaux-750-000-francais-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Médecin traitant, ordonnances… Les données de santé de 750 000 patients d'un établissement francilien piratées (21 novembre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/medecin-traitant-ordonnances-les-donnees-de-sante-de-750-000-patients-dun-etablissement-francilien-piratees-21-11-2024-OCZL5RQA2VAQNEMHG4ZY25OMNA.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde — Ce que l'on sait sur le vol des données médicales de 750 000 personnes (20 novembre 2024, article archivé)",
+      "url": "https://web.archive.org/web/2024/https://www.lemonde.fr/pixels/article/2024/11/20/ce-que-l-on-sait-sur-le-vol-des-donnees-medicales-de-750-000-personnes_6405519_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "BleepingComputer — Cyberattack at French hospital exposes health data of 750,000 patients (20 novembre 2024)",
+      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-at-french-hospital-exposes-health-data-of-750-000-patients/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 novembre 2024, le vendeur « near2tlg » met en vente sur BreachForums les dossiers de 758 912 patients, obtenus via Mediboard, le logiciel de dossiers patients édité par Softway Medical. Y figurent identité, coordonnées, médecin traitant, ordonnances, historique de mutuelle et certificats de décès. L'éditeur confirme une cyberattaque chez un client : un compte à privilèges a été usurpé dans l'infrastructure de l'établissement. La presse identifie le groupe Aléo Santé, dont plusieurs cliniques franciliennes étaient citées dans l'annonce. Le nombre de personnes concernées n'est pas confirmé par le groupe.",
+  "timeline": [
+    {
+      "date": "2024-11-19",
+      "event": "Une base de 758 912 dossiers patients extraite via Mediboard est mise en vente ; Softway Medical confirme une cyberattaque chez un client hébergeant le logiciel."
+    },
+    {
+      "date": "2024-11-21",
+      "event": "La presse identifie l'établissement concerné au groupe Aléo Santé ; l'éditeur précise qu'un compte à privilèges a été usurpé chez le client."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "universite-paris-saclay-20241009",
+  "entity": "Université Paris-Saclay",
+  "siren": "130026024",
+  "secteur": "recherche",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-09",
+    "publication": "2024-10-10",
+    "confirmation": "2024-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "1 To de données revendiqué par le groupe RansomHouse ; échantillon publié de 193 fichiers PDF issus d'a priori 44 candidatures de master (2021) ; seconde divulgation de 1,4 To le 11 novembre 2024 ; personnes concernées non communiquées"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Université Paris-Saclay — FAQ piratage (communication officielle de l'établissement)",
+      "url": "http://www.universite-paris-saclay.fr/faq-piratage",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT — Université Paris-Saclay : RansomHouse revendique le vol de 1 To de données (11 octobre 2024)",
+      "url": "https://www.lemagit.fr/actualites/366613154/Universite-Paris-Saclay-RansomHouse-revendique-le-vol-de-1-To-de-donnees",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Après la cyberattaque contre l'université Paris-Saclay, les pirates ont diffusé des données volées (14 octobre 2024)",
+      "url": "https://actu.fr/ile-de-france/gif-sur-yvette_91272/essonne-apres-la-cyberattaque-contre-l-universite-paris-saclay-les-pirates-ont-diffuse-des-donnees-volees_61730895.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 août 2024, l'Université Paris-Saclay est frappée par une cyberattaque au rançongiciel qui interrompt ses services numériques ; une plainte est déposée le 20 août. Le 9 octobre, le groupe RansomHouse revendique l'opération et le vol d'un téraoctet, publiant un échantillon : 193 fichiers PDF issus d'une quarantaine de candidatures de master de 2021 — CV, relevés de notes, lettres, un document d'identité. L'université, accompagnée de l'ANSSI, déclare la violation à la CNIL et contacte chaque personne concernée ; une seconde divulgation de 1,4 To intervient le 11 novembre. Aucune rançon ne sera payée.",
+  "timeline": [
+    {
+      "date": "2024-08-11",
+      "event": "Cyberattaque détectée à l'Université Paris-Saclay ; l'ANSSI accompagne l'établissement, une plainte est déposée le 20 août."
+    },
+    {
+      "date": "2024-10-09",
+      "event": "RansomHouse revendique le vol d'un téraoctet et publie 193 fichiers PDF liés à 44 candidatures de master de 2021."
+    },
+    {
+      "date": "2024-11-11",
+      "event": "Une seconde divulgation de 1,4 To est constatée et fait l'objet d'une nouvelle déclaration à la CNIL."
+    }
+  ]
+}

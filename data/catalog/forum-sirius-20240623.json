@@ -1,0 +1,49 @@
+{
+  "slug": "forum-sirius-20240623",
+  "entity": "Sirius (Forum Sirius)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-06-23",
+    "publication": "2024-06-26",
+    "confirmation": "2024-07-08"
+  },
+  "volume": {
+    "count": 5986188,
+    "unit": "enregistrements",
+    "label": "5 986 188 enregistrements mis en vente 2 000 dollars sur BreachForums ; « environ six millions de données personnelles » confirmées par le directeur de Sirius ; un peu plus de 400 salles de spectacles clientes concernées ; aucune donnée bancaire (paiement externalisé)"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "ZDNet — Le piratage d'un prestataire de billetterie affecte 400 salles de spectacles en France (31 juillet 2024)",
+      "url": "https://www.zdnet.fr/actualites/le-piratage-dun-prestataire-de-billetterie-affecte-400-salles-de-spectacles-en-france-394352.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — 400 salles de spectacles françaises ont été touchées par une cyberattaque (8 juillet 2024)",
+      "url": "https://www.clubic.com/actualite-531864-salles-de-spectacles-francaises-ont-ete-touchees-une-cyberattaque-des-millions-de-donnees-personnelles-en-vente-sur-le-dark-web.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — 5,9 millions de données de Français sont en vente sur l'Amazon des cybercriminels (26 juin 2024)",
+      "url": "https://www.01net.com/actualites/59-millions-donnees-francais-vente-amazon-cybercriminels.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 juin 2024, une archive présentée comme issue de Sirius, éditeur du logiciel de billetterie Forum Sirius utilisé par plus de 400 salles françaises, est proposée à la vente : 5 986 188 enregistrements — identités, adresses, téléphones, e-mails et mots de passe de comptes clients. L'alerte est donnée par le chercheur SaxX le 26 juin. Les attaquants ont subtilisé des identifiants d'accès à un serveur de production. Le directeur de Sirius confirme environ six millions de données dérobées, déclare l'incident clos et les mots de passe réinitialisés ; les salles et l'éditeur notifient la CNIL.",
+  "timeline": [
+    {
+      "date": "2024-06-23",
+      "event": "Une archive de près de 6 millions d'entrées attribuée à Sirius est mise en vente 2 000 dollars sur un forum, selon DailyDarkWeb."
+    },
+    {
+      "date": "2024-06-26",
+      "event": "Le chercheur SaxX révèle la mise en vente ; l'intrusion, signalée le 28 juin, visait un serveur de production de la billetterie."
+    },
+    {
+      "date": "2024-07-08",
+      "event": "Le directeur de Sirius confirme environ six millions de données dérobées ; mots de passe réinitialisés, signalements CNIL par les salles."
+    }
+  ]
+}

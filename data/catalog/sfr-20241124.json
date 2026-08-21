@@ -1,0 +1,40 @@
+{
+  "slug": "sfr-20241124",
+  "entity": "SFR",
+  "siren": "343059564",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-24",
+    "publication": "2024-11-25"
+  },
+  "volume": {
+    "count": 3600000,
+    "unit": "personnes",
+    "label": "plus de 3,6 millions de clients selon la mise en vente relayée par le chercheur SaxX (noms, prénoms, e-mails, adresses postales, dates et départements de naissance, téléphones) ; un fichier de 150 000 IBAN restait en vente ; SFR conteste toute nouvelle fuite"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Le Monde informatique — Plus de 3,6 millions de données clients de SFR vendues sur le dark web (25 novembre 2024)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-plus-de-3-6-millions-de-donnees-clients-de-sfr-vendues-sur-le-dark-web-95346.html",
+      "kind": "article"
+    },
+    {
+      "label": "ChannelNews — Importante fuite de données personnelles chez SFR (26 novembre 2024)",
+      "url": "https://www.channelnews.fr/importante-fuite-de-donnees-personnelles-chez-sfr-140741",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 novembre 2024, un groupe de cybercriminels — revendiquant aussi des piratages de La Poste Mobile et d'Orange — diffuse gratuitement sur le dark web une base attribuée à SFR : plus de 3,6 millions de clients selon le chercheur SaxX, avec identité, coordonnées, dates et départements de naissance. Un fichier distinct de 150 000 IBAN resterait en vente. SFR conteste avoir subi une nouvelle fuite : selon l'opérateur, ces données relèvent d'un incident passé, pour lequel les personnes concernées et les autorités ont déjà été notifiées.",
+  "timeline": [
+    {
+      "date": "2024-11-24",
+      "event": "Un groupe cybercriminel met en vente puis diffuse une base de plus de 3,6 millions de clients attribuée à SFR, repérée par SaxX."
+    },
+    {
+      "date": "2024-11-25",
+      "event": "SFR conteste toute nouvelle fuite et indique que les données se rapportent à un incident passé déjà notifié aux autorités."
+    }
+  ]
+}

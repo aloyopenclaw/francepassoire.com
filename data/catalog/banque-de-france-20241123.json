@@ -1,0 +1,45 @@
+{
+  "slug": "banque-de-france-20241123",
+  "entity": "Banque de France",
+  "siren": "572104891",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-23",
+    "publication": "2024-11-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non étayés : le groupe Near2tlg revendique dossiers complets des employés (identités, postes, salaires, adresses) et informations clients sensibles ; l'échantillon publié se limite à des documents administratifs internes, sans données personnelles vérifiées"
+  },
+  "data_types": ["identite", "financier", "documents"],
+  "sources": [
+    {
+      "label": "01net — La Banque de France dément une fuite de données, mais confirme une attaque (26 novembre 2024)",
+      "url": "https://www.01net.com/actualites/banque-france-serait-victime-fuite-donnees.html",
+      "kind": "article"
+    },
+    {
+      "label": "InCyber — Near2tlg revendique un vol de données appartenant à la Banque de France (27 novembre 2024)",
+      "url": "https://incyber.org/article/near2tlg-revendique-un-vol-de-donnees-appartenant-a-la-banque-de-france/",
+      "kind": "article"
+    },
+    {
+      "label": "Cachem — Série de cyberattaques en France : un mois de novembre sous tension (9 décembre 2024)",
+      "url": "https://www.cachem.fr/cyberattaques-france-novembre/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 novembre 2024, le groupe Near2tlg met en vente sur BreachForums et Telegram une base présentée comme issue de la Banque de France : dossiers des employés (identités, postes, salaires, adresses), informations clients et documents internes, d'abord 50 000 dollars puis 10 000 dollars. L'échantillon publié se réduit à des fiches de poste et documents administratifs. Le 25 novembre, l'institution reconnaît « un accès extérieur occasionnel sur un extranet RH », aussitôt fermé, et dément toute compromission de données personnelles ou financières sensibles. Les affirmations des attaquants ne sont pas établies.",
+  "timeline": [
+    {
+      "date": "2024-11-23",
+      "event": "Near2tlg met en vente une base présentée comme issue de la Banque de France, avec un échantillon de documents internes."
+    },
+    {
+      "date": "2024-11-25",
+      "event": "La Banque de France reconnaît un accès occasionnel à un extranet RH, fermé depuis, et dément toute fuite de données sensibles."
+    }
+  ]
+}

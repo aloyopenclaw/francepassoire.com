@@ -1,0 +1,55 @@
+{
+  "slug": "departement-alpes-maritimes-20221128",
+  "entity": "Département des Alpes-Maritimes",
+  "siren": "220600019",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-28",
+    "publication": "2022-11-29",
+    "confirmation": "2022-11-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "292 Go de données revendiqués par Play Ransomware, dont 13 Go publiés le 28 novembre : photocopies de passeports, cartes grises, dossiers RH (paie, recrutement) et fichiers de collèges ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "20 Minutes — Alpes-Maritimes : hackers, rançon, fichiers publiés… La cyberattaque du conseil départemental désormais signée (1er décembre 2022)",
+      "url": "https://www.20minutes.fr/societe/4012600-20221201-alpes-maritimes-hackers-rancon-fichiers-publies-cyberattaque-conseil-departemental-desormais-signee",
+      "kind": "article"
+    },
+    {
+      "label": "Banque des Territoires — Les Alpes-Maritimes face à une fuite massive de ses données (29 novembre 2022)",
+      "url": "https://www.banquedesterritoires.fr/les-alpes-maritimes-face-une-fuite-massive-de-ses-donnees",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien — Le département des Alpes-Maritimes victime d'une cyberattaque (1er décembre 2022)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60333-le-departement-des-alpes-maritimes-victime-d-une-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde — Des données volées au conseil départemental des Alpes-Maritimes diffusées en ligne (30 novembre 2022, article archivé)",
+      "url": "https://web.archive.org/web/2023/https://www.lemonde.fr/pixels/article/2022/11/30/des-donnees-volees-au-conseil-departemental-des-alpes-maritimes-diffusees-en-ligne_6152288_4408996.html",
+      "kind": "archive"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 novembre 2022, le conseil départemental des Alpes-Maritimes est frappé par le rançongiciel Play, introduit par l'identité usurpée d'un agent ; les réseaux sont coupés, une plainte déposée et la CNIL notifiée. Dix jours plus tard, Play réclame une rançon et menace de publier les données. Le 28 novembre, le groupe publie 13 Go sur 292 revendiqués : photocopies de passeports, cartes grises, dossiers de paie et fichiers liés aux collèges. La collectivité parle de « fichiers bureautiques non stratégiques », représentant 0,1 % de ses données ; les personnes concernées n'ont pas été dénombrées.",
+  "timeline": [
+    {
+      "date": "2022-11-10",
+      "event": "Rançongiciel Play détecté dans la nuit du 9 au 10 novembre ; réseaux coupés, plainte déposée, CNIL notifiée, Orange Cyberdefense mobilisée."
+    },
+    {
+      "date": "2022-11-25",
+      "event": "En séance plénière, le département décrit une exfiltration par usurpation d'identité d'un agent, limitée à 0,1 % du volume global de ses données."
+    },
+    {
+      "date": "2022-11-28",
+      "event": "Play publie 13 Go de fichiers sur 292 Go revendiqués : passeports, cartes grises, paie et dossiers de collèges."
+    }
+  ]
+}
