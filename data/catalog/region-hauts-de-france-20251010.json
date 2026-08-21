@@ -1,0 +1,49 @@
+{
+  "slug": "region-hauts-de-france-20251010",
+  "entity": "Région Hauts-de-France (système d’information des lycées publics)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-10",
+    "publication": "2025-10-10",
+    "confirmation": "2025-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "près de 80 % des 269 lycées publics touchés ; nombre de personnes concernées non chiffré, des exfiltrations revendiquées par des groupes de rançongiciel"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Région Hauts-de-France (communiqué) — Cyberattaque contre le système d’information des lycées : point de situation au 31 octobre 2025",
+      "url": "https://www.hautsdefrance.fr/communique-de-presse-cyberattaque-contre-le-systeme-dinformation-des-lycees-en-hauts-de-france-point-de-situation-au-31-octobre-2025/",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFM Business — Hauts-de-France : 80 % des lycées de la région victimes d’une cyberattaque par rançongiciel (10 octobre 2025)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/hauts-de-france-80-des-lycees-de-la-region-victimes-d-une-cyberattaque-par-rancongiciel_AV-202510100621.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Lycées des Hauts-de-France : ≈300 000 comptes et 1,1 To de données exfiltrés revendiqués",
+      "url": "https://frenchbreaches.com/alertes/lycees-des-hauts-de-france-5ba1a9c00a08",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 10 octobre 2025, une cyberattaque par rançongiciel a visé le système d’information des lycées publics des Hauts-de-France. L’académie de Lille a indiqué qu’environ 80 % des établissements étaient touchés et que l’accès à Internet avait été suspendu. La presse a attribué l’attaque au groupe Qilin. Une cellule de crise conjointe a été ouverte et une plainte a été déposée. Les premiers communiqués évoquaient surtout des données techniques. Au 31 octobre, la Région annonçait la reprise des services administratifs dans la quasi-totalité des 269 lycées publics, la partie pédagogique étant restaurée progressivement. Des volumes exfiltrés ont été revendiqués sur des forums par des groupes de rançongiciel.",
+  "timeline": [
+    {
+      "date": "2025-10-10",
+      "event": "Un rançongiciel identifié Qilin par la presse paralyse le système d’information des lycées publics ; Internet est suspendu dans les établissements."
+    },
+    {
+      "date": "2025-10-31",
+      "event": "La Région annonce la reprise des outils administratifs dans la quasi-totalité des 269 lycées ; la restauration pédagogique se poursuit."
+    }
+  ]
+}

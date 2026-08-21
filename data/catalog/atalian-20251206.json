@@ -1,0 +1,54 @@
+{
+  "slug": "atalian-20251206",
+  "entity": "Groupe Atalian (services aux entreprises)",
+  "siren": "572181170",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-06",
+    "publication": "2025-12-26",
+    "confirmation": "2025-12-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; Atalian évoque un faible pourcentage des données stockées sur les espaces concernés"
+  },
+  "data_types": [
+    "documents",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe Atalian (communiqué de presse officiel, 26 décembre 2025)",
+      "url": "https://atalian.com/wp-content/uploads/2025/12/Communique-de-presse.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Atalian France — Publication d’un communiqué suite à l’acte de cyber-malveillance du 6 décembre 2025",
+      "url": "https://atalian.fr/publication-dun-communique-de-presse-suite-a-lacte-de-cyber-malveillance-dont-a-ete-victime-le-groupe-atalian-le-6-decembre-2025/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ostraca — Groupe Atalian : exfiltration de données après rançongiciel (Qilin)",
+      "url": "https://blog.ostraca.fr/fuites-de-donnees/fuite-groupe-atalian-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 décembre 2025, le groupe Atalian, acteur français des services aux entreprises, a subi un acte de cyber-malveillance de type rançongiciel. L’entreprise l’a confirmé dans un communiqué publié le 26 décembre. Des données ont potentiellement été exfiltrées : données bancaires liées à des contrats clients, documents d’identité et données RH internes de gestion du personnel, dont certaines données sensibles. Atalian évoque un faible pourcentage des données stockées sur les espaces concernés. Le groupe a circonscrit l’attaque, déposé plainte et adressé une notification initiale à la CNIL dans les délais légaux. Vers le 28 décembre, le groupe Qilin a revendiqué la compromission.",
+  "timeline": [
+    {
+      "date": "2025-12-06",
+      "event": "Rançongiciel sur les systèmes du groupe Atalian ; mesures de circonscription immédiates."
+    },
+    {
+      "date": "2025-12-26",
+      "event": "Communiqué officiel : exfiltration potentielle de données bancaires, documents d’identité et données RH."
+    },
+    {
+      "date": "2025-12-28",
+      "event": "Le groupe Qilin revendique l’attaque et publie des extraits selon la veille."
+    }
+  ]
+}

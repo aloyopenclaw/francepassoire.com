@@ -1,0 +1,55 @@
+{
+  "slug": "fff-20250217",
+  "entity": "Fédération française de football (FFF)",
+  "siren": "303742480",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-17",
+    "publication": "2025-02-21",
+    "confirmation": "2025-02-21"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "≈1,5 million de personnes potentiellement concernées selon les estimations de presse relayées par Ostraca ; chiffre non confirmé par la FFF"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — Cyberattaque contre la FFF : des données et photos d’identité volées (21 février 2025)",
+      "url": "https://www.clubic.com/actualite-554577-cyberattaque-contre-la-federation-francaise-de-football-des-donnees-et-photos-d-identite-volees.html",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques — FFF : une cyberattaque expose les données des licenciés, l’enquête est en cours",
+      "url": "https://www.solutions-numeriques.com/fff-une-cyberattaque-expose-les-donnees-des-licencies-lenquete-est-en-cours/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Nouvelle fuite de données à la Fédération française de football",
+      "url": "https://www.zataz.com/nouvelle-fuite-de-donnees-a-la-federation-francaise-de-football/",
+      "kind": "article"
+    },
+    {
+      "label": "Ostraca — FFF : vol de données de licenciés (février 2025)",
+      "url": "https://blog.ostraca.fr/fuites-de-donnees/fuite-fff-fevrier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 février 2025, la Fédération française de football a détecté un accès non autorisé à son logiciel de gestion des licenciés et du personnel administratif. L’information a été rendue publique le 21 février par courriel aux personnes concernées. Les données extraites comprennent nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro interne, mais aussi, pour certaines personnes, la photo et la copie du justificatif d’identité. La FFF précise que mots de passe, coordonnées bancaires et données de santé sont préservés. Le compte compromis a été désactivé, les mots de passe réinitialisés. Les estimations de presse évoquent environ 1,5 million de personnes. Un second vol a visé la fédération en novembre 2025.",
+  "timeline": [
+    {
+      "date": "2025-02-17",
+      "event": "Détection d’un accès non autorisé au logiciel de gestion des licenciés via un compte compromis."
+    },
+    {
+      "date": "2025-02-21",
+      "event": "La FFF informe les personnes concernées ; la presse spécialisée documente photos et pièces d’identité concernées."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "king-jouet-20250208",
+  "entity": "King Jouet",
+  "siren": "347926719",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-02-08",
+    "publication": "2025-02-12",
+    "confirmation": "2025-02-12"
+  },
+  "volume": {
+    "count": 25000,
+    "unit": "personnes",
+    "label": "moins de 25 000 clients impactés selon l’enseigne (périmètre de deux magasins) ; le pirate revendiquait 4 347 028 entrées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — King Jouet piratée : l’enseigne et le hacker se livrent à une bataille des chiffres (13 février 2025)",
+      "url": "https://www.clubic.com/actualite-553575-king-jouet-a-ete-piratee-l-enseigne-et-le-hacker-se-livrent-a-une-bataille-des-chiffres-digne-d-une-manifestation.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Piratage chez King Jouet : plus de 4 millions de données compromises (14 février 2025)",
+      "url": "https://www.zataz.com/un-piratage-dampleur-frappe-king-jouet-plus-de-4-millions-de-donnees-compromises/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 8 au 9 février 2025, un pirate a revendiqué l’intrusion dans la base de données de King Jouet, enseigne française de jouets, et a mis en vente 4 347 028 entrées pour environ 150 dollars, après avoir affiché l’attaque sur le site de l’enseigne. Le 12 février, King Jouet a reconnu une cyberattaque limitée à l’interface de suivi des commandes en ligne, sur un périmètre de deux magasins. Selon l’enseigne, moins de 25 000 clients ont été impactés, très loin du chiffre revendiqué. Les données concernées comprennent identifiant client, dates et états de commandes, noms, e-mails et téléphones. L’écart illustre le gonflement des volumes par les pirates.",
+  "timeline": [
+    {
+      "date": "2025-02-08",
+      "event": "Un pirate revendique le piratage de King Jouet et met en vente 4 347 028 entrées pour 150 dollars."
+    },
+    {
+      "date": "2025-02-12",
+      "event": "L’enseigne reconnaît une attaque limitée à deux magasins et moins de 25 000 clients impactés."
+    }
+  ]
+}

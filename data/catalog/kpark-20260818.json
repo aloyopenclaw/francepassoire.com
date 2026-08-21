@@ -1,0 +1,42 @@
+{
+  "slug": "kpark-20260818",
+  "entity": "KparK",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; numéros de téléphone de fichiers de prospection transmis à Bloctel (seule donnée identifiée comme concernée par l’entreprise)"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — KparK informe ses clients d’un incident de sécurité lié au service Bloctel",
+      "url": "https://frenchbreaches.com/alertes/kpark-mszck35nr7j8i75741n",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — KparK : ses fichiers de prospection touchés par le piratage de Bloctel",
+      "url": "https://www.cyberattaque.org/kpark-ses-fichiers-de-prospection-touches-par-le-piratage-de-bloctel/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez K par K liée au service Bloctel",
+      "url": "https://fuitesinfos.fr/article/2026-08-18-k-par-k",
+      "kind": "article"
+    }
+  ],
+  "description": "KparK a notifié certaines personnes d'un incident affectant des fichiers de prospection transmis au service Bloctel d'opposition au démarchage téléphonique. Selon la notification relayée le 18 août 2026, un tiers non autorisé a usurpé un compte professionnel du service et téléchargé les fichiers échangés ; seule la donnée « numéro de téléphone » est identifiée comme concernée pour les destinataires. L'incident s'inscrit dans la fuite Bloctel documentée par la DGCCRF en août ; KparK indique avoir notifié la CNIL et poursuivre ses investigations.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Notification relayée : usurpation d’un compte professionnel Bloctel et téléchargement de fichiers de prospection ; numéros de téléphone concernés, CNIL notifiée."
+    }
+  ]
+}

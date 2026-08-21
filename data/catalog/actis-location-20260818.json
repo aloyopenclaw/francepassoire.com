@@ -1,0 +1,46 @@
+{
+  "slug": "actis-location-20260818",
+  "entity": "Actis Location",
+  "siren": "447723248",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; clients informés individuellement par l'entreprise (données personnelles, documents et courriels liés à la relation contractuelle)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Actis Location confirme une fuite de données après un accès non autorisé à l'un de ses outils",
+      "url": "https://frenchbreaches.com/alertes/actis-location-mszcfq4rpfe01mp58ei",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Actis Location : factures, devis et RIB de clients exposés après une cyberattaque",
+      "url": "https://www.cyberattaque.org/actis-location-factures-devis-et-rib-de-clients-exposes-apres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Cyberattaque chez Actis Location",
+      "url": "https://fuitesinfos.fr/article/2026-08-18-actis-location",
+      "kind": "article"
+    }
+  ],
+  "description": "Actis Location, loueur français de matériels de manutention pour l'industrie, le bâtiment et l'agriculture, a informé ses clients d'un incident de sécurité affectant l'un de ses outils de gestion de la relation client. Selon la notification relayée le 18 août 2026, un tiers non autorisé a accédé à des données personnelles ainsi qu'à des documents et courriels liés à la relation contractuelle ; les relais de veille mentionnent des factures, devis et RIB. L'entreprise indique avoir sécurisé le système, poursuivre ses vérifications et avoir déclaré l'incident à la CNIL. Les volumes ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Les relais documentent la notification d'Actis Location : accès non autorisé à un outil de gestion de la relation client, données personnelles, documents et courriels consultés ; déclaration à la CNIL."
+    }
+  ]
+}

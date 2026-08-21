@@ -1,0 +1,45 @@
+{
+  "slug": "grenoble-em-20251229",
+  "entity": "Grenoble École de Management (GEM)",
+  "siren": "817389141",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-29",
+    "publication": "2025-12-31",
+    "confirmation": "2025-12-31"
+  },
+  "volume": {
+    "count": 400000,
+    "unit": "personnes",
+    "label": "plus de 400 000 personnes et 1,35 Go revendiqués par « CZX » ; intrusion confirmée par l’école, périmètre en cours d’analyse"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "IT-Connect — Cyberattaques : l’Université de Lille et Grenoble École de Management victimes d’une fuite de données (31 décembre 2025)",
+      "url": "https://www.it-connect.fr/cyberattaques-luniversite-de-lille-et-grenoble-ecole-de-management-victimes-dune-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Grenoble École de Management : ≈448 000 profils prospects et abonnés newsletters (29 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/grenoble-ecole-de-management-gem-alpine-business-school-221feca055a4",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 29 décembre 2025, un cybercriminel se présentant sous le pseudo « CZX » a affirmé sur BreachForums avoir infiltré les systèmes de Grenoble École de Management en novembre. Il revendique des informations sur plus de 400 000 personnes dans une archive de 1,35 Go : noms, e-mails, téléphones, adresses postales, parcours académiques et professionnels, statuts d’événements, préférences d’abonnement et adresses IP. Selon la presse, les données proviendraient d’un CRM ou outil marketing, avec abonnés à des newsletters et prospects externes. L’école, qui accueille environ 7 000 étudiants, a confirmé l’intrusion sur son site officiel, le périmètre étant en cours d’analyse.",
+  "timeline": [
+    {
+      "date": "2025-12-29",
+      "event": "« CZX » publie sur BreachForums une infiltration survenue en novembre selon lui : plus de 400 000 personnes, 1,35 Go."
+    },
+    {
+      "date": "2025-12-31",
+      "event": "L’école confirme l’intrusion sur son site officiel ; la presse spécialisée analyse la base issue d’un CRM."
+    }
+  ]
+}

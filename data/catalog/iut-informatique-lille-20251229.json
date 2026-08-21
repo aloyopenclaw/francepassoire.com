@@ -1,0 +1,42 @@
+{
+  "slug": "iut-informatique-lille-20251229",
+  "entity": "Université de Lille (IUT informatique)",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-29",
+    "publication": "2025-12-29"
+  },
+  "volume": {
+    "count": 7244,
+    "unit": "enregistrements",
+    "label": "7 244 enregistrements diffusés par un pirate se réclamant de « LAPSUS$ » ; données directement identificatoires"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données à l’IUT informatique de Lille : LAPSUS$ revendique 7 244 dossiers",
+      "url": "https://www.zataz.com/fuite-de-donnees-a-liut-informatique-de-lille/",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Cyberattaques : l’Université de Lille et Grenoble École de Management victimes d’une fuite de données (31 décembre 2025)",
+      "url": "https://www.it-connect.fr/cyberattaques-luniversite-de-lille-et-grenoble-ecole-de-management-victimes-dune-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 décembre 2025, le nom de l’IUT informatique de l’Université de Lille est apparu sur BreachForums. Un pirate se réclamant du groupe « LAPSUS$ » a affirmé avoir obtenu un accès interne et diffusé 7 244 enregistrements. Les données permettent d’identifier directement des personnes : identifiants internes NIP, noms, dates de naissance, adresses postales, e-mails privés et professionnels et numéros de téléphone. Zataz évoque un scénario de « copy cat », survenu après l’alerte touchant Grenoble École de Management la même semaine. Les enregistrements diffusés exposent les personnes à du phishing et à l’usurpation d’identité. La revendication n’a pas été confirmée publiquement par l’université à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-12-29",
+      "event": "Publication sur BreachForums : un pirate se réclamant de « LAPSUS$ » diffuse 7 244 enregistrements de l’IUT."
+    },
+    {
+      "date": "2025-12-31",
+      "event": "IT-Connect documente la série touchant l’enseignement supérieur français en fin d’année."
+    }
+  ]
+}

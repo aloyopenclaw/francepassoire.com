@@ -1,0 +1,52 @@
+{
+  "slug": "5asec-20250704",
+  "entity": "5àSec (enseigne de pressing)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-04",
+    "publication": "2025-07-16",
+    "confirmation": "2025-07-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué par l’enseigne ; DragonForce revendique 289,69 Go de données (≈1,2 million de comptes estimés par la veille)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "5àSec (information officielle) — Incident de cybersécurité : la plateforme de caisse visée dans la nuit du 4 au 5 juillet 2025",
+      "url": "https://www.5asec.lu/content/information-importante-suite-un-incident-de-cybersecurite",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — L’enseigne 5àSec victime d’une cyberattaque du groupe DragonForce ? (18 juillet 2025)",
+      "url": "https://www.clubic.com/actualite-573330-l-enseigne-5asec-victime-d-une-cyberattaque-du-groupe-dragonforce-le-compte-a-rebours-est-lance.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — 5àSec victime d’une cyberattaque massive : DragonForce balance toutes les infos copiées",
+      "url": "https://www.zataz.com/5asec-victime-dune-cyberattaque-massive-les-pirates-dragonforce-balances-toutes-les-infos-copiees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 4 au 5 juillet 2025, l’enseigne de pressing 5àSec a subi une attaque par rançongiciel qui a ralenti et bloqué les caisses de magasins le samedi matin. Un communiqué officiel publié le 7 juillet confirme l’incident : des données ont été dérobées pour faire pression sur l’entreprise. Pour les clients particuliers, il s’agit de données d’identification fournies en magasin : nom, prénom et potentiellement e-mail, téléphone et adresse postale. L’enseigne indique avoir refusé de payer la rançon, avoir redémarré ses systèmes grâce aux sauvegardes, avoir déclaré l’incident à la CNIL et déposé plainte. Le 16 juillet, le groupe DragonForce a revendiqué l’attaque et 289,69 Go de données.",
+  "timeline": [
+    {
+      "date": "2025-07-04",
+      "event": "Rançongiciel dans la nuit du 4 au 5 juillet ; blocage des caisses et cellule de crise chez 5àSec."
+    },
+    {
+      "date": "2025-07-07",
+      "event": "Communiqué officiel : vol de données d’identification clients confirmé, CNIL déclarée et plainte déposée."
+    },
+    {
+      "date": "2025-07-16",
+      "event": "DragonForce revendique l’attaque et 289,69 Go de données ; l’enseigne dit avoir refusé la rançon."
+    }
+  ]
+}

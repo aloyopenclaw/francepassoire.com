@@ -1,0 +1,44 @@
+{
+  "slug": "cnfpt-20250704",
+  "entity": "Centre national de la fonction publique territoriale (CNFPT)",
+  "siren": "180014045",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-04",
+    "publication": "2025-07-04",
+    "confirmation": "2025-07-04"
+  },
+  "volume": {
+    "count": 34000,
+    "unit": "personnes",
+    "label": "34 000 utilisateurs de la plateforme intervenants concernés selon le CNFPT"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Intrusion informatique : fuite massive de données sur la plateforme intervenants du CNFPT",
+      "url": "https://www.zataz.com/intrusion-informatique-fuite-massive-de-donnees-sur-la-plateforme-intervenants-du-cnfpt/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — CNFPT : 34 000 intervenants, dossiers KYC complets revendiqués (4 juillet 2025)",
+      "url": "https://frenchbreaches.com/alertes/cnfpt-164e0647ff60",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le Centre national de la fonction publique territoriale a confirmé une intrusion informatique sur la plateforme intervenants du site intervenant.cnfpt.fr, dédiée aux intervenants extérieurs. L’incident a été repéré après la constatation d’un accès illégitime. Les investigations, menées avec des experts externes, ont révélé qu’une partie ou la totalité des documents déposés par les intervenants avait pu être copiée. Les données personnelles de 34 000 utilisateurs sont concernées. Le CNFPT précise que le périmètre de l’attaque demeure limité à cette plateforme, sans propagation vers les autres services informatiques de l’institution, restés opérationnels. L’incident a été rendu public début juillet 2025.",
+  "timeline": [
+    {
+      "date": "2025-07-04",
+      "event": "Le CNFPT confirme l’intrusion sur la plateforme intervenants ; 34 000 utilisateurs concernés."
+    },
+    {
+      "date": "2025-07-05",
+      "event": "La veille documente la mise en vente de dossiers complets d’intervenants issus de la plateforme."
+    }
+  ]
+}

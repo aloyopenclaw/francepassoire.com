@@ -1,0 +1,48 @@
+{
+  "slug": "hospices-civils-de-lyon-20260806",
+  "entity": "Hospices Civils de Lyon (HCL)",
+  "siren": "266900273",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-08-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; professionnels et intervenants ayant collaboré aux HCL en 2020 (périmètre communiqué par l'établissement)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque confirmée chez un prestataire des Hospices Civils de Lyon : des données de professionnels potentiellement compromises",
+      "url": "https://frenchbreaches.com/alertes/hospices-civils-de-lyon-mshd1fdm90trgfi4n8v",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Hospices Civils de Lyon : cyberattaque",
+      "url": "https://www.cyberattaque.org/hospices-civils-de-lyon-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Hospices Civils de Lyon",
+      "url": "https://fuitesinfos.fr/article/2026-08-06-hospices-civils-de-lyon",
+      "kind": "article"
+    }
+  ],
+  "description": "Les Hospices Civils de Lyon ont informé les professionnels et intervenants ayant collaboré avec l'établissement en 2020 d'un incident de cybersécurité touchant l'un de leurs prestataires externes, signalé le 25 juin 2026. Selon l'établissement, une base de données historique utilisée lors d'une migration technique en 2020 a pu être accessible et exfiltrée à la suite de cette attaque. Les HCL précisent que leur propre système d'information n'a pas été compromis et qu'aucune donnée médicale de patients n'est concernée. Les volumes ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-06-25",
+      "event": "Les HCL sont informés d'un incident de cybersécurité chez un prestataire externe ; aucune compromission de leur propre système d'information n'est constatée selon l'établissement."
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Une notification aux professionnels et intervenants concernés, relayée par les veilles, décrit une base historique de 2020 ayant pu être accessible et exfiltrée."
+    }
+  ]
+}

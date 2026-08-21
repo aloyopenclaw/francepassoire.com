@@ -1,0 +1,44 @@
+{
+  "slug": "schmidt-20251205",
+  "entity": "Groupe Schmidt (Cuisinella et Schmidt)",
+  "siren": "326784709",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-05",
+    "publication": "2025-12-05",
+    "confirmation": "2025-12-05"
+  },
+  "volume": {
+    "count": 150000,
+    "unit": "personnes",
+    "label": "volume non communiqué par le groupe ; ≈150 000 prospects et clients selon la veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Fuite de données chez le groupe Schmidt (décembre 2025)",
+      "url": "https://www.zataz.com/fuite-de-donnees-chez-le-groupe-schmidt/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Schmidt Groupe (Cuisinella & Schmidt) : ≈150 000 prospects et clients (5 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/schmidt-groupe-cuisinella-schmidt-3c68c6e73c5a",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 5 décembre 2025 au soir, des milliers de clients du groupe Schmidt, leader français de la cuisine équipée et maison mère des enseignes Schmidt et Cuisinella, ont reçu un courriel signalant qu’un tiers non autorisé avait accédé à certaines de leurs données. Les coordonnées exposées comprennent civilité, nom, prénom, téléphone et adresse e-mail. Le groupe affirme qu’aucune donnée bancaire, adresse de résidence, pièce d’identité ou mot de passe n’a été touché. Il indique avoir mis fin à l’intrusion, lancé des investigations et notifié la CNIL. Le volume exact n’a pas été communiqué ; la veille l’estime à 150 000 contacts.",
+  "timeline": [
+    {
+      "date": "2025-12-05",
+      "event": "Courriels de Schmidt et Cuisinella aux clients : accès non autorisé à des coordonnées, intrusion terminée."
+    },
+    {
+      "date": "2025-12-06",
+      "event": "La veille et la presse spécialisée documentent la fuite et la notification à la CNIL."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "suez-eau-france-20260820",
+  "entity": "SUEZ Eau France",
+  "siren": "410034607",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-20",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; personnes notifiées individuellement (données échangées avec SUEZ Eau France pendant la période concernée)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — SUEZ Eau France : des données personnelles et des RIB potentiellement exposés après la cyberattaque d’un prestataire",
+      "url": "https://frenchbreaches.com/alertes/suez-eau-france-mt20mo6pymh9k6m7wzf",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — SUEZ : les données clients en fuite après une cyberattaque chez un prestataire",
+      "url": "https://www.cyberattaque.org/suez-les-donnees-clients-en-fuite-apres-une-cyberattaque-chez-un-prestataire/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données SUEZ Eau France",
+      "url": "https://fuitesinfos.fr/article/2026-08-20-suez-eau-france",
+      "kind": "article"
+    }
+  ],
+  "description": "SUEZ Eau France a informé des personnes concernées d'un incident de cybersécurité touchant l'un de ses prestataires techniques, révélé le 20 août 2026. Selon la notification, des attaquants ont accédé à certaines données, les ont extraites puis rendu une partie accessible sur Internet : identité, coordonnées, et selon les situations documents administratifs liés au contrat, pièces d'identité, photographies ou RIB. SUEZ indique ne pas être en mesure de confirmer que les données de chaque destinataire ont été dérobées, et poursuit ses investigations avec le prestataire.",
+  "timeline": [
+    {
+      "date": "2026-08-20",
+      "event": "Notification relayée : cyberattaque d’un prestataire technique, accès, extraction puis mise en ligne partielle de données ; SUEZ ne confirme pas le vol pour chaque destinataire."
+    }
+  ]
+}
