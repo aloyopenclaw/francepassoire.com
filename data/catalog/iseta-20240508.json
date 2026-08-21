@@ -1,0 +1,41 @@
+{
+  "slug": "iseta-20240508",
+  "entity": "Institut des sciences de l'environnement et des territoires d'Annecy (ISETA)",
+  "siren": "776603060",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-05-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués par RansomHub"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "GalaxyWarden — iseta.fr listed by RansomHub Ransomware Group (8 mai 2024)",
+      "url": "https://www.galaxywarden.com/blog/breach/iseta-fr-ransomhub-2024-05",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live — Victim: iseta.fr (RansomHub)",
+      "url": "https://www.ransomware.live/id/aXNldGEuZnJAcmFuc29taHVi",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 8 mai 2024, le groupe RansomHub a listé l'ISETA d'Annecy sur son site de fuite, selon GalaxyWarden. L'ISETA est l'Institut des sciences de l'environnement et des territoires. Le groupe malveillant revendique une attaque contre cet institut de recherche et d'enseignement d'Annecy. La revendication a été relayée début mai par des comptes de veille en cybersécurité, puis enregistrée par les trackers. L'institut n'a pas communiqué publiquement et l'exfiltration de données n'est pas documentée. Les volumes annoncés ne sont pas précisés.",
+  "timeline": [
+    {
+      "date": "2024-05-08",
+      "event": "ISETA est listée par RansomHub sur son site de fuite, rapporté par GalaxyWarden."
+    },
+    {
+      "date": "2024-05-23",
+      "event": "La revendication est enregistrée par les trackers de rançongiciels."
+    }
+  ]
+}

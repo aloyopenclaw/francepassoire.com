@@ -1,0 +1,50 @@
+{
+  "slug": "ent-scolaires-20240320",
+  "entity": "Espaces numériques de travail (ENT) scolaires (vague de mars 2024)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-03-20",
+    "publication": "2024-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 130 établissements scolaires ciblés selon le ministère relayé par la presse ; nombre de comptes usurpés non communiqué"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro — Cyberattaques : ENT, Pronote… pourquoi les plateformes scolaires sont-elles aussi vulnérables ? (22 mars 2024)",
+      "url": "https://www.lefigaro.fr/conjoncture/cyberattaques-ent-pronote-les-plateformes-scolaires-sont-elles-suffisamment-securisees-20240322",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Piratage des ENT : le ministère de l'Éducation nationale évoque des logiciels dérobeurs de mot de passe (25 mars 2024)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/piratage-des-ent-le-ministere-de-l-education-nationale-evoque-des-logiciels-derobeurs-de-mot-de-passe_AV-202403250567.html",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha — Liste des organisations victimes d'une cyberattaque en 2024 : lycées d'Île-de-France, piratage de l'ENT (20 mars 2024)",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "En mars 2024, une vague d'actes malveillants a visé les espaces numériques de travail (ENT) d'environ 130 établissements scolaires. Des menaces massives ont été envoyées via les messageries. Selon Jedha, 74 lycées d'Île-de-France ont été touchés dès le 20 mars. La vague s'est étendue en Seine-et-Marne, à Strasbourg et dans les Hauts-de-France. Selon le ministère relayé par BFM, des comptes ont été usurpés à partir d'identifiants volés, diffusés notamment par des logiciels dérobeurs de mots de passe. Des réinitialisations de comptes ont été menées à titre préventif.",
+  "timeline": [
+    {
+      "date": "2024-03-20",
+      "event": "Vague de menaces via les messageries ENT : 74 lycées d'Île-de-France touchés selon Jedha ; ENT régional interrompu."
+    },
+    {
+      "date": "2024-03-22",
+      "event": "Extension à plusieurs académies ; Le Figaro relève la vulnérabilité des plateformes scolaires."
+    },
+    {
+      "date": "2024-03-25",
+      "event": "Le ministère évoque des identifiants volés via logiciels dérobeurs ; réinitialisations de comptes réalisées."
+    }
+  ]
+}

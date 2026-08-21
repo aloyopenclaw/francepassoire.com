@@ -1,0 +1,48 @@
+{
+  "slug": "sorbonne-universite-20250307",
+  "entity": "Sorbonne Université",
+  "siren": "130023385",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-07",
+    "publication": "2025-03-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués par FunkSec ; « comptes d'accès distant isolés » évoqués selon LeMagIT"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim: sorbonne-universite.fr (Funksec, 7 mars 2025)",
+      "url": "https://www.ransomware.live/id/c29yYm9ubmUtdW5pdmVyc2l0ZS5mckBmdW5rc2Vj",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez sorbonne-universite.fr : une attaque ransomware revendiquée (7 mars 2025)",
+      "url": "https://frenchbreaches.com/alertes/sorbonne-universite-fr-rw_YzI5eVltOXVibVV0ZFc1cGRtVnljMmwwWlM1bWNrQm1kVzVyYzJWag",
+      "kind": "revendication"
+    },
+    {
+      "label": "LeMagIT — Enseignement supérieur : FunkSec s'attaque à des comptes d'accès distant isolés (10 mars 2025)",
+      "url": "https://www.lemagit.fr/actualites/366620539/Enseignement-superieur-FunkSec-sattaque-a-des-comptes-dacces-distant-isoles",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 mars 2025, le groupe FunkSec a listé Sorbonne Université sur son site de fuite, selon ransomware.live et FrenchBreaches. Ce groupe, décrit comme utilisant l'intelligence artificielle pour son rançongiciel, revendique une attaque contre l'établissement. Le 10 mars, LeMagIT rapporte que l'université évoque des comptes d'accès distant isolés, sans confirmer de vol de données. FunkSec visait la même semaine l'Université de Rennes, fiche séparée. Une cyberattaque distincte a ensuite été confirmée par Sorbonne Université en juin 2025.",
+  "timeline": [
+    {
+      "date": "2025-03-07",
+      "event": "FunkSec liste sorbonne-universite.fr sur son site de fuite, relayé par ransomware.live et FrenchBreaches."
+    },
+    {
+      "date": "2025-03-10",
+      "event": "LeMagIT rapporte la revendication ; comptes d'accès distant isolés évoqués, vol de données non confirmé."
+    }
+  ],
+  "group": "funksec"
+}

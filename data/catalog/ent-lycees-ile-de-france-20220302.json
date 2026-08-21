@@ -1,0 +1,41 @@
+{
+  "slug": "ent-lycees-ile-de-france-20220302",
+  "entity": "ENT des lycées d'Île-de-France (monlycee.net)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-03-02",
+    "publication": "2022-03-02"
+  },
+  "volume": {
+    "count": 300000,
+    "unit": "personnes",
+    "label": "jusqu'à 300 000 utilisateurs concernés par la panne selon France Bleu ; périmètre des données consultées non précisé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France Bleu Paris — L'ENT des lycées d'Île-de-France victime d'une attaque informatique (2 mars 2022)",
+      "url": "https://www.francebleu.fr/infos/education/l-espace-numerique-de-travail-des-lycees-d-ile-de-france-victime-d-une-attaque-informatique-1646231569",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique — L'ENT des lycées franciliens touché par une cyberattaque",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-l-ent-des-lycees-franciliens-touche-par-une-cyberattaque-maj-85995.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L'espace numérique de travail des lycées d'Île-de-France (monlycee.net) a subi une attaque informatique révélée le 2 mars 2022 par la région. Le compte identifié comme étant à l'origine de l'accès frauduleux a été bloqué. La violation de données a été notifiée à la CNIL et une plainte déposée auprès du procureur de la République. Jusqu'à 300 000 utilisateurs ont été concernés par la panne qui a suivi. La région a recommandé de changer les mots de passe, avec un plan de protection mené avec Orange Cyber Défense. Les catégories de données consultées n'ont pas été précisées.",
+  "timeline": [
+    {
+      "date": "2022-03-02",
+      "event": "La région Île-de-France annonce l'attaque : compte frauduleux bloqué, plainte déposée, violation notifiée à la CNIL."
+    },
+    {
+      "date": "2022-03-02",
+      "event": "Changement de mots de passe recommandé aux utilisateurs ; plan de protection mené avec Orange Cyber Défense."
+    }
+  ]
+}

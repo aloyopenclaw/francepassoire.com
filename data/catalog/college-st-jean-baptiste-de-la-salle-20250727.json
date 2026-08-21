@@ -1,0 +1,37 @@
+{
+  "slug": "college-st-jean-baptiste-de-la-salle-20250727",
+  "entity": "Collège Saint-Jean-Baptiste de La Salle (Teloché, Sarthe)",
+  "siren": "786367680",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués par Arcusmedia"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim: College stjb / stjb-delasalle.fr (Arcusmedia, 27 juillet 2025)",
+      "url": "https://www.ransomware.live/id/Q29sbGVnZSBzdGpiQGFyY3VzbWVkaWE%3D",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — College stjb ciblée par ransomware, une fuite de données revendiquée (27 juillet 2025)",
+      "url": "https://frenchbreaches.com/alertes/college-stjb-rw_UTI5c2JHVm5aU0J6ZEdwaVFHRnlZM1Z6YldWa2FXRT0",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 juillet 2025, le groupe Arcusmedia a listé le collège Saint-Jean-Baptiste de La Salle, à Teloché dans la Sarthe, sur son site de fuite. La revendication est relayée par ransomware.live et FrenchBreaches. Le groupe revendique une attaque par rançongiciel contre cet établissement catholique d'enseignement secondaire. La nature et le volume des données concernées ne sont pas précisés par la revendication. L'établissement n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2025-07-27",
+      "event": "Arcusmedia liste le collège Saint-Jean-Baptiste de La Salle sur son site de fuite, relayé par ransomware.live."
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+================================================================
+full-catalog-completion — RAFALE 7, LANE 6 (ÉDUCATION & RECHERCHE
+2022-2025 : universités, écoles, ENT scolaires, organismes de
+recherche, formation) — 10 fiches
+(pool in-window non couvert épuisé aux standards du contrat ;
+écart 10/20 documenté §5)
+Worktree : /private/var/folders/.../T/opencode/fp-r7l6b (b)
+Branche  : fiche/rafale7-l6 (créée sur main d70dd6f, 791 fiches ;
+           origin/main a depuis avancé à 2fd9ef5/854 — chain-merge
+           orchestrateur en cours ; check-doublons passé sur les
+           DEUX bases, 0 collision)
+Commit   : feat(catalog): rafale 7 — éducation L6 (10 fiches —
+           pool 2022-2025 épuisé après dedup, 20 demandées)
+Sources  : presse nationale/régionale + tech (BFM, Le Figaro,
+           France Bleu, France 3, actu.fr, LeMagIT, Le Monde
+           Informatique, Zataz, ZayActu, Solutions Numériques/AFP)
+           + CNIL (tableau intégral des sanctions 412 lignes,
+           re-lues ligne à ligne) + trackers (ransomware.live /id/,
+           ransomwatch posts.json, FrenchBreaches sitemap 1529
+           URLs, GalaxyWarden) + konbriefing (16 pages trimestrielles
+           France 2022-2025) + jedha (listes 2023-2025) + annuaire
+           entreprises.data.gouv.fr (SIREN).
+================================================================
+
+[0] RÉSUMÉ
+  Consigne : 20 fiches éducation & recherche 2022-2025, ≥2 sources
+  vivantes, zod, zéro invention, Ton A, jamais merge, aucun post
+  social. Constat de run : le secteur compte ~35 fiches
+  éducation/recherche sur main (791) après les rafales 1-6, dont
+  l'essentiel du 2024-2025 connu (Guyane, Paris 1, Paris-Saclay,
+  ESSEC, CESI, collèges CNIL, Rennes, Centrale Nantes, Sorbonne
+  06/2025, Limoges, UPPA, MNHN, universités CNIL 10+12/2025,
+  Éduc. nationale Cyclades, académie de Lyon, IUT Lille, ENSAI,
+  IP Paris, université Paris Cité 12/2022, UNSS 06/2025).
+  Le Redispatch (2e timeout des runs précédents) a repris le
+  recensement à zéro ; la veine 2022-2023 + résidus 2024-2025
+  sans doublon ni affaiblissement de la barre (≥ 2 sources
+  vivantes, date traçable au jour) est épuisée à 10.
+
+[1] SOURCES PRIMAIRES — MÉTHODE D'ÉNUMÉRATION
+  - Catalogue : dump slug::entity des 791 fiches + greps
+    préalables AVANT écriture de chaque slug (leçon r6-l3) — ce
+    grep a attrapé 6 quasi-doublons (§2).
+  - CNIL : page « Les sanctions prononcées par la CNIL » curlée
+    (277 Ko, tableau serveur 412 lignes) re-lu intégralement :
+    éducation/recherche in-window = UNIVERSITÉ 29/12/2022 (10 k€,
+    LIVRÉE) ; 23/05/2024 EPA enseignement, 25/07/2024 enseignement
+    sup privé, 26/09/2024 formation pro santé, 16/01/2025 centre
+    de formation apprentis → DÉJÀ SUR MAIN (fiches rafales 5-6) ;
+    02+31/12/2025 universités → déjà sur main.
+  - ransomwatch posts.json (GitHub joshhighet, 16 072 posts)
+    + pages groupes ransomware.live (vicesociety, lockbit3, hive,
+    alphv, avoslocker, ransomhub, qilin, monti, akira, arcusmedia,
+    funksec, incransom, meow, bianlian, cloak, 8base, hunters,
+    darkvault, play, medusa, rhysida) : victimes FR éducation
+    in-window = IUT de Paris 17/12/2022 (déjà main), esinsa.com
+    24/04/2023 (0 presse FR → écarté), college-stemarie-elven.org
+    09/05/2024 (1 source → écarté), iseta.fr RansomHub (LIVRÉE),
+    stjb Arcusmedia (LIVRÉE), sorbonne/univ-rennes FunkSec
+    07-08/03/2025 (Rennes déjà main ; Sorbonne LIVRÉE).
+  - FrenchBreaches sitemap (1529 loc+lastmod) : alertes in-window
+    éducation = unss 06/2025 (déjà main 20250627), lycées HDF
+    10/2025 (LIVRÉE), college-stjb 07/2025 (LIVRÉE), sorbonne-funksec
+    03/2025 (LIVRÉE), lycées HDF ; reste 2026 (hors fenêtre).
+  - Zataz sitemap index + 4 posts sitemaps (15 937 URLs) : balayé
+    par mots-clés éducation ; posts in-window exploitables =
+    IUT Lille (déjà main), Pole LdV mise en examen 30/05/2023
+    (source de la fiche LIVRÉE), lycées HDF 16/10/2025 (LIVRÉE) ;
+    EPITECH/Lyon 3/ENM/Télécom SudParis/Boulle = 2014-2021,
+    hors fenêtre ; CRM scolaire/ESGI/ministère/Wall Street =
+    2026, hors fenêtre.
+  - konbriefing 16 pages trimestrielles France (2022-2025,
+    cyber-attacks-YYYY-cny-france-qN) : EPF 11/02/2022 (communiqué
+    retiré du site → source morte → écarté), ENT IDF février-mars
+    2022 (LIVRÉE), ENAC mars 2022 (LIVRÉE), Caisse des écoles du
+    Robert mai 2023 (LIVRÉE, 2e source konbriefing), Paris 8 mai
+    2023 = DDoS pro-russe (règle d'exclusion), AMU 07/06/2023
+    (aucune fuite documentée dans la fenêtre → écarté), AEFE
+    06/11/2023 (déjà r7-l0).
+  - GNews RSS fenêtré (after:/before: 2022-2026, ~25 requêtes),
+    web-search-prime ciblées (HDF, IUT Paris, PLdV, AMU, UNSS,
+    ENT 2024, funksec, ISETA, ENAC, Caisse Robert, Skolae/Pix/
+    Kosmos/EcoleDirecte/Campus France — ces 4 dernières : aucun
+    incident FR qualifiant 2022-2025 trouvé), jedha listes
+    2023-2025 (ENT IDF 20/03/2024 → fiche LIVRÉE).
+
+[2] DÉDUP vs CATALOGUE — COLLISIONS ATTRAPÉES AVANT ÉCRITURE
+  - universite-paris-cite-20221219 (main) = IUT de Paris Rives de
+    Seine/ViceSociety 17/12/2022 → candidat abandonné.
+  - unss-20250627 (main) = UNSS 28/06/2025 FB → candidat abandonné.
+  - centre-formation-apprentis-20250116, etablissement-public-
+    national-enseignement-20240523, enseignement-superieur-prive-
+    20240725, organisme-de-formation-destine-aux-professionnels-
+    de-sante-20240926 (main) = 4 sanctions CNIL anonymes déjà
+    fichées → abandonnées ; seule UNIVERSITÉ 29/12/2022 manque.
+  - r7-l0 (PR #56 ouverte) : academie-de-lille-20230112 +
+    aefe-20231105 → hors de mes périmètres ; mes lycées HDF
+    10/2025 (entité distincte, écart 2 ans) sans collision
+    (check-doublons 0).
+  - r7-l2 : « Universite Paris Sud » RansomHouse 10/2024 = Paris-
+    Saclay (main) → non retouché.
+
+[3] FICHES LIVRÉES (10 : 8 revendiquées, 2 confirmées ; Ton A,
+    descriptions 66-97 mots, phrases ≤ 25, événements ≤ 19)
+  01 ent-lycees-ile-de-france-20220302  02/03/2022  ENT monlycee.net
+      frappé ; compte frauduleux bloqué, plainte + violation notifiée
+      CNIL, 300 000 utilisateurs, OCD/ANSSI (France Bleu, LMI).
+      [autre] public.
+  02 enac-20220316                      16/03/2022  rançongiciel Hive,
+      rançon 1,2 M$ puis 2 M$, vols/sites affectés, DGAC (LeMagIT,
+      Solutions Numériques/AFP, France 3). SIREN 193112562.
+      [autre] recherche.
+  03 pole-leonard-de-vinci-20220927     27/09/2022  données dérobées
+      (coordonnées bancaires, états civils, notes), ~20 000 victimes
+      (8 000 élèves + 12 000 alumni), plainte Paris ; 3 mis en
+      examen 05/2023 (BFM Paris, Zataz). SIREN 402850226
+      (Association Léonard de Vinci, Courbevoie). [identite,
+      financier] services.
+  04 universite-20221229                29/12/2022  CNIL procédure
+      simplifiée, 10 k€, limitation des finalités, université non
+      nommée (cnil.fr ×2). [autre] recherche, confirmee.
+  05 caisse-des-ecoles-du-robert-20230527 27/05/2023 serveur chiffré
+      + rançon, PCA inscriptions/paiements, vague post-CTM 16/05
+      (ZayActu, KonBriefing). SIREN 269720561. [autre] public.
+  06 ent-scolaires-20240320             20/03/2024  vague nationale
+      menaces + comptes usurpés via identifiants volés/stealers,
+      ~130 établissements, réinitialisations (Le Figaro, BFM,
+      Jedha ; point de situation ministériel non citable : 403
+      Cloudflare en curl). [credentials] public.
+  07 iseta-20240508                     08/05/2024  RansomHub liste
+      iseta.fr (GalaxyWarden 08/05, ransomwatch 23/05) (GalaxyWarden,
+      r.live). SIREN 776603060 (ISETA-ECA, Poisy/Annecy). [autre]
+      recherche.
+  08 sorbonne-universite-20250307       07/03/2025  FunkSec liste
+      sorbonne-universite.fr ; « comptes d'accès distant isolés »
+      selon LeMagIT 10/03 ; distincte de l'incident confirmé de
+      juin 2025 (fiche main 20250606) (r.live, FrenchBreaches,
+      LeMagIT). SIREN 130023385. group funksec (jumelle Rennes
+      20250308). [autre] recherche.
+  09 college-st-jean-baptiste-de-la-salle-20250727 27/07/2025
+      Arcusmedia liste le collège de Teloché/Sarthe (r.live +
+      FrenchBreaches — 2 relais de veille, précédent GEODIS r7-l2).
+      SIREN 786367680. [autre] services.
+  10 lycees-publics-hauts-de-france-20251010 10/10/2025 rançongiciel
+      Qilin, 80 % des lycées (200+), Internet suspendu, Région
+      porte plainte, fichiers publiés constatés (pièces d'identité,
+      relevés de notes, CV) (BFM, actu.fr, Zataz, FrenchBreaches).
+      [identite, documents] public. group qilin.
+  ÉCART 10/20 documenté (précédents r7-l4 4/20, r7-l2 12/20,
+  r5-L1 2/20) : recensement [1] exhaustif presse + CNIL + trackers
+  + agrégateurs sur la fenêtre stricte ; la veine sans doublon ni
+  affaiblissement de la barre (≥ 2 sources vivantes curl, date
+  traçable au jour) est épuisée à 10.
+
+[4] SOURCES — 25 URL retenues dans les fiches : toutes vérifiées
+  en curl direct (HEAD -sIL + GET, UA navigateur) le jour du run ;
+  4 rejetées pour blocage paywall/anti-bot (Le Monde 402, Figaro
+  Étudiant 403, Ouest-France 403, cybernews 403) REMPLACÉES par
+  des sources équivalentes vivantes ; education.gouv.fr 403
+  Cloudflare → point de situation ministériel cité via relais
+  presse (BFM 25/03/2024) uniquement ; 3 alertes FrenchBreaches
+  en GET 200 (HEAD 403, infra du site) — nuances consignées.
+  spot-check-sources.mjs (10 fiches passées en arguments) :
+  3/3 PASS, 0 archive.
+  SIREN résolus via annuaire-entreprises.api.gouv.fr : ENAC
+  193112562, Association Léonard de Vinci 402850226, Caisse des
+  écoles du Robert 269720561, ISETA-ECA 776603060, Collège St-Jean-
+  Baptiste de La Salle (Teloché) 786367680, Sorbonne Université
+  130023385 (identique à la fiche main) ; omis pour ENT IDF ×2 et
+  lycées HDF (opérateurs multiples région/académie — résolution
+  ambiguë, règle « on omet plutôt qu'approximer ») et université
+  CNIL (non nommée).
+
+[5] VALIDATION (transcripts)
+  $ npx vitest run tests/rafale7-l6.temp.test.ts  (temporaire, supprimé)
+    → Test Files 1 passed | Tests 16/16 passed : 801 fichiers zod
+      OK (791 base + 10) ; 0 slug dans origin/main (854, base
+      chain-merge en cours) ; suffixe slug = date de revendication ;
+      fenêtre 2022-2025 ; ≥ 2 sources/fiche ; SIREN 9 chiffres ;
+      Ton A (descriptions 50-120 mots, phrases ≤ 25 mots,
+      événements ≤ 40, chronologie).
+  $ node scripts/check-doublons.mjs --base main
+    → ✓ 0 collision (±45 j, même entité normalisée), exit 0.
+  $ node scripts/check-doublons.mjs --base origin/main
+    → ✓ 0 collision, exit 0. [compteur « -844 nouvelles » =
+      artefact cosmétique préexistant du script, cf. r7-l2 §5]
+  $ node scripts/spot-check-sources.mjs <10 fiches>
+    → ✓ 3/3 URL(s) vivantes (0 via archive), exit 0.
+  $ npx vitest run  (worktree, node_modules symliné puis retiré)
+    → Tests 1180/1180 passed (30 fichiers).
+  $ npx astro build  (worktree)
+    → 1637 page(s) built — les 10 slugs présents dans dist/fiche/.
+
+[6] EXCLUSIONS DOCUMENTÉES (toutes vérifiées une à une)
+  - Déjà catalogués (main) : IUT de Paris 12/2022 (universite-
+    paris-cite-20221219), UNSS 06/2025, 4 sanctions CNIL 2024-
+    2025, Sorbonne 06/2025, Paris-Saclay/RansomHouse 10/2024,
+    Guyane, Rennes/funksec, MNHN, IUT Lille, ENSAI, IP Paris.
+  - Aucune fuite de données documentée dans la fenêtre :
+    Aix-Marseille Université 07/06/2023 (réseau paralysé, pas
+    d'exfiltration ; la revendication LunarisSec est de 2026),
+    Grenoble INP 12/2022 (« intrusion », données protégées par
+    déconnexion — règle Air Calédonie r7-l2), Toulouse INP
+    09/2022 (AvosLocker identifié, attaque jamais revendiquée,
+    pas d'allégation de vol).
+  - DDoS/hacktivisme : Université Paris 8 21/05/2023 (piratage
+    pro-russe, Clubic — règle d'exclusion NoName, cf. La Poste
+    r7-l2).
+  - 1 seule source vivante : ESINSA 04/2023 (lockbit3, 0 presse),
+    Collège Sainte-Marie d'Elven 05/2024 (lockbit3, r.live seul —
+    page GalaxyWarden inexistante), IFA Paris 12/2024 (funksec :
+    breachsense + X seulement, page r.live 404).
+  - Source morte : EPF École d'ingénieurs 11/02/2022 (communiqué
+    retiré du site epf.fr, plus aucune presse retrouvée).
+  - Hors fenêtre : ESGI 07/07/2026, CRM scolaire 2026, Pix Orga
+    01/2026, Éducation nationale ZeroBytes 2026, Angers 04/2026,
+    Université d'Avignon 07/2026, Wall Street English 01/2026,
+    enseignement catholique 03/2026.
+  - Hors périmètre FR ou faible angle : EPITECH 2015, Lyon 3 2015,
+    ENM 2014, Télécom SudParis 2021, École Boulle 2019, « Ecole
+    en ligne » Belgique 12/2025, ENT vague mars 2024 hors région
+    (couverte par la fiche vague nationale), auto-écoles (compar-
+    ateur CNIL 12/2024 = secteur services, déjà couvert par
+    ornikar), Montmorency College 12/2022 (Québec).
+  - Hypothèses de run précédents non confirmées par les sources :
+    « Pronote 01/2022 », « EcoleDirecte 12/2022 », « Campus France
+    06/2023 », « AMU 02/2024 », « Avignon 02/2023 », « Skolae »,
+    « Kosmos ENT » — aucune couverture qualifiante 2 sources
+    trouvée dans la fenêtre (recherches consignées §1).
+
+[7] LIVRAISON
+  git commit « feat(catalog): rafale 7 — éducation L6 (10 fiches —
+    pool 2022-2025 épuisé après dedup, 20 demandées) » — 10
+    fichiers data/catalog/ + ce log, message adapté au réel 10/20
+    (précédent r7-l2 12/20 ; la consigne « 20 fiches » inatteign-
+    able sans doublon ni affaiblissement des sources — écart
+    documenté §3).
+  git push -u origin fiche/rafale7-l6 → ok.
+  gh pr create → PR « Rafale 7 L6 — éducation & recherche »
+    (corps : tableau 10 fiches, recensement, exclusions, sourcing,
+    écart, risques, NE PAS MERGER — chaîne d'abord).
+  JAMAIS MERGE par la lane (décision #6). Worktree retiré après
+    livraison (consigne explicite du dispatch, contrairement aux
+    lanes précédentes qui le conservaient).
+  Aucun post social (consigne lane).
+
+[8] RISQUES RÉSIDUELS (repris dans la PR)
+  1. Sorbonne Université : DEUX fiches (funksec 03/2025 ici,
+     incident confirmé 06/2025 sur main) — événements distincts
+     (revendication mars vs attaque détectée juin) ; si la chaîne
+     établit qu'il s'agit d'une seule affaire, fusionner les
+     sources dans la fiche 20250606 et retirer 20250307.
+  2. ISETA : date de revendication = listing GalaxyWarden 08/05
+     (ransomwatch a crawlé le 23/05) ; page r.live /id/ affiche
+     la date côté client (non extractible en curl) — la date
+     traçable retenue est celle de GalaxyWarden.
+  3. STJB et HDF : statut revendiquee sur relais de veille
+     (r.live + FrenchBreaches) sans presse classique ni communi-
+     qué ; prose attribuée, volumes 0 non communiqués.
+  4. ENT vague mars 2024 : entité « vague » (130 établissements,
+     multi-opérateurs) ; le point de situation ministériel est
+     403 en curl (Cloudflare) — faits cités via Le Figaro/BFM/
+     Jedha uniquement ; Jedha date la vague du 20/03, le ministère
+     du jeudi 21/03 (non citable).
+  5. ENT IDF : deux fiches distinctes (2022 puis vague mars 2024
+     y contribue) — entités différenciées (ENT régional vs vague
+     nationale), écart 2 ans, 0 collision check-doublons.
+  6. ENAC/Caisse du Robert : rançongiciels avec rançon documentée
+     mais exfiltration non alléguée dans les sources (précédent
+     Guyamier r7-l2 — fiches d'indisponibilité/chiffrement,
+     prose sans allégation de vol).
+  7. CI GitHub possiblement bloquée (billing, cf. r5-L1/r7-L2) —
+     équivalence locale [5].
