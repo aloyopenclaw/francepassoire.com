@@ -1,0 +1,42 @@
+{
+  "slug": "les-restos-du-coeur-20260213",
+  "entity": "Les Restos du Cœur",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-13",
+    "publication": "2026-02-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; salariés et bénévoles de l'association concernés (périmètre décrit par les relais)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Les Restos du Cœur victimes d’une cyberattaque : identité et coordonnées de salariés et bénévoles exposées",
+      "url": "https://frenchbreaches.com/alertes/les-restos-du-coeur-mlmi15wg2sz7g1nmwf7",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Cyberattaque chez Les Restos du Cœur",
+      "url": "https://fuitesinfos.fr/article/2026-02-13-les-restos-du-c-ur",
+      "kind": "article"
+    }
+  ],
+  "description": "Les Restos du Cœur ont été victimes le 11 février 2026 d'une cyberattaque touchant un système d'information interne, rendue publique deux jours plus tard. Selon les éléments relayés, la fuite confirmée concerne des salariés et bénévoles : identité, fonction au sein de l'association, statut, département d'exercice, adresse électronique et numéro de téléphone lorsqu'il est renseigné. Le volume exact de données exposées n'a pas été communiqué à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-02-11",
+      "event": "Une cyberattaque touche un système d'information interne de l'association Les Restos du Cœur."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "La fuite, décrite comme confirmée, est relayée : identité, fonction, statut bénévole ou salarié, département, courriel et téléphone des personnes impliquées."
+    }
+  ]
+}

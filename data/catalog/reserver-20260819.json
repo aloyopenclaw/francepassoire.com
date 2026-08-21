@@ -1,0 +1,48 @@
+{
+  "slug": "reserver-20260819",
+  "entity": "Reserver.fr",
+  "siren": "402532840",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-19",
+    "publication": "2026-08-20"
+  },
+  "volume": {
+    "count": 19495,
+    "unit": "enregistrements",
+    "label": "19 495 enregistrements (2016-2024) diffusés gratuitement après une faille API revendiquée (« M0rphyn ») ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Reserver.fr : 19 495 enregistrements exposés après une faille API",
+      "url": "https://frenchbreaches.com/alertes/r-server-mt0n1r7q49q9x6h207r",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Reserver.fr : 19 495 enregistrements diffusés gratuitement après une cyberattaque",
+      "url": "https://www.cyberattaque.org/reserver-fr-19-495-enregistrements-diffuses-gratuitement-apres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Reserver.fr : 19 495 enregistrements en fuite",
+      "url": "https://fuitesinfos.fr/article/2026-08-19-reserver-fr",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 août 2026, un utilisateur se présentant sous le pseudonyme « M0rphyn » revendique la récupération de 19 495 enregistrements issus de Reserver.fr, plateforme française de réservation de transport, couvrant 2016 à 2024. Selon la revendication, une API mal configurée, accessible sans authentification, a exposé noms, prénoms, courriels, téléphones, données de voyage, messages envoyés au support et informations liées au transport d'animaux. La base est diffusée gratuitement ; son authenticité et les circonstances exactes de l'accès ne sont pas confirmées.",
+  "timeline": [
+    {
+      "date": "2026-08-19",
+      "event": "Revendication « M0rphyn » : quatre fichiers totalisant 19 495 enregistrements (2016-2024) récupérés via une API accessible sans authentification."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "La base est diffusée gratuitement ; les relais de veille relèvent que son authenticité n’est pas confirmée."
+    }
+  ]
+}

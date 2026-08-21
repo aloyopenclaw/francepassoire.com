@@ -1,0 +1,43 @@
+{
+  "slug": "smartbox-20260610",
+  "entity": "Smartbox",
+  "siren": "507859163",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-10",
+    "publication": "2026-06-11"
+  },
+  "volume": {
+    "count": 60568,
+    "unit": "comptes",
+    "label": "60 568 utilisateurs et environ 200 000 contrats revendiqués (« misere ») ; chiffres non confirmés"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Plus de 60 000 utilisateurs attribués à Smartbox diffusés sur le dark web",
+      "url": "https://frenchbreaches.com/alertes/smartbox-mq8np9lufggvwzpkedg",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Smartbox : plus de 60 000 comptes et 200 000 contrats exposés dans une fuite de données",
+      "url": "https://www.cyberattaque.org/smartbox-plus-de-60-000-comptes-et-200-000-contrats-exposes-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 60 568 utilisateurs, fuite de données revendiquée chez Smartbox Group",
+      "url": "https://fuitesinfos.fr/article/2026-06-10-smartbox-group",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 juin 2026, le cybercriminel « misere » publie sur le dark web des données attribuées à la plateforme Smartbox, spécialisée dans les coffrets cadeaux et expériences en Europe. La revendication évoque 60 568 utilisateurs ainsi qu'environ 200 000 contrats, issus de plusieurs environnements distincts liés à la plateforme. Les relais de veille relèvent que ces chiffres ne sont pas confirmés et que la société n'a pas commenté publiquement à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-06-10",
+      "event": "Le cybercriminel « misere » publie des données attribuées à smartbox.com : 60 568 utilisateurs et environ 200 000 contrats annoncés, issus d’environnements distincts."
+    }
+  ]
+}

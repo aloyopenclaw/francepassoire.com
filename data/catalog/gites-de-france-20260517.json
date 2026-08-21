@@ -1,0 +1,43 @@
+{
+  "slug": "gites-de-france-20260517",
+  "entity": "Gîtes de France",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-17",
+    "publication": "2026-05-17"
+  },
+  "volume": {
+    "count": 389000,
+    "unit": "personnes",
+    "label": "Plus de 389 000 personnes revendiquées ; Fuites Infos recense 185 929 réservants distincts ; origine possiblement liée à l’éditeur ITEA selon les relais"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Gîtes de France : plus de 389 000 personnes potentiellement concernées par une base revendiquée par un hacker",
+      "url": "https://frenchbreaches.com/alertes/gites-de-france-mp9daijhcepjm8xjiwe",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Gîtes de France : les réservations de 389 000 clients dans une fuite de données",
+      "url": "https://www.cyberattaque.org/gites-de-france-les-reservations-de-389-000-clients-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 185 929 réservants concernés par une fuite de données Gîtes de France",
+      "url": "https://fuitesinfos.fr/article/2026-05-17-gites-de-france",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base attribuée à plusieurs départements du réseau Gîtes de France circule depuis le 17 mai 2026 dans la sphère cybercriminelle : le hacker à l'origine de la revendication évoque plus de 389 000 personnes concernées, avec des réservations couvrant notamment le Cantal, la Guadeloupe et la Haute-Garonne jusqu'à fin 2026. Selon les analyses des relais, la compromission proviendrait potentiellement de l'éditeur ITEA, fournisseur de centrales de réservation du secteur. Fuites Infos recense 185 929 réservants distincts. Ces chiffres ne sont pas confirmés par le réseau.",
+  "timeline": [
+    {
+      "date": "2026-05-17",
+      "event": "Un hacker transmet aux relais échantillons et revendication : compromission d’espaces de réservation de plusieurs départements, plus de 389 000 personnes annoncées, origine possiblement liée à l’éditeur ITEA."
+    }
+  ]
+}

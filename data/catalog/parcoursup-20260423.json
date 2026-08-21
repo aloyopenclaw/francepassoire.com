@@ -1,0 +1,43 @@
+{
+  "slug": "parcoursup-20260423",
+  "entity": "Parcoursup (plateforme, périmètre Occitanie)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-04-23",
+    "publication": "2026-04-23"
+  },
+  "volume": {
+    "count": 705000,
+    "unit": "personnes",
+    "label": "705 000 candidats des sessions 2023 et 2025 (périmètre communiqué ; consultation et extraction via un compte habilité utilisé frauduleusement)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Parcoursup Occitanie : des informations de candidats potentiellement exposées",
+      "url": "https://frenchbreaches.com/alertes/parcoursup-occitanie-mobrmihmuvd3nw5r50j",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Parcoursup : fuite de données de 705 000 candidats après un accès frauduleux en Occitanie",
+      "url": "https://www.cyberattaque.org/parcoursup-fuite-de-donnees-de-705-000-candidats-apres-un-acces-frauduleux-en-occitanie/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 705 000 candidats concernés par une fuite de données chez Parcoursup",
+      "url": "https://fuitesinfos.fr/article/2026-04-23-parcoursup",
+      "kind": "article"
+    }
+  ],
+  "description": "Un incident de sécurité affectant un module de gestion des données Parcoursup en Occitanie, survenu lors d'une cyberattaque d'octobre 2025, a été rendu public le 23 avril 2026. Selon les informations communiquées, un compte réservé à des personnels habilités a été utilisé frauduleusement pour consulter et extraire les données de 705 000 candidats des sessions 2023 et 2025 : identité, coordonnées, scolarité et statut de boursier. Pour les candidats mineurs, des données sur les responsables légaux figuraient également. L'incident a été signalé en mars 2026 ; mots de passe et données bancaires ne sont pas concernés.",
+  "timeline": [
+    {
+      "date": "2026-04-23",
+      "event": "Les relais documentent le périmètre : cyberattaque d'octobre 2025 sur un module Occitanie, compte habilité utilisé frauduleusement, 705 000 candidats des sessions 2023 et 2025 concernés."
+    }
+  ]
+}
