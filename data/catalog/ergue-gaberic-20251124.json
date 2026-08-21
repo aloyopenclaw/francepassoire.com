@@ -1,0 +1,35 @@
+{
+  "slug": "ergue-gaberic-20251124",
+  "entity": "Ville d’Ergué-Gabéric (plateforme de prise de rendez-vous RDV360)",
+  "siren": "212900518",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-24",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; usagers ayant pris rendez-vous en ligne pour des démarches d’état civil auprès de la commune (Finistère)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
+      "url": "https://www.letelegramme.fr/bretagne/on-en-sait-plus-sur-la-vaste-fuite-de-donnees-qui-a-touche-plusieurs-municipalites-en-bretagne-6934738.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin novembre 2025, la commune d’Ergué-Gabéric (Finistère) alerte ses administrés dans le cadre de la fuite de données touchant RDV360, la plateforme de prise de rendez-vous en ligne utilisée pour les démarches d’état civil. Les données concernées sont limitées à l’identité et aux coordonnées des usagers — nom, prénom, adresse e-mail, code postal, numéro de téléphone — associées aux demandes de rendez-vous en mairie. Le Télégramme recense l’alerte le 24 novembre, aux côtés de celles de Brest, Guipavas, Quimper, Sérent, Ploërmel, Josselin et Mauron. Le prestataire a reconnu un incident de sécurité et annoncé une plainte.",
+  "timeline": [
+    {
+      "date": "2025-11-24",
+      "event": "Le Télégramme recense l’alerte lancée par la commune d’Ergué-Gabéric dans la fuite multi-communes liée à la plateforme RDV360."
+    }
+  ]
+}

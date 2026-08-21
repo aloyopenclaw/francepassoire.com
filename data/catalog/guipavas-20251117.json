@@ -1,0 +1,49 @@
+{
+  "slug": "guipavas-20251117",
+  "entity": "Ville de Guipavas (plateforme de prise de rendez-vous papiers d’identité)",
+  "siren": "212900757",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-17",
+    "publication": "2025-11-17",
+    "confirmation": "2025-11-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "nombre non communiqué ; demandes de titres d’identité déposées entre le 10 octobre 2024 et le 17 novembre 2025 (nom, prénom, téléphone et, le cas échéant, e-mail et adresse postale)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Guipavas (communiqué officiel) — Sécurité des données : appel à la vigilance après un incident informatique (17 novembre 2025)",
+      "url": "https://guipavas.bzh/news/securite-des-donnees-appel-a-la-vigilance-apres-un-incident-informatique/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
+      "url": "https://www.letelegramme.fr/bretagne/on-en-sait-plus-sur-la-vaste-fuite-de-donnees-qui-a-touche-plusieurs-municipalites-en-bretagne-6934738.php",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Bretagne — Vol massif de données en Bretagne : au moins cinq communes touchées, l’enquête s’accélère",
+      "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/quimper/vol-massif-de-donnees-en-bretagne-au-moins-cinq-communes-touchees-l-enquete-s-accelere-voici-ce-que-l-on-sait-3252205.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 novembre 2025, la ville de Guipavas (Finistère) annonce une intrusion malveillante sur la plateforme de son prestataire dédiée aux rendez-vous préalables aux demandes de cartes d’identité et de passeports. Les enregistrements relatifs aux demandes déposées entre le 10 octobre 2024 et cette date pourraient être affectés : nom, prénom, numéro de téléphone et, si elles avaient été renseignées, adresse électronique et adresse postale. Aucun mot de passe ni document d’identité n’est concerné. La ville notifie la CNIL, annonce une plainte et suspend la prise de rendez-vous en ligne. L’incident s’inscrit dans une fuite touchant plus d’un millier de communes françaises.",
+  "timeline": [
+    {
+      "date": "2025-11-17",
+      "event": "Guipavas publie un appel à la vigilance : intrusion détectée chez son prestataire de rendez-vous ; CNIL notifiée, plainte annoncée, service suspendu."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "La presse régionale recense la fuite multi-communes liée aux plateformes RDV360 et Synbird ; Guipavas est citée parmi les villes affectées."
+    }
+  ]
+}
