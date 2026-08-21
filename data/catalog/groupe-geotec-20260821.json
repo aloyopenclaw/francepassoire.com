@@ -1,0 +1,38 @@
+{
+  "slug": "groupe-geotec-20260821",
+  "entity": "Groupe Géotec",
+  "siren": "778196501",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; exfiltration de données confirmée par l'entreprise, périmètre exact en cours d'analyse"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Groupe Géotec confirme une exfiltration après un incident de cybersécurité (21 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/geotec-mt2pm5hv08jyfc9vlj2c",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Groupe Géotec : une cyberattaque provoque une exfiltration de données et perturbe certains services (21 août 2026)",
+      "url": "https://www.cyberattaque.org/groupe-geotec-une-cyberattaque-provoque-une-exfiltration-de-donnees-et-perturbe-certains-services/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Groupe Géotec, spécialiste de l'ingénierie géotechnique et environnementale, intervient sur les études de sols, les infrastructures et la construction. Il a communiqué sur un incident de cybersécurité touchant certains de ses outils. Contrairement à une simple tentative d'intrusion, l'entreprise confirme qu'une exfiltration de données a eu lieu ; elle indique avoir mobilisé ses équipes internes et des partenaires spécialisés. Les investigations en cours doivent préciser la nature des données récupérées et l'étendue de la compromission. Le communiqué ne détaille ni le volume, ni le nombre de personnes concernées, ni le mode opératoire ; l'entreprise signale un impact possible sur certains services et échanges.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "Le Groupe Géotec confirme par communiqué une exfiltration de données après un incident touchant certains de ses outils ; investigations en cours."
+    }
+  ]
+}

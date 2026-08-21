@@ -1,0 +1,43 @@
+{
+  "slug": "voxaly-20260803",
+  "entity": "Voxaly (Docaposte)",
+  "siren": "489522540",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-03",
+    "publication": "2026-08-04"
+  },
+  "volume": {
+    "count": 5195,
+    "unit": "personnes",
+    "label": "5 195 personnes selon la revendication publiée le 3 août 2026 ; export présenté comme complet, couvrant quatre années de soumissions (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Voxaly, spécialiste du vote électronique, visé par une fuite de données (3 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/voxaly-msde9mck0bpdloz5u6j7",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 5 195 personnes concernées par une fuite de données revendiquée chez Voxaly (4 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-03-voxaly",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 août 2026, une revendication publiée sur un forum cybercriminel annonce la fuite de la base du site institutionnel de Voxaly. Cette société, filiale de Docaposte, est spécialiste français du vote électronique et de la gestion des relations sociales. L'auteur propose un export présenté comme complet, rassemblant quatre années de soumissions. Y figurent demandes de contact et de devis, téléchargements de documentation, infolettres et candidatures spontanées. Environ 5 200 personnes seraient concernées selon la revendication. Les enregistrements comprendraient identité, coordonnées, rattachement professionnel et contenu des messages. Les captures diffusées laissent voir un extrait de table d'utilisateurs d'une installation WordPress ; l'authenticité n'est pas confirmée indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-03",
+      "event": "Revendication sur un forum : export complet de la base du site vitrine de Voxaly, quatre années de soumissions, environ 5 200 personnes."
+    },
+    {
+      "date": "2026-08-04",
+      "event": "Le relais de veille documente la fuite : identité, coordonnées, rattachement professionnel et contenu des messages annoncés ; non confirmé."
+    }
+  ]
+}

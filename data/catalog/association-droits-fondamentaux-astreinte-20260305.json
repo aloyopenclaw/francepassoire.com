@@ -1,0 +1,42 @@
+{
+  "slug": "association-droits-fondamentaux-astreinte-20260305",
+  "entity": "Association de défense de droits fondamentaux (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-05",
+    "confirmation": "2026-03-05",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; liquidation d'astreinte de 5 100 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association de défense de droits fondamentaux » (procédure simplifiée), liquidation d'astreinte de 5 100 euros (5 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 mars 2026, la CNIL a prononcé la liquidation d'une astreinte de 5 100 euros à l'encontre d'une association de défense de droits fondamentaux. La décision intervient dans le cadre de la procédure simplifiée, pour absence de réponse à une injonction. La dénomination n'est pas publiée ; les données en cause ne sont pas précisées. Le tableau officiel recense pour le même descripteur une amende de 10 000 euros prononcée le 25 août 2025. Elle visait le non-respect du droit d'effacement et un défaut de coopération, sans qu'il soit possible d'établir qu'il s'agit de la même entité.",
+  "timeline": [
+    {
+      "date": "2026-03-05",
+      "event": "Liquidation d'astreinte de 5 100 euros (procédure simplifiée) : absence de réponse à l'injonction."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie le bilan de ses 23 sanctions simplifiées depuis janvier 2026, dont quatre liées à un défaut de coopération."
+    }
+  ]
+}
