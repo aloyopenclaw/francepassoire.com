@@ -1,0 +1,48 @@
+{
+  "slug": "village-sante-saint-joseph-20251209",
+  "entity": "Village Santé Saint Joseph (établissement de santé, FASSIC)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-09",
+    "publication": "2025-12-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données de patients menacées de fuite ; volume non précisé"
+  },
+  "data_types": [
+    "sante",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Village Santé Saint Joseph Hospital (groupe DevMan, découverte 9 décembre 2025, attaque estimée 6 décembre)",
+      "url": "https://www.ransomware.live/id/VmlsbGFnZSBTYW50w6kgU2FpbnQgSm9zZXBoIEhvc3BpdGFsQGRldm1hbg",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — DevMan Ransomware Targets Village Santé Saint Joseph Hospital (9 décembre 2025)",
+      "url": "https://www.dexpose.io/devman-ransomware-targets-village-sante-saint-joseph-hospital/",
+      "kind": "article"
+    },
+    {
+      "label": "Haute Autorité de Santé — fiche établissement SSR PSM Village Santé St Joseph (privé à but non lucratif, FINESS 490000700)",
+      "url": "https://www.has-sante.fr/jcms/1565_FicheEtablissement/fr/ssr-psm-village-sante-st-joseph",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 9 décembre 2025, le Village Santé Saint Joseph (villagesante-saintjoseph.fr), établissement de santé privé à but non lucratif rattaché au groupe FASSIC (soins de suite et réadaptation psychiatrique, FINESS 490000700), est revendiqué par le rançongiciel DevMan. L’attaque est estimée au 6 décembre. Les attaquants menacent de publier des données de patients sauf accord à l’amiable. Dans un établissement de SSR psychiatrique, un tel lot peut contenir dossiers médicaux et données d’identification particulièrement sensibles. L’établissement n’a pas communiqué publiquement sur l’incident ; la revendication reste non confirmée au-delà de ses relais spécialisés.",
+  "timeline": [
+    {
+      "date": "2025-12-06",
+      "event": "Date d’attaque estimée par ransomware.live pour l’intrusion."
+    },
+    {
+      "date": "2025-12-09",
+      "event": "DevMan revendique l’établissement et menace de publier des données de patients."
+    }
+  ],
+  "group": "devman"
+}

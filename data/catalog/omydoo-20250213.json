@@ -1,0 +1,47 @@
+{
+  "slug": "omydoo-20250213",
+  "entity": "Omydoo (intégrateur de logiciels de gestion Odoo)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-13",
+    "publication": "2025-02-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "code source et données internes revendiqués par Fog ; volume non chiffré"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Omydoo (groupe Fog, découverte 13 février 2025)",
+      "url": "https://www.ransomware.live/id/T215ZG9vQGZvZw",
+      "kind": "revendication"
+    },
+    {
+      "label": "LeMagIT — Ransomware : les revendications nébuleuses de Fog (25 février 2025)",
+      "url": "https://www.lemagit.fr/actualites/366619443/Ransomware-les-revendications-nebuleuses-de-Fog",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Le site AYOMI piraté ? Un pirate menace les clients ! (série Fog : Omydoo, Ayomi, Adullact, 14 juin 2025)",
+      "url": "https://www.zataz.com/le-site-ayomi-pirate-un-pirate-menace-les-clients/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 février 2025, Omydoo, société française spécialisée dans la mise en œuvre de progiciels de gestion intégrés pour PME autour de l’ERP open-source Odoo, est listée par le groupe de rançongiciel Fog aux côtés d’Ayomi et de l’Adullact. Fog affirme avoir extrait du code source et des données internes. Le 25 février, LeMagIT documente le caractère « nébuleux » de cette campagne d’environ cinquante revendications visant des instances GitLab : avec l’aide d’Onyphe, aucun instance affectée n’est identifiée chez les victimes désignées, et plusieurs semblent déconnectées depuis des mois. Omydoo n’a pas communiqué publiquement sur la revendication. La revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-02-13",
+      "event": "Fog revendique Omydoo, Ayomi et l’Adullact ; code source et données internes allégués."
+    },
+    {
+      "date": "2025-02-25",
+      "event": "LeMagIT et Onyphe ne trouvent aucune instance GitLab affectée parmi les victimes revendiquées par Fog."
+    }
+  ],
+  "group": "fog"
+}

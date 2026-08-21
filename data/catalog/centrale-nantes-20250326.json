@@ -1,0 +1,53 @@
+{
+  "slug": "centrale-nantes-20250326",
+  "entity": "École Centrale de Nantes (ec-nantes.fr)",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-26",
+    "publication": "2025-03-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "5 Go de données revendiqués par Ralord : plans, mots de passe, noms et documents"
+  },
+  "data_types": [
+    "documents",
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : ec-nantes.fr (groupe Ralord, découverte 26 mars 2025)",
+      "url": "https://www.ransomware.live/id/ZWMtbmFudGVzLmZyQHJhbG9yZA",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense — Centrale Nantes Data Breach : acteur Ralord, 5 Go, découvert 26 mars 2025",
+      "url": "https://www.breachsense.com/breaches/centrale-nantes-data-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "Breach House — ec-nantes.fr : Ralord ransomware attack (publication 25 mars, divulgation 26 mars 2025)",
+      "url": "https://breach.house/ransomware-victim/ralord-ec-nantesfr-yMRyCRpaRF0D",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 mars 2025, l’École Centrale de Nantes, école d’ingéniers française du domaine ec-nantes.fr, apparaît sur le site de fuite de Ralord, groupe de rançongiciel tout récent qui ne comptait alors que deux victimes dans le monde. Les attaquants prétendent détenir 5 Go de données : plans, mots de passe, noms et documents divers, accompagnés d’un échantillon. Ils menacent de publier l’intégralité le 8 avril 2025. Les observateurs relèvent qu’un maigre échantillon laisse penser à des données obtenues via un infostealer ayant compromis un compte étudiant plutôt qu’à une intrusion massive. L’école n’a pas confirmé publiquement l’exfiltration.",
+  "timeline": [
+    {
+      "date": "2025-03-25",
+      "event": "Publication alléguée de l’entrée ec-nantes.fr sur le site de fuite de Ralord."
+    },
+    {
+      "date": "2025-03-26",
+      "event": "Revendication indexée : 5 Go revendiqués (plans, mots de passe, noms), échantillon diffusé."
+    },
+    {
+      "date": "2025-04-08",
+      "event": "Date de publication intégrale des données brandie par les attaquants."
+    }
+  ],
+  "group": "ralord"
+}

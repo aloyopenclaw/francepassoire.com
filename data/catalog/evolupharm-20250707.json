@@ -1,0 +1,48 @@
+{
+  "slug": "evolupharm-20250707",
+  "entity": "EvoluPharm (laboratoire et services aux pharmaciens)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-07",
+    "publication": "2025-07-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "858 Go de données revendiqués par PayoutsKING ; attaque estimée au 12 mai 2025"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : EvoluPharm (groupe PayoutsKING, découverte 7 juillet 2025, attaque estimée 12 mai)",
+      "url": "https://www.ransomware.live/id/RXZvbHVQaGFybUBwYXlvdXRza2luZw",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense — EvoluPharm Data Breach : acteur PayoutsKING, 858 Go (8 juillet 2025)",
+      "url": "https://www.breachsense.com/breaches/evolupharm-data-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "Breach House — EvoluPharm : PayoutsKING ransomware attack (publication 12 mai, divulgation 7 juillet 2025)",
+      "url": "https://breach.house/ransomware-victim/payoutsking-evolupharm-YAuzVyqCm6En",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 juillet 2025, EvoluPharm, acteur français du secteur pharmaceutique proposant médicaments génériques et spécialités, outils de gestion, solutions marketing et formation aux pharmaciens, apparaît sur le site de fuite du rançongiciel PayoutsKING. L’attaque est estimée au 12 mai 2025 et le volume de données revendiqué atteint 858 Go. PayoutsKING, acteur apparu au printemps 2025, pratique la double extorsion : exfiltration de documents internes puis menace de publication. Aucune communication publique de l’entreprise ni des autorités sanitaires n’a confirmé l’intrusion ou la nature exacte des données concernées, qui pourraient inclure des documents internes et des données d’identification.",
+  "timeline": [
+    {
+      "date": "2025-05-12",
+      "event": "Date d’attaque estimée par les agrégateurs pour l’intrusion chez EvoluPharm."
+    },
+    {
+      "date": "2025-07-07",
+      "event": "EvoluPharm listé par PayoutsKING : 858 Go de données revendiqués."
+    }
+  ],
+  "group": "payoutsking"
+}

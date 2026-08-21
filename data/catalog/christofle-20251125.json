@@ -1,0 +1,44 @@
+{
+  "slug": "christofle-20251125",
+  "entity": "Christofle (maison d’orfèvrerie)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-25",
+    "publication": "2025-11-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non confirmé ; documents d’entreprise, données de conception, contrats et réseaux de distribution cités"
+  },
+  "data_types": [
+    "documents",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Christofle (groupe Qilin, découverte 25 novembre 2025)",
+      "url": "https://www.ransomware.live/id/Q2hyaXN0b2ZsZUBxaWxpbg",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — Qilin Ransomware Attack on Christofle, a French Luxury Brand (26 novembre 2025)",
+      "url": "https://www.dexpose.io/qilin-ransomware-attack-on-christofle-a-french-luxury-brand/",
+      "kind": "article"
+    },
+    {
+      "label": "Botcrawl — Christofle Data Breach Exposes Corporate Files and Internal Documents (25 novembre 2025)",
+      "url": "https://botcrawl.com/christofle-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 novembre 2025, Christofle, maison d’orfèvrerie française fondée en 1830, présente dans plus de 70 pays (argenterie, arts de la table, bijouterie), est listée sur le site de fuite du rançongiciel Qilin. Les attaquants menacent de publier des données sensibles sauf si l’entreprise engage des négociations. Les relais spécialisés décrivent un lot présumé de documents internes : communications, données de conception, dossiers commerciaux internationaux, contrats, factures et informations sur la chaîne d’approvisionnement et le réseau de boutiques. La maison n’a pas communiqué publiquement ; l’exfiltration n’est pas confirmée au-delà de la revendication.",
+  "timeline": [
+    {
+      "date": "2025-11-25",
+      "event": "Christofle listée par Qilin ; publication des données menacée sauf négociation."
+    }
+  ],
+  "group": "qilin"
+}

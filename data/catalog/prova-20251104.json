@@ -1,0 +1,38 @@
+{
+  "slug": "prova-20251104",
+  "entity": "Prova (fabricant d’arômes et extraits de vanille)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-04",
+    "publication": "2025-11-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; fuite intégrale menacée en l’absence de négociation"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Prova (groupe Qilin, découverte 4 novembre 2025)",
+      "url": "https://www.ransomware.live/id/UHJvdmFAcWlsaW4=",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — Qilin Ransomware Attack on French Manufacturer Prova (5 novembre 2025)",
+      "url": "https://www.dexpose.io/qilin-ransomware-attack-on-french-manufacturer-prova/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 novembre 2025, Prova (prova.fr), fabricant français spécialiste des arômes bruns et des extraits de vanille pour l’agroalimentaire, implanté à Le Vaudreuil (Normandie), est revendiqué par le rançongiciel Qilin. Les attaquants préviennent que la fuite intégrale des données sensibles sera publiée « prochainement » si aucun représentant de l’entreprise ne les contacte pour négocier. Aucun volume ni échantillon n’accompagne l’entrée au moment de la revendication. Pour un industriel fournissant formulations et clients grands comptes, un tel lot peut contenir recettes, contrats et données commerciales. L’entreprise n’a pas communiqué publiquement ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-11-04",
+      "event": "Prova listée par Qilin ; fuite intégrale conditionnée à l’ouverture de négociations."
+    }
+  ],
+  "group": "qilin"
+}

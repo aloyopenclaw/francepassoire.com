@@ -1,0 +1,48 @@
+{
+  "slug": "corneilhan-20251020",
+  "entity": "Commune de Corneilhan (Hérault)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-20",
+    "publication": "2025-10-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; commune d’environ 1 700 habitants"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — Victim : Corneilhan (groupe Ciphbit, découverte 20 octobre 2025)",
+      "url": "https://www.ransomware.live/id/Q29ybmVpbGhhbkBjaXBoYml0",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breach House — Corneilhan : CIPHBIT ransomware attack (publication 20 octobre 2025)",
+      "url": "https://breach.house/ransomware-victim/ciphbit-corneilhan-m7inFLC5MUox",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense — Commune de Corneilhan Data Breach : acteur CiphBit (28 octobre 2025)",
+      "url": "https://www.breachsense.com/breaches/commune-de-corneilhan-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 octobre 2025, la commune de Corneilhan (Hérault, environ 1 700 habitants, domaine corneilhan.fr) apparaît sur le site de fuite du rançongiciel CiphBit. Les indexeurs relèvent une divulgation antérieure estimée au 27 août 2025, ce qui suggère un délai entre l’attaque et la publication. Une mairie concentre état civil, arrêtés, marches publics et données des habitants ; une publication intégrale exposerait des pièces d’identité et des informations personnelles. La commune n’a pas communiqué publiquement sur l’incident. CiphBit, acteur de moindre envergure, cible régulièrement des collectivités et petites organisations françaises ; la revendication reste non confirmée.",
+  "timeline": [
+    {
+      "date": "2025-08-27",
+      "event": "Date de divulgation initiale avancée par les indexeurs avant l’entrée publique."
+    },
+    {
+      "date": "2025-10-20",
+      "event": "Corneilhan listée sur le site de fuite de CiphBit ; aucun détail de volume publié."
+    }
+  ],
+  "group": "ciphbit"
+}

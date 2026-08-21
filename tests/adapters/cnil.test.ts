@@ -267,3 +267,23 @@ describe('cnilDataGouvAdapter — résolution API datasets puis CSV (stats ≠ c
     expect(warn).toHaveBeenCalled();
   });
 });
+
+// RED (bug soak 21/08) : le runner déduplie via le champ de premier niveau
+// `candidate.guid` — l'adapter le calculait mais ne l'embarquait QUE dans
+// raw, donc guid_set KV restait vide et chaque run quotidien réinsérait
+// les 390 sanctions (734 lignes en D1 au 21/08).
+describe('cnil sanctions — champ guid de premier niveau (contrat runner)', () => {
+  it('chaque candidat porte son guid au niveau supérieur (pas seulement dans raw)', () => {
+    const tous = parseCnilSanctions(fixture('cnil-sanctions.html'));
+    expect(tous).toHaveLength(390);
+    for (const c of tous) {
+      expect(c.guid, `guid top-level absent pour ${c.entity_name}`).toBeDefined();
+    }
+    // les guids de premier niveau sont uniques et identiques à ceux du raw
+    const guidTop = new Set(tous.map((c) => c.guid as string));
+    expect(guidTop.size).toBe(390);
+    for (const c of tous) {
+      expect(c.guid).toBe((JSON.parse(c.raw) as { guid: string }).guid);
+    }
+  });
+});
