@@ -1,0 +1,56 @@
+{
+  "slug": "apple-distribution-international-20221229",
+  "entity": "Apple Distribution International",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-29",
+    "publication": "2023-01-04",
+    "confirmation": "2022-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "utilisateurs français d’iPhone sous iOS 14.6 concernés ; volume non chiffré par la CNIL"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Identifiant publicitaire : sanction de 8 millions d’euros à l’encontre d’APPLE DISTRIBUTION INTERNATIONAL",
+      "url": "https://cnil.fr/fr/identifiant-publicitaire-sanction-de-8-millions-deuros-lencontre-de-apple-distribution-international",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Challenges (Reuters) — France : la Cnil inflige une amende de 8 millions à Apple (4 janvier 2023)",
+      "url": "https://www.challenges.fr/economie/france-la-cnil-inflige-une-amende-de-8-millions-a-apple_840851",
+      "kind": "article"
+    },
+    {
+      "label": "Conseil d’État, décision n° 473833 du 15 octobre 2025 — Apple Distribution International c/ CNIL",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-10-15/473833",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2022, la formation restreinte de la CNIL a sanctionné Apple Distribution International d'une amende de 8 millions d'euros pour ne pas avoir recueilli le consentement des utilisateurs français d'iPhone sous iOS 14.6 avant de déposer ou d'écrire des identifiants publicitaires via l'App Store, en méconnaissance de l'article 82 de la loi Informatique et Libertés. L'enquête avait été ouverte à la suite d'une plainte de l'association France Digitale déposée en 2021. Annoncée publiquement le 4 janvier 2023, la sanction a été confirmée par le Conseil d'État le 15 octobre 2025, qui rejette les recours d'Apple. Le volume d'utilisateurs concernés n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2022-12-29",
+      "event": "La formation restreinte prononce une amende de 8 millions d'euros : identifiants publicitaires déposés sans consentement préalable sur les iPhone français (iOS 14.6)."
+    },
+    {
+      "date": "2023-01-04",
+      "event": "La CNIL annonce publiquement la sanction ; la plainte à l’origine de l’enquête avait été déposée par France Digitale en 2021."
+    },
+    {
+      "date": "2025-10-15",
+      "event": "Le Conseil d’État rejette les recours d’Apple et confirme la caractérisation du manquement et la compétence de la CNIL."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "societe-de-commerce-de-detail-d-habillement-20241212",
+  "entity": "Société de commerce de détail d'habillement",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-12",
+    "confirmation": "2024-12-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 12 décembre 2024, dans le cadre de la procédure simplifiée, une amende de 20 000 euros contre une société de commerce de détail d'habillement, désignée anonymément dans le tableau officiel des sanctions. Le manquement retenu porte sur le consentement des personnes pour les cookies. Trois autres sociétés d'habillement ont été sanctionnées le même jour pour le même manquement, avec des amendes de 3 000 à 10 000 euros. Le nom des sociétés n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2024-12-12",
+      "event": "Amende de 20 000 euros en procédure simplifiée pour cookies déposés sans consentement valable ; trois autres sociétés d’habillement sanctionnées le même jour."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-centres-d-appels-20251016",
+  "entity": "Société de centres d'appels",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-16",
+    "confirmation": "2025-10-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 16 octobre 2025 une amende de 250 000 euros contre une société de centres d'appels, désignée anonymement dans le tableau officiel des sanctions. Trois familles de manquements sont retenues : défaut de minimisation des données traitées pour la prospection, durées de conservation excessives et défaut de sécurité des données. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-10-16",
+      "event": "Amende de 250 000 euros pour défaut de minimisation, durées de conservation excessives et défaut de sécurité des données."
+    }
+  ]
+}

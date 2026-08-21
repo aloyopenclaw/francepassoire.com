@@ -1,0 +1,37 @@
+{
+  "slug": "commune-procedure-simplifiee-20250911",
+  "entity": "Une commune (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-11",
+    "confirmation": "2025-09-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité RGPD ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 11 septembre 2025, la CNIL a sanctionné une commune d'une amende de 10 000 euros assortie d'un rappel à l'ordre, dans le cadre de la procédure simplifiée. Manquements retenus : durée de conservation excessive portant sur une catégorie particulière de données, défaut de sécurité et absence de registre des activités de traitement. Le nom de la commune ne peut pas être publié : les sanctions simplifiées ne sont jamais rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le bilan 2025, qui recense 67 sanctions simplifiées sur l'année, dont les trois quarts pour des dossiers simples.",
+  "timeline": [
+    {
+      "date": "2025-09-11",
+      "event": "Amende de 10 000 euros et rappel à l'ordre (procédure simplifiée) : conservation, sécurité et registre des traitements."
+    }
+  ]
+}
