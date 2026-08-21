@@ -1,0 +1,42 @@
+{
+  "slug": "societe-magasins-chaussures-habillement-sport-20240425",
+  "entity": "Société exploitant des magasins de chaussures et d'habillement de sport (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-25",
+    "confirmation": "2024-04-25",
+    "publication": "2025-02-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 15 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société exploitant des magasins de chaussures et d'habillement de sport (procédure simplifiée) », amende de 15 000 euros (25 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 avril 2024, la CNIL a prononcé une amende de 15 000 euros à l'encontre d'une société exploitant des magasins de chaussures et d'habillement de sport, dans le cadre de la procédure simplifiée. Manquements retenus : information des personnes et consentement pour les cookies déposés sur son site, à la suite de contrôles en ligne. La dénomination n'est pas publiée. Le bilan 2024 de la CNIL recense 41 sanctions simplifiées sur l'année, pour un montant total de 715 500 euros.",
+  "timeline": [
+    {
+      "date": "2024-04-25",
+      "event": "Amende de 15 000 euros (procédure simplifiée) : information et consentement cookies non conformes."
+    },
+    {
+      "date": "2025-02-05",
+      "event": "Le bilan 2024 de la CNIL recense 41 sanctions simplifiées pour 715 500 euros au total."
+    }
+  ]
+}
