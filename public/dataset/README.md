@@ -3,7 +3,7 @@
 ## Accès
 
 - **URL canonique** : <https://francepassoire.com/dataset/catalogue.json>
-- **API versionnée** (même payload) : <https://francepassoire.com/api/v1/fiches.json>
+- **API versionnée** (même payload) : <https://francepassoire.com/opendata/v1/fiches.json>
 - **Schéma** : `francepassoire/fiches@v1` — contrat stable. Toute rupture
   de compatibilité ouvrira `francepassoire/fiches@v2` ; `@v1` ne changera
   jamais silencieusement.
