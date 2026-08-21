@@ -1,0 +1,61 @@
+{
+  "slug": "ag2r-la-mondiale-20210720",
+  "entity": "SGAM AG2R La Mondiale",
+  "siren": "502858418",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-07-20",
+    "publication": "2021-07-22",
+    "confirmation": "2021-07-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 1 750 000 euros ; manquements concernant plusieurs millions de personnes et des données de nature sensible (délibération SAN-2021-010)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ASSURANCE », sanction pécuniaire de 1 750 000 euros (20 juillet 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanction de 1,75 million d'euros à l'encontre d'AG2R La Mondiale (communiqué du 22 juillet 2021, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20210722121016/https://www.cnil.fr/fr/sanction-1-75-million-deuros-ag2r-la-mondiale",
+      "kind": "archive"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2021-010 du 20 juillet 2021 (texte officiel anonymisé ; page courante protégée contre les robots, capture vérifiée)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000043829617",
+      "kind": "officiel"
+    },
+    {
+      "label": "Haas Avocats — La CNIL sanctionne l'AG2R pour deux manquements au RGPD (3 août 2021)",
+      "url": "https://www.haas-avocats.com/contentieux/la-cnil-sanctionne-l-ag2r-pour-deux-manquements-au-rgpd/",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : chronologie des sanctions, « Sanction de 1,75 million d'euros à l'encontre d'AG2R LA MONDIALE »",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 20 juillet 2021, la formation restreinte de la CNIL a infligé une amende de 1 750 000 euros à la SGAM AG2R La Mondiale. La délibération SAN-2021-010 est publique. Ce groupe d'assurance pilote la prévoyance, la santé et les retraites complémentaires. Un contrôle de 2019 a révélé des durées de conservation excessives. Selon la décision relayée par Haas Avocats, des données de plus de 2 millions de clients restaient stockées au-delà de cinq ans après résiliation. Parmi elles, 1,3 million dépassait dix ans. Les campagnes de démarchage téléphonique sous-traitées ne comportaient aucune information des personnes.",
+  "timeline": [
+    {
+      "date": "2021-07-20",
+      "event": "Amende de 1 750 000 euros (SAN-2021-010) : durées de conservation excessives des données de clients et prospects, défaut d'information lors du démarchage téléphonique."
+    },
+    {
+      "date": "2021-07-22",
+      "event": "La CNIL rend publique la décision et prend acte des mesures de mise en conformité déjà adoptées par la société."
+    }
+  ]
+}

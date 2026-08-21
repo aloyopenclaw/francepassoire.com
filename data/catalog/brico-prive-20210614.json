@@ -1,0 +1,60 @@
+{
+  "slug": "brico-prive-20210614",
+  "entity": "Brico Privé",
+  "siren": "788504629",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-06-14",
+    "publication": "2021-06-17",
+    "confirmation": "2021-06-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 500 000 euros et injonctions ; aucun volume de personnes concernées publié"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ ÉDITANT UN SITE DE VENTES PRIVÉES DÉDIÉ AU BRICOLAGE, AU JARDINAGE ET À L'AMÉNAGEMENT DE LA MAISON », sanction pécuniaire de 500 000 euros et injonctions (14 juin 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanction de 500 000 euros à l'encontre de la société Brico Privé (communiqué du 17 juin 2021, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20210617074806/https://www.cnil.fr/fr/sanction-de-500-000-euros-lencontre-de-la-societe-brico-prive",
+      "kind": "archive"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2021-008 du 14 juin 2021 (texte officiel ; page courante protégée contre les robots, capture vérifiée)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000043668709",
+      "kind": "officiel"
+    },
+    {
+      "label": "Alter Via Avocats — Sanction de la CNIL à hauteur de 500 000 € pour Brico Privé (17 juin 2021)",
+      "url": "https://alter-via.fr/sanction-de-la-cnil-a-hauteur-de-500-000-eur-pour-brico-prive-17-06-2021",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : « Brico Privé et Le Figaro : l'internaute doit pouvoir accepter les cookies non essentiels avant leur dépôt »",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 14 juin 2021, la formation restreinte de la CNIL a sanctionné la société Brico Privé d'une amende de 500 000 euros assortie d'injonctions. L'entreprise édite le site de ventes privées bricoprive.com (délibération SAN-2021-008). Trois contrôles menés entre 2018 et 2021 ont révélé des courriels de prospection envoyés sans consentement. La CNIL a aussi relevé des durées de conservation excessives et des demandes d'effacement non respectées. Des cookies publicitaires étaient déposés avant toute action de l'internaute. La décision a été adoptée en coopération avec trois autorités européennes, l'enseigne étant active en Espagne, en Italie et au Portugal.",
+  "timeline": [
+    {
+      "date": "2021-06-14",
+      "event": "Amende de 500 000 euros et injonctions (SAN-2021-008) : prospection sans consentement, conservation, information, effacement, sous-traitance, sécurité et cookies en cause."
+    },
+    {
+      "date": "2021-06-17",
+      "event": "La CNIL rend publique la décision, adoptée en coopération avec les autorités espagnole, italienne et portugaise."
+    }
+  ]
+}

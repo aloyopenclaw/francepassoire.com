@@ -1,0 +1,55 @@
+{
+  "slug": "ministere-interieur-drones-20210112",
+  "entity": "Ministère de l'Intérieur",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-01-12",
+    "publication": "2021-01-14",
+    "confirmation": "2021-01-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rappel à l'ordre et injonction de cesser tout vol de drone ; aucune amende possible contre l'État ; aucun volume communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « MINISTÈRE », rappel à l'ordre et injonction (12 janvier 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Drones : la CNIL sanctionne le ministère de l'Intérieur (communiqué du 14 janvier 2021, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20210114080112/https://www.cnil.fr/fr/drones-la-cnil-sanctionne-le-ministere-de-linterieur",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL — 42e rapport annuel (2021) : « Une utilisation illicite de drones équipés de caméras pour surveiller le respect du confinement »",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_42e_rapport_annuel_-_2021.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "En 2020, pendant le confinement, le ministère de l'Intérieur a utilisé des drones équipés de caméras pour vérifier le respect des mesures de confinement. Ces vols couvraient aussi des manifestations et des missions de police judiciaire. Le 12 janvier 2021, la formation restreinte de la CNIL a rappelé le ministère à l'ordre. Aucun texte n'autorisait ces traitements, aucune analyse d'impact n'avait été communiquée et le public n'était pas informé. Elle a enjoint de cesser tout vol de drone jusqu'à l'adoption d'un cadre normatif. La CNIL ne peut prononcer d'amende contre l'État.",
+  "timeline": [
+    {
+      "date": "2020-05-01",
+      "event": "La CNIL ouvre, en mai 2020, une procédure de contrôle sur l'utilisation de drones par les forces de l'ordre, à la suite de révélations de presse."
+    },
+    {
+      "date": "2021-01-12",
+      "event": "Rappel à l'ordre du ministère de l'Intérieur et injonction de cesser tout vol de drone jusqu'à l'adoption d'un cadre normatif."
+    },
+    {
+      "date": "2021-01-14",
+      "event": "La CNIL rend publique sa décision, qui vise tous les vols effectués sous l'autorité du ministère, quelle que soit la finalité."
+    },
+    {
+      "date": "2022-01-24",
+      "event": "Une loi autorise désormais la police, la gendarmerie et les militaires à utiliser des drones pour certaines finalités, dont la sécurité des rassemblements."
+    }
+  ]
+}
