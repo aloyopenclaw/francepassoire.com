@@ -1,0 +1,42 @@
+{
+  "slug": "ville-et-agglomeration-de-saint-nazaire-20240410",
+  "entity": "Ville et agglomération de Saint-Nazaire",
+  "siren": "214401846",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-10",
+    "publication": "2024-04-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "un tiers des 450 serveurs chiffré ; « pas de volumes de données sortis » détectés selon la Ville, rançon refusée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Pays de la Loire — Cyberattaque à Saint-Nazaire : « On est passés au papier, à la gomme et au crayon » (19 avril 2024)",
+      "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/loire-atlantique/saint-nazaire/cyberattaque-a-saint-nazaire-on-est-passes-au-papier-a-la-gomme-et-au-crayon-2958131.html",
+      "kind": "article"
+    },
+    {
+      "label": "The Record — 'Large-scale cyberattack' hits five French municipalities (10 avril 2024)",
+      "url": "https://therecord.media/france-cyberattack-loire-municipalities",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 avril 2024, un cryptovirus entre dans les systèmes de la ville et de l'agglomération de Saint-Nazaire : déclenchée le 9 vers 18 h, l'attaque chiffre le tiers des 450 serveurs et exige une rançon pour réactiver les systèmes. La Ville refuse de payer, débranche tous les ordinateurs et fait basculer 2 000 agents « au papier, à la gomme et au crayon » ; une plainte est déposée auprès du parquet de Paris et l'ANSSI mobilisée. « On n'a pas détecté de volumes de données qui seraient sortis », indique le directeur des systèmes d'information.",
+  "timeline": [
+    {
+      "date": "2024-04-10",
+      "event": "Un cryptovirus chiffre le tiers des 450 serveurs de la Ville et de l'agglomération ; une rançon est exigée, les ordinateurs sont débranchés."
+    },
+    {
+      "date": "2024-04-19",
+      "event": "Le maire fait le point : rançon refusée, plainte au parquet de Paris, ANSSI mobilisée ; aucune exfiltration détectée à ce stade."
+    }
+  ]
+}

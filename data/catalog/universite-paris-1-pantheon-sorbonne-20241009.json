@@ -1,0 +1,43 @@
+{
+  "slug": "universite-paris-1-pantheon-sorbonne-20241009",
+  "entity": "Université Paris 1 Panthéon-Sorbonne",
+  "siren": "197517170",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-10-09",
+    "publication": "2024-10-10"
+  },
+  "volume": {
+    "count": 73000,
+    "unit": "personnes",
+    "label": "73 000 personnes selon le cybercriminel vendeur (étudiants, anciens étudiants et personnels) ; chiffre non confirmé par l'université"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — L'université Paris 1 Panthéon-Sorbonne victime d'une cyberattaque, une enquête ouverte (octobre 2024)",
+      "url": "https://www.leparisien.fr/etudiant/etudes/universites/luniversite-paris-1-pantheon-sorbonne-victime-dune-cyberattaque-une-enquete-ouverte-6KGS7ZFKURBF7JP5TVSFGFBJBQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Cette prestigieuse université française à son tour attaquée, les données d'étudiants dans la nature (octobre 2024)",
+      "url": "https://www.clubic.com/actualite-540236-cette-prestigieuse-universite-francaise-a-son-tour-attaquee-les-donnees-d-etudiants-dans-la-nature.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 octobre 2024 au soir, l'Université Paris 1 Panthéon-Sorbonne détecte un « incident de sécurité » impliquant un compte utilisateur usurpé. Le lendemain, un cybercriminel met en vente sur un forum une base revendiquée de 73 000 personnes — étudiants, anciens étudiants et personnels — et publie des photos d'identité en échantillon, y compris d'anciens étudiants. L'université, qui reconnaît l'intrusion, annonce l'ouverture d'une enquête et son intention de porter plainte ; l'ampleur réelle de l'exfiltration n'est pas confirmée par l'établissement.",
+  "timeline": [
+    {
+      "date": "2024-10-09",
+      "event": "Un « incident de sécurité » est détecté dans la soirée ; l'université évoque un compte utilisateur usurpé."
+    },
+    {
+      "date": "2024-10-10",
+      "event": "Un cybercriminel met en vente une base revendiquée de 73 000 personnes et publie des photos d'identité ; la presse relaie l'attaque."
+    }
+  ]
+}

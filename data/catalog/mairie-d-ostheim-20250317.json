@@ -1,0 +1,46 @@
+{
+  "slug": "mairie-d-ostheim-20250317",
+  "entity": "Commune d'Ostheim",
+  "siren": "216802520",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-17",
+    "publication": "2025-03-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "95 % des données du serveur chiffrées ; vol jugé improbable (« du bluff ») selon l'informaticien de la commune"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "DNA — La mairie d'Ostheim attaquée par un logiciel de rançon (17 mars 2025)",
+      "url": "https://www.dna.fr/faits-divers-justice/2025/03/17/la-mairie-d-ostheim-attaquee-par-un-logiciel-de-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "Jedha (recensement cybersécurité) — Liste des organisations publiques victimes d'une cyberattaque en 2024",
+      "url": "https://www.jedha.co/formation-cybersecurite/liste-des-organisations-victimes-dune-cyberattaque-en-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 février 2025, un rançongiciel chiffre le serveur informatique de la mairie d'Ostheim (Haut-Rhin, 1 600 habitants), découvert le lendemain matin avec un message de rançon en anglais. La commune, qui n'a « pas versé un centime », porte plainte pour extorsion et entrave à un système de traitement automatisé de données ; une sauvegarde quasi intégrale permet une reprise en mode dégradé dès le mardi. Le vol de données est jugé improbable par l'informaticien de la commune, et la gendarmerie transmet le dossier à sa cellule cybercriminalité.",
+  "timeline": [
+    {
+      "date": "2025-02-02",
+      "event": "Un rançongiciel chiffre le serveur de la mairie dans la nuit du 2 février ; 95 % des données deviennent inaccessibles."
+    },
+    {
+      "date": "2025-02-03",
+      "event": "Découverte du message de rançon ; plainte pour extorsion et entrave, reprise en mode dégradé grâce à une sauvegarde."
+    },
+    {
+      "date": "2025-03-17",
+      "event": "Les DNA relatent l'attaque : rançon non payée, vol de données jugé improbable, enquête en cours."
+    }
+  ]
+}

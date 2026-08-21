@@ -1,0 +1,47 @@
+{
+  "slug": "academie-de-lyon-20250613",
+  "entity": "Académie de Lyon (Affelnet)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-13",
+    "publication": "2025-06-16",
+    "confirmation": "2025-06-16"
+  },
+  "volume": {
+    "count": 61000,
+    "unit": "enregistrements",
+    "label": "plus de 61 000 dossiers Affelnet diffusés sur un forum cybercriminel (relais FrenchBreaches) ; vol confirmé par l'académie"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Auvergne-Rhône-Alpes — Une cyberattaque cible les données des collégiens de l'académie de Lyon, une plainte va être déposée (16 juin 2025)",
+      "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/une-cyberattaque-cible-les-donnees-des-collegiens-de-l-academie-de-lyon-une-plainte-va-etre-deposee-3369928.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Académie de Lyon : plus de 61 000 dossiers Affelnet diffusés",
+      "url": "https://frenchbreaches.com/alertes/acad-mie-de-lyon-mqcey3tv8yl47jz29m7",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Académie de Lyon : plus de 61 000 dossiers Affelnet diffusés sur un forum cybercriminel (juin 2025)",
+      "url": "https://www.cyberattaque.org/academie-de-lyon-plus-de-61-000-dossiers-affelnet-diffuses-sur-un-forum-cybercriminel/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 13 juin 2025 à 18 h 30, l'académie de Lyon est informée d'une revendication d'exfiltration portant sur Affelnet, la plateforme nationale d'affectation des élèves de troisième. Une base attribuée à l'académie — plus de 61 000 dossiers — est diffusée sur un forum cybercriminel. Le 16 juin, le rectorat reconnaît un vol d'informations issues d'Affelnet concernant des collégiens de l'académie et annonce le dépôt de plainte. Le périmètre exact des données diffusées reste à préciser.",
+  "timeline": [
+    {
+      "date": "2025-06-13",
+      "event": "L'académie de Lyon est informée d'une revendication d'exfiltration de données du système Affelnet."
+    },
+    {
+      "date": "2025-06-16",
+      "event": "Le rectorat confirme un vol d'informations sur Affelnet et annonce une plainte ; plus de 61 000 dossiers diffusés selon les relais."
+    }
+  ]
+}

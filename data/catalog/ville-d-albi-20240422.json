@@ -1,0 +1,51 @@
+{
+  "slug": "ville-d-albi-20240422",
+  "entity": "Ville d'Albi",
+  "siren": "218100048",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-22",
+    "publication": "2024-04-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "attaque de grande ampleur paralysant les services administratifs ; aucune donnée concernée chiffrée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ici (France Bleu) — Cyberattaque à la mairie d'Albi (22 avril 2024)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/une-cyber-attaque-en-cours-a-la-mairie-d-albi-6909499",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — La ville toujours paralysée par une attaque informatique de grande ampleur (23 avril 2024)",
+      "url": "https://www.ladepeche.fr/2024/04/23/la-ville-toujours-paralysee-par-une-attaque-informatique-de-grande-ampleur-11907816.php",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes — La mairie d'Albi paralysée par une cyberattaque (23 avril 2024)",
+      "url": "https://www.20minutes.fr/societe/4087823-20240423-cyberattaque-mairie-albi-paralysee-attaque-informatique",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 avril 2024 à 6 heures, une attaque informatique de grande ampleur frappe la mairie d'Albi (Tarn). Les numéros de téléphone et de nombreux services administratifs sont coupés ; la Ville bascule en mode dégradé et ses agents reviennent au papier et au stylo pendant plusieurs jours. L'attaque, toujours en cours selon la municipalité au 23 avril, n'est pas revendiquée et le type de logiciel malveillant n'est pas précisé ; aucune fuite de données n'est établie. Début mai, la Ville indique que la situation « s'améliore rapidement ».",
+  "timeline": [
+    {
+      "date": "2024-04-22",
+      "event": "Une attaque informatique débutée à 6 h paralyse les services municipaux d'Albi ; téléphonie et outils administratifs coupés."
+    },
+    {
+      "date": "2024-04-23",
+      "event": "La presse locale relate la paralysie persistante ; la Ville confirme une attaque « de grande ampleur », sans revendication."
+    },
+    {
+      "date": "2024-05-06",
+      "event": "La municipalité indique que la situation « s'améliore rapidement » selon La Dépêche."
+    }
+  ]
+}

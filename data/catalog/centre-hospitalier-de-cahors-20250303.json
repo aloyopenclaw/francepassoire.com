@@ -1,0 +1,42 @@
+{
+  "slug": "centre-hospitalier-de-cahors-20250303",
+  "entity": "Centre hospitalier Jean-Rougier (Cahors) et CH de Gourdon",
+  "siren": "264600016",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-03-03",
+    "publication": "2025-03-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "risque de compromission de serveurs RDS ; aucun vol de données confirmé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CERT Santé (cyberveille.esante.gouv.fr) — Compromission potentielle de serveurs RDS au CH de Cahors (retour d'expérience, 3 mars 2025)",
+      "url": "https://cyberveille.esante.gouv.fr/retours-d-experience/compromission-potentielle-de-serveurs-rds-au-ch-de-cahors-2025-03-03",
+      "kind": "officiel"
+    },
+    {
+      "label": "GHT du Lot — Revue de presse CH Cahors (suivi public de l'établissement)",
+      "url": "https://www.ght-lot.fr/revue-de-presse-ch-cahors/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "En janvier 2025, le centre hospitalier de Cahors (Lot) constate des comportements anormaux sur son système d'information avec un risque de compromission de ses serveurs RDS, relate le CERT Santé dans le retour d'expérience publié le 3 mars 2025. L'incident impacte également le centre hospitalier de Gourdon ; une cellule de crise conjointe est ouverte avec l'appui du CERT Santé. Le retour d'expérience ne mentionne aucune exfiltration de données confirmée.",
+  "timeline": [
+    {
+      "date": "2025-03-03",
+      "event": "Le CERT Santé publie le retour d'expérience : comportements anormaux constatés en janvier, risque de compromission des serveurs RDS."
+    },
+    {
+      "date": "2025-03-03",
+      "event": "Cellule de crise conjointe Cahors-Gourdon ouverte avec l'appui du CERT Santé ; aucune exfiltration confirmée."
+    }
+  ]
+}
