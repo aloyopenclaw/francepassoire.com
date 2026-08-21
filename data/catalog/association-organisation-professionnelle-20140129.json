@@ -1,0 +1,38 @@
+{
+  "slug": "association-organisation-professionnelle-20140129",
+  "entity": "Une organisation professionnelle associative (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-01-29",
+    "confirmation": "2014-01-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique de 1 euro"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « ASSOCIATION (ORGANISATION PROFESSIONNELLE) », droit d'opposition (29 janvier 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 29/01/2014 — sanction pécuniaire publique de 1 euro",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 29 janvier 2014, la CNIL a sanctionné une association agissant comme organisation professionnelle pour avoir maintenu en ligne le CV d'une personne qui demandait son retrait : défaut de formalités préalables, non-respect du droit d'opposition et défaut de réponse aux demandes de l'autorité. La sanction pécuniaire publique se limite à un euro, montant qui n'apparaît plus dans le tableau actuel mais figure dans la version archivée de la liste officielle. La dénomination n'est pas publique. Cette amende d'un euro illustre que la CNIL sanctionne le manquement lui-même, quelle que soit la modicité du montant.",
+  "timeline": [
+    {
+      "date": "2014-01-29",
+      "event": "Sanction pécuniaire publique de 1 euro : CV maintenu en ligne malgré l'opposition, formalités et coopération défaillantes."
+    }
+  ]
+}
