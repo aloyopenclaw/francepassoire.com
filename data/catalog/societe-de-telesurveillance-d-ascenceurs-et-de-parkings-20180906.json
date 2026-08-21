@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-telesurveillance-d-ascenceurs-et-de-parkings-20180906",
+  "entity": "Société de télésurveillance d'ascenceurs et de parkings",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-09-06",
+    "confirmation": "2018-09-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; sanction pécuniaire (montant non précisé)"
+  },
+  "data_types": [
+    "biometrique"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de télésurveillance d'ascenceurs et de parkings », Sanction pécuniaire (6 septembre 2018)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 6 septembre 2018, la CNIL a prononcé une sanction pécuniaire à l'encontre d'une société de télésurveillance d'ascenceurs et de parkings, désignée de façon anonymisée dans la liste officielle. Les manquements retenus : caractère excessif des données, défaut d'information des personnes, défaut de sécurité et de confidentialité, et enregistrement de communications téléphoniques relevant de la biométrie. Le montant de la sanction n'est pas précisé par la ligne de la liste. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2018-09-06",
+      "event": "Sanction pécuniaire (montant non précisé) : données excessives, information, sécurité et biométrie en cause."
+    }
+  ]
+}

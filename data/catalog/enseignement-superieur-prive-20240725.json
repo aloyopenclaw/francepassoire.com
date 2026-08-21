@@ -1,0 +1,37 @@
+{
+  "slug": "enseignement-superieur-prive-20240725",
+  "entity": "Un établissement d'enseignement supérieur privé (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-25",
+    "confirmation": "2024-07-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé ces trois derniers mois onze nouvelles sanctions dans le cadre de la procédure simplifiée (8 octobre 2024)",
+      "url": "https://www.cnil.fr/fr/onze-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 juillet 2024, la CNIL a prononcé une amende administrative de 20 000 euros à l'encontre d'un établissement d'enseignement supérieur privé, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du principe de minimisation des données, durées de conservation excessives et défaut de sécurité. L'établissement n'est pas nommé, les sanctions simplifiées ne pouvant être rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le communiqué d'octobre 2024 sur les onze sanctions simplifiées prononcées depuis juin, pour un cumul de 129 000 euros d'amendes.",
+  "timeline": [
+    {
+      "date": "2024-07-25",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : minimisation, durées de conservation et sécurité défaillantes."
+    }
+  ]
+}

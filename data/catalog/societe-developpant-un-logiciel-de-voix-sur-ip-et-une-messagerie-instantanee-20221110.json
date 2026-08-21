@@ -1,0 +1,32 @@
+{
+  "slug": "societe-developpant-un-logiciel-de-voix-sur-ip-et-une-messagerie-instantanee-20221110",
+  "entity": "Société développant un logiciel de voix sur IP et une messagerie instantanée (dénomination retirée de la publication à l'issue du délai fixé par la décision)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-10",
+    "confirmation": "2022-11-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 800 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 10 novembre 2022, la CNIL a prononcé une amende de 800 000 euros à l'encontre d'une société éditant un logiciel de voix sur IP et une messagerie instantanée, à l'issue d'un contrôle en ligne de son site et de son application. Les manquements retenus : durées de conservation excessives, défauts de transparence et d'information des utilisateurs, non-respect du droit d'opposition, protection des données insuffisante par défaut et sécurité inadaptée. La décision ayant fixé un délai au terme duquel la société n'est plus identifiée dans la publication officielle, la dénomination est retirée du tableau des sanctions ; le volume de personnes concernées n'y est pas précisé.",
+  "timeline": [
+    {
+      "date": "2022-11-10",
+      "event": "Amende de 800 000 euros : conservation, information, opposition, protection par défaut et sécurité en cause sur le service de voix sur IP."
+    }
+  ]
+}

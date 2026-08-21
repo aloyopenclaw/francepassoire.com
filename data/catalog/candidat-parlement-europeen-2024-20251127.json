@@ -1,0 +1,52 @@
+{
+  "slug": "candidat-parlement-europeen-2024-20251127",
+  "entity": "Candidat aux élections au Parlement européen de 2024 (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-27",
+    "confirmation": "2025-11-27",
+    "publication": "2025-12-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 8 000 euros — 23 500 euros cumulés pour les cinq candidats sanctionnés"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « candidat aux élections au Parlement européen de 2024 » (procédure simplifiée), amende de 8 000 euros et injonction (27 novembre 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Prospection politique : la CNIL sanctionne cinq candidats aux élections européennes et législatives 2024 (18 décembre 2025)",
+      "url": "https://cnil.fr/fr/prospection-politique-sanction-candidats-2024",
+      "kind": "officiel"
+    },
+    {
+      "label": "DataSecurityBreach — Prospection politique : la CNIL sanctionne cinq candidats",
+      "url": "https://www.datasecuritybreach.fr/prospection-politique-la-cnil-sanctionne-cinq-candidats/",
+      "kind": "article"
+    },
+    {
+      "label": "Cabinet Landot — Prospection politique : la CNIL sanctionne cinq candidats aux élections européennes et législatives 2024",
+      "url": "https://blog.landot-avocats.net/2025/12/19/prospection-politique-la-cnil-sanctionne-cinq-candidats-aux-elections-europeennes-et-legislatives-2024/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 novembre 2025, la CNIL a prononcé une amende de 8 000 euros assortie d'une injonction à l'encontre d'un candidat aux élections au Parlement européen de 2024, dans le cadre de la procédure simplifiée. Selon le communiqué du 18 décembre 2025, ce candidat n'a pas pu justifier la licéité de ses envois de prospection politique et n'a pas répondu aux demandes d'accès et d'effacement d'un plaignant, d'où l'injonction de répondre. Au total, cinq candidats des scrutins 2024 ont été sanctionnés pour 23 500 euros d'amendes cumulées. La dénomination n'est pas publiée.",
+  "timeline": [
+    {
+      "date": "2025-11-27",
+      "event": "Amende de 8 000 euros et injonction (procédure simplifiée) : licéité de la prospection politique non justifiée, droit d'effacement non respecté."
+    },
+    {
+      "date": "2025-12-18",
+      "event": "La CNIL publie son communiqué : cinq candidats sanctionnés, 23 500 euros cumulés, après signalements via l'observatoire des élections."
+    }
+  ]
+}

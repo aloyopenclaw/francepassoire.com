@@ -1,0 +1,33 @@
+{
+  "slug": "societe-d-aide-a-domicile-des-personnes-agees-et-handicapees-20191230",
+  "entity": "Société d'aide à domicile des personnes âgées et handicapées",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-12-30",
+    "confirmation": "2019-12-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 30 décembre 2019 une sanction pécuniaire et une injonction sous astreinte contre une société d'aide à domicile des personnes âgées et handicapées, désignée anonymément dans le tableau officiel des sanctions. Les manquements retenus portent sur la limitation de la durée de conservation des données, le défaut d'information des personnes et le défaut d'assurer la sécurité des données traitées par un sous-traitant. Le montant de la sanction et le volume de personnes concernées ne sont pas publiés.",
+  "timeline": [
+    {
+      "date": "2019-12-30",
+      "event": "Sanction pécuniaire et injonction sous astreinte : durée de conservation, information des personnes et sécurité des données traitées par un sous-traitant en cause."
+    }
+  ]
+}

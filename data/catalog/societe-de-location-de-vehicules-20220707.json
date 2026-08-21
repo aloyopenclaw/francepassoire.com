@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-location-de-vehicules-20220707",
+  "entity": "Société de location de véhicules",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-07-07",
+    "confirmation": "2022-07-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 175 000 euros"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de location de véhicules », Amende de 175 000 euros (7 juillet 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2022 de l’action de la CNIL (31 janvier 2023)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2022-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 7 juillet 2022, la CNIL a prononcé une amende de 175 000 euros à l'encontre d'une société de location de véhicules. Les manquements retenus : non-respect du principe de minimisation des données, durée de conservation excessive et défaut d'information des personnes. La dénomination n'est pas publiée. La décision fait partie des 21 sanctions prononcées par la CNIL en 2022, pour un montant cumulé de 101 277 900 euros d'amendes selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2022-07-07",
+      "event": "Amende de 175 000 euros : minimisation, durée de conservation et information des personnes en cause."
+    },
+    {
+      "date": "2023-01-31",
+      "event": "Le bilan 2022 de la CNIL recense 21 sanctions pour 101 277 900 euros d'amendes cumulées."
+    }
+  ]
+}

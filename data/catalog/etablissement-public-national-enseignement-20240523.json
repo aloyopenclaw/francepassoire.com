@@ -1,0 +1,37 @@
+{
+  "slug": "etablissement-public-national-enseignement-20240523",
+  "entity": "Un établissement public national du secteur de l'enseignement (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-23",
+    "confirmation": "2024-05-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé neuf nouvelles sanctions dans le cadre de la procédure simplifiée (5 juin 2024)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-neuf-nouvelles-sanctions-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 23 mai 2024, la CNIL a prononcé une amende administrative de 6 000 euros à l'encontre d'un établissement public national du secteur de l'enseignement, dans le cadre de la procédure simplifiée. Manquements retenus : non-respect du principe de minimisation des données et défaut d'information des personnes. L'établissement n'est pas nommé, les sanctions simplifiées ne pouvant être rendues publiques. La décision figure dans le tableau officiel des sanctions et dans le communiqué de juin 2024 sur les neuf sanctions simplifiées rendues depuis mars, pour un montant total de 83 000 euros.",
+  "timeline": [
+    {
+      "date": "2024-05-23",
+      "event": "Amende de 6 000 euros (procédure simplifiée) : minimisation des données et information des personnes."
+    }
+  ]
+}

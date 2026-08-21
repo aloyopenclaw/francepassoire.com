@@ -1,0 +1,38 @@
+{
+  "slug": "annonces-immobilieres-20240131",
+  "entity": "Un éditeur de site web d'annonces immobilières (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-31",
+    "confirmation": "2024-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; aucun volume de données communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé quinze nouvelles sanctions dans le cadre de la procédure simplifiée depuis janvier 2024",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-quinze-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee-depuis-janvier",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 janvier 2024, la CNIL a prononcé une amende administrative de 100 000 euros à l'encontre d'un éditeur de site web permettant aux particuliers de publier ou consulter des annonces immobilières. Manquements retenus : défaut de sécurité des données, encadrement insuffisant des relations avec les sous-traitants, défaut d'information des personnes et durées de conservation excessives. La sanction relève de la procédure ordinaire, mais l'entité n'est pas nommée dans le tableau officiel des sanctions. Le montant, élevé pour une décision non publicisée, traduit l'accumulation de manquements structurants sur un service utilisé par des particuliers.",
+  "timeline": [
+    {
+      "date": "2024-01-31",
+      "event": "Amende de 100 000 euros : sécurité, sous-traitance, information des personnes et durées de conservation."
+    }
+  ]
+}
