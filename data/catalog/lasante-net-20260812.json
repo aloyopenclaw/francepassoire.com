@@ -1,0 +1,42 @@
+{
+  "slug": "lasante-net-20260812",
+  "entity": "LaSante.net",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; clients de la pharmacie en ligne notifiés individuellement (identité, adresse, e-mail, identifiant de connexion)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez LaSante.net, pharmacie en ligne",
+      "url": "https://fuitesinfos.fr/article/2026-08-12-lasante-net",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez LaSante.net",
+      "url": "https://frenchbreaches.com/alertes/lasante-net-mspekqmo3e0n0l1rsbe",
+      "kind": "revendication"
+    }
+  ],
+  "description": "LaSante.net, pharmacie en ligne exploitée par la Pharmacie du Bizet à Villeneuve-d'Ascq, a notifié individuellement ses clients d'un incident de sécurité survenu le 27 juillet 2026, rendu public le 12 août. Selon la notification relayée, des données de profil client ont pu être consultées par un tiers non autorisé : nom complet, adresse postale, e-mail, identifiant de connexion et préférences. L'entreprise exclut les données bancaires et les informations de commande, invite à changer de mot de passe et déclare l'incident à la CNIL. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-07-27",
+      "event": "Incident de sécurité chez LaSante.net, selon la notification adressée aux clients concernés."
+    },
+    {
+      "date": "2026-08-12",
+      "event": "L'incident est rendu public : consultation possible de profils clients ; CNIL saisie, mots de passe à changer par précaution."
+    }
+  ]
+}

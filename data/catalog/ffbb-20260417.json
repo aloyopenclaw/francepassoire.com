@@ -1,0 +1,63 @@
+{
+  "slug": "ffbb-20260417",
+  "entity": "Fédération Française de Basket-Ball (FFBB)",
+  "siren": "784405862",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-04-17",
+    "publication": "2026-04-30",
+    "confirmation": "2026-04-29"
+  },
+  "volume": {
+    "count": 2000000,
+    "unit": "personnes",
+    "label": "jusqu'à 2 millions de licenciés et environ 900 000 données de représentants légaux (périmètre annoncé par la FFBB ; divulgation partielle sur le dark web puis suppression)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FFBB — La FFBB informe d'un accès non autorisé à ses données licenciés (communiqué du 29 avril 2026)",
+      "url": "https://www.ffbb.com/actualites/la-ffbb-informe-dun-acces-non-autorise-a-ses-donnees-licencies",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fédération Française de Basket-Ball : accès non autorisé confirmé",
+      "url": "https://fuitesinfos.fr/article/2026-04-17-federation-francaise-de-basket-ball",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Cyberattaque : la Fédération française de basket révèle une fuite de près de deux millions de licenciés",
+      "url": "https://www.franceinfo.fr/sports/basket/cyberattaque-la-federation-francaise-de-basket-revele-une-fuite-de-donnees-de-pres-de-deux-millions-de-licencies_7974797.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — La Fédération française de basket à son tour victime d'une fuite de données",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/apres-celles-du-football-du-rugby-ou-encore-du-golf-la-federation-francaise-de-basket-a-son-tour-victime-d-une-fuite-de-donnees_AD-202604300824.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La FFBB informe le 29 avril 2026 d'un incident de sécurité détecté le 17 avril : un accès frauduleux à un compte utilisateur a permis l'extraction non autorisée de données de sa base de licenciés, divulgées au moins en partie sur le dark web avant suppression. Jusqu'à deux millions de licenciés et environ 900 000 données de représentants légaux sont concernés : identité, coordonnées et données de licence, sans mot de passe ni donnée bancaire. Selon la fédération, le cybercriminel à l'origine de l'acte a été interpellé et mis en examen ; elle relève qu'une conservation des données par des tiers reste possible.",
+  "timeline": [
+    {
+      "date": "2026-04-17",
+      "event": "Détection et confirmation d'un incident dans la soirée ; une cellule de crise est activée."
+    },
+    {
+      "date": "2026-04-20",
+      "event": "Interpellation en Vendée d'un suspect lié à des reventes de données de fédérations sportives, selon la presse."
+    },
+    {
+      "date": "2026-04-29",
+      "event": "Communiqué FFBB : accès frauduleux à un compte utilisateur, extraction jusqu'à 2 millions de licenciés et 900 000 données de représentants, divulgation partielle puis suppression."
+    },
+    {
+      "date": "2026-04-30",
+      "event": "La presse nationale relaie le communiqué ; le suspect, surnommé HexDex selon BFM TV, a été mis en examen."
+    }
+  ]
+}

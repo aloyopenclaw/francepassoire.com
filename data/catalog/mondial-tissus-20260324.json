@@ -1,0 +1,44 @@
+{
+  "slug": "mondial-tissus-20260324",
+  "entity": "Mondial Tissus",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-24",
+    "publication": "2026-03-24"
+  },
+  "volume": {
+    "count": 365900,
+    "unit": "personnes",
+    "label": "365 900 clients uniques revendiqués (2019-2026, DumpSec) : identité, coordonnées, historique de commandes, réservations d'ateliers, statut de paiement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Mondial Tissus : 365 900 personnes concernées",
+      "url": "https://fuitesinfos.fr/article/2026-03-24-mondial-tissus",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Piratage Mondial Tissus : 365 900 clients compromis, 7 ans de données en vente",
+      "url": "https://frenchbreaches.com/blog/piratage-mondial-tissus-365-900-clients-compromis-7-ans-de-donnees-en-vente",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Mondial Tissus : 365 900 clients compromis par une fuite",
+      "url": "https://www.cyberattaque.org/mondial-tissus-365-900-clients-compromis-par-une-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 mars 2026, le groupe DumpSec met en vente une base présentée comme issue de Mondial Tissus, enseigne de tissus et mercerie : 365 900 clients uniques couvrant 2019 à 2026, avec état civil, coordonnées, historique de commandes, réservations d'ateliers et statut de paiement. Un échantillon est publié à l'appui de la revendication. À ce stade, l'enseigne n'a pas confirmé publiquement l'incident ; l'authenticité de la base et son origine exacte restent à établir. Les clients de la période sont invités à la vigilance face aux tentatives de phishing.",
+  "timeline": [
+    {
+      "date": "2026-03-24",
+      "event": "DumpSec met en vente une base Mondial Tissus : 365 900 clients uniques (2019-2026), avec échantillon publié comme preuve."
+    }
+  ]
+}

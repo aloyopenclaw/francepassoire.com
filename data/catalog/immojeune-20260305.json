@@ -1,0 +1,40 @@
+{
+  "slug": "immojeune-20260305",
+  "entity": "ImmoJeune",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-03-05",
+    "publication": "2026-03-05"
+  },
+  "volume": {
+    "count": 713814,
+    "unit": "personnes",
+    "label": "713 814 candidats au logement revendiqués (dossiers complets candidats et garants, identité, coordonnées, éléments financiers et professionnels)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 713 814 personnes concernées par une fuite revendiquée chez ImmoJeune",
+      "url": "https://fuitesinfos.fr/article/2026-03-05-immojeune",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Piratage ImmoJeune : plus de 713 000 candidats au logement étudiant exposés",
+      "url": "https://frenchbreaches.com/blog/piratage-immojeune-plus-de-713-000-candidats-au-logement-etudiant-potentiellement-exposes",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 5 mars 2026, l'acteur HexDex met en vente une base présentée comme issue d'ImmoJeune, plateforme de location pour étudiants et jeunes actifs : 713 814 dossiers de candidature couvrant l'identité, les coordonnées, les éléments financiers et professionnels des candidats et de leurs garants. La revendication s'accompagne d'échantillons présentés comme preuves. À ce stade, aucune confirmation publique n'est venue établir l'authenticité complète de la base, son origine exacte ni le périmètre réel des données. Les personnes ayant candidaté via la plateforme restent invitées à la vigilance face au phishing ciblé.",
+  "timeline": [
+    {
+      "date": "2026-03-05",
+      "event": "Mise en vente revendiquée par HexDex : 713 814 dossiers de candidature au logement (candidats et garants), avec échantillons."
+    }
+  ]
+}
