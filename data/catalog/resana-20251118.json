@@ -1,0 +1,43 @@
+{
+  "slug": "resana-20251118",
+  "entity": "Resana (DINUM — plateforme interministérielle de travail collaboratif)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-18",
+    "publication": "2025-11-18",
+    "confirmation": "2025-11-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; ≈50 Go de fichiers interministériels revendiqués par « World Leaks » selon la veille"
+  },
+  "data_types": [
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Numerama — Chantage en cours sur des agents de l’État : des hackers ont exfiltré des données d’une plateforme interministérielle",
+      "url": "https://www.numerama.com/cyberguerre/2120401-chantage-en-cours-sur-des-agents-et-fonctionnaires-de-letat-francais-des-hackers-ont-exfiltre-des-donnees-dune-plateforme-interministerielle.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Resana (DINUM) : 50 Go de fichiers interministériels revendiqués par « World Leaks » (18 novembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/resana-dinum-cfb9ffea8091",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 18 novembre 2025, les utilisateurs de Resana, la plateforme de travail collaboratif utilisée par les ministères et les établissements publics, ont été notifiés d’une fuite de données. Le courriel reçu par les agents indique que des données ont été exfiltrées depuis la plateforme, parfois décrite comme le « Google Drive » de l’État. Numerama a rapporté que des assaillants contactaient des utilisateurs et exerçaient un chantage. La quantité et la nature exactes des données exfiltrées n’ont pas été précisées par l’administration. La veille attribue la publication à l’acteur « World Leaks », qui revendique une cinquantaine de gigaoctets de fichiers interministériels. L’incident touche un outil sensible au cœur de l’administration française.",
+  "timeline": [
+    {
+      "date": "2025-11-18",
+      "event": "Notification aux utilisateurs : des données ont été exfiltrées depuis Resana, l’outil collaboratif interministériel."
+    },
+    {
+      "date": "2025-11-18",
+      "event": "Numerama documente le chantage en cours sur des agents ; « World Leaks » revendique ≈50 Go selon la veille."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "quimper-20251118",
+  "entity": "Ville de Quimper (plateforme de prise de rendez-vous CNI/passeports)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-18",
+    "publication": "2025-11-18",
+    "confirmation": "2025-11-18"
+  },
+  "volume": {
+    "count": 12000,
+    "unit": "lignes",
+    "label": "près de 12 000 lignes de contact (demandes de CNI depuis le 18 avril 2024) exportées selon la Ville"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Quimper (communiqué officiel) — Fuite de données personnelles : la Ville appelle à la vigilance (18 novembre 2025)",
+      "url": "https://www.quimper.bzh/actualite/47932/3-fuite-de-donnees-personnelles-la-ville-de-quimper-appelle-a-la-vigilance.htm",
+      "kind": "officiel"
+    },
+    {
+      "label": "actu.fr — Fuite de données : des milliers de personnes concernées à Quimper (18 novembre 2025)",
+      "url": "https://actu.fr/bretagne/quimper_29232/fuite-de-donnees-des-milliers-de-personnes-concernees-a-quimper-la-ville-appelle-a-la-vigilance_63453649.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme — Cartes d’identité, passeports… la Ville de Quimper cible d’une cyberattaque",
+      "url": "https://www.letelegramme.fr/finistere/quimper-29000/cartes-didentite-passeports-la-ville-de-quimper-cible-dune-cyberattaque-des-milliers-de-donnees-piratees-6931248.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 novembre 2025, la Ville de Quimper a annoncé une intrusion malveillante sur la plateforme informatique de prise de rendez-vous préalable à la délivrance des cartes nationales d’identité et des passeports. L’intrusion a permis l’export de près de 12 000 lignes de contact pour des demandes de renouvellement de CNI depuis le 18 avril 2024 : nom, prénom, code postal, adresse e-mail et numéro de téléphone. La Ville précise qu’aucune donnée sensible, aucun document ou pièce d’identité, aucune donnée financière et aucun mot de passe n’ont été prélevés. D’autres villes en Bretagne et en France ont subi les mêmes incidents. La CNIL a été notifiée et une plainte est en cours.",
+  "timeline": [
+    {
+      "date": "2025-11-18",
+      "event": "Communiqué de la Ville : intrusion sur la plateforme de rendez-vous CNI/passeports, ≈12 000 lignes exportées."
+    },
+    {
+      "date": "2025-11-19",
+      "event": "La presse régionale relaie l’incident ; la Ville sécurise l’accès avec son prestataire."
+    }
+  ]
+}

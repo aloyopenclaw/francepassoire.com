@@ -1,0 +1,46 @@
+{
+  "slug": "kering-20250915",
+  "entity": "Kering (Gucci, Balenciaga, Saint Laurent, Alexander McQueen)",
+  "siren": "552075020",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-15",
+    "publication": "2025-09-15",
+    "confirmation": "2025-09-15"
+  },
+  "volume": {
+    "count": 7400000,
+    "unit": "personnes",
+    "label": "7,4 millions d’adresses e-mail uniques revendiquées par ShinyHunters ; nombre non confirmé par Kering"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "TechCrunch — Kering, owner of Gucci, Balenciaga and other luxury brands, confirms hack (15 septembre 2025)",
+      "url": "https://techcrunch.com/2025/09/15/company-that-owns-gucci-balenciaga-other-brands-confirms-hack/",
+      "kind": "article"
+    },
+    {
+      "label": "Infosecurity Magazine — Gucci and Alexander McQueen Hit by Customer Data Breach (16 septembre 2025)",
+      "url": "https://www.infosecurity-magazine.com/news/gucci-mcqueen-customer-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "SecurityBrief — Kering data breach exposes 7.4M luxury customers’ details, spend",
+      "url": "https://securitybrief.co.uk/story/kering-data-breach-exposes-7-4m-luxury-customers-details-spend",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 septembre 2025, le groupe de luxe français Kering, maison mère de Gucci, Balenciaga, Saint Laurent et Alexander McQueen, a confirmé une fuite de données clients. Selon le groupe, un tiers non autorisé a obtenu un accès temporaire à ses systèmes, détecté en juin ; les attaquants affirment être entrés dès avril. Le groupe ShinyHunters revendique 7,4 millions d’adresses e-mail uniques : noms, téléphones, adresses et montants dépensés en boutique. Kering précise qu’aucune donnée bancaire ni pièce d’identité officielle n’est concernée et a contacté les clients touchés. L’attaque s’inscrit dans la série de compromissions d’instances Salesforce revendiquées par ce groupe contre de grandes entreprises.",
+  "timeline": [
+    {
+      "date": "2025-09-15",
+      "event": "Kering confirme la fuite ; un accès non autorisé temporaire, détecté en juin selon le groupe ; ShinyHunters revendique 7,4 millions d’adresses."
+    }
+  ]
+}

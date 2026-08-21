@@ -1,0 +1,48 @@
+{
+  "slug": "ffme-20250123",
+  "entity": "Fédération française de la montagne et de l’escalade (FFME)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-23",
+    "publication": "2025-01-24",
+    "confirmation": "2025-01-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; la fédération compte environ 120 000 licenciés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Next — Fuites de données : les dessous de l’attaque contre des fédérations françaises de sport (27 janvier 2025)",
+      "url": "https://next.ink/166951/fuites-de-donnees-les-dessous-de-lattaque-contre-des-federations-francaises-de-sport/",
+      "kind": "article"
+    },
+    {
+      "label": "Planet Grimpe — La FFME victime d’une cyberattaque : vigilance recommandée pour les licenciés",
+      "url": "https://planetgrimpe.com/la-ffme-victime-dune-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Nophi.sh — Fédérations sportives : la vague de cyberattaques qui a exposé des millions de licenciés (18 mars 2026)",
+      "url": "https://nophi.sh/blog/federations-sportives-vague-cyberattaques-donnees-licencies",
+      "kind": "article"
+    }
+  ],
+  "description": "Début janvier 2025, la Fédération française de la montagne et de l’escalade a subi une cyberattaque ayant entraîné l’extraction de données personnelles de licenciés et de structures affiliées. Un communiqué relayé le 23 janvier confirme l’incident. Les données concernées comprennent nom et prénom, adresses postale et électronique, identifiant, date de naissance et numéro de téléphone. La fédération précise qu’aucune donnée bancaire ni mot de passe n’a été compromis. La faille à l’origine de l’attaque a été corrigée. Une plainte a été déposée et la CNIL informée. L’incident s’inscrit dans une vague touchant plusieurs fédérations sportives françaises au même moment, avec un prestataire commun pointé par la presse.",
+  "timeline": [
+    {
+      "date": "2025-01-23",
+      "event": "Communiqué de la FFME confirmant la cyberattaque et l’extraction de données de licenciés ; plainte et CNIL."
+    },
+    {
+      "date": "2025-01-24",
+      "event": "La presse spécialisée documente la vague touchant plusieurs fédérations et l’implication d’un prestataire commun."
+    }
+  ]
+}
