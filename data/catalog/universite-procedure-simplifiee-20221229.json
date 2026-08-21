@@ -1,0 +1,35 @@
+{
+  "slug": "universite-procedure-simplifiee-20221229",
+  "entity": "Une université (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-29",
+    "confirmation": "2022-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros (procédure simplifiée)"
+  },
+  "data_types": ["autre"],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle, tableau 2022) : « université (procédure simplifiée) », amende de 10 000 euros (29 décembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Procédure de sanction simplifiée : la CNIL présente son premier bilan (décembre 2022, premières décisions dont « une université et des médecins »)",
+      "url": "https://www.cnil.fr/fr/procedure-de-sanction-simplifiee-la-cnil-presente-son-premier-bilan-2022",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2022, la CNIL a sanctionné une université d'une amende administrative de 10 000 euros, dans le cadre de la procédure simplifiée. Manquement retenu : non-respect du principe de limitation des finalités. C'est l'une des premières décisions adoptées dans ce cadre depuis la réforme des procédures correctrices de 2022 ; le bilan présenté par la CNIL cite, parmi les thématiques de ces premières sanctions, l'utilisation de fichiers administratifs à des fins de communication politique. Le nom de l'université n'est pas publié : les sanctions simplifiées ne sont pas rendues publiques. La décision figure dans le tableau officiel des sanctions.",
+  "timeline": [
+    {
+      "date": "2022-12-29",
+      "event": "Amende de 10 000 euros en procédure simplifiée : non-respect du principe de limitation des finalités."
+    }
+  ]
+}
