@@ -1,0 +1,36 @@
+{
+  "slug": "deepseek-20250130",
+  "entity": "DeepSeek",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-30",
+    "publication": "2025-01-30"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "lignes",
+    "label": "plus d’un million de lignes de données, dont l’historique de conversations, dans une base accessible sans authentification (découverte Wiz)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV — Deepseek : des données des utilisateurs exposées sur le web",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/deepseek-des-donnees-des-utilisateurs-exposees-sur-le-web_AN-202501300894.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Des chercheurs de l’entreprise de cybersécurité Wiz révèlent le 30 janvier 2025 l’existence d’une base de données DeepSeek accessible publiquement, sans authentification, découverte « en quelques minutes ». Elle contient plus d’un million de lignes, dont l’historique de conversations des utilisateurs du chatbot chinois et des « informations sensibles ». Les chercheurs alertent sur un « risque critique » : la faille permettait un contrôle total sur la base et une élévation potentielle de privilèges dans l’environnement DeepSeek. La start-up, alertée, a « rapidement » sécurisé sa base de données. Aucun nombre d’utilisateurs touchés n’a été communiqué ; une exploitation malveillante avant correction n’est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-01-30",
+      "event": "Wiz révèle une base DeepSeek ouverte sans authentification : plus d’un million de lignes, dont l’historique de conversations, et un risque dâélévation de privilèges."
+    },
+    {
+      "date": "2025-01-30",
+      "event": "Alertée par les chercheurs, la start-up chinoise sécurise « rapidement » la base de données exposée."
+    }
+  ]
+}

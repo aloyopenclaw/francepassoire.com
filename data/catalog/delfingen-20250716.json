@@ -1,0 +1,34 @@
+{
+  "slug": "delfingen-20250716",
+  "entity": "Delfingen",
+  "siren": "354013575",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-07-16",
+    "publication": "2025-07-17",
+    "confirmation": "2025-07-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "périmètre non chiffré ; fuites circonscrites à quelques applications héritées de Schlemmer, selon le communiqué du groupe"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Régions (Doubs) — « Intrusion dans son système », « fuite de données » : des pirates informatiques s’attaquent à cet équipementier automobile",
+      "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/doubs/des-pirates-informatiques-s-attaquent-a-un-equipementier-automobile-du-doubs-3189042.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Lâéquipementier automobile Delfingen, basé à Anteuil (Doubs), annonce le 16 juillet 2025 avoir détecté « une intrusion dans son système d’information, qui a conduit à des fuites de données ». Le groupe précise que le périmètre identifié est circonscrit à quelques applications héritées de Schlemmer, concurrent allemand dont il a repris les actifs Europe et Afrique en 2020, alors en cours de désinstallation — sans perturbation des activités opérationnelles. Les autorités ont été alertées et une enquête vise à déterminer l’origine du piratage et retrouver les auteurs. La nature et le volume exacts des données concernées ne sont pas précisés ; le groupe emploie 3 800 salariés dans 21 pays.",
+  "timeline": [
+    {
+      "date": "2025-07-16",
+      "event": "Delfingen annonce avoir détecté une intrusion ayant conduit à des fuites de données, circonscrites à des applications héritées de Schlemmer en cours de désinstallation ; les autorités sont alertées."
+    }
+  ]
+}
