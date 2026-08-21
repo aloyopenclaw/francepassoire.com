@@ -1,0 +1,52 @@
+{
+  "slug": "ville-de-drancy-20260722",
+  "entity": "Ville de Drancy",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-22",
+    "publication": "2026-08-02"
+  },
+  "group": "qilin",
+  "volume": {
+    "count": 241705,
+    "unit": "enregistrements",
+    "label": "210 Go de données répartis en 241 705 fichiers publiés sur le site de fuite de Qilin le 2 août (revendiqué) ; cyberattaque confirmée par la Ville, nature des données non précisée"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Drancy victime d'une cyberattaque : les données personnelles des administrés ciblées (22 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/la-ville-de-drancy-mrw497vrl1fjlaf3uz",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Parisien — Victime d'une cyberattaque, la mairie de Drancy invite les habitants à changer régulièrement de mot de passe (23 juillet 2026)",
+      "url": "https://www.leparisien.fr/seine-saint-denis-93/victime-dune-cyberattaque-la-mairie-de-drancy-invite-les-habitants-a-changer-regulierement-de-mot-de-passe-23-07-2026-F3T42V2O3JE6ZJKI5SVLI2QUIQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Mairie de Drancy : 210 Go de données exfiltrés par ransomware, groupe Qilin (2 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/mairie-de-drancy-rw_VFdGcGNtbGxJR1JsSUVSeVlXNWplVUJ4YVd4cGJnPT0",
+      "kind": "revendication"
+    }
+  ],
+  "description": "La Ville de Drancy (Seine-Saint-Denis) révèle fin juillet 2026 une cyberattaque affectant son système d'information et invite les habitants à la vigilance, notamment sur leurs mots de passe. Le groupe de ransomware Qilin revendique l'attaque, puis publie le 2 août une archive présentée comme 210 Go de données municipales réparties en 241 705 fichiers, couvrant potentiellement état civil, RH, marchés publics et échanges avec les administrés. L'authenticité de l'ensemble publié n'est pas vérifiée indépendamment ; la Ville a déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-07-22",
+      "event": "La cyberattaque visant la Ville de Drancy est documentée ; Qilin revendique la compromission."
+    },
+    {
+      "date": "2026-07-23",
+      "event": "La mairie confirme l'attaque et appelle les habitants à changer régulièrement leurs mots de passe."
+    },
+    {
+      "date": "2026-08-02",
+      "event": "Qilin publie 210 Go de données en 241 705 fichiers sur son site de fuite."
+    }
+  ]
+}

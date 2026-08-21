@@ -1,0 +1,40 @@
+{
+  "slug": "pacha-tours-20260701",
+  "entity": "Pacha Tours",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-01",
+    "publication": "2026-07-01"
+  },
+  "volume": {
+    "count": 31087,
+    "unit": "personnes",
+    "label": "plus de 2,2 millions de lignes représentant 31 087 personnes uniques, dont 4 413 e-mails et 3 705 téléphones uniques, avec passeports et mots de passe en clair (revendiqué)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données : plus de 31 000 voyageurs de Pacha Tours revendiqués sur un forum cybercriminel (1er juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/pacha-tours-mr1eqv6rv5t94aj8an",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Pacha Tours : données de voyageurs avec numéros de passeport revendiquées (30 juin 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-06-30-pacha-tours",
+      "kind": "article"
+    }
+  ],
+  "description": "Début juillet 2026, misere publie une base attribuée à Pacha Tours (pachatours.fr / pachatours.pro), tour-opérateur français spécialisé vers la Tunisie, les séjours balnéaires et les voyages du Hajj et de la Omra : plus de 2,2 millions de lignes représentant 31 087 personnes uniques. Les échantillons montrent identité, coordonnées, numéros de passeport, nationalité, dossiers de réservation, codes PNR aériens, identifiants B2B d'agences de voyages et mots de passe en clair. La présence de numéros de passeport et d'identifiants en clair expose les voyageurs à des fraudes documentaires et à des prises de contrôle de compte.",
+  "timeline": [
+    {
+      "date": "2026-07-01",
+      "event": "misere publie une base de 2,2 millions de lignes attribuée à Pacha Tours : 31 087 personnes, passeports et mots de passe en clair."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ville-de-saint-herblain-20260718",
+  "entity": "Ville de Saint-Herblain",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-18",
+    "publication": "2026-07-18"
+  },
+  "volume": {
+    "count": 1232,
+    "unit": "personnes",
+    "label": "1 232 agents municipaux concernés par la diffusion revendiquée d'un annuaire interne en accès libre (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données revendiquée visant la Ville de Saint-Herblain : 1 232 personnes potentiellement concernées (18 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/ville-de-saint-herblain-mrpsbklu8rr64dxigql",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 1 232 agents concernés par une fuite revendiquée chez Ville de Saint-Herblain (18 juillet 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-18-ville-de-saint-herblain",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 juillet 2026, une publication sur un forum cybercriminel met en ligne un fichier en accès libre présenté comme l'annuaire interne de la Ville de Saint-Herblain (Loire-Atlantique) : environ 1 232 agents municipaux seraient concernés, avec leurs coordonnées professionnelles et des informations de contact. Un échantillon est affiché directement dans la publication, accompagné de liens de téléchargement. La Ville n'a pas confirmé l'incident à date ; l'exposition d'un annuaire d'agents facilite l'hameçonnage ciblé contre les services municipaux.",
+  "timeline": [
+    {
+      "date": "2026-07-18",
+      "event": "Un annuaire interne attribué à la Ville de Saint-Herblain est publié sur un forum : 1 232 agents visés selon la revendication."
+    }
+  ]
+}

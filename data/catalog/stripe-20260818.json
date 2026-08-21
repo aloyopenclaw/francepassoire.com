@@ -1,0 +1,43 @@
+{
+  "slug": "stripe-20260818",
+  "entity": "Stripe",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 6160954,
+    "unit": "enregistrements",
+    "label": "33 Go, 662 bases de données et 1 033 clés API revendiqués ; 6 160 954 adresses électroniques (1 350 336 uniques) et 688 000 fiches clients annoncées, dont des comptes associés à la France (revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Stripe visé par une fuite revendiquée de 662 bases de données ! (19 août 2026)",
+      "url": "https://www.zataz.com/stripe-vise-par-une-fuite-revendiquee-de-662-bases-de-donnees/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Fuite Stripe : au moins 200 Français concernés (20 août 2026)",
+      "url": "https://www.zataz.com/fuite-stripe-au-moins-200-francais-concernes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 août 2026, un revendeur de données connu publie sur un forum cybercriminel un lot attribué à Stripe : 33 Go couvrant 662 bases de données, 1 033 clés API présentées comme valides, plus de 6,16 millions d'adresses électroniques dont 1,35 million d'unicques, ainsi que 688 000 fiches clients complètes. Les échantillons montrent des comptes marchands associés aux États-Unis, au Luxembourg et à la France ; Zataz relève ensuite au moins 200 personnes françaises concernées. Ni le vecteur d'intrusion ni l'origine exacte des données (infrastructure Stripe, comptes marchands compromis ou agrégation) n'ont pu être établis ; Stripe, contacté, n'avait pas répondu à la publication des articles.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Publication sur un forum cybercriminel d'un lot attribué à Stripe : 33 Go, 662 bases, 1 033 clés API et 688 000 fiches clients revendiqués."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "Zataz estime qu'au moins 200 personnes françaises figurent dans les données diffusées."
+    }
+  ]
+}
