@@ -44,7 +44,7 @@ function volumeCourt(volume: FicheLike['volume']): string {
 
 // Ticker : les 8 dernières fuites, chaque item pointe vers la fiche publiée.
 const tickerItems: TickerItem[] = fiches.slice(0, 8).map((fiche) => ({
-  label: `${fiche.entity} — ${volumeCourt(fiche.volume)}`,
+  label: `${fiche.entity} · ${volumeCourt(fiche.volume)}`,
   url: urlFiche(fiche.slug),
 }));
 
@@ -63,7 +63,7 @@ const cards: LeakCard[] = fiches.map((fiche) => ({
 const datasetJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Dataset',
-  name: 'FrancePassoire — catalogue des fuites de données personnelles touchant la France',
+  name: 'FrancePassoire · catalogue des fuites de données personnelles touchant la France',
   description:
     'Catalogue citoyen des fuites de données personnelles touchant la France : entités, statuts de vérification et métadonnées publiques, publiés sous licence CC-BY 4.0.',
   license: 'https://creativecommons.org/licenses/by/4.0/',
@@ -73,7 +73,7 @@ const datasetJsonLd = JSON.stringify({
 ---
 <Layout
   title="France Passoire - On compte les trous"
-  description="Observatoire citoyen et indépendant des fuites de données en France : catalogue sourcé, panorama ransomware et autoprotection — aucun chiffre inventé."
+  description="Observatoire citoyen et indépendant des fuites de données en France : catalogue sourcé, panorama ransomware et autoprotection · aucun chiffre inventé."
 >
   <script type="application/ld+json" set:html={datasetJsonLd} slot="head" />
   <!-- Hero -->
