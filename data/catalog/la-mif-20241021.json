@@ -1,0 +1,45 @@
+{
+  "slug": "la-mif-20241021",
+  "entity": "La MIF (Mutuelle d'Ivry la Fraternelle)",
+  "siren": "310259221",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-21",
+    "publication": "2024-10-21",
+    "confirmation": "2024-10-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "fuite partielle non quantifiée : « une partie limitée des documents relatifs à ses sociétaires » selon la MIF ; l'organisme revendique plus de 185 000 clients"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "MoneyVox (21 octobre 2024) — Assurance vie : la Mif victime d'une cyberattaque",
+      "url": "https://www.moneyvox.fr/assurance-vie/actualites/100191/la-mif-victime-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "24matins (22 octobre 2024) — Cyberattaque cible la Mif, une compagnie d'assurance vie",
+      "url": "https://www.24matins.fr/cyberattaque-cible-la-mif-une-compagnie-dassurance-vie-1381695",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 12 octobre 2024, la Mutuelle d'Ivry la Fraternelle (MIF), mutuelle d'assurance vie comptant plus de 185 000 clients, subit une cyberattaque. L'organisme reconnaît une fuite partielle : des documents relatifs à ses sociétaires ont été exposés, avec pour données souvent concernées l'identité, l'adresse, l'e-mail et le numéro de téléphone. Selon la MIF, les mots de passe et les actifs gérés n'ont pas été compromis, l'exfiltration a été stoppée et l'incident déclaré à la CNIL. Le volume exact des données sorties n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2024-10-12",
+      "event": "Cyberattaque visant la MIF le week-end du 12 octobre ; exfiltration partielle de documents de sociétaires."
+    },
+    {
+      "date": "2024-10-21",
+      "event": "MoneyVox révèle l'attaque ; la MIF confirme une fuite partielle de données personnelles."
+    },
+    {
+      "date": "2024-10-22",
+      "event": "L'incident est présenté comme clos : exfiltration stoppée, CNIL informée, mots de passe et actifs dits non compromis."
+    }
+  ]
+}
