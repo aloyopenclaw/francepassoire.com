@@ -1,0 +1,44 @@
+{
+  "slug": "ville-saint-affrique-20211024",
+  "entity": "Ville de Saint-Affrique",
+  "siren": "211202080",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2021-10-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; LockBit 2.0 menace de diffuser les fichiers volés le 1er novembre 2021 si la rançon n'est pas payée"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Centre Presse (Aveyron) — Saint-Affrique : une cyberattaque de grande ampleur sur les services informatiques de la ville (25 octobre 2021)",
+      "url": "https://www.centrepresseaveyron.fr/2021/10/25/saint-affrique-une-cyberattaque-de-grande-ampleur-sur-les-services-informatiques-de-la-ville-9889929.php",
+      "kind": "article"
+    },
+    {
+      "label": "Midi Libre — Piratage informatique à Saint-Affrique : qu'est-ce que le ransomware, ce logiciel qui prend en otage les fichiers (28 octobre 2021)",
+      "url": "https://www.midilibre.fr/2021/10/28/piratage-informatique-a-saint-affrique-quest-ce-que-le-ransomware-ce-logiciel-qui-prend-en-otage-les-fichiers-9894806.php",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — La Commune de Saint-Affrique prise en otage 2.0 (26 octobre 2021)",
+      "url": "https://www.zataz.com/la-commune-de-saint-affrique-prise-en-otage-2-0/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 24 octobre 2021, les services de la mairie, de la communauté de communes et du CCAS de Saint-Affrique (Aveyron) subissent une cyberattaque de rançongiciel : « les dégâts sur l'ensemble du système informatique sont énormes », indique la municipalité, privée de mails et au standard neutralisé. Le 26 octobre, le groupe LockBit 2.0 affiche la commune parmi ses victimes et menace de diffuser les fichiers volés le 1er novembre si aucune rançon n'est payée. La commune d'environ 8 000 habitants qualifie l'attaque de « cascade » dans la presse locale.",
+  "timeline": [
+    {
+      "date": "2021-10-24",
+      "event": "Une cyberattaque de rançongiciel frappe mairie, communauté de communes et CCAS ; « dégâts énormes » selon la municipalité."
+    },
+    {
+      "date": "2021-10-26",
+      "event": "LockBit 2.0 affiche Saint-Affrique sur son blog de fuite et menace de publier les fichiers volés au 1er novembre."
+    }
+  ]
+}

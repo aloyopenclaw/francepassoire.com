@@ -1,0 +1,64 @@
+{
+  "slug": "chu-rennes-20230621",
+  "entity": "CHU de Rennes",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-28",
+    "publication": "2023-07-28",
+    "confirmation": "2023-07-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 300 Go de données dérobées — données comptables, RH et données personnelles de soignants et de patients ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": ["identite", "sante", "documents"],
+  "sources": [
+    {
+      "label": "Ouest-France — Des données piratées du CHU de Rennes divulguées sur Internet ? (juillet 2023, article archivé)",
+      "url": "https://web.archive.org/web/2023id_/https://www.ouest-france.fr/politique/defense/des-donnees-piratees-du-chu-de-rennes-divulguees-sur-internet-082bab48-2df7-11ee-bdfb-8bb1ea966a5f",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Parisien — Cyberattaque au CHU de Rennes : des données volées auraient été publiées (29 juillet 2023)",
+      "url": "https://www.leparisien.fr/high-tech/cyberattaque-au-chu-de-rennes-des-donnees-volees-auraient-ete-publiees-29-07-2023-LPBPXGPHUNCRHOWQ2IHPHTH4EM.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde informatique — CHU de Rennes piraté : 300 Go de données en fuite (août 2023)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-chu-de-rennes-pirate-300-go-de-donnees-en-fuite-91147.html",
+      "kind": "article"
+    },
+    {
+      "label": "Usine Digitale — Un mois après la cyberattaque visant le CHU de Rennes, des données mises en ligne (juillet 2023, article archivé)",
+      "url": "https://web.archive.org/web/2024/https://www.usine-digitale.fr/article/chu-rennes.N2157752",
+      "kind": "archive"
+    },
+    {
+      "label": "ZATAZ — Les pirates de Bian Lian diffusent les informations volées au CHU de Rennes (septembre 2023)",
+      "url": "https://www.zataz.com/les-pirates-de-bian-lian-diffusent-les-informations-volees-au-chu-de-rennes/",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — CHU de Rennes : un compte de prestataire détourné pour la cyberattaque (août 2023)",
+      "url": "https://www.lemagit.fr/actualites/366542694/CHU-de-Rennes-un-compte-de-prestataire-detourne-pour-la-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le CHU de Rennes est victime le 21 juin 2023 d'une cyberattaque détectée par Orange Cyberdefense : un compte de prestataire a été détourné pour accéder au système d'information. Environ 300 Go de données sont exfiltrés — données comptables, RH et données personnelles de soignants et de patients. Un mois plus tard, fin juillet, le groupe BianLian met ces données en ligne. L'établissement hospitalier appelle personnels et patients à la vigilance et confirme la diffusion ; les soins ont continué pendant toute la crise.",
+  "timeline": [
+    {
+      "date": "2023-06-21",
+      "event": "Cyberattaque détectée au CHU de Rennes : un compte de prestataire est détourné pour pénétrer le système d'information."
+    },
+    {
+      "date": "2023-07-28",
+      "event": "Le groupe BianLian met en ligne les données volées, environ 300 Go, un mois après l'attaque."
+    },
+    {
+      "date": "2023-07-31",
+      "event": "Le CHU appelle personnels et patients à la vigilance face à la diffusion confirmée des données personnelles."
+    }
+  ]
+}

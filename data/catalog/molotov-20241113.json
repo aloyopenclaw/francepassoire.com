@@ -1,0 +1,52 @@
+{
+  "slug": "molotov-20241113",
+  "entity": "Molotov",
+  "siren": "807393111",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-11-13",
+    "publication": "2024-11-13",
+    "confirmation": "2024-11-13"
+  },
+  "volume": {
+    "count": 10800000,
+    "unit": "enregistrements",
+    "label": "10,8 millions d'adresses e-mail, ainsi que des noms, prénoms et dates de naissance ; aucun mot de passe ni donnée bancaire selon Molotov ; fuite survenue en octobre 2024"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Le Figaro — Molotov victime à son tour d'une fuite de données, dix millions d'adresses mail volées (13 novembre 2024)",
+      "url": "https://www.lefigaro.fr/medias/molotov-victime-a-son-tour-d-une-fuite-de-donnees-dix-millions-d-adresses-mail-volees-20241113",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Fuite de données géante chez Molotov : dix millions d'adresses e-mail volées (13 novembre 2024)",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-geante-chez-molotov-dix-millions-dadresses-e-mail-volees-13-11-2024-G7JQ3FIQOVCONALJFPLS2N3L7U.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — 10,8 millions de mails dans la nature : la plateforme Molotov victime d'une fuite de données (13 novembre 2024)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/10-8-millions-de-mails-dans-la-nature-la-plateforme-molotov-victime-d-une-fuite-de-donnees_AV-202411130548.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Dix millions d'adresses mail volées lors d'un piratage de la plateforme de streaming Molotov (novembre 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/dix-millions-d-adresses-mail-volees-lors-d-un-piratage-de-la-plateforme-de-streaming-molotov_6895013.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZATAZ — Molotov alerte ses utilisateurs après une intrusion dans ses systèmes (novembre 2024)",
+      "url": "https://www.zataz.com/molotov-alerte-ses-utilisateurs-apres-une-intrusion-dans-ses-systemes/",
+      "kind": "article"
+    }
+  ],
+  "description": "La plateforme française de streaming Molotov révèle le 13 novembre 2024 une « intrusion » qui a permis à des tiers non autorisés d'accéder aux adresses e-mail de 10,8 millions de clients, ainsi qu'à des noms, prénoms et dates de naissance. La fuite, survenue en octobre, exclut les mots de passe et les données bancaires selon l'entreprise, qui a alerté la CNIL et invité ses utilisateurs à la vigilance face au phishing. Ce volume, l'un des plus importants d'adresses françaises issu d'une seule plateforme, est relayé par toute la presse nationale.",
+  "timeline": [
+    {
+      "date": "2024-11-13",
+      "event": "Molotov révèle la fuite survenue en octobre : 10,8 millions d'adresses e-mail et données d'identité associées ; la CNIL est informée."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "pole-emploi-20210610",
+  "entity": "Pôle emploi",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2021-06-10",
+    "publication": "2021-06-14"
+  },
+  "volume": {
+    "count": 1200000,
+    "unit": "personnes",
+    "label": "1,2 million d'enregistrements revendiqués par le vendeur, que Pôle emploi ramène à « dix fois moins » (environ 120 000 personnes) ; ni mots de passe ni coordonnées bancaires en cause selon l'organisme"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BFMTV — Pôle emploi ouvre une enquête après la vente d'une base de données personnelles (14 juin 2021)",
+      "url": "https://www.bfmtv.com/tech/pole-emploi-ouvre-une-enquete-apres-la-vente-d-une-base-de-donnees-personnelles_AN-202106140335.html",
+      "kind": "article"
+    },
+    {
+      "label": "Libération (CheckNews) — Pôle emploi : ce que l'on sait de la fuite de données qui pourrait concerner 1,2 million de personnes (16 juin 2021, article archivé)",
+      "url": "https://web.archive.org/web/2021/https://www.liberation.fr/checknews/pole-emploi-ce-que-lon-sait-de-la-fuite-de-donnees-qui-pourrait-concerner-12-millions-de-personnes-20210616_WQA4E3AWSRE6JPSB4VT7YTQGHU/",
+      "kind": "archive"
+    },
+    {
+      "label": "ZATAZ — Le pirate des données de Pôle emploi parle (17 juin 2021)",
+      "url": "https://www.zataz.com/le-pirate-des-donnees-de-pole-emploi-parle/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 juin 2021, un pirate met en vente sur un forum du darknet une base présentée comme issue de l'application mobile « Mon espace » de Pôle emploi : noms, âges, téléphones, e-mails, codes postaux et métiers recherchés, pour 1,2 million d'enregistrements revendiqués. Pôle emploi ouvre une enquête avec l'ANSSI et déclare un dossier à la CNIL, en ramenant le périmètre à environ 120 000 personnes. Libération vérifie l'authenticité des données auprès de quatre victimes. Le vendeur retire finalement la base de la vente en affirmant ne l'avoir cédée à personne ; l'organisme public n'a pas confirmé d'intrusion.",
+  "timeline": [
+    {
+      "date": "2021-06-10",
+      "event": "Un pirate met en vente sur un forum du darknet une base de 1,2 million d'enregistrements présentée comme issue de l'application « Mon espace » de Pôle emploi."
+    },
+    {
+      "date": "2021-06-14",
+      "event": "Pôle emploi ouvre une enquête interne et évoque un volume « dix fois moins » important que celui revendiqué ; l'ANSSI est associée."
+    },
+    {
+      "date": "2021-06-16",
+      "event": "Libération publie sa vérification : quatre personnes concernées confirment l'exactitude de leurs données extraites de la base en vente."
+    },
+    {
+      "date": "2021-06-17",
+      "event": "Le vendeur retire la base de la vente en affirmant ne l'avoir vendue à personne ; Pôle emploi déclare un dossier à la CNIL."
+    }
+  ]
+}

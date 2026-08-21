@@ -1,0 +1,49 @@
+{
+  "slug": "universite-paris-cite-20221219",
+  "entity": "Université Paris Cité (IUT de Paris – Rives de Seine)",
+  "siren": "130025737",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-12-19",
+    "publication": "2022-12-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plus de 160 000 fichiers exfiltrés et diffusés (rapports de stage, évaluations, bilans, CV, pièces d'identité) appartenant aux usagers et employés de l'IUT ; nombre de personnes non décompté"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "ZATAZ — Nouvelle université française dans le collimateur de pirates (19 décembre 2022)",
+      "url": "https://www.zataz.com/nouvelle-universite-francaise-dans-le-collimateur-de-pirates/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — « On ressort les craies » : l'IUT Paris-Rives de Seine victime d'une cyberattaque (7 décembre 2022)",
+      "url": "https://www.leparisien.fr/paris-75/on-ressort-les-craies-liut-paris-rives-de-seine-victime-dune-cyberattaque-07-12-2022-TNEPJBA425B6DOUU532HTU77GQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Cyberattaques : l'enseignement supérieur en état d'alerte malgré les vacances (décembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252528725/Cyberattaques-lenseignement-superieur-en-etat-dalerte-malgre-les-vacances",
+      "kind": "article"
+    }
+  ],
+  "description": "Un rançongiciel est déployé le 4 décembre 2022 contre l'IUT de Paris – Rives de Seine, composante de l'Université Paris Cité : « on ressort les craies », rapporte Le Parisien, l'établissement perdant l'accès à ses serveurs. Mi-décembre, le groupe Vice Society revendique l'attaque et diffuse plus de 160 000 fichiers exfiltrés — rapports de stage, évaluations, bilans personnels, CV et pièces d'identité d'usagers et d'employés. L'université, établissement public, n'a pas communiqué de décompte de personnes concernées ; le site de l'IUT reste indisponible plusieurs semaines.",
+  "timeline": [
+    {
+      "date": "2022-12-04",
+      "event": "Un rançongiciel est déployé contre l'IUT de Paris – Rives de Seine ; l'établissement fonctionne en mode dégradé."
+    },
+    {
+      "date": "2022-12-07",
+      "event": "Le Parisien relate l'attaque : « on ressort les craies » pour les 3 000 élèves de l'établissement."
+    },
+    {
+      "date": "2022-12-19",
+      "event": "Le groupe Vice Society diffuse plus de 160 000 fichiers exfiltrés appartenant aux usagers et employés de l'IUT."
+    }
+  ]
+}

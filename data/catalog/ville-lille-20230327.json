@@ -1,0 +1,61 @@
+{
+  "slug": "ville-lille-20230327",
+  "entity": "Ville de Lille",
+  "siren": "215903501",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-27",
+    "publication": "2023-03-27",
+    "confirmation": "2023-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "le groupe Royal diffuse 305 Go de données de la ville en deux fichiers ; la mairie estime que « moins de 2 % » des données municipales ont été volées ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Solutions Numériques — Lille : des hackers revendiquent la cyberattaque de la mairie et diffusent 305 gigas de données (27 mars 2023)",
+      "url": "https://www.solutions-numeriques.com/lille-des-hackers-revendiquent-la-cyberattaque-de-la-mairie-et-diffusent-305-gigas-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Des hackers revendiquent la cyberattaque contre la mairie de Lille début mars (27 mars 2023)",
+      "url": "https://www.tf1info.fr/societe/video-des-hackers-revendiquent-la-cyberattaque-contre-la-mairie-de-lille-debut-mars-2252274.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Obs — À Lille, des hackers revendiquent la cyberattaque de la mairie et diffusent des données (27 mars 2023)",
+      "url": "https://www.nouvelobs.com/societe/20230327.OBS71428/a-lille-des-hackers-revendiquent-la-cyberattaque-de-la-mairie-et-diffusent-des-donnees.html",
+      "kind": "article"
+    },
+    {
+      "label": "ICI — Lille : des hackers revendiquent la cyberattaque de la mairie et diffusent des données (27 mars 2023)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/lille-des-hackers-revendiquent-la-cyberattaque-de-la-mairie-et-diffusent-des-donnees-1242543",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV — Cyberattaque à Lille : « moins de 2 % de données volées » selon la mairie (30 mars 2023)",
+      "url": "https://www.bfmtv.com/grand-lille/cyberattaque-a-lille-moins-de-2-de-donnees-volees-selon-la-mairie_AD-202303300795.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT — Que sait-on de Royal, qui a revendiqué la cyberattaque contre Lille (mars 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533939/Que-sait-on-de-Royal-qui-a-revendique-la-cyberattaque-contre-Lille",
+      "kind": "article"
+    }
+  ],
+  "description": "Début mars 2023, une cyberattaque paralyse les services de la Ville de Lille, qui fonctionnent « au ralenti » pendant plusieurs semaines. Le 27 mars, le groupe de rançongiciel Royal revendique l'intrusion et diffuse en ligne deux fichiers totalisant environ 305 Go de données municipales, repérés par le spécialiste Damien Bancal. La mairie confirme la revendication dans un communiqué, précisant que l'ampleur du vol est en cours d'analyse. Le 30 mars, elle évalue à « moins de 2 % » la part des données de la ville effectivement dérobées ; aucun décompte de personnes concernées n'est publié.",
+  "timeline": [
+    {
+      "date": "2023-03-27",
+      "event": "Le groupe Royal revendique la cyberattaque et diffuse environ 305 Go de données de la ville ; la mairie réagit dans un communiqué le jour même."
+    },
+    {
+      "date": "2023-03-30",
+      "event": "La municipalité estime que « moins de 2 % » des données municipales ont été volées ; l'analyse de la diffusion se poursuit."
+    }
+  ]
+}

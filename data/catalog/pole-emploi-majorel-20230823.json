@@ -1,0 +1,55 @@
+{
+  "slug": "pole-emploi-majorel-20230823",
+  "entity": "Pôle emploi (via son prestataire Majorel)",
+  "siren": "130005481",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-08",
+    "publication": "2023-08-23",
+    "confirmation": "2023-08-23"
+  },
+  "volume": {
+    "count": 10200000,
+    "unit": "personnes",
+    "label": "base de 10,2 millions d'usagers datée de 2022 mise en vente 900 dollars sur un forum ; Pôle emploi évoque « potentiellement 10 millions de personnes » : inscrits de février 2022 et personnes radiées depuis moins de douze mois"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "La Tribune — Pôle emploi : les données personnelles volées à 10 millions de chômeurs sont en vente sur le darknet (25 août 2023)",
+      "url": "https://www.latribune.fr/technos-medias/informatique/pole-emploi-les-donnees-personnelles-volees-a-10-millions-de-chomeurs-sont-en-vente-sur-le-darknet-973944.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Après une fuite, les données de 10 millions de demandeurs d'emploi en vente sur le darkweb (23 août 2023)",
+      "url": "https://www.lefigaro.fr/conjoncture/pole-emploi-appelle-a-la-vigilance-apres-une-fuite-de-donnees-six-millions-de-personnes-concernees-20230823",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Piratage de Pôle emploi : les données de 10 millions de demandeurs d'emploi en vente sur le darkweb (août 2023)",
+      "url": "https://www.tf1info.fr/societe/piratage-de-pole-emploi-les-donnees-de-10-millions-de-demandeurs-d-emploi-en-vente-sur-le-darkweb-2267679.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Point — Les données de 10 millions de demandeurs d'emploi en vente sur le web (25 août 2023, article archivé)",
+      "url": "https://web.archive.org/web/2023/https://www.lepoint.fr/societe/les-donnees-de-10-millions-de-demandeurs-d-emploi-en-vente-sur-le-web-25-08-2023-2532813_23.php",
+      "kind": "archive"
+    }
+  ],
+  "description": "Pôle emploi annonce le 23 août 2023 un « acte de cyber-malveillance » ayant visé son prestataire Majorel et appelant les demandeurs d'emploi à la vigilance : données des inscrits de février 2022 et des personnes radiées depuis moins de douze mois, soit potentiellement 10 millions de personnes (identité, statut de demandeur d'emploi, numéro de Sécurité sociale). Dès le 8 août, un vendeur connu proposait sur un forum une base Pôle emploi de 10,2 millions d'usagers pour 900 dollars, enrichie le 21 août de téléphones et e-mails. Le parquet de Paris ouvre une enquête pour introduction et maintien frauduleux dans un système de traitement automatisé de données.",
+  "timeline": [
+    {
+      "date": "2023-08-08",
+      "event": "Un vendeur connu met en vente sur un forum de cybercriminels une base Pôle emploi datée de 2022, de 10,2 millions d'usagers, pour 900 dollars."
+    },
+    {
+      "date": "2023-08-21",
+      "event": "La base proposée est enrichie d'informations supplémentaires, dont numéros de téléphone et adresses e-mail, relèvent les experts contactés par l'AFP."
+    },
+    {
+      "date": "2023-08-23",
+      "event": "Pôle emploi rend public l'incident ayant visé son prestataire Majorel et appelle à la vigilance ; le parquet de Paris ouvre une enquête."
+    }
+  ]
+}
