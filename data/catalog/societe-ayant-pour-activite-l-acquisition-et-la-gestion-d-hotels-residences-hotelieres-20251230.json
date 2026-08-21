@@ -1,0 +1,37 @@
+{
+  "slug": "societe-ayant-pour-activite-l-acquisition-et-la-gestion-d-hotels-residences-hotelieres-20251230",
+  "entity": "Société ayant pour activité l'acquisition et la gestion d'hôtels/résidences hôtelières (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-30",
+    "confirmation": "2025-12-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; la décision porte sur un dispositif de vidéoprotection"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau 2025)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 30 décembre 2025, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société d'acquisition et de gestion d'hôtels et de résidences hôtelières, non nommée dans la décision. Deux manquements sont retenus : un dispositif de vidéoprotection privé de base légale et un défaut d'information des personnes filmées. La sanction relève de la procédure simplifiée. Selon le bilan 2025 de la CNIL, seize organismes ont été sanctionnés dans l'année pour non-respect des règles applicables à la vidéosurveillance des salariés.",
+  "timeline": [
+    {
+      "date": "2025-12-30",
+      "event": "La CNIL prononce une amende de 5 000 euros contre une société de gestion hôtelière non nommée (vidéoprotection sans base légale, information des personnes)."
+    }
+  ]
+}
