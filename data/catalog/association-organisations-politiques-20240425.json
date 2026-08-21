@@ -1,0 +1,42 @@
+{
+  "slug": "association-organisations-politiques-20240425",
+  "entity": "Association participant aux activités des organisations politiques (dénomination non publiée par la CNIL)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-25",
+    "confirmation": "2024-04-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 16 000 euros et injonction (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « association participant aux activités des organisations politiques » (procédure simplifiée), amende de 16 000 euros et injonction (25 avril 2024)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La procédure de sanction simplifiée (plafond de 20 000 euros, noms non publiables)",
+      "url": "https://cnil.fr/fr/la-procedure-de-sanction-simplifiee",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 25 avril 2024, la CNIL a prononcé une amende de 16 000 euros assortie d'une injonction à l'encontre d'une association participant aux activités des organisations politiques, dans le cadre de la procédure simplifiée. Le manquement retenu : défaut de base légale du traitement mis en œuvre. La dénomination n'est pas publiée et la nature des données n'est pas précisée. En 2024, la CNIL a prononcé 69 sanctions dans le cadre de la procédure simplifiée, pour un montant total de 715 500 euros, selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2024-04-25",
+      "event": "Amende de 16 000 euros et injonction (procédure simplifiée) pour défaut de base légale du traitement."
+    }
+  ]
+}
