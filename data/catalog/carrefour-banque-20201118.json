@@ -1,0 +1,58 @@
+{
+  "slug": "carrefour-banque-20201118",
+  "entity": "Carrefour Banque",
+  "siren": "313811515",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-11-18",
+    "publication": "2020-11-26",
+    "confirmation": "2020-11-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 800 000 euros, soit 0,25 % du produit net bancaire selon la décision relayée par le cabinet Ledieu ; volumes non communiqués"
+  },
+  "data_types": [
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « BANQUE », sanction pécuniaire de 800 000 euros (18 novembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), bilan des sanctions : Carrefour Banque, 800 000 euros le 18 novembre 2020 pour traitement déloyal, information et cookies",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cabinet Ledieu — Jurisprudence CNIL cookies novembre-décembre 2020 : SAN-2020-009, 31 cookies automatiques dont deux cookies de traçage, l'un géolocalisant l'utilisateur (16 décembre 2020)",
+      "url": "https://ledieu-avocats.fr/jurisprudence-cnil-cookie-traceur-nov-dec-2020/",
+      "kind": "article"
+    },
+    {
+      "label": "Rödl & Partner — Protection des données : la CNIL sanctionne Carrefour (contrôles mai-juillet 2019, information incomplète, cookies sans consentement)",
+      "url": "https://www.roedl.fr/fr/actualites/protection-donnees-cnil-sanctionne-carrefour",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 novembre 2020, la formation restreinte de la CNIL a sanctionné Carrefour Banque d'une amende de 800 000 euros (délibération SAN-2020-009). Selon le 41e rapport annuel, les manquements portaient sur la loyauté du traitement, l'information des personnes et les cookies. Selon l'analyse du cabinet Ledieu, 31 cookies étaient déposés dès l'arrivée sur la page d'accueil du site. Cinq n'étaient ni essentiels ni exemptés, dont deux cookies de traçage. L'un suivait l'utilisateur sur des domaines Microsoft ; l'autre enregistrait un identifiant pour le géolocaliser. L'amende représente 0,25 % du produit net bancaire de la filiale. La CNIL a publié la sanction le 26 novembre.",
+  "timeline": [
+    {
+      "date": "2019-07-31",
+      "event": "Contrôles de la CNIL entre mai et juillet 2019 : un contrôle en ligne et un contrôle sur site pour Carrefour Banque."
+    },
+    {
+      "date": "2020-11-18",
+      "event": "Amende de 800 000 euros (SAN-2020-009) : traitement déloyal, information insuffisante, cookies publicitaires déposés sans consentement."
+    },
+    {
+      "date": "2020-11-26",
+      "event": "Publication de la sanction, selon la chronologie du 41e rapport annuel de la CNIL."
+    }
+  ]
+}

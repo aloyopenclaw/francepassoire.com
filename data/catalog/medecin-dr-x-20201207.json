@@ -1,0 +1,42 @@
+{
+  "slug": "medecin-dr-x-20201207",
+  "entity": "Un médecin (« Dr X » dans le 41e rapport annuel de la CNIL)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-07",
+    "publication": "2020-12-17",
+    "confirmation": "2020-12-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction pécuniaire de 3 000 euros ; volume de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « MÉDECIN », sanction pécuniaire de 3 000 euros (7 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), bilan des sanctions : « DR X », sanction pécuniaire de 3 000 euros pour sécurité et notification de violation ; annonce du 17 décembre 2020",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 7 décembre 2020, la formation restreinte de la CNIL a sanctionné un médecin d'une amende de 3 000 euros. Le praticien est désigné « Dr X » dans le 41e rapport annuel, sans identité publiée. Selon ce bilan, les manquements portaient sur l'obligation d'assurer la sécurité des données et sur l'obligation de notifier une violation de données personnelles. La décision fait partie des deux sanctions prononcées le même jour contre deux médecins, annoncées le 17 décembre 2020. Le volume de personnes concernées n'a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2020-12-07",
+      "event": "Amende de 3 000 euros : sécurité des données insuffisante et notification de violation défaillante (41e rapport annuel)."
+    },
+    {
+      "date": "2020-12-17",
+      "event": "La CNIL annonce les sanctions de 6 000 et 3 000 euros prononcées contre deux médecins."
+    }
+  ]
+}
