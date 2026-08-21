@@ -1,0 +1,49 @@
+{
+  "slug": "clichy-20251121",
+  "entity": "Ville de Clichy (Clichy-la-Garenne, plateforme de prise de rendez-vous Synbird)",
+  "siren": "219200243",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-21",
+    "publication": "2025-11-24",
+    "confirmation": "2025-11-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué à l'échelle de la commune ; Clichy-la-Garenne est citée par Le Parisien parmi les communes concernées par la fuite des rendez-vous d'octobre 2025 chez l'éditeur Synbird (environ 300 000 données extraites au total selon son président)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien — Démarches en mairie : La Rochelle, Clichy, Brest… Une fuite de données repérée dans 1 300 communes (24 novembre 2025)",
+      "url": "https://www.leparisien.fr/high-tech/demarches-en-mairie-la-rochelle-clichy-brest-une-fuite-de-donnees-reperee-dans-1300-communes-24-11-2025-QRSBCFWF55GVLHNMEL6NYWAFAQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — États-civils, téléphones, adresses… 1 300 mairies touchées par une fuite de données liée à des rendez-vous pris en octobre (24 novembre 2025)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/etats-civils-telephones-adresses-1-300-mairies-touchees-par-une-fuite-de-donnees-liee-a-des-rendez-vous-pris-en-octobre-7900570725",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Des centaines de mairies touchées par des fuites de données personnelles massives (2 décembre 2025)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/des-centaines-de-mairies-touchees-par-des-fuites-de-donnees-personnelles-massives-20251202",
+      "kind": "article"
+    }
+  ],
+  "description": "Clichy-la-Garenne est citée par Le Parisien parmi les communes concernées par la fuite touchant Synbird, éditeur de prise de rendez-vous en ligne pour les mairies. Le 21 novembre 2025, les usagers des 1 300 communes clientes reçoivent un courriel d'incident. Les données exposées se limitent aux rendez-vous d'état civil pris en octobre : noms, prénoms, code postal, adresse électronique et téléphone. Selon RTL, qui relaie Le Parisien, l'attaquant a utilisé un mot de passe d'employé municipal compromis par réutilisation, puis une faille de l'éditeur, depuis corrigée. Synbird a saisi la CNIL et déposé plainte ; ni mots de passe ni données bancaires ne sont en cause. Aucun chiffre communal n'est publié.",
+  "timeline": [
+    {
+      "date": "2025-11-21",
+      "event": "Courriel aux usagers des mairies clientes de Synbird : un incident de sécurité a affecté l'applicatif, avec les données des rendez-vous d'octobre."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Le Parisien publie l'ampleur de la fuite — 1 300 mairies — et cite Clichy parmi les communes concernées ; RTL précise Clichy-la-Garenne parmi les clientes de l'éditeur."
+    }
+  ]
+}
