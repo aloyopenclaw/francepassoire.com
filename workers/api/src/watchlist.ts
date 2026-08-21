@@ -280,8 +280,14 @@ function corsHeaders(request: Request): Record<string, string> {
   return origin ? { 'Access-Control-Allow-Origin': origin, Vary: 'Origin' } : {};
 }
 
+// X-Robots-Tag sur les redirections du flux de confirmation : ces URL
+// (jeton HMAC long) déclenchent les heuristiques anti-phishing des
+// crawlers — les tenir hors des chemins d'indexation réduit la surface.
 function redirect302(location: string): Response {
-  return new Response(null, { status: 302, headers: { Location: location } });
+  return new Response(null, {
+    status: 302,
+    headers: { Location: location, 'X-Robots-Tag': 'noindex, nofollow' },
+  });
 }
 
 function clientIp(request: Request): string {
