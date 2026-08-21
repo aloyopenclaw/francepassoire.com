@@ -1,0 +1,36 @@
+{
+  "slug": "notaire-20211021",
+  "entity": "Notaire (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-10-21",
+    "confirmation": "2021-10-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; sanction pécuniaire de 3 000 euros et injonction"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 21 octobre 2021, la formation restreinte de la CNIL a prononcé une sanction pécuniaire de 3 000 euros et une injonction à l’encontre d’un notaire, pour manquement à l’obligation de coopération avec l’autorité. Le 24 mars 2022, l’astreinte attachée à l’injonction a été liquidée pour 1 000 euros, la formation restreinte constatant une conformité seulement partielle. La dénomination n’est pas publiée et la nature des données n’est pas précisée par la liste officielle.",
+  "timeline": [
+    {
+      "date": "2021-10-21",
+      "event": "Sanction pécuniaire de 3 000 euros et injonction : manquement à l’obligation de coopération avec la CNIL."
+    },
+    {
+      "date": "2022-03-24",
+      "event": "Liquidation de l’astreinte pour 1 000 euros : conformité partielle à l’injonction prononcée."
+    }
+  ]
+}

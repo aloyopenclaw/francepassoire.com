@@ -1,0 +1,53 @@
+{
+  "slug": "web-editions-20171116",
+  "entity": "Web Editions",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-11-16",
+    "confirmation": "2017-11-16",
+    "publication": "2017-11-22"
+  },
+  "volume": {
+    "count": 717893,
+    "unit": "personnes",
+    "label": "jusqu’à 717 893 personnes selon les chiffres de la société rapportés par la presse (doublons et démarches non finalisées possibles)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "La Tribune — Données personnelles : la CNIL sanctionne plusieurs sites de documents administratifs (28 novembre 2017)",
+      "url": "https://www.latribune.fr/technos-medias/donnees-personnelles-la-cnil-sanctionne-plusieurs-sites-de-documents-administratifs-759561.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde du Droit — Démarches administratives en ligne : sanction de la CNIL pour atteinte à la sécurité des données (23 novembre 2017)",
+      "url": "https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/54769-demarches-administratives-en-ligne-sanction-de-la-cnil-pour-atteinte-a-la-securite-des-donnees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 novembre 2017, la formation restreinte de la CNIL a sanctionné la société Web Editions de 25 000 euros pour atteinte à la sécurité et à la confidentialité des données de ses clients. Quatre sites de démarches administratives en ligne laissaient accessibles les données saisies par les utilisateurs : par simple modification d’un numéro dans l’URL, on accédait aux pages récapitulatives d’autres personnes. Y figuraient identité, coordonnées, noms des parents pour les actes de naissance et descriptifs des faits pour les dépôts de plainte. Le défaut, signalé en décembre 2016, a été corrigé en trois jours ; la CNIL a tenu compte de cette réactivité.",
+  "timeline": [
+    {
+      "date": "2016-12-17",
+      "event": "Un éditeur de site de sécurité informatique signale à la CNIL des données de démarches en ligne librement accessibles."
+    },
+    {
+      "date": "2017-11-16",
+      "event": "Sanction pécuniaire de 25 000 euros (SAN-2017-012) : absence d’authentification et URL prévisibles sur quatre sites."
+    },
+    {
+      "date": "2017-11-22",
+      "event": "La CNIL rend la sanction publique ; jusqu’à 717 893 personnes ont pu être concernées selon la société."
+    }
+  ]
+}

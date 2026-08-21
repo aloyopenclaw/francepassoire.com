@@ -1,0 +1,42 @@
+{
+  "slug": "google-20211231",
+  "entity": "Google (Google LLC et Google Ireland Limited)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2021-12-31",
+    "confirmation": "2021-12-31",
+    "publication": "2022-01-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de personnes concernées publié ; manquement lié aux traceurs des sites google.fr et youtube.com"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « services internet (moteur de recherche, plateforme de vidéos, etc.) », sanction pécuniaire de 150 000 000 euros et injonction (31 décembre 2021)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "AP News — France fines Google, Facebook millions over tracking consent (6 janvier 2022)",
+      "url": "https://apnews.com/article/technology-business-europe-france-media-b649f6f8060861dbe935d3ed110f85ab",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 décembre 2021, la formation restreinte de la CNIL a sanctionné Google d'une amende totale de 150 millions d'euros et d'une injonction à régulariser sous trois mois. Les sites google.fr et youtube.com permettaient d'accepter les cookies en un clic, mais exigeaient plusieurs actions pour les refuser. La CNIL a rendu sa décision publique le 6 janvier 2022, en même temps qu'une amende de 60 millions d'euros contre Facebook, cataloguée séparément. Le tableau officiel des sanctions désigne l'entité sous l'appellation « services internet (moteur de recherche, plateforme de vidéos, etc.) ».",
+  "timeline": [
+    {
+      "date": "2021-12-31",
+      "event": "La formation restreinte prononce une amende de 150 millions d'euros et une injonction sous trois mois pour des modalités de refus des cookies non équivalentes à l'acceptation."
+    },
+    {
+      "date": "2022-01-06",
+      "event": "La CNIL rend publiques les sanctions contre Google et Facebook."
+    }
+  ]
+}
