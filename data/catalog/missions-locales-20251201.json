@@ -1,0 +1,49 @@
+{
+  "slug": "missions-locales-20251201",
+  "entity": "Réseau des Missions locales (France Travail / UNML)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-01",
+    "publication": "2025-12-01",
+    "confirmation": "2025-12-01"
+  },
+  "volume": {
+    "count": 1600000,
+    "unit": "personnes",
+    "label": "1,6 million de jeunes de 16 à 25 ans suivis par les Missions locales, dont les données sont « susceptibles d'être divulguées » selon France Travail et l'UNML"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "France Travail — Le réseau des Missions Locales et France Travail appellent à la vigilance après un acte de cyber-malveillance (communiqué)",
+      "url": "https://www.francetravail.org/accueil/communiques/2025/le-reseau-des-missions-locales-et-france-travail-appellent-a-la-vigilance-apres-un-acte-de-cyber-malveillance.html?type=article",
+      "kind": "officiel"
+    },
+    {
+      "label": "TF1 Info — Cyberattaque : les données d'1,6 million de jeunes « susceptibles d'être divulguées » (1er décembre 2025)",
+      "url": "https://www.tf1info.fr/societe/cyberattaque-les-donnees-d-1-6-million-de-jeunes-susceptibles-d-etre-divulguees-2410101.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Nouvelle fuite de données chez France Travail : les informations de 1,6 million de jeunes divulguées (décembre 2025)",
+      "url": "https://www.01net.com/actualites/nouvelle-fuite-de-donnees-chez-france-travail-les-informations-de-16-million-de-jeunes-divulguees.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez France Travail (Missions Locales / Jeunes) : 1,6M profils",
+      "url": "https://frenchbreaches.com/alertes/france-travail-missions-locales-jeunes-8bd553a06599",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er décembre 2025, France Travail et l'Union nationale des missions locales annoncent un acte de cyber-malveillance touchant le réseau des Missions locales, associations d'insertion des jeunes. Selon Le Figaro, un pirate a exploité le compte compromis d'un responsable pour créer de faux accès et consulter des données. Les informations de 1,6 million de jeunes de 16 à 25 ans sont « susceptibles d'être divulguées » : nom, prénom, date de naissance, numéro de sécurité sociale, identifiant France Travail, coordonnées et parcours d'accompagnement scolaire et professionnel. Les deux réseaux appellent les jeunes concernés à la vigilance face au phishing. C'est la deuxième fuite impliquant l'écosystème France Travail après celle du fichier I-Milo en octobre 2024.",
+  "timeline": [
+    {
+      "date": "2025-12-01",
+      "event": "France Travail et l'UNML annoncent la consultation frauduleuse des données de 1,6 million de jeunes suivis par les Missions locales."
+    }
+  ]
+}

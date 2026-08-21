@@ -1,0 +1,43 @@
+{
+  "slug": "ffkarate-20251222",
+  "entity": "Fédération Française de Karaté et disciplines associées (FFKDA)",
+  "siren": "304951858",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-22",
+    "publication": "2025-12-22"
+  },
+  "volume": {
+    "count": 1200,
+    "unit": "enregistrements",
+    "label": "1 200 enregistrements revendiqués par le pirate « Infinity » ; volume non confirmé par la fédération"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez la Fédération Française de Karaté : 1,2K enregistrements revendiqués par le pirate Infinity (22 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-karate-ffkarate-ml29qpeqhbove60dnxj",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — Un assureur, un outil scolaire et de nouvelles fédérations sportives ciblées par un pirate (9 décembre 2025)",
+      "url": "https://www.zataz.com/un-assureur-un-outil-scolaire-et-de-nouvelles-federations-sportives-ciblees-par-un-pirate/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 décembre 2025, le pirate « Infinity » revendique sur un forum cybercriminel une compromission de données attribuées à la Fédération Française de Karaté et disciplines associées : environ 1 200 enregistrements comprenant noms et prénoms, sexe, dates de naissance, numéros de licence, adresses postales complètes, e-mails, téléphones, clubs d'affiliation et informations de licence. Cette revendication fait suite à la déclaration d'un autre pirate, mi-décembre, citant le karaté parmi ses prochaines cibles après la natation et le tennis, dans une vague d'attaques visant le sport amateur français. La fédération n'a pas communiqué publiquement sur cette mise en vente et le volume annoncé n'est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2025-12-09",
+      "event": "Un pirate se réclamant de la mouvance Shiny Hunters cite le karaté parmi ses cibles, après la natation et le tennis."
+    },
+    {
+      "date": "2025-12-22",
+      "event": "Le pirate « Infinity » met en vente environ 1 200 enregistrements attribués à la FFKDA ; la revendication n'est pas confirmée."
+    }
+  ]
+}

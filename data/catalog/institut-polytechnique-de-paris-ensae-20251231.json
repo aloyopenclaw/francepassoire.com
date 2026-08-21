@@ -1,0 +1,40 @@
+{
+  "slug": "institut-polytechnique-de-paris-ensae-20251231",
+  "entity": "Institut Polytechnique de Paris — ENSAE",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-31",
+    "publication": "2025-12-31"
+  },
+  "volume": {
+    "count": 9551,
+    "unit": "enregistrements",
+    "label": "9 551 enregistrements revendiqués, dont 4 179 IBAN exposés ; volume non confirmé par l'établissement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Institut Polytechnique de Paris (ENSAE) touché par une fuite de données : IBAN et pièces d'identité (31 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/institut-polytechnique-de-paris-ensae-c182a4ce75f8",
+      "kind": "revendication"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — Institut Polytechnique de Paris, 31 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 31 décembre 2025, une fuite de données attribuée à l'Institut Polytechnique de Paris pour son école ENSAE est recensée sur les traqueurs de fuites. Les 9 551 enregistrements revendiqués comprendraient noms, prénoms, adresses e-mail et postales, numéros de téléphone, copies de pièces d'identité, numéros de sécurité sociale et 4 179 IBAN. Cette publication fait partie d'une série de fuites visant l'enseignement supérieur français fin 2025, mise en vente le même jour que la base de l'ENSAI. L'établissement n'a pas communiqué publiquement sur cette revendication, dont le volume n'est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2025-12-31",
+      "event": "Mise en circulation d'une base de 9 551 enregistrements attribuée à l'IP Paris (ENSAE), IBAN et pièces d'identité inclus ; non confirmé."
+    }
+  ]
+}
