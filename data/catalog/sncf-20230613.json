@@ -1,0 +1,42 @@
+{
+  "slug": "sncf-20230613",
+  "entity": "SNCF",
+  "siren": "552049447",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-06-13",
+    "publication": "2023-06-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de salariés concernés non communiqué par la SNCF"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "RTL — INFO RTL. Des données personnelles de cheminots ont été volées à cause d'une faille de sécurité (13 juin 2023)",
+      "url": "https://www.rtl.fr/actu/debats-societe/info-rtl-des-donnees-personnelles-de-cheminots-ont-ete-volees-a-cause-d-une-faille-de-securite-7900274464",
+      "kind": "article"
+    },
+    {
+      "label": "BFM TV — Piratage informatique d'un prestataire de la SNCF : des données personnelles volées (28 juin 2023)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/piratage-informatique-d-un-prestataire-de-la-sncf-des-donnees-personnelles-volees_AD-202306280957.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 juin 2023, la SNCF informe ses salariés qu'un prestataire informatique a subi un important vol de données. Des données personnelles de cheminots ont été exportées à la suite d'une faille du logiciel MOVEit, qui a touché de nombreuses entreprises dans le monde. La nature exacte des informations concernées n'est pas précisée. La compagnie ferroviaire dépose plainte et saisit l'ANSSI et la CNIL, indiquant qu'aucun usage de ces données n'a été constaté à ce stade. Le 28 juin, BFM TV rapporte que les données personnelles volées de cheminots ont été diffusées sur internet.",
+  "timeline": [
+    {
+      "date": "2023-06-13",
+      "event": "La SNCF informe ses salariés du vol chez un prestataire lié à la faille MOVEit, dépose plainte et saisit l'ANSSI et la CNIL."
+    },
+    {
+      "date": "2023-06-28",
+      "event": "BFM TV rapporte que les données personnelles de cheminots volées via le prestataire ont été diffusées sur internet."
+    }
+  ]
+}

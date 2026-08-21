@@ -1,0 +1,58 @@
+{
+  "slug": "corsica-ferries-20231105",
+  "entity": "Corsica Ferries",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-11-05",
+    "publication": "2023-11-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "101 gigaoctets de données revendiqués par Alphv/BlackCat : données financières, informations personnelles, documents internes et plans de navires (chiffre non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — Cyberattaque : Corsica Ferries cherche à établir l'ampleur du vol de données (6 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/366558438/Alphv-revendique-une-cyberattaque-contre-Corsica-Ferries",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien — Fuite de données massive chez Corsica Ferries",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61344-fuite-de-donnees-massive-chez-corsica-ferries.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Revue du Digital — Corsica Ferries refuse de payer la rançon suite à une attaque informatique",
+      "url": "https://www.larevuedudigital.com/corsica-ferries-refuse-de-payer-la-rancon-suite-a-une-attaque-informatique/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — victime Corsica-Ferries revendiquée par Alphv (5 novembre 2023)",
+      "url": "https://www.ransomware.live/id/Q29yc2ljYS1GZXJyaWVzQGFscGh2",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 octobre 2023, Corsica Ferries signale une interruption de ses serveurs, perturbant site web et application. Le 5 novembre, la franchise Alphv/BlackCat revendique une cyberattaque contre la compagnie maritime. Elle annonce le vol de 101 gigaoctets de données téléversées le 1er novembre. La revendication cite des données financières, des informations personnelles, des documents internes et des plans de navires. Corsica Ferries porte plainte et notifie la CNIL. Le 6 novembre, elle demande par courriel à ses clients de changer de mot de passe ; l'enquête doit déterminer si leurs données ont été compromises. Rien ne confirme la présence de données de clients dans le lot publié.",
+  "timeline": [
+    {
+      "date": "2023-10-27",
+      "event": "Corsica Ferries annonce une interruption de ses serveurs, perturbant l'accès au site et à l'application ; des services sont relancés le lendemain."
+    },
+    {
+      "date": "2023-11-05",
+      "event": "Alphv/BlackCat revendique l'attaque sur son site de fuite et annonce 101 gigaoctets de données volés, téléversés le 1er novembre."
+    },
+    {
+      "date": "2023-11-06",
+      "event": "Des clients reçoivent un courriel de la compagnie ; Corsica Ferries indique avoir porté plainte et notifié la CNIL, et examine les données publiées."
+    }
+  ],
+  "group": "blackcat"
+}
