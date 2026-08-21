@@ -1,0 +1,32 @@
+{
+  "slug": "societe-de-conseils-en-systemes-et-logiciels-informatiques-20231006",
+  "entity": "Société de conseils en systèmes et logiciels informatiques",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-06",
+    "confirmation": "2023-10-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymément dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 6 octobre 2023, dans le cadre de la procédure simplifiée, une amende de 20 000 euros contre une société de conseils en systèmes et logiciels informatiques, désignée anonymément dans le tableau officiel des sanctions. Le manquement retenu est un défaut de coopération avec la CNIL. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-10-06",
+      "event": "Amende de 20 000 euros en procédure simplifiée pour défaut de coopération avec la CNIL."
+    }
+  ]
+}

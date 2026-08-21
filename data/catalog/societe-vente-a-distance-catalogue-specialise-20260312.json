@@ -1,0 +1,42 @@
+{
+  "slug": "societe-vente-a-distance-catalogue-specialise-20260312",
+  "entity": "Société exerçant une activité de vente à distance sur catalogue spécialisé (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-12",
+    "confirmation": "2026-03-12",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende administrative de 5 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société exerçant une activité de vente à distance sur catalogue spécialisée (procédure simplifiée) », amende de 5 000 euros (12 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 mars 2026, la CNIL a prononcé une amende de 5 000 euros à l'encontre d'une société de vente à distance sur catalogue spécialisé, dans le cadre de la procédure simplifiée. Manquements retenus : information des personnes lors de l'exercice de leurs droits et non-respect du droit d'accès. La dénomination n'est pas publiée, les sanctions simplifiées n'étant pas rendues publiques. Depuis janvier 2026, la CNIL a prononcé 23 sanctions simplifiées pour un montant cumulé de 133 750 euros, dont 8 pour des non-respects des droits d'accès ou d'effacement.",
+  "timeline": [
+    {
+      "date": "2026-03-12",
+      "event": "Amende de 5 000 euros (procédure simplifiée) : information des personnes et droit d'accès non respectés."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie un bilan de 23 sanctions simplifiées depuis janvier 2026, pour 133 750 euros cumulés."
+    }
+  ]
+}

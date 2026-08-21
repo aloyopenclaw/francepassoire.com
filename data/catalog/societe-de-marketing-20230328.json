@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-marketing-20230328",
+  "entity": "Société de marketing (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-28",
+    "confirmation": "2023-03-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 10 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de marketing (procédure simplifiée) », Amende de 10 000 euros et injonction (28 mars 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l’action de la CNIL (5 février 2025)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 mars 2023, la CNIL a prononcé une amende de 10 000 euros et une injonction à l'encontre d'une société de marketing, dans le cadre de la procédure simplifiée. Le manquement retenu est un défaut de coopération avec la CNIL. La dénomination n'est pas publiée. Le 26 septembre 2024, une liquidation d'astreinte de 3 000 euros figure dans la liste officielle pour la même désignation, pour absence de réponse à l'injonction.",
+  "timeline": [
+    {
+      "date": "2023-03-28",
+      "event": "Amende de 10 000 euros et injonction (procédure simplifiée) pour défaut de coopération avec la CNIL."
+    },
+    {
+      "date": "2024-09-26",
+      "event": "Liquidation d'astreinte de 3 000 euros pour absence de réponse à l'injonction (liste officielle)."
+    }
+  ]
+}

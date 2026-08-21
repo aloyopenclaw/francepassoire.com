@@ -1,0 +1,32 @@
+{
+  "slug": "construction-videosurveillance-20170615",
+  "entity": "Une société de construction (entité non nommée)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-06-15",
+    "confirmation": "2017-06-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction de conformité ; salariés filmés, effectif non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 juin 2017, la CNIL a sanctionné une société du secteur de la construction au sujet de sa vidéosurveillance des salariés. L'autorité a retenu des données inadéquates, non pertinentes et excessives, un défaut de sécurité et de confidentialité, et l'absence de réponse à ses demandes. Le type de sanction n'est pas détaillé dans le tableau public, qui ne nomme pas l'entité. La CNIL rappelle régulièrement que la surveillance permanente des postes de travail n'est pas justifiée par la prévention des accidents et que les images ne sont admissibles qu'autant que de besoin pour la finalité poursuivie.",
+  "timeline": [
+    {
+      "date": "2017-06-15",
+      "event": "Sanction pour vidéosurveillance de salariés : données excessives, défaut de sécurité et défaut de réponse à la CNIL."
+    }
+  ]
+}

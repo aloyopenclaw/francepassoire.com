@@ -1,0 +1,43 @@
+{
+  "slug": "societe-collectant-des-donnees-de-prospects-a-partir-de-plusieurs-sources-notamment-des-formulaires-de-participation-a-des-jeux-concours-en-ligne-20250904",
+  "entity": "Société collectant des données de prospects à partir de plusieurs sources, notamment des formulaires de participation à des jeux concours en ligne",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-04",
+    "publication": "2025-10-13",
+    "confirmation": "2025-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL prononce 16 nouvelles sanctions dans le cadre de la procédure simplifiée (13 octobre 2025)",
+      "url": "https://www.cnil.fr/fr/la-cnil-prononce-16-nouvelles-sanctions-dans-le-cadre-de-la-procedure-simplifiee",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 4 septembre 2025, dans le cadre de la procédure simplifiée, une amende de 17 000 euros contre une société collectant des données de prospects à partir de plusieurs sources, notamment des formulaires de participation à des jeux concours en ligne. Selon le communiqué du 13 octobre 2025, la conception des formulaires mettait en valeur l'option d'acceptation d'offres promotionnelles, laissant croire qu'elle conditionnait la participation au jeu. Le consentement recueilli ne portait pas sur la prospection réalisée pour les clients de la société. La CNIL retient aussi des durées de conservation excessives, un défaut de base légale, une information insuffisante et l'absence de registre des traitements.",
+  "timeline": [
+    {
+      "date": "2025-09-04",
+      "event": "Amende de 17 000 euros en procédure simplifiée : durée de conservation, base légale, information, consentement à la prospection et registre des traitements en cause."
+    },
+    {
+      "date": "2025-10-13",
+      "event": "La CNIL rend publiques seize nouvelles sanctions simplifiées et détaille les formulaires de jeux-concours à l'apparence trompeuse de la société."
+    }
+  ]
+}

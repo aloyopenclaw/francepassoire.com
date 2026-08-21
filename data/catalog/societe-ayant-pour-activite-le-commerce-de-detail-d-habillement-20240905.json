@@ -1,0 +1,32 @@
+{
+  "slug": "societe-ayant-pour-activite-le-commerce-de-detail-d-habillement-20240905",
+  "entity": "Société ayant pour activité le commerce de détail d'habillement",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-05",
+    "confirmation": "2024-09-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 5 septembre 2024, dans le cadre de la procédure simplifiée, une amende de 15 000 euros contre une société de commerce de détail d'habillement, désignée anonymément dans le tableau officiel des sanctions. Les manquements retenus portent sur un dispositif de vidéosurveillance : obligation de traiter les données de façon licite, minimisation et transparence non respectées, auxquels s'ajoute un défaut de coopération avec la CNIL. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2024-09-05",
+      "event": "Amende de 15 000 euros en procédure simplifiée : licéité, minimisation et information (vidéosurveillance), défaut de coopération."
+    }
+  ]
+}

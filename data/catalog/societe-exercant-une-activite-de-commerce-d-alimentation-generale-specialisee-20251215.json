@@ -1,0 +1,42 @@
+{
+  "slug": "societe-exercant-une-activite-de-commerce-d-alimentation-generale-specialisee-20251215",
+  "entity": "Société exerçant une activité de commerce d'alimentation générale spécialisée (dénomination non publiée par la CNIL)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-15",
+    "confirmation": "2025-12-15",
+    "publication": "2026-02-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 8 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2025 (9 février 2026)",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 15 décembre 2025, la CNIL a prononcé une amende de 8 000 euros assortie d'une injonction à l'encontre d'une société de commerce d'alimentation générale spécialisée, dans le cadre de la procédure simplifiée. Les manquements retenus : licéité et minimisation insuffisantes d'un dispositif de vidéosurveillance et de vidéoprotection, durées de conservation excessives et défauts d'information. La vidéosurveillance disproportionate figure parmi les principaux motifs de sanction simplifiée recensés par la CNIL depuis mai 2025. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2025-12-15",
+      "event": "Amende de 8 000 euros et injonction (procédure simplifiée) : vidéosurveillance non conforme et conservation excessive."
+    },
+    {
+      "date": "2026-02-09",
+      "event": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices."
+    }
+  ]
+}

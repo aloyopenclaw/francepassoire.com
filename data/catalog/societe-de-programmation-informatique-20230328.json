@@ -1,0 +1,41 @@
+{
+  "slug": "societe-de-programmation-informatique-20230328",
+  "entity": "Société de programmation informatique (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-28",
+    "confirmation": "2023-03-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société de programmation informatique (procédure simplifiée) », Amende de 20 000 euros (28 mars 2023)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : la CNIL présente le bilan 2023 de son action répressive (16 février 2024)",
+      "url": "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-la-cnil-presente-le-bilan-2023-de-son-action-repressive",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 28 mars 2023, la CNIL a prononcé une amende de 20 000 euros à l'encontre d'une société de programmation informatique, dans le cadre de la procédure simplifiée. Les manquements retenus portent sur l'encadrement des relations entre le responsable de traitement et le sous-traitant, ainsi que sur le défaut de sécurité des données. La dénomination n'est pas publiée. La décision compte parmi les 42 sanctions prononcées par la CNIL en 2023, pour un total de 89 179 500 euros selon son bilan annuel.",
+  "timeline": [
+    {
+      "date": "2023-03-28",
+      "event": "Amende de 20 000 euros (procédure simplifiée) : encadrement du sous-traitant et sécurité des données en cause."
+    },
+    {
+      "date": "2024-02-16",
+      "event": "Le bilan 2023 de la CNIL recense 42 sanctions pour 89 179 500 euros d'amendes cumulées."
+    }
+  ]
+}

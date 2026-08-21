@@ -1,0 +1,42 @@
+{
+  "slug": "societe-editant-un-site-de-jeux-dematerialises-20241219",
+  "entity": "Société éditant un site de jeux dématérialisés (dénomination non publiée par la CNIL)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-12-19",
+    "confirmation": "2024-12-19",
+    "publication": "2025-02-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 15 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Sanctions et mesures correctrices : bilan 2024 de l'action de la CNIL (5 février 2025)",
+      "url": "https://cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 décembre 2024, la CNIL a prononcé une amende de 15 000 euros à l'encontre d'une société éditant un site de jeux dématérialisés, dans le cadre de la procédure simplifiée. Le manquement retenu porte sur le non-respect du droit d'accès des personnes à leurs données. Le respect des droits des personnes figure parmi les principaux motifs de sanction de la procédure simplifiée recensés par la CNIL en 2024, aux côtés de la sécurité des données et de la coopération avec l'institution. La dénomination n'est pas publiée ; le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2024-12-19",
+      "event": "Amende de 15 000 euros (procédure simplifiée) : droit d'accès non respecté."
+    },
+    {
+      "date": "2025-02-05",
+      "event": "La CNIL publie son bilan 2024 des sanctions et mesures correctrices."
+    }
+  ]
+}

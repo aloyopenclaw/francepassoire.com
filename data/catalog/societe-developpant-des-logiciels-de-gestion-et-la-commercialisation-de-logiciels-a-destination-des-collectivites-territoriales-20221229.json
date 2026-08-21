@@ -1,0 +1,42 @@
+{
+  "slug": "societe-developpant-des-logiciels-de-gestion-et-la-commercialisation-de-logiciels-a-destination-des-collectivites-territoriales-20221229",
+  "entity": "Société développant des logiciels de gestion et la commercialisation de logiciels à destination des collectivités territoriales (procédure simplifiée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-29",
+    "confirmation": "2022-12-29",
+    "publication": "2023-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 15 000 euros (procédure simplifiée)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « société développant des logiciels de gestion et commercialisant des logiciels à destination des collectivités territoriales (procédure simplifiée) », Amende de 15 000 euros (29 décembre 2022)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Procédure de sanction simplifiée : la CNIL présente son premier bilan 2022 (31 janvier 2023)",
+      "url": "https://www.cnil.fr/fr/procedure-de-sanction-simplifiee-la-cnil-presente-son-premier-bilan-2022",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 29 décembre 2022, la CNIL a prononcé une amende de 15 000 euros à l'encontre d'une société développant des logiciels de gestion et les commercialisant à destination des collectivités territoriales, dans le cadre de la procédure simplifiée. Les manquements retenus : minimisation des données, durée de conservation, défaut d'information et défaut de sécurité. La dénomination n'est pas publiée. La procédure simplifiée, créée en 2022, prévoit des amendes d'un montant maximal de 20 000 euros, rappelle la CNIL.",
+  "timeline": [
+    {
+      "date": "2022-12-29",
+      "event": "Amende de 15 000 euros (procédure simplifiée) : minimisation, conservation, information et sécurité en cause."
+    },
+    {
+      "date": "2023-01-31",
+      "event": "La CNIL publie le premier bilan de la procédure simplifiée, créée en 2022 (amendes plafonnées à 20 000 euros)."
+    }
+  ]
+}

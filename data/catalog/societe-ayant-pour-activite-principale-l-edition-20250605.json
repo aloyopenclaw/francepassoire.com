@@ -1,0 +1,32 @@
+{
+  "slug": "societe-ayant-pour-activite-principale-l-edition-20250605",
+  "entity": "Société ayant pour activité principale l'édition",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-06-05",
+    "confirmation": "2025-06-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 5 juin 2025, dans le cadre de la procédure simplifiée, une amende de 10 000 euros et une injonction contre une société dont l'activité principale est l'édition, désignée anonymément dans le tableau officiel des sanctions. Le manquement retenu est un défaut de coopération avec la CNIL : l'organisme n'a pas répondu à ses sollicitations, en méconnaissance de l'article 18 de la loi Informatique et Libertés. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2025-06-05",
+      "event": "Amende de 10 000 euros et injonction en procédure simplifiée pour défaut de coopération avec la CNIL (article 18 de la loi Informatique et Libertés)."
+    }
+  ]
+}
