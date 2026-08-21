@@ -40,7 +40,7 @@ const STATUT_LABELS: Record<StatutFiche, string> = {
 /** Phrase d'explication honnête sous la pastille de statut. */
 const STATUT_EXPLICATIONS: Record<StatutFiche, string> = {
   revendiquee:
-    'Fuite alléguée, non établie par une source officielle : les chiffres annoncés ne sont pas confirmés.',
+    'Fuite revendiquée, non établie par une source officielle : les chiffres annoncés ne sont pas confirmés.',
   confirmee:
     'Fuite établie par une source officielle (entité, autorité ou justice).',
 };
