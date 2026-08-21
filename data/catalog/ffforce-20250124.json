@@ -1,0 +1,48 @@
+{
+  "slug": "ffforce-20250124",
+  "entity": "Fédération française de force (FFForce)",
+  "siren": "812876407",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-01-24"
+  },
+  "volume": {
+    "count": 64512,
+    "unit": "personnes",
+    "label": "64 512 licenciés revendiqués ; ≈ 6,9 millions de lignes remises en vente en juin (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Les données de 4,5 millions de Français en vente sur un forum de pirates",
+      "url": "https://www.01net.com/actualites/donnees-45-millions-francais-vente-forum-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Les données de 4,5 millions de sportifs français piratées",
+      "url": "https://www.commentcamarche.net/securite/piratage/33513-les-donnees-de-4-5-millions-de-sportifs-francais-piratees/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite présumée de bases sportives : boxe et force françaises en vente sur le dark web",
+      "url": "https://www.zataz.com/fuite-presumee-de-bases-sportives-boxe-et-force-francaises-en-vente-sur-le-dark-web/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération française de force ferme la marche des huit fédérations mises en vente le 24 janvier 2025 sur BreachForums. Le pirate « TheFrenchGuy » revendique 64 512 licenciés. Comme pour les autres bases de la vague, l’attaque a visé Exalto, prestataire commun des espaces licences. Les données citées couvrent identité et coordonnées des licenciés. En juin, Zataz documente la remise en vente d’une base d’environ 6,9 millions de lignes attribuée à la fédération. Les échantillons du pirate évoquent des données sensibles. La fédération n’a pas confirmé l’incident ; tous les volumes restent des revendications.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "La Fédération française de force figure parmi les huit fédérations mises en vente sur BreachForums : 64 512 licenciés revendiqués."
+    },
+    {
+      "date": "2025-06-24",
+      "event": "Zataz documente la remise en vente d’une base d’environ 6,9 millions de lignes attribuée à la fédération."
+    }
+  ]
+}

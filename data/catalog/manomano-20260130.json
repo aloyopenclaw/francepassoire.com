@@ -1,0 +1,53 @@
+{
+  "slug": "manomano-20260130",
+  "entity": "ManoMano",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-01-30",
+    "publication": "2026-02-26"
+  },
+  "volume": {
+    "count": 38000000,
+    "unit": "personnes",
+    "label": "38 millions de personnes (chiffre communiqué par l'entreprise à BleepingComputer) ; la revendication initiale évoquait 37,8 millions de comptes et 43 Go"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — ManoMano : 37,8 millions de comptes évoqués (recensement du 30/01/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-01-30-manomano",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — European DIY chain ManoMano data breach impacts 38 million customers",
+      "url": "https://www.bleepingcomputer.com/news/security/european-dyi-chain-manomano-data-breach-impacts-38-million-customers/",
+      "kind": "article"
+    },
+    {
+      "label": "The Register — French DIY etailer ManoMano admits customer data stolen",
+      "url": "https://www.theregister.com/2026/02/27/manomano_breach/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — ManoMano victime d'une fuite colossale via un prestataire tunisien",
+      "url": "https://frenchbreaches.com/blog/manomano-victime-dune-fuite-colossale-via-un-prestataire-tunisien-38-m-de-clients-exposes",
+      "kind": "article"
+    }
+  ],
+  "description": "La marketplace française de bricolage ManoMano a confirmé en février 2026 un incident survenu en janvier chez un sous-traitant de son service client : un compte agent compromis a permis le téléchargement de données personnelles de comptes clients européens. Un acteur baptisé « Indra » avait revendiqué dès fin janvier 37,8 millions de comptes, plus de 900 000 tickets et environ 43 Go. Selon BleepingComputer, l'enquête de l'entreprise évalue l'impact à 38 millions de personnes. Aucune donnée bancaire ni mot de passe n'est concerné selon l'entreprise, qui a notifié la CNIL et l'ANSSI et prévenu ses clients.",
+  "timeline": [
+    {
+      "date": "2026-01-30",
+      "event": "La revendication « Indra » (37,8 millions de comptes, tickets et pièces jointes) est recensée publiquement."
+    },
+    {
+      "date": "2026-02-26",
+      "event": "ManoMano notifie ses clients ; l'entreprise confirme à la presse un accès lié à un sous-traitant et un impact évalué à 38 millions de personnes."
+    }
+  ]
+}

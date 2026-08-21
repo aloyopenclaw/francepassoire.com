@@ -1,0 +1,56 @@
+{
+  "slug": "ffkarate-20260226",
+  "entity": "Fédération Française de Karaté et disciplines associées (FFKDA)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-02-26",
+    "publication": "2026-02-26"
+  },
+  "volume": {
+    "count": 2700000,
+    "unit": "lignes",
+    "label": "2,7 millions de lignes revendiquées (34 ans d'historique évoqués) ; nouvelle mise en vente d'août 2026 : 2,8 millions d'enregistrements annoncés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite massive à la Fédération Française de Karaté (recensement du 26/02/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-02-26-federation-francaise-de-karate",
+      "kind": "article"
+    },
+    {
+      "label": "FFKDA — Communiqué officiel : incident de cybersécurité",
+      "url": "https://www.ffkarate.fr/communique-officiel-incident-de-cybersecurite/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cyberattaque.org — Fédération Française de Karaté : fuite massive de 2,7 millions de licenciés",
+      "url": "https://www.cyberattaque.org/federation-francaise-de-karate-fuite-massive-de-27-millions-de-licencies/",
+      "kind": "article"
+    },
+    {
+      "label": "Undercode News — French Karate Federation database allegedly leaked: 28 million records claimed",
+      "url": "https://undercodenews.com/french-karate-federation-database-allegedly-leaked-28-million-records-claimed-in-dark-web-listing-video/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 février 2026, un acteur revendique sur un forum la mise en vente d'une base de la Fédération Française de Karaté : 2,7 millions de lignes d'identité et de licences, avec un historique présenté comme remontant à 1991. La fédération publie le 11 mars un communiqué confirmant un accès non autorisé à l'un de ses systèmes, susceptible d'avoir entraîné une extraction de données personnelles (identité, coordonnées, licences), sans mots de passe ni données bancaires ; la CNIL est saisie et une plainte déposée. Une nouvelle mise en vente évoquant 2,8 millions d'enregistrements est relayée le 15 août 2026.",
+  "timeline": [
+    {
+      "date": "2026-02-26",
+      "event": "Mise en vente revendiquée d'une base FFK : 2,7 millions de lignes, identité complète et licences, historique présenté jusqu'à 1991."
+    },
+    {
+      "date": "2026-03-11",
+      "event": "Communiqué de la fédération : accès non autorisé confirmé, extraction susceptible ; CNIL saisie, plainte déposée."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Nouvelle annonce relayée : « base complète » de 2,8 millions d'enregistrements, authenticité non vérifiée."
+    }
+  ]
+}

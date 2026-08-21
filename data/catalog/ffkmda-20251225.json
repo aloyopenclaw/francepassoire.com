@@ -1,0 +1,43 @@
+{
+  "slug": "ffkmda-20251225",
+  "entity": "Fédération française de kickboxing, muaythaï et disciplines associées (FFKMDA)",
+  "siren": "507458735",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-25",
+    "publication": "2025-12-30"
+  },
+  "volume": {
+    "count": 361321,
+    "unit": "personnes",
+    "label": "361 321 identités uniques et 377 177 enregistrements revendiqués (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "ID Protect — Nouvelles fuites de données dans le sport français : la natation et le kick-boxing à leur tour touchés",
+      "url": "https://idprotect.fr/fuites-de-donnees-sport-francais-natation-kick-boxing/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fédération Française de Kick Boxing (FFKMDA)",
+      "url": "https://frenchbreaches.com/alertes/federation-francaise-de-kick-boxing-ffkmda-755e45496aa2",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 25 décembre 2025, un pirate actif sur BreachForums publie la base de données complète de la FFKMDA, fédération de kickboxing et muaythaï. L’ensemble couvre 361 321 identités uniques et 377 177 enregistrements, sur douze saisons, de 2015 à 2026. La présence de licences valides jusqu’en août 2026 indique des adhérents encore actifs. Identité complète, coordonnées, localisation et données administratives de licences sont exposées. ID Protect rapproche cette fuite de la série d’attaques visant les fédérations sportives françaises. La fédération n’a pas confirmé l’incident et les volumes restent des revendications.",
+  "timeline": [
+    {
+      "date": "2025-12-25",
+      "event": "Un pirate publie sur BreachForums la base complète de la FFKMDA : 361 321 identités, 377 177 enregistrements, douze saisons."
+    },
+    {
+      "date": "2025-12-30",
+      "event": "ID Protect rapporte la fuite et la rapproche de la série d’attaques visant les fédérations sportives françaises."
+    }
+  ]
+}

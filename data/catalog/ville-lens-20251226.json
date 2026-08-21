@@ -1,0 +1,52 @@
+{
+  "slug": "ville-lens-20251226",
+  "entity": "Ville de Lens",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-26",
+    "publication": "2025-12-26",
+    "confirmation": "2025-12-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "vol de données non établi ; l’intrusion a perturbé les services municipaux une semaine"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Hauts-de-France — Victime d’une cyberattaque impactant ses services municipaux, la Ville de Lens porte plainte",
+      "url": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/apres-une-cyberattaque-impactant-ses-services-municipaux-la-ville-de-lens-porte-plainte-3272405.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV Grand Lille — La ville de Lens victime d’un piratage informatique",
+      "url": "https://www.bfmtv.com/grand-lille/la-ville-de-lens-victime-d-un-piratage-informatique_AN-202512270197.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — La ville de Lens touchée par une cyberattaque : une plainte déposée",
+      "url": "https://actu.fr/hauts-de-france/lens_62498/la-ville-de-lens-touchee-par-une-cyberattaque-une-plainte-deposee_63624565.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Commune de Lens",
+      "url": "https://frenchbreaches.com/alertes/commune-de-lens-ae7a618bf800",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 26 décembre 2025, la Ville de Lens annonce avoir subi une cyberattaque touchant son système d’information. Les services municipaux fonctionnent en mode dégradé : logiciels métier bloqués, standard téléphonique coupé, portail famille inaccessible. Une plainte a été déposée dès le 23 décembre après une panne du standard. Le diagnostic technique n’a pas déterminé l’origine ni la gravité de l’intrusion. Des mesures de sécurité et de protection des données sont en place. Aucun vol de données n’a été établi et aucune revendication n’est apparue à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-12-23",
+      "event": "Une panne affecte le standard téléphonique de la mairie ; une plainte est déposée au commissariat."
+    },
+    {
+      "date": "2025-12-26",
+      "event": "La ville annonce une intrusion dans son système d’information ; les services fonctionnent en mode dégradé, le diagnostic continue."
+    }
+  ]
+}

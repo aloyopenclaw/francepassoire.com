@@ -1,0 +1,48 @@
+{
+  "slug": "ffboxe-20250124",
+  "entity": "Fédération française de boxe",
+  "siren": "784714172",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24",
+    "publication": "2025-01-24"
+  },
+  "volume": {
+    "count": 620264,
+    "unit": "personnes",
+    "label": "620 264 licenciés revendiqués par le pirate ; ≈ 14 millions de lignes remises en vente en juin (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "01net — Les données de 4,5 millions de Français en vente sur un forum de pirates",
+      "url": "https://www.01net.com/actualites/donnees-45-millions-francais-vente-forum-pirates.html",
+      "kind": "article"
+    },
+    {
+      "label": "CommentCaMarche — Les données de 4,5 millions de sportifs français piratées",
+      "url": "https://www.commentcamarche.net/securite/piratage/33513-les-donnees-de-4-5-millions-de-sportifs-francais-piratees/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite présumée de bases sportives : boxe et force françaises en vente sur le dark web",
+      "url": "https://www.zataz.com/fuite-presumee-de-bases-sportives-boxe-et-force-francaises-en-vente-sur-le-dark-web/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Fédération française de boxe figure parmi les huit fédérations ciblées par la vague de janvier 2025. Un pirate baptisé « TheFrenchGuy » y met en vente ses données sur BreachForums : 620 264 licenciés revendiqués. L’attaque a visé Exalto, prestataire gérant les espaces licences de dizaines de fédérations. Noms, dates et lieux de naissance, coordonnées et identifiants auraient été exposés. En juin, Zataz documente la réapparition de la base en vente : environ 14 millions de lignes. Les échantillons avancés par le pirate mentionnent coordonnées, informations médicales et IBAN. La fédération n’a pas communiqué publiquement et ces volumes restent non confirmés.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "La Fédération française de boxe figure parmi les huit fédérations mises en vente sur BreachForums : 620 264 licenciés revendiqués."
+    },
+    {
+      "date": "2025-06-24",
+      "event": "Zataz documente la réapparition en vente de la base : ≈ 14 millions de lignes, avec échantillons évoquant coordonnées, informations médicales et IBAN."
+    }
+  ]
+}

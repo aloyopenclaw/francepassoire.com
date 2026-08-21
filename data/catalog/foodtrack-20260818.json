@@ -1,0 +1,41 @@
+{
+  "slug": "foodtrack-20260818",
+  "entity": "Foodtrack",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-18"
+  },
+  "volume": {
+    "count": 1194,
+    "unit": "comptes",
+    "label": "1 194 comptes annoncés (base complète de la place de marché mise en ligne : identité, coordonnées, mots de passe hachés, IBAN et géolocalisation annoncés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Foodtrack : 1 194 comptes, fuite de données revendiquée",
+      "url": "https://fuitesinfos.fr/article/2026-08-18-foodtrack",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Foodtrack victime d'une fuite de données : comptes et accès administrateur",
+      "url": "https://frenchbreaches.com/alertes/foodtrack-msxx35cw3msrmak9egh",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une publication du 18 août 2026 revendique sur un forum la mise en ligne de la base complète de Foodtrack, place de marché de producteurs locaux, obtenue via un accès d'administration : 1 194 comptes annoncés, avec identité, coordonnées, mots de passe hachés, historique de commandes, messages entre acheteurs et vendeurs, IBAN et identifiants fiscaux des producteurs, jusqu'aux heures précédant la publication. À ce stade, l'exploitant n'a pas confirmé l'incident et aucune notification aux personnes concernées n'est connue. L'authenticité du dépôt et l'étendue réelle des données restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Mise en ligne revendiquée de la base Foodtrack (1 194 comptes, mots de passe hachés, IBAN, géolocalisation annoncée) via un accès d'administration."
+    }
+  ]
+}

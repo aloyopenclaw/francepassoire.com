@@ -1,0 +1,50 @@
+{
+  "slug": "ffcardio-20251128",
+  "entity": "Fédération française de cardiologie",
+  "siren": "784453250",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-11-28",
+    "publication": "2025-11-28",
+    "confirmation": "2025-11-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre d’adhérents concernés non communiqué par la fédération"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fédération française de cardiologie — Incident de sécurité : informations et mesures prises",
+      "url": "https://www.fedecardio.org/nous-connaitre/incident-securite-fuite-donnees-federation-francaise-cardiologie/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next.ink — Fuite de données à la Fédération française de cardiologie… y compris des mots de passe",
+      "url": "https://next.ink/211477/fuite-de-donnees-a-la-federation-francaise-de-cardiologie-y-compris-des-mots-de-passe/",
+      "kind": "article"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez FFC (Fédération française de cardiologie)",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/federation-francaise-de-cardiologie-ffc/",
+      "kind": "article"
+    }
+  ],
+  "description": "Pendant le pont du 11 novembre 2025, un tiers non autorisé a accédé au système de la Fédération française de cardiologie. Le 28 novembre, la fédération prévient ses adhérents : noms, prénoms, adresses e-mail et postale, numéros de téléphone et mots de passe ont été dérobés. Aucune précision n’a été donnée sur la protection des mots de passe. Les données bancaires et médicales sont exclues. La CNIL a été notifiée, une plainte déposée et un audit lancé. L’espace adhérent « Mon espace » est resté indisponible. Le nombre de personnes concernées n’a pas été communiqué.",
+  "timeline": [
+    {
+      "date": "2025-11-10",
+      "event": "Un incident de sécurité touche la fédération pendant le pont du 11 novembre : un accès non autorisé conduit à une fuite de données."
+    },
+    {
+      "date": "2025-11-28",
+      "event": "La fédération prévient ses adhérents : identité, coordonnées et mots de passe dérobés ; CNIL notifiée, plainte déposée, audit lancé."
+    }
+  ]
+}

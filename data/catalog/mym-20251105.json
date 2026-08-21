@@ -1,0 +1,48 @@
+{
+  "slug": "mym-20251105",
+  "entity": "MYM (MYM.fans)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-05",
+    "publication": "2025-11-13"
+  },
+  "volume": {
+    "count": 5000000,
+    "unit": "comptes",
+    "label": "plus de 5 millions de comptes selon FrenchBreaches ; 5,5 millions de lignes selon d’autres analyses (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Le Progrès — Fuite des données de la plateforme lyonnaise MYM : 5 millions d’informations privées exposées",
+      "url": "https://www.leprogres.fr/economie/2025/11/14/fuite-des-donnees-de-la-plateforme-lyonnaise-mym-5-millions-d-informations-privees-exposees",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Dans la fuite de données de MYM, la série d’adresses pro de fonctionnaires crée le débat",
+      "url": "https://www.clubic.com/actualite-586873-dans-la-fuite-de-donnees-de-mym-la-serie-d-adresses-pro-de-fonctionnaires-qui-y-figurent-creent-le-debat.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez MYM : fuite de données concernant 5M comptes",
+      "url": "https://frenchbreaches.com/alertes/mym-c922cd8adce9",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 5 novembre 2025 au soir, les données de MYM, plateforme lyonnaise de contenus exclusifs, sont diffusées gratuitement sur un forum criminel. Le fichier dépasse 5 millions de lignes : e-mails, mots de passe, professions, prénoms et noms, selon Le Progrès. Le diffuseur affirme que le piratage initial remonte à mars 2021. Clubic relève dans la base des adresses professionnelles de fonctionnaires, majoritairement en « gouv.fr », source de risques de chantage ciblé. La plateforme n’a pas communiqué publiquement et l’authenticité complète de la base n’est pas confirmée.",
+  "timeline": [
+    {
+      "date": "2025-11-05",
+      "event": "Un fichier de plus de 5 millions de lignes (e-mails, mots de passe, professions, identités) est diffusé gratuitement sur un forum."
+    },
+    {
+      "date": "2025-11-13",
+      "event": "Clubic relève des adresses professionnelles de fonctionnaires dans la base ; le piratage initial daterait de mars 2021 selon le diffuseur."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "france-vae-20260813",
+  "entity": "France VAE",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-13",
+    "publication": "2026-08-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre non communiqué ; utilisateurs du portail notifiés individuellement (identités, parcours professionnels et financement exposés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — France VAE : données exposées après un incident de sécurité",
+      "url": "https://fuitesinfos.fr/article/2026-08-13-france-vae",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — France VAE : identités, parcours professionnels et données de financement exposés",
+      "url": "https://www.cyberattaque.org/france-vae-identites-parcours-professionnels-et-donnees-de-financement-exposes-apres-un-incident-de-securite/",
+      "kind": "article"
+    },
+    {
+      "label": "Presse83 — Cyberattaques en série : Bercy et France VAE touchés, des milliers de données exposées",
+      "url": "https://presse83.fr/2026/08/13/cyberattaques-en-serie-bercy-et-france-vae-touches-des-milliers-de-donnees-personnelles-exposees/tech/lperard/",
+      "kind": "article"
+    },
+    {
+      "label": "Alternatives Économiques (blog M. Abhervé) — Le fichier de France VAE est lui aussi piraté",
+      "url": "https://blogs.alternatives-economiques.fr/abherve/2026/08/19/le-fichier-de-france-vae-est-lui-aussi-pirate",
+      "kind": "article"
+    }
+  ],
+  "description": "Le portail gouvernemental France VAE (vae.gouv.fr), dédié à la validation des acquis de l'expérience, informe ses utilisateurs d'un incident de sécurité survenu le 10 août 2026, révélé publiquement le 13 août. Selon la notification relayée par la presse spécialisée, l'analyse a établi que des données personnelles ont été exposées : identité, coordonnées, date et lieu de naissance, nationalité, ainsi que certifications, qualifications, expériences professionnelles, évaluations et éléments de financement du parcours. Le nombre de personnes concernées n'est pas communiqué. La méthode d'accès reste inconnue ; la plateforme indique avoir sécurisé ses systèmes.",
+  "timeline": [
+    {
+      "date": "2026-08-10",
+      "event": "Incident de sécurité sur le portail France VAE, selon la notification adressée aux utilisateurs."
+    },
+    {
+      "date": "2026-08-13",
+      "event": "La notification est relayée publiquement : des données personnelles ont été exposées, volume non communiqué."
+    }
+  ]
+}
