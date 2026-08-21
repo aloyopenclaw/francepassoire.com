@@ -1,0 +1,43 @@
+{
+  "slug": "transports-feuillet-20230208",
+  "entity": "Transports Feuillet",
+  "siren": "317923597",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-02-08",
+    "publication": "2023-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 3.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — La logistique, un secteur de choix pour les cyberattaques ? (22 mars 2023, mis à jour 30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — victime transports-feuillet.fr revendiquée par LockBit3 (8 février 2023)",
+      "url": "https://www.ransomware.live/id/dHJhbnNwb3J0cy1mZXVpbGxldC5mckBsb2NrYml0Mw==",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 8 février 2023, la franchise LockBit 3.0 publie les Transports Feuillet, transporteur routier de marchandises, sur son site de fuite et revendique l'attaque. LeMagIT situe cette attaque quelques semaines avant celles visant le groupe Trèves puis les Transports Douaud, dans une série ayant frappé la logistique début 2023. L'entreprise ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2023-02-08",
+      "event": "LockBit 3.0 publie transports-feuillet.fr sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-03-22",
+      "event": "LeMagIT recense l'attaque dans son panorama des cyberattaques contre la logistique française."
+    }
+  ],
+  "group": "lockbit"
+}

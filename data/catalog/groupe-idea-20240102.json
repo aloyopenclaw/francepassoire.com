@@ -1,0 +1,52 @@
+{
+  "slug": "groupe-idea-20240102",
+  "entity": "Groupe IDEA",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-02",
+    "publication": "2024-02-26",
+    "confirmation": "2024-02-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués ; données exfiltrées et publiées sur le dark web selon le communiqué du groupe"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe IDEA — Le groupe IDEA touché par une cyberattaque (communiqué, 26 février 2024)",
+      "url": "https://www.groupe-idea.com/fr/linfo-idea/le-groupe-idea-touche-par-une-cyberattaque",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ransomware.live — victime groupe-idea.com revendiquée par LockBit3 (2 janvier 2024)",
+      "url": "https://www.ransomware.live/id/Z3JvdXBlLWlkZWEuY29tQGxvY2tiaXQz",
+      "kind": "revendication"
+    },
+    {
+      "label": "Maritime Cybersecurity (MCAD) — Groupe Idea attacked by Lockbit ransomware (Nantes, France)",
+      "url": "https://maritimecybersecurity.nl/incident/ZWDmlLGm9K",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 décembre 2023, le Groupe IDEA, logisticien industriel implanté à Nantes, est confronté à une cyberattaque revendiquée le 2 janvier 2024 par LockBit 3.0. Dans un communiqué du 26 février 2024, le groupe reconnaît que les attaquants ont réussi à exfiltrer des données. Ces dernières sont publiées le même jour sur le dark web. L'attaque a consisté à accéder, exfiltrer et chiffrer un certain nombre de données ; les plans de continuité d'activité ont maintenu l'exploitation des 70 sites. Les applications métiers destinées aux clients ne sont pas impactées selon le groupe ; les volumes ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2023-12-29",
+      "event": "Cyberattaque contre le Groupe IDEA ; la DSI déclenche une cellule de crise avec des experts en cybersécurité."
+    },
+    {
+      "date": "2024-01-02",
+      "event": "LockBit 3.0 revendique l'attaque sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2024-02-26",
+      "event": "Les attaquants publient les données exfiltrées sur le dark web ; le groupe confirme l'accès, l'exfiltration et le chiffrement de données."
+    }
+  ],
+  "group": "lockbit"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "iberia-20251123",
+  "entity": "Iberia",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-23",
+    "publication": "2025-11-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par Iberia"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Air Journal — Fuite de données chez Iberia : piratage via un prestataire, noms, e-mails et numéros de fidélité potentiellement exposés (30 novembre 2025)",
+      "url": "https://www.air-journal.fr/2025-11-30-fuite-de-donnees-chez-iberia-piratage-via-un-prestataire-noms-e%25E2%2580%2591mails-et-numeros-de-fidelite-potentiellement-exposes-5269357.html",
+      "kind": "article"
+    },
+    {
+      "label": "Infosecurity Magazine — Iberia Airlines Notifies Customers of Supply Chain Data Breach (24 novembre 2025)",
+      "url": "https://www.infosecurity-magazine.com/news/iberia-airlines-supply-chain-data/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 novembre 2025, Iberia, compagnie du groupe International Airlines Group, commence à notifier ses clients d'un incident de sécurité survenu chez un prestataire technologique. Des accès non autorisés ont compromis des données personnelles, pouvant inclure nom, prénom, adresse e-mail et numéro de carte de fidélité Iberia Club. L'entreprise écarte les mots de passe ainsi que les données bancaires et de passeport, et indique ne pas constater d'utilisation frauduleuse. Le nombre de clients concernés n'est pas communiqué. La presse spécialisée relève une vague d'attaques visant les compagnies aériennes et leurs fournisseurs depuis 2024.",
+  "timeline": [
+    {
+      "date": "2025-11-23",
+      "event": "Iberia envoie des notifications à ses clients après des accès non autorisés aux systèmes d'un prestataire."
+    },
+    {
+      "date": "2025-11-24",
+      "event": "Infosecurity Magazine relaie la notification : noms, e-mails et numéros de fidélité potentiellement compromis, sans données bancaires ni mots de passe."
+    }
+  ]
+}

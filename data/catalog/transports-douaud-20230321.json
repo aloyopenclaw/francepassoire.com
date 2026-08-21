@@ -1,0 +1,43 @@
+{
+  "slug": "transports-douaud-20230321",
+  "entity": "Transports Douaud",
+  "siren": "304802705",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-21",
+    "publication": "2023-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 3.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — La logistique, un secteur de choix pour les cyberattaques ? (22 mars 2023, mis à jour 30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — victime transports-douaud.com revendiquée par LockBit3 (21 mars 2023)",
+      "url": "https://www.ransomware.live/id/dHJhbnNwb3J0cy1kb3VhdWQuY29tQGxvY2tiaXQz",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 21 mars 2023, la franchise LockBit 3.0 publie les Transports Douaud, transporteur routier de marchandises, sur son site de fuite et revendique l'attaque. LeMagIT recense la revendication parmi les attaques ayant visé la logistique française début 2023, aux côtés d'ID Logistics et des Transports Feuillet. L'entreprise ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2023-03-21",
+      "event": "LockBit 3.0 publie les Transports Douaud sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-03-22",
+      "event": "LeMagIT recense la revendication dans son panorama des attaques visant la logistique française."
+    }
+  ],
+  "group": "lockbit"
+}

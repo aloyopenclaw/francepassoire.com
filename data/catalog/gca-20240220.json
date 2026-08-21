@@ -1,0 +1,48 @@
+{
+  "slug": "gca-20240220",
+  "entity": "GCA (Groupe Charles André)",
+  "siren": "350334934",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-02-20",
+    "publication": "2024-02-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "environ 239 Go de données revendiqués par RansomHouse via la filiale GCA Nederland (chiffre non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT — Logistique : le Français GCA à nouveau victime d'une cyberattaque (20-27 février 2024)",
+      "url": "https://www.lemagit.fr/actualites/366570358/Logistique-le-Francais-GCA-a-nouveau-victime-dune-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — victime GCA Nederland revendiquée par RansomHouse (26 février 2024)",
+      "url": "https://www.ransomware.live/id/R0NBIE5lZGVybGFuZEByYW5zb21ob3VzZQ==",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Dans la nuit du 17 au 18 février 2024, le logisticien GCA (Groupe Charles André) est victime d'une cyberattaque. LeMagIT révèle l'incident le 20 février : accès internet coupés par précaution, cellule de crise activée, autorités informées et plainte déposée. Le groupe assure alors n'avoir « pas de raison de penser qu'il y aurait eu fuite de données ». Le 26 février, RansomHouse revendique l'attaque et un vol d'environ 239 gigaoctets via la filiale néerlandaise GCA Nederland. De nombreux fichiers proposés au téléchargement sont en français et mentionnent des salariés du groupe en France.",
+  "timeline": [
+    {
+      "date": "2024-02-18",
+      "event": "Cyberattaque dans la nuit du 17 au 18 février ; GCA coupe les accès internet extérieurs et active une cellule de crise."
+    },
+    {
+      "date": "2024-02-20",
+      "event": "Un message aux clients et l'article de LeMagIT rendent l'incident public ; le groupe déclare n'avoir pas de raison de croire à une fuite de données."
+    },
+    {
+      "date": "2024-02-26",
+      "event": "RansomHouse publie la revendication : chiffrement annoncé le 16 février et vol d'environ 239 Go, avec des fichiers en français au téléchargement."
+    }
+  ],
+  "group": "ransomhouse"
+}
