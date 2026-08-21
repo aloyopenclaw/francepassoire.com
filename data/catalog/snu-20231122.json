@@ -1,0 +1,52 @@
+{
+  "slug": "snu-20231122",
+  "entity": "Service national universel (SNU)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-22",
+    "publication": "2023-12-06",
+    "confirmation": "2023-12-06"
+  },
+  "volume": {
+    "count": 150000,
+    "unit": "personnes",
+    "label": "150 000 personnes selon le ministère de l'Éducation nationale : 62 500 volontaires et 87 000 parents ; plus de 60 000 mineurs évoqués à l'Assemblée nationale"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Assemblée nationale — Question écrite n° 13900 : fuite des données personnelles de participants au SNU (décembre 2023)",
+      "url": "https://questions.assemblee-nationale.fr/q16/16-13900QE.htm",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — Après une cyberattaque sur le SNU, les données de 150 000 personnes volées (6 décembre 2023)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-apres-une-cyberattaque-sur-le-snu-les-donnees-de-150-000-personnes-volees-92350.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite pour le SNU, le site La Bonne Alternance et la Fédération Française de Rugby (7 décembre 2023)",
+      "url": "https://www.zataz.com/fuite-pour-le-snu-le-site-la-bonne-alternance-et-la-federation-francaise-de-rugby/",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis le 22 novembre 2023, une base de données du Service national universel contenant les données personnelles de plus de 60 000 mineurs est en vente sur un forum de cybercriminels, selon une question écrite déposée à l'Assemblée nationale. Des milliers de volontaires sont informés fin novembre par courriel : noms, prénoms, adresses postales, e-mails et, pour les jeunes, dates de naissance ont été dérobés. Le ministère de l'Éducation nationale confirme le 6 décembre une cyberattaque du site du SNU, chiffre le périmètre à 150 000 personnes — 62 500 volontaires et 87 000 parents — et indique que le procureur de la République est saisi et la CNIL alertée. Le même vendeur propose également les bases du site La Bonne Alternance et de la Fédération française de rugby.",
+  "timeline": [
+    {
+      "date": "2023-11-22",
+      "event": "Mise en vente sur un forum d'une base SNU ; les volontaires sont informés par courriel à partir de fin novembre."
+    },
+    {
+      "date": "2023-12-06",
+      "event": "Le ministère confirme la cyberattaque : 150 000 personnes concernées, plainte et signalement CNIL."
+    },
+    {
+      "date": "2023-12-07",
+      "event": "Zataz relie la vente aux bases de La Bonne Alternance et de la FFR proposées par le même vendeur."
+    }
+  ]
+}

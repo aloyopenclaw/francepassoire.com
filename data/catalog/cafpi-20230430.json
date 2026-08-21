@@ -1,0 +1,55 @@
+{
+  "slug": "cafpi-20230430",
+  "entity": "CAFPI",
+  "siren": "510302953",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "group": "vice-society",
+  "dates": {
+    "revendication": "2023-05-23",
+    "publication": "2023-05-24",
+    "confirmation": "2023-05-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "certaines données clientes compromises et partiellement mises en ligne selon CAFPI ; volume non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CAFPI — FAQ : intrusion dans les systèmes d'information (23 mai 2023)",
+      "url": "https://www.cafpi.fr/faq-intrusion",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFMTV — Cyberattaque : des données très privées de clients du courtier Cafpi ont été dérobées (24 mai 2023)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/cyberattaque-des-donnees-tres-privees-de-clients-du-courtier-cafpi-ont-ete-derobees_AV-202305240621.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Un expert français en crédits voit les données de ses clients pillées (24 mai 2023)",
+      "url": "https://www.zataz.com/un-expert-francais-en-credits-voit-les-donnees-de-ses-clients-pillees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 avril 2023, le courtier en crédit CAFPI subit une intrusion menée par le groupe Vice Society, qui accède à ses systèmes pendant plusieurs heures avant que l'entreprise ne contienne l'attaque. Dans une FAQ publiée le 23 mai puis auprès de BFM Tech&Co, CAFPI indique que certaines données de ses clients ont été compromises et que certaines ont été mises en ligne : documents d'identité et coordonnées de contact transmis dans le cadre des dossiers. L'incident est notifié à la CNIL, les clients concernés sont prévenus par courriel le 23 mai et quatre centres d'appels sont ouverts. La confidentialité des données transmises est décrite comme compromise par l'entreprise elle-même.",
+  "timeline": [
+    {
+      "date": "2023-04-30",
+      "event": "Intrusion détectée chez CAFPI ; l'attaque est contenue puis les systèmes restaurés."
+    },
+    {
+      "date": "2023-05-23",
+      "event": "FAQ officielle : certaines données clients compromises et mises en ligne ; notification CNIL et courriels d'alerte aux clients."
+    },
+    {
+      "date": "2023-05-24",
+      "event": "BFM Tech&Co et Zataz attribuent l'attaque à Vice Society et détaillent les données dérobées."
+    }
+  ]
+}

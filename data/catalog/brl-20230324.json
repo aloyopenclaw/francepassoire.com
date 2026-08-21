@@ -1,0 +1,48 @@
+{
+  "slug": "brl-20230324",
+  "entity": "BRL (Compagnie d'aménagement du Bas-Rhône et du Languedoc)",
+  "siren": "550200661",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "lockbit",
+  "dates": {
+    "revendication": "2023-03-24",
+    "publication": "2023-04-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rançongiciel visant le chiffrement et l'exfiltration de données ; LockBit fixe la date limite de paiement au 21 avril et menace de publier « toutes les données disponibles » ; volume non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BRL — Incident informatique majeur du 24 mars 2023 : retour à une situation normale (communication officielle)",
+      "url": "https://www.brl.fr/fr/incident-informatique",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique — LockBit menace de divulguer les données de BRL volées (17 avril 2023)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-lockbit-menace-de-divulguer-les-donnees-de-brl-volees-90164.html",
+      "kind": "article"
+    },
+    {
+      "label": "InCyber — LockBit poursuit ses attaques contre des cibles françaises (20 avril 2023)",
+      "url": "https://incyber.org/article/lockbit-poursuit-ses-attaques-contre-des-cibles-francaises/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 23 au 24 mars 2023, la société d'aménagement BRL, gestionnaire de l'eau au Languedoc, subit une cyberattaque par rançongiciel « ayant pour objectif de crypter et d'extraire des données », selon sa communication officielle. Le groupe LockBit revendique l'opération et laisse à BRL jusqu'au 21 avril pour payer, menaçant de publier « toutes les données disponibles ». BRL prévient ses clients, fournisseurs et partenaires que l'exfiltration de données personnelles « doit être anticipée » et leur recommande de changer leurs mots de passe. La continuité du service de l'eau est maintenue ; la nature exacte des données concernées n'est pas détaillée publiquement.",
+  "timeline": [
+    {
+      "date": "2023-03-24",
+      "event": "Rançongiciel détecté chez BRL : chiffrement et extraction de données visés ; communication officielle vers les parties prenantes."
+    },
+    {
+      "date": "2023-04-17",
+      "event": "LockBit revendique l'attaque, fixe la date limite de paiement au 21 avril et menace de publier les données."
+    }
+  ]
+}

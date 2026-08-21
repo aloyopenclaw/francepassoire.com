@@ -1,0 +1,49 @@
+{
+  "slug": "bmw-france-20230328",
+  "entity": "BMW France",
+  "siren": "722000965",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "play",
+  "dates": {
+    "revendication": "2023-03-28",
+    "publication": "2023-03-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "contrats et informations financières revendiqués par Play ; volume non chiffré"
+  },
+  "data_types": [
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "The Record — BMW says Play ransomware attack only hit local dealership in France (31 mars 2023)",
+      "url": "https://therecord.media/bmw-says-play-ransomware-only-hit-local-dealership",
+      "kind": "article"
+    },
+    {
+      "label": "Arctic Wolf — Biggest Cyber Attacks March 2023 (Play / BMW France : contrats et informations financières)",
+      "url": "https://arcticwolf.com/resources/blog/top-cyber-attacks-march-2023/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Les pirates du groupe Play annoncent le piratage de BMW France (29 mars 2023)",
+      "url": "https://www.zataz.com/les-pirates-du-groupe-play-annoncent-le-piratage-de-bmw-france/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 mars 2023, le groupe de rançongiciel Play affiche « BMW France » sur son site de fuite et revendique le vol de contrats et d'informations financières. À The Record, BMW Group répond n'avoir identifié aucune intrusion dans les systèmes de BMW Group ou de BMW France : la compromission serait localisée sur les systèmes d'un concessionnaire local, entité juridique indépendante de BMW France. Zataz relaie la revendication, qui mentionne des données confidentielles privées et personnelles. L'exfiltration n'est pas confirmée par le constructeur.",
+  "timeline": [
+    {
+      "date": "2023-03-28",
+      "event": "Play revendique le piratage de « BMW France » sur son site de fuite."
+    },
+    {
+      "date": "2023-03-31",
+      "event": "BMW Group situe la compromission sur un concessionnaire local indépendant, sans intrusion identifiée chez BMW France."
+    }
+  ]
+}

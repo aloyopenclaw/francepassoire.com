@@ -1,0 +1,49 @@
+{
+  "slug": "corsica-ferries-20231101",
+  "entity": "Corsica Ferries",
+  "siren": "496320151",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "blackcat",
+  "dates": {
+    "revendication": "2023-11-01",
+    "publication": "2023-10-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "milliers de fichiers internes diffusés : informations bancaires, factures, données personnelles, documents administratifs et plans de bateaux ; volume non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Corse — Victime d'une cyber attaque, le site de réservation de la Corsica Ferries est inaccessible (27 octobre 2023)",
+      "url": "https://france3-regions.franceinfo.fr/corse/haute-corse/bastia/victime-d-une-cyber-attaque-le-site-de-reservation-de-la-corsica-ferries-est-inaccessible-2863859.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — La compagnie Corsica Ferries prise en otage : des milliers de fichiers internes diffusés (6 novembre 2023)",
+      "url": "https://www.zataz.com/des-milliers-de-donnees-volees-a-corsica-ferries/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin octobre 2023, la compagnie maritime Corsica Ferries subit une cyberattaque d'abord attribuée à tort au groupe pro-russe NoName057(16), connu pour ses attaques par déni de service. Zataz établit qu'il s'agit d'une prise en otage par rançongiciel d'ALPHV/BlackCat : les pirates copient des fichiers puis affichent le 5 novembre « Ils ont décidé de ne pas coopérer ». L'ensemble des documents volés est rendu accessible dès le 1er novembre via un lien non public, hébergé sur le service de stockage OSHI : informations bancaires, factures, données personnelles, documents administratifs internes et plans des bateaux. La compagnie ne commente pas publiquement la fuite.",
+  "timeline": [
+    {
+      "date": "2023-10-27",
+      "event": "Cyberattaque perturbant le site de réservation de Corsica Ferries, d'abord attribuée à NoName057(16)."
+    },
+    {
+      "date": "2023-11-01",
+      "event": "ALPHV/BlackCat rend l'ensemble des documents volés accessible via un lien non public."
+    },
+    {
+      "date": "2023-11-06",
+      "event": "Zataz documente la nature des fichiers diffusés et le refus de coopérer de la compagnie."
+    }
+  ]
+}
