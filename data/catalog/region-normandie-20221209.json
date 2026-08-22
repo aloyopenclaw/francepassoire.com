@@ -1,0 +1,48 @@
+{
+  "slug": "region-normandie-20221209",
+  "entity": "Région Normandie (conseil régional)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-09",
+    "publication": "2022-12-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "à ce jour, aucune trace de vol de données n'a été constatée ni aucun élément diffusé, selon le directeur général des services de la Région"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Paris-Normandie : La Région Normandie victime d'une cyberattaque, Rouen et Caen touchés (9 décembre 2022, archive)",
+      "url": "https://web.archive.org/web/20230401171658/https://www.paris-normandie.fr/id368309/article/2022-12-09/la-region-normandie-victime-dune-cyberattaque-rouen-et-caen-touches-une-cellule",
+      "kind": "archive"
+    },
+    {
+      "label": "France 3 Normandie : La Région Normandie victime d'une cyberattaque ? (9 décembre 2022)",
+      "url": "https://france3-regions.franceinfo.fr/normandie/seine-maritime/rouen/la-region-normandie-victime-d-une-cyberattaque-2671884.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Interview. Cyberattaque à la Région Normandie : « Tout proche d'un retour à la normale » (19 mars 2023)",
+      "url": "https://actu.fr/societe/cyberattaque-a-la-region-normandie-tout-proche-d-un-retour-a-la-normale_58202428.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 décembre 2022, d'importantes pannes frappent les systèmes d'information du conseil régional de Normandie, qui active une cellule de crise. Pour stopper l'attaque, la collectivité met à l'arrêt 1 500 postes de travail à Caen et Rouen, 300 postes des lycées et 600 serveurs ; l'accès Internet est suspendu dans les sites administratifs et les lycées. Selon le directeur général des services, l'équipe attaquante a visé au même moment la ville d'Anvers et auparavant le département des Alpes-Maritimes ; le dossier judiciaire est suivi par le parquet de Nice et l'attaque est partie d'Autriche. En mars 2023, la Région indique qu'aucune trace de vol de données n'a été constatée et évalue le préjudice à plusieurs centaines de milliers d'euros.",
+  "timeline": [
+    {
+      "date": "2022-12-09",
+      "event": "Pannes informatiques de grande ampleur au conseil régional ; cellule de crise activée, réseaux coupés à Caen et Rouen comme dans les lycées."
+    },
+    {
+      "date": "2022-12-12",
+      "event": "La presse décrit 600 serveurs et 1 500 ordinateurs arrêtés ; les agents travaillent sur des postes de secours en mode dégradé."
+    },
+    {
+      "date": "2023-03-19",
+      "event": "La Région indique qu'aucune trace de vol de données n'a été constatée ; 75 % du parc informatique est opérationnel et le préjudice est estimé à des centaines de milliers d'euros."
+    }
+  ]
+}

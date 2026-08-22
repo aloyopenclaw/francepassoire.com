@@ -1,0 +1,40 @@
+{
+  "slug": "ville-nieul-sur-mer-20230831",
+  "entity": "Ville de Nieul-sur-Mer",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-08-31",
+    "publication": "2023-08-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication LockBit non confirmée par la commune ; le maire souligne qu'aucune donnée intéressante n'est détenue et fait vérifier le site"
+  },
+  "data_types": ["identite"],
+  "sources": [
+    {
+      "label": "Sud Ouest : Charente-Maritime : le site Internet de Nieul-sur-Mer s'est-il fait pirater ? (31 août 2023)",
+      "url": "https://www.sudouest.fr/charente-maritime/la-rochelle/charente-maritime-le-site-internet-de-nieul-sur-mer-s-est-il-fait-pirater-16460806.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Le groupe de hackers Lockbit a enchaîné les cyberattaques cet été (2023)",
+      "url": "https://www.numerama.com/cyberguerre/1488180-le-groupe-de-hackers-lockbit-a-enchaine-les-cyberattaques-cet-ete.html",
+      "kind": "article"
+    }
+  ],
+  "group": "lockbit",
+  "description": "Le 31 août 2023, le groupe de rançongiciels LockBit annonce avoir piraté le site Internet de la commune de Nieul-sur-Mer, en Charente-Maritime, pour en voler les données et réclamer ensuite une rançon. Le maire découvre la revendication par la presse et la relativise, soulignant que la mairie ne détient selon lui aucune donnée intéressante et n'a pas de quoi payer une rançon. Il rappelle qu'en juillet, une tentative de piratage avait bloqué le serveur 48 heures, avec 25 autres communes de France touchées, sans vol de données selon la ville, qui avait déposé plainte. La commune fait vérifier son site ; la gendarmerie rappelle que les données d'un site communal peuvent intéresser démarcheurs et escrocs.",
+  "timeline": [
+    {
+      "date": "2023-07-17",
+      "event": "Première tentative signalée : le serveur du site est bloqué 48 heures, 25 autres communes de France étant touchées ; plainte déposée."
+    },
+    {
+      "date": "2023-08-31",
+      "event": "LockBit revendique le piratage du site de Nieul-sur-Mer et exige une rançon ; la commune fait vérifier ses systèmes."
+    }
+  ]
+}

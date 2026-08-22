@@ -1,0 +1,48 @@
+{
+  "slug": "agco-beauvais-20220505",
+  "entity": "AGCO / Massey Ferguson (usine de Beauvais)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-05-05",
+    "publication": "2022-05-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune fuite de données chiffrée publiée ; l'attaque mondiale au rançongiciel a interrompu la production du site"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "France 3 Hauts-de-France : Piratage informatique : reprise de l'activité pour l'usine Massey Ferguson AGCO de Beauvais (mai 2022)",
+      "url": "https://france3-regions.franceinfo.fr/hauts-de-france/oise/beauvais/piratage-informatique-reprise-de-l-activite-pour-l-usine-massey-ferguson-agco-de-beauvais-fermee-suite-a-une-cyberattaque-2539728.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Après une cyberattaque, l'usine Massey Ferguson de Beauvais redémarre doucement (mai 2022)",
+      "url": "https://actu.fr/hauts-de-france/beauvais_60057/apres-une-cyberattaque-l-usine-massey-ferguson-de-beauvais-redemarre-doucement_50836651.html",
+      "kind": "article"
+    },
+    {
+      "label": "AGCO : AGCO Announces Ransomware Attack (communiqué, 6 mai 2022)",
+      "url": "https://news.agcocorp.com/2022-05-06-AGCO-Announces-Ransomware-Attack",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 5 mai 2022, le groupe américain AGCO, propriétaire de Massey Ferguson, est frappé par une attaque mondiale au rançongiciel qui touche plusieurs de ses sites de production. A Beauvais, site d'assemblage des tracteurs Massey Ferguson, la production est arrêtée pendant trois jours. Le groupe confirme l'incident dans un communiqué le 6 mai et une enquête est ouverte ; l'usine redémarre progressivement la semaine suivante, avec des perturbations résiduelles. Aucune fuite de données chiffrée n'est publiée.",
+  "timeline": [
+    {
+      "date": "2022-05-05",
+      "event": "Rançongiciel détecté ; la production de l'usine de Beauvais est interrompue."
+    },
+    {
+      "date": "2022-05-06",
+      "event": "AGCO confirme l'attaque par rançongiciel dans un communiqué ; l'ampleur de l'impact est en cours d'évaluation."
+    },
+    {
+      "date": "2022-05-10",
+      "event": "Après trois jours d'arrêt, la production de tracteurs reprend lentement."
+    }
+  ]
+}

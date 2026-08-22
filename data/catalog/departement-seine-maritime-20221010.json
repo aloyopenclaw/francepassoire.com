@@ -1,0 +1,45 @@
+{
+  "slug": "departement-seine-maritime-20221010",
+  "entity": "Département de Seine-Maritime",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-10",
+    "publication": "2022-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données volées chiffré publiquement ; la Cnil est saisie et une plainte est déposée"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Paris-Normandie : Le Département de Seine-Maritime touché par une cyberattaque (10 octobre 2022, archive)",
+      "url": "https://web.archive.org/web/20230610213333/https://www.paris-normandie.fr/id349866/article/2022-10-10/le-departement-de-seine-maritime-touche-par-une-cyberattaque-les-services",
+      "kind": "archive"
+    },
+    {
+      "label": "actu.fr : Cyberattaque : le Département de la Seine-Maritime parmi les victimes du réseau Hive (octobre 2022)",
+      "url": "https://actu.fr/societe/cyberattaque-le-departement-de-la-seine-maritime-parmi-les-victimes-du-reseau-hive_56942382.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France : Le Département de la Seine-Maritime victime d'une cyberattaque : les réseaux ont été coupés (10 octobre 2022, archive)",
+      "url": "https://web.archive.org/web/20221021154727/https://www.ouest-france.fr/normandie/seine-maritime/le-departement-de-la-seine-maritime-victime-d-une-cyberattaque-les-reseaux-ont-ete-coupes-11f858dc-4889-11ed-9d2c-2b6045373a5c",
+      "kind": "archive"
+    }
+  ],
+  "group": "hive",
+  "description": "Le lundi 10 octobre 2022, le conseil départemental de Seine-Maritime est victime d'une cyberattaque d'ampleur et coupe par précaution l'ensemble de ses réseaux. Les services publics, des écoles aux solidarités, sont fortement dégradés pendant plusieurs semaines. La collectivité saisit la Cnil et dépose plainte. La presse régionale puis actu.fr rattachent l'incident au réseau de rançongiciels Hive. Aucun chiffrage du volume de données éventuellement dérobées n'est publié.",
+  "timeline": [
+    {
+      "date": "2022-10-10",
+      "event": "Cyberattaque détectée ; le département coupe ses réseaux, les services publics fonctionnent en mode dégradé."
+    },
+    {
+      "date": "2022-10-21",
+      "event": "Ouest-France indique que la Cnil est saisie et qu'une plainte est déposée ; l'attribution au réseau Hive est ensuite rapportée par actu.fr."
+    }
+  ]
+}

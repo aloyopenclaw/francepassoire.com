@@ -1,0 +1,48 @@
+{
+  "slug": "province-iles-loyaute-20231207",
+  "entity": "Province des îles Loyauté (Nouvelle-Calédonie)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-07",
+    "publication": "2023-12-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; un logiciel malveillant d'extorsion bloque l'accès aux fichiers et une rançon d'un million de dollars est réclamée"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "La 1ère (France Info) : La province des îles Loyauté victime d'une cyber-attaque (décembre 2023)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/province-iles/la-province-des-iles-loyaute-victime-dune-cyber-attaque-1449239.html",
+      "kind": "article"
+    },
+    {
+      "label": "La 1ère (France Info) : Cyberattaque : la province des îles Loyauté travaille à restaurer ses systèmes (décembre 2023)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/province-iles/lifou/cyberattaque-la-province-des-iles-loyaute-travaille-a-restaurer-ses-systemes-1449896.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Nouvelles Calédoniennes : Des sites internet de collectivités de Nouvelle-Calédonie et Polynésie française ciblés de cyberattaques pro-russes (2025, archive)",
+      "url": "https://web.archive.org/web/20250103035747/https://www.lnc.nc/article/nouvelle-caledonie/faits-divers/des-sites-internet-de-collectivites-de-nouvelle-caledonie-et-polynesie-francaise-cibles-de-cyberattaques-pro-russes",
+      "kind": "archive"
+    }
+  ],
+  "description": "Dans la nuit du 7 au 8 décembre 2023, la province des îles Loyauté, en Nouvelle-Calédonie, est victime d'une cyberattaque par un logiciel malveillant d'extorsion qui bloque l'accès aux fichiers. Une rançon d'environ un million de dollars est réclamée ; la province la refuse et travaille à restaurer ses systèmes. La presse locale rappelle que le serveur piraté était partagé avec l'OPT et la mairie de Lifou.",
+  "timeline": [
+    {
+      "date": "2023-12-07",
+      "event": "Cyberattaque par logiciel d'extorsion dans la nuit du 7 au 8 décembre ; l'accès aux fichiers de la province est bloqué."
+    },
+    {
+      "date": "2023-12-08",
+      "event": "La province annonce l'attaque et refuse de payer la rançon d'un million de dollars réclamée."
+    },
+    {
+      "date": "2023-12-11",
+      "event": "La 1ère rapporte que la province travaille à restaurer ses systèmes."
+    }
+  ]
+}

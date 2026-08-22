@@ -1,0 +1,48 @@
+{
+  "slug": "ch-bourg-en-bresse-20230410",
+  "entity": "Centre hospitalier de Bourg-en-Bresse (hôpital Fleyriat)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-10",
+    "publication": "2023-04-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée dérobée quantifiée ; une intrusion dans le système d'information est confirmée par l'établissement"
+  },
+  "data_types": ["sante"],
+  "sources": [
+    {
+      "label": "France 3 Auvergne-Rhône-Alpes : Une cyberattaque vise le principal centre hospitalier de l'Ain (11 avril 2023)",
+      "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/ain/bourg-bresse/une-cyberattaque-vise-le-principal-centre-hospitalier-de-l-ain-continuite-des-soins-assuree-2753274.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Voix de l'Ain : L'hôpital Fleyriat de Bourg victime d'une cyberattaque (avril 2023)",
+      "url": "https://www.lavoixdelain.fr/lhopital-fleyriat-de-bourg-victime-dune-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Progrès : Ain : l'hôpital de Bourg-en-Bresse cyberattaqué (13 avril 2023)",
+      "url": "https://www.leprogres.fr/faits-divers-justice/2023/04/13/l-hopital-de-bourg-en-bresse-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 10 au 11 avril 2023, une intrusion est détectée dans le système d'information du centre hospitalier de Bourg-en-Bresse, l'hôpital Fleyriat, principal établissement de l'Ain. L'établissement annonce une cyberattaque le 11 avril, en précisant que la continuité des soins est assurée. Le quotidien Le Progrès rapporte que le réseau de l'établissement est ciblé par des pirates depuis la nuit du lundi 10 au mardi 11. Aucune donnée dérobée n'est quantifiée.",
+  "timeline": [
+    {
+      "date": "2023-04-10",
+      "event": "Intrusion dans le système d'information dans la nuit du 10 au 11 avril ; l'astreinte informatique intervient."
+    },
+    {
+      "date": "2023-04-11",
+      "event": "L'établissement annonce la cyberattaque ; la continuité des soins est maintenue."
+    },
+    {
+      "date": "2023-04-13",
+      "event": "Le Progrès confirme que le réseau de l'hôpital Fleyriat est la cible des pirates ; l'analyse se poursuit."
+    }
+  ]
+}

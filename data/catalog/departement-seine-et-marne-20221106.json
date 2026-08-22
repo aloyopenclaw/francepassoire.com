@@ -1,0 +1,53 @@
+{
+  "slug": "departement-seine-et-marne-20221106",
+  "entity": "Département de Seine-et-Marne",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-06",
+    "publication": "2022-11-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun décompte de personnes concernées publié ; les systèmes du département, qui emploie environ 5 000 agents, sont paralysés"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Le Parisien : Seine-et-Marne : le conseil départemental victime d'une cyberattaque de grande ampleur (8 novembre 2022)",
+      "url": "https://www.leparisien.fr/seine-et-marne-77/seine-et-marne-le-conseil-departemental-victime-dune-cyberattaque-de-grande-ampleur-08-11-2022-HVFTBTAKGRALZPRJ4MF6LOVADQ.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Seine-et-Marne : la cyberattaque va-t-elle empêcher le versement des aides sociales ? (novembre 2022)",
+      "url": "https://actu.fr/ile-de-france/melun_77288/seine-et-marne-la-cyberattaque-va-t-elle-empecher-le-versement-des-aides-sociales_55117686.html",
+      "kind": "article"
+    },
+    {
+      "label": "Département de Seine-et-Marne : Cyberattaque au Département de Seine-et-Marne, le point sur la situation (communiqué)",
+      "url": "https://www.seine-et-marne.fr/fr/actualites/cyberattaque-au-departement-de-seine-et-marne-le-point-sur-la-situation",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro : Cyberattaque : des pirates réclament 10 millions de dollars au département de la Seine-et-Marne (17 novembre 2022)",
+      "url": "https://www.lefigaro.fr/actualite-france/cyberattaque-des-pirates-reclament-10-millions-de-dollars-au-departement-de-la-seine-et-marne-20221117",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 6 novembre 2022, le conseil départemental de Seine-et-Marne subit une attaque informatique de grande ampleur. Pour protéger les données, la collectivité coupe l'ensemble de ses réseaux : les services numériques ne sont plus opérationnels et les quelque 5 000 agents reviennent au papier, tandis que le versement des aides sociales est interrogé. L'attaque est rendue publique le 8 novembre. Le 17 novembre, Le Figaro rapporte que les pirates exigent une rançon de 10 millions de dollars.",
+  "timeline": [
+    {
+      "date": "2022-11-06",
+      "event": "Attaque informatique début un dimanche ; le département coupe tous ses réseaux pour préserver les données."
+    },
+    {
+      "date": "2022-11-08",
+      "event": "La collectivité annonce l'attaque ; les 5 000 agents fonctionnent en mode dégradé, sans messagerie ni outils numériques."
+    },
+    {
+      "date": "2022-11-17",
+      "event": "Une rançon de 10 millions de dollars est exigée par les pirates, selon Le Figaro."
+    }
+  ]
+}

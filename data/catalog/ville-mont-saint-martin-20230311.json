@@ -1,0 +1,43 @@
+{
+  "slug": "ville-mont-saint-martin-20230311",
+  "entity": "Ville de Mont-Saint-Martin",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-11",
+    "publication": "2023-03-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée personnelle d'administré corrompue ou volée selon la mairie ; les services sont mis hors ligne pour contrôles"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Le Républicain Lorrain : Meurthe-et-Moselle : la Ville de Mont-Saint-Martin victime d'une cyberattaque (13 mars 2023)",
+      "url": "https://www.republicain-lorrain.fr/societe/2023/03/13/la-ville-de-mont-saint-martin-victime-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Ville de Mont-Saint-Martin : Maintenance informatique (communiqué, 13 mars 2023)",
+      "url": "https://mairie-montsaintmartin.fr/maintenanceinfo/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le samedi 11 mars 2023, la Ville de Mont-Saint-Martin, en Meurthe-et-Moselle, découvre par hasard qu'elle est victime d'une cyberattaque. Le personnel spécialisé analyse et sécurise les données des serveurs et les services informatiques sont mis hors ligne pour effectuer tous les contrôles nécessaires, suspendant les accès dématérialisés comme la messagerie. La mairie précise qu'aucune donnée personnelle d'administré n'a été corrompue ou volée ; l'accueil du public est maintenu en fonctionnement adapté. En juin, le responsable du service informatique est décoré pour avoir interrompu l'attaque.",
+  "timeline": [
+    {
+      "date": "2023-03-11",
+      "event": "La ville découvre la cyberattaque un samedi ; les équipes spécialisées l'interrompent et sécurisent les serveurs."
+    },
+    {
+      "date": "2023-03-13",
+      "event": "La mairie met les services informatiques hors ligne pour contrôles ; aucune donnée d'administré corrompue ou volée selon elle."
+    },
+    {
+      "date": "2023-06-06",
+      "event": "Le Républicain Lorrain relate la médaille reçue par le responsable informatique pour son intervention pendant la cyberattaque interrompue."
+    }
+  ]
+}

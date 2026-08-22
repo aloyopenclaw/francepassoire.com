@@ -1,0 +1,52 @@
+{
+  "slug": "ville-angouleme-20230723",
+  "entity": "Ville d'Angoulême et Grand Angoulême",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-23",
+    "publication": "2023-07-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; les réseaux de la ville et de l'agglomération sont bloqués pendant plusieurs mois"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Charente Libre : Angoulême : une cyber-attaque paralyse la ville et l'agglo (24 juillet 2023)",
+      "url": "https://www.charentelibre.fr/charente/angouleme/les-sites-web-de-la-mairie-d-angouleme-et-de-grandangouleme-victimes-dune-cyberattaque-cette-nuit-16054726.php",
+      "kind": "article"
+    },
+    {
+      "label": "La Nouvelle République : Angoulême : la Ville et l'agglo victimes d'une cyberattaque de grande ampleur (24 juillet 2023)",
+      "url": "https://www.lanouvellerepublique.fr/charente/angouleme-la-ville-et-l-agglo-victimes-dune-cyberattaque-de-grande-ampleur",
+      "kind": "article"
+    },
+    {
+      "label": "Charente Libre : Cyberattaque à Angoulême et GrandAngoulême : pas de retour à la normale avant février (2023)",
+      "url": "https://www.charentelibre.fr/charente/grand-angouleme/cyberattaque-a-angouleme-et-grandangouleme-pas-de-retour-a-la-normale-avant-fevrier-16737591.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 23 au 24 juillet 2023, les sites web et une partie des systèmes de la mairie d'Angoulême et du Grand Angoulême sont victimes d'une cyberattaque de grande ampleur. Les salariés s'en aperçoivent au réveil et les sites municipaux passent hors ligne. Le retour à la normale des services s'étale sur plusieurs mois, jusqu'à février-mars 2024 selon Charente Libre, qui rapporte aussi que trois enquêtes sont menées en parallèle. Aucun volume de données dérobées n'est publié.",
+  "timeline": [
+    {
+      "date": "2023-07-23",
+      "event": "Cyberattaque dans la nuit du 23 au 24 juillet contre les systèmes de la ville et de l'agglomération."
+    },
+    {
+      "date": "2023-07-24",
+      "event": "Les sites de la mairie passent hors ligne ; la ville et l'agglo communiquent sur une attaque de grande ampleur."
+    },
+    {
+      "date": "2023-08-03",
+      "event": "Charente Libre explique que le retour à la normale va prendre du temps et que trois enquêtes sont menées en parallèle."
+    },
+    {
+      "date": "2023-09-21",
+      "event": "La collectivité annonce un retour à la normale pas avant février 2024."
+    }
+  ]
+}

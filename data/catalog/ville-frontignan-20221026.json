@@ -1,0 +1,57 @@
+{
+  "slug": "ville-frontignan-20221026",
+  "entity": "Ville de Frontignan (Frontignan la Peyrade)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-26",
+    "publication": "2022-10-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée personnelle volée chiffrée publiquement ; les données municipales sont prises en otage par un rançongiciel"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "France 3 Occitanie : Hérault : la mairie de Frontignan cible d'une cyberattaque et d'une demande de rançon (27 octobre 2022)",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/herault-la-mairie-de-frontignan-cible-d-une-cyberattaque-et-d-une-demande-de-rancon-des-hackers-2646304.html",
+      "kind": "article"
+    },
+    {
+      "label": "Midi Libre : Frontignan : dix jours après la cyberattaque, la mairie continue de nettoyer ses ordinateurs (7 novembre 2022)",
+      "url": "https://www.midilibre.fr/2022/11/07/frontignan-dix-jours-apres-la-cyberattaque-la-mairie-continue-de-nettoyer-ses-ordinateurs-10787900.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ville de Frontignan la Peyrade : Cyber-attaque, la mairie travaille à rétablir son réseau et ses données (communiqué)",
+      "url": "https://www.frontignan.fr/cyber-attaque-la-mairie-de-frontignan-la-peyrade-travaille-a-retablir-son-reseau-et-ses-donnees/",
+      "kind": "officiel"
+    },
+    {
+      "label": "20 Minutes : Hérault : victime d'une cyberattaque, une mairie refuse de payer la rançon (2 novembre 2022)",
+      "url": "https://www.20minutes.fr/faits_divers/4008167-20221102-herault-victime-cyberattaque-mairie-refuse-payer-rancon-hackeurs",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du mercredi 26 au jeudi 27 octobre 2022, la mairie de Frontignan la Peyrade, dans l'Hérault, est la cible d'une cyberattaque par rançongiciel : les données municipales sont chiffrées et une rançon est exigée des pirates. La commune refuse de payer et dépose plainte. Les services travaillent au papier pendant le nettoyage des postes, qui se poursuit plus de dix jours après l'incident selon Midi Libre.",
+  "timeline": [
+    {
+      "date": "2022-10-26",
+      "event": "Cyberattaque par rançongiciel dans la nuit du 26 au 27 octobre ; une rançon est exigée."
+    },
+    {
+      "date": "2022-10-27",
+      "event": "La mairie informe les habitants et coupe son réseau ; l'activité reprend en mode dégradé."
+    },
+    {
+      "date": "2022-11-02",
+      "event": "La commune annonce refuser de payer la rançon ; une plainte est déposée."
+    },
+    {
+      "date": "2022-11-07",
+      "event": "Midi Libre décrit la désinfection des postes toujours en cours dix jours après l'attaque."
+    }
+  ]
+}

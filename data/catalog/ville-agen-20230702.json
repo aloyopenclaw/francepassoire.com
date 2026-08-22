@@ -1,0 +1,43 @@
+{
+  "slug": "ville-agen-20230702",
+  "entity": "Ville d'Agen et Agglomération d'Agen",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-02",
+    "publication": "2023-07-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; les systèmes d'information de la ville et de l'agglomération sont touchés"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "La Dépêche : Attaque informatique malveillante sur les systèmes d'information de la ville et de l'agglomération d'Agen (5 juillet 2023)",
+      "url": "https://www.ladepeche.fr/2023/07/05/attaque-informatique-malveillante-sur-les-systemes-dinformation-de-la-ville-et-de-lagglomeration-dagen-11322265.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Petit Bleu : À l'Agglo d'Agen, la cyberattaque venait de l'Est (17 août 2023)",
+      "url": "https://www.petitbleu.fr/2023/08/17/a-lagglo-dagen-la-cyberattaque-venait-de-lest-11400641.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 2 juillet 2023, la Ville d'Agen et l'Agglomération d'Agen subissent une attaque informatique malveillante. Les services municipaux et communautaires fonctionnent en mode dégradé et les courriels sont perturbés. Un mois et demi plus tard, Le Petit Bleu indique que les systèmes ont repris une activité proche de la normale et que l'attaque, d'après les analyses, venait de l'Est. Aucun volume de données dérobées n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2023-07-02",
+      "event": "Attaque informatique malveillante sur les systèmes de la ville et de l'agglomération un dimanche."
+    },
+    {
+      "date": "2023-07-05",
+      "event": "La Dépêche rapporte l'incident ; les services travaillent en mode dégradé."
+    },
+    {
+      "date": "2023-08-17",
+      "event": "Les systèmes retrouvent une activité proche de la normale ; l'origine de l'attaque est située à l'Est."
+    }
+  ]
+}

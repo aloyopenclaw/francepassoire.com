@@ -1,0 +1,53 @@
+{
+  "slug": "leal-reunion-20230217",
+  "entity": "Leal Réunion (concessionnaire automobile, Saint-Denis de La Réunion)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-02-17",
+    "publication": "2023-02-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; la concession rapporte 2,5 millions d'euros de perte de chiffre d'affaires en deux semaines"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Clicanoo : Après le CHU, c'est au tour de Leal Réunion d'être victime d'une cyber-attaque (17 février 2023, archive)",
+      "url": "https://web.archive.org/web/20230702141603/https://www.clicanoo.re/article/faits-divers/2023/02/17/apres-le-chu-cest-au-tour-de-de-leal-reunion-detre-victime-dune-cyber-attaque",
+      "kind": "archive"
+    },
+    {
+      "label": "La 1ère (France Info) : Une concession automobile victime d'une cyberattaque massive à La Réunion (17 février 2023)",
+      "url": "https://la1ere.franceinfo.fr/reunion/une-concession-automobile-victime-dune-cyberattaque-massive-a-la-reunion-1367414.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Info : Le concessionnaire Leal Réunion victime d'une cyberattaque : 2,5 millions de perte de chiffre d'affaires après deux semaines (2023, archive)",
+      "url": "https://web.archive.org/web/20230401054848/https://www.linfo.re/la-reunion/societe/le-concessionnaire-leal-reunion-victime-d-une-cyberattaque-2-5-millions-de-perte-de-chiffre-d-affaires-apres-deux-semaines",
+      "kind": "archive"
+    },
+    {
+      "label": "Les Échos : Cyberattaque, comment Leal Réunion a affronté la tempête (juin 2023, archive)",
+      "url": "https://web.archive.org/web/20230621093816/https://www.lesechos.fr/pme-regions/outre-mer/cyberattaque-comment-leal-reunion-a-affronte-la-tempete-1954354",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 17 février 2023, Leal Réunion, concessionnaire automobile de Saint-Denis représentant de BMW, annonce avoir été victime d'une cyberattaque massive environ deux semaines plus tôt. Selon le récit de l'entreprise, des pirates ont réussi à deviner le mot de passe d'un employé pour accéder aux systèmes, avant d'exiger une rançon de 400 000 dollars. La concession préfère renouveler son parc informatique plutôt que de payer ; elle évalue à 2,5 millions d'euros le manque à gagner sur son chiffre d'affaires après deux semaines d'arrêt. L'incident survient quelques jours après la cyberattaque du CHU de La Réunion.",
+  "timeline": [
+    {
+      "date": "2023-02-03",
+      "event": "Début de l'attaque : des pirates accèdent aux systèmes en devinant le mot de passe d'un employé."
+    },
+    {
+      "date": "2023-02-17",
+      "event": "Leal Réunion rend publique la cyberattaque massive ; une rançon de 400 000 dollars est exigée et refusée."
+    },
+    {
+      "date": "2023-03-03",
+      "event": "L'entreprise chiffre à 2,5 millions d'euros la perte de chiffre d'affaires après deux semaines."
+    }
+  ]
+}

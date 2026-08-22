@@ -1,0 +1,39 @@
+{
+  "slug": "elysee-cosmetiques-20230427",
+  "entity": "Élysée Cosmétiques (usine de Folkling, Forbach)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-27",
+    "publication": "2023-05-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; les serveurs centraux de l'usine sont attaqués et la production interrompue"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Le Républicain Lorrain : Forbach : serveurs piratés par des Russes, l'usine Élysée Cosmétiques à l'arrêt (4 mai 2023)",
+      "url": "https://www.republicain-lorrain.fr/economie/2023/05/04/serveurs-pirates-par-des-russes-l-usine-elysee-cosmetiques-a-l-arret",
+      "kind": "article"
+    },
+    {
+      "label": "Radio Mélodie : Forbach : Élysée Cosmétiques face à une « cyberguerre » selon son directeur général (mai 2023)",
+      "url": "https://www.radiomelodie.com/a/18085-elysee-cosmetiques-face-a-une-cyberguerre-selon-son-directeur-general",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 27 avril 2023, Élysée Cosmétiques, entreprise de fabrication et de remplissage d'aérosols cosmétiques implantée près de Forbach en Moselle, subit une cyberattaque contre ses serveurs centraux. L'usine est à l'arrêt et la production ne reprend que la semaine suivante. Le directeur général décrit une « cyberguerre » et le Républicain Lorrain rapporte que des pirates russes sont en cause. Aucun volume de données dérobées n'est publié.",
+  "timeline": [
+    {
+      "date": "2023-04-27",
+      "event": "Cyberattaque contre les serveurs centraux de l'entreprise ; l'usine s'arrête."
+    },
+    {
+      "date": "2023-05-04",
+      "event": "La presse locale décrit des serveurs piratés par des Russes ; la reprise de la production est annoncée pour la semaine suivante."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ville-mandeure-20230526",
+  "entity": "Ville de Mandeure",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-26",
+    "publication": "2023-05-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; la commune de 5 000 habitants se voit exiger une rançon de 5 millions de dollars"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Tout Montbéliard : La Mairie de Mandeure victime d'une cyberattaque (27 mai 2023)",
+      "url": "https://www.toutmontbeliard.com/2023/05/27/la-mairie-de-mandeure-victime-dune-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Cyberattaque : la carte des villes, départements et hôpitaux victimes des hackers en 2023 (19 décembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1535532-cyberattaque-la-carte-des-villes-departements-et-hopitaux-victimes-des-hackers-en-2023.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du jeudi 25 au vendredi 26 mai 2023, la mairie de Mandeure, commune de 5 000 habitants du Doubs, est victime d'une cyberattaque qui rend inopérante une grande partie de ses services. Les pirates réclament une rançon de 5 millions de dollars, un montant inhabituel pour une petite collectivité, relevé par les recensements nationaux d'attaques de 2023. Le service informatique est hors service et la municipalité travaille en mode dégradé. Aucun volume de données dérobées n'est publié.",
+  "timeline": [
+    {
+      "date": "2023-05-26",
+      "event": "Cyberattaque détectée dans la nuit du 25 au 26 mai ; le service informatique de la mairie est hors service."
+    },
+    {
+      "date": "2023-05-27",
+      "event": "La presse locale rapporte que les pirates réclament 5 millions de dollars à la commune."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "ville-morlaix-20230921",
+  "entity": "Ville de Morlaix",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-21",
+    "publication": "2023-09-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "les données des deux serveurs chiffrés ont pu être restaurées depuis des sauvegardes saines ; aucun vol de données constaté selon la collectivité"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Ouest-France : La Ville de Morlaix fait face à une attaque informatique (21 septembre 2023, archive)",
+      "url": "https://web.archive.org/web/20230921145220/https://www.ouest-france.fr/bretagne/morlaix-29600/la-ville-de-morlaix-fait-face-a-une-attaque-informatique-8d7e7018-5878-11ee-a976-476207cd5246",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Télégramme : La ville de Morlaix victime d'une attaque par rançongiciel (21 septembre 2023)",
+      "url": "https://www.letelegramme.fr/bretagne/la-ville-de-morlaix-victime-dune-attaque-par-rancongiciel-6432820.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : La mairie de Morlaix victime d'une cyberattaque (2023)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61224-la-mairie-de-morlaix-victime-dune-cyberattaque.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 21 septembre 2023 au matin, les agents de la ville de Morlaix constatent la perte des données des deux serveurs de la ville, chiffrés par un rançongiciel. Une cellule de crise est activée, Internet et la messagerie sont coupés, et l'accueil et le standard restent ouverts aux heures habituelles. Deux des trois serveurs sont mis à l'arrêt et les données sont restaurées depuis des sauvegardes saines, sans perte constatée. La ville figure dans une série d'attaques ayant frappé des collectivités bretonnes en 2023 et le retour à la normale prend plusieurs semaines.",
+  "timeline": [
+    {
+      "date": "2023-09-21",
+      "event": "Rançongiciel détecté : les données des deux serveurs de la ville sont chiffrées ; cellule de crise activée, réseaux coupés."
+    },
+    {
+      "date": "2023-09-27",
+      "event": "Point de situation : la ville annonce un retour à la normale progressif, les sauvegardes ayant permis d'éviter toute perte de données."
+    }
+  ]
+}

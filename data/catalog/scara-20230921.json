@@ -1,0 +1,45 @@
+{
+  "slug": "scara-20230921",
+  "entity": "Scara (Société coopérative agricole de la région d'Arcis-sur-Aube)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-21",
+    "publication": "2023-10-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "au moins une partie des données de la coopérative a été aspirée par le groupe No Escape, sans décompte publié"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "L'Est-Éclair : Arcis-sur-Aube : la Scara piratée par « No escape » (11 octobre 2023, archive)",
+      "url": "https://web.archive.org/web/20240104060403/https://www.lest-eclair.fr/id528926/article/2023-10-11/la-scara-piratee-par-no-escape",
+      "kind": "archive"
+    },
+    {
+      "label": "Agromatin : Cyberattaque : les silos de la Scara préservés (octobre 2023)",
+      "url": "https://www.agromatin.com/reference-agro/cooperatives-negoces/cyberattaque-les-silos-de-la-scara-preserves.html",
+      "kind": "article"
+    },
+    {
+      "label": "ARIA : Cyberattaque dans une coopérative agricole, retour d'expérience n° 61095 (21 septembre 2023)",
+      "url": "https://www.aria.developpement-durable.gouv.fr/accident/61095/",
+      "kind": "officiel"
+    }
+  ],
+  "group": "no-escape",
+  "description": "Le 21 septembre 2023, la Scara, coopérative céréalière de l'Aube, est la cible d'une cyberattaque au rançongiciel revendiquée par le groupe international No Escape. Le service informatique réagit rapidement pour contenir la menace et les activités des silos ne sont pas impactées, mais au moins une partie des données de la coopérative est aspirée par les attaquants selon L'Est-Éclair. La coopérative porte plainte et déclare l'incident ; le retour d'expérience est publié par l'ARIA.",
+  "timeline": [
+    {
+      "date": "2023-09-21",
+      "event": "Cyberattaque au rançongiciel ; la coopérative porte plainte et déclare l'incident."
+    },
+    {
+      "date": "2023-10-11",
+      "event": "L'Est-Éclair rapporte que le groupe No Escape a revendiqué l'attaque et aspiré une partie des données ; la situation est revenue à la normale."
+    }
+  ]
+}

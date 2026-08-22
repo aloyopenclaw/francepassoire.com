@@ -1,0 +1,40 @@
+{
+  "slug": "sdis-64-20231012",
+  "entity": "SDIS 64 (Service départemental d'incendie et de secours des Pyrénées-Atlantiques)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-12",
+    "publication": "2023-10-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié ; la cyberattaque impacte l'infrastructure informatique sans affecter les opérations de secours"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Sud Ouest : Les pompiers des Pyrénées-Atlantiques victimes d'une cyberattaque (octobre 2023)",
+      "url": "https://www.sudouest.fr/pyrenees-atlantiques/pau/les-pompiers-des-pyrenees-atlantiques-victimes-dune-cyberattaque-17049358.php",
+      "kind": "article"
+    },
+    {
+      "label": "La République des Pyrénées : Les pompiers du 64 victimes d'une panne informatique importante (12 octobre 2023)",
+      "url": "https://www.larepubliquedespyrenees.fr/pyrenees-atlantiques/les-pompiers-du-64-victimes-dune-panne-informatique-importante-17044964.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Le SDIS des Pyrénées-Atlantiques victime de cyberattaque (octobre 2023)",
+      "url": "https://actu.fr/faits-divers/le-service-departemental-d-incendie-et-de-secours-des-pyrenees-atlantiques-victime-de-cyberattaque_60201873.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 12 octobre 2023 au matin, le Service départemental d'incendie et de secours des Pyrénées-Atlantiques, basé à Pau, est victime d'une cyberattaque affectant son infrastructure informatique. Les activités opérationnelles des pompiers ne sont pas affectées et l'alerte des secours continue de fonctionner. Les conséquences de l'incident sur les données internes du service ne sont pas chiffrées publiquement.",
+  "timeline": [
+    {
+      "date": "2023-10-12",
+      "event": "Cyberattaque détectée au matin ; les opérations de secours et la prise d'appels ne sont pas affectées."
+    }
+  ]
+}

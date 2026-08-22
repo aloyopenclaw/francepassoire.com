@@ -1,0 +1,48 @@
+{
+  "slug": "vinovalie-20231025",
+  "entity": "Vinovalie (union de caves coopératives, Saint-Sulpice-la-Pointe)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-25",
+    "publication": "2023-10-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées publié"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "France 3 Occitanie : Cyberattaque : la société Vinovalie paralysée, les hackeurs réclament une rançon de 450 000 euros (octobre 2023)",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/tarn/albi/cyberattaque-la-societe-vinovalie-paralysee-les-hackeurs-reclament-une-rancon-de-450-000-euros-2863556.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche : Ordinateurs paralysés, demande de rançon, enquête ouverte : ce que l'on sait de la cyberattaque contre la coopérative Vinovalie (27 octobre 2023)",
+      "url": "https://www.ladepeche.fr/2023/10/27/ordinateurs-paralyses-demande-de-rancon-enquete-ouverte-ce-que-lon-sait-de-la-cyberattaque-contre-la-cooperative-vinovalie-11546249.php",
+      "kind": "article"
+    },
+    {
+      "label": "Vinovalie : Vinovalie victime de hackeurs (communiqué)",
+      "url": "https://www.vinovalie.com/vinovalie-victime-de-hackeurs",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Dans la nuit du mercredi 25 au jeudi 26 octobre 2023, le système informatique de Vinovalie, coopérative viticole tarnaise, est paralysé par une cyberattaque. Les hackers exigent une rançon de 450 000 dollars pour restituer l'accès aux systèmes. La coopérative rend l'attaque publique le 26 octobre, porte plainte et une enquête est ouverte.",
+  "timeline": [
+    {
+      "date": "2023-10-25",
+      "event": "Attaque dans la nuit du 25 au 26 octobre ; le système informatique de la coopérative est mis à terre."
+    },
+    {
+      "date": "2023-10-26",
+      "event": "Vinovalie publie un communiqué confirmant l'attaque ; une rançon de 450 000 dollars est exigée."
+    },
+    {
+      "date": "2023-10-27",
+      "event": "Une enquête est ouverte à la suite de la demande de rançon."
+    }
+  ]
+}
