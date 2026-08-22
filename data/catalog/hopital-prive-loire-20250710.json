@@ -2,11 +2,10 @@
   "slug": "hopital-prive-loire-20250710",
   "entity": "Hôpital privé de la Loire (Ramsay Santé)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-07-10",
-    "publication": "2025-07-10",
-    "confirmation": "2025-07-10"
+    "publication": "2025-07-10"
   },
   "volume": {
     "count": 126000,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Entre le 26 juin et le 1er juillet 2025, l’Hôpital privé de la Loire à Saint-Étienne, exploité par Ramsay Santé, a subi une usurpation d’identité ayant permis l’accès frauduleux au dossier d’un praticien, selon le groupe. Un pirate, « Marak », a revendiqué le vol de données pouvant atteindre 530 000 patients. Le 10 juillet, l’établissement a informé plus de 126 000 patients par courriel, dont 40 cas critiques combinant identité, NIR et motifs d’hospitalisation. L’équipe de France info rapporte que des copies de pièces d’identité figuraient parmi les données. Une plainte a été déposée.",
+  "description": "Entre le 26 juin et le 1er juillet 2025, l’Hôpital privé de la Loire à Saint-Étienne, exploité par Ramsay Santé, a subi une usurpation d’identité ayant permis l’accès frauduleux au dossier d’un praticien, selon le groupe. Un pirate, « Marak », a revendiqué le vol de données pouvant atteindre 530 000 patients. Selon la presse, le 10 juillet, l’établissement a informé plus de 126 000 patients par courriel, dont 40 cas critiques combinant identité, NIR et motifs d’hospitalisation. L’équipe de France info rapporte que des copies de pièces d’identité figuraient parmi les données. Une plainte a été déposée.",
   "timeline": [
     {
       "date": "2025-06-26",

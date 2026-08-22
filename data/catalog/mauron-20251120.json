@@ -3,11 +3,10 @@
   "entity": "Ville de Mauron (plateforme de prise de rendez-vous RDV360)",
   "siren": "215601279",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-20",
-    "publication": "2025-11-20",
-    "confirmation": "2025-11-20"
+    "publication": "2025-11-20"
   },
   "volume": {
     "count": 0,
@@ -21,8 +20,8 @@
   "sources": [
     {
       "label": "Ouest-France — Des mairies bretonnes victimes d’une fuite massive de données personnelles via une application de rendez-vous en ligne (20 novembre 2025)",
-      "url": "https://www.ouest-france.fr/bretagne/des-mairies-bretonnes-victimes-dune-fuite-massive-de-donnees-personnelles-via-une-application-de-rendez-vous-en-ligne-9a3346a0-c633-11f0-a196-a9dcf76600e4",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20251120204937/https://www.ouest-france.fr/bretagne/des-mairies-bretonnes-victimes-dune-fuite-massive-de-donnees-personnelles-via-une-application-de-rendez-vous-en-ligne-9a3346a0-c633-11f0-a196-a9dcf76600e4",
+      "kind": "archive"
     },
     {
       "label": "Le Télégramme — On en sait plus sur la vaste fuite de données qui a touché plusieurs municipalités en Bretagne (24 novembre 2025)",
@@ -30,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Mi-novembre 2025, la commune de Mauron (Morbihan) figure parmi les mairies bretonnes victimes d’une fuite massive de données personnelles via RDV360, l’application de rendez-vous en ligne dédiée aux démarches d’identité en mairie. Les données concernées sont l’identité et les coordonnées des usagers — nom, prénom, code postal, adresse e-mail, numéro de téléphone — associées aux demandes de cartes d’identité et de passeports. Le fournisseur de l’application a reconnu une intrusion malveillante. Recensée par Ouest-France puis Le Télégramme, l’alerte de Mauron s’inscrit dans la même fuite que celles de Ploërmel, Josselin, Brest, Quimper, Guipavas ou Sérent.",
+  "description": "Mi-novembre 2025, la commune de Mauron (Morbihan) figure parmi les mairies bretonnes victimes d’une fuite massive de données personnelles via RDV360, l’application de rendez-vous en ligne dédiée aux démarches d’identité en mairie. Les données concernées sont l’identité et les coordonnées des usagers (nom, prénom, code postal, adresse e-mail, numéro de téléphone) associées aux demandes de cartes d’identité et de passeports. Selon la presse, le fournisseur de l’application a reconnu une intrusion malveillante. Recensée par Ouest-France puis Le Télégramme, l’alerte de Mauron s’inscrit dans la même fuite que celles de Ploërmel, Josselin, Brest, Quimper, Guipavas ou Sérent.",
   "timeline": [
     {
       "date": "2025-11-20",

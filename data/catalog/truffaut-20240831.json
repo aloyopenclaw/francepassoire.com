@@ -2,18 +2,20 @@
   "slug": "truffaut-20240831",
   "entity": "Truffaut",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-08-31",
-    "publication": "2024-09-11",
-    "confirmation": "2024-09-11"
+    "publication": "2024-09-11"
   },
   "volume": {
     "count": 277000,
     "unit": "enregistrements",
-    "label": "277 000 commandes clients revendiquées par le vendeur — près de 280 000 entrées selon ZDNET — ; Truffaut n'a pas corroboré ce chiffre"
+    "label": "277 000 commandes clients revendiquées par le vendeur (près de 280 000 entrées selon ZDNET) ; Truffaut n'a pas corroboré ce chiffre"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "ZDNET.fr — Fuites de données chez Boulanger, Cultura ou encore Truffaut : la piste du piratage d'un prestataire externe (13 septembre 2024)",
@@ -36,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Truffaut, enseigne française de jardinerie, confirme le 11 septembre 2024 un vol de données client à la suite d'une cyberattaque contre un prestataire externe chargé des commandes. Le 31 août, un compte proposait déjà à la vente une base de près de 280 000 entrées, égrenée avec d'autres enseignes françaises. Y figurent noms, prénoms, téléphones, e-mails, adresses et contenu des commandes en ligne. Aucune donnée bancaire ni mot de passe n'est concerné selon l'enseigne, qui a déposé plainte et notifié la CNIL. Seuls les clients du site web sont concernés.",
+  "description": "Selon la presse, Truffaut, enseigne française de jardinerie, confirme le 11 septembre 2024 un vol de données client à la suite d'une cyberattaque contre un prestataire externe chargé des commandes. Le 31 août, un compte proposait déjà à la vente une base de près de 280 000 entrées, égrenée avec d'autres enseignes françaises. Y figurent noms, prénoms, téléphones, e-mails, adresses et contenu des commandes en ligne. Aucune donnée bancaire ni mot de passe n'est concerné selon l'enseigne, qui a déposé plainte et notifié la CNIL. Seuls les clients du site web sont concernés.",
   "timeline": [
     {
       "date": "2024-08-31",

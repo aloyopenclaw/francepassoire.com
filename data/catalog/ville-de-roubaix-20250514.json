@@ -3,11 +3,10 @@
   "entity": "Ville de Roubaix",
   "siren": "215905126",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-05-14",
-    "publication": "2025-05-14",
-    "confirmation": "2025-05-14"
+    "publication": "2025-05-14"
   },
   "volume": {
     "count": 0,
@@ -24,7 +23,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 14 mai 2025, la ville de Roubaix signale un acte de malveillance informatique. Il a conduit à « l’extraction non autorisée de données issues de messageries électroniques professionnelles », selon la collectivité. Il ne s’agit pas d’une cyberattaque externe ni d’un piratage de l’infrastructure ; l’ensemble des outils numériques reste opérationnel. L’accès frauduleux aurait concerné un nombre limité d’échanges internes. Rien n’indique à ce stade que des données personnelles d’habitants aient été compromises. La ville a déposé plainte, déclaré l’incident à la CNIL et signalé le cas à l’ANSSI. Un audit externe de cybersécurité est en cours ; les agents municipaux ont été informés.",
+  "description": "Le 14 mai 2025, la ville de Roubaix signale un acte de malveillance informatique. Il a conduit à « l’extraction non autorisée de données issues de messageries électroniques professionnelles », selon la collectivité. Il ne s’agit pas d’une cyberattaque externe ni d’un piratage de l’infrastructure ; l’ensemble des outils numériques reste opérationnel. L’accès frauduleux aurait concerné un nombre limité d’échanges internes. Selon la presse, Rien n’indique à ce stade que des données personnelles d’habitants aient été compromises. Selon la presse, la ville a déposé plainte, déclaré l’incident à la CNIL et signalé le cas à l’ANSSI. Un audit externe de cybersécurité est en cours ; les agents municipaux ont été informés.",
   "timeline": [
     {
       "date": "2025-05-14",

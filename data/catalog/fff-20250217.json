@@ -3,11 +3,10 @@
   "entity": "Fédération française de football (FFF)",
   "siren": "303742480",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-17",
-    "publication": "2025-02-21",
-    "confirmation": "2025-02-21"
+    "publication": "2025-02-21"
   },
   "volume": {
     "count": 1500000,
@@ -41,7 +40,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 17 février 2025, la Fédération française de football a détecté un accès non autorisé à son logiciel de gestion des licenciés et du personnel administratif. L’information a été rendue publique le 21 février par courriel aux personnes concernées. Les données extraites comprennent nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro interne, mais aussi, pour certaines personnes, la photo et la copie du justificatif d’identité. La FFF précise que mots de passe, coordonnées bancaires et données de santé sont préservés. Le compte compromis a été désactivé, les mots de passe réinitialisés. Les estimations de presse évoquent environ 1,5 million de personnes. Un second vol a visé la fédération en novembre 2025.",
+  "description": "Le 17 février 2025, la Fédération française de football a détecté un accès non autorisé à son logiciel de gestion des licenciés et du personnel administratif. L’information a été rendue publique le 21 février par courriel aux personnes concernées. Les données extraites comprennent nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro interne, mais aussi, pour certaines personnes, la photo et la copie du justificatif d’identité. Selon la presse, la FFF précise que mots de passe, coordonnées bancaires et données de santé sont préservés. Le compte compromis a été désactivé, les mots de passe réinitialisés. Les estimations de presse évoquent environ 1,5 million de personnes. Un second vol a visé la fédération en novembre 2025.",
   "timeline": [
     {
       "date": "2025-02-17",

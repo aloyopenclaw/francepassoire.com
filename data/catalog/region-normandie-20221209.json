@@ -2,7 +2,7 @@
   "slug": "region-normandie-20221209",
   "entity": "Région Normandie (conseil régional)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-12-09",
     "publication": "2022-12-09"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "à ce jour, aucune trace de vol de données n'a été constatée ni aucun élément diffusé, selon le directeur général des services de la Région"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Paris-Normandie : La Région Normandie victime d'une cyberattaque, Rouen et Caen touchés (9 décembre 2022, archive)",
@@ -30,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 9 décembre 2022, d'importantes pannes frappent les systèmes d'information du conseil régional de Normandie, qui active une cellule de crise. Pour stopper l'attaque, la collectivité met à l'arrêt 1 500 postes de travail à Caen et Rouen, 300 postes des lycées et 600 serveurs ; l'accès Internet est suspendu dans les sites administratifs et les lycées. Selon le directeur général des services, l'équipe attaquante a visé au même moment la ville d'Anvers et auparavant le département des Alpes-Maritimes ; le dossier judiciaire est suivi par le parquet de Nice et l'attaque est partie d'Autriche. En mars 2023, la Région indique qu'aucune trace de vol de données n'a été constatée et évalue le préjudice à plusieurs centaines de milliers d'euros.",
+  "description": "Le 9 décembre 2022, d'importantes pannes frappent les systèmes d'information du conseil régional de Normandie, qui active une cellule de crise. Pour stopper l'attaque, la collectivité met à l'arrêt 1 500 postes de travail à Caen et Rouen, 300 postes des lycées et 600 serveurs ; l'accès Internet est suspendu dans les sites administratifs et les lycées. Selon le directeur général des services, l'équipe attaquante a visé au même moment la ville d'Anvers et auparavant le département des Alpes-Maritimes ; le dossier judiciaire est suivi par le parquet de Nice et l'attaque est partie d'Autriche. Selon la presse, en mars 2023, la Région indique qu'aucune trace de vol de données n'a été constatée et évalue le préjudice à plusieurs centaines de milliers d'euros.",
   "timeline": [
     {
       "date": "2022-12-09",

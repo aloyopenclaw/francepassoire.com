@@ -2,11 +2,10 @@
   "slug": "airbus-20230911",
   "entity": "Airbus",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-09-11",
-    "publication": "2023-09-14",
-    "confirmation": "2023-09-14"
+    "publication": "2023-09-14"
   },
   "volume": {
     "count": 3200,
@@ -39,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 11 septembre 2023, le cybercriminel connu sous le pseudonyme USDoD publie sur un forum de hackers un jeu de données présenté comme provenant d'Airbus, soit environ 3 200 enregistrements de contacts de fournisseurs contenant noms, courriels et numéros de téléphone. Selon le constructeur, l'accès a été obtenu par le compte informatique d'un client, une compagnie aérienne turque compromise par un virus voleur d'informations, utilisé pour télécharger des documents commerciaux depuis un portail web d'Airbus ; le groupe Thales apparaît dans l'échantillon partagé. Airbus confirme enquêter sur cette compromission et indique avoir pris des mesures correctives pour éviter une atteinte à ses systèmes. Zataz publie ensuite une interview du pirate, qui nie toute motivation pro-russe.",
+  "description": "Le 11 septembre 2023, le cybercriminel connu sous le pseudonyme USDoD publie sur un forum de hackers un jeu de données présenté comme provenant d'Airbus, soit environ 3 200 enregistrements de contacts de fournisseurs contenant noms, courriels et numéros de téléphone. Selon le constructeur, l'accès a été obtenu par le compte informatique d'un client, une compagnie aérienne turque compromise par un virus voleur d'informations, utilisé pour télécharger des documents commerciaux depuis un portail web d'Airbus ; le groupe Thales apparaît dans l'échantillon partagé. Selon la presse, Airbus confirme enquêter sur cette compromission et indique avoir pris des mesures correctives pour éviter une atteinte à ses systèmes. Zataz publie ensuite une interview du pirate, qui nie toute motivation pro-russe.",
   "timeline": [
     {
       "date": "2023-09-11",

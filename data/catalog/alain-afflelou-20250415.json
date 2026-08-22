@@ -14,7 +14,10 @@
     "unit": "enregistrements",
     "label": "1,5 million de lignes mises en vente sur un forum criminel en septembre 2025 ; volume non confirmé par Alain Afflelou"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "BFM Tech&Co — L'enseigne d'opticiens Alain Afflelou victime d'une cyberattaque",
@@ -40,6 +43,11 @@
       "label": "Génération-NT — Fuite massive : les informations médicales et personnelles de 2 millions de Français en vente",
       "url": "https://www.generation-nt.com/actualites/donnees-fuite-piratage-dark-web-securite-france-2061860",
       "kind": "article"
+    },
+    {
+      "label": "Alain Afflelou : information officielle « Information concernant vos données personnelles » (avril 2025)",
+      "url": "https://myafflelou.my.site.com/hotspot/s/informations-donnees-personnelles",
+      "kind": "officiel"
     }
   ],
   "description": "Mi-avril 2025, Alain Afflelou prévient ses clients et prospects qu'une faille chez un prestataire a permis un accès non autorisé à son outil de gestion de relation client. L'enseigne confirme l'exfiltration d'état civil, coordonnées et données commerciales : achats, devis, mutuelle, rendez-vous, statut parental. Elle exclut données bancaires, numéros de Sécurité sociale, mots de passe et corrections visuelles. Le nombre de personnes n'est pas précisé. Début septembre, un pirate met en vente 1,5 million de lignes attribuées à l'enseigne. Selon 01net, l'échantillon contient numéros de Sécurité sociale et données de remboursement, ce que l'enseigne réfutait.",

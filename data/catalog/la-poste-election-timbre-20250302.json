@@ -3,11 +3,10 @@
   "entity": "La Poste",
   "siren": "356000000",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-02",
-    "publication": "2025-03-07",
-    "confirmation": "2025-03-07"
+    "publication": "2025-03-07"
   },
   "volume": {
     "count": 50000,
@@ -40,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début mars 2025, le pirate « h4tr3d w0rld » met en vente les données de près de 50 000 utilisateurs de La Poste. Il affirme les avoir extraites le 25 février du site Élection du timbre, consacré au vote pour les timbres de l’année. Zataz alerte sur cette vente, un échantillon circule. Cinq jours plus tard, La Poste confirme l’intrusion et prévient les clients concernés. Noms, prénoms, adresses e-mail et postale, années de naissance et téléphones ont été dérobés. L’entreprise exclut les données bancaires et les mots de passe. Elle a notifié la CNIL et déposé plainte ; le site a été mis en maintenance.",
+  "description": "Début mars 2025, le pirate « h4tr3d w0rld » met en vente les données de près de 50 000 utilisateurs de La Poste. Il affirme les avoir extraites le 25 février du site Élection du timbre, consacré au vote pour les timbres de l’année. Zataz alerte sur cette vente, un échantillon circule. Selon la presse, Cinq jours plus tard, La Poste confirme l’intrusion et prévient les clients concernés. Noms, prénoms, adresses e-mail et postale, années de naissance et téléphones ont été dérobés. L’entreprise exclut les données bancaires et les mots de passe. Selon la presse, elle a notifié la CNIL et déposé plainte ; le site a été mis en maintenance.",
   "timeline": [
     {
       "date": "2025-02-25",

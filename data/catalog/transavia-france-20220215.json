@@ -2,11 +2,10 @@
   "slug": "transavia-france-20220215",
   "entity": "Transavia France (groupe Air France-KLM)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-02-15",
-    "publication": "2022-02-18",
-    "confirmation": "2022-02-18"
+    "publication": "2022-02-18"
   },
   "volume": {
     "count": 0,
@@ -44,7 +43,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début février 2022, des pirates accèdent à un serveur de fichiers interne de Transavia France qui stockait les documents demandés à l'embauche. Le 15 février, ils écrivent directement aux salariés pour signaler la fuite et joignent une liste d'utilisateurs concernés. CV, lettres de motivation, pièces d'identité, passeports et certificats médicaux sont exposés. La compagnie confirme l'intrusion et le vol de données auprès de la presse. Le 10 mai 2022, la brigade de lutte contre la cybercriminalité de la PJ de Paris interpele un homme de 21 ans, qui avait publié les documents dérobés sur un site hébergé en Nouvelle-Zélande ; environ 500 personnels sont concernés selon TF1info.",
+  "description": "Début février 2022, des pirates accèdent à un serveur de fichiers interne de Transavia France qui stockait les documents demandés à l'embauche. Le 15 février, ils écrivent directement aux salariés pour signaler la fuite et joignent une liste d'utilisateurs concernés. CV, lettres de motivation, pièces d'identité, passeports et certificats médicaux sont exposés. Selon la presse, la compagnie confirme l'intrusion et le vol de données auprès de la presse. Le 10 mai 2022, la brigade de lutte contre la cybercriminalité de la PJ de Paris interpele un homme de 21 ans, qui avait publié les documents dérobés sur un site hébergé en Nouvelle-Zélande ; environ 500 personnels sont concernés selon TF1info.",
   "timeline": [
     {
       "date": "2022-02-15",

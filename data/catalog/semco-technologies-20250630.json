@@ -2,11 +2,10 @@
   "slug": "semco-technologies-20250630",
   "entity": "SEMCO Technologies",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-06-30",
-    "publication": "2025-07-07",
-    "confirmation": "2025-07-07"
+    "publication": "2025-07-07"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Début juillet 2025, au moment de son introduction en Bourse sur Euronext Growth, la société héraultaise SEMCO Technologies (composants pour semi-conducteurs) est visée par une attaque du groupe russophone Qilin. Des données personnelles de salariés — passeports, factures — sont exfiltrées puis publiées sur le darknet, consulté par La Tribune. La société confirme l’attaque, indique avoir déployé « toutes les mesures nécessaires » et précise que ni les équipements ni l’entrée en Bourse n’ont été remis en cause.",
+  "description": "Début juillet 2025, au moment de son introduction en Bourse sur Euronext Growth, la société héraultaise SEMCO Technologies (composants pour semi-conducteurs) est visée par une attaque du groupe russophone Qilin. Des données personnelles de salariés (passeports, factures) sont exfiltrées puis publiées sur le darknet, consulté par La Tribune. Selon la presse, la société confirme l’attaque, indique avoir déployé « toutes les mesures nécessaires » et précise que ni les équipements ni l’entrée en Bourse n’ont été remis en cause.",
   "timeline": [
     {
       "date": "2025-06-30",

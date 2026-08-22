@@ -2,11 +2,10 @@
   "slug": "openai-20251127",
   "entity": "OpenAI",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-27",
-    "publication": "2025-11-27",
-    "confirmation": "2025-11-27"
+    "publication": "2025-11-27"
   },
   "volume": {
     "count": 0,
@@ -24,7 +23,7 @@
       "kind": "article"
     }
   ],
-  "description": "OpenAI informe ses utilisateurs par courriel le 27 novembre 2025 d'une fuite de données impliquant Mixpanel, son prestataire d'analyse web. L'incident, détecté le 9 novembre, a permis à un attaquant d'exporter des informations de profil de certains utilisateurs de « platform.openai.com », l'interface destinée aux développeurs : nom, adresse e-mail, localisation approximative, système d'exploitation et identifiants d'organisation. ChatGPT et les produits grand public ne sont pas concernés ; aucun mot de passe, paiement ou document d'identité n'est compromis, précise l'entreprise. OpenAI cesse d'utiliser Mixpanel et contacte directement les personnes impactées. Le nombre d'utilisateurs concernés n'est pas communiqué.",
+  "description": "Selon la presse, OpenAI informe ses utilisateurs par courriel le 27 novembre 2025 d'une fuite de données impliquant Mixpanel, son prestataire d'analyse web. L'incident, détecté le 9 novembre, a permis à un attaquant d'exporter des informations de profil de certains utilisateurs de « platform.openai.com », l'interface destinée aux développeurs : nom, adresse e-mail, localisation approximative, système d'exploitation et identifiants d'organisation. Selon la presse, ChatGPT et les produits grand public ne sont pas concernés ; aucun mot de passe, paiement ou document d'identité n'est compromis, précise l'entreprise. OpenAI cesse d'utiliser Mixpanel et contacte directement les personnes impactées. Le nombre d'utilisateurs concernés n'est pas communiqué.",
   "timeline": [
     {
       "date": "2025-11-09",

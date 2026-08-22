@@ -3,11 +3,10 @@
   "entity": "Fédération française de football (FFF)",
   "siren": "303742480",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-20",
-    "publication": "2025-11-26",
-    "confirmation": "2025-11-26"
+    "publication": "2025-11-26"
   },
   "volume": {
     "count": 2000000,
@@ -40,7 +39,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 20 novembre 2025, la Fédération française de football a détecté un accès frauduleux au logiciel de gestion administrative utilisé par les clubs, notamment pour les licenciés. Le 26 novembre, elle a confirmé un vol de données par communiqué. Selon la fédération, un compte utilisateur compromis a permis d’extraire nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro de licencié. Le compte a été désactivé, les mots de passe réinitialisés. Une plainte a été déposée, l’ANSSI et la CNIL saisies. C’est le troisième piratage en moins de deux ans, après mars 2024 et février 2025. Les estimations de presse évoquent plus de deux millions de licenciés.",
+  "description": "Le 20 novembre 2025, la Fédération française de football a détecté un accès frauduleux au logiciel de gestion administrative utilisé par les clubs, notamment pour les licenciés. Selon la presse, le 26 novembre, elle a confirmé un vol de données par communiqué. Selon la fédération, un compte utilisateur compromis a permis d’extraire nom, prénom, genre, date et lieu de naissance, nationalité, adresse postale, e-mail, téléphone et numéro de licencié. Le compte a été désactivé, les mots de passe réinitialisés. Une plainte a été déposée, l’ANSSI et la CNIL saisies. C’est le troisième piratage en moins de deux ans, après mars 2024 et février 2025. Les estimations de presse évoquent plus de deux millions de licenciés.",
   "timeline": [
     {
       "date": "2025-11-20",

@@ -3,18 +3,20 @@
   "entity": "Ville de Lille",
   "siren": "215903501",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-03-27",
-    "publication": "2023-03-27",
-    "confirmation": "2023-03-27"
+    "publication": "2023-03-27"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "le groupe Royal diffuse 305 Go de données de la ville en deux fichiers ; la mairie estime que « moins de 2 % » des données municipales ont été volées ; nombre de personnes concernées non communiqué"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Solutions Numériques — Lille : des hackers revendiquent la cyberattaque de la mairie et diffusent 305 gigas de données (27 mars 2023)",
@@ -47,7 +49,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début mars 2023, une cyberattaque paralyse les services de la Ville de Lille, qui fonctionnent « au ralenti » pendant plusieurs semaines. Le 27 mars, le groupe de rançongiciel Royal revendique l'intrusion et diffuse en ligne deux fichiers totalisant environ 305 Go de données municipales, repérés par le spécialiste Damien Bancal. La mairie confirme la revendication dans un communiqué, précisant que l'ampleur du vol est en cours d'analyse. Le 30 mars, elle évalue à « moins de 2 % » la part des données de la ville effectivement dérobées ; aucun décompte de personnes concernées n'est publié.",
+  "description": "Début mars 2023, une cyberattaque paralyse les services de la Ville de Lille, qui fonctionnent « au ralenti » pendant plusieurs semaines. Le 27 mars, le groupe de rançongiciel Royal revendique l'intrusion et diffuse en ligne deux fichiers totalisant environ 305 Go de données municipales, repérés par le spécialiste Damien Bancal. Selon la presse, la mairie confirme la revendication dans un communiqué, précisant que l'ampleur du vol est en cours d'analyse. Le 30 mars, elle évalue à « moins de 2 % » la part des données de la ville effectivement dérobées ; aucun décompte de personnes concernées n'est publié.",
   "timeline": [
     {
       "date": "2023-03-27",

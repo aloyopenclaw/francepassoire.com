@@ -3,11 +3,10 @@
   "entity": "LGM Group",
   "siren": "505320762",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-05-06",
-    "publication": "2025-05-09",
-    "confirmation": "2025-05-09"
+    "publication": "2025-05-09"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 6 mai 2025, le groupe de rançongiciel Termite revendique une attaque contre LGM Group, société d'ingénierie francilienne de 1 500 salariés, et affirme avoir volé environ 550 Go de données, soit 700 000 fichiers. Contactée par ZDnet.fr, l'entreprise confirme une attaque informatique soldée par un vol de données — sans chiffrement de son système —, dépose plainte et se fait accompagner par l'ANSSI ; la production continue. Le site de l'entreprise reste indisponible plusieurs jours. Termite, repéré à l'automne 2024, avait déjà visé des organisations françaises.",
+  "description": "Le 6 mai 2025, le groupe de rançongiciel Termite revendique une attaque contre LGM Group, société d'ingénierie francilienne de 1 500 salariés, et affirme avoir volé environ 550 Go de données, soit 700 000 fichiers. Selon la presse, contactée par ZDnet.fr, l'entreprise confirme une attaque informatique soldée par un vol de données (sans chiffrement de son système), dépose plainte et se fait accompagner par l'ANSSI ; la production continue. Le site de l'entreprise reste indisponible plusieurs jours. Termite, repéré à l'automne 2024, avait déjà visé des organisations françaises.",
   "timeline": [
     {
       "date": "2025-05-06",

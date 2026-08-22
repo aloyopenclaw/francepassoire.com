@@ -3,11 +3,10 @@
   "entity": "Kering (Gucci, Balenciaga, Saint Laurent, Alexander McQueen)",
   "siren": "552075020",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-15",
-    "publication": "2025-09-15",
-    "confirmation": "2025-09-15"
+    "publication": "2025-09-15"
   },
   "volume": {
     "count": 7400000,
@@ -36,7 +35,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 15 septembre 2025, le groupe de luxe français Kering, maison mère de Gucci, Balenciaga, Saint Laurent et Alexander McQueen, a confirmé une fuite de données clients. Selon le groupe, un tiers non autorisé a obtenu un accès temporaire à ses systèmes, détecté en juin ; les attaquants affirment être entrés dès avril. Le groupe ShinyHunters revendique 7,4 millions d’adresses e-mail uniques : noms, téléphones, adresses et montants dépensés en boutique. Kering précise qu’aucune donnée bancaire ni pièce d’identité officielle n’est concernée et a contacté les clients touchés. L’attaque s’inscrit dans la série de compromissions d’instances Salesforce revendiquées par ce groupe contre de grandes entreprises.",
+  "description": "Selon la presse, le 15 septembre 2025, le groupe de luxe français Kering, maison mère de Gucci, Balenciaga, Saint Laurent et Alexander McQueen, a confirmé une fuite de données clients. Selon le groupe, un tiers non autorisé a obtenu un accès temporaire à ses systèmes, détecté en juin ; les attaquants affirment être entrés dès avril. Le groupe ShinyHunters revendique 7,4 millions d’adresses e-mail uniques : noms, téléphones, adresses et montants dépensés en boutique. Selon la presse, Kering précise qu’aucune donnée bancaire ni pièce d’identité officielle n’est concernée et a contacté les clients touchés. L’attaque s’inscrit dans la série de compromissions d’instances Salesforce revendiquées par ce groupe contre de grandes entreprises.",
   "timeline": [
     {
       "date": "2025-09-15",

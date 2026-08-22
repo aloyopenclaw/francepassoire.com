@@ -2,11 +2,10 @@
   "slug": "resana-20251118",
   "entity": "Resana (DINUM — plateforme interministérielle de travail collaboratif)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-18",
-    "publication": "2025-11-18",
-    "confirmation": "2025-11-18"
+    "publication": "2025-11-18"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 18 novembre 2025, les utilisateurs de Resana, la plateforme de travail collaboratif utilisée par les ministères et les établissements publics, ont été notifiés d’une fuite de données. Le courriel reçu par les agents indique que des données ont été exfiltrées depuis la plateforme, parfois décrite comme le « Google Drive » de l’État. Numerama a rapporté que des assaillants contactaient des utilisateurs et exerçaient un chantage. La quantité et la nature exactes des données exfiltrées n’ont pas été précisées par l’administration. La veille attribue la publication à l’acteur « World Leaks », qui revendique une cinquantaine de gigaoctets de fichiers interministériels. L’incident touche un outil sensible au cœur de l’administration française.",
+  "description": "Le 18 novembre 2025, les utilisateurs de Resana, la plateforme de travail collaboratif utilisée par les ministères et les établissements publics, ont été notifiés d’une fuite de données. Selon la presse, le courriel reçu par les agents indique que des données ont été exfiltrées depuis la plateforme, parfois décrite comme le « Google Drive » de l’État. Numerama a rapporté que des assaillants contactaient des utilisateurs et exerçaient un chantage. La quantité et la nature exactes des données exfiltrées n’ont pas été précisées par l’administration. La veille attribue la publication à l’acteur « World Leaks », qui revendique une cinquantaine de gigaoctets de fichiers interministériels. L’incident touche un outil sensible au cœur de l’administration française.",
   "timeline": [
     {
       "date": "2025-11-18",

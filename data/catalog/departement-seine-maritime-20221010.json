@@ -2,11 +2,10 @@
   "slug": "departement-seine-maritime-20221010",
   "entity": "Département de Seine-Maritime",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-10-10",
-    "publication": "2022-10-10",
-    "confirmation": "2022-10-10"
+    "publication": "2022-10-10"
   },
   "volume": {
     "count": 0,
@@ -38,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Lors du premier week-end d'octobre 2022, le conseil départemental de Seine-Maritime est la cible d'une cyberattaque d'ampleur. Lundi 10 octobre, la collectivité annonce avoir coupé l'ensemble de ses réseaux pour isoler son système informatique. Les services administratifs et les démarches en ligne des usagers sont fortement dégradés pendant plusieurs semaines. Après le démantèlement du réseau Hive par le FBI en février 2023, le Département figure parmi les victimes recensées de ce groupe de rançongiciel.",
+  "description": "Lors du premier week-end d'octobre 2022, le conseil départemental de Seine-Maritime est la cible d'une cyberattaque d'ampleur. Selon la presse, le lundi 10 octobre, la collectivité annonce avoir coupé l'ensemble de ses réseaux pour isoler son système informatique. Les services administratifs et les démarches en ligne des usagers sont fortement dégradés pendant plusieurs semaines. Après le démantèlement du réseau Hive par le FBI en février 2023, le Département figure parmi les victimes recensées de ce groupe de rançongiciel.",
   "timeline": [
     {
       "date": "2022-10-10",

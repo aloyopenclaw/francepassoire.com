@@ -2,11 +2,10 @@
   "slug": "gedimat-20260811",
   "entity": "Gedimat",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-08-11",
-    "publication": "2026-08-13",
-    "confirmation": "2026-08-11"
+    "publication": "2026-08-13"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Gedimat, enseigne française de distribution de matériaux de construction, informe ses adhérents le 11 août 2026 d’un incident de sécurité détecté par son prestataire e-commerce Orange Business durant le week-end précédent, ayant entraîné la divulgation de données personnelles associées aux comptes professionnels et personnels de gedimat.fr : nom, prénom, numéro de téléphone et adresse e-mail. L’enseigne précise que les mots de passe, coordonnées bancaires, commandes, factures et historiques d’achat ne sont pas concernés, que la faille a été corrigée et les accès bloqués, et que l’incident — sans effet sur les systèmes des points de vente — a été notifié à la CNIL au titre de l’article 33 du RGPD.",
+  "description": "Selon la presse, Gedimat, enseigne française de distribution de matériaux de construction, informe ses adhérents le 11 août 2026 d’un incident de sécurité détecté par son prestataire e-commerce Orange Business durant le week-end précédent, ayant entraîné la divulgation de données personnelles associées aux comptes professionnels et personnels de gedimat.fr : nom, prénom, numéro de téléphone et adresse e-mail. Selon la presse, l’enseigne précise que les mots de passe, coordonnées bancaires, commandes, factures et historiques d’achat ne sont pas concernés, que la faille a été corrigée et les accès bloqués, et que l’incident (sans effet sur les systèmes des points de vente) a été notifié à la CNIL au titre de l’article 33 du RGPD.",
   "timeline": [
     {
       "date": "2026-08-11",

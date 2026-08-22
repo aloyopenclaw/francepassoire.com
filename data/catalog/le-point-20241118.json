@@ -3,18 +3,20 @@
   "entity": "Le Point",
   "siren": "722064557",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-11-18",
-    "publication": "2024-11-18",
-    "confirmation": "2024-11-18"
+    "publication": "2024-11-18"
   },
   "volume": {
     "count": 900000,
     "unit": "personnes",
     "label": "près de 900 000 abonnés, actuels et anciens, selon la base mise en vente pour 350 euros sur un forum criminel ; Le Point n'a pas publié de décompte"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "01net — Nouvelle fuite de données en France : le média Le Point essuie une cyberattaque (18 novembre 2024)",
@@ -32,7 +34,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Le Point, hebdomadaire français, annonce le 18 novembre 2024 à ses lecteurs un vol de données détecté sur le dark web et porte plainte. L'attaque a visé un outil de gestion de la relation client opéré par un sous-traitant, après des incidents similaires chez La Croix et l'AFP. La base — près de 900 000 abonnés, actuels et anciens, proposée à 350 euros sur un forum — contient noms, e-mails, téléphones et adresses postales, sans mots de passe ni données bancaires. La fuite a d'abord été repérée par l'ANSSI, puis confirmée par Le Point.",
+  "description": "Selon la presse, le Point, hebdomadaire français, annonce le 18 novembre 2024 à ses lecteurs un vol de données détecté sur le dark web et porte plainte. L'attaque a visé un outil de gestion de la relation client opéré par un sous-traitant, après des incidents similaires chez La Croix et l'AFP. La base (près de 900 000 abonnés, actuels et anciens, proposée à 350 euros sur un forum) contient noms, e-mails, téléphones et adresses postales, sans mots de passe ni données bancaires. Selon la presse, la fuite a d'abord été repérée par l'ANSSI, puis confirmée par Le Point.",
   "timeline": [
     {
       "date": "2024-11-18",

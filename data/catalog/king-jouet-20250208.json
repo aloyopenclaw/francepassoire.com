@@ -3,11 +3,10 @@
   "entity": "King Jouet",
   "siren": "347926719",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-08",
-    "publication": "2025-02-12",
-    "confirmation": "2025-02-12"
+    "publication": "2025-02-12"
   },
   "volume": {
     "count": 25000,
@@ -31,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 8 au 9 février 2025, un pirate a revendiqué l’intrusion dans la base de données de King Jouet, enseigne française de jouets, et a mis en vente 4 347 028 entrées pour environ 150 dollars, après avoir affiché l’attaque sur le site de l’enseigne. Le 12 février, King Jouet a reconnu une cyberattaque limitée à l’interface de suivi des commandes en ligne, sur un périmètre de deux magasins. Selon l’enseigne, moins de 25 000 clients ont été impactés, très loin du chiffre revendiqué. Les données concernées comprennent identifiant client, dates et états de commandes, noms, e-mails et téléphones. L’écart illustre le gonflement des volumes par les pirates.",
+  "description": "Dans la nuit du 8 au 9 février 2025, un pirate a revendiqué l’intrusion dans la base de données de King Jouet, enseigne française de jouets, et a mis en vente 4 347 028 entrées pour environ 150 dollars, après avoir affiché l’attaque sur le site de l’enseigne. Selon la presse, le 12 février, King Jouet a reconnu une cyberattaque limitée à l’interface de suivi des commandes en ligne, sur un périmètre de deux magasins. Selon l’enseigne, moins de 25 000 clients ont été impactés, très loin du chiffre revendiqué. Les données concernées comprennent identifiant client, dates et états de commandes, noms, e-mails et téléphones. L’écart illustre le gonflement des volumes par les pirates.",
   "timeline": [
     {
       "date": "2025-02-08",

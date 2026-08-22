@@ -2,11 +2,10 @@
   "slug": "centre-hospitalier-du-gers-20250806",
   "entity": "Centre hospitalier du Gers (Auch)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-06",
-    "publication": "2025-08-07",
-    "confirmation": "2025-08-07"
+    "publication": "2025-08-07"
   },
   "volume": {
     "count": 0,

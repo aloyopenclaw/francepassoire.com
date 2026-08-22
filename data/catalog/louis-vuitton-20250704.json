@@ -2,16 +2,15 @@
   "slug": "louis-vuitton-20250704",
   "entity": "Louis Vuitton (LVMH)",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-07-04",
-    "publication": "2025-07-16",
-    "confirmation": "2025-07-16"
+    "publication": "2025-07-16"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "≈ 1,5 million de clients touchés selon les relais de veille (monde) ; la maison confirme un accès non autorisé sans chiffrer ; des clients français sont concernés selon NextINPact"
+    "label": "Volume de données non communiqué ; ≈ 1,5 million de clients touchés selon les relais de veille (monde) ; la maison confirme un accès non autorisé sans chiffrer ; des clients français sont concernés selon NextINPact"
   },
   "data_types": [
     "identite",
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 4 juillet 2025, la filiale britannique de Louis Vuitton a subi une cyberattaque, puis la maison a confirmé un accès non autorisé à des données clients, révélé mi-juillet. Cette fuite a suivi une attaque distincte contre la filiale sud-coréenne le 8 juin. Les données touchées incluent noms, coordonnées et informations de contact ; les données financières étaient épargnées selon l’entreprise. NextINPact a établi que des clients français figuraient parmi les personnes concernées. Les relais de veille avancent environ 1,5 million de clients touchés dans le monde, chiffre que la maison n’a pas confirmé.",
+  "description": "Selon la presse, le 4 juillet 2025, la filiale britannique de Louis Vuitton a subi une cyberattaque, puis la maison a confirmé un accès non autorisé à des données clients, révélé mi-juillet. Cette fuite a suivi une attaque distincte contre la filiale sud-coréenne le 8 juin. Les données touchées incluent noms, coordonnées et informations de contact ; les données financières étaient épargnées selon l’entreprise. NextINPact a établi que des clients français figuraient parmi les personnes concernées. Les relais de veille avancent environ 1,5 million de clients touchés dans le monde, chiffre que la maison n’a pas confirmé.",
   "timeline": [
     {
       "date": "2025-06-08",

@@ -3,11 +3,10 @@
   "entity": "Partitio (groupe Konica Minolta Business France)",
   "siren": "449876739",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-10-27",
-    "publication": "2025-10-31",
-    "confirmation": "2025-10-31"
+    "publication": "2025-10-31"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 27 octobre 2025, la revendication d'une cyberattaque contre Partitio, ESN toulousaine filiale de Konica Minolta Business France hébergeant notamment des données de santé, apparaît sur le site de fuite du groupe INC Ransom, avec des illustrations suggérant un vol de données. L'incident remonterait à fin septembre et l'impact sur les services semble limité. Le président de Partitio reconnaît l'attaque, évoque des analyses techniques approfondies, la coopération avec les autorités et l'information complète des collaborateurs et clients.",
+  "description": "Le 27 octobre 2025, la revendication d'une cyberattaque contre Partitio, ESN toulousaine filiale de Konica Minolta Business France hébergeant notamment des données de santé, apparaît sur le site de fuite du groupe INC Ransom, avec des illustrations suggérant un vol de données. L'incident remonterait à fin septembre et l'impact sur les services semble limité. Selon la presse, le président de Partitio reconnaît l'attaque, évoque des analyses techniques approfondies, la coopération avec les autorités et l'information complète des collaborateurs et clients.",
   "timeline": [
     {
       "date": "2025-10-27",

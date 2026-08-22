@@ -2,28 +2,31 @@
   "slug": "surveylama-20240402",
   "entity": "SurveyLama",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-04-02",
-    "publication": "2024-04-03",
-    "confirmation": "2024-04-03"
+    "publication": "2024-04-03"
   },
   "volume": {
     "count": 4426879,
     "unit": "comptes",
-    "label": "4 426 879 comptes — adresses e-mail, noms, adresses postales et IP, téléphones, dates de naissance et mots de passe hachés (SHA-1 salé, bcrypt ou Argon2) — selon le jeu de données vérifié par Have I Been Pwned ; SurveyLama a déclaré avoir informé les utilisateurs par e-mail"
+    "label": "4 426 879 comptes (adresses e-mail, noms, adresses postales et IP, téléphones, dates de naissance et mots de passe hachés (SHA-1 salé, bcrypt ou Argon2)) selon le jeu de données vérifié par Have I Been Pwned ; SurveyLama a déclaré avoir informé les utilisateurs par e-mail"
   },
-  "data_types": ["identite", "coordonnees", "credentials"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
   "sources": [
     {
       "label": "BleepingComputer — SurveyLama data breach exposes info of 4.4 million users (3 avril 2024)",
-      "url": "https://www.bleepingcomputer.com/news/security/surveylama-data-breach-exposes-info-of-44-million-users/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20240403232152/https://www.bleepingcomputer.com/news/security/surveylama-data-breach-exposes-info-of-44-million-users/",
+      "kind": "archive"
     },
     {
       "label": "SecurityWeek — SurveyLama Data Breach Impacts 4.4 Million Users (4 avril 2024)",
-      "url": "https://www.securityweek.com/surveylama-data-breach-impacts-4-4-million-users/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20240404145130/https://www.securityweek.com/surveylama-data-breach-impacts-4-4-million-users/",
+      "kind": "archive"
     },
     {
       "label": "Have I Been Pwned — SurveyLama Data Breach (jeu de données vérifié)",
@@ -31,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "SurveyLama, plateforme de sondages rémunérés opérée par la société française Globe Media, subit une fuite de données début février 2024. Le 2 avril, Have I Been Pwned publie le jeu de données vérifié : 4 426 879 comptes avec noms, coordonnées, dates de naissance, IP et mots de passe hachés. Contactée, la plateforme confirme l'incident, déclare avoir déjà averti les utilisateurs par e-mail, imposé une réinitialisation générale des mots de passe et renforcé sa sécurité. Selon HIBP, aucune revente publique du jeu de données n'a été constatée à ce stade. L'exfiltration est établie par l'aveu de l'entreprise.",
+  "description": "SurveyLama, plateforme de sondages rémunérés opérée par la société française Globe Media, subit une fuite de données début février 2024. Le 2 avril, Have I Been Pwned publie le jeu de données vérifié : 4 426 879 comptes avec noms, coordonnées, dates de naissance, IP et mots de passe hachés. Selon la presse, contactée, la plateforme confirme l'incident, déclare avoir déjà averti les utilisateurs par e-mail, imposé une réinitialisation générale des mots de passe et renforcé sa sécurité. Selon HIBP, aucune revente publique du jeu de données n'a été constatée à ce stade. L'exfiltration est établie par l'aveu de l'entreprise.",
   "timeline": [
     {
       "date": "2024-02-01",
@@ -39,7 +42,7 @@
     },
     {
       "date": "2024-04-02",
-      "event": "Le jeu de données vérifié — 4 426 879 comptes — est intégré à Have I Been Pwned."
+      "event": "Le jeu de données vérifié (4 426 879 comptes) est intégré à Have I Been Pwned."
     },
     {
       "date": "2024-04-03",

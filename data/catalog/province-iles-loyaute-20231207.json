@@ -2,7 +2,7 @@
   "slug": "province-iles-loyaute-20231207",
   "entity": "Province des îles Loyauté (Nouvelle-Calédonie)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-12-07",
     "publication": "2023-12-08"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; un logiciel malveillant d'extorsion bloque l'accès aux fichiers et une rançon d'un million de dollars est réclamée"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "La 1ère (France Info) : La province des îles Loyauté victime d'une cyber-attaque (décembre 2023)",

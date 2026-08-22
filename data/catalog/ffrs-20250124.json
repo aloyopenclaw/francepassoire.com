@@ -3,11 +3,10 @@
   "entity": "Fédération française de roller et skateboard (FFRS)",
   "siren": "378467864",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-01-24",
-    "publication": "2025-01-24",
-    "confirmation": "2025-01-27"
+    "publication": "2025-01-24"
   },
   "volume": {
     "count": 570000,
@@ -40,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 24 janvier 2025, un pirate baptisé « TheFrenchGuy » met en vente sur BreachForums les bases de huit fédérations sportives françaises. Celle de la FFRS y figure avec 577 061 licenciés revendiqués. Les données proviennent d’Exalto, prestataire gérant les licences de dizaines de fédérations. Le 27 janvier, la FFRS confirme à Next une cyberattaque survenue début janvier, touchant plus de 570 000 comptes. Noms, dates et lieux de naissance, coordonnées et numéros de licence ont été exposés. La fédération a notifié la CNIL, déposé plainte et informé ses licenciés. En février, elle rappelle ses adhérents à la vigilance face au phishing.",
+  "description": "Le 24 janvier 2025, un pirate baptisé « TheFrenchGuy » met en vente sur BreachForums les bases de huit fédérations sportives françaises. Celle de la FFRS y figure avec 577 061 licenciés revendiqués. Les données proviennent d’Exalto, prestataire gérant les licences de dizaines de fédérations. Selon la presse, le 27 janvier, la FFRS confirme à Next une cyberattaque survenue début janvier, touchant plus de 570 000 comptes. Noms, dates et lieux de naissance, coordonnées et numéros de licence ont été exposés. Selon la presse, la fédération a notifié la CNIL, déposé plainte et informé ses licenciés. En février, elle rappelle ses adhérents à la vigilance face au phishing.",
   "timeline": [
     {
       "date": "2025-01-24",

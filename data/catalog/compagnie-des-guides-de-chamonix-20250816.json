@@ -1,12 +1,11 @@
 {
-  "slug": "compagnie-des-guides-de-chamonix-20250815",
+  "slug": "compagnie-des-guides-de-chamonix-20250816",
   "entity": "Compagnie des Guides de Chamonix",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
-    "revendication": "2025-09-11",
-    "publication": "2025-08-16",
-    "confirmation": "2025-08-16"
+    "revendication": "2025-08-16",
+    "publication": "2025-08-16"
   },
   "volume": {
     "count": 0,
@@ -34,7 +33,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le week-end du 9 au 15 août 2025, la Compagnie des Guides de Chamonix, plus vieille compagnie de guides au monde, subit une intrusion : après un faux lien ouvert par inadvertance, des pirates prennent le contrôle d’un poste donnant accès à la centrale de réservation et à des bases clients. Ils volent puis suppriment les données d’un serveur — principalement adresses e-mail — et tentent un chantage financier, que la compagnie refuse. Plainte est déposée à la gendarmerie de Chamonix ; les clients sont prévenus.",
+  "description": "Le week-end du 9 au 15 août 2025, la Compagnie des Guides de Chamonix, plus vieille compagnie de guides au monde, subit une intrusion : après un faux lien ouvert par inadvertance, des pirates prennent le contrôle d’un poste donnant accès à la centrale de réservation et à des bases clients. Ils volent puis suppriment les données d’un serveur (principalement adresses e-mail) et tentent un chantage financier, que la compagnie refuse. Plainte est déposée à la gendarmerie de Chamonix ; les clients sont prévenus.",
   "timeline": [
     {
       "date": "2025-08-15",

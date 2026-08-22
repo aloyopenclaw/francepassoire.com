@@ -3,11 +3,10 @@
   "entity": "SFR",
   "siren": "343059564",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-17",
-    "publication": "2025-12-17",
-    "confirmation": "2025-12-17"
+    "publication": "2025-12-17"
   },
   "volume": {
     "count": 0,
@@ -31,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 17 décembre 2025, SFR a confirmé une intrusion dans un outil interne utilisé pour gérer les interventions de raccordement des clients au réseau fixe et a alerté certains abonnés. Les données potentiellement concernées comprennent nom, prénom, adresse e-mail, adresse postale, numéro de téléphone de contact, référence client et un mot de passe de première connexion généré automatiquement. Les données bancaires ne sont pas concernées, selon l’opérateur. SFR indique avoir bloqué l’accès non autorisé, renforcé les contrôles, notifié la CNIL et déposé plainte auprès du procureur de la République. Le volume de clients touchés n’a pas été précisé ; la veille évoque une allégation portant sur des millions de lignes.",
+  "description": "Selon la presse, le 17 décembre 2025, SFR a confirmé une intrusion dans un outil interne utilisé pour gérer les interventions de raccordement des clients au réseau fixe et a alerté certains abonnés. Les données potentiellement concernées comprennent nom, prénom, adresse e-mail, adresse postale, numéro de téléphone de contact, référence client et un mot de passe de première connexion généré automatiquement. Les données bancaires ne sont pas concernées, selon l’opérateur. Selon la presse, SFR indique avoir bloqué l’accès non autorisé, renforcé les contrôles, notifié la CNIL et déposé plainte auprès du procureur de la République. Selon la presse, le volume de clients touchés n’a pas été précisé ; la veille évoque une allégation portant sur des millions de lignes.",
   "timeline": [
     {
       "date": "2025-12-17",

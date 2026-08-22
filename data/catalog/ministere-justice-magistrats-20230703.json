@@ -2,11 +2,10 @@
   "slug": "ministere-justice-magistrats-20230703",
   "entity": "Ministère de la Justice (données de magistrats et d'avocats)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-07-03",
-    "publication": "2023-07-03",
-    "confirmation": "2023-07-03"
+    "publication": "2023-07-03"
   },
   "volume": {
     "count": 1121,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 3 juillet 2023, au lendemain d'une menace conditionnée à la suite des émeutes suivant la mort de Nahel, le groupe Kromsec publie sur Telegram un document contenant les données personnelles de 1 121 magistrats et avocats exerçant en France. Le fichier associe noms, adresses électroniques professionnelles, numéros de téléphone, adresses postales et IBAN ; les données de la ministre déléguée Isabelle Rome figurent parmi les entrées relayées par l'AFP. Le ministère de la Justice confirme une fuite de données personnelles d'employés, précise que le document ne lui appartient pas et que les serveurs du ministère n'ont pas été visés, et indique qu'il s'agit de données anciennes, plusieurs personnes listées étant à la retraite. Une plainte pour atteinte à un système de traitement automatisé de données est déposée auprès du parquet de Paris.",
+  "description": "Le 3 juillet 2023, au lendemain d'une menace conditionnée à la suite des émeutes suivant la mort de Nahel, le groupe Kromsec publie sur Telegram un document contenant les données personnelles de 1 121 magistrats et avocats exerçant en France. Le fichier associe noms, adresses électroniques professionnelles, numéros de téléphone, adresses postales et IBAN ; les données de la ministre déléguée Isabelle Rome figurent parmi les entrées relayées par l'AFP. Selon la presse, le ministère de la Justice confirme une fuite de données personnelles d'employés, précise que le document ne lui appartient pas et que les serveurs du ministère n'ont pas été visés, et indique qu'il s'agit de données anciennes, plusieurs personnes listées étant à la retraite. Une plainte pour atteinte à un système de traitement automatisé de données est déposée auprès du parquet de Paris.",
   "timeline": [
     {
       "date": "2023-07-02",

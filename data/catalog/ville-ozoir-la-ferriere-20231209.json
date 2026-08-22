@@ -2,7 +2,7 @@
   "slug": "ville-ozoir-la-ferriere-20231209",
   "entity": "Ville d'Ozoir-la-Ferrière",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-12-09",
     "publication": "2023-12-18"
@@ -32,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le week-end du 9 et 10 décembre 2023, la ville d'Ozoir-la-Ferrière, environ 20 000 habitants en Seine-et-Marne, subit une cyberattaque qui paralyse son système informatique, révélée publiquement le 18 décembre. Des pirates parviennent à entrer dans le système informatique municipal et sabotent les serveurs, arrêtant les services numériques ; l'attaque se propage jusqu'à la page Facebook de la ville, où des commentaires invitent à cliquer sur un lien frauduleux. Une intercommunalité voisine est également touchée. La mairie révèle l'offensive des pirates et le travail de restauration ; aucun vol de données n'est chiffré dans les premiers communiqués.",
+  "description": "Selon la presse, le week-end du 9 et 10 décembre 2023, la ville d'Ozoir-la-Ferrière, environ 20 000 habitants en Seine-et-Marne, subit une cyberattaque qui paralyse son système informatique, révélée publiquement le 18 décembre. Des pirates parviennent à entrer dans le système informatique municipal et sabotent les serveurs, arrêtant les services numériques ; l'attaque se propage jusqu'à la page Facebook de la ville, où des commentaires invitent à cliquer sur un lien frauduleux. Une intercommunalité voisine est également touchée. Selon la presse, la mairie révèle l'offensive des pirates et le travail de restauration ; aucun vol de données n'est chiffré dans les premiers communiqués.",
   "timeline": [
     {
       "date": "2023-12-09",

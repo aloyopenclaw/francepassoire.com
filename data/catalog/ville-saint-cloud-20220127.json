@@ -1,20 +1,23 @@
 {
-  "slug": "ville-saint-cloud-20220121",
+  "slug": "ville-saint-cloud-20220127",
   "entity": "Ville de Saint-Cloud",
   "siren": "219200649",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-01-27",
-    "publication": "2022-02-10",
-    "confirmation": "2022-02-11"
+    "publication": "2022-02-10"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "nombre de personnes concernées non communiqué ; la ville évoque un « nombre très restreint » de données sensibles d'habitants (campagne de vaccination Covid-19) au sein de documents internes majoritairement publics"
   },
-  "data_types": ["identite", "sante", "documents"],
+  "data_types": [
+    "identite",
+    "sante",
+    "documents"
+  ],
   "sources": [
     {
       "label": "actu.fr — Cyberattaque de la mairie de Saint-Cloud : les hackeurs diffusent des documents internes (11 février 2022)",

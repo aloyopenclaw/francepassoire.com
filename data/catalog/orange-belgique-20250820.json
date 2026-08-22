@@ -2,11 +2,10 @@
   "slug": "orange-belgique-20250820",
   "entity": "Orange Belgique (groupe Orange)",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-20",
-    "publication": "2025-08-20",
-    "confirmation": "2025-08-20"
+    "publication": "2025-08-20"
   },
   "volume": {
     "count": 850000,
@@ -24,7 +23,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 20 août 2025, Orange Belgique, filiale du groupe français Orange, annonce avoir détecté fin juillet une cyberattaque ayant permis l’accès aux données de 850 000 clients. Le pirate a consulté un système contenant noms, prénoms, numéros de téléphone, numéros de carte SIM, codes PUK et plans tarifaires ; mots de passe, adresses mail et coordonnées bancaires ne sont pas concernés selon l’opérateur, qui a déposé plainte auprès des autorités judiciaires. Les clients sont invités à rester vigilants face à toute communication suspecte. Il s’agit d’une nouvelle intrusion confirmée dans le groupe Orange en 2025, après celle touchant sa filiale roumaine en février.",
+  "description": "Selon la presse, le 20 août 2025, Orange Belgique, filiale du groupe français Orange, annonce avoir détecté fin juillet une cyberattaque ayant permis l’accès aux données de 850 000 clients. Le pirate a consulté un système contenant noms, prénoms, numéros de téléphone, numéros de carte SIM, codes PUK et plans tarifaires ; mots de passe, adresses mail et coordonnées bancaires ne sont pas concernés selon l’opérateur, qui a déposé plainte auprès des autorités judiciaires. Les clients sont invités à rester vigilants face à toute communication suspecte. Selon la presse, il s’agit d’une nouvelle intrusion confirmée dans le groupe Orange en 2025, après celle touchant sa filiale roumaine en février.",
   "timeline": [
     {
       "date": "2025-08-20",

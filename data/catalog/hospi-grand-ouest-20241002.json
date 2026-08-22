@@ -2,18 +2,20 @@
   "slug": "hospi-grand-ouest-20241002",
   "entity": "Groupe hospitalier Grand Ouest (HGO)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-10-02",
-    "publication": "2024-10-07",
-    "confirmation": "2024-10-07"
+    "publication": "2024-10-07"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "nombre de patients concernés non communiqué par le groupe ; une rançon de plus de 650 000 euros a été exigée selon Le Parisien"
   },
-  "data_types": ["identite", "sante"],
+  "data_types": [
+    "identite",
+    "sante"
+  ],
   "sources": [
     {
       "label": "Le Figaro — Cyberattaque sur le groupe de santé Hospi Grand Ouest : des opérations en suspens à Nantes et Saint-Nazaire (7 octobre 2024)",
@@ -32,11 +34,11 @@
     },
     {
       "label": "Libération — Arnaqueur ou hackeur au grand cœur ? Après une cyberattaque d'ampleur, l'ex-employé d'un groupe hospitalier au tribunal (6 février 2025)",
-      "url": "https://www.liberation.fr/societe/police-justice/arnaqueur-ou-hackeur-au-grand-coeur-apres-une-cyberattaque-dampleur-lex-employe-dun-groupe-hospitalier-au-tribunal-20250206_EZDK4BEOAJHMNHEVUN4WSDVUGI/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20250509031633/https://www.liberation.fr/societe/police-justice/arnaqueur-ou-hackeur-au-grand-coeur-apres-une-cyberattaque-dampleur-lex-employe-dun-groupe-hospitalier-au-tribunal-20250206_EZDK4BEOAJHMNHEVUN4WSDVUGI/?utm_medium=Social&utm_source=Bluesky&=?xtor=CS7-600095",
+      "kind": "archive"
     }
   ],
-  "description": "Le 2 octobre 2024, le groupe hospitalier Grand Ouest (HGO), gestionnaire de neuf établissements de santé mutualistes en Bretagne, Pays de la Loire et Vendée — dont la clinique La Sagesse à Rennes —, subit une cyberattaque d'envergure, de type DDoS assortie d'une « compromission interne ». Le 4 octobre, les systèmes d'information de La Sagesse sont totalement paralysés : les soignants travaillent hors ligne, sans accès aux dossiers patients, et plusieurs interventions chirurgicales sont reportées ; des déprogrammations « au cas par cas » sont évoquées pour les cliniques Jules Verne (Nantes) et de l'Estuaire (Saint-Nazaire). Les cybercriminels exigent une rançon de plus de 650 000 euros. Le C3N met rapidement fin à la menace ; les enquêteurs de l'Unité nationale cyber identifient une compromission interne et interpellent en décembre 2024 un ancien responsable de la sécurité des systèmes d'information du groupe, jugé en février 2025.",
+  "description": "Le 2 octobre 2024, le groupe hospitalier Grand Ouest (HGO), gestionnaire de neuf établissements de santé mutualistes en Bretagne, Pays de la Loire et Vendée (dont la clinique La Sagesse à Rennes), subit une cyberattaque d'envergure, de type DDoS assortie d'une « compromission interne ». Le 4 octobre, les systèmes d'information de La Sagesse sont totalement paralysés : les soignants travaillent hors ligne, sans accès aux dossiers patients, et plusieurs interventions chirurgicales sont reportées ; des déprogrammations « au cas par cas » sont évoquées pour les cliniques Jules Verne (Nantes) et de l'Estuaire (Saint-Nazaire). Les cybercriminels exigent une rançon de plus de 650 000 euros. Le C3N met rapidement fin à la menace ; les enquêteurs de l'Unité nationale cyber identifient une compromission interne et interpellent en décembre 2024 un ancien responsable de la sécurité des systèmes d'information du groupe, jugé en février 2025.",
   "timeline": [
     {
       "date": "2024-10-02",

@@ -3,18 +3,20 @@
   "entity": "Chronopost",
   "siren": "383960135",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-19",
-    "publication": "2025-12-20",
-    "confirmation": "2025-12-23"
+    "publication": "2025-12-20"
   },
   "volume": {
     "count": 860000,
     "unit": "enregistrements",
     "label": "860 000 enregistrements de colis publiés, soit environ 630 000 adresses e-mail uniques selon les analystes ; colis déposés en points relais Pickup entre le 25 février et le 10 avril 2025"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "01net — Fuite de données chez Chronopost : les informations volées viennent « d'un incident remontant au printemps 2025 »",
@@ -32,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 19 décembre 2025, un pirate publie sur BreachForums une base de 680 Mo liée aux systèmes de points relais Pickup utilisés par Chronopost. Le fichier couvre 860 000 colis déposés entre le 25 février et le 10 avril 2025, avec nom, prénom, e-mail, numéros de colis, dimensions, codes-barres et localisation des points de retrait. Des données Colissimo figurent aussi dans le répertoire, le réseau étant mutualisé. Le 23 décembre, Chronopost confirme une fuite liée à un incident « remontant au printemps 2025 », traité conformément à la réglementation. Cette fuite est distincte de celle de janvier 2025.",
+  "description": "Le 19 décembre 2025, un pirate publie sur BreachForums une base de 680 Mo liée aux systèmes de points relais Pickup utilisés par Chronopost. Le fichier couvre 860 000 colis déposés entre le 25 février et le 10 avril 2025, avec nom, prénom, e-mail, numéros de colis, dimensions, codes-barres et localisation des points de retrait. Des données Colissimo figurent aussi dans le répertoire, le réseau étant mutualisé. Le 23 décembre, selon la presse, Chronopost confirme une fuite liée à un incident « remontant au printemps 2025 », traité conformément à la réglementation. Cette fuite est distincte de celle de janvier 2025.",
   "timeline": [
     {
       "date": "2025-12-19",

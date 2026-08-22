@@ -2,11 +2,10 @@
   "slug": "alltricks-20250811",
   "entity": "Alltricks",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-11",
-    "publication": "2025-08-12",
-    "confirmation": "2025-08-11"
+    "publication": "2025-08-12"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 11 août 2025, des clients d’Alltricks, boutique en ligne spécialisée dans le cyclisme, reçoivent des courriels de phishing parfaitement authentifiés. Les messages passent SPF, DKIM et DMARC car ils partent du compte Brevo (Sendinblue) de l’enseigne, via ses sous-domaines légitimes. Le soir même, Alltricks publie une alerte : une intrusion a affecté son système d’envoi d’e-mails. L’entreprise exclut les données bancaires et de paiement. Une enquête est ouverte pour vérifier d’éventuelles exfiltrations et l’entreprise dit se rapprocher de la CNIL. L’exfiltration de données n’est pas établie à ce stade.",
+  "description": "Le 11 août 2025, des clients d’Alltricks, boutique en ligne spécialisée dans le cyclisme, reçoivent des courriels de phishing parfaitement authentifiés. Les messages passent SPF, DKIM et DMARC car ils partent du compte Brevo (Sendinblue) de l’enseigne, via ses sous-domaines légitimes. Le soir même, selon la presse, Alltricks publie une alerte : une intrusion a affecté son système d’envoi d’e-mails. L’entreprise exclut les données bancaires et de paiement. Une enquête est ouverte pour vérifier d’éventuelles exfiltrations et l’entreprise dit se rapprocher de la CNIL. L’exfiltration de données n’est pas établie à ce stade.",
   "timeline": [
     {
       "date": "2025-08-11",

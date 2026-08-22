@@ -3,18 +3,21 @@
   "entity": "Chronopost",
   "siren": "383960135",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-12",
-    "publication": "2025-02-12",
-    "confirmation": "2025-02-13"
+    "publication": "2025-02-12"
   },
   "volume": {
     "count": 210000,
     "unit": "personnes",
     "label": "210 000 clients concernés (chiffre annoncé par Chronopost à l'AFP le 13 février 2025)"
   },
-  "data_types": ["identite", "coordonnees", "documents"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Numerama — Chronopost victime d'un piratage massif : des millions de données clients en danger",
@@ -42,7 +45,7 @@
       "kind": "article"
     }
   ],
-  "description": "Chronopost, filiale de GeoPost (groupe La Poste), informe ses clients dès le 10 février 2025 d'un incident survenu le 29 janvier. L'entreprise confirme un « vol d'une partie des données personnelles » de certains clients. Sont concernés les nom, prénom, adresse postale, parfois numéro de téléphone, ainsi que la signature apposée sur les preuves de livraison. Le 13 février, Chronopost précise à l'AFP que 210 000 clients sont touchés. L'incident, non lié à un rançongiciel, est déclaré clos et maîtrisé. La CNIL a été notifiée et une plainte déposée avec l'appui d'experts en cybersécurité.",
+  "description": "Chronopost, filiale de GeoPost (groupe La Poste), informe ses clients dès le 10 février 2025 d'un incident survenu le 29 janvier. Selon la presse, l'entreprise confirme un « vol d'une partie des données personnelles » de certains clients. Sont concernés les nom, prénom, adresse postale, parfois numéro de téléphone, ainsi que la signature apposée sur les preuves de livraison. Le 13 février, Chronopost précise à l'AFP que 210 000 clients sont touchés. L'incident, non lié à un rançongiciel, est déclaré clos et maîtrisé. La CNIL a été notifiée et une plainte déposée avec l'appui d'experts en cybersécurité.",
   "timeline": [
     {
       "date": "2025-01-29",

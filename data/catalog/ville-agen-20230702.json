@@ -2,7 +2,7 @@
   "slug": "ville-agen-20230702",
   "entity": "Ville d'Agen et Agglomération d'Agen",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-07-02",
     "publication": "2023-07-05"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; les systèmes d'information de la ville et de l'agglomération sont touchés"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "La Dépêche : Attaque informatique malveillante sur les systèmes d'information de la ville et de l'agglomération d'Agen (5 juillet 2023)",
@@ -25,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le dimanche 2 juillet 2023, la Ville d'Agen et l'Agglomération d'Agen subissent une attaque informatique malveillante. Les services municipaux et communautaires fonctionnent en mode dégradé et les courriels sont perturbés. Un mois et demi plus tard, Le Petit Bleu indique que les systèmes ont repris une activité proche de la normale et que l'attaque, d'après les analyses, venait de l'Est. Aucun volume de données dérobées n'est communiqué.",
+  "description": "Le dimanche 2 juillet 2023, la Ville d'Agen et l'Agglomération d'Agen subissent une attaque informatique malveillante. Les services municipaux et communautaires fonctionnent en mode dégradé et les courriels sont perturbés. Selon la presse, un mois et demi plus tard, Le Petit Bleu indique que les systèmes ont repris une activité proche de la normale et que l'attaque, d'après les analyses, venait de l'Est. Aucun volume de données dérobées n'est communiqué.",
   "timeline": [
     {
       "date": "2023-07-02",

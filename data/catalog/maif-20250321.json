@@ -3,11 +3,10 @@
   "entity": "MAIF",
   "siren": "775709702",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-21",
-    "publication": "2025-03-21",
-    "confirmation": "2025-03-21"
+    "publication": "2025-03-21"
   },
   "volume": {
     "count": 0,
@@ -40,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 21 mars 2025, Le Parisien révèle que la MAIF a notifié une fuite de données à une partie de ses clients. Un porte-parole confirme au quotidien que seule la filiale MAIF Solutions Financières est concernée, pas la mutuelle dans son ensemble. L'information, initiée par l'Agefi, fait suite à la cyberattaque contre Harvest, fournisseur de logiciels aux banques et assurances, intervenue fin février 2025. Selon les premières descriptions, des données d'état civil et des informations liées aux comptes-titres sont en cause. L'assureur appelle ses clients à la vigilance contre l'hameçonnage ; aucun volume n'est communiqué.",
+  "description": "Le 21 mars 2025, Le Parisien révèle que la MAIF a notifié une fuite de données à une partie de ses clients. Selon la presse, un porte-parole confirme au quotidien que seule la filiale MAIF Solutions Financières est concernée, pas la mutuelle dans son ensemble. L'information, initiée par l'Agefi, fait suite à la cyberattaque contre Harvest, fournisseur de logiciels aux banques et assurances, intervenue fin février 2025. Selon les premières descriptions, des données d'état civil et des informations liées aux comptes-titres sont en cause. L'assureur appelle ses clients à la vigilance contre l'hameçonnage ; aucun volume n'est communiqué.",
   "timeline": [
     {
       "date": "2025-03-21",

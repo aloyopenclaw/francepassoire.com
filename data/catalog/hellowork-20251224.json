@@ -3,11 +3,10 @@
   "entity": "HelloWork (plateforme de recrutement)",
   "siren": "428843130",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-24",
-    "publication": "2025-12-27",
-    "confirmation": "2025-12-27"
+    "publication": "2025-12-27"
   },
   "volume": {
     "count": 2800000,
@@ -36,7 +35,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 24 décembre 2025 en fin d’après-midi, HelloWork, plateforme de recrutement basée à Rennes, a détecté la mise en vente de données attribuées à sa CVthèque sur des canaux frauduleux. Le 27 décembre, le directeur général a informé les utilisateurs par courriel. Selon la plateforme, l’incident ne résulte pas d’une intrusion dans ses systèmes mais de l’utilisation frauduleuse d’un compte disposant d’un accès recruteur, qui a permis d’aspirer un volume important de profils. Les données exposées comprennent identité, e-mail, métier recherché, qualification, expérience, secteurs ciblés, type de contrat et zones de mobilité. Mots de passe et données bancaires ne sont pas concernés. La mise en vente revendique environ 2,8 millions de profils.",
+  "description": "Le 24 décembre 2025 en fin d’après-midi, HelloWork, plateforme de recrutement basée à Rennes, a détecté la mise en vente de données attribuées à sa CVthèque sur des canaux frauduleux. Selon la presse, le 27 décembre, le directeur général a informé les utilisateurs par courriel. Selon la plateforme, l’incident ne résulte pas d’une intrusion dans ses systèmes mais de l’utilisation frauduleuse d’un compte disposant d’un accès recruteur, qui a permis d’aspirer un volume important de profils. Les données exposées comprennent identité, e-mail, métier recherché, qualification, expérience, secteurs ciblés, type de contrat et zones de mobilité. Mots de passe et données bancaires ne sont pas concernés. La mise en vente revendique environ 2,8 millions de profils.",
   "timeline": [
     {
       "date": "2025-12-24",

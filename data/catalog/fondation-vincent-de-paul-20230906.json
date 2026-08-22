@@ -2,7 +2,7 @@
   "slug": "fondation-vincent-de-paul-20230906",
   "entity": "Fondation Vincent de Paul",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-09-06",
     "publication": "2023-09-07"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; l'intrusion touche les systèmes d'information de plus de trente établissements"
   },
-  "data_types": ["sante", "identite"],
+  "data_types": [
+    "sante",
+    "identite"
+  ],
   "sources": [
     {
       "label": "France 3 Grand Est : Une cyberattaque touche plus de trente établissements de santé de la Fondation Vincent de Paul (septembre 2023)",
@@ -25,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 6 au 7 septembre 2023, une intrusion est détectée dans les systèmes d'information de l'ensemble des établissements de la Fondation Vincent de Paul, groupe sanitaire et médico-social alsacien regroupant plus de trente cliniques, hôpitaux et Ehpad, dont des lieux d'accueil d'enfants. La fondation annonce l'attaque le 7 septembre et indique que l'activité continue normalement, la prise en charge des patients n'étant pas affectée. Aucun volume de données dérobées n'est publié.",
+  "description": "Dans la nuit du 6 au 7 septembre 2023, une intrusion est détectée dans les systèmes d'information de l'ensemble des établissements de la Fondation Vincent de Paul, groupe sanitaire et médico-social alsacien regroupant plus de trente cliniques, hôpitaux et Ehpad, dont des lieux d'accueil d'enfants. Selon la presse, la fondation annonce l'attaque le 7 septembre et indique que l'activité continue normalement, la prise en charge des patients n'étant pas affectée. Aucun volume de données dérobées n'est publié.",
   "timeline": [
     {
       "date": "2023-09-06",

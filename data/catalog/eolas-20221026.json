@@ -2,11 +2,10 @@
   "slug": "eolas-20221026",
   "entity": "Groupe Eolas (hébergeur, filiale d'Orange Business Services)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-10-26",
-    "publication": "2022-10-26",
-    "confirmation": "2022-10-26"
+    "publication": "2022-10-26"
   },
   "volume": {
     "count": 1000000,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début septembre 2022, l'hébergeur Eolas, filiale d'Orange Business Services qui héberge des centaines de sites dont des sites de santé, est frappé par un rançongiciel. Le 26 octobre, la Fédération nationale de la pêche en France révèle que l'intrusion chez son hébergeur a permis de subtiliser les données des titulaires de cartes de pêche du site cartedepeche.fr : noms, prénoms, sexe, date de naissance, photo, adresse postale et électronique, mot de passe et numéro de carte. Les données bancaires ne sont pas concernées. La FNPF et l'hébergeur déclarent l'attaque à la CNIL et déposent plainte.",
+  "description": "Début septembre 2022, l'hébergeur Eolas, filiale d'Orange Business Services qui héberge des centaines de sites dont des sites de santé, est frappé par un rançongiciel. Selon la presse, le 26 octobre, la Fédération nationale de la pêche en France révèle que l'intrusion chez son hébergeur a permis de subtiliser les données des titulaires de cartes de pêche du site cartedepeche.fr : noms, prénoms, sexe, date de naissance, photo, adresse postale et électronique, mot de passe et numéro de carte. Les données bancaires ne sont pas concernées. La FNPF et l'hébergeur déclarent l'attaque à la CNIL et déposent plainte.",
   "timeline": [
     {
       "date": "2022-10-26",

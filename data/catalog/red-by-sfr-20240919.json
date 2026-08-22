@@ -3,18 +3,21 @@
   "entity": "RED by SFR",
   "siren": "343059564",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-09-19",
-    "publication": "2024-09-19",
-    "confirmation": "2024-09-19"
+    "publication": "2024-09-19"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "volumes non communiqués par l'opérateur ; « plusieurs dizaines de milliers de clients » selon FrenchBreaches ; 50 000 clients revendiqués le 4 septembre selon le chercheur SaxX, rattachement non confirmé"
   },
-  "data_types": ["identite", "coordonnees", "financier"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
   "sources": [
     {
       "label": "Next (L'Informaticien) — RED by SFR informe ses clients d'une nouvelle fuite, avec une ribambelle de données (19 septembre 2024)",
@@ -27,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "RED by SFR, marque de l'opérateur SFR, informe le 19 septembre 2024 des clients d'une fuite détectée le 3 septembre. Un outil de gestion de commandes a subi un accès externe non autorisé, selon le courriel adressé aux abonnés relayé par Next. Les données concernées comprennent identité, coordonnées, contenu des commandes, type de forfait, IBAN et identifiants du smartphone et de la carte SIM. Mots de passe et contenus de communications sont exclus selon l'opérateur, qui a informé la CNIL et déposé plainte. FrenchBreaches évoque plusieurs dizaines de milliers de clients concernés, sans décompte officiel.",
+  "description": "Selon la presse, RED by SFR, marque de l'opérateur SFR, informe le 19 septembre 2024 des clients d'une fuite détectée le 3 septembre. Un outil de gestion de commandes a subi un accès externe non autorisé, selon le courriel adressé aux abonnés relayé par Next. Les données concernées comprennent identité, coordonnées, contenu des commandes, type de forfait, IBAN et identifiants du smartphone et de la carte SIM. Mots de passe et contenus de communications sont exclus selon l'opérateur, qui a informé la CNIL et déposé plainte. FrenchBreaches évoque plusieurs dizaines de milliers de clients concernés, sans décompte officiel.",
   "timeline": [
     {
       "date": "2024-09-03",

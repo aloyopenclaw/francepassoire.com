@@ -2,11 +2,10 @@
   "slug": "synertrade-20240627",
   "entity": "Synertrade (filiale d'Econocom, éditeur de solutions source-to-pay)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-06-27",
-    "publication": "2024-07-03",
-    "confirmation": "2024-07-11"
+    "publication": "2024-07-03"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 27 juin 2024, la filiale d'Econocom Synertrade, éditeur de solutions source-to-pay utilisées par des grands comptes, reçoit une alerte laissant présager un incident de sécurité. Tous les flux informatiques vers l'extérieur sont coupés et une investigation démarre avec le SOC interne du groupe. Le service est rouvert progressivement le 1er juillet. Le 11 juillet, Econocom indique avoir identifié une fuite de données survenue avant le 27 juin, concernant des données non sensibles au regard du RGPD et un nombre limité de clients, tous informés, les autorités compétentes ayant été averties. Le 16 octobre 2024, l'attaque est revendiquée sur le site vitrine du rançongiciel Cactus. Econocom déplore une attaque particulièrement agressive, ayant donné lieu à une seconde intrusion en rebond contenue par les mesures déployées depuis juillet, au cours de laquelle les données d'un client ont été volées.",
+  "description": "Le 27 juin 2024, la filiale d'Econocom Synertrade, éditeur de solutions source-to-pay utilisées par des grands comptes, reçoit une alerte laissant présager un incident de sécurité. Tous les flux informatiques vers l'extérieur sont coupés et une investigation démarre avec le SOC interne du groupe. Le service est rouvert progressivement le 1er juillet. Selon la presse, le 11 juillet, Econocom indique avoir identifié une fuite de données survenue avant le 27 juin, concernant des données non sensibles au regard du RGPD et un nombre limité de clients, tous informés, les autorités compétentes ayant été averties. Le 16 octobre 2024, l'attaque est revendiquée sur le site vitrine du rançongiciel Cactus. Econocom déplore une attaque particulièrement agressive, ayant donné lieu à une seconde intrusion en rebond contenue par les mesures déployées depuis juillet, au cours de laquelle les données d'un client ont été volées.",
   "timeline": [
     {
       "date": "2024-06-27",

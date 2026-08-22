@@ -2,11 +2,10 @@
   "slug": "ehpad-franches-terres-beuzeville-20220824",
   "entity": "EHPAD Les Franches Terres (Beuzeville, groupe hospitalier du Havre)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-08-24",
-    "publication": "2022-08-24",
-    "confirmation": "2022-08-24"
+    "publication": "2022-08-24"
   },
   "volume": {
     "count": 0,

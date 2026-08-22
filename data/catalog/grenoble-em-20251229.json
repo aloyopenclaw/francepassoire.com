@@ -3,11 +3,10 @@
   "entity": "Grenoble École de Management (GEM)",
   "siren": "817389141",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-29",
-    "publication": "2025-12-31",
-    "confirmation": "2025-12-31"
+    "publication": "2025-12-31"
   },
   "volume": {
     "count": 400000,
@@ -31,7 +30,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 29 décembre 2025, un cybercriminel se présentant sous le pseudo « CZX » a affirmé sur BreachForums avoir infiltré les systèmes de Grenoble École de Management en novembre. Il revendique des informations sur plus de 400 000 personnes dans une archive de 1,35 Go : noms, e-mails, téléphones, adresses postales, parcours académiques et professionnels, statuts d’événements, préférences d’abonnement et adresses IP. Selon la presse, les données proviendraient d’un CRM ou outil marketing, avec abonnés à des newsletters et prospects externes. L’école, qui accueille environ 7 000 étudiants, a confirmé l’intrusion sur son site officiel, le périmètre étant en cours d’analyse.",
+  "description": "Le 29 décembre 2025, un cybercriminel se présentant sous le pseudo « CZX » a affirmé sur BreachForums avoir infiltré les systèmes de Grenoble École de Management en novembre. Il revendique des informations sur plus de 400 000 personnes dans une archive de 1,35 Go : noms, e-mails, téléphones, adresses postales, parcours académiques et professionnels, statuts d’événements, préférences d’abonnement et adresses IP. Selon la presse, les données proviendraient d’un CRM ou outil marketing, avec abonnés à des newsletters et prospects externes. Selon la presse, l’école, qui accueille environ 7 000 étudiants, a confirmé l’intrusion sur son site officiel, le périmètre étant en cours d’analyse.",
   "timeline": [
     {
       "date": "2025-12-29",

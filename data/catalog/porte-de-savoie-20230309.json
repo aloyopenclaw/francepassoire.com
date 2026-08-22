@@ -3,18 +3,20 @@
   "entity": "Commune de Porte-de-Savoie",
   "siren": "200083681",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-03-09",
-    "publication": "2023-03-09",
-    "confirmation": "2023-03-09"
+    "publication": "2023-03-09"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "données personnelles de plusieurs dizaines d'habitants (parents d'élèves, usagers, élus, agents) dérobées, dont identités et coordonnées bancaires ; une partie diffusée sur internet selon la mairie ; nombre exact non chiffré"
   },
-  "data_types": ["identite", "financier"],
+  "data_types": [
+    "identite",
+    "financier"
+  ],
   "sources": [
     {
       "label": "ICI par France Bleu — Savoie : la commune de Porte-de-Savoie touchée par une cyberattaque (9 mars 2023)",
@@ -32,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 6 mars 2023, une cyberattaque paralyse la commune nouvelle de Porte-de-Savoie (Francin, Les Marches), 3 700 habitants. Le maire Franck Villand confirme le vol de données personnelles de plusieurs habitants : parents d'élèves, usagers, élus et agents. Identités et coordonnées bancaires, utilisées pour les paiements du périscolaire ou de l'eau, sont concernées. La mairie indique qu'une partie des données a été diffusée sur internet. Une rançon a été réclamée puis refusée. Une plainte est déposée et un courrier d'information est distribué aux administrés, invités à surveiller leurs comptes.",
+  "description": "Le 6 mars 2023, une cyberattaque paralyse la commune nouvelle de Porte-de-Savoie (Francin, Les Marches), 3 700 habitants. Selon la presse, le maire Franck Villand confirme le vol de données personnelles de plusieurs habitants : parents d'élèves, usagers, élus et agents. Identités et coordonnées bancaires, utilisées pour les paiements du périscolaire ou de l'eau, sont concernées. Selon la presse, la mairie indique qu'une partie des données a été diffusée sur internet. Une rançon a été réclamée puis refusée. Une plainte est déposée et un courrier d'information est distribué aux administrés, invités à surveiller leurs comptes.",
   "timeline": [
     {
       "date": "2023-03-06",

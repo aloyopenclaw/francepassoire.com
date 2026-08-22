@@ -2,11 +2,10 @@
   "slug": "itelis-20251112",
   "entity": "Itelis (réseau de soins optique)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-12",
-    "publication": "2025-11-18",
-    "confirmation": "2025-11-24"
+    "publication": "2025-11-18"
   },
   "volume": {
     "count": 1600000,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 12 novembre 2025, la plateforme Itelis, réseau de soins optique utilisé par plusieurs mutuelles dont AXA, Malakoff Humanis et AG2R, a subi une cyberattaque. Selon l’entreprise, un usurpateur a exploité les accès légitimes d’un opticien partenaire pour extraire des données de prise en charge optique de 2020 au premier trimestre 2022 : identité, date de naissance, numéro de Sécurité sociale, remboursements et données de correction visuelle. Les données bancaires, les e-mails et les adresses postales ne sont pas concernés. La plateforme a été fermée puis rouverte le 18 novembre. Itelis a notifié la CNIL et déposé plainte. Les mutuelles ont commencé à alerter leurs assurés à partir du 24 novembre.",
+  "description": "Le 12 novembre 2025, la plateforme Itelis, réseau de soins optique utilisé par plusieurs mutuelles dont AXA, Malakoff Humanis et AG2R, a subi une cyberattaque. Selon l’entreprise, un usurpateur a exploité les accès légitimes d’un opticien partenaire pour extraire des données de prise en charge optique de 2020 au premier trimestre 2022 : identité, date de naissance, numéro de Sécurité sociale, remboursements et données de correction visuelle. Les données bancaires, les e-mails et les adresses postales ne sont pas concernés. La plateforme a été fermée puis rouverte le 18 novembre. Selon la presse, Itelis a notifié la CNIL et déposé plainte. Les mutuelles ont commencé à alerter leurs assurés à partir du 24 novembre.",
   "timeline": [
     {
       "date": "2025-11-12",

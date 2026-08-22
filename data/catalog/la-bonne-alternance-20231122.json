@@ -2,7 +2,7 @@
   "slug": "la-bonne-alternance-20231122",
   "entity": "La bonne alternance (labonnealternance.apprentissage.beta.gouv.fr, plateforme publique de la mission interministérielle pour l'apprentissage)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-11-22",
     "publication": "2023-12-21"
@@ -28,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 22 novembre 2023, le même pirate que celui de la fuite du SNU, désigné sous les pseudonymes 11037 et LEON, met en vente sur le forum Breached une base issue du site gouvernemental La bonne alternance, plateforme destinée à mettre en relation des personnes en recherche d'alternance avec des entreprises. L'échantillon annoncé comprend plus de 47 800 identités, numéros de téléphone et adresses électroniques. Le ministère du Travail informe les personnes concernées et appelle à la vigilance face aux risques de phishing, comme le rapporte Numerama le 21 décembre 2023.",
+  "description": "Le 22 novembre 2023, le même pirate que celui de la fuite du SNU, désigné sous les pseudonymes 11037 et LEON, met en vente sur le forum Breached une base issue du site gouvernemental La bonne alternance, plateforme destinée à mettre en relation des personnes en recherche d'alternance avec des entreprises. Selon la presse, l'échantillon annoncé comprend plus de 47 800 identités, numéros de téléphone et adresses électroniques. Selon la presse, le ministère du Travail informe les personnes concernées et appelle à la vigilance face aux risques de phishing, comme le rapporte Numerama le 21 décembre 2023.",
   "timeline": [
     {
       "date": "2023-11-22",

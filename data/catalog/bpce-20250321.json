@@ -3,11 +3,10 @@
   "entity": "Groupe Banque populaire-Caisse d'Épargne (BPCE)",
   "siren": "493455042",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-21",
-    "publication": "2025-03-21",
-    "confirmation": "2025-03-21"
+    "publication": "2025-03-21"
   },
   "volume": {
     "count": 0,

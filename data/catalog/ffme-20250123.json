@@ -2,11 +2,10 @@
   "slug": "ffme-20250123",
   "entity": "Fédération française de la montagne et de l’escalade (FFME)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-01-23",
-    "publication": "2025-01-24",
-    "confirmation": "2025-01-23"
+    "publication": "2025-01-24"
   },
   "volume": {
     "count": 0,
@@ -32,9 +31,14 @@
       "label": "Nophi.sh — Fédérations sportives : la vague de cyberattaques qui a exposé des millions de licenciés (18 mars 2026)",
       "url": "https://nophi.sh/blog/federations-sportives-vague-cyberattaques-donnees-licencies",
       "kind": "article"
+    },
+    {
+      "label": "FFME : la FFME victime d'un acte de cyber-malveillance (janvier 2025)",
+      "url": "https://www.ffme.fr/la-ffme-victime-dun-acte-de-cyber-malveillance/",
+      "kind": "officiel"
     }
   ],
-  "description": "Début janvier 2025, la Fédération française de la montagne et de l’escalade a subi une cyberattaque ayant entraîné l’extraction de données personnelles de licenciés et de structures affiliées. Un communiqué relayé le 23 janvier confirme l’incident. Les données concernées comprennent nom et prénom, adresses postale et électronique, identifiant, date de naissance et numéro de téléphone. La fédération précise qu’aucune donnée bancaire ni mot de passe n’a été compromis. La faille à l’origine de l’attaque a été corrigée. Une plainte a été déposée et la CNIL informée. L’incident s’inscrit dans une vague touchant plusieurs fédérations sportives françaises au même moment, avec un prestataire commun pointé par la presse.",
+  "description": "Début janvier 2025, la Fédération française de la montagne et de l’escalade a subi une cyberattaque ayant entraîné l’extraction de données personnelles de licenciés et de structures affiliées. Selon la presse, un communiqué relayé le 23 janvier confirme l’incident. Les données concernées comprennent nom et prénom, adresses postale et électronique, identifiant, date de naissance et numéro de téléphone. Selon la presse, la fédération précise qu’aucune donnée bancaire ni mot de passe n’a été compromis. La faille à l’origine de l’attaque a été corrigée. Une plainte a été déposée et la CNIL informée. L’incident s’inscrit dans une vague touchant plusieurs fédérations sportives françaises au même moment, avec un prestataire commun pointé par la presse.",
   "timeline": [
     {
       "date": "2025-01-23",

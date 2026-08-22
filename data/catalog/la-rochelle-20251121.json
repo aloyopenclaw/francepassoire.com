@@ -3,11 +3,10 @@
   "entity": "Ville de La Rochelle (plateforme de prise de rendez-vous Synbird)",
   "siren": "211703004",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-21",
-    "publication": "2025-11-24",
-    "confirmation": "2025-11-27"
+    "publication": "2025-11-24"
   },
   "volume": {
     "count": 400,
@@ -45,7 +44,7 @@
       "kind": "article"
     }
   ],
-  "description": "La ville de La Rochelle utilise Synbird, éditeur chambérien de prise de rendez-vous en ligne pour les démarches d'état civil. Le 21 novembre 2025, les usagers de 1 300 mairies clientes reçoivent un courriel annonçant qu'un incident de sécurité a affecté l'applicatif. La fuite, circonscrite aux rendez-vous d'octobre, expose noms, prénoms, code postal, adresse électronique et téléphone. Sud Ouest confirme le 27 novembre que La Rochelle est touchée ; les relais de veille évaluent à environ 400 le nombre de personnes concernées et la mairie porte plainte. Synbird, qui a saisi la CNIL, précise qu'aucun mot de passe ni donnée bancaire n'a été compromis.",
+  "description": "La ville de La Rochelle utilise Synbird, éditeur chambérien de prise de rendez-vous en ligne pour les démarches d'état civil. Le 21 novembre 2025, les usagers de 1 300 mairies clientes reçoivent un courriel annonçant qu'un incident de sécurité a affecté l'applicatif. La fuite, circonscrite aux rendez-vous d'octobre, expose noms, prénoms, code postal, adresse électronique et téléphone. Selon la presse, Sud Ouest confirme le 27 novembre que La Rochelle est touchée ; les relais de veille évaluent à environ 400 le nombre de personnes concernées et la mairie porte plainte. Selon la presse, Synbird, qui a saisi la CNIL, précise qu'aucun mot de passe ni donnée bancaire n'a été compromis.",
   "timeline": [
     {
       "date": "2025-11-21",

@@ -3,11 +3,10 @@
   "entity": "Ville de Martigues (plateforme de prise de rendez-vous Synbird)",
   "siren": "211300561",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-21",
-    "publication": "2025-11-24",
-    "confirmation": "2025-11-28"
+    "publication": "2025-11-24"
   },
   "volume": {
     "count": 0,

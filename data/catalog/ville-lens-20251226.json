@@ -2,11 +2,10 @@
   "slug": "ville-lens-20251226",
   "entity": "Ville de Lens",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-26",
-    "publication": "2025-12-26",
-    "confirmation": "2025-12-26"
+    "publication": "2025-12-26"
   },
   "volume": {
     "count": 0,
@@ -38,7 +37,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 26 décembre 2025, la Ville de Lens annonce avoir subi une cyberattaque touchant son système d’information. Les services municipaux fonctionnent en mode dégradé : logiciels métier bloqués, standard téléphonique coupé, portail famille inaccessible. Une plainte a été déposée dès le 23 décembre après une panne du standard. Le diagnostic technique n’a pas déterminé l’origine ni la gravité de l’intrusion. Des mesures de sécurité et de protection des données sont en place. Aucun vol de données n’a été établi et aucune revendication n’est apparue à ce stade.",
+  "description": "Selon la presse, le 26 décembre 2025, la Ville de Lens annonce avoir subi une cyberattaque touchant son système d’information. Les services municipaux fonctionnent en mode dégradé : logiciels métier bloqués, standard téléphonique coupé, portail famille inaccessible. Une plainte a été déposée dès le 23 décembre après une panne du standard. Le diagnostic technique n’a pas déterminé l’origine ni la gravité de l’intrusion. Des mesures de sécurité et de protection des données sont en place. Aucun vol de données n’a été établi et aucune revendication n’est apparue à ce stade.",
   "timeline": [
     {
       "date": "2025-12-23",

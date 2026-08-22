@@ -2,18 +2,21 @@
   "slug": "harvest-20250228",
   "entity": "Harvest",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-28",
-    "publication": "2025-03-19",
-    "confirmation": "2025-03-20"
+    "publication": "2025-03-19"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "volume global non communiqué ; des clients de MAIF Solutions Financières et du groupe BPCE sont concernés, sans chiffrage publié"
   },
-  "data_types": ["identite", "coordonnees", "financier"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
   "sources": [
     {
       "label": "L'Agefi — Harvest : la Maif alerte ses clients sur la fuite de leurs données",
@@ -31,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Harvest, éditeur français de logiciels de gestion de patrimoine utilisés par une large part des conseillers, subit un rançongiciel le 27 février 2025 chez un hébergeur. Le 17 mars, il prévient ses clients de la compromission de fichiers internes et de comptes de messagerie. Ses clients institutionnels tirent ensuite l'alarme : MAIF Solutions Financières signale un accès non autorisé à des données d'état civil, situation matrimoniale, professionnelle, revenus et patrimoine. BPCE indique que identité, encours et numéros de compte-titres ont pu être consultés. Mots de passe et RIB sont épargnés selon les deux groupes ; plaintes et notifications CNIL ont été déposées.",
+  "description": "Harvest, éditeur français de logiciels de gestion de patrimoine utilisés par une large part des conseillers, subit un rançongiciel le 27 février 2025 chez un hébergeur. Le 17 mars, il prévient ses clients de la compromission de fichiers internes et de comptes de messagerie. Ses clients institutionnels tirent ensuite l'alarme : MAIF Solutions Financières signale un accès non autorisé à des données d'état civil, situation matrimoniale, professionnelle, revenus et patrimoine. Selon la presse, BPCE indique que identité, encours et numéros de compte-titres ont pu être consultés. Mots de passe et RIB sont épargnés selon les deux groupes ; plaintes et notifications CNIL ont été déposées.",
   "timeline": [
     {
       "date": "2025-02-27",

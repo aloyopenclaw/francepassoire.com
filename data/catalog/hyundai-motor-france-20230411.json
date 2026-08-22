@@ -2,11 +2,10 @@
   "slug": "hyundai-motor-france-20230411",
   "entity": "Hyundai Motor France",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-04-11",
-    "publication": "2023-04-13",
-    "confirmation": "2023-04-11"
+    "publication": "2023-04-13"
   },
   "volume": {
     "count": 0,
@@ -25,8 +24,8 @@
     },
     {
       "label": "BleepingComputer : Hyundai data breach exposes owner details in France and Italy (13 avril 2023)",
-      "url": "https://www.bleepingcomputer.com/news/security/hyundai-data-breach-exposes-owner-details-in-france-and-italy/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20230412161726/https://www.bleepingcomputer.com/news/security/hyundai-data-breach-exposes-owner-details-in-france-and-italy/",
+      "kind": "archive"
     },
     {
       "label": "SecurityAffairs : Hyundai suffered a data breach that impacted Italian and French car owners (12 avril 2023)",
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 11 avril 2023, Hyundai Motor France avertit par courriel ses clients que sa base de données clients a fait l'objet d'un accès non autorisé par un tiers. L'attaquant a consulté des noms, prénoms, dates de naissance, adresses électroniques et postales, numéros de téléphone, numéros de client et numéros de châssis des véhicules. Le périmètre visé couvre la France et l'Italie, pour les propriétaires ainsi que pour les personnes ayant réservé un essai. Contacté par Zataz, le service presse de Hyundai Motor France indique que l'enquête est en cours ; la filiale italienne confirme parallèlement l'incident. L'échelle exacte de la fuite n'est pas communiquée et les coordonnées bancaires sont présentées comme non concernées.",
+  "description": "Selon la presse, le 11 avril 2023, Hyundai Motor France avertit par courriel ses clients que sa base de données clients a fait l'objet d'un accès non autorisé par un tiers. L'attaquant a consulté des noms, prénoms, dates de naissance, adresses électroniques et postales, numéros de téléphone, numéros de client et numéros de châssis des véhicules. Le périmètre visé couvre la France et l'Italie, pour les propriétaires ainsi que pour les personnes ayant réservé un essai. Contacté par Zataz, le service presse de Hyundai Motor France indique que l'enquête est en cours ; la filiale italienne confirme parallèlement l'incident. L'échelle exacte de la fuite n'est pas communiquée et les coordonnées bancaires sont présentées comme non concernées.",
   "timeline": [
     {
       "date": "2023-04-11",

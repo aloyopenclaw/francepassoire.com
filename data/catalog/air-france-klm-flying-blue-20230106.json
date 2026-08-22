@@ -2,11 +2,10 @@
   "slug": "air-france-klm-flying-blue-20230106",
   "entity": "Air France-KLM (programme Flying Blue)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-01-06",
-    "publication": "2023-01-09",
-    "confirmation": "2023-01-06"
+    "publication": "2023-01-09"
   },
   "volume": {
     "count": 0,
@@ -25,8 +24,8 @@
     },
     {
       "label": "SecurityWeek — Air France, KLM Customers Warned of Loyalty Program Account Hacking (9 janvier 2023)",
-      "url": "https://www.securityweek.com/air-france-klm-customers-warned-loyalty-program-account-hacking/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20230109141618/https://www.securityweek.com/air-france-klm-customers-warned-loyalty-program-account-hacking",
+      "kind": "archive"
     },
     {
       "label": "Zataz — Clients d'Air France, FlyingBlue, etc., changez vos mots de passe (20 mars 2023)",
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 6 janvier 2023, Air France-KLM détecte un comportement suspect d'une entité non autorisée sur des comptes du programme de fidélité Flying Blue et notifie individuellement les membres concernés. Selon le courrier envoyé aux victimes, les données dérobées comprennent noms, prénoms, adresses électroniques, numéros de téléphone, identifiants Flying Blue, soldes de miles et dernières transactions. Interrogée sur les réseaux sociaux, la compagnie a indiqué que l'attaque a été bloquée à temps, qu'aucun mile n'a été débité, et a invité les membres à changer leur mot de passe. En mars 2023, des groupes pro-russes font circuler des accès à des comptes Air France, Flying Blue et Transavia, relance documentée par Zataz.",
+  "description": "Selon la presse, le 6 janvier 2023, Air France-KLM détecte un comportement suspect d'une entité non autorisée sur des comptes du programme de fidélité Flying Blue et notifie individuellement les membres concernés. Selon le courrier envoyé aux victimes, les données dérobées comprennent noms, prénoms, adresses électroniques, numéros de téléphone, identifiants Flying Blue, soldes de miles et dernières transactions. Interrogée sur les réseaux sociaux, la compagnie a indiqué que l'attaque a été bloquée à temps, qu'aucun mile n'a été débité, et a invité les membres à changer leur mot de passe. En mars 2023, des groupes pro-russes font circuler des accès à des comptes Air France, Flying Blue et Transavia, relance documentée par Zataz.",
   "timeline": [
     {
       "date": "2023-01-06",

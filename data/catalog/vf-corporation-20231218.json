@@ -2,11 +2,10 @@
   "slug": "vf-corporation-20231218",
   "entity": "VF Corporation (Vans, The North Face, Timberland, Napapijri)",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-12-18",
-    "publication": "2023-12-18",
-    "confirmation": "2024-03-21"
+    "publication": "2023-12-18"
   },
   "volume": {
     "count": 35500000,

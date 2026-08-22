@@ -3,18 +3,20 @@
   "entity": "Département des Alpes-Maritimes",
   "siren": "220600019",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-11-28",
-    "publication": "2022-11-29",
-    "confirmation": "2022-11-25"
+    "publication": "2022-11-29"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "292 Go de données revendiqués par Play Ransomware, dont 13 Go publiés le 28 novembre : photocopies de passeports, cartes grises, dossiers RH (paie, recrutement) et fichiers de collèges ; nombre de personnes concernées non communiqué"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "20 Minutes — Alpes-Maritimes : hackers, rançon, fichiers publiés… La cyberattaque du conseil départemental désormais signée (1er décembre 2022)",

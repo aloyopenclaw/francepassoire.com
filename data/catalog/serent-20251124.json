@@ -3,11 +3,10 @@
   "entity": "Ville de Sérent (plateforme de prise de rendez-vous RDV360)",
   "siren": "215602442",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-24",
-    "publication": "2025-11-24",
-    "confirmation": "2025-11-24"
+    "publication": "2025-11-24"
   },
   "volume": {
     "count": 0,

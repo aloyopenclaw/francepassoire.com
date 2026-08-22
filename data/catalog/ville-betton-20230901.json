@@ -1,20 +1,22 @@
 {
-  "slug": "ville-betton-20230916",
+  "slug": "ville-betton-20230901",
   "entity": "Ville de Betton",
   "siren": "213500242",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-09-01",
-    "publication": "2023-09-16",
-    "confirmation": "2023-09-18"
+    "publication": "2023-09-16"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "données confidentielles d'habitants diffusées sur le darknet ; la municipalité précise que les pièces fournies pour les demandes de carte d'identité et de passeport ne sont pas concernées ; nombre de personnes non communiqué"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Ouest-France — Cyberattaque de Betton : Medusa a mis à exécution sa menace et diffuse des données confidentielles (septembre 2023, article archivé)",
@@ -47,7 +49,7 @@
       "kind": "article"
     }
   ],
-  "description": "La ville de Betton, près de Rennes, annonce le 1er septembre 2023 avoir été victime d'une « attaque d'ampleur » ; le groupe de rançongiciel Medusa exige 100 000 dollars et menace de publier les données volées. Le 16 septembre au matin, Medusa met sa menace à exécution et diffuse sur le darknet des données confidentielles d'habitants, repérées par le hacker éthique SaxX. La municipalité, accompagnée par le CSIRT Breizh Cyber, précise que les pièces fournies pour les demandes de carte d'identité et de passeport ne sont pas concernées.",
+  "description": "Selon la presse, la ville de Betton, près de Rennes, annonce le 1er septembre 2023 avoir été victime d'une « attaque d'ampleur » ; le groupe de rançongiciel Medusa exige 100 000 dollars et menace de publier les données volées. Le 16 septembre au matin, Medusa met sa menace à exécution et diffuse sur le darknet des données confidentielles d'habitants, repérées par le hacker éthique SaxX. Selon la presse, la municipalité, accompagnée par le CSIRT Breizh Cyber, précise que les pièces fournies pour les demandes de carte d'identité et de passeport ne sont pas concernées.",
   "timeline": [
     {
       "date": "2023-09-01",

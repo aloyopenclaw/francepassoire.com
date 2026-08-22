@@ -2,7 +2,7 @@
   "slug": "faiencerie-de-gien-20220210",
   "entity": "Faïencerie de Gien",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-02-10",
     "publication": "2022-02-19"
@@ -18,8 +18,8 @@
   "sources": [
     {
       "label": "La République du Centre : La Faïencerie de Gien victime d'une cyberattaque (19 février 2022)",
-      "url": "https://www.larep.fr/gien-45500/faits-divers/la-faiencerie-de-gien-victime-d-une-cyberattaque_14087431/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20230321203939/https://www.larep.fr/gien-45500/faits-divers/la-faiencerie-de-gien-victime-d-une-cyberattaque_14087431/",
+      "kind": "archive"
     },
     {
       "label": "20 Minutes : Loiret. La faïencerie de Gien paralysée par une cyberattaque avec demande de rançon (21 février 2022)",

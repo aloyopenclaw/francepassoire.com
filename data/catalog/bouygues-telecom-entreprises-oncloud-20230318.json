@@ -5,7 +5,8 @@
   "statut": "confirmee",
   "dates": {
     "revendication": "2023-03-18",
-    "publication": "2023-04-03"
+    "publication": "2023-04-03",
+    "confirmation": "2023-04-03"
   },
   "volume": {
     "count": 0,
@@ -30,6 +31,11 @@
       "label": "Clubic : la filiale cloud de Bouygues Telecom touchée par un ransomware (11 avril 2023)",
       "url": "https://www.clubic.com/telephone-portable/operateur-telephonie-mobile/bouygues-telecom/actualite-464910-la-filiale-cloud-de-bouygues-telecom-touchee-par-un-ransomware-que-s-est-il-passe.html",
       "kind": "article"
+    },
+    {
+      "label": "Bouygues Telecom Entreprises : communiqué de presse sur l'incident OnCloud (avril 2023)",
+      "url": "https://www.bouyguestelecom-pro.fr/media/wysiwyg/a-propos/communiques-presse/bouygues-telecom-entreprises-oncloud.pdf",
+      "kind": "officiel"
     }
   ],
   "description": "Le 18 mars 2023, une cyberattaque par rançongiciel touche une partie de l'infrastructure du service OnCloud de Bouygues Telecom Entreprises, l'offre de cloud d'infrastructure de l'opérateur. Conduite contre un hôte VMware ESXi selon LeMagIT, l'attaque paralyse quelques dizaines de clients entreprises, dont l'accès aux données hébergées est perturbé. L'opérateur indique que l'incident est cloisonné et que les services sont rétablis début avril. Aucune revendication fiable n'est publiée, les assaillants ayant ultérieurement affiché un nom de victime erroné.",

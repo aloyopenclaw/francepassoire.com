@@ -2,11 +2,10 @@
   "slug": "psg-20240403",
   "entity": "Paris Saint-Germain (billetterie en ligne)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-04-03",
-    "publication": "2024-04-09",
-    "confirmation": "2024-04-09"
+    "publication": "2024-04-09"
   },
   "volume": {
     "count": 0,

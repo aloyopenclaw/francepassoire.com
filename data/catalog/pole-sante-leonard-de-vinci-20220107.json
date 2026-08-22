@@ -2,7 +2,7 @@
   "slug": "pole-sante-leonard-de-vinci-20220107",
   "entity": "Pôle Santé Léonard de Vinci (Chambray-lès-Tours)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-01-07",
     "publication": "2022-01-07"
@@ -23,8 +23,8 @@
     },
     {
       "label": "La Nouvelle République : Chambray-lès-Tours : le Pôle de Santé Vinci fortement perturbé par une cyberattaque",
-      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/chambray-les-tours/chambray-les-tours-le-pole-de-sante-vinci-fortement-perturbe-par-une-cyberattaque",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20220107185137/https://www.lanouvellerepublique.fr/indre-et-loire/commune/chambray-les-tours/chambray-les-tours-le-pole-de-sante-vinci-fortement-perturbe-par-une-cyberattaque",
+      "kind": "archive"
     },
     {
       "label": "Franceinfo : Touraine : un pôle santé victime d'une cyberattaque avec une demande de rançon",
@@ -37,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 6 au 7 janvier 2022, le Pôle Santé Léonard de Vinci, clinique privée de Chambray-lès-Tours (Indre-et-Loire), est frappé par un rançongiciel qui chiffre une partie de son système d'information et empêche l'accès aux dossiers patients. Une centaine d'opérations est annulée et l'établissement fonctionne en mode dégradé. Une rançon de 500 000 euros est rapportée par la presse. Le CHRU de Tours signale l'incident, confirmé par la direction de la clinique. Aucune fuite de données n'est confirmée.",
+  "description": "Dans la nuit du 6 au 7 janvier 2022, le Pôle Santé Léonard de Vinci, clinique privée de Chambray-lès-Tours (Indre-et-Loire), est frappé par un rançongiciel qui chiffre une partie de son système d'information et empêche l'accès aux dossiers patients. Une centaine d'opérations est annulée et l'établissement fonctionne en mode dégradé. Une rançon de 500 000 euros est rapportée par la presse. Selon la presse, le CHRU de Tours signale l'incident, confirmé par la direction de la clinique. Selon la presse, aucune fuite de données n'est confirmée.",
   "timeline": [
     {
       "date": "2022-01-07",

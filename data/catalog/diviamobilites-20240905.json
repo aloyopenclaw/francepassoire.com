@@ -2,7 +2,7 @@
   "slug": "diviamobilites-20240905",
   "entity": "DiviaMobilités (Keolis Dijon Multimodalité)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-09-05",
     "publication": "2024-09-05"
@@ -35,8 +35,8 @@
     },
     {
       "label": "Le Journal de la Côte-d'Or : Les données des clients de DiviaMobilités volées par un hacker, que faire si vous êtes concerné (septembre 2024)",
-      "url": "https://www.lejdc.fr/dijon-21000/actualites/les-donnees-des-clients-de-diviamobilites-volees-par-un-hacker-que-faire-si-vous-etes-concerne_14558902/",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20240906154927/https://www.lejdc.fr/dijon-21000/actualites/les-donnees-des-clients-de-diviamobilites-volees-par-un-hacker-que-faire-si-vous-etes-concerne_14558902/",
+      "kind": "archive"
     }
   ],
   "description": "Fin août 2024, un prestataire de DiviaMobilités, l'exploitant des transports en commun de la métropole dijonnaise, est victime d'une action malveillante : un tiers non autorisé parvient à accéder à des données. L'incident est rendu public le 5 septembre par un message adressé à toute la base clients : les titulaires d'une carte DiviaMobilités ou d'un compte e-boutique sont concernés et des noms, prénoms, dates de naissance, adresses postales, e-mails, numéros de téléphone et IBAN sont susceptibles d'avoir été dérobés. La CNIL est notifiée et les clients sont invités à changer immédiatement de mot de passe et à se méfier des tentatives de phishing et de smishing.",

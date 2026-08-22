@@ -1,20 +1,22 @@
 {
-  "slug": "sartrouville-20230817",
+  "slug": "sartrouville-20230822",
   "entity": "Ville de Sartrouville",
   "siren": "217805860",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-08-22",
-    "publication": "2023-08-22",
-    "confirmation": "2023-08-18"
+    "publication": "2023-08-22"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "données d'agents municipaux mises en ligne par Medusa ; rançon de 500 000 dollars exigée ; environ 200 000 euros de préjudice chiffré par la mairie selon Le Parisien"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Le Parisien — Cyberattaques : la mairie de Sartrouville paralysée par des hackers (18 août 2023)",

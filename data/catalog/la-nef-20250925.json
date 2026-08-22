@@ -2,11 +2,10 @@
   "slug": "la-nef-20250925",
   "entity": "La Nef",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-25",
-    "publication": "2025-09-25",
-    "confirmation": "2025-09-09"
+    "publication": "2025-09-25"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 25 septembre 2025, La Nef, banque coopérative éthétique revendiquant 50 000 sociétaires, alerte une partie de ses usagers. Une fuite d’adresses e-mail a été confirmée le 9 septembre, grâce à la vigilance de sociétaires. Elle provient de SLIB, fournisseur de la solution de vote en ligne Agathe, utilisée deux ans pour les assemblées générales. Un outil de statistiques d’envoi d’e-mails du prestataire a subi une cyberattaque. Seules les adresses utilisées pour les convocations sont concernées. Coordonnées bancaires, pièces d’identité et mots de passe sont exclus. La Nef a notifié la CNIL et exigé un audit du prestataire.",
+  "description": "Le 25 septembre 2025, La Nef, banque coopérative éthétique revendiquant 50 000 sociétaires, alerte une partie de ses usagers. Selon la presse, une fuite d’adresses e-mail a été confirmée le 9 septembre, grâce à la vigilance de sociétaires. Elle provient de SLIB, fournisseur de la solution de vote en ligne Agathe, utilisée deux ans pour les assemblées générales. Un outil de statistiques d’envoi d’e-mails du prestataire a subi une cyberattaque. Seules les adresses utilisées pour les convocations sont concernées. Coordonnées bancaires, pièces d’identité et mots de passe sont exclus. Selon la presse, la Nef a notifié la CNIL et exigé un audit du prestataire.",
   "timeline": [
     {
       "date": "2025-09-09",

@@ -2,11 +2,10 @@
   "slug": "france-travail-stormous-20251027",
   "entity": "France Travail",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-10-27",
-    "publication": "2025-10-29",
-    "confirmation": "2025-10-29"
+    "publication": "2025-10-29"
   },
   "volume": {
     "count": 31000,

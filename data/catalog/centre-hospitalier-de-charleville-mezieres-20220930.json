@@ -2,11 +2,10 @@
   "slug": "centre-hospitalier-de-charleville-mezieres-20220930",
   "entity": "Centre hospitalier de Charleville-Mézières (hôpital Belair, hôpital de Manchester)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-30",
-    "publication": "2022-10-01",
-    "confirmation": "2022-10-01"
+    "publication": "2022-10-01"
   },
   "volume": {
     "count": 0,

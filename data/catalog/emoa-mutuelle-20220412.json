@@ -3,18 +3,22 @@
   "entity": "Emoa Mutuelle du Var",
   "siren": "783169220",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-04-12",
-    "publication": "2022-07-29",
-    "confirmation": "2022-05-06"
+    "publication": "2022-07-29"
   },
   "volume": {
     "count": 661000,
     "unit": "lignes",
     "label": "661 000 lignes mises en vente pour « environ 80 000 courriels » selon le vendeur ; deux fuites en mars puis avril 2022 ; noms, dates de naissance, codes postaux, e-mails ; près de 3 000 numéros de Sécurité sociale ; pour une petite part, photocopies de pièces d'identité et RIB"
   },
-  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Le JDD — Les données personnelles de 80 000 adhérents d'une mutuelle française vendues sur le darknet (29 juillet 2022, article archivé)",
@@ -27,7 +31,7 @@
       "kind": "article"
     }
   ],
-  "description": "Emoa, mutuelle varoise d'environ 80 000 adhérents, subit deux fuites successives au printemps 2022 : un premier piratage courant mars, repéré avec l'ANSSI, puis une seconde exfiltration en avril via une faille du site. Le 12 avril, un pirate met en vente 661 000 lignes — annuaire, adhérents, messages clients — avec noms, dates de naissance, codes postaux et e-mails ; près de 3 000 numéros de Sécurité sociale, des photocopies de pièces d'identité et des RIB circulent aussi. Alertée par ZATAZ, la mutuelle reconnaît par son DPO qu'une fuite « a bien été détectée et déclarée » ; Libération puis Le JDD documentent l'affaire fin juillet.",
+  "description": "Emoa, mutuelle varoise d'environ 80 000 adhérents, subit deux fuites successives au printemps 2022 : un premier piratage courant mars, repéré avec l'ANSSI, puis une seconde exfiltration en avril via une faille du site. Le 12 avril, un pirate met en vente 661 000 lignes (annuaire, adhérents, messages clients) avec noms, dates de naissance, codes postaux et e-mails ; près de 3 000 numéros de Sécurité sociale, des photocopies de pièces d'identité et des RIB circulent aussi. Alertée par ZATAZ, la mutuelle reconnaît par son DPO qu'une fuite « a bien été détectée et déclarée » ; Libération puis Le JDD documentent l'affaire fin juillet.",
   "timeline": [
     {
       "date": "2022-04-12",

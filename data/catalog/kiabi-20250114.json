@@ -3,11 +3,10 @@
   "entity": "Kiabi",
   "siren": "344103270",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-01-14",
-    "publication": "2025-01-14",
-    "confirmation": "2025-01-14"
+    "publication": "2025-01-14"
   },
   "volume": {
     "count": 20000,
@@ -36,7 +35,7 @@
       "kind": "article"
     }
   ],
-  "description": "Kiabi annonce le 14 janvier 2025 à l'AFP une cyberattaque par « credential stuffing » détectée le 7 janvier sur son site de seconde main : des attaquants ont réutilisé des identifiants issus de fuites d'autres sites pour accéder à des comptes clients. Environ 20 000 clients sont concernés ; les attaquants ont pu consulter leurs noms, prénoms, dates de naissance et coordonnées, ainsi que leur IBAN lorsqu'il était renseigné. L'enseigne précise que le RIB n'a pas été exposé ; elle a masqué les IBAN, réinitialisé les mots de passe et informé les clients touchés. Le site principal kiabi.com n'est pas concerné selon l'enseigne.",
+  "description": "Kiabi annonce le 14 janvier 2025 à l'AFP une cyberattaque par « credential stuffing » détectée le 7 janvier sur son site de seconde main : des attaquants ont réutilisé des identifiants issus de fuites d'autres sites pour accéder à des comptes clients. Environ 20 000 clients sont concernés ; les attaquants ont pu consulter leurs noms, prénoms, dates de naissance et coordonnées, ainsi que leur IBAN lorsqu'il était renseigné. Selon la presse, l'enseigne précise que le RIB n'a pas été exposé ; elle a masqué les IBAN, réinitialisé les mots de passe et informé les clients touchés. Le site principal kiabi.com n'est pas concerné selon l'enseigne.",
   "timeline": [
     {
       "date": "2025-01-07",

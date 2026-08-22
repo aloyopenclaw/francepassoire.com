@@ -1,20 +1,22 @@
 {
-  "slug": "pole-emploi-majorel-20230823",
+  "slug": "pole-emploi-majorel-20230808",
   "entity": "Pôle emploi (via son prestataire Majorel)",
   "siren": "130005481",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-08-08",
-    "publication": "2023-08-23",
-    "confirmation": "2023-08-23"
+    "publication": "2023-08-23"
   },
   "volume": {
     "count": 10200000,
     "unit": "personnes",
     "label": "base de 10,2 millions d'usagers datée de 2022 mise en vente 900 dollars sur un forum ; Pôle emploi évoque « potentiellement 10 millions de personnes » : inscrits de février 2022 et personnes radiées depuis moins de douze mois"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "La Tribune — Pôle emploi : les données personnelles volées à 10 millions de chômeurs sont en vente sur le darknet (25 août 2023)",
@@ -37,7 +39,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Pôle emploi annonce le 23 août 2023 un « acte de cyber-malveillance » ayant visé son prestataire Majorel et appelant les demandeurs d'emploi à la vigilance : données des inscrits de février 2022 et des personnes radiées depuis moins de douze mois, soit potentiellement 10 millions de personnes (identité, statut de demandeur d'emploi, numéro de Sécurité sociale). Dès le 8 août, un vendeur connu proposait sur un forum une base Pôle emploi de 10,2 millions d'usagers pour 900 dollars, enrichie le 21 août de téléphones et e-mails. Le parquet de Paris ouvre une enquête pour introduction et maintien frauduleux dans un système de traitement automatisé de données.",
+  "description": "Selon la presse, Pôle emploi annonce le 23 août 2023 un « acte de cyber-malveillance » ayant visé son prestataire Majorel et appelant les demandeurs d'emploi à la vigilance : données des inscrits de février 2022 et des personnes radiées depuis moins de douze mois, soit potentiellement 10 millions de personnes (identité, statut de demandeur d'emploi, numéro de Sécurité sociale). Dès le 8 août, un vendeur connu proposait sur un forum une base Pôle emploi de 10,2 millions d'usagers pour 900 dollars, enrichie le 21 août de téléphones et e-mails. Le parquet de Paris ouvre une enquête pour introduction et maintien frauduleux dans un système de traitement automatisé de données.",
   "timeline": [
     {
       "date": "2023-08-08",

@@ -2,11 +2,10 @@
   "slug": "groupe-hospitalier-saint-vincent-20230906",
   "entity": "Groupe hospitalier Saint-Vincent (Strasbourg)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-09-06",
-    "publication": "2023-09-07",
-    "confirmation": "2023-09-07"
+    "publication": "2023-09-07"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 6 au 7 septembre 2023, le groupe hospitalier Saint-Vincent de Strasbourg, qui réunit plusieurs cliniques et établissements médico-sociaux alsaciens, subit une intrusion informatique. Les équipes techniques mettent à l'arrêt l'ensemble du système d'information pour bloquer la propagation, coupant logiciels, messageries et outils de travail au profit d'une prise en charge manuscrite des patients. La porte-parole du groupe confirme l'intrusion et indique que les cliniques maintiennent leur activité en mode dégradé, les patients pouvant continuer à se présenter. Le groupe hospitalier indique par la suite qu'aucune exfiltration de données n'a été détectée ; il avait récemment conduit des exercices de crise en prévision d'une cyberattaque.",
+  "description": "Dans la nuit du 6 au 7 septembre 2023, le groupe hospitalier Saint-Vincent de Strasbourg, qui réunit plusieurs cliniques et établissements médico-sociaux alsaciens, subit une intrusion informatique. Les équipes techniques mettent à l'arrêt l'ensemble du système d'information pour bloquer la propagation, coupant logiciels, messageries et outils de travail au profit d'une prise en charge manuscrite des patients. Selon la presse, la porte-parole du groupe confirme l'intrusion et indique que les cliniques maintiennent leur activité en mode dégradé, les patients pouvant continuer à se présenter. Selon la presse, le groupe hospitalier indique par la suite qu'aucune exfiltration de données n'a été détectée ; il avait récemment conduit des exercices de crise en prévision d'une cyberattaque.",
   "timeline": [
     {
       "date": "2023-09-06",

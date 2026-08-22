@@ -2,11 +2,10 @@
   "slug": "ffta-20250120",
   "entity": "Fédération française de tir à l’arc (FFTA)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-01-20",
-    "publication": "2025-01-24",
-    "confirmation": "2025-01-22"
+    "publication": "2025-01-24"
   },
   "volume": {
     "count": 77000,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 22 janvier 2025, la Fédération française de tir à l’arc a prévenu ses licenciés d’un incident de données personnelles. Selon l’information envoyée aux adhérents, un pirate a dérobé nom et prénom, sexe, date de naissance, adresse postale, téléphone, e-mail et photo de profil. La fédération a déposé plainte et informé la CNIL. La presse spécialisée relie l’incident à une même vague touchant plusieurs fédérations début janvier, avec un prestataire informatique commun visé par une cyberattaque. RTL indique que la FFTA comptait près de 77 000 licenciés pour la saison 2024-2025. L’attaque aurait eu lieu début janvier et n’aurait été découverte que vers le 20 du mois.",
+  "description": "Le 22 janvier 2025, la Fédération française de tir à l’arc a prévenu ses licenciés d’un incident de données personnelles. Selon l’information envoyée aux adhérents, un pirate a dérobé nom et prénom, sexe, date de naissance, adresse postale, téléphone, e-mail et photo de profil. Selon la presse, la fédération a déposé plainte et informé la CNIL. La presse spécialisée relie l’incident à une même vague touchant plusieurs fédérations début janvier, avec un prestataire informatique commun visé par une cyberattaque. RTL indique que la FFTA comptait près de 77 000 licenciés pour la saison 2024-2025. L’attaque aurait eu lieu début janvier et n’aurait été découverte que vers le 20 du mois.",
   "timeline": [
     {
       "date": "2025-01-20",

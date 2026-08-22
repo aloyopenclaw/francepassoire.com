@@ -2,7 +2,7 @@
   "slug": "ville-d-aix-les-bains-20220322",
   "entity": "Ville d'Aix-les-Bains",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-03-22",
     "publication": "2022-03-29"
@@ -27,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 22 mars 2022, les services de la ville savoyarde d'Aix-les-Bains sont paralysés par une cyberattaque. L'enquête révèle que des serveurs municipaux ont été détournés pour miner de la cryptomonnaie, un détournement de ressources plutôt qu'une exfiltration de données. Les équipes informatiques sécurisent le parc et rétablissent progressivement les services.",
+  "description": "Le 22 mars 2022, les services de la ville savoyarde d'Aix-les-Bains sont paralysés par une cyberattaque. Selon la presse, l'enquête révèle que des serveurs municipaux ont été détournés pour miner de la cryptomonnaie, un détournement de ressources plutôt qu'une exfiltration de données. Les équipes informatiques sécurisent le parc et rétablissent progressivement les services.",
   "timeline": [
     {
       "date": "2022-03-22",

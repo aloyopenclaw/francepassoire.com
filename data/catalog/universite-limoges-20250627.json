@@ -3,11 +3,10 @@
   "entity": "Université de Limoges",
   "siren": "198706699",
   "secteur": "recherche",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-06-27",
-    "publication": "2025-06-27",
-    "confirmation": "2025-11-07"
+    "publication": "2025-06-27"
   },
   "volume": {
     "count": 15,

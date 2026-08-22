@@ -3,7 +3,7 @@
   "entity": "Goodvest",
   "siren": "889263117",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-06-04",
     "publication": "2026-06-05"
@@ -30,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début juin 2026, Goodvest, plateforme d'investissement responsable, informe ses clients d'une cyberattaque détectée le 2 juin. Selon l'entreprise, l'attaquant a exploité une clé d'accès technique et interrogé une API de données de façon automatisée. Les informations consultées incluent nom, prénom, e-mail, téléphone, composition du foyer, situation financière, encours, versements en attente, revenus et patrimoine déclarés. Coordonnées bancaires, mots de passe et documents d'identité sont exclus, et les fonds des clients ne sont pas affectés. Le nombre de personnes concernées n'est pas communiqué.",
+  "description": "Selon la presse, début juin 2026, Goodvest, plateforme d'investissement responsable, informe ses clients d'une cyberattaque détectée le 2 juin. Selon l'entreprise, l'attaquant a exploité une clé d'accès technique et interrogé une API de données de façon automatisée. Les informations consultées incluent nom, prénom, e-mail, téléphone, composition du foyer, situation financière, encours, versements en attente, revenus et patrimoine déclarés. Coordonnées bancaires, mots de passe et documents d'identité sont exclus, et les fonds des clients ne sont pas affectés. Le nombre de personnes concernées n'est pas communiqué.",
   "timeline": [
     {
       "date": "2026-06-02",

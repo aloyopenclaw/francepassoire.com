@@ -2,11 +2,10 @@
   "slug": "ile-de-france-nature-20230823",
   "entity": "Agence Île-de-France Nature",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-08-23",
-    "publication": "2023-08-28",
-    "confirmation": "2023-08-28"
+    "publication": "2023-08-28"
   },
   "volume": {
     "count": 0,
@@ -28,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "À la mi-août 2023, l'agence régionale Île-de-France Nature, en charge des espaces naturels franciliens, est victime d'un rançongiciel revendiqué le 23 août par le groupe LockBit sur son site de fuite. Un extrait des fichiers administratifs dérobés est diffusé et les cybercriminels annoncent le 27 août leur intention de révéler l'ensemble des données. Contactée par Numerama, l'agence confirme l'attaque par rançongiciel, indique que des mesures de rétablissement ont été déployées dès la découverte de l'intrusion et que l'analyse des conséquences est en cours, des données ayant été copiées. Une plainte est déposée et la CNIL est saisie.",
+  "description": "À la mi-août 2023, l'agence régionale Île-de-France Nature, en charge des espaces naturels franciliens, est victime d'un rançongiciel revendiqué le 23 août par le groupe LockBit sur son site de fuite. Selon la presse, un extrait des fichiers administratifs dérobés est diffusé et les cybercriminels annoncent le 27 août leur intention de révéler l'ensemble des données. Selon la presse, contactée par Numerama, l'agence confirme l'attaque par rançongiciel, indique que des mesures de rétablissement ont été déployées dès la découverte de l'intrusion et que l'analyse des conséquences est en cours, des données ayant été copiées. Une plainte est déposée et la CNIL est saisie.",
   "timeline": [
     {
       "date": "2023-08-23",

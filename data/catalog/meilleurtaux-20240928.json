@@ -3,18 +3,21 @@
   "entity": "Meilleurtaux",
   "siren": "424264281",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-09-28",
-    "publication": "2024-09-30",
-    "confirmation": "2024-09-30"
+    "publication": "2024-09-30"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "nombre de personnes non communiqué ; clients et prospects concernés ; identité, coordonnées postales et téléphoniques, situation familiale et professionnelle, revenus, date et pays de naissance, nationalité ; l'entreprise écarte mots de passe et données bancaires"
   },
-  "data_types": ["identite", "coordonnees", "financier"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
   "sources": [
     {
       "label": "BFM Tech&Co — Revenus, situation familiale… MeilleurTaux victime d'une fuite de données de ses clients (30 septembre 2024)",
@@ -32,7 +35,7 @@
       "kind": "article"
     }
   ],
-  "description": "Fin septembre 2024, le courtier en crédits Meilleurtaux informe ses clients d'une « attaque externe » ayant touché les systèmes d'un franchisé. Les données exposées couvrent l'identité, les coordonnées, la situation familiale et professionnelle, les revenus, la date et le pays de naissance et la nationalité — de clients comme de prospects ; mots de passe et données bancaires sont écartés. L'entreprise confirme la fuite, lance une enquête avec des prestataires spécialisés et informe les personnes concernées. Le nombre de victimes n'est pas communiqué ; le niveau de détail financier expose à des tentatives d'hameçonnage ciblées.",
+  "description": "Selon la presse, fin septembre 2024, le courtier en crédits Meilleurtaux informe ses clients d'une « attaque externe » ayant touché les systèmes d'un franchisé. Les données exposées couvrent l'identité, les coordonnées, la situation familiale et professionnelle, les revenus, la date et le pays de naissance et la nationalité : de clients comme de prospects ; mots de passe et données bancaires sont écartés. Selon la presse, l'entreprise confirme la fuite, lance une enquête avec des prestataires spécialisés et informe les personnes concernées. Le nombre de victimes n'est pas communiqué ; le niveau de détail financier expose à des tentatives d'hameçonnage ciblées.",
   "timeline": [
     {
       "date": "2024-09-28",

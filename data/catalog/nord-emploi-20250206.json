@@ -3,11 +3,10 @@
   "entity": "Conseil départemental du Nord (plateforme Nord emploi)",
   "siren": "225900018",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-06",
-    "publication": "2025-02-06",
-    "confirmation": "2025-02-06"
+    "publication": "2025-02-06"
   },
   "volume": {
     "count": 0,
@@ -22,11 +21,11 @@
   "sources": [
     {
       "label": "La Voix du Nord — Cyberattaque du site Nord Emploi du conseil départemental : quelles données ont été volées ?",
-      "url": "https://www.lavoixdunord.fr/1552360/article/2025-02-06/cyberattaque-le-site-nord-emploi-du-conseil-departemental-quelles-sont-les",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20250215124534/https://www.lavoixdunord.fr/1552360/article/2025-02-06/cyberattaque-le-site-nord-emploi-du-conseil-departemental-quelles-sont-les",
+      "kind": "archive"
     }
   ],
-  "description": "Le 6 février 2025, le conseil départemental du Nord révèle une cyberattaque contre Nord emploi (emploi.lenord.fr), la plateforme dédiée notamment aux demandes des allocataires du RSA. Selon le Département, les auteurs « ont eu accès à certaines données des utilisateurs inscrits » : état civil, coordonnées, numéro d’allocataire, ainsi que des éléments d’accompagnement — formulaires RSA, CV, nombre de candidatures, discussions avec les référents. Les données bancaires ne sont pas concernées et le versement du RSA n’est pas affecté. Les données obtenues sont « susceptibles d’être divulguées et exploitées de manière illégale par des tiers », invite la collectivité, qui appelle à la vigilance face au phishing.",
+  "description": "Selon la presse, le 6 février 2025, le conseil départemental du Nord révèle une cyberattaque contre Nord emploi (emploi.lenord.fr), la plateforme dédiée notamment aux demandes des allocataires du RSA. Selon le Département, les auteurs « ont eu accès à certaines données des utilisateurs inscrits » : état civil, coordonnées, numéro d’allocataire, ainsi que des éléments d’accompagnement : formulaires RSA, CV, nombre de candidatures, discussions avec les référents. Les données bancaires ne sont pas concernées et le versement du RSA n’est pas affecté. Les données obtenues sont « susceptibles d’être divulguées et exploitées de manière illégale par des tiers », invite la collectivité, qui appelle à la vigilance face au phishing.",
   "timeline": [
     {
       "date": "2025-02-06",

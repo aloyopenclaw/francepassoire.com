@@ -2,11 +2,10 @@
   "slug": "departement-hauts-de-seine-20250520",
   "entity": "Département des Hauts-de-Seine",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-05-20",
-    "publication": "2025-05-20",
-    "confirmation": "2025-05-20"
+    "publication": "2025-05-20"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 20 mai 2025, le département des Hauts-de-Seine (1,6 million d’habitants) annonce une « cyberattaque de grande ampleur » : l’ensemble des systèmes d’information et des moyens de communication est désactivé pour une durée indéterminée. La collectivité dit œuvrer pour « évaluer l’impact, protéger les données des agents et des usagers » et rétablir les accès ; l’Office anticibercriminalité est saisi. Les services aux usagers et l’environnement numérique des collèges restent accessibles. Aucune exfiltration n’est confirmée à ce stade.",
+  "description": "Selon la presse, le 20 mai 2025, le département des Hauts-de-Seine (1,6 million d’habitants) annonce une « cyberattaque de grande ampleur » : l’ensemble des systèmes d’information et des moyens de communication est désactivé pour une durée indéterminée. La collectivité dit œuvrer pour « évaluer l’impact, protéger les données des agents et des usagers » et rétablir les accès ; l’Office anticibercriminalité est saisi. Les services aux usagers et l’environnement numérique des collèges restent accessibles. Selon la presse, aucune exfiltration n’est confirmée à ce stade.",
   "timeline": [
     {
       "date": "2025-05-20",

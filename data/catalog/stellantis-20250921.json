@@ -3,11 +3,10 @@
   "entity": "Stellantis",
   "siren": "879786085",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-21",
-    "publication": "2025-09-24",
-    "confirmation": "2025-09-21"
+    "publication": "2025-09-24"
   },
   "volume": {
     "count": 18000000,
@@ -30,7 +29,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Le 21 septembre 2025, Stellantis indique avoir été victime d'un incident de sécurité affectant la plateforme d'un prestataire externe soutenant son service client en Amérique du Nord. Selon le constructeur, seules des données de contact de clients ont été exposées, sans informations financières ni données dites sensibles ; autorités et clients potentiellement concernés sont prévenus. Selon BleepingComputer relayé par L'Usine Digitale, l'incident s'inscrit dans une campagne visant des environnements Salesforce via des jetons OAuth compromis : le groupe ShinyHunters revendique plus de 18 millions d'enregistrements liés à Stellantis. Ce volume n'est pas confirmé par l'entreprise.",
+  "description": "Selon la presse, le 21 septembre 2025, Stellantis indique avoir été victime d'un incident de sécurité affectant la plateforme d'un prestataire externe soutenant son service client en Amérique du Nord. Selon le constructeur, seules des données de contact de clients ont été exposées, sans informations financières ni données dites sensibles ; autorités et clients potentiellement concernés sont prévenus. Selon BleepingComputer relayé par L'Usine Digitale, l'incident s'inscrit dans une campagne visant des environnements Salesforce via des jetons OAuth compromis : le groupe ShinyHunters revendique plus de 18 millions d'enregistrements liés à Stellantis. Selon la presse, ce volume n'est pas confirmé par l'entreprise.",
   "timeline": [
     {
       "date": "2025-09-21",

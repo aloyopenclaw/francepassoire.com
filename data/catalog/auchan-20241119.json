@@ -3,18 +3,20 @@
   "entity": "Auchan",
   "siren": "481986446",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-11-19",
-    "publication": "2024-11-19",
-    "confirmation": "2024-11-19"
+    "publication": "2024-11-19"
   },
   "volume": {
     "count": 500000,
     "unit": "personnes",
     "label": "plus de 500 000 clients titulaires d'un compte de fidélité selon Auchan (franceinfo, AFP) ; « quelques centaines de milliers » selon l'enseigne interrogée par Le Parisien"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "franceinfo — Auchan a été victime d'une cyberattaque ciblant les données personnelles de plus de 500 000 clients (19 novembre 2024)",
@@ -37,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Auchan alerte ses clients le 19 novembre 2024 : une cyberattaque a entraîné un accès non autorisé aux données des comptes de fidélité de plus de 500 000 clients. Sont dérobés noms, prénoms, adresses e-mail et postales, téléphones, composition familiale renseignée, dates de naissance, numéros de carte et montants des cagnottes. Mots de passe, codes PIN et données bancaires ne sont pas concernés selon l'enseigne, qui a déposé plainte, notifié la CNIL et circonscrit l'incident. Incident distinct de l'acte de cybermalveillance d'août 2025.",
+  "description": "Selon la presse, Auchan alerte ses clients le 19 novembre 2024 : une cyberattaque a entraîné un accès non autorisé aux données des comptes de fidélité de plus de 500 000 clients. Sont dérobés noms, prénoms, adresses e-mail et postales, téléphones, composition familiale renseignée, dates de naissance, numéros de carte et montants des cagnottes. Mots de passe, codes PIN et données bancaires ne sont pas concernés selon l'enseigne, qui a déposé plainte, notifié la CNIL et circonscrit l'incident. Incident distinct de l'acte de cybermalveillance d'août 2025.",
   "timeline": [
     {
       "date": "2024-11-19",

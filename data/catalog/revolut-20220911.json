@@ -2,11 +2,10 @@
   "slug": "revolut-20220911",
   "entity": "Revolut",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-11",
-    "publication": "2022-09-21",
-    "confirmation": "2022-09-11"
+    "publication": "2022-09-21"
   },
   "volume": {
     "count": 50000,

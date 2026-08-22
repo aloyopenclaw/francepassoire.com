@@ -3,18 +3,20 @@
   "entity": "Intersport France",
   "siren": "964201123",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-19",
-    "publication": "2025-03-26",
-    "confirmation": "2025-03-26"
+    "publication": "2025-03-26"
   },
   "volume": {
     "count": 3380000,
     "unit": "personnes",
     "label": "3,38 millions de personnes selon la base mise en vente sur BreachForums (chiffre revendiqué) ; Intersport informe « un peu moins de 3 millions » de clients"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "InCyber — Intersport victime d'une fuite de données",
@@ -32,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Une intrusion survenue le week-end des 15 et 16 mars 2025 dans les systèmes d'Intersport a entraîné, selon l'enseigne, une consultation de données personnelles de clients. Le 19 mars, un vendeur met en vente sur BreachForums une base attribuée à Intersport : 3,38 millions de personnes selon lui, avec noms, prénoms, numéros de téléphone et adresses, et, toujours selon la revendication, des numéros de facture et des références PayPal. Intersport, qui informe « un peu moins de 3 millions » de clients par mail, assure que les données bancaires et les mots de passe ne sont pas compromis ; l'enseigne demande le changement des mots de passe et dit avoir identifié l'origine de la faille.",
+  "description": "Une intrusion survenue le week-end des 15 et 16 mars 2025 dans les systèmes d'Intersport a entraîné, selon l'enseigne, une consultation de données personnelles de clients. Le 19 mars, un vendeur met en vente sur BreachForums une base attribuée à Intersport : 3,38 millions de personnes selon lui, avec noms, prénoms, numéros de téléphone et adresses, et, toujours selon la revendication, des numéros de facture et des références PayPal. Selon la presse, Intersport, qui informe « un peu moins de 3 millions » de clients par mail, assure que les données bancaires et les mots de passe ne sont pas compromis ; l'enseigne demande le changement des mots de passe et dit avoir identifié l'origine de la faille.",
   "timeline": [
     {
       "date": "2025-03-15",
