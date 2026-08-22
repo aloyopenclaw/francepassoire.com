@@ -1,0 +1,43 @@
+{
+  "slug": "seclin-20251126",
+  "entity": "Ville de Seclin (plateforme de prise de rendez-vous RDV360)",
+  "siren": "215905605",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-26",
+    "publication": "2025-11-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; données de rendez-vous d’état civil décrites comme non sensibles par la commune (identité et coordonnées)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Seclin — Une faille de sécurité détectée chez notre prestataire (26 novembre 2025)",
+      "url": "https://www.ville-seclin.fr/actualites/2700-une-faille-de-securite-detectee-chez-notre-prestataire",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next INK — Des fuites de données « non sensibles » dans 1 300 mairies : les intermédiaires ciblés (27 novembre 2025)",
+      "url": "https://next.ink/211076/des-fuites-de-donnees-non-sensibles-dans-1-300-mairies-les-intermediaires-cibles/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 novembre 2025, la ville de Seclin (Nord) publie une alerte sur son site : son prestataire RDV360, éditeur du logiciel de prise de rendez-vous en ligne utilisé pour les démarches d’identité en mairie, annonce avoir été victime d’une cyberattaque. Les données renseignées par les usagers lors des demandes de rendez-vous ont été consultées : nom, prénom, adresse e-mail, numéro de téléphone, code postal et ville. La municipalité précise que ces informations ne sont pas sensibles et que la faille a été rapidement identifiée et sécurisée. La presse spécialisée recense environ 1 300 mairies touchées par des fuites visant les plateformes intermédiaires de rendez-vous. La commune invite ses habitants à la vigilance contre les sollicitations inhabituelles par téléphone, e-mail ou SMS susceptibles d’exploiter ces données d’identité et de contact.",
+  "timeline": [
+    {
+      "date": "2025-11-26",
+      "event": "Le prestataire RDV360 informe ses clients mairies d’une cyberattaque ; la ville de Seclin publie une alerte sur son site internet."
+    },
+    {
+      "date": "2025-11-27",
+      "event": "La presse spécialisée recense environ 1 300 mairies touchées par des fuites de données visant les plateformes de rendez-vous."
+    }
+  ]
+}
