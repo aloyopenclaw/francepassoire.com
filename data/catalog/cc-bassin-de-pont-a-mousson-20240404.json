@@ -1,0 +1,45 @@
+{
+  "slug": "cc-bassin-de-pont-a-mousson-20240404",
+  "entity": "Communauté de communes du bassin de Pont-à-Mousson",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-04",
+    "publication": "2024-04-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "cryptovirus avec demande de rançon; aucun vol de données chiffré par l'intercommunalité"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Est Républicain : Bassin mussipontain. Une cyberattaque avec demande de rançon touche la communauté de communes du bassin de Pont-à-Mousson (6 avril 2024)",
+      "url": "https://www.estrepublicain.fr/societe/2024/04/06/la-communaute-de-communes-victime-d-une-cyberattaque-avec-demande-de-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "L'Est Républicain : Bassin mussipontain. Cyberattaque : on a un site sécurisé plus que la moyenne pour une collectivité (25 janvier 2026)",
+      "url": "https://www.estrepublicain.fr/faits-divers-justice/2026/01/25/on-a-un-site-securite-plus-que-la-moyenne-pour-une-collectivite",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 4 avril 2024 au petit matin, la communauté de communes du bassin de Pont-à-Mousson (Meurthe-et-Moselle) est frappée par un cryptovirus accompagné d'une demande de rançon. Les services de l'intercommunalité sont perturbés et la presse régionale relate l'incident deux jours plus tard. Près de deux ans après, L'Est Républicain revient sur l'attaque, attribuée à un groupe de pirates russe, et sur le renforcement de la sécurité du site de la collectivité.",
+  "timeline": [
+    {
+      "date": "2024-04-04",
+      "event": "Un cryptovirus touche les systèmes de l'intercommunalité au petit matin; une rançon est demandée."
+    },
+    {
+      "date": "2024-04-06",
+      "event": "L'Est Républicain relate la cyberattaque avec demande de rançon."
+    },
+    {
+      "date": "2026-01-25",
+      "event": "Retour d'expérience dans L'Est Républicain : l'attaque est attribuée à un groupe de pirates russe et la collectivité décrit ses renforcements de sécurité."
+    }
+  ]
+}

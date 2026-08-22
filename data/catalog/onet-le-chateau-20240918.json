@@ -1,0 +1,51 @@
+{
+  "slug": "onet-le-chateau-20240918",
+  "entity": "Commune d'Onet-le-Château",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-18",
+    "publication": "2024-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sites internet et intranet piratés, e-mails entrants détournés vers les pirates; un vol de données des administrés n'est pas exclu"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Occitanie : Surtout ne nous envoyez plus d'e-mail. Des pirates prennent le contrôle du site web d'Onet-le-Château (18 septembre 2024)",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/aveyron/surtout-ne-nous-envoyez-plus-d-e-mail-des-pirates-prennent-le-controle-du-site-web-d-onet-le-chateau-3034100.html",
+      "kind": "article"
+    },
+    {
+      "label": "Centre Presse (Aveyron) : Très certainement victime d'un piratage, la commune d'Onet-le-Château lance un appel (18 septembre 2024)",
+      "url": "https://www.centrepresseaveyron.fr/2024/09/18/tres-certainement-victime-dun-piratage-la-commune-donet-le-chateau-lance-un-appel-ce-mercredi-12205067.php",
+      "kind": "article"
+    },
+    {
+      "label": "Centre Presse (Aveyron) : Piratage informatique à Onet-le-Château, la situation est revenue à la normale ce mercredi après-midi (18 septembre 2024)",
+      "url": "https://www.centrepresseaveyron.fr/2024/09/18/piratage-informatique-a-onet-le-chateau-la-situation-est-revenue-a-la-normale-ce-mercredi-apres-midi-12205816.php",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche : Les adresses mail de la mairie sont détournées, une commune de l'Aveyron très certainement victime d'un piratage (18 septembre 2024)",
+      "url": "https://www.ladepeche.fr/2024/09/18/les-adresses-mail-de-la-mairie-sont-detournees-une-commune-de-laveyron-tres-certainement-victime-dun-piratage-12205663.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 septembre 2024 au matin, la commune d'Onet-le-Château (Aveyron, environ 11 000 habitants) alerte ses habitants : ses sites internet et intranet sont très certainement piratés et plusieurs services sont perturbés. Depuis la veille, le responsable informatique a perdu le contrôle de l'administration du site et les e-mails entrants adressés à la mairie sont détournés vers les pirates, la commune ne recevant plus aucun courriel. L'attaque se situe chez l'hébergeur selon toute vraisemblance. Les contacts doivent se faire uniquement par téléphone et un vol de données des administrés n'est pas exclu. La situation revient à la normale vers 13 heures.",
+  "timeline": [
+    {
+      "date": "2024-09-18",
+      "event": "Alerte de la mairie : sites internet et intranet piratés, e-mails entrants détournés depuis la veille, contacts uniquement par téléphone."
+    },
+    {
+      "date": "2024-09-18",
+      "event": "Retour à la normale en début d'après-midi; la piste d'une cyberattaque chez l'hébergeur est évoquée, un vol de données des administrés n'est pas exclu."
+    }
+  ]
+}

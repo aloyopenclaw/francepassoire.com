@@ -1,0 +1,46 @@
+{
+  "slug": "glnf-20240726",
+  "entity": "Grande Loge nationale française (GLNF)",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-26",
+    "publication": "2024-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "menace de divulgation d'informations confidentielles si la rançon n'est pas payée; volume de données détenu non précisé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : Un célèbre groupe de hackers revendique une attaque contre une loge maçonnique (27 juillet 2024)",
+      "url": "https://www.numerama.com/cyberguerre/1781450-une-grande-loge-des-francs-macons-victime-dune-cyberattaque-des-hackers-de-lockbit.html",
+      "kind": "article"
+    },
+    {
+      "label": "DNA : Sécurité. Francs-maçons, la Grande Loge nationale française victime d'une cyberattaque (4 septembre 2024)",
+      "url": "https://www.dna.fr/faits-divers-justice/2024/09/04/francs-macons-la-grande-loge-nationale-francaise-victime-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "L'Est Républicain : Francs-maçons. La Grande Loge nationale française victime d'une cyberattaque (4 septembre 2024)",
+      "url": "https://www.estrepublicain.fr/faits-divers-justice/2024/09/04/francs-macons-la-grande-loge-nationale-francaise-victime-d-une-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 juillet 2024, le groupe de rançongiciel LockBit revendique une cyberattaque contre la Grande Loge nationale française, obédience maçonnique. Les pirates menacent de divulguer des informations confidentielles si une rançon n'est pas payée avant le 4 août. Début septembre, la presse régionale confirme que l'obédience, touchée au cours de l'été, a été menacée de diffusion de données par un groupe de hackers. L'affaire intervient dans une série de revendications de LockBit contre des organisations françaises cet été-là.",
+  "timeline": [
+    {
+      "date": "2024-07-26",
+      "event": "LockBit revendique l'attaque contre la GLNF et fixe au 4 août l'échéance de paiement de la rançon sous menace de divulgation."
+    },
+    {
+      "date": "2024-09-04",
+      "event": "La DNA et L'Est Républicain relatent la cyberattaque confirmée par l'obédience, survenue au cours de l'été."
+    }
+  ]
+}

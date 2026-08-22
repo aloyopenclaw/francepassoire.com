@@ -1,0 +1,55 @@
+{
+  "slug": "ville-de-val-de-reuil-20240905",
+  "entity": "Commune de Val-de-Reuil",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-05",
+    "publication": "2024-09-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "serveurs municipaux visés par une cyberattaque d'origine inconnue; lignes internet et téléphoniques suspendues; aucun vol de données chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Val-de-Reuil : Cyberattaque sur les serveurs de la mairie, la ville prend des mesures pour assurer la continuité du service public (5 septembre 2024)",
+      "url": "https://www.valdereuil.fr/actualites/cyberattaque-sur-les-serveurs-de-la-mairie-la-ville-prend-des-mesures-pour-assurer-la-continuite-du-service-public",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Parisien (Eure) : La municipalité de Val-de-Reuil victime d'une cyberattaque (6 septembre 2024)",
+      "url": "https://www.leparisien.fr/eure-27/la-municipalite-de-val-de-reuil-victime-dune-cyberattaque-06-09-2024-L57ZOUCSKZER3KZONMC5E6MCAI.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France : Victime d'une cyberattaque, la mairie de Val-de-Reuil suspend ses lignes internet et téléphoniques (septembre 2024)",
+      "url": "https://web.archive.org/web/20240919050735/https://www.ouest-france.fr/normandie/val-de-reuil-27100/victime-dune-cyberattaque-la-mairie-de-val-de-reuil-suspend-ses-lignes-internet-et-telephoniques-a9c50c64-6b78-11ef-bffb-cb4513feb8f2",
+      "kind": "archive"
+    },
+    {
+      "label": "actu.fr Normandie : Cyberattaque à Val-de-Reuil, un retour à la normale attendu lundi (septembre 2024)",
+      "url": "https://actu.fr/normandie/val-de-reuil_27701/cyberattaque-a-val-de-reuil-un-retour-a-la-normale-attendu-lundi_61576094.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Après plusieurs jours d'incidents inhabituels constatés sur son réseau informatique interne, la ville de Val-de-Reuil (Eure) annonce le 5 septembre 2024 que ses serveurs ont été victimes d'une cyberattaque d'origine inconnue. Les analyses font apparaître que des pirates ont ciblé les serveurs de la mairie; par précaution, la commune suspend ses lignes internet et téléphoniques et prend des mesures pour assurer la continuité du service public. La presse régionale relate l'incident le lendemain et un retour à la normale est attendu le lundi suivant.",
+  "timeline": [
+    {
+      "date": "2024-09-05",
+      "event": "Communiqué municipal : des incidents inhabituels constatés depuis plusieurs jours révèlent une cyberattaque sur les serveurs; lignes internet et téléphoniques suspendues."
+    },
+    {
+      "date": "2024-09-06",
+      "event": "Le Parisien et Ouest-France relatent l'attaque, quelques jours après celle visant le site de la Région Normandie."
+    },
+    {
+      "date": "2024-09-08",
+      "event": "Selon actu.fr, un retour à la normale est attendu le lundi 9 septembre."
+    }
+  ]
+}

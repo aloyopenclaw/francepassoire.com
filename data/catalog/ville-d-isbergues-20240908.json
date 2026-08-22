@@ -1,0 +1,50 @@
+{
+  "slug": "ville-d-isbergues-20240908",
+  "entity": "Commune d'Isbergues",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-08",
+    "publication": "2024-09-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "majorité des services municipaux impactée; chantage refusé; certains services perdent six mois de travail et l'accès aux archives reste coupé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Voix du Nord : La mairie d'Isbergues victime d'une cyberattaque depuis dimanche, la majorité des services impactés (12 septembre 2024)",
+      "url": "https://web.archive.org/web/20240926230353/https://www.lavoixdunord.fr/1501355/article/2024-09-12/la-mairie-d-isbergues-victime-d-une-cyberattaque-depuis-dimanche-la-majorite-des",
+      "kind": "archive"
+    },
+    {
+      "label": "Nord Littoral : Après une cyberattaque, la mairie d'Isbergues met en garde contre les tentatives (12 septembre 2024)",
+      "url": "https://web.archive.org/web/20240912165532/https://www.nordlittoral.fr/221686/article/2024-09-12/apres-une-cyberattaque-la-mairie-d-isbergues-met-en-garde-contre-les-tentatives",
+      "kind": "archive"
+    },
+    {
+      "label": "La Voix du Nord : Cyberattaque à la mairie d'Isbergues : le chantage refusé, un nouveau système (5 octobre 2024)",
+      "url": "https://web.archive.org/web/20241005141349/https://www.lavoixdunord.fr/1509300/article/2024-10-05/cyberattaque-la-mairie-d-isbergues-le-chantage-refuse-un-nouveau-systeme",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le dimanche 8 septembre 2024, la ville d'Isbergues (Pas-de-Calais) est victime d'une attaque informatique qui impacte la majorité de ses services. Les mesures d'urgence sont appliquées immédiatement et la mairie met en garde ses administrés contre des tentatives d'escroquerie survenant dans la foulée. Les pirates tentent un chantage, que la commune refuse : début octobre, certains services ont perdu six mois de travail, l'accès aux archives reste coupé et un nouveau système informatique est reconstruit.",
+  "timeline": [
+    {
+      "date": "2024-09-08",
+      "event": "Attaque informatique un dimanche : la majorité des services municipaux est impactée et les mesures d'urgence appliquées."
+    },
+    {
+      "date": "2024-09-12",
+      "event": "La presse régionale relate l'attaque et les mises en garde de la mairie contre les tentatives d'escroquerie."
+    },
+    {
+      "date": "2024-10-05",
+      "event": "La Voix du Nord fait le point : chantage refusé, six mois de travail perdus pour certains services, accès aux archives coupé, nouveau système en construction."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "espace-des-sciences-20240624",
+  "entity": "Espace des sciences (Rennes et Morlaix)",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-06-24",
+    "publication": "2024-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rançon d'un million d'euros réclamée selon ZDNet; volume de données concernées non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme : On était tous sous le choc. Comment l'Espace des sciences de Rennes et de Morlaix s'est sorti d'une grosse cyberattaque (21 novembre 2024)",
+      "url": "https://www.letelegramme.fr/bretagne/on-etait-tous-sous-le-choc-comment-lespace-des-sciences-de-rennes-et-de-morlaix-sest-sorti-dune-grosse-cyberattaque-6706600.php",
+      "kind": "article"
+    },
+    {
+      "label": "Bretagne Économique : Victime d'une cyberattaque, l'Espace des Sciences a été secouru par Breizh Cyber (20 novembre 2024)",
+      "url": "https://www.bretagne-economique.com/actualites/victime-dune-cyberattaque-lespace-des-sciences-a-ete-secouru-par-breizh-cyber/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNET : Face aux corsaires numériques, le Breizh Cyber fait son bilan (rançon d'un million d'euros exigée)",
+      "url": "https://www.zdnet.fr/actualites/galette-saucisse-le-breizh-cyber-le-centre-de-reponse-a-incidents-breton-fait-son-bilan-401705.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 juin 2024, l'Espace des sciences, centre de culture scientifique implanté à Rennes et Morlaix, est victime d'une cyberattaque au rançongiciel revendiquée par le groupe Monti, qui réclame une rançon d'un million d'euros. Le centre régional de réponse aux incidents Breizh Cyber intervient pour secourir l'association, dont le DSI décrit en novembre un vent de panique parmi les collaborateurs puis une remédiation complète. L'épisode est rendu public fin novembre 2024, à l'occasion du premier bilan du CSIRT régional.",
+  "timeline": [
+    {
+      "date": "2024-06-24",
+      "event": "Rançongiciel revendiqué par le groupe Monti contre l'Espace des sciences; une rançon d'un million d'euros est exigée."
+    },
+    {
+      "date": "2024-11-20",
+      "event": "Bretagne Économique et Le Télégramme relatent l'incident avec le témoignage du DSI de l'association, secourue par Breizh Cyber."
+    }
+  ]
+}
