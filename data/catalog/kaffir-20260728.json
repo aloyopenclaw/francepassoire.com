@@ -1,0 +1,39 @@
+{
+  "slug": "kaffir-20260728",
+  "entity": "Kaffir",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-28"
+  },
+  "volume": {
+    "count": 13,
+    "unit": "personnes",
+    "label": "Une douzaine d'identités clientes annoncées, commandes passées entre février et mai 2026 (chiffre revendiqué) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Kaffir : fuite de données revendiquée (alerte du 28 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/kaffir-ms4frxcchbuu7iovqa",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 13 clients concernés par une fuite revendiquée chez Kaffir",
+      "url": "https://fuitesinfos.fr/article/2026-07-28-kaffir",
+      "kind": "article"
+    }
+  ],
+  "description": "Kaffir, boutique en ligne française de vente de feuilles de combava, est visée le 28 juillet 2026. Une revendication annonce la diffusion d'une sauvegarde complète de sa base de données, configuration et éléments d'accès compris. Selon Fuites Infos, l'extrait publié expose une douzaine d'identités clientes avec coordonnées. L'historique de commandes passées entre février et mai 2026 y figure aussi. Le fichier est proposé au téléchargement sur un forum cybercriminel selon le même relais. L'entreprise n'a pas confirmé publiquement ces éléments.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "Un acteur annonce sur un forum cybercriminel la diffusion d'une sauvegarde complète de la base de la boutique Kaffir : une douzaine d'identités visibles dans l'extrait."
+    }
+  ]
+}
