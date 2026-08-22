@@ -27,6 +27,7 @@
 // fichier ne fait que le routage et le scheduled.
 
 import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
+import { runVeilleSociale, slotVeilleSociale } from './veille-sociale';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -332,6 +333,24 @@ export default {
       if ((await env.RUN_STATE.get(cle)) !== lundi) {
         await env.RUN_STATE.put(cle, lundi);
         await runWeeklyDigest(env, { now });
+      }
+    }
+    // T52 : veille sociale interne — slots 07:00 et 19:00 Europe/Paris sur
+    // le tick plein-heure, garde KV par slot/jour (plafond cron 5/compte :
+    // pas de déclencheur dédié possible).
+    const slot = slotVeilleSociale(now);
+    if (slot && env.RUN_STATE) {
+      const cle = `veille-sociale:slot:${new Intl.DateTimeFormat('fr-CA', {
+        timeZone: 'Europe/Paris',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+      })
+        .format(now)
+        .replaceAll('-', '')}:${slot}`;
+      if ((await env.RUN_STATE.get(cle)) === null) {
+        await env.RUN_STATE.put(cle, new Date().toISOString());
+        await runVeilleSociale(env, slot, { now });
       }
     }
   },
