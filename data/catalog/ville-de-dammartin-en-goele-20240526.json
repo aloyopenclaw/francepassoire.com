@@ -1,0 +1,46 @@
+{
+  "slug": "ville-de-dammartin-en-goele-20240526",
+  "entity": "Commune de Dammartin-en-Goële",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-05-26",
+    "publication": "2024-05-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombreux fichiers et dossiers infectés par un logiciel malveillant; aucun vol de données chiffré; attaque rattachée à LockBit 3.0 par LeMagIT"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV : Seine-et-Marne. La ville de Dammartin-en-Goële victime d'une cyberattaque majeure (28 mai 2024)",
+      "url": "https://www.bfmtv.com/paris/seine-et-marne-la-ville-de-dammartin-en-goele-victime-d-une-cyberattaque-majeure_AN-202405280581.html",
+      "kind": "article"
+    },
+    {
+      "label": "CDG 30, Cyber'Actu n°5 (juillet 2024) : nécrologie, les dernières victimes de cyberattaques (Dammartin-en-Goële, 26 mai 2024)",
+      "url": "https://www.cdg30.fr/fileadmin/CDG30/Publications/Cyberactu/05_-_CYBERACTU__-_juillet_2024.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT : Cyberattaques, la transparence des collectivités territoriales progresse (Dammartin-en-Goële, 26 mai 2024, LockBit 3.0)",
+      "url": "https://www.lemagit.fr/actualites/366620474/Cyberattaques-la-transparence-des-collectivites-territoriales-progresse",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 26 mai 2024 à 16h20, la commune de Dammartin-en-Goële (Seine-et-Marne) subit une cyberattaque qualifiée de majeure par la ville : des hackers russophones pénètrent les serveurs malgré les dispositifs de sécurité et de nombreux fichiers et dossiers sont infectés par un logiciel malveillant. Les services fonctionnent en mode dégradé dès le dimanche soir. L'attaque est rattachée à LockBit 3.0 dans les recensements de LeMagIT et du CDG du Gard. La ville annonce l'incident par communiqué le 28 mai.",
+  "timeline": [
+    {
+      "date": "2024-05-26",
+      "event": "Cyberattaque majeure à 16h20 : des hackers russophones infectent fichiers et dossiers; les services passent en mode dégradé."
+    },
+    {
+      "date": "2024-05-28",
+      "event": "La ville publie un communiqué sur Facebook; BFMTV relate l'incident."
+    }
+  ]
+}

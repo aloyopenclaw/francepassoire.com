@@ -1,0 +1,40 @@
+{
+  "slug": "mairie-de-mauguio-carnon-20241022",
+  "entity": "Commune de Mauguio-Carnon",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "un acteur malveillant a pu accéder à certaines données dont la nature ne peut être précisée en raison de contraintes techniques, selon la mairie"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Mairie de Mauguio-Carnon : Information, cyber attaque (communiqué, mai 2025)",
+      "url": "https://mauguio-carnon.com/actualites/information-cyber-attaque/",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches : Mairie de Mauguio-Carnon, groupe RansomHub, revendication du 22 octobre 2024",
+      "url": "https://frenchbreaches.com/alertes/mauguio-carnon-com-rw_YldGMVozVnBieTFqWVhKdWIyNHVZMjl0UUhKaGJuTnZiV2gxWWc9PQ",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 22 octobre 2024, le groupe de rançongiciel RansomHub revendique une cyberattaque contre la mairie de Mauguio-Carnon (Hérault), qui a temporairement perturbé les services municipaux. La commune n'informe ses administrés que sept mois plus tard, par un communiqué publié en mai 2025 : une cellule de crise a été activée dès la détection, la CNIL et les autorités informées, et les investigations achevées montrent qu'un acteur malveillant a pu accéder à certaines données dont la nature ne peut être précisée en raison de contraintes techniques. Les habitants sont invités à la vigilance face aux e-mails, appels et SMS inhabituels.",
+  "timeline": [
+    {
+      "date": "2024-10-22",
+      "event": "RansomHub revendique la cyberattaque contre la mairie de Mauguio-Carnon; les services municipaux sont temporairement perturbés."
+    },
+    {
+      "date": "2025-05-13",
+      "event": "Des chercheurs en cybersécurité relèvent que la commune n'alerte ses administrés que sept mois après l'attaque; la mairie publie son communiqué d'information."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "cc-gevrey-chambertin-nuits-saint-georges-20240315",
+  "entity": "Communauté de communes Gevrey-Chambertin et Nuits-Saint-Georges",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-03-15",
+    "publication": "2024-03-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée perdue selon le président de l'intercommunalité; une rançon est demandée selon France 3"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Bourgogne-Franche-Comté : La communauté de communes de Nuits-Saint-Georges cible d'une violente cyberattaque, une rançon demandée (20 mars 2024)",
+      "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/cote-d-or/la-communaute-de-communes-de-nuits-saint-georges-cible-d-une-violente-cyberattaque-une-rancon-demandee-2942661.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Bien Public : Gevrey-Nuits. La communauté de communes victime d'une cyberattaque (20 mars 2024)",
+      "url": "https://www.bienpublic.com/faits-divers-justice/2024/03/20/la-communaute-de-communes-victime-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr (Bourgogne) : Côte-d'Or. Face aux nombreuses cyberattaques, les maires tentent de s'organiser (avril 2024)",
+      "url": "https://actu.fr/societe/cote-d-or-face-aux-nombreuses-cyberattaques-les-maires-tentent-de-s-organiser_60980637.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Une cyberattaque paralyse les services de la communauté de communes Gevrey-Chambertin et Nuits-Saint-Georges (Côte-d'Or). France 3 date l'attaque du vendredi 15 mars 2024; Le Bien Public indique qu'elle se serait produite dans la nuit du lundi 18 au mardi 19 mars. Un virus infecte les systèmes d'information et d'administration de l'intercommunalité, avec une demande de rançon. Un centre régional de cybersécurité restaure progressivement les données; la téléphonie est rétablie le 20 mars. Selon le président de l'intercommunalité, aucune donnée n'a été perdue. L'épisode nourrit une formation cybersécurité organisée par la gendarmerie pour les maires du département le 19 avril.",
+  "timeline": [
+    {
+      "date": "2024-03-15",
+      "event": "Date d'attaque rapportée par France 3 : un virus paralyse les systèmes de l'intercommunalité et une rançon est exigée."
+    },
+    {
+      "date": "2024-03-20",
+      "event": "La presse régionale relate l'attaque; Le Bien Public situe l'intrusion dans la nuit du 18 au 19 mars. Le centre régional de cybersécurité restaure les données."
+    },
+    {
+      "date": "2024-04-19",
+      "event": "Une formation cybersécurité de la gendarmerie réunissant les maires de Côte-d'Or est organisée à Gevrey-Chambertin en écho à l'attaque."
+    }
+  ]
+}

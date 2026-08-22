@@ -1,0 +1,53 @@
+{
+  "slug": "diviamobilites-20240905",
+  "entity": "DiviaMobilités (Keolis Dijon Multimodalité)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-05",
+    "publication": "2024-09-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "noms, prénoms, dates de naissance, adresses postales, e-mails, numéros de téléphone et IBAN des abonnés susceptibles d'avoir été dérobés; nombre exact non communiqué; CNIL notifiée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "France Bleu (ICI) : Dijon. DiviaMobilités victime d'une cyberattaque, des données clients piratées (5 septembre 2024)",
+      "url": "https://www.francebleu.fr/infos/faits-divers-justice/dijon-diviamobilites-victime-d-une-cyberattaque-des-donnees-clients-piratees-5246441",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Bourgogne-Franche-Comté : IBAN, dates de naissance et e-mails piratés chez Divia (septembre 2024)",
+      "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/cote-d-or/dijon/iban-dates-de-naissance-et-emails-pirates-chez-divia-que-faire-si-vos-donnees-clients-ont-ete-derobees-3027713.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Bien Public : Dijon. Divia victime d'une cyberattaque, les données d'une partie des clients piratées (5 septembre 2024)",
+      "url": "https://www.bienpublic.com/faits-divers-justice/2024/09/05/divia-victime-d-une-cyberattaque-les-donnees-d-une-partie-des-clients-piratees",
+      "kind": "article"
+    },
+    {
+      "label": "Le Journal de la Côte-d'Or : Les données des clients de DiviaMobilités volées par un hacker, que faire si vous êtes concerné (septembre 2024)",
+      "url": "https://www.lejdc.fr/dijon-21000/actualites/les-donnees-des-clients-de-diviamobilites-volees-par-un-hacker-que-faire-si-vous-etes-concerne_14558902/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin août 2024, un prestataire de DiviaMobilités, l'exploitant des transports en commun de la métropole dijonnaise, est victime d'une action malveillante : un tiers non autorisé parvient à accéder à des données. L'incident est rendu public le 5 septembre par un message adressé à toute la base clients : les titulaires d'une carte DiviaMobilités ou d'un compte e-boutique sont concernés et des noms, prénoms, dates de naissance, adresses postales, e-mails, numéros de téléphone et IBAN sont susceptibles d'avoir été dérobés. La CNIL est notifiée et les clients sont invités à changer immédiatement de mot de passe et à se méfier des tentatives de phishing et de smishing.",
+  "timeline": [
+    {
+      "date": "2024-09-05",
+      "event": "DiviaMobilités informe sa base clients de l'action malveillable touchant un prestataire; la CNIL est notifiée."
+    },
+    {
+      "date": "2024-09-06",
+      "event": "France 3 publie un guide pour les clients concernés : changement de mot de passe et vigilance contre les arnaques."
+    }
+  ]
+}

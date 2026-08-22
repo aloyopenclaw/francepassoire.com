@@ -1,0 +1,50 @@
+{
+  "slug": "casinos-aix-les-bains-20240718",
+  "entity": "Casinos d'Aix-les-Bains (Grand Cercle et Poker Bowl)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-18",
+    "publication": "2024-07-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "chiffrement des données des serveurs; aucun vol de données quantifié; pertes d'exploitation non négligeables selon une source judiciaire"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France Bleu Pays de Savoie : Aix-les-Bains, deux casinos obligés de fermer après une cyberattaque (20 juillet 2024)",
+      "url": "https://www.francebleu.fr/infos/faits-divers-justice/aix-les-bains-deux-casinos-obliges-de-fermer-apres-une-cyberattaque-1333132",
+      "kind": "article"
+    },
+    {
+      "label": "Le Dauphiné Libéré : Savoie. Les casinos d'Aix-les-Bains ciblés par une cyberattaque (20 juillet 2024)",
+      "url": "https://www.ledauphine.com/culture-loisirs/2024/07/20/les-casinos-d-aix-les-bains-cibles-par-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Auvergne-Rhône-Alpes : Deux casinos d'Aix-les-Bains victimes de cyberattaques, les établissements fermés jusqu'à nouvel ordre (22 juillet 2024)",
+      "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/savoie/aix-les-bains/deux-casinos-d-aix-les-bains-victimes-de-cyberattaques-les-etablissements-fermes-jusqu-a-nouvel-ordre-3007997.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du mercredi 17 au jeudi 18 juillet 2024, les systèmes informatiques des casinos du Grand Cercle et du Poker Bowl d'Aix-les-Bains (Savoie) sont visés par une cyberattaque par cryptage des données des serveurs. Les deux établissements, qui parlent d'un incident informatique majeur, sont mis hors ligne par précaution et fermés à partir du 18 juillet. Une enquête de la section spécialisée cyber du parquet de Paris, confiée à l'Office anti-cybercriminalité (OFAC), est ouverte; une source judiciaire évoque des pertes d'exploitation non négligeables. Les casinos rouvrent progressivement à partir du lundi 22 juillet.",
+  "timeline": [
+    {
+      "date": "2024-07-18",
+      "event": "Attaque par cryptage des données des serveurs dans la nuit du 17 au 18 juillet; systèmes mis hors ligne et fermeture des deux casinos."
+    },
+    {
+      "date": "2024-07-20",
+      "event": "La presse régionale et l'AFP relatent l'incident; l'enquête est confiée à l'OFAC du parquet de Paris."
+    },
+    {
+      "date": "2024-07-22",
+      "event": "Réouverture progressive des établissements, d'abord annoncée jusqu'au lundi 22 juillet."
+    }
+  ]
+}

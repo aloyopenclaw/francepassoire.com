@@ -1,0 +1,45 @@
+{
+  "slug": "octave-20240816",
+  "entity": "Octave (Octave.biz, éditeur SaaS pour le commerce de détail)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-16",
+    "publication": "2024-08-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "serveurs et outils métiers hébergés paralysés pour de nombreux clients; Comptoir du Livre évalue sa perte à 208 000 euros; aucun vol de données chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : ESN. Les clients d'Octave.biz victimes des effets d'une cyberattaque (21 août 2024)",
+      "url": "https://www.lemagit.fr/actualites/366606072/ESN-les-clients-dOctavebiz-victimes-des-effets-dune-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche : Une perte de 208 000 euros après une cyberattaque, la société Comptoir du Livre, près de Toulouse, dans un état critique (21 août 2024)",
+      "url": "https://www.ladepeche.fr/2024/08/21/une-perte-de-208-000-eur-apres-une-cyberattaque-la-societe-comptoir-du-livre-pres-de-toulouse-dans-un-etat-critique-12151711.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le vendredi 16 août 2024, l'ESN et éditeur de logiciels métiers Octave (Octave.biz), qui héberge des outils pour des enseignes du commerce de détail, est frappé par une cyberattaque qui paralyse ses serveurs. Des clients comme La Boutique du Tracteur, Makassar, Cobra, Rascol ou le Comptoir du Livre (Portet-sur-Garonne) se retrouvent bloqués, dans l'incapacité de traiter les commandes; le Comptoir du Livre évalue sa perte à 208 000 euros et se dit en état critique. L'incident, d'abord évoqué le 19 août par Zataz comme visant un hébergeur français, est identifié le 21 août par LeMagIT. Le site du Comptoir du Livre reste inaccessible pour une durée indéterminée.",
+  "timeline": [
+    {
+      "date": "2024-08-16",
+      "event": "Cyberattaque contre Octave : l'ensemble du serveur est paralysé et les outils métiers des clients deviennent indisponibles."
+    },
+    {
+      "date": "2024-08-19",
+      "event": "Zataz évoque une cyberattaque contre un hébergeur français, avec retour au crayon papier pour certaines boutiques."
+    },
+    {
+      "date": "2024-08-21",
+      "event": "LeMagIT identifie Octave et recense les clients affectés; La Dépêche chiffre à 208 000 euros la perte du Comptoir du Livre."
+    }
+  ]
+}

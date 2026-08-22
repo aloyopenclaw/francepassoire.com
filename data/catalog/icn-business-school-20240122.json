@@ -1,0 +1,50 @@
+{
+  "slug": "icn-business-school-20240122",
+  "entity": "ICN Business School (Nancy)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-22",
+    "publication": "2024-01-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "machines impactées contenant des données personnelles; aucun volume de données dérobées communiqué; rançon exigée sous menace de diffusion sur le darknet"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "France Bleu (ICI Lorraine) : Nancy. L'ICN Business School victime d'une cyberattaque (26 janvier 2024)",
+      "url": "https://www.francebleu.fr/infos/faits-divers-justice/nancy-l-icn-business-school-victime-d-une-cyberattaque-8328268",
+      "kind": "article"
+    },
+    {
+      "label": "L'Est Républicain : Cyberattaque chez ICN Business School, le hackeur demande une rançon (26 janvier 2024)",
+      "url": "https://www.estrepublicain.fr/education/2024/01/26/cyberattaque-chez-icn-business-school-le-hackeur-demande-une-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "L'Est Républicain : L'ICN Business School à Nancy victime d'une cyberattaque (26 janvier 2024)",
+      "url": "https://www.estrepublicain.fr/education/2024/01/26/l-icn-business-school-a-nancy-victime-d-une-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 janvier 2024, l'ICN Business School, école de commerce du site ARTEM à Nancy, reçoit un message l'informant qu'elle fait l'objet d'une cyberattaque, suivi d'une demande de rançon avec menace de diffuser les données de l'établissement sur le darknet. L'école active une cellule de crise, prévient l'ANSSI et coupe ses liens avec l'Université de Lorraine pour la protéger. Les machines impactées contiennent des données personnelles; une plainte est déposée le 24 janvier. Personnels, étudiants et familles sont informés et aucune utilisation malveillante n'est signalée à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-01-22",
+      "event": "L'établissement reçoit le message d'extorsion annonçant la cyberattaque."
+    },
+    {
+      "date": "2024-01-24",
+      "event": "Plainte déposée; cellule de crise activée, ANSSI informée, liens avec l'Université de Lorraine coupés."
+    },
+    {
+      "date": "2024-01-26",
+      "event": "La presse régionale relate l'incident; l'école signale qu'aucune utilisation malveillante n'a été constatée."
+    }
+  ]
+}
