@@ -1,0 +1,51 @@
+{
+  "slug": "afp-20240928",
+  "entity": "Agence France-Presse (AFP)",
+  "siren": "775658354",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-28",
+    "publication": "2024-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "violation potentielle notifiée à la CNIL ; nature et ampleur non déterminées à ce stade"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "AFP — Attaque sur le système d’information de l’AFP (communiqué, 28 septembre 2024)",
+      "url": "https://www.afp.com/sites/default/files/afpcommunique/202409/pdf/cpafp28sept2024.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "TechCrunch — News agency AFP notifies French authorities of potential data breach (2 octobre 2024)",
+      "url": "https://techcrunch.com/2024/10/02/news-agency-afp-notifies-french-authorities-of-potential-data-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNET — Une attaque informatique déplorée par l’AFP, une cible de choix pour des pirates (4 octobre 2024)",
+      "url": "https://www.zdnet.fr/actualites/une-attaque-informatique-deploree-par-lafp-une-cible-de-choix-pour-des-pirates-398883.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 septembre 2024, l’Agence France-Presse a détecté une attaque sur son système d’information, affectant une partie des dispositifs de diffusion vers ses clients. L’agence a mobilisé ses équipes avec l’appui de l’ANSSI et saisi les autorités. Dans un courriel relayé par la presse, elle a averti ses clients que les mots de passe de serveurs FTP recevant ses contenus avaient pu être compromis. Début octobre, la CNIL a confirmé avoir reçu de l’AFP la notification d’une violation potentielle de données. Aucun groupe n’a revendiqué l’attaque ; l’ampleur de la compromission n’est pas établie.",
+  "timeline": [
+    {
+      "date": "2024-09-27",
+      "event": "L’AFP détecte une attaque affectant une partie de ses dispositifs de diffusion ; l’ANSSI apporte son soutien."
+    },
+    {
+      "date": "2024-09-28",
+      "event": "L’AFP publie un communiqué ; les autorités compétentes sont saisies et l’incident est en cours de qualification."
+    },
+    {
+      "date": "2024-10-02",
+      "event": "La CNIL confirme avoir reçu la notification d’une violation potentielle ; la presse révèle l’avertissement de l’AFP sur les identifiants FTP de ses clients."
+    }
+  ]
+}
