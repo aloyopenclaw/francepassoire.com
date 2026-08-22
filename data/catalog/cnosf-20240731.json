@@ -1,0 +1,52 @@
+{
+  "slug": "cnosf-20240731",
+  "entity": "Comité national olympique et sportif français (CNOSF)",
+  "siren": "784354276",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-31",
+    "confirmation": "2024-07-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fuite de données confirmée par le CNOSF, personnes concernées contactées individuellement ; nature et volume non communiqués"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNOSF — Information de cyberattaque subie par le CNOSF",
+      "url": "https://cnosf.franceolympique.com/information-de-cyberattaque-subie-par-le-cnosf",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNOSF — Information sur les deux cyberattaques subies par le CNOSF",
+      "url": "https://cnosf.franceolympique.com/information-sur-les-deux-cyberattaques-subies-par-le-cnosf",
+      "kind": "officiel"
+    },
+    {
+      "label": "ANSSI — Panorama de la cybermenace 2024 (CERTFR-2025-CTI-003) : revendication de LulzSec Muslims le 31 juillet 2024",
+      "url": "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-003.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDNET — « On était des centaines, tout le monde donnait des ordres » : au procès de Kizarush, qui voulait relancer en France le groupe LulzSec (6 février 2026)",
+      "url": "https://www.zdnet.fr/actualites/on-etait-des-centaines-tout-le-monde-donnait-des-ordres-au-proces-de-kizarush-qui-voulait-relancer-en-france-le-groupe-lulzsec-489635.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 juillet 2024, le groupe hacktiviste LulzSec Muslims a revendiqué une exfiltration de données appartenant au Comité national olympique et sportif français, en réaction à la cérémonie d’ouverture des Jeux de Paris. Le CNOSF a reconnu une cyberattaque « caractérisée par une fuite de données », a déposé plainte et déclaré l’incident à la CNIL ; la Brigade de lutte contre la cybercriminalité a été saisie et les personnes concernées ont été contactées individuellement. L’ANSSI rattache cette revendication à la période des Jeux, sans la considérer comme un incident significatif. Une instruction judiciaire est ouverte, ainsi que pour une intrusion distincte sur les serveurs de l’institution. Nature et volume des données : non communiqués.",
+  "timeline": [
+    {
+      "date": "2024-07-31",
+      "event": "LulzSec Muslims revendique une exfiltration de données du CNOSF au lendemain de la cérémonie d’ouverture des JOP, selon le Panorama 2024 de l’ANSSI."
+    },
+    {
+      "date": "2024-07-31",
+      "event": "Le CNOSF annonce une cyberattaque avec fuite de données, dépose plainte et notifie la CNIL ; la BL2C de la police judiciaire est saisie."
+    }
+  ]
+}
