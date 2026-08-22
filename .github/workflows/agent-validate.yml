@@ -90,7 +90,7 @@ jobs:
           1. zod : npx vitest run tests/pr-fiches.test.ts — doit passer pour tout le catalogue ;
           2. prose : Ton A factuel sec (docs/prose-style.md) — pas d'éditorialisation, aucun em-dash dans le contenu ;
           3. contrat fiche (tâche 18) : champs requis, dates cohérentes, volume sourcé (count 0 + label si inconnu), statut confirmee seulement si confirmation officielle ;
-          4. sources : pour CHAQUE url de sources[], curl -sIL --max-time 15 -A 'Mozilla/5.0' — 200/301/308 = vivante ; 4xx/5xx = morte SAUF équivalent web.archive.org déjà en URL.
+          4. sources : pour CHAQUE url de sources[], curl -sIL --max-time 15 -A 'Mozilla/5.0' — 200/301/308 = vivante ; si non-2xx, REJOUE en GET (curl -sL -o /dev/null -w '%{http_code}' — certains sites bloquent HEAD) : 200/301/308 = vivante ; sinon morte SAUF équivalent web.archive.org déjà en URL.
 
           Écris le rapport markdown dans .agent-tmp/report.md : titre '## Validation agent', une section par porte avec son verdict, puis un verdict global. Termine par une ligne exactement 'VERDICT: PASS' ou 'VERDICT: FAIL'.
           " > .agent-tmp/run.log 2>&1 || true
