@@ -1,0 +1,55 @@
+{
+  "slug": "msoi-groupe-cirano-20240821",
+  "entity": "Média Service Océan Indien (MSOI, groupe Cirano)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-21",
+    "publication": "2024-08-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration rapportée ; un rançongiciel a chiffré les serveurs de diffusion et une rançon de montant non communiqué a été exigée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz, Attaque informatique de grande ampleur : des médias de La Réunion victimes d'une cyberattaque (21 août 2024)",
+      "url": "https://www.zataz.com/attaque-informatique-de-grande-ampleur-des-medias-de-la-reunion-victimes-dune-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Quotidien, Piratage informatique : une cyberattaque massive a visé le groupe Cirano (22 août 2024)",
+      "url": "https://www.lequotidien.re/article/faits-divers/2024/08/22/piratage-informatique-une-cyberattaque-massive-a-vise-le-groupe-cirano",
+      "kind": "article"
+    },
+    {
+      "label": "Zinfos974, La société de diffusion d'Antenne Réunion piratée : une rançon demandée (21 août 2024, article archivé)",
+      "url": "https://web.archive.org/web/20240905134401/https://www.zinfos974.com/la-societe-de-diffusion-dantenne-reunion-piratee-une-rancon-demandee/",
+      "kind": "archive"
+    },
+    {
+      "label": "Imaz Press, Attaque informatique contre plusieurs médias réunionnais : l'OCOI appelle au renforcement des mesures de sécurité (22 août 2024)",
+      "url": "https://imazpress.com/actus-reunion/attaque-informatique-contre-plusieurs-medias-reunionnais-l-ocoi-appelle-au-renforcement-des-mesures-de-securite",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 20 au 21 août 2024, vers 5 heures, un rançongiciel chiffre l'ensemble des serveurs de Média Service Océan Indien (MSOI), la société de diffusion du groupe Cirano à La Réunion. La diffusion d'Antenne Réunion et de plusieurs radios du groupe, dont RTL, NRJ, Exo FM et Chérie FM, est paralysée à l'approche des matinales ; RTL relaye le programme national, son programme local étant chiffré. Les pirates promettent une clé de déchiffrage contre une rançon dont le montant n'est pas communiqué ; la direction ne donne pas suite et fait restaurer les systèmes depuis une sauvegarde. Les serveurs internes d'Antenne Réunion ne sont pas impactés et un retour à peu près normal est annoncé dès le matin du 22 août. L'Observatoire de la cybersécurité de l'océan Indien publie un communiqué de vigilance rappelant qu'aucune structure n'est à l'abri.",
+  "timeline": [
+    {
+      "date": "2024-08-21",
+      "event": "Vers 5 heures, un rançongiciel paralyse les systèmes de diffusion d'Antenne Réunion et de plusieurs radios du groupe Cirano ; une rançon est exigée par les pirates ; la direction ne donne pas suite."
+    },
+    {
+      "date": "2024-08-22",
+      "event": "Le Quotidien rapporte la restauration des systèmes depuis une sauvegarde et un retour à peu près normal attendu sur les antennes au matin ; le directeur général Sylvain Péguillan évoque une faille malgré la sécurisation préalable."
+    },
+    {
+      "date": "2024-08-26",
+      "event": "L'OCOI publie cinq recommandations ; Le Journal de Mayotte relève que certaines radios touchées couvrent également Mayotte."
+    }
+  ]
+}
