@@ -1,0 +1,43 @@
+{
+  "slug": "chess-com-20260816",
+  "entity": "Chess.com",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-16",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 7337396,
+    "unit": "lignes",
+    "label": "7 337 396 lignes revendiquées dont environ 4 millions d'adresses électroniques ; extraction automatisée (scrape) revendiquée, non confirmée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Chess.com : un nouveau pirate revendique 7,3 millions de profils (22 août 2026)",
+      "url": "https://www.zataz.com/chess-com-un-nouveau-pirate-revendique-73-millions-de-profils/",
+      "kind": "article"
+    },
+    {
+      "label": "SecurityAffairs — Chess.com leak exposes 7.3 million users, evidence points to scraping (2026)",
+      "url": "https://securityaffairs.com/197174/breaking-news/chess-com-leak-exposes-7-3-million-users-evidence-points-to-scraping.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 août 2026, un cybercriminel publie sur un forum accessible via Tor une collecte revendiquée de Chess.com : 7 337 396 lignes contenant selon lui environ quatre millions d'adresses électroniques, des identifiants, des noms, des localisations et des données de classement. L'auteur présente la base comme un scrape, une extraction automatisée de données accessibles : aucune intrusion dans les systèmes de la plateforme n'est établie. Chess.com n'a pas communiqué publiquement au 22 août 2026. La plateforme revendique plus de 250 millions de membres, dont une part non quantifiée en France.",
+  "timeline": [
+    {
+      "date": "2026-08-16",
+      "event": "Publication sur un forum Tor d'une collecte revendiquée de Chess.com : 7 337 396 lignes, environ quatre millions d'adresses électroniques selon l'auteur."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Zataz documente la revendication et l'étendue des champs ; SecurityAffairs relève que les éléments disponibles pointent vers un scrape plutôt que vers une compromission de serveur."
+    }
+  ]
+}
