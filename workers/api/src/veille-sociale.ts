@@ -327,6 +327,22 @@ export async function runVeilleSociale(
   return { opportunities: classees.length, envoye: ok, sourcesMortes: mortes };
 }
 
+function escapeHtml(text: string): string {
+  return text
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+}
+
+function hrefSur(text: string): string {
+  try {
+    return /^https?:$/.test(new URL(text).protocol) ? text : '#';
+  } catch {
+    return '#';
+  }
+}
+
 function pillPlateforme(p: string): string {
   const couleurs: Record<string, string> = {
     'Google News': '#241405',
@@ -343,9 +359,9 @@ function renderVeilleHtml(occ: Occurrence[], ctx: { slot: string; dateFr: string
     .map(
       (o) => `              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;background-color:#FFF9F2;border:3px solid #241405;border-radius:12px;box-shadow:4px 4px 0px 0px #241405;">
                 <tr><td style="padding:18px 22px;">
-                  <p style="margin:0 0 8px;">${pillPlateforme(o.plateforme)} <span style="font-family:'Courier New',monospace;font-size:12px;color:#6b5b45;">${o.auteur.slice(0, 40)}</span></p>
-                  <p style="margin:0 0 10px;font-size:15px;line-height:1.5;">${o.texte.slice(0, 180)}</p>
-                  <p style="margin:0;font-size:13px;"><a href="${o.url}" style="color:#E85A0C;font-weight:bold;">Ouvrir le contexte &rarr;</a> <span style="font-family:'Courier New',monospace;font-size:11px;color:#6b5b45;">variante suggérée : ${varianteReponse(o, ctx.catalogue)}</span></p>
+                  <p style="margin:0 0 8px;">${pillPlateforme(o.plateforme)} <span style="font-family:'Courier New',monospace;font-size:12px;color:#6b5b45;">${escapeHtml(o.auteur.slice(0, 40))}</span></p>
+                  <p style="margin:0 0 10px;font-size:15px;line-height:1.5;">${escapeHtml(o.texte.slice(0, 180))}</p>
+                  <p style="margin:0;font-size:13px;"><a href="${hrefSur(o.url)}" style="color:#E85A0C;font-weight:bold;">Ouvrir le contexte &rarr;</a> <span style="font-family:'Courier New',monospace;font-size:11px;color:#6b5b45;">variante suggérée : ${varianteReponse(o, ctx.catalogue)}</span></p>
                 </td></tr>
               </table>`,
     )
