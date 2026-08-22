@@ -12,16 +12,14 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; les réseaux de la ville et de l'agglomération sont bloqués pendant plusieurs mois"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Charente Libre : Angoulême : une cyber-attaque paralyse la ville et l'agglo (24 juillet 2023)",
       "url": "https://www.charentelibre.fr/charente/angouleme/les-sites-web-de-la-mairie-d-angouleme-et-de-grandangouleme-victimes-dune-cyberattaque-cette-nuit-16054726.php",
-      "kind": "article"
-    },
-    {
-      "label": "La Nouvelle République : Angoulême : la Ville et l'agglo victimes d'une cyberattaque de grande ampleur (24 juillet 2023)",
-      "url": "https://www.lanouvellerepublique.fr/charente/angouleme-la-ville-et-l-agglo-victimes-dune-cyberattaque-de-grande-ampleur",
       "kind": "article"
     },
     {

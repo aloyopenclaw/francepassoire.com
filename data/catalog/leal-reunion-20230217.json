@@ -12,13 +12,12 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; la concession rapporte 2,5 millions d'euros de perte de chiffre d'affaires en deux semaines"
   },
-  "data_types": ["identite", "coordonnees", "financier"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
   "sources": [
-    {
-      "label": "Clicanoo : Après le CHU, c'est au tour de Leal Réunion d'être victime d'une cyber-attaque (17 février 2023, archive)",
-      "url": "https://web.archive.org/web/20230702141603/https://www.clicanoo.re/article/faits-divers/2023/02/17/apres-le-chu-cest-au-tour-de-de-leal-reunion-detre-victime-dune-cyber-attaque",
-      "kind": "archive"
-    },
     {
       "label": "La 1ère (France Info) : Une concession automobile victime d'une cyberattaque massive à La Réunion (17 février 2023)",
       "url": "https://la1ere.franceinfo.fr/reunion/une-concession-automobile-victime-dune-cyberattaque-massive-a-la-reunion-1367414.html",
