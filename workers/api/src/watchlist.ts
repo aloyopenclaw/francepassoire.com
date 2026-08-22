@@ -1432,11 +1432,78 @@ export function renderAlerteGroupeeHtml(
               </p>
 ${cartes}
               <h3 style="margin: 0 0 16px; font-family: 'Arial Black', Impact, sans-serif; font-size: 20px; text-transform: uppercase;">Vous aviez un compte ? Les 3 gestes.</h3>
-              <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.7;">
-                1. Changer le mot de passe (et ne pas le réutiliser ailleurs)<br>
-                2. Activer la double authentification<br>
-                3. Surveiller les tentatives d'hameçonnage
-              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px;">
+                <tr>
+                  <td valign="top" style="padding-bottom: 16px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="40" valign="top">
+                          <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold; box-shadow: 2px 2px 0px 0px #241405;">1</div>
+                        </td>
+                        <td valign="top">
+                          <p style="margin: 0 0 4px; font-weight: bold;">Changer le mot de passe</p>
+                          <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Et surtout, ne le réutilisez pas ailleurs. Uniquefiez-le.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top" style="padding-bottom: 16px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="40" valign="top">
+                          <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold; box-shadow: 2px 2px 0px 0px #241405;">2</div>
+                        </td>
+                        <td valign="top">
+                          <p style="margin: 0 0 4px; font-weight: bold;">Activer la double authentification</p>
+                          <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Sur votre boîte email principale en priorité absolue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="40" valign="top">
+                          <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold; box-shadow: 2px 2px 0px 0px #241405;">3</div>
+                        </td>
+                        <td valign="top">
+                          <p style="margin: 0 0 4px; font-weight: bold;">Surveiller les tentatives d'hameçonnage</p>
+                          <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Soyez vigilant face aux SMS ou emails inattendus.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 32px 24px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" style="padding: 32px; background-color: #FFF9F2; border: 2px dashed #241405; border-radius: 16px;">
+                    <p style="margin: 0 0 16px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 18px; color: #241405;">
+                      &#128276; Trop ou pas assez d'alertes ?
+                    </p>
+                    <p style="margin: 0 0 24px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #241405; opacity: 0.8;">
+                      Ajustez vos critères sectoriels pour ne recevoir que ce qui compte pour vous.
+                    </p>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
+                          <a href="${SITE_URL}/proteger/" style="display: inline-block; padding: 12px 24px; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; text-transform: uppercase;">
+                            Gérer ma veille
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           <tr>
