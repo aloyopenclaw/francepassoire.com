@@ -1,0 +1,39 @@
+{
+  "slug": "rennes-metropole-20260609",
+  "entity": "Rennes Métropole",
+  "siren": "243500139",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-09",
+    "publication": "2026-06-09"
+  },
+  "volume": {
+    "count": 15895,
+    "unit": "lignes",
+    "label": "15 895 lignes d'annuaire couvrant des agents de la Ville de Rennes et de Rennes Métropole selon la revendication ; le second relais évoque près de 9 000 agents exposés (chiffres non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Métropole de Nantes/Rennes : fuite de données, agents exposés sur le forum (9 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/m-tropole-de-rennes-mq6p5nusrlhtlceebmf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Rennes Métropole : près de 9 000 agents exposés dans la fuite des annuaires internes (9 juin 2026)",
+      "url": "https://www.cyberattaque.org/rennes-metropole-pres-de-9-000-agents-exposes-dans-la-fuite-des-annuaires-internes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 juin 2026, un cybercriminel signant govfault diffuse une base extraite du domaine metropole.rennes.fr. La publication annonce 15 895 agents de la Ville de Rennes et de Rennes Métropole ; un second relais évoque près de 9 000 agents exposés. Les champs affichés correspondent à un annuaire interne : civilité, nom, prénom, e-mail professionnel, téléphones, fonction, affectation, rattachement hiérarchique et photographies. Cette publication s'inscrit dans une série visant des collectivités françaises. Les chiffres ne sont pas confirmés.",
+  "timeline": [
+    {
+      "date": "2026-06-09",
+      "event": "Govfault publie un annuaire interne attribué au domaine metropole.rennes.fr : 15 895 agents, fonctions et coordonnées professionnelles selon les extraits."
+    }
+  ]
+}

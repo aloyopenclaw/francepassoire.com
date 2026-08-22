@@ -1,0 +1,40 @@
+{
+  "slug": "trenitalia-france-20260630",
+  "entity": "Trenitalia France",
+  "siren": "520287004",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-30",
+    "publication": "2026-06-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; communication officielle adressée aux personnes concernées après un incident de sécurité"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Trenitalia France confirme un incident de sécurité ayant exposé des données (30 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/trenitalia-france-mr0n05vpyw2ax1ei0zg",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Trenitalia : les données de voyageurs exposées après une cyberattaque (30 juin 2026)",
+      "url": "https://www.cyberattaque.org/trenitalia-les-donnees-de-voyageurs-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 juin 2026, Trenitalia France adresse une communication aux personnes concernées par un incident de sécurité. Sa plateforme de vente et de gestion des titres de transport est touchée. La compagnie confirme qu'un tiers non autorisé a pu accéder à certaines données personnelles : informations d'identification, de contact et de voyage. Le courriel précise qu'aucun identifiant, mot de passe ni donnée de paiement n'est concerné. Les voyageurs sont invités à rester vigilants face aux tentatives de fraude. Le nombre de personnes touchées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-06-30",
+      "event": "Trenitalia France notifie les personnes concernées : accès non autorisé à des données d'identification, de contact et de voyage ; paiements et mots de passe exclus."
+    }
+  ]
+}

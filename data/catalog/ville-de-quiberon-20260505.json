@@ -1,0 +1,48 @@
+{
+  "slug": "ville-de-quiberon-20260505",
+  "entity": "Ville de Quiberon",
+  "siren": "215601865",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-05",
+    "publication": "2026-05-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; la municipalité annonce une cyberattaque perturbant son système informatique, revendiquée par le groupe Qilin selon la veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "group": "qilin",
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Ville de Quiberon : des informations sensibles (5 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/ville-de-quiberon-mot2ne69l7t2n7d5fh",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Quiberon touchée par le rançongiciel Qilin (6 mai 2026)",
+      "url": "https://www.zataz.com/quiberon-touchee-par-le-rancongiciel-qilin/",
+      "kind": "article"
+    }
+  ],
+  "description": "La Ville de Quiberon annonce le 5 mai 2026 une cyberattaque remontant au 3 mai, qui perturbe temporairement plusieurs services municipaux. Certaines démarches sont retardées et les habitants sont invités à différer les demandes non urgentes. Selon le service de veille d'un média spécialisé, l'opération est revendiquée par le groupe de rançongiciel Qilin, déjà associé à de nombreuses victimes françaises. Une réinstallation sécurisée des systèmes est engagée. Le mode opératoire et une éventuelle exfiltration de données restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-05-03",
+      "event": "Attaque informatique contre les systèmes de la Ville de Quiberon, selon le rétroplanning municipal."
+    },
+    {
+      "date": "2026-05-05",
+      "event": "La municipalité rend l'incident public : services perturbés, fonctionnement en mode dégradé, équipes mobilisées."
+    },
+    {
+      "date": "2026-05-06",
+      "event": "Un média spécialisé attribue l'opération au groupe de rançongiciel Qilin, sur la base de son service de veille."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "leroy-merlin-20260506",
+  "entity": "Leroy Merlin France",
+  "siren": "384560942",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-06",
+    "publication": "2026-05-07"
+  },
+  "volume": {
+    "count": 367462,
+    "unit": "personnes",
+    "label": "367 462 profils issus d'un outil de fidélité selon la mise en vente du 6 mai 2026 (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Leroy Merlin touché par une fuite de données : 367 K personnes (6 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/leroy-merlin-moujvb632m6bpk9gfr9",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Leroy Merlin : plus de 367 000 clients exposés dans une fuite liée au programme Leroymoi (7 mai 2026)",
+      "url": "https://www.cyberattaque.org/leroy-merlin-plus-de-367-000-clients-exposes-dans-une-fuite-liee-au-programme-leroymoi/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 mai 2026, une base issue d'un outil de fidélité de Leroy Merlin France est mise en vente sur un forum cybercriminel. Le vendeur la présente comme fraîchement récupérée. Le vendeur précise qu'il ne s'agit pas du système principal de l'enseigne. Le fichier porterait sur 367 462 entrées, avec des données personnelles directement exploitables selon lui, collectées sur plusieurs semaines. Un échantillon public est diffusé. L'authenticité n'est pas confirmée publiquement. Une précédente fiche documente un incident distinct de décembre 2025.",
+  "timeline": [
+    {
+      "date": "2026-05-06",
+      "event": "Mise en vente d'une base de 367 462 entrées présentée comme issue d'un outil de fidélité Leroy Merlin ; l'auteur évoque une collecte sur plusieurs semaines."
+    }
+  ]
+}

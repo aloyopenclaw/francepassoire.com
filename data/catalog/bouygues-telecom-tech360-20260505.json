@@ -1,0 +1,52 @@
+{
+  "slug": "bouygues-telecom-tech360-20260505",
+  "entity": "Bouygues Telecom",
+  "siren": "397480930",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-05-05",
+    "confirmation": "2026-05-08"
+  },
+  "volume": {
+    "count": 4500000,
+    "unit": "personnes",
+    "label": "plus de 4,5 millions de personnes et 80 Go revendiqués par le collectif OverSec (données de 2022 à avril 2026) ; l'opérateur confirme l'incident le 8 mai sans communiquer de volume"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Bouygues Telecom (TECH360) touché par une fuite de données : 4,5 M (5 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/bouygues-telecom-tech360-mosy4ca5xkt1hyc9gvj",
+      "kind": "revendication"
+    },
+    {
+      "label": "Clubic — Bouygues Telecom victime d'une fuite de données visant son SAV fibre, l'opérateur apporte quelques précisions (11 mai 2026)",
+      "url": "https://www.clubic.com/actualite-612526-bouygues-telecom-victime-d-une-fuite-de-donnees-visant-son-sav-fibre-l-operateur-apporte-quelques-precisions.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Nouvelle fuite chez Bouygues Telecom : vos données personnelles ont encore été volées (10 mai 2026)",
+      "url": "https://www.01net.com/actualites/nouvelle-fuite-bouygues-telecom-donnees-personnelles-encore-ete-volees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 mai 2026, le collectif OverSec revendique une base de plus de 80 Go extraite de TECH360, outil interne des interventions fibre de Bouygues Telecom. Les données couvriraient la période 2022 à avril 2026. Le 8 mai, l'opérateur confirme l'incident par courriel aux clients concernés : noms, prénoms, adresses postales, e-mails, téléphones et dates de naissance ont été exposés. Les coordonnées bancaires et mots de passe sont exclus selon l'opérateur, qui notifie la CNIL et dépose plainte. Le volume revendiqué n'est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2026-05-05",
+      "event": "OverSec revendique sur un forum une base de plus de 80 Go issue de TECH360, l'outil interne des interventions fibre : 4,5 millions de personnes évoquées."
+    },
+    {
+      "date": "2026-05-08",
+      "event": "Bouygues Telecom confirme l'incident aux clients concernés : identité et coordonnées exposées ; banque et mots de passe exclus ; CNIL notifiée, plainte déposée."
+    },
+    {
+      "date": "2026-05-11",
+      "event": "L'opérateur précise avoir désactivé le compte compromis, sans communiquer le nombre de clients touchés."
+    }
+  ]
+}
