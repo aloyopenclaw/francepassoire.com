@@ -1,0 +1,42 @@
+{
+  "slug": "la-sauvegarde-20241103",
+  "entity": "La Sauvegarde (Lot-et-Garonne)",
+  "siren": "782153373",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-11-03",
+    "publication": "2024-11-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "réseau informatique et données de l'association inaccessibles ; rançon exigée par les attaquants, aucun volume de données dérobées chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Dépêche — « Les pirates ont demandé une rançon » : l'association lot-et-garonnaise la Sauvegarde victime d'une cyberattaque (7 novembre 2024)",
+      "url": "https://www.ladepeche.fr/2024/11/07/les-pirates-ont-demande-une-rancon-lassociation-lot-et-garonnaise-la-sauvegarde-victime-dune-cyberattaque-12310164.php",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT (Cyberhebdo du 8 novembre 2024) — deux victimes rapportées en France",
+      "url": "https://www.lemagit.fr/actualites/366615382/Cyberhebdo-du-8-novembre-2024-deux-victimes-rapportes-en-France",
+      "kind": "article"
+    }
+  ],
+  "description": "Lors du week-end du 2 et 3 novembre 2024, l'association lot-et-garonnaise La Sauvegarde est victime d'une cyberattaque qualifiée de violente par sa présidente. Cet organisme de formation et de réinsertion emploie 400 salariés. Accès à Internet, données et dossiers deviennent inaccessibles. « Ces personnes ont demandé une rançon », indique-t-elle, en assurant n'avoir pris aucun contact avec les attaquants pour ne pas leur ouvrir le système. Privés d'outils numériques, les salariés maintiennent l'accueil ; les partenaires sont avertis qu'un attaquant peut usurper l'identité de l'association.",
+  "timeline": [
+    {
+      "date": "2024-11-03",
+      "event": "Cyberattaque le week-end : réseau, données et dossiers de l'association deviennent inaccessibles, une rançon est exigée."
+    },
+    {
+      "date": "2024-11-07",
+      "event": "La présidente décrit une attaque « violente » sans contact pris avec les pirates ; les partenaires sont alertés sur le risque d'usurpation."
+    }
+  ]
+}

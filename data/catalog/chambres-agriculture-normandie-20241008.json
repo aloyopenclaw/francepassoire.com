@@ -1,0 +1,46 @@
+{
+  "slug": "chambres-agriculture-normandie-20241008",
+  "entity": "Chambres d'agriculture de Normandie",
+  "siren": "181400052",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-10-08",
+    "publication": "2024-10-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "intrusion perturbant les systèmes des chambres normandes et leurs environ 500 collaborateurs ; plainte déposée, aucun volume de données dérobées communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Courrier Cauchois — Normandie. Les Chambres d'agriculture touchées par une cyberattaque (15 octobre 2024)",
+      "url": "https://www.lecourriercauchois.fr/actualite-371180-normandie-les-chambres-d-agriculture-touchees-par-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche — Les chambres d'agriculture d'Occitanie victimes d'un piratage d'ampleur, d'autres instances touchées en France (21 novembre 2024)",
+      "url": "https://www.ladepeche.fr/2024/11/21/info-la-depeche-les-chambres-dagriculture-doccitanie-victimes-dun-piratage-informatique-dampleur-dautres-instances-touchees-en-france-12338652.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le mardi 8 et le mercredi 9 octobre 2024, les chambres d'agriculture de Normandie subissent une cyberattaque qui perturbe leurs systèmes d'information. Leur président indique mi-octobre que la situation est « maîtrisée d'un point de vue sécurité » et qu'un certain niveau de fonctionnement a été retrouvé. La direction nationale des systèmes d'information, avec l'aide de l'ANSSI, travaille au rétablissement complet des services ; une plainte est déposée. En novembre, la presse régionale rapproche cette attaque de celle qui frappe les chambres d'agriculture d'Occitanie.",
+  "timeline": [
+    {
+      "date": "2024-10-08",
+      "event": "Intrusion malveillante dans les systèmes d'information des chambres d'agriculture de Normandie, entre le 8 et le 9 octobre."
+    },
+    {
+      "date": "2024-10-15",
+      "event": "Le président annonce une situation « maîtrisée », la mobilisation de la direction nationale des SI avec l'ANSSI et une plainte déposée."
+    },
+    {
+      "date": "2024-11-21",
+      "event": "La Dépêche rapporte une attaque similaire contre les chambres d'Occitanie, après celle d'octobre en Normandie selon Le Courrier Cauchois."
+    }
+  ]
+}
