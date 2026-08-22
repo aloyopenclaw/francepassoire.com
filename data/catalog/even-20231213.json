@@ -22,14 +22,9 @@
       "kind": "article"
     },
     {
-      "label": "La France Agricole — Le piratage de la coopérative Even est le signe d'une menace grandissante",
-      "url": "https://www.lafranceagricole.fr/cooperative/article/871984/le-piratage-de-la-cooperative-even-est-le-signe-dune-menace-grandissante",
-      "kind": "article"
-    },
-    {
-      "label": "Agrodistribution — Une cyberattaque qui aurait pu mal se terminer (systèmes de Laïta, filiale du groupe Even)",
-      "url": "https://www.agrodistribution.fr/article/article/873707/une-cyberattaque-qui-aurait-pu-mal-se-terminer",
-      "kind": "article"
+      "label": "ARIA — rapport d'accident : cyberattaque dans une coopérative agricole (rançon exigée, menaces de publication des données)",
+      "url": "https://www.aria.developpement-durable.gouv.fr/accident/61095/",
+      "kind": "officiel"
     }
   ],
   "description": "Le mercredi 13 décembre 2023, le groupe coopératif Even, dont le siège est à Ploudaniel dans le Finistère, subit une tentative de piratage de ses systèmes d'information. Le groupe précise qu'il s'agit d'une tentative d'intrusion qui a échoué ; les équipes informatiques restent mobilisées pour renforcer pare-feu, sauvegardes et mesures de protection. La presse agricole rapproche ensuite cet incident de la cyberattaque qui a touché les systèmes de l'industriel laitier Laïta, filiale du groupe Even, et y lit le signe d'une menace grandissante sur les coopératives. Aucun vol de données n'est annoncé.",
