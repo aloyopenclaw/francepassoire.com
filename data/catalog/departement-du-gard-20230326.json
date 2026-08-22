@@ -1,0 +1,50 @@
+{
+  "slug": "departement-du-gard-20230326",
+  "entity": "Département du Gard (conseil départemental)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-26",
+    "publication": "2023-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données établi ; une rançon de 3 000 dollars aurait été réclamée selon France Bleu Gard Lozère"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "20 Minutes : Cyberattaque, le site du conseil départemental du Gard victime d'un piratage informatique (28 mars 2023)",
+      "url": "https://www.20minutes.fr/faits_divers/4029902-20230328-cyberattaque-site-conseil-departemental-gard-victime-piratage-informatique",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Occitanie : Piratage informatique, le site Internet du conseil départemental du Gard victime de hackers (27 mars 2023)",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/gard/piratage-informatique-le-site-internet-du-conseil-departemental-du-gard-victime-de-hackers-2741358.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : Le département du Gard victime d'une cyberattaque (avril 2023)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60769-le-departement-du-gard-victime-d-une-cyberattaque.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 25 et 26 mars 2023, le conseil départemental du Gard subit une cyberattaque qui rend son site gard.fr inaccessible et affiche une page d'erreur. Selon France Bleu Gard Lozère, relayé par 20 Minutes, les hackers auraient réclamé une rançon de 3 000 dollars, sans que l'on sache s'ils ont pu récupérer des données confidentielles. Les agents du Département reçoivent la consigne de surveiller leurs courriels entrants et sortants pour éviter toute propagation. Un site temporaire est déployé en avril pour maintenir les démarches en ligne, avant le retour du site officiel. Le 8 juin 2023, le site gard.fr est toujours bloqué selon L'Informaticien, qui évoque une remise en service progressive.",
+  "timeline": [
+    {
+      "date": "2023-03-26",
+      "event": "Cyberattaque contre le conseil départemental du Gard ; le site gard.fr devient inaccessible et une rançon est réclamée selon France Bleu."
+    },
+    {
+      "date": "2023-03-27",
+      "event": "France 3 Occitanie relate le piratage ; les agents reçoivent des consignes de vigilance sur la messagerie."
+    },
+    {
+      "date": "2023-04-11",
+      "event": "Un site temporaire est mis en ligne pour restaurer l'accès aux démarches en ligne du Département."
+    }
+  ]
+}

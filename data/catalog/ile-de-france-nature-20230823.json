@@ -1,0 +1,46 @@
+{
+  "slug": "ile-de-france-nature-20230823",
+  "entity": "Agence Île-de-France Nature",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-23",
+    "publication": "2023-08-28",
+    "confirmation": "2023-08-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "extrait de données publié par LockBit ; volume total non chiffré"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : Une cyberattaque touche l'agence Île-de-France Nature, des données sont en ligne (28 août 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1484314-une-cyberattaque-touche-lagence-ile-de-france-nature-des-donnees-sont-en-ligne.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Ransomware, Île-de-France Nature frappée mi-août par LockBit 3.0 (août 2023)",
+      "url": "https://www.lemagit.fr/actualites/366550012/Ransomware-Ile-de-France-Nature-frappe-mi-aout-par-LockBit-30",
+      "kind": "article"
+    }
+  ],
+  "description": "À la mi-août 2023, l'agence régionale Île-de-France Nature, en charge des espaces naturels franciliens, est victime d'un rançongiciel revendiqué le 23 août par le groupe LockBit sur son site de fuite. Un extrait des fichiers administratifs dérobés est diffusé et les cybercriminels annoncent le 27 août leur intention de révéler l'ensemble des données. Contactée par Numerama, l'agence confirme l'attaque par rançongiciel, indique que des mesures de rétablissement ont été déployées dès la découverte de l'intrusion et que l'analyse des conséquences est en cours, des données ayant été copiées. Une plainte est déposée et la CNIL est saisie.",
+  "timeline": [
+    {
+      "date": "2023-08-23",
+      "event": "LockBit revendique la cyberattaque contre Île-de-France Nature sur son site de fuite, avec publication d'un extrait de données."
+    },
+    {
+      "date": "2023-08-27",
+      "event": "Les attaquants annoncent vouloir publier l'ensemble des fichiers administratifs dérobés."
+    },
+    {
+      "date": "2023-08-28",
+      "event": "L'agence confirme l'attaque par rançongiciel, le vol de données et le dépôt de plainte avec saisine de la CNIL."
+    }
+  ]
+}

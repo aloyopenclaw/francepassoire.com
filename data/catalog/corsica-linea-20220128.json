@@ -1,0 +1,51 @@
+{
+  "slug": "corsica-linea-20220128",
+  "entity": "Corsica Linea",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-28",
+    "confirmation": "2022-01-31",
+    "publication": "2022-02-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données clients non affectées selon les investigations techniques de la compagnie ; aucune fuite de données personnelles constatée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Corse ViaStella : Corsica Linea, le site internet de la compagnie piraté, les réservations à l'arrêt (1er février 2022)",
+      "url": "https://france3-regions.francetvinfo.fr/corse/corse-du-sud/corsica-linea-le-site-internet-de-la-compagnie-pirate-les-reservations-a-l-arret-2443182.html",
+      "kind": "article"
+    },
+    {
+      "label": "M-CERT (France Cyber Maritime), base ADMIRAL, incident 2022_006 : tentatives d'intrusion contre une compagnie de transport maritime française (28 janvier 2022)",
+      "url": "https://www.m-cert.fr/admiral/2022_006.html",
+      "kind": "article"
+    },
+    {
+      "label": "Corsica Linea, communiqué sur Twitter (capture d'archive du 1er février 2022)",
+      "url": "https://web.archive.org/web/20220201133401/https://twitter.com/CorsicaLinea/status/1488504604325257220",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 28 janvier 2022, le site internet de Corsica Linea, compagnie maritime desservant la Corse depuis Marseille, fait l'objet d'une tentative d'intrusion d'un logiciel malveillant. La compagnie déconnecte ses serveurs à titre préventif et bloque les réservations en ligne pendant plusieurs jours ; les rotations et le fret ne sont pas concernés. Dans un communiqué, la compagnie indique que les mesures correctives ont été rapidement mises en place et que les investigations techniques permettent de confirmer que les données clients ne sont pas affectées. Elle déclare travailler avec l'ANSSI pour analyser l'intrusion.",
+  "timeline": [
+    {
+      "date": "2022-01-28",
+      "event": "Début de la tentative d'intrusion d'un logiciel malveillant sur les serveurs hébergeant le site et les réservations."
+    },
+    {
+      "date": "2022-01-31",
+      "event": "La compagnie communique : serveurs déconnectés par précaution, données clients déclarées non affectées, ANSSI associée aux analyses."
+    },
+    {
+      "date": "2022-02-01",
+      "event": "France 3 Corse relaie l'incident ; la réouverture du site de réservation est annoncée pour la journée."
+    }
+  ]
+}

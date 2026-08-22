@@ -1,0 +1,53 @@
+{
+  "slug": "ministere-justice-magistrats-20230703",
+  "entity": "Ministère de la Justice (données de magistrats et d'avocats)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-03",
+    "publication": "2023-07-03",
+    "confirmation": "2023-07-03"
+  },
+  "volume": {
+    "count": 1121,
+    "unit": "personnes",
+    "label": "1 121 magistrats et avocats recensés dans le document publié, dont une magistrate alors en fonction"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "01net : Après les émeutes, des pirates divulguent les données de 1 000 magistrats et avocats (3 juillet 2023)",
+      "url": "https://www.01net.com/actualites/apres-emeutes-pirates-divulgue-donnees-1000-magistrats-avocats.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Après les émeutes, des infos personnelles de juges publiées par des hackers (3 juillet 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1435460-apres-les-emeutes-des-infos-personnelles-de-juges-publiees-par-des-hackers.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV : Emeutes, des hackers diffusent des informations personnelles de magistrats et d'avocats (3 juillet 2023)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/emeutes-des-hackers-diffusent-des-informations-personnelles-de-magistrats-et-avocats_AV-202307030620.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 juillet 2023, au lendemain d'une menace conditionnée à la suite des émeutes suivant la mort de Nahel, le groupe Kromsec publie sur Telegram un document contenant les données personnelles de 1 121 magistrats et avocats exerçant en France. Le fichier associe noms, adresses électroniques professionnelles, numéros de téléphone, adresses postales et IBAN ; les données de la ministre déléguée Isabelle Rome figurent parmi les entrées relayées par l'AFP. Le ministère de la Justice confirme une fuite de données personnelles d'employés, précise que le document ne lui appartient pas et que les serveurs du ministère n'ont pas été visés, et indique qu'il s'agit de données anciennes, plusieurs personnes listées étant à la retraite. Une plainte pour atteinte à un système de traitement automatisé de données est déposée auprès du parquet de Paris.",
+  "timeline": [
+    {
+      "date": "2023-07-02",
+      "event": "Kromsec annonce sur Twitter que la suite des événements en France déterminera la publication de données en sa possession."
+    },
+    {
+      "date": "2023-07-03",
+      "event": "Publication sur Telegram d'un document recensant 1 121 magistrats et avocats, avec identités, coordonnées et IBAN."
+    },
+    {
+      "date": "2023-07-03",
+      "event": "Le ministère de la Justice confirme la fuite de données d'employés, écarte toute attaque de ses serveurs et dépose plainte auprès du parquet de Paris."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "air-caledonie-20220203",
+  "entity": "Air Calédonie",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-03",
+    "confirmation": "2022-02-03",
+    "publication": "2022-02-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données rapporté ; la compagnie ne communique pas de détail sur l'ampleur de l'attaque"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Radio Cocotier : Air Calédonie impactée par une cyberattaque (3 février 2022)",
+      "url": "https://radiococotier.nc/2022/02/03/air-caledonie-impactee-par-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Nouvelle-Calédonie la 1ère (franceinfo) : les programmes d'Air Calédonie perturbés par l'épidémie de Covid-19 et une cyberattaque (3 février 2022)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/province-sud/ile-pins/les-programmes-d-air-caledonie-perturbees-par-l-epidemie-de-covid-19-1220172.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 février 2022, Air Calédonie, compagnie aérienne intérieure de la Nouvelle-Calédonie, annonce être victime d'une cyberattaque qualifiée de hautement sophistiquée contre son système informatique. Les équipes de sécurité informatique tentent de déjouer l'attaque et de rétablir les systèmes. L'exploitation des vols est maintenue selon le programme prévu, mais les process de vente sont ralentis : le centre d'appels est injoignable et les accès informatiques des agences et billetteries des îles sont très limités. Le site internet reste opérationnel pour les réservations. Aucun vol de données n'est rapporté.",
+  "timeline": [
+    {
+      "date": "2022-02-03",
+      "event": "Air Calédonie annonce une cyberattaque hautement sophistiquée contre son système informatique ; vols maintenus, vente ralentie, centre d'appels hors service."
+    }
+  ]
+}

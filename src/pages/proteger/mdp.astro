@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+/**
+ * Page scénario « Mon mot de passe a fuité » — gabarit propriétaire SEPROTEGER
+ * (div #page-mdp) : héros rouge « Agissez aujourd'hui » (25 min), gestes dans
+ * l'ordre (vérificateur + gestionnaire). Le gabarit s'arrête là : la carte
+ * « En 30 secondes », les définitions et le CTA veille sont complétés sur le
+ * même gabarit que #page-email / #page-tel (copie propriétaire : gestes du
+ * hub + sous-page email). « Aller au vérificateur » pointe vers
+ * /proteger/#proteger-verifier comme le gabarit.
+ */
+---
+<Layout
+  title="Mon mot de passe a fuité - France Passoire"
+  description="Conseils concrets si votre mot de passe a fuité ou si vous le réutilisez partout : testez-le avec le vérificateur, changez-le partout et adoptez un gestionnaire."
+>
+  <section class="bg-brand-orange border-b-2 border-brand-ink py-12 relative overflow-hidden bg-dot-matrix">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+      <a href="/proteger/#proteger-agir" class="mb-6 font-display font-bold flex items-center gap-2 text-brand-ink bg-brand-cream px-3 py-1.5 rounded-full border-2 border-brand-ink shadow-sm hover:bg-brand-paper transition-colors w-max">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Retour au hub
+      </a>
+
+      <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-8 sm:p-12">
+        <div class="flex flex-wrap gap-4 items-center mb-6">
+          <span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-sm shadow-sm font-bold flex items-center gap-2">
+            <span class="block w-2 h-2 bg-brand-cream rounded-full"></span> Agissez aujourd'hui
+          </span>
+          <span class="font-mono text-brand-ink/60 text-sm">Temps estimé : 25 min</span>
+        </div>
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-brand-ink mb-2">Mon mot de passe a fuité</h1>
+        <p class="font-body text-xl font-medium text-brand-ink/80 mb-8">(Ou je le réutilise partout). Pas de panique. Mais agissons.</p>
+
+        <div class="bg-brand-paper border-2 border-brand-ink rounded-xl p-5 shadow-sm">
+          <h2 class="font-display font-bold text-lg mb-4 border-b-2 border-brand-ink/20 pb-2">En 30 secondes</h2>
+          <ul class="space-y-3 font-body font-medium">
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Changer le mot de passe du service concerné.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Changer ce même mot de passe partout où vous l'avez réutilisé.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Activer la double authentification sur votre boîte mail principale.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-brand-paper space-y-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Ce que ça veut dire pour vous</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Credential stuffing</h3>
+            <p class="text-sm">Risque immédiat d'accès à vos comptes : les attaquants rejouent vos identifiants volés sur d'autres sites, automatiquement.</p>
+          </div>
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Réutilisation en cascade</h3>
+            <p class="text-sm">Surtout si vous utilisez le même mot de passe sur plusieurs sites différents : tous ces comptes tombent en même temps.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Les gestes, dans l'ordre</h2>
+        <div class="space-y-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire shadow-hard flex flex-col sm:flex-row gap-6 relative">
+            <div class="absolute top-4 right-4 bg-brand-paper border-2 border-brand-ink px-2 py-1 rounded font-mono text-xs font-bold shadow-sm">⏱ 2 min</div>
+            <div class="font-mono font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)] leading-none pt-2 hidden sm:block">1</div>
+            <div class="w-full">
+              <h3 class="font-display font-extrabold text-2xl mb-1 pr-16 sm:pr-0">Tester le mot de passe</h3>
+              <p class="font-body text-base">Utilisez le vérificateur de France Passoire. Il calcule l'empreinte localement.</p>
+              <a href="/proteger/#proteger-verifier" class="mt-4 bg-brand-ink text-brand-cream px-4 py-2 rounded-xl border-2 border-brand-ink font-bold hover:bg-brand-orange hover:text-brand-ink transition-colors shadow-sm inline-flex items-center gap-2">
+                 Aller au vérificateur →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire shadow-hard flex flex-col sm:flex-row gap-6 relative">
+            <div class="absolute top-4 right-4 bg-brand-paper border-2 border-brand-ink px-2 py-1 rounded font-mono text-xs font-bold shadow-sm">⏱ Hygiène</div>
+            <div class="font-mono font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)] leading-none pt-2 hidden sm:block">2</div>
+            <div class="w-full">
+              <h3 class="font-display font-extrabold text-2xl mb-1 pr-16 sm:pr-0">Adopter un gestionnaire de mots de passe</h3>
+              <p class="font-body text-base mb-4">Le cerveau humain ne peut pas retenir 50 mots de passe complexes. Laissez un coffre-fort numérique le faire pour vous.</p>
+              <div class="bg-[#FFF6EA] border-2 border-[#241405] border-dashed p-4 rounded-xl relative mt-2">
+                <span class="absolute -top-3 left-4 bg-brand-paper border-2 border-brand-ink px-2 py-0.5 rounded font-mono text-[10px] font-bold uppercase tracking-wider">Recommandation</span>
+                <p class="font-body text-sm">Privilégiez les gestionnaires reconnus (Bitwarden, KeePass, 1Password) ou ceux intégrés à votre appareil (Trousseau Apple, Google).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-12 border-t-2 border-brand-ink/20">
+         <a href="/proteger/#proteger-surveiller" class="w-full bg-brand-ink text-brand-cream text-center py-6 rounded-passoire font-display font-extrabold text-2xl border-2 border-brand-ink shadow-hard hover:-translate-y-1 hover:shadow-hard-hover transition-all btn-press">
+          🔔 Activer ma veille anti-fuites
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

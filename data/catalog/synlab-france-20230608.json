@@ -1,0 +1,52 @@
+{
+  "slug": "synlab-france-20230608",
+  "entity": "Synlab France",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-08",
+    "publication": "2023-06-16",
+    "confirmation": "2023-06-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "quatre laboratoires ciblés ; un très petit nombre de patients concerné, selon Synlab"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "ZDNet.fr : MOVEit, Cl0p revendique deux victimes en France (20 juin 2023)",
+      "url": "https://www.zdnet.fr/actualites/moveit-cl0p-revendique-deux-victimes-en-france-39959666.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : La cyberattaque MOVEit fait mal, 26 entreprises victimes des hackers dont un labo français (16 juin 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1416658-la-cyberattaque-moveit-fait-mal-26-entreprises-victimes-des-hackers-dont-un-labo-francais.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Campagne MOVEit, SYNLab, Cegedim, Nuance, PwC, la litanie des victimes de Cl0p (juin 2023)",
+      "url": "https://www.lemagit.fr/actualites/366542312/Campagne-MOVEit-SYNLab-Cegedim-Nuance-PwC-la-litanie-des-victimes-de-Cl0p",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 juin 2023, Synlab, fournisseur de services de diagnostics médicaux exploitant environ 400 laboratoires d'analyses en France, publie un communiqué confirmant être concerné par la campagne d'attaques exploitant la faille du logiciel de transfert sécurisé MOVEit. L'entreprise utilisait ce logiciel pour échanger des flux sécurisés de données avec des établissements de soins. Seuls quatre laboratoires ont été visés, touchant un très petit nombre de patients, avec des données personnelles administratives et d'anciennes données de santé, selon l'entreprise, qui indique que rien ne permet de conclure à une utilisation détournée des informations captées. Le groupe Cl0p liste ensuite Synlab sur son site de fuite mi-juin, parmi 26 entreprises revendiquées dans cette campagne.",
+  "timeline": [
+    {
+      "date": "2023-06-08",
+      "event": "Synlab confirme dans un communiqué être concerné par la faille MOVEit, avec quatre laboratoires visés."
+    },
+    {
+      "date": "2023-06-16",
+      "event": "Cl0p liste Synlab sur son site de fuite parmi les victimes de la campagne ; Numerama recense 26 entreprises visées."
+    },
+    {
+      "date": "2023-06-20",
+      "event": "ZDNet détaille le périmètre : données administratives et anciennes données de santé, un très petit nombre de patients selon Synlab."
+    }
+  ]
+}

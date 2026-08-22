@@ -1,0 +1,37 @@
+{
+  "slug": "vranken-pommery-20250303",
+  "entity": "Vranken-Pommery Monopole (champagne, Reims)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-03-03",
+    "publication": "2025-03-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun détail sur des données dérobées publié dans le communiqué ; intrusion détectée sur le réseau informatique"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Yahoo Finance — VRANKEN-POMMERY MONOPOLE, press release : intrusion dans le système informatique (communiqué, Reims, 3 mars 2025)",
+      "url": "https://uk.finance.yahoo.com/news/vranken-pommery-monopole-press-release-190200619.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Taiwan News (archive web.archive.org) — VRANKEN-POMMERY MONOPOLE, press release : intrusion dans le système informatique",
+      "url": "https://web.archive.org/web/20250406150133/https://www.taiwannews.com.tw/news/6050601",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 3 mars 2025, le groupe champenois Vranken-Pommery Monopole, basé à Reims, annonce par communiqué avoir détecté une intrusion dans son réseau informatique. Par mesure de sécurité, l'ensemble des serveurs est immédiatement déconnecté et arrêté. Le communiqué, diffusé par les services de presse, ne précise ni la nature de l'attaquant, ni d'éventuels volumes de données dérobés.",
+  "timeline": [
+    {
+      "date": "2025-03-03",
+      "event": "Communiqué depuis Reims : le groupe a détecté une intrusion sur son réseau informatique ; tous les serveurs sont déconnectés et arrêtés par précaution."
+    }
+  ]
+}

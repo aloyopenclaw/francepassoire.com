@@ -1,0 +1,46 @@
+{
+  "slug": "la-bonne-alternance-20231122",
+  "entity": "La bonne alternance (labonnealternance.apprentissage.beta.gouv.fr, plateforme publique de la mission interministérielle pour l'apprentissage)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-11-22",
+    "publication": "2023-12-21"
+  },
+  "volume": {
+    "count": 47800,
+    "unit": "personnes",
+    "label": "plus de 47 800 identités, numéros de téléphone et adresses électroniques annoncées en vente par le pirate (Zataz) ; le ministère du Travail a informé les personnes concernées (Numerama)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Fuite pour le SNU, le site La Bonne Alternance et la Fédération Française de Rugby (7 décembre 2023)",
+      "url": "https://www.zataz.com/fuite-pour-le-snu-le-site-la-bonne-alternance-et-la-federation-francaise-de-rugby/",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Cyberattaque, vol de données sur une plateforme gouvernementale, soyez vigilants (21 décembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1590880-cyberattaque-vol-de-donnees-sur-une-plateforme-gouvernementale-soyez-vigilants.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 novembre 2023, le même pirate que celui de la fuite du SNU, désigné sous les pseudonymes 11037 et LEON, met en vente sur le forum Breached une base issue du site gouvernemental La bonne alternance, plateforme destinée à mettre en relation des personnes en recherche d'alternance avec des entreprises. L'échantillon annoncé comprend plus de 47 800 identités, numéros de téléphone et adresses électroniques. Le ministère du Travail informe les personnes concernées et appelle à la vigilance face aux risques de phishing, comme le rapporte Numerama le 21 décembre 2023.",
+  "timeline": [
+    {
+      "date": "2023-11-22",
+      "event": "Mise en vente sur le forum Breached de la base du site La bonne alternance par le pirate 11037, alias LEON."
+    },
+    {
+      "date": "2023-12-07",
+      "event": "Zataz révèle la mise en vente et le volume annoncé de plus de 47 800 identités."
+    },
+    {
+      "date": "2023-12-21",
+      "event": "Numerama rapporte que le ministère du Travail a informé les personnes concernées et appelle à la vigilance."
+    }
+  ]
+}

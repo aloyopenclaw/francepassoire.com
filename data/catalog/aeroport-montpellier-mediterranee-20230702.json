@@ -1,0 +1,47 @@
+{
+  "slug": "aeroport-montpellier-mediterranee-20230702",
+  "entity": "Aéroport de Montpellier-Méditerranée",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-02",
+    "confirmation": "2023-07-05",
+    "publication": "2023-07-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune fuite de données selon les premiers éléments techniques communiqués par la direction ; déclaration faite à la CNIL"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Cyberattaque, l'aéroport de Montpellier estime la situation sous contrôle (3 puis 5 juillet 2023)",
+      "url": "https://www.lemagit.fr/actualites/366543472/Aeroport-de-Montpellier-une-cyberattaque-qui-ne-dit-pas-son-nom",
+      "kind": "article"
+    },
+    {
+      "label": "Midi Libre : Victime d'une très violente cyberattaque le week-end dernier, l'aéroport de Montpellier juge la situation sous contrôle (5 juillet 2023)",
+      "url": "https://www.midilibre.fr/2023/07/05/victime-dune-tres-violente-cyberattaque-le-week-end-dernier-laeroport-de-montpellier-juge-la-situation-sous-controle-11322855.php",
+      "kind": "article"
+    },
+    {
+      "label": "Aéroport de Montpellier-Méditerranée, communiqué : Montpellier-Méditerranée rassure voyageurs et partenaires (juillet 2023, PDF officiel)",
+      "url": "https://www.montpellier.aeroport.fr/fr/file-download/download/public/206",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Dans la nuit du 1er au 2 juillet 2023, l'aéroport de Montpellier-Méditerranée subit une cyberattaque qualifiée de très violente par un responsable de l'encadrement. Les systèmes internes sont bloqués et les opérations de bagagerie et d'embarquement sont gérées manuellement pendant plusieurs jours ; aucun vol n'est annulé, seuls des retards d'une heure maximum sont constatés. Le 5 juillet, le président du directoire reconnaît que l'aéroport a été la cible et la victime d'une cyberattaque sur une partie de ses systèmes informatiques, indique que les premiers éléments techniques ne font pas état de fuite de données, et précise que les services compétents de l'État ont été notifiés, qu'une déclaration a été faite à la CNIL et qu'une plainte a été déposée.",
+  "timeline": [
+    {
+      "date": "2023-07-02",
+      "event": "Cyberattaque dans la nuit du 1er au 2 juillet : systèmes internes bloqués, opérations gérées manuellement, notifications aux services compétents de l'État le matin même."
+    },
+    {
+      "date": "2023-07-05",
+      "event": "La direction confirme la cyberattaque, déclare ne pas constater de fuite de données au vu des premiers éléments, annonce une déclaration à la CNIL et une plainte déposée."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "assemblee-nationale-20230327",
+  "entity": "Assemblée nationale",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-27",
+    "publication": "2023-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Kromsec revendique une dizaine de bases de données et évoque des données de députés et de collaborateurs ; l'Assemblée nationale dément toute atteinte à ses données"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV : Victime d'une cyberattaque, l'Assemblée nationale condamne une action intolérable (27 mars 2023)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/victime-d-une-cyberattaque-l-assemblee-nationale-condamne-une-action-intolerable_AN-202303270560.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL : Le piratage du site de l'Assemblée nationale revendiqué par le groupe de hackers Kromsec",
+      "url": "https://www.rtl.fr/actu/sciences-tech/le-piratage-du-site-de-l-assemblee-nationale-revendique-par-le-groupe-de-hackers-kromsec-7900322946",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo : Ce sont des données publiques, les députés relativisent la fuite de leurs données personnelles sur les réseaux sociaux (28 mars 2023)",
+      "url": "https://www.franceinfo.fr/politique/parlement-francais/assemblee-nationale/ce-sont-des-donnees-publiques-les-deputes-de-l-assemblee-nationale-relativisent-la-fuite-de-leurs-donnees-personnelles-sur-les-reseaux-sociaux_7783280.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 mars 2023, le site de l'Assemblée nationale est rendu inaccessible pendant plusieurs heures par une attaque par déni de service revendiquée par des hackers pro-russes sur Telegram, dans un contexte de contestation de la réforme des retraites. Le groupe Kromsec affirme parallèlement avoir piraté une dizaine de bases de données de l'institution et évoque des données personnelles de parlementaires et de collaborateurs. L'Assemblée nationale indique que l'attaque est sans incidence sur son fonctionnement et sur ses données ; les députés dont les coordonnées circulent sur les réseaux sociaux relativisent une fuite constituée d'éléments pour l'essentiel publics. La présidente de l'Assemblée dit avoir effectué un signalement à la justice. La compromission de données n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2023-03-27",
+      "event": "Attaque par déni de service contre le site de l'Assemblée nationale ; Kromsec revendique le piratage d'une dizaine de bases de données."
+    },
+    {
+      "date": "2023-03-27",
+      "event": "L'Assemblée nationale qualifie l'action d'intolérable et indique qu'elle est sans incidence sur le fonctionnement et les données de l'institution."
+    },
+    {
+      "date": "2023-03-28",
+      "event": "Des données présentées comme celles de députés circulent sur les réseaux sociaux ; la présidente de l'Assemblée effectue un signalement à la justice."
+    }
+  ]
+}

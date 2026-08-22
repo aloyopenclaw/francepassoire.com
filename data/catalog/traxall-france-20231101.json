@@ -1,0 +1,44 @@
+{
+  "slug": "traxall-france-20231101",
+  "entity": "Traxall France",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-11-01",
+    "publication": "2023-11-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "une grande quantité d'informations confidentielles selon les attaquants, sans décompte publié ; 60 000 véhicules et une centaine de clients gérés par la société"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Le leader français de la gestion de parc automobile piraté (3 novembre 2023)",
+      "url": "https://www.zataz.com/le-leader-francais-de-la-gestion-de-parc-automobile-pirate/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live : victime Traxall France revendiquée par 8base (1er novembre 2023)",
+      "url": "https://www.ransomware.live/id/VHJheGFsbCBGcmFuY2VAOGJhc2U",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 1er novembre 2023, le groupe 8base publie Traxall France sur son site de fuite et revendique une attaque par rançongiciel. Traxall France, ex-ERGC, est une filiale du groupe Faubourg spécialisée dans la gestion de flottes automobiles : 60 000 véhicules et une centaine de clients dont Carrefour, Atos, Danone et CGI. Les attaquants affirment avoir téléchargé sur les serveurs des factures, des reçus, des documents comptables, des données personnelles et des contrats de travail, et menacent de diffuser les documents le 7 novembre. Zataz rapporte ensuite une seconde menace visant la maison mère et d'autres filiales du groupe. Les volumes exacts ne sont pas publiés et l'entreprise ne commente pas publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2023-11-01",
+      "event": "8base publie Traxall France sur son site de fuite et annonce l'exfiltration de documents internes (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-11-03",
+      "event": "Zataz documente le chantage : factures, documents comptables, données personnelles et contrats de travail revendiqués volés, publication menacée le 7 novembre."
+    }
+  ],
+  "group": "8base"
+}

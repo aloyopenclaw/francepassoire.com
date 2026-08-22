@@ -1,0 +1,45 @@
+{
+  "slug": "universite-paris-8-20230520",
+  "entity": "Université Paris 8 Vincennes - Saint-Denis (et espace web de la Bibliothèque interuniversitaire de la Sorbonne)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-05-20",
+    "publication": "2023-05-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée exfiltrée signalée ; défacements de pages web revendiqués par un pirate isolé sous le pseudonyme Yannox"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Un pirate pro-russe a-t-il attaqué l'université Paris 8 et la Bibliothèque de la Sorbonne ? (22 mai 2023)",
+      "url": "https://www.zataz.com/un-pirate-pro-russe-a-il-attaque-luniversite-paris-8-et-la-bibliotheque-de-la-sorbonne/",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic : Le site web de l'université Paris 8 piraté par des hackers pro-russes, avec un message tout particulier (22 mai 2023)",
+      "url": "https://www.clubic.com/antivirus-securite-informatique/virus-hacker-piratage/piratage-informatique/actualite-470844-le-site-web-de-l-universite-paris-8-pirate-par-des-hackers-pro-russes-avec-un-message-tout-particulier.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Les 20 et 21 mai 2023, deux messages sont laissés sur le site web de l'université Paris 8, dont un affichant Vive la France et la Russie. Le 22 mai en fin d'après-midi, un espace web de la Bibliothèque de la Sorbonne est défacé à son tour avec un second message. Les modifications sont le fait d'un jeune adulte français se présentant comme pro-russe sous le pseudonyme Yannox. Selon l'analyse de Zataz, il s'agit d'un individu isolé en quête de visibilité, sans lien établi avec des groupes hacktivistes ; aucun vol de données n'est constaté. Clubic relaie l'affaire comme un piratage attribué à des hackers pro-russes.",
+  "timeline": [
+    {
+      "date": "2023-05-20",
+      "event": "Premier message laissé sur le site de l'université Paris 8."
+    },
+    {
+      "date": "2023-05-21",
+      "event": "Second message affiché sur le site de l'université Paris 8, dont un affichant Vive la France et la Russie."
+    },
+    {
+      "date": "2023-05-22",
+      "event": "Un espace web de la Bibliothèque de la Sorbonne est défacé ; Zataz et Clubic publient le même jour leur analyse."
+    }
+  ]
+}

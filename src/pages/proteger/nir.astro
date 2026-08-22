@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+/**
+ * Page scénario « Mon numéro de Sécurité sociale a fuité » — gabarit
+ * propriétaire SEPROTEGER (div #page-nir) : héros rouge « Agissez
+ * aujourd'hui » (15 min), définition (Fraude aux remboursements), geste
+ * ameli. La carte « En 30 secondes » et le CTA veille, absents du gabarit,
+ * sont complétés sur le même gabarit que #page-email / #page-tel (copie
+ * propriétaire : geste ameli + définition de la page).
+ */
+---
+<Layout
+  title="Mon numéro de Sécurité sociale a fuité - France Passoire"
+  description="Conseils concrets si votre numéro de Sécurité sociale a fuité : sécurisez votre compte ameli, vérifiez votre RIB et surveillez vos remboursements."
+>
+  <section class="bg-brand-orange border-b-2 border-brand-ink py-12 relative overflow-hidden bg-dot-matrix">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+      <a href="/proteger/#proteger-agir" class="mb-6 font-display font-bold flex items-center gap-2 text-brand-ink bg-brand-cream px-3 py-1.5 rounded-full border-2 border-brand-ink shadow-sm hover:bg-brand-paper transition-colors w-max">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Retour au hub
+      </a>
+
+      <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-8 sm:p-12">
+        <div class="flex flex-wrap gap-4 items-center mb-6">
+          <span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-sm shadow-sm font-bold flex items-center gap-2">
+            <span class="block w-2 h-2 bg-brand-cream rounded-full"></span> Agissez aujourd'hui
+          </span>
+          <span class="font-mono text-brand-ink/60 text-sm">Temps estimé : 15 min</span>
+        </div>
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-brand-ink mb-2">Mon numéro de Sécurité sociale a fuité</h1>
+        <p class="font-body text-xl font-medium text-brand-ink/80 mb-8">Pas de panique. Mais agissons vite.</p>
+
+        <div class="bg-brand-paper border-2 border-brand-ink rounded-xl p-5 shadow-sm">
+          <h2 class="font-display font-bold text-lg mb-4 border-b-2 border-brand-ink/20 pb-2">En 30 secondes</h2>
+          <ul class="space-y-3 font-body font-medium">
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Changer le mot de passe du compte ameli pour un mot complexe et unique.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Vérifier le RIB enregistré sur votre compte ameli.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Vérifier les derniers remboursements : une dépense de santé inconnue est le signal d'alerte.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-brand-paper space-y-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
+       <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Ce que ça veut dire pour vous</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Fraude aux remboursements</h3>
+            <p class="text-sm">Des escrocs utilisent votre NIR pour se faire rembourser de fausses dépenses de santé.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Les gestes, dans l'ordre</h2>
+        <div class="space-y-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire shadow-hard flex flex-col sm:flex-row gap-6 relative">
+            <div class="absolute top-4 right-4 bg-brand-paper border-2 border-brand-ink px-2 py-1 rounded font-mono text-xs font-bold shadow-sm">⏱ 5 min</div>
+            <div class="font-mono font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)] leading-none pt-2 hidden sm:block">1</div>
+            <div>
+              <h3 class="font-display font-extrabold text-2xl mb-1 pr-16 sm:pr-0">Sécuriser son compte ameli</h3>
+              <p class="font-body text-base">Changez le mot de passe pour un mot complexe et unique. Vérifiez votre RIB.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-12 border-t-2 border-brand-ink/20">
+         <a href="/proteger/#proteger-surveiller" class="w-full bg-brand-ink text-brand-cream text-center py-6 rounded-passoire font-display font-extrabold text-2xl border-2 border-brand-ink shadow-hard hover:-translate-y-1 hover:shadow-hard-hover transition-all btn-press">
+          🔔 Activer ma veille anti-fuites
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

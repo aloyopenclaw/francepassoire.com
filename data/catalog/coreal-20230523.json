@@ -1,0 +1,41 @@
+{
+  "slug": "coreal-20230523",
+  "entity": "Coreal (Compagnie régionale d'aliments, Yffiniac, Côtes-d'Armor)",
+  "siren": "400966800",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-05-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes et catégories de données non communiqués ; revendication ransomware 8base non confirmée par l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — fiche victime COMPAGNIE REGIONALE D'ALIMENTS (COREAL), groupe 8base",
+      "url": "https://www.ransomware.live/id/Q09NUEFHTklFIFJFR0lPTkFMRSBEJ0FMSU1FTlRTIChDT1JFQUwpQDhiYXNl",
+      "kind": "revendication"
+    },
+    {
+      "label": "Référent Cybersécurité — COMPAGNIE REGIONALE D'ALIMENTS (COREAL), secteur agriculture and food production, ciblée par le rançongiciel 8base en janvier 2023",
+      "url": "https://www.referent-cybersecurite.fr/pages/incidents-et-piratages/compagnie-regionale-d-aliments-coreal",
+      "kind": "article"
+    }
+  ],
+  "description": "Coreal, société de nutrition animale créée en 1995 et installée à Yffiniac (Côtes-d'Armor), fabrique des aliments pour porcs et bovins destinés aux éleveurs ; elle est rattachée au pôle nutrition animale du groupe Michel. Le groupe de ransomware 8base l'ajoute à son site de fuite avec une date d'attaque estimée au 23 janvier 2023 et une publication de la revendication au 23 mai 2023. Aucun volume ni catégorie de données dérobées n'est publié, et l'entreprise n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2023-01-23",
+      "event": "Date d'attaque estimée par le suivi des sites de fuite pour la compromission revendiquée des systèmes de Coreal."
+    },
+    {
+      "date": "2023-05-23",
+      "event": "Le groupe 8base publie Coreal sur son site de fuite ; aucun échantillon de données n'est diffusé à ce stade."
+    }
+  ]
+}

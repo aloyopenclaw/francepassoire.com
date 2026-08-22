@@ -1,0 +1,46 @@
+{
+  "slug": "universite-de-mayotte-20260522",
+  "entity": "Université de Mayotte (CUFR de Dembéni)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-05-22",
+    "publication": "2026-05-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données établi ; 111 fichiers chiffrés ou détruits sur près de 19 500 présents sur le serveur selon le rapport d'expertise Lexfo"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Mayotte Hebdo, Cyberattaque à l'université de Mayotte : des incohérences interrogent (22 mai 2026)",
+      "url": "https://www.mayottehebdo.com/actualite/education/cyberattaque-a-luniversite-de-mayotte-des-incoherences-interrogent/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Journal de Mayotte, Université de Mayotte : CGT Educ'Action et Sup'recherche-UNSA interpellent Emmanuel Macron (17 juillet 2026)",
+      "url": "https://lejournaldemayotte.yt/2026/07/17/universite-de-mayotte-cgt-educaction-et-suprecherche-unsa-interpellent-emmanuel-macron/",
+      "kind": "article"
+    },
+    {
+      "label": "Mediapart (blog Isabelle Vauconsant) : À Mayotte, l'université de la dernière chance (juillet 2026)",
+      "url": "https://blogs.mediapart.fr/isabelle-vauconsant/blog/140726/mayotte-luniversite-de-la-derniere-chance",
+      "kind": "article"
+    }
+  ],
+  "description": "En décembre 2023, le centre universitaire de formation et de recherche de Mayotte à Dembéni, devenu Université de Mayotte le 1er janvier 2024, subit une cyberattaque par rançongiciel. Le rapport d'expertise de l'entreprise Lexfo, établi en 2024, décrit un incident circonscrit à l'interface entre la direction administrative des services et les services informatiques, ayant chiffré ou détruit 111 fichiers sur près de 19 500 présents sur le serveur, l'ensemble des applications métiers ayant été sauvegardé. L'incident est reconnu dans le rapport public de la Cour des comptes, qui relève que des procédures de marché n'ont pas pu être appréciées et que des pièces n'ont pas été communiquées en raison de la cyberattaque. La direction invoque durablement cet incident pour justifier la non-communication de documents administratifs et comptables auprès de la Cour des comptes, de l'IGÉSR, du rectorat et du tribunal administratif. L'écart entre ce discours et les conclusions du rapport technique n'est révélé qu'en mai 2026 par la presse locale. Aucune exfiltration de données n'est établie et aucune revendication n'est rendue publique.",
+  "timeline": [
+    {
+      "date": "2026-05-22",
+      "event": "Mayotte Hebdo révèle la cyberattaque de décembre 2023, le rapport Lexfo (111 fichiers sur 19 500) et son usage par la direction pour justifier l'absence de documents réclamés par les autorités de contrôle."
+    },
+    {
+      "date": "2026-07-17",
+      "event": "Les syndicats CGT Educ'Action et Sup'recherche-UNSA saisissent le président de la République, dénonçant l'invocation d'une disparition généralisée des dossiers en contradiction avec le rapport forensique."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "groupe-hospitalier-saint-vincent-20230906",
+  "entity": "Groupe hospitalier Saint-Vincent (Strasbourg)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-06",
+    "publication": "2023-09-07",
+    "confirmation": "2023-09-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration de données détectée selon le groupe hospitalier ; quatre établissements impactés"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : Un groupe hospitalier touché par une cyberattaque à Strasbourg, le réseau informatique mis à l'arrêt (7 septembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1495294-un-groupe-hospitalier-touche-par-une-cyberattaque-a-strasbourg-le-reseau-informatique-mis-a-larret.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : Strasbourg, une cyberattaque vise un groupe hospitalier (7 septembre 2023)",
+      "url": "https://www.leparisien.fr/high-tech/strasbourg-une-cyberattaque-vise-un-groupe-hospitalier-07-09-2023-SIBNPXSTFFG7XDXA3ZXQSXLVUA.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : En Alsace, une attaque d'envergure paralyse un groupe hospitalier (septembre 2023)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61175-en-alsace-une-attaque-d-envergure-paralyse-un-groupe-hospitalier.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 6 au 7 septembre 2023, le groupe hospitalier Saint-Vincent de Strasbourg, qui réunit plusieurs cliniques et établissements médico-sociaux alsaciens, subit une intrusion informatique. Les équipes techniques mettent à l'arrêt l'ensemble du système d'information pour bloquer la propagation, coupant logiciels, messageries et outils de travail au profit d'une prise en charge manuscrite des patients. La porte-parole du groupe confirme l'intrusion et indique que les cliniques maintiennent leur activité en mode dégradé, les patients pouvant continuer à se présenter. Le groupe hospitalier indique par la suite qu'aucune exfiltration de données n'a été détectée ; il avait récemment conduit des exercices de crise en prévision d'une cyberattaque.",
+  "timeline": [
+    {
+      "date": "2023-09-06",
+      "event": "Intrusion détectée dans la nuit au groupe hospitalier Saint-Vincent ; arrêt préventif du système d'information."
+    },
+    {
+      "date": "2023-09-07",
+      "event": "Le groupe confirme l'intrusion et le fonctionnement en mode dégradé ; Numerama, Le Parisien et L'Informaticien relatent l'attaque."
+    },
+    {
+      "date": "2023-09-07",
+      "event": "Selon la communication du groupe, aucune exfiltration de données n'est détectée ; la continuité des soins est maintenue."
+    }
+  ]
+}
