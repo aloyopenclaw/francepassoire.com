@@ -1,0 +1,45 @@
+{
+  "slug": "departement-indre-et-loire-20220823",
+  "entity": "Département d'Indre-et-Loire",
+  "siren": "223700014",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-08-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "documents internes du service général, de la direction générale et du pôle coordination intégralement diffusés sur le dark web selon Zataz ; identités, données RH et logements de fonction cités ; nombre de personnes non chiffré"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Zataz — Les pirates du Département d'Indre-et-Loire diffusent les informations volées (23 août 2022)",
+      "url": "https://www.zataz.com/les-pirates-du-departement-dindre-et-loire-diffusent-les-informations-volees/",
+      "kind": "article"
+    },
+    {
+      "label": "La Nouvelle République — En Indre-et-Loire, les cyberattaques se comptent par centaines (3 février 2023)",
+      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/en-indre-et-loire-les-cyberattaques-se-comptent-par-centaines",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Cyberattaques : la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 10 au 11 juillet 2022, un rançongiciel paralyse le système d'information du Département d'Indre-et-Loire. Environ 250 serveurs, soit les trois quarts du parc selon la collectivité, sont corrompus. Le groupe Vice Society revendique l'attaque. Un mois plus tard, il diffuse l'intégralité des documents exfiltrés des services généraux, de la direction et du pôle coordination : identités, âge, profession, données RH et logements de fonction. La publication sur le dark web est établie par la presse en août 2022 ; le nombre de personnes concernées n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2022-07-10",
+      "event": "Un rançongiciel paralyse le Département dans la nuit du 10 au 11 juillet ; les trois quarts des serveurs sont touchés et le réseau sera reconstruit."
+    },
+    {
+      "date": "2022-08-23",
+      "event": "Le groupe Vice Society a diffusé les documents exfiltrés sur le dark web ; Zataz révèle l'intégralité de la publication."
+    }
+  ],
+  "group": "vice-society"
+}
