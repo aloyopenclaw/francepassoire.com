@@ -1,0 +1,32 @@
+{
+  "slug": "partner-immo-20250813",
+  "entity": "Partnerimmo",
+  "siren": "489816934",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-08-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; incident répertorié comme rançongiciel par le traqueur BonjourLaFuite, sans détail public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "BonjourLaFuite (traqueur imirhil/aeris) — Partner Immo, 13 août 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Partnerimmo, éditeur français de logiciels de gérance locative et de syndic de copropriété pour les professionnels de l'immobilier, apparaît le 13 août 2025 sur BonjourLaFuite, traqueur des fuites de données françaises, comme victime d'un incident de type rançongiciel. Aucune communication de l'entreprise, aucune notification publique du régulateur et aucune revendication nominative d'un groupe n'accompagnent le signalement ; le vecteur de l'attaque, le volume d'enregistrements et les catégories de données exposées ne sont pas détaillés. La plateforme héberge pour ses clients des dossiers de locataires, de propriétaires et de copropriétés.",
+  "timeline": [
+    {
+      "date": "2025-08-13",
+      "event": "Signalement d'un incident de type rançongiciel visant Partnerimmo sur le traqueur BonjourLaFuite, sans détail public."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "societe-realisant-des-travaux-d-isolation-de-renovation-energetique-et-de-chauffage-20250109",
+  "entity": "Société réalisant des travaux d'isolation, de rénovation énergétique et de chauffage",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-01-09",
+    "confirmation": "2025-01-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Bilan des sanctions 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 9 janvier 2025, en procédure simplifiée, une amende de 15 000 euros et une injonction contre une société réalisant des travaux d'isolation, de rénovation énergétique et de chauffage, désignée anonymement. Trois manquements sont retenus : une prospection commerciale sans base licite, un défaut de minimisation des données et le traitement de données inexactes. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué. La sanction est recensée dans le tableau officiel et le bilan des sanctions 2025 de la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-01-09",
+      "event": "Amende de 15 000 euros et injonction en procédure simplifiée pour prospection illicite, défaut de minimisation et données inexactes."
+    }
+  ]
+}
