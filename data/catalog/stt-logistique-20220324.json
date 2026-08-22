@@ -1,0 +1,42 @@
+{
+  "slug": "stt-logistique-20220324",
+  "entity": "STT Logistique",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-03-24",
+    "publication": "2023-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 2.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : victime stt-logistique revendiquée par LockBit2 (24 mars 2022)",
+      "url": "https://www.ransomware.live/id/c3R0LWxvZ2lzdGlxdWUuLi4uQGxvY2tiaXQy",
+      "kind": "revendication"
+    },
+    {
+      "label": "LeMagIT : La logistique, un secteur de choix pour les cyberattaques ? (22 mars 2023, mis à jour 30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 mars 2022, la franchise LockBit 2.0 publie STT Logistique, acteur français de la logistique, sur son site de fuite et revendique l'attaque. LeMagIT cite la société parmi les rares victimes connues de la logistique française en 2022, avec Sobotram, et dresse l'inventaire des transporteurs visés par les rançongiciels depuis 2020. L'entreprise ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2022-03-24",
+      "event": "LockBit 2.0 publie STT Logistique sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-03-22",
+      "event": "LeMagIT recense la revendication dans son panorama des attaques visant la logistique française en 2022."
+    }
+  ],
+  "group": "lockbit"
+}

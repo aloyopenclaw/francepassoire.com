@@ -1,0 +1,37 @@
+{
+  "slug": "dragages-ports-20221009",
+  "entity": "Dragages-Ports (GIE)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-10-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 3.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : victime dragages-ports.fr revendiquée par LockBit3 (9 octobre 2022)",
+      "url": "https://www.ransomware.live/id/ZHJhZ2FnZXMtcG9ydHMuZnJAbG9ja2JpdDM",
+      "kind": "revendication"
+    },
+    {
+      "label": "M-CERT (France Cyber Maritime), base ADMIRAL, incident 2022_079 : rançongiciel contre un groupement lié au monde maritime (9 octobre 2022, victime Dragage Ports, LockBit 3.0)",
+      "url": "https://www.m-cert.fr/admiral/2022_079.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 octobre 2022, la franchise LockBit 3.0 publie le GIE Dragages-Ports sur son site de fuite et revendique l'attaque. Ce groupement d'intérêt économique, créé en 1979, regroupe l'État, les grands ports maritimes métropolitains (Dunkerque, Nantes-Saint-Nazaire, La Rochelle, Bordeaux, Marseille), Haropa Port et la Région Hauts-de-France ; il gère la flotte de dragues d'entretien des ports membres. L'incident est recensé par le M-CERT dans sa base ADMIRAL comme un rançongiciel visant un groupement lié au monde maritime. Le groupement ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus.",
+  "timeline": [
+    {
+      "date": "2022-10-09",
+      "event": "LockBit 3.0 publie le GIE Dragages-Ports sur son site de fuite (relais Ransomware.live) ; l'incident est documenté par le M-CERT."
+    }
+  ],
+  "group": "lockbit"
+}
