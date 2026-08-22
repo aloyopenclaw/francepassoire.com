@@ -1,0 +1,48 @@
+{
+  "slug": "proprietes-privees-20260609",
+  "entity": "Propriétés-Privées.com",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-09",
+    "publication": "2026-06-09"
+  },
+  "volume": {
+    "count": 2528753,
+    "unit": "personnes",
+    "label": "3 283 422 enregistrements associés à 2 528 753 personnes (2,65 Go) selon la publication du 9 juin 2026, dont une base de 648 000 prospects (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Propriétés Privées touché par une fuite de données revendiquée (9 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/propri-t-s-priv-es-mq5hrqylubnjygteyl",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Propriétés Privées : cyberattaque et fuite de données massive (9 juin 2026)",
+      "url": "https://www.cyberattaque.org/proprietes-privees-cyberattaque-fuite-de-donnees-massive/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Le pirate ChimeraZ s'attaque à l'immobilier français après le tourisme (9 juin 2026)",
+      "url": "https://www.zataz.com/le-pirate-chimeraz-sattaque-a-limmobilier-francais-apres-le-tourisme/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 juin 2026, ChimeraZ diffuse une base attribuée à Propriétés-Privées.com, réseau français de mandataires immobiliers fondé en 2006. Elle représenterait 3 283 422 enregistrements pour 2 528 753 personnes : clients, prospects, mandataires et collaborateurs. Un fichier de 648 000 prospects exposerait situation familiale, revenus, épargne, charges et informations patrimoniales. L'auteur affirme avoir compromis environ 9 000 messageries professionnelles et extrait leur contenu pendant une semaine. Ces déclarations ne sont pas confirmées publiquement.",
+  "timeline": [
+    {
+      "date": "2026-06-09",
+      "event": "ChimeraZ publie 3 283 422 enregistrements de Propriétés Privées : identités, coordonnées et données patrimoniales de prospects selon les extraits."
+    },
+    {
+      "date": "2026-06-09",
+      "event": "Le pirate déclare à un média spécialisé avoir lu 9 000 messageries professionnelles pendant une semaine ; déclarations non vérifiées."
+    }
+  ]
+}

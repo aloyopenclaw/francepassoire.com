@@ -1,0 +1,43 @@
+{
+  "slug": "le-compte-asso-20260626",
+  "entity": "Le Compte Asso (ministère des Sports)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-26",
+    "publication": "2026-06-29"
+  },
+  "volume": {
+    "count": 227000,
+    "unit": "personnes",
+    "label": "jusqu'à 227 000 enregistrements revendiqués sur un forum ; le ministère confirme par courrier l'exfiltration d'une partie des données saisies dans Le Compte Asso, dont des coordonnées bancaires (IBAN/BIC)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Ministère des Sports : jusqu'à 227 000 enregistrements du Compte Asso revendiqués après une cyberattaque (26 juin 2026)",
+      "url": "https://www.cyberattaque.org/ministere-des-sports-jusqua-227-000-enregistrements-du-compte-asso-revendiques-apres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Ministère des Sports : 227 000 personnes et leurs IBAN potentiellement exposés (29 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/minist-re-des-sports-de-la-jeunesse-et-de-la-vie-associative-mqydv3ob8oq4888ozo",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 juin 2026, le ministère des Sports informe par courrier les associations concernées. Une partie des données saisies dans Le Compte Asso, son téléservice, a été exfiltrée puis publiée sur un forum cybercriminel. Le courrier confirme la présence de coordonnées bancaires, IBAN et BIC, parmi les informations compromises. La publication sur le forum revendique jusqu'à 227 000 enregistrements : civilité, nom, prénom, fonction, téléphone, e-mail, banque et domiciliation. Une fiche distincte documente la fuite de mai concernant les éducateurs sportifs.",
+  "timeline": [
+    {
+      "date": "2026-06-26",
+      "event": "Le ministère confirme par courrier l'exfiltration de données du Compte Asso et leur publication sur un forum, dont des IBAN et BIC."
+    },
+    {
+      "date": "2026-06-29",
+      "event": "Un relais de veille documente la publication : jusqu'à 227 000 enregistrements avec identités, coordonnées et coordonnées bancaires."
+    }
+  ]
+}

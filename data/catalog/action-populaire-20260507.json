@@ -1,0 +1,39 @@
+{
+  "slug": "action-populaire-20260507",
+  "entity": "Action Populaire (La France Insoumise)",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-07",
+    "publication": "2026-05-07"
+  },
+  "volume": {
+    "count": 120000,
+    "unit": "personnes",
+    "label": "plus de 120 000 adresses e-mail revendiquées, ainsi qu'environ 20 000 numéros de téléphone, dans un dump complet de la plateforme (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Action Populaire (La France Insoumise) : 120 K adresses (7 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/action-populaire-la-france-insoumise-movimkdab8oo5wwy747",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Action Populaire : les données liées aux militants de La France Insoumise dans une fuite (7 mai 2026)",
+      "url": "https://www.cyberattaque.org/action-populaire-les-donnees-liees-aux-militants-de-la-france-insoumise-dans-une-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 mai 2026, un cybercriminel publie une base présentée comme un dump complet d'Action Populaire, la plateforme du réseau militant lié à La France Insoumise. La revendication évoque plus de 120 000 adresses e-mail et environ 20 000 numéros de téléphone. Les catégories annoncées incluent des informations personnelles, des messages privés, des événements et des données liées aux paiements. Des échantillons publics accompagnent la publication. À ce stade, aucun élément n'est confirmé officiellement.",
+  "timeline": [
+    {
+      "date": "2026-05-07",
+      "event": "Publication sur un forum d'un dump présenté comme complet d'Action Populaire : 120 000 adresses e-mail, messages privés et données de paiements évoqués."
+    }
+  ]
+}
