@@ -1,0 +1,42 @@
+{
+  "slug": "auto-pieces-20230830",
+  "entity": "Auto Pièces (casse automobile, Reims)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-08-30",
+    "publication": "2023-12-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 3.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : victime auto-pieces.fr revendiquée par LockBit3 (30 août 2023)",
+      "url": "https://www.ransomware.live/id/YXV0by1waWVjZXMuZnJAbG9ja2JpdDM",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage : Les cyberattaques de LockBit3 en 2023, tableau des victimes recensées (29 décembre 2023)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-de-lockbit3-en-2023/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 août 2023, la franchise LockBit 3.0 publie le domaine auto-pieces.fr sur son site de fuite et revendique l'attaque. Ce domaine est celui d'Auto Pièces, casse automobile agréée et centre de destruction de véhicules hors d'usage située à Reims, active depuis 1979 dans la revente de pièces détachées et le démontage de véhicules. La revendication figure dans le tableau des victimes françaises de LockBit 3.0 recensé par DPO Partage pour 2023. L'entreprise ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2023-08-30",
+      "event": "LockBit 3.0 publie auto-pieces.fr sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-12-29",
+      "event": "DPO Partage recense la revendication dans son tableau des attaques LockBit 3.0 de 2023 en France."
+    }
+  ],
+  "group": "lockbit"
+}
