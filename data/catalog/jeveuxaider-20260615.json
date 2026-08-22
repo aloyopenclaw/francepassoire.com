@@ -1,0 +1,38 @@
+{
+  "slug": "jeveuxaider-20260615",
+  "entity": "JeVeuxAider.gouv.fr (Réserve civique)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-15",
+    "publication": "2026-06-15"
+  },
+  "volume": {
+    "count": 558952,
+    "unit": "personnes",
+    "label": "558 952 personnes uniques, 1 248 305 enregistrements et 421 131 adresses e-mail uniques (16,2 Go) selon la publication du 15 juin 2026 (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Le service gouvernemental Je Veux Aider visé par une fuite de données (15 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/jeveuxaider-gouv-fr-mqeg2t0qixdt06zw3dr",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — JeVeuxAider.gouv.fr : plus de 558 000 bénévoles concernés par une fuite de données (15 juin 2026)",
+      "url": "https://www.cyberattaque.org/jeveuxaider-gouv-fr-plus-de-558-000-benevoles-potentiellement-concernes-par-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 juin 2026, un cybercriminel signant Misere publie sur un forum une base attribuée à JeVeuxAider.gouv.fr, la plateforme publique de la Réserve civique dédiée au bénévolat. La publication annonce 558 952 personnes uniques, 1 248 305 enregistrements et 16,2 Go de données. L'auteur affirme avoir exploité une faille de type IDOR sur une API, accessible depuis un compte nouvellement créé, et diffuse des échantillons. Si ces chiffres étaient avérés, ce serait l'une des plus grandes expositions touchant une plateforme gouvernementale française. Aucune confirmation officielle à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-06-15",
+      "event": "Misere publie 558 952 profils attribués à JeVeuxAider.gouv.fr : exploitation d'une faille IDOR sur une API selon l'auteur, échantillons diffusés."
+    }
+  ]
+}

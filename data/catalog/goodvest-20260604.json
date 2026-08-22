@@ -1,0 +1,44 @@
+{
+  "slug": "goodvest-20260604",
+  "entity": "Goodvest",
+  "siren": "889263117",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-04",
+    "publication": "2026-06-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; l'entreprise confirme un incident détecté le 2 juin 2026 ayant exposé des données patrimoniales de clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cybercriminalité : Goodvest touché par une fuite de données en France (4 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/goodvest-mpzzt8syiprydgh3mta",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Goodvest victime d'une cyberattaque : des données patrimoniales de clients exposées (5 juin 2026)",
+      "url": "https://www.cyberattaque.org/goodvest-victime-dune-cyberattaque-des-donnees-patrimoniales-de-clients-exposees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début juin 2026, Goodvest, plateforme d'investissement responsable, informe ses clients d'une cyberattaque détectée le 2 juin. Selon l'entreprise, l'attaquant a exploité une clé d'accès technique et interrogé une API de données de façon automatisée. Les informations consultées incluent nom, prénom, e-mail, téléphone, composition du foyer, situation financière, encours, versements en attente, revenus et patrimoine déclarés. Coordonnées bancaires, mots de passe et documents d'identité sont exclus, et les fonds des clients ne sont pas affectés. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-06-02",
+      "event": "Goodvest détecte une cyberattaque exploitant une clé d'accès technique et une API de données, selon sa communication client."
+    },
+    {
+      "date": "2026-06-04",
+      "event": "Les clients sont informés : données patrimoniales et financières consultées ; fonds et identifiants non affectés selon l'entreprise."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "dossier-medical-partage-20260602",
+  "entity": "Dossier médical partagé (mon espace santé)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-02",
+    "publication": "2026-06-02"
+  },
+  "volume": {
+    "count": 34000000,
+    "unit": "enregistrements",
+    "label": "plus de 34 millions de dossiers de Français revendiqués le 2 juin 2026 sur un forum ; environ 80 % des enregistrements contiendraient un numéro de sécurité sociale selon l'auteur (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez le Dossier Médical Partagé (DMP) : fuite de données (2 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/dossier-m-dical-partag-dmp-mpvrkfvsr9ckxxxxygg",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Mon Espace Santé (DMP) : plus de 34 millions de dossiers de Français revendiqués sur le DarkWeb (2 juin 2026)",
+      "url": "https://www.cyberattaque.org/dossier-medical-partage-cyberataque-dmp-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 juin 2026, un cybercriminel revendique sur un forum une base attribuée au Dossier médical partagé, service public numérique de santé adossé à l'Assurance Maladie. Il annonce plus de 34 millions de dossiers. Les échantillons publiés montreraient noms, dates et lieux de naissance, numéros de sécurité sociale, coordonnées, ainsi qu'IBAN et codes BIC sur une partie des fiches. Selon l'auteur, environ 80 % des enregistrements contiendraient un numéro de sécurité sociale. Ces affirmations ne sont corroborées par aucune source indépendante ni confirmation officielle.",
+  "timeline": [
+    {
+      "date": "2026-06-02",
+      "event": "Un cybercriminel revendique plus de 34 millions de dossiers attribués au DMP ; échantillons avec numéros de sécurité sociale et IBAN selon lui."
+    },
+    {
+      "date": "2026-06-02",
+      "event": "Les relais de veille soulignent l'absence de vérification indépendante : investigations en cours, aucune confirmation officielle."
+    }
+  ]
+}

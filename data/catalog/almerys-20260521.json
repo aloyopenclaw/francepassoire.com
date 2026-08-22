@@ -1,0 +1,43 @@
+{
+  "slug": "almerys-20260521",
+  "entity": "Almerys",
+  "siren": "432701639",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-21",
+    "publication": "2026-05-22"
+  },
+  "volume": {
+    "count": 15500000,
+    "unit": "comptes",
+    "label": "15,5 millions de comptes revendiqués le 21 mai 2026 par le pirate Lagui ; le relais du 22 mai évoque 15 millions de numéros de sécurité sociale couvrant 2010 à 2026 (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Almerys : 15,5 M comptes compromis (21 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/almerys-mpfwljdi36y8238mlfs",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Almerys au cœur d'une fuite massive de 15 millions de numéros de sécurité sociale (22 mai 2026)",
+      "url": "https://www.cyberattaque.org/almerys-au-coeur-dune-fuite-massive-de-15-millions-de-numeros-de-securite-sociale/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 mai 2026, le pirate Lagui revendique une nouvelle compromission des systèmes d'Almerys, opérateur majeur du tiers payant santé, déjà victime d'un piratage fin janvier 2024. La base mise en vente couvrirait la période 2010 à 2026. Les extraits publiés laisseraient voir numéros de sécurité sociale, noms, prénoms, dates de naissance, contrats, données de mutuelles et périodes de couverture. L'auteur affirme que plusieurs membres d'une même famille seraient rattachés à un seul numéro de sécurité sociale. L'authenticité de l'ensemble n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-05-21",
+      "event": "Lagui revendique une nouvelle compromission d'Almerys : 15,5 millions de comptes, des données couvrant 2010 à 2026, numéros de sécurité sociale et contrats évoqués."
+    },
+    {
+      "date": "2026-05-22",
+      "event": "Un relais de veille documente la mise en vente : 15 millions de numéros de sécurité sociale selon sa lecture ; aucune confirmation officielle."
+    }
+  ]
+}
