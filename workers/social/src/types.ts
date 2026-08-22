@@ -116,6 +116,13 @@ export interface PostPayload {
   text: string;
   /** URL de la fiche (ou du site) partagée dans le post. */
   url: string;
+  /**
+   * Image du post (gabarit propriétaire 22/08) : logo de l'organisation si
+   * trouvé, sinon la carte FrancePassoire /fiche/<slug>/card.jpg.
+   */
+  imageUrl?: string;
+  /** Description de la fiche (« Ce que l'on sait ») — gabarit propriétaire. */
+  description?: string;
   /** Statut éditorial de la fiche concernée — déclenche la garde de mention. */
   statut?: Statut;
   /** Traçabilité ; `attempts` (compteur de tentatives) appartient à la file. */

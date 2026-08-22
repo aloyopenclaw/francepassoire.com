@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { MOTIFS_RETRAIT, type MotifRetrait, type Statut } from '../src/lib/taxonomy';
 import {
+  PHARE,
+  renderSocialPost,
   renderNewFichePost,
   renderStatusChangePost,
   renderWeeklyDigestTeaser,
@@ -278,5 +280,35 @@ describe('social-templates — posts defamation-safe (nouvelle fiche, statut, te
     expect(() => renderNewFichePost({ ...ficheConfirmee(), url: '  ' })).toThrow(/url/);
     expect(() => renderWeeklyDigestTeaser({ fiches: -1, personnes: 0 })).toThrow(/entiers/);
     expect(() => renderWeeklyDigestTeaser({ fiches: 1.5, personnes: 0 })).toThrow(/entiers/);
+  });
+});
+
+// Gabarit social propriétaire (22/08) : description verbatim + phare.
+describe('renderSocialPost — gabarit propriétaire', () => {
+  const actua = {
+    entity: 'Actua',
+    description: "Le 22 août 2026, le groupe LockBit 5.0 revendique une attaque contre Actua, groupe français de recrutement et de travail temporaire fort de 37 agences et plus de 1 800 entreprises partenaires. Les cybercriminels annoncent la diffusion début septembre, via dix espaces de stockage distincts, d'un ensemble de documents comprenant des passeports, des diplômes, des CV et des attestations d'assurance concernant plus de 100 000 personnes recrutées.",
+    url: 'https://francepassoire.com/fiche/actua-20260822/',
+    imageUrl: 'https://francepassoire.com/fiche/actua-20260822/card.jpg',
+  };
+
+  it('description MOT POUR MOT puis phare', () => {
+    const post = renderSocialPost(actua);
+    expect(post.startsWith(actua.description)).toBe(true);
+    expect(post).toContain('\n\n');
+    expect(post.endsWith(PHARE)).toBe(true);
+  });
+
+  it('phare invite au site et au suivi', () => {
+    expect(PHARE.toLowerCase()).toContain('fiche');
+    expect(PHARE.toLowerCase()).toContain('suivre');
+  });
+
+  it('description vide → refus, jamais d’improvisation', () => {
+    expect(() => renderSocialPost({ ...actua, description: '   ' })).toThrow();
+  });
+
+  it('aucun em-dash dans le rendu', () => {
+    expect(renderSocialPost(actua)).not.toContain('—');
   });
 });

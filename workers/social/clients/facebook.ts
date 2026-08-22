@@ -61,18 +61,31 @@ export const send: SendFn = async (
     };
   }
 
-  const url = `https://graph.facebook.com/${GRAPH_VERSION}/${pageId}/feed`;
+  // Gabarit propriétaire 22/08 : image + texte. /photos accepte une image
+  // hébergée (url) et publie le post avec sa miniature ; sans imageUrl
+  // (post texte pur), repli sur /feed.
+  const avecImage = typeof payload.imageUrl === 'string' && payload.imageUrl.startsWith('https://');
+  const chemin = avecImage ? 'photos' : 'feed';
+  const url = `https://graph.facebook.com/${GRAPH_VERSION}/${pageId}/${chemin}`;
   const controleur = new AbortController();
   const minuteur = setTimeout(() => controleur.abort(), FB_TIMEOUT_MS);
   try {
     const reponse = await fetchFn(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: composerMessage(payload),
-        link: payload.url,
-        access_token: token,
-      }),
+      body: JSON.stringify(
+        avecImage
+          ? {
+              message: composerMessage(payload),
+              url: payload.imageUrl,
+              access_token: token,
+            }
+          : {
+              message: composerMessage(payload),
+              link: payload.url,
+              access_token: token,
+            },
+      ),
       signal: controleur.signal,
     });
 

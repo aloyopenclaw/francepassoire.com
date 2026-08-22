@@ -58,6 +58,39 @@ async function lireJson(response: Response): Promise<unknown> {
   }
 }
 
+/** Téléverse une image hébergée vers le PDS (blob) pour l'embed du post. */
+async function televerserImage(
+  imageUrl: string,
+  session: SessionOuverte,
+  fetchFn: typeof fetch,
+): Promise<{ cid: string; mimeType: string } | null> {
+  try {
+    const controleur = new AbortController();
+    const minuteur = setTimeout(() => controleur.abort(), 15_000);
+    const reponseImage = await fetchFn(imageUrl, { signal: controleur.signal });
+    clearTimeout(minuteur);
+    if (!reponseImage.ok) return null;
+    const mimeType = reponseImage.headers.get('content-type')?.split(';')[0] ?? 'image/jpeg';
+    const octets = await reponseImage.arrayBuffer();
+    const finUpload = BSKY_CREATE_RECORD_ENDPOINT.lastIndexOf('/');
+    const endpointUpload = BSKY_CREATE_RECORD_ENDPOINT.slice(0, finUpload) + '/com.atproto.repo.uploadBlob';
+    const reponseBlob = await fetchFn(endpointUpload, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${session.accessJwt}`,
+        'Content-Type': mimeType,
+      },
+      body: octets,
+    });
+    if (!reponseBlob.ok) return null;
+    const corps = (await reponseBlob.json()) as { blob?: { cid?: string; mimeType?: string } };
+    if (!corps.blob?.cid) return null;
+    return { cid: corps.blob.cid, mimeType: corps.blob.mimeType ?? mimeType };
+  } catch {
+    return null;
+  }
+}
+
 interface SessionOuverte {
   accessJwt: string;
   did: string;
@@ -121,6 +154,10 @@ async function creerRecord(
   payload: PostPayload,
   fetchFn: typeof fetch,
 ): Promise<VerdictRecord> {
+  const blobImage =
+    payload.imageUrl && payload.imageUrl.startsWith('https://')
+      ? await televerserImage(payload.imageUrl, session, fetchFn)
+      : null;
   let response: Response;
   try {
     response = await fetchFn(BSKY_CREATE_RECORD_ENDPOINT, {
@@ -135,7 +172,12 @@ async function creerRecord(
         record: {
           text: payload.text,
           createdAt: new Date().toISOString(),
-          embed: {
+          embed: blobImage
+            ? {
+                $type: 'app.bsky.embed.images',
+                images: [{ image: blobImage, alt: `Illustration : ${payload.url}` }],
+              }
+            : {
             $type: 'app.bsky.embed.external',
             external: {
               uri: payload.url,
@@ -145,7 +187,7 @@ async function creerRecord(
               // classé permanent → DEAD — bug du premier post, corrigé ici).
               description: BSKY_EMBED_DESCRIPTION,
             },
-          },
+            },
         },
       }),
     });

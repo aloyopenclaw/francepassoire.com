@@ -39,9 +39,9 @@ export const send: SendFn = async (
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         text: payload.text,
-        url: payload.url,
-        statut: payload.statut,
-        request_id: payload.metadata?.request_id,
+        // Gabarit propriétaire 22/08 : le scénario LinkedIn publie image+texte ;
+        // mediaUrl est le champ du module LinkedIn (repli url si pas d'image).
+        mediaUrl: payload.imageUrl ?? payload.url,
       }),
       signal: controleur.signal,
     });

@@ -25,6 +25,23 @@ export const LIMITE_POST = 260;
 /** Mention obligatoire de toute sortie concernant une fiche revendiquée. */
 export const MENTION_REVENDICATION = 'revendication non confirmée par l’entité';
 
+/**
+ * Phare de fin de post (décision propriétaire 22/08) : invitation à consulter
+ * la fiche et à s'abonner pour rester informé. Identique sur toutes les
+ * plateformes — c'est la signature FrancePassoire.
+ */
+export const PHARE = 'Passoire chargée ? Voir la fiche complète et suivre FrancePassoire pour ne rien rater des prochaines fuites.';
+
+/** Entrée de rendu du gabarit social propriétaire (description verbatim). */
+export interface SocialPostInput {
+  entity: string;
+  /** « Ce que l'on sait » : le champ description de la fiche, MOT POUR MOT. */
+  description: string;
+  url: string;
+  /** Logo de l'organisation si trouvé, sinon la carte FrancePassoire. */
+  imageUrl: string;
+}
+
 const URL_SITE = 'https://francepassoire.com';
 
 export interface NewFicheInput {
@@ -119,6 +136,22 @@ function formaterNombre(nombre: number): string {
     groupes.unshift(chiffres.slice(Math.max(0, fin - 3), fin));
   }
   return groupes.join(' ');
+}
+
+/**
+ * Gabarit social propriétaire (22/08) : description de la fiche MOT POUR MOT
+ * (« Ce que l'on sait ») puis phare d'invitation. Aucune invention : si la
+ * description manque ou est vide, on refuse le rendu plutôt que d'improviser.
+ * Limite 260 caractères MAINTENUE : les posts X passent par le résumé court
+ * (renderNewFichePost), le gabarit long est pour FB/IG/LinkedIn/Bluesky où
+ * les limites sont de l'ordre du millier.
+ */
+export function renderSocialPost(post: SocialPostInput): string {
+  const description = champ('description', post.description);
+  if (description.trim().length === 0) {
+    throw new SocialTemplateError("Description vide : « Ce que l'on sait » est la matière première du post, on n'improvise pas.");
+  }
+  return `${description}\n\n${PHARE}`;
 }
 
 export function renderNewFichePost(fiche: NewFicheInput): string {
