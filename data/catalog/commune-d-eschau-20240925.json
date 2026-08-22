@@ -1,0 +1,55 @@
+{
+  "slug": "commune-d-eschau-20240925",
+  "entity": "Commune d'Eschau",
+  "siren": "216701318",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-25",
+    "publication": "2024-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fichiers contenant des données personnelles des administrés chiffrés et inaccessibles ; aucune exfiltration établie, aucune donnée financière compromise selon le maire"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "DNA — Eschau. La mairie victime d'une cyberattaque depuis plusieurs jours (30 septembre 2024)",
+      "url": "https://www.dna.fr/faits-divers-justice/2024/09/30/la-mairie-victime-d-une-cyberattaque-depuis-plusieurs-jours",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Grand Est — Des pirates informatiques ciblent une mairie, quand le tout-numérique devient un piège (2 octobre 2024)",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/des-pirates-informatiques-ciblent-une-mairie-quand-le-tout-numerique-devient-un-piege-3040930.html",
+      "kind": "article"
+    },
+    {
+      "label": "DNA — Eschau. La cyberattaque du 25 septembre retarde le vote du budget primitif 2025 (6 décembre 2024)",
+      "url": "https://www.dna.fr/politique/2024/12/06/la-cyberattaque-du-25-septembre-retarde-le-vote-du-budget-primitif-2025",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 septembre 2024, la mairie d'Eschau (Bas-Rhin) est victime d'un cryptovirus. Mails, données et documents deviennent inaccessibles ; l'état civil est bloqué. L'annonce est faite sur Facebook le 27 septembre et une cellule de crise s'ouvre. Selon le maire, aucune donnée financière n'a été compromise ; le sort des fichiers chiffrés dépend de l'enquête de l'Office anti-cybercriminalité. Début décembre, la commune indique que l'attaque a entraîné une réorganisation profonde de ses services et retardé le vote de son budget primitif 2025.",
+  "timeline": [
+    {
+      "date": "2024-09-25",
+      "event": "Un cryptovirus paralyse les serveurs de la mairie : mails, données et documents deviennent inaccessibles à l'ensemble des services."
+    },
+    {
+      "date": "2024-09-27",
+      "event": "La mairie annonce la cyberattaque sur sa page Facebook ; une cellule de crise est ouverte."
+    },
+    {
+      "date": "2024-10-02",
+      "event": "La presse régionale relate des administrés invités à privilégier le téléphone ; l'Office anti-cybercriminalité enquête."
+    },
+    {
+      "date": "2024-12-06",
+      "event": "La DNA rapporte que la cyberattaque retarde le vote du budget primitif 2025 de la commune."
+    }
+  ]
+}
