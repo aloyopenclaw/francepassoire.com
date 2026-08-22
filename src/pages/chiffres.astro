@@ -100,7 +100,6 @@ const barresAnnee = Object.entries(compteur.parAnnee)
   description="Le Compteur National et les statistiques des fuites de données personnelles en France, calculées depuis le catalogue public."
 >
   {catalogueVide ? (
-    <!-- Hero : zéro fiche publiée, le compteur affiche un zéro honnête -->
     <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
@@ -116,7 +115,6 @@ const barresAnnee = Object.entries(compteur.parAnnee)
       </div>
     </section>
   ) : (
-    <!-- Hero : enregistrements fuités YTD en grand nombre, cible de l'animation count-up -->
     <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
@@ -142,7 +140,6 @@ const barresAnnee = Object.entries(compteur.parAnnee)
   )}
 
   {catalogueVide ? (
-    <!-- État vide honnête : les statistiques suivront le catalogue -->
     <section class="py-16 bg-brand-paper">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
@@ -167,7 +164,6 @@ const barresAnnee = Object.entries(compteur.parAnnee)
       </div>
     </section>
   ) : (
-    <!-- Statistiques calculées au build : barres du contrat visuel « chiffres » -->
     <section class="py-16 bg-brand-paper">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -306,7 +302,6 @@ const barresAnnee = Object.entries(compteur.parAnnee)
   )}
 
   {!catalogueVide && (
-    <!-- Modale d'intégration du compteur (template Gemini) : iframe copiable -->
     <dialog id="embed-modal" class="bg-brand-paper border-4 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-[12px_12px_0px_0px_#241405] max-w-2xl w-full backdrop:bg-brand-ink/50">
       <div class="flex justify-between items-center mb-6">
         <h3 class="font-display font-bold text-2xl">Intégrer le compteur</h3>

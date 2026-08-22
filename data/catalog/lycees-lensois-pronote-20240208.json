@@ -1,0 +1,46 @@
+{
+  "slug": "lycees-lensois-pronote-20240208",
+  "entity": "Établissements scolaires du Lensois (accès à l'ENT Pronote)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-02-08",
+    "publication": "2024-02-08"
+  },
+  "volume": {
+    "count": 500,
+    "unit": "comptes",
+    "label": "plus de 500 accès à Pronote appartenant à des élèves et des parents, diffusés par un revendeur de données ; fuite signalée à l'ANSSI par Zataz"
+  },
+  "data_types": [
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : fausses alertes à la bombe dans les lycées, Zataz révèle une fuite de données compromettantes (8 février 2024)",
+      "url": "https://www.zataz.com/fausses-alertes-a-la-bombe-dans-les-lycees-zataz-revele-une-fuite-de-donnees-compromettantes/",
+      "kind": "article"
+    },
+    {
+      "label": "La Voix du Nord : alertes à la bombe, plusieurs lycées de Lens et Sallaumines fermés ce jeudi matin (8 février 2024, snapshot web.archive.org)",
+      "url": "http://web.archive.org/web/20250725132111/https://www.lavoixdunord.fr/1428088/article/2024-02-08/alertes-la-bombes-plusieurs-lycees-de-lens-et-sallaumines-fermes-ce-jeudi-matin",
+      "kind": "archive"
+    },
+    {
+      "label": "France 3 Hauts-de-France : trois lycées et un collège fermés pour cause d'alerte à la bombe dans le Lensois (8 février 2024)",
+      "url": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/lens/trois-lycees-et-un-college-fermes-pour-cause-d-alerte-a-la-bombe-dans-le-lensois-2920890.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 février 2024, plusieurs établissements du Lensois, dont les lycées Robespierre, Condorcet et Béhal à Lens et le collège La Peupleraie à Sallaumines, reçoivent des courriels de menace annonçant des explosifs ; les établissements sont fermés ou évacués et les secours procèdent aux levées de doute. Le même jour, Zataz révèle avoir repéré sur le darkweb la diffusion de plus de 500 accès à l'outil Pronote, l'espace numérique de travail utilisé par les établissements, associant adresses électroniques et mots de passe d'élèves et de parents de plusieurs établissements scolaires. La fuite est signalée à l'ANSSI. Rien ne prouve à cette date que les alertes à la bombe aient été lancées à l'aide de ces accès compromis.",
+  "timeline": [
+    {
+      "date": "2024-02-08",
+      "event": "Fausses alertes à la bombe dans les lycées de Lens et Sallaumines ; fermetures et évacuations le matin même."
+    },
+    {
+      "date": "2024-02-08",
+      "event": "Zataz révèle la diffusion de plus de 500 accès Pronote d'élèves et de parents, signalés à l'ANSSI, sans lien établi avec les menaces."
+    }
+  ]
+}
