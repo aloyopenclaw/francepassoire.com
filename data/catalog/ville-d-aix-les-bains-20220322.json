@@ -1,0 +1,41 @@
+{
+  "slug": "ville-d-aix-les-bains-20220322",
+  "entity": "Ville d'Aix-les-Bains",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-22",
+    "publication": "2022-03-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "serveurs détournés pour miner des cryptomonnaies selon Le Dauphiné libéré ; aucune donnée exfiltrée signalée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Dauphiné libéré : cyberattaque à Aix-les-Bains, le malware fabriquait de la cryptomonnaie (29 mars 2022)",
+      "url": "https://www.ledauphine.com/faits-divers-justice/2022/03/29/cyberattaque-a-aix-les-bains-le-malware-fabriquait-de-la-cryptomonnaie",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 mars 2022, les services de la ville savoyarde d'Aix-les-Bains sont paralysés par une cyberattaque. L'enquête révèle que des serveurs municipaux ont été détournés pour miner de la cryptomonnaie, un détournement de ressources plutôt qu'une exfiltration de données. Les équipes informatiques sécurisent le parc et rétablissent progressivement les services.",
+  "timeline": [
+    {
+      "date": "2022-03-22",
+      "event": "Cyberattaque paralyse les services de la ville d'Aix-les-Bains."
+    },
+    {
+      "date": "2022-03-29",
+      "event": "Le Dauphiné libéré révèle que le malware exploitait les serveurs pour miner des cryptomonnaies."
+    }
+  ]
+}

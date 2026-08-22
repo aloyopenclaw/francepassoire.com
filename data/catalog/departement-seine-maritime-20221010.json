@@ -1,0 +1,53 @@
+{
+  "slug": "departement-seine-maritime-20221010",
+  "entity": "Département de Seine-Maritime",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-10",
+    "publication": "2022-10-10",
+    "confirmation": "2022-10-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "réseaux entièrement coupés, services publics fortement dégradés pendant plusieurs semaines ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde Informatique : les services du département de Seine-Maritime chahutés par une cyberattaque (10 octobre 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire/les-services-du-departement-de-seine-maritime-chahutes-par-une-cyberattaque-88273.html",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV : Seine-Maritime, ce que l'on sait sur l'attaque informatique d'ampleur qui touche le département (11 octobre 2022)",
+      "url": "https://www.bfmtv.com/normandie/seine-maritime-ce-que-l-on-sait-sur-l-attaque-informatique-d-ampleur-qui-touche-le-departement_AD-202210110471.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : le Département de la Seine-Maritime parmi les victimes du réseau Hive (janvier 2023)",
+      "url": "https://actu.fr/societe/cyberattaque-le-departement-de-la-seine-maritime-parmi-les-victimes-du-reseau-hive_56942382.html",
+      "kind": "article"
+    },
+    {
+      "label": "Solutions Numériques : le Département de la Seine-Maritime touché par une cyberattaque d'ampleur (octobre 2022)",
+      "url": "https://www.solutions-numeriques.com/le-departement-de-la-seine-maritime-touche-par-une-cyberattaque-dampleur/",
+      "kind": "article"
+    }
+  ],
+  "description": "Lors du premier week-end d'octobre 2022, le conseil départemental de Seine-Maritime est la cible d'une cyberattaque d'ampleur. Lundi 10 octobre, la collectivité annonce avoir coupé l'ensemble de ses réseaux pour isoler son système informatique. Les services administratifs et les démarches en ligne des usagers sont fortement dégradés pendant plusieurs semaines. Après le démantèlement du réseau Hive par le FBI en février 2023, le Département figure parmi les victimes recensées de ce groupe de rançongiciel.",
+  "timeline": [
+    {
+      "date": "2022-10-10",
+      "event": "Le Département annonce une cyberattaque d'ampleur et la coupure complète de ses réseaux ; les services publics sont fortement dégradés."
+    },
+    {
+      "date": "2023-01-31",
+      "event": "actu.fr recense la Seine-Maritime parmi les victimes du réseau Hive, confirmé par le démantèlement du groupe par le FBI."
+    }
+  ],
+  "group": "hive"
+}

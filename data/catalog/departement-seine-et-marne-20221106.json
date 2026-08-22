@@ -1,0 +1,46 @@
+{
+  "slug": "departement-seine-et-marne-20221106",
+  "entity": "Département de Seine-et-Marne",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-06",
+    "publication": "2022-11-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "services informatiques paralysés depuis le 6 novembre ; rançon de 10 millions de dollars exigée ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro : cyberattaque, des pirates réclament 10 millions de dollars au département de la Seine-et-Marne (17 novembre 2022)",
+      "url": "https://www.lefigaro.fr/actualite-france/cyberattaque-des-pirates-reclament-10-millions-de-dollars-au-departement-de-la-seine-et-marne-20221117",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : cyberattaque en Seine-et-Marne, 10 millions de dollars réclamés par les pirates (novembre 2022)",
+      "url": "https://actu.fr/ile-de-france/melun_77288/cyberattaque-en-seine-et-marne-10-millions-de-dollars-reclames-par-les-pirates_55267167.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 novembre 2022, une cyberattaque paralyse les services informatiques du conseil départemental de Seine-et-Marne. Des applications se bloquent, de nombreux fichiers sont chiffrés et le Département coupe tout son système pour endiguer la propagation. Les pirates exigent une rançon de 10 millions de dollars, révélée mi-novembre. La collectivité déploie des moyens de substitution pour maintenir le service public ; l'enquête est confiée aux spécialistes de la cybersécurité.",
+  "timeline": [
+    {
+      "date": "2022-11-06",
+      "event": "Cyberattaque : blocage des applications puis chiffrement de fichiers ; le Département coupe son système informatique."
+    },
+    {
+      "date": "2022-11-17",
+      "event": "Le Figaro révèle la rançon de 10 millions de dollars exigée par les pirates."
+    }
+  ]
+}

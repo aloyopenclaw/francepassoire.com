@@ -1,0 +1,51 @@
+{
+  "slug": "ville-de-caen-20220926",
+  "entity": "Ville de Caen",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-26",
+    "publication": "2022-09-26",
+    "confirmation": "2022-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ensemble de l'informatique municipale fermée ; dégâts contenus grâce à un outil de détection selon Numerama ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "actu.fr : cyberattaque contre la Ville de Caen, quelle est l'étendue des dégâts (27 septembre 2022)",
+      "url": "https://actu.fr/normandie/caen_14118/cyberattaque-contre-la-ville-de-caen-quelle-est-letendue-des-degats_54086386.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : la mairie de Caen paralysée après une cyberattaque (26 septembre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/la-mairie-de-caen-paralysee-apres-une-cyberattaque-26-09-2022-FQ37ABHGXJDGHDDGV4EDLNWAQ4.php",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Normandie : un mois après la cyber-attaque à la Ville de Caen, les nouvelles sont rassurantes (octobre 2022)",
+      "url": "https://france3-regions.franceinfo.fr/normandie/calvados/caen/un-mois-apres-la-cyber-attaque-a-la-ville-de-caen-les-nouvelles-sont-rassurantes-2643464.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le lundi 26 septembre 2022 vers 16 h 28, la Ville de Caen détecte un logiciel malveillant sur ses serveurs, entré par un serveur de messagerie selon Zataz. La cellule de crise isole l'ensemble du parc : serveurs coupés, services publics numériques suspendus, bibliothèques perturbées. La mairie informe quelques heures avant le conseil municipal. Les dégâts sont contenus grâce à un outil de détection de menaces et la majorité des services reprend un mois plus tard.",
+  "timeline": [
+    {
+      "date": "2022-09-26",
+      "event": "Détection d'un logiciel malveillant vers 16 h 28 ; l'ensemble de l'informatique est coupé par précaution, cellule de crise activée."
+    },
+    {
+      "date": "2022-09-27",
+      "event": "actu.fr décrit l'étendue des dégâts ; les services fonctionnent en mode dégradé."
+    },
+    {
+      "date": "2022-10-26",
+      "event": "France 3 rapporte un retour à la normale progressif un mois après l'attaque."
+    }
+  ]
+}

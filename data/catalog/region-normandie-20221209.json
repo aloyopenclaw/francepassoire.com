@@ -1,0 +1,51 @@
+{
+  "slug": "region-normandie-20221209",
+  "entity": "Région Normandie",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-09",
+    "publication": "2022-12-09",
+    "confirmation": "2022-12-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "600 serveurs et 1 500 ordinateurs arrêtés selon Numerama ; site des horaires de bus indisponible ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Région Normandie (archive) : cyberattaque, point de situation (9 décembre 2022)",
+      "url": "https://web.archive.org/web/20221209200512/https://laregionnormandie.fr/cyberattaque-point-de-situation",
+      "kind": "archive"
+    },
+    {
+      "label": "Région Normandie (archive) : cyberattaque, les services impactés (10 décembre 2022)",
+      "url": "https://web.archive.org/web/20221210020330/https://laregionnormandie.fr/cyberattaque-les-services-impactes",
+      "kind": "archive"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du jeudi 8 au vendredi 9 décembre 2022, les services informatiques du conseil régional de Normandie sont frappés par une cyberattaque. L'impact est conséquent : 600 serveurs et 1 500 ordinateurs sont arrêtés selon Numerama, le site des horaires de bus régionaux reste indisponible et de nombreux agents ne peuvent pas retourner à leur poste. La Région publie plusieurs points de situation officiels. La piste d'un rançongiciel est privilégiée par la presse.",
+  "timeline": [
+    {
+      "date": "2022-12-09",
+      "event": "Cyberattaque dans la nuit du 8 au 9 décembre ; 600 serveurs et 1 500 ordinateurs sont arrêtés, la Région publie un point de situation."
+    },
+    {
+      "date": "2022-12-10",
+      "event": "La Région liste les services impactés ; plusieurs outils restent indisponibles."
+    },
+    {
+      "date": "2023-03-10",
+      "event": "Ouest-France chiffre le coût de l'attaque à plusieurs centaines de milliers d'euros."
+    }
+  ]
+}

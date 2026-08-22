@@ -1,0 +1,52 @@
+{
+  "slug": "eureden-20220317",
+  "entity": "Eureden (coopérative agricole et agroalimentaire)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-17",
+    "publication": "2022-03-18",
+    "confirmation": "2022-03-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "tous les sites du groupe (56 sites selon NetExplorer) touchés ; activité maintenue en mode dégradé ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme : le groupe Eureden victime d'une cyberattaque (18 mars 2022)",
+      "url": "https://www.letelegramme.fr/finistere/mellac-29300/le-groupe-eureden-victime-d-une-cyberattaque-219633.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : le groupe Eureden touché par une cyberattaque (19 mars 2022)",
+      "url": "https://actu.fr/bretagne/loudeac_22136/bretagne-le-groupe-eureden-touche-par-une-cyberattaque_49630224.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Bretagne : le groupe agroalimentaire Eureden (d'Aucy, Paysan Breton, Magasin Vert) victime d'une attaque informatique",
+      "url": "https://france3-regions.franceinfo.fr/bretagne/le-groupe-agroalimentaire-eureden-daucy-paysan-breton-magasin-vert-victime-d-une-attaque-informatique-2504189.html",
+      "kind": "article"
+    },
+    {
+      "label": "NetExplorer : les 10 cyberattaques qui ont marqué la France en 2022 (janvier 2023)",
+      "url": "https://www.netexplorer.fr/blog/les-10-cyberattaques-qui-ont-marque-la-france-en-2022",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 mars 2022, la coopérative bretonne Eureden (marques Paysan Breton, Cocotine, d'Aucy, réseau Magasins Verts) découvre une attaque malveillante de ses systèmes informatiques. Tous les sites du groupe sont impactés : facturation, outils de production et communications perturbés, activité maintenue en mode dégradé. La coopérative confirme l'attaque auprès des médias régionaux ; des experts cybersécurité sont mobilisés pour enrayer l'intrusion.",
+  "timeline": [
+    {
+      "date": "2022-03-17",
+      "event": "Attaque malveillante détectée ; tous les sites du groupe sont impactés et fonctionnent en mode dégradé."
+    },
+    {
+      "date": "2022-03-18",
+      "event": "Ouest-France et Le Télégramme rapportent la cyberattaque confirmée par le groupe."
+    }
+  ]
+}

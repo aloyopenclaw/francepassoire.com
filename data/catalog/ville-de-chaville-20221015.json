@@ -1,0 +1,57 @@
+{
+  "slug": "ville-de-chaville-20221015",
+  "entity": "Ville de Chaville",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-15",
+    "publication": "2022-10-17",
+    "confirmation": "2022-10-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "contrats et budgets municipaux diffusés par le groupe Cuba selon Numerama ; la mairie réfute tout vol de données personnelles"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ville de Chaville : la Ville de Chaville victime d'une cyberattaque (communiqué, octobre 2022)",
+      "url": "https://www.ville-chaville.fr/actualites-evenements/toute-l-actualite-77/la-ville-de-chaville-victime-dune-cyberattaque-5426.html?cHash=d24693b307b60aabf87ac7b4a08e4e4d",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique : cyberattaque contre la ville de Chaville (18 octobre 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-telex-cyberattaque-contre-la-ville-de-chaville-qualys-muscle-au-ml-blue-hexagon-infomaniak-veut-defier-google-et-microsoft-dans-le-collaboratif-cloud-88370.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : des hackers russes piratent la mairie de Chaville et font fuiter tous les contrats et budgets (octobre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1150046-des-hackers-russes-piratent-la-mairie-de-chaville-ile-de-france-et-font-fuiter-tous-les-contrats-et-budgets.html",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect : la mairie de Chaville victime du ransomware Cuba (octobre 2022)",
+      "url": "https://www.it-connect.fr/cyberattaque-la-mairie-de-chaville-victime-du-ransomware-cuba/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 14 au 15 octobre 2022, les serveurs informatiques de la mairie de Chaville, dans les Hauts-de-Seine, sont victimes d'une cyberattaque de grande ampleur. La ville coupe ses réseaux et annonce l'incident. Le groupe Cuba Ransomware revendique l'opération et diffuse des données saisies sur le dark web : contrats et budgets municipaux selon Numerama. La municipalité réfute tout vol de données personnelles des habitants. L'épouse du maire confirme dans la presse la continuité des services en mode dégradé.",
+  "timeline": [
+    {
+      "date": "2022-10-15",
+      "event": "Cyberattaque dans la nuit du 14 au 15 octobre ; la Ville coupe ses réseaux et publie un communiqué."
+    },
+    {
+      "date": "2022-10-19",
+      "event": "Le Parisien rapporte la revendication du groupe Cuba, que la mairie réfute s'agissant de données personnelles."
+    },
+    {
+      "date": "2022-10-21",
+      "event": "Cuba diffuse les données exfiltrées : contrats et budgets municipaux selon Numerama et Zataz."
+    }
+  ],
+  "group": "cuba"
+}

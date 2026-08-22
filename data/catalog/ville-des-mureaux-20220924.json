@@ -1,0 +1,46 @@
+{
+  "slug": "ville-des-mureaux-20220924",
+  "entity": "Ville des Mureaux",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-24",
+    "publication": "2022-09-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "impact limité sur les habitants selon actu.fr ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "actu.fr : Les Mureaux, la mairie a été la cible d'une cyberattaque (28 septembre 2022)",
+      "url": "https://actu.fr/ile-de-france/les-mureaux_78440/les-mureaux-la-mairie-a-ete-la-cible-d-une-cyberattaque_54111859.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : cyberattaques, la transparence des collectivités territoriales progresse (2022)",
+      "url": "https://www.lemagit.fr/actualites/366620474/Cyberattaques-la-transparence-des-collectivites-territoriales-progresse",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 septembre 2022, la commune des Mureaux, dans les Yvelines, subit une cyberattaque qui paralyse la mairie. L'impact sur les habitants reste limité selon actu.fr. En conseil municipal, le maire confirme une cyberattaque avec rançongiciel, que LeMagIT cite dans son panorama de la transparence des collectivités face aux ransomwares en 2022. Les services municipaux sont rétablis progressivement.",
+  "timeline": [
+    {
+      "date": "2022-09-24",
+      "event": "Cyberattaque avec rançongiciel paralyse la mairie des Mureaux."
+    },
+    {
+      "date": "2022-09-28",
+      "event": "actu.fr rapporte l'attaque et un impact limité sur les habitants."
+    }
+  ]
+}

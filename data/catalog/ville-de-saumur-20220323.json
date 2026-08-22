@@ -1,0 +1,40 @@
+{
+  "slug": "ville-de-saumur-20220323",
+  "entity": "Ville de Saumur",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "paralysies dans le système selon Numerama ; aucune donnée extorquée selon la mairie"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France (archive) : cyberattaque à Saumur, ce que l'on sait (mars 2022)",
+      "url": "https://web.archive.org/web/20221213000000/https://www.ouest-france.fr/pays-de-la-loire/saumur-49400/cyberattaque-a-saumur-ce-que-l-on-sait-b82d2f98-ab8b-11ec-8e2c-8ec845dfd4e6",
+      "kind": "archive"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 mars 2022, la sous-préfecture du Maine-et-Loire Saumur est la cible d'une cyberattaque qui paralyse une partie de son système informatique. La mairie indique qu'aucune donnée n'a été extorquée malgré les perturbations. L'incident s'inscrit dans la série d'attaques contre les collectivités territoriales françaises au premier semestre 2022.",
+  "timeline": [
+    {
+      "date": "2022-03-23",
+      "event": "Cyberattaque contre la Ville de Saumur ; des paralysies touchent le système informatique."
+    },
+    {
+      "date": "2022-12-12",
+      "event": "Numerama recense l'attaque dans sa liste des collectivités impactées en 2022, la mairie indiquant qu'aucune donnée n'a été extorquée."
+    }
+  ]
+}
