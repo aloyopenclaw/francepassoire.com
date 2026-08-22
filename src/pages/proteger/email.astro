@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+/**
+ * Page scénario « Mon email a fuité » — gabarit propriétaire SEPROTEGER
+ * (div #page-email), portée telle quelle : héros orange à pois, « En 30
+ * secondes », définitions (Phishing ciblé, Hausse du spam, Comptes
+ * vulnérables), gestes dans l'ordre, « Vérifier maintenant », CTA veille.
+ * Les navigate('proteger') du gabarit deviennent des liens réels vers /proteger/.
+ */
+---
+<Layout
+  title="Mon email a fuité - France Passoire"
+  description="Conseils concrets si votre email a fuité : changer le mot de passe du service concerné, le changer partout où il est réutilisé et activer la double authentification."
+>
+  <section class="bg-brand-orange border-b-2 border-brand-ink py-12 relative overflow-hidden bg-dot-matrix">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+      <a href="/proteger/#proteger-agir" class="mb-6 font-display font-bold flex items-center gap-2 text-brand-ink bg-brand-cream px-3 py-1.5 rounded-full border-2 border-brand-ink shadow-sm hover:bg-brand-paper transition-colors w-max">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Retour au hub
+      </a>
+
+      <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-8 sm:p-12">
+        <div class="flex flex-wrap gap-4 items-center mb-6">
+          <span class="bg-brand-orange text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-sm shadow-sm font-bold flex items-center gap-2">
+            <span class="block w-2 h-2 bg-brand-ink rounded-full"></span> Cette semaine
+          </span>
+          <span class="font-mono text-brand-ink/60 text-sm">Temps estimé : 15 min</span>
+        </div>
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-brand-ink mb-2">Mon email a fuité</h1>
+        <p class="font-body text-xl font-medium text-brand-ink/80 mb-8">Pas de panique. Mais agissons.</p>
+
+        <div class="bg-brand-paper border-2 border-brand-ink rounded-xl p-5 shadow-sm">
+          <h2 class="font-display font-bold text-lg mb-4 border-b-2 border-brand-ink/20 pb-2">En 30 secondes</h2>
+          <ul class="space-y-3 font-body font-medium">
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Changer le mot de passe du service concerné.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Changer ce même mot de passe partout où vous l'avez réutilisé.
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Activer la double authentification sur votre boîte mail principale.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-brand-paper space-y-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
+
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Ce que ça veut dire pour vous</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Phishing ciblé</h3>
+            <p class="text-sm">Les attaquants vont vous envoyer des faux emails très convaincants en se faisant passer pour l'entité piratée ou une administration.</p>
+          </div>
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Hausse du spam</h3>
+            <p class="text-sm">Votre adresse vient d'entrer dans des listes de diffusion criminelles, revendues en masse.</p>
+          </div>
+          <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl shadow-hard-sm">
+            <h3 class="font-display font-bold text-xl mb-2">Comptes vulnérables</h3>
+            <p class="text-sm">Si votre mot de passe a fuité avec l'email, les attaquants peuvent réinitialiser vos autres comptes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Les gestes, dans l'ordre</h2>
+        <div class="space-y-4">
+          <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire shadow-hard flex flex-col sm:flex-row gap-6 relative">
+            <div class="absolute top-4 right-4 bg-brand-paper border-2 border-brand-ink px-2 py-1 rounded font-mono text-xs font-bold shadow-sm">⏱ 5 min</div>
+            <div class="font-mono font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)] leading-none pt-2 hidden sm:block">1</div>
+            <div>
+              <h3 class="font-display font-extrabold text-2xl mb-1 pr-16 sm:pr-0">Activer la 2FA sur sa boîte mail</h3>
+              <p class="font-mono text-sm opacity-80 mb-3">En premier : elle permet de réinitialiser tous vos autres comptes.</p>
+              <p class="font-body text-base">Allez dans les paramètres de sécurité de votre fournisseur et activez l'authentification à deux facteurs. Privilégiez une application comme FreeOTP plutôt que le SMS si possible.</p>
+            </div>
+          </div>
+
+          <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire shadow-hard flex flex-col sm:flex-row gap-6 relative">
+            <div class="absolute top-4 right-4 bg-brand-paper border-2 border-brand-ink px-2 py-1 rounded font-mono text-xs font-bold shadow-sm">⏱ 10 min</div>
+            <div class="font-mono font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)] leading-none pt-2 hidden sm:block">2</div>
+            <div>
+              <h3 class="font-display font-extrabold text-2xl mb-1 pr-16 sm:pr-0">Changer les mots de passe</h3>
+              <p class="font-mono text-sm opacity-80 mb-3">Surtout si vous utilisez une variante du même mot de passe.</p>
+              <p class="font-body text-base">Changez le mot de passe sur le site qui a fuité. Ensuite, changez-le partout où vous l'aviez réutilisé.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="font-display font-extrabold text-3xl mb-6">Vérifier maintenant</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="https://haveibeenpwned.com" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-hard-sm hover:-translate-y-1 hover:shadow-hard transition-all group flex justify-between items-center">
+            <div>
+              <h3 class="font-display font-bold text-xl">Have I Been Pwned <span class="sr-only">(site externe)</span></h3>
+              <p class="text-sm mt-1">La référence mondiale pour vérifier son email.</p>
+            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange flex-shrink-0" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a href="/proteger/#proteger-surveiller" class="text-left bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-hard-sm hover:-translate-y-1 hover:shadow-hard transition-all group flex justify-between items-center">
+            <div>
+              <h3 class="font-display font-bold text-xl">Activer ma veille</h3>
+              <p class="text-sm mt-1">On vous prévient pour la prochaine fuite.</p>
+            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange flex-shrink-0" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-12 border-t-2 border-brand-ink/20">
+         <a href="/proteger/#proteger-surveiller" class="w-full bg-brand-ink text-brand-cream text-center py-6 rounded-passoire font-display font-extrabold text-2xl border-2 border-brand-ink shadow-hard hover:-translate-y-1 hover:shadow-hard-hover transition-all btn-press">
+          🔔 Activer ma veille anti-fuites
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
