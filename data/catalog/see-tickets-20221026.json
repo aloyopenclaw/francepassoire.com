@@ -16,8 +16,8 @@
   "data_types": ["financier", "identite", "coordonnees"],
   "sources": [
     {
-      "label": "Massachusetts Attorney General — notification officielle de violation de données n° 28452, Vivendi Ticketing US LLC dba See Tickets (2022)",
-      "url": "https://www.mass.gov/doc/assigned-data-breach-number-28452-vivendi-ticketing-us-llc-dba-see-tickets-us/download",
+      "label": "Massachusetts Attorney General — notification officielle de violation de données n° 28452, Vivendi Ticketing US LLC dba See Tickets (2022) (archive)",
+      "url": "https://web.archive.org/web/20250902045533/https://www.mass.gov/doc/assigned-data-breach-number-28452-vivendi-ticketing-us-llc-dba-see-tickets-us/download",
       "kind": "officiel"
     },
     {
