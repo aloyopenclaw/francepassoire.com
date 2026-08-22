@@ -23,11 +23,11 @@ export const send: SendFn = async (
   env: Env,
   fetchFn: typeof fetch,
 ): Promise<SendResult> => {
-  const webhook = env.MAKE_WEBHOOK_URL;
+  const webhook = env.LINKEDIN_WEBHOOK_URL;
   if (!webhook) {
     return {
       status: 'PENDING_KEYS',
-      reason: 'MAKE_WEBHOOK_URL absent — webhook Make.com non configuré (wrangler secret put MAKE_WEBHOOK_URL)',
+      reason: 'LINKEDIN_WEBHOOK_URL absent — webhook Make.com LinkedIn non configuré (wrangler secret put LINKEDIN_WEBHOOK_URL)',
     };
   }
 

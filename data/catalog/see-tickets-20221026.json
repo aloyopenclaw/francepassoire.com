@@ -1,0 +1,53 @@
+{
+  "slug": "see-tickets-20221026",
+  "entity": "See Tickets (Vivendi Ticketing)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-26",
+    "publication": "2022-10-26",
+    "confirmation": "2022-10-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients non communiqué ; données de paiement capturées lors des achats en ligne du 25 juin 2019 au 8 janvier 2022"
+  },
+  "data_types": ["financier", "identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Massachusetts Attorney General — notification officielle de violation de données n° 28452, Vivendi Ticketing US LLC dba See Tickets (2022) (archive)",
+      "url": "https://web.archive.org/web/20250902045533/https://www.mass.gov/doc/assigned-data-breach-number-28452-vivendi-ticketing-us-llc-dba-see-tickets-us/download",
+      "kind": "officiel"
+    },
+    {
+      "label": "BleepingComputer — See Tickets discloses 2.5 years-long credit card theft breach (26 octobre 2022)",
+      "url": "https://www.bleepingcomputer.com/news/security/see-tickets-discloses-25-years-long-credit-card-theft-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite de données : la billeterie SeeTickets a fuité pendant plus de 2 ans ! (27 octobre 2022)",
+      "url": "https://www.zataz.com/fuite-de-donnees-la-billeterie-seetickets-a-fuite-pendant-plus-de-2-ans/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 octobre 2022, la billeterie See Tickets, propriété du groupe français Vivendi, révèle qu'un logiciel d'aspiration a capturé des données de paiement lors des achats en ligne, du 25 juin 2019 au 8 janvier 2022. Noms, adresses, numéros de cartes bancaires, dates d'expiration et cryptogrammes ont été collectés pendant deux ans et demi. L'entreprise avait été alertée dès avril 2021 sans interrompre l'activité avant janvier 2022. Le nombre de clients concernés n'est pas communiqué. Une action collective est engagée aux États-Unis contre Vivendi Ticketing.",
+  "timeline": [
+    {
+      "date": "2019-06-25",
+      "event": "Début de la collecte frauduleuse de données de paiement lors du paiement sur le site See Tickets."
+    },
+    {
+      "date": "2021-04-01",
+      "event": "L'entreprise déclare avoir été alertée de l'activité malveillante en avril 2021."
+    },
+    {
+      "date": "2022-01-08",
+      "event": "Fin de l'activité du logiciel d'aspiration sur les paiements."
+    },
+    {
+      "date": "2022-10-26",
+      "event": "See Tickets rend publique la violation : deux ans et demi de données bancaires exposées ; la presse spécialisée relaie l'annonce."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import type { Env, PostPayload } from '../workers/social/src/types';
 // /media → publication /media_publish), fetch injecté en séquence stricte.
 const envAvecCles = {
   IG_USER_ID: '17841400000000',
-  FB_PAGE_TOKEN: 'EAAG-test-page-token',
+  IG_TOKEN: 'IGAA-test-ig-token',
 } as Env;
 
 const URL_FICHE = 'https://francepassoire.com/f/alaxione-20260820';
@@ -53,12 +53,12 @@ describe('client Instagram — deux temps /media + /media_publish (T51)', () => 
     expect(appels()).toHaveLength(2);
 
     const [etape1, etape2] = appels();
-    expect(etape1.url).toBe('https://graph.facebook.com/v21.0/17841400000000/media');
+    expect(etape1.url).toBe('https://graph.instagram.com/v21.0/17841400000000/media');
     expect(etape1.corps.image_url).toBe(CARTE_ATTENDUE);
     expect(etape1.corps.caption).toBe(payload.text);
-    expect(etape1.corps.access_token).toBe('EAAG-test-page-token');
+    expect(etape1.corps.access_token).toBe('IGAA-test-ig-token');
 
-    expect(etape2.url).toBe('https://graph.facebook.com/v21.0/17841400000000/media_publish');
+    expect(etape2.url).toBe('https://graph.instagram.com/v21.0/17841400000000/media_publish');
     expect(etape2.corps.creation_id).toBe('17900000000000000');
   });
 
@@ -76,13 +76,13 @@ describe('client Instagram — deux temps /media + /media_publish (T51)', () => 
     expect(appels()[0]?.corps.image_url).toBe(CARTE_ATTENDUE);
   });
 
-  it('IG_USER_ID + FB_PAGE_TOKEN absents → PENDING_KEYS, aucun appel', async () => {
+  it('IG_USER_ID + IG_TOKEN absents → PENDING_KEYS, aucun appel', async () => {
     const fetchFn = vi.fn();
     const r = await send(payload, {} as Env, fetchFn as unknown as typeof fetch);
     expect(r.status).toBe('PENDING_KEYS');
     if (r.status === 'PENDING_KEYS') {
       expect(r.reason).toContain('IG_USER_ID');
-      expect(r.reason).toContain('FB_PAGE_TOKEN');
+      expect(r.reason).toContain('IG_TOKEN');
     }
     expect(fetchFn).not.toHaveBeenCalled();
   });

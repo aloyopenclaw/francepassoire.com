@@ -19,12 +19,14 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | Secret wrangler | Plateforme | Nature de la valeur |
 |-----------------|------------|---------------------|
 | `X_BEARER` | X | Bearer token app-only (lecture seule — pour mémoire) |
-| `MAKE_WEBHOOK_URL` | X **et** LinkedIn | URL du webhook Make.com (LE crédential du scénario) |
+| `MAKE_WEBHOOK_URL` | X | URL du webhook du scénario Make X (LE crédential du scénario) |
+| `LINKEDIN_WEBHOOK_URL` | LinkedIn | URL du webhook du scénario Make LinkedIn (scénario DISTINCT du X) |
 | `LINKEDIN_ACCESS_TOKEN` | LinkedIn (client direct de référence) | Access token utilisateur (60 jours) |
 | `LINKEDIN_MEMBER_URN` | LinkedIn (client direct de référence) | URN du membre émetteur |
 | `FB_PAGE_ID` | Facebook | ID numérique de la Page |
 | `FB_PAGE_TOKEN` | Facebook **et** Instagram | Page access token (Graph API) |
-| `IG_USER_ID` | Instagram | ID du compte IG professionnel relié à la Page |
+| `IG_USER_ID` | Instagram | ID du compte IG professionnel (`user_id` de graph.instagram.com/me) |
+| `IG_TOKEN` | Instagram | Token natif IGAA… (flux Instagram Login, graph.instagram.com uniquement) |
 | `BLUESKY_HANDLE` | Bluesky | Handle, ex. `votrecompte.bsky.social` |
 | `BLUESKY_APP_PASSWORD` | Bluesky | Mot de passe d'application `xxxx-xxxx-xxxx-xxxx` |
 | `NOSTR_NSEC` | Nostr | Clé privée `nsec1…` fournie par la tâche 27 |
@@ -34,9 +36,9 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | Plateforme | Statut | Ce que vous faites | Secret wrangler | Délai attendu |
 |------------|--------|--------------------|-----------------|---------------|
 | **X** | **Disponible via Make** | Créer un compte Make.com, un scénario Webhook → X « Create a Post », connecter @francepassoire | `MAKE_WEBHOOK_URL` | Immédiat (~20 min, offre gratuite Make) |
-| **LinkedIn** | **Disponible via Make** | Idem X avec le module LinkedIn « Create a Post » (le scénario peut être le même webhook) | `MAKE_WEBHOOK_URL` | Immédiat |
+| **LinkedIn** | **Disponible via Make** | Scénario Make distinct avec module LinkedIn « Create a Post » | `LINKEDIN_WEBHOOK_URL` | Validé (21/08) |
 | **Facebook Page** | **Disponible (self-service)** | App Meta, token Page via Graph API Explorer | `FB_PAGE_ID` + `FB_PAGE_TOKEN` | Immédiat (~20 min) |
-| **Instagram** | **Disponible (compte pro relié à la Page)** | Passer le compte IG en professionnel, le relier à la Page, récupérer l'ID IG | `IG_USER_ID` (+ `FB_PAGE_TOKEN`) | Immédiat si la Page existe |
+| **Instagram** | **Disponible (compte pro + app IG Login)** | Compte IG professionnel + app « Instagram API with Instagram Login » → token IGAA… | `IG_USER_ID` + `IG_TOKEN` | Fait (2026-08-22) |
 | **Bluesky** | **Disponible jour 1** | Créer un compte, générer un *App Password* | `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` | Immédiat (~5 min) |
 | **Nostr** | **Disponible jour 1** | Rien — la paire de clés est générée par la tâche 27 ; conservez le backup reçu | `NOSTR_NSEC` | Clé remise par la tâche 27 |
 | ~~TikTok~~ | Retiré (T51) | Rien — API vidéo-first incompatible avec nos posts texte+URL | — | — |
@@ -58,17 +60,17 @@ Coût : l'offre ** gratuite de Make** couvre ~1000 opérations/mois — largemen
 1. Créer un compte sur [make.com](https://www.make.com) (offre Free suffisante).
 2. **Create a new scenario**. Ajouter un module **Webhooks → Custom webhook** : Make génère une URL unique (`https://hook.eu1.make.com/…`). **C'est cette URL qui devient le secret `MAKE_WEBHOOK_URL`** — longue, unique, impossible à deviner : qui la possède déclenche le post. Ne la collez nulle part ailleurs.
 3. Ajouter le module **X (Twitter) → Create a Post** : cliquer **Add** pour connecter un compte, autoriser avec **@francepassoire**. Le module publie au nom du compte connecté.
-4. Dans le module, mapper le champ **Text** sur la donnée entrante `text`, et (optionnel) ajouter `url` au texte — le worker envoie déjà `{text, url, request_id}` en JSON ; `text` contient l'URL de la fiche.
+4. Dans le module, mapper le champ **Text** sur la donnée entrante `text`, et le champ **url/média** sur la donnée entrante `mediaUrl`. Le worker envoie EXACTEMENT `{text, mediaUrl}` en JSON — `text` contient l'URL de la fiche, `mediaUrl` la carte 1080×1080 (`…/fiche/<slug>/card.jpg`). Tout écart de ce gabarit casse le mapping (« Missing value of required parameter 'url' », constaté en prod 2026-08-22).
 5. Optionnel : insérer un module **Tools → Set variable** ou une approbation manuelle si vous voulez relire chaque post avant publication (Make attend alors votre clic).
 6. **Save** puis activer le scénario (bouton **Scheduling on**).
-7. Test : `curl -X POST <URL-webhook> -H 'Content-Type: application/json' -d '{"text":"test","url":"https://francepassoire.com"}'` — le post doit apparaître sur @francepassoire.
+7. Test : `curl -X POST <URL-webhook> -H 'Content-Type: application/json' -d '{"text":"test","mediaUrl":"https://francepassoire.com/fiche/<slug>/card.jpg"}'` — le post doit apparaître sur @francepassoire.
 
 ```
 wrangler secret put MAKE_WEBHOOK_URL
 # Valeur : l'URL https://hook.eu1.make.com/… du module webhook
 ```
 
-> **Une URL, deux plateformes — routez dans Make** : les clients X et LinkedIn lisent le MÊME secret `MAKE_WEBHOOK_URL` (le worker envoie une requête par plateforme mise en file). Pour qu'un scénario unique ne publie pas chaque post DEUX fois : ajoutez dans le scénario un **routeur** (module Router de Make) sur le corps reçu — le client LinkedIn envoie un champ `statut` (`confirmee`/`revendiquee`), le client X non. Route `statut` présent → module LinkedIn seul ; absent → module X seul. Ainsi chaque requête du worker déclenche exactement la publication de SA plateforme.
+> **DEUX scénarios, DEUX secrets** (constat 2026-08-22) : X et LinkedIn sont des scénarios Make distincts avec des webhooks distincts — `MAKE_WEBHOOK_URL` (scénario X, contrat `{text, mediaUrl}`) et `LINKEDIN_WEBHOOK_URL` (scénario LinkedIn, contrat `{text, url, statut, request_id}`). Ne jamais partager une URL entre les deux : chaque requête atteint exactement SA plateforme.
 
 ### Comportement du worker
 
@@ -130,19 +132,27 @@ wrangler secret put FB_PAGE_TOKEN
 
 ### Principe
 
-La publication passe par la **Graph API Content Publishing** (deux temps : conteneur `/media` puis `/media_publish`) et exige un **compte Instagram professionnel** (Business ou Creator) **relié à une Page Facebook**. Le token est le MÊME `FB_PAGE_TOKEN` que la §3 — le secret supplémentaire est juste l'ID du compte IG.
+La publication passe par la **Graph API Content Publishing** (deux temps : conteneur `/media` puis `/media_publish`) sur **`graph.instagram.com`** et exige un **compte Instagram professionnel**. Deux flux possibles :
+
+- **Flux retenu (Instagram Login natif)** : une app « Instagram API with Instagram Login » (ex. `francepassoire-posting-ig`) génère un **token natif préfixé `IGAA…`** — valable UNIQUEMENT sur `graph.instagram.com` (rejeté par graph.facebook.com). Secrets : `IG_TOKEN` + `IG_USER_ID`. C'est ce qui est câblé en prod depuis le 2026-08-22.
+- Flux alternatif (Facebook Login) : compte IG relié à la Page + `FB_PAGE_TOKEN` — abandonné ici car le champ `instagram_business_account` exige les permissions `instagram_basic`/`instagram_content_publish` sur le token utilisateur.
 
 L'image du post est la **carte fiche 1080×1080** générée au build (`scripts/generate-fiche-cards.mjs`) à l'URL publique `https://francepassoire.com/fiche/<slug>/card.jpg` — JPEG conforme à l'exigence Instagram (« JPEG is the only image format supported »).
 
 ### Étapes
 
-1. Dans l'app Instagram : **Réglages → Type de compte → Passer à un compte professionnel** (Business), puis **liaison à la Page Facebook** FrancePassoire (Réglages → Entreprise / Comptes reliés).
-2. Dans le **Graph API Explorer** (avec le token Page de la §3) : **`GET /{FB_PAGE_ID}?fields=instagram_business_account`** → la réponse `{instagram_business_account:{id:"17841…"}}` donne **`IG_USER_ID`**.
-3. Charger le secret :
+1. Dans l'app Instagram : **Réglages → Type de compte → Passer à un compte professionnel** (Business).
+2. Récupérer l'ID IG : avec le token IGAA…, `GET graph.instagram.com/v21.0/me?fields=user_id,username` → `user_id` (17841…) = **`IG_USER_ID`** (vérifié : `17841438939842966`, @francepassoire, BUSINESS).
+3. Charger les secrets :
 
 ```
 wrangler secret put IG_USER_ID
-# Valeur : l'ID numérique du compte IG (17841…), pas le handle
+wrangler secret put IG_TOKEN
+# IG_USER_ID : l'ID numérique du compte IG (17841…), pas le handle
+# IG_TOKEN : le token IGAA… (attention : les tokens du panneau de setup
+#            sont courts-vécus ; échanger contre un 60 jours via
+#            GET graph.instagram.com/access_token?grant_type=ig_exchange_token
+#            &client_secret=<secret de l'app> quand il expire)
 ```
 
 4. Test end-to-end (une fois les deux secrets posés) : mettre en file un vrai post depuis l'interface ou attendre le prochain post automatique — le cron */5 min publie via les deux appels Graph.

@@ -1,8 +1,8 @@
 // workers/social/clients/instagram.ts — client Instagram, T51.
 //
-// Content Publishing en deux temps (Graph API v21.0, compte Instagram
-// professionnel relié à la Page Facebook — même FB_PAGE_TOKEN, cf.
-// docs/social-setup.md §Instagram) :
+// Content Publishing en deux temps (compte IG professionnel @francepassoire,
+// flux « Instagram API with Instagram Login » — token natif IGAA… valable
+// UNIQUEMENT sur graph.instagram.com, cf. docs/social-setup.md §Instagram) :
 //   1. POST /{ig-user-id}/media        {image_url, caption} → creation_id ;
 //   2. POST /{ig-user-id}/media_publish {creation_id}       → post publié.
 //
@@ -19,6 +19,7 @@ import { classifierErreurGraph } from './facebook';
 import type { Env, PostPayload, SendFn, SendResult } from '../src/types';
 
 const GRAPH_VERSION = 'v21.0';
+const GRAPH_HOST = 'https://graph.instagram.com';
 const IG_TIMEOUT_MS = 15_000;
 
 const CAPTION_MAX = 2200;
@@ -80,10 +81,10 @@ export const send: SendFn = async (
   fetchFn: typeof fetch,
 ): Promise<SendResult> => {
   const igUserId = env.IG_USER_ID;
-  const token = env.FB_PAGE_TOKEN;
+  const token = env.IG_TOKEN;
   const manquants = [
     ...(igUserId ? [] : ['IG_USER_ID']),
-    ...(token ? [] : ['FB_PAGE_TOKEN']),
+    ...(token ? [] : ['IG_TOKEN']),
   ];
   if (manquants.length > 0) {
     return {
@@ -112,7 +113,7 @@ export const send: SendFn = async (
     const minuteur = setTimeout(() => controleur.abort(), IG_TIMEOUT_MS);
     try {
       const reponse = await fetchFn(
-        `https://graph.facebook.com/${GRAPH_VERSION}/${chemin}`,
+        `${GRAPH_HOST}/${GRAPH_VERSION}/${chemin}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

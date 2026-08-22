@@ -1,0 +1,35 @@
+{
+  "slug": "rip-curl-20220328",
+  "entity": "Rip Curl (Rip Curl Europe)",
+  "siren": "332899731",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-03-28",
+    "publication": "2022-05-29"
+  },
+  "volume": {
+    "count": 30000,
+    "unit": "personnes",
+    "label": "plus de 30 000 clients dans le premier fichier mis en vente (identités, dates de naissance, adresses électroniques et postales, téléphones, identifiants clients) ; un second fichier recense 200 000 transactions sans données bancaires"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Zataz — Des bases de données de la marque Rip Curl piratées (29 mai 2022)",
+      "url": "https://www.zataz.com/bases-de-donnees-de-la-marque-ripcurl-piratees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 mars 2022, un pirate ouvre la vente de quatre bases de données exfiltrées du site de la marque de surf Rip Curl, sur un site russophone. Le premier fichier recense plus de 30 000 clients : identités, dates de naissance, adresses électroniques et postales, téléphones, identifiants clients. Un second fichier détaille 200 000 transactions, sans données bancaires. La cyberattaque daterait de fin mars 2022. Le service de veille Zataz constate une partie des documents en mai. La méthode d'exfiltration n'est pas expliquée par le vendeur.",
+  "timeline": [
+    {
+      "date": "2022-03-28",
+      "event": "Un pirate ouvre la vente de quatre bases de données exfiltrées du site Rip Curl sur un site russophone."
+    },
+    {
+      "date": "2022-05-29",
+      "event": "Zataz décrit la vente et constate une partie des documents : plus de 30 000 clients et 200 000 transactions."
+    }
+  ]
+}

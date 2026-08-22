@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { send } from '../workers/social/clients/make-linkedin';
 import type { Env, PostPayload } from '../workers/social/src/types';
 
-const envAvecUrl = { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test' } as Env;
+const envAvecUrl = { LINKEDIN_WEBHOOK_URL: 'https://hook.eu1.make.com/test-li' } as Env;
 const payload: PostPayload = {
   text: 'Fuite confirmée chez Test — 10 000 comptes. https://francepassoire.com/fiche/x',
   url: 'https://francepassoire.com/fiche/x',
@@ -17,7 +17,7 @@ describe('client LinkedIn via Make (webhook)', () => {
     expect(fetchFn).toHaveBeenCalledOnce();
   });
 
-  it('MAKE_WEBHOOK_URL absent → PENDING_KEYS, aucun appel', async () => {
+  it('LINKEDIN_WEBHOOK_URL absent → PENDING_KEYS, aucun appel', async () => {
     const fetchFn = vi.fn();
     const r = await send(payload, {} as Env, fetchFn as unknown as typeof fetch);
     expect(r.status).toBe('PENDING_KEYS');

@@ -1,0 +1,31 @@
+{
+  "slug": "mcdonalds-france-20220927",
+  "entity": "McDonald's France",
+  "siren": "722003936",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-09-27",
+    "publication": "2022-09-27"
+  },
+  "volume": {
+    "count": 3000000,
+    "unit": "enregistrements",
+    "label": "3 millions d'entrées dans un fichier de 385 Mo (noms, dates d'anniversaire, téléphones mobiles, adresses électroniques, transactions PayPal) dont les parties les plus sensibles sont chiffrées ; provenance non établie"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Zataz — Piratage pour McDonald's France ? (27 septembre 2022)",
+      "url": "https://www.zataz.com/piratage-pour-mc-donalds-france/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 septembre 2022, Zataz repère la circulation d'une base de 385 Mo semblant provenir de l'application McDonald's France. Le fichier affiche trois millions d'entrées en parties non chiffrées : noms, dates d'anniversaire, téléphones mobiles, adresses électroniques, transactions PayPal. Les données les plus sensibles restent chiffrées et le diffuseur demande de l'aide pour les déchiffrer. La provenance exacte du fichier n'est pas établie par la source, qui la présente comme probable sans la confirmer.",
+  "timeline": [
+    {
+      "date": "2022-09-27",
+      "event": "Un pirate met à disposition une base de 385 Mo semblant provenir de l'application McDonald's France ; les parties sensibles restent chiffrées."
+    }
+  ]
+}

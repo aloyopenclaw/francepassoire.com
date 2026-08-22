@@ -1,0 +1,34 @@
+{
+  "slug": "shotengai-20220325",
+  "entity": "Shotengai",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-03-25",
+    "publication": "2022-05-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; sauvegarde de 166 Mo nommée « Backup » contenant identités, mots de passe hachés, adresses électroniques et adresses IP"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "Zataz — Piratage des données du site Shotengai ? (5 mai 2022)",
+      "url": "https://www.zataz.com/piratage-des-donnees-du-site-shotengai/",
+      "kind": "article"
+    }
+  ],
+  "description": "En mars 2022, la boutique française d'objets japonais Shotengai est piratée. Une sauvegarde de 166 Mo, nommée « Backup », est proposée sur le darkweb depuis le 25 mars : identités, mots de passe hachés, adresses électroniques et adresses IP. La société, alertée par le service de veille Zataz, ne donne pas suite. Deux mois plus tard, les données réapparaissent en accès libre sur un blackmarket russe. Le volume de clients concernés n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2022-03-25",
+      "event": "Une sauvegarde « Backup » de 166 Mo de la boutique Shotengai est mise à disposition sur le darkweb."
+    },
+    {
+      "date": "2022-05-05",
+      "event": "Zataz constate la rediffusion des données en accès libre sur un blackmarket russe ; la société alertée n'a pas répondu."
+    }
+  ]
+}

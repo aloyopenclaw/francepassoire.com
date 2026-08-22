@@ -1,0 +1,50 @@
+{
+  "slug": "colipays-20231219",
+  "entity": "Colipays",
+  "siren": "383931862",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-19",
+    "publication": "2023-12-27",
+    "confirmation": "2023-12-27"
+  },
+  "volume": {
+    "count": 500,
+    "unit": "personnes",
+    "label": "200 à 500 clients impactés selon le communiqué de l'entreprise pour le piratage du 19 au 22 décembre 2023 ; données bancaires non touchées selon Colipays"
+  },
+  "data_types": ["coordonnees"],
+  "sources": [
+    {
+      "label": "Colipays — communiqué de presse du 27 décembre 2023 (cyberattaque des 19-22 décembre : adresses de livraison modifiées, données bancaires sécurisées)",
+      "url": "https://www.facebook.com/ColiPays/photos/753794513453214/",
+      "kind": "officiel"
+    },
+    {
+      "label": "La 1ère (franceinfo) — Colipays victime d'une cyberattaque, des clients n'ont jamais reçu leur colis (28 décembre 2023)",
+      "url": "https://la1ere.franceinfo.fr/reunion/colipays-victime-d-une-cyberattaque-des-clients-n-ont-jamais-recu-leur-colis-1453478.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Colipays fait face à une cyberattaque en période de fêtes (28 décembre 2023)",
+      "url": "https://www.zataz.com/colipays-fait-face-a-une-cyberattaque-en-periode-de-fetes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Du 19 au 22 décembre 2023, la société réunionnaise Colipays, spécialisée dans l'envoi de produits locaux, subit un piratage de son site de vente en ligne. Des attaquants modifient des adresses de livraison et provoquent des retards d'expédition en pleine période de fêtes. Dans son communiqué du 27 décembre, l'entreprise évalue l'impact entre 200 et 500 clients, indique que les données bancaires n'ont pas été touchées et suspend temporairement l'accès au site. La presse locale relaie des colis de Noël jamais reçus.",
+  "timeline": [
+    {
+      "date": "2023-12-19",
+      "event": "Début du piratage du site Colipays : des adresses de livraison sont modifiées et des expéditions retardées."
+    },
+    {
+      "date": "2023-12-27",
+      "event": "Colipays publie un communiqué : 200 à 500 clients impactés, données bancaires sécurisées, site temporairement suspendu."
+    },
+    {
+      "date": "2023-12-28",
+      "event": "La presse réunionnaise et Zataz relatent des commandes de fêtes non livrées et la communication de l'entreprise."
+    }
+  ]
+}

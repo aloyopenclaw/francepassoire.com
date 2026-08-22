@@ -1,0 +1,60 @@
+{
+  "slug": "departement-ardeche-20220408",
+  "entity": "Département de l'Ardèche",
+  "siren": "220700017",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-04-08",
+    "publication": "2022-04-08",
+    "confirmation": "2022-04-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "40 000 fichiers menacés de publication par LockBit 2.0 puis diffusés sur le dark web ; identités d'agents et de bénéficiaires d'aides sociales, dont des numéros de Sécurité sociale, citées par le président du Département ; nombre de personnes non chiffré"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Le Parisien — Ardèche : les russophones de Lockbit 2.0 revendiquent avoir piraté le système informatique du département (8 avril 2022)",
+      "url": "https://www.leparisien.fr/high-tech/ardeche-les-russophones-de-lockbit-20-revendiquent-avoir-pirate-le-systeme-informatique-du-departement-08-04-2022-OVAYOGQVMJEPXPQRDWMD5QOWEU.php",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Auvergne-Rhône-Alpes — Le Département de l'Ardèche, victime d'une cyber-attaque « de grande ampleur » : des milliers de fichiers dévoilés sur le darkweb (14 avril 2022)",
+      "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/ardeche/privas/le-departement-de-l-ardeche-victime-d-une-cyber-attaque-de-grande-ampleur-des-milliers-de-fichiers-devoiles-sur-le-darkweb-2524568.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Dauphiné libéré — Piratage. Des données du département de l'Ardèche divulguées sur le darkweb (13 avril 2022)",
+      "url": "https://www.ledauphine.com/faits-divers-justice/2022/04/13/des-donnees-du-departement-de-l-ardeche-divulguees-sur-le-darkweb",
+      "kind": "article"
+    },
+    {
+      "label": "ICI par France Bleu — Cyberattaque en Ardèche : des salles blanches mises en place (interview du président Olivier Amrane, 14 avril 2022)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/olivier-amrane-1649920342",
+      "kind": "article"
+    }
+  ],
+  "description": "Une cyberattaque détectée le 5 avril 2022 paralyse le réseau du Département de l'Ardèche. LockBit 2.0 revendique l'intrusion le 8 avril, exige une rançon et fixe un ultimatum au 12 avril. Après refus de paiement, les pirates diffusent dans la nuit du 12 au 13 avril des milliers de fichiers dérobés : documents RH, comptabilité et dossier « Cabinet du président ». Le président du Département, Olivier Amrane, confirme la présence d'identités d'agents et de bénéficiaires d'aides sociales, dont des numéros de Sécurité sociale. Plainte déposée le 7 avril puis actualisée le 13 ; CNIL et ANSSI saisies.",
+  "timeline": [
+    {
+      "date": "2022-04-05",
+      "event": "Une cyberattaque par rançongiciel est détectée sur le réseau départemental ; les systèmes sont isolés, une plainte est déposée le 7 avril."
+    },
+    {
+      "date": "2022-04-08",
+      "event": "LockBit 2.0 revendique l'attaque sur son site de fuite, exige une rançon et menace de publier les fichiers avant le 12 avril."
+    },
+    {
+      "date": "2022-04-12",
+      "event": "Faute de rançon, les pirates diffusent des milliers de fichiers internes sur le dark web dans la nuit du 12 au 13 avril."
+    },
+    {
+      "date": "2022-04-13",
+      "event": "Le Département constate l'exposition des fichiers, actualise sa plainte et appelle agents et usagers à la vigilance ; CNIL et ANSSI sont saisies."
+    }
+  ],
+  "group": "lockbit"
+}

@@ -35,13 +35,16 @@ export const send: SendFn = async (
   const controleur = new AbortController();
   const minuteur = setTimeout(() => controleur.abort(), MAKE_TIMEOUT_MS);
   try {
+    // Contrat EXACT du scénario Make @francepassoire (fix 2026-08-22) :
+    // {text, mediaUrl} — tout autre champ casse le mapping du module X
+    // (« Missing value of required parameter 'url' » si mediaUrl absent).
+    // mediaUrl = carte 1080×1080 de la fiche (payload.url = /fiche/<slug>).
     const reponse = await fetchFn(webhook, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         text: payload.text,
-        url: payload.url,
-        request_id: payload.metadata?.request_id,
+        mediaUrl: `${payload.url.replace(/\/$/, '')}/card.jpg`,
       }),
       signal: controleur.signal,
     });
