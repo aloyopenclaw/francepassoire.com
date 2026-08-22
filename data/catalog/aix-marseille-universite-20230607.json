@@ -1,0 +1,51 @@
+{
+  "slug": "aix-marseille-universite-20230607",
+  "entity": "Aix-Marseille Université (AMU)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-07",
+    "publication": "2023-06-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration de données rapportée ; accès Internet et services en ligne coupés en réaction"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Provence-Alpes-Côte d'Azur : L'université d'Aix-Marseille visée par une cyberattaque, plus d'accès au site web ni à Internet (7 juin 2023)",
+      "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/l-universite-d-aix-marseille-visee-par-une-cyberattaque-plus-d-acces-au-site-web-ni-a-internet-2789882.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : L'université Aix-Marseille victime d'une cyberattaque (7 juin 2023)",
+      "url": "https://www.leparisien.fr/high-tech/luniversite-aix-marseille-victime-dune-cyberattaque-07-06-2023-N257YL74MRAHDOPNTH3GQCP234.php",
+      "kind": "article"
+    },
+    {
+      "label": "The Record : Aix-Marseille, France's largest university, hit by cyberattack (7 juin 2023)",
+      "url": "https://therecord.media/aix-marseille-university-cyberattack-france",
+      "kind": "article"
+    },
+    {
+      "label": "La Marseillaise : L'université d'Aix-Marseille victime d'une cyberattaque, les oraux au concours de journalisme maintenus (juin 2023)",
+      "url": "https://www.lamarseillaise.fr/societe/l-universite-d-aix-marseille-victime-dune-cyberattaque-les-oraux-au-concours-de-journalisme-maintenus-PF14337484",
+      "kind": "article"
+    }
+  ],
+  "description": "Le mercredi 7 juin 2023 au matin, la direction d'Aix-Marseille Université, l'une des plus importantes universités françaises par ses effectifs, alerte ses équipes après une cyberattaque. L'établissement coupe l'ensemble de ses accès à Internet : site web, réseau, ENT et messagerie deviennent indisponibles pour les étudiants et les personnels, invités à rejoindre leurs domiciles selon la presse anglophone. Les oraux du concours de journalisme sont maintenus. Aucune exfiltration de données n'est rapportée et aucune revendication n'est publiée à date.",
+  "timeline": [
+    {
+      "date": "2023-06-07",
+      "event": "Cyberattaque détectée au matin ; l'université coupe ses accès Internet, le site et les services en ligne sont indisponibles."
+    },
+    {
+      "date": "2023-06-07",
+      "event": "France 3, Le Parisien et The Record relaient l'incident ; les personnels sont invités à rentrer chez eux, les oraux du concours de journalisme sont maintenus."
+    }
+  ]
+}

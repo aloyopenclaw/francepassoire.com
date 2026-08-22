@@ -1,0 +1,59 @@
+{
+  "slug": "grenoble-inp-20221202",
+  "entity": "Grenoble INP (Institut polytechnique de Grenoble, composante de l'Université Grenoble Alpes)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-12-02",
+    "publication": "2022-12-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration confirmée ; l'établissement évoque une intrusion et estime avoir évité une atteinte irrémédiable"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Place Gre'net : Suspicion de cyberattaque à Grenoble INP, anomalies de grande ampleur (6 décembre 2022)",
+      "url": "https://www.placegrenet.fr/2022/12/06/constatant-des-anomalies-de-grande-ampleur-grenoble-inp-a-isole-lensemble-de-son-systeme-dinformation/586412",
+      "kind": "article"
+    },
+    {
+      "label": "Le Dauphiné : Le site internet de Grenoble INP a-t-il été piraté ? (7 décembre 2022)",
+      "url": "https://www.ledauphine.com/education/2022/12/07/isere-le-site-internet-de-grenoble-inp-a-t-il-ete-pirate",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Grenoble INP évoque une intrusion dans ses serveurs informatiques (décembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252527945/Grenoble-INP-isole-son-systeme-dinformation-pour-des-anomalies",
+      "kind": "article"
+    },
+    {
+      "label": "Place Gre'net : Cyberattaque, Grenoble INP estime avoir échappé au pire (17 décembre 2022)",
+      "url": "https://www.placegrenet.fr/2022/12/17/cyberattaque-grenoble-inp-estime-avoir-evite-une-atteinte-irremediable-de-ces-systemes-dinformation/587586",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 décembre 2022, constatant des anomalies de grande ampleur, Grenoble INP coupe et isole l'ensemble de son système d'information ; le site web de l'institut ne répond plus. L'établissement parle d'une intrusion dans ses serveurs sans utiliser le terme de cyberattaque dans ses premières communications. Selon LeMagIT, l'attaquant a touché le cœur du système d'information, totalement mis à l'arrêt pour contrer l'attaque. Le 17 décembre, l'institut estime avoir échappé à une atteinte irrémédiable. Aucune exfiltration de données n'est confirmée publiquement et aucun groupe ne revendique l'incident.",
+  "timeline": [
+    {
+      "date": "2022-12-02",
+      "event": "Anomalies de grande ampleur constatées ; Grenoble INP coupe et isole son système d'information, le site web devient inaccessible."
+    },
+    {
+      "date": "2022-12-06",
+      "event": "Place Gre'net relaie la suspension des services numériques ; Le Dauphiné s'interroge sur un piratage du site."
+    },
+    {
+      "date": "2022-12-07",
+      "event": "LeMagIT rapporte que l'institut évoque une intrusion dans ses serveurs après isolement du système d'information."
+    },
+    {
+      "date": "2022-12-17",
+      "event": "Grenoble INP estime avoir évité une atteinte irrémédiable de ses systèmes d'information."
+    }
+  ]
+}
