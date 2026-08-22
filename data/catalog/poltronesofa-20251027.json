@@ -1,0 +1,52 @@
+{
+  "slug": "poltronesofa-20251027",
+  "entity": "Poltronesofà",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-10-27",
+    "publication": "2025-12-09",
+    "confirmation": "2025-12-09"
+  },
+  "volume": {
+    "count": 450000,
+    "unit": "enregistrements",
+    "label": "≈ 450 000 dossiers clients en France et Italie (chiffre du relais FrenchBreaches) ; l'enseigne évoque un « volume significatif » sans publier de chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Poltronesofà, ransomware et données clients oubliées : et voilà ! (9 décembre 2025)",
+      "url": "https://www.zataz.com/poltronesofa-ransomware-et-donnees-clients-oubliees-et-voila/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Poltronesofà : 450K comptes compromis (27 octobre 2025)",
+      "url": "https://frenchbreaches.com/alertes/poltronesofa-b9606828558d",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données Poltronesofà : informations et protection (relais fuitesinfos.fr, 27 octobre 2025)",
+      "url": "https://hginfoandco.com/fuite/184-poltronesofa",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 octobre 2025, l'enseigne d'ameublement Poltronesofà, présente en France et en Italie, subit une attaque par rançongiciel. Des serveurs sont chiffrés et un volume significatif de données clients est dérobé, selon le courrier de l'entreprise rapporté par Zataz. Les informations concernées couvrent identités, coordonnées (adresse postale, e-mail, téléphone portable) et numéros d'identification fiscale. L'enseigne dit avoir maîtrisé l'incident et ne dispose d'aucune preuve d'exploitation des données. Le relais FrenchBreaches évoque environ 450 000 dossiers ; des profils d'inscrits anciens, sans achat, figuraient encore dans les systèmes.",
+  "timeline": [
+    {
+      "date": "2025-10-27",
+      "event": "Attaque par rançongiciel contre les systèmes de Poltronesofà : chiffrement de serveurs et vol d'un volume significatif de données clients."
+    },
+    {
+      "date": "2025-11-30",
+      "event": "Poltronesofà reconnaît l'incident dans un courrier adressé aux personnes concernées, sans publier de communication chiffrée."
+    },
+    {
+      "date": "2025-12-09",
+      "event": "Zataz documente le courrier et la conservation prolongée de données d'inscrits anciens ; FrenchBreaches relaie ≈ 450 000 dossiers France-Italie."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "oui-heberg-20251110",
+  "entity": "Oui Heberg",
+  "siren": "888341997",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-10"
+  },
+  "volume": {
+    "count": 4400,
+    "unit": "comptes",
+    "label": "4 400 comptes clients (dump complet revendiqué ; non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Oui Heberg : fuite de données concernant 4,4K comptes (10 novembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/oui-heberg-0b365dc430e3",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données Oui Heberg : informations et protection (relais fuitesinfos.fr, 10 novembre 2025)",
+      "url": "https://hginfoandco.com/fuite/181-oui-heberg",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 10 novembre 2025, un dump complet revendiqué de la base clients d'Oui Heberg est recensé par la veille. L'entreprise, hébergeur français proposant cloud, VPS et serveurs dédiés, n'a pas publié de communication sur l'incident. Environ 4 400 comptes sont concernés selon le relais : noms et prénoms, adresses postales, e-mails, numéros de téléphone et identifiants de connexion. FrenchBreaches juge la revendication crédible au vu des échantillons diffusés. L'exposition d'identifiants de connexion d'un hébergeur accroît le risque de reutilisation de mots de passe ; les volumes annoncés restent non établis.",
+  "timeline": [
+    {
+      "date": "2025-11-10",
+      "event": "Un dump complet revendiqué d'environ 4 400 comptes clients d'Oui Heberg, incluant des identifiants de connexion, est recensé par la veille."
+    }
+  ]
+}

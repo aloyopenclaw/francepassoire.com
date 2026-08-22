@@ -1,0 +1,45 @@
+{
+  "slug": "123casting-20251222",
+  "entity": "123casting",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-22"
+  },
+  "volume": {
+    "count": 240000,
+    "unit": "personnes",
+    "label": "240 000 profils — base complète exfiltrée revendiquée sur BreachForums (non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez 123casting : fuite de données concernant 240K comptes (22 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/123casting-0d96831d686a",
+      "kind": "revendication"
+    },
+    {
+      "label": "HG Info & Co — Fuite de données 123casting : informations et protection (relais fuitesinfos.fr, 22 décembre 2025)",
+      "url": "https://hginfoandco.com/fuite/138-123casting",
+      "kind": "revendication"
+    },
+    {
+      "label": "Christophe Boutry — Alerte fuite de données : 123casting.fr (≈ 240 000 victimes), publication sur BreachForums (22 décembre 2025)",
+      "url": "https://fr.linkedin.com/posts/christophe-boutry_alerte-fuite-de-donn%C3%A9es-123castingfr-activity-7408540303927750656-wl5I",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 22 décembre 2025, un acteur publie sur BreachForums la base complète revendiquée de 123casting, plateforme française de casting : environ 240 000 profils. Les données recensées couvrent identités, dates de naissance, coordonnées, mensurations, messages privés, books photos et vidéos, données de paiement et mots de passe hachés en MD5. Ce format de hachage est considéré comme décodable. La publication est relayée par la veille française. La plateforme n'a pas publié de communication confirmant l'exfiltration ; les volumes annoncés restent non établis.",
+  "timeline": [
+    {
+      "date": "2025-12-22",
+      "event": "La base complète revendiquée de 123casting (≈ 240 000 profils, mots de passe MD5, books et messages privés) est publiée sur BreachForums."
+    }
+  ]
+}

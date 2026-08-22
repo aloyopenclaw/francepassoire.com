@@ -1,0 +1,47 @@
+{
+  "slug": "eni-france-20251227",
+  "entity": "ENI France",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-27",
+    "publication": "2026-01-07",
+    "confirmation": "2026-01-06"
+  },
+  "volume": {
+    "count": 89463,
+    "unit": "lignes",
+    "label": "89 463 lignes de données clients professionnelles françaises revendiquées par « Lapsus-Group » ; entre 40 000 et 50 000 clients estimés par Clubic, ENI ne communique pas de chiffre"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — L'énergéticien ENI confirme avoir subi une cyberattaque en France : des milliers de clients exposés (7 janvier 2026)",
+      "url": "https://www.clubic.com/actualite-593956-l-energeticien-eni-confirme-avoir-subi-une-cyberattaque-en-france-des-milliers-de-clients-exposes.html",
+      "kind": "article"
+    },
+    {
+      "label": "BonjourLaFuite (tracker imirhil) — ENI, 89 463 clients, 27 décembre 2025",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 décembre 2025, un pirate se revendiquant du groupe Lapsus$ publie sur un forum 89 463 lignes de données clients professionnelles françaises d'ENI. La base est attribuée par l'auteur à un complice. Les échantillons montrent raisons sociales, références clients, coordonnées professionnelles et dates de dernière connexion. Début janvier, ENI confirme à ses clients une « diffusion non autorisée » d'informations professionnelles. L'entreprise exclut mots de passe, historiques de consommation et coordonnées bancaires. Elle dépose plainte et annonce des notifications aux autorités compétentes si les éléments le justifient. Clubic estime entre 40 000 et 50 000 clients concernés.",
+  "timeline": [
+    {
+      "date": "2025-12-27",
+      "event": "Un acteur se réclamant de Lapsus$ publie 89 463 lignes de données clients professionnelles françaises d'ENI sur un forum cybercriminel."
+    },
+    {
+      "date": "2026-01-06",
+      "event": "ENI confirme auprès de ses clients une « diffusion non autorisée » d'informations professionnelles, dépose plainte et exclut les données sensibles."
+    },
+    {
+      "date": "2026-01-07",
+      "event": "Clubic documente la confirmation et estime entre 40 000 et 50 000 clients professionnels concernés."
+    }
+  ]
+}
