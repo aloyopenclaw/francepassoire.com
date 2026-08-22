@@ -1,24 +1,20 @@
 ---
 import Logo from './Logo.astro';
 ---
-<footer class="bg-brand-cream border-t-2 border-brand-ink mt-auto">
+<footer class="bg-brand-ink text-brand-cream border-t-2 border-brand-ink mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-      <a href="/" class="flex items-center gap-2.5 font-display font-bold text-xl text-brand-ink hover:opacity-80 transition-opacity">
+      <a href="/" class="flex items-center gap-2.5 font-display font-bold text-xl text-brand-cream opacity-90 hover:opacity-100 transition-opacity focus-visible:outline-brand-cream">
         <Logo size={38} />
         FRANCEPASSOIRE
       </a>
       <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-mono text-sm font-bold" aria-label="Pied de page">
-        <a href="/signaler/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2">Signaler une fuite</a>
-        <a href="/mentions-legales/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2">Mentions légales</a>
-        <a href="/confidentialite/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2">Confidentialité</a>
-        <a href="/feed.xml" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2">Flux RSS</a>
-        <a href="/methode/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2">La méthode</a>
+        <a href="/signaler/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2 focus-visible:outline-brand-cream">Signaler une fuite</a>
+        <a href="/mentions-legales/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2 focus-visible:outline-brand-cream">Mentions légales</a>
+        <a href="/confidentialite/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2 focus-visible:outline-brand-cream">Confidentialité</a>
+        <a href="/feed.xml" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2 focus-visible:outline-brand-cream">Flux RSS</a>
+        <a href="/methode/" class="hover:text-brand-orange hover:underline underline-offset-4 decoration-2 focus-visible:outline-brand-cream">La méthode</a>
       </nav>
-    </div>
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-2 mt-8 pt-6 border-t-2 border-dashed border-brand-ink/20 font-mono text-xs text-brand-ink/60">
-      <span>© 2026 FrancePassoire · Projet d'utilité publique citoyenne.</span>
-      <span>Sans traceur publicitaire · Données ouvertes (CC-BY 4.0)</span>
     </div>
   </div>
 </footer>

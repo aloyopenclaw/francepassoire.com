@@ -1,32 +1,41 @@
 ---
-// Le Compteur National — micro-tâche T36 (finalisation tâche 44) : les chiffres
-// sont calculés au build depuis le catalogue public (collection `catalog`).
-// Catalogue vide → état vide honnête conservé (aucun chiffre publié avant
-// d'exister) ; fiches présentes → personnesYTD en grand nombre (cible de
-// l'animation count-up de countUpTarget), étiquette d'honnêteté
-// personnesLabel, barres secteur/données/année et répartition des statuts.
-// Chaque barre ne pointe que vers un hub EXISTANT (règle ≥ SEUIL_HUB de
-// hub-view.ts, tâche 28) : aucune barre vers une page non générée.
+// Le Compteur National — les chiffres sont calculés au build depuis le
+// catalogue public (collection `catalog`). Catalogue vide → état vide honnête
+// conservé (aucun chiffre publié avant d'exister) ; fiches présentes →
+// enregistrements fuités YTD en grand nombre (cible de l'animation count-up,
+// data-cible), cartes « Ça fuit trop vite... » / « Ransomware », puis barres
+// secteur/données. Chaque barre ne pointe que vers un hub EXISTANT (règle
+// ≥ SEUIL_HUB de hub-view.ts, tâche 28) : aucune barre vers une page non
+// générée.
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import {
-  anneesHubbees,
   donneesHubbees,
   formaterNombre,
   labelDonnee,
   labelSecteur,
-  labelStatut,
   secteursHubbes,
-  urlAnnee,
   urlDonnee,
   urlSecteur,
 } from '../lib/hub-view';
-import { computeCompteur, countUpTarget } from '../lib/stats';
+import { computeCompteur } from '../lib/stats';
 
 const fiches = (await getCollection('catalog')).map((entry) => entry.data);
 const compteur = computeCompteur(fiches);
-const cible = countUpTarget(compteur);
 const anneeCourante = new Date().getFullYear();
+
+// Hero v2 (template Gemini) : enregistrements fuités depuis le 1er janvier —
+// toutes unités sommées, même calcul que le bandeau d'accueil (index.astro).
+const enregistrementsYTD = fiches
+  .filter((f) => (f.dates.publication ?? f.dates.revendication).startsWith(String(anneeCourante)))
+  .reduce((somme, f) => somme + f.volume.count, 0);
+const catalogueVide = compteur.fichesCount === 0;
+
+// Carte « Ransomware » : 1 fuite sur N issue d'une revendication (N ≥ 2).
+const fichesRansomware = fiches.filter((f) => f.group).length;
+const ratioRansomware = fichesRansomware > 0
+  ? Math.max(2, Math.round(compteur.fichesCount / fichesRansomware))
+  : 0;
 
 /** Barre du contrat visuel « chiffres » : largeur relative au max, en %. */
 function pct(valeur: number, max: number): number {
@@ -59,29 +68,17 @@ const barresDonnees = Object.entries(compteur.dataTypeBars)
       : null,
   }));
 
-const anneesHub = anneesHubbees(fiches);
-const barresAnnee = Object.entries(compteur.parAnnee)
-  .sort(([a], [b]) => b.localeCompare(a))
-  .map(([annee, n]) => ({
-    label: annee,
-    count: n,
-    pct: pct(n, Math.max(...Object.values(compteur.parAnnee), 1)),
-    href: anneesHub.has(annee) ? urlAnnee(Number(annee)) : null,
-  }));
-
+// Barre scindée « Ça fuit trop vite... » : part confirmée + complément
+// revendiqué (la somme des largeurs reste toujours 100 %).
 const totalStatut = Math.max(compteur.fichesCount, 1);
-const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
-  label: labelStatut(statut),
-  count: compteur.statutSplit[statut],
-  pct: pct(compteur.statutSplit[statut], totalStatut),
-  classe: statut === 'confirmee' ? 'pill-confirmee' : 'pill-revendiquee',
-}));
+const pctConfirmee = Math.round((compteur.statutSplit.confirmee / totalStatut) * 100);
+const pctRevendiquee = 100 - pctConfirmee;
 ---
 <Layout
   title="Les chiffres - France Passoire"
   description="Le Compteur National et les statistiques des fuites de données personnelles en France, calculées depuis le catalogue public."
 >
-  {cible === null ? (
+  {catalogueVide ? (
     <!-- Hero : zéro fiche publiée, le compteur affiche un zéro honnête -->
     <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
@@ -98,24 +95,32 @@ const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
       </div>
     </section>
   ) : (
-    <!-- Hero : personnesYTD en grand nombre, cible de l'animation count-up -->
+    <!-- Hero : enregistrements fuités YTD en grand nombre, cible de l'animation count-up -->
     <section class="bg-brand-ink border-b-2 border-brand-ink py-16 sm:py-24 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
         <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
           <h1 class="mt-0">
-            <span class="count-up block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter" data-cible={cible}>{formaterNombre(cible)}</span>
-            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">expositions cumulées depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
+            <span class="count-up block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter" data-cible={enregistrementsYTD}>{formaterNombre(enregistrementsYTD)}</span>
+            <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">enregistrements fuités depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
           </h1>
-          <p class="font-mono text-sm mt-3 text-brand-ink/70 leading-relaxed">
-            en cumulant les volumes annoncés des {formaterNombre(compteur.fichesCount)} fuites recensées (une même personne peut apparaître dans plusieurs fuites)
-          </p>
         </div>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <button id="partager-btn" type="button" class="bg-brand-orange text-brand-ink px-6 py-3 rounded-passoire border-2 border-brand-ink shadow-hard hover:bg-brand-hover btn-press font-display font-bold flex items-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            Partager
+          </button>
+          <button id="integrer-btn" type="button" class="bg-brand-cream text-brand-ink px-6 py-3 rounded-passoire border-2 border-brand-ink shadow-hard hover:bg-brand-paper btn-press font-display font-bold flex items-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Intégrer sur votre site
+          </button>
+        </div>
+        <p id="partager-confirmation" role="status" class="mt-4 hidden font-mono text-sm text-brand-cream/90">Lien copié dans le presse-papiers</p>
       </div>
     </section>
   )}
 
-  {cible === null ? (
+  {catalogueVide ? (
     <!-- État vide honnête : les statistiques suivront le catalogue -->
     <section class="py-16 bg-brand-paper">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -143,7 +148,8 @@ const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
   ) : (
     <!-- Statistiques calculées au build : barres du contrat visuel « chiffres » -->
     <section class="py-16 bg-brand-paper">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
         <!-- Fuites par secteur : chaque barre lie le hub /secteur/<slug>/ s'il existe -->
         <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
@@ -199,61 +205,61 @@ const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
           </div>
         </div>
 
-        <!-- Statut de vérification : répartition Revendiquée / Confirmée (aucun hub dédié) -->
-        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
-          <h2 class="font-display font-extrabold text-2xl mb-1">Statut de vérification</h2>
-          <p class="text-sm font-body text-brand-ink/70 mb-8">Part des fiches confirmées par une source officielle :</p>
-          <div class="space-y-4">
-            {statuts.map((statut) => (
-              <div class="block">
-                <div class="flex justify-between font-mono text-sm font-bold mb-1">
-                  <span>{statut.label}</span><span>{statut.count}</span>
-                </div>
-                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
-                  <div class={`h-full ${statut.classe === 'pill-confirmee' ? 'bg-brand-green' : 'bg-brand-orange'} border-r-2 border-brand-ink`} style={`width: ${statut.pct}%;`}></div>
-                </div>
-              </div>
-            ))}
+        <!-- Cartes du template Gemini : barre scindée statut + ratio ransomware -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard-sm">
+            <h2 class="font-display font-extrabold text-3xl mb-6">Ça fuit trop vite...</h2>
+            <div class="w-full h-12 bg-brand-cream border-2 border-brand-ink rounded-full flex overflow-hidden shadow-hard-sm mb-4">
+              <div class="h-full pill-confirmee border-y-0 border-l-0 border-r-2 flex items-center justify-center font-mono font-bold text-lg" style={`width: ${pctConfirmee}%;`}>{pctConfirmee}%</div>
+              <div class="h-full pill-revendiquee border-none flex items-center justify-center font-mono font-bold text-lg" style={`width: ${pctRevendiquee}%;`}>{pctRevendiquee}%</div>
+            </div>
+            <div class="flex flex-wrap justify-between gap-2 font-mono text-sm">
+              <span class="flex items-center gap-2"><span class="w-3 h-3 bg-brand-green border border-brand-ink rounded-full" aria-hidden="true"></span> Confirmées</span>
+              <span class="flex items-center gap-2"><span class="w-3 h-3 bg-brand-orange border border-brand-ink rounded-full" aria-hidden="true"></span> Revendiquées</span>
+            </div>
           </div>
-          <p class="font-mono text-sm mt-6">
-            <a href="/" class="underline hover:text-brand-orange">→ voir les fiches sources</a>
-          </p>
-        </div>
 
-        <!-- Fuites par année : chaque barre lie le hub /<yyyy>/ s'il existe -->
-        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
-          <h2 class="font-display font-extrabold text-2xl mb-1">Fuites par année</h2>
-          <p class="text-sm font-body text-brand-ink/70 mb-8">Fiches par année d'attribution :</p>
-          <div class="space-y-4">
-            {barresAnnee.map((barre) => barre.href ? (
-              <a href={barre.href} class="block group">
-                <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
-                  <span>{barre.label}</span><span>{barre.count}</span>
-                </div>
-                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
-                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
-                </div>
-              </a>
-            ) : (
-              <div class="block">
-                <div class="flex justify-between font-mono text-sm font-bold mb-1">
-                  <span>{barre.label}</span><span>{barre.count}</span>
-                </div>
-                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
-                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
-                </div>
-              </div>
-            ))}
+          <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard-sm">
+            <h2 class="font-display font-extrabold text-3xl mb-6">Ransomware</h2>
+            <div class="flex items-center gap-6">
+              <div class="font-display font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_#241405]">{ratioRansomware > 0 ? `1/${ratioRansomware}` : '0'}</div>
+              <p class="font-mono text-lg font-bold leading-snug">
+                {ratioRansomware > 0
+                  ? `1 fuite sur ${ratioRansomware} est issue d'une revendication ransomware.`
+                  : "Aucune fuite n'est issue d'une revendication ransomware."}
+              </p>
+            </div>
           </div>
         </div>
 
-        <p class="text-center font-mono text-sm text-brand-ink/60 lg:col-span-2">
+        <p class="text-center font-mono text-sm text-brand-ink/60">
           <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
             Chaque chiffre est sourcé fiche par fiche. Voir <a href="/methode/" class="underline decoration-2 underline-offset-2 hover:text-brand-orange">la méthode</a>.
           </span>
         </p>
       </div>
     </section>
+  )}
+
+  {!catalogueVide && (
+    <!-- Modale d'intégration du compteur (template Gemini) : iframe copiable -->
+    <dialog id="embed-modal" class="bg-brand-paper border-4 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-[12px_12px_0px_0px_#241405] max-w-2xl w-full backdrop:bg-brand-ink/50">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="font-display font-bold text-2xl">Intégrer le compteur</h3>
+        <button id="embed-close" type="button" class="p-2 hover:bg-brand-orange rounded-full transition-colors border-2 border-transparent hover:border-brand-ink" aria-label="Fermer">
+          <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <p class="font-body mb-4">Copiez-collez ce code iframe dans votre article ou votre site :</p>
+      <div class="bg-brand-ink text-brand-cream p-4 rounded-xl font-mono text-sm mb-6 overflow-x-auto relative">
+        <code id="embed-code">&lt;iframe src="https://francepassoire.com/embed/compteur" width="100%" height="200" style="border:none;border-radius:20px;" title="Compteur France Passoire"&gt;&lt;/iframe&gt;</code>
+        <button id="embed-copier" type="button" class="absolute top-2 right-2 bg-brand-orange text-brand-ink p-2 rounded-md hover:bg-brand-hover transition-colors font-display font-bold" title="Copier">
+          <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span id="embed-copier-label" role="status"></span>
+        </button>
+      </div>
+      <button id="embed-fermer" type="button" class="w-full bg-brand-cream text-brand-ink px-4 py-3 rounded-xl border-2 border-brand-ink shadow-[4px_4px_0px_0px_#241405] hover:bg-brand-paper font-bold btn-press">Fermer</button>
+    </dialog>
   )}
 
   <script>
@@ -278,6 +284,47 @@ const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
         };
         requestAnimationFrame(tic);
       }
+    }
+
+    // Boutons « Partager » / « Intégrer » du hero (template Gemini) :
+    // navigator.share si disponible, copie du lien + confirmation inline sinon.
+    const partagerBtn = document.getElementById('partager-btn');
+    const confirmation = document.getElementById('partager-confirmation');
+    if (partagerBtn && confirmation) {
+      let minuterie: number | undefined;
+      const confirmer = (): void => {
+        confirmation.classList.remove('hidden');
+        window.clearTimeout(minuterie);
+        minuterie = window.setTimeout(() => confirmation.classList.add('hidden'), 2500);
+      };
+      partagerBtn.addEventListener('click', () => {
+        const url = window.location.href;
+        if (navigator.share) {
+          navigator.share({ title: document.title, url }).catch(() => undefined); // partage annulé par l'utilisateur
+        } else if (navigator.clipboard) {
+          navigator.clipboard.writeText(url).then(confirmer).catch(() => undefined);
+        }
+      });
+    }
+
+    // Modale d'intégration : ouverture/fermeture + copie du code iframe.
+    const embedModal = document.getElementById('embed-modal') as HTMLDialogElement | null;
+    const embedCode = document.getElementById('embed-code');
+    const embedCopier = document.getElementById('embed-copier');
+    const embedCopierLabel = document.getElementById('embed-copier-label');
+    document.getElementById('integrer-btn')?.addEventListener('click', () => embedModal?.showModal());
+    document.getElementById('embed-close')?.addEventListener('click', () => embedModal?.close());
+    document.getElementById('embed-fermer')?.addEventListener('click', () => embedModal?.close());
+    if (embedModal && embedCode && embedCopier && embedCopierLabel) {
+      embedCopier.addEventListener('click', () => {
+        navigator.clipboard
+          ?.writeText(embedCode.textContent?.trim() ?? '')
+          .then(() => {
+            embedCopierLabel.textContent = 'Copié !';
+            window.setTimeout(() => (embedCopierLabel.textContent = ''), 2000);
+          })
+          .catch(() => undefined);
+      });
     }
   </script>
 </Layout>
