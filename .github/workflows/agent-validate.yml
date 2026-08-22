@@ -158,3 +158,30 @@ jobs:
                 name: 'agent:validé',
               });
             } catch (e) { /* absent = ok */ }
+
+      - name: Corrections mécaniques (fixup borné, une seule itération)
+        if: steps.agent.outputs.verdict == 'FAIL'
+        env:
+          PR_NUM: ${{ github.event.pull_request.number }}
+        run: |
+          if git log -1 --pretty=%s | grep -q "^fix(catalog): corrections mécaniques du validateur"; then
+            echo "fixup déjà appliqué sur ce commit et verdict toujours FAIL — arrêt, intervention humaine requise."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          opencode run "
+          Tu es le correcteur mécanique de la PR numéro ${PR_NUM}. Lis ton propre rapport .agent-tmp/report.md et corrige UNIQUEMENT les défauts mécaniques qu'il liste : URL morte remplacée par son snapshot web.archive.org (vérifie le code 200 avec curl avant de l'écrire), caractère em-dash remplacé par un deux-points, slug réaligné sur la date de revendication, dates.confirmation manquante ajoutée, chronologie revendication/publication remise dans l'ordre, volume à zéro qualifié par un label mentionnant que le volume n'est pas communiqué. Tu ne touches QUE des fichiers data/catalog/*.json. Tu ne réécris jamais la prose au-delà de ces remplacements. Les défauts éditoriaux (sourçage insuffisant, doublon, prose hors ton) ne sont pas de ta compétence : laisse-les.
+          " || true
+          git add -A data/catalog/ 2>/dev/null || true
+          HORS_PERIMETRE=$(git diff --cached --name-only | grep -cv '^data/catalog/' || true)
+          if [ "${HORS_PERIMETRE}" != "0" ]; then
+            echo "correctif hors périmètre détecté — abandon du push"; git reset --hard HEAD; exit 0
+          fi
+          if git diff --cached --quiet; then
+            echo "aucune correction mécanique applicable — le défaut est éditorial, intervention humaine"
+          else
+            git commit -m "fix(catalog): corrections mécaniques du validateur (agent)" --quiet
+            git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+            echo "fixup poussé — la PR se revalide automatiquement (synchronize)"
+          fi
