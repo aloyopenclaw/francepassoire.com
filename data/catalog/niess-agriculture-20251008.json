@@ -1,0 +1,37 @@
+{
+  "slug": "niess-agriculture-20251008",
+  "entity": "Niess Agriculture (vente, réparation et transformation de matériel agricole)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-08",
+    "publication": "2025-10-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes et catégories de données non communiqués ; revendication ransomware Sinobi non confirmée par l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "DeXpose — Sinobi ransomware attack targets French firm Niess Agriculture (8 octobre 2025)",
+      "url": "https://www.dexpose.io/sinobi-ransomware-attack-targets-french-firm-niess-agriculture/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — fiche victime Niess Agriculture, groupe Sinobi",
+      "url": "https://www.ransomware.live/id/Tmllc3MgQWdyaWN1bHR1cmVAc2lub2Jp",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Niess Agriculture, société française fondée en 1885 et spécialisée dans la vente, la réparation et la transformation de matériel agricole, est ajoutée le 8 octobre 2025 au site de fuite du groupe de ransomware Sinobi. Le groupe menace de publier l'intégralité des données dérobées si aucun représentant de l'entreprise ne prend contact via les canaux indiqués. Aucun échantillon ni catégorie précise de données n'est publié à ce stade et l'entreprise n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2025-10-08",
+      "event": "Sinobi publie Niess Agriculture sur son site de fuite et menace de publier les données dérobées faute de contact de l'entreprise."
+    }
+  ]
+}

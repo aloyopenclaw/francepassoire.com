@@ -1,0 +1,44 @@
+{
+  "slug": "wouters-france-20250910",
+  "entity": "Wouters France (négoce de gros de fruits et légumes, Châteaurenard, Bouches-du-Rhône)",
+  "siren": "423226687",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-10",
+    "publication": "2025-09-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non chiffrés ; données exfiltrées et publiées annoncées par le groupe Qilin, non confirmées par l'entreprise"
+  },
+  "data_types": [
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "SecuSlice — Qilin met la main sur Wouters France : fruits, légumes et ransomware au menu (10 septembre 2025)",
+      "url": "https://secuslice.com/2025/09/qilin-wouters-france-fruits-legumes-ransomware/",
+      "kind": "article"
+    },
+    {
+      "label": "GalaxyWarden — Wouters France listed by Qilin ransomware group (septembre 2025)",
+      "url": "https://www.galaxywarden.com/blog/breach/wouters-france-qilin-2025-09",
+      "kind": "article"
+    }
+  ],
+  "description": "Wouters France, grossiste de fruits et légumes installé à Châteaurenard dans les Bouches-du-Rhône, est ajouté le 10 septembre 2025 au site de fuite du groupe de ransomware Qilin, avec une date d'attaque estimée à la veille. Selon les relais spécialisés reprenant la revendication, les données exfiltrées et publiées comprendraient factures et documents financiers, coordonnées personnelles d'employés et de clients, listes de fournisseurs et clients avec détails logistiques, ainsi que des données internes sur les marges et le poids des cargaisons. L'entreprise n'a pas communiqué publiquement sur l'incident et aucun volume global n'est chiffré.",
+  "timeline": [
+    {
+      "date": "2025-09-09",
+      "event": "Date d'attaque estimée par le suivi des sites de fuite pour la compromission des systèmes de Wouters France."
+    },
+    {
+      "date": "2025-09-10",
+      "event": "Qilin publie Wouters France sur son site de fuite ; les relais spécialisés décrivent des données financières, RH et commerciales exfiltrées."
+    }
+  ]
+}
