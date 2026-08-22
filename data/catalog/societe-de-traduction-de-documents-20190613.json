@@ -1,0 +1,44 @@
+{
+  "slug": "societe-de-traduction-de-documents-20190613",
+  "entity": "Une société de traduction de documents (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-06-13",
+    "confirmation": "2019-06-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; amende de 20 000 euros et injonction sous astreinte"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE TRADUCTION DE DOCUMENTS », sanction pécuniaire de 20 000 euros et injonction sous astreinte (13 juin 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2019-006 du 13 juin 2019 : amende de 20 000 euros, injonction article 32 assortie d'une astreinte de 200 euros par jour (capture Wayback du 21/01/2025)",
+      "url": "http://web.archive.org/web/20250121104112/https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000038629823/",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL — 40e rapport d'activité 2019 (PDF, p. 92-94) : tableau des sanctions 2019, vidéosurveillance et défaut de sécurité",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-40e_rapport_annuel_2019.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 13 juin 2019, la formation restreinte de la CNIL a sanctionné une société de traduction assermentée de 20 000 euros. La délibération précise qu'elle employait neuf salariés. Selon la délibération SAN-2019-006, la CNIL relève des données excessives liées à la vidéosurveillance, une information insatisfaisante et un défaut de sécurité. Une messagerie générique traitant des documents d'état civil était accessible sans comptes individuels ni traçabilité. La formation restreinte a assorti l'injonction de mise en conformité d'une astreinte de 200 euros par jour de retard. La dénomination n'est pas publique : la délibération est anonymisée et aucun communiqué n'a été publié.",
+  "timeline": [
+    {
+      "date": "2019-06-13",
+      "event": "Amende de 20 000 euros, injonction de mise en conformité sous astreinte de 200 euros par jour."
+    }
+  ]
+}

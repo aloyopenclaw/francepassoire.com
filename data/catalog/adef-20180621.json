@@ -1,0 +1,65 @@
+{
+  "slug": "adef-20180621",
+  "entity": "Association pour le développement des foyers (ADEF)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-06-21",
+    "confirmation": "2018-06-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs centaines de personnes et de documents selon le cabinet Orcom ; la délibération SAN-2018-003 ne chiffre pas le volume"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ASSOCIATION », sanction pécuniaire (21 juin 2018)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2018-003 du 21 juin 2018 : sanction pécuniaire de 75 000 euros (capture Wayback du 04/12/2024)",
+      "url": "http://web.archive.org/web/20241204204719/https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000037110598/",
+      "kind": "archive"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 423559 du 17 avril 2019 : rejet du recours de l'ADEF contre la sanction de 75 000 euros",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2019-04-17/423559",
+      "kind": "officiel"
+    },
+    {
+      "label": "Derriennic Associés — Sanction de la CNIL sans mise en demeure préalable confirmée par le Conseil d'État (10 juin 2019)",
+      "url": "https://derriennic.com/sanction-de-la-cnil-sans-mise-en-demeure-prealable-confirmee-par-le-conseil-detat/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 juin 2018, la formation restreinte de la CNIL a sanctionné l'ADEF, association logeant des personnes en difficulté, de 75 000 euros. Selon la délibération SAN-2018-003, le formulaire de demande de logement en ligne laissait accessibles les documents téléversés par les demandeurs : passeports, titres de séjour, cartes d'identité, bulletins de salaire, avis d'imposition et attestations de la CAF, par simple modification d'un mot dans l'URL. Des avis d'imposition étaient trouvables via Google. Le manquement, corrigé le 27 juin 2017, a été sanctionné sans mise en demeure préalable. Le 17 avril 2019, le Conseil d'État a confirmé la sanction et la mesure de publicité de deux ans.",
+  "timeline": [
+    {
+      "date": "2017-06-11",
+      "event": "La CNIL est alertée : des avis d'imposition de bénéficiaires accessibles depuis une recherche Google."
+    },
+    {
+      "date": "2017-06-15",
+      "event": "Contrôle en ligne : les documents des demandeurs de logement sont accessibles par modification de l'URL."
+    },
+    {
+      "date": "2017-06-27",
+      "event": "Mesures correctrices constatées par la CNIL : le manquement a cessé."
+    },
+    {
+      "date": "2018-06-21",
+      "event": "Sanction pécuniaire de 75 000 euros, rendue publique deux ans, sans mise en demeure préalable."
+    },
+    {
+      "date": "2019-04-17",
+      "event": "Le Conseil d'État rejette le recours de l'ADEF et confirme la sanction."
+    }
+  ]
+}

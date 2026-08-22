@@ -1,0 +1,38 @@
+{
+  "slug": "agence-immobiliere-20170413",
+  "entity": "Une agence immobilière (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-04-13",
+    "confirmation": "2017-04-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; sanction pécuniaire non publique"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « AGENCE IMMOBILIÈRE », données des locataires et des bailleurs, durées de conservation non définies et non respectées, sanction pécuniaire non publique (13 avril 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 13/04/2017 — agence immobilière, défaut de réponse aux demandes de la CNIL",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 13 avril 2017, la formation restreinte de la CNIL a prononcé une sanction pécuniaire non publique à l'encontre d'une agence immobilière. Les manquements retenus concernaient les données des locataires et des bailleurs : absence de définition et non-respect des durées de conservation, associés à un défaut d'information des personnes. Le montant de la sanction n'a pas été publié et l'entité n'est pas nommée dans le tableau officiel. La version archivée de novembre 2018 ajoute un défaut de sécurité et un défaut de réponse aux demandes de la CNIL.",
+  "timeline": [
+    {
+      "date": "2017-04-13",
+      "event": "Sanction pécuniaire non publique : durées de conservation non respectées pour les données des locataires et des bailleurs."
+    }
+  ]
+}

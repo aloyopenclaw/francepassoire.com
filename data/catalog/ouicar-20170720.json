@@ -1,0 +1,58 @@
+{
+  "slug": "ouicar-20170720",
+  "entity": "OuiCar (OuiCar.fr)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-07-20",
+    "publication": "2017-07-26",
+    "confirmation": "2017-07-20"
+  },
+  "volume": {
+    "count": 52000,
+    "unit": "personnes",
+    "label": "plus de 52 000 personnes selon ITespresso ; la CNIL évoque les données de l'ensemble des utilisateurs du site"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Violation de données personnelles : avertissement à l'encontre de la société OUICAR (communiqué du 26 juillet 2017, conservé par la Wayback Machine)",
+      "url": "http://web.archive.org/web/20181021234647/https://www.cnil.fr/fr/violation-de-donnees-personnelles-avertissement-lencontre-de-la-societe-ouicar",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « LOCATION DE VEHICULES », avertissement public (20 juillet 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — La CNIL épingle OuiCar pour violation des données personnelles de ses utilisateurs (26 juillet 2017)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/2017/07/26/32001-20170726ARTFIG00304-la-cnil-epingle-ouicar-pour-violation-des-donnees-personnelles-de-ses-utilisateurs.php",
+      "kind": "article"
+    },
+    {
+      "label": "ITespresso — OuiCar rappelé à l'ordre par la CNIL pour des données en accès libre (28 juillet 2017)",
+      "url": "https://www.itespresso.fr/ouicar-cnil-donnees-acces-libre-166930.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 juillet 2017, la formation restreinte de la CNIL a prononcé un avertissement public à l'encontre d'OuiCar, plateforme de location de véhicules entre particuliers. Selon le communiqué conservé par la Wayback Machine, deux URL d'interfaces de programmation exposaient les données de l'ensemble des utilisateurs : nom, prénom, adresse, numéro de téléphone, date de naissance, numéro de permis de conduire et localisation du véhicule proposé. Ces données sont restées librement accessibles pendant près de trois ans. Selon ITespresso, plus de 52 000 personnes étaient concernées. Selon la CNIL, les faits antérieurs à la loi pour une République numérique excluaient une sanction pécuniaire ; une amende pourrait désormais être prononcée dans un cas similaire.",
+  "timeline": [
+    {
+      "date": "2016-07-29",
+      "event": "Premier contrôle en ligne après l'alerte de Zataz : une URL d'API renvoie les données des utilisateurs par département."
+    },
+    {
+      "date": "2017-07-20",
+      "event": "Avertissement public pour défaut élémentaire de sécurité : données de l'ensemble des utilisateurs accessibles près de trois ans."
+    },
+    {
+      "date": "2017-07-26",
+      "event": "La CNIL publie son communiqué ; Le Figaro relaie l'avertissement."
+    }
+  ]
+}

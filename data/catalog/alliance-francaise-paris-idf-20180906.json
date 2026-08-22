@@ -1,0 +1,71 @@
+{
+  "slug": "alliance-francaise-paris-idf-20180906",
+  "entity": "Alliance française Paris Île-de-France",
+  "siren": "775664618",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-09-06",
+    "publication": "2018-09-27",
+    "confirmation": "2018-09-06"
+  },
+  "volume": {
+    "count": 413144,
+    "unit": "enregistrements",
+    "label": "413 144 documents accessibles selon la CNIL lors du contrôle sur place de février 2018 ; 15 611 fichiers constatés au contrôle en ligne"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ASSOCIATION », sanction pécuniaire (6 septembre 2018)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2018-010 du 6 septembre 2018 : sanction pécuniaire de 30 000 euros (capture Wayback du 24/04/2024)",
+      "url": "http://web.archive.org/web/20240424052545/https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000037435170/",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Monde Informatique — La CNIL inflige 30 000 € d'amende à l'Alliance Française IdF (27 septembre 2018)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-la-cnil-inflige-30-000eteuro-d-amende-a-l-alliance-francaise-idf-72971.html",
+      "kind": "article"
+    },
+    {
+      "label": "Next INpact — CNIL : 413 144 documents personnels librement accessibles, 30 000 euros d'amende (27 septembre 2018)",
+      "url": "https://next.ink/7483/107092-cnil-413-144-documents-personnels-librement-accessibles-30-000-euros-damende/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 septembre 2018, la formation restreinte de la CNIL a sanctionné l'Alliance française Paris Île-de-France de 30 000 euros. L'association forme chaque année environ 90 000 personnes au français, selon Le Monde Informatique. Selon la délibération SAN-2018-010 relayée par Next INpact, une URL incrémentale du portail exposait factures, certificats d'inscription et récapitulatifs de cours. Le contrôle en ligne du 4 décembre 2017 a constaté 15 611 fichiers accessibles ; le contrôle sur place de février 2018 en a dénombré 413 144. La CNIL a relevé que la correction n'était effective qu'en mars 2018. La sanction a été rendue publique le 27 septembre 2018.",
+  "timeline": [
+    {
+      "date": "2017-11-01",
+      "event": "La CNIL est informée d'un défaut de sécurité sur le sous-domaine portail de l'association."
+    },
+    {
+      "date": "2017-12-04",
+      "event": "Contrôle en ligne : 15 611 documents contenant au moins un nom et un prénom accessibles via une URL incrémentale."
+    },
+    {
+      "date": "2018-02-05",
+      "event": "Contrôle sur place : 413 144 documents restent accessibles aux mêmes adresses."
+    },
+    {
+      "date": "2018-03-02",
+      "event": "L'association informe la CNIL de la correction définitive de la faille."
+    },
+    {
+      "date": "2018-09-06",
+      "event": "Sanction pécuniaire de 30 000 euros pour manquement à l'obligation de sécurité."
+    },
+    {
+      "date": "2018-09-27",
+      "event": "La CNIL rend publique la sanction ; la presse spécialisée la relaie."
+    }
+  ]
+}

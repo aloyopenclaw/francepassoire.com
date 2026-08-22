@@ -1,0 +1,66 @@
+{
+  "slug": "hertz-20170718",
+  "entity": "Hertz France",
+  "siren": "377839667",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-07-18",
+    "publication": "2017-07-27",
+    "confirmation": "2017-07-18"
+  },
+  "volume": {
+    "count": 35327,
+    "unit": "personnes",
+    "label": "35 327 personnes dont les données étaient accessibles selon la délibération SAN-2017-010 ; le signalement initial évoquait plus de 40 000 clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « LOCATION DE VEHICULES », sanction pécuniaire publique (18 juillet 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Doctrine — Délibération SAN-2017-010 du 18 juillet 2017 : sanction pécuniaire de 40 000 euros contre la société X (Hertz France, identifiée par la presse)",
+      "url": "https://www.doctrine.fr/d/CNIL/2017/CNILTEXT000035276047",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Données personnelles : la CNIL sanctionne OuiCar et Hertz pour leurs failles de sécurité (28 juillet 2017)",
+      "url": "https://www.numerama.com/tech/279608-donnees-personnelles-la-cnil-sanctionne-ouicar-et-hertz-pour-leurs-failles-de-securite.html",
+      "kind": "article"
+    },
+    {
+      "label": "Klein Wenner — Sanction pécuniaire prononcée par la CNIL à l'encontre de la société Hertz France (20 septembre 2017)",
+      "url": "https://kleinwenner.eu/actualites/analyse-juridique/sanction-pecuniaire-prononcee-par-la-cnil-a-lencontre-de-la-societe-hertz-france/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 octobre 2016, l'éditeur du site Zataz a informé la CNIL d'une faille sur cartereduction-hertz.com. En modifiant un identifiant dans l'URL, la délégation de la CNIL a accédé aux données de 35 327 adhérents au programme de réduction : nom, prénom, date de naissance, adresses postale et électronique, numéro de permis de conduire. Selon la délibération SAN-2017-010, la violation résultait d'une ligne de code supprimée par le sous-traitant lors d'un changement de serveur. Le 18 juillet 2017, la formation restreinte a prononcé une sanction pécuniaire de 40 000 euros, rendue publique le 27 juillet. Selon la CNIL relayée par France 24, c'est la première sanction pécuniaire prononcée pour une violation de données sous la loi pour une République numérique.",
+  "timeline": [
+    {
+      "date": "2016-10-15",
+      "event": "Zataz signale à la CNIL une faille exposant les données de plus de 40 000 clients du programme de réduction."
+    },
+    {
+      "date": "2016-10-21",
+      "event": "Contrôle en ligne : la CNIL accède aux données de 35 327 personnes en modifiant un identifiant dans l'URL."
+    },
+    {
+      "date": "2016-10-28",
+      "event": "Contrôle sur place : la violation a cessé après correction par le sous-traitant alerté par Hertz."
+    },
+    {
+      "date": "2017-07-18",
+      "event": "Sanction pécuniaire de 40 000 euros pour négligence dans la surveillance du sous-traitant."
+    },
+    {
+      "date": "2017-07-27",
+      "event": "La CNIL rend publique la sanction et publie son communiqué."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ministere-20171221",
+  "entity": "Un ministère (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-12-21",
+    "confirmation": "2017-12-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; avertissement non public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « MINISTERE », fichier de l'État, durée de conservation excessive, avertissement non public (21 décembre 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 21/12/2017 — fichier de l'État, durée de conservation excessive",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 21 décembre 2017, la formation restreinte de la CNIL a adressé un avertissement non public à un ministère. Le tableau officiel des sanctions retient une durée de conservation excessive dans un fichier de l'État. La dénomination n'est pas publique : l'avertissement, non public, n'a donné lieu à aucun communiqué. Le tableau officiel et sa version archivée de novembre 2018 décrivent la décision sans nommer l'administration. Selon la loi Informatique et Libertés rappelée par le Conseil d'État en 2019, les sanctions pécuniaires sont exclues pour les traitements de l'État.",
+  "timeline": [
+    {
+      "date": "2017-12-21",
+      "event": "Avertissement non public : durée de conservation excessive dans un fichier de l'État."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "carrefour-banque-20170126",
+  "entity": "Carrefour Banque",
+  "siren": "313811515",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-01-26",
+    "publication": "2017-01-31",
+    "confirmation": "2017-01-26"
+  },
+  "volume": {
+    "count": 38329,
+    "unit": "personnes",
+    "label": "38 329 personnes inscrites au FICP à une date inexacte ; avertissement public, sans amende"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « BANQUE », fichage Banque de France, données inexactes et non mises à jour, avertissement public (26 janvier 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Fichier des incidents de crédit : avertissement à Carrefour Banque pour inexactitude des données du FICP (communiqué du 31 janvier 2017, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20180122202839/https://www.cnil.fr/fr/fichier-des-incidents-de-credit-avertissement-carrefour-banque-pour-inexactitude-des-donnees-du-ficp",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 26 janvier 2017, la formation restreinte de la CNIL a prononcé un avertissement public à l'encontre de Carrefour Banque. L'établissement de crédit avait inscrit 38 329 personnes au fichier des incidents de remboursement des crédits aux particuliers (FICP). Ce fichier est géré par la Banque de France ; les inscriptions étaient datées de façon inexacte. L'avertissement, rendu public le 31 janvier 2017, ne s'accompagnait pas d'amende. C'est la première décision listée dans le tableau des sanctions prononcées en 2017.",
+  "timeline": [
+    {
+      "date": "2017-01-26",
+      "event": "Avertissement public : 38 329 personnes inscrites au FICP à une date inexacte."
+    },
+    {
+      "date": "2017-01-31",
+      "event": "La CNIL rend public l'avertissement sur son site."
+    }
+  ]
+}
