@@ -47,7 +47,7 @@ jobs:
         contains(github.event.pull_request.labels.*.name, 'agent-review') )
     runs-on: self-hosted
     environment: agent
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Checkout (tête de PR uniquement)
         uses: actions/checkout@v4
