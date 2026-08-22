@@ -1,0 +1,41 @@
+{
+  "slug": "public-a-20260812",
+  "entity": "Public.A",
+  "siren": "439223363",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-12",
+    "publication": "2026-08-12"
+  },
+  "volume": {
+    "count": 578,
+    "unit": "comptes",
+    "label": "578 comptes clients de la boutique en ligne couvrant la période 2012-2019 (chiffre revendiqué) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Publica : fuite de données revendiquée (alerte du 12 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/publica-mspyx0388ayctyrqby7",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 578 clients de Public.A : fuite de données revendiquée",
+      "url": "https://fuitesinfos.fr/article/2026-08-12-public-a",
+      "kind": "article"
+    }
+  ],
+  "description": "Public.A, distributeur d'abonnements presse pour les salles d'attente professionnelles, est visé le 12 août 2026. Une revendication publie un export présenté comme la base de la boutique en ligne de l'entreprise. Elle annonce 578 comptes clients couvrant la période 2012-2019. Selon Fuites Infos, les enregistrements comprendraient données d'identité et de contact. Des informations professionnelles B2B avec numéro SIRET, des mots de passe hachés et des adresses IP sont évoqués. L'historique de commandes et le contenu de messages figurent aussi dans l'annonce. Des comptes administrateurs et une structure cohérente avec une boutique PrestaShop sont également mentionnés. L'entreprise n'a pas confirmé publiquement ces éléments.",
+  "timeline": [
+    {
+      "date": "2026-08-12",
+      "event": "Un acteur publie un export présenté comme la base de la boutique Public.A : 578 comptes clients couvrant 2012-2019, mots de passe hachés compris selon la revendication."
+    }
+  ]
+}
