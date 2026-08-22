@@ -23,6 +23,7 @@ on:
   push:
     branches: [main]
     paths: ['data/catalog/**']
+  workflow_dispatch:
 
 permissions:
   contents: write
