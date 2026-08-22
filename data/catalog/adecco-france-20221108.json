@@ -1,0 +1,52 @@
+{
+  "slug": "adecco-france-20221108",
+  "entity": "Adecco France",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-08",
+    "publication": "2022-11-10",
+    "confirmation": "2022-11-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "des centaines d'intérimaires victimes de prélèvements frauduleux à la mi-novembre selon la presse ; l'ampleur exacte de la compromission n'est pas communiquée par le groupe"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV : Piratage d'Adecco, des centaines d'intérimaires victimes d'un prélèvement frauduleux (10 novembre 2022)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/piratage-d-adecco-des-centaines-d-interimaires-victimes-d-un-prelevement-frauduleux_AN-202211100652.html",
+      "kind": "article"
+    },
+    {
+      "label": "Libération CheckNews (archive) : Des intérimaires d'Adecco victimes de prélèvements frauduleux suite à un piratage (10 novembre 2022)",
+      "url": "https://web.archive.org/web/20221201173616/https://www.liberation.fr/checknews/des-interimaires-dadecco-victimes-de-prelevements-frauduleux-suite-a-un-piratage-20221110_MQE2DP5CNVCOXGP5FLQO5HO25Q/",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Figaro : Après le piratage du groupe Adecco, des centaines d'intérimaires sont victimes de prélèvements frauduleux (11 novembre 2022)",
+      "url": "https://www.lefigaro.fr/societes/apres-le-piratage-du-groupe-adecco-des-centaines-d-interimaires-sont-victimes-de-prelevements-frauduleux-20221111",
+      "kind": "article"
+    }
+  ],
+  "description": "À partir du 8 novembre 2022, le groupe d'intérim Adecco France subit un piratage de données. Des informations personnelles et bancaires d'intérimaires semblent compromises et de nombreux travailleurs temporaires découvrent un prélèvement frauduleux de 49,85 euros au nom d'une société inconnue, Solfex France, créée en août 2022. Les syndicats CFDT Adecco et CGT Intérim publient des communiqués d'alerte le 9 novembre et invitent les victimes à faire opposition. Un groupe Facebook rassemblant plus de 800 personnes est créé. Adecco ouvre une enquête interne et déclare collaborer avec les autorités compétentes.",
+  "timeline": [
+    {
+      "date": "2022-11-08",
+      "event": "Premiers prélèvements frauduleux détectés sur des comptes d'intérimaires Adecco ; création d'un groupe de victimes."
+    },
+    {
+      "date": "2022-11-09",
+      "event": "Les syndicats CFDT Adecco et CGT Intérim alertent sur le piratage et les prélèvements de 49,85 euros."
+    },
+    {
+      "date": "2022-11-10",
+      "event": "Adecco reconnaît une enquête interne en cours et affirme collaborer avec les autorités compétentes."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "revolut-20220911",
+  "entity": "Revolut",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-11",
+    "publication": "2022-09-21",
+    "confirmation": "2022-09-11"
+  },
+  "volume": {
+    "count": 50000,
+    "unit": "personnes",
+    "label": "environ 50 000 clients touchés dans le monde selon Revolut, parmi les 20 millions d'utilisateurs de la néobanque ; des clients français figurent parmi les touchés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : Fuite de données, la néobanque Revolut piratée, près de 50000 clients concernés (21 septembre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-la-neobanque-revolut-piratee-pres-de-50000-clients-concernes-21-09-2022-FVWUFOYRYNDZHEWNUIKSDVZP4Q.php",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV : Banque en ligne, Revolut confirme le piratage de dizaines de milliers de clients (21 septembre 2022)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/banque-en-ligne-revolut-confirme-le-piratage-de-dizaines-de-milliers-de-clients_AV-202209210212.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France : Une banque en ligne piratée, les données personnelles de 50 000 clients exposées (22 septembre 2022)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/une-banque-en-ligne-piratee-les-donnees-personnelles-de-50-000-clients-exposees-a8a6f39a-39a9-11ed-a939-a7e1706647a0",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 septembre 2022, la néobanque d'origine lettonne Revolut, qui revendique 20 millions d'utilisateurs dans le monde, reconnaît avoir été la cible d'une cyberattaque extrêmement ciblée. Un tiers non autorisé récupère les données personnelles d'environ 50 000 clients : noms complets, adresses e-mail, codes postaux et numéros de téléphone. Selon l'entreprise, les données de cartes bancaires, les codes PIN et les mots de passe n'ont pas été exposés et les fonds des clients ne sont pas affectés. Les clients français figurent parmi les personnes touchées et sont invités à se méfier des tentatives d'hameçonnage.",
+  "timeline": [
+    {
+      "date": "2022-09-11",
+      "event": "Revolut reconnaît la cyberattaque et informe des clients concernés."
+    },
+    {
+      "date": "2022-09-21",
+      "event": "La presse nationale française détaille l'incident et le volume d'environ 50 000 clients touchés."
+    }
+  ]
+}

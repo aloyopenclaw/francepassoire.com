@@ -1,0 +1,42 @@
+{
+  "slug": "ehpad-franches-terres-beuzeville-20220824",
+  "entity": "EHPAD Les Franches Terres (Beuzeville, groupe hospitalier du Havre)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-08-24",
+    "publication": "2022-08-24",
+    "confirmation": "2022-08-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "établissement de 60 résidents et 55 agents ; dix postes informatiques et un serveur concernés, des données sensibles chiffrées"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV : Dans l'Eure, un Ehpad a été victime d'une cyberattaque par rançongiciel (24 août 2022)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/dans-l-eure-un-ehpad-a-ete-victime-d-une-cyberattaque-par-rancongiciel_AD-202208240436.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France (archive) : Cyberattaque d'un Ehpad en Normandie, la menace ne s'est pas propagée (29 août 2022)",
+      "url": "https://web.archive.org/web/20220829084429/https://www.ouest-france.fr/normandie/beuzeville-27210/cyberattaque-d-un-ehpad-en-normandie-la-menace-ne-s-est-pas-propagee-b201a0ce-2550-11ed-a10d-82759cd4c77b",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le mercredi 24 août 2022 au matin, l'EHPAD des Franches Terres à Beuzeville, dans l'Eure, est victime d'une attaque par rançongiciel. Le système d'information devient inaccessible et des données sensibles sont chiffrées. Le groupe hospitalier du Havre, hôpital support de l'établissement, déclenche un plan blanc et active une cellule de crise de quatorze personnes. La prise en charge des 60 résidents n'est pas impactée et le réseau des autres établissements du groupe est isolé. Une rançon est réclamée selon la presse régionale et la direction annonce déposer plainte.",
+  "timeline": [
+    {
+      "date": "2022-08-24",
+      "event": "Attaque par rançongiciel contre l'EHPAD ; dix postes et un serveur chiffrés, plan blanc déclenché, cellule de crise activée."
+    },
+    {
+      "date": "2022-08-29",
+      "event": "Le groupe hospitalier du Havre précise que la menace ne s'est pas propagée aux autres établissements et qu'une plainte sera déposée."
+    }
+  ]
+}

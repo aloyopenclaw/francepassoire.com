@@ -1,0 +1,47 @@
+{
+  "slug": "cicr-20220119",
+  "entity": "Comité international de la Croix-Rouge (CICR, programme Rétablir les liens familiaux)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-19",
+    "publication": "2022-01-20",
+    "confirmation": "2022-01-19"
+  },
+  "volume": {
+    "count": 515000,
+    "unit": "personnes",
+    "label": "plus de 515 000 personnes très vulnérables concernées selon le CICR : personnes séparées de leur famille du fait de conflits, de migrations ou de catastrophes, personnes disparues et leurs familles, et personnes détenues ; données issues d'au moins 60 sociétés nationales de Croix-Rouge et de Croissant-Rouge"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien avec AFP : La Croix-Rouge victime d'une vaste cyberattaque, menaçant les données de 500000 personnes (20 janvier 2022)",
+      "url": "https://www.leparisien.fr/high-tech/la-croix-rouge-victime-dune-vaste-cyberattaque-menacant-les-donnees-de-500000-personnes-20-01-2022-3UIDCQ2LVVB77GXN73JQ5UZ3BI.php",
+      "kind": "article"
+    },
+    {
+      "label": "CICR : Cyber-attack on ICRC. What we know (communiqué, 19 janvier 2022)",
+      "url": "https://www.icrc.org/en/document/cyber-attack-icrc-what-we-know",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 19 janvier 2022, le Comité international de la Croix-Rouge annonce une cyberattaque d'ampleur contre une société externe basée en Suisse sous contrat pour stocker ses données. Les données personnelles et des informations confidentielles de plus de 515 000 personnes très vulnérables sont compromises. Le directeur général du CICR lance un appel aux attaquants pour qu'ils ne partagent pas, ne vendent pas et n'utilisent pas ces données. L'organisation indique ne pas avoir d'indication immédiate sur les auteurs ni sur une divulgation publique des informations.",
+  "timeline": [
+    {
+      "date": "2022-01-19",
+      "event": "Le CICR rend publique la compromission des serveurs d'un prestataire suisse hébergeant les données du programme de rétablissement des liens familiaux."
+    },
+    {
+      "date": "2022-01-20",
+      "event": "La presse nationale française relaie l'attaque ; le CICR précise que rien n'indique une divulgation publique des données à ce stade."
+    },
+    {
+      "date": "2022-02-02",
+      "event": "Le CICR indique privilégier la voie du dialogue plutôt qu'une rançon éventuelle et poursuivre l'analyse de l'intrusion."
+    }
+  ]
+}

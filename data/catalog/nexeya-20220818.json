@@ -1,0 +1,47 @@
+{
+  "slug": "nexeya-20220818",
+  "entity": "Nexeya (Hensoldt Nexeya France)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-08-18",
+    "publication": "2022-08-18",
+    "confirmation": "2022-08-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "fuite de données jugée considérable par la maison mère Hensoldt ; aucun volume communiqué, ni rançon annoncée"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "BFMTV : Victime d'une cyberattaque, le Français Nexeya déplore une fuite de données considérable (18 août 2022)",
+      "url": "https://www.bfmtv.com/tech/actualites/cybersecurite/victime-d-une-cyberattaque-le-francais-nexeya-deplore-une-fuite-de-donnees-considerable_AD-202208180425.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro : Nexeya, le spécialiste français de l'électronique pour l'industrie victime d'une cyberattaque sérieuse (18 août 2022)",
+      "url": "https://www.lefigaro.fr/societes/nexeya-le-specialiste-francais-de-l-electronique-pour-l-industrie-victime-d-une-cyberattaque-serieuse-20220818",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France : L'entreprise de défense Nexeya victime d'une cyberattaque (19 août 2022)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/nexeya-cyberattaque-sur-une-entreprise-de-defense-76a6c078-1fc3-11ed-859d-c78aa179e445",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 août 2022, le groupe allemand Hensoldt reconnaît dans un communiqué une sérieuse cyberattaque contre sa filiale française Nexeya, spécialiste de l'électronique pour les secteurs de la défense, du ferroviaire, de l'énergie, de l'aéronautique et du spatial. Les systèmes sont chiffrés et une fuite de données qualifiée de considérable est redoutée. Le site web de l'entreprise est hors service. Nexeya produit notamment le système de combat Lyncea des frégates de surveillance de la Marine nationale. L'origine et l'ampleur de l'agression restent à déterminer avec les autorités.",
+  "timeline": [
+    {
+      "date": "2022-08-18",
+      "event": "Hensoldt publie un communiqué reconnaissant une cyberattaque sérieuse contre Nexeya, des systèmes chiffrés et une fuite de données redoutée."
+    },
+    {
+      "date": "2022-08-19",
+      "event": "La presse nationale relaie l'attaque ; le site web de l'entreprise reste hors service et les travaux de restauration commencent."
+    }
+  ]
+}

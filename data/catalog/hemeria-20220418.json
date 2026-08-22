@@ -1,0 +1,40 @@
+{
+  "slug": "hemeria-20220418",
+  "entity": "Hemeria (ex-activités spatiales de Nexeya)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-04-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume communiqué ; revendication de piratage par le groupe Snatch, sans confirmation publique de l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France : L'entreprise de défense Nexeya victime d'une cyberattaque (19 août 2022, mention de la revendication Snatch contre Hemeria en avril)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/nexeya-cyberattaque-sur-une-entreprise-de-defense-76a6c078-1fc3-11ed-859d-c78aa179e445",
+      "kind": "article"
+    },
+    {
+      "label": "The Cyber Express : Hemeria Group Data Breach, Palace of Versailles Denies Negotiating with Snatch (24 février 2023)",
+      "url": "https://thecyberexpress.com/hemeria-group-data-breach-snatch-ransomware/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 avril 2022, le groupe de rançongiciel Snatch ouvre des négociations sur son site de fuite au sujet d'un piratage revendiqué contre Hemeria, société française issue de la scission des activités spatiales de Nexeya et partenaire industrielle du CNES. L'ampleur de l'extrusion alléguée n'est pas chiffrée et la société ne confirme pas publiquement l'intrusion. La revendication est rappelée en août 2022 par Ouest-France lors de l'attaque touchant Nexeya, la maison mère d'origine.",
+  "timeline": [
+    {
+      "date": "2022-04-18",
+      "event": "Snatch affirme avoir piraté Hemeria et débute des négociations sur son blog de fuite."
+    },
+    {
+      "date": "2022-08-19",
+      "event": "Ouest-France rappelle la revendication Snatch d'avril contre Hemeria dans son article sur la cyberattaque de Nexeya."
+    }
+  ]
+}

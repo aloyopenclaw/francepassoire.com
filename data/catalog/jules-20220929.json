@@ -1,0 +1,51 @@
+{
+  "slug": "jules-20220929",
+  "entity": "Jules et BZB (groupe Fashion Cube)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-29",
+    "publication": "2022-10-04",
+    "confirmation": "2022-10-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée bancaire exfiltrée selon l'enseigne ; ampleur de l'accès aux serveurs non chiffrée"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : L'enseigne de prêt-à-porter Jules au ralenti après une sérieuse cyberattaque (4 octobre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/lenseigne-de-pret-a-porter-jules-au-ralenti-apres-une-serieuse-cyberattaque-04-10-2022-5NJGTLMBHRDMRGNSIUP2YY7OWM.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le MagIT : Prêt-à-porter, cyberattaque confirmée pour Jules et BZB (octobre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252525573/Pret-a-porter-apres-Camaieu-et-Damart-Jules-et-BZB-victimes-dune-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "La Voix du Nord (archive) : Après une cyberattaque, Jules redémarre en mode dégradé (3 octobre 2022)",
+      "url": "https://web.archive.org/web/20221008141220/https://www.lavoixdunord.fr/1236544/article/2022-10-03/apres-une-cyberattaque-jules-redemarre-en-mode-degrade",
+      "kind": "archive"
+    }
+  ],
+  "description": "Dans la nuit du 28 au 29 septembre 2022, les enseignes de prêt-à-porter Jules et BZB, propriété du groupe nordiste Fashion Cube, subissent une intrusion qui porte tous les signes d'une attaque par rançongiciel. Les sites marchands deviennent indisponibles dès le 29 septembre au matin et une partie des logiciels de gestion des commandes et de l'e-commerce est mise hors ligne. Le réseau de 460 boutiques Jules fonctionne au ralenti, avec des délais de livraison rallongés. L'enseigne assure qu'aucune donnée bancaire n'a été exfiltrée et qu'aucune demande de rançon n'est parvenue. Une plainte est déposée auprès de la gendarmerie et la CNIL est notifiée.",
+  "timeline": [
+    {
+      "date": "2022-09-29",
+      "event": "Les sites de Jules et BZB deviennent indisponibles après une intrusion détectée dans la nuit ; les boutiques tournent en mode dégradé."
+    },
+    {
+      "date": "2022-10-03",
+      "event": "Jules évoque une reprise progressive de la logistique ; plainte déposée et CNIL notifiée."
+    },
+    {
+      "date": "2022-10-04",
+      "event": "La presse nationale confirme la cyberattaque et l'absence de demande de rançon."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "ministere-justice-20220122",
+  "entity": "Ministère de la Justice (Chancellerie)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-01-22",
+    "publication": "2022-01-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur du vol non chiffrée ; LockBit 2.0 publie des fichiers présentés comme issus du ministère en février 2022, dont la provenance exacte est débattue"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : Le ministère de la Justice reçoit une demande de rançon des hackers hyperactifs de Lockbit 2.0 (27 janvier 2022)",
+      "url": "https://www.leparisien.fr/high-tech/le-ministere-de-la-justice-recoit-une-demande-de-rancon-des-hackers-hyperactifs-de-lockbit-20-27-01-2022-XURNYOUY3FBIJLMCFQWW3CHOK4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : Gros coup de bluff pour les hackers qui menaçaient le ministère de la Justice (2 février 2022)",
+      "url": "https://www.leparisien.fr/high-tech/gros-coup-de-bluff-pour-les-hackers-qui-menacaient-le-ministere-de-la-justice-02-02-2022-7HRYG7TIENDH5HVNCXHELKWFK4.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France (archive) : Cyberattaque du ministère de la Justice, ce que l'on sait du vol de données par le gang Lockbit 2.0 (16 février 2022)",
+      "url": "https://web.archive.org/web/20220216144359/https://www.ouest-france.fr/societe/cyberattaque/cyberattaque-du-ministere-de-la-justice-ce-que-l-on-sait-du-vol-de-donnees-par-le-gang-lockbit-2-0-9c3b68ae-8435-11ec-af89-f91e4c8991b6",
+      "kind": "archive"
+    },
+    {
+      "label": "Numerama : Que sait-on de la cyberattaque qui viserait le ministère de la Justice (22 janvier 2022)",
+      "url": "https://www.numerama.com/cyberguerre/835089-que-sait-on-de-la-cyberattaque-qui-viserait-le-ministere-de-la-justice.html",
+      "kind": "article"
+    }
+  ],
+  "description": "À partir du 20 janvier 2022, le site du ministère de la Justice est brièvement mis hors ligne et une intrusion dans ses systèmes est signalée par la presse. Le 27 janvier, le groupe LockBit 2.0 inscrit le ministère sur son blog de fuite avec un compte à rebours courant jusqu'au 10 février et revendique le vol de données. La Chancellerie indique procéder à des vérifications avec l'Anssi. Le 2 février, Le Parisien rapporte que les fichiers listés par les pirates semblent anciens ou issus de sources publiques. Mi-février, LockBit publie néanmoins des données présentées comme dérobées au ministère.",
+  "timeline": [
+    {
+      "date": "2022-01-22",
+      "event": "La presse révèle l'attaque informatique visant le ministère ; le site justice.gouv.fr a été brièvement indisponible."
+    },
+    {
+      "date": "2022-01-27",
+      "event": "LockBit 2.0 revendique le vol de données et lance un compte à rebours jusqu'au 10 février ; la Chancellerie saisit l'Anssi."
+    },
+    {
+      "date": "2022-02-02",
+      "event": "Le Parisien qualifie la liste de LockBit de coup de bluff : les fichiers présentés apparaissent anciens ou publics."
+    },
+    {
+      "date": "2022-02-16",
+      "event": "LockBit publie des fichiers présentés comme issus du ministère ; le commandement de la gendarmerie dans le cyberespace est saisi de l'enquête."
+    }
+  ]
+}

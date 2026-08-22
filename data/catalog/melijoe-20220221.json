@@ -1,0 +1,43 @@
+{
+  "slug": "melijoe-20220221",
+  "entity": "Melijoe.com (groupe Babyshop Group)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-21",
+    "publication": "2022-02-21",
+    "confirmation": "2022-02-21"
+  },
+  "volume": {
+    "count": 200000,
+    "unit": "personnes",
+    "label": "données personnelles de 200 000 clients français et internationaux exposées dans un conteneur de stockage de près de 2 millions de dossiers, soit environ 200 Go, ouverts depuis au moins octobre 2016"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : La boutique de luxe pour enfants Melijoe.com victime d'une fuite des données de 200000 clients (21 février 2022)",
+      "url": "https://www.leparisien.fr/high-tech/la-boutique-de-luxe-pour-enfants-melijoecom-victime-dune-fuite-des-donnees-de-200000-clients-21-02-2022-5MRLOCMLEJCWHIDC5DNCFTVZUA.php",
+      "kind": "article"
+    },
+    {
+      "label": "Hackread (archive) : Kids luxury clothing store Melijoe exposed 200GB of data (février 2022)",
+      "url": "https://web.archive.org/web/20260519001712/https://hackread.com/kids-luxury-clothing-store-melijoe-data-exposed/",
+      "kind": "archive"
+    }
+  ],
+  "description": "La boutique en ligne parisienne de luxe pour enfants Melijoe.com, rachetée en 2020 par le groupe suédois Babyshop Group, expose un conteneur de stockage S3 mal configuré contenant environ 200 Go de données. Le serveur, repéré le 8 novembre 2021 par les chercheurs de SafetyDetectives, contient les informations personnelles de 200 000 clients, plus de 150 000 commandes détaillées s'étalant de mai 2013 à octobre 2017 et les listes de souhaits d'environ 63 000 profils. Il est mis en sécurité mi-février 2022. Le groupe Babyshop assume la responsabilité de l'incident.",
+  "timeline": [
+    {
+      "date": "2021-11-08",
+      "event": "Des chercheurs de SafetyDetectives découvrent le conteneur S3 ouvert et alertent l'entreprise."
+    },
+    {
+      "date": "2022-02-21",
+      "event": "Après la fermeture de l'accès, Le Parisien révèle la fuite ; Babyshop Group assume la responsabilité de l'incident."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "groupe-amaury-20220220",
+  "entity": "Groupe Amaury (L'Équipe, Le Parisien, APO)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-02-20",
+    "publication": "2022-03-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées rendu public ; des pirates ont réclamé une rançon après s'être introduits sur les serveurs du groupe"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France (archive) : Le journal L'Équipe aurait été visé par une attaque informatique (31 mars 2022)",
+      "url": "https://web.archive.org/web/20220404151531/https://www.ouest-france.fr/medias/le-journal-l-equipe-aurait-ete-vise-par-une-attaque-informatique-7703981",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Point (archive) : Info Le Point, le journal L'Équipe victime d'un piratage informatique (31 mars 2022)",
+      "url": "https://web.archive.org/web/20241118112510/https://www.lepoint.fr/economie/info-le-point-le-journal-l-equipe-victime-d-un-piratage-informatique-31-03-2022-2470386_28.php",
+      "kind": "archive"
+    },
+    {
+      "label": "La Lettre de l'Expansion : Le groupe Amaury victime d'une cyberattaque (février 2022)",
+      "url": "https://www.lalettredelexpansion.com/article/59361/Le-groupe-victime-d-une-cyber-attaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 20 février 2022, le groupe Amaury, propriétaire du journal L'Équipe, du Tour de France et du Dakar, est frappé par une cyberattaque de grande envergure. Des cybercriminels s'introduisent sur les serveurs, réclament une rançon et perturbent pendant plusieurs semaines les outils informatiques du quotidien. De nombreux salariés perdent l'accès à leurs outils. Le groupe ne publie pas de communiqué détaillé ; l'attaque est révélée par la presse le 31 mars 2022.",
+  "timeline": [
+    {
+      "date": "2022-02-20",
+      "event": "Cyberattaque contre les serveurs du groupe Amaury ; les équipes informatiques isolent les systèmes et la publication des titres continue."
+    },
+    {
+      "date": "2022-03-31",
+      "event": "Le Point puis Ouest-France révèlent le rançongiciel et les semaines de perturbation des outils du journal L'Équipe."
+    }
+  ]
+}
