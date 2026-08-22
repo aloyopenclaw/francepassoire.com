@@ -65,7 +65,6 @@ jobs:
       - name: Rédaction (opencode, contrat éditorial intégral)
         if: steps.candidats.outputs.n != '0'
         run: |
-          . /home/runner/.config/francepassoire/env.sh
           opencode run "
           Tu es le rédacteur éditorial de FrancePassoire. Lis les candidats dans .agent-tmp/candidates.json (résultat D1 : id, source, source_url, raw) et le CONTRAT DE RÉDACTION INTÉGRAL dans docs/redaction-contract.md. Il est ta loi : barre d'inclusion, dédoublement, schéma, Ton A, interdits (em-dash, massif), vérification curl de CHAQUE source, archives web.archive.org pour les mortes, slug=date de revendication, statut confirmee seulement avec source officielle, group pour les dossiers ransomware.
 
