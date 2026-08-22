@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import {
+  doitLancerDigest,
   handleRequest,
   type D1Database,
   type D1PreparedStatement,
@@ -917,5 +918,20 @@ describe('runInstantSweep — alerte groupée (rafale)', () => {
     expect(body.htmlContent).toContain('rafale-0-20260821');
     expect(body.htmlContent).toContain('rafale-8-20260821');
     expect(body.htmlContent).not.toContain('—');
+  });
+});
+
+describe('digest plié dans le cron */15 — doitLancerDigest (DST-safe)', () => {
+  it('lundi 09:00 Paris (été comme hiver) → vrai', () => {
+    expect(doitLancerDigest(new Date('2026-08-24T07:00:00Z'))).toBe(true);  // lundi, heure d'été
+    expect(doitLancerDigest(new Date('2026-08-24T07:14:59Z'))).toBe(true);
+    expect(doitLancerDigest(new Date('2027-01-25T08:00:00Z'))).toBe(true);  // lundi, heure d'hiver
+  });
+
+  it('tout autre moment → faux', () => {
+    expect(doitLancerDigest(new Date('2026-08-24T06:59:59Z'))).toBe(false); // 08:59 Paris
+    expect(doitLancerDigest(new Date('2026-08-24T07:15:00Z'))).toBe(false); // 09:15 Paris
+    expect(doitLancerDigest(new Date('2026-08-25T07:00:00Z'))).toBe(false); // mardi
+    expect(doitLancerDigest(new Date('2026-08-22T07:00:00Z'))).toBe(false); // samedi
   });
 });
