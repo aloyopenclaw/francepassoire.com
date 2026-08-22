@@ -1,0 +1,42 @@
+{
+  "slug": "ville-fouesnant-20240102",
+  "entity": "Ville de Fouesnant et communauté de communes du pays fouesnantais",
+  "siren": "212900583",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-01-02",
+    "publication": "2024-01-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "tous les services informatiques de la mairie de 10 000 habitants touchés, sauf la délivrance des passeports et cartes d'identité ; aucun vol de données communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France — La Ville de Fouesnant et la Communauté de communes font l'objet d'une cyberattaque (2 janvier 2024)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/la-ville-de-fouesnant-victime-dune-cyberattaque-635a754c-a987-11ee-ad44-c03d56c454d6",
+      "kind": "article"
+    },
+    {
+      "label": "L'Alouette — Bretagne : nouvelle cyberattaque, la ville de Fouesnant visée (3 janvier 2024)",
+      "url": "https://www.alouette.fr/bretagne-nouvelle-cyberattaque-la-ville-de-fouesnant-visee",
+      "kind": "article"
+    }
+  ],
+  "description": "La ville de Fouesnant et la communauté de communes du pays fouesnantais (Finistère) sont touchées par un piratage informatique depuis le week-end du 30-31 décembre 2023. L'attaque est rendue publique début janvier. Tous les services informatiques de la mairie de 10 000 habitants sont inopérants, y compris celui du centre aquatique. Seule la délivrance des passeports et cartes d'identité reste opérationnelle, via une ligne sécurisée par l'État. L'accueil téléphonique et physique est maintenu aux horaires habituels et les usagers sont invités à différer les demandes non urgentes. L'ampleur du préjudice n'est pas précisée à ce stade.",
+  "timeline": [
+    {
+      "date": "2024-01-02",
+      "event": "La cyberattaque est rendue publique : tous les services informatiques sont touchés, sauf les passeports et CNI sur ligne sécurisée."
+    },
+    {
+      "date": "2024-01-03",
+      "event": "La presse locale relaie l'information ; l'attaque a débuté le week-end du 30-31 décembre et les usagers doivent différer les demandes non urgentes."
+    }
+  ]
+}

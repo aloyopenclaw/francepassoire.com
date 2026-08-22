@@ -1,0 +1,51 @@
+{
+  "slug": "departement-loire-atlantique-20240716",
+  "entity": "Département de Loire-Atlantique",
+  "siren": "224400028",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-07-16",
+    "publication": "2024-07-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "cyberattaque détectée sur le réseau du conseil départemental ; aucun service au public impacté selon la collectivité, mots de passe réinitialisés"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France — Le Département de Loire-Atlantique victime d'une cyberattaque, mais aucun service au public impacté (18 juillet 2024)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/le-departement-de-loire-atlantique-victime-dune-cyberattaque-mais-aucun-service-au-public-impacte-d9d59b14-451f-11ef-90f2-b61ef193591b",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France — Après Saint-Nazaire, le Département : à l'approche des JO, les cyberattaques se multiplient (18 juillet 2024)",
+      "url": "https://www.ouest-france.fr/societe/cyberattaque/apres-saint-nazaire-le-departement-a-lapproche-des-jo-les-cyberattaques-se-multiplient-1549e68a-4504-11ef-90f2-b61ef193591b",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro — Cyberattaque : le département de Loire-Atlantique et la région des Pays de la Loire visés la même semaine (19 juillet 2024)",
+      "url": "https://www.lefigaro.fr/nantes/cyberattaque-le-departement-de-loire-atlantique-et-la-region-des-pays-de-la-loire-vises-la-meme-semaine-20240719",
+      "kind": "article"
+    }
+  ],
+  "description": "Le mardi 16 juillet 2024, le réseau du conseil départemental de Loire-Atlantique est victime d'une cyberattaque. La collectivité, qui refuse de communiquer davantage par crainte d'attirer d'autres actes malveillants, précise qu'aucun service au public n'a été impacté. Ses 5 000 agents reçoivent pour consignes la vigilance et la réinitialisation de leurs mots de passe. Selon Le Figaro, cette attaque non revendiquée est distincte de celle du rançongiciel LockBit, revendiqué contre la région Pays de la Loire la même semaine.",
+  "timeline": [
+    {
+      "date": "2024-07-16",
+      "event": "Cyberattaque sur le réseau du conseil départemental ; consignes de vigilance et de réinitialisation des mots de passe pour les 5 000 agents."
+    },
+    {
+      "date": "2024-07-18",
+      "event": "Ouest-France relate l'incident : aucun service au public impacté selon la collectivité, qui communique peu."
+    },
+    {
+      "date": "2024-07-19",
+      "event": "Le Figaro distingue cette attaque non revendiquée de celle, revendiquée par LockBit, visant la région Pays de la Loire."
+    }
+  ]
+}
