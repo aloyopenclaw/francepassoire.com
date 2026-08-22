@@ -160,13 +160,14 @@ jobs:
             } catch (e) { /* absent = ok */ }
 
       - name: Corrections mécaniques (fixup borné, une seule itération)
+        id: fixup
         if: steps.agent.outputs.verdict == 'FAIL'
         env:
           PR_NUM: ${{ github.event.pull_request.number }}
         run: |
           if git log -1 --pretty=%s | grep -q "^fix(catalog): corrections mécaniques du validateur"; then
-            echo "fixup déjà appliqué sur ce commit et verdict toujours FAIL — arrêt, intervention humaine requise."
-            exit 0
+            echo "fixup déjà appliqué et verdict toujours FAIL — défaut éditorial, intervention humaine requise."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -176,12 +177,64 @@ jobs:
           git add -A data/catalog/ 2>/dev/null || true
           HORS_PERIMETRE=$(git diff --cached --name-only | grep -cv '^data/catalog/' || true)
           if [ "${HORS_PERIMETRE}" != "0" ]; then
-            echo "correctif hors périmètre détecté — abandon du push"; git reset --hard HEAD; exit 0
+            echo "correctif hors périmètre détecté — abandon du push"; git reset --hard HEAD
+            echo "pushed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
           if git diff --cached --quiet; then
             echo "aucune correction mécanique applicable — le défaut est éditorial, intervention humaine"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "fix(catalog): corrections mécaniques du validateur (agent)" --quiet
             git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
-            echo "fixup poussé — la PR se revalide automatiquement (synchronize)"
+            echo "fixup poussé — re-validation immédiate dans ce même job (aucune approbation requise)"
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Re-validation après fixup (même job, autonomie totale)
+        id: reval
+        if: steps.fixup.outputs.pushed == 'true'
+        run: |
+          rm -f .agent-tmp/report.md
+          opencode run "
+          Tu es le validateur éditorial de FrancePassoire. Re-valide les fiches de cette PR (état APRÈS correctif mécanique) : ${FICHE_FILES}. Mêmes 4 portes qu'auparavant : (1) npx vitest run tests/pr-fiches.test.ts ; (2) prose Ton A sans em-dash dans description/timeline/volume.label ; (3) contrat tâche 18 ; (4) sondage curl HEAD (repli GET) de chaque source. Écris .agent-tmp/report2.md avec en première ligne '**Synthèse : <PASS ou FAIL> — re-validation après correctif mécanique**', puis le détail par porte. Termine par 'VERDICT: PASS' ou 'VERDICT: FAIL'.
+          " || true
+          if [ -f .agent-tmp/report2.md ] && grep -q 'VERDICT: PASS' .agent-tmp/report2.md; then
+            echo "verdict=PASS" >> "$GITHUB_OUTPUT"
+          else
+            printf '## Re-validation\n\nÉchec ou défaut éditorial persistant après correctif mécanique — intervention humaine requise.\n\nVERDICT: FAIL\n' > .agent-tmp/report2.md
+            echo "verdict=FAIL" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rapport de re-validation en commentaire
+        if: steps.fixup.outputs.pushed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report2 = fs.readFileSync('.agent-tmp/report2.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: report2.slice(0, 60000),
+            });
+
+      - name: Label final agent:validé
+        if: steps.reval.outputs.verdict == 'PASS'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: ['agent:validé'],
+            });
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                name: 'agent:à-corriger',
+              });
+            } catch (e) { /* absent = ok */ }
