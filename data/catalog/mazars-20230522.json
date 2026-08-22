@@ -1,0 +1,47 @@
+{
+  "slug": "mazars-20230522",
+  "entity": "Mazars (groupe d'audit, d'expertise comptable et de conseil, entité brésilienne visée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-22",
+    "publication": "2023-05-22",
+    "confirmation": "2023-05-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "700 Go de données mises en ligne par Alphv/BlackCat ; volumétrie en personnes non communiquée"
+  },
+  "data_types": [
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Alphv/Black Cat, Mazars confirme la cyberattaque (22 et 24 mai 2023)",
+      "url": "https://www.lemagit.fr/actualites/366538155/Ransomware-Alphv-Black-Cat-revendique-une-cyberattaque-contre-Mazars",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr : Ces entreprises françaises dans le viseur de Alphv/BlackCat (23 mai 2023)",
+      "url": "https://www.zdnet.fr/actualites/ces-entreprises-francaises-dans-le-viseur-de-alphvblackcat-39958550.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 mai 2023 au matin, les opérateurs de la franchise Alphv/BlackCat revendiquent une cyberattaque contre le groupe Mazars et mettent à disposition 700 Go de données présentées comme dérobées, évoquant accords, enregistrements financiers, documents confidentiels et secrets de clients. Les noms des fichiers, en portugais, suggèrent que l'entité affectée est la filiale brésilienne du groupe. Les dossiers mentionnés incluent des documents liés à des audits de systèmes d'information pour des organisations telles que Decathlon, Essilor, Keyrus, LVMH, Morpho (Idemia), Nexans, Pernod Ricard, Publicis, Sanofi ou Sephora. Le 24 mai, un porte-parole de Mazars confirme que Mazars au Brésil a été la cible d'une cyberattaque, précise que l'infrastructure brésilienne est indépendante de celles des autres pays et indique qu'un cabinet d'expertise forensic indépendant évalue l'étendue de la fuite.",
+  "timeline": [
+    {
+      "date": "2023-05-22",
+      "event": "Alphv/BlackCat revendique l'attaque et met en ligne 700 Go de données ; les noms de fichiers suggèrent la filiale brésilienne."
+    },
+    {
+      "date": "2023-05-23",
+      "event": "ZDNet.fr relève la revendication et le silence initial du groupe."
+    },
+    {
+      "date": "2023-05-24",
+      "event": "Mazars confirme la cyberattaque contre son entité brésilienne et annonce une évaluation forensic indépendante."
+    }
+  ]
+}

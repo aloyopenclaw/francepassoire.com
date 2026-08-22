@@ -1,0 +1,55 @@
+{
+  "slug": "ccr-20220704",
+  "entity": "CCR (Caisse Centrale de Réassurance, réassureur public)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-07-04",
+    "publication": "2022-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "menace de divulgation de données formulée par les assaillants ; aucune volumétrie communiquée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Ransomware, l'attaque contre CCR revendiquée par un groupe mafieux inconnu (11 juillet 2022)",
+      "url": "https://www.lemagit.fr/actualites/252522305/Cyberattaque-le-groupe-CCR-sisole-de-son-ecosysteme",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Ransomware, un début juillet détonant en France (6 juillet 2022, CCR, Le Croisic, La Poste Mobile)",
+      "url": "https://www.lemagit.fr/actualites/252522416/Ransomware-un-debut-juillet-detonant-en-France",
+      "kind": "article"
+    },
+    {
+      "label": "L'Argus de l'Assurance : un groupe mafieux inconnu a revendiqué la cyberattaque contre CCR (capture web.archive.org)",
+      "url": "http://web.archive.org/web/20220924160358/https://www.argusdelassurance.com/reassureurs/un-groupe-mafieux-inconnu-a-revendique-la-cyberattaque-contre-ccr.202177",
+      "kind": "archive"
+    },
+    {
+      "label": "Solutions Numériques : cyberattaque contre le réassureur public CCR",
+      "url": "https://www.solutions-numeriques.com/cyberattaque-contre-le-reassureur-public-ccr/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 juillet 2022, la Caisse Centrale de Réassurance, réassureur public français, débranche ses sites web et s'isole de son écosystème face à une cyberattaque par rançongiciel survenue dans la nuit du 3 au 4 juillet. Ses services en ligne sont interrompus et l'entreprise active son plan de continuité d'activité. Le 11 juillet, la revendication de l'attaque est publiée sur un éphémère site vitrine par un groupe mafieux jusque-là inconnu, qui menace de divulguer des données dérobées. L'établissement, qui gère des dispositifs publics de réassurance des catastrophes naturelles, indique avoir saisi les autorités compétentes.",
+  "timeline": [
+    {
+      "date": "2022-07-04",
+      "event": "Cyberattaque détectée ; CCR débranche ses sites web et s'isole de son écosystème."
+    },
+    {
+      "date": "2022-07-06",
+      "event": "LeMagIT situe l'attaque de CCR dans une série d'incidents français de début juillet."
+    },
+    {
+      "date": "2022-07-11",
+      "event": "Revendication publiée sur un éphémère site vitrine par un groupe inconnu, avec menace de divulgation de données."
+    }
+  ]
+}

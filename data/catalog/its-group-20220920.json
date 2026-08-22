@@ -1,0 +1,51 @@
+{
+  "slug": "its-group-20220920",
+  "entity": "ITS Group (entreprise de services numériques, Boulogne-Billancourt)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-20",
+    "publication": "2022-09-21",
+    "confirmation": "2022-09-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "échantillon de 2 Go de données publié par le groupe Play ; volumétrie en personnes non communiquée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : ITS Group confronté à une cyberattaque avec ransomware (21 septembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252525144/Anomalie-de-securite-ITS-Group-met-a-larret-son-infrastructure",
+      "kind": "article"
+    },
+    {
+      "label": "ITS Group : communiqué de presse du 21 septembre 2022 sur la cyberattaque (PDF officiel)",
+      "url": "https://www.itsgroup.com/wp-content/uploads/2022/09/CP_CYBERATTAQUE_ITSGROUP_21092022.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT : Play, ce nouveau ransomware utilisé contre les Alpes-Maritimes et ITS Group (29 novembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252527798/Play-ce-nouveau-ransomware-utilise-contre-les-Alpes-Maritimes-et-ITS-Group",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 septembre 2022, l'entreprise de services numériques ITS Group informe ses partenaires de la détection d'une anomalie de sécurité, éteint les serveurs du groupe et coupe ses liens avec l'extérieur. Le lendemain, le fondateur et président Jean-Michel Bénard confirme une cyberattaque avec rançongiciel. Seuls les serveurs de gestion sont affectés, ceux supportant la compatibilité, la paie et la facturation. La filiale BlueTrusty, spécialisée en cybersécurité, intervient aux côtés des équipes du groupe, la CNIL est informée et une plainte est déposée. Fin novembre 2022, la revendication de l'attaque apparaît sur le site vitrine du rançongiciel Play, accompagnée d'un échantillon de 2 Go de données accessible via Mega.nz.",
+  "timeline": [
+    {
+      "date": "2022-09-20",
+      "event": "Détection d'une anomalie de sécurité ; extinction des serveurs du groupe et coupure des accès extérieurs."
+    },
+    {
+      "date": "2022-09-21",
+      "event": "Confirmation d'une cyberattaque avec rançongiciel ; périmètre limité aux serveurs de gestion, CNIL informée, plainte déposée."
+    },
+    {
+      "date": "2022-11-29",
+      "event": "LeMagIT documente la revendication publiée sur le site vitrine de Play et l'échantillon de 2 Go de données mis en ligne."
+    }
+  ]
+}

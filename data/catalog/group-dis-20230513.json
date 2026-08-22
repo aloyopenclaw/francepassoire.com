@@ -1,0 +1,54 @@
+{
+  "slug": "group-dis-20230513",
+  "entity": "Group DIS (Direct Info Services, hébergeur et infogéreur, Lille)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-05-13",
+    "publication": "2023-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "4 To de données revendiquées volées par Alphv/BlackCat, dont 1 To attribuées au client Lacroix Electronics ; volumétrie en personnes non communiquée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Lacroix Electronics, Alphv met en cause Group DIS (17 mai 2023)",
+      "url": "https://www.lemagit.fr/actualites/366537496/Group-DIS-encore-un-infogereur-victime-de-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr : Ces entreprises françaises dans le viseur de Alphv/BlackCat (23 mai 2023)",
+      "url": "https://www.zdnet.fr/actualites/ces-entreprises-francaises-dans-le-viseur-de-alphvblackcat-39958550.htm",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Panne d'actu.fr, notre hébergeur a dû faire face à une cyberattaque (17 mai 2023)",
+      "url": "https://actu.fr/sciences-technologie/panne-d-actu-fr-notre-hbergeur-a-d-faire-face-une-cyberattaque_59615008.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 mai 2023, Group DIS, spécialiste lillois de l'hébergement et de l'infogérance racheté par Constellation à l'automne 2022, subit une attaque d'envergure et coupe les accès extérieurs de l'ensemble de ses infrastructures. De nombreux sites hébergés ne répondent plus, dont celui d'actu.fr, perturbé le 13 mai, et plusieurs services en ligne du département des Côtes-d'Armor, indisponibles le 15 mai. Le client Lacroix Electronics annonce de son côté une attaque cyber contenue sur ses sites de Beaupréau, Willich et Zriba. Le 16 mai, Alphv/BlackCat revendique le vol de 4 To de données, dont 3 To de données clients critiques et 1 To appartenant à Lacroix Electronics. Le 17 mai, la franchise met explicitement en cause l'infogéreur, l'accusant d'avoir refusé de payer, et diffuse un index de plus d'une centaine de mégaoctets. Group DIS n'a communiqué qu'un message évoquant une situation difficile à impact critique sur ses infrastructures.",
+  "timeline": [
+    {
+      "date": "2023-05-13",
+      "event": "Attaque d'envergure ; coupure des accès extérieurs de l'infrastructure ; indisponibilité du site d'actu.fr."
+    },
+    {
+      "date": "2023-05-15",
+      "event": "Le département des Côtes-d'Armor signale des sites indisponibles ; Lacroix annonce une attaque cyber contenue sur son activité Electronics."
+    },
+    {
+      "date": "2023-05-16",
+      "event": "Alphv/BlackCat revendique le vol de 4 To de données, dont 1 To attribuées à Lacroix Electronics."
+    },
+    {
+      "date": "2023-05-17",
+      "event": "La franchise met en cause Group DIS pour refus de payer et diffuse un index de données ; actu.fr confirme que son hébergeur a fait face à une cyberattaque."
+    }
+  ]
+}

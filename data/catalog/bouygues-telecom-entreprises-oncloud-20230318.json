@@ -1,0 +1,54 @@
+{
+  "slug": "bouygues-telecom-entreprises-oncloud-20230318",
+  "entity": "Bouygues Telecom Entreprises (offre de cloud d'infrastructure OnCloud)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-18",
+    "publication": "2023-04-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "quelques dizaines de clients entreprises affectés selon l'opérateur ; aucune volumétrie de données personnelles communiquée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Cyberattaque, de nombreux clients de Bouygues Telecom Entreprises OnCloud paralysés (3 avril 2023)",
+      "url": "https://www.lemagit.fr/actualites/365534248/Cyberattaque-de-nombreux-clients-de-Bouygues-Telecom-Entreprises-OnCloud-paralyses",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde Informatique : OnCloud de Bouygues Telecom Entreprises victime d'un ransomware (5 avril 2023)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-oncloud-de-bouygues-telecom-entreprises-victime-d-un-ransomware-90066.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic : la filiale cloud de Bouygues Telecom touchée par un ransomware (11 avril 2023)",
+      "url": "https://www.clubic.com/telephone-portable/operateur-telephonie-mobile/bouygues-telecom/actualite-464910-la-filiale-cloud-de-bouygues-telecom-touchee-par-un-ransomware-que-s-est-il-passe.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 mars 2023, une cyberattaque par rançongiciel touche une partie de l'infrastructure du service OnCloud de Bouygues Telecom Entreprises, l'offre de cloud d'infrastructure de l'opérateur. Conduite contre un hôte VMware ESXi selon LeMagIT, l'attaque paralyse quelques dizaines de clients entreprises, dont l'accès aux données hébergées est perturbé. L'opérateur indique que l'incident est cloisonné et que les services sont rétablis début avril. Aucune revendication fiable n'est publiée, les assaillants ayant ultérieurement affiché un nom de victime erroné.",
+  "timeline": [
+    {
+      "date": "2023-03-18",
+      "event": "Cyberattaque par rançongiciel contre une partie de l'infrastructure OnCloud ; quelques dizaines de clients entreprises paralysés."
+    },
+    {
+      "date": "2023-04-03",
+      "event": "LeMagIT révèle l'incident ; l'opérateur confirme un incident cloisonné."
+    },
+    {
+      "date": "2023-04-05",
+      "event": "Le Monde Informatique confirme l'attaque par rançongiciel et la perturbation de l'accès aux données pour plusieurs dizaines de clients."
+    },
+    {
+      "date": "2023-04-11",
+      "event": "Clubic relève que les clients ont retrouvé leurs services."
+    }
+  ]
+}
