@@ -1,0 +1,37 @@
+{
+  "slug": "societe-de-transport-de-voyageurs-par-taxi-20201203",
+  "entity": "Une société de transport de voyageurs par taxi (entité non nommée)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-03",
+    "confirmation": "2020-12-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "sanction pécuniaire de 3 000 euros pour défaut de coopération ; volume non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE TRANSPORT DE VOYAGEURS PAR TAXI », sanction pécuniaire de 3 000 euros (3 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), bilan des sanctions : « Société de transport de voyageurs par taxi », 3 000 euros pour défaut de coopération avec la CNIL",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 3 décembre 2020, la formation restreinte de la CNIL a sanctionné une société de transport de voyageurs par taxi. L'amende s'élève à 3 000 euros. L'entité n'est pas nommée dans le tableau officiel ni dans le 41e rapport annuel. Selon ces deux sources, le seul manquement retenu est un défaut de coopération avec les services de la CNIL. Aucun détail sur les données traitées ni sur les personnes concernées n'a été publié. La sanction figure parmi les quinze décisions recensées pour l'année 2020.",
+  "timeline": [
+    {
+      "date": "2020-12-03",
+      "event": "Amende de 3 000 euros pour défaut de coopération avec les services de la CNIL (tableau officiel, 41e rapport annuel)."
+    }
+  ]
+}

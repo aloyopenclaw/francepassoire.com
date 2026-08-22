@@ -1,0 +1,61 @@
+{
+  "slug": "rectorat-de-normandie-20200903",
+  "entity": "Rectorat de l'académie de Normandie",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-09-03",
+    "publication": "2020-09-22",
+    "confirmation": "2020-09-03"
+  },
+  "volume": {
+    "count": 11846,
+    "unit": "personnes",
+    "label": "11 846 lycéens concernés selon le communiqué de la CNIL du 22 septembre 2020, dont une partie était mineure"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ÉTABLISSEMENT ADMINISTRATIF », rappel à l'ordre (3 septembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Données personnelles des bacheliers : la CNIL rappelle à l'ordre le rectorat de Normandie et la députée (communiqué du 22 septembre 2020, conservé par la Wayback Machine)",
+      "url": "https://web.archive.org/web/20200924231213/https://www.cnil.fr/fr/donnees-personnelles-des-bacheliers-la-cnil-rappelle-lordre-le-rectorat-de-normandie-et-la-deputee",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), bilan des sanctions : Rectorat de l'académie de Normandie, rappel à l'ordre le 3 septembre 2020 pour traitement illicite",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "ICI.fr — Données personnelles des bacheliers : la députée LREM de la Manche Sonia Krimi rappelée à l'ordre par la CNIL (22 septembre 2020)",
+      "url": "https://www.ici.fr/infos/societe/donnees-personnelles-des-bacheliers-la-deputee-lrem-de-la-manche-sonia-krimi-rappelee-a-l-ordre-par-1600791009",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 septembre 2020, la formation restreinte de la CNIL a rappelé à l'ordre le rectorat de l'académie de Normandie (délibération SAN-2020-006). En juillet 2019, le rectorat avait transmis par courriel non chiffré un fichier de 11 846 lycéens admis au baccalauréat à l'équipe d'une députée. Ces données provenaient du fichier national OCEAN, dédié à la gestion des examens. Selon le communiqué de la CNIL, cette transmission était illicite. L'arrêté créant le fichier OCEAN ne prévoit ni communication aux parlementaires ni usage par ces derniers. Le manquement porte sur la licéité du traitement. Les décisions visant le rectorat et la députée ont été publiées le 22 septembre 2020.",
+  "timeline": [
+    {
+      "date": "2019-07-18",
+      "event": "Le rectorat transmet par courriel non chiffré le fichier OCEAN de 11 846 lauréats du baccalauréat à l'équipe de la députée."
+    },
+    {
+      "date": "2019-08-01",
+      "event": "La CNIL est saisie d'une plainte sur l'envoi de courriers de félicitations aux lauréats de la Manche."
+    },
+    {
+      "date": "2020-09-03",
+      "event": "Rappel à l'ordre pour transmission illicite de données (article 5-1-a du RGPD, délibération SAN-2020-006)."
+    },
+    {
+      "date": "2020-09-22",
+      "event": "La CNIL rend publiques les décisions visant le rectorat et la députée, en raison du nombre de personnes et de leur minorité partielle."
+    }
+  ]
+}
