@@ -1,0 +1,56 @@
+{
+  "slug": "assurance-maladie-ameli-20220623",
+  "entity": "Assurance Maladie (comptes ameli.fr)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-06-23",
+    "publication": "2022-06-26"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "comptes",
+    "label": "chiffre avancé par le vendeur sur un espace pirate, proposé pour 6 000 dollars ; l'Assurance Maladie écarte une intrusion sur ameli.fr"
+  },
+  "data_types": [
+    "credentials",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : 1 million de comptes AMELI en vente par un pirate ? (23 juin 2022)",
+      "url": "https://www.zataz.com/1-million-de-compte-ameli-en-vente-par-un-pirate/",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info : un hacker met en vente un fichier contenant les identifiants d'un million de comptes Ameli (27 juin 2022)",
+      "url": "https://www.tf1info.fr/high-tech/assurance-maladie-secu-un-hacker-met-en-vente-un-fichier-contenant-les-identifiants-d-un-million-de-comptes-ameli-comment-changer-de-mot-de-passe-2224527.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche : les données de l'Assurance Maladie d'un million de Français en vente (26 juin 2022)",
+      "url": "https://www.ladepeche.fr/2022/06/26/cyberattaque-les-donnees-de-lassurance-maladie-dun-million-de-francais-en-vente-10397585.php",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes : le site de l'Assurance maladie piraté et les données d'un million de Français en vente ? Peu probable (1er juillet 2022)",
+      "url": "https://www.20minutes.fr/societe/3319087-20220701-site-assurance-maladie-pirate-donnees-million-francais-vente-internet-peu-probable",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 juin 2022, le Service Veille Zataz repère sur un espace pirate la vente, pour 6 000 dollars, d'une base annoncée comme contenant un million d'identifiants de connexion au site ameli.fr, mots de passe inclus. Le vendeur, connu dans les milieux de malveillance numérique, n'explique pas sa méthode de collecte. Zataz penche pour des campagnes d'hameçonnage usurpant l'Assurance Maladie et relève le caractère invérifiable du volume annoncé. La presse nationale relaie l'alerte fin juin et invite les assurés à changer leurs mots de passe. Début juillet, l'Assurance Maladie indique qu'un piratage du site est peu probable et écarte toute intrusion sur ses systèmes.",
+  "timeline": [
+    {
+      "date": "2022-06-23",
+      "event": "Zataz repère la vente d'un million d'identifiants ameli.fr pour 6 000 dollars sur un espace pirate."
+    },
+    {
+      "date": "2022-06-26",
+      "event": "La Dépêche relaie l'alerte ; TF1 Info informe le lendemain les assurés sur le changement de mot de passe."
+    },
+    {
+      "date": "2022-07-01",
+      "event": "20 Minutes rapporte que l'Assurance Maladie juge peu probable un piratage du site et écarte une intrusion sur ameli.fr."
+    }
+  ]
+}

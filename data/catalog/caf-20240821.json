@@ -1,0 +1,51 @@
+{
+  "slug": "caf-20240821",
+  "entity": "Caisse d'allocations familiales (comptes caf.fr)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-21",
+    "publication": "2024-08-22"
+  },
+  "volume": {
+    "count": 60369,
+    "unit": "comptes",
+    "label": "60 369 accès présumés diffusés : numéro de sécurité sociale et mot de passe, certaines lignes hachées ; le pirate précise ne pas être certain que tous fonctionnent"
+  },
+  "data_types": [
+    "credentials",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Un samouraï diffuse 60 369 comptes de la CAF ? (21 août 2024)",
+      "url": "https://www.zataz.com/un-samourai-diffuse-60-369-comptes-de-la-caf/",
+      "kind": "article"
+    },
+    {
+      "label": "01net : fuite de données à la CAF, plus de 60 000 comptes volés (22 août 2024)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-caf-plus-60-000-comptes-voles.html",
+      "kind": "article"
+    },
+    {
+      "label": "Bitdefender Hot for Security : fuite de données à la CAF, numéros de sécurité sociale et mots de passe de plus de 60 000 usagers en ligne (29 août 2024)",
+      "url": "https://www.bitdefender.com/fr-fr/blog/hotforsecurity/fuite-de-donnees-a-la-caf-les-numeros-de-securite-sociale-et-les-mots-de-passe-de-plus-de-60-000-usagers-en-ligne",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 août 2024, un pirate informatique signant d'un pseudonyme inspiré d'un escrimeur japonais diffuse 60 369 accès présentés comme permettant de se connecter aux comptes des usagers de la Caisse d'allocations familiales. Chaque ligne associe un numéro de sécurité sociale à 13 chiffres et un mot de passe, en clair pour certaines lignes, haché pour d'autres. Le diffuseur précise ne pas être certain que l'ensemble des comptes fonctionne ; selon le Service Veille Zataz, plusieurs sources possibles sont évoquées, dont des info-stealers. Le même acteur avait auparavant diffusé des données présentées comme issues de La Banque Postale ainsi que des accès à des comptes de contribuables français. La Cnaf n'indique pas de compromission de caf.fr ; la diffusion intervient six mois après la revendication LulzSec de février 2024.",
+  "timeline": [
+    {
+      "date": "2024-08-21",
+      "event": "Diffusion constatée par Zataz de 60 369 accès présumés à des comptes caf.fr, mêlant lignes en clair et lignes hachées."
+    },
+    {
+      "date": "2024-08-22",
+      "event": "01net relaie la fuite et détaille la présence de numéros de sécurité sociale et de mots de passe."
+    },
+    {
+      "date": "2024-08-29",
+      "event": "Bitdefender Hot for Security confirme la diffusion en ligne de plus de 60 000 identifiants d'usagers."
+    }
+  ]
+}
