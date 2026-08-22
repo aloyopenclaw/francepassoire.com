@@ -1,0 +1,37 @@
+{
+  "slug": "societe-exercant-une-activite-de-programmation-informatique-gestions-locative-et-de-copropriete-20251218",
+  "entity": "Société exerçant une activité de programmation informatique (gestions locative et de copropriété)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-18",
+    "confirmation": "2025-12-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué par la CNIL ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — Bilan des sanctions 2025",
+      "url": "https://www.cnil.fr/fr/bilan-sanctions-2025",
+      "kind": "officiel"
+    }
+  ],
+  "description": "La CNIL a prononcé le 18 décembre 2025, en procédure simplifiée, une amende de 15 000 euros et une injonction contre une société de programmation informatique éditrice de logiciels de gestions locative et de copropriété, désignée anonymément. Trois manquements sont retenus : une prospection commerciale sans base légale, un défaut d'information des personnes dans cette prospection et un défaut de sécurité des données. Le nom de la société n'est pas publié ; le volume de personnes concernées n'est pas communiqué. La sanction est recensée dans le tableau officiel des sanctions de la CNIL.",
+  "timeline": [
+    {
+      "date": "2025-12-18",
+      "event": "Amende de 15 000 euros et injonction en procédure simplifiée pour prospection illicite, défaut d'information et défaut de sécurité."
+    }
+  ]
+}
