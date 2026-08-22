@@ -1,0 +1,45 @@
+{
+  "slug": "regime-coach-20140626",
+  "entity": "Régime Coach",
+  "siren": "499430353",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-06-26",
+    "confirmation": "2014-06-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; avertissement public (données déclaratives de coaching de régime : poids, habitudes alimentaires, mensurations)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE TRAITEMENT DE DONNEES », site d'accompagnement de régime, avertissement public (26 juin 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Journal du Net — Les sanctions prononcées par la CNIL à travers le prisme de la sécurité (société Régime Coach, délibération CNIL 2014-261)",
+      "url": "https://www.journaldunet.com/ebusiness/le-net/1143033-les-sanctions-prononcees-par-la-cnil-a-travers-le-prisme-de-la-securite/",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 26/06/2014 contre une société de traitement de données",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Des contrôles de la CNIL ont examiné la société Régime Coach, éditrice d'un site d'accompagnement de régime en ligne. La CNIL a relevé un défaut d'information des personnes concernées par les données collectées. Selon le Journal du Net, la formation restreinte a retenu la conservation de mots de passe en clair. Les transmissions de données avec les sous-traitants n'étaient pas sécurisées. Les données traitées, déclaratives, portaient sur le poids, les habitudes alimentaires et les mensurations. La société a en outre peu coopéré lors des contrôles. La formation restreinte a prononcé un avertissement public le 26 juin 2014, référencé à la délibération n° 2014-261.",
+  "timeline": [
+    {
+      "date": "2014-06-26",
+      "event": "Avertissement public pour défaut d'information, insuffisances de sécurité et défaut de coopération (délibération n° 2014-261)."
+    }
+  ]
+}
