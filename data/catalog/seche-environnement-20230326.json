@@ -1,0 +1,54 @@
+{
+  "slug": "seche-environnement-20230326",
+  "entity": "Séché Environnement (groupe de traitement et valorisation des déchets, site de Changé, Mayenne)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-26",
+    "publication": "2023-03-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication publiée par LockBit 3.0 le 30 mars 2023 ; aucune volumétrie communiquée par l'entreprise"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ici par France Bleu : le site Séché Environnement à Changé victime d'une cyberattaque (27 mars 2023)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/info-france-bleu-le-site-seche-environnement-a-change-victime-d-une-cyberattaque-6199779",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest France : en Mayenne, le site de Séché Environnement victime d'une cyberattaque (27 mars 2023, capture web.archive.org)",
+      "url": "http://web.archive.org/web/20240104060925/https://www.ouest-france.fr/pays-de-la-loire/mayenne/en-mayenne-le-site-de-seche-environnement-victime-dune-cyberattaque-d01fb1b8-ccc1-11ed-8144-e74efc02d2d3",
+      "kind": "archive"
+    },
+    {
+      "label": "InCyber : LockBit poursuit ses attaques contre des cibles françaises, dont Séché et le groupe BRL (20 avril 2023)",
+      "url": "https://incyber.org/article/lockbit-poursuit-ses-attaques-contre-des-cibles-francaises/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 26 mars 2023, une tentative d'intrusion est détectée sur le système d'information du site de tri des déchets de Changé, en Mayenne, exploité par Séché Environnement. Des équipes techniques interviennent et des mesures conservatoires sont prises pour circonscrire l'attaque. L'activité industrielle du site n'est pas interrompue. Le 30 mars 2023, le groupe Séché Environnement figure sur le site de fuite du rançongiciel LockBit 3.0, qui revendique l'attaque. Le média InCyber relève cette attaque dans une vague de revendications contre des cibles françaises, aux côtés notamment du groupe BRL.",
+  "timeline": [
+    {
+      "date": "2023-03-26",
+      "event": "Tentative d'intrusion détectée sur le système d'information du site de Changé ; interventions techniques et mesures conservatoires."
+    },
+    {
+      "date": "2023-03-27",
+      "event": "La presse locale révèle la cyberattaque contre le site mayennais."
+    },
+    {
+      "date": "2023-03-30",
+      "event": "LockBit 3.0 inscrit le groupe sur son site de fuite et revendique l'attaque."
+    },
+    {
+      "date": "2023-04-20",
+      "event": "InCyber situe l'attaque dans une série de visées françaises de LockBit."
+    }
+  ]
+}

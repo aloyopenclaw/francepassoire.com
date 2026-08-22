@@ -1,51 +1,60 @@
 {
   "slug": "damart-20220815",
-  "entity": "Damart (groupe Despature et Duhamel)",
+  "entity": "Damart (groupe de vente par correspondance de vêtements, Hem, Nord)",
   "secteur": "retail",
   "statut": "confirmee",
   "dates": {
     "revendication": "2022-08-15",
-    "publication": "2022-08-24",
-    "confirmation": "2022-08-24"
+    "publication": "2022-08-25",
+    "confirmation": "2022-08-25"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "aucune preuve de vol de données clients à ce stade selon l'entreprise ; le site marchand reste indisponible pour les clients français et britanniques"
+    "label": "rançon de 2 millions de dollars exigée par Hive ; l'entreprise assure qu'aucune donnée de clients n'a été compromise"
   },
   "data_types": [
-    "documents"
+    "autre"
   ],
   "sources": [
+    {
+      "label": "Le Monde Informatique : le ransomware Hive jette un froid sur l'IT de Damart (25 août 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-ransomware-hive-jette-un-froid-sur-l-it-de-damart-87792.html",
+      "kind": "article"
+    },
     {
       "label": "Le Parisien : Damart, spécialiste des vêtements chauds, lutte contre une cyberattaque par rançongiciel (24 août 2022)",
       "url": "https://www.leparisien.fr/high-tech/damart-specialiste-des-vetements-chauds-lutte-contre-une-cyberattaque-par-rancongiciel-24-08-2022-GVYEQOHQGZESPM2637KY6C2TYY.php",
       "kind": "article"
     },
     {
-      "label": "Le Monde Informatique : Le ransomware Hive jette un froid sur l'IT de Damart (24 août 2022)",
-      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-ransomware-hive-jette-un-froid-sur-l-it-de-damart-87792.html",
+      "label": "20 Minutes : Damart, les serveurs de l'enseigne de vêtements visés par une cyberattaque (25 août 2022)",
+      "url": "https://www.20minutes.fr/high-tech/3341483-20220825-damart-serveurs-enseigne-vetements-vises-cyberattaque",
       "kind": "article"
     },
     {
-      "label": "Le MagIT : Cyberattaque, comment Damart a coupé l'herbe sous le pied à Hive (septembre 2022)",
+      "label": "LeMagIT : Cyberattaque, Hive demande deux millions de dollars à Damart (1er septembre 2022)",
       "url": "https://www.lemagit.fr/actualites/252524164/Cyberattaque-comment-Damart-a-coupe-lherbe-sous-le-pied-a-Hive",
       "kind": "article"
     }
   ],
-  "description": "Le lundi 15 août 2022, le distributeur de vêtements Damart, basé à Roubaix, subit une intrusion sur ses serveurs. La souche du rançongiciel Hive est retrouvée dans le système et un chiffrement partiel des serveurs techniques est lancé, atteignant l'Active Directory. Le site marchand est fermé pour les clients français et britanniques et les 92 magasins du réseau fonctionnent en mode dégradé pendant plusieurs semaines. L'entreprise dépose plainte auprès de la gendarmerie et notifie la CNIL. Le groupe Hive réclame ensuite une rançon de deux millions de dollars, restée impayée.",
+  "description": "Le 15 août 2022, une intrusion de rançongiciel touche les systèmes d'information de Damart, marque nordiste de vente par correspondance spécialisée dans les vêtements thermiques. La dernière souche du ransomware Hive est retrouvée dans le système informatique de l'entreprise, qui affiche un message de maintenance non planifiée sur sa boutique en ligne. Le groupe Hive exige ensuite une rançon de deux millions de dollars. L'entreprise assure qu'aucune donnée de clients n'a été compromise et se relève progressivement, la remise en état de l'informatique exigeant plusieurs semaines. L'attaque figure parmi les victimes françaises du rançongiciel Hive recensées lors du démantèlement de cette infrastructure en janvier 2023.",
   "timeline": [
     {
       "date": "2022-08-15",
-      "event": "Intrusion détectée chez Damart ; chiffrement partiel des serveurs, Active Directory touché, site marchand fermé."
+      "event": "Intrusion du rançongiciel Hive dans les systèmes de Damart ; maintenance non planifiée de la boutique en ligne."
     },
     {
       "date": "2022-08-24",
-      "event": "La presse révèle l'attaque ; plainte déposée, CNIL notifiée, retour à la normale annoncé en plusieurs semaines."
+      "event": "La presse révèle la cyberattaque ; l'entreprise indique qu'aucune donnée de clients n'est compromise à ce stade."
     },
     {
       "date": "2022-09-01",
-      "event": "Le rançongiciel Hive demande une rançon de deux millions de dollars ; Damart ne paie pas et poursuit sa remise en service."
+      "event": "LeMagIT détaille la rançon de deux millions de dollars exigée par Hive et la stratégie de remise en état de l'entreprise."
+    },
+    {
+      "date": "2023-01-26",
+      "event": "Le démantèlement de Hive par une opération internationale confirme Damart parmi les victimes françaises de la franchise."
     }
   ]
 }

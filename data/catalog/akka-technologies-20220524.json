@@ -1,0 +1,41 @@
+{
+  "slug": "akka-technologies-20220524",
+  "entity": "Akka Technologies (groupe d'ingénierie et de conseil en technologies, récemment racheté par Adecco)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-05-24",
+    "publication": "2022-05-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune volumétrie communiquée par l'entreprise"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Akka Technologies a été frappé avec le ransomware BlackCat (31 mai 2022)",
+      "url": "https://www.lemagit.fr/actualites/252520624/Akka-Technologies-est-confronte-a-un-ransomware",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Cyberattaques, série noire chez les hébergeurs (29 août 2023, récapitulatif des attaques contre les ESN françaises)",
+      "url": "https://www.lemagit.fr/actualites/366550020/Cyberattaques-serie-noire-chez-les-hebergeurs",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 mai 2022 au matin, plusieurs clients d'Akka Technologies, groupe d'ingénierie et de conseil en technologies récemment racheté par Adecco via sa filiale Modis, coupent leurs liens avec l'entreprise de services numériques et bloquent les comptes utilisés par ses collaborateurs dans leurs systèmes d'information. La direction de la communication du groupe confirme une cyberattaque avec rançongiciel et indique que l'intrusion initiale remonte à plus tôt dans le mois de mai. Le rançongiciel Alphv/BlackCat, écrit en Rust et capable de viser Windows, Linux et les environnements VMware ESXi, est identifié comme l'outil utilisé. L'attaque n'est pas revendiquée sur le site vitrine de la franchise cybercriminelle.",
+  "timeline": [
+    {
+      "date": "2022-05-24",
+      "event": "Découverte de l'attaque ; des clients coupent leurs liens avec l'ESN et bloquent les comptes de ses collaborateurs."
+    },
+    {
+      "date": "2022-05-31",
+      "event": "La direction de la communication confirme à LeMagIT l'implication du rançongiciel Alphv/BlackCat et situe l'intrusion initiale plus tôt dans le mois de mai."
+    }
+  ]
+}

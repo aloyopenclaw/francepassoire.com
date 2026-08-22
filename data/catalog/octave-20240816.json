@@ -1,0 +1,59 @@
+{
+  "slug": "octave-20240816",
+  "entity": "Octave (Octave.biz, éditeur de logiciels métiers SaaS pour le commerce de détail, Angers)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-08-16",
+    "publication": "2024-08-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune volumétrie communiquée ; une partie du système d'information de l'éditeur a été chiffrée"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : ESN, les clients d'Octave.biz victimes des effets d'une cyberattaque (21 août 2024)",
+      "url": "https://www.lemagit.fr/actualites/366606072/ESN-les-clients-dOctavebiz-victimes-des-effets-dune-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz : Un ransomware s'attaque à la société Octave (21 août 2024)",
+      "url": "https://www.zataz.com/un-ransomware-sattaque-a-la-societe-octave/",
+      "kind": "article"
+    },
+    {
+      "label": "Quel-ERP : Cyberattaque pour l'ERP Octave, impact dévastateur chez l'éditeur et ses clients (6 septembre 2024)",
+      "url": "https://www.quel-erp.com/magazine/cyberattaque-pour-lerp-octave-impact-devastateur-chez-lediteur-et-ses-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "Les Clés du Digital : l'éditeur Octave disparaît suite à une cyberattaque, liquidation judiciaire (25 mars 2025)",
+      "url": "https://www.lesclesdudigital.fr/lediteur-octave-disparait-suite-a-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 août 2024, Octave, éditeur angevin de logiciels métiers en mode SaaS spécialisé dans le commerce de détail omnicanal, est frappé par un rançongiciel qui met une partie de son système d'information hors d'état de fonctionner en le chiffrant. L'éditeur, qui héberge aussi les sites marchands et outils métiers de ses clients, provoque leur paralysie en cascade : La Boutique du Tracteur, Makassar, Cobra ou Rascol signalent des traitements de commandes impossibles, et de nombreux sites marchands comme ceux de Sarodis, Daudin Distribution, Polemil Médical ou Sofia Distribution restent indisponibles. Selon Zataz, la CNIL est alertée et d'importantes marques françaises de commerce sont impactées, avec retour au crayon papier en boutique physique. L'éditeur, placé en liquidation judiciaire par le tribunal de commerce d'Angers le 19 mars 2025, n'a pas survécu aux conséquences de l'attaque.",
+  "timeline": [
+    {
+      "date": "2024-08-16",
+      "event": "Attaque par rançongiciel contre Octave ; chiffrement d'une partie du système d'information de l'éditeur."
+    },
+    {
+      "date": "2024-08-19",
+      "event": "Zataz évoque une cyberattaque contre un hébergeur français avec des enseignes réduites au crayon papier."
+    },
+    {
+      "date": "2024-08-21",
+      "event": "LeMagIT identifie Octave ; de nombreux clients et sites marchands hébergés restent indisponibles pour une durée indéterminée."
+    },
+    {
+      "date": "2025-03-19",
+      "event": "Octave est placé en liquidation judiciaire par le tribunal de commerce d'Angers à la suite des conséquences de la cyberattaque."
+    }
+  ]
+}
