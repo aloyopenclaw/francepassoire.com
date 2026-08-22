@@ -2,11 +2,10 @@
   "slug": "academie-de-lyon-20250613",
   "entity": "Académie de Lyon (Affelnet)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-06-13",
-    "publication": "2025-06-16",
-    "confirmation": "2025-06-16"
+    "publication": "2025-06-16"
   },
   "volume": {
     "count": 61000,
@@ -33,7 +32,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 13 juin 2025 à 18 h 30, l'académie de Lyon est informée d'une revendication d'exfiltration portant sur Affelnet, la plateforme nationale d'affectation des élèves de troisième. Une base attribuée à l'académie — plus de 61 000 dossiers — est diffusée sur un forum cybercriminel. Le 16 juin, le rectorat reconnaît un vol d'informations issues d'Affelnet concernant des collégiens de l'académie et annonce le dépôt de plainte. Le périmètre exact des données diffusées reste à préciser.",
+  "description": "Le 13 juin 2025 à 18 h 30, l'académie de Lyon est informée d'une revendication d'exfiltration portant sur Affelnet, la plateforme nationale d'affectation des élèves de troisième. Une base attribuée à l'académie — plus de 61 000 dossiers — est diffusée sur un forum cybercriminel. Le 16 juin, selon la presse, le rectorat reconnaît un vol d'informations issues d'Affelnet concernant des collégiens de l'académie et annonce le dépôt de plainte. Le périmètre exact des données diffusées reste à préciser.",
   "timeline": [
     {
       "date": "2025-06-13",

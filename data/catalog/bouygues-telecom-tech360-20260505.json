@@ -3,10 +3,9 @@
   "entity": "Bouygues Telecom",
   "siren": "397480930",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
-    "revendication": "2026-05-05",
-    "confirmation": "2026-05-08"
+    "revendication": "2026-05-05"
   },
   "volume": {
     "count": 4500000,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 5 mai 2026, le collectif OverSec revendique une base de plus de 80 Go extraite de TECH360, outil interne des interventions fibre de Bouygues Telecom. Les données couvriraient la période 2022 à avril 2026. Le 8 mai, l'opérateur confirme l'incident par courriel aux clients concernés : noms, prénoms, adresses postales, e-mails, téléphones et dates de naissance ont été exposés. Les coordonnées bancaires et mots de passe sont exclus selon l'opérateur, qui notifie la CNIL et dépose plainte. Le volume revendiqué n'est pas confirmé.",
+  "description": "Le 5 mai 2026, le collectif OverSec revendique une base de plus de 80 Go extraite de TECH360, outil interne des interventions fibre de Bouygues Telecom. Les données couvriraient la période 2022 à avril 2026. Le 8 mai, selon la presse, l'opérateur confirme l'incident par courriel aux clients concernés : noms, prénoms, adresses postales, e-mails, téléphones et dates de naissance ont été exposés. Les coordonnées bancaires et mots de passe sont exclus selon l'opérateur, qui notifie la CNIL et dépose plainte. Le volume revendiqué n'est pas confirmé.",
   "timeline": [
     {
       "date": "2026-05-05",

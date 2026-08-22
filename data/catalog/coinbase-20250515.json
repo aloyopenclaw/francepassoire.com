@@ -2,11 +2,10 @@
   "slug": "coinbase-20250515",
   "entity": "Coinbase",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-05-15",
-    "publication": "2025-05-16",
-    "confirmation": "2025-05-15"
+    "publication": "2025-05-16"
   },
   "volume": {
     "count": 70000,
@@ -31,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "La plateforme américaine d'échange de cryptomonnaies Coinbase signale les faits le 15 mai 2025 à la SEC, le gendarme boursier américain. Des cybercriminels ont soudoyé des employés ou entrepreneurs de ses services support basés à l'étranger, qui leur ont transmis les données personnelles de près de 70 000 clients : noms, coordonnées, copies de documents d'identité, solde et historique des comptes. Les attaquants ont exigé 20 millions de dollars, que Coinbase refuse de payer, annonçant le remboursement des clients lésés et un coût total estimé entre 180 et 400 millions de dollars. Les clients sont exposés à des campagnes de phishing et de vishing.",
+  "description": "Selon la presse, la plateforme américaine d'échange de cryptomonnaies Coinbase signale les faits le 15 mai 2025 à la SEC, le gendarme boursier américain. Des cybercriminels ont soudoyé des employés ou entrepreneurs de ses services support basés à l'étranger, qui leur ont transmis les données personnelles de près de 70 000 clients : noms, coordonnées, copies de documents d'identité, solde et historique des comptes. Les attaquants ont exigé 20 millions de dollars, que Coinbase refuse de payer, annonçant le remboursement des clients lésés et un coût total estimé entre 180 et 400 millions de dollars. Les clients sont exposés à des campagnes de phishing et de vishing.",
   "timeline": [
     {
       "date": "2025-05-15",

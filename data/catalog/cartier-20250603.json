@@ -2,11 +2,10 @@
   "slug": "cartier-20250603",
   "entity": "Cartier (Richemont)",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-06-03",
-    "publication": "2025-06-03",
-    "confirmation": "2025-06-03"
+    "publication": "2025-06-03"
   },
   "volume": {
     "count": 0,

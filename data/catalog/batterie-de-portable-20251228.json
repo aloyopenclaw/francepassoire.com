@@ -2,11 +2,10 @@
   "slug": "batterie-de-portable-20251228",
   "entity": "Batterie-de-Portable.fr",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-28",
-    "publication": "2025-12-28",
-    "confirmation": "2025-12-28"
+    "publication": "2025-12-28"
   },
   "volume": {
     "count": 120000,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 28 décembre 2025, le site e-commerce Batterie-de-Portable.fr notifie environ 120 000 clients d'un incident de sécurité. Le site est spécialiste des batteries et accessoires d'ordinateurs. Les données exposées sont listées par les traqueurs : noms, prénoms, dates de naissance, adresses postales, adresses e-mail et numéros de téléphone fixes et mobiles. Le traqueur BonjourLaFuite classe la fuite comme confirmée, sur la base de la communication de l'entreprise. Aucune donnée bancaire n'est mentionnée dans les relais.",
+  "description": "Selon la presse, le 28 décembre 2025, le site e-commerce Batterie-de-Portable.fr notifie environ 120 000 clients d'un incident de sécurité. Le site est spécialiste des batteries et accessoires d'ordinateurs. Les données exposées sont listées par les traqueurs : noms, prénoms, dates de naissance, adresses postales, adresses e-mail et numéros de téléphone fixes et mobiles. Le traqueur BonjourLaFuite classe la fuite comme confirmée, sur la base de la communication de l'entreprise. Aucune donnée bancaire n'est mentionnée dans les relais.",
   "timeline": [
     {
       "date": "2025-12-28",

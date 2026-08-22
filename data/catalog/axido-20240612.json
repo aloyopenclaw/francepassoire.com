@@ -2,11 +2,10 @@
   "slug": "axido-20240612",
   "entity": "Axido (entreprise de services numériques, groupe Proxiteam)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-06-12",
-    "publication": "2024-06-14",
-    "confirmation": "2024-06-14"
+    "publication": "2024-06-14"
   },
   "volume": {
     "count": 0,
@@ -28,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 12 juin 2024 au soir, l'entreprise de services numériques Axido, filiale du groupe Proxiteam, est alertée d'une possible compromission d'accès à privilèges, quelques jours après la mise en vente d'un tel accès sur un forum fréquenté par des cybercriminels. Le système d'information est isolé, les clients informés par mail et un cabinet d'expertise indépendant recommandé par l'Anssi mandaté. L'ESN indique que les investigations n'ont révélé, à ce stade, aucune fuite de données sensibles ou personnelles, et qu'une plainte va être déposée. Le 20 juin, Axido confirme la piste du rançongiciel : une partie de l'environnement de production de ses clients hébergés a été chiffrée. Conformément aux recommandations de l'Anssi, l'entreprise refuse d'entrer en contact avec les attaquants et annonce une remise en production très longue.",
+  "description": "Le 12 juin 2024 au soir, l'entreprise de services numériques Axido, filiale du groupe Proxiteam, est alertée d'une possible compromission d'accès à privilèges, quelques jours après la mise en vente d'un tel accès sur un forum fréquenté par des cybercriminels. Le système d'information est isolé, les clients informés par mail et un cabinet d'expertise indépendant recommandé par l'Anssi mandaté. L'ESN indique que les investigations n'ont révélé, à ce stade, aucune fuite de données sensibles ou personnelles, et qu'une plainte va être déposée. Le 20 juin, selon la presse, Axido confirme la piste du rançongiciel : une partie de l'environnement de production de ses clients hébergés a été chiffrée. Conformément aux recommandations de l'Anssi, l'entreprise refuse d'entrer en contact avec les attaquants et annonce une remise en production très longue.",
   "timeline": [
     {
       "date": "2024-06-12",

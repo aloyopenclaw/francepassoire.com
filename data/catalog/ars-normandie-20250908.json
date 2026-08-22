@@ -22,6 +22,11 @@
       "label": "TF1 Info/LCI — Cyberattaques : les données de patients d'hôpitaux publics dérobées dans « plusieurs régions de France » (8 septembre 2025)",
       "url": "https://www.tf1info.fr/justice-faits-divers/cyberattaques-les-donnees-de-patients-d-hopitaux-publics-derobees-dans-plusieurs-regions-de-france-2393393.html",
       "kind": "article"
+    },
+    {
+      "label": "ARS Normandie : communiqué « Une cyberattaque dirigée contre des services numériques régionaux de santé » (8 septembre 2025)",
+      "url": "https://www.normandie.ars.sante.fr/index.php/une-cyberattaque-dirigee-contre-des-services-numeriques-regionaux-de-sante",
+      "kind": "officiel"
     }
   ],
   "description": "Le 8 septembre 2025, l'agence régionale de santé de Normandie révèle, aux côtés de celle des Hauts-de-France, une cyberattaque survenue la semaine précédente contre des serveurs hébergeant les données d'identité de patients d'hôpitaux publics. Le ou les pirates se sont introduits en usurpant l'identité d'un professionnel de santé et ont dérobé des données administratives d'usagers : nom, prénom, âge, parfois numéro de téléphone ou adresse e-mail. Les agences assurent qu'aucune donnée des dossiers médicaux n'est concernée et que le fonctionnement des hôpitaux n'est pas remis en cause. Les comptes compromis ont été neutralisés, une campagne de vigilance vise les professionnels de santé, la CNIL a été notifiée et des plaintes déposées.",

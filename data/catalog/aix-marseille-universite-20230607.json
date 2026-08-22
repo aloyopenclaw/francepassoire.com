@@ -2,7 +2,7 @@
   "slug": "aix-marseille-universite-20230607",
   "entity": "Aix-Marseille Université (AMU)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-06-07",
     "publication": "2023-06-07"
@@ -37,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le mercredi 7 juin 2023 au matin, la direction d'Aix-Marseille Université, l'une des plus importantes universités françaises par ses effectifs, alerte ses équipes après une cyberattaque. L'établissement coupe l'ensemble de ses accès à Internet : site web, réseau, ENT et messagerie deviennent indisponibles pour les étudiants et les personnels, invités à rejoindre leurs domiciles selon la presse anglophone. Les oraux du concours de journalisme sont maintenus. Aucune exfiltration de données n'est rapportée et aucune revendication n'est publiée à date.",
+  "description": "Le mercredi 7 juin 2023 au matin, selon la presse, la direction d'Aix-Marseille Université, l'une des plus importantes universités françaises par ses effectifs, alerte ses équipes après une cyberattaque. L'établissement coupe l'ensemble de ses accès à Internet : site web, réseau, ENT et messagerie deviennent indisponibles pour les étudiants et les personnels, invités à rejoindre leurs domiciles selon la presse anglophone. Les oraux du concours de journalisme sont maintenus. Aucune exfiltration de données n'est rapportée et aucune revendication n'est publiée à date.",
   "timeline": [
     {
       "date": "2023-06-07",

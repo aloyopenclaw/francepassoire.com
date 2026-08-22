@@ -2,11 +2,10 @@
   "slug": "cerballiance-20250323",
   "entity": "Cerballiance (réseaux Provence-Azur et Alpes-Durance)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-23",
-    "publication": "2025-03-23",
-    "confirmation": "2025-04-30"
+    "publication": "2025-03-23"
   },
   "volume": {
     "count": 0,

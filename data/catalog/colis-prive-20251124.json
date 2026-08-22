@@ -3,18 +3,20 @@
   "entity": "Colis Privé",
   "siren": "391029345",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-24",
-    "publication": "2025-11-24",
-    "confirmation": "2025-11-24"
+    "publication": "2025-11-24"
   },
   "volume": {
     "count": 15000000,
     "unit": "enregistrements",
     "label": "15 millions de données personnelles revendiquées par le groupe dumpsec ; volume non communiqué par Colis Privé"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "UniversFreebox — Colis Privé victime d'une grosse cyberattaque : des millions de données clients dérobées et revendiquées",
@@ -32,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le week-end du 22 au 23 novembre 2025, Colis Privé, transporteur distribuant environ 90 millions de colis par an, avertit ses clients d'un accès non autorisé et limité sur une partie de ses systèmes. Ses investigations confirment que des coordonnées ont été dérobées : nom, prénom, adresse postale, e-mail et téléphone. L'entreprise exclut données bancaires, mots de passe et informations sensibles. Le groupe criminel français dumpsec revendique l'attaque via le chercheur Clément Domingo et affirme détenir 15 millions de données. En janvier 2026, 01net rapporte la publication d'environ 22 millions d'enregistrements en accès libre.",
+  "description": "Le week-end du 22 au 23 novembre 2025, Colis Privé, transporteur distribuant environ 90 millions de colis par an, avertit ses clients d'un accès non autorisé et limité sur une partie de ses systèmes. Selon la presse, ses investigations confirment que des coordonnées ont été dérobées : nom, prénom, adresse postale, e-mail et téléphone. L'entreprise exclut données bancaires, mots de passe et informations sensibles. Le groupe criminel français dumpsec revendique l'attaque via le chercheur Clément Domingo et affirme détenir 15 millions de données. En janvier 2026, 01net rapporte la publication d'environ 22 millions d'enregistrements en accès libre.",
   "timeline": [
     {
       "date": "2025-11-24",

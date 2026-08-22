@@ -2,7 +2,7 @@
   "slug": "cite-sanitaire-saint-nazaire-20220112",
   "entity": "Centre hospitalier de Saint-Nazaire (cité sanitaire)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-01-12"
   },
@@ -26,7 +26,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 12 janvier 2022, la cité sanitaire de Saint-Nazaire (Loire-Atlantique) subit une cyberattaque qui touche son prestataire de services de télévision, téléphonie et Wifi pour patients. Les personnes hospitalisées sont privées d'accès à Internet et de communication avec leurs proches pendant environ 48 heures, le temps de la remise en service. L'établissement confirme l'incident sur ses réseaux. Aucun vol de données n'est communiqué.",
+  "description": "Le 12 janvier 2022, la cité sanitaire de Saint-Nazaire (Loire-Atlantique) subit une cyberattaque qui touche son prestataire de services de télévision, téléphonie et Wifi pour patients. Les personnes hospitalisées sont privées d'accès à Internet et de communication avec leurs proches pendant environ 48 heures, le temps de la remise en service. Selon la presse, l'établissement confirme l'incident sur ses réseaux. Aucun vol de données n'est communiqué.",
   "timeline": [
     {
       "date": "2022-01-12",

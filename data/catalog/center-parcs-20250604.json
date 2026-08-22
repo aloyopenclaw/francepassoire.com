@@ -2,11 +2,10 @@
   "slug": "center-parcs-20250604",
   "entity": "Center Parcs (groupe Pierre & Vacances-Center Parcs)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-06-04",
-    "publication": "2025-06-18",
-    "confirmation": "2025-06-18"
+    "publication": "2025-06-18"
   },
   "volume": {
     "count": 20000,

@@ -2,11 +2,10 @@
   "slug": "commune-de-berson-20250221",
   "entity": "Commune de Berson (Gironde)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-21",
-    "publication": "2025-02-28",
-    "confirmation": "2025-02-28"
+    "publication": "2025-02-28"
   },
   "volume": {
     "count": 0,

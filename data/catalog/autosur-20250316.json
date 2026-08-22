@@ -3,18 +3,20 @@
   "entity": "Autosur",
   "siren": "800628646",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-16",
-    "publication": "2025-03-23",
-    "confirmation": "2025-03-28"
+    "publication": "2025-03-23"
   },
   "volume": {
     "count": 4000000,
     "unit": "personnes",
     "label": "environ 4 millions de clients selon Autosur ; 10,7 à 12,3 millions de lignes revendiquées par le pirate et mises en vente entre 5 000 et 7 500 dollars"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "Zataz — Fuite massive de données chez AUTOSUR : plus de 12 millions de dossiers exposés",
@@ -42,7 +44,7 @@
       "kind": "article"
     }
   ],
-  "description": "Depuis le 16 mars 2025, un cybercriminel met en vente sur un forum une base présentée comme issue d'Autosur, réseau de contrôle technique automobile. Le blog Zataz relaie le 23 mars cette revendication : 10,7 à 12,3 millions de lignes contenant identité, coordonnées et plaques d'immatriculation. Fin mars, Autosur confirme un incident de sécurité ayant touché une base de données de contact. L'entreprise évalue à environ 4 millions les clients concernés, avec nom, prénom, adresses e-mail et postale, téléphone et plaque. Mots de passe et données bancaires ne sont pas concernés selon l'entreprise ; la CNIL est saisie et une plainte déposée.",
+  "description": "Depuis le 16 mars 2025, un cybercriminel met en vente sur un forum une base présentée comme issue d'Autosur, réseau de contrôle technique automobile. Le blog Zataz relaie le 23 mars cette revendication : 10,7 à 12,3 millions de lignes contenant identité, coordonnées et plaques d'immatriculation. Fin mars, selon la presse, Autosur confirme un incident de sécurité ayant touché une base de données de contact. L'entreprise évalue à environ 4 millions les clients concernés, avec nom, prénom, adresses e-mail et postale, téléphone et plaque. Mots de passe et données bancaires ne sont pas concernés selon l'entreprise ; la CNIL est saisie et une plainte déposée.",
   "timeline": [
     {
       "date": "2025-03-16",

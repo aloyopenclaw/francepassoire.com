@@ -2,7 +2,7 @@
   "slug": "centre-hospitalier-ouest-vosgien-20231007",
   "entity": "Centre hospitalier de l'Ouest vosgien (sites de Vittel et Neufchâteau)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-10-07",
     "publication": "2023-10-07"
@@ -32,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le samedi 7 octobre 2023 vers 2 heures du matin, le centre hospitalier de l'Ouest vosgien subit une cyberattaque qui paralyse les systèmes informatiques de ses sites de Vittel et de Neufchâteau. Les urgences sont fermées temporairement et les consultations et interventions programmées sont suspendues. Les équipes repassent aux échanges papier. La sécurité et la continuité des soins sont garanties selon l'établissement, qui confirme l'incident dans la journée. Aucun vol de données n'est communiqué.",
+  "description": "Le samedi 7 octobre 2023 vers 2 heures du matin, le centre hospitalier de l'Ouest vosgien subit une cyberattaque qui paralyse les systèmes informatiques de ses sites de Vittel et de Neufchâteau. Les urgences sont fermées temporairement et les consultations et interventions programmées sont suspendues. Les équipes repassent aux échanges papier. La sécurité et la continuité des soins sont garanties selon l'établissement, qui, selon la presse, confirme l'incident dans la journée. Aucun vol de données n'est communiqué.",
   "timeline": [
     {
       "date": "2023-10-07",

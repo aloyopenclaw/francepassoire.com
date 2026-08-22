@@ -2,7 +2,7 @@
   "slug": "appui-sante-nord-finistere-20230126",
   "entity": "Association Appui Santé Nord Finistère (ASNF)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-01-26",
     "publication": "2023-01-30"
@@ -27,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 26 janvier 2023, l'Association Appui Santé Nord Finistère (ASNF), qui regroupe des professionnels de santé libéraux et des représentants d'établissements sanitaires et médico-sociaux, subit une cyberattaque d'environ trente minutes. L'association héberge des données personnelles de santé issues du dispositif d'appui à la coordination, du centre de coordination en cancérologie du Ponant et du centre local d'information et de coordination gérontologique du Pays de Morlaix. L'ensemble des données est crypté et certaines archives sont supprimées. L'infrastructure est mise à l'arrêt, des fichiers sont transmis à une société spécialisée et une nouvelle infrastructure est reconstruite. Un communiqué conjoint avec l'Agence régionale de santé est publié le 30 janvier.",
+  "description": "Le 26 janvier 2023, l'Association Appui Santé Nord Finistère (ASNF), qui regroupe des professionnels de santé libéraux et des représentants d'établissements sanitaires et médico-sociaux, subit une cyberattaque d'environ trente minutes. L'association héberge des données personnelles de santé issues du dispositif d'appui à la coordination, du centre de coordination en cancérologie du Ponant et du centre local d'information et de coordination gérontologique du Pays de Morlaix. L'ensemble des données est crypté et certaines archives sont supprimées. L'infrastructure est mise à l'arrêt, des fichiers sont transmis à une société spécialisée et une nouvelle infrastructure est reconstruite. Selon la presse, un communiqué conjoint avec l'Agence régionale de santé a été publié le 30 janvier.",
   "timeline": [
     {
       "date": "2023-01-26",

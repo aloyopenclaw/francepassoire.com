@@ -3,18 +3,20 @@
   "entity": "Caisse des dépôts et consignations (CDC)",
   "siren": "180020026",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-12",
-    "publication": "2025-02-12",
-    "confirmation": "2025-02-13"
+    "publication": "2025-02-12"
   },
   "volume": {
     "count": 70000,
     "unit": "personnes",
     "label": "70 000 affiliés à l'Ircantec, dont environ 1 000 élus locaux (chiffre annoncé par la Caisse des dépôts)"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "franceinfo — Vols de données personnelles à la Caisse des dépôts : 70 000 personnes concernées dont 1 000 élus",
@@ -32,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "La Caisse des dépôts révèle le 12 février 2025 un vol de données personnelles touchant 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, praticiens hospitaliers et élus locaux, dont environ un millier d'élus. Des identifiants de connexion d'employeurs publics à une plateforme dédiée aux régimes de retraite ont été utilisés frauduleusement, permettant un accès illégitime à des données d'affiliés : numéro de Sécurité sociale, état civil, date et lieu de naissance, adresse postale. L'institution précise que données bancaires, mots de passe et e-mails ne sont pas concernés ; elle a informé les personnes touchées, déposé plainte et notifié la CNIL.",
+  "description": "Selon la presse, la Caisse des dépôts révèle le 12 février 2025 un vol de données personnelles touchant 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, praticiens hospitaliers et élus locaux, dont environ un millier d'élus. Des identifiants de connexion d'employeurs publics à une plateforme dédiée aux régimes de retraite ont été utilisés frauduleusement, permettant un accès illégitime à des données d'affiliés : numéro de Sécurité sociale, état civil, date et lieu de naissance, adresse postale. L'institution précise que données bancaires, mots de passe et e-mails ne sont pas concernés ; elle a informé les personnes touchées, déposé plainte et notifié la CNIL.",
   "timeline": [
     {
       "date": "2025-02-12",

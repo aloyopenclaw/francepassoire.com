@@ -2,11 +2,10 @@
   "slug": "caf-gironde-20230105",
   "entity": "Caisse d'allocations familiales (CAF) de Gironde",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-01-02",
-    "publication": "2023-01-05",
-    "confirmation": "2023-01-05"
+    "publication": "2023-01-05"
   },
   "volume": {
     "count": 10204,

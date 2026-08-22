@@ -2,11 +2,10 @@
   "slug": "air-france-klm-20250806",
   "entity": "Air France-KLM",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-06",
-    "publication": "2025-08-07",
-    "confirmation": "2025-08-07"
+    "publication": "2025-08-07"
   },
   "volume": {
     "count": 0,
@@ -39,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Air France et KLM annoncent les 6 et 7 août 2025 un « accès frauduleux » à des données personnelles de certains de leurs clients, via une plateforme tierce utilisée par leurs centres de contact et compromise durant la semaine du 28 juillet. Les données concernées : prénom, nom, informations de contact, numéro et statut Flying Blue, et l'objet des demandes adressées par e-mail au service client. Les compagnies assurent que mots de passe, données de voyage, soldes de miles Flying Blue, numéros de passeport et de carte bancaire ne sont pas concernés. Le nombre de personnes touchées n'est pas communiqué. Air France a notifié la CNIL, qui déclare analyser la notification ; les clients concernés sont informés individuellement.",
+  "description": "Selon la presse, Air France et KLM annoncent les 6 et 7 août 2025 un « accès frauduleux » à des données personnelles de certains de leurs clients, via une plateforme tierce utilisée par leurs centres de contact et compromise durant la semaine du 28 juillet. Les données concernées : prénom, nom, informations de contact, numéro et statut Flying Blue, et l'objet des demandes adressées par e-mail au service client. Les compagnies assurent que mots de passe, données de voyage, soldes de miles Flying Blue, numéros de passeport et de carte bancaire ne sont pas concernés. Le nombre de personnes touchées n'est pas communiqué. Air France a notifié la CNIL, qui déclare analyser la notification ; les clients concernés sont informés individuellement.",
   "timeline": [
     {
       "date": "2025-08-06",

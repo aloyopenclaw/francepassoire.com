@@ -2,11 +2,10 @@
   "slug": "clarins-20250918",
   "entity": "Groupe Clarins",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-18",
-    "publication": "2025-09-18",
-    "confirmation": "2025-09-18"
+    "publication": "2025-09-18"
   },
   "volume": {
     "count": 600000,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Mi-septembre 2025, le groupe d’extorsion Everest a publié des données volées chez Clarins, groupe français de cosmétiques, avant d’être repris par les CERT et la presse spécialisée. Le 18 septembre, Clarins a informé ses clients d’une fuite affectant ses plateformes d’e-commerce internationales : noms, dates de naissance, adresses postales et e-mail, numéros de téléphone et historiques d’achat ont circulé, selon des captures diffusées par les veilleurs. La revendication évoque plus de 600 000 clients touchés. Des clients français figuraient parmi les personnes concernées selon les relais de veille.",
+  "description": "Mi-septembre 2025, le groupe d’extorsion Everest a publié des données volées chez Clarins, groupe français de cosmétiques, avant d’être repris par les CERT et la presse spécialisée. Le 18 septembre, selon la presse, Clarins a informé ses clients d’une fuite affectant ses plateformes d’e-commerce internationales : noms, dates de naissance, adresses postales et e-mail, numéros de téléphone et historiques d’achat ont circulé, selon des captures diffusées par les veilleurs. La revendication évoque plus de 600 000 clients touchés. Des clients français figuraient parmi les personnes concernées selon les relais de veille.",
   "timeline": [
     {
       "date": "2025-09-15",

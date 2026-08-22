@@ -2,18 +2,19 @@
   "slug": "caisse-des-depots-ircantec-20250213",
   "entity": "Caisse des dépôts (régime de retraite complémentaire Ircantec)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-13",
-    "publication": "2025-02-13",
-    "confirmation": "2025-02-13"
+    "publication": "2025-02-13"
   },
   "volume": {
     "count": 70000,
     "unit": "personnes",
     "label": "environ 70 000 affiliés à l'Ircantec, dont une mille d'élus locaux, selon la Caisse des dépôts"
   },
-  "data_types": ["identite"],
+  "data_types": [
+    "identite"
+  ],
   "sources": [
     {
       "label": "Le Figaro — Les données personnelles de 70.000 personnes, dont des élus, dérobées à la Caisse des Dépôts après une cyberattaque (13 février 2025)",
@@ -36,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 13 février 2025, la Caisse des dépôts révèle qu'un attaquant a accédé de manière illégitime à une plateforme mise à disposition des employeurs publics pour leurs déclarations aux régimes de retraite qu'elle gère. Les identifiants de connexion de plusieurs employeurs, compromis en amont, ont ouvert la porte à des données personnelles d'environ 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, élus locaux et praticiens hospitaliers —, dont un millier d'élus : noms, prénoms et numéros de sécurité sociale notamment. L'institution précise que les données bancaires, mots de passe, adresses courriel et numéros de téléphone ne sont pas concernés, qu'elle a déposé plainte et saisi la CNIL. La révélation intervient au même moment que le vol de données chez Chronopost, autre filiale du groupe.",
+  "description": "Le 13 février 2025, selon la presse, la Caisse des dépôts révèle qu'un attaquant a accédé de manière illégitime à une plateforme mise à disposition des employeurs publics pour leurs déclarations aux régimes de retraite qu'elle gère. Les identifiants de connexion de plusieurs employeurs, compromis en amont, ont ouvert la porte à des données personnelles d'environ 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, élus locaux et praticiens hospitaliers —, dont un millier d'élus : noms, prénoms et numéros de sécurité sociale notamment. L'institution précise que les données bancaires, mots de passe, adresses courriel et numéros de téléphone ne sont pas concernés, qu'elle a déposé plainte et saisi la CNIL. La révélation intervient au même moment que le vol de données chez Chronopost, autre filiale du groupe.",
   "timeline": [
     {
       "date": "2025-02-13",

@@ -2,11 +2,10 @@
   "slug": "compagnie-des-guides-de-chamonix-20250815",
   "entity": "Compagnie des Guides de Chamonix",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-11",
-    "publication": "2025-08-16",
-    "confirmation": "2025-08-16"
+    "publication": "2025-08-16"
   },
   "volume": {
     "count": 0,

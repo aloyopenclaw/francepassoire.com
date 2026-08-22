@@ -3,18 +3,20 @@
   "entity": "Auchan",
   "siren": "481986446",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-21",
-    "publication": "2025-08-21",
-    "confirmation": "2025-08-21"
+    "publication": "2025-08-21"
   },
   "volume": {
     "count": 100000,
     "unit": "personnes",
     "label": "de l'ordre d'une centaine de milliers de clients selon un porte-parole interrogé par Le Monde informatique ; franceinfo évoque plusieurs centaines de milliers (chiffre exact non communiqué par Auchan)"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "franceinfo — Le groupe Auchan victime d'une cyberattaque, les données de plusieurs centaines de milliers de clients dérobées",
@@ -37,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Auchan annonce le 21 août 2025 un « acte de cybermalveillance » ayant donné à des tiers un accès non autorisé à des données de comptes de fidélité : civilité, nom, prénom, adresses e-mail et postale, numéro de téléphone et numéro de carte de fidélité. L'enseigne, qui a identifié l'incident le week-end précédent, précise que les données bancaires, mots de passe et codes PIN ne sont pas concernés ; elle a notifié la CNIL et informe les clients touchés. Un porte-parole évoque « une centaine de milliers » de clients concernés, sans chiffre exact. Une fuite similaire avait déjà visé les comptes de fidélité de l'enseigne en novembre 2024.",
+  "description": "Selon la presse, Auchan annonce le 21 août 2025 un « acte de cybermalveillance » ayant donné à des tiers un accès non autorisé à des données de comptes de fidélité : civilité, nom, prénom, adresses e-mail et postale, numéro de téléphone et numéro de carte de fidélité. L'enseigne, qui a identifié l'incident le week-end précédent, précise que les données bancaires, mots de passe et codes PIN ne sont pas concernés ; elle a notifié la CNIL et informe les clients touchés. Un porte-parole évoque « une centaine de milliers » de clients concernés, sans chiffre exact. Une fuite similaire avait déjà visé les comptes de fidélité de l'enseigne en novembre 2024.",
   "timeline": [
     {
       "date": "2025-08-21",

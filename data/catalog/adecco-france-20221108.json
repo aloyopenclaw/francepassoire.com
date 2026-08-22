@@ -2,11 +2,10 @@
   "slug": "adecco-france-20221108",
   "entity": "Adecco France",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-11-08",
-    "publication": "2022-11-10",
-    "confirmation": "2022-11-10"
+    "publication": "2022-11-10"
   },
   "volume": {
     "count": 0,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "À partir du 8 novembre 2022, le groupe d'intérim Adecco France subit un piratage de données. Des informations personnelles et bancaires d'intérimaires semblent compromises et de nombreux travailleurs temporaires découvrent un prélèvement frauduleux de 49,85 euros au nom d'une société inconnue, Solfex France, créée en août 2022. Les syndicats CFDT Adecco et CGT Intérim publient des communiqués d'alerte le 9 novembre et invitent les victimes à faire opposition. Un groupe Facebook rassemblant plus de 800 personnes est créé. Adecco ouvre une enquête interne et déclare collaborer avec les autorités compétentes.",
+  "description": "À partir du 8 novembre 2022, le groupe d'intérim Adecco France subit un piratage de données. Des informations personnelles et bancaires d'intérimaires semblent compromises et de nombreux travailleurs temporaires découvrent un prélèvement frauduleux de 49,85 euros au nom d'une société inconnue, Solfex France, créée en août 2022. Les syndicats CFDT Adecco et CGT Intérim publient des communiqués d'alerte le 9 novembre et invitent les victimes à faire opposition. Un groupe Facebook rassemblant plus de 800 personnes est créé. Selon la presse, Adecco ouvre une enquête interne et déclare collaborer avec les autorités compétentes.",
   "timeline": [
     {
       "date": "2022-11-08",

@@ -2,7 +2,7 @@
   "slug": "ch-bourg-en-bresse-20230410",
   "entity": "Centre hospitalier de Bourg-en-Bresse (hôpital Fleyriat)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-04-10",
     "publication": "2023-04-11"
@@ -12,7 +12,9 @@
     "unit": "personnes",
     "label": "aucune donnée dérobée quantifiée ; une intrusion dans le système d'information est confirmée par l'établissement"
   },
-  "data_types": ["sante"],
+  "data_types": [
+    "sante"
+  ],
   "sources": [
     {
       "label": "France 3 Auvergne-Rhône-Alpes : Une cyberattaque vise le principal centre hospitalier de l'Ain (11 avril 2023)",
@@ -30,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 10 au 11 avril 2023, une intrusion est détectée dans le système d'information du centre hospitalier de Bourg-en-Bresse, l'hôpital Fleyriat, principal établissement de l'Ain. L'établissement annonce une cyberattaque le 11 avril, en précisant que la continuité des soins est assurée. Le quotidien Le Progrès rapporte que le réseau de l'établissement est ciblé par des pirates depuis la nuit du lundi 10 au mardi 11. Aucune donnée dérobée n'est quantifiée.",
+  "description": "Dans la nuit du 10 au 11 avril 2023, une intrusion est détectée dans le système d'information du centre hospitalier de Bourg-en-Bresse, l'hôpital Fleyriat, principal établissement de l'Ain. Selon la presse, l'établissement annonce une cyberattaque le 11 avril, en précisant que la continuité des soins est assurée. Le quotidien Le Progrès rapporte que le réseau de l'établissement est ciblé par des pirates depuis la nuit du lundi 10 au mardi 11. Aucune donnée dérobée n'est quantifiée.",
   "timeline": [
     {
       "date": "2023-04-10",

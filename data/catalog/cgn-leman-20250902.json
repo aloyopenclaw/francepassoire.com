@@ -3,11 +3,10 @@
   "entity": "Compagnie générale de navigation sur le lac Léman (CGN)",
   "siren": "775752314",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-02",
-    "publication": "2025-09-04",
-    "confirmation": "2025-09-04"
+    "publication": "2025-09-04"
   },
   "volume": {
     "count": 400,
@@ -25,7 +24,7 @@
       "kind": "article"
     }
   ],
-  "description": "La Compagnie générale de navigation sur le lac Léman (CGN) indique le 4 septembre 2025 que son site internet a été la cible d’un « script malveillant », actif cinq jours avant sa détection le 2 septembre ; le site a été immédiatement désactivé puis réactivé après identification de l’attaque. Près de 400 clients ayant réalisé des opérations du 28 août au 2 septembre ont été informés et invités à vérifier leurs relevés de transaction et à contacter leur banque, ce qui suggère une compromission potentielle de données de paiement. La régie franco-suisse transporte quotidiennement de nombreux travailleurs frontaliers entre Lausanne, Genève, Évian et Thonon.",
+  "description": "Selon la presse, la Compagnie générale de navigation sur le lac Léman (CGN) indique le 4 septembre 2025 que son site internet a été la cible d’un « script malveillant », actif cinq jours avant sa détection le 2 septembre ; le site a été immédiatement désactivé puis réactivé après identification de l’attaque. Près de 400 clients ayant réalisé des opérations du 28 août au 2 septembre ont été informés et invités à vérifier leurs relevés de transaction et à contacter leur banque, ce qui suggère une compromission potentielle de données de paiement. La régie franco-suisse transporte quotidiennement de nombreux travailleurs frontaliers entre Lausanne, Genève, Évian et Thonon.",
   "timeline": [
     {
       "date": "2025-09-02",
