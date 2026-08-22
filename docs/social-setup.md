@@ -58,10 +58,10 @@ Coût : l'offre ** gratuite de Make** couvre ~1000 opérations/mois — largemen
 1. Créer un compte sur [make.com](https://www.make.com) (offre Free suffisante).
 2. **Create a new scenario**. Ajouter un module **Webhooks → Custom webhook** : Make génère une URL unique (`https://hook.eu1.make.com/…`). **C'est cette URL qui devient le secret `MAKE_WEBHOOK_URL`** — longue, unique, impossible à deviner : qui la possède déclenche le post. Ne la collez nulle part ailleurs.
 3. Ajouter le module **X (Twitter) → Create a Post** : cliquer **Add** pour connecter un compte, autoriser avec **@francepassoire**. Le module publie au nom du compte connecté.
-4. Dans le module, mapper le champ **Text** sur la donnée entrante `text`, et (optionnel) ajouter `url` au texte — le worker envoie déjà `{text, url, request_id}` en JSON ; `text` contient l'URL de la fiche.
+4. Dans le module, mapper le champ **Text** sur la donnée entrante `text`, et le champ **url/média** sur la donnée entrante `mediaUrl`. Le worker envoie EXACTEMENT `{text, mediaUrl}` en JSON — `text` contient l'URL de la fiche, `mediaUrl` la carte 1080×1080 (`…/fiche/<slug>/card.jpg`). Tout écart de ce gabarit casse le mapping (« Missing value of required parameter 'url' », constaté en prod 2026-08-22).
 5. Optionnel : insérer un module **Tools → Set variable** ou une approbation manuelle si vous voulez relire chaque post avant publication (Make attend alors votre clic).
 6. **Save** puis activer le scénario (bouton **Scheduling on**).
-7. Test : `curl -X POST <URL-webhook> -H 'Content-Type: application/json' -d '{"text":"test","url":"https://francepassoire.com"}'` — le post doit apparaître sur @francepassoire.
+7. Test : `curl -X POST <URL-webhook> -H 'Content-Type: application/json' -d '{"text":"test","mediaUrl":"https://francepassoire.com/fiche/<slug>/card.jpg"}'` — le post doit apparaître sur @francepassoire.
 
 ```
 wrangler secret put MAKE_WEBHOOK_URL

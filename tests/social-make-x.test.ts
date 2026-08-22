@@ -38,7 +38,7 @@ describe('client X via Make (webhook) — T51', () => {
     expect(r).toMatchObject({ status: 'ERROR', retryable: true });
   });
 
-  it('le corps embarque text, url et request_id (pas de champ statut)', async () => {
+  it('le corps embarbe exactement text + mediaUrl (carte de la fiche, pas d’autre champ)', async () => {
     let corps: Record<string, unknown> = {};
     const fetchFn = vi.fn(async (_u: string | URL | Request, init?: RequestInit) => {
       corps = JSON.parse(String(init?.body));
@@ -51,8 +51,7 @@ describe('client X via Make (webhook) — T51', () => {
     );
     expect(corps).toEqual({
       text: payload.text,
-      url: payload.url,
-      request_id: 'abc-123',
+      mediaUrl: 'https://francepassoire.com/fiche/x/card.jpg',
     });
   });
 });
