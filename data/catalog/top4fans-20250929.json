@@ -1,7 +1,7 @@
 {
   "slug": "top4fans-20250929",
   "entity": "Top4Fans",
-  "secteur": "services",
+  "secteur": "media",
   "statut": "revendiquee",
   "dates": {
     "revendication": "2025-09-29",
@@ -9,13 +9,10 @@
   },
   "volume": {
     "count": 0,
-    "unit": "enregistrements",
-    "label": "volume non chiffré ; plus de 75 Go de données diffusés, dont des milliers de cartes nationales d'identité selon le service de veille de Zataz (chiffres revendiqués)"
+    "unit": "personnes",
+    "label": "plus de 75 Go de données diffusés, dont des milliers de cartes nationales d'identité de Français et d'étrangers selon Zataz ; nombre de personnes concernées non communiqué"
   },
-  "data_types": [
-    "identite",
-    "documents"
-  ],
+  "data_types": ["identite", "documents"],
   "sources": [
     {
       "label": "Zataz — Fuite massive de données pour Top 4 Fans après une cyberattaque (29 septembre 2025)",
@@ -23,20 +20,30 @@
       "kind": "revendication"
     },
     {
-      "label": "FunInformatique — Nouvelle fuite de données chez Top4Fans (vol du 19 septembre, diffusion après chantage)",
+      "label": "DeXpose — KillSec Compromises French Entertainment Platform Top4Fans (22 septembre 2025)",
+      "url": "https://www.dexpose.io/killsec-compromises-french-entertainment-platform-top4fans/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez Top4Fans (octobre 2025)",
       "url": "https://www.funinformatique.com/fuite_de_donnees/top4fans/",
       "kind": "article"
     }
   ],
-  "description": "Top4Fans, plateforme française de monétisation de contenus pour créateurs, concurrente de MYM et OnlyFans, est visée fin septembre 2025 par le groupe de rançongiciel KillSecurity. Selon le service de veille de Zataz, les attaquants affirment avoir copié les données dès le 19 septembre. Ils imposent cinq jours de chantage à la plateforme, puis publient plus de 75 Go de fichiers. Le lot comprend des milliers de cartes nationales d'identité d'utilisateurs et de créateurs, françaises pour la plupart, collectées pour la vérification de l'âge. S'y ajoutent des données sensibles de membres de plusieurs pays. La plateforme n'a pas confirmé publiquement l'incident à ce stade et le volume exact des personnes concernées n'est pas chiffré.",
+  "description": "Top4Fans, plateforme française de monétisation de contenus pour adultes, est visée par une extorsion du groupe KillSec revendiquée le 22 septembre 2025. Après un ultimatum de cinq jours sans paiement, les pirates diffusent plus de 75 Go de données. Figurent des milliers de cartes nationales d'identité de Français et d'étrangers, collectées pour vérifier la majorité des utilisateurs. Zataz constate des pièces d'identité affichées avec le visage de leur porteur. Les relais soulignent les risques d'usurpation d'identité et de fraude. La plateforme ne publie pas de décompte des personnes concernées.",
   "timeline": [
     {
       "date": "2025-09-19",
-      "event": "Les attaquants affirment avoir copié les données de Top4Fans à cette date, avant d'ouvrir une période de chantage de cinq jours."
+      "event": "Les pirates indiquent avoir stocké les données extraites à partir du 19 septembre, selon Zataz."
+    },
+    {
+      "date": "2025-09-22",
+      "event": "Le groupe KillSec revendique la compromission de la plateforme française, relayée par DeXpose."
     },
     {
       "date": "2025-09-29",
-      "event": "Après l'expiration du délai, le groupe publie plus de 75 Go de données, dont des milliers de pièces d'identité, selon le service de veille de Zataz."
+      "event": "Après cinq jours sans paiement de rançon, plus de 75 Go de données sont diffusés, dont des milliers de pièces d'identité servant à la vérification d'âge."
     }
-  ]
+  ],
+  "group": "killsec"
 }

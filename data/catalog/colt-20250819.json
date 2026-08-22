@@ -1,0 +1,55 @@
+{
+  "slug": "colt-20250819",
+  "entity": "Colt Technology Services",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-08-19",
+    "publication": "2025-08-19",
+    "confirmation": "2025-08-21"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "enregistrements",
+    "label": "environ un million de documents mis aux enchères pour 200 000 dollars par le groupe Warlock, selon BleepingComputer ; périmètre exact non chiffré par l'opérateur"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Colt Technology Services — Our cyber incident response (page officielle de l'opérateur)",
+      "url": "https://www.colt.net/resources/insights/our-cyber-incident-response",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — L'opérateur télécom britannique Colt piraté à cause d'une faille Microsoft SharePoint (19 août 2025)",
+      "url": "https://www.clubic.com/actualite-576270-l-operateur-telecom-britannique-colt-pirate-a-cause-dune-faille-microsoft-sharepoint-que-s-est-il-passe.html",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer — Colt confirms customer data stolen as Warlock ransomware auctions files (21 août 2025)",
+      "url": "https://www.bleepingcomputer.com/news/security/colt-confirms-customer-data-stolen-as-warlock-ransomware-auctions-files/",
+      "kind": "article"
+    },
+    {
+      "label": "The Register — Colt says customer data may be stolen amid Warlock's auction (21 août 2025)",
+      "url": "https://www.theregister.com/2025/08/21/colt_warlock_auction/",
+      "kind": "article"
+    }
+  ],
+  "description": "Colt Technology Services, opérateur télécom d'entreprises actif en France, détecte une intrusion le 12 août 2025. L'opérateur déconnecte son portail client et sa plateforme API voix. Le groupe de rançongiciel Warlock revendique l'attaque. Il met aux enchères environ un million de documents : données salariales, évaluations d'employés, contrats clients et informations financières, selon la presse spécialisée. L'entrée passe par une faille SharePoint selon le chercheur Kevin Beaumont. Le 21 août, Colt reconnaît que des fichiers contenant des données clients ont été volés. La presse française relève la série d'attaques touchant le secteur télécom.",
+  "timeline": [
+    {
+      "date": "2025-08-12",
+      "event": "Colt détecte des anomalies sur un système interne et déconnecte son portail client en ligne et sa plateforme API voix."
+    },
+    {
+      "date": "2025-08-19",
+      "event": "Le groupe Warlock revendique l'intrusion ; Clubic relate la mise en vente de documents sensibles, l'entrée ayant exploité une faille SharePoint selon Kevin Beaumont."
+    },
+    {
+      "date": "2025-08-21",
+      "event": "Colt confirme le vol de fichiers pouvant contenir des données clients ; environ un million de documents sont mis aux enchères selon BleepingComputer."
+    }
+  ],
+  "group": "warlock"
+}

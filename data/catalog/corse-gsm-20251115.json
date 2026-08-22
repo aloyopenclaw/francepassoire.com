@@ -1,0 +1,40 @@
+{
+  "slug": "corse-gsm-20251115",
+  "entity": "Corse GSM",
+  "siren": "398657577",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-11-15",
+    "publication": "2025-11-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués ; une base attribuée à l'opérateur circule depuis 2024 sur des forums criminels, rediffusée en novembre 2025 via un lien BiteBlob enrichi d'IBAN, de documents KYC et de copies de CNI selon Brinztech"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Brinztech — Alert: Data of Corse GSM are Leaked (15 novembre 2025)",
+      "url": "https://www.brinztech.com/breach-alerts/brinztech-alert-data-of-corse-gsm-are-leaked/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Botcrawl — Corse GSM Data Breach Exposes Identity Documents and Banking Data (16 novembre 2025)",
+      "url": "https://botcrawl.com/corse-gsm-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Corse GSM, opérateur mobile et internet corse, est exploité par SOC Corse de Distribution. Une base de données attribuée circule de nouveau sur des forums criminels à partir du 15 novembre 2025, via un lien BiteBlob. Brinztech décrit un jeu enrichi par rapport aux signalements de 2024 : IBAN et BIC, documents de conformité KYC et copies de cartes nationales d'identité. Botcrawl souligne les risques d'usurpation d'identité et de fraude au prélèvement pour les abonnés. Aucune communication publique de l'opérateur n'est documentée à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-11-15",
+      "event": "Un acteur malveillant diffuse via un lien BiteBlob une base attribuée à Corse GSM, enrichie d'IBAN, de documents KYC et de copies de CNI selon Brinztech."
+    },
+    {
+      "date": "2025-11-16",
+      "event": "Botcrawl décrit la rediffusion d'un jeu de données repéré dès 2024 et l'absence de réaction publique documentée de l'opérateur."
+    }
+  ]
+}
