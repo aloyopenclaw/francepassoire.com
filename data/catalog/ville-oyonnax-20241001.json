@@ -1,0 +1,42 @@
+{
+  "slug": "ville-oyonnax-20241001",
+  "entity": "Ville d'Oyonnax",
+  "siren": "210102836",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-10-01",
+    "publication": "2024-10-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "serveurs municipaux fermés et messagerie hors service ; des comptes rendus de conseil municipal dérobés selon Le Progrès, ampleur non chiffrée"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Progrès — Ain. La Ville d'Oyonnax victime d'une cyberattaque (4 octobre 2024)",
+      "url": "https://www.leprogres.fr/politique/2024/10/04/la-ville-d-oyonnax-victime-d-une-attaque-informatique",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT (Cyberhebdo du 4 octobre 2024) — AFP et Oyonnax parmi les victimes",
+      "url": "https://www.lemagit.fr/actualites/366612894/Cyberhebdo-du-4-octobre-2024",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis le mardi 1er octobre 2024, un incident informatique perturbe fortement les services municipaux d'Oyonnax (Ain). La messagerie électronique n'est plus opérationnelle et la Ville ferme ses serveurs. Le 4 octobre, elle confirme qu'il s'agit d'une cyberattaque. Selon Le Progrès, des comptes rendus de conseil municipal ont été dérobés ; l'ampleur exacte du préjudice n'est pas précisée. L'accueil physique des administrés est maintenu pendant que la collectivité travaille au rétablissement de ses systèmes.",
+  "timeline": [
+    {
+      "date": "2024-10-01",
+      "event": "Un incident informatique perturbe les services municipaux : messagerie hors service, serveurs fermés par précaution."
+    },
+    {
+      "date": "2024-10-04",
+      "event": "La Ville confirme une cyberattaque ; des comptes rendus de conseil municipal ont été dérobés selon Le Progrès."
+    }
+  ]
+}
