@@ -1,0 +1,50 @@
+{
+  "slug": "porte-de-savoie-20230309",
+  "entity": "Commune de Porte-de-Savoie",
+  "siren": "200083681",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-09",
+    "publication": "2023-03-09",
+    "confirmation": "2023-03-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données personnelles de plusieurs dizaines d'habitants (parents d'élèves, usagers, élus, agents) dérobées, dont identités et coordonnées bancaires ; une partie diffusée sur internet selon la mairie ; nombre exact non chiffré"
+  },
+  "data_types": ["identite", "financier"],
+  "sources": [
+    {
+      "label": "ICI par France Bleu — Savoie : la commune de Porte-de-Savoie touchée par une cyberattaque (9 mars 2023)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/savoie-la-commune-de-porte-de-savoie-touchee-par-une-cyberattaque-5789096",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Porte-de-Savoie : une nouvelle commune victime d'une cyberattaque en Savoie (10 mars 2023)",
+      "url": "https://actu.fr/auvergne-rhone-alpes/porte-de-savoie_73151/porte-de-savoie-une-nouvelle-commune-victime-d-une-cyberattaque-en-savoie_57989837.html",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Cybersécurité : les petites communes cherchent à se protéger face au hacking (30 mars 2023)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cybersecurite-les-petites-communes-cherchent-a-se-proteger-face-au-hacking_5741741.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 mars 2023, une cyberattaque paralyse la commune nouvelle de Porte-de-Savoie (Francin, Les Marches), 3 700 habitants. Le maire Franck Villand confirme le vol de données personnelles de plusieurs habitants : parents d'élèves, usagers, élus et agents. Identités et coordonnées bancaires, utilisées pour les paiements du périscolaire ou de l'eau, sont concernées. La mairie indique qu'une partie des données a été diffusée sur internet. Une rançon a été réclamée puis refusée. Une plainte est déposée et un courrier d'information est distribué aux administrés, invités à surveiller leurs comptes.",
+  "timeline": [
+    {
+      "date": "2023-03-06",
+      "event": "Une cyberattaque paralyse le système informatique de la commune ; les services basculent en mode dégradé."
+    },
+    {
+      "date": "2023-03-08",
+      "event": "La commune dépose plainte auprès de la gendarmerie de Montmélian ; une rançon est réclamée puis refusée."
+    },
+    {
+      "date": "2023-03-09",
+      "event": "La mairie alerte les habitants : données d'identité et coordonnées bancaires dérobées, en partie diffusées sur internet."
+    }
+  ]
+}

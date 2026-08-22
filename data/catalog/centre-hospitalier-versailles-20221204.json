@@ -1,0 +1,45 @@
+{
+  "slug": "centre-hospitalier-versailles-20221204",
+  "entity": "Centre hospitalier de Versailles",
+  "siren": "267802718",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-12-04",
+    "publication": "2022-12-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rançongiciel avec message « Tous vos dossiers importants ont été dérobés et cryptés » ; rançon exigée, montant non confirmé ; aucune diffusion illégale des données établie à ce stade selon l'établissement"
+  },
+  "data_types": ["identite", "sante", "documents"],
+  "sources": [
+    {
+      "label": "Centre hospitalier de Versailles — Information des personnes concernées, cyberattaque du 3 décembre 2022",
+      "url": "https://www.ch-versailles.fr/0/1/34/49",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT — Cyberattaque au centre hospitalier de Versailles : la piste d'un usurpateur de LockBit (6 décembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252528032/Cyberattaque-au-centre-hospitalier-de-Versailles-la-piste-dun-usurpateur-de-LockBit",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Yvelines : ce que l'on sait de la cyberattaque qui a visé l'hôpital André-Mignot de Versailles (4 décembre 2022)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/yvelines-ce-que-l-on-sait-de-la-cyberattaque-qui-a-vise-l-hopital-andre-mignot-de-versailles_5522565.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 décembre 2022 à 21 heures, un rançongiciel frappe le centre hospitalier de Versailles, dont l'hôpital André-Mignot au Chesnay. Les écrans affichent : « Tous vos dossiers importants ont été dérobés et cryptés ». Un groupe revendique l'attaque et une rançon est exigée. L'établissement coupe son système, active un plan blanc et transfère six patients. Une page officielle d'information recense les données personnelles touchées : identité, numéro de Sécurité sociale, dossier patient, documents. Selon l'établissement, l'enquête n'établit à ce stade aucune diffusion illégale. LeMagIT évoque un usurpateur de LockBit.",
+  "timeline": [
+    {
+      "date": "2022-12-03",
+      "event": "Un rançongiciel chiffre le système d'information à 21 heures ; plan blanc activé, six patients transférés, plainte déposée."
+    },
+    {
+      "date": "2022-12-04",
+      "event": "Une revendication est signalée par franceinfo ; une rançon est demandée, sans que la franchise LockBit soit confirmée."
+    }
+  ]
+}

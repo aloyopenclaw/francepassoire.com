@@ -1,0 +1,48 @@
+{
+  "slug": "assurance-maladie-20220317",
+  "entity": "Assurance maladie (CNAM)",
+  "siren": "180035024",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-17",
+    "publication": "2022-03-18",
+    "confirmation": "2022-03-17"
+  },
+  "volume": {
+    "count": 510000,
+    "unit": "personnes",
+    "label": "510 000 assurés concernés selon l'Assurance maladie ; données administratives consultées via le service Infopatient (identité, numéro de Sécurité sociale, droits), sans coordonnées ni données médicales selon le communiqué"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Assurance maladie — Info presse : connexion de personnes non autorisées à des comptes amelipro (17 mars 2022)",
+      "url": "https://www.assurance-maladie.ameli.fr/presse/2022-03-17-infopresse-connexions-non-autorisees-comptes-amel",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde (archive) — Assurance-maladie : des données personnelles concernant plus de 500 000 Français volées (18 mars 2022)",
+      "url": "https://web.archive.org/web/2022/https://www.lemonde.fr/pixels/article/2022/03/18/assurance-maladie-des-donnees-personnelles-concernant-plus-de-500-000-francais-volees_6118149_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "InCyber News — Assurance maladie : fuite de données de 510 000 assurés",
+      "url": "https://incyber.org/article/assurance-maladie-fuite-de-donnees-de-510-000-assures/",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Assurance maladie détecte fin mars 2022 des connexions non autorisées à 19 comptes amelipro de professionnels de santé, dont les adresses e-mail étaient compromises. Avec un robot, les attaquants interrogent « en chaîne » le service Infopatient à partir de numéros de Sécurité sociale. Ils consultent des données d'identité et des droits : médecin traitant, complémentaire santé solidaire, aide médicale d'État, prise en charge à 100 %. Selon le communiqué du 17 mars, 510 000 assurés sont concernés. Les coordonnées et les données médicales ne sont pas touchées. La CNIL est notifiée le 16 mars, une plainte est déposée.",
+  "timeline": [
+    {
+      "date": "2022-03-16",
+      "event": "L'Assurance maladie détecte les connexions frauduleuses, bannit les adresses IP, réinitialise les comptes et notifie la CNIL."
+    },
+    {
+      "date": "2022-03-17",
+      "event": "Communiqué : 510 000 assurés concernés par les interrogations automatisées d'Infopatient ; plainte pénale déposée."
+    }
+  ]
+}
