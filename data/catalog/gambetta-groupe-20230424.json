@@ -1,0 +1,47 @@
+{
+  "slug": "gambetta-groupe-20230424",
+  "entity": "Gambetta Groupe",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "play",
+  "dates": {
+    "revendication": "2023-04-24",
+    "publication": "2023-04-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; exfiltration de certaines données reconnue par le groupe, nature exacte non précisée"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "ZATAZ — Le bailleur Gambetta groupe maltraité par les pirates du groupe Play (24 avril 2023)",
+      "url": "https://www.zataz.com/le-bailleur-gambetta-groupe-maltraite-par-les-pirates-du-groupe-play/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe Play, enseigne de rançongiciel, revendique le 24 avril 2023 une intrusion chez Gambetta Groupe, bailleur social gérant 30 000 logements dans le sud et l'ouest de la France. Selon l'entreprise, citée par ZATAZ, une exfiltration de certaines données, dont des données à caractère personnel, a été identifiée ; leur nature exacte n'est pas connue. Les attaquants évoquent des données confidentielles, des documents financiers, des contrats et des informations sur les clients et les employés, et menacent d'une diffusion le 2 mai. Une plainte a été déposée le 18 avril. Les volumes ne sont pas chiffrés.",
+  "timeline": [
+    {
+      "date": "2023-04-17",
+      "event": "Intrusion identifiée chez Gambetta Groupe ; les collaborateurs poursuivent leurs missions avec un accès restreint à l'informatique."
+    },
+    {
+      "date": "2023-04-18",
+      "event": "Dépôt de plainte par le groupe, selon les éléments relayés par ZATAZ."
+    },
+    {
+      "date": "2023-04-24",
+      "event": "Le groupe Play revendique le piratage et menace de diffuser les données le 2 mai."
+    },
+    {
+      "date": "2023-04-24",
+      "event": "L'entreprise reconnaît une exfiltration de certaines données, dont des données à caractère personnel, sans en préciser la nature exacte."
+    }
+  ]
+}
