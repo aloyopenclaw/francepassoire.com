@@ -1,0 +1,60 @@
+{
+  "slug": "cci-aix-marseille-provence-20230831",
+  "entity": "Chambre de Commerce et de l'Industrie d'Aix-Marseille-Provence (groupe CCIAMP)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-31",
+    "publication": "2023-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ampleur non chiffrée par l'établissement; LockBit 3.0 affirme détenir des données exfiltrées et fixe au 6 septembre la date de leur diffusion"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "CCI Aix-Marseille-Provence : Communication relative à la cyberattaque subie par le groupe CCIAMP",
+      "url": "https://www.cciamp.com/actualite/communication-relative-la-cyberattaque-subie-par-le-groupe-cciamp",
+      "kind": "officiel"
+    },
+    {
+      "label": "CCI Provence-Alpes-Côte d'Azur : Cybercriminalité, notre réseau CCI concerné (snapshot web.archive.org)",
+      "url": "http://web.archive.org/web/20241006122825/https://www.paca.cci.fr/actualite/cybercriminalite-notre-reseau-cci-concerne",
+      "kind": "archive"
+    },
+    {
+      "label": "Zataz : LockBit cible désormais la Chambre de Commerce et de l'Industrie d'Aix-Marseille-Provence (2 septembre 2023)",
+      "url": "https://www.zataz.com/lockbit-cible-desormais-la-chambre-de-commerce-et-de-lindustrie-daix-marseille-provence/",
+      "kind": "article"
+    },
+    {
+      "label": "ISBA-TP (école du groupe CCIAMP) : Cyber-attaque dans la nuit du 30 au 31 août",
+      "url": "https://www.isba.fr/actualites-isba-tp/cyberattaque",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Dans la nuit du 30 au 31 août 2023, la Chambre de Commerce et de l'Industrie d'Aix-Marseille-Provence subit une cyberattaque ciblant l'ensemble de son réseau informatique. L'établissement consulaire coupe ses systèmes pour protéger les données et confirme officiellement l'incident. Le 1er septembre à 21 h 22, le groupe de rançongiciels LockBit 3.0 revendique l'intrusion sur son blog de fuite et affirme détenir des données exfiltrées, avec une date de diffusion fixée au 6 septembre. Le réseau régional CCI Provence-Alpes-Côte d'Azur indique qu'une attaque a visé l'ensemble de son réseau dans la même nuit. Les écoles du groupe, dont l'ISBA-TP, informent leurs usagers.",
+  "timeline": [
+    {
+      "date": "2023-08-31",
+      "event": "Cyberattaque dans la nuit du 30 au 31 août sur le réseau informatique du groupe CCIAMP ; coupure des systèmes et communication officielle de l'établissement."
+    },
+    {
+      "date": "2023-09-01",
+      "event": "LockBit 3.0 revendique l'attaque à 21 h 22 et affiche un compte à rebours fixant au 6 septembre la diffusion des données exfiltrées."
+    },
+    {
+      "date": "2023-09-02",
+      "event": "Zataz relaie la revendication ; le même jour, la CCI PACA signale qu'une attaque a visé l'ensemble du réseau consulaire régional dans la nuit du 30 au 31 août."
+    },
+    {
+      "date": "2023-09-08",
+      "event": "L'ISBA-TP, école du groupe CCIAMP, publie une information à destination de ses apprenants."
+    }
+  ]
+}
