@@ -46,6 +46,11 @@ export interface Env {
    * crédential du scénario (Webhook → module « Create a Post » / post page).
    */
   MAKE_WEBHOOK_URL?: string;
+  /**
+   * Webhook du scénario Make LINKEDIN (make-webhook.url) — distinct du
+   * scénario X : chaque plateforme a son propre scénario et son URL.
+   */
+  LINKEDIN_WEBHOOK_URL?: string;
   /** Token membre LinkedIn (scope w_member_social, 60 jours). */
   LINKEDIN_ACCESS_TOKEN?: string;
   /** URN du membre émetteur, ex. urn:li:person:XXXXXX (page Token Generator). */

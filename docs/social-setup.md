@@ -19,7 +19,8 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | Secret wrangler | Plateforme | Nature de la valeur |
 |-----------------|------------|---------------------|
 | `X_BEARER` | X | Bearer token app-only (lecture seule — pour mémoire) |
-| `MAKE_WEBHOOK_URL` | X **et** LinkedIn | URL du webhook Make.com (LE crédential du scénario) |
+| `MAKE_WEBHOOK_URL` | X | URL du webhook du scénario Make X (LE crédential du scénario) |
+| `LINKEDIN_WEBHOOK_URL` | LinkedIn | URL du webhook du scénario Make LinkedIn (scénario DISTINCT du X) |
 | `LINKEDIN_ACCESS_TOKEN` | LinkedIn (client direct de référence) | Access token utilisateur (60 jours) |
 | `LINKEDIN_MEMBER_URN` | LinkedIn (client direct de référence) | URN du membre émetteur |
 | `FB_PAGE_ID` | Facebook | ID numérique de la Page |
@@ -35,7 +36,7 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | Plateforme | Statut | Ce que vous faites | Secret wrangler | Délai attendu |
 |------------|--------|--------------------|-----------------|---------------|
 | **X** | **Disponible via Make** | Créer un compte Make.com, un scénario Webhook → X « Create a Post », connecter @francepassoire | `MAKE_WEBHOOK_URL` | Immédiat (~20 min, offre gratuite Make) |
-| **LinkedIn** | **Disponible via Make** | Idem X avec le module LinkedIn « Create a Post » (le scénario peut être le même webhook) | `MAKE_WEBHOOK_URL` | Immédiat |
+| **LinkedIn** | **Disponible via Make** | Scénario Make distinct avec module LinkedIn « Create a Post » | `LINKEDIN_WEBHOOK_URL` | Validé (21/08) |
 | **Facebook Page** | **Disponible (self-service)** | App Meta, token Page via Graph API Explorer | `FB_PAGE_ID` + `FB_PAGE_TOKEN` | Immédiat (~20 min) |
 | **Instagram** | **Disponible (compte pro + app IG Login)** | Compte IG professionnel + app « Instagram API with Instagram Login » → token IGAA… | `IG_USER_ID` + `IG_TOKEN` | Fait (2026-08-22) |
 | **Bluesky** | **Disponible jour 1** | Créer un compte, générer un *App Password* | `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` | Immédiat (~5 min) |
@@ -69,7 +70,7 @@ wrangler secret put MAKE_WEBHOOK_URL
 # Valeur : l'URL https://hook.eu1.make.com/… du module webhook
 ```
 
-> **Une URL, deux plateformes — routez dans Make** : les clients X et LinkedIn lisent le MÊME secret `MAKE_WEBHOOK_URL` (le worker envoie une requête par plateforme mise en file). Pour qu'un scénario unique ne publie pas chaque post DEUX fois : ajoutez dans le scénario un **routeur** (module Router de Make) sur le corps reçu — le client LinkedIn envoie un champ `statut` (`confirmee`/`revendiquee`), le client X non. Route `statut` présent → module LinkedIn seul ; absent → module X seul. Ainsi chaque requête du worker déclenche exactement la publication de SA plateforme.
+> **DEUX scénarios, DEUX secrets** (constat 2026-08-22) : X et LinkedIn sont des scénarios Make distincts avec des webhooks distincts — `MAKE_WEBHOOK_URL` (scénario X, contrat `{text, mediaUrl}`) et `LINKEDIN_WEBHOOK_URL` (scénario LinkedIn, contrat `{text, url, statut, request_id}`). Ne jamais partager une URL entre les deux : chaque requête atteint exactement SA plateforme.
 
 ### Comportement du worker
 
