@@ -127,33 +127,32 @@ import WatchlistForm from '../components/WatchlistForm.astro';
         </div>
 
         <!-- Scenarios Grid.
-             Gabarit : boutons navigate('email'|'tel'|'mdp'|'nir') vers des sous-pages
-             qui n'existent pas sur le site → ancres vers les sections de CETTE page
-             qui traitent le scénario (même logique que les sous-pages du gabarit,
-             dont les CTA finaux pointent vers #proteger-verifier / #proteger-surveiller). -->
+             Gabarit : boutons navigate('email'|'tel'|'mdp'|'nir') → vraies
+             sous-pages dédiées /proteger/{email,tel,mdp,nir}/ (mêmes cartes,
+             mêmes classes ; seul le href remplace le nav SPA du gabarit). -->
         <div>
           <h3 class="font-display font-extrabold text-2xl mb-6">Choisissez votre scénario</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <a href="#proteger-verifier" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+            <a href="/proteger/email/" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
               <div class="mb-4"><span class="bg-brand-orange text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Cette semaine</span></div>
               <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon email a fuité</h3>
               <p class="font-body text-sm opacity-80">Phishing ciblé, spam, et risque sur vos autres comptes.</p>
             </a>
 
-            <a href="#proteger-surveiller" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+            <a href="/proteger/tel/" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
               <div class="mb-4"><span class="bg-brand-orange text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Cette semaine</span></div>
               <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon numéro a fuité</h3>
               <p class="font-body text-sm opacity-80">Smishing, démarchage abusif et fraude au conseiller.</p>
             </a>
 
-            <a href="#proteger-verifier" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+            <a href="/proteger/mdp/" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
               <div class="mb-4"><span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Agissez aujourd'hui</span></div>
               <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon mot de passe a fuité</h3>
               <p class="font-body text-sm opacity-80">Risque immédiat d'accès à vos comptes (credential stuffing).</p>
             </a>
 
-            <a href="#proteger-surveiller" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+            <a href="/proteger/nir/" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
               <div class="mb-4"><span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Agissez aujourd'hui</span></div>
               <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon numéro de Sécu a fuité</h3>
               <p class="font-body text-sm opacity-80">Usurpation d'identité, fraude aux remboursements.</p>
