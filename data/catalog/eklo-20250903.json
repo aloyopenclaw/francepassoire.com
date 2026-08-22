@@ -1,0 +1,41 @@
+{
+  "slug": "eklo-20250903",
+  "entity": "Eklo Hôtels",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; accès non autorisé à certaines données personnelles de clients du système de réservation, selon la communication de l'enseigne relayée par la veille"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "BonjourLaFuite (traqueur imirhil/aeris) — Eklo, enregistré le 3 septembre 2025 (communication de l'enseigne datée du 21 août)",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez Eklo Hotels (données du système de réservation, notification CNIL annoncée)",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/eklo-hotels/",
+      "kind": "article"
+    }
+  ],
+  "description": "Eklo Hôtels, chaîne française d'hôtellerie économique, informe ses clients vers le 21 août 2025 d'une cyberattaque contre son système de réservation. Celle-ci a permis un accès non autorisé à certaines données personnelles, avant que le traqueur BonjourLaFuite n'enregistre l'incident le 3 septembre. Les données concernées comprennent civilité, nom, prénom, adresse électronique et postale, numéro de téléphone, numéro de carte de fidélité et statut client, selon le traqueur. L'enseigne annonce le renforcement de ses dispositifs de sécurité et une notification à la CNIL. Elle signale aussi des tentatives où des fraudeurs se font passer pour Eklo ou des plateformes partenaires afin de soutirer des paiements. Aucun volume ni groupe attaquant n'est rendu public.",
+  "timeline": [
+    {
+      "date": "2025-08-21",
+      "event": "Eklo Hôtels communique auprès de ses clients sur un incident ayant permis l'accès non autorisé à certaines données personnelles (date portée par le traqueur BonjourLaFuite)."
+    },
+    {
+      "date": "2025-09-03",
+      "event": "L'incident est enregistré par le traqueur BonjourLaFuite puis relayé par la veille spécialisée, avec renforcement de sécurité et notification CNIL annoncés par l'enseigne."
+    }
+  ]
+}
