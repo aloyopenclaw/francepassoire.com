@@ -3,7 +3,7 @@
   "entity": "Trenitalia France",
   "siren": "520287004",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-06-30",
     "publication": "2026-06-30"
@@ -30,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 30 juin 2026, Trenitalia France adresse une communication aux personnes concernées par un incident de sécurité. Sa plateforme de vente et de gestion des titres de transport est touchée. La compagnie confirme qu'un tiers non autorisé a pu accéder à certaines données personnelles : informations d'identification, de contact et de voyage. Le courriel précise qu'aucun identifiant, mot de passe ni donnée de paiement n'est concerné. Les voyageurs sont invités à rester vigilants face aux tentatives de fraude. Le nombre de personnes touchées n'est pas communiqué.",
+  "description": "Le 30 juin 2026, Trenitalia France adresse une communication aux personnes concernées par un incident de sécurité. Sa plateforme de vente et de gestion des titres de transport est touchée. Selon la presse, la compagnie confirme qu'un tiers non autorisé a pu accéder à certaines données personnelles : informations d'identification, de contact et de voyage. Selon la presse, le courriel précise qu'aucun identifiant, mot de passe ni donnée de paiement n'est concerné. Les voyageurs sont invités à rester vigilants face aux tentatives de fraude. Le nombre de personnes touchées n'est pas communiqué.",
   "timeline": [
     {
       "date": "2026-06-30",

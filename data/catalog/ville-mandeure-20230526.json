@@ -2,7 +2,7 @@
   "slug": "ville-mandeure-20230526",
   "entity": "Ville de Mandeure",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-05-26",
     "publication": "2023-05-26"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; la commune de 5 000 habitants se voit exiger une rançon de 5 millions de dollars"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Tout Montbéliard : La Mairie de Mandeure victime d'une cyberattaque (27 mai 2023)",

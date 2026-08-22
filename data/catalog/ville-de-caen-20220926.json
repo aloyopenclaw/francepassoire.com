@@ -2,11 +2,10 @@
   "slug": "ville-de-caen-20220926",
   "entity": "Ville de Caen",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-26",
-    "publication": "2022-09-26",
-    "confirmation": "2022-09-26"
+    "publication": "2022-09-26"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le lundi 26 septembre 2022 vers 16 h 28, la Ville de Caen détecte un logiciel malveillant sur ses serveurs, entré par un serveur de messagerie selon Zataz. La cellule de crise isole l'ensemble du parc : serveurs coupés, services publics numériques suspendus, bibliothèques perturbées. La mairie informe quelques heures avant le conseil municipal. Les dégâts sont contenus grâce à un outil de détection de menaces et la majorité des services reprend un mois plus tard.",
+  "description": "Le lundi 26 septembre 2022 vers 16 h 28, la Ville de Caen détecte un logiciel malveillant sur ses serveurs, entré par un serveur de messagerie selon Zataz. La cellule de crise isole l'ensemble du parc : serveurs coupés, services publics numériques suspendus, bibliothèques perturbées. Selon la presse, la mairie informe quelques heures avant le conseil municipal. Les dégâts sont contenus grâce à un outil de détection de menaces et la majorité des services reprend un mois plus tard.",
   "timeline": [
     {
       "date": "2022-09-26",

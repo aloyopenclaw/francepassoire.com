@@ -2,7 +2,7 @@
   "slug": "ville-de-saumur-20220323",
   "entity": "Ville de Saumur",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-03-23"
   },
@@ -26,7 +26,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 23 mars 2022, la sous-préfecture du Maine-et-Loire Saumur est la cible d'une cyberattaque qui paralyse une partie de son système informatique. La mairie indique qu'aucune donnée n'a été extorquée malgré les perturbations. L'incident s'inscrit dans la série d'attaques contre les collectivités territoriales françaises au premier semestre 2022.",
+  "description": "Le 23 mars 2022, la sous-préfecture du Maine-et-Loire Saumur est la cible d'une cyberattaque qui paralyse une partie de son système informatique. Selon la presse, la mairie indique qu'aucune donnée n'a été extorquée malgré les perturbations. L'incident s'inscrit dans la série d'attaques contre les collectivités territoriales françaises au premier semestre 2022.",
   "timeline": [
     {
       "date": "2022-03-23",

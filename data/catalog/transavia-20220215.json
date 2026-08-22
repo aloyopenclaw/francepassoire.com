@@ -2,7 +2,7 @@
   "slug": "transavia-20220215",
   "entity": "Transavia France (compagnie aérienne, filiale d'Air France-KLM)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-02-15",
     "publication": "2022-02-18"
@@ -29,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Des pirates trouvent le moyen d'extraire des données privées et personnelles depuis un serveur de fichiers de Transavia, filiale du groupe Air France-KLM. Les documents concernent des salariés : CV, lettres de motivation, passeports, documents médicaux et certificats de membre d'équipage délivrés par la DGAC. Le 15 février 2022, les pirates contactent directement les employés par courriel et affirment avoir supprimé les copies obtenues. La compagnie confirme l'intrusion et le vol de données.",
+  "description": "Des pirates trouvent le moyen d'extraire des données privées et personnelles depuis un serveur de fichiers de Transavia, filiale du groupe Air France-KLM. Les documents concernent des salariés : CV, lettres de motivation, passeports, documents médicaux et certificats de membre d'équipage délivrés par la DGAC. Le 15 février 2022, les pirates contactent directement les employés par courriel et affirment avoir supprimé les copies obtenues. Selon la presse, la compagnie confirme l'intrusion et le vol de données.",
   "timeline": [
     {
       "date": "2022-02-15",

@@ -2,7 +2,7 @@
   "slug": "treves-20230219",
   "entity": "Trèves Group",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-02-19",
     "publication": "2023-02-21"
@@ -32,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le week-end du 18 et 19 février 2023, Trèves Group, équipementier automobile français spécialisé dans les textiles et matériaux pour l'habitat automobile, est visé par une cyberattaque majeure. L'entreprise, basée à Issy-les-Moulineaux, publie un communiqué retraçant l'incident, retiré ultérieurement de son site. Le 21 février 2023, l'enseigne LockBit 3.0 inscrit treves-group.com sur son site vitrine et revendique le vol de données. Kaspersky ICS CERT documente l'incident dans son panorama industriel du premier semestre 2023. Aucun volume de données dérobées n'est précisé.",
+  "description": "Le week-end du 18 et 19 février 2023, Trèves Group, équipementier automobile français spécialisé dans les textiles et matériaux pour l'habitat automobile, est visé par une cyberattaque majeure. L'entreprise, basée à Issy-les-Moulineaux, publie un communiqué retraçant l'incident, retiré ultérieurement de son site. Le 21 février 2023, l'enseigne LockBit 3.0 inscrit treves-group.com sur son site vitrine et revendique le vol de données. Kaspersky ICS CERT documente l'incident dans son panorama industriel du premier semestre 2023. Selon la presse, aucun volume de données dérobées n'est précisé.",
   "timeline": [
     {
       "date": "2023-02-19",

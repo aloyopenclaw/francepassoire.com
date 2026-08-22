@@ -3,11 +3,10 @@
   "entity": "Ville de Poitiers et Grand Poitiers",
   "siren": "890900087",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-08-29",
-    "publication": "2025-09-02",
-    "confirmation": "2025-09-04"
+    "publication": "2025-09-02"
   },
   "volume": {
     "count": 0,

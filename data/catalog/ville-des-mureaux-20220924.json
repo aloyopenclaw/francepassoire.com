@@ -2,7 +2,7 @@
   "slug": "ville-des-mureaux-20220924",
   "entity": "Ville des Mureaux",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-24",
     "publication": "2022-09-28"
@@ -32,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 24 septembre 2022, la commune des Mureaux, dans les Yvelines, subit une cyberattaque qui paralyse la mairie. L'impact sur les habitants reste limité selon actu.fr. En conseil municipal, le maire confirme une cyberattaque avec rançongiciel, que LeMagIT cite dans son panorama de la transparence des collectivités face aux ransomwares en 2022. Les services municipaux sont rétablis progressivement.",
+  "description": "Le 24 septembre 2022, la commune des Mureaux, dans les Yvelines, subit une cyberattaque qui paralyse la mairie. L'impact sur les habitants reste limité selon actu.fr. Selon la presse, en conseil municipal, le maire confirme une cyberattaque avec rançongiciel, que LeMagIT cite dans son panorama de la transparence des collectivités face aux ransomwares en 2022. Les services municipaux sont rétablis progressivement.",
   "timeline": [
     {
       "date": "2022-09-24",

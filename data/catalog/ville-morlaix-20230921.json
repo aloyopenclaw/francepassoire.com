@@ -2,7 +2,7 @@
   "slug": "ville-morlaix-20230921",
   "entity": "Ville de Morlaix",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-09-21",
     "publication": "2023-09-21"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "les données des deux serveurs chiffrés ont pu être restaurées depuis des sauvegardes saines ; aucun vol de données constaté selon la collectivité"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Ouest-France : La Ville de Morlaix fait face à une attaque informatique (21 septembre 2023, archive)",
