@@ -1,0 +1,47 @@
+{
+  "slug": "alptis-20230825",
+  "entity": "Alptis (courtier en prévoyance et santé)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-08-25",
+    "publication": "2023-09-06",
+    "confirmation": "2023-09-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "quelques dizaines d'adhérents touchés selon la directrice générale d'Alptis Prévoyance et Santé; décompte exact non communiqué"
+  },
+  "data_types": [
+    "credentials",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Le Journal des Entreprises : Alptis. Nous enregistrons des tentatives de cyberattaques tous les jours (entretien avec la directrice générale)",
+      "url": "https://www.lejournaldesentreprises.com/article/alptis-nous-enregistrons-des-tentatives-de-cyberattaques-tous-les-jours-2069320",
+      "kind": "article"
+    },
+    {
+      "label": "Le Progrès (16 septembre 2023) : Après une cyber-attaque, le groupe Alptis appelle ses adhérents à la prudence",
+      "url": "https://www.leprogres.fr/economie/2023/09/16/apres-une-cyber-attaque-le-groupe-alptis-appelle-ses-adherents-a-la-prudence",
+      "kind": "article"
+    }
+  ],
+  "description": "Le vendredi 25 août 2023, les systèmes d'Alptis, groupe de courtage lyonnais spécialisé en prévoyance et santé, détectent un nombre anormalement élevé de requêtes de connexion aux espaces assurés des adhérents. Des pirates utilisaient des couples identifiants et mots de passe issus de fuites sur d'autres sites, achetés en masse en ligne. Alptis ferme les espaces adhérents pendant le week-end et les rouvre le lundi suivant. Quelques dizaines de clients sont touchés, tous contactés, leurs dossiers vérifiés, notamment pour s'assurer de l'absence de changement de RIB. Les mots de passe de l'ensemble des clients sont réinitialisés et un captcha est ajouté. L'entreprise communique officiellement le 5 septembre 2023 et appelle ses adhérents à la prudence face aux risques d'hameçonnage.",
+  "timeline": [
+    {
+      "date": "2023-08-25",
+      "event": "Détection de requêtes de connexion anormales sur les espaces assurés; fermeture préventive des espaces adhérents pour le week-end."
+    },
+    {
+      "date": "2023-09-05",
+      "event": "Alptis communique officiellement sur la cyberattaque par réutilisation d'identifiants."
+    },
+    {
+      "date": "2023-09-16",
+      "event": "Le Progrès relaie l'appel à la prudence lancé aux adhérents après l'intrusion."
+    }
+  ]
+}

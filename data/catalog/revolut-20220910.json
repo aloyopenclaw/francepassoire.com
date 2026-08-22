@@ -1,0 +1,53 @@
+{
+  "slug": "revolut-20220910",
+  "entity": "Revolut",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-10",
+    "publication": "2022-09-21",
+    "confirmation": "2022-09-21"
+  },
+  "volume": {
+    "count": 50150,
+    "unit": "personnes",
+    "label": "50 150 clients déclarés à l'autorité lituanienne de protection des données, dont environ 20 200 dans l'Espace économique européen selon BleepingComputer relayé par BFM Business; Revolut évoque de son côté 0,16 % de ses clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "BFM Business (21 septembre 2022) : Banque en ligne. Revolut confirme le piratage de dizaines de milliers de clients",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/banque-en-ligne-revolut-confirme-le-piratage-de-dizaines-de-milliers-de-clients_AV-202209210212.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien (21 septembre 2022) : Fuite de données. La néobanque Revolut piratée, près de 50 000 clients concernés",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-la-neobanque-revolut-piratee-pres-de-50000-clients-concernes-21-09-2022-FVWUFOYRYNDZHEWNUIKSDVZP4Q.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France (22 septembre 2022) : Une banque en ligne piratée, les données personnelles de 50 000 clients exposées (archive)",
+      "url": "https://web.archive.org/web/20220922141151/https://www.ouest-france.fr/societe/cyberattaque/une-banque-en-ligne-piratee-les-donnees-personnelles-de-50-000-clients-exposees-a8a6f39a-39a9-11ed-a939-a7e1706647a0",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 septembre 2022, un tiers non autorisé accède pendant une courte période aux données personnelles de 0,16 % des clients de Revolut, néobanque britannique agréée en Lituanie qui revendique environ 20 millions de clients, dont une large base en France. Selon la déclaration faite à l'autorité lituanienne de protection des données et relayée par BleepingComputer, 50 150 personnes sont concernées, dont environ 20 200 dans l'Espace économique européen. Les données exposées varient selon les victimes: adresses électroniques, noms complets, adresses postales, numéros de téléphone, données de carte de paiement et données de compte. Revolut indique avoir identifié et isolé l'attaque immédiatement, contacté les clients concernés et précise qu'aucun argent n'a été dérobé. La presse française révèle l'incident le 21 septembre 2022.",
+  "timeline": [
+    {
+      "date": "2022-09-10",
+      "event": "Un tiers non autorisé accède aux données de 0,16 % des clients de Revolut pendant une courte période."
+    },
+    {
+      "date": "2022-09-21",
+      "event": "Revolut confirme l'attaque à TechCrunch; BFM Business et Le Parisien révèlent 50 150 clients concernés selon la déclaration lituanienne."
+    },
+    {
+      "date": "2022-09-22",
+      "event": "Ouest-France relaie la fuite et rappelle les risques d'hameçonnage ciblé pour les clients touchés."
+    }
+  ]
+}

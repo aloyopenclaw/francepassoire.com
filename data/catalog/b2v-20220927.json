@@ -1,0 +1,46 @@
+{
+  "slug": "b2v-20220927",
+  "entity": "B2V (groupe de protection sociale)",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-09-27",
+    "publication": "2022-10-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume communiqué; système d'information et téléphonie à l'arrêt depuis le 27 septembre, site internet toujours hors ligne trois semaines plus tard; selon L'Argus de l'assurance, le groupe de hackers Red Alert aurait pris le contrôle des comptes administrateurs"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "B2V, message officiel sur la page d'accueil du site (capture archive du 4 octobre 2022) : panne informatique, système d'information et téléphonie à l'arrêt",
+      "url": "https://web.archive.org/web/20221004163603/https://www.b2v.fr/",
+      "kind": "officiel"
+    },
+    {
+      "label": "L'Argus de l'assurance (18 octobre 2022) : Cyberattaque. Un groupe de protection sociale à l'arrêt (archive)",
+      "url": "https://web.archive.org/web/20221018101518/https://www.argusdelassurance.com/assurance-de-personnes/cyberattaque-un-groupe-de-protection-sociale-a-l-arret.205877",
+      "kind": "article"
+    }
+  ],
+  "description": "Le mardi 27 septembre 2022, le groupe de protection sociale B2V, acteur de la retraite complémentaire et de la prévoyance, annonce sur son site une panne informatique ayant immobilisé l'ensemble de son système d'information et de sa téléphonie. Les équipes retraite et action sociale deviennent injoignables, mais B2V assure que le versement des pensions payables au 1er octobre est maintenu. Le site reste hors ligne plusieurs semaines. Le 18 octobre 2022, L'Argus de l'assurance rapporte que le groupe de hackers Red Alert, récemment constitué, aurait pris le contrôle des comptes administrateurs du groupe. Les volumes de données potentiellement concernés ne sont pas communiqués et l'attribution reste non confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2022-09-27",
+      "event": "B2V annonce une panne informatique immobilisant son système d'information et sa téléphonie; les pensions d'octobre restent assurées."
+    },
+    {
+      "date": "2022-10-04",
+      "event": "La page de maintenance du site est toujours en ligne trois semaines après le début de l'incident."
+    },
+    {
+      "date": "2022-10-18",
+      "event": "L'Argus de l'assurance rapporte que Red Alert aurait pris le contrôle des comptes administrateurs; aucun volume de données n'est chiffré."
+    }
+  ]
+}
