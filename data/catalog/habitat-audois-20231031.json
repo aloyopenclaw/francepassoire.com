@@ -1,0 +1,37 @@
+{
+  "slug": "habitat-audois-20231031",
+  "entity": "Habitat Audois",
+  "siren": "271100034",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-10-31",
+    "publication": "2023-10-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; interruption de services, aucune exfiltration de données annoncée publiquement"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "L'Indépendant — Aude : le bailleur social Habitat Audois visé par une cyberattaque, retour à la normale progressif (31 octobre 2023)",
+      "url": "https://www.lindependant.fr/2023/10/31/aude-le-bailleur-social-habitat-audois-vise-par-une-cyberattaque-retour-a-la-normal-progressif-11553430.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Habitat Audois, office public de l'habitat de l'Aude, a été victime d'une cyberattaque le 21 octobre 2023, rapporte L'Indépendant. L'attaque a entraîné l'arrêt de l'accès aux messageries et du standard téléphonique du bailleur ; des numéros provisoires ont été mis en place pour traiter les réclamations techniques urgentes des locataires. Au 31 octobre, l'office n'annonçait pas de date de retour à la normale et évoquait un rétablissement progressif dans les semaines suivantes. Aucune exfiltration de données n'a été annoncée publiquement à ce stade ; le volume de données concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2023-10-21",
+      "event": "Cyberattaque : arrêt de l'accès aux messageries et du standard téléphonique ; transfert des appels vers une astreinte."
+    },
+    {
+      "date": "2023-10-31",
+      "event": "L'office annonce un rétablissement progressif, sans date de retour à la normale, et publie des numéros provisoires par service."
+    }
+  ]
+}

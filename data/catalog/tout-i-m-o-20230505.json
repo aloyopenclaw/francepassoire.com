@@ -1,0 +1,45 @@
+{
+  "slug": "tout-i-m-o-20230505",
+  "entity": "Tout-I.M.O.",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-05-05",
+    "publication": "2023-05-05"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; données de l'agence portant sur seize années d'activité selon Le Progrès"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Progrès — Victime d'une cyberattaque, cette agence immobilière du Coteau a perdu toutes ses données (5 mai 2023)",
+      "url": "https://www.leprogres.fr/economie/2023/05/05/comment-l-agence-immobiliere-tout-imo-a-ete-victime-d-une-cyberattaque-et-d-un-piratage-de-ses-donnees",
+      "kind": "article"
+    },
+    {
+      "label": "Le Progrès — Tout-I.M.O. victime d'un piratage informatique, son dirigeant pensait tout arrêter mais il s'accroche (21 septembre 2023)",
+      "url": "https://www.leprogres.fr/economie/2023/09/21/tout-i-m-o-victime-d-un-piratage-informatique-son-dirigeant-pensait-tout-arreter-mais-il-s-accroche",
+      "kind": "article"
+    }
+  ],
+  "description": "L'agence immobilière Tout-I.M.O., au Coteau (Loire), a perdu l'ensemble de ses données début mars 2023 après une cyberattaque visant Transactimo, le prestataire hébergeant son site internet et son logiciel interne, rapporte Le Progrès. Le gérant reçoit le 10 mars un courriel d'alerte du webmaster. Seize années d'activité ont disparu avec les fichiers de l'agence ; le dirigeant indique en septembre avoir été rançonné pour tenter de les récupérer. Le mode opératoire, le volume de données personnelles concernées et l'éventuelle diffusion des fichiers ne sont pas précisés ; aucun groupe n'est identifié publiquement.",
+  "timeline": [
+    {
+      "date": "2023-03-10",
+      "event": "Le gérant de l'agence reçoit à 5 h 36 un courriel « situation très grave » du webmaster de Transactimo, prestataire hébergeant site et logiciel."
+    },
+    {
+      "date": "2023-05-05",
+      "event": "Le Progrès documente la cyberattaque et la perte de l'ensemble des données de l'agence."
+    },
+    {
+      "date": "2023-09-21",
+      "event": "Le dirigeant raconte avoir été rançonné pour récupérer seize années de données, puis avoir relancé son activité."
+    }
+  ]
+}

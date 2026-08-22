@@ -1,0 +1,39 @@
+{
+  "slug": "meduane-habitat-20250923",
+  "entity": "Méduane Habitat",
+  "siren": "556550325",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "qilin",
+  "dates": {
+    "revendication": "2025-09-23",
+    "publication": "2025-09-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non chiffré ; menace de diffusion émise par Qilin, sans volume publié"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — www.meduane-habitat.fr cible d'une cyberattaque revendiquée par Qilin (23 septembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/www-meduane-habitat-fr-rw_ZDNkM0xtMWxaSFZoYm1VdGFHRmlhWFJoZEM1bWNrQnhhV3hwYmc9PQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — Qilin Ransomware Strikes French Housing Provider MEDUANE HABITAT (24 septembre 2025)",
+      "url": "https://www.dexpose.io/qilin-ransomware-strikes-french-housing-provider-meduane-habitat/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 septembre 2025, l'enseigne de rançongiciel Qilin revendique une cyberattaque contre Méduane Habitat, entreprise du logement social qui gère environ 6 300 unités, principalement à Laval et dans son agglomération, selon la revendication relayée par FrenchBreaches et DeXpose. Le groupe menace de diffuser des données sensibles si aucune négociation n'est engagée. Aucun volume d'enregistrements ni aucune catégorie précise de données ne sont publiés ; l'entreprise n'a pas confirmé publiquement l'incident à ce stade.",
+  "timeline": [
+    {
+      "date": "2025-09-23",
+      "event": "Qilin revendique l'attaque de Méduane Habitat et menace de fuiter des données sensibles en l'absence de négociation."
+    }
+  ]
+}
