@@ -1,0 +1,66 @@
+{
+  "slug": "darty-20180108",
+  "entity": "Établissements Darty et Fils (Darty)",
+  "siren": "542086616",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-01-08",
+    "publication": "2018-01-09",
+    "confirmation": "2018-01-08"
+  },
+  "volume": {
+    "count": 912938,
+    "unit": "enregistrements",
+    "label": "912 938 fiches de demande de service après-vente potentiellement accessibles selon la délibération SAN-2018-001"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « COMMERCE DE DETAIL D'APPAREILS ELECTROMENAGERS », sanction pécuniaire (8 janvier 2018)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2018-001 du 8 janvier 2018 contre la société X (Darty, identifiée par la presse), 100 000 euros (capture Wayback du 20/05/2024)",
+      "url": "http://web.archive.org/web/20240520095705/https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000036403140/",
+      "kind": "archive"
+    },
+    {
+      "label": "Vivaldi Chronos — DARTY : 100 000 euros d'amende pour défaut de protection de ses données clients (8 mars 2018)",
+      "url": "https://vivaldi-chronos.com/darty-100-000-euros-d-amende-pour-defaut-de-protection-de-ses-donnees-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "DS Avocats — Sanction de DARTY par la CNIL : étendue de l'obligation de sécurité du responsable de traitement (11 janvier 2018)",
+      "url": "https://www.dsavocats.com/sanction-de-darty-cnil-etendue-de-lobligation-de-securite-responsable-de-traitement/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 janvier 2018, la formation restreinte de la CNIL a sanctionné Darty de 100 000 euros. En février 2017, l'éditeur du site Zataz avait signalé qu'un formulaire de service après-vente, développé par le prestataire Eptica, exposait les fiches clients : selon la délibération SAN-2018-001, 912 938 fiches étaient accessibles en modifiant un identifiant dans l'URL. La CNIL a constaté que les fiches restaient accessibles lors d'un second contrôle, quinze jours après le premier. Selon la délibération relayée par DS Avocats, le recours à un sous-traitant ne déchargeait pas Darty de son obligation de sécurité. Le Monde a révélé la sanction le 9 janvier 2018 ; Darty a contesté toute fuite constatée.",
+  "timeline": [
+    {
+      "date": "2017-02-01",
+      "event": "Zataz signale à la CNIL la faille du formulaire de service après-vente exposant les données clients."
+    },
+    {
+      "date": "2017-03-02",
+      "event": "Contrôle en ligne : près d'un million de fiches de demande sont potentiellement accessibles."
+    },
+    {
+      "date": "2017-03-15",
+      "event": "Second contrôle : les fiches restent accessibles ; la correction intervient le soir même."
+    },
+    {
+      "date": "2018-01-08",
+      "event": "Sanction pécuniaire de 100 000 euros, rendue publique, pour manquement à l'obligation de sécurité."
+    },
+    {
+      "date": "2018-01-09",
+      "event": "Le Monde et Les Échos relaient la sanction ; Darty s'étonne de la décision et se réserve un recours."
+    }
+  ]
+}

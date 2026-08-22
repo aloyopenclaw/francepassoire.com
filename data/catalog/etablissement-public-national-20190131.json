@@ -1,0 +1,37 @@
+{
+  "slug": "etablissement-public-national-20190131",
+  "entity": "Un établissement public national à caractère administratif (entité non nommée)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2019-01-31",
+    "confirmation": "2019-01-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; injonctions sous astreinte"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ÉTABLISSEMENT PUBLIC NATIONAL A CARACTÈRE ADMINISTRATIF », injonctions sous astreintes (31 janvier 2019)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 40e rapport d'activité 2019 (PDF, p. 92-94) : tableau des sanctions 2019, injonctions sous astreinte de 200 à 3 000 euros par jour de retard",
+      "url": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-40e_rapport_annuel_2019.pdf",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 31 janvier 2019, la formation restreinte de la CNIL a prononcé des injonctions sous astreinte contre un établissement public national à caractère administratif. Le tableau officiel des sanctions retient un défaut de sécurité des données personnelles. La dénomination n'est pas publique : la décision n'a donné lieu à aucun communiqué nominatif. Le 40e rapport d'activité recense pour 2019 cinq injonctions sous astreinte, de 200 à 3 000 euros par jour de retard. Les organismes concernés n'y sont pas nommés. Cette décision illustre l'usage du pouvoir d'injonction assorti d'astreinte créé par le RGPD, y compris pour des traitements publics.",
+  "timeline": [
+    {
+      "date": "2019-01-31",
+      "event": "Injonctions sous astreinte pour défaut de sécurité des données personnelles."
+    }
+  ]
+}

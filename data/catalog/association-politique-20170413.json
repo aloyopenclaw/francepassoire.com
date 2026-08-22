@@ -1,0 +1,37 @@
+{
+  "slug": "association-politique-20170413",
+  "entity": "Une association politique (entité non nommée)",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-04-13",
+    "confirmation": "2017-04-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; avertissement non public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ASSOCIATION POLITIQUE », violation de données des adhérents d'un parti politique, défaut de sécurité et de confidentialité, avertissement non public (13 avril 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 13/04/2017 — violation de données des adhérents d'un parti politique",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 13 avril 2017, la formation restreinte de la CNIL a prononcé un avertissement non public à l'encontre d'une association politique. Le tableau officiel et sa version archivée de novembre 2018 évoquent une violation des données des adhérents d'un parti politique. La cause retenue est un défaut de sécurité et de confidentialité. La décision n'a pas été rendue publique et l'entité n'est pas nommée ; aucune précision sur les volumes concernés n'a été publiée.",
+  "timeline": [
+    {
+      "date": "2017-04-13",
+      "event": "Avertissement non public pour défaut de sécurité ayant entraîné une violation des données des adhérents."
+    }
+  ]
+}

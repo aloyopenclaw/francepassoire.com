@@ -1,0 +1,37 @@
+{
+  "slug": "site-de-presse-en-ligne-20170518",
+  "entity": "Un site de presse en ligne (entité non nommée)",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2017-05-18",
+    "confirmation": "2017-05-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; sanction pécuniaire non publique"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « PRESSE », cookies sur site de presse en ligne, défaut d'information et absence de mécanisme valable d'opposition, sanction pécuniaire non publique (18 mai 2017)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 18/05/2017 — presse, cookies sans mécanisme valable d'opposition",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 18 mai 2017, la formation restreinte de la CNIL a prononcé une sanction pécuniaire non publique à l'encontre d'un éditeur de presse en ligne. La décision sanctionnait des cookies déposés sans information préalable des internautes. Selon le tableau officiel et sa version archivée de novembre 2018, aucun mécanisme valable d'opposition n'était proposé. Le tableau relève aussi des durées de conservation non proportionnées et un défaut de réponse aux demandes de la CNIL. L'entité n'est pas nommée et le montant n'a pas été publié.",
+  "timeline": [
+    {
+      "date": "2017-05-18",
+      "event": "Sanction pécuniaire non publique : cookies déposés sans information ni mécanisme d'opposition conforme."
+    }
+  ]
+}
