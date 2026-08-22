@@ -20,6 +20,7 @@ import {
   encryptEmailAes,
   enqueueInstantAlert,
   mintConfirmToken,
+  runInstantSweep,
   runWeeklyDigest,
   type FicheDigest,
 } from '../workers/api/src/watchlist';
@@ -98,6 +99,7 @@ function makeEnv(overrides: MakeEnvOverrides = {}): { env: Env; raw: DatabaseSyn
   const env: Env = {
     DB: d1,
     RATE_LIMIT: kv,
+    RUN_STATE: kv,
     TURNSTILE_SECRET: overrides.turnstileSecret,
     BREVO_API_KEY: overrides.brevoKey,
     WATCHLIST_AES_KEY: overrides.aesKey,
@@ -501,9 +503,9 @@ describe('GET /api/watchlist/confirm|unsub|prefs|status', () => {
 const noSleep = async (): Promise<void> => {};
 
 async function digestEnv(subscribers: SubscriberFixture[]) {
-  const { env, raw } = makeEnv(envComplet);
+  const { env, raw, kv } = makeEnv(envComplet);
   for (const s of subscribers) await insertSubscriber(raw, s);
-  return { env, raw };
+  return { env, raw, kv };
 }
 
 describe('runWeeklyDigest — cron lundi 09:00 Paris', () => {
@@ -714,5 +716,206 @@ describe('enqueueInstantAlert — contrat testé (câblage CI en T47)', () => {
 
     expect(result).toEqual({ matched: 0, sent: 0 });
     expect(fetchFn).not.toHaveBeenCalled();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// T31-complément — balayage « immédiat » (runInstantSweep) + gabarits verrouillés
+// ---------------------------------------------------------------------------
+
+const ficheSanteStatut: FicheDigest = { ...ficheSante, statut: 'revendiquee', description: 'Le logiciel de rendez-vous médicaux : profils revendiqués sur un forum.' };
+
+describe('runInstantSweep — bootstrap, diff, alertes', () => {
+  it('premier passage = bootstrap : état posé, AUCUN envoi (sinon 1000 alertes)', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [ficheSanteStatut] }),
+      sleep: noSleep,
+    });
+
+    expect(result).toEqual({ bootstrap: true, nouveaux: 0, changements: 0, envois: 0, sauts: 0 });
+    expect(brevoCalls).toHaveLength(0);
+    expect(kv.store.get('watchlist:instant:last_catalog')?.value).toContain('alaxione-20260818');
+  });
+
+  it('nouvelle fiche → AlerteInitiale aux abonnés quotidiens matchant (seulement eux)', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's1', email: 'abonne-sante@example.com', prefs: { sectors: ['sante'], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+      { id: 's2', email: 'hebdo@example.com', prefs: { sectors: ['sante'], data_types: [], entities: [], freq: 'hebdo' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'ancienne-20260101': { statut: 'confirmee' } }));
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [{ ...ficheSanteStatut, slug: 'nouvelle-20260821' }] }),
+      sleep: noSleep,
+    });
+
+    expect(result.nouveaux).toBe(1);
+    expect(result.envois).toBe(1);
+    expect(brevoCalls).toHaveLength(1);
+    const call = brevoCalls[0]!;
+    expect(call.body.to[0]!.email).toBe('abonne-sante@example.com');
+    expect(call.body.subject).toBe('Alerte Passoire : Alaxione');
+    expect(call.body.htmlContent).toContain('ALERTE PASSOIRE');
+    expect(call.body.htmlContent).toContain('DÉTECTION IMMÉDIATE');
+    expect(call.body.htmlContent).toContain('Revendiquée');
+    expect(call.body.htmlContent).toContain('https://francepassoire.com/fiche/nouvelle-20260821/');
+    expect(call.body.htmlContent).toMatch(/Se désinscrire/);
+    expect(call.body.textContent).toContain('nouvelle-20260821');
+  });
+
+  it('revendiquée → confirmée → MiseAJourDeStatut (objet + bandeau vert + checkmark)', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'alaxione-20260818': { statut: 'revendiquee' } }));
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [{ ...ficheSanteStatut, statut: 'confirmee' }] }),
+      sleep: noSleep,
+    });
+
+    expect(result.changements).toBe(1);
+    expect(brevoCalls).toHaveLength(1);
+    const call = brevoCalls[0]!;
+    expect(call.body.subject).toBe('Mise à jour Passoire : Alaxione confirmée');
+    expect(call.body.htmlContent).toContain('FUITE CONFIRMÉE');
+    expect(call.body.htmlContent).toContain('Confirmée');
+    expect(call.body.htmlContent).toContain('officiellement confirmée');
+  });
+
+  it('aucun changement → aucun envoi, aucune écriture KV (quota épargné)', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'alaxione-20260818': { statut: 'revendiquee' } }));
+    const brevoCalls: BrevoCall[] = [];
+    const putSpy = vi.spyOn(kv, 'put');
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [ficheSanteStatut] }),
+      sleep: noSleep,
+    });
+
+    expect(result).toEqual({ bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0 });
+    expect(brevoCalls).toHaveLength(0);
+    expect(putSpy).not.toHaveBeenCalled();
+    putSpy.mockRestore();
+  });
+
+  it('rafale : plafond INSTANT_CAP fiches par passage, les plus récentes d\'abord', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({}));
+    const fichesRaflales = Array.from({ length: 30 }, (_, i) => ({
+      ...ficheSanteStatut,
+      slug: `fiche-${String(i).padStart(2, '0')}-20260821`,
+      dates: { revendication: `2026-08-${String((i % 20) + 1).padStart(2, '0')}` },
+    }));
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: fichesRaflales }),
+      sleep: noSleep,
+    });
+
+    expect(result.nouveaux).toBe(30);
+    expect(result.envois).toBe(1);
+    expect(brevoCalls).toHaveLength(1);
+    expect(brevoCalls[0]!.body.subject).toBe('Alerte Passoire : 30 nouvelles fuites');
+    expect(brevoCalls[0]!.body.htmlContent).toContain('fiche-00-20260821');
+    expect(brevoCalls[0]!.body.htmlContent).toContain('fiche-29-20260821');
+  });
+
+  it('rafale petite (≤5) : alertes individuelles par fiche', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({}));
+    const petites = Array.from({ length: 3 }, (_, i) => ({ ...ficheSanteStatut, slug: `petite-${String(i)}-20260821` }));
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: petites }),
+      sleep: noSleep,
+    });
+
+    expect(result.envois).toBe(3);
+    expect(brevoCalls).toHaveLength(3);
+    expect(brevoCalls.map((c) => c.body.subject)).toEqual([
+      'Alerte Passoire : Alaxione',
+      'Alerte Passoire : Alaxione',
+      'Alerte Passoire : Alaxione',
+    ]);
+  });
+
+  it('état KV corrompu → re-bootstrap silencieux, aucun envoi', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', '{pas du json');
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [ficheSanteStatut] }),
+      sleep: noSleep,
+    });
+
+    expect(result.bootstrap).toBe(true);
+    expect(brevoCalls).toHaveLength(0);
+  });
+
+  it('gabarits verrouillés : aucun em-dash (—) dans les rendus HTML/texte', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'ancienne-20260101': { statut: 'confirmee' } }));
+    const brevoCalls: BrevoCall[] = [];
+
+    await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [{ ...ficheSanteStatut, slug: 'dash-test-20260821', description: 'Une description avec des faits. Le volume : 12 000 comptes.' }] }),
+      sleep: noSleep,
+    });
+
+    expect(brevoCalls).toHaveLength(1);
+    const body = brevoCalls[0]!.body;
+    expect(body.htmlContent).not.toContain('—');
+    expect(body.textContent).not.toContain('—');
+  });
+});
+
+describe('runInstantSweep — alerte groupée (rafale)', () => {
+  it('plus de 5 nouvelles fiches → UNE seule alerte groupée (cartes empilées), pas 20 emails', async () => {
+    const { env, kv } = await digestEnv([
+      { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true },
+    ]);
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({}));
+    const rafale = Array.from({ length: 9 }, (_, i) => ({
+      ...ficheSanteStatut,
+      slug: `rafale-${String(i)}-20260821`,
+    }));
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: rafale }),
+      sleep: noSleep,
+    });
+
+    expect(result.nouveaux).toBe(9);
+    expect(result.envois).toBe(1);
+    expect(brevoCalls).toHaveLength(1);
+    const body = brevoCalls[0]!.body;
+    expect(body.subject).toBe('Alerte Passoire : 9 nouvelles fuites');
+    expect(body.htmlContent).toContain('9 NOUVELLES FUITES');
+    expect(body.htmlContent).toContain('rafale-0-20260821');
+    expect(body.htmlContent).toContain('rafale-8-20260821');
+    expect(body.htmlContent).not.toContain('—');
   });
 });

@@ -27,13 +27,20 @@
     {
       "binding": "RATE_LIMIT",
       "id": "cfb039dd7f6c4e25a2727aa606d80c12"
+    },
+    {
+      "binding": "RUN_STATE",
+      "id": "3ce5bafcbfa8405faa32898ab7769c49"
     }
   ],
 
-  // T31 : digest hebdo de la veille — lundi 09:00 Europe/Paris = 07:00 UTC
-  // (runWeeklyDigest dans src/watchlist.ts). Les routes fetch restent servies.
+  // T31 : digest hebdo lundi 09:00 Europe/Paris = 07:00 UTC
+  // (« 0 7 * * 1 ») + balayage « immédiat » toutes les 15 min : diff du
+  // catalogue public → alertes AlerteInitiale / MiseAJourDeStatut aux
+  // abonnés quotidiens (runInstantSweep dans src/watchlist.ts). Les routes
+  // fetch restent servies.
   "triggers": {
-    "crons": ["0 7 * * 1"]
+    "crons": ["0 7 * * 1", "*/15 * * * *"]
   }
 
   // SECRETS (PAS des vars — jamais de valeur en clair ici) :

@@ -118,6 +118,8 @@ export interface FicheDigest {
   slug: string;
   entity: string;
   secteur: string;
+  statut?: string;
+  description?: string;
   data_types: string[];
   dates: { revendication: string; publication?: string };
   volume: { label: string };
@@ -1041,4 +1043,597 @@ export async function enqueueInstantAlert(
   }
 
   return { matched: abonnes.length, sent };
+}
+
+// ---------------------------------------------------------------------------
+// T31-complément — alertes « immédiat » par balayage catalogue (2026-08-22).
+// Le déclencheur CI (T47) n'existant pas, le cron */15 de ce worker diff le
+// catalogue public contre son dernier état connu (KV RUN_STATE) et envoie
+// AlerteInitiale (nouvelle fiche) / MiseAJourDeStatut (revendiquée →
+// confirmée) aux abonnés CONFIRMÉS de fréquence « quotidien » dont les
+// préférences matchent. Premier passage = bootstrap : état initial posé SANS
+// aucun envoi (sinon 1000+ alertes à la première exécution).
+// ---------------------------------------------------------------------------
+
+const CATALOGUE_KV_KEY = 'watchlist:instant:last_catalog';
+/** Cartes rendues au MAX dans l'alerte groupée (taille email bornée, effectif annoncé). */
+export const INSTANT_CAP = 50;
+/** Au-delà, une seule alerte groupée (évite 100 emails à l'abonné lors d'un backfill). */
+export const SEUIL_ALERTE_GROUPEE = 5;
+
+/** Libellés secteur (copie locale — frontière worker ↔ src/lib, aucun import). */
+const SECTEUR_LABELS_W: Record<string, string> = {
+  services: 'Services',
+  public: 'Secteur public',
+  retail: 'Commerce',
+  sante: 'Santé',
+  industrie: 'Industrie',
+  media: 'Médias',
+  finance: 'Finance',
+  recherche: 'Recherche',
+  autre: 'Autre',
+};
+
+interface EtatCatalogue {
+  [slug: string]: { statut: string };
+}
+
+export function secteurLigneAlerte(prefs: Prefs, fiche: FicheDigest): string {
+  if (prefs.sectors.length === 0) return 'tous les secteurs';
+  return SECTEUR_LABELS_W[fiche.secteur] ?? fiche.secteur;
+}
+
+/** Alerte initiale — gabarit propriétaire TemplateMailsGemini/AlerteInitiale.html. */
+export function renderAlerteInitialeHtml(
+  fiche: FicheDigest,
+  opts: { unsubUrl: string; secteurLigne: string },
+): string {
+  const statut = fiche.statut === 'confirmee' ? 'Confirmée' : 'Revendiquée';
+  const couleurPilule = fiche.statut === 'confirmee' ? '#0E7A46' : '#FF6B1A';
+  const secteurLabel = SECTEUR_LABELS_W[fiche.secteur] ?? fiche.secteur;
+  const resume = escapeHtml((fiche.description ?? fiche.volume.label).slice(0, 180));
+  const url = ficheUrl(fiche);
+  return `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Alerte Passoire : nouvelle fuite détectée</title>
+</head>
+<body style="margin:0; padding:0; background-color:#FFF9F2; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; color: #241405;">
+  <div style="display: none; max-height: 0px; overflow: hidden; mso-hide: all; line-height: 1px; color: #FFF9F2; font-size: 1px; opacity: 0;">
+    Une nouvelle fuite vient d'être indexée dans le secteur ${escapeHtml(secteurLabel)} (${escapeHtml(fiche.entity)}). Voici les détails et les actions à prendre.
+  </div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFF9F2; padding: 40px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px; width:100%; background-color:#FFF6EA; border: 3px solid #241405; border-radius: 20px; box-shadow: 6px 6px 0px 0px #241405; overflow: hidden;">
+          <tr>
+            <td style="background-color:#FF6B1A; background-image: radial-gradient(circle, #241405 1.5px, transparent 1.5px); background-size: 22px 22px; border-bottom: 3px solid #241405; padding: 32px; text-align: center;">
+              <p style="margin:0; font-family: 'Arial Black', Impact, sans-serif; font-size: 28px; font-weight: 900; color: #FFFFFF; letter-spacing: -1px; text-transform: uppercase;">
+                <span style="font-size: 32px; vertical-align: middle;">&#128680;</span> ALERTE PASSOIRE
+              </p>
+              <p style="margin: 8px 0 0; font-family: 'Courier New', Courier, monospace; font-size: 14px; font-weight: bold; color: #241405; background-color: #FFF6EA; display: inline-block; padding: 4px 12px; border: 2px solid #241405; border-radius: 50px;">
+                DÉTECTION IMMÉDIATE
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 32px 24px; color: #241405; font-size: 16px; line-height: 1.6;">
+              <p style="margin: 0 0 24px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #241405; opacity: 0.8;">
+                &#128204; Vous recevez cette alerte car vous surveillez : <span style="color: #E85A0C; text-transform: uppercase;">${escapeHtml(opts.secteurLigne)}</span>.
+              </p>
+              <p style="margin: 0 0 24px; font-size: 18px; font-weight: bold;">
+                Une nouvelle fuite vient d'être indexée dans notre catalogue. Pas de panique, voici ce qu'il faut savoir.
+              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px; background-color: #FFF9F2; border: 3px solid #241405; border-radius: 12px; box-shadow: 4px 4px 0px 0px #241405;">
+                <tr>
+                  <td style="padding: 24px;">
+                    <h2 style="margin: 0 0 12px; font-family: 'Arial Black', Impact, sans-serif; font-size: 28px; line-height: 1.1;">
+                      ${escapeHtml(fiche.entity)}
+                    </h2>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 12px; padding: 4px 10px; background-color: ${couleurPilule}; border-radius: 20px; color: #FFFFFF; font-weight: bold;">
+                          ${statut}
+                        </td>
+                        <td width="8"></td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold;">
+                          <span style="background-color: #FFF6EA; border: 1px solid #241405; padding: 2px 6px;">${escapeHtml(secteurLabel)}</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: bold; color: #E85A0C;">
+                      ${escapeHtml(fiche.volume.label)}
+                    </p>
+                    <p style="margin: 0; font-size: 15px; line-height: 1.5;">
+                      ${resume}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <h3 style="margin: 0 0 16px; font-family: 'Arial Black', Impact, sans-serif; font-size: 20px; text-transform: uppercase;">Vous aviez un compte ? Les 3 gestes.</h3>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px;">
+                <tr>
+                  <td width="40" valign="top">
+                    <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">1</div>
+                  </td>
+                  <td valign="top">
+                    <p style="margin: 0 0 4px; font-weight: bold;">Changer le mot de passe</p>
+                    <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Et surtout, ne le réutilisez pas ailleurs. Uniquefiez-le.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="40" valign="top" style="padding-top: 12px;">
+                    <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">2</div>
+                  </td>
+                  <td valign="top" style="padding-top: 12px;">
+                    <p style="margin: 0 0 4px; font-weight: bold;">Activer la double authentification</p>
+                    <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Sur votre boîte email principale en priorité absolue.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="40" valign="top" style="padding-top: 12px;">
+                    <div style="width: 28px; height: 28px; background-color: #FF6B1A; border: 2px solid #241405; border-radius: 6px; text-align: center; line-height: 28px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">3</div>
+                  </td>
+                  <td valign="top" style="padding-top: 12px;">
+                    <p style="margin: 0 0 4px; font-weight: bold;">Surveiller les tentatives d'hameçonnage</p>
+                    <p style="margin: 0; font-size: 14px; color: #241405; opacity: 0.9;">Soyez vigilant face aux SMS ou emails inattendus.</p>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                <tr>
+                  <td align="center" style="background-color: #FF6B1A; border: 3px solid #241405; border-radius: 12px; box-shadow: 4px 4px 0px 0px #241405;">
+                    <a href="${url}" style="display: inline-block; padding: 16px 32px; color: #241405; font-family: 'Arial Black', Impact, sans-serif; font-weight: 900; font-size: 16px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+                      Voir la fiche complète &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 32px; background-color: #241405; color: #FFF6EA; border-top: 3px solid #241405;">
+              <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px; line-height: 1.5; opacity: 0.9;">
+                Vous recevez cet email car vous avez activé la veille FrancePassoire (${escapeHtml(opts.secteurLigne)}).
+              </p>
+              <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
+                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
+              </p>
+              <p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 1.5; opacity: 0.6;">
+                FrancePassoire &middot; Le catalogue indépendant des fuites de données.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+export function renderAlerteInitialeText(
+  fiche: FicheDigest,
+  opts: { unsubUrl: string; secteurLigne: string },
+): string {
+  const statut = fiche.statut === 'confirmee' ? 'confirmée' : 'revendiquée';
+  return [
+    `ALERTE PASSOIRE : nouvelle fuite ${statut}`,
+    '',
+    `${fiche.entity} : ${fiche.volume.label}`,
+    (fiche.description ?? '').slice(0, 200),
+    '',
+    `Fiche complète : ${ficheUrl(fiche)}`,
+    '',
+    'Vous aviez un compte ? Les 3 gestes :',
+    '1. Changer le mot de passe (et ne pas le réutiliser ailleurs)',
+    '2. Activer la double authentification',
+    '3. Surveiller les tentatives d\'hameçonnage',
+    '',
+    `Vous surveillez : ${opts.secteurLigne}.`,
+    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Se désinscrire : ${opts.unsubUrl}`,
+  ].join('\n');
+}
+
+/** Mise à jour de statut — gabarit propriétaire TemplateMailsGemini/MiseajourDeStatut.html. */
+export function renderMiseAJourHtml(fiche: FicheDigest, opts: { unsubUrl: string }): string {
+  const resume = escapeHtml((fiche.description ?? fiche.volume.label).slice(0, 200));
+  const url = ficheUrl(fiche);
+  return `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Mise à jour Passoire : fuite confirmée</title>
+</head>
+<body style="margin:0; padding:0; background-color:#FFF9F2; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; color: #241405;">
+  <div style="display: none; max-height: 0px; overflow: hidden; mso-hide: all; line-height: 1px; color: #FFF9F2; font-size: 1px; opacity: 0;">
+    Mise à jour : la fuite ${escapeHtml(fiche.entity)} est maintenant officiellement confirmée. Le trou est avéré.
+  </div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFF9F2; padding: 40px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px; width:100%; background-color:#FFF6EA; border: 3px solid #241405; border-radius: 20px; box-shadow: 6px 6px 0px 0px #241405; overflow: hidden;">
+          <tr>
+            <td style="background-color:#0E7A46; border-bottom: 3px solid #241405; padding: 32px; text-align: center;">
+              <p style="margin:0; font-family: 'Arial Black', Impact, sans-serif; font-size: 26px; font-weight: 900; color: #FFFFFF; letter-spacing: -1px; text-transform: uppercase;">
+                <span style="font-size: 30px; vertical-align: middle;">&check;</span> FUITE CONFIRMÉE
+              </p>
+              <p style="margin: 8px 0 0; font-family: 'Courier New', Courier, monospace; font-size: 14px; font-weight: bold; color: #241405; background-color: #FFF6EA; display: inline-block; padding: 4px 12px; border: 2px solid #241405; border-radius: 50px;">
+                MISE À JOUR DE STATUT
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 32px 24px; color: #241405; font-size: 16px; line-height: 1.6;">
+              <p style="margin: 0 0 24px; font-size: 18px; font-weight: bold;">
+                Mise à jour : la fuite ${escapeHtml(fiche.entity)} est maintenant officiellement confirmée. Le trou est avéré.
+              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px; background-color: #FFF9F2; border: 3px solid #241405; border-radius: 12px; box-shadow: 4px 4px 0px 0px #241405;">
+                <tr>
+                  <td style="padding: 24px;">
+                    <h2 style="margin: 0 0 12px; font-family: 'Arial Black', Impact, sans-serif; font-size: 28px; line-height: 1.1;">
+                      ${escapeHtml(fiche.entity)}
+                    </h2>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 12px; padding: 4px 10px; background-color: #0E7A46; border-radius: 20px; color: #FFFFFF; font-weight: bold;">
+                          &check; Confirmée
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: bold; color: #0E7A46;">
+                      ${escapeHtml(fiche.volume.label)}
+                    </p>
+                    <p style="margin: 0; font-size: 15px; line-height: 1.5;">
+                      ${resume}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <h3 style="margin: 0 0 12px; font-family: 'Arial Black', Impact, sans-serif; font-size: 20px; text-transform: uppercase;">Qu'est-ce que ça veut dire ?</h3>
+              <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.6;">
+                La fuite n'est plus une simple revendication d'un groupe d'attaquants. <strong>L'entité ou une source officielle (comme la CNIL) l'a désormais confirmée.</strong> Si vous n'aviez pas encore pris de précautions, il est impératif de le faire maintenant.
+              </p>
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                <tr>
+                  <td align="center" style="background-color: #FF6B1A; border: 3px solid #241405; border-radius: 12px; box-shadow: 4px 4px 0px 0px #241405;">
+                    <a href="${url}" style="display: inline-block; padding: 16px 32px; color: #241405; font-family: 'Arial Black', Impact, sans-serif; font-weight: 900; font-size: 16px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+                      Revoir la fiche &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 32px; background-color: #241405; color: #FFF6EA; border-top: 3px solid #241405;">
+              <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
+                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
+              </p>
+              <p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 1.5; opacity: 0.6;">
+                FrancePassoire &middot; Le catalogue indépendant des fuites de données.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+export function renderMiseAJourText(fiche: FicheDigest, opts: { unsubUrl: string }): string {
+  return [
+    `MISE À JOUR PASSOIRE : la fuite ${fiche.entity} est confirmée`,
+    '',
+    `${fiche.entity} : ${fiche.volume.label}`,
+    '',
+    'La fuite n\'est plus une simple revendication : une source officielle l\'a confirmée. Si vous n\'aviez pas encore pris de précautions, faites-le maintenant.',
+    '',
+    `Fiche complète : ${ficheUrl(fiche)}`,
+    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Se désinscrire : ${opts.unsubUrl}`,
+  ].join('\n');
+}
+
+/** Alerte groupée (rafale > SEUIL_ALERTE_GROUPEE) : gabarit AlerteInitiale, cartes empilées. */
+export function renderAlerteGroupeeHtml(
+  fiches: readonly FicheDigest[],
+  opts: { unsubUrl: string; secteurLigne: string },
+): string {
+  const cartes = fiches
+    .map((fiche) => {
+      const statut = fiche.statut === 'confirmee' ? 'Confirmée' : 'Revendiquée';
+      const couleurPilule = fiche.statut === 'confirmee' ? '#0E7A46' : '#FF6B1A';
+      const secteurLabel = SECTEUR_LABELS_W[fiche.secteur] ?? fiche.secteur;
+      const resume = escapeHtml((fiche.description ?? fiche.volume.label).slice(0, 160));
+      return `              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px; background-color: #FFF9F2; border: 3px solid #241405; border-radius: 12px; box-shadow: 4px 4px 0px 0px #241405;">
+                <tr>
+                  <td style="padding: 24px;">
+                    <h2 style="margin: 0 0 12px; font-family: 'Arial Black', Impact, sans-serif; font-size: 24px; line-height: 1.1;">
+                      ${escapeHtml(fiche.entity)}
+                    </h2>
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                      <tr>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 12px; padding: 4px 10px; background-color: ${couleurPilule}; border-radius: 20px; color: #FFFFFF; font-weight: bold;">
+                          ${statut}
+                        </td>
+                        <td width="8"></td>
+                        <td style="font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold;">
+                          <span style="background-color: #FFF6EA; border: 1px solid #241405; padding: 2px 6px;">${escapeHtml(secteurLabel)}</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin: 0 0 12px; font-family: 'Courier New', Courier, monospace; font-size: 18px; font-weight: bold; color: #E85A0C;">
+                      ${escapeHtml(fiche.volume.label)}
+                    </p>
+                    <p style="margin: 0 0 12px; font-size: 15px; line-height: 1.5;">
+                      ${resume}
+                    </p>
+                    <a href="${ficheUrl(fiche)}" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #E85A0C; font-weight: bold;">
+                      Voir la fiche complète &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>`;
+    })
+    .join('\n');
+  return `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Alerte Passoire : ${fiches.length} nouvelles fuites indexées</title>
+</head>
+<body style="margin:0; padding:0; background-color:#FFF9F2; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; color: #241405;">
+  <div style="display: none; max-height: 0px; overflow: hidden; mso-hide: all; line-height: 1px; color: #FFF9F2; font-size: 1px; opacity: 0;">
+    ${fiches.length} nouvelles fuites viennent d'être indexées. Voici les détails et les actions à prendre.
+  </div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFF9F2; padding: 40px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px; width:100%; background-color:#FFF6EA; border: 3px solid #241405; border-radius: 20px; box-shadow: 6px 6px 0px 0px #241405; overflow: hidden;">
+          <tr>
+            <td style="background-color:#FF6B1A; background-image: radial-gradient(circle, #241405 1.5px, transparent 1.5px); background-size: 22px 22px; border-bottom: 3px solid #241405; padding: 32px; text-align: center;">
+              <p style="margin:0; font-family: 'Arial Black', Impact, sans-serif; font-size: 28px; font-weight: 900; color: #FFFFFF; letter-spacing: -1px; text-transform: uppercase;">
+                <span style="font-size: 32px; vertical-align: middle;">&#128680;</span> ALERTE PASSOIRE
+              </p>
+              <p style="margin: 8px 0 0; font-family: 'Courier New', Courier, monospace; font-size: 14px; font-weight: bold; color: #241405; background-color: #FFF6EA; display: inline-block; padding: 4px 12px; border: 2px solid #241405; border-radius: 50px;">
+                ${fiches.length} NOUVELLES FUITES
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 32px 24px; color: #241405; font-size: 16px; line-height: 1.6;">
+              <p style="margin: 0 0 24px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #241405; opacity: 0.8;">
+                &#128204; Vous recevez cette alerte car vous surveillez : <span style="color: #E85A0C; text-transform: uppercase;">${escapeHtml(opts.secteurLigne)}</span>.
+              </p>
+              <p style="margin: 0 0 24px; font-size: 18px; font-weight: bold;">
+                ${fiches.length} nouvelles fuites viennent d'être indexées dans notre catalogue. Pas de panique, voici ce qu'il faut savoir.
+              </p>
+${cartes}
+              <h3 style="margin: 0 0 16px; font-family: 'Arial Black', Impact, sans-serif; font-size: 20px; text-transform: uppercase;">Vous aviez un compte ? Les 3 gestes.</h3>
+              <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.7;">
+                1. Changer le mot de passe (et ne pas le réutiliser ailleurs)<br>
+                2. Activer la double authentification<br>
+                3. Surveiller les tentatives d'hameçonnage
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 24px 32px; background-color: #241405; color: #FFF6EA; border-top: 3px solid #241405;">
+              <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px; line-height: 1.5; opacity: 0.9;">
+                Vous recevez cet email car vous avez activé la veille FrancePassoire (${escapeHtml(opts.secteurLigne)}).
+              </p>
+              <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
+                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
+              </p>
+              <p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 1.5; opacity: 0.6;">
+                FrancePassoire &middot; Le catalogue indépendant des fuites de données.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+export function renderAlerteGroupeeText(
+  fiches: readonly FicheDigest[],
+  opts: { unsubUrl: string; secteurLigne: string },
+): string {
+  const lignes = fiches.map((f) => `- ${f.entity} : ${f.volume.label} (${ficheUrl(f)})`);
+  return [
+    `ALERTE PASSOIRE : ${fiches.length} nouvelles fuites indexées`,
+    '',
+    ...lignes,
+    '',
+    'Vous aviez un compte ? Les 3 gestes : changer le mot de passe, activer la double authentification, surveiller l\'hameçonnage.',
+    '',
+    `Vous surveillez : ${opts.secteurLigne}.`,
+    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Se désinscrire : ${opts.unsubUrl}`,
+  ].join('\n');
+}
+
+export interface InstantSweepResultats {
+  bootstrap: boolean;
+  nouveaux: number;
+  changements: number;
+  envois: number;
+  sauts: number;
+  raison?: string;
+}
+
+/**
+ * Balayage catalogue → alertes immédiates. Idempotent par construction :
+ * l'état KV n'avance QUE après traitement, et un passage sans changement
+ * n'écrit rien (quota KV épargné).
+ */
+export async function runInstantSweep(
+  env: Env,
+  options: HandlerOptions & { sleep?: (ms: number) => Promise<void>; log?: (...args: unknown[]) => void } = {},
+): Promise<InstantSweepResultats> {
+  const fetchFn = options.fetchFn ?? fetch;
+  const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
+  const log = options.log ?? console.log;
+
+  if (!env.BREVO_API_KEY || !env.WATCHLIST_AES_KEY || !HEX_32B_RE.test(env.WATCHLIST_AES_KEY)) {
+    log('instant: secrets Brevo/AES absents — aucun envoi');
+    return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0, raison: 'secrets-absents' };
+  }
+  if (!env.RUN_STATE) {
+    log('instant: binding RUN_STATE absent — balayage désactivé (wrangler.jsonc kv_namespaces)');
+    return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0, raison: 'run-state-absent' };
+  }
+
+  let fiches: FicheDigest[] = [];
+  try {
+    const res = await fetchFn(FICHES_URL, {
+      headers: { accept: 'application/json' },
+      cache: 'no-store',
+    });
+    if (!res.ok) throw new Error(`fiches.json HTTP ${res.status}`);
+    const payload = (await res.json()) as { fiches?: FicheDigest[] };
+    fiches = Array.isArray(payload.fiches) ? payload.fiches : [];
+  } catch (e) {
+    log('instant: fiches.json indisponible —', e);
+    return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0, raison: 'fiches-indisponibles' };
+  }
+
+  const etatBrut = await env.RUN_STATE.get(CATALOGUE_KV_KEY);
+  if (etatBrut === null) {
+    await env.RUN_STATE.put(CATALOGUE_KV_KEY, JSON.stringify(etatDe(fiches)));
+    log(`instant: bootstrap — état initial posé (${fiches.length} fiches), AUCUN envoi`);
+    return { bootstrap: true, nouveaux: 0, changements: 0, envois: 0, sauts: 0 };
+  }
+  let precedent: EtatCatalogue = {};
+  try {
+    precedent = JSON.parse(etatBrut) as EtatCatalogue;
+  } catch {
+    log('instant: état KV illisible — re-bootstrap silencieux');
+    await env.RUN_STATE.put(CATALOGUE_KV_KEY, JSON.stringify(etatDe(fiches)));
+    return { bootstrap: true, nouveaux: 0, changements: 0, envois: 0, sauts: 0 };
+  }
+
+  const nouveaux = fiches
+    .filter((f) => !(f.slug in precedent))
+    .sort((a, b) => (a.dates.revendication < b.dates.revendication ? 1 : -1));
+  const changes = fiches
+    .filter((f) => precedent[f.slug]?.statut === 'revendiquee' && f.statut === 'confirmee')
+    .slice(0, INSTANT_CAP);
+
+  if (nouveaux.length === 0 && changes.length === 0) {
+    return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0 };
+  }
+
+  const abonnes = (await confirmedSubscribers(env.DB)).filter((a) => parsePrefs(a.prefs_json).freq === 'quotidien');
+  let envois = 0;
+  let sauts = 0;
+
+  for (const abonne of abonnes) {
+    const prefs = parsePrefs(abonne.prefs_json);
+    let email = '';
+    try {
+      email = await decryptEmailAes(abonne.email_enc, env.WATCHLIST_AES_KEY);
+    } catch {
+      log('instant: email_enc illisible pour', abonne.id, '— saut');
+      sauts += 1;
+      continue;
+    }
+    const unsubUrl = unsubUrlOf(abonne.unsub_token);
+
+    const nouveauxMatches = nouveaux.filter((f) => ficheMatchesPrefs(f, prefs));
+    if (nouveauxMatches.length > SEUIL_ALERTE_GROUPEE) {
+      const secteurLigne = secteurLigneAlerte(prefs, nouveauxMatches[0]!);
+      const cartes = nouveauxMatches.slice(0, INSTANT_CAP);
+      const complement =
+        nouveauxMatches.length > cartes.length
+          ? `\\n\\nEt ${String(nouveauxMatches.length - cartes.length)} autre(s) fuite(s) : ${SITE_URL}/catalogue/`
+          : '';
+      const r = await sendBrevoEmail(
+        env.BREVO_API_KEY,
+        {
+          to: email,
+          subject: `Alerte Passoire : ${nouveauxMatches.length} nouvelles fuites`,
+          textContent: renderAlerteGroupeeText(cartes, { unsubUrl, secteurLigne }) + complement,
+          htmlContent: renderAlerteGroupeeHtml(cartes, { unsubUrl, secteurLigne }),
+        },
+        fetchFn,
+      );
+      if (r.ok) envois += 1;
+      else {
+        log('instant: envoi Brevo refusé (HTTP', r.status, ') pour', abonne.id, '— saut');
+        sauts += 1;
+      }
+      await sleep(SEND_PAUSE_MS);
+    } else {
+      for (const fiche of nouveauxMatches) {
+        const secteurLigne = secteurLigneAlerte(prefs, fiche);
+        const r = await sendBrevoEmail(
+          env.BREVO_API_KEY,
+          {
+            to: email,
+            subject: `Alerte Passoire : ${fiche.entity}`,
+            textContent: renderAlerteInitialeText(fiche, { unsubUrl, secteurLigne }),
+            htmlContent: renderAlerteInitialeHtml(fiche, { unsubUrl, secteurLigne }),
+          },
+          fetchFn,
+        );
+        if (r.ok) envois += 1;
+        else {
+          log('instant: envoi Brevo refusé (HTTP', r.status, ') pour', abonne.id, '— saut');
+          sauts += 1;
+        }
+        await sleep(SEND_PAUSE_MS);
+      }
+    }
+
+    for (const fiche of changes) {
+      if (!ficheMatchesPrefs(fiche, prefs)) continue;
+      const r = await sendBrevoEmail(
+        env.BREVO_API_KEY,
+        {
+          to: email,
+          subject: `Mise à jour Passoire : ${fiche.entity} confirmée`,
+          textContent: renderMiseAJourText(fiche, { unsubUrl }),
+          htmlContent: renderMiseAJourHtml(fiche, { unsubUrl }),
+        },
+        fetchFn,
+      );
+      if (r.ok) envois += 1;
+      else {
+        log('instant: envoi Brevo refusé (HTTP', r.status, ') pour', abonne.id, '— saut');
+        sauts += 1;
+      }
+      await sleep(SEND_PAUSE_MS);
+    }
+  }
+
+  await env.RUN_STATE.put(CATALOGUE_KV_KEY, JSON.stringify(etatDe(fiches)));
+  log(`instant: ${nouveaux.length} nouvelle(s), ${changes.length} changement(s), ${envois} envoi(s), ${sauts} saut(s)`);
+  return { bootstrap: false, nouveaux: nouveaux.length, changements: changes.length, envois, sauts };
+}
+
+function etatDe(fiches: readonly FicheDigest[]): EtatCatalogue {
+  const etat: EtatCatalogue = {};
+  for (const f of fiches) etat[f.slug] = { statut: f.statut ?? 'revendiquee' };
+  return etat;
 }

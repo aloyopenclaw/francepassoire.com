@@ -26,7 +26,7 @@
 // implémentées dans ./watchlist.ts (double opt-in Brevo, alertes) — ce
 // fichier ne fait que le routage et le scheduled.
 
-import { handleWatchlistRequest, runWeeklyDigest } from './watchlist';
+import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -49,6 +49,8 @@ export interface KVNamespace {
 export interface Env {
   DB: D1Database;
   RATE_LIMIT: KVNamespace;
+  /** État du balayage « immédiat » (dernier catalogue vu) — KV partagé. */
+  RUN_STATE?: KVNamespace;
   /** Secret Turnstile (wrangler secret put TURNSTILE_SECRET) — jamais une var en clair. */
   TURNSTILE_SECRET?: string;
   /** Clé API v3 Brevo (T30/T31) — envoi des emails de veille. */
@@ -313,13 +315,18 @@ export default {
   async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
     return handleRequest(request, env);
   },
-  // T31 : digest hebdo de la veille — lundi 09:00 Europe/Paris
-  // (cron « 0 7 * * 1 » UTC, cf. wrangler.jsonc triggers.crons).
+  // T31 : digest hebdo lundi 09:00 Europe/Paris (cron « 0 7 * * 1 » UTC)
+  // + balayage « immédiat » */15 (alertes AlerteInitiale/MiseAJour sur diff
+  // du catalogue public — cf. watchlist.ts runInstantSweep).
   async scheduled(
-    _controller: unknown,
+    controller: ScheduledController,
     env: Env,
     _ctx: ExecutionContext,
   ): Promise<void> {
+    if (controller.cron === '*/15 * * * *') {
+      await runInstantSweep(env);
+      return;
+    }
     await runWeeklyDigest(env);
   },
 };
