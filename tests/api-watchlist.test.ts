@@ -928,10 +928,10 @@ describe('digest plié dans le cron */15 — doitLancerDigest (DST-safe)', () =>
     expect(doitLancerDigest(new Date('2027-01-25T08:00:00Z'))).toBe(true);  // lundi, heure d'hiver
   });
 
-  it('tout autre moment → faux', () => {
-    expect(doitLancerDigest(new Date('2026-08-24T06:59:59Z'))).toBe(false); // 08:59 Paris
-    expect(doitLancerDigest(new Date('2026-08-24T07:15:00Z'))).toBe(false); // 09:15 Paris
-    expect(doitLancerDigest(new Date('2026-08-25T07:00:00Z'))).toBe(false); // mardi
-    expect(doitLancerDigest(new Date('2026-08-22T07:00:00Z'))).toBe(false); // samedi
+  it('tout autre moment → faux (la garde KV déduplique le reste de l\'heure)', () => {
+    expect(doitLancerDigest(new Date('2026-08-24T06:59:59Z'))).toBe(false); // lundi 08:59 Paris
+    expect(doitLancerDigest(new Date('2026-08-24T08:00:00Z'))).toBe(false); // lundi 10:00 Paris
+    expect(doitLancerDigest(new Date('2026-08-25T07:00:00Z'))).toBe(false); // mardi 09:00 Paris
+    expect(doitLancerDigest(new Date('2026-08-22T07:00:00Z'))).toBe(false); // samedi 09:00 Paris
   });
 });
