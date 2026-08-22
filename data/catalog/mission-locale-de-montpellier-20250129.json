@@ -1,0 +1,44 @@
+{
+  "slug": "mission-locale-de-montpellier-20250129",
+  "entity": "Mission locale de Montpellier",
+  "siren": "413914433",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-29",
+    "publication": "2025-02-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; revendication du groupe de rançongiciel Inc Ransom"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "group": "inc-ransom",
+  "sources": [
+    {
+      "label": "FrenchBreaches — Mission Locale Montpellier (29 janvier 2025)",
+      "url": "https://frenchbreaches.com/alertes/mission-locale-montpellier-rw_VFdsemMybHZiaUJNYjJOaGJHVWdUVzl1ZEhCbGJHeHBaWEpBYVc1amNtRnVjMjl0",
+      "kind": "revendication"
+    },
+    {
+      "label": "DPO Partage — Cyberattaques du mois de janvier 2025 (1er février 2025)",
+      "url": "https://www.dpo-partage.fr/cyberattaques-du-mois-de-janvier-2025/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 janvier 2025, le groupe de rançongiciel Inc Ransom revendique une attaque contre la Mission locale des jeunes de Montpellier Méditerranée Métropole. Cette structure publique accompagne l'insertion professionnelle et sociale des jeunes du territoire. Un bilan spécialisé évoque un chiffrement combiné à l'exploitation de vulnérabilités logicielles non corrigées. La revendication ne détaille ni volumes ni catégories de données. La mission locale n'a pas publié de communiqué ; l'exfiltration n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2025-01-29",
+      "event": "Inc Ransom publie la Mission locale de Montpellier sur son site de fuite."
+    },
+    {
+      "date": "2025-02-01",
+      "event": "Un bilan mensuel spécialisé rattache l'incident à une intrusion via vulnérabilités non corrigées."
+    }
+  ]
+}

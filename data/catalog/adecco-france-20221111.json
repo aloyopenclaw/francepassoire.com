@@ -1,0 +1,63 @@
+{
+  "slug": "adecco-france-20221111",
+  "entity": "Adecco France",
+  "siren": "998823504",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-11-11",
+    "publication": "2022-12-27"
+  },
+  "volume": {
+    "count": 72000,
+    "unit": "personnes",
+    "label": "≈ 72 000 intérimaires, anciens intérimaires et candidats selon le parquet de Lyon ; 32 649 prélèvements frauduleux recensés pour 1,6 million d'euros de préjudice"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Un pirate s'attaque aux intérimaires d'ADECCO (11 novembre 2022)",
+      "url": "https://www.zataz.com/un-pirate-sattaque-aux-interimaires-adecco/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien — Adecco, victime d'un piratage, alerte ses intérimaires sur le risque d'une fuite de données (27 décembre 2022)",
+      "url": "https://www.leparisien.fr/societe/adecco-victime-dun-piratage-alerte-ses-interimaires-sur-le-risque-dune-fuite-de-donnees-27-12-2022-VDREOLY5X5GS7OQKGLRQCZD274.php",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Adecco piratée par un salarié en alternance : 14 personnes jugées à partir du 16 juin (11 mai 2025)",
+      "url": "https://www.franceinfo.fr/faits-divers/justice-proces/adecco-piratee-par-un-salarie-en-alternance-14-personnes-jugees-a-partir-du-16-juin-pour-escroquerie-2-400-parties-civiles-deja-identifiees_7240524.html",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Plus de 70 000 victimes au tribunal après le piratage d'Adecco (16 juin 2025)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/video-certains-ont-perdu-les-economies-d-une-vie-plus-de-70-000-victimes-au-tribunal-apres-le-piratage-d-adecco-2377284.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Début novembre 2022, des intérimaires d'Adecco France signalent des prélèvements de 49,85 euros sur leurs comptes. Zataz documente ces malversations le 11 novembre. En décembre, le groupe d'intérim reconnaît une « tentative d'extraction de données » : noms, emails, numéros de Sécurité sociale et coordonnées bancaires ont été potentiellement divulgués. L'enquête établit qu'un alternant d'une agence de Besançon a vendu ses accès dès juin 2022. Selon le parquet de Lyon, environ 72 000 personnes sont concernées ; quatorze prévenus sont jugés en juin 2025.",
+  "timeline": [
+    {
+      "date": "2022-06-01",
+      "event": "Un alternant d'une agence de Besançon livre ses accès aux bases d'Adecco à un interlocuteur du darknet, selon l'enquête."
+    },
+    {
+      "date": "2022-11-11",
+      "event": "Zataz relate des prélèvements frauduleux de 49,85 euros frappant des intérimaires d'Adecco partout en France."
+    },
+    {
+      "date": "2022-12-27",
+      "event": "Adecco confirme une tentative d'extraction de données ; CNIL informée, plainte déposée, mails d'alerte envoyés aux personnes concernées."
+    },
+    {
+      "date": "2025-06-16",
+      "event": "Ouverture du procès à Lyon : 72 000 victimes recensées, 1,6 million d'euros de préjudice, 2 400 parties civiles."
+    }
+  ]
+}

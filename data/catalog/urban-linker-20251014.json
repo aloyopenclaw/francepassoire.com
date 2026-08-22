@@ -1,0 +1,39 @@
+{
+  "slug": "urban-linker-20251014",
+  "entity": "Urban Linker",
+  "siren": "510408388",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; revendication du groupe de rançongiciel Qilin, sans échantillon publié"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "group": "qilin",
+  "sources": [
+    {
+      "label": "FrenchBreaches — Urban Linker (14 octobre 2025)",
+      "url": "https://frenchbreaches.com/alertes/urban-linker-rw_VlhKaVlXNGdUR2x1YTJWeVFIRnBiR2x1",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense — Urban Linker Data Breach in 2025",
+      "url": "https://www.breachsense.com/breaches/urban-linker-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 14 octobre 2025, le groupe de rançongiciel Qilin revendique une cyberattaque contre Urban Linker. Ce cabinet français de recrutement est spécialisé dans les profils numériques et tech, avec des bureaux à Paris, Lyon et Bordeaux. La revendication, relayée par des services de veille, ne précise ni volumes ni catégories de données. Le cabinet, qui gère CV et coordonnées de candidats, n'a pas communiqué publiquement. L'exfiltration effective et son périmètre restent à établir.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "Qilin publie Urban Linker sur son site de fuite ; aucun échantillon n'est diffusé à ce stade."
+    }
+  ]
+}

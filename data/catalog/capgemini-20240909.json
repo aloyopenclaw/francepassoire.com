@@ -1,0 +1,51 @@
+{
+  "slug": "capgemini-20240909",
+  "entity": "Capgemini",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-09",
+    "publication": "2024-09-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "20 Go de données internes revendiqués par le pirate « grep » ; nombre de personnes non chiffré"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Un pirate annonce la diffusion de données volées à Capgemini (10 septembre 2024)",
+      "url": "https://www.zataz.com/un-pirate-annonce-la-diffusion-de-donnees-volees-a-capgemini/",
+      "kind": "article"
+    },
+    {
+      "label": "01net — « Importante violation de données » : une cyberattaque touche à nouveau Capgemini (10 septembre 2024)",
+      "url": "https://www.01net.com/actualites/importante-violation-donnees-cyberattaque-touche-capgemini.html",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Fuite de données chez Capgemini : un espace environnement dans la tourmente ? (15 septembre 2024)",
+      "url": "https://www.zataz.com/fuite-de-donnees-chez-capgemini-un-espace-environnement-dans-la-tourmente/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 septembre 2024, un pirate signant « grep » publie sur un forum clandestin 20 gigaoctets présentés comme extraits de Capgemini : bases internes, code source, clés, identifiants et données d'employés. Zataz relève que les identités divulguées correspondent à des salariés d'une filiale indienne du groupe. Une seconde base, issue d'un sous-domaine lié à une initiative environnementale en Inde, est diffusée le 15 septembre. L'ESN n'a ni confirmé ni commenté publiquement ces publications. Le nombre de personnes concernées n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2024-09-09",
+      "event": "Le pirate « grep » publie 20 Go de données attribuées à Capgemini, dont des identités et mots de passe hashés d'employés."
+    },
+    {
+      "date": "2024-09-10",
+      "event": "01net et Zataz documentent la publication ; la piste d'une filiale indienne est avancée d'après les profils divulgués."
+    },
+    {
+      "date": "2024-09-15",
+      "event": "Zataz identifie la base d'origine : un sous-domaine de Capgemini lié à une initiative environnementale en Inde."
+    }
+  ]
+}

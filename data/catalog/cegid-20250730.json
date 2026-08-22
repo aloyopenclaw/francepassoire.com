@@ -1,0 +1,53 @@
+{
+  "slug": "cegid-20250730",
+  "entity": "Cegid",
+  "siren": "410218010",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-30",
+    "publication": "2025-07-30"
+  },
+  "volume": {
+    "count": 74000,
+    "unit": "enregistrements",
+    "label": "≈ 74 000 comptes d'entreprises clientes (France, Belgique, Espagne) mis en vente, RIB inclus (chiffres revendiqués, non confirmés par l'éditeur)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Daily Dark Web — Cegid Suffers Data Breach, 74 000 Customer Records Allegedly Leaked (30 juillet 2025)",
+      "url": "https://dailydarkweb.net/cegid-suffers-data-breach-74000-customer-records-allegedly-leaked/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Secuslice — Cegid, champion du SaaS… mais pas du pare-feu ? (30 juillet 2025)",
+      "url": "https://secuslice.com/2025/07/cegid-fuite-de-donnees-saas-pare-feu/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 74 312 comptes d'entreprises dans la fuite de données chez Cegid (24 février 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-02-24-cegid",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 juillet 2025, un acteur annonce sur un forum clandestin la vente d'une base attribuée à Cegid. L'éditeur lyonnais conçoit des logiciels de gestion, RH et paie utilisés par des centaines de milliers d'entreprises. Les 74 000 enregistrements annoncés concernent des comptes d'entreprises clientes françaises, belges et espagnoles : noms de sociétés, contacts, emails professionnels, téléphones, dates de connexion et RIB. Interrogé, l'éditeur nie alors tout incident. Le 23 février 2026, un média spécialisé constate la diffusion publique d'une base de 74 312 comptes correspondante. Les chiffres restent issus de la revendication.",
+  "timeline": [
+    {
+      "date": "2025-07-30",
+      "event": "Mise en vente annoncée sur un forum clandestin : ≈ 74 000 comptes clients Cegid, coordonnées bancaires incluses."
+    },
+    {
+      "date": "2025-07-30",
+      "event": "Un média spécialisé relaie l'annonce ; les canaux de support de Cegid, interrogés, nient tout incident."
+    },
+    {
+      "date": "2026-02-23",
+      "event": "Un acteur publie la base de 74 312 comptes d'entreprises, constaté par un média spécialisé de veille des fuites."
+    }
+  ]
+}
