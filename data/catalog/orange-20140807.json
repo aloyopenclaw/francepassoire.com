@@ -1,0 +1,58 @@
+{
+  "slug": "orange-20140807",
+  "entity": "Orange",
+  "siren": "380129866",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-08-07",
+    "confirmation": "2014-08-07",
+    "publication": "2014-08-25"
+  },
+  "volume": {
+    "count": 1300000,
+    "unit": "personnes",
+    "label": "1,3 million de clients et prospects touchés par la copie de données selon la décision du Conseil d'État"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE TELECOMMUNICATION », avertissement public (7 août 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "ZDNet France — Vol de données : la CNIL inflige un avertissement sans frais à Orange (25 août 2014)",
+      "url": "https://www.zdnet.fr/actualites/vol-de-donnees-la-cnil-inflige-un-avertissement-sans-frais-a-orange-39805207.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Conseil d'État — Décision n° 385019 du 30 décembre 2015 (société Orange c/ CNIL, délibération n° 2014-298 du 7 août 2014)",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2015-12-30/385019",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 07/08/2014 contre une société de télécommunication",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 18 avril 2014, une intrusion a ciblé le serveur d'un sous-traitant du prestataire Gutenberg, chargé des campagnes d'emailing et de SMS d'Orange. Selon le Conseil d'État, les données de 1,3 million de clients et prospects ont été copiées. Le lien de désinscription d'un courriel permettait d'accéder à 700 fichiers. Ces fichiers ont ensuite été aspirés depuis une adresse IP non identifiée. Orange a notifié l'incident à la CNIL le 25 avril 2014. La formation restreinte a relevé l'absence d'audit de sécurité préalable et des transmissions non sécurisées de fichiers. Elle a prononcé un avertissement public le 7 août 2014, confirmé par le Conseil d'État.",
+  "timeline": [
+    {
+      "date": "2014-04-18",
+      "event": "Accès illégitime au serveur d'un sous-traitant : copie de données de 1,3 million de clients et prospects."
+    },
+    {
+      "date": "2014-04-25",
+      "event": "Orange notifie la violation de données à la CNIL."
+    },
+    {
+      "date": "2014-08-07",
+      "event": "Avertissement public pour défaut de sécurité et de confidentialité (délibération n° 2014-298)."
+    }
+  ]
+}

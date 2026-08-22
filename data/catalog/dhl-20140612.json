@@ -1,0 +1,59 @@
+{
+  "slug": "dhl-20140612",
+  "entity": "DHL International Express France",
+  "siren": "494956774",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-06-12",
+    "confirmation": "2014-06-12",
+    "publication": "2014-06-20"
+  },
+  "volume": {
+    "count": 680000,
+    "unit": "enregistrements",
+    "label": "680 000 fiches clients librement accessibles sur internet et référencées par Google selon la CNIL ; certaines dataient de 2007"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE TRANSPORT ET DE LOGISTIQUE », fuite de données, avertissement public (12 juin 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Silicon.fr — Fuite de données : la CNIL met un carton jaune à DHL (20 juin 2014)",
+      "url": "https://www.silicon.fr/Thematique/cloud-1370/Breves/Fuite-de-donnees-la-CnIL-met-un-carton-jaune-a-455185.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Blog Economie Numérique — La CNIL sanctionne la société DHL d'un avertissement public pour la fuite de plus de 680 000 données clients (31 août 2014)",
+      "url": "https://blog.economie-numerique.net/2014/08/31/la-cnil-sanctionne-la-societe-dhl-dun-avertissement-public-pour-la-fuite-de-plus-de-680-000-donnees-clients/",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 12/06/2014, fuite de données",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 19 février 2014, un contrôle de la CNIL a constaté une fuite chez DHL France. 680 000 fiches clients étaient librement accessibles sur internet via l'application de relivraison de colis. Cette application avait été conçue par un sous-traitant. Les fiches, référencées par Google, contenaient noms, adresses, téléphones et courriels. Certaines mentionnaient des informations de santé ou la sécurisation des logements. DHL avait été alertée fin 2013 sur une faille d'accès interne. Elle n'avait pas vérifié la sécurité de l'application entière. Des fiches de 2007 étaient encore conservées. La formation restreinte a prononcé un avertissement public le 12 juin 2014 : la sous-traitance n'exonérait pas le responsable de traitement.",
+  "timeline": [
+    {
+      "date": "2014-02-19",
+      "event": "Contrôle de la CNIL : 680 000 fiches clients accessibles librement et référencées par Google."
+    },
+    {
+      "date": "2014-02-28",
+      "event": "DHL indique avoir pris des mesures correctives par l'intermédiaire de son prestataire."
+    },
+    {
+      "date": "2014-06-12",
+      "event": "Avertissement public pour défaut de sécurité et durée de conservation excessive (délibération n° 2014-238)."
+    }
+  ]
+}
