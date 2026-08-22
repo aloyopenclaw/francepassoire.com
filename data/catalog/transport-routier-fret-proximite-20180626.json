@@ -1,0 +1,37 @@
+{
+  "slug": "transport-routier-fret-proximite-20180626",
+  "entity": "Une société de transport routier de fret de proximité (entité non nommée)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2018-06-26",
+    "confirmation": "2018-06-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; avertissement non public"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « TRANSPORT ROUTIER DE FRET DE PROXIMITE », avertissement non public (26 juin 2018)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 28/09/2021) : décision du 26/06/2018 — droit d'accès au dossier d'un salarié, données de chronotachygraphe",
+      "url": "http://web.archive.org/web/20210928173346/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 26 juin 2018, la formation restreinte de la CNIL a adressé un avertissement non public à un transporteur routier de fret de proximité. Le tableau officiel des sanctions retient une non-réponse et le refus du droit d'accès d'un salarié à son dossier, notamment aux données de son chronotachygraphe. La dénomination n'est pas publique : l'avertissement, non public, n'a donné lieu à aucun communiqué. Le tableau officiel et sa version archivée de septembre 2021 décrivent la décision sans nommer l'entreprise. Cette décision illustre le contrôle par la CNIL des droits d'accès des salariés aux données de conduite.",
+  "timeline": [
+    {
+      "date": "2018-06-26",
+      "event": "Avertissement non public : non-réponse et refus du droit d'accès d'un salarié aux données de son chronotachygraphe."
+    }
+  ]
+}
