@@ -39,7 +39,7 @@ const nbRansomware = fiches.filter((f) => f.group).length;
 function volumeCourt(volume: FicheLike['volume']): string {
   return volume.count > 0
     ? `${formaterNombre(volume.count)} ${volume.unit}`
-    : 'volume non chiffré';
+    : 'Volume non communiqué';
 }
 
 // Ticker : les 8 dernières fuites, chaque item pointe vers la fiche publiée.

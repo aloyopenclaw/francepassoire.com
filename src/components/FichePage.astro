@@ -76,7 +76,7 @@ const estConfirmee = fiche.statut === 'confirmee';
       <div class="mt-8 pt-8 border-t-2 border-brand-ink/20 border-dashed">
         <p class="font-mono text-lg mb-2">Volume annoncé :</p>
         <p class="font-display font-extrabold text-3xl sm:text-5xl text-brand-orange drop-shadow-[2px_2px_0px_rgba(36,20,5,1)]">
-          {formaterNombre(fiche.volume.count)} {phraseUnite(fiche.volume.unit)}
+          {fiche.volume.count > 0 ? `${formaterNombre(fiche.volume.count)} ${phraseUnite(fiche.volume.unit)}` : 'Volume non communiqué'}
         </p>
         <p class="font-mono text-sm text-brand-ink/70 mt-3 leading-relaxed">{fiche.volume.label}</p>
       </div>
