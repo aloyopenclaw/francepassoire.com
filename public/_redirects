@@ -1,2 +1,6 @@
+# Parents sans page (hubs vivent à /secteur/<slug>/) : renvoyer à l'accueil
+/fuite/ / 301
+/secteur/ / 301
+/donnees/ / 301
 /api/v1/fiches.json /opendata/v1/fiches.json 301
 /fuite/:slug/ /fiche/:slug/ 301
