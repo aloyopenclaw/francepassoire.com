@@ -1,5 +1,5 @@
 // workers/social/src/types.ts — types structurels partagés par la file
-// sociale et ses clients de plateforme (T39+T40, Wave 5).
+// sociale et ses clients de plateforme (T38–T40 + T51, Wave 5).
 //
 // Même discipline que le worker d'ingestion : accès D1 uniquement via l'env
 // injecté, interfaces structurelles minimales (pas de dépendance
@@ -41,16 +41,24 @@ export interface Env {
    */
   X_BEARER?: string;
   /**
-   * Token UTILISATEUR OAuth 2.0 X (tweet.read + users.read + tweet.write) :
-   * le seul capable de POST /2/tweets. Nom canonique défini par la T39.
+   * URL du webhook Make.com — chemin de production pour X ET LinkedIn page
+   * (clients make-x.ts / make-linkedin.ts) : l'URL longue et secrète EST le
+   * crédential du scénario (Webhook → module « Create a Post » / post page).
    */
-  X_USER_TOKEN?: string;
+  MAKE_WEBHOOK_URL?: string;
   /** Token membre LinkedIn (scope w_member_social, 60 jours). */
   LINKEDIN_ACCESS_TOKEN?: string;
   /** URN du membre émetteur, ex. urn:li:person:XXXXXX (page Token Generator). */
   LINKEDIN_MEMBER_URN?: string;
-  /** User access token TikTok Login Kit (scope video.publish, préfixe act.). */
-  TIKTOK_ACCESS_TOKEN?: string;
+  /** ID de la Page Facebook (feed de publication), ex. 1234567890. */
+  FB_PAGE_ID?: string;
+  /**
+   * Page access token Facebook (Graph API Explorer → /me/accounts) — sert
+   * AUSSI au client Instagram (compte IG professionnel relié à la Page).
+   */
+  FB_PAGE_TOKEN?: string;
+  /** ID du compte Instagram professionnel (instagram_business_account de la Page). */
+  IG_USER_ID?: string;
   /** Handle Bluesky, ex. francepassoire.bsky.social (tâche 38). */
   BLUESKY_HANDLE?: string;
   /**
@@ -66,13 +74,23 @@ export interface Env {
   NOSTR_NSEC?: string;
 }
 
-/** Plateformes gérées par ce worker (T38–T40 : Bluesky/Nostr, X, LinkedIn, TikTok). */
-export type SocialPlatform = 'x' | 'linkedin' | 'tiktok' | 'bluesky' | 'nostr';
+/**
+ * Plateformes gérées par ce worker (T38–T40 : Bluesky/Nostr, X, LinkedIn ;
+ * T51 : X passe au bridge Make, + Facebook Page + Instagram, TikTok retiré).
+ */
+export type SocialPlatform =
+  | 'x'
+  | 'linkedin'
+  | 'facebook'
+  | 'instagram'
+  | 'bluesky'
+  | 'nostr';
 
 export const PLATFORMES: readonly SocialPlatform[] = [
   'x',
   'linkedin',
-  'tiktok',
+  'facebook',
+  'instagram',
   'bluesky',
   'nostr',
 ];
@@ -97,7 +115,8 @@ export interface PostPayload {
  * Verdict d'un client de plateforme. Quatre états, jamais d'exception :
  *  - SENT : publié, externalId logué ;
  *  - PENDING_KEYS : secret absent, la ligne reste en file (jamais un échec) ;
- *  - UNSUPPORTED_PAYLOAD : honnête refus structurel (ex. TikTok sans vidéo) ;
+ *  - UNSUPPORTED_PAYLOAD : honnête refus structurel (ex. URL sans carte pour
+ *    Instagram) ;
  *  - ERROR : échec d'appel — retryable (429/5xx/réseau) ou non (401/4xx).
  */
 export type SendResult =

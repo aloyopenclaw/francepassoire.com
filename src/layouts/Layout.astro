@@ -9,15 +9,27 @@ interface Props {
   description?: string;
   /** Canonical explicite (pages d'erreur : pointer vers « / » plutôt qu'une URL hors index). */
   canonical?: string;
+  /** Image de partage (chemin site-absolu) — défaut : og-image.jpg générique (2048²). */
+  image?: string;
+  /** Largeur/réelles de l'image de partage (indices og:image:width/height). */
+  imageWidth?: number;
+  imageHeight?: number;
+  /** Texte alternatif de l'image de partage (défaut : alt générique du site). */
+  imageAlt?: string;
 }
 
 const {
   title,
   description = 'La France, passoire à données. On compte les trous. Observatoire citoyen et indépendant des fuites de données personnelles en France.',
   canonical,
+  image = '/og-image.jpg',
+  imageWidth = 2048,
+  imageHeight = 2048,
+  imageAlt = 'FrancePassoire : observatoire citoyen des fuites de données en France',
 } = Astro.props;
 
 const canonicalURL = canonical ? new URL(canonical, Astro.site) : new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,14 +46,14 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : new URL(Astro.
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="FrancePassoire" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:image" content={new URL('/og-image.jpg', Astro.site)} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="1200" />
-    <meta property="og:image:alt" content="FrancePassoire : observatoire citoyen des fuites de données en France" />
+    <meta property="og:image" content={imageURL} />
+    <meta property="og:image:width" content={String(imageWidth)} />
+    <meta property="og:image:height" content={String(imageHeight)} />
+    <meta property="og:image:alt" content={imageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL('/og-image.jpg', Astro.site)} />
+    <meta name="twitter:image" content={imageURL} />
     <slot name="head" />
   </head>
   <body class="font-body min-h-screen flex flex-col">

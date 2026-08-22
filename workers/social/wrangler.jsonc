@@ -1,4 +1,4 @@
-// workers/social/wrangler.jsonc — worker de publication sociale (T39+T40, Wave 5).
+// workers/social/wrangler.jsonc — worker de publication sociale (T38–T40 + T51, Wave 5).
 //
 // Modèle « file d'attente » (docs/social-setup.md, § Principe) : les posts
 // s'accumulent dans D1 (social_outbox) et partent dès que la clé de la
@@ -41,14 +41,16 @@
   //     JAMAIS pour publier (docs/social-setup.md §1 : le Bearer ne peut pas
   //     poster ; il figure ici pour mémoire, consommation future en lecture).
   //
-  //   npx wrangler secret put X_USER_TOKEN
-  //     Token UTILISATEUR OAuth 2.0 (scopes tweet.read + users.read +
-  //     tweet.write) — le seul qui publie sur X. Nom défini par la T39 :
-  //     le définir lorsque le propriétaire souscrit l'offre pay-per-use.
+  //   npx wrangler secret put MAKE_WEBHOOK_URL
+  //     URL du webhook Make.com — chemin de production pour X (module
+  //     « Create a Post » OAuth'é @francepassoire) ET LinkedIn page.
+  //     L'URL longue EST le crédential : qui la possède déclenche le post.
   //
   //   npx wrangler secret put LINKEDIN_ACCESS_TOKEN
   //     Token membre (scope w_member_social, durée de vie 60 jours —
   //     renouvellement à ~2 mois, le worker logue l'échec d'expiration).
+  //     NB : le chemin PRODUCTION LinkedIn est le webhook Make ci-dessus ;
+  //     ce token ne sert qu'au client direct de référence.
   //
   //   npx wrangler secret put LINKEDIN_MEMBER_URN
   //     URN du membre émetteur, ex. urn:li:person:XXXXXX — copiée depuis la
@@ -56,10 +58,19 @@
   //     additionnel documenté par la T40 : le token seul ne suffit pas,
   //     l'UGC Post exige l'auteur).
   //
-  //   npx wrangler secret put TIKTOK_ACCESS_TOKEN
-  //     User access token Login Kit (scope video.publish, préfixe « act. »).
-  //     NB : sans stratégie vidéo (digest vidéo), le client TikTok refuse
-  //     honnêtement les payloads texte — voir clients/tiktok.ts.
+  //   npx wrangler secret put FB_PAGE_ID
+  //     ID numérique de la Page Facebook (Graph API Explorer → GET
+  //     /me/accounts). Identifiant, pas un jeton — secret par uniformité
+  //     avec BLUESKY_HANDLE.
+  //
+  //   npx wrangler secret put FB_PAGE_TOKEN
+  //     Page access token (permissions pages_manage_posts +
+  //     pages_read_engagement) — sert aussi au client Instagram (compte IG
+  //     professionnel relié à la Page, même jeton).
+  //
+  //   npx wrangler secret put IG_USER_ID
+  //     ID du compte Instagram professionnel (GET /{page-id}?fields=
+  //     instagram_business_account sur la Page ci-dessus).
   //
   // Aucun secret n'existe au jour du lancement : le worker tourne quand
   // même (cron) et les lignes s'accumulent en PENDING_KEYS. Le déploiement
