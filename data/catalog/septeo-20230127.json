@@ -1,0 +1,46 @@
+{
+  "slug": "septeo-20230127",
+  "entity": "Septeo (éditeur de logiciels pour les professionnels du droit, Montpellier)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-01-27",
+    "publication": "2023-01-29",
+    "confirmation": "2023-01-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données communiqué ; l'entreprise évoque une cyberattaque limitée à certaines de ses activités"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Cyber attaque chez Septeo (30 janvier 2023)",
+      "url": "https://www.zataz.com/cyber-attaque-chez-septeo/",
+      "kind": "article"
+    },
+    {
+      "label": "La Revue du Digital : Septeo, fournisseur de logiciels pour les notaires victime d'une cyber attaque (29 janvier 2023)",
+      "url": "https://www.larevuedudigital.com/septeo-fournisseur-de-logiciels-pour-les-notaires-victime-dune-cyber-attaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 janvier 2023, l'éditeur montpelliérain Septeo, qui emploie plus de 2 000 collaborateurs et fournit logiciels et services aux notaires et aux avocats, subit une cyberattaque. De nombreux utilisateurs se plaintent d'un accès impossible à leurs messageries professionnelles et à leurs fichiers dès le vendredi 27 janvier. Le dimanche 29 janvier, l'entreprise reconnaît sur Facebook une « cyberattaque limitée à certaines de ses activités » et indique que ses logiciels métier restent fonctionnels pour la plupart de ses clients. Dans une communication interne, elle précise que son cloud souverain, hébergeant les actes des études notariales, n'a pas été impacté. Aucune exfiltration de données n'est établie à ce stade.",
+  "timeline": [
+    {
+      "date": "2023-01-27",
+      "event": "Début de l'attaque chez Septeo ; messageries et fichiers indisponibles pour de nombreux utilisateurs professionnels."
+    },
+    {
+      "date": "2023-01-29",
+      "event": "Septeo confirme sur Facebook une cyberattaque limitée à certaines activités ; le cloud souverain est présenté comme non impacté."
+    },
+    {
+      "date": "2023-01-30",
+      "event": "Zataz documente l'incident et les inquiétudes des professionnels du droit clients de l'éditeur."
+    }
+  ]
+}

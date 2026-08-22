@@ -1,0 +1,48 @@
+{
+  "slug": "notaires-fr-20230824",
+  "entity": "Notaires.fr (portail des notaires de France) ; données d'une étude notariale de Maine-et-Loire publiées",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-08-24",
+    "publication": "2023-08-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "milliers de documents internes publiés selon Zataz ; nombre de personnes concernées non chiffré"
+  },
+  "data_types": [
+    "documents",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Encore des cabinets de Notaires et Avocats rançonnés (25 août 2023, exclusif)",
+      "url": "https://www.zataz.com/encore-des-cabinets-de-notaires-et-avocats-ranconnes/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live : fiche victime Notaires.fr (groupe Cloak, découverte 24 août 2023)",
+      "url": "https://www.ransomware.live/id/Tm90YWlyZXMuZnJAY2xvYWs",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Cloak pour Notaires.fr (24 août 2023)",
+      "url": "https://www.ransomlook.io/group/cloak",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 août 2023, un groupe de rançongiciel baptisé « Manteau » (Cloak) affiche sur son site de fuite une victime française désignée par le domaine Notaires.fr, le portail de la profession notariale. Le 25 août, Zataz documente la diffusion de l'intégralité des informations volées à une étude notariale du Maine-et-Loire, à proximité d'Angers : des milliers de documents internes, des pièces d'identité et des mandats de gestion sont publiés après le refus de négocier de la direction. Le groupe revendique alors 23 victimes et affiche aussi les entreprises ayant payé, parmi lesquelles un cabinet parisien d'une trentaine d'avocats. L'identité exacte de l'étude visée n'est pas rendue publique.",
+  "timeline": [
+    {
+      "date": "2023-08-24",
+      "event": "Cloak affiche « Notaires.fr » sur son site de fuite, parmi une liste de victimes."
+    },
+    {
+      "date": "2023-08-25",
+      "event": "Zataz rapporte la publication des données d'une étude notariale de Maine-et-Loire : documents internes, identités et mandats de gestion."
+    }
+  ]
+}

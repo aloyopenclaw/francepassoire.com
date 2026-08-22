@@ -1,0 +1,46 @@
+{
+  "slug": "voltaire-avocats-20250103",
+  "entity": "Voltaire Avocats (cabinet d'avocats en droit social, Paris, Lille et Lyon)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; fichiers internes revendiqués par 8base"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime VOLTAIRE AVOCATS (groupe 8base, découverte 3 janvier 2025)",
+      "url": "https://www.ransomware.live/id/Vk9MVEFJUkUgQVZPQ0FUU0A4YmFzZQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "GalaxyWarden : VOLTAIRE AVOCATS listed by 8base ransomware group (janvier 2025)",
+      "url": "https://www.galaxywarden.com/blog/breach/voltaire-avocats-8base-2025-01",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense : Voltaire Avocats Data Breach in 2025 (8base)",
+      "url": "https://www.breachsense.com/breaches/voltaire-avocats-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 janvier 2025, le cabinet Voltaire Avocats, créé en 2005 et spécialisé en droit du travail et en droit de la sécurité sociale à Paris, Lille et Lyon, apparaît sur le site de fuite du groupe 8base, qui revendique le vol de fichiers internes. La revendication, relevée par Ransomware.live, est reprise par plusieurs services de veille qui identifient la France comme pays de la victime. Le cabinet n'a pas communiqué publiquement ; l'ampleur de l'exfiltration n'est pas établie. Un mois plus tard, les principaux opérateurs de 8base sont arrêtés en Thaïlande dans le cadre d'une opération internationale.",
+  "timeline": [
+    {
+      "date": "2025-01-03",
+      "event": "8base affiche VOLTAIRE AVOCATS sur son site de fuite et revendique des fichiers internes."
+    },
+    {
+      "date": "2025-02-12",
+      "event": "Europol annonce l'arrestation de quatre membres clés de 8base, affaiblissant le groupe responsable de la revendication."
+    }
+  ]
+}

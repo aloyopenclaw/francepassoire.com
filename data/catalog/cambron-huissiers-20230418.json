@@ -1,0 +1,37 @@
+{
+  "slug": "cambron-huissiers-20230418",
+  "entity": "SCP Cambron et Associés (commissaires de justice, Lille et Bordeaux, groupe H2O)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-04-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Play libellée « Huissiers » avec le domaine huissiers-cambron.com"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime Huissiers (groupe Play, France, site huissiers-cambron.com, découverte 18 avril 2023)",
+      "url": "https://www.ransomware.live/id/SHVpc3NpZXJzQHBsYXk",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Play « Huissiers » (18 avril 2023)",
+      "url": "https://www.ransomlook.io/group/play",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 18 avril 2023, le groupe de rançongiciel Play affiche sur son site de fuite une victime française libellée « Huissiers », rattachée au domaine huissiers-cambron.com. Ce domaine correspond à la SCP Cambron et Associés, étude de commissaires de justice implantée à Lille (centre Vauban) et à Bordeaux, membre du groupe H2O. Les services de suivi Ransomware.live et RansomLook relèvent la revendication. L'étude n'a pas communiqué publiquement sur l'incident et aucun volume de données n'est connu.",
+  "timeline": [
+    {
+      "date": "2023-04-18",
+      "event": "Play affiche la victime « Huissiers », associée au domaine huissiers-cambron.com, sur son site de fuite."
+    }
+  ]
+}

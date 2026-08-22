@@ -1,0 +1,37 @@
+{
+  "slug": "etude-gascon-20251014",
+  "entity": "Étude Hélène Gascon (mandataire judiciaire, Perpignan)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-10-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Qilin sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime H. Gascon (groupe Qilin, découverte 14 octobre 2025)",
+      "url": "https://www.ransomware.live/id/SC4gR2FzY29uQHFpbGlu",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Qilin pour H. Gascon (14 octobre 2025)",
+      "url": "https://www.ransomlook.io/group/qilin",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 14 octobre 2025, le groupe de rançongiciel Qilin affiche sur son site de fuite une victime française désignée « H. Gascon », rattachée au site etude-gascon.fr. Ce site correspond à l'étude d'Hélène Gascon, mandataire judiciaire à Perpignan, dont les procédures de sauvegarde, de redressement et de liquidation judiciaires concernent des salariés, des dirigeants et des créanciers d'entreprises. La revendication est relevée par les services de suivi Ransomware.live et RansomLook. L'étude n'a pas communiqué publiquement ; le volume des données concernées n'est pas connu.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "Qilin affiche « H. Gascon », associé au domaine etude-gascon.fr, sur son site de fuite."
+    }
+  ]
+}

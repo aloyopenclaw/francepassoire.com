@@ -1,0 +1,37 @@
+{
+  "slug": "etude-villa-florek-20231120",
+  "entity": "Étude Villa Florek (étude notariale, Tours)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-11-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Black Basta sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime etude-villa.fr (groupe Blackbasta, découverte 20 novembre 2023)",
+      "url": "https://www.ransomware.live/id/ZXR1ZGUtdmlsbGEuZnJAYmxhY2tiYXN0YQ",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Black Basta pour etude-villa.fr (20 novembre 2023)",
+      "url": "https://www.ransomlook.io/group/blackbasta",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 20 novembre 2023, le groupe de rançongiciel Black Basta affiche sur son site de fuite le domaine etude-villa.fr, présenté comme celui d'une étude de services juridiques située au 18 rue Néricault Destouches à Tours. Il s'agit de l'étude notariale Villa Florek. La revendication est relevée par les services de suivi Ransomware.live et RansomLook. L'étude n'a pas communiqué publiquement sur l'incident ; ni le volume des données concernées ni une éventuelle publication ne sont connus.",
+  "timeline": [
+    {
+      "date": "2023-11-20",
+      "event": "Black Basta affiche etude-villa.fr sur son site de fuite avec l'adresse de l'étude tourangelle."
+    }
+  ]
+}

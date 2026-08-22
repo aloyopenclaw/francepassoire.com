@@ -1,0 +1,41 @@
+{
+  "slug": "office-notarial-baillargues-20230417",
+  "entity": "Office notarial de Baillargues (étude notariale, Hérault)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-04-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Trigona sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime Office Notarial de Baillargues (groupe Trigona, découverte 17 avril 2023)",
+      "url": "https://www.ransomware.live/id/T2ZmaWNlIE5vdGFyaWFsIGRlIEJhaWxsYXJndWVzQHRyaWdvbmE",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Trigona pour l'Office Notarial de Baillargues (18 avril 2023)",
+      "url": "https://www.ransomlook.io/group/trigona",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 17 avril 2023, le groupe de rançongiciel Trigona inscrit l'Office notarial de Baillargues, étude notariale de l'Hérault, sur son site de fuite, avec la mention d'activités de conseil et de services juridiques. La revendication est relevée par deux services de suivi des sites de fuite, Ransomware.live et RansomLook. L'étude n'a pas communiqué publiquement ; ni le volume des données concernées ni une éventuelle exfiltration confirmée ne sont connus.",
+  "timeline": [
+    {
+      "date": "2023-04-17",
+      "event": "Trigona affiche l'Office notarial de Baillargues sur son site de fuite."
+    },
+    {
+      "date": "2023-04-18",
+      "event": "La revendication est relevée par le service de veille RansomLook."
+    }
+  ]
+}
