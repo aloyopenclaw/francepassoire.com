@@ -1,0 +1,57 @@
+{
+  "slug": "thales-20221031",
+  "entity": "Thales",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-10-31",
+    "publication": "2022-11-10",
+    "confirmation": "2022-11-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "documents relatifs à Thales publiés sur le darkweb ; volume limité provenant du compte d'un partenaire sur un portail d'échange selon Thales ; aucune intrusion constatée dans les systèmes du groupe"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : vol de données, les hackers russophones de LockBit 3.0 revendiquent une cyberattaque contre Thales (31 octobre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/vol-de-donnees-les-hackers-russophones-de-lockbit-30-revendiquent-une-cyberattaque-contre-thales-31-10-2022-F7HM5EZDKVG67PYDJE56G2A2PA.php",
+      "kind": "article"
+    },
+    {
+      "label": "Europe 1 : des données volées à Thales publiées sur le darkweb (11 novembre 2022) (archive)",
+      "url": "https://web.archive.org/web/20250725080849/https://www.europe1.fr/societe/cybersecurite-des-donnees-volees-a-thales-publiees-sur-le-darkweb-4147022",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet : la nouvelle attaque informatique de LockBit contre Thales se termine en queue de poisson (novembre 2022)",
+      "url": "https://www.zdnet.fr/actualites/la-nouvelle-attaque-informatique-de-lockbit-contre-thales-se-termine-une-nouvelle-fois-en-queue-de-poisson-39949516.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz : les pirates de Thales diffusent des centaines de documents volés au géant high-tech (novembre 2022)",
+      "url": "https://www.zataz.com/les-pirates-de-thales-diffusent-des-centaines-de-documents-voles-au-geant-high-tech/",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Fin octobre 2022, le groupe LockBit 3.0 revendique une cyberattaque contre Thales et menace de publier des données, laissant un ultimatum au groupe d'électronique de défense. Le 10 novembre, les pirates diffusent sur leur plateforme des documents relatifs à Thales. Le groupe confirme la publication mais affirme qu'il n'y a pas d'intrusion dans ses systèmes d'information : la source probable identifiée est le compte d'un partenaire sur un portail d'échange dédié, ayant conduit à la divulgation d'un volume limité d'informations, sans impact sur ses activités. LeMagIT qualifiera cette affaire de revendication abusive d'un affilié LockBit.",
+  "timeline": [
+    {
+      "date": "2022-10-31",
+      "event": "LockBit 3.0 revendique l'attaque contre Thales et menace de publier des données sous sept jours."
+    },
+    {
+      "date": "2022-11-10",
+      "event": "LockBit 3.0 diffuse sur sa plateforme des données relatives à Thales."
+    },
+    {
+      "date": "2022-11-11",
+      "event": "Thales confirme la publication et évoque le compte d'un partenaire comme source probable ; aucune intrusion dans ses systèmes selon le groupe."
+    }
+  ],
+  "group": "lockbit"
+}

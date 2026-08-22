@@ -1,0 +1,43 @@
+{
+  "slug": "thales-20220117",
+  "entity": "Thales",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-01-17",
+    "publication": "2022-01-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "plusieurs centaines de fichiers diffusés (codes sources, outils de développement des dossiers Thales SpaceOps) ; aucune donnée personnelle ni client selon Zataz"
+  },
+  "data_types": [
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : des données de Thales diffusées par les pirates de LockBit 2.0 (18 janvier 2022)",
+      "url": "https://www.zataz.com/des-donnees-de-thales-diffusees-par-les-pirates-lockbit-2-0/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Solutions Numériques : vol de données sensibles revendiqué par LockBit 3.0, Thales enquête (rappel de l'épisode LockBit 2.0 de janvier 2022)",
+      "url": "https://www.solutions-numeriques.com/vol-de-donnees-sensibles-revendique-par-lockbit-3-0-thales-enquete-sur-ces-allegations/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début janvier 2022, le groupe LockBit 2.0 annonce avoir compromis le système du groupe Thales. Le 17 janvier, les pirates publient deux dossiers estampillés Thales SpaceOps contenant plusieurs centaines de fichiers : codes sources et outils de développement, tous datés du 1er janvier 2022. Zataz, qui constate la diffusion, n'y relève ni données personnelles ni données clients. Thales ne confirme pas d'intrusion dans ses systèmes. Ce premier épisode précède de plusieurs mois la nouvelle revendication LockBit 3.0 d'octobre 2022.",
+  "timeline": [
+    {
+      "date": "2022-01-17",
+      "event": "LockBit 2.0, qui avait annoncé début janvier avoir compromis Thales, publie les dossiers Thales SpaceOps : codes sources et outils de développement."
+    },
+    {
+      "date": "2022-01-18",
+      "event": "Zataz documente la diffusion ; aucune donnée personnelle identifiée."
+    }
+  ],
+  "group": "lockbit"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "district-urbain-de-faulquemont-20220610",
+  "entity": "District urbain de Faulquemont, Ville de Faulquemont et syndicat des eaux de Basses-Vigneulles et Faulquemont (SIEBF)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-06-10",
+    "publication": "2022-06-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "attaque avec demande de rançon ; même les données des disques durs sont concernées selon Le Républicain lorrain"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Républicain lorrain : le district urbain et un syndicat des eaux victimes d'une cyberattaque (11 juin 2022)",
+      "url": "https://www.republicain-lorrain.fr/faits-divers-justice/2022/06/11/le-district-urbain-et-un-syndicat-des-eaux-victimes-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 juin 2022, trois collectivités mosellanes, le District urbain de Faulquemont, la ville de Faulquemont et le syndicat des eaux de Basses-Vigneulles et Faulquemont, subissent une attaque par rançongiciel revendiquée par LockBit selon Numerama. Une demande de rançon accompagne l'attaque ; les données des disques durs sont touchées. Les techniciens isolent les systèmes et travaillent à la restauration des services.",
+  "timeline": [
+    {
+      "date": "2022-06-10",
+      "event": "Rançongiciel LockBit frappe le district urbain, la ville et le syndicat des eaux ; une rançon est exigée."
+    },
+    {
+      "date": "2022-06-11",
+      "event": "Le Républicain lorrain décrit l'attaque et les opérations de décontamination en cours."
+    }
+  ],
+  "group": "lockbit"
+}

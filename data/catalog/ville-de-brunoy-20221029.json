@@ -1,0 +1,41 @@
+{
+  "slug": "ville-de-brunoy-20221029",
+  "entity": "Ville de Brunoy",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-29",
+    "publication": "2022-10-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "rançon de 5 millions de dollars exigée des pirates ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Parisien : cyberattaque, la mairie de Brunoy reçoit une demande de rançon de 5 millions de dollars (31 octobre 2022)",
+      "url": "https://www.leparisien.fr/essonne-91/cyberattaque-la-mairie-de-brunoy-recoit-une-demande-de-rancon-de-5-millions-de-dollars-31-10-2022-2IYPAB6QRBBMJAK3VR5FXJQJYM.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 octobre 2022, la commune de Brunoy, en Essonne, est touchée par un rançongiciel. La mairie reçoit une demande de rançon de 5 millions de dollars de la part des pirates, révélée par Le Parisien le 31 octobre. Les services municipaux fonctionnent en mode dégradé le temps de la remise en état du système informatique. Numerama recense Brunoy parmi les communes de plus de 5 000 habitants ciblées en 2022.",
+  "timeline": [
+    {
+      "date": "2022-10-29",
+      "event": "Un rançongiciel touche la Ville de Brunoy."
+    },
+    {
+      "date": "2022-10-31",
+      "event": "Le Parisien révèle la demande de rançon de 5 millions de dollars adressée à la mairie."
+    }
+  ]
+}

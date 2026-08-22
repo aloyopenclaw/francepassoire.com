@@ -1,0 +1,52 @@
+{
+  "slug": "region-guadeloupe-20221121",
+  "entity": "Région Guadeloupe",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-11-21",
+    "publication": "2022-11-22",
+    "confirmation": "2022-11-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ensemble des réseaux informatiques interrompus par précaution ; plainte déposée ; aucun vol de données annoncé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "RCI : la Région Guadeloupe victime d'une cyber-attaque (21 novembre 2022)",
+      "url": "https://rci.fm/guadeloupe/infos/Faits-divers/La-Region-Guadeloupe-victime-dune-cyber-attaque",
+      "kind": "article"
+    },
+    {
+      "label": "France-Antilles Guadeloupe : la Région Guadeloupe victime d'une cyber attaque (22 novembre 2022)",
+      "url": "https://www.guadeloupe.franceantilles.fr/actualite/politique/la-region-guadeloupe-victime-dune-cyber-attaque-822803.php",
+      "kind": "article"
+    },
+    {
+      "label": "La 1ère (France Info) : la Région Guadeloupe victime d'une cyberattaque d'ampleur (novembre 2022)",
+      "url": "https://la1ere.franceinfo.fr/guadeloupe/la-region-guadeloupe-victime-d-une-cyberattaque-d-ampleur-1342792.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : cyberattaque, la Guadeloupe ciblée par des hackers, le conseil régional porte plainte (22 novembre 2022)",
+      "url": "https://www.leparisien.fr/high-tech/cyberattaque-la-guadeloupe-ciblee-par-des-hackers-le-conseil-regional-porte-plainte-22-11-2022-22KOLQCHCBFTJAEXVGBJT2T2I4.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le lundi 21 novembre 2022 au soir, le conseil régional de Guadeloupe annonce subir une cyberattaque de grande ampleur. Par mesure de sécurité, il interrompt tous ses réseaux informatiques et met le matériel concerné hors ligne. Une cellule de crise est ouverte, une plainte est déposée et un diagnostic est lancé pour déterminer le mode opératoire. Le fonctionnement de l'institution est perturbé plusieurs jours.",
+  "timeline": [
+    {
+      "date": "2022-11-21",
+      "event": "Le conseil régional annonce une cyberattaque de grande ampleur ; tous les réseaux sont interrompus par précaution."
+    },
+    {
+      "date": "2022-11-22",
+      "event": "Plainte déposée ; la presse nationale relaie l'attaque contre la collectivité ultramarine."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "transavia-france-20220215",
+  "entity": "Transavia France (groupe Air France-KLM)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-15",
+    "publication": "2022-02-18",
+    "confirmation": "2022-02-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "documents de recrutement et de navigation exposés sur un serveur de fichiers : CV, lettres, pièces d'identité, passeports, certificats médicaux, certificats de membre d'équipage ; environ 500 personnels concernés selon TF1info après l'interpellation d'un suspect ; volume total non chiffré par la compagnie"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Piratage de Transavia : fuite de données massive (18 février 2022)",
+      "url": "https://www.zataz.com/piratage-de-transavia-fuite-de-donnees-massive/",
+      "kind": "article"
+    },
+    {
+      "label": "Capital : Transavia, des pirates informatiques ont récupéré des données sur le personnel navigant (19 février 2022)",
+      "url": "https://www.capital.fr/entreprises-marches/transavia-des-pirates-informatiques-ont-recupere-des-donnees-sur-le-personnel-naviguant-1429062",
+      "kind": "article"
+    },
+    {
+      "label": "Air Journal : Transavia, piratage des données du personnel navigant (19 février 2022)",
+      "url": "https://www.air-journal.fr/2022-02-19-transavia-piratage-des-donnees-du-personnel-navigant-5233845.html",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes : la compagnie aérienne Transavia aurait fait pirater des milliers de données privées de ses salariés (22 février 2022)",
+      "url": "https://www.20minutes.fr/high-tech/3240123-20220222-compagnie-aerienne-transavia-fait-pirater-milliers-donnees-privees-salaries",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info : le hacker de Transavia sous les verrous (19 mai 2022)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/info-tf1-le-hacker-de-transavia-sous-les-verrous-2220263.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Début février 2022, des pirates accèdent à un serveur de fichiers interne de Transavia France qui stockait les documents demandés à l'embauche. Le 15 février, ils écrivent directement aux salariés pour signaler la fuite et joignent une liste d'utilisateurs concernés. CV, lettres de motivation, pièces d'identité, passeports et certificats médicaux sont exposés. La compagnie confirme l'intrusion et le vol de données auprès de la presse. Le 10 mai 2022, la brigade de lutte contre la cybercriminalité de la PJ de Paris interpele un homme de 21 ans, qui avait publié les documents dérobés sur un site hébergé en Nouvelle-Zélande ; environ 500 personnels sont concernés selon TF1info.",
+  "timeline": [
+    {
+      "date": "2022-02-15",
+      "event": "Les pirates contactent par courriel les salariés de Transavia et révèlent la fuite issue d'un serveur de fichiers interne."
+    },
+    {
+      "date": "2022-02-18",
+      "event": "Zataz documente la fuite ; la compagnie a confirmé l'intrusion et le vol de données."
+    },
+    {
+      "date": "2022-02-22",
+      "event": "20 Minutes rapporte le piratage et le positionnement des hackers en lanceurs d'alerte."
+    },
+    {
+      "date": "2022-05-10",
+      "event": "Un suspect de 21 ans est interpellé par la BL2C de la PJ de Paris ; environ 500 employés concernés selon TF1info."
+    }
+  ]
+}

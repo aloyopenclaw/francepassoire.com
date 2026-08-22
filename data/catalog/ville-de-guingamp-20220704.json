@@ -1,0 +1,37 @@
+{
+  "slug": "ville-de-guingamp-20220704",
+  "entity": "Ville de Guingamp",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-07-04",
+    "publication": "2022-07-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "peu d'informations communiquées par la municipalité selon Numerama ; volume de données non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme : ce qu'il faut retenir du conseil municipal de Guingamp, cyberattaque et intérim (4 juillet 2022)",
+      "url": "https://www.letelegramme.fr/cotes-darmor/guingamp/la-ville-de-guingamp-victime-d-une-cyberattaque-04-07-2022-13097347.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : cyberattaques, la liste des régions, départements et villes impactés en 2022 (12 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1208398-cyberattaques-la-liste-des-regions-departements-et-villes-impactes-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "La ville bretonne de Guingamp subit une cyberattaque en juin 2022. Peu d'informations sont communiquées sur l'opération. L'incident est présenté et assumé lors du conseil municipal du 4 juillet 2022, qui évoque aussi le recours à du personnel intérimaire pour absorber les conséquences de l'attaque. Numerama recense Guingamp parmi les communes de plus de 5 000 habitants ciblées en 2022.",
+  "timeline": [
+    {
+      "date": "2022-07-04",
+      "event": "Le conseil municipal confirme la cyberattaque survenue en juin 2022 et ses conséquences, rapporté par Le Télégramme."
+    }
+  ]
+}

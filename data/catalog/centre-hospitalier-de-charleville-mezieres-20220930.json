@@ -1,0 +1,51 @@
+{
+  "slug": "centre-hospitalier-de-charleville-mezieres-20220930",
+  "entity": "Centre hospitalier de Charleville-Mézières (hôpital Belair, hôpital de Manchester)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-30",
+    "publication": "2022-10-01",
+    "confirmation": "2022-10-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "deux intrusions à trois jours d'intervalle ; ni demande de rançon ni vol de données constatés selon France 3 ; volume non chiffré"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Grand Est : les hôpitaux de Belair et Manchester victimes de piratages informatiques (octobre 2022)",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/ardennes/charleville-mezieres/direct-video-charleville-mezieres-les-hopitaux-de-belair-et-manchester-victimes-de-piratages-informatiques-2628116.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Grand Est : cyberattaques, pourquoi les hôpitaux deviennent la cible des hackeurs (octobre 2022)",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/ardennes/charleville-mezieres/cyberattaque-pourquoi-les-hopitaux-deviennent-ils-la-cible-des-hackeurs-et-comment-se-proteger-2627752.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Ardennais : victime d'une intrusion informatique, l'hôpital Belair de Charleville coupé du réseau (1er octobre 2022)",
+      "url": "https://web.archive.org/web/2023/https://www.lardennais.fr/id413190/article/2022-10-01/victime-dune-intrusion-informatique-lhopital-belair-de-charleville-coupe-du",
+      "kind": "archive"
+    }
+  ],
+  "description": "Deux hôpitaux de Charleville-Mézières, dans les Ardennes, sont la proie de deux cyberattaques en quatre jours : l'hôpital psychiatrique Belair le 30 septembre 2022, puis l'hôpital de Manchester le 3 octobre. L'intrusion serait entrée par l'ordinateur d'un employé. Aucune demande de rançon ni vol de données ne sont constatés, mais les deux établissements ouvrent une cellule de crise, coupent leurs réseaux et impressionnent des milliers de documents par précaution. Les soins continuent sans incidence pour les patients selon France 3.",
+  "timeline": [
+    {
+      "date": "2022-09-30",
+      "event": "Intrusion détectée à l'hôpital Belair ; l'établissement se coupe du réseau."
+    },
+    {
+      "date": "2022-10-03",
+      "event": "L'hôpital de Manchester subit à son tour une intrusion ; cellules de crise ouvertes."
+    },
+    {
+      "date": "2022-10-05",
+      "event": "France 3 fait le point sur les deux attaques jugées particulièrement graves malgré l'absence de rançon constatée."
+    }
+  ]
+}
