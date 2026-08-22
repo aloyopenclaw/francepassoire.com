@@ -1,0 +1,44 @@
+{
+  "slug": "europcar-20250404",
+  "entity": "Europcar Mobility Group (marques Europcar, Goldcar et Ubeeqo)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-04-04",
+    "publication": "2025-04-04",
+    "confirmation": "2025-04-04"
+  },
+  "volume": {
+    "count": 200000,
+    "unit": "personnes",
+    "label": "jusqu'à 200 000 clients concernés selon BleepingComputer (estimation entre 50 000 et 200 000), noms et adresses électroniques de clients des marques Goldcar et Ubeeqo ; 37 Go de données revendiqués, dont plus de 9 000 fichiers SQL et 269 fichiers de configuration"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "BleepingComputer : Europcar GitLab breach exposes data of up to 200,000 customers (4 avril 2025)",
+      "url": "https://www.bleepingcomputer.com/news/security/europcar-gitlab-breach-exposes-data-of-up-to-200-000-customers/",
+      "kind": "article"
+    },
+    {
+      "label": "Cyber Daily : As many as 200k affected in Europcar data incident (7 avril 2025)",
+      "url": "https://www.cyberdaily.au/security/11949-as-many-as-200-000-affected-in-europcar-data-incident",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin mars 2025, un acteur malveillant utilisant le nom d'Europcar comme pseudonyme annonce avoir compromis les dépôts GitLab d'Europcar Mobility Group et obtenu 37 Go de données : fichiers SQL de sauvegardes, fichiers de configuration et éléments d'infrastructure cloud, avec des identifiants présents dans le code source. Le 4 avril 2025, l'entreprise confirme la réalité de la compromision, évalue l'impact et engage la notification des clients concernés et de l'autorité de protection des données. Les données personnelles touchées se limitent à des noms et adresses électroniques de clients Goldcar et Ubeeqo ; ni coordonnées bancaires ni mots de passe.",
+  "timeline": [
+    {
+      "date": "2025-04-04",
+      "event": "BleepingComputer révèle la compromission des dépôts GitLab, annoncée fin mars par un acteur malveillant sur un forum ; Europcar confirme l'intrusion et entame la notification des clients."
+    },
+    {
+      "date": "2025-04-07",
+      "event": "Cyber Daily relaite l'incident et le nombre de clients potentiellement concernés, jusqu'à 200 000."
+    }
+  ]
+}

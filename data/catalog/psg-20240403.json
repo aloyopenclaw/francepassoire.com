@@ -1,0 +1,53 @@
+{
+  "slug": "psg-20240403",
+  "entity": "Paris Saint-Germain (billetterie en ligne)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-04-03",
+    "publication": "2024-04-09",
+    "confirmation": "2024-04-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de comptes concernés non chiffré ; le club indique que rien n'établit à ce jour une extraction ou une exploitation des données"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : La billetterie du PSG a été piratée (9 avril 2024)",
+      "url": "https://www.numerama.com/cyberguerre/1668254-le-psg-victime-dun-piratage-sa-billetterie-a-ete-attaquee.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale : Le PSG victime d'une cyberattaque sur sa billetterie, une violation de données signalée (10 avril 2024, archivé)",
+      "url": "https://web.archive.org/web/20240410125600/https://www.usine-digitale.fr/article/le-psg-victime-d-une-cyberattaque-sur-sa-billetterie-une-violation-de-donnees-signalee.N2211354",
+      "kind": "archive"
+    },
+    {
+      "label": "Foot01 : PSG, la billetterie piratée avant PSG-Barça (8 avril 2024)",
+      "url": "https://www.foot01.com/paris/psg-la-billetterie-piratee-avant-psg-barca-436042",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 avril 2024, la direction des systèmes d'information du Paris Saint-Germain relève des tentatives d'accès inhabituelles sur le système de billetterie du club. Une vulnérabilité est identifiée et résolue en moins de 24 heures. Les données concernées couvrent identité, coordonnées, statut du compte, les trois derniers chiffres de numéros IBAN et des identifiants de cartes cadeaux, qui sont renouvelés par précaution. La violation est notifiée à la CNIL et les inscrits sont prévenus par courriel le 8 avril 2024.",
+  "timeline": [
+    {
+      "date": "2024-04-03",
+      "event": "Tentatives d'accès inhabituelles détectées sur la billetterie ; une vulnérabilité est résolue en moins de 24 heures et des mesures de sécurité complémentaires déployées."
+    },
+    {
+      "date": "2024-04-08",
+      "event": "Le PSG informe par courriel les personnes inscrites à sa billetterie, présente ses excuses et renouvelle les identifiants de cartes cadeaux."
+    },
+    {
+      "date": "2024-04-09",
+      "event": "La violation de données, notifiée à la CNIL, est rendue publique ; le club indique qu'aucune extraction ou exploitation n'est établie à ce stade."
+    }
+  ]
+}

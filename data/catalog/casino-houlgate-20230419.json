@@ -1,0 +1,42 @@
+{
+  "slug": "casino-houlgate-20230419",
+  "entity": "Casino d'Houlgate (groupe Viking Casinos)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-19",
+    "publication": "2023-04-27",
+    "confirmation": "2023-04-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données identifié au stade des investigations cyberforensiques ; plusieurs casinos du groupe Viking Casinos concernés"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ouest-France : Le casino d'Houlgate victime d'une cyberattaque rançongiciel (27 avril 2023, archivé)",
+      "url": "https://web.archive.org/web/20230502034626/https://www.ouest-france.fr/normandie/houlgate-14510/le-casino-dhoulgate-victime-dune-cyberattaque-rancongiciel-a3b73efe-e4f7-11ed-83da-c244470151d5",
+      "kind": "archive"
+    },
+    {
+      "label": "actu.fr : Houlgate, le casino victime d'une cyberattaque de type rançongiciel (27 avril 2023)",
+      "url": "https://actu.fr/normandie/houlgate_14338/houlgate-le-casino-victime-dune-cyberattaque-de-type-rancongiciel_59279986.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 avril 2023, les services informatiques du groupe Viking Casinos, qui exploite dix casinos en France dont celui d'Houlgate (Calvados), détectent une cyberattaque de type rançongiciel au moyen de leurs consoles de supervision. Le système d'information est mis à l'arrêt pour protéger les données et l'établissement ferme plusieurs jours. Une cellule de crise est activée, une plainte est déposée et des notifications préalables sont adressées à l'ANSSI et à la CNIL. Les jeux rouvrent le 27 avril 2023 en mode adapté.",
+  "timeline": [
+    {
+      "date": "2023-04-19",
+      "event": "Détection d'une cyberattaque de type rançongiciel par les services informatiques de Viking Casinos ; arrêt du système d'information et fermeture du casino d'Houlgate."
+    },
+    {
+      "date": "2023-04-27",
+      "event": "Le groupe annonce l'incident, indique qu'aucun vol de données n'a été identifié à ce stade et rouvre les jeux en mode adapté ; plainte déposée, ANSSI et CNIL notifiées."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "transavia-20220215",
+  "entity": "Transavia France (compagnie aérienne, filiale d'Air France-KLM)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-15",
+    "publication": "2022-02-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré; les données exfiltrées concernent des salariés (un employé évoque les données de centaines de personnes)"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Piratage de Transavia, fuite de données massive (18 février 2022)",
+      "url": "https://www.zataz.com/piratage-de-transavia-fuite-de-donnees-massive/",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes : La compagnie aérienne Transavia se serait fait pirater des milliers de données privées de ses salariés (22 février 2022)",
+      "url": "https://www.20minutes.fr/high-tech/3240123-20220222-compagnie-aerienne-transavia-fait-pirater-milliers-donnees-privees-salaries",
+      "kind": "article"
+    }
+  ],
+  "description": "Des pirates trouvent le moyen d'extraire des données privées et personnelles depuis un serveur de fichiers de Transavia, filiale du groupe Air France-KLM. Les documents concernent des salariés : CV, lettres de motivation, passeports, documents médicaux et certificats de membre d'équipage délivrés par la DGAC. Le 15 février 2022, les pirates contactent directement les employés par courriel et affirment avoir supprimé les copies obtenues. La compagnie confirme l'intrusion et le vol de données.",
+  "timeline": [
+    {
+      "date": "2022-02-15",
+      "event": "Des pirates envoient un courriel aux salariés de Transavia et signalent avoir copié des documents personnels stockés sur un serveur de fichiers accessible."
+    },
+    {
+      "date": "2022-02-18",
+      "event": "Zataz révèle la fuite ; Transavia confirme l'intrusion et le vol de données."
+    },
+    {
+      "date": "2022-02-22",
+      "event": "20 Minutes relaite le piratage des données privées de salariés de la compagnie."
+    }
+  ]
+}
