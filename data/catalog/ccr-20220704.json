@@ -1,0 +1,56 @@
+{
+  "slug": "ccr-20220704",
+  "entity": "Caisse Centrale de Réassurance (CCR)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-07-04",
+    "publication": "2022-07-06",
+    "confirmation": "2022-07-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume communiqué; CCR n'exclut pas une fuite de données et le groupe Lilith menace de publier des informations extraites du système d'information"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Solutions Numériques (8 juillet 2022) : Cyberattaque contre le réassureur public CCR",
+      "url": "https://www.solutions-numeriques.com/cyberattaque-contre-le-reassureur-public-ccr/",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT (11 juillet 2022) : Ransomware. L'attaque contre CCR revendiquée par un groupe inconnu, Lilith",
+      "url": "https://www.lemagit.fr/actualites/252522305/Cyberattaque-le-groupe-CCR-sisole-de-son-ecosysteme",
+      "kind": "article"
+    },
+    {
+      "label": "L'Argus de l'assurance (6 juillet 2022) : Le réassureur public ciblé d'une cyberattaque (archive)",
+      "url": "https://web.archive.org/web/20220706174618/https://www.argusdelassurance.com/reassureurs/le-reassureur-public-cible-d-une-cyberattaque.201817",
+      "kind": "article"
+    },
+    {
+      "label": "L'Argus de l'assurance (15 juillet 2022) : Un groupe mafieux inconnu a revendiqué la cyberattaque contre CCR (archive)",
+      "url": "https://web.archive.org/web/20220715145305/https://www.argusdelassurance.com/reassureurs/un-groupe-mafieux-inconnu-a-revendique-la-cyberattaque-contre-ccr.202177",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 3 au 4 juillet 2022, la Caisse Centrale de Réassurance, réassureur public qui couvre avec la garantie de l'État les catastrophes naturelles et les risques liés au terrorisme, subit une cyberattaque de type rançongiciel. L'établissement isolate son système d'information de son écosystème et coupe son site internet, qui reste indisponible plus d'une semaine. Les fonctions essentielles sont maintenues, mais CCR n'exclut pas une fuite de données. Le groupe Lilith, jusqu'alors inconnu, revendique l'attaque sur un site éphémère et menace de divulguer les données extraites. Aucun volume n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2022-07-04",
+      "event": "Attaque détectée dans la nuit du 3 au 4 juillet; CCR isole son système d'information et rend son site internet inaccessible."
+    },
+    {
+      "date": "2022-07-06",
+      "event": "L'Argus de l'assurance rapporte l'attaque contre le réassureur public; une fuite de données n'est pas exclue."
+    },
+    {
+      "date": "2022-07-11",
+      "event": "LeMagIT rapporte la revendication de l'attaque par le groupe Lilith, qui menace de publier des données; le site de CCR est toujours hors ligne le 8 juillet."
+    }
+  ]
+}

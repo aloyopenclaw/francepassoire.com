@@ -1,0 +1,41 @@
+{
+  "slug": "societe-generale-20220102",
+  "entity": "Société Générale",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-01-02",
+    "publication": "2022-01-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration constatée; un pirate met en vente un accès obtenu par injection SQL présenté comme permettant de lire des données d'administrateurs et d'employés; vente repérée dès novembre 2021 sur un forum du darknet selon Zataz"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz (2 janvier 2022) : Des accès à deux banques en vente dans le darkweb",
+      "url": "https://www.zataz.com/des-acces-a-deux-banques-en-vente-dans-le-darkweb/",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France (3 janvier 2022) : Société Générale. Une faille informatique concernant la banque est en vente sur le dark web (archive)",
+      "url": "https://web.archive.org/web/20220103143856/https://www.ouest-france.fr/societe/cyberattaque/societe-generale-une-faille-informatique-concernant-la-banque-est-en-vente-sur-le-dark-web-7578750",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 janvier 2022, Zataz révèle qu'un pirate informatique propose à la vente, pour quelques milliers de dollars, des accès présentés comme ouverts par injection SQL sur les systèmes d'une banque canadienne et de la Société Générale. Pour la banque française, le vendeur affirme que l'accès permettrait de lire des données d'administrateurs et d'employés. Le CERT de la Société Générale, saisi par Zataz, indique être sur l'affaire depuis plusieurs semaines. Aucun site précis n'est identifié, aucune exfiltration n'est démontrée et les accès ne semblent pas avoir trouvé acheteur. Ouest-France relaie l'information le 3 janvier 2022.",
+  "timeline": [
+    {
+      "date": "2022-01-02",
+      "event": "Zataz publie la mise en vente d'accès par injection SQL visant notamment la Société Générale; le CERT de la banque aurait été sur l'affaire depuis plusieurs semaines."
+    },
+    {
+      "date": "2022-01-03",
+      "event": "Ouest-France relaie la vente d'accès sur le dark web; aucun vol de données n'est établi."
+    }
+  ]
+}

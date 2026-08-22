@@ -1,0 +1,42 @@
+{
+  "slug": "uniprevoyance-20240520",
+  "entity": "Uniprévoyance (groupe Ugo)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-20",
+    "publication": "2024-06-14",
+    "confirmation": "2024-05-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "la confidentialité de données à caractère personnel est déclarée compromise selon Uniprévoyance, sans chiffrage; l'institution a enregistré 921 millions d'euros de cotisations en 2023"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Uniprévoyance, communiqué officiel relayé par Tripalio (juin 2024) : cyberattaque par rançongiciel identifiée le 20/05/2024 à 18h30",
+      "url": "https://presse.tripalio.fr/wp-content/uploads/2024/06/Uniprevoyance-cyberattaque.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "L'Argus de l'assurance (14 juin 2024) : Une institution de prévoyance victime d'une cyberattaque (archive)",
+      "url": "https://web.archive.org/web/20240614161824/https://www.argusdelassurance.com/les-assureurs/groupes-de-protection-sociale/une-institution-de-prevoyance-victime-d-une-cyberattaque.231861",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 mai 2024 à 18h30, Uniprévoyance, institution de prévoyance du groupe Ugo, identifie une cyberattaque par rançongiciel. Des services sont fermés et des experts cyber mobilisés pour rouvrir les activités en sécurité, avec une reprise progressive annoncée. Les premières investigations internes démontrent que la confidentialité de données à caractère personnel est compromise: certaines données ont pu sortir des systèmes d'information, sans que l'institution ait connaissance à ce stade d'une réutilisation. Aucun volume n'est communiqué. L'Argus de l'assurance relaie l'incident le 14 juin 2024.",
+  "timeline": [
+    {
+      "date": "2024-05-20",
+      "event": "Détection d'une attaque par rançongiciel à 18h30; fermeture de services et mobilisation d'experts cyber."
+    },
+    {
+      "date": "2024-06-14",
+      "event": "L'Argus de l'assurance rapporte l'attaque; Uniprévoyance confirme la compromission de la confidentialité de données personnelles, sans chiffrage."
+    }
+  ]
+}
