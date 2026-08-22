@@ -1,0 +1,45 @@
+{
+  "slug": "coaxis-20231207",
+  "entity": "Coaxis (ESN certifiée hébergeur de données de santé)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 25 % du système d'information chiffré; aucune rançon payée; données des clients restées intactes selon l'entreprise"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "LeMagIT : Cyberattaque : Coaxis se remet du passage de LockBit",
+      "url": "https://www.lemagit.fr/actualites/366562894/Coaxis-une-ESN-certifiee-HDS-victime-dun-incident-de-securite",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : L'ESN Coaxis victime d'un ransomware",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61449-l-esn-coaxis-victime-d-un-ransomware.html",
+      "kind": "article"
+    },
+    {
+      "label": "DPO Partage : Cyberattaque de Coaxis : chronologie et enseignements",
+      "url": "https://www.dpo-partage.fr/cyberattaque-de-coaxis/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 7 au 8 décembre 2023, l'ESN bordelaise Coaxis, certifiée hébergeur de données de santé et hébergeuse de logiciels métiers pour des maisons de santé et des cabinets d'experts-comptables, est frappée par le rançongiciel LockBit 3.0. Environ un quart de son système d'information est chiffré et l'accès aux logiciels hébergés est fortement perturbé pour ses clients. L'entreprise isole son infrastructure, ne paie aucune rançon et indique que les données de ses clients sont restées intactes. Les machines affectées sont restaurées dans les jours suivants.",
+  "timeline": [
+    {
+      "date": "2023-12-07",
+      "event": "Attaque par le rançongiciel LockBit 3.0 dans la nuit du 7 au 8 décembre : environ 25 % du SI chiffré, services d'hébergement interrompus."
+    },
+    {
+      "date": "2023-12-15",
+      "event": "L'entreprise annonce la restauration de l'ensemble des machines affectées et le maintien de l'intégrité des données clients."
+    }
+  ]
+}

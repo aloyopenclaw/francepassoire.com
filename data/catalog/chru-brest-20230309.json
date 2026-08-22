@@ -1,0 +1,51 @@
+{
+  "slug": "chru-brest-20230309",
+  "entity": "CHRU de Brest",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-09",
+    "publication": "2023-03-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune exfiltration aboutie : l'attaquant est interrompu pendant la phase d'exfiltration selon le CERT-FR"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde Informatique : Le CERT-FR décortique la cyberattaque contre le CHRU de Brest",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-cert-fr-decortique-la-cyberattaque-contre-le-chru-de-brest-91579.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Cyberattaque contre le CHRU Brest : ce qu'il s'est passé",
+      "url": "https://www.lemagit.fr/actualites/365534157/Cyberattaque-contre-le-CHRU-Brest-ce-quil-sest-passe",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info : L'hôpital de Brest victime à son tour d'une cyberattaque",
+      "url": "https://www.tf1info.fr/sante/video-l-hopital-de-brest-victime-a-son-tour-dune-cyberattaque-2250571.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : Le groupe de pirates derrière l'attaque du CHU de Brest a été identifié (liens avec FIN12)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/61199-le-groupe-de-pirates-derriere-l-attaque-du-chu-de-brest-a-ete-identifie.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 9 mars 2023 à 20 h 33, le CHRU de Brest détecte une cyberattaque sur son système d'information. La connexion Internet de l'établissement est coupée et la prise de rendez-vous en ligne devient impossible. L'attaquant est interrompu pendant la phase d'exfiltration : selon l'établissement, le fonctionnement des urgences n'est pas affecté et aucune fuite de données de santé n'est constatée. Les analyses ultérieures établissent des liens entre l'incident et le groupe FIN12. Le CERT-FR publie ensuite une rétro-ingénierie de l'attaque.",
+  "timeline": [
+    {
+      "date": "2023-03-09",
+      "event": "Détection de la cyberattaque à 20 h 33 : Internet coupé, rendez-vous en ligne indisponibles, attaquant interrompu en phase d'exfiltration."
+    },
+    {
+      "date": "2023-03-10",
+      "event": "L'établissement communique : soins maintenus, aucune fuite de données de santé constatée."
+    }
+  ]
+}

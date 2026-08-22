@@ -1,0 +1,51 @@
+{
+  "slug": "pole-sante-leonard-de-vinci-20220107",
+  "entity": "Pôle Santé Léonard de Vinci (Chambray-lès-Tours)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-07",
+    "publication": "2022-01-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "dossiers patients rendus inaccessibles par le chiffrement; aucune fuite de données confirmée; rançon rapportée à 500 000 euros"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde Informatique : Cyberattaque contre le Pôle Santé Léonard de Vinci à Chambray-lès-Tours (7 janvier 2022)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-cyberattaque-contre-le-pole-sante-leonard-de-vinci-a-chambray-les-tours-85367.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Nouvelle République : Chambray-lès-Tours : le Pôle de Santé Vinci fortement perturbé par une cyberattaque",
+      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/chambray-les-tours/chambray-les-tours-le-pole-de-sante-vinci-fortement-perturbe-par-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Franceinfo : Touraine : un pôle santé victime d'une cyberattaque avec une demande de rançon",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/touraine-un-pole-sante-victime-d-une-cyberattaque-avec-une-demande-de-rancon_4911651.html",
+      "kind": "article"
+    },
+    {
+      "label": "ici (France Bleu Touraine) : Piratage informatique au Pôle Santé Vinci : une centaine d'opérations annulées",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/piratage-informatique-au-pole-sante-vinci-a-chambray-les-tours-une-centaine-d-operations-annulees-ce-1641559672",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 6 au 7 janvier 2022, le Pôle Santé Léonard de Vinci, clinique privée de Chambray-lès-Tours (Indre-et-Loire), est frappé par un rançongiciel qui chiffre une partie de son système d'information et empêche l'accès aux dossiers patients. Une centaine d'opérations est annulée et l'établissement fonctionne en mode dégradé. Une rançon de 500 000 euros est rapportée par la presse. Le CHRU de Tours signale l'incident, confirmé par la direction de la clinique. Aucune fuite de données n'est confirmée.",
+  "timeline": [
+    {
+      "date": "2022-01-07",
+      "event": "Rançongiciel détecté dans la nuit du 6 au 7 janvier : dossiers patients inaccessibles, une centaine d'opérations annulées, fonctionnement en mode dégradé."
+    },
+    {
+      "date": "2022-01-10",
+      "event": "La presse rapporte une demande de rançon ; l'établissement indique que le retour à la normale prendra plusieurs jours."
+    }
+  ]
+}

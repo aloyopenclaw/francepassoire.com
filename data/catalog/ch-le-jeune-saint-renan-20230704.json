@@ -1,0 +1,37 @@
+{
+  "slug": "ch-le-jeune-saint-renan-20230704",
+  "entity": "Centre hospitalier Le Jeune (Saint-Renan)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-04",
+    "publication": "2023-07-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué par l'établissement"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme : À Saint-Renan, le centre hospitalier « Le Jeune » victime d'une cyberattaque (4 juillet 2023)",
+      "url": "https://www.letelegramme.fr/finistere/saint-renan-29290/a-saint-renan-le-centre-hospitalier-le-jeune-v-ictime-dune-cyberattaque-6386540.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Cyberattaque : la carte des villes, départements et hôpitaux victimes des hackers en 2023 (19 décembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1535532-cyberattaque-la-carte-des-villes-departements-et-hopitaux-victimes-des-hackers-en-2023.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 juillet 2023, le centre hospitalier Le Jeune à Saint-Renan (Finistère) est victime d'une cyberattaque par rançongiciel. À la suite du chiffrement de ses systèmes, l'établissement adopte un fonctionnement dégradé et prend des mesures d'organisation rapportées par la presse régionale. Aucun volume de données dérobées n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2023-07-04",
+      "event": "Cyberattaque par rançongiciel contre le centre hospitalier Le Jeune ; l'établissement passe en fonctionnement dégradé."
+    }
+  ]
+}

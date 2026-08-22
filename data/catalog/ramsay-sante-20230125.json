@@ -1,0 +1,50 @@
+{
+  "slug": "ramsay-sante-20230125",
+  "entity": "Ramsay Santé (Clinique de l'Union, Hôpital privé Jean Mermoz, Hôpital privé de l'Est lyonnais)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-01-25",
+    "publication": "2023-01-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucune donnée dérobée confirmée par le groupe; quatre établissements touchés"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro : Visés par une cyberattaque, deux hôpitaux lyonnais contraints de diminuer leur activité (31 janvier 2023)",
+      "url": "https://www.lefigaro.fr/lyon/vises-par-une-cyberattaque-deux-hopitaux-lyonnais-contraints-de-diminuer-leur-activite-20230131",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : Le groupe Ramsay Santé ciblé d'une cyberattaque",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60530-sante-le-groupe-ramsay-sante-cible-dune-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr : Une clinique victime d'une cyberattaque, près de Toulouse : ce que l'on sait (26 janvier 2023)",
+      "url": "https://actu.fr/occitanie/l-union_31561/une-clinique-victime-dune-cyberattaque-pres-de-toulouse-ce-que-lon-sait_56895543.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 janvier 2023, le groupe Ramsay Santé, majeur opérateur de cliniques privées en France, détecte des anomalies sur certains de ses serveurs. Quatre établissements sont touchés, dont la clinique de l'Union près de Toulouse, l'hôpital privé Jean Mermoz et l'hôpital privé de l'Est lyonnais. Les urgences de Jean Mermoz sont fermées temporairement et seule la moitié des activités de chimiothérapie est maintenue. Le groupe décrit une tentative d'intrusion et indique qu'aucune donnée n'a été dérobée.",
+  "timeline": [
+    {
+      "date": "2023-01-25",
+      "event": "Détection d'anomalies sur des serveurs du groupe ; quatre établissements sont touchés et isolés par précaution."
+    },
+    {
+      "date": "2023-01-26",
+      "event": "Le groupe annonce l'incident ; la clinique de l'Union fonctionne en mode dégradé."
+    },
+    {
+      "date": "2023-01-31",
+      "event": "Le Figaro rapporte la baisse d'activité des hôpitaux lyonnais du groupe : urgences de Jean Mermoz fermées, 50 % des chimiothérapies maintenues."
+    }
+  ]
+}

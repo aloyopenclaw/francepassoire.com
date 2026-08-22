@@ -1,0 +1,51 @@
+{
+  "slug": "centre-hospitalier-cahors-20220912",
+  "entity": "Centre hospitalier de Cahors",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-12",
+    "publication": "2022-09-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données médicales hébergées chez un prestataire externe et non impactées selon l'établissement"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Dépêche : L'hôpital de Cahors victime d'une cyberattaque, les données médicales non impactées (15 septembre 2022)",
+      "url": "https://www.ladepeche.fr/2022/09/15/le-centre-hospitalier-de-cahors-subit-une-intrusion-informatique-les-donnees-medicales-non-impactees-10545158.php",
+      "kind": "article"
+    },
+    {
+      "label": "Franceinfo : Lot : l'hôpital de Cahors victime d'une cyberattaque, les soins se poursuivent normalement",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/lot-l-hopital-de-cahors-victime-dune-cyberattaque-les-soins-se-poursuivent-normalement_5362564.html",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberveille Santé (ANS) : Retour d'expérience : cyberattaque du centre hospitalier de Cahors suite à l'exploitation d'une faille",
+      "url": "https://cyberveille.esante.gouv.fr/retours-d-experience/cyberattaque-du-centre-hospitalier-de-cahors-suite-lexploitation-dune-faille",
+      "kind": "officiel"
+    },
+    {
+      "label": "IT-Connect : L'hôpital de Cahors victime d'une attaque informatique",
+      "url": "https://www.it-connect.fr/hopital-de-cahors-victime-une-attaque-informatique/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le lundi 12 septembre 2022 en soirée, le centre hospitalier de Cahors (Lot) subit une intrusion informatique obtenue par l'exploitation d'une vulnérabilité critique présente sur un serveur exposé. L'attaque touche d'abord les services administratifs et perturbe l'établissement pendant plusieurs semaines. Selon l'hôpital, les données médicales des patients ne sont pas impactées car elles sont hébergées chez un prestataire externe. Les soins se poursuivent normalement. L'Agence du numérique en santé publie ensuite un retour d'expérience détaillant l'incident.",
+  "timeline": [
+    {
+      "date": "2022-09-12",
+      "event": "Intrusion informatique en soirée via l'exploitation d'une faille sur un serveur ; les services administratifs sont visés."
+    },
+    {
+      "date": "2022-09-15",
+      "event": "L'hôpital rend l'attaque publique : soins maintenus, données médicales hébergées en externe non impactées."
+    }
+  ]
+}

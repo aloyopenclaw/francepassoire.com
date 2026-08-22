@@ -1,0 +1,46 @@
+{
+  "slug": "chu-nantes-20240114",
+  "entity": "CHU de Nantes",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-01-14",
+    "publication": "2024-01-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "attaque par déni de service distribuée; aucune donnée compromise selon l'établissement"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde Informatique : Le CHU de Nantes visé par une attaque DDoS",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-le-chu-de-nantes-vise-par-une-attaque-ddos-92684.html",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France : Cyberattaque au CHU de Nantes : «un ou deux jours pour rétablir la situation» (16 janvier 2024, capture archive.org)",
+      "url": "https://web.archive.org/web/2024/https://www.ouest-france.fr/societe/cyberattaque/le-chu-de-nantes-victime-dune-cyberattaque-386f2e22-b454-11ee-b2a2-ccb95da3b2ac",
+      "kind": "archive"
+    },
+    {
+      "label": "IT-Connect : Le CHU de Nantes victime d'une attaque DDoS",
+      "url": "https://www.it-connect.fr/cybersecurite-le-chu-de-nantes-victime-dune-attaque-ddos/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 14 au 15 janvier 2024, le CHU de Nantes est visé par une attaque par déni de service distribuée qui perturbe l'accès à Internet de l'établissement et à certains services en ligne, dont la prise de rendez-vous. La prise en charge des patients n'est pas interrompue. L'attaque se prolonge jusqu'au mardi 16 janvier puis s'arrête. Selon l'établissement, aucune donnée n'a été compromise.",
+  "timeline": [
+    {
+      "date": "2024-01-14",
+      "event": "Attaque DDoS dans la nuit du 14 au 15 janvier : accès Internet et services en ligne perturbés."
+    },
+    {
+      "date": "2024-01-16",
+      "event": "Fin de l'attaque confirmée par le CHU ; aucune donnée compromise selon l'établissement."
+    }
+  ]
+}

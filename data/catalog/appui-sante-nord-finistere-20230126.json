@@ -1,0 +1,41 @@
+{
+  "slug": "appui-sante-nord-finistere-20230126",
+  "entity": "Association Appui Santé Nord Finistère (ASNF)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-01-26",
+    "publication": "2023-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "ensemble des données cryptées et certaines archives supprimées; nombre de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "TICsanté : Une association professionnelle finistérienne victime d'une cyberattaque (8 février 2023)",
+      "url": "https://www.ticsante.com/story?ID=6567",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme : L'association Appui Santé Nord Finistère victime d'une cyber-attaque (30 janvier 2023)",
+      "url": "https://www.letelegramme.fr/bretagne/toutes-les-infos/l-association-appui-sante-nord-finistere-victime-dune-cyber-attaque-4044625.php",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 janvier 2023, l'Association Appui Santé Nord Finistère (ASNF), qui regroupe des professionnels de santé libéraux et des représentants d'établissements sanitaires et médico-sociaux, subit une cyberattaque d'environ trente minutes. L'association héberge des données personnelles de santé issues du dispositif d'appui à la coordination, du centre de coordination en cancérologie du Ponant et du centre local d'information et de coordination gérontologique du Pays de Morlaix. L'ensemble des données est crypté et certaines archives sont supprimées. L'infrastructure est mise à l'arrêt, des fichiers sont transmis à une société spécialisée et une nouvelle infrastructure est reconstruite. Un communiqué conjoint avec l'Agence régionale de santé est publié le 30 janvier.",
+  "timeline": [
+    {
+      "date": "2023-01-26",
+      "event": "Cyberattaque d'une trentaine de minutes : données cryptées, archives supprimées, infrastructure mise à l'arrêt complet."
+    },
+    {
+      "date": "2023-01-30",
+      "event": "Communiqué conjoint ASNF et ARS Bretagne décrivant l'atteinte à la confidentialité, la disponibilité et l'intégrité des données."
+    }
+  ]
+}

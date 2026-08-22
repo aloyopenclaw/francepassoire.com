@@ -1,0 +1,46 @@
+{
+  "slug": "centre-hospitalier-ouest-vosgien-20231007",
+  "entity": "Centre hospitalier de l'Ouest vosgien (sites de Vittel et Neufchâteau)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-07",
+    "publication": "2023-10-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données communiqué; consultations et interventions suspendues sur les deux sites"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Vosges Matin : Les hôpitaux de Vittel et Neufchâteau, victimes d'une cyberattaque (7 octobre 2023)",
+      "url": "https://www.vosgesmatin.fr/faits-divers-justice/2023/10/07/les-hopitaux-de-vittel-et-neufchateau-cibles-par-une-attaque-informatique",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : Deux hôpitaux des Vosges victimes d'une cyberattaque : consultations et interventions suspendues (7 octobre 2023)",
+      "url": "https://www.leparisien.fr/faits-divers/deux-hopitaux-des-vosges-victimes-dune-cyberattaque-consultations-et-interventions-suspendues-07-10-2023-T7JBUFS4A5AH7DYIU5NL575QBI.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : Le Centre hospitalier de l'Ouest vosgien victime d'une cyberattaque",
+      "url": "https://www.linformaticien.com/61264-le-centre-hospitalier-de-l-ouest-vosgien-victime-dune-cyberattaque.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le samedi 7 octobre 2023 vers 2 heures du matin, le centre hospitalier de l'Ouest vosgien subit une cyberattaque qui paralyse les systèmes informatiques de ses sites de Vittel et de Neufchâteau. Les urgences sont fermées temporairement et les consultations et interventions programmées sont suspendues. Les équipes repassent aux échanges papier. La sécurité et la continuité des soins sont garanties selon l'établissement, qui confirme l'incident dans la journée. Aucun vol de données n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2023-10-07",
+      "event": "Cyberattaque vers 2 heures du matin sur les sites de Vittel et Neufchâteau : systèmes paralysés, urgences fermées temporairement, échanges papier."
+    },
+    {
+      "date": "2023-10-08",
+      "event": "L'établissement communique sur une reprise avec des adaptations d'activité ; la presse régionale et nationale relaie l'attaque."
+    }
+  ]
+}

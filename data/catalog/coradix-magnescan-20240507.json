@@ -1,0 +1,37 @@
+{
+  "slug": "coradix-magnescan-20240507",
+  "entity": "Coradix-Magnescan (groupe d'imagerie médicale)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-05-07",
+    "publication": "2024-05-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun vol de données confirmé; prises de rendez-vous d'imagerie médicale compliquées"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "L'Indépendant : Pyrénées-Orientales : plusieurs sites d'imagerie médicale victimes d'une cyberattaque (7 mai 2024)",
+      "url": "https://www.lindependant.fr/2024/05/07/pyrenees-orientales-de-nombreux-sites-dimagerie-medicale-victimes-dune-cyberattaque-11936827.php",
+      "kind": "article"
+    },
+    {
+      "label": "The Record : Patient appointments imperiled by cyberattack on French radiology company Coradix-Magnescan",
+      "url": "https://therecord.media/france-radiology-company-cyberattack-coradix-magnescan",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 mai 2024, Coradix-Magnescan, groupe français d'imagerie médicale exploitant de nombreux centres de radiologie, dont plusieurs sites dans les Pyrénées-Orientales, est touché par une cyberattaque. L'entreprise prévient ses patients que l'incident risque de compliquer leurs rendez-vous d'examen. Les sites d'imagerie des Pyrénées-Orientales fonctionnent en mode dégradé. Aucun vol de données n'est confirmé.",
+  "timeline": [
+    {
+      "date": "2024-05-07",
+      "event": "Cyberattaque contre Coradix-Magnescan : sites d'imagerie médicale perturbés et rendez-vous compliqués."
+    }
+  ]
+}

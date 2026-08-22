@@ -1,0 +1,46 @@
+{
+  "slug": "centre-hospitalier-macon-20220527",
+  "entity": "Centre hospitalier de Mâcon",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-05-27",
+    "publication": "2022-05-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées communiqué par l'établissement"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Le Journal de Saône-et-Loire : Le centre hospitalier de Mâcon victime d'une cyberattaque (30 mai 2022)",
+      "url": "https://www.lejsl.com/sante/2022/05/30/le-centre-hospitalier-victime-d-une-cyberattaque",
+      "kind": "article"
+    },
+    {
+      "label": "Centre hospitalier de Mâcon : Communiqué de presse n°3 sur la cyberattaque du 27 mai 2022 (site officiel)",
+      "url": "https://www.ch-macon.fr/actualites/divers/communique-de-presse-n3/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde Informatique : Telex : le CH de Mâcon cyberattaqué",
+      "url": "https://www.lemondeinformatique.fr/actualites/lire-telex-le-ch-de-macon-cyberattaque-100-000-scans-de-cerveaux-crees-par-l-ia-les-ceo-de-samsung-et-d-intel-discutent-86941.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le vendredi 27 mai 2022 en soirée, le centre hospitalier de Mâcon (Saône-et-Loire) subit une cyberattaque. Le service informatique isole complètement le système d'information pour contenir l'incident et l'établissement publie plusieurs communiqués de presse. L'établissement ne communique aucun vol de données.",
+  "timeline": [
+    {
+      "date": "2022-05-27",
+      "event": "Cyberattaque en soirée : le service informatique réagit immédiatement et isole le système d'information."
+    },
+    {
+      "date": "2022-05-30",
+      "event": "L'établissement annonce l'incident sur ses réseaux et dans la presse régionale ; des communiqués successifs suivent la remise en service."
+    }
+  ]
+}

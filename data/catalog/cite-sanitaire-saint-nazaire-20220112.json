@@ -1,0 +1,36 @@
+{
+  "slug": "cite-sanitaire-saint-nazaire-20220112",
+  "entity": "Centre hospitalier de Saint-Nazaire (cité sanitaire)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-01-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées communiqué; l'attaque vise le prestataire audiovisuel et téléphonique de l'établissement"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Saint-Nazaire News : Cité sanitaire de Saint-Nazaire : une cyberattaque vise les TV, téléphones et le Wifi",
+      "url": "https://www.saintnazairenews.fr/news/cite-sanitaire-de-saint-nazaire-une-cyberattaque-vise-les-tvs-telephones-et-le-wifi",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Cyberattaque : la liste des hôpitaux touchés en 2022 (26 décembre 2022)",
+      "url": "https://www.numerama.com/cyberguerre/1219264-cyberattaque-la-liste-des-hopitaux-touches-en-2022.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 janvier 2022, la cité sanitaire de Saint-Nazaire (Loire-Atlantique) subit une cyberattaque qui touche son prestataire de services de télévision, téléphonie et Wifi pour patients. Les personnes hospitalisées sont privées d'accès à Internet et de communication avec leurs proches pendant environ 48 heures, le temps de la remise en service. L'établissement confirme l'incident sur ses réseaux. Aucun vol de données n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2022-01-12",
+      "event": "Cyberattaque contre le prestataire technique de la cité sanitaire : téléviseurs, téléphones et Wifi des patients coupés."
+    }
+  ]
+}

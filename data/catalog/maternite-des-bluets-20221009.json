@@ -1,0 +1,56 @@
+{
+  "slug": "maternite-des-bluets-20221009",
+  "entity": "Hôpital Pierre-Rouquès, maternité des Bluets (Paris)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-10-09",
+    "publication": "2022-10-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "150 Go de données exfiltrées et diffusées sur le darkweb selon la presse; nombre de personnes concernées non communiqué; rançon de 900 000 euros exigée"
+  },
+  "data_types": [
+    "sante",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde : À Paris, la maternité des Bluets frappée par une attaque informatique (19 octobre 2022, capture archive.org)",
+      "url": "https://web.archive.org/web/2022/https://www.lemonde.fr/pixels/article/2022/10/19/a-paris-la-maternite-des-bluets-frappee-par-une-attaque-informatique_6146539_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "Le Parisien : À Paris, la maternité des Bluets victime d'une cyberattaque : «nous avons pensé à fermer temporairement» (19 octobre 2022)",
+      "url": "https://www.leparisien.fr/paris-75/a-paris-la-maternite-des-bluets-victime-dune-cyberattaque-nous-avons-pense-a-fermer-temporairement-19-10-2022-VBSAXUFZ2NBRJONO45JCD63T4Y.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : Des hackers russophones revendiquent l'attaque contre une maternité à Paris (Vice Society)",
+      "url": "https://www.numerama.com/cyberguerre/1152470-des-hackers-russophones-revendiquent-lattaque-contre-une-maternite-a-paris.html",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informaticien : Vice Society derrière le piratage d'une maternité : 150 Go de données diffusés sur le darkweb",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60206-vice-society-derriere-le-piratage-d-une-maternite.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le dimanche 9 octobre 2022, l'hôpital Pierre-Rouquès, maternité des Bluets à Paris, est frappé par un rançongiciel qui paralyse son système d'information. Les pirates exigent une rançon de 900 000 euros. L'établissement maintient son activité en mode dégradé et envisage brièvement une fermeture temporaire. Le groupe Vice Society revendique l'attaque et diffuse environ 150 Go de données volées sur le darkweb. L'Agence régionale d'Île-de-France est saisie.",
+  "timeline": [
+    {
+      "date": "2022-10-09",
+      "event": "Rançongiciel le dimanche 9 octobre : système d'information paralysé, rançon de 900 000 euros exigée, activité maintenue en mode dégradé."
+    },
+    {
+      "date": "2022-10-19",
+      "event": "L'attaque est rendue publique ; le groupe Vice Society la revendique."
+    },
+    {
+      "date": "2022-10-27",
+      "event": "La presse spécialisée rapporte la diffusion d'environ 150 Go de données volées sur le darkweb."
+    }
+  ]
+}

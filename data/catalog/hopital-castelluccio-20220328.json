@@ -1,0 +1,51 @@
+{
+  "slug": "hopital-castelluccio-20220328",
+  "entity": "Hôpital de Castelluccio (Ajaccio)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-28",
+    "publication": "2022-03-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données dérobées communiqué; rançongiciel avec demande de rançon"
+  },
+  "data_types": [
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Corse : L'hôpital de Castelluccio visé par une cyberattaque, les activités d'oncologie et de radiothérapie suspendues",
+      "url": "https://france3-regions.franceinfo.fr/corse/corse-du-sud/grand-ajaccio/l-hopital-de-castelluccio-vise-par-une-cyberattaque-les-activites-d-oncologie-et-de-radiotherapie-suspendues-2514472.html",
+      "kind": "article"
+    },
+    {
+      "label": "Corse Net Infos : L'hôpital de Castelluccio visé par une cyberattaque (29 mars 2022)",
+      "url": "https://www.corsenetinfos.corsica/L-hopital-de-Castelluccio-vise-par-une-cyberattaque_a63778.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : Corse : un hôpital au ralenti après une cyberattaque, les systèmes d'information paralysés (29 mars 2022)",
+      "url": "https://www.leparisien.fr/high-tech/corse-un-hopital-au-ralenti-apres-une-cyberattaque-les-systemes-dinformation-paralyses-29-03-2022-QCZQVHQXHBDINMMYGL6OPOQE6A.php",
+      "kind": "article"
+    },
+    {
+      "label": "TICsanté : Le CH de Castelluccio à Ajaccio victime d'un rançongiciel (Vice Society)",
+      "url": "https://www.ticsante.com/story?ID=6130",
+      "kind": "article"
+    }
+  ],
+  "description": "Le lundi 28 mars 2022, l'hôpital de Castelluccio à Ajaccio (Corse-du-Sud) est frappé par un rançongiciel détecté sur son réseau informatique. Les activités de radiothérapie et d'oncologie sont suspendues et les soins radiologiques perturbés. Une demande de rançon accompagne l'attaque, attribuée au groupe Vice Society selon la presse spécialisée. L'établissement confirme l'incident dans un communiqué. Aucun volume de données dérobées n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2022-03-28",
+      "event": "Rançongiciel détecté sur le réseau de l'hôpital : systèmes d'information paralysés, radiothérapie et oncologie suspendues, demande de rançon."
+    },
+    {
+      "date": "2022-03-29",
+      "event": "L'établissement communique sur l'attaque ; la presse rapporte l'attribution au groupe Vice Society."
+    }
+  ]
+}
