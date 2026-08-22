@@ -1585,7 +1585,10 @@ export async function runInstantSweep(
 
   let fiches: FicheDigest[] = [];
   try {
-    const res = await fetchFn(FICHES_URL, {
+    // Cache-buster par minute : un deploy Pages doit être visible au tick
+    // suivant, jamais servi depuis une copie edge périmée (incident 22/08 :
+    // 1h30 d'alertes muettes sur purge de cache lente).
+    const res = await fetchFn(`${FICHES_URL}?t=${Math.floor(Date.now() / 60_000)}`, {
       headers: { accept: 'application/json' },
       cache: 'no-store',
     });
@@ -1620,6 +1623,7 @@ export async function runInstantSweep(
     .slice(0, INSTANT_CAP);
 
   if (nouveaux.length === 0 && changes.length === 0) {
+    log(`instant: aucun changement (${fiches.length} fiches vues, état ${Object.keys(precedent).length})`);
     return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0 };
   }
 
