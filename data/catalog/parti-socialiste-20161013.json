@@ -1,0 +1,59 @@
+{
+  "slug": "parti-socialiste-20161013",
+  "entity": "Parti socialiste",
+  "siren": "784411720",
+  "secteur": "autre",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-10-13",
+    "confirmation": "2016-10-13",
+    "publication": "2016-10-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs dizaines de milliers de primo-adhérents concernés selon la CNIL (chiffre exact non publié) ; avertissement public"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « PARTI POLITIQUE », faille de sécurité (13 octobre 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Figaro — La CNIL sanctionne le Parti socialiste pour une faille de sécurité sur son site (27 octobre 2016)",
+      "url": "https://www.lefigaro.fr/secteur/high-tech/2016/10/27/32001-20161027ARTFIG00329-le-site-web-du-parti-socialiste-victime-d-une-faille-de-securite.php",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — La CNIL gronde le Parti socialiste sur la sécurité des données de ses adhérents (27 octobre 2016)",
+      "url": "https://www.numerama.com/politique/204711-la-cnil-gronde-le-parti-socialiste-sur-la-securite-des-donnees-de-ses-adherents.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 13/10/2016 contre un parti politique",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 26 mai 2016, la CNIL a été informée d'une faille sur le site du Parti socialiste. La plateforme de suivi des primo-adhésions était accessible librement par saisie d'une URL. Les contrôleurs ont pu y lire noms, adresses, téléphones, dates de naissance et adresses IP. Les moyens de paiement et les montants des cotisations figuraient aussi dans la base. Le parti a immédiatement corrigé après le signalement. Le contrôle sur place a relevé l'absence d'authentification forte et de traçabilité. Des données remontant à 2010 étaient conservées sans limite de durée. La formation restreinte a prononcé un avertissement public le 13 octobre 2016, sans sanction financière. Le tableau CNIL mentionne à tort une sanction pécuniaire pour cette décision.",
+  "timeline": [
+    {
+      "date": "2016-05-26",
+      "event": "Signalement à la CNIL d'une faille exposant la plateforme de suivi des primo-adhésions."
+    },
+    {
+      "date": "2016-10-13",
+      "event": "Avertissement public pour défaut de sécurité et conservation excessive (délibération n° 2016-123)."
+    },
+    {
+      "date": "2016-10-27",
+      "event": "La CNIL rend publique la sanction ; le parti a corrigé la faille dès le signalement."
+    }
+  ]
+}

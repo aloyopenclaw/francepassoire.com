@@ -1,0 +1,67 @@
+{
+  "slug": "ricard-20160421",
+  "entity": "Ricard",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-04-21",
+    "confirmation": "2016-04-21",
+    "publication": "2016-05-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs milliers de clients concernés selon la CNIL (chiffre exact non publié) ; avertissement public"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE PRODUCTION ET DE VENTE DE SPIRITUEUX », faille de sécurité, avertissement public (21 avril 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Silicon.fr — Chez Ricard, les données personnelles étaient en open bar (24 mai 2016)",
+      "url": "https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/Chez-Ricard-les-donnees-personnelles-etaient-en-open-bar-437850.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde du Droit — Condamnation de la société Ricard par la CNIL pour manquement à l'obligation de sécurité (2 juin 2016)",
+      "url": "https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/19699-condamnation-de-la-societe-ricard-par-la-cnil-pour-manquement-a-lobligation-de-securite-et-confidentialite-des-donnees-nominatives.html",
+      "kind": "article"
+    },
+    {
+      "label": "Challenges — Quand Pernod Ricard est épinglé par la CNIL (24 mai 2016, second contrôle du 27 novembre 2015)",
+      "url": "https://www.challenges.fr/entreprise/commerce/quand-pernod-ricard-est-epingle-par-la-cnil_22704",
+      "kind": "article"
+    },
+    {
+      "label": "ITespresso — Protection des données persos : la dose de Ricard était trop limitée (26 mai 2016)",
+      "url": "https://www.itespresso.fr/protection-donnees-personelles-ricard-cnil-130385.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 9 juillet 2015, un contrôle en ligne de la CNIL a visité le site ricard.com, dédié au programme de fidélité de la société Ricard. Les répertoires listés dans le fichier robots.txt donnaient un accès libre à plus de 1 000 fichiers de données clients. Ces fichiers contenaient noms, dates de naissance, adresses, téléphones et informations liées à des cartes bancaires. Informée, la société a fait bloquer l'accès par son hébergeur. Un second contrôle, le 27 novembre 2015, a montré les fichiers toujours accessibles par URL directe. La formation restreinte a prononcé un avertissement public le 21 avril 2016. Le recours à des prestataires reconnus n'exonérait pas la société de ses obligations de sécurité.",
+  "timeline": [
+    {
+      "date": "2015-07-09",
+      "event": "Contrôle en ligne : plusieurs milliers de données accessibles via les répertoires du fichier robots.txt."
+    },
+    {
+      "date": "2015-11-27",
+      "event": "Second contrôle : répertoires fermés mais fichiers toujours accessibles par URL directe."
+    },
+    {
+      "date": "2016-04-21",
+      "event": "Avertissement public pour défaut de sécurité et de confidentialité (délibération n° 2016-021)."
+    },
+    {
+      "date": "2016-05-24",
+      "event": "La CNIL rend publique la sanction contre la société Ricard."
+    }
+  ]
+}
