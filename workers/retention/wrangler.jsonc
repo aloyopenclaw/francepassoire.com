@@ -10,6 +10,7 @@
   "name": "francepassoire-retention",
   "main": "src/index.ts",
   "compatibility_date": "2026-08-20",
+  "observability": { "enabled": true },
 
   // Rétention quotidienne : 03:17 UTC = 05:17 Paris (été) / 04:17 (hiver).
   "triggers": {
