@@ -1,0 +1,42 @@
+{
+  "slug": "ville-floirac-20240418",
+  "entity": "Ville de Floirac",
+  "siren": "213301674",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-04-18",
+    "publication": "2024-04-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "intrusion stoppée ; « aucune donnée exfiltrée » et systèmes non dégradés selon la Ville et Bordeaux Métropole ; accès Internet suspendus par précaution"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — Cyberattaque stoppée à Floirac : les services municipaux néanmoins privés d'Internet ce vendredi (19 avril 2024)",
+      "url": "https://www.sudouest.fr/gironde/floirac/cyberattaque-stoppee-a-floirac-les-services-municipaux-neanmoins-prives-d-internet-ce-vendredi-19397237.php",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Nouvelle-Aquitaine — « Aucune donnée n'a été exfiltrée » : victime d'une cyberattaque, une mairie est privée d'accès à Internet (19 avril 2024)",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/aucune-donnee-n-a-ete-exfiltree-victime-d-une-cyberattaque-une-mairie-est-privee-d-acces-a-internet-2957996.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le jeudi 18 avril 2024 en fin de journée, des équipements de sécurité numérique de la ville de Floirac (Gironde) sont compromis lors d'une intrusion. Ces équipements sont mutualisés avec Bordeaux Métropole. L'attaque est stoppée rapidement ; par précaution, la commune suspend ses réseaux et ses accès Internet, privant les services municipaux d'outils numériques plusieurs jours. Selon la Ville et Bordeaux Métropole, aucune donnée n'a été exfiltrée et les systèmes n'ont pas été dégradés. Les équipes continuent leurs analyses pour identifier les auteurs.",
+  "timeline": [
+    {
+      "date": "2024-04-18",
+      "event": "Intrusion détectée vers 18 h sur des équipements de sécurité de la commune ; l'attaque est stoppée, les réseaux suspendus par précaution."
+    },
+    {
+      "date": "2024-04-19",
+      "event": "La mairie communique : « aucune donnée exfiltrée » selon les premières enquêtes ; retour à la normale espéré le lundi suivant."
+    }
+  ]
+}

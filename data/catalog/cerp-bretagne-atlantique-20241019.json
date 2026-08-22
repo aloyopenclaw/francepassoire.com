@@ -1,0 +1,52 @@
+{
+  "slug": "cerp-bretagne-atlantique-20241019",
+  "entity": "Cerp Bretagne Atlantique",
+  "siren": "495780348",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-10-19",
+    "publication": "2024-10-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "atteinte des systèmes d'information, dont le système de commandes en ligne d'environ 1 800 officines ; aucun volume de données personnelles dérobées communiqué, plainte auprès du parquet de Paris"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme — Victime d'une cyberattaque, le grossiste en pharmacie Cerp devrait rapidement retrouver une activité normale (20 octobre 2024)",
+      "url": "https://www.letelegramme.fr/cotes-d-armor/saint-brieuc-22000/victime-dune-cyberattaque-le-grossiste-en-pharmacie-cerp-devrait-rapidement-retrouver-une-activite-normale-6686412.php",
+      "kind": "article"
+    },
+    {
+      "label": "Ouest-France — Cyberattaque d'un grossiste en pharmacie en Bretagne : les livraisons seront-elles assurées ? (20 octobre 2024)",
+      "url": "https://www.ouest-france.fr/bretagne/cyberattaque-dun-grossiste-en-pharmacie-en-bretagne-les-livraisons-seront-elles-assurees-ef90536e-8ef2-11ef-8390-40b2162b6ed9",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Bretagne — Cyberattaque : un grossiste en pharmacie victime de pirates informatiques (21 octobre 2024)",
+      "url": "https://france3-regions.franceinfo.fr/bretagne/cotes-d-armor/saint-brieuc/cyberattaque-un-grossiste-en-pharmacie-victime-de-pirates-informatiques-apres-les-attaques-sur-des-hopitaux-et-cliniques-3048394.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet France — Après la cyberattaque, la reconstruction « pas à pas » du grossiste en pharmacie CERP Bretagne Atlantique (24 octobre 2024)",
+      "url": "https://www.zdnet.fr/actualites/apres-la-cyberattaque-la-reconstruction-pas-a-pas-du-grossiste-en-pharmacie-cerp-bretagne-atlantique-400030.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "Le samedi 19 octobre 2024, la Cerp Bretagne Atlantique subit une cyberattaque. Ce grossiste répartiteur en pharmacie, basé à Saint-Brieuc, approvisionne environ 1 800 officines du grand Ouest. Le système de réception des commandes en ligne des pharmacies clientes est touché dans quatre régions ; les livraisons du jour sont suspendues. Selon l'Agence régionale de santé, les fonctionnalités sont rétablies dès le dimanche soir, avec l'appui d'Orange Cyberdéfense. La coopérative de 650 salariés porte plainte auprès du parquet de Paris et signale l'incident à la CNIL ; aucun volume de données dérobées n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2024-10-19",
+      "event": "Cyberattaque un samedi matin : le système de commandes en ligne des officines clientes est atteint ; les pharmacies sont invitées à reporter leurs commandes."
+    },
+    {
+      "date": "2024-10-20",
+      "event": "L'ARS Bretagne confirme une atteinte des systèmes d'information ; les commandes en ligne sont rétablies le soir et une plainte est déposée."
+    }
+  ]
+}
