@@ -2,11 +2,10 @@
   "slug": "synlab-france-20230608",
   "entity": "Synlab France",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-06-08",
-    "publication": "2023-06-16",
-    "confirmation": "2023-06-08"
+    "publication": "2023-06-16"
   },
   "volume": {
     "count": 0,

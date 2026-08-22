@@ -2,18 +2,22 @@
   "slug": "sofinco-20241016",
   "entity": "Sofinco",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-10-16",
-    "publication": "2024-10-17",
-    "confirmation": "2024-10-16"
+    "publication": "2024-10-17"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "« quantité infime » de clients concernés parmi les onze millions de Sofinco, selon sa porte-parole (Capital) ; décompte non communiqué"
   },
-  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Capital via Yahoo Finance (17 octobre 2024) — Une fuite importante de données a touché Sofinco, êtes-vous concerné ?",
@@ -26,7 +30,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 16 octobre 2024, Sofinco, la filiale du Crédit agricole spécialisée dans le crédit à la consommation, informe par courriel des clients avoir détecté « une atteinte à la sécurité de ses systèmes informatiques ». Les données exposées comprennent des coordonnées postales, téléphoniques et bancaires ainsi que des copies de pièces d'identité. La société situe l'incident chez un partenaire et le qualifie de circonscrit, parlant d'une « quantité infime » de clients touchés parmi ses onze millions. Le décompte n'est pas communiqué. Les personnes concernées sont invitées à surveiller leurs comptes.",
+  "description": "Selon la presse, le 16 octobre 2024, Sofinco, la filiale du Crédit agricole spécialisée dans le crédit à la consommation, informe par courriel des clients avoir détecté « une atteinte à la sécurité de ses systèmes informatiques ». Les données exposées comprennent des coordonnées postales, téléphoniques et bancaires ainsi que des copies de pièces d'identité. La société situe l'incident chez un partenaire et le qualifie de circonscrit, parlant d'une « quantité infime » de clients touchés parmi ses onze millions. Le décompte n'est pas communiqué. Les personnes concernées sont invitées à surveiller leurs comptes.",
   "timeline": [
     {
       "date": "2024-10-16",

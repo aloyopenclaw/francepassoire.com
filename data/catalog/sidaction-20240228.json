@@ -2,18 +2,21 @@
   "slug": "sidaction-20240228",
   "entity": "Sidaction",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-02-28",
-    "publication": "2024-02-28",
-    "confirmation": "2024-02-28"
+    "publication": "2024-02-28"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "moins de 20 % des personnes ayant fait un don depuis janvier 2023 selon l'association (nombre exact non publié) ; coordonnées IBAN/BIC concernées pour près de 3 % des données impactées"
   },
-  "data_types": ["identite", "coordonnees", "financier"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
   "sources": [
     {
       "label": "Le Parisien — Sidaction : le site de l'association piraté, les données bancaires des donateurs ciblées (28 février 2024)",
@@ -31,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 28 février 2024, l'association Sidaction, organisatrice de la collecte de fonds contre le sida, annonce dans un communiqué une « cyber-malveillance » : la violation du système d'hébergement d'un de ses prestataires expose un risque de divulgation de données personnelles de donateurs. Moins de 20 % des personnes ayant fait un don depuis janvier 2023 sont concernées : noms, prénoms, adresses postales, courriels, numéros de téléphone et montants des dons. Les coordonnées bancaires IBAN/BIC seraient visées pour près de 3 % des données impactées ; les données de cartes bancaires ne sont pas concernées. L'attaque survient deux semaines après les fuites Viamedis/Almerys et l'attaque de l'hôpital d'Armentières.",
+  "description": "Selon la presse, le 28 février 2024, l'association Sidaction, organisatrice de la collecte de fonds contre le sida, annonce dans un communiqué une « cyber-malveillance » : la violation du système d'hébergement d'un de ses prestataires expose un risque de divulgation de données personnelles de donateurs. Moins de 20 % des personnes ayant fait un don depuis janvier 2023 sont concernées : noms, prénoms, adresses postales, courriels, numéros de téléphone et montants des dons. Les coordonnées bancaires IBAN/BIC seraient visées pour près de 3 % des données impactées ; les données de cartes bancaires ne sont pas concernées. L'attaque survient deux semaines après les fuites Viamedis/Almerys et l'attaque de l'hôpital d'Armentières.",
   "timeline": [
     {
       "date": "2024-02-28",

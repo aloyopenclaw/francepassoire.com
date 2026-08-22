@@ -2,11 +2,10 @@
   "slug": "region-guadeloupe-20221121",
   "entity": "Région Guadeloupe",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-11-21",
-    "publication": "2022-11-22",
-    "confirmation": "2022-11-21"
+    "publication": "2022-11-22"
   },
   "volume": {
     "count": 0,
@@ -38,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le lundi 21 novembre 2022 au soir, le conseil régional de Guadeloupe annonce subir une cyberattaque de grande ampleur. Par mesure de sécurité, il interrompt tous ses réseaux informatiques et met le matériel concerné hors ligne. Une cellule de crise est ouverte, une plainte est déposée et un diagnostic est lancé pour déterminer le mode opératoire. Le fonctionnement de l'institution est perturbé plusieurs jours.",
+  "description": "Selon la presse, le lundi 21 novembre 2022 au soir, le conseil régional de Guadeloupe annonce subir une cyberattaque de grande ampleur. Par mesure de sécurité, il interrompt tous ses réseaux informatiques et met le matériel concerné hors ligne. Une cellule de crise est ouverte, une plainte est déposée et un diagnostic est lancé pour déterminer le mode opératoire. Le fonctionnement de l'institution est perturbé plusieurs jours.",
   "timeline": [
     {
       "date": "2022-11-21",

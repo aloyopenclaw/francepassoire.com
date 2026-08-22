@@ -2,18 +2,20 @@
   "slug": "sport-2000-20240424",
   "entity": "Sport 2000",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-04-24",
-    "publication": "2024-04-24",
-    "confirmation": "2024-04-25"
+    "publication": "2024-04-24"
   },
   "volume": {
     "count": 3189643,
     "unit": "enregistrements",
     "label": "données de 4 millions de clients revendiquées à la vente ; 4,4 millions de lignes et 3 189 643 adresses e-mail uniques constatées dans le jeu de données vérifié par Have I Been Pwned (août 2024)"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "Clubic — Sport 2000 victime d'une cyberattaque, un gang de pirates français soupçonné de vendre les données de 4 millions de clients (24 avril 2024)",
@@ -36,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Sport 2000, enseigne française d'articles de sport, annonce une cyberattaque survenue le 19 avril 2024. Des données clients — noms, adresses, téléphones, dates de naissance, achats — sont mises en vente sur un forum, attribuées par ZDNET au groupe Epsilon ; Clubic évoque un gang de pirates français. Le 25 avril, la marque confirme une intrusion ayant mené à une fuite de données. En août 2024, ZATAZ retrouve la base en accès libre sur le dark web ; Have I Been Pwned en vérifie 4,4 millions de lignes, dont 3 189 643 adresses uniques. Incident distinct de l'attaque d'août 2026 visant l'outil Pilot.",
+  "description": "Selon la presse, Sport 2000, enseigne française d'articles de sport, annonce une cyberattaque survenue le 19 avril 2024. Des données clients — noms, adresses, téléphones, dates de naissance, achats — sont mises en vente sur un forum, attribuées par ZDNET au groupe Epsilon ; Clubic évoque un gang de pirates français. Selon la presse, le 25 avril, la marque confirme une intrusion ayant mené à une fuite de données. En août 2024, ZATAZ retrouve la base en accès libre sur le dark web ; Have I Been Pwned en vérifie 4,4 millions de lignes, dont 3 189 643 adresses uniques. Incident distinct de l'attaque d'août 2026 visant l'outil Pilot.",
   "timeline": [
     {
       "date": "2024-04-19",

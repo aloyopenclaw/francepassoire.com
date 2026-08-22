@@ -2,7 +2,7 @@
   "slug": "ramsay-sante-20230125",
   "entity": "Ramsay Santé (Clinique de l'Union, Hôpital privé Jean Mermoz, Hôpital privé de l'Est lyonnais)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-01-25",
     "publication": "2023-01-26"
@@ -32,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 25 janvier 2023, le groupe Ramsay Santé, majeur opérateur de cliniques privées en France, détecte des anomalies sur certains de ses serveurs. Quatre établissements sont touchés, dont la clinique de l'Union près de Toulouse, l'hôpital privé Jean Mermoz et l'hôpital privé de l'Est lyonnais. Les urgences de Jean Mermoz sont fermées temporairement et seule la moitié des activités de chimiothérapie est maintenue. Le groupe décrit une tentative d'intrusion et indique qu'aucune donnée n'a été dérobée.",
+  "description": "Le 25 janvier 2023, le groupe Ramsay Santé, majeur opérateur de cliniques privées en France, détecte des anomalies sur certains de ses serveurs. Quatre établissements sont touchés, dont la clinique de l'Union près de Toulouse, l'hôpital privé Jean Mermoz et l'hôpital privé de l'Est lyonnais. Les urgences de Jean Mermoz sont fermées temporairement et seule la moitié des activités de chimiothérapie est maintenue. Selon la presse, le groupe décrit une tentative d'intrusion et indique qu'aucune donnée n'a été dérobée.",
   "timeline": [
     {
       "date": "2023-01-25",

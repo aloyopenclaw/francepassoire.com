@@ -2,11 +2,10 @@
   "slug": "revolut-20220910",
   "entity": "Revolut",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-10",
-    "publication": "2022-09-21",
-    "confirmation": "2022-09-21"
+    "publication": "2022-09-21"
   },
   "volume": {
     "count": 50150,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 10 septembre 2022, un tiers non autorisé accède pendant une courte période aux données personnelles de 0,16 % des clients de Revolut, néobanque britannique agréée en Lituanie qui revendique environ 20 millions de clients, dont une large base en France. Selon la déclaration faite à l'autorité lituanienne de protection des données et relayée par BleepingComputer, 50 150 personnes sont concernées, dont environ 20 200 dans l'Espace économique européen. Les données exposées varient selon les victimes: adresses électroniques, noms complets, adresses postales, numéros de téléphone, données de carte de paiement et données de compte. Revolut indique avoir identifié et isolé l'attaque immédiatement, contacté les clients concernés et précise qu'aucun argent n'a été dérobé. La presse française révèle l'incident le 21 septembre 2022.",
+  "description": "Le 10 septembre 2022, un tiers non autorisé accède pendant une courte période aux données personnelles de 0,16 % des clients de Revolut, néobanque britannique agréée en Lituanie qui revendique environ 20 millions de clients, dont une large base en France. Selon la déclaration faite à l'autorité lituanienne de protection des données et relayée par BleepingComputer, 50 150 personnes sont concernées, dont environ 20 200 dans l'Espace économique européen. Les données exposées varient selon les victimes: adresses électroniques, noms complets, adresses postales, numéros de téléphone, données de carte de paiement et données de compte. Selon la presse, Revolut indique avoir identifié et isolé l'attaque immédiatement, contacté les clients concernés et précise qu'aucun argent n'a été dérobé. Selon la presse, la presse française révèle l'incident le 21 septembre 2022.",
   "timeline": [
     {
       "date": "2022-09-10",

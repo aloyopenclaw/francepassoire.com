@@ -2,11 +2,10 @@
   "slug": "stych-20251107",
   "entity": "Stych (auto-école en ligne)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-07",
-    "publication": "2025-11-07",
-    "confirmation": "2025-11-07"
+    "publication": "2025-11-07"
   },
   "volume": {
     "count": 0,
@@ -34,7 +33,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 7 novembre 2025, Stych, plateforme française d’auto-école en ligne, a informé ses utilisateurs d’une récente violation de données ayant compromis certaines informations personnelles. Selon le courriel adressé aux utilisateurs, les données bancaires, les documents personnels et les mots de passe n’ont pas été compromis. Les informations dérobées comprennent identité — nom, prénom, date de naissance — et coordonnées : e-mail, numéro de téléphone et adresse postale. L’entreprise indique avoir renforcé ses mesures de sécurité et informé la CNIL. En mars 2026, un acteur malveillant a revendiqué la mise en vente d’environ 1,34 million d’enregistrements clients issus de la plateforme.",
+  "description": "Selon la presse, le 7 novembre 2025, Stych, plateforme française d’auto-école en ligne, a informé ses utilisateurs d’une récente violation de données ayant compromis certaines informations personnelles. Selon le courriel adressé aux utilisateurs, les données bancaires, les documents personnels et les mots de passe n’ont pas été compromis. Les informations dérobées comprennent identité — nom, prénom, date de naissance — et coordonnées : e-mail, numéro de téléphone et adresse postale. Selon la presse, l’entreprise indique avoir renforcé ses mesures de sécurité et informé la CNIL. En mars 2026, un acteur malveillant a revendiqué la mise en vente d’environ 1,34 million d’enregistrements clients issus de la plateforme.",
   "timeline": [
     {
       "date": "2025-11-07",

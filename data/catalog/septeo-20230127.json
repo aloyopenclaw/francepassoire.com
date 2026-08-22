@@ -2,11 +2,10 @@
   "slug": "septeo-20230127",
   "entity": "Septeo (éditeur de logiciels pour les professionnels du droit, Montpellier)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-01-27",
-    "publication": "2023-01-29",
-    "confirmation": "2023-01-29"
+    "publication": "2023-01-29"
   },
   "volume": {
     "count": 0,
@@ -28,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 27 janvier 2023, l'éditeur montpelliérain Septeo, qui emploie plus de 2 000 collaborateurs et fournit logiciels et services aux notaires et aux avocats, subit une cyberattaque. De nombreux utilisateurs se plaintent d'un accès impossible à leurs messageries professionnelles et à leurs fichiers dès le vendredi 27 janvier. Le dimanche 29 janvier, l'entreprise reconnaît sur Facebook une « cyberattaque limitée à certaines de ses activités » et indique que ses logiciels métier restent fonctionnels pour la plupart de ses clients. Dans une communication interne, elle précise que son cloud souverain, hébergeant les actes des études notariales, n'a pas été impacté. Aucune exfiltration de données n'est établie à ce stade.",
+  "description": "Le 27 janvier 2023, l'éditeur montpelliérain Septeo, qui emploie plus de 2 000 collaborateurs et fournit logiciels et services aux notaires et aux avocats, subit une cyberattaque. De nombreux utilisateurs se plaintent d'un accès impossible à leurs messageries professionnelles et à leurs fichiers dès le vendredi 27 janvier. Selon la presse, le dimanche 29 janvier, l'entreprise reconnaît sur Facebook une « cyberattaque limitée à certaines de ses activités » et indique que ses logiciels métier restent fonctionnels pour la plupart de ses clients. Selon la presse, dans une communication interne, elle précise que son cloud souverain, hébergeant les actes des études notariales, n'a pas été impacté. Aucune exfiltration de données n'est établie à ce stade.",
   "timeline": [
     {
       "date": "2023-01-27",
