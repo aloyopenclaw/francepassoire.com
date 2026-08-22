@@ -41,8 +41,9 @@ concurrency:
 jobs:
   valider:
     if: >-
-      startsWith(github.head_ref, 'fiche/') ||
-      contains(github.event.pull_request.labels.*.name, 'agent-review')
+      ( !github.event.pull_request.head.repo.fork ) &&
+      ( startsWith(github.head_ref, 'fiche/') ||
+        contains(github.event.pull_request.labels.*.name, 'agent-review') )
     runs-on: self-hosted
     environment: agent
     timeout-minutes: 30
