@@ -1,0 +1,53 @@
+{
+  "slug": "abers-protection-incendie-20131123",
+  "entity": "Abers Protection Incendie",
+  "siren": "401270566",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-11-23",
+    "confirmation": "2013-11-23",
+    "publication": "2014-01-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique de 3 000 euros (géolocalisation de véhicules de salariés)"
+  },
+  "data_types": [
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE COMMERCE DE GROS », géolocalisation, sanction pécuniaire publique de 3 000 euros (23 novembre 2013)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Journal du Net — Les sanctions prononcées par la CNIL à travers le prisme de la sécurité (société Abers Protection Incendie, délibération CNIL 2013-366)",
+      "url": "https://www.journaldunet.com/ebusiness/le-net/1143033-les-sanctions-prononcees-par-la-cnil-a-travers-le-prisme-de-la-securite/",
+      "kind": "article"
+    },
+    {
+      "label": "AEF — Vidéosurveillance et géolocalisation : la CNIL sanctionne des entreprises pour non-réponse à ses mises en demeure (7 janvier 2014)",
+      "url": "https://www.aefinfo.fr/depeche/471335-videosurveillance-et-geolocalisation-la-cnil-sanctionne-des-entreprises-pour-non-reponse-a-ses-mises-en-demeure",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 23/11/2013, géolocalisation",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Saisie par un salarié, la CNIL a examiné la géolocalisation des véhicules de la société Abers Protection Incendie. Ce commerce de gros d'équipements de protection équipait ses véhicules d'un dispositif permanent. Selon la CNIL, il servait au contrôle des horaires et ne pouvait pas être déconnecté hors du travail. La vitesse des véhicules était collectée. La société n'avait pas respecté ses engagements de conformité à la norme simplifiée n° 51. Pendant plus de deux ans, elle n'a fourni que des informations incomplètes. La formation restreinte a prononcé une sanction pécuniaire publique de 3 000 euros le 23 novembre 2013, rendue publique le 7 janvier 2014.",
+  "timeline": [
+    {
+      "date": "2013-11-23",
+      "event": "Sanction pécuniaire publique de 3 000 euros pour manquements aux engagements de la norme simplifiée n° 51."
+    },
+    {
+      "date": "2014-01-07",
+      "event": "La CNIL rend publique la décision de géolocalisation parmi quatre sanctions de fin 2013."
+    }
+  ]
+}

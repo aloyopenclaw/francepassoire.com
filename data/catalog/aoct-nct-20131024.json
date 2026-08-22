@@ -1,0 +1,53 @@
+{
+  "slug": "aoct-nct-20131024",
+  "entity": "AOCT et NCT (sociétés de téléphonie mobile d'un même gérant)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2013-10-24",
+    "confirmation": "2013-10-24",
+    "publication": "2014-01-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; deux sanctions pécuniaires publiques de 10 000 euros chacune (vidéosurveillance et contrôle d'accès biométrique)"
+  },
+  "data_types": [
+    "autre",
+    "biometrique"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : deux décisions « SOCIETE DE COMMERCE (TELEPHONIE MOBILE) », vidéosurveillance, 10 000 euros chacune (24 octobre 2013)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Next INpact — Refus de coopérer : la CNIL inflige plusieurs amendes de 10 000 euros (8 janvier 2014, sociétés AOCT et NCT)",
+      "url": "https://next.ink/25931/85264-refus-cooperer-cnil-inflige-plusieurs-amendes-10-000-euros/",
+      "kind": "article"
+    },
+    {
+      "label": "Lexbase — Sanctions prononcées par la CNIL concernant des dispositifs de vidéosurveillance et de géolocalisation (décisions rendues publiques le 7 janvier 2014)",
+      "url": "https://www.lexbase.fr/article-juridique/12851856-breves-ntic-sanctions-prononcees-par-la-cnil-concernant-des-dispositifs-de-videosurveillance-et-de-g",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décisions du 24/10/2013 contre deux sociétés de commerce",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 24 octobre 2013, la formation restreinte a sanctionné deux sociétés de téléphonie mobile dirigées par le même gérant. Selon la CNIL, une caméra d'AOCT filmait en continu les toilettes, les vestiaires, un bureau et la réserve du magasin. NCT exploitait une vidéosurveillance et un contrôle d'accès biométrique non déclarés. Le logiciel de visualisation des images était accessible sans identifiant ni mot de passe. Les deux sociétés avaient refusé de recevoir les courriers de la CNIL et de se présenter à l'audience. Le contrôle a eu lieu après autorisation du juge des libertés, avec l'assistance de la force publique. Deux sanctions pécuniaires publiques de 10 000 euros ont été prononcées.",
+  "timeline": [
+    {
+      "date": "2013-10-24",
+      "event": "Deux sanctions pécuniaires publiques de 10 000 euros contre AOCT et NCT (délibérations n° 2013-319 et 2013-320)."
+    },
+    {
+      "date": "2014-01-07",
+      "event": "La CNIL rend publiques les décisions visant les dispositifs de vidéosurveillance et de géolocalisation."
+    }
+  ]
+}

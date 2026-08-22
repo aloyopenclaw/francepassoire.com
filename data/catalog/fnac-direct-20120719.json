@@ -1,0 +1,54 @@
+{
+  "slug": "fnac-direct-20120719",
+  "entity": "Fnac Direct",
+  "siren": "377853536",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-07-19",
+    "confirmation": "2012-07-19",
+    "publication": "2012-07-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "plusieurs millions de cartes bancaires présentes dans la base lors du contrôle de février 2012 (chiffre exact non publié)"
+  },
+  "data_types": [
+    "identite",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE VENTE A DISTANCE », données bancaires, avertissement public (19 juillet 2012)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 19/07/2012 contre une société de vente à distance",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    },
+    {
+      "label": "e-traces — Avertissement pour la société FNAC DIRECT en raison de manquements dans la conservation des données bancaires (communiqué CNIL du 27 juillet 2012)",
+      "url": "https://etraces.domainepublic.net/avertissement-pour-la-societe-fnac",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo (AFP) — Le site de la Fnac épinglé par la CNIL (27 juillet 2012)",
+      "url": "https://www.franceinfo.fr/economie/entreprises/le-site-de-la-fnac-epingle-par-la-cnil_123557.html",
+      "kind": "article"
+    }
+  ],
+  "description": "En février 2012, des contrôles de la CNIL chez Fnac Direct, exploitant du site fnac.com, ont examiné la conservation des données bancaires. Une base stockait en clair le nom du titulaire de carte, la date de validité et parfois le cryptogramme visuel. Le numéro de carte était conservé dans un format insuffisamment sécurisé. Cette base contenait les données de plusieurs millions de cartes, sans purge ni archivage. Selon le communiqué du 27 juillet 2012, la conservation pour de futurs achats supposait un consentement préalable. La formation restreinte a prononcé un avertissement public le 19 juillet 2012. La société a déclaré avoir engagé sa mise à la norme PCI-DSS.",
+  "timeline": [
+    {
+      "date": "2012-07-19",
+      "event": "Avertissement public pour manquements dans la conservation des données bancaires des clients."
+    },
+    {
+      "date": "2012-07-27",
+      "event": "La CNIL publie son communiqué détaillant les constats des contrôles de février 2012."
+    }
+  ]
+}

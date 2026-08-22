@@ -1,0 +1,55 @@
+{
+  "slug": "pages-jaunes-20110921",
+  "entity": "Pages Jaunes",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2011-09-21",
+    "confirmation": "2011-09-21"
+  },
+  "volume": {
+    "count": 25000000,
+    "unit": "personnes",
+    "label": "25 millions de personnes concernées par le service Pages Blanches selon la délibération n° 2011-203"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « ANNUAIRE », aspiration de données sur des réseaux sociaux, avertissement public (21 septembre 2011)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance (capture Wayback du 02/01/2016) — Délibération n° 2011-203 du 21 septembre 2011 portant avertissement à l'encontre de la société Pages Jaunes",
+      "url": "http://web.archive.org/web/20160102062339/https://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000024583206",
+      "kind": "archive"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 21/09/2011 contre un annuaire",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "La fonctionnalité « webcrawl » du service Pages Blanches enrichissait les recherches par nom de données collectées sur les réseaux sociaux. Elle juxtaposait les données de l'annuaire et les profils de Copains d'avant, Facebook, Viadeo, LinkedIn, Twitter et Trombi. Selon la délibération n° 2011-203, 25 millions de personnes étaient concernées par ce service. Deux plaintes reçues en mars et avril 2010 dénonçaient cette diffusion malgré des demandes d'opposition. Après des contrôles à Sèvres et Rennes, la CNIL a relevé une collecte déloyale et un défaut de mise à jour. La formation restreinte a prononcé un avertissement public contre Pages Jaunes le 21 septembre 2011.",
+  "timeline": [
+    {
+      "date": "2010-03-25",
+      "event": "Première plainte à la CNIL contre la fonctionnalité webcrawl du service Pages Blanches."
+    },
+    {
+      "date": "2010-05-27",
+      "event": "Contrôle sur place au siège de la société à Sèvres, suivi d'une vérification à Rennes."
+    },
+    {
+      "date": "2011-03-21",
+      "event": "La société suspend la fonctionnalité dans l'attente de la décision de la formation restreinte."
+    },
+    {
+      "date": "2011-09-21",
+      "event": "Avertissement public pour collecte déloyale, défaut de mise à jour et atteinte aux droits des personnes."
+    }
+  ]
+}

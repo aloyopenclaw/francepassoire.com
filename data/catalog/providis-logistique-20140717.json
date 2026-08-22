@@ -1,0 +1,61 @@
+{
+  "slug": "providis-logistique-20140717",
+  "entity": "Providis Logistique",
+  "siren": "422282384",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-07-17",
+    "confirmation": "2014-07-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; sanction pécuniaire publique de 5 000 euros (vidéosurveillance et géolocalisation de salariés)"
+  },
+  "data_types": [
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE COMMERCE ET DE DISTRIBUTION DE FRUITS ET LEGUMES », vidéosurveillance, sanction pécuniaire publique de 5 000 euros (17 juillet 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "83-629.fr — CNIL : PROVIDIS condamné pour vidéosurveillance illégale (délibération n° 2014-307)",
+      "url": "https://www.83-629.fr/article-videosurveillance-sanction-pecuniaire-de-5-000-euros-a-l-encontre-de-providis-logistique-124291158/",
+      "kind": "article"
+    },
+    {
+      "label": "Tables CNIL (Champeau.info) — Délibération n° 2014-307 du 17 juillet 2014 : dispositif de vidéosurveillance filmant en permanence des salariés",
+      "url": "https://cnil.champeau.info/decisions/542",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 17/07/2014, vidéosurveillance",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Saisie par l'inspection du travail de Rhône-Alpes, la CNIL a contrôlé en février 2012 la société Providis Logistique, négociante en fruits et légumes. Les contrôles visaient aussi ses filiales de distribution. Les accès aux vestiaires, sanitaires et locaux de repos étaient filmés. Des postes de travail restaient sous surveillance constante. Les vitesses instantanées des véhicules étaient collectées. Malgré une mise en demeure de juillet 2013, de nouveaux contrôles ont établi la persistance des manquements. La formation restreinte a prononcé une sanction pécuniaire publique de 5 000 euros le 17 juillet 2014. Cette décision figure à la délibération n° 2014-307, rendue publique.",
+  "timeline": [
+    {
+      "date": "2012-02-02",
+      "event": "Contrôles dans les locaux de la société et de deux filiales : vidéosurveillance, géolocalisation et données RH."
+    },
+    {
+      "date": "2013-07-12",
+      "event": "Mise en demeure : informer les salariés, proportionner les dispositifs, cesser la collecte des vitesses."
+    },
+    {
+      "date": "2013-11-20",
+      "event": "Nouveaux contrôles établissant la persistance des manquements dans la société et ses filiales."
+    },
+    {
+      "date": "2014-07-17",
+      "event": "Sanction pécuniaire publique de 5 000 euros (délibération n° 2014-307)."
+    }
+  ]
+}

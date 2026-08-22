@@ -1,0 +1,55 @@
+{
+  "slug": "brandalley-20160707",
+  "entity": "Brandalley",
+  "siren": "482510906",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-07-07",
+    "confirmation": "2016-07-07",
+    "publication": "2016-07-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs millions de comptes clients et prospects concernés selon la CNIL ; sanction pécuniaire publique de 30 000 euros"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « COMMERCE », prévention de la fraude à la carte bancaire, sanction pécuniaire publique (7 juillet 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Numerama — La CNIL s'énerve contre Brandalley mais la sanction est faible (18 juillet 2016)",
+      "url": "https://www.numerama.com/politique/183304-la-cnil-senerve-contre-brandvalley-mais-la-sanction-est-faible.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Numériques — Données personnelles : la CNIL sanctionne BrandAlley (19 juillet 2016)",
+      "url": "https://www.lesnumeriques.com/vie-du-net/donnees-personnelles-cnil-sanctionne-brandalley-n54181.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 07/07/2016 contre un commerce",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "Un premier contrôle, en janvier 2015, avait visé le traitement des données du site de ventes privées Brandalley. Selon la CNIL, plusieurs millions de comptes clients et prospects étaient concernés par le dispositif de lutte contre la fraude à la carte bancaire. De nombreux manquements ont relevé une mise en demeure. La réponse de la société a été jugée lacunaire. Un second contrôle, en février 2016, a constaté l'absence d'autorisation pour le dispositif antifraude. Il a aussi relevé des transferts vers le Maroc et la Tunisie, l'absence de purge des bases et des échanges non sécurisés. La formation restreinte a prononcé une sanction pécuniaire publique de 30 000 euros le 7 juillet 2016.",
+  "timeline": [
+    {
+      "date": "2016-07-07",
+      "event": "Sanction pécuniaire publique de 30 000 euros pour manquements persistants après mise en demeure."
+    },
+    {
+      "date": "2016-07-18",
+      "event": "La CNIL rend publique la décision contre le site de ventes privées."
+    }
+  ]
+}
