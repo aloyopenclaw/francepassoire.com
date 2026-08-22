@@ -36,17 +36,20 @@ describe('client LinkedIn via Make (webhook)', () => {
     expect(r).toMatchObject({ status: 'ERROR', retryable: true });
   });
 
-  it('le corps embarque text, url, statut et request_id', async () => {
+  it('le corps embarque {text, mediaUrl} — contrat image+texte du scénario LinkedIn (22/08)', async () => {
     let corps: Record<string, unknown> = {};
     const fetchFn = vi.fn(async (_u: string | URL | Request, init?: RequestInit) => {
       corps = JSON.parse(String(init?.body));
       return new Response('{"status":"pending_approval"}', { status: 200 });
     });
     await send(
-      { ...payload, metadata: { request_id: 'abc-123' } },
+      { ...payload, imageUrl: 'https://francepassoire.com/fiche/x/card.jpg' },
       envAvecUrl,
       fetchFn as unknown as typeof fetch,
     );
-    expect(corps).toMatchObject({ text: payload.text, url: payload.url, statut: 'confirmee', request_id: 'abc-123' });
+    expect(corps).toEqual({
+      text: payload.text,
+      mediaUrl: 'https://francepassoire.com/fiche/x/card.jpg',
+    });
   });
 });
