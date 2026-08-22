@@ -26,6 +26,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: publish-catalog
@@ -79,10 +80,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy Pages
-        run: npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
-        env:
-          CLOUDFLARE_API_TOKEN: $CF_PAGES_TOKEN
+      - name: Déployer Pages
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
 
       - name: Nettoyage des runs fantômes éventuels
         if: always()
