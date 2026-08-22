@@ -1,0 +1,42 @@
+{
+  "slug": "communaute-de-communes-gorges-ardeche-20230831",
+  "entity": "Communauté de communes des Gorges de l'Ardèche",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-08-31",
+    "publication": "2023-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume de données exfiltrées non chiffré ; l'intercommunalité regroupe 20 communes et environ 15 000 habitants"
+  },
+  "data_types": [
+    "identite",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : LockBit cible désormais la CCI d'Aix-Marseille-Provence, le même groupe menace la Communauté de communes Gorges Ardèche (2 septembre 2023)",
+      "url": "https://www.zataz.com/lockbit-cible-desormais-la-chambre-de-commerce-et-de-lindustrie-daix-marseille-provence/",
+      "kind": "article"
+    },
+    {
+      "label": "Galaxy Warden — cc-gorgesardeche.fr listed by LockBit3 : exfiltration de fichiers internes revendiquée",
+      "url": "https://www.galaxywarden.com/blog/breach/cc-gorgesardeche-fr-lockbit3-2023-09",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 août 2023, la Communauté de communes des Gorges de l'Ardèche, intercommunalité de 20 communes et d'environ 15 000 habitants, est inscrite sur le blog de fuite du groupe de rançongiciels LockBit 3.0. Le groupe menace de publier les données exfiltrées et fixe une échéance au 14 septembre, un délai plus long que celui appliqué à d'autres victimes, ce qui laisse penser à un affilié différent. Le 2 septembre, la fiche victime est mise à jour avec de nouveaux boutons de chantage. L'établissement public ne communique pas de chiffre sur les données concernées.",
+  "timeline": [
+    {
+      "date": "2023-08-31",
+      "event": "LockBit 3.0 inscrit la Communauté de communes des Gorges de l'Ardèche sur son blog de fuite et menace de diffuser les données."
+    },
+    {
+      "date": "2023-09-02",
+      "event": "Zataz relève la menace avec une échéance fixée au 14 septembre ; FrenchBreaches documente l'entrée sur la base ransomware.live."
+    }
+  ]
+}
