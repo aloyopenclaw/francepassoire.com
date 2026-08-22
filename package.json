@@ -19,7 +19,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
     "@tailwindcss/vite": "^4.0.0",
-    "astro": "^5.0.0",
+    "astro": "^7.2.4",
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
@@ -27,8 +27,9 @@
     "@resvg/resvg-js": "^2.6.2",
     "nostr-tools": "^2.24.3",
     "satori": "^0.33.3",
+    "sharp": "^0.35.3",
     "typescript": "^5.9.3",
-    "vite": "^6.4.3",
+    "vite": "^8.2.2",
     "vitest": "^4.1.11",
     "wrangler": "^4.125.0"
   }
