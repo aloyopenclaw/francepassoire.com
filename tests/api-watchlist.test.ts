@@ -156,7 +156,7 @@ function makeFetch(opts: FetchOptions = {}): typeof fetch {
         status: opts.brevoStatus ?? 200,
       });
     }
-    if (u === 'https://francepassoire.com/api/v1/fiches.json') {
+    if (u.startsWith('https://francepassoire.com/api/v1/fiches.json')) {
       return new Response(
         JSON.stringify({ schema: 'francepassoire/fiches@v1', count: opts.fiches?.length ?? 0, fiches: opts.fiches ?? [] }),
         { status: opts.fichesStatus ?? 200 },
