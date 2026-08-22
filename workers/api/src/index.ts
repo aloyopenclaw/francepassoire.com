@@ -56,6 +56,8 @@ export interface Env {
   TURNSTILE_SECRET?: string;
   /** Clé API v3 Brevo (T30/T31) — envoi des emails de veille. */
   BREVO_API_KEY?: string;
+  /** Destinataire du digest veille sociale (interne) — secret, pas une var. */
+  VEILLE_SOCIALE_DEST?: string;
   /** Clé AES-256 en hex (T30) — chiffrement des emails : openssl rand -hex 32. */
   WATCHLIST_AES_KEY?: string;
   /** Clé HMAC (T30) — signature des liens de confirmation 24 h. */

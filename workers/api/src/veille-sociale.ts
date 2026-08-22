@@ -282,7 +282,7 @@ export async function runVeilleSociale(
     .slice(0, VEILLE_CAP);
 
   const dateFr = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'full' }).format(now);
-  const dest = DESTINATAIRE_PAR_DEFAUT;
+  const dest = env.VEILLE_SOCIALE_DEST ?? DESTINATAIRE_PAR_DEFAUT;
 
   const envoyer = async (subject: string, html: string, text: string): Promise<boolean> => {
     const c = new AbortController();
