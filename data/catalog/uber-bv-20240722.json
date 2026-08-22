@@ -1,0 +1,53 @@
+{
+  "slug": "uber-bv-20240722",
+  "entity": "Uber B.V. et Uber Technologies Inc.",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-22",
+    "confirmation": "2024-07-22",
+    "publication": "2024-08-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données de chauffeurs européens transférées vers les États-Unis pendant environ deux ans ; nombre total de personnes non chiffré ; plainte initiale de la Ligue des droits de l'Homme représentant plus de 170 chauffeurs"
+  },
+  "data_types": [
+    "documents",
+    "geolocalisation",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "CNIL : Transferts de données hors UE : sanction de 290 millions d'euros à l'encontre d'UBER (26 août 2024, copie archivée)",
+      "url": "https://web.archive.org/web/20240826072118/https://cnil.fr/fr/transferts-de-donnees-hors-ue-sanction-de-290-millions-deuros-lencontre-duber",
+      "kind": "officiel"
+    },
+    {
+      "label": "Comité européen de la protection des données : Dutch SA imposes a fine of 290 million euro on Uber because of transfers of drivers' data to the US (26 août 2024)",
+      "url": "https://www.edpb.europa.eu/news/dutch-sa-imposes-a-fine-of-290-million-euro-on-uber-because-of-transfers-of-drivers-data-to_en",
+      "kind": "officiel"
+    },
+    {
+      "label": "BBC : Uber: Dutch watchdog fines app €290m for driver data transfer (26 août 2024)",
+      "url": "https://www.bbc.com/news/articles/cy76v561g48o",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 juillet 2024, en coopération avec la CNIL, l'autorité néerlandaise de protection des données a prononcé une amende de 290 millions d'euros à l'encontre des sociétés Uber B.V. et Uber Technologies Inc. pour avoir transféré des données personnelles de chauffeurs européens vers les États-Unis sans garanties suffisantes. Selon l'autorité néerlandaise, des pièces d'identité, des licences de taxi et des données de localisation ont été transférées pendant environ deux ans. La procédure faisait suite à une plainte collective déposée auprès de la CNIL par la Ligue des droits de l'Homme représentant plus de 170 chauffeurs, concernant l'information des personnes et les transferts hors Union européenne. Uber a annoncé faire appel de la décision.",
+  "timeline": [
+    {
+      "date": "2023-12-11",
+      "event": "Première amende de dix millions d'euros prononcée par l'autorité néerlandaise pour plusieurs manquements à l'information des chauffeurs."
+    },
+    {
+      "date": "2024-07-22",
+      "event": "Amende de 290 millions d'euros contre Uber B.V. et Uber Technologies Inc. pour transferts de données de chauffeurs hors Union européenne sans garanties suffisantes."
+    },
+    {
+      "date": "2024-08-26",
+      "event": "La CNIL et le Comité européen de la protection des données publient l'information sur la décision ; Uber annonce faire appel."
+    }
+  ]
+}

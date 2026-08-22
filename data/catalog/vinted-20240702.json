@@ -1,0 +1,43 @@
+{
+  "slug": "vinted-20240702",
+  "entity": "Vinted UAB",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-02",
+    "confirmation": "2024-07-02",
+    "publication": "2024-07-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non chiffré par la décision ; environ 50 millions d'utilisateurs actifs mensuels de la plateforme selon la CNIL"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL : Marché en ligne : sanction de 2,3 millions d'euros à l'encontre de VINTED (3 juillet 2024)",
+      "url": "https://www.cnil.fr/fr/marche-en-ligne-sanction-de-23-millions-deuros-lencontre-de-vinted",
+      "kind": "officiel"
+    },
+    {
+      "label": "BFM TV : Données personnelles et « bannissement furtif » : Vinted écope d'une amende de 2,3 millions d'euros (3 juillet 2024)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/donnees-personnelles-et-bannissement-furtif-vinted-ecope-d-une-amende-de-2-3-millions-d-euros_AD-202407030652.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 juillet 2024, en coopération avec la CNIL, l'autorité lituanienne de protection des données a prononcé une amende de 2 385 276 euros à l'encontre de Vinted UAB, plateforme lituanienne de vente de vêtements d'occasion. Les manquements retenus portent sur le traitement des demandes d'effacement, jugé déloyal et non transparent, la mise en œuvre illégale du « bannissement furtif », qui rend invisible l'activité d'un utilisateur sans l'en informer, et l'absence de preuve de réponses à des demandes de droit d'accès. Les contrôles faisaient suite à de nombreuses plaintes déposées auprès de la CNIL à partir de 2020, majoritairement liées au droit à l'effacement, transmises à l'autorité lituanienne dans le cadre du guichet unique du RGPD.",
+  "timeline": [
+    {
+      "date": "2024-07-02",
+      "event": "L'autorité lituanienne de protection des données prononce une amende de 2 385 276 euros à l'encontre de Vinted UAB, en coopération avec la CNIL."
+    },
+    {
+      "date": "2024-07-03",
+      "event": "La CNIL publie un communiqué détaillant les manquements : demandes d'effacement mal traitées, bannissement furtif illégal, droit d'accès non démontré."
+    }
+  ]
+}
