@@ -1,0 +1,104 @@
+# T47/T53 — publication post-merge : fusionner = publier.
+#
+# Ce workflow remplace la chaîne manuelle orchestrateur (append-registry →
+# ancrages → verify → build → deploy) : tout push sur main touchant
+# data/catalog/** déclenche la publication sur le runner self-hosted.
+#
+# GARANTIES PRÉSERVÉES :
+#   - append-registry est idempotent (par fiche_du) et REFUSE toute chaîne
+#     cassée : une fusion sale fait échouer le job AVANT tout deploy ;
+#   - verify-registry + verify-anchors (exit non nul = échec) séparent la
+#     publication de la vérification ;
+#   - le registre reste append-only (genesis refuse les réécritures) ;
+#   - les alertes email partent du sweep */15 du worker api (diff catalogue
+#     public), rien n'est envoyé depuis ce workflow.
+#
+# SÉCURITÉ : le token Pages est une env var du RUNNER (jamais un secret du
+# dépôt — les workflows exécutent du code non maîtrisé). runs-on: self-hosted
+# uniquement ; pas de pull_request_target ; déclencheur push (pas fork).
+
+name: Publication catalogue (post-merge)
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/catalog/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: self-hosted
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node 22 + dépendances
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: npm ci
+        run: npm ci
+
+      - name: Porte zod (tout le catalogue doit rester vert)
+        run: npx vitest run tests/pr-fiches.test.ts
+
+      - name: Chaîne d'intégrité — ajout des fiches non chaînées
+        run: node scripts/append-registry.mjs --fiches-dir data/catalog
+
+      - name: Ancrages Nostr (upsert)
+        run: node scripts/publish-anchors.mjs
+
+      - name: Vérification chaîne (refuse et bloque si cassée)
+        run: node scripts/verify-registry.mjs registre.jsonl
+
+      - name: Vérification ancrages (exit non nul = échec, pas de deploy)
+        run: node scripts/verify-anchors.mjs
+
+      - name: Registre public
+        run: cp registre.jsonl public/registre.jsonl
+
+      - name: Commit des artefacts de chaîne (s'il y en a)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registre.jsonl public/registre.jsonl docs/ancrages.md
+          git diff --cached --quiet || git commit -m "chore(trust): registre + ancrages (publication automatique post-merge)" --quiet
+          git push origin main
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy Pages
+        run: npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: $CF_PAGES_TOKEN
+
+      - name: Nettoyage des runs fantômes éventuels
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'publish-catalog.yml',
+              per_page: 30,
+            });
+            for (const r of runs) {
+              if (r.conclusion === 'action_required') {
+                try {
+                  await github.rest.actions.deleteWorkflowRun({ owner: context.repo.owner, repo: context.repo.repo, run_id: r.id });
+                } catch (e) { /* déjà traité */ }
+              }
+            }
