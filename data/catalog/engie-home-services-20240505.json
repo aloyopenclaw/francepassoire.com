@@ -1,0 +1,43 @@
+{
+  "slug": "engie-home-services-20240505",
+  "entity": "Engie Home Services",
+  "siren": "883921843",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-05-05",
+    "publication": "2024-05-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "quelques centaines de clients selon Engie Home Services (noms, prénoms, adresses postales) ; volume exact non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Comment Ça Marche — Piratage Engie : les données personnelles des clients dérobées (6 mai 2024)",
+      "url": "https://www.commentcamarche.net/securite/piratage/31027-piratage-engie/",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Geek — Nouveau piratage de données sensibles : Engie et le ministère de l’Agriculture visés par les cybercriminels de Lapsus$ (8 mai 2024, déclaration d’Engie Home Services)",
+      "url": "https://www.journaldugeek.com/2024/05/08/engie-et-le-ministere-de-lagriculture-vises-par-les-cybercriminels-de-lapsus-un-nouveau-piratage-de-donnees-sensibles/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 mai 2024, le groupe Lapsus$ a revendiqué le piratage d’Engie Home Services, filiale du groupe Engie spécialisée dans la maintenance d’équipements énergétiques, en publiant un échantillon de données. Le 6 mai, la société a reconnu un acte de cybermalveillance sur le portail internet dédié à ses relations avec ses partenaires commerciaux ; ses équipes de cybersécurité ont mis fin à l’incident. Selon Engie Home Services, les données compromises sont les noms, prénoms et adresses postales de quelques centaines de clients ; les informations bancaires ne sont pas impliquées. La revendication évoquait aussi numéros de demande et équipements. L’entreprise a déposé plainte et informera chaque client concerné.",
+  "timeline": [
+    {
+      "date": "2024-05-05",
+      "event": "Lapsus$ revendique le piratage d’Engie Home Services et publie un échantillon de données de clients."
+    },
+    {
+      "date": "2024-05-06",
+      "event": "Engie Home Services reconnaît l’acte de cybermalveillance sur son portail partenaires, indique une fuite limitée à quelques centaines de clients et porte plainte."
+    }
+  ]
+}
