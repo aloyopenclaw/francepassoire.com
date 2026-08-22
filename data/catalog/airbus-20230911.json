@@ -1,0 +1,57 @@
+{
+  "slug": "airbus-20230911",
+  "entity": "Airbus",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-11",
+    "publication": "2023-09-14",
+    "confirmation": "2023-09-14"
+  },
+  "volume": {
+    "count": 3200,
+    "unit": "enregistrements",
+    "label": "environ 3 200 enregistrements de contacts de fournisseurs proposés sur un forum de hackers"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : Un hacker prétend avoir dérobé des données du groupe Airbus (15 septembre 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1501952-un-hacker-pretend-avoir-derobe-des-donnees-du-groupe-airbus.html",
+      "kind": "article"
+    },
+    {
+      "label": "ZDNet.fr : Airbus enquête sur une fuite de données dévoilée sur un marché noir du web (14 septembre 2023)",
+      "url": "https://www.zdnet.fr/actualites/airbus-enquete-sur-une-fuite-de-donnees-devoilee-sur-un-marche-noir-du-web-39961284.htm",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz : Piratage présumé d'Airbus, le pirate parle (18 septembre 2023)",
+      "url": "https://www.zataz.com/piratage-presume-dairbus-le-pirate-parle/",
+      "kind": "article"
+    },
+    {
+      "label": "The Record : Airbus investigates data leak allegedly involving thousands of suppliers (septembre 2023)",
+      "url": "https://therecord.media/airbus-data-leak-suppliers-breachedforums",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 septembre 2023, le cybercriminel connu sous le pseudonyme USDoD publie sur un forum de hackers un jeu de données présenté comme provenant d'Airbus, soit environ 3 200 enregistrements de contacts de fournisseurs contenant noms, courriels et numéros de téléphone. Selon le constructeur, l'accès a été obtenu par le compte informatique d'un client, une compagnie aérienne turque compromise par un virus voleur d'informations, utilisé pour télécharger des documents commerciaux depuis un portail web d'Airbus ; le groupe Thales apparaît dans l'échantillon partagé. Airbus confirme enquêter sur cette compromission et indique avoir pris des mesures correctives pour éviter une atteinte à ses systèmes. Zataz publie ensuite une interview du pirate, qui nie toute motivation pro-russe.",
+  "timeline": [
+    {
+      "date": "2023-09-11",
+      "event": "USDoD publie sur un forum de hackers environ 3 200 enregistrements de contacts de fournisseurs attribués à Airbus."
+    },
+    {
+      "date": "2023-09-14",
+      "event": "Airbus reconnaît qu'un compte client compromis a été utilisé pour télécharger des documents commerciaux depuis son portail web."
+    },
+    {
+      "date": "2023-09-18",
+      "event": "Zataz publie une interview du pirate présumé ; l'enquête du constructeur se poursuit."
+    }
+  ]
+}

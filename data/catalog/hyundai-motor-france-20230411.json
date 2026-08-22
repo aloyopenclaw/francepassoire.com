@@ -1,0 +1,52 @@
+{
+  "slug": "hyundai-motor-france-20230411",
+  "entity": "Hyundai Motor France",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-11",
+    "publication": "2023-04-13",
+    "confirmation": "2023-04-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "échelle de la fuite non divulguée ; clients propriétaires et personnes ayant réservé un essai en France et en Italie concernés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Piratage chez Hyundai, n'ayez crainte, tout va bien ou pas (19 mai 2023)",
+      "url": "https://www.zataz.com/piratage-chez-hyundai-nayez-crainte-tout-va-bien-ou-pas/",
+      "kind": "article"
+    },
+    {
+      "label": "BleepingComputer : Hyundai data breach exposes owner details in France and Italy (13 avril 2023)",
+      "url": "https://www.bleepingcomputer.com/news/security/hyundai-data-breach-exposes-owner-details-in-france-and-italy/",
+      "kind": "article"
+    },
+    {
+      "label": "SecurityAffairs : Hyundai suffered a data breach that impacted Italian and French car owners (12 avril 2023)",
+      "url": "https://securityaffairs.com/144732/data-breach/hyundai-suffered-data-breach.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 11 avril 2023, Hyundai Motor France avertit par courriel ses clients que sa base de données clients a fait l'objet d'un accès non autorisé par un tiers. L'attaquant a consulté des noms, prénoms, dates de naissance, adresses électroniques et postales, numéros de téléphone, numéros de client et numéros de châssis des véhicules. Le périmètre visé couvre la France et l'Italie, pour les propriétaires ainsi que pour les personnes ayant réservé un essai. Contacté par Zataz, le service presse de Hyundai Motor France indique que l'enquête est en cours ; la filiale italienne confirme parallèlement l'incident. L'échelle exacte de la fuite n'est pas communiquée et les coordonnées bancaires sont présentées comme non concernées.",
+  "timeline": [
+    {
+      "date": "2023-04-11",
+      "event": "Hyundai Motor France notifie par courriel ses clients d'un accès non autorisé à sa base de données clients."
+    },
+    {
+      "date": "2023-04-13",
+      "event": "BleepingComputer et SecurityAffairs relayent la divulgation, qui concerne aussi Hyundai Italie ; les numéros de châssis figurent parmi les données exposées."
+    },
+    {
+      "date": "2023-05-19",
+      "event": "Zataz publie le contenu du courriel de notification et confirme auprès du service presse que l'enquête est toujours en cours."
+    }
+  ]
+}

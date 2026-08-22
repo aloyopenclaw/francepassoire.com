@@ -1,0 +1,52 @@
+{
+  "slug": "parcoursup-20230728",
+  "entity": "Parcoursup (plateforme d'accès à l'enseignement supérieur)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-07-28",
+    "publication": "2023-07-31",
+    "confirmation": "2023-07-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "une soixantaine de dossiers de candidats affichés en preuve ; base d'identifiants volée à un lycée breton, ampleur non chiffrée"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "ZDNet.fr : Un hacker revendique le piratage de Parcoursup (28 juillet 2023)",
+      "url": "https://www.zdnet.fr/actualites/un-hacker-revendique-le-piratage-de-parcoursup-39960834.htm",
+      "kind": "article"
+    },
+    {
+      "label": "BFMTV : Non, Parcoursup n'a pas été piraté (mais des données ont bien été volées) (31 juillet 2023)",
+      "url": "https://www.bfmtv.com/tech/actualites/donnees-personnelles/non-parcoursup-n-a-pas-ete-pirate-mais-des-donnees-ont-bien-ete-volees_AV-202307310378.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL : Parcoursup piraté, le ministère évoque des données volées à un lycée breton (31 juillet 2023)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/parcoursup-pirate-le-ministere-evoque-des-donnees-volees-a-un-lycee-breton-7900285685",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 juillet 2023, un hacker revendique sur un forum le piratage de Parcoursup et affiche comme preuve les données d'une soixantaine d'étudiants, suscitant l'inquiétude sur les réseaux sociaux pour la plateforme qui gère les dossiers d'environ un million de candidats par an. Le ministère de l'Enseignement supérieur écarte toute intrusion dans le système d'information de Parcoursup et identifie la présence en ligne de données personnelles appartenant à des candidats aux formations d'un lycée de l'académie de Rennes. Une base de noms d'utilisateurs et de mots de passe servant à se connecter à la plateforme a été volée depuis cet établissement breton. Le lycée, accompagné par le rectorat, a déposé plainte et notifié l'incident à la CNIL ; les candidats concernés ont été prévenus.",
+  "timeline": [
+    {
+      "date": "2023-07-28",
+      "event": "Un hacker revendique le piratage de Parcoursup et diffuse les données d'une soixantaine d'étudiants en guise de preuve."
+    },
+    {
+      "date": "2023-07-31",
+      "event": "Le ministère écarte toute faille de Parcoursup et confirme le vol d'identifiants à un lycée de l'académie de Rennes."
+    },
+    {
+      "date": "2023-07-31",
+      "event": "Dépôt de plainte auprès du procureur de la République et notification à la CNIL ; les candidats concernés sont prévenus."
+    }
+  ]
+}

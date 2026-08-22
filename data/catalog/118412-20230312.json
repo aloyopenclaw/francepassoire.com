@@ -1,0 +1,51 @@
+{
+  "slug": "118412-20230312",
+  "entity": "Le 118412 (service privé de renseignement téléphonique)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-03-12",
+    "publication": "2023-03-16"
+  },
+  "volume": {
+    "count": 1000000,
+    "unit": "personnes",
+    "label": "enregistrements d'appels de plus d'un million de Français mis en vente 3 500 euros ; échantillon gratuit de 100 fichiers"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Numerama : Amazon, Booking, La Poste, 1 million d'enregistrements téléphoniques aux mains des hackers (16 mars 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1305168-amazon-booking-la-poste-1-million-denregistrements-telephoniques-aux-mains-des-hackers.html",
+      "kind": "article"
+    },
+    {
+      "label": "Tom's Guide FR : PlayStation, Amazon, La Poste, les pirates vous écoutent parler au téléphone (mars 2023)",
+      "url": "https://www.tomsguide.fr/playstation-amazon-la-poste-les-pirates-vous-ecoutent-parler-au-telephone/",
+      "kind": "article"
+    },
+    {
+      "label": "InCyber : France, un million d'appels à des services clients mis en vente (mars 2023)",
+      "url": "https://incyber.org/article/france-un-million-dappels-a-des-services-client-mis-en-vente/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 mars 2023, un pirate met en vente sur un forum de hackers une base contenant les enregistrements d'appels passés par plus d'un million de Français à des services clients, pour un prix de 3 500 euros en cryptomonnaie. La vente, repérée par l'expert Julien Métayer, s'accompagne d'un échantillon gratuit de 100 enregistrements ; on y entend des numéros de téléphone et des identifiants d'authentification dictés lors des appels. Les sociétés citées incluent La Poste, Amazon, Booking, la Banque Postale, le Crédit Agricole, Orange ou encore la SNCF. Selon une enquête de la Banque Postale relayée par Numerama, la fuite proviendrait du 118412, un service privé payant de renseignement téléphonique dont le numéro apparaît dans la quasi-totalité des enregistrements. L'annonce est retirée le 13 mars ; l'ampleur réelle de la diffusion n'est pas connue.",
+  "timeline": [
+    {
+      "date": "2023-03-12",
+      "event": "Mise en vente sur un forum de hackers d'une base d'enregistrements d'appels de plus d'un million de Français, avec un échantillon de 100 fichiers."
+    },
+    {
+      "date": "2023-03-13",
+      "event": "Retrait de l'annonce, environ 24 heures après sa publication."
+    },
+    {
+      "date": "2023-03-16",
+      "event": "Numerama documente la fuite et rapporte l'enquête de la Banque Postale attribuant les enregistrements au service de renseignement téléphonique 118412."
+    }
+  ]
+}

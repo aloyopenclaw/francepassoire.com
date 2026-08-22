@@ -1,0 +1,50 @@
+{
+  "slug": "cegedim-20230616",
+  "entity": "Cegedim",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-06-16",
+    "publication": "2023-06-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "revendication Cl0p sans volume annoncé ; Cegedim n'a pas réagi publiquement à l'époque"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ZDNet.fr : MOVEit, Cl0p revendique deux victimes en France (20 juin 2023)",
+      "url": "https://www.zdnet.fr/actualites/moveit-cl0p-revendique-deux-victimes-en-france-39959666.htm",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Campagne MOVEit, SYNLab, Cegedim, Nuance, PwC, la litanie des victimes de Cl0p (juin 2023)",
+      "url": "https://www.lemagit.fr/actualites/366542312/Campagne-MOVEit-SYNLab-Cegedim-Nuance-PwC-la-litanie-des-victimes-de-Cl0p",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama : La cyberattaque MOVEit fait mal, 26 entreprises victimes des hackers dont un labo français (16 juin 2023)",
+      "url": "https://www.numerama.com/cyberguerre/1416658-la-cyberattaque-moveit-fait-mal-26-entreprises-victimes-des-hackers-dont-un-labo-francais.html",
+      "kind": "article"
+    }
+  ],
+  "description": "À partir du 14 juin 2023, le groupe de rançongiciels Cl0p égrène sur son site de fuite les victimes de sa campagne d'exploitation de la faille du logiciel de transfert de fichiers MOVEit. Le spécialiste français des logiciels métiers pour la santé et l'assurance Cegedim figure parmi les entreprises françaises listées aux côtés du laboratoire Synlab. Les cybercriminels menacent de publier les données exfiltrées des cibles qui ne paient pas de rançon. Contacté par ZDNet mi-juin, Cegedim n'a pas réagi publiquement à la revendication, dont le contenu exact n'est pas détaillé. La compromission n'est pas confirmée par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2023-06-14",
+      "event": "Cl0p commence à nommer publiquement les victimes de sa campagne contre la faille MOVEit."
+    },
+    {
+      "date": "2023-06-16",
+      "event": "Cegedim apparaît sur le site de fuite de Cl0p parmi les victimes françaises ; Numerama recense 26 entreprises visées."
+    },
+    {
+      "date": "2023-06-20",
+      "event": "ZDNet identifie Synlab et Cegedim comme les deux entreprises françaises alors revendiquées ; Cegedim n'a pas réagi."
+    }
+  ]
+}

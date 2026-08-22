@@ -1,0 +1,53 @@
+{
+  "slug": "caf-gironde-20230105",
+  "entity": "Caisse d'allocations familiales (CAF) de Gironde",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-01-02",
+    "publication": "2023-01-05",
+    "confirmation": "2023-01-05"
+  },
+  "volume": {
+    "count": 10204,
+    "unit": "personnes",
+    "label": "10 204 allocataires concernés selon la CAF ; 181 points de données par allocataire recensés par Radio France"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Le Figaro : Les données personnelles de 10.000 allocataires fuitent après une erreur de la CAF de Gironde (5 janvier 2023)",
+      "url": "https://www.lefigaro.fr/conjoncture/les-donnees-personnelles-de-10-000-allocataires-fuitent-apres-une-erreur-de-la-caf-de-gironde-20230105",
+      "kind": "article"
+    },
+    {
+      "label": "Radio France (France Inter) : Comment les données confidentielles de 10 000 allocataires de la CAF se sont retrouvées sur Internet (5 janvier 2023)",
+      "url": "https://www.radiofrance.fr/franceinter/comment-les-donnees-confidentielles-de-10-000-allocataires-de-la-caf-se-sont-retrouvees-sur-internet-3858027",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz : CAF, les données de 10 000 personnes toujours en fuite sur le web (6 janvier 2023)",
+      "url": "https://www.zataz.com/caf-les-donnees-de-10-000-personnes-toujours-en-fuite-sur-le-web/",
+      "kind": "article"
+    }
+  ],
+  "description": "Début janvier 2023, Radio France révèle qu'un fichier contenant les données de 10 204 allocataires de la CAF de Gironde était téléchargeable librement sur Internet depuis environ dix-huit mois. Le document, extrait des bases de la caisse dans le cadre d'une formation de neuf agents, avait été transmis à un prestataire chargé de cette formation, qui l'avait mis en ligne en croyant manipuler un fichier de démonstration. Les noms et prénoms avaient été retirés, mais le fichier conservait 181 points de données par allocataire, dont adresses, dates de naissance et montants d'allocation, rendant une réidentification possible. Alertée le 2 janvier par Radio France, la CAF a obtenu la suppression des fichiers, reconnu une fuite de données et ouvert une enquête interne pour expliquer l'incident.",
+  "timeline": [
+    {
+      "date": "2023-01-02",
+      "event": "Radio France signale l'anomalie à la CAF de Gironde, qui demande au prestataire la suppression des fichiers accessibles en ligne."
+    },
+    {
+      "date": "2023-01-05",
+      "event": "La Cnaf reconnaît une fuite de données concernant 10 204 allocataires ; Radio France, Le Figaro et Zataz relatent l'exposition, ouverte depuis environ dix-huit mois."
+    },
+    {
+      "date": "2023-01-06",
+      "event": "La CAF annonce informer les allocataires concernés et ouvrir une enquête interne sur les circonstances de la fuite."
+    }
+  ]
+}
