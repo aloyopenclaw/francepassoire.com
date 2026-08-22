@@ -97,7 +97,8 @@ Le catalogue entier est publié sous licence ouverte **CC-BY-4.0**. Il n'y a pas
 
 ---
 
-## Architecture
+<details>
+<summary><strong>Architecture technique</strong> (pour les contributeurs — le reste du dépôt la documente de toute façon)</summary>
 
 France Passoire est conçu pour la haute disponibilité et la résilience, même en cas de fort trafic lors d'une alerte nationale.
 
@@ -116,6 +117,10 @@ graph TD
 * **Infrastructure (edge)** : Cloudflare Pages, Cloudflare Workers, Cloudflare D1 (SQLite distribué) pour le staging, Cloudflare KV.
 * **Veille & emails** : CF Workers Cron Triggers + CF Email Routing.
 * **CI/CD** : GitHub Actions pour les tests d'intégrité, la validation des PRs de données, et le déploiement.
+
+---
+
+</details>
 
 ---
 
