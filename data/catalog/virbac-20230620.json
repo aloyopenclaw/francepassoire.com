@@ -1,0 +1,41 @@
+{
+  "slug": "virbac-20230620",
+  "entity": "Virbac",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-06-20",
+    "publication": "2023-06-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; attaque sur plusieurs sites dans le monde"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Virbac (corporate) : Cyber attack on several sites (20 juin 2023)",
+      "url": "https://corporate.virbac.com/home/news-media/news/pagecontent/toutes-les-actualites-presse-vir/cyberattaque-sur-plusieurs-sites.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Bloomberg Law : Virbac Says It Experienced a Cyber Attack on Several Sites (20 juin 2023)",
+      "url": "https://news.bloomberglaw.com/privacy-and-data-security/virbac-says-it-experienced-a-cyber-attack-on-several-sites",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 19 au 20 juin 2023, Virbac, laboratoire vétérinaire français basé à Carros (Alpes-Maritimes), est la cible d'une cyberattaque touchant plusieurs de ses sites dans le monde. L'entreprise publie un communiqué officiel le 20 juin annonçant la mise en place de mesures de confinement et l'engagement d'experts en cybersécurité. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique publiquement l'attaque.",
+  "timeline": [
+    {
+      "date": "2023-06-20",
+      "event": "Virbac annonce avoir été la cible d'une cyberattaque sur plusieurs sites dans le monde dans la nuit du 19 au 20 juin."
+    },
+    {
+      "date": "2023-06-20",
+      "event": "Bloomberg Law relaie l'annonce officielle du laboratoire."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "faiencerie-de-gien-20220210",
+  "entity": "Faïencerie de Gien",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-10",
+    "publication": "2022-02-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; demande de rançon rapportée par la presse"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La République du Centre : La Faïencerie de Gien victime d'une cyberattaque (19 février 2022)",
+      "url": "https://www.larep.fr/gien-45500/faits-divers/la-faiencerie-de-gien-victime-d-une-cyberattaque_14087431/",
+      "kind": "article"
+    },
+    {
+      "label": "20 Minutes : Loiret. La faïencerie de Gien paralysée par une cyberattaque avec demande de rançon (21 février 2022)",
+      "url": "https://www.20minutes.fr/high-tech/3239411-20220221-loiret-la-faiencerie-de-gien-paralysee-par-une-cyberattaque-avec-demande-de-rancon",
+      "kind": "article"
+    },
+    {
+      "label": "ICI par France Bleu : La faïencerie de Gien touchée par une cyberattaque (18 février 2022)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/la-faiencerie-de-gien-touchee-par-une-cyberattaque-1645278152",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 février 2022, la Faïencerie de Gien, fabricant de faïence du Loiret, est touchée par une cyberattaque qui paralyse son outil de production. Une demande de rançon est rapportée par 20 Minutes. L'entreprise, dont l'activité est interrompue pendant plusieurs jours, porte l'incident à la connaissance du public mi-février. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique publiquement l'attaque.",
+  "timeline": [
+    {
+      "date": "2022-02-10",
+      "event": "Cyberattaque touchant la faïencerie ; l'activité de production est paralysée."
+    },
+    {
+      "date": "2022-02-19",
+      "event": "La presse régionale rapporte l'attaque contre la Faïencerie de Gien."
+    },
+    {
+      "date": "2022-02-21",
+      "event": "20 Minutes rapporte que l'attaque s'accompagne d'une demande de rançon."
+    }
+  ]
+}

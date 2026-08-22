@@ -1,0 +1,56 @@
+{
+  "slug": "agco-beauvais-20220505",
+  "entity": "AGCO France (site de Beauvais, tracteurs Massey Ferguson)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-05-05",
+    "publication": "2022-05-06",
+    "confirmation": "2022-05-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; usine de Beauvais à l'arrêt plusieurs jours"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "AGCO (communiqué) : AGCO Announces Ransomware Attack (6 mai 2022)",
+      "url": "https://news.agcocorp.com/2022-05-06-AGCO-Announces-Ransomware-Attack",
+      "kind": "officiel"
+    },
+    {
+      "label": "France 3 Hauts-de-France : Piratage informatique. Le site d'assemblage de tracteurs Massey Ferguson AGCO Beauvais victime d'une cyber-attaque (6 mai 2022)",
+      "url": "https://france3-regions.franceinfo.fr/hauts-de-france/oise/beauvais/piratage-informatique-le-site-d-assemblage-de-tracteurs-massey-fergusson-agco-beauvais-victime-d-une-cyber-attaque-2537316.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Parisien : Cyberattaque dans l'Oise. Le site de production des tracteurs Massey-Ferguson est toujours à l'arrêt (9 mai 2022)",
+      "url": "https://www.leparisien.fr/oise-60/cyber-attaque-dans-loise-le-site-de-production-des-tracteurs-massey-ferguson-est-toujours-a-larret-09-05-2022-3EVC3UKLIZAQ5EY7C7JTMG6ANY.php",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale (archive) : Le fabricant de matériels agricoles AGCO victime d'un ransomware, des usines à l'arrêt",
+      "url": "https://web.archive.org/web/20230120022510/https://www.usine-digitale.fr/article/le-fabricant-de-materiels-agricoles-agco-victime-d-un-ransomware-des-usines-a-l-arret.N2002707",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 5 mai 2022, le groupe américain AGCO, propriétaire de la marque Massey Ferguson, détecte une attaque par rançongiciel touchant une partie de sa production, dont le site d'assemblage de Beauvais (Oise), seul site français du groupe. L'usine, qui emploie environ 450 salariés, est à l'arrêt plusieurs jours, les salariés étant invités à rester chez eux. AGCO confirme l'attaque par communiqué le 6 mai. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique l'attaque.",
+  "timeline": [
+    {
+      "date": "2022-05-05",
+      "event": "Attaque par rançongiciel détectée ; le site AGCO de Beauvais cesse sa production."
+    },
+    {
+      "date": "2022-05-06",
+      "event": "AGCO annonce publiquement l'attaque par rançongiciel touchant certaines installations de production."
+    },
+    {
+      "date": "2022-05-09",
+      "event": "Le Parisien rapporte que l'usine de Beauvais est toujours à l'arrêt."
+    }
+  ]
+}

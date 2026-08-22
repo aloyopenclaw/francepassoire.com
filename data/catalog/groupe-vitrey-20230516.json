@@ -1,0 +1,50 @@
+{
+  "slug": "groupe-vitrey-20230516",
+  "entity": "Groupe Vitrey",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-16",
+    "publication": "2023-05-31"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume communiqué ; cyberattaque de grande ampleur sur le groupe de travaux publics"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "JHM (Le Journal de la Haute-Marne) : Le groupe Vitrey victime d'une cyberattaque de grande ampleur (mai 2023)",
+      "url": "https://jhm.fr/le-groupe-vitrey-victime-dune-cyberattaque-de-grande-ampleur/",
+      "kind": "article"
+    },
+    {
+      "label": "JHM (Le Journal de la Haute-Marne) : Cybercriminalité. Elle s'est étendue, diversifiée, professionnalisée (retour sur l'attaque du 16 mai 2023)",
+      "url": "https://jhm.fr/cybercriminalite-elle-sest-etendue-diversifiee-professionnalisee/",
+      "kind": "article"
+    },
+    {
+      "label": "KonBriefing : Cyberattacks France 2nd quarter 2023 (entrée Groupe Vitrey, 16 mai 2023)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-2023-cny-france-q2.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 mai 2023, le groupe Vitrey, entreprise de travaux publics et de construction haute-marnaise basée à Villiers-sur-Suize, est victime d'une cyberattaque de grande ampleur. L'entreprise, qui emploie plusieurs centaines de salariés, met en place des mesures de confinement et une reprise d'activité progressive. La dirigeante Fanny Vitrey revient en 2024 sur l'incident dans la presse locale, décrivant une cybercriminalité qui s'est étendue et professionnalisée. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique l'attaque.",
+  "timeline": [
+    {
+      "date": "2023-05-16",
+      "event": "Cyberattaque de grande ampleur contre le groupe Vitrey."
+    },
+    {
+      "date": "2023-05-31",
+      "event": "Le Journal de la Haute-Marne rapporte l'attaque subie par le groupe."
+    },
+    {
+      "date": "2024-01-01",
+      "event": "La dirigeante du groupe revient publiquement sur l'attaque du 16 mai 2023 dans la presse locale."
+    }
+  ]
+}

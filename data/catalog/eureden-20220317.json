@@ -1,0 +1,55 @@
+{
+  "slug": "eureden-20220317",
+  "entity": "Eureden (siège de Mellac et usine Aubret de Vallons-de-l'Erdre, filiale Nutréa à Languidic)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-03-17",
+    "publication": "2022-03-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; usine Aubret en mode dégradé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "actu.fr : Bretagne. Le groupe Eureden touché par une cyberattaque (17 mars 2022)",
+      "url": "https://actu.fr/bretagne/loudeac_22136/bretagne-le-groupe-eureden-touche-par-une-cyberattaque_49630224.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Télégramme : Le groupe Eureden victime d'une cyberattaque (Mellac, Finistère)",
+      "url": "https://www.letelegramme.fr/finistere/mellac-29300/le-groupe-eureden-victime-d-une-cyberattaque-219633.php",
+      "kind": "article"
+    },
+    {
+      "label": "Nutréa (communiqué) : Important. Communiqué Nutréa (18 mars 2022)",
+      "url": "https://www.nutrea-nna.fr/nutrea-actualites/404-important-communique-nutrea.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "KonBriefing : Cyber attacks France 1st quarter 2022 (entrées Eureden et Nutréa NA SAS, 17 mars 2022)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-2022-cny-france-q1.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 mars 2022, le groupe coopératif agroalimentaire breton Eureden est touché par une cyberattaque affectant son siège de Mellac (Finistère) et plusieurs sites, dont l'usine Aubret de Vallons-de-l'Erdre (Loire-Atlantique), qui fonctionne ensuite en mode dégradé. La filiale de nutrition animale Nutréa, à Languidic, publie le même jour un communiqué indiquant faire face à une cyberattaque depuis le 17 mars. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique publiquement les attaques.",
+  "timeline": [
+    {
+      "date": "2022-03-17",
+      "event": "Cyberattaque touchant le siège d'Eureden à Mellac et des sites du groupe ; Nutréa signale être visé depuis le 17 mars."
+    },
+    {
+      "date": "2022-03-18",
+      "event": "Nutréa publie un communiqué officiel sur l'attaque en cours."
+    },
+    {
+      "date": "2022-03-19",
+      "event": "Ouest-France, citée par KonBriefing, rapporte que l'usine Aubret tourne en mode dégradé."
+    }
+  ]
+}

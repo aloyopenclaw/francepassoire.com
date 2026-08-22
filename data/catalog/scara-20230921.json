@@ -1,0 +1,47 @@
+{
+  "slug": "scara-20230921",
+  "entity": "Scara (coopérative agricole, Arcis-sur-Aube)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-21",
+    "publication": "2023-10-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "données dérobées selon la presse, volume non chiffré ; rançongiciel NoEscape"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "L'Est-Éclair (archive web.archive.org) : Arcis-sur-Aube. La Scara piratée par « No Escape » (11 octobre 2023)",
+      "url": "https://web.archive.org/web/20250709063407/https://www.lest-eclair.fr/id528926/article/2023-10-11/la-scara-piratee-par-no-escape",
+      "kind": "archive"
+    },
+    {
+      "label": "L'Union (archive web.archive.org) : Arcis-sur-Aube. La Scara piratée par « No Escape » (article republié le 23 janvier 2024)",
+      "url": "https://web.archive.org/web/20240125224458/https://www.lunion.fr/id561084/article/2024-01-23/arcis-sur-aube-la-scara-piratee-par-no-escape",
+      "kind": "archive"
+    },
+    {
+      "label": "KonBriefing : Major cyberattacks on the food industry 2023 (entrée Scara, 21 septembre 2023)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-2023-ind-food.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 septembre 2023, la Scara, coopérative agricole de l'Aube basée à Arcis-sur-Aube, est victime d'un rançongiciel revendiqué par le groupe NoEscape. La coopérative, active dans la collecte de céréales et l'approvisionnement des agriculteurs, subit un arrêt de ses outils informatiques. La presse locale rapporte en octobre 2023 le nom du groupe criminel et le vol de données, sans volume chiffré. Les articles de L'Est-Éclair et de L'Union ne sont plus accessibles en ligne et sont cités via leurs snapshots web.archive.org.",
+  "timeline": [
+    {
+      "date": "2023-09-21",
+      "event": "Rançongiciel NoEscape frappe la coopérative Scara à Arcis-sur-Aube."
+    },
+    {
+      "date": "2023-10-11",
+      "event": "L'Est-Éclair rapporte le piratage et la revendication du groupe NoEscape."
+    }
+  ],
+  "group": "noescape"
+}

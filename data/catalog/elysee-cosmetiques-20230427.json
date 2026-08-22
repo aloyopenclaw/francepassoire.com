@@ -1,0 +1,41 @@
+{
+  "slug": "elysee-cosmetiques-20230427",
+  "entity": "Élysée Cosmétiques (usine de Forbach)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-04-27",
+    "publication": "2023-05-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume communiqué ; serveurs piratés et usine à l'arrêt, attaque attribuée à des pirates russes selon la presse locale"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Républicain Lorrain : Forbach. Serveurs piratés par des Russes, l'usine Élysée Cosmétiques à l'arrêt (4 mai 2023)",
+      "url": "https://www.republicain-lorrain.fr/economie/2023/05/04/serveurs-pirates-par-des-russes-l-usine-elysee-cosmetiques-a-l-arret",
+      "kind": "article"
+    },
+    {
+      "label": "Radio Mélodie : Forbach. Élysée Cosmétiques face à une « cyberguerre » selon son directeur général (27 avril 2023)",
+      "url": "https://www.radiomelodie.com/a/18085-elysee-cosmetiques-face-a-une-cyberguerre-selon-son-directeur-general",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 avril 2023, Élysée Cosmétiques, fabricant de cosmétiques employé à Forbach (Moselle), subit une cyberattaque qui met à l'arrêt son usine. Le Républicain Lorrain rapporte que les serveurs ont été piratés par des pirates présentés comme russes et que la production est stoppée, avec plusieurs centaines de salariés sans travail pendant l'arrêt. Le directeur général parle d'une « cyberguerre » dans les colonnes de Radio Mélodie. Aucun volume de données dérobées n'est communiqué et aucune revendication formelle d'un groupe identifié n'est relevée.",
+  "timeline": [
+    {
+      "date": "2023-04-27",
+      "event": "Cyberattaque sur les serveurs de l'usine Élysée Cosmétiques de Forbach ; production à l'arrêt."
+    },
+    {
+      "date": "2023-05-04",
+      "event": "Le Républicain Lorrain décrit des serveurs piratés par des pirates russes et une usine à l'arrêt."
+    }
+  ]
+}

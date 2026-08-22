@@ -1,0 +1,51 @@
+{
+  "slug": "lacroix-20230513",
+  "entity": "Lacroix (branche Lacroix Electronics, sites de Beaupréau en France, Willich en Allemagne et Zriba en Tunisie)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-05-13",
+    "publication": "2023-05-15",
+    "confirmation": "2023-05-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucune donnée dérobée confirmée ; un rançongiciel a été déployé et des infrastructures locales partiellement chiffrées, une exfiltration éventuelle reste à déterminer"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "SecurityWeek : Lacroix Closes Production Sites Following Ransomware Attack (17 mai 2023)",
+      "url": "https://www.securityweek.com/lacroix-closes-production-sites-following-ransomware-attack/",
+      "kind": "article"
+    },
+    {
+      "label": "SecurityAffairs : Lacroix Group shut down three facilities after a targeted cyber attack",
+      "url": "https://securityaffairs.com/146335/cyber-crime/lacroix-group-ransomware-attack.html",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Lacroix Electronics : AlphV met en cause Group DIS",
+      "url": "https://www.lemagit.fr/actualites/366537496/Group-DIS-encore-un-infogereur-victime-de-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 12 au 13 mai 2023, l'équipementier électronique Lacroix intercepte une attaque informatique ciblée visant les sites de sa branche Lacroix Electronics à Beaupréau (France), Willich (Allemagne) et Zriba (Tunisie). Avant l'interception, un rançongiciel a chiffré une partie des infrastructures locales. Les trois sites, qui représentaient 19 % du chiffre d'affaires du groupe en 2022, sont fermés pendant une semaine, avec une reprise visée le 22 mai. L'entreprise indique qu'une exfiltration de données reste à déterminer. La franchise AlphV mettra ensuite en cause l'infogéreur Group DIS, attaqué quelques jours plus tôt, en l'accusant de refuser de payer pour protéger les données de ses clients, dont Lacroix.",
+  "timeline": [
+    {
+      "date": "2023-05-13",
+      "event": "Attaque interceptée dans la nuit du 12 au 13 mai sur les sites de Beaupréau, Willich et Zriba ; un rançongiciel chiffre partiellement les infrastructures locales."
+    },
+    {
+      "date": "2023-05-15",
+      "event": "Lacroix annonce une cyberattaque contenue ; les trois sites sont fermés pour la semaine et un plan de reprise est engagé."
+    },
+    {
+      "date": "2023-05-17",
+      "event": "SecurityWeek rapporte la fermeture des trois sites de production et le poids de ces sites (19 % des ventes 2022)."
+    }
+  ]
+}
