@@ -3,18 +3,20 @@
   "entity": "La MIF (Mutuelle d'Ivry la Fraternelle)",
   "siren": "310259221",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-10-21",
-    "publication": "2024-10-21",
-    "confirmation": "2024-10-22"
+    "publication": "2024-10-21"
   },
   "volume": {
     "count": 0,
     "unit": "enregistrements",
     "label": "fuite partielle non quantifiée : « une partie limitée des documents relatifs à ses sociétaires » selon la MIF ; l'organisme revendique plus de 185 000 clients"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "MoneyVox (21 octobre 2024) — Assurance vie : la Mif victime d'une cyberattaque",
@@ -27,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le week-end du 12 octobre 2024, la Mutuelle d'Ivry la Fraternelle (MIF), mutuelle d'assurance vie comptant plus de 185 000 clients, subit une cyberattaque. L'organisme reconnaît une fuite partielle : des documents relatifs à ses sociétaires ont été exposés, avec pour données souvent concernées l'identité, l'adresse, l'e-mail et le numéro de téléphone. Selon la MIF, les mots de passe et les actifs gérés n'ont pas été compromis, l'exfiltration a été stoppée et l'incident déclaré à la CNIL. Le volume exact des données sorties n'est pas communiqué.",
+  "description": "Le week-end du 12 octobre 2024, la Mutuelle d'Ivry la Fraternelle (MIF), mutuelle d'assurance vie comptant plus de 185 000 clients, subit une cyberattaque. Selon la presse, l'organisme reconnaît une fuite partielle : des documents relatifs à ses sociétaires ont été exposés, avec pour données souvent concernées l'identité, l'adresse, l'e-mail et le numéro de téléphone. Selon la presse, Selon la MIF, les mots de passe et les actifs gérés n'ont pas été compromis, l'exfiltration a été stoppée et l'incident déclaré à la CNIL. Le volume exact des données sorties n'est pas communiqué.",
   "timeline": [
     {
       "date": "2024-10-12",

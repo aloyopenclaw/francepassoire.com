@@ -3,18 +3,20 @@
   "entity": "Leroy Merlin",
   "siren": "384560942",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-03",
-    "publication": "2025-12-03",
-    "confirmation": "2025-12-03"
+    "publication": "2025-12-03"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "« quelques centaines de milliers de clients » selon Leroy Merlin ; chiffre exact non communiqué"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "BFM Tech&Co — Leroy Merlin reconnaît avoir été victime d'une cyber attaque et annonce que des centaines de milliers de clients sont concernés",
@@ -37,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 3 décembre 2025, Leroy Merlin confirme un acte de cybermalveillance touchant les données personnelles associées aux comptes de fidélité de quelques centaines de milliers de clients en France. Les données concernées comprennent nom, prénom, numéro de téléphone, adresses e-mail et postale, date de naissance et informations du programme de fidélité. Les données bancaires et les mots de passe ne sont pas concernés selon l'enseigne. Le chercheur Clément Domingo attribue l'attaque au groupe dumpsec, qui aurait utilisé les accès compromis d'un employé. La CNIL est notifiée, une plainte est prévue et les clients touchés ont été informés.",
+  "description": "Selon la presse, le 3 décembre 2025, Leroy Merlin confirme un acte de cybermalveillance touchant les données personnelles associées aux comptes de fidélité de quelques centaines de milliers de clients en France. Les données concernées comprennent nom, prénom, numéro de téléphone, adresses e-mail et postale, date de naissance et informations du programme de fidélité. Les données bancaires et les mots de passe ne sont pas concernés selon l'enseigne. Le chercheur Clément Domingo attribue l'attaque au groupe dumpsec, qui aurait utilisé les accès compromis d'un employé. La CNIL est notifiée, une plainte est prévue et les clients touchés ont été informés.",
   "timeline": [
     {
       "date": "2025-12-03",

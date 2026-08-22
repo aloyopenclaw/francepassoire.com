@@ -2,11 +2,10 @@
   "slug": "mango-20251014",
   "entity": "Mango",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-10-14",
-    "publication": "2025-10-15",
-    "confirmation": "2025-10-14"
+    "publication": "2025-10-15"
   },
   "volume": {
     "count": 1000000,

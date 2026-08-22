@@ -3,11 +3,10 @@
   "entity": "Ville de Josselin (plateforme de prise de rendez-vous RDV360)",
   "siren": "215600917",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-20",
-    "publication": "2025-11-20",
-    "confirmation": "2025-11-20"
+    "publication": "2025-11-20"
   },
   "volume": {
     "count": 0,
@@ -30,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Mi-novembre 2025, la commune de Josselin (Morbihan) est touchée par la fuite de données liée à RDV360, l’application de rendez-vous en ligne des mairies, utilisée pour les demandes de titres d’identité. Le maire, Nicolas Jagoudet, dénonce publiquement dans Ouest-France la prise en charge de l’incident par le prestataire, qu’il juge difficile à joindre. Les données exfiltrées se limitent à l’identité et aux coordonnées des usagers — nom, prénom, code postal, e-mail, téléphone — associées à leurs rendez-vous. Le fournisseur a reconnu une intrusion malveillante à l’origine de cette fuite multi-communes.",
+  "description": "Mi-novembre 2025, la commune de Josselin (Morbihan) est touchée par la fuite de données liée à RDV360, l’application de rendez-vous en ligne des mairies, utilisée pour les demandes de titres d’identité. Le maire, Nicolas Jagoudet, dénonce publiquement dans Ouest-France la prise en charge de l’incident par le prestataire, qu’il juge difficile à joindre. Les données exfiltrées se limitent à l’identité et aux coordonnées des usagers — nom, prénom, code postal, e-mail, téléphone — associées à leurs rendez-vous. Selon la presse, le fournisseur a reconnu une intrusion malveillante à l’origine de cette fuite multi-communes.",
   "timeline": [
     {
       "date": "2025-11-20",

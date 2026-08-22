@@ -2,11 +2,10 @@
   "slug": "mazars-20230522",
   "entity": "Mazars (groupe d'audit, d'expertise comptable et de conseil, entité brésilienne visée)",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-05-22",
-    "publication": "2023-05-22",
-    "confirmation": "2023-05-24"
+    "publication": "2023-05-22"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 22 mai 2023 au matin, les opérateurs de la franchise Alphv/BlackCat revendiquent une cyberattaque contre le groupe Mazars et mettent à disposition 700 Go de données présentées comme dérobées, évoquant accords, enregistrements financiers, documents confidentiels et secrets de clients. Les noms des fichiers, en portugais, suggèrent que l'entité affectée est la filiale brésilienne du groupe. Les dossiers mentionnés incluent des documents liés à des audits de systèmes d'information pour des organisations telles que Decathlon, Essilor, Keyrus, LVMH, Morpho (Idemia), Nexans, Pernod Ricard, Publicis, Sanofi ou Sephora. Le 24 mai, un porte-parole de Mazars confirme que Mazars au Brésil a été la cible d'une cyberattaque, précise que l'infrastructure brésilienne est indépendante de celles des autres pays et indique qu'un cabinet d'expertise forensic indépendant évalue l'étendue de la fuite.",
+  "description": "Le 22 mai 2023 au matin, les opérateurs de la franchise Alphv/BlackCat revendiquent une cyberattaque contre le groupe Mazars et mettent à disposition 700 Go de données présentées comme dérobées, évoquant accords, enregistrements financiers, documents confidentiels et secrets de clients. Les noms des fichiers, en portugais, suggèrent que l'entité affectée est la filiale brésilienne du groupe. Les dossiers mentionnés incluent des documents liés à des audits de systèmes d'information pour des organisations telles que Decathlon, Essilor, Keyrus, LVMH, Morpho (Idemia), Nexans, Pernod Ricard, Publicis, Sanofi ou Sephora. Selon la presse, le 24 mai, un porte-parole de Mazars confirme que Mazars au Brésil a été la cible d'une cyberattaque, précise que l'infrastructure brésilienne est indépendante de celles des autres pays et indique qu'un cabinet d'expertise forensic indépendant évalue l'étendue de la fuite.",
   "timeline": [
     {
       "date": "2023-05-22",

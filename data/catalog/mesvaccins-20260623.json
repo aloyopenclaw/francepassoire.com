@@ -2,7 +2,7 @@
   "slug": "mesvaccins-20260623",
   "entity": "MesVaccins",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-06-23",
     "publication": "2026-06-23"
@@ -29,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 23 juin 2026, la plateforme MesVaccins, qui gère des carnets de vaccination numériques, informe ses utilisateurs d'un incident de sécurité. Elle a été avisée le 15 juin qu'un tiers non autorisé avait accédé à certaines données et en avait obtenu une copie. Les catégories exposées incluent e-mails, téléphones, données d'état civil, numéros de sécurité sociale lorsqu'ils étaient renseignés, données vaccinales et informations de profil santé codées. L'incident est notifié à la CNIL et une plainte est déposée. L'étendue exacte reste sous investigation.",
+  "description": "Selon la presse, le 23 juin 2026, la plateforme MesVaccins, qui gère des carnets de vaccination numériques, informe ses utilisateurs d'un incident de sécurité. Elle a été avisée le 15 juin qu'un tiers non autorisé avait accédé à certaines données et en avait obtenu une copie. Les catégories exposées incluent e-mails, téléphones, données d'état civil, numéros de sécurité sociale lorsqu'ils étaient renseignés, données vaccinales et informations de profil santé codées. Selon la presse, l'incident est notifié à la CNIL et une plainte est déposée. L'étendue exacte reste sous investigation.",
   "timeline": [
     {
       "date": "2026-06-15",

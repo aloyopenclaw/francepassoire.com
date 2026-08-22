@@ -2,11 +2,10 @@
   "slug": "metropole-du-grand-paris-20250306",
   "entity": "Métropole du Grand Paris",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-06",
-    "publication": "2025-03-06",
-    "confirmation": "2025-03-06"
+    "publication": "2025-03-06"
   },
   "volume": {
     "count": 5000,
@@ -29,7 +28,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début 2025, des agents de la Métropole du Grand Paris reçoivent des appels suspects, révélant une extraction frauduleuse de données stockées sur ses serveurs, constatée en février. Le 6 mars, l’intercommunalité (130 communes) annonce une plainte contre X : environ 5 000 personnes — 250 agents, 208 élus et l’ensemble des partenaires — risquent de voir noms, prénoms, e-mails et numéros de mobile divulgués. Aucune coordonnée bancaire n’est concernée. L’alerte était venue d’agents contactés sur leurs téléphones personnels.",
+  "description": "Début 2025, des agents de la Métropole du Grand Paris reçoivent des appels suspects, révélant une extraction frauduleuse de données stockées sur ses serveurs, constatée en février. Selon la presse, le 6 mars, l’intercommunalité (130 communes) annonce une plainte contre X : environ 5 000 personnes — 250 agents, 208 élus et l’ensemble des partenaires — risquent de voir noms, prénoms, e-mails et numéros de mobile divulgués. Aucune coordonnée bancaire n’est concernée. L’alerte était venue d’agents contactés sur leurs téléphones personnels.",
   "timeline": [
     {
       "date": "2025-02-28",

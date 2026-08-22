@@ -2,7 +2,7 @@
   "slug": "le-compte-asso-20260626",
   "entity": "Le Compte Asso (ministère des Sports)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-06-26",
     "publication": "2026-06-29"
@@ -29,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 26 juin 2026, le ministère des Sports informe par courrier les associations concernées. Une partie des données saisies dans Le Compte Asso, son téléservice, a été exfiltrée puis publiée sur un forum cybercriminel. Le courrier confirme la présence de coordonnées bancaires, IBAN et BIC, parmi les informations compromises. La publication sur le forum revendique jusqu'à 227 000 enregistrements : civilité, nom, prénom, fonction, téléphone, e-mail, banque et domiciliation. Une fiche distincte documente la fuite de mai concernant les éducateurs sportifs.",
+  "description": "Selon la presse, le 26 juin 2026, le ministère des Sports informe par courrier les associations concernées. Une partie des données saisies dans Le Compte Asso, son téléservice, a été exfiltrée puis publiée sur un forum cybercriminel. Selon la presse, le courrier confirme la présence de coordonnées bancaires, IBAN et BIC, parmi les informations compromises. La publication sur le forum revendique jusqu'à 227 000 enregistrements : civilité, nom, prénom, fonction, téléphone, e-mail, banque et domiciliation. Une fiche distincte documente la fuite de mai concernant les éducateurs sportifs.",
   "timeline": [
     {
       "date": "2026-06-26",

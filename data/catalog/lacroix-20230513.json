@@ -2,11 +2,10 @@
   "slug": "lacroix-20230513",
   "entity": "Lacroix (branche Lacroix Electronics, sites de Beaupréau en France, Willich en Allemagne et Zriba en Tunisie)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-05-13",
-    "publication": "2023-05-15",
-    "confirmation": "2023-05-15"
+    "publication": "2023-05-15"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 12 au 13 mai 2023, l'équipementier électronique Lacroix intercepte une attaque informatique ciblée visant les sites de sa branche Lacroix Electronics à Beaupréau (France), Willich (Allemagne) et Zriba (Tunisie). Avant l'interception, un rançongiciel a chiffré une partie des infrastructures locales. Les trois sites, qui représentaient 19 % du chiffre d'affaires du groupe en 2022, sont fermés pendant une semaine, avec une reprise visée le 22 mai. L'entreprise indique qu'une exfiltration de données reste à déterminer. La franchise AlphV mettra ensuite en cause l'infogéreur Group DIS, attaqué quelques jours plus tôt, en l'accusant de refuser de payer pour protéger les données de ses clients, dont Lacroix.",
+  "description": "Dans la nuit du 12 au 13 mai 2023, l'équipementier électronique Lacroix intercepte une attaque informatique ciblée visant les sites de sa branche Lacroix Electronics à Beaupréau (France), Willich (Allemagne) et Zriba (Tunisie). Avant l'interception, un rançongiciel a chiffré une partie des infrastructures locales. Les trois sites, qui représentaient 19 % du chiffre d'affaires du groupe en 2022, sont fermés pendant une semaine, avec une reprise visée le 22 mai. Selon la presse, l'entreprise indique qu'une exfiltration de données reste à déterminer. La franchise AlphV mettra ensuite en cause l'infogéreur Group DIS, attaqué quelques jours plus tôt, en l'accusant de refuser de payer pour protéger les données de ses clients, dont Lacroix.",
   "timeline": [
     {
       "date": "2023-05-13",
