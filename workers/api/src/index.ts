@@ -26,7 +26,7 @@
 // implémentées dans ./watchlist.ts (double opt-in Brevo, alertes) — ce
 // fichier ne fait que le routage et le scheduled.
 
-import { handleWatchlistRequest, runWeeklyDigest } from './watchlist';
+import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -49,6 +49,8 @@ export interface KVNamespace {
 export interface Env {
   DB: D1Database;
   RATE_LIMIT: KVNamespace;
+  /** État du balayage « immédiat » (dernier catalogue vu) — KV partagé. */
+  RUN_STATE?: KVNamespace;
   /** Secret Turnstile (wrangler secret put TURNSTILE_SECRET) — jamais une var en clair. */
   TURNSTILE_SECRET?: string;
   /** Clé API v3 Brevo (T30/T31) — envoi des emails de veille. */
@@ -313,13 +315,49 @@ export default {
   async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
     return handleRequest(request, env);
   },
-  // T31 : digest hebdo de la veille — lundi 09:00 Europe/Paris
-  // (cron « 0 7 * * 1 » UTC, cf. wrangler.jsonc triggers.crons).
+  // T31 : un SEUL cron « */15 » (plafond gratuit : 5 déclencheurs/compte).
+  // Chaque tick lance le balayage « immédiat » ; le digest hebdo est plié
+  // dedans — lundi 09:00 Europe/Paris (garde KV anti-double-envoi, heure
+  // locale via Intl donc insensible au basculement DST).
   async scheduled(
-    _controller: unknown,
+    controller: ScheduledController,
     env: Env,
     _ctx: ExecutionContext,
   ): Promise<void> {
-    await runWeeklyDigest(env);
+    await runInstantSweep(env);
+    const now = new Date(controller.scheduledTime);
+    if (doitLancerDigest(now) && env.RUN_STATE) {
+      const cle = 'watchlist:digest:last_monday';
+      const lundi = lundiParis(now);
+      if ((await env.RUN_STATE.get(cle)) !== lundi) {
+        await env.RUN_STATE.put(cle, lundi);
+        await runWeeklyDigest(env, { now });
+      }
+    }
   },
 };
+
+/** Lundi, entre 09:00 et 09:14 Europe/Paris (le tick quart d'heure de 09:00 pile). */
+export function doitLancerDigest(now: Date): boolean {
+  const parts = new Intl.DateTimeFormat('fr-FR', {
+    timeZone: 'Europe/Paris',
+    weekday: 'long',
+    hour: '2-digit',
+    hour12: false,
+  }).format(now);
+  return /lundi/.test(parts) && /09/.test(parts);
+}
+
+/** Identifiant du lundi en cours (Europe/Paris) pour la garde KV. */
+function lundiParis(now: Date): string {
+  const fmt = new Intl.DateTimeFormat('fr-CA', {
+    timeZone: 'Europe/Paris',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const [annee, mois, jour] = fmt.format(now).split('-');
+  const base = new Date(Date.UTC(Number(annee), Number(mois) - 1, Number(jour)));
+  while (base.getUTCDay() !== 1) base.setUTCDate(base.getUTCDate() - 1);
+  return base.toISOString().slice(0, 10);
+}
