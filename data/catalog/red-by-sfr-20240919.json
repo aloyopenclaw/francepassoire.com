@@ -1,0 +1,45 @@
+{
+  "slug": "red-by-sfr-20240919",
+  "entity": "RED by SFR",
+  "siren": "343059564",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-09-19",
+    "publication": "2024-09-19",
+    "confirmation": "2024-09-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués par l'opérateur ; « plusieurs dizaines de milliers de clients » selon FrenchBreaches ; 50 000 clients revendiqués le 4 septembre selon le chercheur SaxX, rattachement non confirmé"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Next (L'Informaticien) — RED by SFR informe ses clients d'une nouvelle fuite, avec une ribambelle de données (19 septembre 2024)",
+      "url": "https://next.ink/brief_article/red-by-sfr-informe-ses-clients-dune-nouvelle-fuite-avec-une-ribambelle-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez RED by SFR : des informations sensibles et plusieurs dizaines de milliers de clients",
+      "url": "https://frenchbreaches.com/alertes/red-by-sfr-blf_697f831a59c7f",
+      "kind": "article"
+    }
+  ],
+  "description": "RED by SFR, marque de l'opérateur SFR, informe le 19 septembre 2024 des clients d'une fuite détectée le 3 septembre. Un outil de gestion de commandes a subi un accès externe non autorisé, selon le courriel adressé aux abonnés relayé par Next. Les données concernées comprennent identité, coordonnées, contenu des commandes, type de forfait, IBAN et identifiants du smartphone et de la carte SIM. Mots de passe et contenus de communications sont exclus selon l'opérateur, qui a informé la CNIL et déposé plainte. FrenchBreaches évoque plusieurs dizaines de milliers de clients concernés, sans décompte officiel.",
+  "timeline": [
+    {
+      "date": "2024-09-03",
+      "event": "SFR détecte un incident de sécurité sur un outil de gestion de commandes, ayant entraîné un accès externe non autorisé à des données personnelles, selon le courriel envoyé aux clients RED."
+    },
+    {
+      "date": "2024-09-19",
+      "event": "RED by SFR informe les clients concernés : identité, coordonnées, données contractuelles, IBAN et identifiants du smartphone et de la carte SIM ont été concernés."
+    },
+    {
+      "date": "2024-09-19",
+      "event": "L'opérateur indique que la CNIL a été informée et qu'une plainte a été déposée ; l'incident est clos selon le courriel relayé par Next."
+    }
+  ]
+}

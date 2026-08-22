@@ -1,0 +1,58 @@
+{
+  "slug": "altice-20220825",
+  "entity": "Groupe Altice",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-08-25",
+    "publication": "2022-08-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non chiffrés ; « des milliers de documents internes » exfiltrés selon Zataz, dont environ un quart diffusé le 25 août ; le groupe indique qu'aucune donnée sensible n'a été compromise"
+  },
+  "data_types": ["documents"],
+  "sources": [
+    {
+      "label": "Zataz — Piratage pour le groupe Altice (SFR) : Hive exfiltre des milliers de documents internes",
+      "url": "https://www.zataz.com/piratage-pour-le-groupe-altice-sfr/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Clubic — Ransomware : Altice confirme avoir été touché, mais pas sa branche française, qui inclut SFR",
+      "url": "https://www.clubic.com/telephone-portable/operateur-telephonie-mobile/sfr/actualite-436146-ransomware-altice-confirme-avoir-ete-touche-mais-pas-sa-branche-francaise-ce-qui-inclut-sfr.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Échos — Données piratées chez Altice : Reflets ne peut pas publier d'autres articles (6 octobre 2022, article archivé)",
+      "url": "https://web.archive.org/web/2026/https://www.lesechos.fr/tech-medias/medias/donnees-piratees-chez-altice-reflets-ne-peut-pas-publier-dautres-articles-1866975",
+      "kind": "archive"
+    },
+    {
+      "label": "Total Telecom — Altice stung by ransomware group Hive (26 août 2022)",
+      "url": "https://totaltele.com/altice-stung-by-ransomware-group-hive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe Altice, maison mère de SFR, reconnaît le 26 août 2022 un rançongiciel Hive ayant visé sa holding financière le 9 août. Les pirates ont exfiltré des milliers de documents internes et diffusé environ un quart de leur butin à partir du 25 août, selon Zataz. Altice assure qu'aucune donnée sensible n'a été compromise et que le périmètre Altice France-SFR est épargné. Le site d'investigation Reflets publie en septembre des articles issus de ces documents. Le 6 octobre, le tribunal de commerce de Nanterre lui interdit de nouvelles publications sur cette base. Les volumes exacts ne sont pas connus.",
+  "timeline": [
+    {
+      "date": "2022-08-09",
+      "event": "Le rançongiciel Hive chiffre les systèmes d'une holding financière du groupe Altice, selon la date d'attaque affichée par les pirates et relevée par Zataz."
+    },
+    {
+      "date": "2022-08-25",
+      "event": "Hive diffuse environ un quart des documents exfiltrés ; le site RedPacket Security recense l'attaque, reprise par la presse spécialisée."
+    },
+    {
+      "date": "2022-08-26",
+      "event": "Altice confirme une cyberattaque par rançongiciel ciblant sa holding financière et indique que le périmètre Altice France-SFR n'est pas concerné."
+    },
+    {
+      "date": "2022-10-06",
+      "event": "Le tribunal de commerce de Nanterre interdit au site Reflets de nouvelles publications à partir des documents volés, sans ordonner le retrait des articles déjà parus."
+    }
+  ],
+  "group": "hive"
+}

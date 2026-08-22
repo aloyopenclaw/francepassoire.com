@@ -1,0 +1,54 @@
+{
+  "slug": "soundcloud-20251215",
+  "entity": "SoundCloud",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-12-15",
+    "publication": "2025-12-16",
+    "confirmation": "2025-12-15"
+  },
+  "volume": {
+    "count": 29800000,
+    "unit": "comptes",
+    "label": "29,8 millions de comptes selon Have I Been Pwned (janvier 2026) ; SoundCloud évoque environ 20 % de ses utilisateurs, soit environ 28 millions selon BleepingComputer"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "BleepingComputer — SoundCloud confirms breach after member data stolen, VPN access disrupted (16 décembre 2025)",
+      "url": "https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — SoundCloud : une fuite de données impacte 28 millions de comptes ! (16 décembre 2025)",
+      "url": "https://www.it-connect.fr/soundcloud-une-fuite-de-donnees-impacte-28-millions-de-comptes/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — SoundCloud (alerte du 16 décembre 2025)",
+      "url": "https://frenchbreaches.com/alertes/soundcloud-7a0cc1fd9a4e",
+      "kind": "article"
+    },
+    {
+      "label": "Have I Been Pwned — SoundCloud Data Breach (29,8 millions de comptes, ajoutée en janvier 2026)",
+      "url": "https://haveibeenpwned.com/Breach/SoundCloud",
+      "kind": "article"
+    }
+  ],
+  "description": "SoundCloud, plateforme d'audio en ligne, confirme le 15 décembre 2025 une activité non autorisée sur le tableau de bord d'un service annexe. Les attaquants ont associé des adresses e-mail à des données de profils publics : noms, pseudonymes, avatars, statistiques de suivi et parfois pays. Mots de passe et données bancaires sont exclus selon l'entreprise. BleepingComputer rapporte une extorsion attribuée au groupe ShinyHunters et des attaques par déni de service en réaction. La mesure de sécurité choisie a temporairement bloqué l'accès via VPN. Have I Been Pwned recense 29,8 millions de comptes concernés, soit environ 20 % des utilisateurs.",
+  "timeline": [
+    {
+      "date": "2025-12-15",
+      "event": "SoundCloud annonce avoir détecté une activité non autorisée impliquant le tableau de bord d'un service annexe et active sa réponse aux incidents."
+    },
+    {
+      "date": "2025-12-16",
+      "event": "L'entreprise confirme le vol d'adresses e-mail et de données de profils publics ; BleepingComputer rapporte une extorsion attribuée aux ShinyHunters."
+    },
+    {
+      "date": "2026-01-27",
+      "event": "Have I Been Pwned recense 29,8 millions de comptes affectés ; les attaquants ont publié les données après l'échec de l'extorsion."
+    }
+  ]
+}

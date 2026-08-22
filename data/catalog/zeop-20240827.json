@@ -1,0 +1,40 @@
+{
+  "slug": "zeop-20240827",
+  "entity": "Zeop",
+  "siren": "531379295",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-27",
+    "publication": "2024-08-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; l'accès au fichier clients complet était proposé aux enchères sur le dark web pour 1 000 dollars selon la presse locale, sans acheteur identifié ; l'opérateur n'a constaté aucune exfiltration"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "L'Info Réunion — Zeop : alerte des systèmes de surveillance sur le réseau, aucune incidence sur les données des clients (27 août 2024, article archivé)",
+      "url": "https://web.archive.org/web/2026/https://www.linfo.re/la-reunion/societe/zeop-alerte-des-systemes-de-surveillance-sur-le-reseau-aucune-incidence-sur-les-donnees-des-clients",
+      "kind": "archive"
+    },
+    {
+      "label": "Entrepreneur.re — Zeop : le directeur relaxé après une fuite évitée (22 avril 2026)",
+      "url": "https://www.entrepreneur.re/article/tech/2026/04/22/zeop-le-directeur-relaxe-apres-une-fuite-evitee",
+      "kind": "article"
+    }
+  ],
+  "description": "Zeop, fournisseur d'accès réunionnais, alerte fin août 2024 ses clients après la découverte d'un incident en avril. En décembre 2023, un malware installé sur l'ordinateur personnel d'un vendeur a permis de voler un jeton d'authentification. Il donnait accès au fichier clients complet, ensuite proposé aux enchères sur le dark web pour 1 000 dollars. Aucun acheteur ne s'est manifesté et l'opérateur indique n'avoir constaté aucune exfiltration. Un plan de sécurité validé par la CNIL et l'ANSSI est déployé. En avril 2026, le directeur général, poursuivi pour défaut de sécurisation, est relaxé.",
+  "timeline": [
+    {
+      "date": "2024-08-27",
+      "event": "Zeop informe ses clients qu'une attaque « aurait pu conduire à l'exfiltration » de leurs données ; la CNIL a demandé cette communication selon la direction."
+    },
+    {
+      "date": "2026-04-21",
+      "event": "Le tribunal correctionnel de Saint-Denis relaxe le directeur général poursuivi pour défaut de sécurisation des données clients, l'entreprise s'étant mise en conformité."
+    }
+  ]
+}

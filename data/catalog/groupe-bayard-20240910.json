@@ -1,0 +1,53 @@
+{
+  "slug": "groupe-bayard-20240910",
+  "entity": "Groupe Bayard",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-09-10",
+    "publication": "2024-09-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; rançongiciel ayant perturbé la publication de plusieurs titres dont La Croix ; aucune exfiltration confirmée à ce stade"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Groupe Bayard — Le Groupe Bayard a été victime d'une cyberattaque (communiqué du 10 septembre 2024)",
+      "url": "https://www.groupebayard.com/wp-content/uploads/2024-09-10_Groupe-Bayard-cyberattaque.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Le Monde — Le journal « La Croix » et le Groupe Bayard victimes d'une cyberattaque par rançongiciel (10 septembre 2024, article archivé)",
+      "url": "https://web.archive.org/web/2024id_/https://www.lemonde.fr/actualite-medias/article/2024/09/10/le-journal-la-croix-et-le-groupe-bayard-victimes-d-une-cyberattaque-par-rancongiciel_6311493_3236.html",
+      "kind": "archive"
+    },
+    {
+      "label": "ZDNet France — Bayard : le groupe de presse perturbé par un rançongiciel (11 septembre 2024)",
+      "url": "https://www.zdnet.fr/actualites/bayard-le-groupe-de-presse-perturbe-par-un-rancongiciel-396886.htm",
+      "kind": "article"
+    },
+    {
+      "label": "franceinfo — Le groupe de presse Bayard visé par une cyberattaque (11 septembre 2024)",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/le-groupe-de-presse-bayard-vise-par-une-cyberattaque_6775027.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Groupe Bayard, éditeur de La Croix, du Pèlerin et de titres jeunesse, annonce une cyberattaque le 10 septembre 2024. Le rançongiciel est survenu le 8 septembre au soir. L'édition du 10 septembre de La Croix n'a pas paru et le site de commerce en ligne a été fermé par précaution. Le groupe présente la sécurité des données de ses clients et de ses salariés comme sa priorité absolue. La parution reprend le 11 septembre. Aucune exfiltration n'est confirmée ; ZDNet relève que la question d'un vol de données reste ouverte, l'évaluation des dégâts étant en cours.",
+  "timeline": [
+    {
+      "date": "2024-09-08",
+      "event": "Un rançongiciel touche une partie des systèmes du groupe de presse ; l'édition du 10 septembre du quotidien La Croix ne pourra pas paraître."
+    },
+    {
+      "date": "2024-09-10",
+      "event": "Le groupe annonce l'attaque dans un communiqué ; le site d'e-commerce est fermé par précaution et la sécurité des données clients et salariés est invoquée."
+    },
+    {
+      "date": "2024-09-11",
+      "event": "La parution de La Croix reprend ; franceinfo et ZDNet relèvent qu'aucun vol de données n'est confirmé à ce stade."
+    }
+  ]
+}

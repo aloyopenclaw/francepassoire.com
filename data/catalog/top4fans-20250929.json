@@ -1,0 +1,49 @@
+{
+  "slug": "top4fans-20250929",
+  "entity": "Top4Fans",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-09-29",
+    "publication": "2025-09-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plus de 75 Go de données diffusés, dont des milliers de cartes nationales d'identité de Français et d'étrangers selon Zataz ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": ["identite", "documents"],
+  "sources": [
+    {
+      "label": "Zataz — Fuite massive de données pour Top 4 Fans après une cyberattaque (29 septembre 2025)",
+      "url": "https://www.zataz.com/fuite-massive-de-donnees-pour-top-4-fans-apres-une-cyberattaque/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — KillSec Compromises French Entertainment Platform Top4Fans (22 septembre 2025)",
+      "url": "https://www.dexpose.io/killsec-compromises-french-entertainment-platform-top4fans/",
+      "kind": "revendication"
+    },
+    {
+      "label": "FunInformatique — Nouvelle fuite de données chez Top4Fans (octobre 2025)",
+      "url": "https://www.funinformatique.com/fuite_de_donnees/top4fans/",
+      "kind": "article"
+    }
+  ],
+  "description": "Top4Fans, plateforme française de monétisation de contenus pour adultes, est visée par une extorsion du groupe KillSec revendiquée le 22 septembre 2025. Après un ultimatum de cinq jours sans paiement, les pirates diffusent plus de 75 Go de données. Figurent des milliers de cartes nationales d'identité de Français et d'étrangers, collectées pour vérifier la majorité des utilisateurs. Zataz constate des pièces d'identité affichées avec le visage de leur porteur. Les relais soulignent les risques d'usurpation d'identité et de fraude. La plateforme ne publie pas de décompte des personnes concernées.",
+  "timeline": [
+    {
+      "date": "2025-09-19",
+      "event": "Les pirates indiquent avoir stocké les données extraites à partir du 19 septembre, selon Zataz."
+    },
+    {
+      "date": "2025-09-22",
+      "event": "Le groupe KillSec revendique la compromission de la plateforme française, relayée par DeXpose."
+    },
+    {
+      "date": "2025-09-29",
+      "event": "Après cinq jours sans paiement de rançon, plus de 75 Go de données sont diffusés, dont des milliers de pièces d'identité servant à la vérification d'âge."
+    }
+  ],
+  "group": "killsec"
+}
