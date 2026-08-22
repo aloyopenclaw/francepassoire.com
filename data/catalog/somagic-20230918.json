@@ -1,0 +1,50 @@
+{
+  "slug": "somagic-20230918",
+  "entity": "Somagic (groupe Somagic, La Genête, Saône-et-Loire)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-09-18",
+    "publication": "2023-09-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume communiqué ; entreprise bressane victime d'une cyberattaque de grande ampleur"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Journal de Saône-et-Loire : La Genête. L'entreprise bressane Somagic victime d'une cyberattaque de grande ampleur (21 septembre 2023)",
+      "url": "https://www.lejsl.com/economie/2023/09/21/l-entreprise-bressane-somagic-victime-d-une-cyberattaque-de-grande-ampleur",
+      "kind": "article"
+    },
+    {
+      "label": "Le Journal de Saône-et-Loire : Cyberattaque. L'entreprise Somagic a eu chaud, mais n'est pas grillée (7 février 2024)",
+      "url": "https://www.lejsl.com/economie/2024/02/07/cyberattaque-l-entreprise-somagic-a-eu-chaud-mais-n-est-pas-grillee",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Cyberhebdo du 22 septembre 2023. Rien moins que 3 victimes en France (mention de Somagic)",
+      "url": "https://www.lemagit.fr/actualites/366553093/Cyberhebdo-du-22-septembre-2023-rien-moins-que-3-victimes-en-France",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 septembre 2023, Somagic, fabricant bressan de barbecue et plancha basé à La Genête (Saône-et-Loire), est victime d'une cyberattaque de grande ampleur. L'entreprise met en place un fonctionnement dégradé et une reprise progressive de son activité. Un article de suivi du Journal de Saône-et-Loire en février 2024 relate le retour à la normale et les conséquences évitées de justesse. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique publiquement l'attaque.",
+  "timeline": [
+    {
+      "date": "2023-09-18",
+      "event": "Cyberattaque de grande ampleur contre Somagic à La Genête."
+    },
+    {
+      "date": "2023-09-21",
+      "event": "Le Journal de Saône-et-Loire rapporte l'attaque ; LeMagIT recense Somagic parmi les victimes de la semaine."
+    },
+    {
+      "date": "2024-02-07",
+      "event": "Le Journal de Saône-et-Loire publie un bilan rétrospectif : l'entreprise a eu chaud mais a surmonté l'attaque."
+    }
+  ]
+}

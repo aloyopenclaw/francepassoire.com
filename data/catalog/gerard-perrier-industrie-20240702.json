@@ -1,0 +1,52 @@
+{
+  "slug": "gerard-perrier-industrie-20240702",
+  "entity": "Gérard Perrier Industrie (GPI)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-07-02",
+    "publication": "2024-07-04",
+    "confirmation": "2024-07-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "1,4 To de données internes exfiltrées revendiqués par le groupe Embargo ; volume non confirmé par l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Gérard Perrier Industrie : communiqué de presse du 4 juillet 2024 sur la cyberattaque",
+      "url": "https://www.gerard-perrier.com/en/20240704-communique-presse-cyberattaque-gpi/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Ransomware.live : fiche victime gerard-perrier.com (Embargo)",
+      "url": "https://www.ransomware.live/id/Z2VyYXJkLXBlcnJpZXIuY29tQGVtYmFyZ28=",
+      "kind": "revendication"
+    },
+    {
+      "label": "Galaxy Warden : gerard-perrier.com listed by Embargo ransomware group (juin 2024)",
+      "url": "https://www.galaxywarden.com/blog/breach/gerard-perrier-com-embargo-2024-06",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin juin 2024, le groupe Gérard Perrier Industrie (GPI), spécialiste de l'ingénierie électrique, de l'automatisation et de l'informatique industrielle pour l'industrie, est victime d'une cyberattaque. Le 2 juillet 2024, l'enseigne de rançongiciel Embargo inscrit l'entreprise sur son site vitrine et revendique l'exfiltration de 1,4 To de fichiers internes. GPI publie un communiqué le 4 juillet 2024 : le groupe confirme avoir été victime d'une cyberattaque fin juin et indique que la continuité de service n'a pas été impactée. Le volume dérobé n'est pas confirmé par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2024-06-30",
+      "event": "GPI est victime d'une cyberattaque « fin juin », selon le communiqué ultérieur du groupe."
+    },
+    {
+      "date": "2024-07-02",
+      "event": "Embargo inscrit gerard-perrier.com sur son site vitrine et revendique l'exfiltration de 1,4 To de données."
+    },
+    {
+      "date": "2024-07-04",
+      "event": "GPI confirme la cyberattaque par communiqué de presse et indique que la continuité de service n'a pas été impactée."
+    }
+  ],
+  "group": "embargo"
+}

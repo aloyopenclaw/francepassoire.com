@@ -1,0 +1,46 @@
+{
+  "slug": "groupe-seb-20230314",
+  "entity": "Groupe SEB",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-03-14",
+    "publication": "2023-03-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucune donnée dérobée identifiée ; tentative d'exploitation d'une vulnérabilité contenue par le groupe"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Groupe SEB : Information cyber incident (page officielle, mars 2023)",
+      "url": "https://www.groupeseb.com/fr/actualites/information-cyber-incident",
+      "kind": "officiel"
+    },
+    {
+      "label": "LeMagIT : Le groupe SEB déplore « une tentative d'exploitation de vulnérabilité » (16 mars 2023)",
+      "url": "https://www.lemagit.fr/actualites/365534043/Le-groupe-SEB-deplore-une-tentative-dexploitation-de-vulnerabilite",
+      "kind": "article"
+    },
+    {
+      "label": "ICS Strive : Cyberattack at French Manufacturer Groupe SEB (14 mars 2023)",
+      "url": "https://icsstrive.com/incident/cyberattack-at-french-manufacturer-groupe-seb/",
+      "kind": "article"
+    }
+  ],
+  "description": "Vers le 14 mars 2023, le Groupe SEB, fabricant d'équipements domestiques basé à Écully (Rhône), est visé par une tentative d'exploitation d'une vulnérabilité sur son système d'information. Le groupe publie une page d'information officielle décrivant l'incident et indique avoir contenu l'attaque. LeMagIT rapporte que le groupe déplore une tentative d'exploitation de vulnérabilité. Aucune exfiltration de données n'est annoncée et aucun groupe criminel ne revendique l'incident.",
+  "timeline": [
+    {
+      "date": "2023-03-14",
+      "event": "Incident de cybersécurité sur le système d'information du groupe."
+    },
+    {
+      "date": "2023-03-16",
+      "event": "LeMagIT rapporte la tentative d'exploitation de vulnérabilité ; le groupe publie sa page d'information."
+    }
+  ]
+}

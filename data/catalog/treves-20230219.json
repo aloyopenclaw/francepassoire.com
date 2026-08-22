@@ -1,0 +1,51 @@
+{
+  "slug": "treves-20230219",
+  "entity": "Trèves Group",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-02-19",
+    "publication": "2023-02-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "vol de données revendiqué par LockBit 3.0 sans volume précisé ; attaque interceptée selon l'entreprise"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Kaspersky ICS CERT : A brief overview of the main incidents in industrial cybersecurity. H1 2023 (Trèves Group, LockBit 3.0)",
+      "url": "https://ics-cert.kaspersky.com/publications/h1-2023-a-brief-overview-of-main-incidents-in-industrial-cybersecurity/",
+      "kind": "article"
+    },
+    {
+      "label": "ICS Strive : Data Breach at French Trèves Group Claimed by Lockbit Ransomware Gang",
+      "url": "https://icsstrive.com/incident/data-breach-at-french-treves-group-claimed-by-lockbit-ransomware-gang/",
+      "kind": "article"
+    },
+    {
+      "label": "KonBriefing : Cyberattacks France 1st quarter 2023 (entrée Trèves Group, 19 février 2023, LockBit)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-2023-cny-france-q1.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le week-end du 18 et 19 février 2023, Trèves Group, équipementier automobile français spécialisé dans les textiles et matériaux pour l'habitat automobile, est visé par une cyberattaque majeure. L'entreprise, basée à Issy-les-Moulineaux, publie un communiqué retraçant l'incident, retiré ultérieurement de son site. Le 21 février 2023, l'enseigne LockBit 3.0 inscrit treves-group.com sur son site vitrine et revendique le vol de données. Kaspersky ICS CERT documente l'incident dans son panorama industriel du premier semestre 2023. Aucun volume de données dérobées n'est précisé.",
+  "timeline": [
+    {
+      "date": "2023-02-19",
+      "event": "Cyberattaque majeure survenue le week-end du 18 et 19 février ; Trèves Group l'annonce dans un communiqué."
+    },
+    {
+      "date": "2023-02-21",
+      "event": "LockBit 3.0 inscrit treves-group.com sur son site vitrine et revendique le vol de données."
+    },
+    {
+      "date": "2023-07-01",
+      "event": "Kaspersky ICS CERT documente l'incident dans son panorama industriel H1 2023, mentionnant LockBit 3.0."
+    }
+  ],
+  "group": "lockbit3"
+}

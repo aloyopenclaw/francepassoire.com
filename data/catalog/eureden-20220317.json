@@ -1,52 +1,55 @@
 {
   "slug": "eureden-20220317",
-  "entity": "Eureden (coopérative agricole et agroalimentaire)",
+  "entity": "Eureden (siège de Mellac et usine Aubret de Vallons-de-l'Erdre, filiale Nutréa à Languidic)",
   "secteur": "industrie",
   "statut": "confirmee",
   "dates": {
     "revendication": "2022-03-17",
-    "publication": "2022-03-18",
-    "confirmation": "2022-03-18"
+    "publication": "2022-03-17"
   },
   "volume": {
     "count": 0,
-    "unit": "personnes",
-    "label": "tous les sites du groupe (56 sites selon NetExplorer) touchés ; activité maintenue en mode dégradé ; volume de données non chiffré"
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; usine Aubret en mode dégradé"
   },
   "data_types": [
     "autre"
   ],
   "sources": [
     {
-      "label": "Le Télégramme : le groupe Eureden victime d'une cyberattaque (18 mars 2022)",
-      "url": "https://www.letelegramme.fr/finistere/mellac-29300/le-groupe-eureden-victime-d-une-cyberattaque-219633.php",
-      "kind": "article"
-    },
-    {
-      "label": "actu.fr : le groupe Eureden touché par une cyberattaque (19 mars 2022)",
+      "label": "actu.fr : Bretagne. Le groupe Eureden touché par une cyberattaque (17 mars 2022)",
       "url": "https://actu.fr/bretagne/loudeac_22136/bretagne-le-groupe-eureden-touche-par-une-cyberattaque_49630224.html",
       "kind": "article"
     },
     {
-      "label": "France 3 Bretagne : le groupe agroalimentaire Eureden (d'Aucy, Paysan Breton, Magasin Vert) victime d'une attaque informatique",
-      "url": "https://france3-regions.franceinfo.fr/bretagne/le-groupe-agroalimentaire-eureden-daucy-paysan-breton-magasin-vert-victime-d-une-attaque-informatique-2504189.html",
+      "label": "Le Télégramme : Le groupe Eureden victime d'une cyberattaque (Mellac, Finistère)",
+      "url": "https://www.letelegramme.fr/finistere/mellac-29300/le-groupe-eureden-victime-d-une-cyberattaque-219633.php",
       "kind": "article"
     },
     {
-      "label": "NetExplorer : les 10 cyberattaques qui ont marqué la France en 2022 (janvier 2023)",
-      "url": "https://www.netexplorer.fr/blog/les-10-cyberattaques-qui-ont-marque-la-france-en-2022",
+      "label": "Nutréa (communiqué) : Important. Communiqué Nutréa (18 mars 2022)",
+      "url": "https://www.nutrea-nna.fr/nutrea-actualites/404-important-communique-nutrea.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "KonBriefing : Cyber attacks France 1st quarter 2022 (entrées Eureden et Nutréa NA SAS, 17 mars 2022)",
+      "url": "https://konbriefing.com/en-topics/cyber-attacks-2022-cny-france-q1.html",
       "kind": "article"
     }
   ],
-  "description": "Le 17 mars 2022, la coopérative bretonne Eureden (marques Paysan Breton, Cocotine, d'Aucy, réseau Magasins Verts) découvre une attaque malveillante de ses systèmes informatiques. Tous les sites du groupe sont impactés : facturation, outils de production et communications perturbés, activité maintenue en mode dégradé. La coopérative confirme l'attaque auprès des médias régionaux ; des experts cybersécurité sont mobilisés pour enrayer l'intrusion.",
+  "description": "Le 17 mars 2022, le groupe coopératif agroalimentaire breton Eureden est touché par une cyberattaque affectant son siège de Mellac (Finistère) et plusieurs sites, dont l'usine Aubret de Vallons-de-l'Erdre (Loire-Atlantique), qui fonctionne ensuite en mode dégradé. La filiale de nutrition animale Nutréa, à Languidic, publie le même jour un communiqué indiquant faire face à une cyberattaque depuis le 17 mars. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel ne revendique publiquement les attaques.",
   "timeline": [
     {
       "date": "2022-03-17",
-      "event": "Attaque malveillante détectée ; tous les sites du groupe sont impactés et fonctionnent en mode dégradé."
+      "event": "Cyberattaque touchant le siège d'Eureden à Mellac et des sites du groupe ; Nutréa signale être visé depuis le 17 mars."
     },
     {
       "date": "2022-03-18",
-      "event": "Ouest-France et Le Télégramme rapportent la cyberattaque confirmée par le groupe."
+      "event": "Nutréa publie un communiqué officiel sur l'attaque en cours."
+    },
+    {
+      "date": "2022-03-19",
+      "event": "Ouest-France, citée par KonBriefing, rapporte que l'usine Aubret tourne en mode dégradé."
     }
   ]
 }

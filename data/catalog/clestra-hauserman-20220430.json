@@ -1,0 +1,50 @@
+{
+  "slug": "clestra-hauserman-20220430",
+  "entity": "Clestra Hauserman",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-04-30",
+    "publication": "2022-04-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume communiqué ; attaque par rançongiciel ayant entraîné une demande de mise en redressement judiciaire"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Journal des Entreprises : Le groupe Clestra Hauserman victime d'une cyberattaque (30 avril 2022)",
+      "url": "https://www.lejournaldesentreprises.com/breve/le-groupe-clestra-hauserman-victime-dune-cyberattaque-2041106",
+      "kind": "article"
+    },
+    {
+      "label": "Le Figaro (flash éco) : Bas-Rhin. Clestra placé en redressement judiciaire (1er août 2022)",
+      "url": "https://www.lefigaro.fr/flash-eco/bas-rhin-clestra-place-en-redressement-judiciaire-20220801",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Ransomware. Clestra Hauserman veut être placé en redressement judiciaire",
+      "url": "https://www.lemagit.fr/actualites/252523121/Ransomware-Clestra-Hauserman-veut-etre-place-en-redressement-judiciaire",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 avril 2022, Clestra Hauserman, industriel alsacien des cloisons amovibles installé à Illkirch-Graffenstaden (Bas-Rhin), est victime d'une cyberattaque par rançongiciel. L'attaque perturbe durablement l'activité de l'entreprise, qui demande en juillet 2022 son placement en redressement judiciaire, acté par le tribunal début août. La presse économique relie directement les difficultés de trésorerie au ransomware. Aucun volume de données dérobées n'est communiqué et aucun groupe criminel n'est identifié publiquement.",
+  "timeline": [
+    {
+      "date": "2022-04-30",
+      "event": "Clestra Hauserman signale une cyberattaque touchant le groupe."
+    },
+    {
+      "date": "2022-07-27",
+      "event": "L'entreprise demande son placement en redressement judiciaire, invoquant notamment les conséquences de l'attaque."
+    },
+    {
+      "date": "2022-08-01",
+      "event": "Le Figaro acte le placement en redressement judiciaire de Clestra après la cyberattaque."
+    }
+  ]
+}

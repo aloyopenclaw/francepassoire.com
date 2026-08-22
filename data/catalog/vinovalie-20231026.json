@@ -1,0 +1,50 @@
+{
+  "slug": "vinovalie-20231026",
+  "entity": "Vinovalie (coopérative vinicole, Saint-Sulpice-la-Pointe, Tarn)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-10-26",
+    "publication": "2023-10-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume de données dérobées communiqué ; rançon de 450 000 euros exigée par les attaquants"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Occitanie : Cyberattaque. La société Vinovalie paralysée, les hackeurs réclament une rançon de 450 000 euros (novembre 2023)",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/tarn/albi/cyberattaque-la-societe-vinovalie-paralysee-les-hackeurs-reclament-une-rancon-de-450-000-euros-2863556.html",
+      "kind": "article"
+    },
+    {
+      "label": "La Dépêche : Ordinateurs paralysés, demande de rançon, enquête ouverte. Ce que l'on sait de la cyberattaque contre la coopérative Vinovalie (27 octobre 2023)",
+      "url": "https://www.ladepeche.fr/2023/10/27/ordinateurs-paralyses-demande-de-rancon-enquete-ouverte-ce-que-lon-sait-de-la-cyberattaque-contre-la-cooperative-vinovalie-11546249.php",
+      "kind": "article"
+    },
+    {
+      "label": "Vinovalie (site officiel) : Vinovalie victime de hackeurs",
+      "url": "https://www.vinovalie.com/vinovalie-victime-de-hackeurs",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Dans la nuit du 25 au 26 octobre 2023, Vinovalie, coopérative vinicole tarnaise regroupant des producteurs de Gaillac, Fronton et Cahors, est victime d'une cyberattaque par rançongiciel qui paralyse ses ordinateurs. Les attaquants exigent une rançon de 450 000 euros. La coopérative publie un communiqué sur son site, une plainte est déposée et une enquête ouverte. Aucun volume de données dérobées n'est communiqué et le nom du groupe criminel n'est pas rendu public.",
+  "timeline": [
+    {
+      "date": "2023-10-26",
+      "event": "Rançongiciel paralyse la coopérative Vinovalie dans la nuit du 25 au 26 octobre."
+    },
+    {
+      "date": "2023-10-27",
+      "event": "La Dépêche rapporte la demande de rançon et l'ouverture d'une enquête ; la coopérative informe sur son site."
+    },
+    {
+      "date": "2023-11-02",
+      "event": "France 3 Occitanie chiffre la rançon exigée à 450 000 euros."
+    }
+  ]
+}
