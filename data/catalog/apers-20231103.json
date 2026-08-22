@@ -1,0 +1,50 @@
+{
+  "slug": "apers-20231103",
+  "entity": "A.P.E.R.S (Association de prévention et de réinsertion sociale, aide aux victimes, Bouches-du-Rhône)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-11-03",
+    "publication": "2023-11-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non chiffré ; plus de 63 Go de données internes exfiltrées, dont des centaines de documents relatifs à des victimes et à des mis en cause"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz : Une association du Sud de la France d'aide aux victimes piratée (14 novembre 2023)",
+      "url": "https://www.zataz.com/une-association-du-sud-de-la-france-daide-aux-victimes-piratees/",
+      "kind": "article"
+    },
+    {
+      "label": "RansomLook : page du groupe CiphBit, listant la victime APERS avec la date du 3 novembre 2023",
+      "url": "https://www.ransomlook.io/group/ciphbit",
+      "kind": "revendication"
+    }
+  ],
+  "description": "L'A.P.E.R.S, association loi 1901 agréée par le ministère de la Justice et autorisée par les tribunaux judiciaires d'Aix-en-Provence et de Tarascon, accompagne des victimes sur 97 communes des Bouches-du-Rhône, soit plus de 900 000 habitants. Fin octobre ou début novembre 2023, le groupe de rançongiciel CiphBit infiltre son système d'information et exfiltre plus de 63 Go de données internes. Dès le 1er novembre, les fichiers volés sont stockés dans un espace dissimulé du darkweb ; le 7 novembre, d'autres dossiers sont ajoutés, notamment des répertoires baptisés Mise en cause et victimes contenant des centaines de documents. L'association n'a jamais communiqué publiquement sur cette cyberattaque, révélée par la veille de Zataz le 14 novembre 2023.",
+  "timeline": [
+    {
+      "date": "2023-11-01",
+      "event": "Plus de 63 Go de données internes compressées sont stockés par les attaquants dans un espace caché du darkweb."
+    },
+    {
+      "date": "2023-11-03",
+      "event": "Le groupe CiphBit inscrit l'APERS sur son site de fuite comme victime."
+    },
+    {
+      "date": "2023-11-07",
+      "event": "De nouveaux dossiers sont ajoutés : comptabilité, direction, secrétariat, ainsi que les répertoires Mise en cause et victimes."
+    },
+    {
+      "date": "2023-11-14",
+      "event": "Zataz révèle le piratage ; l'association n'a pas communiqué publiquement sur l'incident."
+    }
+  ]
+}
