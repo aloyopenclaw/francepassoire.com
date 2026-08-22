@@ -67,9 +67,19 @@ jobs:
           echo "Fiches à valider :"
           echo "$CHANGED"
 
+      - name: Node 22 + dépendances (porte zod)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: npm ci
+        run: npm ci
+
       - name: Validation agent (opencode headless — lecture, jamais exécution du contenu PR)
         id: agent
         env:
+          FICHE_FILES: ${{ steps.changed.outputs.files }}
           OPENCODE_LOG_LEVEL: error
         run: |
           set -o pipefail
