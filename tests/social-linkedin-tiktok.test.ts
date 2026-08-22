@@ -1,12 +1,12 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-// Clients LinkedIn + TikTok (T40) et drain multi-plateformes : mêmes
-// disciplines que tests/social-x-queue.test.ts — cassettes à la main, fake
-// D1 qui applique les UPDATE, aucun réseau.
+// Clients LinkedIn (T40) et drain multi-plateformes : mêmes disciplines que
+// tests/social-x-queue.test.ts — cassettes à la main, fake D1 qui applique
+// les UPDATE, aucun réseau. TikTok (T40) est retiré de la file en T51 : ce
+// fichier garde le client LinkedIn direct de référence + le drain mixte.
 import { runDrain } from '../workers/social/src/index';
 import { send as sendLinkedIn } from '../workers/social/clients/linkedin';
-import { send as sendTikTok } from '../workers/social/clients/tiktok';
 import type {
   D1Database,
   D1PreparedStatement,
@@ -178,73 +178,31 @@ describe('client LinkedIn — cassette POST /v2/ugcPosts (T40)', () => {
   });
 });
 
-describe('client TikTok — refus honnête vidéo-first (T40)', () => {
-  it('token + payload texte → UNSUPPORTED_PAYLOAD avec la raison vidéo, AUCUN appel réseau', async () => {
-    const fetchExplosif = vi.fn(async () => {
-      throw new Error('AUCUN APPEL RÉSEAU ATTENDU');
-    });
-    const result = await sendTikTok(
-      ficheConfirmee(),
-      makeEnv(makeDb().db, { TIKTOK_ACCESS_TOKEN: 'act.test-token' }),
-      fetchExplosif as typeof fetch,
-    );
-    expect(result).toEqual({
-      status: 'UNSUPPORTED_PAYLOAD',
-      reason: 'TikTok exige une vidéo — texte seul non postable',
-    });
-    expect(fetchExplosif).not.toHaveBeenCalled();
-  });
-
-  it('TIKTOK_ACCESS_TOKEN absent → PENDING_KEYS (en file, jamais un échec)', async () => {
-    const result = await sendTikTok(
-      ficheConfirmee(),
-      makeEnv(makeDb().db),
-      vi.fn() as unknown as typeof fetch,
-    );
-    expect(result.status).toBe('PENDING_KEYS');
-    if (result.status === 'PENDING_KEYS') {
-      expect(result.reason).toContain('TIKTOK_ACCESS_TOKEN');
-    }
-  });
-});
-
-describe('drain — plateformes T40 bout en bout', () => {
-  it('2 lignes : 1 x envoyable + 1 linkedin sans token → SENT + PENDING_KEYS, statuts corrects', async () => {
+describe('drain — plateformes bout en bout (T40 + T51)', () => {
+  it('2 lignes : 1 x via webhook Make + 1 facebook sans clés → SENT + PENDING_KEYS, statuts corrects', async () => {
     const { db, lignes } = makeDb([
       ligne('x', ficheRevendiqueeAvecMention(), 'ligne-x'),
-      ligne('linkedin', ficheConfirmee(), 'ligne-li'),
+      ligne('facebook', ficheConfirmee(), 'ligne-fb'),
     ]);
-    // Le texte de la ligne x doit rester celui épinglé dans la cassette 201.
-    const env = makeEnv(db, { X_USER_TOKEN: 'test-user-token-x' });
-    const fetchX = cassetteFetch(cassette('x-post-create-201.json'));
+    // Voie X = bridge Make (T51) : MAKE_WEBHOOK_URL, le webhook répond 2xx.
+    // NB : linkedin partagerait le MÊME webhook (client make-linkedin) — la
+    // ligne « sans clés » est donc facebook, qui n'a aucun secret dans l'env.
+    const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
+    const appelsReseau: string[] = [];
+    const fetchX = (async (u: string | URL | Request): Promise<Response> => {
+      appelsReseau.push(String(u));
+      return new Response('{"status":"ok"}', { status: 200 });
+    }) as typeof fetch;
     const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
 
-    const outcomes = await runDrain(env, { fetchFn: fetchX.fetchFn });
+    const outcomes = await runDrain(env, { fetchFn: fetchX });
 
     expect(outcomes).toEqual([
       { id: 'ligne-x', platform: 'x', status: 'SENT' },
-      { id: 'ligne-li', platform: 'linkedin', status: 'PENDING_KEYS' },
+      { id: 'ligne-fb', platform: 'facebook', status: 'PENDING_KEYS' },
     ]);
     expect(lignes.map((l) => l.status)).toEqual(['SENT', 'PENDING_KEYS']);
-    expect(fetchX.nbAppels()).toBe(1); // linkedin sans token : zéro réseau
+    expect(appelsReseau).toEqual(['https://hook.eu1.make.com/test-x']); // facebook sans clés : zéro réseau
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining('en attente de clés'));
-  });
-
-  it('drain tiktok avec token : ligne → DEAD avec la raison vidéo loguée (jamais un 500)', async () => {
-    const { db, lignes } = makeDb([ligne('tiktok', ficheConfirmee(), 'ligne-tt')]);
-    const fetchExplosif = vi.fn(async () => {
-      throw new Error('AUCUN APPEL RÉSEAU ATTENDU');
-    });
-    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
-    const env = makeEnv(db, { TIKTOK_ACCESS_TOKEN: 'act.test-token' });
-
-    const outcomes = await runDrain(env, { fetchFn: fetchExplosif as typeof fetch });
-
-    expect(outcomes).toEqual([{ id: 'ligne-tt', platform: 'tiktok', status: 'DEAD' }]);
-    expect(lignes[0]?.status).toBe('DEAD');
-    expect(fetchExplosif).not.toHaveBeenCalled();
-    expect(errorSpy).toHaveBeenCalledWith(
-      expect.stringContaining('TikTok exige une vidéo — texte seul non postable'),
-    );
   });
 });
