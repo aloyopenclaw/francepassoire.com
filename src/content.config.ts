@@ -6,7 +6,7 @@
 // les tests vitest — ce fichier ne fait que le référencer).
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
-import { ficheSchema } from '../lib/fiche-schema';
+import { ficheSchema } from './lib/fiche-schema';
 
 const catalog = defineCollection({
   loader: glob({ base: './data/catalog', pattern: '*.json' }),
