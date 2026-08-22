@@ -1,0 +1,66 @@
+{
+  "slug": "amazon-europe-core-20201207",
+  "entity": "Amazon Europe Core S.à r.l.",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2020-12-07",
+    "publication": "2020-12-10",
+    "confirmation": "2020-12-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "amende de 35 millions d'euros et injonction sous astreinte ; nombre d'utilisateurs concernés non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIÉTÉ DE COMMERCE EN LIGNE », sanction pécuniaire de 35 millions d'euros et injonction sous astreinte (7 décembre 2020)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — 41e rapport annuel (2020), focus sanctions : amende publique de 35 millions d'euros contre Amazon, délibération du 7 décembre 2020, annonce du 10 décembre",
+      "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cnil_-_41e_rapport_annuel_-_2020.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "Légifrance — Délibération SAN-2020-013 du 7 décembre 2020 (texte officiel ; page courante protégée contre les robots, capture Wayback du 9 avril 2024 vérifiée)",
+      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000042635729",
+      "kind": "officiel"
+    },
+    {
+      "label": "Cabinet Ledieu — Jurisprudence CNIL cookies novembre-décembre 2020 : SAN-2020-013, « plus de 40 cookies poursuivant une finalité publicitaire » sur amazon.fr (16 décembre 2020)",
+      "url": "https://ledieu-avocats.fr/jurisprudence-cnil-cookie-traceur-nov-dec-2020/",
+      "kind": "article"
+    },
+    {
+      "label": "Rödl & Partner — Cookies : la CNIL sanctionne Amazon et Google (dépôt sans consentement, défaut d'information, injonction sous astreinte de 3 mois)",
+      "url": "https://www.roedl.fr/fr/actualites/protection-donnees-cnil-sanctionne-amazon-google",
+      "kind": "article"
+    },
+    {
+      "label": "Lexing Avocats — Manquements relatifs aux cookies : le recours d'Amazon rejeté, le Conseil d'État confirme l'amende de 35 millions d'euros (septembre 2022)",
+      "url": "https://www.lexing.law/avocats/manquements-relatifs-aux-cookies-le-recours-damazon-rejete/2022/09/13/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 décembre 2020, la formation restreinte de la CNIL a sanctionné Amazon Europe Core (délibération SAN-2020-013). L'amende atteint 35 millions d'euros, assortie d'une injonction sous astreinte. La société luxembourgeoise exploite le site amazon.fr. Selon la décision relayée par le cabinet Ledieu, plus de 40 cookies publicitaires étaient déposés sur le terminal de l'utilisateur, quel que soit son parcours. L'information sur les finalités et les moyens de refuser ces traceurs était absente. La CNIL a annoncé la sanction le 10 décembre, en même temps que celles prononcées contre Google. Le Conseil d'État a confirmé l'amende en 2022, selon le cabinet Lexing.",
+  "timeline": [
+    {
+      "date": "2020-07-31",
+      "event": "Clôture des investigations menées entre novembre 2019 et juillet 2020 sur les cookies déposés sur les terminaux des internautes français."
+    },
+    {
+      "date": "2020-12-07",
+      "event": "Amende de 35 millions d'euros et injonction sous astreinte (SAN-2020-013) : cookies publicitaires déposés sans consentement ni information."
+    },
+    {
+      "date": "2020-12-10",
+      "event": "La CNIL annonce les sanctions contre Amazon et Google, d'un total de 135 millions d'euros, selon le 41e rapport annuel."
+    }
+  ]
+}
