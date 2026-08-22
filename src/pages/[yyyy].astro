@@ -82,7 +82,7 @@ const { hub } = Astro.props;
                 <span class="font-mono text-sm text-brand-ink/60">{formaterDate(dateAttribution(fiche))}</span>
               </div>
               <h3 class="font-display font-extrabold text-2xl mb-2">{fiche.entity}</h3>
-              <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6">{formaterNombre(fiche.volume.count)} {fiche.volume.unit}</p>
+              <p class="font-mono text-xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] font-bold mb-6">{fiche.volume.count > 0 ? `${formaterNombre(fiche.volume.count)} ${fiche.volume.unit}` : 'Volume non communiqué'}</p>
               <span class={`${classeStatut(fiche.statut)} px-3 py-1 rounded-full font-display font-bold text-sm shadow-sm inline-flex items-center gap-1.5`}>
                 <span class={`block w-2 h-2 rounded-full ${fiche.statut === 'confirmee' ? 'bg-brand-cream' : 'bg-brand-ink motion-safe:animate-pulse'}`} aria-hidden="true"></span>
                 {labelStatut(fiche.statut)}
