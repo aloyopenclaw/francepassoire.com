@@ -806,7 +806,9 @@ describe('runInstantSweep — bootstrap, diff, alertes', () => {
 
     expect(result).toEqual({ bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0 });
     expect(brevoCalls).toHaveLength(0);
-    expect(putSpy).not.toHaveBeenCalled();
+    // le heartbeat ops est autorisé ; l'ÉTAT du catalogue ne doit pas bouger
+    const clesEcrites = putSpy.mock.calls.map((c) => String(c[0]));
+    expect(clesEcrites).not.toContain('watchlist:instant:last_catalog');
     putSpy.mockRestore();
   });
 
@@ -933,5 +935,42 @@ describe('digest plié dans le cron */15 — doitLancerDigest (DST-safe)', () =>
     expect(doitLancerDigest(new Date('2026-08-24T08:00:00Z'))).toBe(false); // lundi 10:00 Paris
     expect(doitLancerDigest(new Date('2026-08-25T07:00:00Z'))).toBe(false); // mardi 09:00 Paris
     expect(doitLancerDigest(new Date('2026-08-22T07:00:00Z'))).toBe(false); // samedi 09:00 Paris
+  });
+});
+
+describe('confirmedSubscribers — forme D1 réelle {results} (régression prod 2026-08-22)', () => {
+  it('D1 qui renvoie {results: [...]} (forme production) → abonnés correctement extraits, alertes envoyées', async () => {
+    const { env: envBase, raw } = makeEnv(envComplet);
+    await insertSubscriber(raw, { id: 's4', email: 'abonne-tout@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'quotidien' }, confirmed: true });
+    const { kv } = { kv: (envBase.RUN_STATE as unknown as FakeKV) };
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'ancienne-20260101': { statut: 'confirmee' } }));
+
+    const d1ResultsShape: D1Database = {
+      prepare(sql: string) {
+        const stmtBase = envBase.DB.prepare(sql);
+        const params: unknown[] = [];
+        const wrapped: D1PreparedStatement = {
+          bind(...v: unknown[]) { params.push(...v); return wrapped; },
+          async run() { return stmtBase.bind(...(params as [unknown])) ? { success: true } : { success: true }; },
+          async first() { return stmtBase.bind(...(params as [unknown])) ? null : null; },
+          async all() {
+            const lignes = (await stmtBase.bind(...(params as [unknown])).all()) as unknown as SubscriberRow[];
+            return { results: lignes, success: true } as unknown as ReturnType<D1PreparedStatement['all']>;
+          },
+        };
+        return wrapped;
+      },
+    };
+    const env = { ...envBase, DB: d1ResultsShape } as typeof envBase;
+    const brevoCalls: BrevoCall[] = [];
+
+    const result = await runInstantSweep(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [{ ...ficheSanteStatut, slug: 'forme-d1-20260822' }] }),
+      sleep: noSleep,
+    });
+
+    expect(result.nouveaux).toBe(1);
+    expect(result.envois).toBe(1);
+    expect(brevoCalls[0]!.body.to[0]!.email).toBe('abonne-tout@example.com');
   });
 });

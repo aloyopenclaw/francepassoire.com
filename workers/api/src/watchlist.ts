@@ -898,8 +898,10 @@ async function confirmedSubscribers(db: D1Database): Promise<SubscriberRow[]> {
   const stmt = db.prepare(
     'SELECT id, email_hash, email_enc, unsub_token, prefs_json FROM subscribers WHERE confirmed_at IS NOT NULL',
   );
-  const rows = stmt.all ? ((await stmt.all()) as SubscriberRow[]) : [];
-  return rows;
+  if (!stmt.all) return [];
+  // D1 réel : { results: [...] } ; doublure de test : tableau nu.
+  const brut = (await stmt.all()) as unknown as SubscriberRow[] | { results?: SubscriberRow[] };
+  return Array.isArray(brut) ? brut : (brut.results ?? []);
 }
 
 /**
@@ -1006,6 +1008,11 @@ export async function enqueueInstantAlert(
   const fetchFn = options.fetchFn ?? fetch;
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
+
+  if (env.RUN_STATE) {
+    await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
+  }
+  log('instant: sweep démarré');
 
   if (!env.BREVO_API_KEY || !env.WATCHLIST_AES_KEY || !HEX_32B_RE.test(env.WATCHLIST_AES_KEY)) {
     log('instant: secrets Brevo/AES absents — aucun envoi');
@@ -1494,6 +1501,11 @@ export async function runInstantSweep(
   const fetchFn = options.fetchFn ?? fetch;
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
+
+  if (env.RUN_STATE) {
+    await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
+  }
+  log('instant: sweep démarré');
 
   if (!env.BREVO_API_KEY || !env.WATCHLIST_AES_KEY || !HEX_32B_RE.test(env.WATCHLIST_AES_KEY)) {
     log('instant: secrets Brevo/AES absents — aucun envoi');
