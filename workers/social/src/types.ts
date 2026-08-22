@@ -57,7 +57,13 @@ export interface Env {
    * AUSSI au client Instagram (compte IG professionnel relié à la Page).
    */
   FB_PAGE_TOKEN?: string;
-  /** ID du compte Instagram professionnel (instagram_business_account de la Page). */
+  /**
+   * Token Instagram Login natif (préfixe IGAA…, App « Instagram API with
+   * Instagram Login ») — valable UNIQUEMENT sur graph.instagram.com, où il
+   * remplace le duo Page/IG_USER_ID du flux Facebook Login.
+   */
+  IG_TOKEN?: string;
+  /** ID du compte Instagram professionnel : 178414… (flux IG Login) ou via la Page. */
   IG_USER_ID?: string;
   /** Handle Bluesky, ex. francepassoire.bsky.social (tâche 38). */
   BLUESKY_HANDLE?: string;

@@ -24,7 +24,8 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | `LINKEDIN_MEMBER_URN` | LinkedIn (client direct de référence) | URN du membre émetteur |
 | `FB_PAGE_ID` | Facebook | ID numérique de la Page |
 | `FB_PAGE_TOKEN` | Facebook **et** Instagram | Page access token (Graph API) |
-| `IG_USER_ID` | Instagram | ID du compte IG professionnel relié à la Page |
+| `IG_USER_ID` | Instagram | ID du compte IG professionnel (`user_id` de graph.instagram.com/me) |
+| `IG_TOKEN` | Instagram | Token natif IGAA… (flux Instagram Login, graph.instagram.com uniquement) |
 | `BLUESKY_HANDLE` | Bluesky | Handle, ex. `votrecompte.bsky.social` |
 | `BLUESKY_APP_PASSWORD` | Bluesky | Mot de passe d'application `xxxx-xxxx-xxxx-xxxx` |
 | `NOSTR_NSEC` | Nostr | Clé privée `nsec1…` fournie par la tâche 27 |
@@ -36,7 +37,7 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | **X** | **Disponible via Make** | Créer un compte Make.com, un scénario Webhook → X « Create a Post », connecter @francepassoire | `MAKE_WEBHOOK_URL` | Immédiat (~20 min, offre gratuite Make) |
 | **LinkedIn** | **Disponible via Make** | Idem X avec le module LinkedIn « Create a Post » (le scénario peut être le même webhook) | `MAKE_WEBHOOK_URL` | Immédiat |
 | **Facebook Page** | **Disponible (self-service)** | App Meta, token Page via Graph API Explorer | `FB_PAGE_ID` + `FB_PAGE_TOKEN` | Immédiat (~20 min) |
-| **Instagram** | **Disponible (compte pro relié à la Page)** | Passer le compte IG en professionnel, le relier à la Page, récupérer l'ID IG | `IG_USER_ID` (+ `FB_PAGE_TOKEN`) | Immédiat si la Page existe |
+| **Instagram** | **Disponible (compte pro + app IG Login)** | Compte IG professionnel + app « Instagram API with Instagram Login » → token IGAA… | `IG_USER_ID` + `IG_TOKEN` | Fait (2026-08-22) |
 | **Bluesky** | **Disponible jour 1** | Créer un compte, générer un *App Password* | `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` | Immédiat (~5 min) |
 | **Nostr** | **Disponible jour 1** | Rien — la paire de clés est générée par la tâche 27 ; conservez le backup reçu | `NOSTR_NSEC` | Clé remise par la tâche 27 |
 | ~~TikTok~~ | Retiré (T51) | Rien — API vidéo-first incompatible avec nos posts texte+URL | — | — |
@@ -130,19 +131,27 @@ wrangler secret put FB_PAGE_TOKEN
 
 ### Principe
 
-La publication passe par la **Graph API Content Publishing** (deux temps : conteneur `/media` puis `/media_publish`) et exige un **compte Instagram professionnel** (Business ou Creator) **relié à une Page Facebook**. Le token est le MÊME `FB_PAGE_TOKEN` que la §3 — le secret supplémentaire est juste l'ID du compte IG.
+La publication passe par la **Graph API Content Publishing** (deux temps : conteneur `/media` puis `/media_publish`) sur **`graph.instagram.com`** et exige un **compte Instagram professionnel**. Deux flux possibles :
+
+- **Flux retenu (Instagram Login natif)** : une app « Instagram API with Instagram Login » (ex. `francepassoire-posting-ig`) génère un **token natif préfixé `IGAA…`** — valable UNIQUEMENT sur `graph.instagram.com` (rejeté par graph.facebook.com). Secrets : `IG_TOKEN` + `IG_USER_ID`. C'est ce qui est câblé en prod depuis le 2026-08-22.
+- Flux alternatif (Facebook Login) : compte IG relié à la Page + `FB_PAGE_TOKEN` — abandonné ici car le champ `instagram_business_account` exige les permissions `instagram_basic`/`instagram_content_publish` sur le token utilisateur.
 
 L'image du post est la **carte fiche 1080×1080** générée au build (`scripts/generate-fiche-cards.mjs`) à l'URL publique `https://francepassoire.com/fiche/<slug>/card.jpg` — JPEG conforme à l'exigence Instagram (« JPEG is the only image format supported »).
 
 ### Étapes
 
-1. Dans l'app Instagram : **Réglages → Type de compte → Passer à un compte professionnel** (Business), puis **liaison à la Page Facebook** FrancePassoire (Réglages → Entreprise / Comptes reliés).
-2. Dans le **Graph API Explorer** (avec le token Page de la §3) : **`GET /{FB_PAGE_ID}?fields=instagram_business_account`** → la réponse `{instagram_business_account:{id:"17841…"}}` donne **`IG_USER_ID`**.
-3. Charger le secret :
+1. Dans l'app Instagram : **Réglages → Type de compte → Passer à un compte professionnel** (Business).
+2. Récupérer l'ID IG : avec le token IGAA…, `GET graph.instagram.com/v21.0/me?fields=user_id,username` → `user_id` (17841…) = **`IG_USER_ID`** (vérifié : `17841438939842966`, @francepassoire, BUSINESS).
+3. Charger les secrets :
 
 ```
 wrangler secret put IG_USER_ID
-# Valeur : l'ID numérique du compte IG (17841…), pas le handle
+wrangler secret put IG_TOKEN
+# IG_USER_ID : l'ID numérique du compte IG (17841…), pas le handle
+# IG_TOKEN : le token IGAA… (attention : les tokens du panneau de setup
+#            sont courts-vécus ; échanger contre un 60 jours via
+#            GET graph.instagram.com/access_token?grant_type=ig_exchange_token
+#            &client_secret=<secret de l'app> quand il expire)
 ```
 
 4. Test end-to-end (une fois les deux secrets posés) : mettre en file un vrai post depuis l'interface ou attendre le prochain post automatique — le cron */5 min publie via les deux appels Graph.
