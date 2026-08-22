@@ -1,0 +1,45 @@
+{
+  "slug": "sgv-champagne-20231226",
+  "entity": "Syndicat général des vignerons de la Champagne (SGV, Épernay)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-26",
+    "publication": "2023-12-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "étendue de l'atteinte non établie à ce stade ; aucun détournement de fonds ni demande de rançon au 28 décembre"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "DPO Partage — Incident de cybersécurité chez le Syndicat général des vignerons de la Champagne (30 décembre 2023)",
+      "url": "https://www.dpo-partage.fr/cybersecurite-syndicat-general-des-vignerons-de-la-champagne/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — fiche victime Syndicat Général des Vignerons de la Champagne (groupe 8base, revendication du 17 janvier 2024)",
+      "url": "https://www.ransomware.live/id/U3luZGljYXQgR8OpbsOpcmFsIGRlcyBWaWduZXJvbnMgZGUgbGEgQ2hhbXBhZ25lQDhiYXNl",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Pendant la période de Noël 2023, le Syndicat général des vignerons de la Champagne, basé à Épernay, est touché par une cyberattaque qui paralyse son réseau interne. Les services du syndicat ferment exceptionnellement du 26 décembre au jour de l'An et le service de paie en ligne est indisponible. Les investigations relèvent un serveur Exchange exposé à des failles ProxyNotShell. Au 28 décembre, le président Maxime Toubart indique qu'aucun détournement de fonds n'a été détecté et qu'aucun pirate ne s'est manifesté pour réclamer une rançon ; des experts évaluent l'existence d'éventuelles fuites de données. Le 17 janvier 2024, le groupe de ransomware 8base ajoute le SGV à son site de fuite et revendique la compromission.",
+  "timeline": [
+    {
+      "date": "2023-12-26",
+      "event": "Le SGV fait état d'un événement exceptionnel justifiant l'indisponibilité de ses services ; fermeture exceptionnelle jusqu'au jour de l'An, paie en ligne hors service."
+    },
+    {
+      "date": "2023-12-28",
+      "event": "Aucun détournement de fonds détecté et aucune demande de rançon reçue selon le président ; des experts sont sollicités pour évaluer d'éventuelles fuites de données."
+    },
+    {
+      "date": "2024-01-17",
+      "event": "Le groupe de ransomware 8base liste le SGV sur son site de fuite et revendique la compromission de ses systèmes."
+    }
+  ]
+}

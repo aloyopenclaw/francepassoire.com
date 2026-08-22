@@ -1,0 +1,41 @@
+{
+  "slug": "even-20231213",
+  "entity": "Even (groupe coopératif agricole et agroalimentaire, Ploudaniel, Finistère)",
+  "secteur": "industrie",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-12-13",
+    "publication": "2023-12-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "tentative d'intrusion bloquée selon le groupe ; aucun vol de données annoncé"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Le Télégramme — Le groupe Even victime d'une tentative de cyberattaque à Ploudaniel (22 décembre 2023)",
+      "url": "https://www.letelegramme.fr/finistere/ploudaniel-29260/le-groupe-even-victime-dune-tentative-de-cyberattaque-a-ploudaniel-6494874.php",
+      "kind": "article"
+    },
+    {
+      "label": "ARIA — rapport d'accident : cyberattaque dans une coopérative agricole (rançon exigée, menaces de publication des données)",
+      "url": "https://www.aria.developpement-durable.gouv.fr/accident/61095/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le mercredi 13 décembre 2023, le groupe coopératif Even, dont le siège est à Ploudaniel dans le Finistère, subit une tentative de piratage de ses systèmes d'information. Le groupe précise qu'il s'agit d'une tentative d'intrusion qui a échoué ; les équipes informatiques restent mobilisées pour renforcer pare-feu, sauvegardes et mesures de protection. La presse agricole rapproche ensuite cet incident de la cyberattaque qui a touché les systèmes de l'industriel laitier Laïta, filiale du groupe Even, et y lit le signe d'une menace grandissante sur les coopératives. Aucun vol de données n'est annoncé.",
+  "timeline": [
+    {
+      "date": "2023-12-13",
+      "event": "Tentative d'intrusion détectée dans les systèmes d'information du groupe Even à Ploudaniel ; les équipes informatiques se mobilisent pour sécuriser les systèmes."
+    },
+    {
+      "date": "2023-12-22",
+      "event": "Le Télégramme rapporte l'incident ; le groupe décrit une tentative d'intrusion qui a échoué, sans vol de données annoncé."
+    }
+  ]
+}

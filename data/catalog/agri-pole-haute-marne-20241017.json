@@ -1,0 +1,56 @@
+{
+  "slug": "agri-pole-haute-marne-20241017",
+  "entity": "Agri-Pôle de la Haute-Marne (EPLEFPA : lycée horticole du Fayl-Billot et lycée Edgard Pisani de Chamarandes-Choignes)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2024-10-17",
+    "publication": "2024-11-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "données de l'établissement chiffrées et exfiltrées selon la direction, dont coordonnées des élèves, professeurs, facturation et notes ; rançon d'un million d'euros exigée, aucun décompte publié"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "JHM (Journal de la Haute-Marne) — Cyberattaque de l'Agri-pôle : « des demandes de rançon ont surgi sur les écrans » (3 décembre 2024)",
+      "url": "https://jhm.fr/cyberattaque-de-lagri-pole-des-demandes-de-rancon-ont-surgi-sur-les-ecrans/",
+      "kind": "article"
+    },
+    {
+      "label": "JHM (Journal de la Haute-Marne) — Cyberattaques : deux établissements haut-marnais ciblés (14 novembre 2024)",
+      "url": "https://jhm.fr/cyberattaques-deux-etablissements-haut-marnais-cibles/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — fiche victime lpahorticole.faylbillot.educagri.fr, groupe Ransomhub (revendication du 22 octobre 2024)",
+      "url": "https://www.ransomware.live/id/bHBhaG9ydGljb2xlLmZheWxiaWxsb3QuZWR1Y2FncmkuZnJAcmFuc29taHVi",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le jeudi 17 octobre 2024, l'Agri-Pôle de la Haute-Marne, établissement public local d'enseignement et de formation professionnelle agricoles réunissant le lycée horticole du Fayl-Billot et le lycée Edgard Pisani de Chamarandes-Choignes, subit une cyberattaque par rançongiciel. En moins de deux heures, les données sont téléchargées et chiffrées ; des messages exigeant une rançon d'un million d'euros apparaissent sur les écrans. Sont perdus notamment la matrice de facturation, les cours, les notes du logiciel Pronote et les coordonnées des usagers. Une plainte est déposée à la gendarmerie de Fayl-Billot, la CNIL est saisie et la faille est localisée au niveau d'un pare-feu et d'un mot de passe utilisateur insuffisamment sécurisé ; l'espace informatique du site de Chaumont, en cours de fusion, est également pénétré. Le 22 octobre, le groupe RansomHub revendique l'attaque et les enquêtes sont confiées au pôle cybercriminalité du parquet de Paris.",
+  "timeline": [
+    {
+      "date": "2024-10-17",
+      "event": "Rançongiciel déployé sur les systèmes de l'Agri-Pôle : exfiltration et chiffrement en moins de deux heures, rançon d'un million d'euros exigée ; plainte déposée à Fayl-Billot et CNIL saisie."
+    },
+    {
+      "date": "2024-10-22",
+      "event": "Le groupe RansomHub publie la victime lpahorticole.faylbillot.educagri.fr sur son site de fuite."
+    },
+    {
+      "date": "2024-11-14",
+      "event": "Le procureur de la République de Chaumont indique que les enquêtes sont jointes à d'autres constatées en France et confiées au parquet de Paris, section cybercriminalité."
+    },
+    {
+      "date": "2024-12-03",
+      "event": "Retour d'expérience publié par JHM : rien n'a été restauré, l'établissement repart de zéro ; le système de sauvegarde avait également été piraté."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "raifalsa-alelor-20240822",
+  "entity": "Raifalsa-Alélor (moutarderie et condiments, Mietesheim, Bas-Rhin)",
+  "siren": "414527291",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes et catégories de données non communiqués ; revendication ransomware DragonForce non confirmée par l'entreprise"
+  },
+  "data_types": [
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live — fiche victime Raifalsa-Alelor, groupe Dragonforce",
+      "url": "https://www.ransomware.live/id/UmFpZmFsc2EtQWxlbG9yQGRyYWdvbmZvcmNl",
+      "kind": "revendication"
+    },
+    {
+      "label": "GalaxyWarden — Raifalsa-Alelor listed by DragonForce ransomware group (août 2024)",
+      "url": "https://www.galaxywarden.com/blog/breach/raifalsa-alelor-dragonforce-2024-08",
+      "kind": "article"
+    }
+  ],
+  "description": "Raifalsa-Alélor, entreprise agroalimentaire familiale de Mietesheim dans le Bas-Rhin issue de la fusion des maisons Alélor (1873) et Raifalsa, fabrique moutardes, raiforts et condiments alsaciens. Le 22 août 2024, le groupe de ransomware DragonForce l'ajoute à son site de fuite et revendique la compromission de ses systèmes. Aucun échantillon ni catégorie précise de données n'est publié à ce stade et l'entreprise n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2024-08-22",
+      "event": "DragonForce publie Raifalsa-Alelor sur son site de fuite et revendique l'attaque ; aucun échantillon de données n'est diffusé."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "sobotram-20220221",
+  "entity": "Sobotram",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-02-21",
+    "publication": "2023-03-22"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volumes non communiqués (revendication LockBit 2.0 sans détail public)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : victime groupe Sobotram revendiquée par LockBit2 (21 février 2022)",
+      "url": "https://www.ransomware.live/id/Z3JvdXBlLXNvYm90cmFtLi4uQGxvY2tiaXQy",
+      "kind": "revendication"
+    },
+    {
+      "label": "LeMagIT : La logistique, un secteur de choix pour les cyberattaques ? (22 mars 2023, mis à jour 30 novembre 2023)",
+      "url": "https://www.lemagit.fr/actualites/365533573/La-logistique-un-secteur-de-choix-pour-les-cyberattaques",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 février 2022, la franchise LockBit 2.0 publie le groupe Sobotram, spécialiste français de la messagerie et de la logistique, sur son site de fuite et revendique l'attaque. LeMagIT recense la revendication dans son panorama des cyberattaques ayant visé la logistique française, aux côtés de STT Logistique pour l'année 2022. L'entreprise ne commente pas publiquement la revendication ; les volumes et la nature des données éventuellement exfiltrées ne sont pas connus. Rien, au-delà de la publication par le groupe criminel, ne vient confirmer un vol de données.",
+  "timeline": [
+    {
+      "date": "2022-02-21",
+      "event": "LockBit 2.0 publie le groupe Sobotram sur son site de fuite (relais Ransomware.live)."
+    },
+    {
+      "date": "2023-03-22",
+      "event": "LeMagIT recense la revendication dans son panorama des attaques visant la logistique française en 2022."
+    }
+  ],
+  "group": "lockbit"
+}

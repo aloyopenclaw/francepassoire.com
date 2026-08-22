@@ -1,0 +1,50 @@
+{
+  "slug": "epf-ecole-ingenieurs-20220211",
+  "entity": "EPF, École d'ingénieurs (ex-École polytechnique féminine, campus de Cachan)",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-02-11",
+    "publication": "2022-02-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun volume de données communiqué ; activités informatiques temporairement interrompues"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "EPF, communiqué de presse : L'EPF, École d'ingénieurs a subi vendredi dernier une attaque informatique (février 2022)",
+      "url": "https://www.epf.fr/article/communique-de-presse-epf-ecole-ingenieurs-subi-vendredi-dernier-une-attaque-informatique",
+      "kind": "officiel"
+    },
+    {
+      "label": "EtudesTech : cyberattaque, EPF victime d'une attaque informatique (21 février 2022)",
+      "url": "https://etudestech.com/actu-ecole/epf-victime-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "News Tank Éducation : EPF, retour progressif à la normale après une attaque informatique d'ampleur (23 février 2022)",
+      "url": "https://education.newstank.fr/article/view/243274/epf-retour-progressif-normale-apres-attaque-informatique-ampleur.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le vendredi 11 février 2022, l'EPF, école d'ingénieurs généralistes installée à Cachan, subit une attaque informatique d'ampleur. Les activités informatiques de l'établissement sont temporairement interrompues, sans que la continuité pédagogique soit compromise selon l'école. Le système d'information est rétabli rapidement au moyen des procédures internes. L'école dépose plainte et déclare l'incident à la CNIL, comme elle l'indique le 23 février 2022. Aucune exfiltration de données n'est rendue publique et aucun groupe pirate ne revendique l'attaque.",
+  "timeline": [
+    {
+      "date": "2022-02-11",
+      "event": "L'EPF subit une attaque informatique ; les activités informatiques sont temporairement interrompues."
+    },
+    {
+      "date": "2022-02-21",
+      "event": "EtudesTech relate l'attaque et le rétablissement progressif du système d'information."
+    },
+    {
+      "date": "2022-02-23",
+      "event": "L'école indique avoir déposé plainte et déclaré l'incident à la CNIL ; le retour à la normale se poursuit."
+    }
+  ]
+}

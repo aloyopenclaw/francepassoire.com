@@ -1,0 +1,45 @@
+{
+  "slug": "inp-toulouse-20220913",
+  "entity": "Institut national polytechnique de Toulouse (Toulouse INP)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2022-09-13",
+    "publication": "2022-09-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "non communiqué ; une rançon est réclamée pour le décryptage des données (La Dépêche)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "La Dépêche du Midi : L'institut polytechnique de Toulouse victime d'une cyberattaque d'ampleur (13 septembre 2022)",
+      "url": "https://www.ladepeche.fr/2022/09/13/linstitut-polytechnique-de-toulouse-victime-dune-cyberattaque-dampleur-10541469.php",
+      "kind": "article"
+    },
+    {
+      "label": "LeMagIT : Cyberattaques, l'enseignement supérieur en état d'alerte durant les fêtes (décembre 2022)",
+      "url": "https://www.lemagit.fr/actualites/252528725/Cyberattaques-lenseignement-superieur-en-etat-dalerte-malgre-les-vacances",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 12 au 13 septembre 2022, l'Institut national polytechnique de Toulouse subit une attaque informatique qui touche la grande majorité des serveurs et données des campus. Tous les établissements du groupe Toulouse INP sont concernés et le site web devient inaccessible. Une réunion de crise est convoquée et l'établissement dépose plainte. Les assaillants réclament une rançon pour le décryptage des données ; l'établissement indique que la sécurité des personnes, la sûreté des bâtiments et les éléments sensibles ont été préservés. LeMagIT confirme ensuite qu'un rançongiciel était en cause.",
+  "timeline": [
+    {
+      "date": "2022-09-12",
+      "event": "Attaque informatique dans la nuit du 12 au 13 septembre ; tous les établissements du groupe Toulouse INP sont touchés."
+    },
+    {
+      "date": "2022-09-13",
+      "event": "La Dépêche relate la cyberattaque d'ampleur ; réunion de crise, plainte déposée, rançon réclamée par les assaillants."
+    },
+    {
+      "date": "2022-12-27",
+      "event": "LeMagIT situe l'incident de mi-septembre parmi les cyberattaques par rançongiciel ayant frappé l'enseignement supérieur en 2022."
+    }
+  ]
+}
