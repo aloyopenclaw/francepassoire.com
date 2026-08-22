@@ -98,7 +98,7 @@ Le catalogue entier est publié sous licence ouverte **CC-BY-4.0**. Il n'y a pas
 ---
 
 <details>
-<summary><strong>Architecture technique</strong> (pour les contributeurs — le reste du dépôt la documente de toute façon)</summary>
+<summary><strong>Architecture technique</strong> (pour les contributeurs)</summary>
 
 France Passoire est conçu pour la haute disponibilité et la résilience, même en cas de fort trafic lors d'une alerte nationale.
 
