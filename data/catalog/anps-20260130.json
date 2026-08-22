@@ -1,0 +1,45 @@
+{
+  "slug": "anps-20260130",
+  "entity": "Association nationale des premiers secours (ANPS)",
+  "siren": "431701028",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-01-30",
+    "publication": "2026-01-30"
+  },
+  "volume": {
+    "count": 5600,
+    "unit": "comptes",
+    "label": "5 600 adresses e-mail uniques (noms, dates et lieux de naissance) dans le jeu de données vérifié par Have I Been Pwned ; la revendication évoque en outre des « dossiers de victimes » et des données d'interventions, non confirmées"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Association Nationale des Premiers Secours (ANPS) exposé dans une fuite de données (30 janvier 2026)",
+      "url": "https://frenchbreaches.com/alertes/association-nationale-des-premiers-secours-anps-ml1d0cp2m2pi7bxu3nf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Have I Been Pwned — ANPS Data Breach (jeu de données transmis par l'association et vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/ANPS",
+      "kind": "article"
+    },
+    {
+      "label": "Averida — Fuite de données ANPS : que faire",
+      "url": "https://www.averida.com/alertes/fuite-de-donnees-association-nationale-des-premiers-secours-anps",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 janvier 2026, un pirate annonce sur un forum la vente d'une base présentée comme issue de l'Association nationale des premiers secours, organisation de sécurité civile. Selon le relais FrenchBreaches, l'annonce évoque identités, coordonnées, des « dossiers de victimes » et des données d'interventions médicales. Le jeu de données vérifié par Have I Been Pwned ne contient que 5 600 adresses e-mail, noms, dates et lieux de naissance. L'association, à l'origine de la transmission du jeu de données, indique que l'incident remonte à un système ancien et n'a touché ni données de santé, ni données financières, ni mots de passe.",
+  "timeline": [
+    {
+      "date": "2026-01-30",
+      "event": "Mise en vente annoncée sur un forum d'une base présentée comme issue de l'ANPS ; la revendication évoque identités, coordonnées et « dossiers de victimes »."
+    },
+    {
+      "date": "2026-02-10",
+      "event": "Have I Been Pwned intègre le jeu de données transmis par l'association : 5 600 adresses e-mail, noms, dates et lieux de naissance ; un système ancien est en cause."
+    }
+  ]
+}

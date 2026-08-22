@@ -1,0 +1,44 @@
+{
+  "slug": "wizishop-20200714",
+  "entity": "WiziShop",
+  "siren": "503594525",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2020-07-14",
+    "publication": "2020-12-03"
+  },
+  "volume": {
+    "count": 2856769,
+    "unit": "comptes",
+    "label": "2 856 769 adresses e-mail uniques dans 18 Go de données (noms, dates de naissance, téléphones, adresses, IP, mots de passe) constatées dans le jeu de données vérifié par Have I Been Pwned ; incident non commenté publiquement par l'entreprise"
+  },
+  "data_types": ["identite", "coordonnees", "credentials"],
+  "sources": [
+    {
+      "label": "Have I Been Pwned — WiziShop Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/WiziShop",
+      "kind": "article"
+    },
+    {
+      "label": "TechTimes — 10 Biggest Data Breaches of 2020 (3 décembre 2020, fuite WiziShop : 18 Go de données)",
+      "url": "https://www.techtimes.com/articles/254683/20201203/10-biggest-data-breaches-2020-citoday-lazada-more.htm",
+      "kind": "article"
+    }
+  ],
+  "description": "En juillet 2020, la plateforme française de création de boutiques en ligne WiziShop subit une fuite de données : 18 Go comprenant 2 856 769 adresses e-mail uniques, noms, dates de naissance, téléphones, adresses postales, IP et mots de passe, selon le jeu de données vérifié par Have I Been Pwned. La fuite est reprise fin 2020 par la presse spécialisée dans ses bilans annuels ; l'entreprise n'a pas commenté publiquement l'incident. Incident distinct de celui d'août 2026 ayant exposé des factures clients de WiziShop, Dropizi et Evolup.",
+  "timeline": [
+    {
+      "date": "2020-07-14",
+      "event": "Fuite de données chez WiziShop : 18 Go avec adresses e-mail, identités, coordonnées et mots de passe, selon le jeu de données documenté par Have I Been Pwned."
+    },
+    {
+      "date": "2020-10-05",
+      "event": "Have I Been Pwned intègre le jeu de données vérifié : 2 856 769 adresses e-mail uniques."
+    },
+    {
+      "date": "2020-12-03",
+      "event": "TechTimes cite la fuite WiziShop parmi les principales violations de données de 2020 ; aucune réaction publique de l'entreprise."
+    }
+  ]
+}
