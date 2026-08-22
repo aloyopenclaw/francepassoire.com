@@ -206,11 +206,11 @@ const pctRevendiquee = 100 - pctConfirmee;
         </div>
 
         <!-- Cartes du template Gemini : barre scindée statut + ratio ransomware -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 mt-16 pt-16 border-t-2 border-brand-ink/20 border-dashed">
+          <div>
             <h2 class="font-display font-extrabold text-3xl mb-6">Ça fuit trop vite...</h2>
             <div class="w-full h-12 bg-brand-cream border-2 border-brand-ink rounded-full flex overflow-hidden shadow-hard-sm mb-4">
-              <div class="h-full pill-confirmee border-y-0 border-l-0 border-r-2 flex items-center justify-center font-mono font-bold text-lg" style={`width: ${pctConfirmee}%;`}>{pctConfirmee}%</div>
+              <div class="h-full pill-confirmee border-y-0 border-l-0 border-r-2 border-brand-ink flex items-center justify-center font-mono font-bold text-lg" style={`width: ${pctConfirmee}%;`}>{pctConfirmee}%</div>
               <div class="h-full pill-revendiquee border-none flex items-center justify-center font-mono font-bold text-lg" style={`width: ${pctRevendiquee}%;`}>{pctRevendiquee}%</div>
             </div>
             <div class="flex flex-wrap justify-between gap-2 font-mono text-sm">
@@ -219,9 +219,9 @@ const pctRevendiquee = 100 - pctConfirmee;
             </div>
           </div>
 
-          <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard-sm">
+          <div>
             <h2 class="font-display font-extrabold text-3xl mb-6">Ransomware</h2>
-            <div class="flex items-center gap-6">
+            <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard-sm flex items-center gap-6">
               <div class="font-display font-black text-6xl text-brand-orange drop-shadow-[2px_2px_0px_#241405]">{ratioRansomware > 0 ? `1/${ratioRansomware}` : '0'}</div>
               <p class="font-mono text-lg font-bold leading-snug">
                 {ratioRansomware > 0
