@@ -1,0 +1,37 @@
+{
+  "slug": "lusis-avocats-20230824",
+  "entity": "Lusis Avocats (cabinet d'avocats, Paris)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-08-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Cloak sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime lusis-avocats.com (groupe Cloak, France, découverte 24 août 2023)",
+      "url": "https://www.ransomware.live/id/bHVzaXMtYXZvY2F0cy5jb21AY2xvYWs",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Cloak pour lusis-avocats.com (24 août 2023)",
+      "url": "https://www.ransomlook.io/group/cloak",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 août 2023, le groupe de rançongiciel Cloak inscrit le domaine lusis-avocats.com du cabinet parisien Lusis Avocats sur son site de fuite, le même jour que la revendication visant le portail Notaires.fr. La revendication est relevée par les services de suivi Ransomware.live et RansomLook, qui identifient la France comme pays de la victime. Le cabinet n'a pas communiqué publiquement sur l'incident ; le volume des données concernées et une éventuelle publication effective ne sont pas connus.",
+  "timeline": [
+    {
+      "date": "2023-08-24",
+      "event": "Cloak affiche lusis-avocats.com sur son site de fuite."
+    }
+  ]
+}

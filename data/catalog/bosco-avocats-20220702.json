@@ -1,0 +1,47 @@
+{
+  "slug": "bosco-avocats-20220702",
+  "entity": "Bosco Avocats (cabinet d'avocats inter-barreaux)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-07-02",
+    "publication": "2022-08-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; victime inscrite sur le site de fuite LockBit"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime bosco-avocats.com (groupe Lockbit3, découverte 2 juillet 2022)",
+      "url": "https://www.ransomware.live/id/Ym9zY28tYXZvY2F0cy5jb21AbG9ja2JpdDM",
+      "kind": "revendication"
+    },
+    {
+      "label": "Breachsense : Bosco Avocats Data Breach in 2022 (LockBit)",
+      "url": "https://www.breachsense.com/breaches/bosco-avocats-data-breach/",
+      "kind": "article"
+    },
+    {
+      "label": "CCVet : Overzicht cyberaanvallen week 26-2022 (bosco-avocats.com, France, LockBit)",
+      "url": "https://www.ccinfo.nl/menu-nieuws-trends/cyberaanvallen-weekoverzichten/954051_overzicht-cyberaanvallen-week-26-2022",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 juillet 2022, le site de fuite de la franchise LockBit affiche Bosco Avocats, société d'avocats inter-barreaux née de la fusion de plusieurs cabinets, parmi ses victimes françaises. Le domaine bosco-avocats.com est de nouveau affiché le 18 août 2022, ce qui indique que le cabinet n'a pas cédé au chantage et que des données ont été publiées ou menacées de l'être. Le cabinet n'a pas communiqué publiquement sur l'incident, dont l'ampleur exacte reste inconnue.",
+  "timeline": [
+    {
+      "date": "2022-07-02",
+      "event": "LockBit inscrit bosco-avocats.com sur son site de fuite."
+    },
+    {
+      "date": "2022-08-18",
+      "event": "Le domaine est de nouveau affiché par LockBit, sans paiement de rançon apparent."
+    }
+  ]
+}

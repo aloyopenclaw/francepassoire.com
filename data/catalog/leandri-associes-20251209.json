@@ -1,0 +1,37 @@
+{
+  "slug": "leandri-associes-20251209",
+  "entity": "Leandri & Associés (cabinet d'avocats, Paris et Marseille)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-12-09"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication Qilin sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime Leandri & Associes (groupe Qilin, découverte 9 décembre 2025)",
+      "url": "https://www.ransomware.live/id/TGVhbmRyaSAmIEFzc29jaWVzQHFpbGlu",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication Qilin pour Leandri & Associes (9 décembre 2025)",
+      "url": "https://www.ransomlook.io/group/qilin",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 9 décembre 2025, le groupe de rançongiciel Qilin inscrit sur son site de fuite Leandri & Associés, cabinet d'avocats indépendant fondé il y a plus d'un demi-siècle par Paul Leandri et dédié au droit social, implanté à Paris et à Marseille, avec le site cabinet-leandri.com en référence. La revendication est relevée par les services de suivi Ransomware.live et RansomLook. Le cabinet n'a pas communiqué publiquement sur l'incident ; ni le volume des données concernées ni une éventuelle publication ne sont connus.",
+  "timeline": [
+    {
+      "date": "2025-12-09",
+      "event": "Qilin affiche Leandri & Associes sur son site de fuite, avec le site cabinet-leandri.com en référence."
+    }
+  ]
+}

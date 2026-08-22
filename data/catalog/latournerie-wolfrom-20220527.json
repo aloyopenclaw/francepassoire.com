@@ -1,0 +1,50 @@
+{
+  "slug": "latournerie-wolfrom-20220527",
+  "entity": "Latournerie Wolfrom & Associés (cabinet d'avocats d'affaires, Paris)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-05-27",
+    "publication": "2022-05-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "données internes publiées en au moins douze lots entre mai et août 2022 ; volume total non chiffré"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "RansomLook : revendications Cl0p pour LATOURNERIE-WOLFROM.COM (12 publications de fichiers, 27 mai au 18 août 2022)",
+      "url": "https://www.ransomlook.io/group/clop",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ransomware.live : fiche victime latournerie-wolfrom.com (groupe Clop)",
+      "url": "https://www.ransomware.live/id/TEFUT1VSTkVSSUUtV09MRlJPTS5DT01AY2xvcA",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 mai 2022, le groupe Cl0p inscrit le domaine du cabinet d'avocats d'affaires parisien Latournerie Wolfrom & Associés sur son site de fuite et commence à publier des fichiers présentés comme volés, dans des lots intitulés « FILES PART » accompagnés d'adresses IP internes. Douze publications sont recensées entre le 27 mai et le 18 août 2022, ce qui suggère un volume important de documents internes. Le cabinet n'a pas communiqué publiquement sur l'incident ; l'exfiltration n'est pas confirmée officiellement, seules les publications du groupe Cl0p en attestent la revendication.",
+  "timeline": [
+    {
+      "date": "2022-05-27",
+      "event": "Cl0p revendique le cabinet et publie un premier lot de fichiers (FILES PART1)."
+    },
+    {
+      "date": "2022-06-04",
+      "event": "Publication des lots 2 à 6 sur le site de fuite du groupe."
+    },
+    {
+      "date": "2022-07-02",
+      "event": "Publication des lots 7 à 11, mentionnant des partages internes du cabinet."
+    },
+    {
+      "date": "2022-08-18",
+      "event": "Dernière publication recensée pour latournerie-wolfrom.com sur la vitrine Cl0p."
+    }
+  ]
+}

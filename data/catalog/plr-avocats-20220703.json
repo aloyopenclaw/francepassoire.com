@@ -1,0 +1,52 @@
+{
+  "slug": "plr-avocats-20220703",
+  "entity": "PLR Avocats (cabinet d'avocats, Paris)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-07-03",
+    "publication": "2022-08-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; victime inscrite sur le site de fuite LockBit"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime plravocats.fr (groupe Lockbit3, découverte 2 juillet 2022)",
+      "url": "https://www.ransomware.live/id/cGxyYXZvY2F0cy5mckBsb2NrYml0Mw==",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz : LockBit, comment ce ransomware a dominé la cybercriminalité (liste des entreprises françaises visées, 5 août 2025)",
+      "url": "https://www.zataz.com/lockbit-ransomware-cybercriminalite-operation-cronos/",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense : Data breaches in July 2022 (P L R Avocats, LockBit)",
+      "url": "https://www.breachsense.com/breaches/2022/july/",
+      "kind": "article"
+    },
+    {
+      "label": "CCVet : Overzicht cyberaanvallen week 26-2022 (plravocats.fr, France, LockBit)",
+      "url": "https://www.ccinfo.nl/menu-nieuws-trends/cyberaanvallen-weekoverzichten/954051_overzicht-cyberaanvallen-week-26-2022",
+      "kind": "article"
+    }
+  ],
+  "description": "Début juillet 2022, la franchise LockBit affiche sur son site de fuite le domaine plravocats.fr du cabinet parisien PLR Avocats, spécialisé en droit des affaires, pénal et RGPD. Le domaine est réaffiché le 18 août 2022, signe que les données n'ont pas été retirées et que le chantage a suivi son cours. Le domaine figure dans la liste des entreprises françaises dont les données ont été diffusées par LockBit entre 2022 et 2025, publiée par Zataz. Le cabinet n'a pas communiqué publiquement sur l'incident.",
+  "timeline": [
+    {
+      "date": "2022-07-03",
+      "event": "LockBit inscrit plravocats.fr sur son site de fuite, aux côtés d'autres cabinets juridiques français."
+    },
+    {
+      "date": "2022-08-18",
+      "event": "Le domaine est de nouveau affiché par LockBit après expiration du délai de rançon."
+    }
+  ]
+}

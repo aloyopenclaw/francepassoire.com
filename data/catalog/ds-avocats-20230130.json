@@ -1,0 +1,42 @@
+{
+  "slug": "ds-avocats-20230130",
+  "entity": "DS Avocats (cabinet d'avocats international en droit des affaires)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2023-01-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; exfiltration de données internes revendiquée par LockBit 3.0"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime dsavocats.com (groupe Lockbit3, découverte 30 janvier 2023)",
+      "url": "https://www.ransomware.live/id/ZHNhdm9jYXRzLmNvbUBsb2NrYml0Mw==",
+      "kind": "revendication"
+    },
+    {
+      "label": "GalaxyWarden : dsavocats.com listed by lockbit3 ransomware group",
+      "url": "https://www.galaxywarden.com/blog/breach/dsavocats-com-lockbit3-2023-01",
+      "kind": "article"
+    },
+    {
+      "label": "Breachsense : DS Avocats Data Breach in 2023 (LockBit)",
+      "url": "https://www.breachsense.com/breaches/ds-avocats-data-breach/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 janvier 2023, le cabinet international DS Avocats, fondé en 1972 et fort de plus de 400 avocats, apparaît sur le site de fuite du rançongiciel LockBit 3.0, qui affirme avoir exfiltré des données internes du domaine dsavocats.com. La revendication est relevée par plusieurs services de veille, qui identifient la France comme pays de la victime. Le cabinet n'a pas rendu l'incident public ; aucune confirmation officielle ni chiffrage du volume de données n'est disponible.",
+  "timeline": [
+    {
+      "date": "2023-01-30",
+      "event": "LockBit 3.0 affiche dsavocats.com sur son site de fuite et revendique le vol de données internes."
+    }
+  ]
+}

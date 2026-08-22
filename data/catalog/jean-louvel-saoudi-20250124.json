@@ -1,0 +1,37 @@
+{
+  "slug": "jean-louvel-saoudi-20250124",
+  "entity": "Cabinet Jean Louvel Saoudi (cabinet d'avocats associés, Metz)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-01-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; revendication 8base sur le site de fuite du groupe"
+  },
+  "data_types": [
+    "documents",
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Ransomware.live : fiche victime Cabinet JEAN LOUVEL SAOUDI (groupe 8base, découverte 24 janvier 2025)",
+      "url": "https://www.ransomware.live/id/Q2FiaW5ldCBKRUFOIExPVVZFTCBTQU9VRElAOGJhc2U",
+      "kind": "revendication"
+    },
+    {
+      "label": "RansomLook : revendication 8base pour Cabinet JEAN LOUVEL SAOUDI (24 janvier 2025)",
+      "url": "https://www.ransomlook.io/group/8base",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 janvier 2025, le groupe de rançongiciel 8base inscrit sur son site de fuite le Cabinet Jean Louvel Saoudi, cabinet d'avocats associés de Metz dont l'équipe est présentée par les pirates comme composée d'avocats expérimentés. La revendication est relevée par les services de suivi Ransomware.live et RansomLook. Le cabinet n'a pas communiqué publiquement sur l'incident ; ni le volume des données concernées ni une éventuelle publication ne sont connus.",
+  "timeline": [
+    {
+      "date": "2025-01-24",
+      "event": "8base affiche le Cabinet JEAN LOUVEL SAOUDI sur son site de fuite, avec le site jean-louvel.fr en référence."
+    }
+  ]
+}
