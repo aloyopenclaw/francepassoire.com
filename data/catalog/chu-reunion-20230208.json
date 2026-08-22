@@ -1,0 +1,50 @@
+{
+  "slug": "chu-reunion-20230208",
+  "entity": "CHU de La Réunion",
+  "siren": "200030013",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2023-02-08",
+    "publication": "2023-02-08",
+    "confirmation": "2023-06-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs identifiants de comptes exfiltrés selon le CERT Santé, sans autre fuite de données ; nombre de personnes non chiffré"
+  },
+  "data_types": ["credentials"],
+  "sources": [
+    {
+      "label": "CERT Santé (cyberveille.esante.gouv.fr) — Le GHT de la Réunion a été victime d'une cyberattaque en février 2023 (1er juin 2023)",
+      "url": "https://cyberveille.esante.gouv.fr/retours-d-experience/le-ght-de-la-reunion-ete-victime-dune-cyberattaque-en-fevrier-2023-2023-06-01",
+      "kind": "officiel"
+    },
+    {
+      "label": "L'Informaticien — Le CHU de la Réunion cible d'une cyberattaque (9 février 2023)",
+      "url": "https://www.linformaticien.com/magazine/cybersecurite/60564-le-chu-de-la-reunion-cible-d-une-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "imaz press — Le CHU de La Réunion victime d'une cyberattaque (8 février 2023)",
+      "url": "https://imazpress.com/actus-reunion/le-chu-de-la-reunion-victime-dune-cyberattaque",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 5 février 2023, le CHU de La Réunion détecte une intrusion dans son système d'information. L'accès à Internet et le télétravail sont suspendus, les téléexpertises interrompues. L'ARS saisit le ministère de la Santé et le CERT Santé. Aucune revendication ni demande de rançon n'est signalée. Dans son retour d'expérience publié le 1er juin, le CERT Santé indique que plusieurs identifiants de comptes ont été exfiltrés, sans autre fuite de données. Les restrictions sont levées progressivement jusqu'en juin. L'établissement chiffre à environ 700 000 euros sa nouvelle plateforme de cybersécurité.",
+  "timeline": [
+    {
+      "date": "2023-02-05",
+      "event": "Le CHU détecte une intrusion ; l'ARS saisit le ministère de la Santé et le CERT Santé, l'accès à Internet est coupé."
+    },
+    {
+      "date": "2023-02-08",
+      "event": "Communiqué de l'établissement : l'attaque a été détectée précocement, la prise en charge des patients reste assurée."
+    },
+    {
+      "date": "2023-06-01",
+      "event": "Le CERT Santé indique que plusieurs identifiants de comptes ont été exfiltrés, sans fuite de données complémentaire."
+    }
+  ]
+}
