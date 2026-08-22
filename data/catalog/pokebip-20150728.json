@@ -1,0 +1,43 @@
+{
+  "slug": "pokebip-20150728",
+  "entity": "Pokébip",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2015-07-28",
+    "confirmation": "2015-07-28"
+  },
+  "volume": {
+    "count": 657001,
+    "unit": "comptes",
+    "label": "657 001 comptes membres (adresses e-mail, identifiants, IP et mots de passe) constatés dans le jeu de données vérifié par Have I Been Pwned"
+  },
+  "data_types": ["credentials", "coordonnees"],
+  "sources": [
+    {
+      "label": "Pokébip — Message de sécurité de l'équipe Pokébip (28 juillet 2015)",
+      "url": "https://www.pokebip.com/news3382__message_de_securite_de_l_equipe_pokebip_.html",
+      "kind": "officiel"
+    },
+    {
+      "label": "Have I Been Pwned — Pokébip Data Breach (jeu de données vérifié)",
+      "url": "https://haveibeenpwned.com/Breach/Pokebip",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 27 au 28 juillet 2015, le site français d'actualité Pokémon Pokébip subit une attaque informatique ; le site est désactivé une bonne partie de la journée. Dans un message de sécurité, l'équipe indique que l'auteur a accédé à la base de données des comptes utilisateurs, mots de passe chiffrés inclus, et que des mots de passe ont déjà été réutilisés par des malveillants sur des boîtes mail, Skype ou Facebook. Une plainte est déposée et le chiffrement renforcé. Le jeu de données — 657 001 comptes avec identifiants, e-mails, IP et mots de passe MD5 non salés — est vérifié par Have I Been Pwned en septembre 2016.",
+  "timeline": [
+    {
+      "date": "2015-07-28",
+      "event": "Après une attaque nocturne, Pokébip publie un message de sécurité : l'auteur a accédé à la base des comptes utilisateurs, mots de passe chiffrés inclus ; une plainte est déposée."
+    },
+    {
+      "date": "2015-07-28",
+      "event": "L'équipe signale des réutilisations de mots de passe sur des boîtes mail, Skype ou Facebook et invite les membres à changer d'urgence tout mot de passe réutilisé ailleurs."
+    },
+    {
+      "date": "2016-09-09",
+      "event": "Have I Been Pwned intègre le jeu de données vérifié : 657 001 comptes, identifiants, adresses e-mail et IP, mots de passe MD5 non salés."
+    }
+  ]
+}
