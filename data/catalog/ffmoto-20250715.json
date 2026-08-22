@@ -1,0 +1,44 @@
+{
+  "slug": "ffmoto-20250715",
+  "entity": "Fédération française de motocyclisme (FFMoto)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-15",
+    "publication": "2025-07-15"
+  },
+  "volume": {
+    "count": 463000,
+    "unit": "enregistrements",
+    "label": "≈ 463 000 enregistrements de licenciés mis en vente, dont identités complètes, coordonnées, photos, copies de pièces d'identité et certificats médicaux (chiffres revendiqués par le vendeur)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — FFMOTO piratée : la Fédération Française de Motocyclisme victime d'une nouvelle fuite massive de données (15 juillet 2025)",
+      "url": "https://www.zataz.com/ffmoto-piratee-la-federation-francaise-de-motocyclisme-victime-dune-nouvelle-fuite-massive-de-donnees/",
+      "kind": "revendication"
+    },
+    {
+      "label": "BFMTV — Les fédérations françaises de moto et de danse ont été piratées en 2024 et 2025 : les données de près d'un million de licenciés mises en vente (17 août 2026)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/les-federations-francaises-de-moto-et-de-danse-ont-ete-piratees-en-2024-et-2025-les-donnees-de-pres-d-un-million-de-licencies-sont-desormais-mises-en-vente-sur-le-darkweb_AN-202608170310.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 juillet 2025, Zataz signale qu'un nouveau pirate met en vente environ 463 000 dossiers de licenciés de la Fédération française de motocyclisme. Il se distingue de l'auteur de la fuite de janvier 2025, imputée à un prestataire. Selon lui, les données proviennent d'un compte administrateur de l'intranet dont les identifiants circulaient dans des logs de stealer. Le lot, proposé à trois acheteurs maximum, comprendrait identités complètes, coordonnées, photos, copies de cartes d'identité et certificats médicaux d'aptitude. Zataz relève que la véracité de cette annonce n'est pas établie. BFM, en août 2026, documente rétrospectivement cette annonce comme un épisode distinct du dossier initial, sans que la fédération ait confirmé ce second vol.",
+  "timeline": [
+    {
+      "date": "2025-07-15",
+      "event": "Zataz signale un pirate mettant en vente ≈ 463 000 dossiers de licenciés FFMoto, obtenus selon lui via un compte administrateur compromis."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "BFM documente rétrospectivement cette annonce de juillet 2025 dans le contexte des piratages successifs de fédérations sportives."
+    }
+  ]
+}

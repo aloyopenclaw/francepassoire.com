@@ -1,0 +1,50 @@
+{
+  "slug": "gouvernement-nouvelle-caledonie-dittt-20250707",
+  "entity": "Gouvernement de la Nouvelle-Calédonie (DITTT)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-07-07",
+    "publication": "2025-07-11"
+  },
+  "volume": {
+    "count": 289858,
+    "unit": "personnes",
+    "label": "289 858 titulaires de permis de conduire et 463 231 immatriculations de véhicules mis en vente par un pirate (chiffres revendiqués) ; l'ampleur officielle de l'incident reste en cours d'évaluation"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Nouvelle-Calédonie : des pirates ont-ils voulu perturber l'accord de Bougival ? (15 juillet 2025)",
+      "url": "https://www.zataz.com/nouvelle-caledonie-accord-bougival-cyberattaques/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Gouvernement de la Nouvelle-Calédonie (communiqué, 11 juillet 2025) — Incident informatique concernant des données gérées par la DITTT",
+      "url": "https://gouv.nc/sites/default/files/atoms/files/2025.07.11_cp_incident_informatique.pdf",
+      "kind": "officiel"
+    },
+    {
+      "label": "La 1ère (France Info) — Une cyberattaque cible les immatriculations et les permis de conduire des Calédoniens (13 juillet 2025)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/une-cyberattaque-cible-les-immatriculations-et-les-permis-de-conduire-des-caledoniens-1604043.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 juillet 2025, un pirate met en vente sur un forum deux bases présentées comme issues des fichiers administratifs néo-calédoniens. Le lot couvre 289 858 permis de conduire et 463 231 immatriculations de véhicules, avec échantillons de plusieurs milliers de lignes, selon Zataz. Le gouvernement de la Nouvelle-Calédonie annonce le 11 juillet avoir détecté le 9 juillet un incident de sécurité. Celui-ci ciblait des données d'immatriculation et de permis de conduire gérées par la direction des Infrastructures, de la topographie et des transports terrestres (DITTT). Une plainte est déposée et l'acte est qualifié de cyberattaque ciblée. Le lien entre la mise en vente et l'intrusion n'est pas établi publiquement et l'ampleur officielle reste en cours d'évaluation.",
+  "timeline": [
+    {
+      "date": "2025-07-07",
+      "event": "Un pirate met en vente sur un forum 289 858 permis de conduire et 463 231 immatriculations présentés comme néo-calédoniens, avec échantillons, selon Zataz."
+    },
+    {
+      "date": "2025-07-09",
+      "event": "Le gouvernement de la Nouvelle-Calédonie détecte un incident de sécurité informatique visant les données d'immatriculation et de permis de conduire gérées par la DITTT."
+    },
+    {
+      "date": "2025-07-11",
+      "event": "Le gouvernement publie un communiqué qualifiant l'acte de cyberattaque ciblée, dépose plainte et lance une enquête avec l'État."
+    }
+  ]
+}

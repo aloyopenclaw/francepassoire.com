@@ -1,0 +1,53 @@
+{
+  "slug": "plex-20250908",
+  "entity": "Plex",
+  "secteur": "media",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2025-09-08",
+    "publication": "2025-09-09",
+    "confirmation": "2025-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "volume non chiffré par Plex (« sous-ensemble limité » des données clients) ; réinitialisation imposée à l'ensemble des comptes, estimée à environ 17 millions d'utilisateurs actifs par la presse spécialisée"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Plex (page officielle d'assistance) — Your account requires a password reset, annonce du 8 septembre 2025",
+      "url": "https://support.plex.tv/articles/account-requires-password-reset",
+      "kind": "officiel"
+    },
+    {
+      "label": "01net — Fuite de données chez Plex : changez votre mot de passe d'urgence (9 septembre 2025)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-plex-changez-mot-passe-urgence.html",
+      "kind": "article"
+    },
+    {
+      "label": "Numerama — Plex annonce un piratage et appelle ses utilisateurs à prendre plusieurs mesures (9 septembre 2025)",
+      "url": "https://www.numerama.com/cyberguerre/2068537-plex-annonce-un-piratage-et-appelle-ses-utilisateurs-a-prendre-plusieurs-mesures.html",
+      "kind": "article"
+    },
+    {
+      "label": "IT-Connect — Cyberattaque chez Plex : vos mots de passe exposés, réinitialisez-les sans attendre (9 septembre 2025)",
+      "url": "https://www.it-connect.fr/cyberattaque-chez-plex-vos-mots-de-passe-exposes-reinitialisez-les-sans-attendre/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 septembre 2025, Plex, plateforme américaine de serveur multimédia utilisée par des millions de francophones, annonce un incident de sécurité. Un tiers non autorisé a accédé à un « sous-ensemble limité » de données clients de l'une de ses bases. Les informations concernées sont les adresses électroniques, les noms d'utilisateur et les mots de passe hachés selon les bonnes pratiques. La société impose la réinitialisation du mot de passe à l'ensemble des comptes et recommande la double authentification. Elle précise qu'aucune donnée bancaire n'est concernée, celles-ci n'étant pas stockées sur ses serveurs. Il s'agit du second incident du genre après celui d'août 2022. Le nombre exact de comptes affectés n'est pas publié ; la presse spécialisée évoque une base d'environ 17 millions d'utilisateurs actifs.",
+  "timeline": [
+    {
+      "date": "2025-09-08",
+      "event": "Plex annonce qu'un tiers non autorisé a accédé à des données clients (adresses électroniques, noms d'utilisateur, mots de passe hachés) et impose la réinitialisation des mots de passe."
+    },
+    {
+      "date": "2025-09-09",
+      "event": "La presse spécialisée française (01net, Numerama, IT-Connect) relaie l'incident et les consignes de sécurité de la plateforme."
+    }
+  ]
+}
