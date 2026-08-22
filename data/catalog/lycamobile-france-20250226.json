@@ -1,0 +1,49 @@
+{
+  "slug": "lycamobile-france-20250226",
+  "entity": "Lycamobile France",
+  "siren": "528332505",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2025-02-26",
+    "publication": "2025-02-26"
+  },
+  "volume": {
+    "count": 1500000,
+    "unit": "personnes",
+    "label": "plus de 1,5 million d'utilisateurs pour la vague de février 2025 selon Zataz ; 1,2 million pour celle de janvier selon les mêmes relais — chiffres revendiqués par les pirates, non confirmés par l'opérateur"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Zataz — Lycamobile se fait syphoner, encore et encore ! (26 février 2025)",
+      "url": "https://www.zataz.com/lycamobile-se-fait-syphoner-encore-et-encore/",
+      "kind": "article"
+    },
+    {
+      "label": "Brinztech — Alert: The Alleged Database of Lyca Mobile is Leaked (18 décembre 2025)",
+      "url": "https://www.brinztech.com/breach-alerts/brinztech-alert-the-alleged-database-of-lyca-mobile-is-leaked/",
+      "kind": "revendication"
+    },
+    {
+      "label": "DataBreach — Lyca Mobile breach : base de 1,5 million d'enregistrements revendiquée par « Magouilleur »",
+      "url": "https://databreach.com/breach/lyca-mobile-2025",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Lycamobile, opérateur virtuel britannique présent en France, subit depuis fin 2024 une série d'exfiltrations documentée par Zataz. Selon le site, un pirate a aspiré pendant neuf jours un panneau de gestion revendeurs. Il en extrait en février 2025 les données de plus de 1,5 million d'utilisateurs. Figurent numéros, codes PUK, identifiants ICCID et IMSI, e-mails, noms et dates d'inscription. Une vague de janvier revendiquée par « Magouilleur » concernerait 1,2 million d'utilisateurs. Des échantillons circulent sur plusieurs espaces pirates. L'opérateur ne confirme pas ces chiffres ; aucun décompte officiel n'existe.",
+  "timeline": [
+    {
+      "date": "2025-02-26",
+      "event": "Zataz documente une campagne d'exfiltration continue : après neuf jours d'aspiration d'un panneau de gestion revendeurs, des données de plus de 1,5 million d'utilisateurs circulent."
+    },
+    {
+      "date": "2025-02-26",
+      "event": "Les échantillons relevés par le Service Veille Zataz incluent numéros, codes PUK, identifiants ICCID et IMSI, e-mails, noms et dates d'inscription."
+    },
+    {
+      "date": "2025-12-18",
+      "event": "Brinztech relate une nouvelle diffusion attribuée à la base de janvier 2025, avec noms, e-mails, numéros de comptes et identifiants SIM."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "lagoon-20240819",
+  "entity": "Lagoon (Offratel)",
+  "siren": "521262592",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2024-08-19",
+    "publication": "2024-08-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes non communiqués ; « quelques milliers de clients » privés de connexion selon la direction, sur environ 28 000 abonnés ; aucune exfiltration établie"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "La 1ère (franceinfo) — Cyber-attaque chez Lagoon : « quelques milliers de clients sont impactés » (19 août 2024)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/cyber-attaque-chez-lagoon-quelques-milliers-de-clients-sont-impactes-1514861.html",
+      "kind": "article"
+    },
+    {
+      "label": "Les Nouvelles Calédoniennes — Le fournisseur d'accès internet Lagoon hacké (19 août 2024)",
+      "url": "https://www.lnc.nc/article/nouvelle-caledonie/le-fournisseur-d-acces-internet-lagoon-hacke",
+      "kind": "article"
+    },
+    {
+      "label": "Radio Cocotier — Cyberattaque, le FAI Lagoon Offratel victime d'un rançongiciel (19 août 2024)",
+      "url": "https://radiococotier.nc/2024/08/19/cyberattaque-lagoon-victime-dun-rancongiciel/",
+      "kind": "article"
+    },
+    {
+      "label": "La 1ère (franceinfo) — Après l'importante attaque informatique d'août, Lagoon entend renforcer sa cybersécurité (2 octobre 2024)",
+      "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/apres-l-importante-attaque-informatique-d-aout-lagoon-entend-renforcer-sa-cybersecurite-1526298.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 17 au 18 août 2024, un rançongiciel chiffre l'infrastructure de Lagoon, fournisseur d'accès néo-calédonien. Quelques milliers de clients perdent leur connexion et 230 serveurs d'hébergement deviennent inaccessibles, perturbant des sites tiers comme celui de la Cafat. La direction décrit une attaque « minutieusement préparée » et « ciblée ». Une plainte est déposée et l'ANSSI dépêche une équipe d'assistance. Aucune exfiltration de données n'est établie. Début octobre, l'opérateur annonce un mois de restauration et un renforcement aligné sur la directive NIS 2.",
+  "timeline": [
+    {
+      "date": "2024-08-18",
+      "event": "Un rançongiciel chiffre des points stratégiques de l'infrastructure entre 3h30 et 3h50, selon le directeur général de Lagoon."
+    },
+    {
+      "date": "2024-08-19",
+      "event": "La presse locale décrit quelques milliers de clients sans internet et 230 serveurs d'hébergement inaccessibles ; l'opérateur a déposé plainte."
+    },
+    {
+      "date": "2024-10-02",
+      "event": "La direction indique qu'un mois a été nécessaire pour restaurer les services et annonce des mesures alignées sur la directive NIS 2."
+    }
+  ]
+}
