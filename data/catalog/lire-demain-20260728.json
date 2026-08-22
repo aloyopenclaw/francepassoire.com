@@ -1,0 +1,40 @@
+{
+  "slug": "lire-demain-20260728",
+  "entity": "Lire Demain",
+  "siren": "522813815",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-29"
+  },
+  "volume": {
+    "count": 821,
+    "unit": "personnes",
+    "label": "821 clients annoncés, principalement des établissements scolaires, structures de petite enfance et collectivités d'Île-de-France (chiffre revendiqué) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Lire Demain : fuite de données revendiquée (alerte du 29 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/lire-demain-ms5pejs6d6m5q6vnf18",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 821 clients concernés par une fuite revendiquée chez Lire Demain",
+      "url": "https://fuitesinfos.fr/article/2026-07-28-lire-demain",
+      "kind": "article"
+    }
+  ],
+  "description": "Lire Demain, distributeur de livres jeunesse, est visé le 28 juillet 2026 par une revendication. Celle-ci publie cinq fichiers tableur présentés comme la base du site marchand. Selon Fuites Infos, les données toucheraient principalement des établissements scolaires et des structures de petite enfance. Des collectivités de Seine-et-Marne, du Val-de-Marne et de Seine-Saint-Denis sont aussi concernées, avec quelques centaines de particuliers. Les fichiers annoncés comprendraient coordonnées professionnelles, historique des commandes, factures et montants associés. L'entreprise n'a pas confirmé publiquement ces éléments.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "Un acteur affirme avoir mis en ligne la base du site marchand Lire Demain sous forme de cinq fichiers tableur ; 821 clients annoncés."
+    }
+  ]
+}

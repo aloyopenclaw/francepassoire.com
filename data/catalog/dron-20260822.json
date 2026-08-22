@@ -1,0 +1,48 @@
+{
+  "slug": "dron-20260822",
+  "entity": "DRON",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 44914,
+    "unit": "personnes",
+    "label": "44 914 contacts professionnels annoncés, dont quelques centaines hors de France (44 Go et 49 035 fichiers revendiqués) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 44 914 contacts dans une fuite revendiquée chez DRON",
+      "url": "https://fuitesinfos.fr/article/2026-08-22-dron",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — BlgCloud : les données de 159 entreprises piratées, des millions de documents en fuite",
+      "url": "https://www.cyberattaque.org/blgcloud-les-donnees-de-159-entreprises-pirate-des-millions-de-documents-en-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "DRON, loueur français de matériel pour le bâtiment, l'industrie, les collectivités et l'événementiel, est visé le 22 août 2026 par une revendication. Celle-ci publie un dépôt de 44 Go attribué à l'entreprise, couvrant environ cinq années de correspondance commerciale selon Fuites Infos. L'annonce évoque 49 035 fichiers, 44 914 contacts, contrats de location, factures, devis et bons de commande. Les données proviendraient de la plateforme de gestion exploitée par l'éditeur de la solution utilisée par DRON. Cet éditeur a reconnu le 11 août un incident touchant treize instances clientes, notifié à la CNIL. Le nom de DRON figurait déjà dans une liste de 159 instances publiée dans la série BlgCloud. L'entreprise n'a pas confirmé publiquement.",
+  "timeline": [
+    {
+      "date": "2026-08-08",
+      "event": "Un acteur identifié comme ChimeraZ commence à publier des données d'entreprises clientes de l'ERP BlgCloud ; une liste de 159 instances compromises inclut DRON."
+    },
+    {
+      "date": "2026-08-11",
+      "event": "L'éditeur de la solution reconnaît, selon Fuites Infos, un incident touchant treize instances clientes et le notifie à la CNIL, sans nommer les clients."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Publication d'un dépôt attribué à DRON : 44 Go, 49 035 fichiers et 44 914 contacts annoncés, avec factures, contrats et devis selon la revendication."
+    }
+  ]
+}

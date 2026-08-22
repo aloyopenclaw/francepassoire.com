@@ -1,0 +1,40 @@
+{
+  "slug": "erdil-20260728",
+  "entity": "ERDIL",
+  "siren": "494264609",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-28"
+  },
+  "volume": {
+    "count": 269,
+    "unit": "personnes",
+    "label": "Environ 270 contacts ayant utilisé les formulaires du site entre janvier 2022 et juin 2026 (chiffre revendiqué) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Erdil : fuite de données revendiquée (alerte du 28 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/erdil-ms4edb2tfxahd3apfc",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — 269 contacts professionnels concernés par une fuite de données revendiquée chez ERDIL",
+      "url": "https://fuitesinfos.fr/article/2026-07-28-erdil",
+      "kind": "article"
+    }
+  ],
+  "description": "ERDIL, éditeur basé à Besançon de logiciels d'analyse sémantique, est visé le 28 juillet 2026. Une revendication publie une sauvegarde de la base de son site institutionnel, datée de la mi-juin 2026. Selon Fuites Infos, la diffusion concernerait l'identité et les coordonnées professionnelles d'environ 270 contacts. Ces personnes avaient écrit à l'éditeur via les formulaires en ligne entre janvier 2022 et juin 2026. Employeur, fonction et contenu des messages figurent dans l'annonce. Des comptes d'administration du site et des empreintes de mots de passe sont également mentionnés. L'éditeur n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "Un acteur publie une sauvegarde de la base du site institutionnel d'ERDIL datée de la mi-juin : environ 270 contacts exposés selon la revendication."
+    }
+  ]
+}

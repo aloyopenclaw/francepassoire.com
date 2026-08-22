@@ -1,0 +1,51 @@
+{
+  "slug": "prelys-courtage-20260803",
+  "entity": "Prelys Courtage",
+  "siren": "792577157",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-03",
+    "publication": "2026-08-08",
+    "confirmation": "2026-08-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume non communiqué ; compromission de certaines données de dossiers clients confirmée par l'entreprise, personnes concernées informées progressivement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Prelys Courtage — FAQ incident de cybersécurité (mise à jour du 3 août 2026)",
+      "url": "https://www.prelys-courtage.com/faq-incident-de-cybersecurite/",
+      "kind": "officiel"
+    },
+    {
+      "label": "BonjourLaFuite — entrée Prelys Courtage du 8 août 2026",
+      "url": "https://bonjourlafuite.eu.org/",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Prelys Courtage",
+      "url": "https://fuitesinfos.fr/article/2026-08-08-prelys-courtage",
+      "kind": "article"
+    }
+  ],
+  "description": "Prelys Courtage, courtier en assurance et financement, annonce le 3 août 2026 un incident de cybersécurité. Selon sa FAQ officielle, il a entraîné la compromission de certaines données issues de dossiers clients. Les données potentiellement concernées comprennent informations d'identité et coordonnées. Pièces d'identité, justificatifs de domicile, relevés de compte et documents de demande de financement sont aussi cités. L'entreprise a notifié l'incident à la CNIL dans les délais réglementaires, déposé plainte et mandaté des experts indépendants. Aucune compromission d'identifiants de connexion n'a été identifiée à ce stade. Les personnes potentiellement impactées sont informées progressivement ; le volume exact n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-03",
+      "event": "Prelys Courtage annonce un incident de cybersécurité ayant entraîné la compromission de certaines données de dossiers clients ; CNIL notifiée, plainte déposée."
+    },
+    {
+      "date": "2026-08-08",
+      "event": "Les services de veille BonjourLaFuite et Fuites Infos relaient l'incident et les catégories de données concernées."
+    }
+  ]
+}
