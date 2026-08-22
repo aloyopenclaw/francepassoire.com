@@ -29,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 16 août 2026, un cybercriminel publie sur un forum accessible via Tor une collecte revendiquée de Chess.com : 7 337 396 lignes contenant selon lui environ quatre millions d'adresses électroniques, des identifiants, des noms, des localisations et des données de classement. L'auteur présente la base comme un scrape, une extraction automatisée de données accessibles — aucune intrusion dans les systèmes de la plateforme n'est établie. Chess.com n'a pas communiqué publiquement au 22 août 2026. La plateforme revendique plus de 250 millions de membres, dont une part non quantifiée en France.",
+  "description": "Le 16 août 2026, un cybercriminel publie sur un forum accessible via Tor une collecte revendiquée de Chess.com : 7 337 396 lignes contenant selon lui environ quatre millions d'adresses électroniques, des identifiants, des noms, des localisations et des données de classement. L'auteur présente la base comme un scrape, une extraction automatisée de données accessibles : aucune intrusion dans les systèmes de la plateforme n'est établie. Chess.com n'a pas communiqué publiquement au 22 août 2026. La plateforme revendique plus de 250 millions de membres, dont une part non quantifiée en France.",
   "timeline": [
     {
       "date": "2026-08-16",
