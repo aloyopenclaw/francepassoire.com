@@ -10,15 +10,18 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import {
+  anneesHubbees,
   donneesHubbees,
   formaterNombre,
   labelDonnee,
   labelSecteur,
   secteursHubbes,
+  urlAnnee,
   urlDonnee,
   urlSecteur,
 } from '../lib/hub-view';
 import { computeCompteur } from '../lib/stats';
+import { classeStatut, labelStatut } from '../lib/fiche-view';
 
 const fiches = (await getCollection('catalog')).map((entry) => entry.data);
 const compteur = computeCompteur(fiches);
@@ -73,6 +76,24 @@ const barresDonnees = Object.entries(compteur.dataTypeBars)
 const totalStatut = Math.max(compteur.fichesCount, 1);
 const pctConfirmee = Math.round((compteur.statutSplit.confirmee / totalStatut) * 100);
 const pctRevendiquee = 100 - pctConfirmee;
+
+// Cartes stats historiques (répartitions par statut et par année).
+const statuts = (['revendiquee', 'confirmee'] as const).map((statut) => ({
+  label: labelStatut(statut),
+  count: compteur.statutSplit[statut],
+  pct: pct(compteur.statutSplit[statut], totalStatut),
+  classe: classeStatut(statut),
+}));
+
+const anneesHub = anneesHubbees(fiches);
+const barresAnnee = Object.entries(compteur.parAnnee)
+  .sort(([a], [b]) => b.localeCompare(a))
+  .map(([annee, n]) => ({
+    label: annee,
+    count: n,
+    pct: pct(n, Math.max(...Object.values(compteur.parAnnee), 1)),
+    href: anneesHub.has(annee) ? urlAnnee(Number(annee)) : null,
+  }));
 ---
 <Layout
   title="Les chiffres - France Passoire"
@@ -205,8 +226,56 @@ const pctRevendiquee = 100 - pctConfirmee;
           </div>
         </div>
 
+        <!-- Statut de vérification : répartition Revendiquée / Confirmée (aucun hub dédié) -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Statut de vérification</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Part des fiches confirmées par une source officielle :</p>
+          <div class="space-y-4">
+            {statuts.map((statut) => (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{statut.label}</span><span>{statut.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class={`h-full ${statut.classe === 'pill-confirmee' ? 'bg-brand-green' : 'bg-brand-orange'} border-r-2 border-brand-ink`} style={`width: ${statut.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p class="font-mono text-sm mt-6">
+            <a href="/" class="underline hover:text-brand-orange">→ voir les fiches sources</a>
+          </p>
+        </div>
+
+        <!-- Fuites par année : chaque barre lie le hub /<yyyy>/ s'il existe -->
+        <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 sm:p-8 shadow-hard">
+          <h2 class="font-display font-extrabold text-2xl mb-1">Fuites par année</h2>
+          <p class="text-sm font-body text-brand-ink/70 mb-8">Fiches par année d'attribution :</p>
+          <div class="space-y-4">
+            {barresAnnee.map((barre) => barre.href ? (
+              <a href={barre.href} class="block group">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1 group-hover:text-brand-hover transition-colors">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink group-hover:bg-brand-hover transition-colors" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </a>
+            ) : (
+              <div class="block">
+                <div class="flex justify-between font-mono text-sm font-bold mb-1">
+                  <span>{barre.label}</span><span>{barre.count}</span>
+                </div>
+                <div class="w-full h-7 bg-brand-paper border-2 border-brand-ink rounded-r-full overflow-hidden">
+                  <div class="h-full bg-brand-orange border-r-2 border-brand-ink" style={`width: ${barre.pct}%;`}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <!-- Cartes du template Gemini : barre scindée statut + ratio ransomware -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16 mt-16 pt-16 border-t-2 border-brand-ink/20 border-dashed">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-16 pt-16 border-t-2 border-brand-ink/20 border-dashed">
           <div>
             <h2 class="font-display font-extrabold text-3xl mb-6">Ça fuit trop vite...</h2>
             <div class="w-full h-12 bg-brand-cream border-2 border-brand-ink rounded-full flex overflow-hidden shadow-hard-sm mb-4">
@@ -231,12 +300,6 @@ const pctRevendiquee = 100 - pctConfirmee;
             </div>
           </div>
         </div>
-
-        <p class="text-center font-mono text-sm text-brand-ink/60">
-          <span class="bg-brand-cream border-2 border-brand-ink inline-block px-4 py-2 rounded-full shadow-sm">
-            Chaque chiffre est sourcé fiche par fiche. Voir <a href="/methode/" class="underline decoration-2 underline-offset-2 hover:text-brand-orange">la méthode</a>.
-          </span>
-        </p>
       </div>
     </section>
   )}
