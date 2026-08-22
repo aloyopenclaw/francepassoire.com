@@ -1,0 +1,30 @@
+{
+  "slug": "domaine-legal-20220110",
+  "entity": "Domaine Legal",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2022-01-10",
+    "publication": "2022-01-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non chiffré ; dump complet de la base de production (copie datée de juin 2020) contenant les échanges entre clients et services du site"
+  },
+  "data_types": ["documents", "identite"],
+  "sources": [
+    {
+      "label": "Zataz — Un important site juridique français piraté (10 janvier 2022)",
+      "url": "https://www.zataz.com/un-important-site-juridique-francais-pirate/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 janvier 2022, un pirate diffuse la base de données du site juridique français Domaine Legal. La copie date de juin 2020 et la brèche remonterait à fin 2020. Le dump de production contient les échanges entre clients et services du site, décrits comme sensibles. Le pirate présente la base comme toujours monétisable malgré son âge. Le volume de personnes concernées n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2022-01-10",
+      "event": "Un pirate diffuse sur un forum le dump de la base de production du site Domaine Legal (copie de juin 2020, brèche datée de fin 2020)."
+    }
+  ]
+}

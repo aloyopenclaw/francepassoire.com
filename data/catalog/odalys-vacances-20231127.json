@@ -1,0 +1,53 @@
+{
+  "slug": "odalys-vacances-20231127",
+  "entity": "Odalys Vacances",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "cactus",
+  "dates": {
+    "revendication": "2023-11-27",
+    "publication": "2023-11-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "548 Go de données publiées sur le blog de fuite du groupe Cactus (factures, bilans, comptabilité, données bancaires, dossiers clients et salariés) ; nombre de personnes non chiffré ; Odalys indique qu'une analyse ne relève pas de preuve de fuite externe"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Zataz — Piratage de l'un des leaders de l'hébergement touristique (29 novembre 2023)",
+      "url": "https://www.zataz.com/cactus-tourisme-ransomware/",
+      "kind": "article"
+    },
+    {
+      "label": "DPO Partage — Cyberattaque d'envergure contre Odalys Vacances : fuite massive de 548 Go de données par le groupe CACTUS (30 décembre 2023)",
+      "url": "https://www.dpo-partage.fr/cyberattaque-odalys-vacances/",
+      "kind": "article"
+    },
+    {
+      "label": "TourMaG — Odalys : RIB, adresses postales… publiés sur le dark web (17 avril 2024, avec droit de réponse d'Odalys)",
+      "url": "https://www.tourmag.com/Odalys-RIB-adresses-postales-publies-sur-le-dark-web_a122399.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Fin novembre 2023, le groupe Cactus revendique l'attaque d'Odalys Vacances, acteur de l'hébergement touristique présent dans plus de 400 résidences, et publie des échantillons sur son blog de fuite. Un index détaille les archives volées : bilans 2017-2023, comptabilité, archives bancaires, paie, dossiers clients et salariés. Environ 548 Go sont mis en ligne, dont des RIB et des adresses postales. Odalys reconnaît un incident de sécurité, indique avoir alerté la CNIL et affirme qu'une analyse experte ne relève pas de preuve de fuite externe. Le nombre de personnes concernées n'est pas chiffré.",
+  "timeline": [
+    {
+      "date": "2023-11-27",
+      "event": "Le groupe Cactus revendique l'attaque d'Odalys Vacances et diffuse des échantillons de données sur son blog de fuite."
+    },
+    {
+      "date": "2023-11-29",
+      "event": "Zataz documente la revendication : 20 000 appartements, 40 hôtels, 3 000 mobil-homes et 2 millions de vacanciers par an concernés par l'entité visée."
+    },
+    {
+      "date": "2023-12-30",
+      "event": "DPO Partage décrit la publication d'environ 548 Go : bilans, comptabilité, archives bancaires, dossiers clients et salariés ; Odalys conteste toute preuve d'exfiltration."
+    },
+    {
+      "date": "2024-04-17",
+      "event": "TourMaG relève la présence de RIB et d'adresses postales dans les données publiées ; Odalys exerce un droit de réponse."
+    }
+  ]
+}
