@@ -2,9 +2,10 @@
 /**
  * Catalogue des fuites + filtres — îlot client.
  * Les 24 premières cartes sont rendues au build (SSR, liens /fiche/<slug>/) ;
- * les filtres secteur/statut et « Afficher plus » travaillent côté client
- * sur le jeu complet passé en props (define:vars). L'état vide n'existe que
- * pour un filtre sans résultat : « Aucune fuite ne correspond à ces critères ».
+ * recherche (nom d'entité, insensible à la casse et aux diacritiques), tri
+ * (récence = ordre SSR / volume) et filtres secteur/statut travaillent côté
+ * client sur le jeu complet passé en props (define:vars). L'état vide n'existe
+ * que pour un filtre sans résultat : « Aucune fuite ne correspond à ces critères ».
  */
 export interface LeakCard {
   name: string;
@@ -30,23 +31,41 @@ const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
   a.localeCompare(b, 'fr'),
 );
 ---
-<div class="flex flex-wrap items-center gap-4 mb-8 bg-brand-cream border-2 border-brand-ink rounded-passoire p-4 shadow-hard-sm">
-  <span class="font-display font-bold flex items-center gap-2">
-    <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-    Filtrer
-  </span>
-  <select id="filter-secteur" aria-label="Filtrer par secteur" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
-    <option value="all">Tous secteurs</option>
-    {secteurs.map((secteur) => (
-      <option value={secteur}>{secteur}</option>
-    ))}
-  </select>
-  <select id="filter-statut" aria-label="Filtrer par statut" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
-    <option value="all">Tous statuts</option>
-    <option value="Revendiquée">Revendiquée</option>
-    <option value="Confirmée">Confirmée</option>
-  </select>
-  <button id="filter-reset" type="button" class="text-sm font-display underline decoration-2 hover:text-brand-orange ml-auto">Réinitialiser</button>
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-4 mb-8 bg-brand-cream border-2 border-brand-ink rounded-passoire p-4 shadow-hard-sm">
+
+  <!-- Explorer : libellé + recherche par entité -->
+  <div class="flex items-center gap-3 flex-grow">
+    <span class="font-display font-bold items-center gap-2 whitespace-nowrap hidden sm:flex">
+      <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+      Explorer
+    </span>
+    <div class="relative w-full max-w-md">
+      <svg width="16" height="16" viewBox="0 0 24 24" class="svg-ink absolute left-3 top-1/2 -translate-y-1/2 opacity-50" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="filter-search" aria-label="Rechercher une entité" placeholder="Rechercher une entité..." class="w-full appearance-none bg-brand-paper border-2 border-brand-ink rounded-full pl-9 pr-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange placeholder:text-brand-ink/50 transition-colors">
+    </div>
+  </div>
+
+  <!-- Tri + filtres secteur/statut -->
+  <div class="flex flex-wrap items-center gap-3">
+    <select id="sort-select" aria-label="Trier les fuites" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
+      <option value="recent">Tri : Plus récent</option>
+      <option value="oldest">Tri : Plus ancien</option>
+      <option value="size-desc">Tri : Plus grand volume</option>
+      <option value="size-asc">Tri : Plus petit volume</option>
+    </select>
+    <select id="filter-secteur" aria-label="Filtrer par secteur" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
+      <option value="all">Tous secteurs</option>
+      {secteurs.map((secteur) => (
+        <option value={secteur}>{secteur}</option>
+      ))}
+    </select>
+    <select id="filter-statut" aria-label="Filtrer par statut" class="appearance-none bg-brand-paper border-2 border-brand-ink rounded-full px-4 py-1.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-ink cursor-pointer hover:bg-brand-orange hover:text-brand-ink transition-colors">
+      <option value="all">Tous statuts</option>
+      <option value="Revendiquée">Revendiquée</option>
+      <option value="Confirmée">Confirmée</option>
+    </select>
+    <button id="filter-reset" type="button" class="text-sm font-display underline decoration-2 hover:text-brand-orange ml-auto lg:ml-2 whitespace-nowrap">Réinitialiser</button>
+  </div>
 </div>
 
 <div id="leaks-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 mb-12">
@@ -81,10 +100,19 @@ const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
   const grid = document.getElementById('leaks-grid');
   const filterSecteur = document.getElementById('filter-secteur');
   const filterStatut = document.getElementById('filter-statut');
+  const filterSearch = document.getElementById('filter-search');
+  const sortSelect = document.getElementById('sort-select');
   const resetButton = document.getElementById('filter-reset');
   const moreButton = document.getElementById('leaks-more');
-  if (grid && filterSecteur && filterStatut && resetButton) {
+  if (grid && filterSecteur && filterStatut && filterSearch && sortSelect && resetButton) {
     let visible = initialCount;
+
+    // Recherche insensible à la casse et aux diacritiques : « sante » trouve « Santé ».
+    const normaliser = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+    // Volume de carte : « 6 800 000 personnes » → 6800000 ; « Volume non
+    // communiqué » (aucun chiffre annoncé) → 0, soit le plus petit volume.
+    const volumeDe = (leak) => Number(leak.size.replace(/\D/g, '')) || 0;
 
     const card = (leak) => {
       const isConfirm = leak.status === 'Confirmée';
@@ -119,11 +147,25 @@ const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
       return d;
     };
 
-    const filtered = () =>
-      items.filter((leak) =>
+    const filtered = () => {
+      const q = normaliser(filterSearch.value.trim());
+      return items.filter((leak) =>
         (filterSecteur.value === 'all' || leak.sector === filterSecteur.value) &&
-        (filterStatut.value === 'all' || leak.status === filterStatut.value)
+        (filterStatut.value === 'all' || leak.status === filterStatut.value) &&
+        (q === '' || normaliser(leak.name).includes(q))
       );
+    };
+
+    // Tri : « recent » = ordre SSR (attribution desc, slug asc) ; « oldest »
+    // = ordre inverse ; volumes par nombre extrait de la carte (tri stable :
+    // les égalités conservent l'ordre récent d'abord).
+    const tries = () => {
+      const data = [...filtered()];
+      if (sortSelect.value === 'oldest') data.reverse();
+      else if (sortSelect.value === 'size-desc') data.sort((a, b) => volumeDe(b) - volumeDe(a));
+      else if (sortSelect.value === 'size-asc') data.sort((a, b) => volumeDe(a) - volumeDe(b));
+      return data;
+    };
 
     // Met à jour le bouton sans toucher à la grille (l'état SSR reste intact
     // jusqu'à la première interaction filtre).
@@ -139,7 +181,7 @@ const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
     };
 
     const render = () => {
-      const data = filtered().slice(0, visible);
+      const data = tries().slice(0, visible);
       grid.replaceChildren();
       if (data.length === 0) {
         grid.append(noMatchState());
@@ -152,9 +194,13 @@ const secteurs = [...new Set(items.map((item) => item.sector))].sort((a, b) =>
     updateMore();
     filterSecteur.addEventListener('change', () => { visible = step; render(); });
     filterStatut.addEventListener('change', () => { visible = step; render(); });
+    filterSearch.addEventListener('input', () => { visible = step; render(); });
+    sortSelect.addEventListener('change', () => { visible = step; render(); });
     resetButton.addEventListener('click', () => {
       filterSecteur.value = 'all';
       filterStatut.value = 'all';
+      filterSearch.value = '';
+      sortSelect.value = 'recent';
       visible = step;
       render();
     });
