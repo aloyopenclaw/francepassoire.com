@@ -1237,3 +1237,23 @@
 {"date":"2026-08-22","empreinte":"1c0e35e4a0afebe021c289ab1d40038a4642d33fcc66e761a1624d28c30d40ad","empreinte_precedente":"29b0664f40c906d71ccf4ab4e55e0132380d7fabb6030f99441af2be39a8b581","entite":"Ville de Betton","fiche_du":"ville-betton-20230901","seq":1237,"type":"ajout"}
 {"date":"2026-08-22","empreinte":"69027879f2272140356d3076943543604418dbca16d8a041dbfbc8f288fd5e25","empreinte_precedente":"1c0e35e4a0afebe021c289ab1d40038a4642d33fcc66e761a1624d28c30d40ad","entite":"Ville de Saint-Cloud","fiche_du":"ville-saint-cloud-20220127","seq":1238,"type":"ajout"}
 {"date":"2026-08-22","empreinte":"84fbb0681cbce030d866243cbf90e87d8b5bae176c19ae0babaacb3d3a523199","empreinte_precedente":"69027879f2272140356d3076943543604418dbca16d8a041dbfbc8f288fd5e25","entite":"Ville de Roubaix","fiche_du":"ville-de-roubaix-20250514","seq":1239,"type":"retrait"}
+{"date":"2026-08-22","empreinte":"7028e3f862f1280c39ea4b4162a70cd208940f772b98ef9358d1196a66c79556","empreinte_precedente":"84fbb0681cbce030d866243cbf90e87d8b5bae176c19ae0babaacb3d3a523199","entite":"Ville de Seclin (plateforme de prise de rendez-vous RDV360)","fiche_du":"seclin-20251126","seq":1240,"type":"ajout"}
+{"date":"2026-08-22","empreinte":"3dfdbfee04cb0c4ad7e6a5428c362e148e0192854f45ce93ed29b98e111f8890","empreinte_precedente":"7028e3f862f1280c39ea4b4162a70cd208940f772b98ef9358d1196a66c79556","entite":"Caisse d'allocations familiales (CAF) de Gironde","fiche_du":"caf-gironde-20230105","seq":1241,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"bd0918d79e5d0f027d754bbd882ca00ee89b9a9f8f55ed50099f11772f1477a7","empreinte_precedente":"3dfdbfee04cb0c4ad7e6a5428c362e148e0192854f45ce93ed29b98e111f8890","entite":"CHU de Rennes","fiche_du":"chu-rennes-20230621","seq":1242,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"6514c5baa84fe57133e930ed3a641b761c2780d66e33218059236422dbef7a3a","empreinte_precedente":"bd0918d79e5d0f027d754bbd882ca00ee89b9a9f8f55ed50099f11772f1477a7","entite":"Compagnie des Guides de Chamonix","fiche_du":"compagnie-des-guides-de-chamonix-20250815","seq":1243,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"b09c9f0a77d377257fb0815698cb889042c10ab7790e2f35bbc6d325e742a4a2","empreinte_precedente":"6514c5baa84fe57133e930ed3a641b761c2780d66e33218059236422dbef7a3a","entite":"Groupe Delcourt (éditeur de bande dessinée)","fiche_du":"groupe-delcourt-20250406","seq":1244,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"f56265fd9f6c8edfc4665108df91150a8bf2d7a110f4643d2f43ec109039607b","empreinte_precedente":"b09c9f0a77d377257fb0815698cb889042c10ab7790e2f35bbc6d325e742a4a2","entite":"Ornikar","fiche_du":"ornikar-20241024","seq":1245,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"9b532dae56280c18c6e09a1518c5e0ef91f0a1fe96d72046bf72828f5c84cf1a","empreinte_precedente":"f56265fd9f6c8edfc4665108df91150a8bf2d7a110f4643d2f43ec109039607b","entite":"Pôle emploi (via son prestataire Majorel)","fiche_du":"pole-emploi-majorel-20230823","seq":1246,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"28c0d463cd806bae5bbf12e1e57574eb723a25b02763e636fa508ad95085c04b","empreinte_precedente":"9b532dae56280c18c6e09a1518c5e0ef91f0a1fe96d72046bf72828f5c84cf1a","entite":"Ville de Sartrouville","fiche_du":"sartrouville-20230817","seq":1247,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"8c5eedcf8e4f97b43a686502db380244ef739f9561d1f2798cb71328b91a0611","empreinte_precedente":"28c0d463cd806bae5bbf12e1e57574eb723a25b02763e636fa508ad95085c04b","entite":"Ville de Seclin (plateforme de prise de rendez-vous RDV360)","fiche_du":"seclin-20251128","seq":1248,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"6e3d7639a553e53c0c9d08dc58f92283088e5dfc1499298bdb3ae4b8b94be70e","empreinte_precedente":"8c5eedcf8e4f97b43a686502db380244ef739f9561d1f2798cb71328b91a0611","entite":"Ville de Betton","fiche_du":"ville-betton-20230916","seq":1249,"type":"retrait"}
+
+{"date":"2026-08-22","empreinte":"b72c127472f32f4515e08f863651353926e0e2bca75007d2d6dca2b515be13ad","empreinte_precedente":"6e3d7639a553e53c0c9d08dc58f92283088e5dfc1499298bdb3ae4b8b94be70e","entite":"Ville de Saint-Cloud","fiche_du":"ville-saint-cloud-20220121","seq":1250,"type":"retrait"}
