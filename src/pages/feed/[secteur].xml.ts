@@ -23,7 +23,7 @@ export const GET: APIRoute = async ({ params }) => {
     .map((entry) => entry.data)
     .filter((fiche) => fiche.secteur === secteur);
   const xml = buildRss(fiches, {
-    titre: `FrancePassoire — fuites de données : ${SECTEUR_LABELS[secteur]}`,
+    titre: `FrancePassoire : fuites de données : ${SECTEUR_LABELS[secteur]}`,
     lien: SITE_URL,
     description: `Fuites de données personnelles dans le secteur « ${SECTEUR_LABELS[secteur]} », recensées et sourcées par FrancePassoire.`,
   });
