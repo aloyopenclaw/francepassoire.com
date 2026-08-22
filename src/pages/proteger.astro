@@ -3,11 +3,40 @@ import Layout from '../layouts/Layout.astro';
 import PasswordChecker from '../components/PasswordChecker.astro';
 import DpoGenerator from '../components/DpoGenerator.astro';
 import WatchlistForm from '../components/WatchlistForm.astro';
+
+/**
+ * Page « Se protéger » — gabarit propriétaire QueFaire.html (page 6),
+ * intégrée as-is : héros « Ne subissez plus. », sections 1/2/3, bandeau
+ * de retour veille, grille de scénarios. Les trois outils mockés du
+ * gabarit sont remplacés par les composants réels :
+ *   Vérifier   → PasswordChecker (k-anonymité)
+ *   Surveiller → WatchlistForm (double opt-in + Turnstile)
+ *   Surveiller → DpoGenerator (slot « Lettre type au DPO », 100 % local)
+ */
 ---
 <Layout
   title="Se protéger - France Passoire"
   description="Vérifiez vos mots de passe (k-anonymité) et agissez concrètement : le guide d'autoprotection de FrancePassoire."
 >
+  <!-- Bandeau retour veille : ?veille=confirmee|invalide|desinscrit (gabarit QueFaire).
+       Liens de confirmation / désinscription des emails de veille atterrissent ici. -->
+  <div id="veille-banner-container" class="bg-brand-paper border-b-2 border-brand-ink py-6" role="status" aria-live="polite" hidden>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div id="veille-banner-card" class="border-4 border-brand-ink rounded-passoire shadow-[8px_8px_0px_0px_#241405] overflow-hidden flex flex-col md:flex-row relative">
+        <button id="veille-banner-close" type="button" class="absolute top-4 right-4 p-2 rounded-full border-2 border-transparent hover:border-current opacity-70 hover:opacity-100 transition-all z-10" aria-label="Fermer">
+          <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" stroke="currentColor" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div id="veille-banner-strip" class="w-full md:w-1/3 p-6 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-brand-ink">
+          <div id="veille-banner-icon-container" class="w-12 h-12 rounded-full border-2 border-brand-ink flex items-center justify-center mb-4 bg-brand-cream shadow-sm"></div>
+          <h2 id="veille-banner-title" class="font-display font-black text-2xl uppercase tracking-tight"></h2>
+        </div>
+        <div id="veille-banner-content" class="w-full md:w-2/3 p-6 flex items-center bg-brand-cream">
+          <p id="veille-banner-text" class="font-body font-medium text-lg leading-relaxed text-brand-ink"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero -->
   <section class="bg-brand-cream border-b-2 border-brand-ink py-16 text-center">
     <h1 class="font-display font-extrabold text-5xl sm:text-7xl mb-12">Ne subissez plus.</h1>
@@ -17,24 +46,6 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       <a href="#proteger-surveiller" class="bg-[#0E7A46] text-brand-cream border-2 border-brand-ink px-8 py-4 rounded-passoire shadow-[4px_4px_0px_0px_#241405] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#241405] transition-all font-display font-bold text-xl">3. Surveiller</a>
     </div>
   </section>
-
-  <!-- Bandeau retour veille : ?veille=confirmee|invalide|desinscrit (design Gemini 21/08) -->
-  <div id="veille-banner" class="bg-brand-paper border-b-2 border-brand-ink py-6" role="status" aria-live="polite" hidden>
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="border-4 border-brand-ink rounded-passoire shadow-[8px_8px_0px_0px_#241405] overflow-hidden flex flex-col md:flex-row relative">
-        <button id="veille-banner-close" type="button" class="absolute top-4 right-4 p-2 rounded-full border-2 border-transparent hover:border-current opacity-70 hover:opacity-100 transition-all z-10" aria-label="Fermer">
-          <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink" stroke="currentColor" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-        <div id="veille-banner-strip" class="w-full md:w-1/3 p-6 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-brand-ink">
-          <div id="veille-banner-icon-container" class="w-12 h-12 rounded-full border-2 border-brand-ink flex items-center justify-center mb-4 bg-brand-cream shadow-sm"></div>
-          <h2 id="veille-banner-title" class="font-display font-black text-2xl uppercase tracking-tight"></h2>
-        </div>
-        <div class="w-full md:w-2/3 p-6 flex items-center bg-brand-cream">
-          <p id="veille-banner-text" class="font-body font-medium text-lg leading-relaxed text-brand-ink"></p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="bg-brand-paper space-y-24 py-16">
 
@@ -46,7 +57,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       </h2>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Vérificateur de mot de passe (k-anonymité réelle) -->
+        <!-- Slot « Votre mot de passe est-il cramé ? » du gabarit : vrai vérificateur k-anonymité -->
         <PasswordChecker />
 
         <!-- Liens externes réels uniquement -->
@@ -59,7 +70,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
             <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink group-hover:text-brand-orange"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
 
-          <!-- Template : lien ancre-vide mort → ressource officielle réelle (cybermalveillance.gouv.fr, curl 200). Copie template exacte, seul le href diffère. -->
+          <!-- Template : lien ancre-vide mort → ressource officielle réelle (cybermalveillance.gouv.fr). Copie template exacte, seul le href diffère. -->
           <a href="https://www.cybermalveillance.gouv.fr" target="_blank" rel="noopener noreferrer" class="bg-brand-cream border-2 border-brand-ink rounded-xl p-5 shadow-[4px_4px_0px_0px_#241405] hover:shadow-[6px_6px_0px_0px_#241405] hover:-translate-y-1 transition-all flex items-center justify-between group">
             <div>
               <h4 class="font-display font-bold text-xl">Votre numéro de téléphone</h4>
@@ -86,98 +97,98 @@ import WatchlistForm from '../components/WatchlistForm.astro';
         Agir
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="space-y-12">
         <!-- Les 3 gestes -->
         <div>
-          <h3 class="font-display font-extrabold text-2xl mb-6">L'hygiène vitale : les 3 gestes</h3>
-          <div class="space-y-4">
-            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
-              <div class="font-mono font-bold text-3xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">1</div>
+          <h3 class="font-display font-extrabold text-2xl mb-6">L'hygiène vitale : les 3 gestes universels</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-passoire flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
+              <div class="font-mono font-bold text-3xl text-brand-orange drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">1</div>
               <div>
-                <h4 class="font-display font-bold text-lg">Changer le mot de passe (et l'uniquefier)</h4>
-                <p class="text-sm mt-1">Utilisez un gestionnaire de mots de passe pour avoir un mot de passe long et unique par site.</p>
+                <h4 class="font-display font-bold text-lg leading-tight">Changer le mot de passe</h4>
+                <p class="text-sm mt-1">Surtout si vous l'utilisez sur plusieurs sites différents.</p>
               </div>
             </div>
-            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
-              <div class="font-mono font-bold text-3xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">2</div>
+            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-passoire flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
+              <div class="font-mono font-bold text-3xl text-brand-orange drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">2</div>
               <div>
-                <h4 class="font-display font-bold text-lg">Activer la double authentification</h4>
-                <p class="text-sm mt-1">Surtout sur la boîte mail (qui permet de réinitialiser tous les autres comptes).</p>
+                <h4 class="font-display font-bold text-lg leading-tight">Activer la double authentification</h4>
+                <p class="text-sm mt-1">En priorité absolue sur votre boîte mail principale.</p>
               </div>
             </div>
-            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-xl flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
-              <div class="font-mono font-bold text-3xl text-brand-hover drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">3</div>
+            <div class="bg-brand-cream border-2 border-brand-ink p-5 rounded-passoire flex gap-4 items-start shadow-[3px_3px_0px_0px_#241405]">
+              <div class="font-mono font-bold text-3xl text-brand-orange drop-shadow-[1px_1px_0px_rgba(36,20,5,1)] mt-[-4px]">3</div>
               <div>
-                <h4 class="font-display font-bold text-lg">Surveiller ses comptes</h4>
-                <p class="text-sm mt-1">Vérifiez vos relevés bancaires et soyez ultra-vigilants sur les appels/SMS inconnus.</p>
+                <h4 class="font-display font-bold text-lg leading-tight">Surveiller ses comptes</h4>
+                <p class="text-sm mt-1">Soyez paranoïaque avec les SMS, appels ou emails inattendus.</p>
               </div>
             </div>
           </div>
-
-          <a href="#proteger-dpo" class="mt-4 flex items-center justify-between gap-4 bg-brand-paper border-2 border-brand-ink rounded-xl p-5 shadow-[3px_3px_0px_0px_#241405] hover:bg-brand-orange/10 transition-colors group">
-            <div>
-              <h4 class="font-display font-bold text-lg">Et si vos données ont déjà fuité ?</h4>
-              <p class="text-sm mt-1">Exercez vos droits RGPD : générez une lettre type pour le DPO de l'entreprise concernée.</p>
-            </div>
-            <svg width="22" height="22" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 group-hover:stroke-brand-orange"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </a>
         </div>
 
-        <!-- Scenarios -->
+        <!-- Scenarios Grid.
+             Gabarit : boutons navigate('email'|'tel'|'mdp'|'nir') vers des sous-pages
+             qui n'existent pas sur le site → ancres vers les sections de CETTE page
+             qui traitent le scénario (même logique que les sous-pages du gabarit,
+             dont les CTA finaux pointent vers #proteger-verifier / #proteger-surveiller). -->
         <div>
-          <h3 class="font-display font-extrabold text-2xl mb-6">Que faire si...</h3>
-          <div class="space-y-4">
-            <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405] overflow-hidden">
-              <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center hover:bg-brand-orange/10 transition-colors">
-                J'ai reçu un mail de l'entreprise
-                <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </summary>
-              <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
-                Si l'entreprise vous notifie d'une fuite, appliquez immédiatement les 3 gestes sur votre compte chez eux. <strong>Attention :</strong> ne cliquez jamais sur un lien dans ce mail pour changer votre mot de passe, tapez l'adresse du site vous-même dans le navigateur (risque de phishing).
-              </div>
-            </details>
+          <h3 class="font-display font-extrabold text-2xl mb-6">Choisissez votre scénario</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405] overflow-hidden">
-              <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center hover:bg-brand-orange/10 transition-colors">
-                Mon email est dans une fuite
-                <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </summary>
-              <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
-                Attendez-vous à recevoir davantage de spams et de tentatives de phishing. Méfiez-vous des emails alarmants (colis bloqués, compte suspendu, amendes). Ne payez jamais de rançon d'extorsion par email.
-              </div>
-            </details>
+            <a href="#proteger-verifier" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+              <div class="mb-4"><span class="bg-brand-orange text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Cette semaine</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon email a fuité</h3>
+              <p class="font-body text-sm opacity-80">Phishing ciblé, spam, et risque sur vos autres comptes.</p>
+            </a>
 
-            <details class="group bg-brand-cream border-2 border-brand-ink rounded-xl shadow-[3px_3px_0px_0px_#241405] overflow-hidden">
-              <summary class="p-5 font-display font-bold text-lg cursor-pointer flex justify-between items-center hover:bg-brand-orange/10 transition-colors">
-                Mon numéro a fuité
-                <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink transition-transform group-open:rotate-180"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </summary>
-              <div class="p-5 pt-0 text-sm font-body border-t-2 border-brand-ink/10 mt-2">
-                Alerte rouge sur le "smishing" (phishing par SMS) et les appels frauduleux (faux conseiller bancaire). Votre banque ne vous demandera jamais d'annuler une opération par SMS ou de lui donner un code. Raccrochez et rappelez le numéro officiel.
-              </div>
-            </details>
+            <a href="#proteger-surveiller" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+              <div class="mb-4"><span class="bg-brand-orange text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Cette semaine</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon numéro a fuité</h3>
+              <p class="font-body text-sm opacity-80">Smishing, démarchage abusif et fraude au conseiller.</p>
+            </a>
+
+            <a href="#proteger-verifier" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+              <div class="mb-4"><span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Agissez aujourd'hui</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon mot de passe a fuité</h3>
+              <p class="font-body text-sm opacity-80">Risque immédiat d'accès à vos comptes (credential stuffing).</p>
+            </a>
+
+            <a href="#proteger-surveiller" class="text-left bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 shadow-hard card-hover transition-transform group">
+              <div class="mb-4"><span class="bg-brand-red text-brand-cream border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Agissez aujourd'hui</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2 group-hover:text-brand-orange transition-colors">Mon numéro de Sécu a fuité</h3>
+              <p class="font-body text-sm opacity-80">Usurpation d'identité, fraude aux remboursements.</p>
+            </a>
+
+            <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 opacity-60 cursor-not-allowed grayscale">
+              <div class="mb-4"><span class="bg-brand-paper text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Bientôt</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2">Mes coordonnées bancaires (RIB)</h3>
+              <p class="font-body text-sm">Fraude aux prélèvements SEPA.</p>
+            </div>
+
+            <div class="bg-brand-cream border-2 border-brand-ink rounded-passoire p-6 opacity-60 cursor-not-allowed grayscale hidden sm:block">
+              <div class="mb-4"><span class="bg-brand-paper text-brand-ink border-2 border-brand-ink rounded-full px-3 py-1 font-mono text-xs shadow-sm font-bold">Bientôt</span></div>
+              <h3 class="font-display font-bold text-2xl mb-2">J'ai reçu un mail de l'entreprise</h3>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: SURVEILLER (veille email double opt-in + lettre type DPO) -->
-    <section id="proteger-surveiller" class="max-w-4xl mx-auto px-4 sm:px-6 pb-16 scroll-mt-24">
+    <!-- SECTION 3: SURVEILLER -->
+    <section id="proteger-surveiller" class="max-w-7xl mx-auto px-4 sm:px-6 pb-16 scroll-mt-24">
       <h2 class="font-display font-black text-4xl mb-8 flex items-center gap-3">
         <span class="bg-[#0E7A46] text-brand-cream w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-ink shadow-sm text-2xl">3</span>
         Surveiller
       </h2>
 
-      <WatchlistForm />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <!-- Slot « Créer une alerte personnalisée » du gabarit : vrai formulaire
+             (sondage de statut /api/watchlist/status, double opt-in, Turnstile) -->
+        <WatchlistForm />
 
-      <!-- Slot « Lettre type au DPO » du template : notre vrai générateur 100 % local -->
-      <div id="proteger-dpo" class="mt-12 scroll-mt-24">
-        <h3 class="font-display font-extrabold text-2xl mb-2">Et si vos données ont déjà fuité ? Exiger ses droits</h3>
-        <p class="font-body mb-8 max-w-3xl">
-          Un mois : c'est le délai légal dont dispose une organisation pour répondre à une demande RGPD.
-          Une lettre claire, article en main, débloque la plupart des situations · générez la vôtre ci-dessous,
-          elle s'écrit entièrement dans votre navigateur.
-        </p>
+        <!-- Slot « Lettre type au DPO » du gabarit : vrai générateur 100 % local
+             (pré-remplissage ?entite= conservé via le composant) -->
         <DpoGenerator />
       </div>
     </section>
@@ -185,8 +196,10 @@ import WatchlistForm from '../components/WatchlistForm.astro';
   </div>
 
   <script is:inline>
-    // Bandeau de retour de la veille — design Gemini : titre + icône par état,
-    // strip coloré, carte scindée, bouton fermer, URL nettoyée.
+    // Bandeau de retour de la veille · gabarit QueFaire : titre + icône par état,
+    // strip coloré (invalide = orange à pois bg-dot-matrix), carte scindée,
+    // bouton fermer, URL nettoyée. Même mécanisme que l'existant : les emails
+    // de confirmation et de désinscription pointent ici avec ?veille=….
     (function () {
       var params = new URLSearchParams(window.location.search);
       var veille = params.get('veille');
@@ -201,7 +214,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
         invalide: {
           title: 'Lien Expiré',
           text: "Ce lien de confirmation a pris la poussière (il n'est valide que 24h) ou a déjà été utilisé. Relancez simplement une demande plus bas sur cette page.",
-          stripClass: 'bg-brand-orange text-brand-ink',
+          stripClass: 'bg-brand-orange text-brand-ink bg-dot-matrix',
           icon: '<svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink text-brand-ink" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>'
         },
         desinscrit: {
@@ -221,7 +234,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       var text = document.getElementById('veille-banner-text');
       var strip = document.getElementById('veille-banner-strip');
       var icon = document.getElementById('veille-banner-icon-container');
-      var banner = document.getElementById('veille-banner');
+      var banner = document.getElementById('veille-banner-container');
       var close = document.getElementById('veille-banner-close');
       if (!title || !text || !banner) return;
       title.innerText = conf.title;
@@ -229,6 +242,7 @@ import WatchlistForm from '../components/WatchlistForm.astro';
       if (icon) icon.innerHTML = conf.icon;
       if (strip) strip.className = 'w-full md:w-1/3 p-6 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-brand-ink ' + conf.stripClass;
       if (close) close.addEventListener('click', function () { banner.hidden = true; });
+      banner.classList.add('animate-slide-up');
       banner.hidden = false;
       banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
     })();

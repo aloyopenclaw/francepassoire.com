@@ -1009,7 +1009,7 @@ export async function enqueueInstantAlert(
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
 
-  if (env.RUN_STATE) {
+  if (env.RUN_STATE && new Date().getUTCMinutes() < 15) {
     await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
   }
   log('instant: sweep démarré');
@@ -1502,7 +1502,7 @@ export async function runInstantSweep(
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
 
-  if (env.RUN_STATE) {
+  if (env.RUN_STATE && new Date().getUTCMinutes() < 15) {
     await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
   }
   log('instant: sweep démarré');
