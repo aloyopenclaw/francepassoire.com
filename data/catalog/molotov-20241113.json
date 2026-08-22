@@ -3,18 +3,20 @@
   "entity": "Molotov",
   "siren": "807393111",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-11-13",
-    "publication": "2024-11-13",
-    "confirmation": "2024-11-13"
+    "publication": "2024-11-13"
   },
   "volume": {
     "count": 10800000,
     "unit": "enregistrements",
     "label": "10,8 millions d'adresses e-mail, ainsi que des noms, prénoms et dates de naissance ; aucun mot de passe ni donnée bancaire selon Molotov ; fuite survenue en octobre 2024"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "Le Figaro — Molotov victime à son tour d'une fuite de données, dix millions d'adresses mail volées (13 novembre 2024)",
@@ -42,7 +44,7 @@
       "kind": "article"
     }
   ],
-  "description": "La plateforme française de streaming Molotov révèle le 13 novembre 2024 une « intrusion » qui a permis à des tiers non autorisés d'accéder aux adresses e-mail de 10,8 millions de clients, ainsi qu'à des noms, prénoms et dates de naissance. La fuite, survenue en octobre, exclut les mots de passe et les données bancaires selon l'entreprise, qui a alerté la CNIL et invité ses utilisateurs à la vigilance face au phishing. Ce volume, l'un des plus importants d'adresses françaises issu d'une seule plateforme, est relayé par toute la presse nationale.",
+  "description": "Selon la presse, la plateforme française de streaming Molotov révèle le 13 novembre 2024 une « intrusion » qui a permis à des tiers non autorisés d'accéder aux adresses e-mail de 10,8 millions de clients, ainsi qu'à des noms, prénoms et dates de naissance. La fuite, survenue en octobre, exclut les mots de passe et les données bancaires selon l'entreprise, qui a alerté la CNIL et invité ses utilisateurs à la vigilance face au phishing. Ce volume, l'un des plus importants d'adresses françaises issu d'une seule plateforme, est relayé par toute la presse nationale.",
   "timeline": [
     {
       "date": "2024-11-13",

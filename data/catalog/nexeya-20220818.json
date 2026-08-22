@@ -2,11 +2,10 @@
   "slug": "nexeya-20220818",
   "entity": "Nexeya (Hensoldt Nexeya France)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-08-18",
-    "publication": "2022-08-18",
-    "confirmation": "2022-08-18"
+    "publication": "2022-08-18"
   },
   "volume": {
     "count": 0,
@@ -33,7 +32,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 18 août 2022, le groupe allemand Hensoldt reconnaît dans un communiqué une sérieuse cyberattaque contre sa filiale française Nexeya, spécialiste de l'électronique pour les secteurs de la défense, du ferroviaire, de l'énergie, de l'aéronautique et du spatial. Les systèmes sont chiffrés et une fuite de données qualifiée de considérable est redoutée. Le site web de l'entreprise est hors service. Nexeya produit notamment le système de combat Lyncea des frégates de surveillance de la Marine nationale. L'origine et l'ampleur de l'agression restent à déterminer avec les autorités.",
+  "description": "Selon la presse, le 18 août 2022, le groupe allemand Hensoldt reconnaît dans un communiqué une sérieuse cyberattaque contre sa filiale française Nexeya, spécialiste de l'électronique pour les secteurs de la défense, du ferroviaire, de l'énergie, de l'aéronautique et du spatial. Les systèmes sont chiffrés et une fuite de données qualifiée de considérable est redoutée. Le site web de l'entreprise est hors service. Nexeya produit notamment le système de combat Lyncea des frégates de surveillance de la Marine nationale. L'origine et l'ampleur de l'agression restent à déterminer avec les autorités.",
   "timeline": [
     {
       "date": "2022-08-18",

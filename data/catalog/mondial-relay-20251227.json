@@ -3,18 +3,20 @@
   "entity": "Mondial Relay",
   "siren": "385218631",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-27",
-    "publication": "2025-12-27",
-    "confirmation": "2025-12-27"
+    "publication": "2025-12-27"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "nombre de clients concernés non communiqué par Mondial Relay (analyse en cours) ; 25 millions de données revendiquées par le groupe dumpsec pour Mondial Relay et Colis Privé réunis"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "franceinfo — Mondial Relay touché par une cyberattaque qui a volé les données de ses clients",
@@ -37,7 +39,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 27 décembre 2025, Mondial Relay, filiale du groupe InPost, révèle une cyberattaque détectée le 23 décembre contre sa plateforme en ligne de suivi des colis destinée aux e-commerçants. Des accès non autorisés ont exposé des données clients : nom, prénom, adresses e-mail et postale, téléphone, ainsi que numéros d'expédition et statuts de livraison. Aucune donnée bancaire, mot de passe ni information de paiement n'était accessible selon l'entreprise. Le gang français dumpsec a mis les données en vente sur BreachForums, rapporte 01net. La CNIL est informée, les accès frauduleux sont suspendus et une plainte est annoncée.",
+  "description": "Selon la presse, le 27 décembre 2025, Mondial Relay, filiale du groupe InPost, révèle une cyberattaque détectée le 23 décembre contre sa plateforme en ligne de suivi des colis destinée aux e-commerçants. Des accès non autorisés ont exposé des données clients : nom, prénom, adresses e-mail et postale, téléphone, ainsi que numéros d'expédition et statuts de livraison. Aucune donnée bancaire, mot de passe ni information de paiement n'était accessible selon l'entreprise. Le gang français dumpsec a mis les données en vente sur BreachForums, rapporte 01net. Selon la presse, la CNIL est informée, les accès frauduleux sont suspendus et une plainte est annoncée.",
   "timeline": [
     {
       "date": "2025-12-23",

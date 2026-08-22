@@ -3,11 +3,10 @@
   "entity": "Picard",
   "siren": "784939688",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-11-12",
-    "publication": "2024-11-12",
-    "confirmation": "2024-11-12"
+    "publication": "2024-11-12"
   },
   "volume": {
     "count": 45000,
@@ -36,7 +35,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 12 novembre 2024, Picard avertit par courriel 45 000 clients de son programme de fidélité d'un « accès non autorisé » à leurs comptes. Les pirates ont pu consulter noms, prénoms, dates de naissance, adresses e-mail et postales et numéros de téléphone. Ces éléments viennent de l'enseigne, reprise par BFM TV et Le Parisien. Les historiques de commandes et éléments de fidélité figurent parmi les données exposées selon les relais de veille. L'enseigne de surgelés recommande la vigilance face au phishing. Aucune donnée bancaire n'est concernée.",
+  "description": "Selon la presse, le 12 novembre 2024, Picard avertit par courriel 45 000 clients de son programme de fidélité d'un « accès non autorisé » à leurs comptes. Les pirates ont pu consulter noms, prénoms, dates de naissance, adresses e-mail et postales et numéros de téléphone. Ces éléments viennent de l'enseigne, reprise par BFM TV et Le Parisien. Les historiques de commandes et éléments de fidélité figurent parmi les données exposées selon les relais de veille. L'enseigne de surgelés recommande la vigilance face au phishing. Aucune donnée bancaire n'est concernée.",
   "timeline": [
     {
       "date": "2024-11-12",

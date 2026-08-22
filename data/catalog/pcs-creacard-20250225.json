@@ -3,11 +3,10 @@
   "entity": "PCS (CréaCard)",
   "siren": "520833302",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-02-25",
-    "publication": "2025-02-25",
-    "confirmation": "2025-02-25"
+    "publication": "2025-02-25"
   },
   "volume": {
     "count": 0,
@@ -24,7 +23,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 25 février 2025, Sud Ouest révèle une vague d’opérations frauduleuses visant les cartes prépayées PCS, émises par la société française CréaCard. Selon son dirigeant, des paiements frauduleux à l’étranger sont remontés à partir de décembre 2024, puis l’ampleur s’est accélérée début février. Des numéros de carte ont été usurpés et utilisés avec le code de la bande magnétique pour des achats dans le monde entier. L’origine du vol de données, possiblement chez des sites marchands, reste à établir. L’entreprise évoque plusieurs centaines de clients concernés et quelques milliers de transactions ; 95 % des clients auraient été remboursés.",
+  "description": "Selon la presse, le 25 février 2025, Sud Ouest révèle une vague d’opérations frauduleuses visant les cartes prépayées PCS, émises par la société française CréaCard. Selon son dirigeant, des paiements frauduleux à l’étranger sont remontés à partir de décembre 2024, puis l’ampleur s’est accélérée début février. Des numéros de carte ont été usurpés et utilisés avec le code de la bande magnétique pour des achats dans le monde entier. L’origine du vol de données, possiblement chez des sites marchands, reste à établir. L’entreprise évoque plusieurs centaines de clients concernés et quelques milliers de transactions ; 95 % des clients auraient été remboursés.",
   "timeline": [
     {
       "date": "2025-02-15",

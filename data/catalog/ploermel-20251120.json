@@ -3,11 +3,10 @@
   "entity": "Ville de Ploërmel (plateforme de prise de rendez-vous RDV360)",
   "siren": "200086791",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-20",
-    "publication": "2025-11-20",
-    "confirmation": "2025-11-20"
+    "publication": "2025-11-20"
   },
   "volume": {
     "count": 0,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Mi-novembre 2025, la ville de Ploërmel (Morbihan) est parmi les communes bretonnes victimes d’une fuite massive de données personnelles via RDV360, l’application de rendez-vous en ligne utilisée pour les demandes de cartes d’identité et de passeports. France 3 Bretagne recense le 20 novembre au moins cinq communes ayant confirmé un vol de données : nom, prénom, code postal, adresse e-mail et numéro de téléphone des usagers. Le fournisseur a reconnu une intrusion malveillante ; les élus locaux dénoncent la prise en charge de l’incident par le prestataire. Les usagers sont appelés à la vigilance contre le démarchage et le phishing.",
+  "description": "Mi-novembre 2025, la ville de Ploërmel (Morbihan) est parmi les communes bretonnes victimes d’une fuite massive de données personnelles via RDV360, l’application de rendez-vous en ligne utilisée pour les demandes de cartes d’identité et de passeports. France 3 Bretagne recense le 20 novembre au moins cinq communes ayant confirmé un vol de données : nom, prénom, code postal, adresse e-mail et numéro de téléphone des usagers. Selon la presse, le fournisseur a reconnu une intrusion malveillante ; les élus locaux dénoncent la prise en charge de l’incident par le prestataire. Les usagers sont appelés à la vigilance contre le démarchage et le phishing.",
   "timeline": [
     {
       "date": "2025-11-20",

@@ -2,11 +2,10 @@
   "slug": "parcoursup-20230728",
   "entity": "Parcoursup (plateforme d'accès à l'enseignement supérieur)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-07-28",
-    "publication": "2023-07-31",
-    "confirmation": "2023-07-31"
+    "publication": "2023-07-31"
   },
   "volume": {
     "count": 0,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 28 juillet 2023, un hacker revendique sur un forum le piratage de Parcoursup et affiche comme preuve les données d'une soixantaine d'étudiants, suscitant l'inquiétude sur les réseaux sociaux pour la plateforme qui gère les dossiers d'environ un million de candidats par an. Le ministère de l'Enseignement supérieur écarte toute intrusion dans le système d'information de Parcoursup et identifie la présence en ligne de données personnelles appartenant à des candidats aux formations d'un lycée de l'académie de Rennes. Une base de noms d'utilisateurs et de mots de passe servant à se connecter à la plateforme a été volée depuis cet établissement breton. Le lycée, accompagné par le rectorat, a déposé plainte et notifié l'incident à la CNIL ; les candidats concernés ont été prévenus.",
+  "description": "Le 28 juillet 2023, un hacker revendique sur un forum le piratage de Parcoursup et affiche comme preuve les données d'une soixantaine d'étudiants, suscitant l'inquiétude sur les réseaux sociaux pour la plateforme qui gère les dossiers d'environ un million de candidats par an. Le ministère de l'Enseignement supérieur écarte toute intrusion dans le système d'information de Parcoursup et identifie la présence en ligne de données personnelles appartenant à des candidats aux formations d'un lycée de l'académie de Rennes. Une base de noms d'utilisateurs et de mots de passe servant à se connecter à la plateforme a été volée depuis cet établissement breton. Selon la presse, le lycée, accompagné par le rectorat, a déposé plainte et notifié l'incident à la CNIL ; les candidats concernés ont été prévenus.",
   "timeline": [
     {
       "date": "2023-07-28",

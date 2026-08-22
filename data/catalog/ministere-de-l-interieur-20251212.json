@@ -3,18 +3,19 @@
   "entity": "Ministère de l'Intérieur",
   "siren": "110014016",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-12",
-    "publication": "2025-12-12",
-    "confirmation": "2025-12-17"
+    "publication": "2025-12-12"
   },
   "volume": {
     "count": 16400000,
     "unit": "personnes",
     "label": "16,4 millions de personnes selon la revendication publiée sur BreachForums (chiffre revendiqué, non confirmé) ; le ministre évoque quelques dizaines de fiches extraites"
   },
-  "data_types": ["identite"],
+  "data_types": [
+    "identite"
+  ],
   "sources": [
     {
       "label": "Le Parisien — Cybercriminalité : les fichiers de police piratés ?",
@@ -37,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Une intrusion dans les messageries du ministère de l'Intérieur, partie d'un service local en Charente-Maritime dans la nuit du 11 au 12 décembre 2025, est révélée le 12 décembre puis confirmée par le ministre Laurent Nuñez. Un message publié sur BreachForums sous le pseudonyme « Indra » revendique l'accès à des fichiers policiers — dont le TAJ et le fichier des personnes recherchées — et affirme détenir des données sur 16,4 millions de personnes ; ces volumes ne sont pas confirmés. Le 17 décembre, le ministre reconnaît que des fichiers importants ont été consultés et que « quelques dizaines de fiches » ont pu être extraites. La CNIL est notifiée et une enquête judiciaire est ouverte.",
+  "description": "Selon la presse, une intrusion dans les messageries du ministère de l'Intérieur, partie d'un service local en Charente-Maritime dans la nuit du 11 au 12 décembre 2025, est révélée le 12 décembre puis confirmée par le ministre Laurent Nuñez. Un message publié sur BreachForums sous le pseudonyme « Indra » revendique l'accès à des fichiers policiers — dont le TAJ et le fichier des personnes recherchées — et affirme détenir des données sur 16,4 millions de personnes ; ces volumes ne sont pas confirmés. Selon la presse, le 17 décembre, le ministre reconnaît que des fichiers importants ont été consultés et que « quelques dizaines de fiches » ont pu être extraites. La CNIL est notifiée et une enquête judiciaire est ouverte.",
   "timeline": [
     {
       "date": "2025-12-12",

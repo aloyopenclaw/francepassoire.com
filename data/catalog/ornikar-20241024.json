@@ -2,18 +2,20 @@
   "slug": "ornikar-20241024",
   "entity": "Ornikar",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-10-22",
-    "publication": "2024-10-24",
-    "confirmation": "2024-10-24"
+    "publication": "2024-10-24"
   },
   "volume": {
     "count": 4300000,
     "unit": "comptes",
     "label": "4,3 millions de comptes mis en vente sur un forum selon le chercheur SaxX ; Ornikar n'a pas précisé le nombre de clients touchés ; aucun mot de passe ni donnée bancaire selon l'entreprise"
   },
-  "data_types": ["identite", "coordonnees"],
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
   "sources": [
     {
       "label": "RTL — La plateforme d'auto-école en ligne Ornikar victime d'une fuite de données (24 octobre 2024)",
@@ -31,7 +33,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Le 24 octobre 2024, Ornikar informe ses clients d'une « intrusion externe » dans son système d'information : noms, prénoms, e-mails, numéros de téléphone, dates de naissance et adresses postales ont été exposés. L'entreprise écarte les mots de passe et les données bancaires, saisit la CNIL et renforce ses infrastructures. Deux jours plus tôt, un cybercriminel revendiquait l'attaque et mettait en vente une base de 4,3 millions de comptes, chiffre avancé par le chercheur SaxX et non confirmé par l'entreprise ; seuls trois profils avaient été diffusés en échantillon.",
+  "description": "Selon la presse, le 24 octobre 2024, Ornikar informe ses clients d'une « intrusion externe » dans son système d'information : noms, prénoms, e-mails, numéros de téléphone, dates de naissance et adresses postales ont été exposés. L'entreprise écarte les mots de passe et les données bancaires, saisit la CNIL et renforce ses infrastructures. Selon la presse, deux jours plus tôt, un cybercriminel revendiquait l'attaque et mettait en vente une base de 4,3 millions de comptes, chiffre avancé par le chercheur SaxX et non confirmé par l'entreprise ; seuls trois profils avaient été diffusés en échantillon.",
   "timeline": [
     {
       "date": "2024-10-22",

@@ -2,11 +2,10 @@
   "slug": "michelin-20251121",
   "entity": "Michelin",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-11-21",
-    "publication": "2026-03-11",
-    "confirmation": "2026-03-11"
+    "publication": "2026-03-11"
   },
   "volume": {
     "count": 0,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 21 novembre 2025, le groupe Cl0p inscrit Michelin sur son site d’extorsion dans sa campagne exploitant une faille zéro-day d’Oracle E-Business Suite. Le gang publie ensuite plus de 315 Go d’archives présentées comme exfiltrées du fabricant de pneumatiques. En mars 2026, Michelin confirme qu’une faille Oracle EBS a bien été exploitée et que des fichiers ont été consultés, tout en estimant qu’il s’agit d’un « volume faible, localisé », sans donnée sensible ni impact sur ses systèmes ; aucun rançongiciel n’a été déployé selon l’entreprise.",
+  "description": "Le 21 novembre 2025, le groupe Cl0p inscrit Michelin sur son site d’extorsion dans sa campagne exploitant une faille zéro-day d’Oracle E-Business Suite. Le gang publie ensuite plus de 315 Go d’archives présentées comme exfiltrées du fabricant de pneumatiques. Selon la presse, en mars 2026, Michelin confirme qu’une faille Oracle EBS a bien été exploitée et que des fichiers ont été consultés, tout en estimant qu’il s’agit d’un « volume faible, localisé », sans donnée sensible ni impact sur ses systèmes ; aucun rançongiciel n’a été déployé selon l’entreprise.",
   "timeline": [
     {
       "date": "2025-11-21",
