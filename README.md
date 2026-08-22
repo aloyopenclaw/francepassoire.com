@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://francepassoire.com">
-    <img src="{{BANNER_PATH}}" width="100%" alt="Bannière France Passoire, fond orange avec motif de passoire">
+    <img src="public/banner-readme.jpeg" width="100%" alt="Bannière France Passoire, fond orange avec motif de passoire">
   </a>
 
   <h1>FRANCEPASSOIRE</h1>
