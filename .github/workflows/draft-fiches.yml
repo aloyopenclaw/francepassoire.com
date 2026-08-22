@@ -1,0 +1,115 @@
+# Rédaction automatique des candidats ingest → PR fiches.
+#
+# Chaîne : ingest (CF, */30) écrit les candidats dans D1 → CE workflow (VPS,
+# schedule) lit les candidats NEW → rédige selon docs/redaction-contract.md
+# (contrat éditorial 1:1 des rafales) → PR fiche/<slug> → la validation agent
+# prend le relais → le merge reste humain → publish-catalog.yml publie.
+#
+# Sécurité : opencode LIT les candidats et rédige, il n'exécute jamais leur
+# contenu. Le rédacteur ne merge pas, ne déploie pas, ne touche pas au
+# registre. Bornes : 3 fiches max par run, candidats rejetés marqués en D1.
+
+name: Rédaction candidats (ingest → PR)
+
+on:
+  schedule:
+    # Toutes les 30 min, décalé de 10 min vs le cron ingest (7,37) pour
+    # laisser les candidats arriver. UTC ; DST sans effet sur */30.
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+concurrency:
+  group: draft-fiches
+  cancel-in-progress: false
+
+jobs:
+  rediger:
+    runs-on: self-hosted
+    timeout-minutes: 50
+    steps:
+      - name: Checkout (sans persistance du token bot — pushes via gh/owner)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Node 22 + dépendances
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: npm ci
+        run: npm ci
+
+      - name: Sélection des candidats (3 max, marqués DRAFTING)
+        id: candidats
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          curl -s "https://api.cloudflare.com/client/v4/accounts/8bf7b7311f17611f5b95f1f4e755f8e7/d1/database/$FP_D1_DB/query" \
+            -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" \
+            --data '{"sql": "UPDATE candidates SET status='"'"'DRAFTING'"'"' WHERE id IN (SELECT id FROM candidates WHERE status='"'"'NEW'"'"' ORDER BY created_at ASC LIMIT 3) RETURNING id, source, source_url, raw"}' > .agent-tmp/candidates.json 2>/dev/null || mkdir -p .agent-tmp && curl -s "https://api.cloudflare.com/client/v4/accounts/8bf7b7311f17611f5b95f1f4e755f8e7/d1/database/$FP_D1_DB/query" \
+            -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" \
+            --data '{"sql": "UPDATE candidates SET status='"'"'DRAFTING'"'"' WHERE id IN (SELECT id FROM candidates WHERE status='"'"'NEW'"'"' ORDER BY created_at ASC LIMIT 3) RETURNING id, source, source_url, raw"}' > .agent-tmp/candidates.json
+          N=$(python3 -c "import json; d=json.load(open('.agent-tmp/candidates.json')); print(len(d['result'][0]['results']))" 2>/dev/null || echo 0)
+          echo "n=$N" >> "$GITHUB_OUTPUT"
+          echo "Candidats sélectionnés : $N"
+
+      - name: Rédaction (opencode, contrat éditorial intégral)
+        if: steps.candidats.outputs.n != '0'
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          mkdir -p .agent-tmp
+          opencode run "
+          Tu es le rédacteur éditorial de FrancePassoire. Lis les candidats dans .agent-tmp/candidates.json (résultat D1 : id, source, source_url, raw) et le CONTRAT DE RÉDACTION INTÉGRAL dans docs/redaction-contract.md. Il est ta loi : barre d'inclusion, dédoublement, schéma, Ton A, interdits (em-dash, massif), vérification curl de CHAQUE source, archives web.archive.org pour les mortes, slug=date de revendication, statut confirmee seulement avec source officielle, group pour les dossiers ransomware.
+
+          Pour CHAQUE candidat :
+          1. Si la barre d'inclusion n'est pas franchie (mono-source après recherche, doublon du catalogue, pas une fuite, debunké) : écris une ligne dans .agent-tmp/verdicts.tsv : id<TAB>REJECTED<TAB>raison courte.
+          2. Sinon rédige la fiche data/catalog/<slug>.json selon le contrat, vérifie les URLs (curl -sIL -A 'Mozilla/5.0', repli GET), puis :
+             - node scripts/check-doublons.mjs --intra (la fiche signalée contre une existante pour le même incident → supprime-la et REJECTED doublon)
+             - npx vitest run tests/pr-fiches.test.ts (tout doit rester vert)
+             - écris id<TAB>DRAFTED<TAB>slug dans .agent-tmp/verdicts.tsv
+          Tu ne touches RIEN en dehors de data/catalog/ et .agent-tmp/. Aucun merge, aucun push : je fais la suite.
+          "
+
+      - name: PR par fiche rédigée + mise à jour D1
+        if: steps.candidats.outputs.n != '0'
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while IFS=$'\t' read -r ID VERDICT DETAIL; do
+            if [ "$VERDICT" = "REJECTED" ]; then
+              curl -s "https://api.cloudflare.com/client/v4/accounts/8bf7b7311f17611f5b95f1f4e755f8e7/d1/database/$FP_D1_DB/query" \
+                -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" \
+                --data "$(python3 -c "import json; print(json.dumps({'sql': 'UPDATE candidates SET status=:1, dedup_score=:2 WHERE id=:3', 'params': ['REJECTED', '''$DETAIL'''[:200], '$ID']}))")" >/dev/null
+              echo "candidat $ID rejeté : $DETAIL"
+            elif [ "$VERDICT" = "DRAFTED" ]; then
+              SLUG="$DETAIL"
+              if [ ! -f "data/catalog/$SLUG.json" ]; then echo "fiche absente pour $ID, DEFERRED"; continue; fi
+              BR="fiche/$SLUG"
+              git checkout -b "$BR" 2>/dev/null || git checkout "$BR"
+              git add "data/catalog/$SLUG.json"
+              git commit -m "feat(catalog): $SLUG rédigé depuis candidat ingest (rédaction automatique)" --quiet
+              git push origin "$BR" --force-with-lease
+              gh pr create --head "$BR" --base main --title "Fiche : $SLUG (rédaction automatique)" \
+                --body "Rédigé depuis un candidat d'ingestion par le workflow draft-fiches selon docs/redaction-contract.md. Validation agent en cours ; fusion = décision propriétaire." || true
+              git checkout main 2>/dev/null || git checkout -
+              curl -s "https://api.cloudflare.com/client/v4/accounts/8bf7b7311f17611f5b95f1f4e755f8e7/d1/database/$FP_D1_DB/query" \
+                -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" \
+                --data "$(python3 -c "import json; print(json.dumps({'sql': 'UPDATE candidates SET status=:1 WHERE id=:2', 'params': ['DRAFTED', '$ID']}))")" >/dev/null
+              echo "PR ouverte pour $SLUG (candidat $ID)"
+            fi
+          done < .agent-tmp/verdicts.tsv 2>/dev/null || echo "aucun verdict"
+
+      - name: Filet de sécurité D1 (les DRAFTING orphelins redeviennent NEW)
+        if: always()
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          curl -s "https://api.cloudflare.com/client/v4/accounts/8bf7b7311f17611f5b95f1f4e755f8e7/d1/database/$FP_D1_DB/query" \
+            -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" \
+            --data '{"sql": "UPDATE candidates SET status='"'"'NEW'"'"' WHERE status='"'"'DRAFTING'"'"'"}' >/dev/null
