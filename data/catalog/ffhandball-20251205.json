@@ -3,11 +3,10 @@
   "entity": "Fédération française de handball (FFHandball)",
   "siren": "784544769",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-05",
-    "publication": "2025-12-05",
-    "confirmation": "2025-12-05"
+    "publication": "2025-12-05"
   },
   "volume": {
     "count": 500000,
@@ -33,9 +32,14 @@
       "label": "FrenchBreaches — FFHandball : ≈500 000 licenciés, base active saison 2025 (5 décembre 2025)",
       "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-handball-ffhandball-09083f4dcd40",
       "kind": "revendication"
+    },
+    {
+      "label": "FFHandball : Incident de sécurité informatique, communication de la FFHandball (5 décembre 2025)",
+      "url": "https://www.ffhandball.fr/actualite/lactualite-federale/incident-de-securite-informatique-communication-de-la-ffhandball/",
+      "kind": "officiel"
     }
   ],
-  "description": "Le 5 décembre 2025, la Fédération française de handball a annoncé avoir subi un acte de cybermalveillance. Selon son communiqué, le logiciel utilisé par les clubs, comités et ligues pour la gestion administrative et celle des licenciés a fait l’objet d’un accès non autorisé. L’attaque survient quelques jours après celle visant la Fédération française de football. La fédération indique avoir renforcé les contrôles, neutralisé l’accès et sécurisé les données. Une plainte a été déposée et la CNIL et l’ANSSI ont été informées. Les personnes dont les données ont été visées ont été prévenues individuellement. Le volume n’a pas été communiqué ; la veille estime la base active à environ 500 000 licenciés.",
+  "description": "Selon la presse, le 5 décembre 2025, la Fédération française de handball a annoncé avoir subi un acte de cybermalveillance. Selon son communiqué, le logiciel utilisé par les clubs, comités et ligues pour la gestion administrative et celle des licenciés a fait l’objet d’un accès non autorisé. L’attaque survient quelques jours après celle visant la Fédération française de football. Selon la presse, la fédération indique avoir renforcé les contrôles, neutralisé l’accès et sécurisé les données. Une plainte a été déposée et la CNIL et l’ANSSI ont été informées. Les personnes dont les données ont été visées ont été prévenues individuellement. Le volume n’a pas été communiqué ; la veille estime la base active à environ 500 000 licenciés.",
   "timeline": [
     {
       "date": "2025-12-05",

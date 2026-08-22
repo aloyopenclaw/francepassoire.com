@@ -2,7 +2,7 @@
   "slug": "inp-toulouse-20220913",
   "entity": "Institut national polytechnique de Toulouse (Toulouse INP)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-09-13",
     "publication": "2022-09-13"
@@ -27,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 12 au 13 septembre 2022, l'Institut national polytechnique de Toulouse subit une attaque informatique qui touche la grande majorité des serveurs et données des campus. Tous les établissements du groupe Toulouse INP sont concernés et le site web devient inaccessible. Une réunion de crise est convoquée et l'établissement dépose plainte. Les assaillants réclament une rançon pour le décryptage des données ; l'établissement indique que la sécurité des personnes, la sûreté des bâtiments et les éléments sensibles ont été préservés. LeMagIT confirme ensuite qu'un rançongiciel était en cause.",
+  "description": "Dans la nuit du 12 au 13 septembre 2022, l'Institut national polytechnique de Toulouse subit une attaque informatique qui touche la grande majorité des serveurs et données des campus. Tous les établissements du groupe Toulouse INP sont concernés et le site web devient inaccessible. Une réunion de crise est convoquée et l'établissement dépose plainte. Selon la presse, les assaillants réclament une rançon pour le décryptage des données ; l'établissement indique que la sécurité des personnes, la sûreté des bâtiments et les éléments sensibles ont été préservés. Selon la presse, LeMagIT confirme ensuite qu'un rançongiciel était en cause.",
   "timeline": [
     {
       "date": "2022-09-12",

@@ -3,11 +3,10 @@
   "entity": "Fédération française de spéléologie (FFS)",
   "siren": "448124792",
   "secteur": "services",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-30",
-    "publication": "2026-01-13",
-    "confirmation": "2025-12-31"
+    "publication": "2026-01-13"
   },
   "volume": {
     "count": 63000,
@@ -30,7 +29,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Fin décembre 2025, la Fédération française de spéléologie subit deux attaques coup sur coup. Un premier incident, signalé le 31 décembre, touche le portail de souscription d’assurances, coupé plusieurs jours. Identité, coordonnées, informations fédérales et métier ont été exposés. Le 30 décembre, une mise en vente des données de 63 000 licenciés et abonnés est signalée par FrenchBreaches. Le 10 janvier, le président informe les adhérents d’un second incident, sur le portail d’adhésions : noms, naissance, nationalité, coordonnées et licences. Les mots de passe ne sont pas concernés selon la fédération.",
+  "description": "Fin décembre 2025, la Fédération française de spéléologie subit deux attaques coup sur coup. Un premier incident, signalé le 31 décembre, touche le portail de souscription d’assurances, coupé plusieurs jours. Identité, coordonnées, informations fédérales et métier ont été exposés. Le 30 décembre, une mise en vente des données de 63 000 licenciés et abonnés est signalée par FrenchBreaches. Selon la presse, le 10 janvier, le président informe les adhérents d’un second incident, sur le portail d’adhésions : noms, naissance, nationalité, coordonnées et licences. Les mots de passe ne sont pas concernés selon la fédération.",
   "timeline": [
     {
       "date": "2025-12-30",

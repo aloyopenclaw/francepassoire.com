@@ -2,11 +2,10 @@
   "slug": "groupe-delcourt-20250406",
   "entity": "Groupe Delcourt (éditeur de bande dessinée)",
   "secteur": "media",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-04-06",
-    "publication": "2025-04-04",
-    "confirmation": "2025-04-04"
+    "publication": "2025-04-04"
   },
   "volume": {
     "count": 0,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Début avril 2025, le groupe Delcourt, premier éditeur indépendant français de bande dessinée, racheté par Editis fin décembre 2024, révèle avoir été victime d’une cyberattaque revendiquée par Hunters International, collectif opérant en ransomware-as-a-service. Selon la direction, l’extraction de données sensibles avant chiffrement des systèmes visait à exercer une pression de double extorsion. Les investigations concluent à une exposition possible de nom, prénom, date de naissance, numéro de sécurité sociale, adresses e-mail et postale et numéros de téléphone. Delcourt notifie la CNIL, dépose plainte et recommande la vigilance contre le hameçonnage et l’usurpation d’identité. Les agrégateurs évaluent le lot revendiqué à 3,7 To.",
+  "description": "Selon la presse, début avril 2025, le groupe Delcourt, premier éditeur indépendant français de bande dessinée, racheté par Editis fin décembre 2024, révèle avoir été victime d’une cyberattaque revendiquée par Hunters International, collectif opérant en ransomware-as-a-service. Selon la direction, l’extraction de données sensibles avant chiffrement des systèmes visait à exercer une pression de double extorsion. Les investigations concluent à une exposition possible de nom, prénom, date de naissance, numéro de sécurité sociale, adresses e-mail et postale et numéros de téléphone. Selon la presse, Delcourt notifie la CNIL, dépose plainte et recommande la vigilance contre le hameçonnage et l’usurpation d’identité. Les agrégateurs évaluent le lot revendiqué à 3,7 To.",
   "timeline": [
     {
       "date": "2025-04-04",

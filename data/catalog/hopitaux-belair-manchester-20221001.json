@@ -2,7 +2,7 @@
   "slug": "hopitaux-belair-manchester-20221001",
   "entity": "Centre hospitalier Bélair et hôpital Manchester (Charleville-Mézières)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-10-01",
     "publication": "2022-10-01"
@@ -12,7 +12,9 @@
     "unit": "personnes",
     "label": "aucune demande de rançon signalée et aucun vol de données établi ; deux intrusions informatiques confirmées à trois jours d'intervalle"
   },
-  "data_types": ["sante"],
+  "data_types": [
+    "sante"
+  ],
   "sources": [
     {
       "label": "L'Ardennais : Victime d'une intrusion informatique, l'hôpital Bélair de Charleville coup du réseau (1er octobre 2022, archive)",

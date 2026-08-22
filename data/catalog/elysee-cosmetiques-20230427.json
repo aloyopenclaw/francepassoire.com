@@ -2,7 +2,7 @@
   "slug": "elysee-cosmetiques-20230427",
   "entity": "Élysée Cosmétiques (usine de Folkling, Forbach)",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-04-27",
     "publication": "2023-05-04"
@@ -12,7 +12,10 @@
     "unit": "personnes",
     "label": "aucun volume de données dérobées publié ; les serveurs centraux de l'usine sont attaqués et la production interrompue"
   },
-  "data_types": ["identite", "documents"],
+  "data_types": [
+    "identite",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Le Républicain Lorrain : Forbach : serveurs piratés par des Russes, l'usine Élysée Cosmétiques à l'arrêt (4 mai 2023)",

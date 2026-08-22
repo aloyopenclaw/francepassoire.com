@@ -3,11 +3,10 @@
   "entity": "Cybertek",
   "siren": "408772960",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-09-06",
-    "publication": "2024-09-12",
-    "confirmation": "2024-09-12"
+    "publication": "2024-09-12"
   },
   "volume": {
     "count": 684966,
@@ -30,7 +29,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 6 septembre 2024, le pirate Horror404x revendique sur un forum le vol de 684 966 données clients de GrosBill et CyberTek. Ces enseignes françaises d'informatique appartiennent au même groupe. Cybertek alerte ses clients d'une « tentative d'accès non autorisé ». Celle-ci a « possiblement » compromis noms, prénoms, téléphones et adresses e-mail et postales. L'enseigne précise que mots de passe et informations bancaires ne sont pas concernés. Cette revendication s'inscrit dans la même vague que les fuites Boulanger, Cultura et Truffaut de septembre 2024, relayées par Zataz et next.ink.",
+  "description": "Le 6 septembre 2024, le pirate Horror404x revendique sur un forum le vol de 684 966 données clients de GrosBill et CyberTek. Ces enseignes françaises d'informatique appartiennent au même groupe. Cybertek alerte ses clients d'une « tentative d'accès non autorisé ». Celle-ci a « possiblement » compromis noms, prénoms, téléphones et adresses e-mail et postales. Selon la presse, l'enseigne précise que mots de passe et informations bancaires ne sont pas concernés. Cette revendication s'inscrit dans la même vague que les fuites Boulanger, Cultura et Truffaut de septembre 2024, relayées par Zataz et next.ink.",
   "timeline": [
     {
       "date": "2024-09-06",

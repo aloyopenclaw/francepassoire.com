@@ -2,11 +2,10 @@
   "slug": "e-leclerc-20250127",
   "entity": "E.Leclerc",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-01-27",
-    "publication": "2025-01-27",
-    "confirmation": "2025-01-27"
+    "publication": "2025-01-27"
   },
   "volume": {
     "count": 0,

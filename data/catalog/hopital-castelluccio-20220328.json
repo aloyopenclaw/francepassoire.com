@@ -2,7 +2,7 @@
   "slug": "hopital-castelluccio-20220328",
   "entity": "Hôpital de Castelluccio (Ajaccio)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-03-28",
     "publication": "2022-03-29"
@@ -37,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le lundi 28 mars 2022, l'hôpital de Castelluccio à Ajaccio (Corse-du-Sud) est frappé par un rançongiciel détecté sur son réseau informatique. Les activités de radiothérapie et d'oncologie sont suspendues et les soins radiologiques perturbés. Une demande de rançon accompagne l'attaque, attribuée au groupe Vice Society selon la presse spécialisée. L'établissement confirme l'incident dans un communiqué. Aucun volume de données dérobées n'est communiqué.",
+  "description": "Le lundi 28 mars 2022, l'hôpital de Castelluccio à Ajaccio (Corse-du-Sud) est frappé par un rançongiciel détecté sur son réseau informatique. Les activités de radiothérapie et d'oncologie sont suspendues et les soins radiologiques perturbés. Une demande de rançon accompagne l'attaque, attribuée au groupe Vice Society selon la presse spécialisée. Selon la presse, l'établissement confirme l'incident dans un communiqué. Aucun volume de données dérobées n'est communiqué.",
   "timeline": [
     {
       "date": "2022-03-28",

@@ -2,18 +2,20 @@
   "slug": "hospi-grand-ouest-20241002",
   "entity": "Groupe hospitalier Grand Ouest (HGO)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-10-02",
-    "publication": "2024-10-07",
-    "confirmation": "2024-10-07"
+    "publication": "2024-10-07"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "nombre de patients concernés non communiqué par le groupe ; une rançon de plus de 650 000 euros a été exigée selon Le Parisien"
   },
-  "data_types": ["identite", "sante"],
+  "data_types": [
+    "identite",
+    "sante"
+  ],
   "sources": [
     {
       "label": "Le Figaro — Cyberattaque sur le groupe de santé Hospi Grand Ouest : des opérations en suspens à Nantes et Saint-Nazaire (7 octobre 2024)",

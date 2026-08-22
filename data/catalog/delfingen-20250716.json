@@ -3,11 +3,10 @@
   "entity": "Delfingen",
   "siren": "354013575",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-07-16",
-    "publication": "2025-07-17",
-    "confirmation": "2025-07-16"
+    "publication": "2025-07-17"
   },
   "volume": {
     "count": 0,
@@ -24,7 +23,7 @@
       "kind": "article"
     }
   ],
-  "description": "Lâéquipementier automobile Delfingen, basé à Anteuil (Doubs), annonce le 16 juillet 2025 avoir détecté « une intrusion dans son système d’information, qui a conduit à des fuites de données ». Le groupe précise que le périmètre identifié est circonscrit à quelques applications héritées de Schlemmer, concurrent allemand dont il a repris les actifs Europe et Afrique en 2020, alors en cours de désinstallation — sans perturbation des activités opérationnelles. Les autorités ont été alertées et une enquête vise à déterminer l’origine du piratage et retrouver les auteurs. La nature et le volume exacts des données concernées ne sont pas précisés ; le groupe emploie 3 800 salariés dans 21 pays.",
+  "description": "Selon la presse, Lâéquipementier automobile Delfingen, basé à Anteuil (Doubs), annonce le 16 juillet 2025 avoir détecté « une intrusion dans son système d’information, qui a conduit à des fuites de données ». Selon la presse, le groupe précise que le périmètre identifié est circonscrit à quelques applications héritées de Schlemmer, concurrent allemand dont il a repris les actifs Europe et Afrique en 2020, alors en cours de désinstallation — sans perturbation des activités opérationnelles. Les autorités ont été alertées et une enquête vise à déterminer l’origine du piratage et retrouver les auteurs. La nature et le volume exacts des données concernées ne sont pas précisés ; le groupe emploie 3 800 salariés dans 21 pays.",
   "timeline": [
     {
       "date": "2025-07-16",

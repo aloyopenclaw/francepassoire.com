@@ -2,18 +2,19 @@
   "slug": "ehpad-champdeniers-20251208",
   "entity": "Ehpad La Résidence du Parc (Champdeniers-Saint-Denis, Deux-Sèvres)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-08",
-    "publication": "2025-12-10",
-    "confirmation": "2025-12-10"
+    "publication": "2025-12-10"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
     "label": "établissement de 90 résidents géré par le CCAS ; le pirate réclame une rançon de 5 millions de dollars ; aucune donnée médicale des résidents compromise selon la direction"
   },
-  "data_types": ["autre"],
+  "data_types": [
+    "autre"
+  ],
   "sources": [
     {
       "label": "La Nouvelle République — « Une demande de rançon de 5 millions de dollars » : une maison de retraite des Deux-Sèvres visée par un pirate informatique (décembre 2025)",

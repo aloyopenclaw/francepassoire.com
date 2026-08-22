@@ -2,7 +2,7 @@
   "slug": "coradix-magnescan-20240507",
   "entity": "Coradix-Magnescan (groupe d'imagerie médicale)",
   "secteur": "sante",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2024-05-07",
     "publication": "2024-05-07"
@@ -27,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 7 mai 2024, Coradix-Magnescan, groupe français d'imagerie médicale exploitant de nombreux centres de radiologie, dont plusieurs sites dans les Pyrénées-Orientales, est touché par une cyberattaque. L'entreprise prévient ses patients que l'incident risque de compliquer leurs rendez-vous d'examen. Les sites d'imagerie des Pyrénées-Orientales fonctionnent en mode dégradé. Aucun vol de données n'est confirmé.",
+  "description": "Le 7 mai 2024, Coradix-Magnescan, groupe français d'imagerie médicale exploitant de nombreux centres de radiologie, dont plusieurs sites dans les Pyrénées-Orientales, est touché par une cyberattaque. L'entreprise prévient ses patients que l'incident risque de compliquer leurs rendez-vous d'examen. Les sites d'imagerie des Pyrénées-Orientales fonctionnent en mode dégradé. Selon la presse, aucun vol de données n'est confirmé.",
   "timeline": [
     {
       "date": "2024-05-07",

@@ -3,11 +3,10 @@
   "entity": "Ville de Fumel (Lot-et-Garonne)",
   "siren": "444423859",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-10-03",
-    "publication": "2025-10-03",
-    "confirmation": "2025-10-03"
+    "publication": "2025-10-03"
   },
   "volume": {
     "count": 0,
@@ -39,7 +38,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 2 octobre 2025 au matin, les agents de la mairie de Fumel découvrent sur leurs ordinateurs un message en anglais exigeant une rançon : la ville de 5 000 habitants est victime d'un rançongiciel qui paralyse ses services. La Ville informe ses usagers le 3 octobre, refuse de payer, dépose plainte et active son assurance cyber. L'enseigne DragonForce, que TF1 présente comme un cartel malaisien, est impliquée selon la veille de LeMagIT. Un vol de données n'est pas établi publiquement à ce stade.",
+  "description": "Le 2 octobre 2025 au matin, les agents de la mairie de Fumel découvrent sur leurs ordinateurs un message en anglais exigeant une rançon : la ville de 5 000 habitants est victime d'un rançongiciel qui paralyse ses services. Selon la presse, la Ville informe ses usagers le 3 octobre, refuse de payer, dépose plainte et active son assurance cyber. L'enseigne DragonForce, que TF1 présente comme un cartel malaisien, est impliquée selon la veille de LeMagIT. Un vol de données n'est pas établi publiquement à ce stade.",
   "timeline": [
     {
       "date": "2025-10-02",

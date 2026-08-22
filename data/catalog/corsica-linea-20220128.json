@@ -2,10 +2,9 @@
   "slug": "corsica-linea-20220128",
   "entity": "Corsica Linea",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-01-28",
-    "confirmation": "2022-01-31",
     "publication": "2022-02-01"
   },
   "volume": {
@@ -33,7 +32,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Le 28 janvier 2022, le site internet de Corsica Linea, compagnie maritime desservant la Corse depuis Marseille, fait l'objet d'une tentative d'intrusion d'un logiciel malveillant. La compagnie déconnecte ses serveurs à titre préventif et bloque les réservations en ligne pendant plusieurs jours ; les rotations et le fret ne sont pas concernés. Dans un communiqué, la compagnie indique que les mesures correctives ont été rapidement mises en place et que les investigations techniques permettent de confirmer que les données clients ne sont pas affectées. Elle déclare travailler avec l'ANSSI pour analyser l'intrusion.",
+  "description": "Le 28 janvier 2022, le site internet de Corsica Linea, compagnie maritime desservant la Corse depuis Marseille, fait l'objet d'une tentative d'intrusion d'un logiciel malveillant. La compagnie déconnecte ses serveurs à titre préventif et bloque les réservations en ligne pendant plusieurs jours ; les rotations et le fret ne sont pas concernés. Selon la presse, dans un communiqué, la compagnie indique que les mesures correctives ont été rapidement mises en place et que les investigations techniques permettent de confirmer que les données clients ne sont pas affectées. Selon la presse, elle déclare travailler avec l'ANSSI pour analyser l'intrusion.",
   "timeline": [
     {
       "date": "2022-01-28",

@@ -3,11 +3,10 @@
   "entity": "Engie",
   "siren": "542107651",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2023-08-23",
-    "publication": "2023-08-23",
-    "confirmation": "2023-08-30"
+    "publication": "2023-08-23"
   },
   "volume": {
     "count": 110000,
@@ -35,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 23 août 2023, un hacktiviste nommé « HommedeLombre » publie sur un forum de hackers une base clients d'Engie, acte qu'il justifie par « l'inflation du prix du gaz en France ». Les données, obtenues via une faille sur le site monespaceprime.engie.fr opéré par un prestataire, comprennent noms, prénoms, e-mails, villes, numéros de téléphone et numéros client, exploités selon le pirate en avril 2023. Le 30 août, Engie confirme auprès de Numerama l'acte de cybermalveillance, précise que la fuite ne concerne ni coordonnées bancaires ni mots de passe, porte plainte et commence à informer les personnes concernées, comme l'exige le RGPD.",
+  "description": "Le 23 août 2023, un hacktiviste nommé « HommedeLombre » publie sur un forum de hackers une base clients d'Engie, acte qu'il justifie par « l'inflation du prix du gaz en France ». Les données, obtenues via une faille sur le site monespaceprime.engie.fr opéré par un prestataire, comprennent noms, prénoms, e-mails, villes, numéros de téléphone et numéros client, exploités selon le pirate en avril 2023. Selon la presse, le 30 août, Engie confirme auprès de Numerama l'acte de cybermalveillance, précise que la fuite ne concerne ni coordonnées bancaires ni mots de passe, porte plainte et commence à informer les personnes concernées, comme l'exige le RGPD.",
   "timeline": [
     {
       "date": "2023-08-23",

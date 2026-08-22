@@ -2,11 +2,10 @@
   "slug": "easy-cash-20250416",
   "entity": "Easy Cash",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-04-16",
-    "publication": "2025-04-23",
-    "confirmation": "2025-04-23"
+    "publication": "2025-04-23"
   },
   "volume": {
     "count": 92000,
@@ -28,7 +27,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 16 avril 2025, Easy Cash, leader français de l’achat-revente, a subi une cyberattaque ayant entraîné une fuite sur le poste d’un magasin, confirmée le 23 avril auprès de RTL. Les données de 92 000 clients et collaborateurs ont pu être récupérées : nom, prénom et date de naissance. L’enseigne a précisé que les données bancaires, mots de passe et accès aux comptes n’étaient pas concernés et qu’aucun usage frauduleux n’avait été détecté. Une enquête avec Orange CyberDefense a été ouverte et les autorités informées. Les clients concernés ont été prévenus.",
+  "description": "Le 16 avril 2025, Easy Cash, leader français de l’achat-revente, a subi une cyberattaque ayant entraîné une fuite sur le poste d’un magasin, confirmée le 23 avril auprès de RTL. Les données de 92 000 clients et collaborateurs ont pu être récupérées : nom, prénom et date de naissance. Selon la presse, l’enseigne a précisé que les données bancaires, mots de passe et accès aux comptes n’étaient pas concernés et qu’aucun usage frauduleux n’avait été détecté. Une enquête avec Orange CyberDefense a été ouverte et les autorités informées. Les clients concernés ont été prévenus.",
   "timeline": [
     {
       "date": "2025-04-16",

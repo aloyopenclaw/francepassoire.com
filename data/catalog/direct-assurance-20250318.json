@@ -2,11 +2,10 @@
   "slug": "direct-assurance-20250318",
   "entity": "Direct Assurance (AXA)",
   "secteur": "finance",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-03-18",
-    "publication": "2025-03-18",
-    "confirmation": "2025-03-18"
+    "publication": "2025-03-18"
   },
   "volume": {
     "count": 15000,

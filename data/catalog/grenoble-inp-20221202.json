@@ -2,7 +2,7 @@
   "slug": "grenoble-inp-20221202",
   "entity": "Grenoble INP (Institut polytechnique de Grenoble, composante de l'Université Grenoble Alpes)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-12-02",
     "publication": "2022-12-06"
@@ -37,7 +37,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 2 décembre 2022, constatant des anomalies de grande ampleur, Grenoble INP coupe et isole l'ensemble de son système d'information ; le site web de l'institut ne répond plus. L'établissement parle d'une intrusion dans ses serveurs sans utiliser le terme de cyberattaque dans ses premières communications. Selon LeMagIT, l'attaquant a touché le cœur du système d'information, totalement mis à l'arrêt pour contrer l'attaque. Le 17 décembre, l'institut estime avoir échappé à une atteinte irrémédiable. Aucune exfiltration de données n'est confirmée publiquement et aucun groupe ne revendique l'incident.",
+  "description": "Le 2 décembre 2022, constatant des anomalies de grande ampleur, Grenoble INP coupe et isole l'ensemble de son système d'information ; le site web de l'institut ne répond plus. L'établissement parle d'une intrusion dans ses serveurs sans utiliser le terme de cyberattaque dans ses premières communications. Selon LeMagIT, l'attaquant a touché le cœur du système d'information, totalement mis à l'arrêt pour contrer l'attaque. Le 17 décembre, l'institut estime avoir échappé à une atteinte irrémédiable. Selon la presse, aucune exfiltration de données n'est confirmée publiquement et aucun groupe ne revendique l'incident.",
   "timeline": [
     {
       "date": "2022-12-02",

@@ -2,11 +2,10 @@
   "slug": "dior-20250513",
   "entity": "Dior (LVMH)",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-05-13",
-    "publication": "2025-05-14",
-    "confirmation": "2025-05-13"
+    "publication": "2025-05-14"
   },
   "volume": {
     "count": 0,
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 7 mai 2025, Dior a découvert qu’un tiers non autorisé avait accédé à certaines données clients, remontant à une intrusion datée du 26 janvier selon la presse. Les clients asiatiques ont été alertés dès le 13 mai, puis les clients américains deux mois plus tard. Les informations concernées incluent noms, prénoms, numéros de téléphone, adresses e-mail et postales, historiques d’achats et montants dépensés. La maison, propriété de LVMH, a précisé que les données bancaires et cartes de paiement n’étaient pas concernées et a invité les clients à la vigilance contre le phishing.",
+  "description": "Le 7 mai 2025, Dior a découvert qu’un tiers non autorisé avait accédé à certaines données clients, remontant à une intrusion datée du 26 janvier selon la presse. Les clients asiatiques ont été alertés dès le 13 mai, puis les clients américains deux mois plus tard. Les informations concernées incluent noms, prénoms, numéros de téléphone, adresses e-mail et postales, historiques d’achats et montants dépensés. Selon la presse, la maison, propriété de LVMH, a précisé que les données bancaires et cartes de paiement n’étaient pas concernées et a invité les clients à la vigilance contre le phishing.",
   "timeline": [
     {
       "date": "2025-01-26",

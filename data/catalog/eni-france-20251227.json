@@ -2,11 +2,10 @@
   "slug": "eni-france-20251227",
   "entity": "ENI France",
   "secteur": "industrie",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2025-12-27",
-    "publication": "2026-01-07",
-    "confirmation": "2026-01-06"
+    "publication": "2026-01-07"
   },
   "volume": {
     "count": 89463,
@@ -29,7 +28,7 @@
       "kind": "revendication"
     }
   ],
-  "description": "Le 27 décembre 2025, un pirate se revendiquant du groupe Lapsus$ publie sur un forum 89 463 lignes de données clients professionnelles françaises d'ENI. La base est attribuée par l'auteur à un complice. Les échantillons montrent raisons sociales, références clients, coordonnées professionnelles et dates de dernière connexion. Début janvier, ENI confirme à ses clients une « diffusion non autorisée » d'informations professionnelles. L'entreprise exclut mots de passe, historiques de consommation et coordonnées bancaires. Elle dépose plainte et annonce des notifications aux autorités compétentes si les éléments le justifient. Clubic estime entre 40 000 et 50 000 clients concernés.",
+  "description": "Le 27 décembre 2025, un pirate se revendiquant du groupe Lapsus$ publie sur un forum 89 463 lignes de données clients professionnelles françaises d'ENI. La base est attribuée par l'auteur à un complice. Les échantillons montrent raisons sociales, références clients, coordonnées professionnelles et dates de dernière connexion. Selon la presse, début janvier, ENI confirme à ses clients une « diffusion non autorisée » d'informations professionnelles. L'entreprise exclut mots de passe, historiques de consommation et coordonnées bancaires. Selon la presse, elle dépose plainte et annonce des notifications aux autorités compétentes si les éléments le justifient. Clubic estime entre 40 000 et 50 000 clients concernés.",
   "timeline": [
     {
       "date": "2025-12-27",

@@ -2,11 +2,10 @@
   "slug": "damart-20220815",
   "entity": "Damart (groupe de vente par correspondance de vêtements, Hem, Nord)",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2022-08-15",
-    "publication": "2022-08-25",
-    "confirmation": "2022-08-25"
+    "publication": "2022-08-25"
   },
   "volume": {
     "count": 0,
