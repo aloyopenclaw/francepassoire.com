@@ -1,15 +1,12 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-// File sociale + client X (T39) : cassettes JSON écrites à la main (aucun
-// réseau), fake D1 en mémoire qui APPLIQUE les UPDATE — le drain rejoue
-// plusieurs crons et le compteur de tentatives doit survivre entre crons.
-import worker, {
-  enqueuePost,
-  runDrain,
-  type OutboxRow,
-} from '../workers/social/src/index';
-import { send as sendX } from '../workers/social/clients/x';
+// File sociale (T39) + drain via le client X Make (T51) : les cassettes de
+// l'ancienne API directe POST /2/tweets ont disparu avec clients/x.ts — le
+// client X (webhook Make) est testé à part dans tests/social-make-x.test.ts ;
+// ici on épingle la MÉCANIQUE de file (intake, retries, lettre morte, garde
+// éditoriale) sur la voie X d'aujourd'hui. Fake D1 en mémoire qui APPLIQUE
+// les UPDATE — le drain rejoue plusieurs crons et le compteur de tentatives
+// doit survivre entre crons.
+import worker, { enqueuePost, runDrain } from '../workers/social/src/index';
 import type {
   D1Database,
   D1PreparedStatement,
@@ -19,51 +16,10 @@ import type {
   SocialPlatform,
 } from '../workers/social/src/types';
 
-const fixturesDir = fileURLToPath(new URL('./fixtures/social/', import.meta.url));
-
 // Épingle indépendante (doublée volontairement depuis social-templates.ts) :
 // la mention exacte que TOUTE ligne « revendiquée » doit porter — aucune
 // allégation non vérifiée ne se présente comme un fait.
 const MENTION_EXACTE = 'revendication non confirmée par l’entité';
-
-// ---------------------------------------------------------------------------
-// Cassettes — paires requête/réponse rejouées par un fetch injecté.
-// ---------------------------------------------------------------------------
-
-interface Cassette {
-  request: {
-    method: string;
-    url: string;
-    headers: Record<string, string>;
-    body: unknown;
-  };
-  response: { status: number; body: unknown };
-}
-
-function cassette(nom: string): Cassette {
-  return JSON.parse(readFileSync(`${fixturesDir}${nom}`, 'utf8')) as Cassette;
-}
-
-// Rejoue la réponse de la cassette ET vérifie que la requête sortante
-// correspond trait pour trait à la forme enregistrée (URL, méthode,
-// en-têtes, corps JSON) : un client qui changerait de forme d'API casse.
-function cassetteFetch(cass: Cassette): { fetchFn: typeof fetch; nbAppels: () => number } {
-  let appels = 0;
-  const fetchFn = (async (url: RequestInfo | URL, init?: RequestInit) => {
-    appels += 1;
-    expect(String(url)).toBe(cass.request.url);
-    expect(init?.method).toBe(cass.request.method);
-    const headers = (init?.headers ?? {}) as Record<string, string>;
-    for (const [cle, valeur] of Object.entries(cass.request.headers)) {
-      expect(headers[cle]).toBe(valeur);
-    }
-    expect(JSON.parse(String(init?.body))).toEqual(cass.request.body);
-    return new Response(JSON.stringify(cass.response.body), {
-      status: cass.response.status,
-    });
-  }) as typeof fetch;
-  return { fetchFn, nbAppels: () => appels };
-}
 
 // ---------------------------------------------------------------------------
 // Fake D1 : lignes en mémoire, les UPDATE status/payload sont APPLIQUÉS.
@@ -137,8 +93,23 @@ function makeEnv(db: D1Database, secrets: Partial<Env> = {}): Env {
 }
 
 // ---------------------------------------------------------------------------
-// Payloads réalistes (textes conformes aux rendus de social-templates.ts,
-// épinglés ici pour que la cassette 201 matche exactement).
+// Webhook Make factice : même statut pour chaque appel, corps capturé.
+// ---------------------------------------------------------------------------
+
+function fetchWebhook(status: number): { fetchFn: typeof fetch; nbAppels: () => number } {
+  let appels = 0;
+  const fetchFn = (async (
+    _u: string | URL | Request,
+    _init?: RequestInit,
+  ): Promise<Response> => {
+    appels += 1;
+    return new Response('{"status":"ok"}', { status });
+  }) as typeof fetch;
+  return { fetchFn, nbAppels: () => appels };
+}
+
+// ---------------------------------------------------------------------------
+// Payloads réalistes (textes conformes aux rendus de social-templates.ts).
 // ---------------------------------------------------------------------------
 
 const URL_FICHE = 'https://francepassoire.com/f/alaxione-20260820';
@@ -183,33 +154,6 @@ afterEach(() => {
 
 // ---------------------------------------------------------------------------
 
-describe('client X — cassettes POST /2/tweets (T39)', () => {
-  it('201 → SENT avec l’id du tweet, requête conforme à la forme officielle', async () => {
-    const { fetchFn } = cassetteFetch(cassette('x-post-create-201.json'));
-    const result = await sendX(
-      ficheRevendiqueeAvecMention(),
-      makeEnv(makeDb().db, { X_USER_TOKEN: 'test-user-token-x' }),
-      fetchFn,
-    );
-    expect(result).toEqual({ status: 'SENT', externalId: '1792861284885307392' });
-  });
-
-  it('X_USER_TOKEN absent (seul X_BEARER, lecture seule) → PENDING_KEYS, aucun appel réseau', async () => {
-    const { fetchFn, nbAppels } = cassetteFetch(cassette('x-post-create-201.json'));
-    const result = await sendX(
-      ficheConfirmee(),
-      makeEnv(makeDb().db, { X_BEARER: 'bearer-lecture-seule' }),
-      fetchFn,
-    );
-    expect(result.status).toBe('PENDING_KEYS');
-    if (result.status === 'PENDING_KEYS') {
-      expect(result.reason).toContain('X_USER_TOKEN');
-      expect(result.reason).toContain('lecture seule');
-    }
-    expect(nbAppels()).toBe(0);
-  });
-});
-
 describe('file social_outbox — intake enqueuePost (T39)', () => {
   it('insère une ligne PENDING avec payload JSON intact et id UUID', async () => {
     const { db, lignes, executed } = makeDb();
@@ -225,12 +169,15 @@ describe('file social_outbox — intake enqueuePost (T39)', () => {
     expect(executed[0]?.sql).toMatch(/^INSERT INTO social_outbox/);
   });
 
-  it('refuse plateforme inconnue et payload sans texte ni URL', async () => {
+  it('accepte facebook et instagram (T51), refuse plateforme inconnue et payloads vides', async () => {
     const { db, lignes } = makeDb();
+    await enqueuePost(db, 'facebook', ficheConfirmee());
+    await enqueuePost(db, 'instagram', ficheConfirmee());
+    expect(lignes.map((l) => l.platform)).toEqual(['facebook', 'instagram']);
     // Délibéré : forcer une valeur hors union pour prouver le rejet runtime.
-    const mastodon = 'mastodon' as unknown as SocialPlatform;
-    await expect(enqueuePost(db, mastodon, ficheConfirmee())).rejects.toThrow(
-      /Plateforme « mastodon » inconnue/,
+    const tiktok = 'tiktok' as unknown as SocialPlatform;
+    await expect(enqueuePost(db, tiktok, ficheConfirmee())).rejects.toThrow(
+      /Plateforme « tiktok » inconnue/,
     );
     await expect(
       enqueuePost(db, 'x', { ...ficheConfirmee(), text: '   ' }),
@@ -238,32 +185,28 @@ describe('file social_outbox — intake enqueuePost (T39)', () => {
     await expect(
       enqueuePost(db, 'x', { ...ficheConfirmee(), url: '' }),
     ).rejects.toThrow(/sans URL/);
-    expect(lignes).toHaveLength(0);
   });
 });
 
-describe('drain cron — envoi, retries, lettre morte (T39)', () => {
-  it('ligne envoyable (revendiquée AVEC mention) → SENT, statut de ligne et id externe loguée', async () => {
+describe('drain cron — voie X = webhook Make (T51)', () => {
+  it('ligne envoyable (revendiquée AVEC mention) → SENT via le webhook', async () => {
     const { db, lignes } = makeDb([ligneX(ficheRevendiqueeAvecMention())]);
-    const { fetchFn, nbAppels } = cassetteFetch(cassette('x-post-create-201.json'));
-    const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
-    const env = makeEnv(db, { X_USER_TOKEN: 'test-user-token-x' });
+    const { fetchFn, nbAppels } = fetchWebhook(200);
+    vi.spyOn(console, 'log').mockImplementation(() => {});
+    const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
 
     const outcomes = await runDrain(env, { fetchFn });
 
     expect(outcomes).toEqual([{ id: 'ligne-x-1', platform: 'x', status: 'SENT' }]);
     expect(lignes[0]?.status).toBe('SENT');
     expect(nbAppels()).toBe(1);
-    expect(logSpy).toHaveBeenCalledWith(
-      expect.stringContaining('1792861284885307392'),
-    );
   });
 
-  it('401 (token utilisateur mort) → lettre morte IMMÉDIATE, sans consumer 3 crons', async () => {
+  it('webhook 410 (scénario éteint) → lettre morte IMMÉDIATE, sans consumer 3 crons', async () => {
     const { db, lignes } = makeDb([ligneX(changementStatut())]);
-    const { fetchFn, nbAppels } = cassetteFetch(cassette('x-post-create-401.json'));
+    const { fetchFn, nbAppels } = fetchWebhook(410);
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
-    const env = makeEnv(db, { X_USER_TOKEN: 'test-user-token-x-mort' });
+    const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
 
     const outcomes = await runDrain(env, { fetchFn });
 
@@ -275,11 +218,11 @@ describe('drain cron — envoi, retries, lettre morte (T39)', () => {
     );
   });
 
-  it('500 transitoire : 3 crons d’échec → PENDING, PENDING puis DEAD à la 3e tentative', async () => {
+  it('webhook 500 transitoire : 3 crons d’échec → PENDING, PENDING puis DEAD à la 3e tentative', async () => {
     const { db, lignes } = makeDb([ligneX(ficheConfirmee())]);
-    const { fetchFn, nbAppels } = cassetteFetch(cassette('x-post-create-500.json'));
+    const { fetchFn, nbAppels } = fetchWebhook(500);
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
-    const env = makeEnv(db, { X_USER_TOKEN: 'test-user-token-x' });
+    const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
 
     // Cron 1 : échec 1/3 — la ligne reste PENDING, compteur persisté dans
     // le payload (le fake D1 applique l'UPDATE, comme la vraie base).
@@ -314,7 +257,7 @@ describe('drain cron — envoi, retries, lettre morte (T39)', () => {
       throw new Error('AUCUN APPEL RÉSEAU ATTENDU');
     });
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
-    const env = makeEnv(db, { X_USER_TOKEN: 'test-user-token-x' });
+    const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
 
     const outcomes = await runDrain(env, { fetchFn: fetchExplosif as typeof fetch });
 

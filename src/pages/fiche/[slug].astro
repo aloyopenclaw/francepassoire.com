@@ -66,7 +66,14 @@ const retroliens = [
     : []),
 ];
 ---
-<Layout title={titreDocument} description={ficheDescription}>
+<Layout
+  title={titreDocument}
+  description={ficheDescription}
+  image={`/fiche/${fiche.slug}/card.jpg`}
+  imageWidth={1080}
+  imageHeight={1080}
+  imageAlt={`FrancePassoire — carte de la fiche ${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()}`}
+>
   <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
   <FichePage fiche={fiche} />
 
