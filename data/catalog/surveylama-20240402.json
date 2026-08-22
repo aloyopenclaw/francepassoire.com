@@ -34,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "SurveyLama, plateforme de sondages rémunérés opérée par la société française Globe Media, subit une fuite de données début février 2024. Le 2 avril, Have I Been Pwned publie le jeu de données vérifié : 4 426 879 comptes avec noms, coordonnées, dates de naissance, IP et mots de passe hachés. Selon la presse, Contactée, la plateforme confirme l'incident, déclare avoir déjà averti les utilisateurs par e-mail, imposé une réinitialisation générale des mots de passe et renforcé sa sécurité. Selon HIBP, aucune revente publique du jeu de données n'a été constatée à ce stade. L'exfiltration est établie par l'aveu de l'entreprise.",
+  "description": "SurveyLama, plateforme de sondages rémunérés opérée par la société française Globe Media, subit une fuite de données début février 2024. Le 2 avril, Have I Been Pwned publie le jeu de données vérifié : 4 426 879 comptes avec noms, coordonnées, dates de naissance, IP et mots de passe hachés. Selon la presse, contactée, la plateforme confirme l'incident, déclare avoir déjà averti les utilisateurs par e-mail, imposé une réinitialisation générale des mots de passe et renforcé sa sécurité. Selon HIBP, aucune revente publique du jeu de données n'a été constatée à ce stade. L'exfiltration est établie par l'aveu de l'entreprise.",
   "timeline": [
     {
       "date": "2024-02-01",
