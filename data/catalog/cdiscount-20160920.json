@@ -1,0 +1,60 @@
+{
+  "slug": "cdiscount-20160920",
+  "entity": "Cdiscount",
+  "siren": "424059822",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2016-09-20",
+    "confirmation": "2016-09-20",
+    "publication": "2016-10-19"
+  },
+  "volume": {
+    "count": 4000,
+    "unit": "enregistrements",
+    "label": "plus de 4 000 données bancaires en clair dont environ 3 000 cryptogrammes visuels ; plusieurs millions de comptes conservés sans limitation de durée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « COMMERCE », faille de sécurité, avertissement public (20 septembre 2016)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Challenges — La CNIL sanctionne Cdiscount pour des données bancaires non sécurisées (19 octobre 2016)",
+      "url": "https://www.challenges.fr/entreprise/commerce/la-cnil-sanctionne-cdiscount-pour-des-donnees-bancaires-non-securisees_433872",
+      "kind": "article"
+    },
+    {
+      "label": "TF1 Info — Données bancaires non sécurisées, fichiers clients insultants... Cdiscount épinglé par la CNIL (21 octobre 2016)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/cdiscount-com-donnees-bancaires-non-securisees-fichiers-clients-insultants-cdiscount-epingle-par-la-cnil-2008464.html",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde du Droit — Avertissement public et mise en demeure de Cdiscount pour manquements à la sécurité des données (28 octobre 2016)",
+      "url": "https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/19677-cnil-avertissement-public-et-mise-en-demeure-de-cdiscount-pour-manquements-a-la-securite-des-donnees-de-ses-clients-.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Depuis 2015, la CNIL a reçu 80 plaintes contre Cdiscount. Elles dénonçaient des défaillances techniques ayant entraîné des divulgations de données à des tiers. Les contrôles de février et mars 2016 ont révélé plus de 4 000 données bancaires conservées en clair. Des cryptogrammes figuraient dans des champs commentaires de la base. Plusieurs millions de comptes étaient conservés sans limite de durée. Des commentaires non pertinents, dont des mentions de santé, apparaissaient dans les fiches clients. La formation restreinte a prononcé un avertissement public le 20 septembre 2016. Une mise en demeure du 26 septembre visait une dizaine d'autres manquements.",
+  "timeline": [
+    {
+      "date": "2016-09-20",
+      "event": "Avertissement public pour défaut de sécurité : données bancaires en clair et conservation excessive."
+    },
+    {
+      "date": "2016-09-26",
+      "event": "Mise en demeure de la présidente de la CNIL : une dizaine de manquements à corriger en trois mois."
+    },
+    {
+      "date": "2016-10-19",
+      "event": "La CNIL rend publics l'avertissement et la mise en demeure contre Cdiscount."
+    }
+  ]
+}

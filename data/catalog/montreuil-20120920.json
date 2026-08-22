@@ -1,0 +1,61 @@
+{
+  "slug": "montreuil-20120920",
+  "entity": "Ville de Montreuil (Seine-Saint-Denis)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2012-09-20",
+    "confirmation": "2012-09-20",
+    "publication": "2012-10-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; tableaux rectificatifs de la liste électorale consultables en ligne (nom, prénom, date et lieu de naissance, adresse)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « COMMUNE », liste électorale, avertissement public (20 septembre 2012)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 20/09/2012 contre une commune",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    },
+    {
+      "label": "WMC (AFP) — Montreuil sanctionnée par la CNIL pour avoir publié des données sur internet (1er octobre 2012)",
+      "url": "https://www.webmanagercenter.com/2012/10/01/125468/montreuil-sanctionnee-par-la-cnil-pour-avoir-publie-des-donnees-sur-internet/",
+      "kind": "article"
+    },
+    {
+      "label": "Les Archiveilleurs — La CNIL sanctionne une commune qui a publié sur internet des éléments issus des listes électorales",
+      "url": "http://archiveilleurs.org/la-cnil-sanctionne-une-commune-qui-a-publi-sur-internetdes-lments-issus-des-listes-lectorales/",
+      "kind": "article"
+    }
+  ],
+  "description": "En janvier 2012, une habitante de Montreuil découvre ses données personnelles sur un site d'hébergement de documents. Selon la CNIL, ces informations provenaient des tableaux rectificatifs de la liste électorale. Faute de place sur les panneaux de la mairie, la commune les avait publiés sur internet. Ces tableaux sont restés consultables au-delà du 20 janvier, date limite du code électoral, par des internautes non électeurs. Ils restaient accessibles depuis deux moteurs de recherche jusqu'au 14 février 2012. La formation restreinte a prononcé un avertissement public le 20 septembre 2012 pour traitement illicite et défaut de sécurité.",
+  "timeline": [
+    {
+      "date": "2012-01-20",
+      "event": "Retrait des tableaux rectificatifs du site de la commune au terme de la période légale d'affichage."
+    },
+    {
+      "date": "2012-02-14",
+      "event": "Fin de l'accessibilité des tableaux via deux moteurs de recherche, après la plainte d'une habitante."
+    },
+    {
+      "date": "2012-09-20",
+      "event": "Avertissement public pour traitement illicite et défaut de sécurité des données."
+    },
+    {
+      "date": "2012-10-01",
+      "event": "La CNIL rend publique la sanction contre la commune de Montreuil."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "loc-car-dream-20140722",
+  "entity": "Loc Car Dream",
+  "siren": "504497652",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2014-07-22",
+    "confirmation": "2014-07-22",
+    "publication": "2014-08-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé ; 36 véhicules de location géolocalisés selon l'arrêt du Conseil d'État ; sanction pécuniaire publique de 5 000 euros"
+  },
+  "data_types": [
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (tableau officiel) : « SOCIETE DE LOCATION DE VEHICULES DE LUXE », géolocalisation, sanction pécuniaire publique de 5 000 euros (22 juillet 2014)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "Legalis — Conseil d'État, 10ème/9ème SSR, décision du 18 décembre 2015 (SARL Loc Car Dream c/ CNIL)",
+      "url": "https://www.legalis.net/jurisprudences/conseil-detat-10eme-9eme-ssr-decision-du-18-decembre-2015/",
+      "kind": "article"
+    },
+    {
+      "label": "Le Monde du Droit — Sanction de la CNIL relative à la mise en oeuvre d'un dispositif de géolocalisation des clients (11 août 2014)",
+      "url": "https://www.lemondedudroit.fr/secteurs/289-transports/37914-sanction-de-la-cnil-relative-a-la-mise-en-oeuvre-dun-dispositif-de-geolocalisation-des-clients-.html",
+      "kind": "article"
+    },
+    {
+      "label": "CNIL (liste officielle des sanctions, version archivée du 22/11/2018) : décision du 22/07/2014, géolocalisation",
+      "url": "http://web.archive.org/web/20181122143420/https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "archive"
+    }
+  ],
+  "description": "La plainte d'un client a révélé la géolocalisation des véhicules de luxe loués par la SARL Loc Car Dream. Le dispositif fonctionnait en continu et ne pouvait pas être désactivé. Selon le Conseil d'État, les données de 36 véhicules étaient centralisées chez un hébergeur. Elles étaient accessibles depuis un poste situé à l'accueil commun des sociétés. La CNIL n'a reçu aucune réponse à ses courriers ni à sa mise en demeure. Celle-ci demandait de limiter la collecte aux vols et aux non-restitutions. La formation restreinte a prononcé une sanction pécuniaire publique de 5 000 euros le 22 juillet 2014. Le Conseil d'État a rejeté le recours le 18 décembre 2015.",
+  "timeline": [
+    {
+      "date": "2013-06-20",
+      "event": "Contrôle sur place à Douvres-la-Délivrande après la plainte d'un client."
+    },
+    {
+      "date": "2014-07-22",
+      "event": "Sanction pécuniaire publique de 5 000 euros pour géolocalisation excessive (délibération n° 2014-294)."
+    },
+    {
+      "date": "2015-12-18",
+      "event": "Le Conseil d'État rejette le recours de la SARL Loc Car Dream et confirme la sanction."
+    }
+  ]
+}
