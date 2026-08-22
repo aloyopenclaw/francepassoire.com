@@ -50,7 +50,7 @@ jobs:
       - name: npm ci
         run: npm ci
 
-      - name: Sélection des candidats (3 max, marqués DRAFTING)
+      - name: Sélection des candidats (3 max, marqués DRAFT)
         id: candidats
         run: |
           . /home/runner/.config/francepassoire/env.sh
@@ -103,16 +103,16 @@ jobs:
               gh pr create --head "$BR" --base main --title "Fiche : $SLUG (rédaction automatique)" \
                 --body "Rédigé depuis un candidat d'ingestion par le workflow draft-fiches selon docs/redaction-contract.md. Validation agent en cours ; fusion = décision propriétaire." || true
               git checkout main
-              printf '{"sql": "UPDATE candidates SET status = ?1 WHERE id = ?2", "params": ["DRAFTED", "%s"]}' "$ID" > .agent-tmp/p.json
+              printf '{"sql": "UPDATE candidates SET dedup_score = ?1 WHERE id = ?2", "params": ["drafted:%s", "%s"]}' "$ID" > .agent-tmp/p.json
               curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json >/dev/null
               echo "PR ouverte pour $SLUG (candidat $ID)"
             fi
           done < .agent-tmp/verdicts.tsv
 
-      - name: Filet de sécurité D1 (les DRAFTING orphelins redeviennent NEW)
+      - name: Filet de sécurité D1 (les DRAFT orphelins redeviennent NEW)
         if: always()
         run: |
           . /home/runner/.config/francepassoire/env.sh
           mkdir -p .agent-tmp
-          printf '%s' '{"sql": "UPDATE candidates SET status = ?1 WHERE status = ?2", "params": ["NEW", "DRAFTING"]}' > .agent-tmp/p.json
+          printf '%s' '{"sql": "UPDATE candidates SET status = ?1 WHERE status = ?2", "params": ["NEW", "DRAFT"]}' > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json >/dev/null
