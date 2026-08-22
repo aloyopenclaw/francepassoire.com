@@ -1,0 +1,39 @@
+{
+  "slug": "uttop-20260819",
+  "entity": "Université de technologie Tarbes Occitanies Pyrénées (UTTOP)",
+  "siren": "196500482",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-19",
+    "publication": "2026-08-19"
+  },
+  "volume": {
+    "count": 520,
+    "unit": "personnes",
+    "label": "Environ 520 personnels, enseignants-chercheurs et doctorants listés dans un annuaire interne (518 à 520 selon les relais) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 518 personnels concernés par une fuite revendiquée à l'UTTOP",
+      "url": "https://fuitesinfos.fr/article/2026-08-19-universite-de-technologie-de-tarbes-uttop",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — L'intranet de l'université de Technologie de Tarbes exposé avec les coordonnées de plus de 500 personnes",
+      "url": "https://www.cyberattaque.org/cyberattaque-uttop-intranet-universite-technologie-tarbes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 août 2026, deux acteurs affirment avoir diffusé gratuitement des données de l'intranet de l'Université de technologie Tarbes Occitanies Pyrénées (UTTOP). Selon les relais, les fichiers annoncés contiennent un annuaire interne d'environ 520 personnels, enseignants-chercheurs et doctorants, et près de 200 listes de diffusion internes. Les entrées publiées comprennent noms et adresses électroniques professionnelles. Pour une partie d'entre elles figurent une ligne téléphonique et le service de rattachement. La publication s'accompagne d'une protestation contre un projet européen de contrôle des messageries, selon les mêmes relais. Les deux acteurs avaient déjà revendiqué fin juillet une fuite visant une association de soutien à la gendarmerie. L'établissement n'a pas confirmé publiquement.",
+  "timeline": [
+    {
+      "date": "2026-08-19",
+      "event": "Deux acteurs affirment avoir diffusé gratuitement l'annuaire interne et les listes de diffusion de l'UTTOP, environ 520 personnels concernés selon les relais."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "aastrio-20260818",
+  "entity": "Aastrio",
+  "siren": "513795732",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-18"
+  },
+  "volume": {
+    "count": 26,
+    "unit": "personnes",
+    "label": "26 personnes identifiables, dont quinze travailleurs indépendants portés et sept contacts professionnels (revendiqué ; données arrêtées à juin 2018) ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 26 personnes concernées par une fuite revendiquée chez Aastrio",
+      "url": "https://fuitesinfos.fr/article/2026-08-18-aastrio",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Aastrio / Monday : une ancienne base de données refait surface huit ans plus tard",
+      "url": "https://www.cyberattaque.org/aastrio-monday-une-ancienne-base-de-donnees-refait-surface-huit-ans-plus-tard/",
+      "kind": "article"
+    }
+  ],
+  "description": "Aastrio, société parisienne de portage salarial opérant sous la marque Monday, est visée le 18 août 2026. Une sauvegarde attribuée à son ancien portail collaboratif y est diffusée gratuitement. Selon les relais, 26 personnes y sont identifiables. La plupart des travailleurs indépendants portés y figurent avec leurs coordonnées bancaires complètes. Sont aussi cités identité complète, numéro de Sécurité sociale, pièces d'identité et factures. Les mots de passe de quelques comptes du portail seraient protégés par une méthode désormais considérée comme obsolète. Les données s'arrêtent en juin 2018 et la base paraît figée depuis cette date. La société n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Diffusion gratuite annoncée d'une sauvegarde de l'ancien portail collaboratif d'Aastrio : 26 personnes identifiables, données arrêtées à juin 2018."
+    }
+  ]
+}
