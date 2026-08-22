@@ -137,27 +137,3 @@ Le projet France Passoire opère sous une double licence :
 
 * **Le code source** (ce dépôt) est sous licence **AGPL-3.0**. Toute modification du code déployée sur un serveur (SaaS/Web) doit voir son code source modifié publié sous la même licence. Cela garantit que les outils de transparence restent transparents.
 * **Les données et le contenu** (le catalogue JSON, les fiches) sont sous licence **CC-BY-4.0**. Vous êtes libre de les copier, diffuser et utiliser, même commercialement, à l'unique condition d'en créditer l'origine.
-
----
-
-<!-- Méta-données GitHub (à configurer dans les paramètres du dépôt) — retirer ce bloc avant publication si souhaité -->
-
-### Méta-données GitHub
-
-| Paramètre | Valeur suggérée |
-| --- | --- |
-| **Homepage** | `https://francepassoire.com` |
-| **Description** (Option 1 — Courte) | L'observatoire civique des fuites de données en France. On compte les trous de la passoire nationale. Données ouvertes CC-BY. |
-| **Description** (Option 2 — Complète) | La France, passoire à données : l'observatoire citoyen qui recense, vérifie et archive les fuites de données françaises. Registre à preuve de falsification et données ouvertes CC-BY. |
-| **Description** (Option 3 — Action) | Tracking exhaustif des fuites de données françaises. Catalogue public, chaîne d'intégrité décentralisée et données ouvertes CC-BY. Pas de panique. Mais agissons. |
-| **Topics** (Tags) | `fuite-de-donnees`, `cybersecurity`, `rgpd`, `vie-privee`, `osint`, `france`, `civic-tech`, `observatoire`, `astro`, `cloudflare-workers`, `typescript`, `d1` |
-
-#### Spécification pour l'image Social Preview (opengraph)
-
-L'image à uploader sur GitHub (1280×640 px) doit être générée par le pipeline og-image avec ces contraintes :
-
-* **Fond** : orange `#FF6B1A` avec le motif *dot-matrix* (points encre `#241405`) couvrant toute la surface.
-* **Titre central** : le logotype FRANCEPASSOIRE en *Bricolage Grotesque*, très massif, couleur encre.
-* **Sous-titre** : « La France, passoire à données. On compte les trous. »
-* **Éléments visuels** : deux pastilles de statut flottantes — une orange « Revendiquée » avec le motif à trous, une verte pleine « Confirmée » — pour illustrer immédiatement la mécanique du site.
-* **Badge coin inférieur droit** : mention « Données ouvertes CC-BY » en police monospace, fond crème `#FFF6EA`.
