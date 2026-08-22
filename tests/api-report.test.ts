@@ -355,3 +355,29 @@ describe('routage worker API', () => {
     expect(res.headers.get('Access-Control-Allow-Methods')).toContain('POST');
   });
 });
+
+// F2 (22/08) — une URL qui passe la regex mais que le constructeur URL rejette
+// (port invalide) doit donner un 400 propre, pas une 500 non gérée.
+describe('POST /api/report — URL à port invalide', () => {
+  it('http://a.b:8080z/ → 400 (et non 500)', async () => {
+    const { env } = makeEnv({ turnstileSecret: 'secret-test' });
+    const reponse = await handleRequest(
+      new Request('https://francepassoire.com/api/report', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          entite: 'Entité Test',
+          details: 'Des détails suffisamment longs pour passer la validation.',
+          source_url: 'http://a.b:8080z/article',
+          date_incident: '2026-08-01',
+          turnstileToken: 'tok',
+        }),
+      }),
+      env,
+      { fetchFn: siteverifyOk },
+    );
+    expect(reponse.status).toBe(400);
+    const corps = (await reponse.json()) as { errors?: string[] };
+    expect(corps.errors?.join(' ')).toContain('URL http(s) valide');
+  });
+});

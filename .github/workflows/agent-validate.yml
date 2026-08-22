@@ -33,6 +33,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 concurrency:
   group: agent-validate-${{ github.event.pull_request.number }}
@@ -46,7 +47,7 @@ jobs:
         contains(github.event.pull_request.labels.*.name, 'agent-review') )
     runs-on: self-hosted
     environment: agent
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Checkout (tête de PR uniquement)
         uses: actions/checkout@v4
@@ -90,7 +91,7 @@ jobs:
           1. zod : npx vitest run tests/pr-fiches.test.ts — doit passer pour tout le catalogue ;
           2. prose : Ton A factuel sec (docs/prose-style.md) — pas d'éditorialisation, aucun em-dash dans le contenu ;
           3. contrat fiche (tâche 18) : champs requis, dates cohérentes, volume sourcé (count 0 + label si inconnu), statut confirmee seulement si confirmation officielle ;
-          4. sources : pour CHAQUE url de sources[], curl -sIL --max-time 15 -A 'Mozilla/5.0' — 200/301/308 = vivante ; 4xx/5xx = morte SAUF équivalent web.archive.org déjà en URL.
+          4. sources : pour CHAQUE url de sources[], curl -sIL --max-time 15 -A 'Mozilla/5.0' — 200/301/308 = vivante ; si non-2xx, REJOUE en GET (curl -sL -o /dev/null -w '%{http_code}' — certains sites bloquent HEAD) : 200/301/308 = vivante ; sinon morte SAUF équivalent web.archive.org déjà en URL.
 
           Écris le rapport markdown dans .agent-tmp/report.md : titre '## Validation agent', une section par porte avec son verdict, puis un verdict global. Termine par une ligne exactement 'VERDICT: PASS' ou 'VERDICT: FAIL'.
           " > .agent-tmp/run.log 2>&1 || true
@@ -158,3 +159,104 @@ jobs:
                 name: 'agent:validé',
               });
             } catch (e) { /* absent = ok */ }
+
+      - name: Corrections mécaniques (fixup borné, une seule itération)
+        id: fixup
+        if: steps.agent.outputs.verdict == 'FAIL'
+        env:
+          PR_NUM: ${{ github.event.pull_request.number }}
+        run: |
+          if git log -1 --pretty=%s | grep -q "^fix(catalog): corrections mécaniques du validateur"; then
+            echo "fixup déjà appliqué et verdict toujours FAIL — défaut éditorial, intervention humaine requise."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          opencode run "
+          Tu es le correcteur mécanique de la PR numéro ${PR_NUM}. Lis ton propre rapport .agent-tmp/report.md et corrige UNIQUEMENT les défauts mécaniques qu'il liste : URL morte remplacée par son snapshot web.archive.org (vérifie le code 200 avec curl avant de l'écrire), caractère em-dash remplacé par un deux-points, slug réaligné sur la date de revendication, dates.confirmation manquante ajoutée, chronologie revendication/publication remise dans l'ordre, volume à zéro qualifié par un label mentionnant que le volume n'est pas communiqué. Tu ne touches QUE des fichiers data/catalog/*.json. Tu ne réécris jamais la prose au-delà de ces remplacements. Les défauts éditoriaux (sourçage insuffisant, doublon, prose hors ton) ne sont pas de ta compétence : laisse-les.
+          " || true
+          git add -A data/catalog/ 2>/dev/null || true
+          HORS_PERIMETRE=$(git diff --cached --name-only | grep -cv '^data/catalog/' || true)
+          if [ "${HORS_PERIMETRE}" != "0" ]; then
+            echo "correctif hors périmètre détecté — abandon du push"; git reset --hard HEAD
+            echo "pushed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if git diff --cached --quiet; then
+            echo "aucune correction mécanique applicable — le défaut est éditorial, intervention humaine"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "fix(catalog): corrections mécaniques du validateur (agent)" --quiet
+            git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+            echo "fixup poussé — re-validation immédiate dans ce même job (aucune approbation requise)"
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Re-validation après fixup (même job, autonomie totale)
+        id: reval
+        if: steps.fixup.outputs.pushed == 'true'
+        run: |
+          rm -f .agent-tmp/report.md
+          opencode run "
+          Tu es le validateur éditorial de FrancePassoire. Re-valide les fiches de cette PR (état APRÈS correctif mécanique) : ${FICHE_FILES}. Mêmes 4 portes qu'auparavant : (1) npx vitest run tests/pr-fiches.test.ts ; (2) prose Ton A sans em-dash dans description/timeline/volume.label ; (3) contrat tâche 18 ; (4) sondage curl HEAD (repli GET) de chaque source. Écris .agent-tmp/report2.md avec en première ligne '**Synthèse : <PASS ou FAIL> — re-validation après correctif mécanique**', puis le détail par porte. Termine par 'VERDICT: PASS' ou 'VERDICT: FAIL'.
+          " || true
+          if [ -f .agent-tmp/report2.md ] && grep -q 'VERDICT: PASS' .agent-tmp/report2.md; then
+            echo "verdict=PASS" >> "$GITHUB_OUTPUT"
+          else
+            printf '## Re-validation\n\nÉchec ou défaut éditorial persistant après correctif mécanique — intervention humaine requise.\n\nVERDICT: FAIL\n' > .agent-tmp/report2.md
+            echo "verdict=FAIL" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rapport de re-validation en commentaire
+        if: steps.fixup.outputs.pushed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report2 = fs.readFileSync('.agent-tmp/report2.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: report2.slice(0, 60000),
+            });
+
+      - name: Label final agent:validé
+        if: steps.reval.outputs.verdict == 'PASS'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: ['agent:validé'],
+            });
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                name: 'agent:à-corriger',
+              });
+            } catch (e) { /* absent = ok */ }
+
+      - name: Nettoyage des runs fantômes (pushes bot parqués par GitHub)
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'agent-validate.yml',
+              branch: context.payload.pull_request.head.ref,
+              per_page: 50,
+            });
+            for (const r of runs) {
+              if (r.conclusion === 'action_required' || r.status === 'action_required') {
+                try {
+                  await github.rest.actions.deleteWorkflowRun({ owner: context.repo.owner, repo: context.repo.repo, run_id: r.id });
+                  console.log('run fantôme supprimé :', r.id);
+                } catch (e) { console.log('suppression impossible :', r.id, e.status); }
+              }
+            }

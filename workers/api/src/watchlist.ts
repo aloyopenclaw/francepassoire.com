@@ -1649,7 +1649,7 @@ export async function runInstantSweep(
       const cartes = nouveauxMatches.slice(0, INSTANT_CAP);
       const complement =
         nouveauxMatches.length > cartes.length
-          ? `\\n\\nEt ${String(nouveauxMatches.length - cartes.length)} autre(s) fuite(s) : ${SITE_URL}/catalogue/`
+          ? `\n\nEt ${String(nouveauxMatches.length - cartes.length)} autre(s) fuite(s) : ${SITE_URL}/catalogue/`
           : '';
       const r = await sendBrevoEmail(
         env.BREVO_API_KEY,

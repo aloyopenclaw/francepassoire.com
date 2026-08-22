@@ -42,15 +42,21 @@ function volumeCourt(volume: FicheLike['volume']): string {
     : 'Volume non communiqué';
 }
 
+// Les noms d'entités du catalogue peuvent porter un tiret cadratin (CNIL) ;
+// la copy UI n'en admet aucun : normalisation à la frontière de sérialisation.
+function entitySansCadratin(entity: string): string {
+  return entity.replaceAll('—', ':');
+}
+
 // Ticker : les 8 dernières fuites, chaque item pointe vers la fiche publiée.
 const tickerItems: TickerItem[] = fiches.slice(0, 8).map((fiche) => ({
-  label: `${fiche.entity} · ${volumeCourt(fiche.volume)}`,
+  label: `${entitySansCadratin(fiche.entity)} · ${volumeCourt(fiche.volume)}`,
   url: urlFiche(fiche.slug),
 }));
 
 // Cartes du catalogue : view models sérialisés pour l'îlot client.
 const cards: LeakCard[] = fiches.map((fiche) => ({
-  name: fiche.entity,
+  name: entitySansCadratin(fiche.entity),
   sector: labelSecteur(fiche.secteur),
   size: volumeCourt(fiche.volume),
   status: labelStatut(fiche.statut),

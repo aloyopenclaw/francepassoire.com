@@ -26,7 +26,7 @@ export function getStaticPaths() {
 
 const { fiche, liens } = Astro.props;
 
-const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()} recensée par FrancePassoire — ${fiche.volume.label.toLowerCase()}. Données annoncées, historique et sources citées sur la fiche.`;
+const ficheDescription = `${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()} recensée par FrancePassoire : ${fiche.volume.label.toLowerCase()}. Données annoncées, historique et sources citées sur la fiche.`;
 
 // T48 : la date d'attribution désambiguïse les récidivistes (Chronopost,
 // France Travail…) — sinon deux fiches d'une même entité partagent <title>.
@@ -42,7 +42,7 @@ const titreDocument = `${fiche.entity} : la fiche du ${formaterDate(dateTitre)} 
 const articleJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: `${fiche.entity} — fuite de données, FrancePassoire`,
+  headline: `${fiche.entity.replaceAll('—', ':')} : fuite de données, FrancePassoire`,
   description: ficheDescription,
   author: { '@type': 'Organization', name: 'FrancePassoire' },
   publisher: { '@type': 'Organization', name: 'FrancePassoire' },
@@ -72,7 +72,7 @@ const retroliens = [
   image={`/fiche/${fiche.slug}/card.jpg`}
   imageWidth={1080}
   imageHeight={1080}
-  imageAlt={`FrancePassoire — carte de la fiche ${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()}`}
+  imageAlt={`FrancePassoire : carte de la fiche ${fiche.entity} : fuite ${labelStatut(fiche.statut).toLowerCase()}`}
 >
   <script type="application/ld+json" set:html={articleJsonLd} slot="head" />
   <FichePage fiche={fiche} />

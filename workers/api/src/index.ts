@@ -127,6 +127,19 @@ const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const HTTP_URL_RE = /^https?:\/\/\S+\.\S+/i;
 
+/**
+ * URL http(s) parse-sans-exception : la regex laisse passer des formes que le
+ * constructeur URL rejette (port invalide type « :8080z »), qui provoquaient
+ * une 500 non gérée sur POST /api/report au lieu d'un 400 propre (F2, 22/08).
+ */
+function estUrlHttpValide(candidat: string): boolean {
+  try {
+    return /^https?:$/.test(new URL(candidat).protocol);
+  } catch {
+    return false;
+  }
+}
+
 function validateReport(body: ReportBody): { report: ValidatedReport; errors: string[] } {
   const errors: string[] = [];
 
@@ -150,7 +163,7 @@ function validateReport(body: ReportBody): { report: ValidatedReport; errors: st
 
   const source_url = str(body.source_url);
   if (!source_url) errors.push("L'URL de la source publique est obligatoire.");
-  else if (!HTTP_URL_RE.test(source_url) || null === new URL(source_url).protocol.match(/^https?:$/)) {
+  else if (!HTTP_URL_RE.test(source_url) || !estUrlHttpValide(source_url)) {
     errors.push("L'URL de la source publique doit être une URL http(s) valide.");
   }
 

@@ -23,14 +23,14 @@ const dernieres7j = dossiers
 ---
 <Layout
   title="Ransomware - France Passoire"
-  description="Le panorama des revendications ransomware touchant la France — tableau des 7 derniers jours, groupes actifs et règle de publication."
+  description="Le panorama des revendications ransomware touchant la France : tableau des 7 derniers jours, groupes actifs et règle de publication."
 >
   <!-- Hero -->
   <section class="bg-dot-matrix border-b-2 border-brand-ink py-16 sm:py-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
       <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-6 sm:p-10 mb-4 transform rotate-1">
         <h1 class="font-display font-extrabold text-4xl sm:text-6xl mb-4">
-          Ransomware — les revendications,<br>en direct.
+          Ransomware : les revendications,<br>en direct.
         </h1>
         <p class="font-mono text-lg max-w-2xl mx-auto font-bold opacity-90">
           Quand un groupe publie une liste de victimes françaises, la fiche apparaît ici.
@@ -61,7 +61,7 @@ const dernieres7j = dossiers
               {dernieres7j.length === 0 ? (
                 <tr>
                   <td colspan="6" class="p-8 text-center font-body text-base text-brand-ink/70 leading-relaxed">
-                    Aucune revendication vérifiée sur les 7 derniers jours — le tableau se
+                    Aucune revendication vérifiée sur les 7 derniers jours : le tableau se
                     remplit dès la première entrée passée par notre méthode de vérification.
                   </td>
                 </tr>
@@ -107,7 +107,7 @@ const dernieres7j = dossiers
         </div>
         {groupesActifs.length > 8 && (
           <p class="font-mono text-sm mt-4 text-brand-ink/70">
-            + {groupesActifs.length - 8} autre{groupesActifs.length - 8 > 1 ? 's' : ''} groupe{groupesActifs.length - 8 > 1 ? 's' : ''} documenté{groupesActifs.length - 8 > 1 ? 's' : ''} — voir les dossiers complets sur chaque fiche.
+            + {groupesActifs.length - 8} autre{groupesActifs.length - 8 > 1 ? 's' : ''} groupe{groupesActifs.length - 8 > 1 ? 's' : ''} documenté{groupesActifs.length - 8 > 1 ? 's' : ''} : voir les dossiers complets sur chaque fiche.
           </p>
         )}
       </div>

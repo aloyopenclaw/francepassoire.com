@@ -1,0 +1,39 @@
+{
+  "slug": "actua-20260822",
+  "entity": "Actua",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 100000,
+    "unit": "personnes",
+    "label": "plus de 100 000 personnes recrutées selon LockBit 5.0 ; passeports, diplômes, CV et attestations d'assurance annoncés ; non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — LockBit 5.0 menace de publier des données d'Actua (22 août 2026)",
+      "url": "https://www.zataz.com/lockbit-5-0-menace-de-publier-des-donnees-dactua/",
+      "kind": "article"
+    },
+    {
+      "label": "Sébastien Forte (LinkedIn) — Cyberattaque revendiquée chez ACTUA Agences d'emploi, relais de la revendication LockBit 5.0 (22 août 2026)",
+      "url": "https://fr.linkedin.com/posts/seblatombe_cyberattaque-revendiqu%C3%A9e-chez-actua-agences-activity-7495012387079573504-s5Ms",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 août 2026, le groupe LockBit 5.0 revendique une attaque contre Actua, groupe français de recrutement et de travail temporaire fort de 37 agences et plus de 1 800 entreprises partenaires. Les cybercriminels annoncent la diffusion début septembre, via dix espaces de stockage distincts, d'un ensemble de documents comprenant des passeports, des diplômes, des CV et des attestations d'assurance concernant plus de 100 000 personnes recrutées. La revendication ne précise ni le vecteur d'intrusion, ni la date d'un accès initial, ni l'ampleur d'un éventuel chiffrement. Actua n'a pas répondu aux sollicitations de la presse au 22 août 2026.",
+  "timeline": [
+    {
+      "date": "2026-08-22",
+      "event": "LockBit 5.0 ajoute Actua à sa liste de victimes et détaille les catégories de documents annoncées, avec une diffusion prévue début septembre sur dix espaces de stockage."
+    }
+  ]
+}

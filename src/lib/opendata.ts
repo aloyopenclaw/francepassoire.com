@@ -123,7 +123,7 @@ export function buildRss(
           : fiche.description;
       return [
         '    <item>',
-        `      <title>${escapeXml(`${fiche.entity} — ${fiche.volume.label}`)}</title>`,
+        `      <title>${escapeXml(`${fiche.entity} : ${fiche.volume.label}`)}</title>`,
         `      <link>${lien}</link>`,
         `      <guid isPermaLink="true">${lien}</guid>`,
         `      <pubDate>${rfc822(dateAttribution(fiche))}</pubDate>`,
