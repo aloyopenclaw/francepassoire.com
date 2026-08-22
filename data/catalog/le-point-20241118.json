@@ -34,7 +34,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Selon la presse, le Point, hebdomadaire français, annonce le 18 novembre 2024 à ses lecteurs un vol de données détecté sur le dark web et porte plainte. L'attaque a visé un outil de gestion de la relation client opéré par un sous-traitant, après des incidents similaires chez La Croix et l'AFP. La base — près de 900 000 abonnés, actuels et anciens, proposée à 350 euros sur un forum — contient noms, e-mails, téléphones et adresses postales, sans mots de passe ni données bancaires. Selon la presse, la fuite a d'abord été repérée par l'ANSSI, puis confirmée par Le Point.",
+  "description": "Selon la presse, le Point, hebdomadaire français, annonce le 18 novembre 2024 à ses lecteurs un vol de données détecté sur le dark web et porte plainte. L'attaque a visé un outil de gestion de la relation client opéré par un sous-traitant, après des incidents similaires chez La Croix et l'AFP. La base (près de 900 000 abonnés, actuels et anciens, proposée à 350 euros sur un forum) contient noms, e-mails, téléphones et adresses postales, sans mots de passe ni données bancaires. Selon la presse, la fuite a d'abord été repérée par l'ANSSI, puis confirmée par Le Point.",
   "timeline": [
     {
       "date": "2024-11-18",

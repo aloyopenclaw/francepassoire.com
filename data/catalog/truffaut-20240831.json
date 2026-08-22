@@ -10,7 +10,7 @@
   "volume": {
     "count": 277000,
     "unit": "enregistrements",
-    "label": "277 000 commandes clients revendiquées par le vendeur — près de 280 000 entrées selon ZDNET — ; Truffaut n'a pas corroboré ce chiffre"
+    "label": "277 000 commandes clients revendiquées par le vendeur (près de 280 000 entrées selon ZDNET) ; Truffaut n'a pas corroboré ce chiffre"
   },
   "data_types": [
     "identite",

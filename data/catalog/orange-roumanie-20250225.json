@@ -24,7 +24,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 25 février 2025, Orange confirme un vol de données touchant principalement sa filiale roumaine et sa filiale locale de crédit Yoxo, révélé par Bleeping Computer : 380 000 documents — adresses mail, code source, factures, contrats, informations sur des clients et employés — sont mis à disposition sur un forum de pirates dans un fichier de 6,5 Go. L’auteur affirme avoir accédé aux serveurs pendant plus d’un mois via des vulnérabilités du logiciel Jira et exfiltré les données en trois heures ; il affirme aussi avoir tenté de rançonner Orange, sans succès. Selon la presse, l’opérateur a lancé une enquête et indique que certaines données seraient caduques.",
+  "description": "Le 25 février 2025, Orange confirme un vol de données touchant principalement sa filiale roumaine et sa filiale locale de crédit Yoxo, révélé par Bleeping Computer : 380 000 documents (adresses mail, code source, factures, contrats, informations sur des clients et employés) sont mis à disposition sur un forum de pirates dans un fichier de 6,5 Go. L’auteur affirme avoir accédé aux serveurs pendant plus d’un mois via des vulnérabilités du logiciel Jira et exfiltré les données en trois heures ; il affirme aussi avoir tenté de rançonner Orange, sans succès. Selon la presse, l’opérateur a lancé une enquête et indique que certaines données seraient caduques.",
   "timeline": [
     {
       "date": "2025-02-25",

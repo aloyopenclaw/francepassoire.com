@@ -19,11 +19,11 @@
   "sources": [
     {
       "label": "L'Usine Digitale — Le bijoutier Pandora victime d'une fuite de données personnelles",
-      "url": "https://www.usine-digitale.fr/article/le-bijoutier-pandora-victime-d-une-fuite-de-donnees-personnelles.N2236170",
-      "kind": "article"
+      "url": "https://web.archive.org/web/20250806160326/https://www.usine-digitale.fr/article/le-bijoutier-pandora-victime-d-une-fuite-de-donnees-personnelles.N2236170",
+      "kind": "archive"
     }
   ],
-  "description": "Selon la presse, le fabricant de bijoux danois Pandora avertit ses clients par courrier le 5 août 2025 d'une « attaque de cybersécurité au cours de laquelle certaines données clients ont été consultées via une plateforme tierce » qu'il utilise. Selon la presse, l'entreprise précise que seules des données courantes sont concernées — noms, dates de naissance et adresses e-mail — et qu'aucun mot de passe, numéro de carte bancaire ou donnée confidentielle similaire n'est impacté. Selon Pandora, des vérifications approfondies n'ont trouvé aucune preuve de partage ou de publication de ces données. Le média spécialisé BleepingComputer situe le vol dans une base Salesforce. La marque recommande la vigilance face au phishing.",
+  "description": "Selon la presse, le fabricant de bijoux danois Pandora avertit ses clients par courrier le 5 août 2025 d'une « attaque de cybersécurité au cours de laquelle certaines données clients ont été consultées via une plateforme tierce » qu'il utilise. Selon la presse, l'entreprise précise que seules des données courantes sont concernées (noms, dates de naissance et adresses e-mail) et qu'aucun mot de passe, numéro de carte bancaire ou donnée confidentielle similaire n'est impacté. Selon Pandora, des vérifications approfondies n'ont trouvé aucune preuve de partage ou de publication de ces données. Le média spécialisé BleepingComputer situe le vol dans une base Salesforce. La marque recommande la vigilance face au phishing.",
   "timeline": [
     {
       "date": "2025-08-05",

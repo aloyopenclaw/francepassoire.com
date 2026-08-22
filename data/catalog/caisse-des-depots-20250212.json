@@ -34,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Selon la presse, la Caisse des dépôts révèle le 12 février 2025 un vol de données personnelles touchant 70 000 affiliés à l'Ircantec — agents contractuels de la fonction publique d'État, territoriale et hospitalière, praticiens hospitaliers et élus locaux, dont environ un millier d'élus. Des identifiants de connexion d'employeurs publics à une plateforme dédiée aux régimes de retraite ont été utilisés frauduleusement, permettant un accès illégitime à des données d'affiliés : numéro de Sécurité sociale, état civil, date et lieu de naissance, adresse postale. L'institution précise que données bancaires, mots de passe et e-mails ne sont pas concernés ; elle a informé les personnes touchées, déposé plainte et notifié la CNIL.",
+  "description": "Selon la presse, la Caisse des dépôts révèle le 12 février 2025 un vol de données personnelles touchant 70 000 affiliés à l'Ircantec : agents contractuels de la fonction publique d'État, territoriale et hospitalière, praticiens hospitaliers et élus locaux, dont environ un millier d'élus. Des identifiants de connexion d'employeurs publics à une plateforme dédiée aux régimes de retraite ont été utilisés frauduleusement, permettant un accès illégitime à des données d'affiliés : numéro de Sécurité sociale, état civil, date et lieu de naissance, adresse postale. L'institution précise que données bancaires, mots de passe et e-mails ne sont pas concernés ; elle a informé les personnes touchées, déposé plainte et notifié la CNIL.",
   "timeline": [
     {
       "date": "2025-02-12",

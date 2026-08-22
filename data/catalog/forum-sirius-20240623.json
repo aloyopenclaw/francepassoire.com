@@ -34,7 +34,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le 23 juin 2024, une archive présentée comme issue de Sirius, éditeur du logiciel de billetterie Forum Sirius utilisé par plus de 400 salles françaises, est proposée à la vente : 5 986 188 enregistrements — identités, adresses, téléphones, e-mails et mots de passe de comptes clients. L'alerte est donnée par le chercheur SaxX le 26 juin. Les attaquants ont subtilisé des identifiants d'accès à un serveur de production. Selon la presse, le directeur de Sirius confirme environ six millions de données dérobées, déclare l'incident clos et les mots de passe réinitialisés ; les salles et l'éditeur notifient la CNIL.",
+  "description": "Le 23 juin 2024, une archive présentée comme issue de Sirius, éditeur du logiciel de billetterie Forum Sirius utilisé par plus de 400 salles françaises, est proposée à la vente : 5 986 188 enregistrements : identités, adresses, téléphones, e-mails et mots de passe de comptes clients. L'alerte est donnée par le chercheur SaxX le 26 juin. Les attaquants ont subtilisé des identifiants d'accès à un serveur de production. Selon la presse, le directeur de Sirius confirme environ six millions de données dérobées, déclare l'incident clos et les mots de passe réinitialisés ; les salles et l'éditeur notifient la CNIL.",
   "timeline": [
     {
       "date": "2024-06-23",

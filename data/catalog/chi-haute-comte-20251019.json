@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "établissement de trois sites (Pontarlier, Mouthe, Levier) ; exfiltration de données non établie à ce stade — attaque par chiffrement (cryptolocker)"
+    "label": "établissement de trois sites (Pontarlier, Mouthe, Levier) ; exfiltration de données non établie à ce stade : attaque par chiffrement (cryptolocker)"
   },
   "data_types": [
     "sante"

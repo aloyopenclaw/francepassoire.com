@@ -31,7 +31,7 @@
       "kind": "article"
     }
   ],
-  "description": "Emoa, mutuelle varoise d'environ 80 000 adhérents, subit deux fuites successives au printemps 2022 : un premier piratage courant mars, repéré avec l'ANSSI, puis une seconde exfiltration en avril via une faille du site. Le 12 avril, un pirate met en vente 661 000 lignes — annuaire, adhérents, messages clients — avec noms, dates de naissance, codes postaux et e-mails ; près de 3 000 numéros de Sécurité sociale, des photocopies de pièces d'identité et des RIB circulent aussi. Alertée par ZATAZ, la mutuelle reconnaît par son DPO qu'une fuite « a bien été détectée et déclarée » ; Libération puis Le JDD documentent l'affaire fin juillet.",
+  "description": "Emoa, mutuelle varoise d'environ 80 000 adhérents, subit deux fuites successives au printemps 2022 : un premier piratage courant mars, repéré avec l'ANSSI, puis une seconde exfiltration en avril via une faille du site. Le 12 avril, un pirate met en vente 661 000 lignes (annuaire, adhérents, messages clients) avec noms, dates de naissance, codes postaux et e-mails ; près de 3 000 numéros de Sécurité sociale, des photocopies de pièces d'identité et des RIB circulent aussi. Alertée par ZATAZ, la mutuelle reconnaît par son DPO qu'une fuite « a bien été détectée et déclarée » ; Libération puis Le JDD documentent l'affaire fin juillet.",
   "timeline": [
     {
       "date": "2022-04-12",

@@ -1,5 +1,5 @@
 {
-  "slug": "chu-rennes-20230621",
+  "slug": "chu-rennes-20230728",
   "entity": "CHU de Rennes",
   "secteur": "sante",
   "statut": "revendiquee",
@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "environ 300 Go de données dérobées — données comptables, RH et données personnelles de soignants et de patients ; nombre de personnes concernées non communiqué"
+    "label": "environ 300 Go de données dérobées : données comptables, RH et données personnelles de soignants et de patients ; nombre de personnes concernées non communiqué"
   },
   "data_types": [
     "identite",
@@ -49,7 +49,7 @@
       "kind": "article"
     }
   ],
-  "description": "Le CHU de Rennes est victime le 21 juin 2023 d'une cyberattaque détectée par Orange Cyberdefense : un compte de prestataire a été détourné pour accéder au système d'information. Environ 300 Go de données sont exfiltrés — données comptables, RH et données personnelles de soignants et de patients. Un mois plus tard, fin juillet, le groupe BianLian met ces données en ligne. L'établissement hospitalier appelle personnels et patients à la vigilance et confirme la diffusion selon la presse ; les soins ont continué pendant toute la crise.",
+  "description": "Le CHU de Rennes est victime le 21 juin 2023 d'une cyberattaque détectée par Orange Cyberdefense : un compte de prestataire a été détourné pour accéder au système d'information. Environ 300 Go de données sont exfiltrés : données comptables, RH et données personnelles de soignants et de patients. Un mois plus tard, fin juillet, le groupe BianLian met ces données en ligne. L'établissement hospitalier appelle personnels et patients à la vigilance et confirme la diffusion selon la presse ; les soins ont continué pendant toute la crise.",
   "timeline": [
     {
       "date": "2023-06-21",
