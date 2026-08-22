@@ -1,0 +1,43 @@
+{
+  "slug": "federation-hospitaliere-de-france-20260624",
+  "entity": "Fédération Hospitalière de France (FHF)",
+  "siren": "784546582",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-24",
+    "publication": "2026-06-29"
+  },
+  "volume": {
+    "count": 30728,
+    "unit": "personnes",
+    "label": "30 728 personnes présentes dans une base datée de juin 2026 selon la publication du 24 juin 2026 (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Fédération Hospitalière de France : plus de 30 000 professionnels de santé dans une fuite de données (24 juin 2026)",
+      "url": "https://www.cyberattaque.org/federation-hospitaliere-de-france-plus-de-30-000-professionnels-de-sante-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Plus de 30 000 personnes revendiquées dans une fuite visant la FHF (29 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-hospitali-re-de-france-mqyllship5irezr3rw",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 24 juin 2026, un cybercriminel signant Saturne publie sur un forum une base attribuée au portail fhf.fr. La Fédération Hospitalière de France représente les établissements publics de santé et médico-sociaux. Elle concernerait 30 728 personnes, essentiellement des professionnels du secteur. Les champs visibles dans les extraits comprennent civilité, nom, prénom, ligne directe, courriel, identifiant interne et statut de membre. Ces données d'identité et de contact professionnelles sont propices au phishing ciblé. L'authenticité de la base n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-06-24",
+      "event": "Saturne publie une base attribuée au portail fhf.fr : 30 728 personnes, identité et coordonnées professionnelles selon les extraits."
+    },
+    {
+      "date": "2026-06-29",
+      "event": "Un relais de veille reprend la publication et souligne le caractère non confirmé de la base."
+    }
+  ]
+}

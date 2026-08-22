@@ -1,0 +1,49 @@
+{
+  "slug": "thales-20260512",
+  "entity": "Thales",
+  "siren": "552059024",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-12",
+    "publication": "2026-05-12"
+  },
+  "volume": {
+    "count": 6400,
+    "unit": "enregistrements",
+    "label": "plus de 6 400 enregistrements d'employés et utilisateurs d'environnements LuxTrust et services internes selon la publication du 12 mai 2026 (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Thales Group : fuite de données concernant 6,4 K comptes (12 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/thales-group-mp345wolpq1ssk3g5x",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Thales : des milliers d'utilisateurs diffusés après une cyberattaque visant le géant français de la défense (12 mai 2026)",
+      "url": "https://www.cyberattaque.org/thales-des-milliers-dutilisateurs-diffusees-apres-une-cyberattaque-visant-le-geant-francais-de-la-defense/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — ChimeraZ, le pirate qui cible le tourisme français (18 mai 2026)",
+      "url": "https://www.zataz.com/chimeraz-le-pirate-qui-cible-le-tourisme-francais/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 mai 2026, une base attribuée à Thales, groupe français des technologies de défense, circule sur un forum cybercriminel. Elle contiendrait plus de 6 400 enregistrements d'employés et d'utilisateurs d'environnements LuxTrust et de services internes : noms, e-mails, téléphones, comptes et rôles d'accès. Des extraits montrent des profils avec des rôles internes. Dans un entretien ultérieur, le pirate ChimeraZ déclare avoir trouvé la faille via un prestataire. L'authenticité n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-05-12",
+      "event": "Une base de plus de 6 400 enregistrements d'utilisateurs attribuée à Thales circule : identité, coordonnées, rôles et habilitations selon les extraits."
+    },
+    {
+      "date": "2026-05-18",
+      "event": "Le pirate ChimeraZ déclare à un média spécialisé avoir trouvé la faille Thales via un prestataire, LuxTrust."
+    }
+  ]
+}

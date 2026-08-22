@@ -1,0 +1,38 @@
+{
+  "slug": "auchan-optique-20260522",
+  "entity": "Auchan Optique",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-22",
+    "publication": "2026-05-22"
+  },
+  "volume": {
+    "count": 218824,
+    "unit": "personnes",
+    "label": "218 824 clients selon la mise en vente publiée le 22 mai 2026 (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Auchan Optique, 218 000 personnes exposées en ligne (22 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/auchan-optique-mpgvi3jh9aeys7g2owj",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Auchan Optique : plus de 218 000 clients en fuite après une cyberattaque (22 mai 2026)",
+      "url": "https://www.cyberattaque.org/auchan-optique-plus-de-218-000-clients-en-fuite-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 mai 2026, le vendeur Angel_Batista met en vente une base attribuée à Auchan Optique, enseigne d'optique intégrée aux hypermarchés du groupe Auchan. Le fichier porterait sur 218 824 clients. Les extraits publiés montreraient noms, prénoms, dates de naissance, civilités, téléphones, adresses postales complètes, villes et codes postaux. S'y ajoutent des références clients internes et des informations de suivi des commandes. Ce nouvel épisode survient après la fuite de données de fidélité reconnue par Auchan en août 2025. L'authenticité n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-05-22",
+      "event": "Mise en vente d'une base attribuée à Auchan Optique : 218 824 clients, identité, coordonnées et références internes selon les extraits publiés."
+    }
+  ]
+}

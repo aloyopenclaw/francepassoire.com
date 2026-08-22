@@ -1,0 +1,38 @@
+{
+  "slug": "capifrance-20260610",
+  "entity": "Capifrance",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-10",
+    "publication": "2026-06-10"
+  },
+  "volume": {
+    "count": 785000,
+    "unit": "personnes",
+    "label": "près de 3,6 millions d'enregistrements concernant plus de 785 000 personnes (3 Go) selon la publication du 10 juin 2026 (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Capifrance visé par une fuite de données touchant plus de 785 000 personnes (10 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/capifrance-mq83x05dnv9q0ygvbx",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Capifrance : une fuite expose les données de près de 786 000 personnes (10 juin 2026)",
+      "url": "https://www.cyberattaque.org/capifrance-une-fuite-expose-les-donnees-de-pres-de-786-000-personnes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 10 juin 2026, ChimeraZ publie une partie d'une base attribuée à Capifrance, réseau de conseillers immobiliers indépendants créé en 2002. La fuite représenterait près de 3,6 millions d'enregistrements pour plus de 785 000 personnes, soit 3 Go de données. Les exemples affichés couvrent contacts, activité commerciale et transactions du réseau : noms, prénoms, dates de naissance, e-mails, téléphones et adresses postales. L'auteur poursuit sa série contre l'immobilier français. L'authenticité n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-06-10",
+      "event": "ChimeraZ publie une partie d'une base Capifrance : 3,6 millions d'enregistrements, 785 000 personnes et données commerciales du réseau selon les extraits."
+    }
+  ]
+}

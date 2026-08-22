@@ -1,0 +1,43 @@
+{
+  "slug": "mesvaccins-20260623",
+  "entity": "MesVaccins",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-23",
+    "publication": "2026-06-23"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; la plateforme informe ses utilisateurs d'un accès non autorisé porté à sa connaissance le 15 juin 2026"
+  },
+  "data_types": [
+    "sante",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque MesVaccins : des données de santé et numéros de sécurité sociale exposés (23 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/mesvaccins-mqqp941ivil5xrhuia",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — MesVaccins : des données de santé et numéros de sécurité sociale exposés après une cyberattaque (23 juin 2026)",
+      "url": "https://www.cyberattaque.org/mesvaccins-des-donnees-de-sante-et-numeros-de-securite-sociale-exposes-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 juin 2026, la plateforme MesVaccins, qui gère des carnets de vaccination numériques, informe ses utilisateurs d'un incident de sécurité. Elle a été avisée le 15 juin qu'un tiers non autorisé avait accédé à certaines données et en avait obtenu une copie. Les catégories exposées incluent e-mails, téléphones, données d'état civil, numéros de sécurité sociale lorsqu'ils étaient renseignés, données vaccinales et informations de profil santé codées. L'incident est notifié à la CNIL et une plainte est déposée. L'étendue exacte reste sous investigation.",
+  "timeline": [
+    {
+      "date": "2026-06-15",
+      "event": "MesVaccins est informée qu'un tiers non autorisé a accédé à certaines données personnelles et en a obtenu une copie."
+    },
+    {
+      "date": "2026-06-23",
+      "event": "Les utilisateurs sont informés : données de santé, état civil et numéros de sécurité sociale concernés ; notification CNIL et plainte déposée."
+    }
+  ]
+}

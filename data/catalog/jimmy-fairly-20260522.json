@@ -1,0 +1,39 @@
+{
+  "slug": "jimmy-fairly-20260522",
+  "entity": "Jimmy Fairly",
+  "siren": "530422427",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-22",
+    "publication": "2026-05-22"
+  },
+  "volume": {
+    "count": 357317,
+    "unit": "personnes",
+    "label": "357 317 clients de jimmyfairly.com selon la mise en vente publiée le 22 mai 2026 (chiffre revendiqué, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Jimmy Fairly : 357 K personnes exposées en ligne (22 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/jimmy-fairly-mpg6y5bk1f6uewlu6fe",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Jimmy Fairly : fuite massive de 357 000 clients après une cyberattaque (22 mai 2026)",
+      "url": "https://www.cyberattaque.org/jimmy-fairly-fuite-massive-de-357-000-clients-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 mai 2026, un vendeur signant Angel_Batista met en vente sur un forum cybercriminel une base attribuée au site jimmyfairly.com, enseigne française d'optique fondée en 2010. Le fichier concernerait 357 317 clients. Selon les extraits publiés, il contiendrait noms, prénoms, dates de naissance, civilités, adresses e-mail, numéros de téléphone et adresses postales complètes. Les données sembleraient provenir d'un système de gestion client ou d'une plateforme e-commerce. L'authenticité de la base n'est pas confirmée publiquement.",
+  "timeline": [
+    {
+      "date": "2026-05-22",
+      "event": "Mise en vente sur un forum d'une base attribuée à Jimmy Fairly : 357 317 clients, identité et coordonnées complètes selon les extraits."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ministere-des-sports-20260502",
+  "entity": "Ministère des Sports, de la Jeunesse et de la Vie associative",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-02",
+    "publication": "2026-05-02"
+  },
+  "volume": {
+    "count": 217000,
+    "unit": "personnes",
+    "label": "plus de 217 000 personnes, éducateurs et professionnels du sport, avec photos d'identité, selon la mise en vente du 2 mai 2026 (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez le ministère des Sports : 217 000 personnes (2 mai 2026)",
+      "url": "https://frenchbreaches.com/alertes/ministere-des-sports-de-la-jeunesse-et-de-la-vie-associative-moolndzi38g7krysq0h",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Ministère des Sports : plus de 217 000 photos et données sensibles d'éducateurs en fuite (2 mai 2026)",
+      "url": "https://www.cyberattaque.org/ministere-des-sports-plus-de-217-000-photos-et-donnees-sensibles-deducateurs-en-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 mai 2026, un hacker signant Cybernox met en vente une base présentée comme issue du ministère des Sports. Elle concernerait plus de 217 000 éducateurs et professionnels du sport. Les données annoncées permettent de reconstituer des profils détaillés : identités complètes, informations professionnelles avec numéros de carte et organismes délivreurs, qualifications, diplômes et photos d'identité. Une compromission d'API est évoquée par l'auteur. Aucune confirmation officielle n'est intervenue à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-05-02",
+      "event": "Cybernox met en vente plus de 217 000 profils d'éducateurs sportifs attribués au ministère : identités, qualifications et photos d'identité."
+    }
+  ]
+}

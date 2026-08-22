@@ -1,0 +1,47 @@
+{
+  "slug": "leboncoin-immobilier-20260608",
+  "entity": "Leboncoin Immobilier",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-08",
+    "publication": "2026-06-08"
+  },
+  "volume": {
+    "count": 4035710,
+    "unit": "enregistrements",
+    "label": "4 035 710 lignes (4,38 Go) dont 1 103 720 numéros de téléphone, agrégat couvrant treize plateformes immobilières dont 3 578 184 lignes associées à Leboncoin, selon la publication du 8 juin 2026 (chiffres revendiqués, non confirmés)"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Leboncoin Immobilier victime d'une fuite de données, 1,1 million de numéros de téléphone (8 juin 2026)",
+      "url": "https://frenchbreaches.com/alertes/leboncoin-immobilier-mq55621wnluiojc7hz",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Leboncoin Immobilier : 4 millions d'annonces et près d'un million de numéros de téléphone publiés (8 juin 2026)",
+      "url": "https://www.cyberattaque.org/leboncoin-immobilier-4-millions-dannonces-et-pres-dun-million-de-numeros-de-telephone-publies/",
+      "kind": "article"
+    },
+    {
+      "label": "Zataz — Le pirate ChimeraZ s'attaque à l'immobilier français après le tourisme (9 juin 2026)",
+      "url": "https://www.zataz.com/le-pirate-chimeraz-sattaque-a-limmobilier-francais-apres-le-tourisme/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 8 juin 2026, le pirate ChimeraZ publie un ensemble de 4 035 710 lignes présenté sous le titre « 4M Leboncoin Immobilier ». Le fichier agrège des annonces de treize plateformes : 3 578 184 lignes sont associées à Leboncoin, le reste à PAP, ParuVendu, SeLoger ou Ouest-France Immo notamment. On y trouve descriptions complètes des biens, prix, surfaces et 1 103 720 numéros de téléphone associés aux annonces. L'auteur affirme avoir obtenu les données via des accès à des messageries professionnelles. Rien n'est confirmé publiquement.",
+  "timeline": [
+    {
+      "date": "2026-06-08",
+      "event": "ChimeraZ publie 4 035 710 lignes d'annonces immobilières agrégées depuis treize plateformes, avec plus d'un million de numéros de téléphone."
+    },
+    {
+      "date": "2026-06-09",
+      "event": "Un média spécialisé documente la publication et l'entretien du pirate : accès via messageries professionnelles compromises, selon ses déclarations."
+    }
+  ]
+}
