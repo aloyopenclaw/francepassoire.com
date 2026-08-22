@@ -34,7 +34,7 @@
       "kind": "archive"
     }
   ],
-  "description": "Selon la presse, le 17 février 2023, Leal Réunion, concessionnaire automobile de Saint-Denis représentant de BMW, annonce avoir été victime d'une cyberattaque massive environ deux semaines plus tôt. Selon le récit de l'entreprise, des pirates ont réussi à deviner le mot de passe d'un employé pour accéder aux systèmes, avant d'exiger une rançon de 400 000 dollars. La concession préfère renouveler son parc informatique plutôt que de payer ; elle évalue à 2,5 millions d'euros le manque à gagner sur son chiffre d'affaires après deux semaines d'arrêt. L'incident survient quelques jours après la cyberattaque du CHU de La Réunion.",
+  "description": "Selon la presse, le 17 février 2023, Leal Réunion, concessionnaire automobile de Saint-Denis représentant de BMW, annonce avoir été victime d'une cyberattaque d'ampleur environ deux semaines plus tôt. Selon le récit de l'entreprise, des pirates ont réussi à deviner le mot de passe d'un employé pour accéder aux systèmes, avant d'exiger une rançon de 400 000 dollars. La concession préfère renouveler son parc informatique plutôt que de payer ; elle évalue à 2,5 millions d'euros le manque à gagner sur son chiffre d'affaires après deux semaines d'arrêt. L'incident survient quelques jours après la cyberattaque du CHU de La Réunion.",
   "timeline": [
     {
       "date": "2023-02-03",
@@ -42,7 +42,7 @@
     },
     {
       "date": "2023-02-17",
-      "event": "Leal Réunion rend publique la cyberattaque massive ; une rançon de 400 000 dollars est exigée et refusée."
+      "event": "Leal Réunion rend publique la cyberattaque ; une rançon de 400 000 dollars est exigée et refusée."
     },
     {
       "date": "2023-03-03",
