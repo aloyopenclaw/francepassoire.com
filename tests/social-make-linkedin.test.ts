@@ -49,7 +49,8 @@ describe('client LinkedIn via Make (webhook)', () => {
     );
     expect(corps).toEqual({
       text: payload.text,
-      mediaUrl: 'https://francepassoire.com/fiche/x/card.jpg',
+      image_url: 'https://francepassoire.com/fiche/x/card.jpg',
+      request_id: '',
     });
   });
 });

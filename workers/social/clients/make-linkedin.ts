@@ -37,11 +37,12 @@ export const send: SendFn = async (
     const reponse = await fetchFn(webhook, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      // Contrat EXACT du scénario Make LinkedIn (mapping propriétaire) :
+      // {text, image_url, request_id} — vérifié avec le propriétaire 22/08.
       body: JSON.stringify({
         text: payload.text,
-        // Gabarit propriétaire 22/08 : le scénario LinkedIn publie image+texte ;
-        // mediaUrl est le champ du module LinkedIn (repli url si pas d'image).
-        mediaUrl: payload.imageUrl ?? payload.url,
+        image_url: payload.imageUrl ?? payload.url,
+        request_id: payload.metadata?.request_id ?? '',
       }),
       signal: controleur.signal,
     });
