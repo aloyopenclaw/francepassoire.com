@@ -1,0 +1,54 @@
+{
+  "slug": "declic-services-20260822",
+  "entity": "Déclic Services",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-23"
+  },
+  "volume": {
+    "count": 13000,
+    "unit": "comptes",
+    "label": "environ 13 000 comptes utilisateurs et plus de 6 300 coordonnées bancaires revendiqués par ZeroBytes ; 6 271 531 lignes brutes non dédoublonnées annoncées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 13 000 utilisateurs chez Déclic Services : fuite revendiquée (23 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-22-declic-services",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Déclic Services piraté : 6,2 millions de lignes revendiquées et le site officiel détourné par ZeroBytes (23 août 2026)",
+      "url": "https://www.cyberattaque.org/declic-services-pirate-62-millions-de-lignes-revendiquees-et-le-site-officiel-detourne-par-zerobytes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 août 2026, l'acteur ZeroBytes revendique la mise en vente de la base du progiciel de gestion de Déclic Services, coopérative de services à la personne. Il annonce environ 13 000 comptes, plus de 6 300 coordonnées bancaires et 6 271 531 lignes brutes non dédoublonnées, avec un échantillon public. Le site officiel affiche une page signée par le revendiquant, selon la presse. Une chronologie obtenue par Cyberattaque.org fait remonter l'intrusion au 10 août et sa détection au 15 août. La coopérative n'a pas publié de communiqué au 23 août.",
+  "timeline": [
+    {
+      "date": "2026-08-10",
+      "event": "Début présumé de l'intrusion selon une chronologie obtenue par Cyberattaque.org : compromission d'un compte administrateur par hameçonnage."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Détection de journaux d'accès anormaux par l'équipe informatique, selon cette même chronologie."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "ZeroBytes revendique la mise en vente de la base du progiciel : environ 13 000 comptes, plus de 6 300 coordonnées bancaires, 6 271 531 lignes brutes."
+    },
+    {
+      "date": "2026-08-23",
+      "event": "Fuites Infos et Cyberattaque.org relaient la revendication ; le site officiel affiche une page signée par le revendiquant ; aucune notification CNIL signalée."
+    }
+  ],
+  "group": "zerobytes"
+}
