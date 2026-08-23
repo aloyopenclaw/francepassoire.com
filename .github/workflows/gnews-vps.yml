@@ -1,0 +1,104 @@
+# Google News (flux « fuites de données » France) renvoie 503 aux IP du runtime
+# Workers, UA navigateur comme UA pipeline (3 sondages, audit 23/08 :
+# docs/audit-ip-blocking.md §4.1) ; l'adaptateur rss.ts récoltait donc du vide
+# en silence (non-2xx → return []). Le VPS (IP OVH) obtient le flux complet.
+# Ce workflow moissonne ce feed DEPUIS LE VPS et pousse les candidats dans D1
+# via l'API : même contrat d'insertion que l'ingest et fb-vps.yml (statut NEW,
+# source 'rss', dédup guid) ; le filtre mots-clés du titre est le portage du
+# KEYWORD_RE de rss.ts, qui s'appliquait à ce flux côté worker.
+
+name: Google News (fuites FR) via VPS
+
+on:
+  schedule:
+    - cron: '23,53 * * * *' # même cadence que fb-vps (13,43), décalé des crons ingest (7,37) et draft (17,47)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gnews-vps
+  cancel-in-progress: false
+
+jobs:
+  moisson:
+    runs-on: self-hosted
+    timeout-minutes: 10
+    steps:
+      - name: Moissonner le feed et pousser les candidats dans D1
+        run: |
+          . /opt/francepassoire-shared/env.sh
+          mkdir -p .agent-tmp
+
+          # 1. Fetch du feed depuis l'IP du VPS (UA du pipeline, comme fb-vps)
+          curl -s --max-time 30 \
+            -A 'Mozilla/5.0 (compatible; FrancePassoire-Ingest/1.0; +https://francepassoire.com)' \
+            'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr' > .agent-tmp/gnews.xml
+          N_ITEMS=$(grep -c '<item>' .agent-tmp/gnews.xml || echo 0)
+          echo "items dans le feed : $N_ITEMS"
+          [ "$N_ITEMS" = "0" ] && { echo "feed vide ou bloqué : arrêt propre"; exit 0; }
+
+          # 2. Insertion des nouveaux items (python : parse RSS + dédup guid
+          #    contre les candidats D1 existants + insert), comme fb-vps.yml
+          python3 << 'PYEOF'
+          import json, re, unicodedata, urllib.request, os
+
+          xml = open('.agent-tmp/gnews.xml').read()
+          d1_url = os.environ['FP_D1_QUERY_URL']
+          token = os.environ['FP_D1_TOKEN']
+
+          def q(sql, params=None):
+              body = json.dumps({'sql': sql, 'params': params or []}).encode()
+              req = urllib.request.Request(d1_url, data=body, headers={
+                  'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'})
+              return json.loads(urllib.request.urlopen(req, timeout=30).read())
+
+          existants = set()
+          try:
+              rows = q("SELECT raw FROM candidates WHERE source_url LIKE ? LIMIT 500", ['%news.google.com%'])
+              for r in rows['result'][0]['results']:
+                  try: existants.add(json.loads(r['raw']).get('guid'))
+                  except Exception: pass
+          except Exception as e:
+              print('lecture existants échouée:', e)
+
+          # Filtre mots-clés du titre : portage du KEYWORD_RE de rss.ts (ce flux
+          # n'était pas marqué sansFiltreKeywords) : normalisation NFD sans
+          # diacritiques, puis recherche fuite/piratage/cyberattaque/...
+          def normalize(s):
+              s = unicodedata.normalize('NFD', s)
+              s = ''.join(c for c in s if not unicodedata.combining(c))
+              return s.replace('\xa0', ' ').lower()
+
+          KEYWORD_RE = re.compile(r'\b(fuites?|piratages?|pirates?|piratees?|pirater|cyber[-\xa0 ]?attaques?|ransomwares?|rancongiciels?|donnees?)\b', re.I)
+
+          blocks = re.findall(r'<item(?:\s[^>]*)?>[\s\S]*?</item>', xml)
+          def tag(b, t):
+              m = re.search(rf'<{t}(?:\s[^>]*)?>(?:<!\[CDATA\[)?([^<\]]+)', b)
+              return m.group(1).strip() if m else None
+
+          inseres = 0
+          filtres = 0
+          for b in blocks:
+              titre = tag(b, 'title')
+              guid = tag(b, 'guid') or tag(b, 'link')
+              lien = tag(b, 'link')
+              pub = tag(b, 'pubDate')
+              if not titre or not guid or guid in existants: continue
+              if not KEYWORD_RE.search(normalize(titre)):
+                  filtres += 1
+                  continue
+              raw = json.dumps({'title': titre, 'guid': guid, 'pubDate': pub, 'feed': 'rss:gnews-fuites'}, ensure_ascii=False)
+              try:
+                  q("INSERT INTO candidates (id, source, source_url, raw, entity_name, dedup_score, status) VALUES (?, ?, ?, ?, ?, NULL, 'NEW')",
+                    [__import__('uuid').uuid4().hex, 'rss', lien, raw, titre, ])
+                  inseres += 1
+              except Exception as e:
+                  print('insert échoué:', titre[:40], e)
+          print(f'insérés : {inseres} / {len(blocks)} items ({filtres} sans mot-clé)')
+          PYEOF
+
+      - name: Nettoyage
+        if: always()
+        run: rm -rf .agent-tmp

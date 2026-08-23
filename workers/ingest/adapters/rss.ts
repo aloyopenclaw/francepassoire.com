@@ -246,12 +246,14 @@ export const rssFeedConfigs: FeedConfig[] = [
   // FrenchBreaches retiré du worker : son bot-check Cloudflare rejette les IP
   // du runtime Workers (worker-sonde : 403) — moissonné par fb-vps.yml sur le
   // VPS (IP OVH : 200), même contrat d'insertion D1 (statut NEW, guid).
-  // Antennes temps réel (ajout 23/08, vague « 100x ») : presse française à
-  // l'instant Google News l'indexe + blogs spécialisés + veille Hackmanac.
-  { id: 'rss:gnews-fuites', name: 'Google News (fuites FR)', url: 'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr' },
+  // Google News (fuites FR) retiré du worker : 503 aux IP sortantes Workers
+  // (audit docs/audit-ip-blocking.md §4.1) ; moissonné par gnews-vps.yml sur
+  // le VPS (IP OVH : 200), même contrat d'insertion D1 (statut NEW, guid).
+  // Blogs spécialisés (ajout 23/08, vague « 100x »).
   { id: 'rss:undernews', name: 'UnderNews', url: 'https://www.undernews.fr/feed' },
   { id: 'rss:dsb', name: 'DataSecurityBreach', url: 'https://www.datasecuritybreach.fr/feed/' },
-  { id: 'rss:hackmanac', name: 'Hackmanac', url: 'https://hackmanac.com/feed' },
+  // Hackmanac retiré : source redondante avec Zataz/DSB/Undernews et 202
+  // anti-bot depuis Workers (audit docs/audit-ip-blocking.md §4.2).
 ];
 
 /** Instances prêtes à l'emploi — le runner T19 les enregistrera dans
