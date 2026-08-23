@@ -25,9 +25,13 @@
 // T30/T31 : routes /api/watchlist* + cron digest hebdo (lundi 09:00 Paris)
 // implémentées dans ./watchlist.ts (double opt-in Brevo, alertes) — ce
 // fichier ne fait que le routage et le scheduled.
+//
+// Rapport pipeline quotidien (10:00 Paris) + tripwire fiches.json : pliés
+// dans ./rapport-quotidien.ts, montés par le scheduled ci-dessous.
 
 import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
 import { runQueueWatchdog } from './queue-watchdog';
+import { doitLancerRapport, gererFichesMortes, runRapportQuotidien } from './rapport-quotidien';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -45,6 +49,10 @@ export interface D1Database {
 export interface KVNamespace {
   get(key: string): Promise<string | null>;
   put(key: string, value: string, opts?: { expirationTtl?: number }): Promise<void>;
+  /** Liste par préfixe (rapport quotidien : états ingest:state:* et drapeaux
+   *  source_dead:*) — optionnel, même convention que first/all sur
+   *  D1PreparedStatement (ne pas casser les fakes minimalistes des tests). */
+  list?(opts?: { prefix?: string }): Promise<{ keys: { name: string }[] }>;
 }
 
 export interface Env {
@@ -352,7 +360,11 @@ export default {
     env: Env,
     _ctx: ExecutionContext,
   ): Promise<void> {
-    await runInstantSweep(env);
+    const sweep = await runInstantSweep(env);
+    // Tripwire catalogue (cadence quart d'heure) : 4 échecs consécutifs de
+    // fiches.json (≈ 1 h de panne continue) → UNE alerte Brevo par jour.
+    // Le 404 du 22/08 n'attendra plus la digestion du lendemain matin.
+    await gererFichesMortes(env, sweep);
     const now = new Date(controller.scheduledTime);
     if (doitLancerDigest(now) && env.RUN_STATE) {
       const cle = 'watchlist:digest:last_monday';
@@ -367,6 +379,13 @@ export default {
     // a été retiré le 23/08 : décision propriétaire, quota Pushinator).
     // Plié dans CE cron (plafond 5 déclencheurs/compte : rien de nouveau).
     await runQueueWatchdog(env);
+    // Rapport pipeline quotidien : TROISIÈME porte pliée dans le même cron
+    // (heure 10 Europe/Paris, week-ends inclus, garde KV dans le module,
+    // convention queue-watchdog). Santé d'un coup d'œil : candidats 24 h,
+    // sources KV, workflows GitHub, catalogue, abonnés.
+    if (doitLancerRapport(now)) {
+      await runRapportQuotidien(env, { now });
+    }
     // Veille sociale (07:00/19:00 Paris) : gérée EXCLUSIVEMENT par
     // veille-sociale-vps.yml (les 4 sources refusent les IP Workers,
     // docs/audit-ip-blocking.md). Ne pas réintroduire de repli worker :
