@@ -1,10 +1,11 @@
 # Notifications push téléphone du propriétaire (Pushinator).
 #
-# Deux événements, seuls ceux qui demandent une action ou signalent un échec :
-#   - PR fiche/* ouverte (par draft-fiches ou autre) → « tap pour merger »
-#   - PR porteuse du label agent:à-corriger avec défaut ÉDITORIAL (le fixup
-#     mécanique a déjà échoué) → décision humaine requise
-# Plus, en filet : échec des workflows critiques (publication/rédaction).
+# UN seul événement, celui qui demande une action du propriétaire :
+#   - PR fiche/* ouverte (par draft-fiches) → « tap pour merger »
+#
+# Rien d'autre : ni échecs de workflows, ni labels de validation.
+# (Décision propriétaire 23/08 : uniquement la création de PR -
+# le reste était du spam et mangeait le quota Pushinator.)
 #
 # Le token vit dans env.sh du runner (jamais un secret GitHub : les workflows
 # exécutent du contenu non maîtrisé côté validation).
@@ -13,51 +14,23 @@ name: Notifier (téléphone)
 
 on:
   pull_request:
-    types: [opened, labeled]
-  workflow_run:
-    workflows: ["Publication catalogue (post-merge)", "Rédaction candidats (ingest → PR)"]
-    types: [completed]
+    types: [opened]
 
 permissions:
   pull-requests: read
 
 jobs:
   notifier:
+    if: startsWith(github.head_ref, 'fiche/')
     runs-on: self-hosted
     timeout-minutes: 5
     steps:
-      - name: Notifier selon l'événement
+      - name: Push téléphone (PR créée)
         run: |
           . /opt/francepassoire-shared/env.sh
-          notify() {
-            curl -s "https://api.pushinator.com/api/v2/notifications/send" \
-              -X POST -H "Authorization: Bearer $PUSHINATOR_TOKEN" \
-              -H "Content-Type: application/json" \
-              --data "$(printf '{"channel_id": "%s", "content": "%s"}' "$PUSHINATOR_CHANNEL" "$1")" >/dev/null || true
-          }
-
-          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
-            ACTION="${{ github.event.action }}"
-            PR_NUM="${{ github.event.pull_request.number }}"
-            PR_TITLE="${{ github.event.pull_request.title }}"
-            BR="${{ github.event.pull_request.head.ref }}"
-
-            if [ "$ACTION" = "opened" ] && [[ "$BR" == fiche/* ]]; then
-              notify "FrancePassoire : nouvelle fiche en attente. PR #${PR_NUM} ${PR_TITLE} — validee par l'agent, un tap pour merger."
-            fi
-
-            if [ "$ACTION" = "labeled" ]; then
-              LABEL="${{ github.event.label.name }}"
-              if [ "$LABEL" = "agent:à-corriger" ]; then
-                notify "FrancePassoire : PR #${PR_NUM} bloquee (defaut editorial, hors correctif mecanique). ${PR_TITLE} — decision requise."
-              fi
-            fi
-          fi
-
-          if [ "$GITHUB_EVENT_NAME" = "workflow_run" ]; then
-            CONCLUSION="${{ github.event.workflow_run.conclusion }}"
-            WF_NAME="${{ github.event.workflow_run.name }}"
-            if [ "$CONCLUSION" = "failure" ]; then
-              notify "FrancePassoire : ECHEC du workflow ${WF_NAME} — intervention probablement requise."
-            fi
-          fi
+          PR_NUM="${{ github.event.pull_request.number }}"
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          curl -s "https://api.pushinator.com/api/v2/notifications/send" \
+            -X POST -H "Authorization: Bearer $PUSHINATOR_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data "$(printf '{"channel_id": "%s", "content": "%s"}' "$PUSHINATOR_CHANNEL" "FrancePassoire : nouvelle fiche en attente. PR #${PR_NUM} ${PR_TITLE} - validee par l'agent, un tap pour merger.")" >/dev/null || true
