@@ -231,6 +231,85 @@ describe('worker d’ingestion — circuit breaker', () => {
   });
 });
 
+describe('worker d’ingestion — régime KV (écriture d’état conditionnelle, 24/08)', () => {
+  it('run calme et frais : AUCUNE écriture d’état (KV lu, jamais écrit)', async () => {
+    vi.useFakeTimers();
+    try {
+      vi.setSystemTime(new Date('2026-08-24T08:07:00Z'));
+      const { env, store } = makeEnv();
+      adapters.push({ id: 'calme', async fetchCandidates() { return []; } });
+
+      await runScheduled(env, runOpts); // première écriture (état absent)
+      const apresRun1 = store.get('ingest:state:calme');
+      expect(apresRun1).toBeTruthy();
+
+      vi.setSystemTime(new Date('2026-08-24T08:37:00Z')); // +30 min : calme et frais
+      await runScheduled(env, runOpts);
+
+      expect(store.get('ingest:state:calme')).toBe(apresRun1); // inchangé octet pour octet
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('cadence verrouillée : 5 runs calmes sur 2 h (cron 7,37) → exactement 2 écritures d’état', async () => {
+    vi.useFakeTimers();
+    try {
+      const t0 = Date.parse('2026-08-24T08:07:00Z');
+      const { env, store } = makeEnv();
+      const putSpy = vi.spyOn(env.RUN_STATE, 'put');
+      adapters.push({ id: 'calme', async fetchCandidates() { return []; } });
+
+      // Cadence réelle du cron ingest (7,37) : un run toutes les 30 min.
+      for (let i = 0; i < 5; i++) {
+        vi.setSystemTime(new Date(t0 + i * 30 * 60_000));
+        await runScheduled(env, runOpts);
+      }
+
+      // Écrits : T0 (état absent) puis T0+2 h pile (fraîcheur expirée).
+      // Runs T0+30/60/90 : calmes et frais → rien. Projection journée :
+      // 12 écritures/source (une par tranche de 2 h), contre 48 avant.
+      const ecritsEtat = putSpy.mock.calls.filter(([cle]) => String(cle).startsWith('ingest:state:'));
+      expect(ecritsEtat).toHaveLength(2);
+      const etat = JSON.parse(store.get('ingest:state:calme') ?? '{}');
+      expect(etat.last_run).toBe('2026-08-24T10:07:00.000Z');
+      expect(etat.last_success).toBe('2026-08-24T10:07:00.000Z');
+      expect(etat.consecutive_failures).toBe(0);
+      putSpy.mockRestore();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('succès calme APRÈS un échec : écriture quand même (le reset du compteur breaker doit survivre au run)', async () => {
+    vi.useFakeTimers();
+    try {
+      vi.setSystemTime(new Date('2026-08-24T08:07:00Z'));
+      const { env, store } = makeEnv();
+      let enPanne = true;
+      adapters.push({
+        id: 'reprise',
+        async fetchCandidates() {
+          if (enPanne) throw new Error('panne transitoire');
+          return [];
+        },
+      });
+      vi.spyOn(console, 'error').mockImplementation(() => {});
+
+      await runScheduled(env, runOpts); // échec → écriture inconditionnelle (compteur 1)
+      enPanne = false;
+      vi.setSystemTime(new Date('2026-08-24T08:12:00Z')); // 5 min plus tard
+      await runScheduled(env, runOpts); // succès calme mais état à corriger
+
+      const etat = JSON.parse(store.get('ingest:state:reprise') ?? '{}');
+      expect(etat.consecutive_failures).toBe(0);
+      expect(etat.last_success).toBe('2026-08-24T08:12:00.000Z');
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+});
+
 describe('worker d’ingestion — retries/backoff', () => {
   it('borne à 3 fetch par run, avec backoff entre tentatives et pas après la dernière', async () => {
     const { env } = makeEnv();

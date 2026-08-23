@@ -67,6 +67,16 @@ const MAX_ATTEMPTS = 3;
 /** Runs consécutifs en échec avant ouverture du circuit breaker. */
 const BREAKER_THRESHOLD = 3;
 const BACKOFF_BASE_MS = 200;
+/**
+ * Régime KV (24/08) : fraîcheur maximale de l'état persisté d'une source
+ * calme. Le quota gratuit KV (1000 écritures/jour) a été épuisé le 23/08 —
+ * les seuls états de run y suffisaient (15 sources × 48 runs/jour = 720).
+ * Un run calme et frais n'écrit plus rien ; l'état est rafraîchi au pire
+ * toutes les 2 h (12 écritures/jour/source), très en deçà du seuil « source
+ * muette » de 6 h du rapport quotidien (workers/api, SEUIL_SOURCE_H) : une
+ * source saine reste verte au rapport.
+ */
+const FRAICHEUR_ETAT_MS = 2 * 3600 * 1000;
 
 export interface SourceRunResult {
   adapter: string;
@@ -199,14 +209,31 @@ async function runSource(
         }
       }
 
-      await writeState(env.RUN_STATE, adapter.id, {
-        ...state,
-        last_run: new Date().toISOString(),
-        last_success: new Date().toISOString(),
-        consecutive_failures: 0,
-        guid_set: guidSet.slice(-GUID_SET_MAX),
-        ...(hibpCatalogue !== undefined ? { hibp_catalog: hibpCatalogue } : {}),
-      });
+      // Régime KV (24/08) : écriture d'état conditionnelle. Un run calme et
+      // frais n'écrit plus rien. Écrit si et seulement si :
+      //   (a) des candidats ont été insérés — guid_set (dédup) et
+      //       hibp_catalog (base du diff suivant) DOIVENT persister au run
+      //       qui les a produits ;
+      //   (b) le compteur d'échecs persisté doit être corrigé — sans quoi le
+      //       reset d'un succès calme ne survivrait pas au run et le breaker
+      //       armerait sur des échecs NON consécutifs ;
+      //   (c) la dernière écriture date de ≥ FRAICHEUR_ETAT_MS (ou n'existe
+      //       pas) — rafraîchit last_run/last_success pour le rapport
+      //       quotidien (seuil « muette » 6 h), sonde = last_run PERSISTÉ.
+      const maintenant = new Date();
+      const dernierEcrit = state.last_run === null ? Number.NaN : Date.parse(state.last_run);
+      const etatPerime =
+        Number.isNaN(dernierEcrit) || maintenant.getTime() - dernierEcrit >= FRAICHEUR_ETAT_MS;
+      if (inserted > 0 || state.consecutive_failures !== 0 || etatPerime) {
+        await writeState(env.RUN_STATE, adapter.id, {
+          ...state,
+          last_run: maintenant.toISOString(),
+          last_success: maintenant.toISOString(),
+          consecutive_failures: 0,
+          guid_set: guidSet.slice(-GUID_SET_MAX),
+          ...(hibpCatalogue !== undefined ? { hibp_catalog: hibpCatalogue } : {}),
+        });
+      }
       // T54c : réponse saine → le drapeau de mort éventuel est retiré.
       await appliquerVerdict(env.RUN_STATE, adapter.id, { ok: true }, new Date());
       return { adapter: adapter.id, inserted, failed: false, skipped: false };

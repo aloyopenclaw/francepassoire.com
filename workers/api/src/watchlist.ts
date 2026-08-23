@@ -1496,6 +1496,17 @@ export async function runWeeklyDigest(
 }
 
 /**
+ * Régime KV (24/08, quota gratuit 1000 écritures/jour épuisé) : le heartbeat
+ * ops ne s'écrit que sur le PREMIER tick de chaque heure. Le cron quart
+ * d'heure tire à :00/:15/:30/:45 — « minutes UTC < 15 » ne matche QUE le
+ * tick :00 (fenêtre et non minute exacte : un déclenchement retardé de
+ * < 15 min écrit quand même), soit 24 écritures/jour.
+ */
+export function doitEcrireHeartbeat(maintenant: Date): boolean {
+  return maintenant.getUTCMinutes() < 15;
+}
+
+/**
  * Alerte instantanée (T31) — appelée à la publication d'une fiche.
  * DÉCLENCHEUR NON CÂBLÉ : le raccordement (événement fiche-publish en CI,
  * T47) n'existe pas encore ; cette fonction est le contrat testé que ce
@@ -1511,7 +1522,7 @@ export async function enqueueInstantAlert(
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
 
-  if (env.RUN_STATE && new Date().getUTCMinutes() < 15) {
+  if (env.RUN_STATE && doitEcrireHeartbeat(new Date())) {
     await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
   }
   log('instant: sweep démarré');
@@ -2065,14 +2076,21 @@ export interface InstantSweepResultats {
  */
 export async function runInstantSweep(
   env: Env,
-  options: HandlerOptions & { sleep?: (ms: number) => Promise<void>; log?: (...args: unknown[]) => void } = {},
+  options: HandlerOptions & {
+    sleep?: (ms: number) => Promise<void>;
+    log?: (...args: unknown[]) => void;
+    now?: Date;
+  } = {},
 ): Promise<InstantSweepResultats> {
   const fetchFn = options.fetchFn ?? fetch;
   const sleep = options.sleep ?? ((ms: number) => new Promise((r) => setTimeout(r, ms)));
   const log = options.log ?? console.log;
+  // now injectable : le heartbeat ne s'écrit que sur le tick :00 (régime KV,
+  // cf. doitEcrireHeartbeat) — le test de cadence doit être déterministe.
+  const maintenant = options.now ?? new Date();
 
-  if (env.RUN_STATE && new Date().getUTCMinutes() < 15) {
-    await env.RUN_STATE.put('watchlist:instant:heartbeat', new Date().toISOString());
+  if (env.RUN_STATE && doitEcrireHeartbeat(maintenant)) {
+    await env.RUN_STATE.put('watchlist:instant:heartbeat', maintenant.toISOString());
   }
   log('instant: sweep démarré');
 
@@ -2132,7 +2150,7 @@ export async function runInstantSweep(
   // File sociale : chaque nouvelle fiche et chaque passage confirmé part sur
   // les six plateformes (décision propriétaire 23/08). AVANT l'écriture d'état
   // KV ; un échec d'enfilement est isolé par plateforme (jamais bloquant).
-  await dispatcherInstantSocial(env.DB, nouveaux, changes, { log });
+  await dispatcherInstantSocial(env.DB, nouveaux, changes, { log, now: maintenant });
 
   const abonnes = (await confirmedSubscribers(env.DB)).filter((a) => parsePrefs(a.prefs_json).freq === 'quotidien');
   let envois = 0;

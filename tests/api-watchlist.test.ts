@@ -17,6 +17,7 @@ import {
 } from '../workers/api/src/index';
 import {
   decryptEmailAes,
+  doitEcrireHeartbeat,
   emailHashOf,
   encryptEmailAes,
   enqueueInstantAlert,
@@ -1107,6 +1108,40 @@ describe('runInstantSweep — alerte groupée (rafale)', () => {
     expect(body.htmlContent).not.toContain('—');
     expect(body.textContent).toContain('Gérer mes alertes : https://francepassoire.com/ma-veille/?token=toks4abcdef0123456789');
     expect(body.htmlContent).toMatch(/ma-veille\/\?token=toks4abcdef0123456789/);
+  });
+});
+
+describe('runInstantSweep — heartbeat ops (régime KV 24/08 : tick :00 seul)', () => {
+  it('écrit le heartbeat UNIQUEMENT sur le tick :00 de chaque heure — clé et format inchangés', async () => {
+    const { env, kv } = await digestEnv([]);
+    const putSpy = vi.spyOn(kv, 'put');
+
+    // Deux heures de ticks quart d'heure (10 h puis 11 h UTC) : seuls les
+    // ticks :00 écrivent (24 écritures/jour, pas une par tick).
+    for (const heure of [10, 11]) {
+      for (const minute of [0, 15, 30, 45]) {
+        await runInstantSweep(env, {
+          fetchFn: makeFetch({ fiches: [] }),
+          sleep: noSleep,
+          now: new Date(Date.UTC(2026, 7, 24, heure, minute)),
+        });
+      }
+    }
+
+    const heartbeats = putSpy.mock.calls.filter(([cle]) => cle === 'watchlist:instant:heartbeat');
+    expect(heartbeats).toHaveLength(2);
+    expect(heartbeats[0]![1]).toBe('2026-08-24T10:00:00.000Z');
+    expect(heartbeats[1]![1]).toBe('2026-08-24T11:00:00.000Z');
+    putSpy.mockRestore();
+  });
+
+  it('doitEcrireHeartbeat : vrai sur la première tranche (retard < 15 min toléré), faux sur :15/:30/:45', () => {
+    const a = (heure: number, minute: number) => new Date(Date.UTC(2026, 7, 24, heure, minute));
+    expect(doitEcrireHeartbeat(a(10, 0))).toBe(true);
+    expect(doitEcrireHeartbeat(a(10, 14))).toBe(true);
+    expect(doitEcrireHeartbeat(a(10, 15))).toBe(false);
+    expect(doitEcrireHeartbeat(a(10, 30))).toBe(false);
+    expect(doitEcrireHeartbeat(a(10, 45))).toBe(false);
   });
 });
 
