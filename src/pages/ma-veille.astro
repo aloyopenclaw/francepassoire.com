@@ -438,12 +438,22 @@ import {
   prefsForm?.addEventListener('change', checkState);
 
   // --- Boot : ?token= → GET prefs → hydratation, sinon état erreur.
-  const token = new URLSearchParams(window.location.search).get('token') ?? '';
+  // Sécurité (décision propriétaire 23/08) : le jeton est retiré de l'URL
+  // dès la prise en main (history.replaceState) et gardé en sessionStorage
+  // pour que F5 / liens internes continuent de fonctionner pendant la
+  // session — il ne reste ni dans la barre d'adresse ni dans l'historique.
+  // NB : on ne démarre JAMAIS depuis sessionStorage seul — une session
+  // précédente ne doit pas rouvrir la page sans le lien d'email (le jeton
+  // doit être présenté explicitement à chaque visite).
+  const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get('token') ?? '';
   if (token === '') {
     montrerErreur();
   } else {
     currentToken = token;
     try {
+      history.replaceState(null, '', '/ma-veille/');
+      sessionStorage.setItem('ma-veille:jeton', token);
       const res = await fetch(`${API_BASE}/api/watchlist/prefs?token=${encodeURIComponent(token)}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = (await res.json()) as {
@@ -459,6 +469,9 @@ import {
       viewError?.classList.remove('active');
       viewMain?.classList.add('active');
     } catch {
+      // Le remplacement d'URL peut échouer (contexte non standard) : le
+      // jeton en sessionStorage ne doit pas survivre à une hydratation ratée.
+      sessionStorage.removeItem('ma-veille:jeton');
       montrerErreur();
     }
   }
