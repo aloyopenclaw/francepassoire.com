@@ -1,0 +1,48 @@
+{
+  "slug": "imapper-20260822",
+  "entity": "iMapper (AMAMI)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 2463,
+    "unit": "comptes",
+    "label": "2 463 comptes dans l'export publié selon Cyberattaque.org et FrenchBreaches ; environ 4 250 comptes annoncés par Fuites Infos"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 4 249 clients d'iMapper : fuite revendiquée de données (22 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-22-imapper",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — iMapper : 2 463 comptes exposés après une cyberattaque (22 août 2026)",
+      "url": "https://www.cyberattaque.org/imapper-2-463-comptes-exposes-apres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — iMapper.tech victime d'une fuite de données : des comptes exposés (22 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/imapper-tech-mt4kafe3uah19xev08q",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 22 août 2026, l'acteur 0xSec publie un export de la table des comptes d'iMapper, solution française de métré laser éditée par AMAMI. Le fichier XLSX contient 2 463 lignes selon Cyberattaque.org et FrenchBreaches ; Fuites Infos évoque environ 4 250 comptes. Selon la revendication, l'accès provient de l'exploitation d'une faille critique de Metabase référencée CVE-2026-72898. Les données annoncées incluent e-mails, identifiants, empreintes de mots de passe et métiers déclarés. Les personnes concernées sont majoritairement des professionnels du bâtiment, en France et dans six autres pays. L'éditeur n'a pas confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-22",
+      "event": "L'acteur 0xSec publie un export XLSX de 2 463 lignes de la table des comptes, obtenu selon lui via la faille Metabase CVE-2026-72898."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Cyberattaque.org, FrenchBreaches et Fuites Infos relaient la revendication ; l'éditeur n'a pas réagi publiquement à ce stade."
+    }
+  ]
+}
