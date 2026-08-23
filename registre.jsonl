@@ -1257,3 +1257,5 @@
 {"date":"2026-08-22","empreinte":"6e3d7639a553e53c0c9d08dc58f92283088e5dfc1499298bdb3ae4b8b94be70e","empreinte_precedente":"8c5eedcf8e4f97b43a686502db380244ef739f9561d1f2798cb71328b91a0611","entite":"Ville de Betton","fiche_du":"ville-betton-20230916","seq":1249,"type":"retrait"}
 
 {"date":"2026-08-22","empreinte":"b72c127472f32f4515e08f863651353926e0e2bca75007d2d6dca2b515be13ad","empreinte_precedente":"6e3d7639a553e53c0c9d08dc58f92283088e5dfc1499298bdb3ae4b8b94be70e","entite":"Ville de Saint-Cloud","fiche_du":"ville-saint-cloud-20220121","seq":1250,"type":"retrait"}
+{"date":"2026-08-23","empreinte":"e099c3f38841d7676f62a4170ad66b3c4db998d3dcc0ad007fa9ecb957e266ff","empreinte_precedente":"b72c127472f32f4515e08f863651353926e0e2bca75007d2d6dca2b515be13ad","entite":"Bureau Vallée","fiche_du":"bureau-vallee-20260821","seq":1251,"type":"ajout"}
+{"date":"2026-08-23","empreinte":"f771ea268abdfc12ec104a1aad6443bd5f276653dbbf60b94f88bfe018927e22","empreinte_precedente":"e099c3f38841d7676f62a4170ad66b3c4db998d3dcc0ad007fa9ecb957e266ff","entite":"Cloud de l'État (DINUM)","fiche_du":"cloud-etat-dinum-20260822","seq":1252,"type":"ajout"}
