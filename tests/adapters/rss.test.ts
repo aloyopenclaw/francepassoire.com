@@ -177,14 +177,23 @@ describe('T15 · adapter RSS — heuristiques (docs RSS inline)', () => {
 });
 
 describe('T15 · adapter RSS — configuration exportée', () => {
-  it('rssAdapters expose les 4 flux avec ids et URLs réels vérifiés en direct', () => {
-    expect(rssAdapters).toHaveLength(4);
-    expect(rssAdapters.map((a) => a.id)).toEqual(['rss:01net', 'rss:zdnet-fr', 'rss:jdn', 'rss:zataz']);
+  it('rssAdapters expose les 6 flux avec ids et URLs réels vérifiés en direct', () => {
+    expect(rssAdapters).toHaveLength(6);
+    expect(rssAdapters.map((a) => a.id)).toEqual([
+      'rss:01net',
+      'rss:zdnet-fr',
+      'rss:jdn',
+      'rss:zataz',
+      'rss:fuitesinfos',
+      'rss:frenchbreaches',
+    ]);
     expect(rssFeedConfigs.map((f) => f.url)).toEqual([
       'https://www.01net.com/feed/', // redirige depuis https://www.01net.com/feed
       'https://www.zdnet.fr/feed', // redirige depuis https://www.zdnet.fr/feed/
       'https://www.journaldunet.com/rss/', // l’URL thématique du plan renvoie 404 (voir README fixtures)
       'https://www.zataz.com/feed/',
+      'https://fuitesinfos.fr/feed.xml', // ajout 23/08 : sources spécialisées (leads publics)
+      'https://frenchbreaches.com/feed.xml',
     ]);
   });
 });

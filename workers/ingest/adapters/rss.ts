@@ -227,6 +227,12 @@ export const rssFeedConfigs: FeedConfig[] = [
   { id: 'rss:zdnet-fr', name: 'ZDNet FR', url: 'https://www.zdnet.fr/feed' },
   { id: 'rss:jdn', name: 'JDN', url: 'https://www.journaldunet.com/rss/' },
   { id: 'rss:zataz', name: 'Zataz', url: 'https://www.zataz.com/feed/' },
+  // Sources spécialisées fuites FR (ajout 23/08 : les 4 incidents DINUM/
+  // iMapper/Declic/Solimut nous avaient échappé par absence de ces flux).
+  // Les TITRES+URLS publics sont des leads ; le catalogue fuitesinfos
+  // reste license-gated (décision tâche 17) : jamais de copie de fiches.
+  { id: 'rss:fuitesinfos', name: 'Fuites Infos', url: 'https://fuitesinfos.fr/feed.xml' },
+  { id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml' },
 ];
 
 /** Instances prêtes à l'emploi — le runner T19 les enregistrera dans

@@ -271,13 +271,15 @@ describe('createGithubClient — requêtes réelles (fetch injecté)', () => {
 // ---------------------------------------------------------------------------
 
 describe('registre adapters (câblage T19)', () => {
-  it('enregistre exactement les 9 adapters construits en T14-T17, dans l’ordre déclaré', () => {
+  it('enregistre exactement les 11 adapters construits en T14-T17 + flux spécialisés, dans l’ordre déclaré', () => {
     expect(adapters.map((a) => a.id)).toEqual([
       'ransomware.live',
       'rss:01net',
       'rss:zdnet-fr',
       'rss:jdn',
       'rss:zataz',
+      'rss:fuitesinfos',
+      'rss:frenchbreaches',
       'cert-fr-avis',
       'cert-fr-alertes',
       'cnil-sanctions',
