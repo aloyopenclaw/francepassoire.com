@@ -1,0 +1,46 @@
+{
+  "slug": "mairie-d-injoux-genissiat-20260728",
+  "entity": "Mairie d'Injoux-Génissiat",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-28"
+  },
+  "volume": {
+    "count": 2026,
+    "unit": "comptes",
+    "label": "2 026 comptes utilisateurs annoncés par l'auteur de la revendication, selon Ayi Nedjimi Consultants ; chiffre non confirmé"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque contre la mairie d'Injoux-Génissiat : des comptes utilisateurs diffusés sur un forum cybercriminel (28 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/mairie-d-injoux-g-nissiat-ms4wogn82f107pe49b6",
+      "kind": "article"
+    },
+    {
+      "label": "Ayi Nedjimi Consultants — Fuite de données Mairie d'Injoux-Génissiat : 2 026 personnes exposées (15 août 2026)",
+      "url": "https://ayinedjimi-consultants.fr/news/fuite-donnees-mairie-dinjoux-genissiat-2026",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 juillet 2026, un acteur non identifié publie sur un forum cybercriminel une base présentée comme issue du site Internet de la mairie d'Injoux-Génissiat, commune de l'Ain. La publication annonce une mise à disposition gratuite sous le titre « France DB Free ». Selon FrenchBreaches, l'échantillon publié expose des champs de comptes utilisateurs de type WordPress : identifiants de connexion, adresses e-mail, dates d'inscription et mots de passe apparemment hachés. Selon Ayi Nedjimi Consultants, la revendication annonce environ 2 026 comptes concernés. La commune n'a pas communiqué publiquement. Le vecteur de compromission et l'authenticité complète des données ne sont pas vérifiés.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "Un acteur non identifié affirme déposer gratuitement sur un forum une base présentée comme issue du site mairie-injouxgenissiat.fr ; l'échantillon montre des comptes utilisateurs de type WordPress."
+    },
+    {
+      "date": "2026-07-28",
+      "event": "FrenchBreaches relate la revendication et la qualifie de crédible ; le nombre total d'enregistrements n'est pas visible dans la publication."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Ayi Nedjimi Consultants publie une analyse indiquant environ 2 026 comptes annoncés par la revendication et rappelle les obligations de notification à la CNIL."
+    }
+  ]
+}
