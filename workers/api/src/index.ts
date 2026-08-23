@@ -27,7 +27,6 @@
 // fichier ne fait que le routage et le scheduled.
 
 import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
-import { runVeilleSociale, slotVeilleSociale } from './veille-sociale';
 import { runQueueWatchdog } from './queue-watchdog';
 
 export interface D1PreparedStatement {
@@ -364,27 +363,14 @@ export default {
       }
     }
     // Chien de garde de la file éditoriale : plus ancien NEW > 24 h → email
-    // Brevo + push Pushinator, une fois par jour (garde KV dans RUN_STATE).
+    // Brevo (une fois par jour, garde KV dans RUN_STATE ; le canal téléphone
+    // a été retiré le 23/08 : décision propriétaire, quota Pushinator).
     // Plié dans CE cron (plafond 5 déclencheurs/compte : rien de nouveau).
     await runQueueWatchdog(env);
-    // T52 : veille sociale interne — slots 07:00 et 19:00 Europe/Paris sur
-    // le tick plein-heure, garde KV par slot/jour (plafond cron 5/compte :
-    // pas de déclencheur dédié possible).
-    const slot = slotVeilleSociale(now);
-    if (slot && env.RUN_STATE) {
-      const cle = `veille-sociale:slot:${new Intl.DateTimeFormat('fr-CA', {
-        timeZone: 'Europe/Paris',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-      })
-        .format(now)
-        .replaceAll('-', '')}:${slot}`;
-      if ((await env.RUN_STATE.get(cle)) === null) {
-        await env.RUN_STATE.put(cle, new Date().toISOString());
-        await runVeilleSociale(env, slot, { now });
-      }
-    }
+    // Veille sociale (07:00/19:00 Paris) : gérée EXCLUSIVEMENT par
+    // veille-sociale-vps.yml (les 4 sources refusent les IP Workers,
+    // docs/audit-ip-blocking.md). Ne pas réintroduire de repli worker :
+    // il enverrait un email creux et poserait la garde avant le run VPS.
   },
 };
 

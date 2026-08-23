@@ -82,11 +82,20 @@ dans tous les cas. Conclusion : la bascule VPS de `fb-vps.yml` reste la
 bonne décision ; un retour au worker exigerait un UA navigateur strict et
 resterait fragile.
 
-## 5. Veille sociale (module de repli `workers/api/src/veille-sociale.ts`, production sur VPS)
+## 5. Veille sociale (production EXCLUSIVE sur VPS depuis le 23/08 au soir)
 
 Rappel : depuis le commit `d026068`, le slot de production est
-`.github/workflows/veille-sociale-vps.yml` ; le module du worker api reste
-en repli silencieux. Les lignes citées sont celles du module de repli.
+`.github/workflows/veille-sociale-vps.yml`. Le repli worker a ensuite été
+RETIRÉ le 23/08 au soir : son email était nécessairement creux (les 4
+sources refusent les IP Workers) et sa garde KV passait avant le run VPS —
+double envoi garanti. Le workflow VPS est désormais seul propriétaire des
+créneaux, avec garde anti-double en table D1 `veille_slots` (migration
+`0005`) : le slot n'est marqué qu'après un run réussi, un échec Brevo
+reste visible dans les actions GitHub et un re-dispatch rejoue le créneau.
+Le module `workers/api/src/veille-sociale.ts` reste dans l'arbre pour sa
+logique pure et ses tests, mais plus rien ne l'appelle en production — ne
+pas le rebrancher (commentaire du scheduled handler dans
+`workers/api/src/index.ts`). Les lignes citées sont celles de ce module.
 
 | Source | Hôte | Code source | Depuis Workers | Depuis VPS | Verdict | Recommandation |
 | --- | --- | --- | --- | --- | --- | --- |

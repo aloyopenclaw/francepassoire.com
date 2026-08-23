@@ -5,8 +5,13 @@
 #
 # Ce workflow fait TOUT le slot : fetch 4 sources → normalise → dédup D1
 # (veille_seen) → classement → email Brevo au propriétaire (ou heartbeat calme).
-# Le worker api reste en repli silencieux (ses slots passeront désormais à vide
-# puisque ce workflow tient la garde avant lui sur les mêmes créneaux horaires).
+# Propriété EXCLUSIVE des slots depuis le 23/08 (le repli worker a été retiré :
+# son email était nécessairement creux, les 4 sources refusant les IP Workers,
+# et il posait la garde avant ce workflow : double envoi garanti).
+# Garde anti-double : table D1 veille_slots (migration 0005) ; le jeton du
+# runner n'a pas accès au KV RUN_STATE, l'API D1 si. Le slot n'est marqué
+# qu'après un run réussi : un échec Brevo reste visible dans les actions
+# GitHub et un re-dispatch manuel peut rejouer le créneau.
 
 name: Veille sociale (VPS)
 
@@ -29,21 +34,32 @@ jobs:
     runs-on: self-hosted
     timeout-minutes: 20
     steps:
-      - name: Garde anti-double (KV RUN_STATE, même clé que le worker api)
+      - name: Garde anti-double (table D1 veille_slots)
         run: |
           . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
           AUJ=$(TZ=Europe/Paris date +%Y%m%d)
-          SLOT=$(TZ=Europe/Paris date +%H | grep -q '^07' && echo matin || echo soir)
+          # <12 h Paris = matin, sinon soir — robuste à l'heure d'hiver
+          # (05:03 UTC = 06:03 Paris : le cron est décalé en mars/novembre,
+          # mais si le décalage est oublié ce découpage reste correct).
+          if [ "$(TZ=Europe/Paris date +%H)" -lt 12 ]; then SLOT=matin; else SLOT=soir; fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
-          CLE="veille-sociale:slot:${AUJ}:${SLOT}"
-          echo "CLE=$CLE" >> "$GITHUB_ENV"
+          echo "AUJ=$AUJ" >> "$GITHUB_ENV"
+          curl -s -X POST "$FP_D1_QUERY_URL" \
+            -H "Authorization: Bearer $FP_D1_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data '{"sql": "SELECT done_at FROM veille_slots WHERE slot = ?1", "params": ["'"$AUJ:$SLOT"'"]}' > .agent-tmp/garde.json
+          if python3 -c "import json,sys; sys.exit(0 if json.load(open('.agent-tmp/garde.json'))['result'][0]['results'] else 1)"; then
+            echo "SKIP=1" >> "$GITHUB_ENV"
+            echo "slot ${AUJ}:${SLOT} déjà traité, arrêt propre"
+          fi
 
       - name: Moisson + dédup + classement + email (python)
+        if: ${{ env.SKIP != '1' }}
         run: |
           . /opt/francepassoire-shared/env.sh
           python3 << 'PYEOF'
-          import json, re, os, urllib.request, urllib.parse
+          import json, re, os, sys, urllib.request, urllib.parse
           from datetime import datetime, timezone, timedelta
 
           UA = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
@@ -143,6 +159,22 @@ jobs:
               req = urllib.request.Request('https://api.brevo.com/v3/smtp/email', data=body,
                   headers={'api-key': BREVO, 'Content-Type': 'application/json'})
               try: urllib.request.urlopen(req, timeout=20); print('email envoyé')
-              except Exception as e: print('email échoué:', e)
+              except Exception as e:
+                  print('email échoué:', e)
+                  sys.exit(1)  # ne pas marquer le slot : re-dispatch pourra rejouer
+          else:
+              print('BREVO_API_KEY absente : run en échec, slot non marqué (re-dispatch rejouera)')
+              sys.exit(1)
           print(f'{len(brutes)} brutes, {len(nouvelles)} nouvelles, mortes: {mortes}')
           PYEOF
+
+      - name: Marquer le slot traité (D1 veille_slots)
+        if: ${{ env.SKIP != '1' }}
+        run: |
+          . /opt/francepassoire-shared/env.sh
+          REP=$(curl -s -X POST "$FP_D1_QUERY_URL" \
+            -H "Authorization: Bearer $FP_D1_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data '{"sql": "INSERT OR IGNORE INTO veille_slots (slot) VALUES (?1)", "params": ["'"$AUJ:$SLOT"'"]}')
+          echo "$REP" | grep -q '"success":true' || { echo "marquage du slot ${AUJ}:${SLOT} échoué : $REP"; exit 1; }
+          echo "slot ${AUJ}:${SLOT} marqué traité"
