@@ -198,7 +198,12 @@ export function makeRssAdapter(feedCfg: FeedConfig): RssAdapter {
      *        runner en T19) — les items correspondants sont filtrés ici.
      */
     async fetchCandidates(fetchFn: typeof fetch, knownGuids?: Set<string>): Promise<Candidate[]> {
-      const res = await fetchFn(feedCfg.url);
+      // UA navigateur obligatoire : plusieurs hébergeurs (Cloudflare "Just a
+      // moment") renvoient 403 au fetch nu du runtime Workers — silencieux
+      // sinon (res.ok false → return []) alors que curl local passe (bug FB).
+      const res = await fetchFn(feedCfg.url, {
+        headers: { 'user-agent': 'Mozilla/5.0 (compatible; FrancePassoire-Ingest/1.0; +https://francepassoire.com)' },
+      });
       if (!res.ok) return [];
 
       const items = parseFeedItems(await res.text());
