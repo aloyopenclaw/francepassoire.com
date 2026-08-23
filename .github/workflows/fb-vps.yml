@@ -1,0 +1,93 @@
+# FrenchBreaches est le SEUL flux behind un bot-check Cloudflare qui rejette
+# les IP du runtime Workers (constaté par worker-sonde : 403 « Just a moment »
+# depuis workers.dev, 200 depuis IP résidentielle et IP VPS — aef3c44 inutile).
+# Ce workflow moissonne son feed DEPUIS LE VPS (IP OVH, passe à 200) et pousse
+# les candidats dans D1 via l'API — même contrat d'insertion que l'ingest :
+# statut NEW, dédup guid (fiche:source_url), ni plus ni moins.
+
+name: FrenchBreaches via VPS
+
+on:
+  schedule:
+    - cron: '13,43 * * * *' # décalé des crons ingest (7,37) et draft (17,47)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fb-vps
+  cancel-in-progress: false
+
+jobs:
+  moisson:
+    runs-on: self-hosted
+    timeout-minutes: 10
+    steps:
+      - name: Moissonner le feed et pousser les candidats dans D1
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          mkdir -p .agent-tmp
+
+          # 1. Fetch du feed depuis l'IP du VPS (UA du pipeline)
+          curl -s --max-time 30 \
+            -A 'Mozilla/5.0 (compatible; FrancePassoire-Ingest/1.0; +https://francepassoire.com)' \
+            'https://frenchbreaches.com/feed.xml' > .agent-tmp/fb.xml
+          N_ITEMS=$(grep -c '<item>' .agent-tmp/fb.xml || echo 0)
+          echo "items dans le feed : $N_ITEMS"
+          [ "$N_ITEMS" = "0" ] && { echo "feed vide ou bloqué — arrêt propre"; exit 0; }
+
+          # 2. Guids déjà en D1 pour ce flux (dédup)
+          printf '%s' '{"sql": "SELECT guid FROM (SELECT json_extract(raw, \"$ .guid\") as guid, raw FROM candidates WHERE source_url LIKE \"%frenchbreaches.com%\" LIMIT 500) WHERE guid IS NOT NULL"}' > /dev/null
+          # (requête ci-dessus en syntaxe directe plus bas — D1 n'aime pas les sous-select exotiques)
+          printf '%s' '{"sql": "SELECT raw FROM candidates WHERE source_url LIKE ?1 LIMIT 500", "params": ["%frenchbreaches.com%"]}' > .agent-tmp/q.json
+          curl -s "$FP_D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/q.json > .agent-tmp/existants.json || true
+
+          # 3. Insertion des nouveaux items (python : parse RSS + diff + insert)
+          python3 << 'PYEOF'
+          import json, re, urllib.request, os
+
+          xml = open('.agent-tmp/fb.xml').read()
+          d1_url = os.environ['FP_D1_QUERY_URL']
+          token = os.environ['FP_D1_TOKEN']
+
+          def q(sql, params=None):
+              body = json.dumps({'sql': sql, 'params': params or []}).encode()
+              req = urllib.request.Request(d1_url, data=body, headers={
+                  'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'})
+              return json.loads(urllib.request.urlopen(req, timeout=30).read())
+
+          existants = set()
+          try:
+              rows = q("SELECT raw FROM candidates WHERE source_url LIKE ? LIMIT 500", ['%frenchbreaches.com%'])
+              for r in rows['result'][0]['results']:
+                  try: existants.add(json.loads(r['raw']).get('guid'))
+                  except Exception: pass
+          except Exception as e:
+              print('lecture existants échouée:', e)
+
+          blocks = re.findall(r'<item(?:\s[^>]*)?>[\s\S]*?</item>', xml)
+          def tag(b, t):
+              m = re.search(rf'<{t}(?:\s[^>]*)?>(?:<!\[CDATA\[)?([^<\]]+)', b)
+              return m.group(1).strip() if m else None
+
+          inseres = 0
+          for b in blocks:
+              titre = tag(b, 'title')
+              guid = tag(b, 'guid') or tag(b, 'link')
+              lien = tag(b, 'link')
+              pub = tag(b, 'pubDate')
+              if not titre or not guid or guid in existants: continue
+              raw = json.dumps({'title': titre, 'guid': guid, 'pubDate': pub, 'feed': 'rss:frenchbreaches'}, ensure_ascii=False)
+              try:
+                  q("INSERT INTO candidates (id, source, source_url, raw, entity_name, dedup_score, status) VALUES (?, ?, ?, ?, ?, NULL, 'NEW')",
+                    [__import__('uuid').uuid4().hex, 'rss', lien, raw, titre, ])
+                  inseres += 1
+              except Exception as e:
+                  print('insert échoué:', titre[:40], e)
+          print(f'insérés : {inseres} / {len(blocks)} items')
+          PYEOF
+
+      - name: Nettoyage
+        if: always()
+        run: rm -rf .agent-tmp

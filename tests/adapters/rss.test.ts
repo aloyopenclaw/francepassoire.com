@@ -177,15 +177,14 @@ describe('T15 · adapter RSS — heuristiques (docs RSS inline)', () => {
 });
 
 describe('T15 · adapter RSS — configuration exportée', () => {
-  it('rssAdapters expose les 10 flux avec ids et URLs réels vérifiés en direct', () => {
-    expect(rssAdapters).toHaveLength(10);
+  it('rssAdapters expose les 9 flux worker (FrenchBreaches moissonné côté VPS)', () => {
+    expect(rssAdapters).toHaveLength(9);
     expect(rssAdapters.map((a) => a.id)).toEqual([
       'rss:01net',
       'rss:zdnet-fr',
       'rss:jdn',
       'rss:zataz',
       'rss:fuitesinfos',
-      'rss:frenchbreaches',
       'rss:gnews-fuites',
       'rss:undernews',
       'rss:dsb',
@@ -197,7 +196,6 @@ describe('T15 · adapter RSS — configuration exportée', () => {
       'https://www.journaldunet.com/rss/', // l’URL thématique du plan renvoie 404 (voir README fixtures)
       'https://www.zataz.com/feed/',
       'https://fuitesinfos.fr/feed.xml', // ajout 23/08 : sources spécialisées (leads publics)
-      'https://frenchbreaches.com/feed.xml',
       'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr',
       'https://www.undernews.fr/feed',
       'https://www.datasecuritybreach.fr/feed/',

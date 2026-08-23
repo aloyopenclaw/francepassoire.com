@@ -243,7 +243,9 @@ export const rssFeedConfigs: FeedConfig[] = [
   // Les TITRES+URLS publics sont des leads ; le catalogue fuitesinfos
   // reste license-gated (décision tâche 17) : jamais de copie de fiches.
   { id: 'rss:fuitesinfos', name: 'Fuites Infos', url: 'https://fuitesinfos.fr/feed.xml' },
-  { id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml', sansFiltreKeywords: true },
+  // FrenchBreaches retiré du worker : son bot-check Cloudflare rejette les IP
+  // du runtime Workers (worker-sonde : 403) — moissonné par fb-vps.yml sur le
+  // VPS (IP OVH : 200), même contrat d'insertion D1 (statut NEW, guid).
   // Antennes temps réel (ajout 23/08, vague « 100x ») : presse française à
   // l'instant Google News l'indexe + blogs spécialisés + veille Hackmanac.
   { id: 'rss:gnews-fuites', name: 'Google News (fuites FR)', url: 'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr' },
