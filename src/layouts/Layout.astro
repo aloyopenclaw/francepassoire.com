@@ -7,6 +7,9 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  /** Description dédiée aux réseaux (og:/twitter:) — peut différer de la
+   *  meta « recherche » : social = accroche, meta = résumé SEO (owner 23/08). */
+  socialDescription?: string;
   /** Canonical explicite (pages d'erreur : pointer vers « / » plutôt qu'une URL hors index). */
   canonical?: string;
   /** Image de partage (chemin site-absolu) — défaut : og-image.jpg générique (2048²). */
@@ -20,7 +23,8 @@ interface Props {
 
 const {
   title,
-  description = 'La France, passoire à données. On compte les trous. Observatoire citoyen et indépendant des fuites de données personnelles en France.',
+  description = 'L\'observatoire citoyen des fuites de données en France. Fiches vérifiées, suivi ransomware et guides pratiques. Pas de panique. Mais agissons.',
+  socialDescription = 'La France est une passoire à données, on compte les trous. Suivez les fuites en direct et découvrez comment protéger vos comptes.',
   canonical,
   image = '/og-image.jpg',
   imageWidth = 2048,
@@ -41,7 +45,7 @@ const imageURL = new URL(image, Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={socialDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="FrancePassoire" />
@@ -52,7 +56,7 @@ const imageURL = new URL(image, Astro.site);
     <meta property="og:image:alt" content={imageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={socialDescription} />
     <meta name="twitter:image" content={imageURL} />
     <slot name="head" />
   </head>
