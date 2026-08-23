@@ -84,6 +84,7 @@ jobs:
       - name: Déployer Pages
         run: |
           . /opt/francepassoire-shared/env.sh
+export FRANCEPASSOIRE_NOSTR_KEY=/opt/francepassoire-shared/nostr.key
           npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
 
       - name: Nettoyage des runs fantômes éventuels

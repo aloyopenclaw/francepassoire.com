@@ -17,7 +17,11 @@ import { join } from 'node:path';
 import { homedir } from 'node:os';
 import { generateSecretKey, getPublicKey, nip19 } from 'nostr-tools';
 
-export const CHEMIN_CLE = join(homedir(), '.config', 'francepassoire', 'nostr.key');
+// Chemin de la clé : variable d'env (runners VPS multi-users, groupe partagé)
+// sinon ~/.config/francepassoire/nostr.key (poste de travail).
+export const CHEMIN_CLE =
+  process.env.FRANCEPASSOIRE_NOSTR_KEY ??
+  join(homedir(), '.config', 'francepassoire', 'nostr.key');
 
 // Relais épinglés (décision du plan tâche 27) — jamais un seul relais.
 // Édition = changement de contrat public : mettre à jour docs/ancrages.md.
