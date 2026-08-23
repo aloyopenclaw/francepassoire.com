@@ -122,7 +122,7 @@ export interface FicheDigest {
   description?: string;
   data_types: string[];
   dates: { revendication: string; publication?: string };
-  volume: { label: string };
+  volume: { label: string; count?: number; unit?: string };
 }
 
 export interface Prefs {
@@ -819,79 +819,470 @@ function fichesDeLaSemaine(fiches: readonly FicheDigest[], now: Date): FicheDige
 }
 
 // gabarit email-client-safe : tableaux + styles inline uniquement, sobre.
-export function renderDigestHtml(fiches: readonly FicheDigest[], unsubUrl: string): string {
-  const rows = fiches
-    .map(
-      (f) =>
-        `        <tr>` +
-        `<td style="padding:10px 8px;border-bottom:1px solid #e8ddcc;font-family:Arial,Helvetica,sans-serif;font-size:14px;">` +
-        `<strong>${escapeHtml(f.entity)}</strong><br>` +
-        `<span style="color:#6b5b45;">${escapeHtml(dateAttribution(f))} — ${escapeHtml(f.volume.label)}</span>` +
-        `</td>` +
-        `<td style="padding:10px 8px;border-bottom:1px solid #e8ddcc;text-align:right;">` +
-        `<a href="${ficheUrl(f)}" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#E85A0C;">Voir la fiche</a>` +
-        `</td></tr>`,
-    )
-    .join('\n');
+// ---------------------------------------------------------------------------
+// Gabarit « Le Récap Passoire » (portage fidèle de
+// TemplateMailsGemini/Newsletter_template.html — tokens + blocs #FICHES ;
+// la section Changements de statut est omise : le digest n'a pas de source
+// d'historique de statuts, la règle du gabarit « masquer si vide » s'applique).
+// ---------------------------------------------------------------------------
+
+/** Copie locale des libellés secteurs (frontière worker ↔ src/lib). */
+const SECTEUR_LIBELLES: Readonly<Record<string, string>> = {
+  sante: 'Santé',
+  finance: 'Finance',
+  retail: 'Retail',
+  recherche: 'Recherche',
+  public: 'Secteur public',
+  industrie: 'Industrie',
+  services: 'Services',
+  media: 'Médias',
+  autre: 'Autre',
+};
+
+/** Numéro d'édition : semaines écoulées depuis le n°1 (lundi 24/08/2026). */
+const PREMIER_NUMERO = Date.parse('2026-08-24T00:00:00Z');
+const DIGEST_MAX_FICHES = 5;
+
+/** 3300000 → « 3 300 000 » (espace fine régulière, sûre en email). */
+function frNum(n: number): string {
+  return Math.round(n)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
+/** 7243000 → « 7,2 M » ; 435903 → « 435 903 ». */
+function frCourt(n: number): string {
+  if (n >= 1_000_000) {
+    const m = n / 1_000_000;
+    return `${(Math.round(m * 10) / 10).toString().replace('.', ',')} M`;
+  }
+  return frNum(n);
+}
+
+const UNITES_PERSONNES = [
+  'personne',
+  'compte',
+  'membre',
+  'adhérent',
+  'client',
+  'patient',
+  'utilisateur',
+  'dossier',
+  'abonné',
+  'victime',
+  'salarié',
+  'employé',
+];
+
+/** Somme des volumes « humains » de la semaine (comptes, personnes…). */
+function sommePersonnes(fiches: readonly FicheDigest[]): number {
+  let total = 0;
+  for (const f of fiches) {
+    const unit = (f.volume.unit ?? '').toLowerCase();
+    if (f.volume.count && UNITES_PERSONNES.some((u) => unit.startsWith(u))) {
+      total += f.volume.count;
+    }
+  }
+  return total;
+}
+
+/** « comptes exposés » / « personnes exposées » / « personnes et comptes exposés ». */
+function libellePersonnes(fiches: readonly FicheDigest[]): string {
+  const units = fiches
+    .map((f) => (f.volume.unit ?? '').toLowerCase())
+    .filter((u) => UNITES_PERSONNES.some((s) => u.startsWith(s)));
+  const personnes = units.some((u) => u.startsWith('personne') || u.startsWith('victime'));
+  const comptes = units.some((u) => u.startsWith('compte'));
+  if (personnes && comptes) return 'personnes et comptes exposés';
+  if (personnes) return 'personnes exposées';
+  return 'comptes exposés';
+}
+
+function libelleSecteur(id: string): string {
+  return SECTEUR_LIBELLES[id] ?? id.charAt(0).toUpperCase() + id.slice(1);
+}
+
+/** Volume court d'une fiche : « 6 800 000 personnes », à défaut le label complet. */
+function volumeCourt(f: FicheDigest): string {
+  if (f.volume.count && f.volume.unit) return `${frNum(f.volume.count)} ${f.volume.unit}`;
+  return f.volume.label;
+}
+
+function tronquer(texte: string, max: number): string {
+  if (texte.length <= max) return texte;
+  const coupe = texte.slice(0, max);
+  return `${coupe.slice(0, coupe.lastIndexOf(' '))}…`;
+}
+
+/** Pastille de statut : orange pointillée (revendiquée) ou verte pleine (confirmée). */
+function pastilleStatut(statut: string | undefined): string {
+  if (statut === 'confirmee') {
+    return `<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right">
+                                                        <tr>
+                                                            <td align="center" style="background-color: #0E7A46; border: 2px solid #241405; border-radius: 10px; padding: 6px 12px;">
+                                                                <span style="font-family: 'Arial Black', Impact, sans-serif; font-size: 11px; color: #FFF6EA; text-transform: uppercase; letter-spacing: 0.5px;">✓ Confirmée</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>`;
+  }
+  return `<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right">
+                                                        <tr>
+                                                            <td align="center" style="background-color: #FF6B1A; background-image: radial-gradient(circle, #241405 1px, transparent 1px); background-size: 8px 8px; border: 2px solid #241405; border-radius: 10px; padding: 6px 12px;">
+                                                                <span style="font-family: 'Arial Black', Impact, sans-serif; font-size: 11px; color: #241405; text-transform: uppercase; letter-spacing: 0.5px; background-color: #FF6B1A; padding: 0 4px;">Revendiquée</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>`;
+}
+
+function carteFiche(f: FicheDigest): string {
+  const cta = `Lire la fiche détaillée →`;
+  return `
+                            <!-- FICHE ${escapeHtml(f.entity)} -->
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td style="background-color: #FFF9F2; border: 2px solid #241405; border-radius: 16px; box-shadow: 4px 4px 0px 0px #241405; padding: 24px;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 8px;">
+                                            <tr>
+                                                <td align="left" valign="middle">
+                                                    <h3 style="margin: 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 22px; color: #241405; line-height: 1.1;">${escapeHtml(f.entity)}</h3>
+                                                </td>
+                                                <td align="right" valign="middle" width="130">
+                                                    ${pastilleStatut(f.statut)}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                                            <tr>
+                                                <td style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 6px; padding: 4px 8px;">
+                                                    <span style="font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold; color: #241405;">${escapeHtml(libelleSecteur(f.secteur))}</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="left" style="padding-bottom: 20px;">
+                                                    <p style="margin: 0 0 8px 0; font-family: 'Courier New', Courier, monospace; font-size: 20px; font-weight: bold; color: #FF6B1A;">${escapeHtml(volumeCourt(f))}</p>
+                                                    ${f.description ? `<p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.5; color: #241405;">${escapeHtml(tronquer(f.description, 220))}</p>` : ''}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mobile-full-btn" style="width: auto;">
+                                                        <tr>
+                                                            <td align="center" style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
+                                                                <a href="${ficheUrl(f)}" class="hover-btn mobile-full-btn" style="display: block; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; padding: 12px 20px;">${cta}</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>`;
+}
+
+export function renderDigestHtml(
+  fiches: readonly FicheDigest[],
+  unsubUrl: string,
+  options: { prefsUrl?: string; now?: Date } = {},
+): string {
+  const now = options.now ?? new Date();
+  const prefsUrl = options.prefsUrl ?? `${SITE_URL}/proteger/`;
+  const numero = Math.max(1, Math.floor((now.getTime() - PREMIER_NUMERO) / (7 * 24 * 3600 * 1000)) + 1);
+  const dateNumero = new Intl.DateTimeFormat('fr-FR', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Europe/Paris',
+  }).format(now);
+  const n = fiches.length;
+  const affichees = fiches.slice(0, DIGEST_MAX_FICHES);
+  const autres = Math.max(0, n - affichees.length);
+  const personnes = sommePersonnes(fiches);
+  const preheader = n === 0
+    ? 'Semaine calme : le récap de la passoire.'
+    : `${n} nouvelle${n > 1 ? 's' : ''} fuite${n > 1 ? 's' : ''}${personnes > 0 ? `, ${frCourt(personnes)} exposé${personnes > 1 ? 's' : ''}` : ''} : le récap de la semaine.`;
+
+  const blocStats = personnes > 0
+    ? `<div class="stack-column" style="display: inline-block; width: 48%; max-width: 250px; vertical-align: top; text-align: left;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="padding: 20px 16px; background-color: #FFF9F2; border: 2px solid #241405; border-radius: 16px; box-shadow: 4px 4px 0px 0px #241405; text-align: center;">
+                                                        <p class="stat-num" style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 40px; font-weight: bold; color: #FF6B1A; line-height: 1;">${n}</p>
+                                                        <p style="margin: 8px 0 0 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 12px; color: #241405; text-transform: uppercase; letter-spacing: 0.5px;">nouvelle${n > 1 ? 's' : ''} fuite${n > 1 ? 's' : ''}</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="stack-column hide-mobile" style="display: inline-block; width: 4%; max-width: 20px;"></div>
+                                        <div class="stack-column" style="display: inline-block; width: 48%; max-width: 250px; vertical-align: top; text-align: left;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="padding: 20px 16px; background-color: #FFF9F2; border: 2px solid #241405; border-radius: 16px; box-shadow: 4px 4px 0px 0px #241405; text-align: center;">
+                                                        <p class="stat-num" style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 40px; font-weight: bold; color: #FF6B1A; line-height: 1; white-space: nowrap;">${frCourt(personnes)}</p>
+                                                        <p style="margin: 8px 0 0 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 12px; color: #241405; text-transform: uppercase; letter-spacing: 0.5px;">${libellePersonnes(fiches)}</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>`
+    : `<div class="stack-column" style="display: inline-block; width: 100%; max-width: 100%; vertical-align: top; text-align: left;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="padding: 20px 16px; background-color: #FFF9F2; border: 2px solid #241405; border-radius: 16px; box-shadow: 4px 4px 0px 0px #241405; text-align: center;">
+                                                        <p class="stat-num" style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 40px; font-weight: bold; color: #FF6B1A; line-height: 1;">${n}</p>
+                                                        <p style="margin: 8px 0 0 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 12px; color: #241405; text-transform: uppercase; letter-spacing: 0.5px;">nouvelle${n > 1 ? 's' : ''} fuite${n > 1 ? 's' : ''} cette semaine</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>`;
+
+  const blocFiches = n === 0
+    ? `<h2 style="margin: 0 0 24px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 22px; color: #241405; line-height: 1.2; border-top: 3px solid #241405; padding-top: 32px;">Semaine calme</h2>
+                            <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.5; color: #241405;">La passoire n'a presque pas fui. Aucune nouvelle fuite ne correspond à votre veille cette semaine.</p>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mobile-full-btn" style="width: auto; margin-top: 16px;">
+                                <tr>
+                                    <td align="center" style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
+                                        <a href="${SITE_URL}/ransomware/" class="hover-btn mobile-full-btn" style="display: block; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; padding: 12px 20px;">Parcourir le catalogue →</a>
+                                    </td>
+                                </tr>
+                            </table>`
+    : `<h2 style="margin: 0 0 24px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 22px; color: #241405; line-height: 1.2; border-top: 3px solid #241405; padding-top: 32px;">
+                                Les ${affichees.length} fuite${affichees.length > 1 ? 's' : ''} à connaître
+                            </h2>
+                            ${affichees.map(carteFiche).join('\n')}
+                            ${autres > 0 ? `<p style="margin: 0 0 40px 0; font-family: 'Courier New', Courier, monospace; font-size: 13px; font-weight: bold; color: #241405;">+ ${autres} autre${autres > 1 ? 's' : ''} fuite${autres > 1 ? 's' : ''} cette semaine : <a href="${SITE_URL}/ransomware/" style="color: #E85A0C;">voir le catalogue →</a></p>` : ''}`;
+
   return `<!DOCTYPE html>
-<html lang="fr">
-  <body style="margin:0;padding:0;background-color:#FFF9F2;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFF9F2;">
-      <tr>
-        <td style="padding:24px 12px;">
-          <table role="presentation" width="600" cellpadding="0" cellspacing="0" align="center" style="width:600px;max-width:100%;background-color:#ffffff;border:2px solid #241405;">
-            <tr>
-              <td style="padding:20px 24px;background-color:#FF6B1A;border-bottom:2px solid #241405;">
-                <span style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;color:#241405;">FrancePassoire</span>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:24px;">
-                <h1 style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:20px;color:#241405;">Votre veille de la semaine</h1>
-                <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#241405;">
-                  ${fiches.length} nouvelle${fiches.length > 1 ? 's' : ''} fiche${fiches.length > 1 ? 's' : ''} publiée${fiches.length > 1 ? 's' : ''} cette semaine correspondent à votre veille.
-                </p>
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-${rows}
+<html lang="fr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>Le Récap Passoire</title>
+    <!--[if mso]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <style>
+        table {border-collapse: collapse;}
+        td,th {font-family: Arial, sans-serif;}
+    </style>
+    <![endif]-->
+    <style>
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #FFF9F2; }
+        .hover-btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px #241405 !important; }
+        .hover-btn-orange:hover { background-color: #E85A0C !important; }
+        @media screen and (max-width: 600px) {
+            .main-card { border-radius: 0 !important; border: none !important; box-shadow: none !important; border-bottom: 3px solid #241405 !important; }
+            .outer-padding { padding: 0 !important; }
+            .inner-padding { padding: 24px 16px !important; }
+            .stack-column { display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important; margin-bottom: 16px !important; }
+            .hide-mobile { display: none !important; }
+            .h1-text { font-size: 24px !important; }
+            .stat-num { font-size: 36px !important; }
+            .mobile-full-btn { width: 100% !important; display: block !important; box-sizing: border-box !important; }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #FFF9F2; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased;">
+    <div style="display: none; font-size: 1px; color: #FFF9F2; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        ${preheader}&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFF9F2; padding: 40px 16px;" class="outer-padding">
+        <tr>
+            <td align="center">
+                <!--[if mso]>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width: 600px;"><tr><td>
+                <![endif]-->
+                <table class="main-card" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; width: 100%; background-color: #FFF6EA; border: 3px solid #241405; border-radius: 20px; box-shadow: 6px 6px 0px 0px #241405; overflow: hidden; margin: 0 auto;">
+                    <tr>
+                        <td style="background-color: #FF6B1A; background-image: radial-gradient(circle, #241405 1.5px, transparent 1.5px); background-size: 22px 22px; border-bottom: 3px solid #241405; padding: 32px 24px; text-align: center;">
+                            <p style="margin: 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 28px; font-weight: 900; color: #241405; letter-spacing: -1px; text-transform: uppercase;">
+                                <span style="font-size: 32px; vertical-align: middle;">🧺</span> FRANCEPASSOIRE
+                            </p>
+                            <p style="margin: 4px 0 0 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 18px; font-weight: 900; color: #241405;">
+                                Le Récap Passoire
+                            </p>
+                            <p style="margin: 12px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold; color: #241405; background-color: #FFF6EA; display: inline-block; padding: 4px 12px; border: 2px solid #241405; border-radius: 50px;">
+                                N°${numero} · ${dateNumero}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 40px 32px;" class="inner-padding">
+                            <h1 class="h1-text" style="margin: 0 0 32px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 30px; color: #241405; line-height: 1.1; letter-spacing: -0.5px;">
+                                La semaine dans la passoire
+                            </h1>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 40px;">
+                                <tr>
+                                    <td align="center" style="font-size: 0; text-align: center;">
+                                        <!--[if mso]>
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="48%" valign="top">
+                                        <![endif]-->
+                                        ${blocStats}
+                                        <!--[if mso]>
+                                        </td></tr></table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                            ${blocFiches}
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 48px;">
+                                <tr>
+                                    <td align="left" style="padding: 48px 0 0 0; border-top: 3px solid #241405;">
+                                        <p style="margin: 0 0 12px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #FF6B1A;">
+                                            💡 Le conseil passoire
+                                        </p>
+                                        <h3 style="margin: 0 0 16px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 26px; color: #241405; line-height: 1.2;">
+                                            Votre numéro a fuité ?
+                                        </h3>
+                                        <p style="margin: 0 0 24px 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #241405;">
+                                            La règle d'or absolue pour éviter les fraudes bancaires : <strong>ne communiquez JAMAIS un code reçu par SMS</strong> à quelqu'un au bout du fil, même s'il se dit de votre banque.
+                                        </p>
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mobile-full-btn" style="width: auto;">
+                                            <tr>
+                                                <td align="center" style="background-color: #FF6B1A; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
+                                                    <a href="${SITE_URL}/proteger/" class="hover-btn hover-btn-orange mobile-full-btn" style="display: block; font-family: 'Arial Black', Impact, sans-serif; font-size: 15px; color: #241405; text-decoration: none; padding: 14px 24px;">Voir nos conseils →</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding: 32px; background-color: #FFF9F2; border: 2px dashed #241405; border-radius: 16px;">
+                                        <p style="margin: 0 0 16px 0; font-family: 'Arial Black', Impact, sans-serif; font-size: 18px; color: #241405;">
+                                            🔔 Trop ou pas assez d'alertes ?
+                                        </p>
+                                        <p style="margin: 0 0 24px 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #241405; opacity: 0.8;">
+                                            Ajustez vos critères sectoriels pour ne recevoir que ce qui compte pour vous.
+                                        </p>
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
+                                                    <a href="${prefsUrl}" class="hover-btn" style="display: inline-block; padding: 12px 24px; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; text-transform: uppercase;">Gérer ma veille</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 32px 32px; background-color: #241405; color: #FFF6EA; text-align: center;">
+                            <p style="margin: 0 0 16px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.5; opacity: 0.8;">
+                                Vous recevez cet email car vous avez activé la veille <strong>FrancePassoire</strong>.
+                            </p>
+                            <p style="margin: 0 0 24px 0; font-family: 'Courier New', Courier, monospace; font-size: 12px; opacity: 0.6;">
+                                Hébergé en France · Sans traceur · Données ouvertes CC-BY
+                            </p>
+                            <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">
+                                <a href="${unsubUrl}" style="color: #FF6B1A; text-decoration: underline;">Se désinscrire en un clic</a>
+                                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                                <a href="${prefsUrl}" style="color: #FF6B1A; text-decoration: underline;">Mes préférences</a>
+                                <br><br>
+                                <a href="${SITE_URL}/mentions-legales/" style="color: #FFF6EA; opacity: 0.5; text-decoration: underline;">Mentions légales</a>
+                                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                                <a href="mailto:contact@francepassoire.com" style="color: #FFF6EA; opacity: 0.5; text-decoration: underline;">Contact</a>
+                            </p>
+                        </td>
+                    </tr>
                 </table>
-                <p style="margin:16px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#241405;">
-                  <strong>Le geste de la semaine :</strong> un mot de passe long et unique par compte — un gestionnaire de mots de passe suffit à tous les retenir.
+                <!--[if mso]>
+                </td></tr></table>
+                <![endif]-->
+                <p style="margin: 24px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 12px; font-weight: bold; color: #241405; opacity: 0.6;">
+                    © 2026 FrancePassoire · Projet citoyen
                 </p>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:16px 24px;border-top:2px solid #241405;background-color:#FFF6EA;">
-                <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#241405;">
-                  Vous recevez cet email parce que vous avez activé la veille FrancePassoire (double opt-in).
-                </p>
-                <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;">
-                  <a href="${unsubUrl}" style="color:#E85A0C;">Se désinscrire en un clic</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+            </td>
+        </tr>
     </table>
-  </body>
+</body>
 </html>`;
 }
 
-export function renderDigestText(fiches: readonly FicheDigest[], unsubUrl: string): string {
-  const lignes = fiches.map(
-    (f) => `- ${f.entity} (${dateAttribution(f)}, ${f.volume.label}) : ${ficheUrl(f)}`,
+export function renderDigestText(
+  fiches: readonly FicheDigest[],
+  unsubUrl: string,
+  options: { prefsUrl?: string; now?: Date } = {},
+): string {
+  const now = options.now ?? new Date();
+  const prefsUrl = options.prefsUrl ?? `${SITE_URL}/proteger/`;
+  const numero = Math.max(1, Math.floor((now.getTime() - PREMIER_NUMERO) / (7 * 24 * 3600 * 1000)) + 1);
+  const dateNumero = new Intl.DateTimeFormat('fr-FR', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Europe/Paris',
+  }).format(now);
+  const n = fiches.length;
+  const affichees = fiches.slice(0, DIGEST_MAX_FICHES);
+  const autres = Math.max(0, n - affichees.length);
+  const personnes = sommePersonnes(fiches);
+
+  const lignes: string[] = [
+    'FRANCEPASSOIRE · LE RÉCAP PASSOIRE',
+    `N°${numero} · ${dateNumero}`,
+    '------------------------------------------------------------------------',
+    '',
+    'La semaine dans la passoire',
+    '',
+    `* ${n} nouvelle${n > 1 ? 's' : ''} fuite${n > 1 ? 's' : ''}`,
+  ];
+  if (personnes > 0) {
+    lignes.push(`* ${frNum(personnes)} ${libellePersonnes(fiches)}`);
+  }
+  if (n === 0) {
+    lignes.push('', 'Semaine calme : la passoire n\'a presque pas fui.', `Parcourir le catalogue : <${SITE_URL}/ransomware/>`);
+  } else {
+    lignes.push('', 'LES FUITES À CONNAÎTRE', '');
+    affichees.forEach((f, i) => {
+      lignes.push(
+        `${i + 1}. ${f.entity} [${f.statut === 'confirmee' ? '✓ CONFIRMÉE' : 'REVENDIQUÉE'}]`,
+        `   ${libelleSecteur(f.secteur)} · ${volumeCourt(f)}`,
+      );
+      if (f.description) lignes.push(`   ${tronquer(f.description, 180)}`);
+      lignes.push(`   Lire la fiche détaillée : <${ficheUrl(f)}>`, '');
+    });
+    if (autres > 0) {
+      lignes.push(`+ ${autres} autre${autres > 1 ? 's' : ''} fuite${autres > 1 ? 's' : ''} cette semaine : <${SITE_URL}/ransomware/>`, '');
+    }
+  }
+  lignes.push(
+    '------------------------------------------------------------------------',
+    '💡 LE CONSEIL PASSOIRE : Votre numéro a fuité ?',
+    'Ne communiquez JAMAIS un code reçu par SMS à quelqu\'un au bout du fil, même s\'il se dit de votre banque.',
+    `Voir nos conseils : <${SITE_URL}/proteger/>`,
+    '',
+    '------------------------------------------------------------------------',
+    'TROP OU PAS ASSEZ D\'ALERTES ? Ajustez vos critères sectoriels.',
+    `Gérer ma veille : <${prefsUrl}>`,
+    '',
+    '========================================================================',
+    'Vous recevez cet email car vous avez activé la veille FrancePassoire.',
+    'Hébergé en France · Sans traceur · Données ouvertes CC-BY',
+    '',
+    `Se désinscrire en un clic : <${unsubUrl}>`,
+    `Mes préférences : <${prefsUrl}>`,
+    `Mentions légales : <${SITE_URL}/mentions-legales/>`,
+    'Contact : <mailto:contact@francepassoire.com>',
+    '========================================================================',
   );
-  return [
-    'Votre veille FrancePassoire de la semaine',
-    '',
-    `${fiches.length} nouvelle(s) fiche(s) publiée(s) correspondent à votre veille :`,
-    ...lignes,
-    '',
-    'Le geste de la semaine : un mot de passe long et unique par compte.',
-    '',
-    'Désinscription en un clic :',
-    unsubUrl,
-  ].join('\n');
+  return lignes.join('\n');
 }
 
 async function confirmedSubscribers(db: D1Database): Promise<SubscriberRow[]> {
@@ -972,9 +1363,9 @@ export async function runWeeklyDigest(
       env.BREVO_API_KEY,
       {
         to: email,
-        subject: 'Votre veille FrancePassoire — la semaine des fuites',
-        textContent: renderDigestText(fichesAbonne, unsubUrl),
-        htmlContent: renderDigestHtml(fichesAbonne, unsubUrl),
+        subject: `Le Récap Passoire · ${fichesAbonne.length} fuite${fichesAbonne.length > 1 ? 's' : ''} cette semaine`,
+        textContent: renderDigestText(fichesAbonne, unsubUrl, { now }),
+        htmlContent: renderDigestHtml(fichesAbonne, unsubUrl, { now }),
       },
       fetchFn,
     );

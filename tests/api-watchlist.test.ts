@@ -578,7 +578,7 @@ describe('runWeeklyDigest — cron lundi 09:00 Paris', () => {
 
     expect(brevoCalls).toHaveLength(1);
     const body = brevoCalls[0]!.body;
-    expect(body.subject).toMatch(/veille FrancePassoire/);
+    expect(body.subject).toMatch(/Récap Passoire · \d+ fuite/);
     const html = body.htmlContent ?? '';
     expect(html).toContain('Alaxione');
     expect(html).toContain('330 000 personnes');
@@ -586,6 +586,67 @@ describe('runWeeklyDigest — cron lundi 09:00 Paris', () => {
     expect(html).toContain('Cabinet X');
     expect(html).not.toContain('vieille-20250101'); // hors fenêtre 7 jours
     expect(body.textContent).toContain('Alaxione');
+  });
+
+  it('gabarit Récap Passoire : en-tête, numéro d’édition, pastilles de statut, secteur libellé', async () => {
+    const { env } = await digestEnv([
+      { id: 's1', email: 'abonne-sante@example.com', prefs: { sectors: ['sante'], data_types: [], entities: [], freq: 'hebdo' }, confirmed: true },
+    ]);
+    const brevoCalls: BrevoCall[] = [];
+    const confirmee: FicheDigest = {
+      ...ficheSante,
+      statut: 'confirmee',
+      volume: { label: '330 000 personnes', count: 330000, unit: 'personnes' },
+    };
+
+    await runWeeklyDigest(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [ficheSante, confirmee] }),
+      sleep: noSleep,
+      now: NOW,
+    });
+
+    const body = brevoCalls[0]!.body;
+    const html = body.htmlContent ?? '';
+    expect(html).toContain('Le Récap Passoire');
+    expect(html).toMatch(/N°\d+ · vendredi 21 août 2026/);
+    expect(html).toContain('FRANCEPASSOIRE');
+    expect(html).toContain('>Revendiquée<');
+    expect(html).toContain('✓ Confirmée');
+    expect(html).toContain('>Santé<');
+    expect(html).toContain('Lire la fiche détaillée');
+    expect(html).toContain('conseil passoire');
+    expect(html).toMatch(/api\/watchlist\/unsub\//);
+    expect(body.textContent).toMatch(/REVENDIQUÉE/);
+    expect(body.textContent).toMatch(/✓ CONFIRMÉE/);
+  });
+
+  it('statistiques d’édition : carte volume agrégé (personnes/comptes) et plafond 5 fiches + ligne « autres »', async () => {
+    const { env } = await digestEnv([
+      { id: 's1', email: 'abonne-sante@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'hebdo' }, confirmed: true },
+    ]);
+    const brevoCalls: BrevoCall[] = [];
+    const rafale: FicheDigest[] = Array.from({ length: 7 }, (_, i) => ({
+      slug: `rafale-${i}-20260820`,
+      entity: `Entité ${i}`,
+      secteur: 'sante',
+      data_types: ['sante'],
+      dates: { revendication: '2026-08-20', publication: '2026-08-20' },
+      volume: { label: 'x', count: i === 0 ? 7_243_000 : 1_000, unit: i === 0 ? 'personnes' : 'comptes' },
+    }));
+
+    await runWeeklyDigest(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: rafale }),
+      sleep: noSleep,
+      now: NOW,
+    });
+
+    const html = brevoCalls[0]!.body.htmlContent ?? '';
+    expect(html).toContain('7 nouvelles fuites');
+    expect(html).toContain('7,2 M');
+    expect(html).toContain('personnes et comptes exposés');
+    expect(html).toContain('Les 5 fuites à connaître');
+    expect(html).not.toContain('Entité 6'); // plafonnée hors cartes
+    expect(html).toContain('+ 2 autres fuites cette semaine');
   });
 
   it('abonné confirmé sans aucun match → aucun email, aucun crash', async () => {
