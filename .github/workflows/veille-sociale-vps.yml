@@ -1,17 +1,33 @@
-# Veille sociale depuis le VPS (vague 100x, 23/08) — les 4 sources sociaux/presses
-# refusent les IP du runtime Workers (constat worker-sonde : gnews 503/timeout
-# erratique, Bluesky 403 frontwall, Mastodon résultats vides, Reddit 403 sans UA
-# navigateur). L'IP OVH du runner passe partout avec un UA navigateur.
+# Veille sociale depuis le VPS — refonte T52b (23/08 soir, décision propriétaire) :
+# le digest est une liste de POSTS RÉSEAUX où le propriétaire va commenter pour
+# faire grandir l'audience. Google News est RETIRÉ ENTÈREMENT (aucun article
+# de presse : le propriétaire ne commente pas sous Google News).
 #
-# Ce workflow fait TOUT le slot : fetch 4 sources → normalise → dédup D1
-# (veille_seen) → classement → email Brevo au propriétaire (ou heartbeat calme).
-# Propriété EXCLUSIVE des slots depuis le 23/08 (le repli worker a été retiré :
-# son email était nécessairement creux, les 4 sources refusant les IP Workers,
-# et il posait la garde avant ce workflow : double envoi garanti).
-# Garde anti-double : table D1 veille_slots (migration 0005) ; le jeton du
-# runner n'a pas accès au KV RUN_STATE, l'API D1 si. Le slot n'est marqué
-# qu'après un run réussi : un échec Brevo reste visible dans les actions
-# GitHub et un re-dispatch manuel peut rejouer le créneau.
+# Plateformes (réalité vérifiée au sondage du 23/08 soir, mac + VPS) :
+#   - Fiables : Reddit (search.rss, requêtes multiples + 2 subs FR vérifiés :
+#     r/france et r/Programmation ; r/Piratage et r/informatique = 404),
+#     Bluesky AUTHENTIFIÉ (createSession bsky.social puis searchPosts ; l'accès
+#     anonyme public.api.bsky.app est 403, audit-ip-blocking §5.1), Mastodon
+#     (timelines publiques par tag — la recherche /api/v2/search renvoie vide,
+#     §5.2 : mastodon.social + piaille.fr, tags fuiteDeDonnées / cyberattaque).
+#   - Moisson best-effort : X, LinkedIn, Facebook n'ont PAS d'API de recherche
+#     publique gratuite -> moisson keyless via DuckDuckGo (html.duckduckgo.com,
+#     repli lite.duckduckgo.com, UA navigateur, requêtes site:). Le 23/08 au
+#     soir, l'IP OVH du runner reçoit la page anomalie 202 de DDG sur les deux
+#     endpoints : ces sources meurent alors BRUYAMMENT (liste « Sources
+#     indisponibles » dans le pied d'email), jamais en silence.
+#
+# Pipeline : fetch social uniquement -> normalisation -> dédup D1 (veille_seen,
+# sans changement de schéma) -> classement (mention FrancePassoire > entité du
+# catalogue > générique, port fidèle de workers/api/src/veille-sociale.ts) ->
+# volume 20-40 (nouveaux d'abord, complément « vus il y a < 24 h » si < 20,
+# plafond dur 40) -> email Brevo au propriétaire.
+#
+# Garde anti-double : table D1 veille_slots (migration 0005), conservée à
+# l'identique pour les runs planifiés ; le slot n'est marqué qu'après un run
+# réussi. Entrée workflow_dispatch `forcer` : true = contourne la garde pour
+# un re-envoi manuel ET ne marque PAS le slot (jamais de double email due à la
+# garde elle-même).
 
 name: Veille sociale (VPS)
 
@@ -21,6 +37,11 @@ on:
     - cron: '3 5 * * *'
     - cron: '3 17 * * *'
   workflow_dispatch:
+    inputs:
+      forcer:
+        description: 'Re-envoi manuel : contourne la garde anti-double et ne marque pas le slot'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -35,6 +56,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Garde anti-double (table D1 veille_slots)
+        # Identique au régime d'avant T52b pour les runs planifiés et les
+        # dispatchs manuels non forcés ; sautée entièrement si forcer=true.
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.forcer != true }}
         run: |
           . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
@@ -54,18 +78,28 @@ jobs:
             echo "slot ${AUJ}:${SLOT} déjà traité, arrêt propre"
           fi
 
-      - name: Moisson + dédup + classement + email (python)
+      - name: Moisson sociale + dédup + classement + email (python)
         if: ${{ env.SKIP != '1' }}
         run: |
           . /opt/francepassoire-shared/env.sh
           python3 << 'PYEOF'
-          import json, re, os, sys, urllib.request, urllib.parse
+          # Port python fidèle du module de référence workers/api/src/veille-sociale.ts
+          # (gabarit email, scoreOccurrence, varianteReponse, hashUrlV) — sources
+          # SOCIALES uniquement, Google News retiré (décision propriétaire 23/08 soir).
+          import json, re, os, sys, time, hashlib
+          import html as html_lib
+          import urllib.request, urllib.parse
           from datetime import datetime, timezone, timedelta
+          try:
+              from zoneinfo import ZoneInfo
+              PARIS = ZoneInfo('Europe/Paris')
+          except Exception:
+              PARIS = timezone(timedelta(hours=2))
 
           UA = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
                 'accept': '*/*', 'accept-language': 'fr-FR,fr;q=0.9'}
-          D1 = os.environ['FP_D1_QUERY_URL']
-          TOK = os.environ['FP_D1_TOKEN']
+          D1 = os.environ.get('FP_D1_QUERY_URL', '')
+          TOK = os.environ.get('FP_D1_TOKEN', '')
           BREVO = os.environ.get('BREVO_API_KEY', '')
           DEST = os.environ.get('VEILLE_SOCIALE_DEST', 'contact@francepassoire.com')
 
@@ -75,101 +109,383 @@ jobs:
                   'Authorization': f'Bearer {TOK}', 'Content-Type': 'application/json'})
               return json.loads(urllib.request.urlopen(req, timeout=30).read())
 
-          def fetch(url, timeout=20):
-              req = urllib.request.Request(url, headers=UA)
+          def fetch(url, timeout=20, entetes=None):
+              h = dict(UA)
+              if entetes: h.update(entetes)
+              req = urllib.request.Request(url, headers=h)
               return urllib.request.urlopen(req, timeout=timeout).read().decode('utf-8', 'replace')
 
-          requete = '"fuite de données" France cyberattaque'
-          brutes, mortes = [], []
+          def texte_xml(s):
+              return (s.replace('<![CDATA[', '').replace(']]>', '')
+                      .replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+                      .replace('&quot;', '"').replace('&#39;', "'").strip())
 
-          # 1. Google News
-          try:
-              xml = fetch('https://news.google.com/rss/search?q=' + urllib.parse.quote(requete) + '&hl=fr&gl=FR&ceid=FR:fr')
-              for m in re.finditer(r'<item>(.*?)</item>', xml, re.S):
-                  b = m.group(1)
-                  t = re.search(r'<title>(?:<!\[CDATA\[)?([^<\]]+)', b)
-                  l = re.search(r'<link>(?:<!\[CDATA\[)?([^<\]]+)', b)
-                  if t and l: brutes.append(('Google News', 'presse', t.group(1).strip(), l.group(1).strip(), ''))
-          except Exception: mortes.append('Google News')
+          def hash_url_v(u):
+              # hashUrlV du module : URL minuscule, sans query ni fragment
+              norm = u.lower().split('?')[0].split('#')[0]
+              return hashlib.sha256(norm.encode()).hexdigest()
 
-          # 2. Reddit
-          try:
-              xml = fetch('https://www.reddit.com/search.rss?q=' + urllib.parse.quote(requete))
+          def normaliser_titre(t):
+              # normaliserTitre du module (port fidèle).
+              return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9à-öø-ÿ ]', '', t.lower())).strip()[:60]
+
+          # ---------- gabarit email (port fidèle du module) ----------
+
+          def escape_html(t):
+              return (t.replace('&', '&amp;').replace('<', '&lt;')
+                      .replace('>', '&gt;').replace('"', '&quot;'))
+
+          def href_sur(t):
+              return t if re.match(r'^https?://', t) else '#'
+
+          COULEURS_PILL = {
+              'Bluesky': '#1d9bf0', 'Reddit': '#ff4500', 'Mastodon': '#6364ff',
+              'X': '#000000', 'LinkedIn': '#0a66c2', 'Facebook': '#1877f2',
+          }
+
+          def pill_plateforme(p):
+              c = COULEURS_PILL.get(p, '#241405')
+              return ('<span style="font-family:\'Courier New\',monospace;font-size:11px;padding:2px 8px;'
+                      f'border-radius:12px;color:#fff;background-color:{c};font-weight:bold;">{escape_html(p)}</span>')
+
+          def variante_reponse(o, catalogue):
+              # Taxonomie 8 variantes (docs/social-setup.md + module) — le tiret est un tiret simple.
+              t = o['texte'].lower()
+              mention = 'francepassoire' in t or 'france passoire' in t
+              entite = next((e for e in catalogue if len(e) > 3 and e.lower() in t), None)
+              if mention and 'merci' in t: return 'V1-remerciement'
+              if mention and ('?' in t or 'comment' in t): return 'V2-reponse-technique'
+              if mention: return 'V3-partage-fiche'
+              if entite: return 'V4-fiche-entite'
+              if 'cyberattaque' in t or 'fuite de données' in t: return 'V5-contexte-general'
+              if 'ransomware' in t: return 'V6-angle-ransomware'
+              if 'cnil' in t: return 'V7-angle-sanction'
+              return 'V8-veille'
+
+          def score_occurrence(o, catalogue):
+              t = o['texte'].lower()
+              s = 1
+              if 'francepassoire' in t or 'france passoire' in t: s += 10
+              entite = next((e for e in catalogue if len(e) > 3 and e.lower() in t), None)
+              if entite: s += 5
+              if 'fuite de données' in t or 'cyberattaque' in t or 'ransomware' in t: s += 2
+              if o['plateforme'] in ('Bluesky', 'Mastodon'): s += 1
+              return s
+
+          def render_veille_html(occ, ctx):
+              cartes = ''.join(
+                  f'''              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;background-color:#FFF9F2;border:3px solid #241405;border-radius:12px;box-shadow:4px 4px 0px 0px #241405;">
+                          <tr><td style="padding:18px 22px;">
+                            <p style="margin:0 0 8px;">{pill_plateforme(o['plateforme'])} <span style="font-family:'Courier New',monospace;font-size:12px;color:#6b5b45;">{escape_html(o['auteur'][:40])}</span></p>
+                            <p style="margin:0 0 10px;font-size:15px;line-height:1.5;">{escape_html(o['texte'][:180])}</p>
+                            <p style="margin:0;font-size:13px;"><a href="{href_sur(o['url'])}" style="color:#E85A0C;font-weight:bold;">Ouvrir le contexte &rarr;</a> <span style="font-family:'Courier New',monospace;font-size:11px;color:#6b5b45;">variante suggérée : {variante_reponse(o, ctx['catalogue'])}</span></p>
+                          </td></tr>
+                        </table>'''
+                  for o in occ)
+              alerte = 'LA PASSOIRE EST CALME' if len(occ) == 0 else f'{len(occ)} OPPORTUNITÉ(S)'
+              mortes = (f'<p style="margin:12px 0 0;font-family:\'Courier New\',monospace;font-size:12px;color:#6b5b45;">'
+                        f"Sources indisponibles ce slot : {escape_html(', '.join(ctx['mortes']))}</p>") if ctx['mortes'] else ''
+              return f'''<!DOCTYPE html>
+          <html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Veille sociale {ctx['slot']}</title></head>
+          <body style="margin:0;padding:0;background-color:#FFF9F2;font-family:Arial,Helvetica,sans-serif;color:#241405;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FFF9F2;padding:40px 16px;"><tr><td align="center">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;background-color:#FFF6EA;border:3px solid #241405;border-radius:20px;box-shadow:6px 6px 0px 0px #241405;overflow:hidden;">
+                <tr><td style="background-color:#FF6B1A;background-image:radial-gradient(circle,#241405 1.5px,transparent 1.5px);background-size:22px 22px;border-bottom:3px solid #241405;padding:28px;text-align:center;">
+                  <p style="margin:0;font-family:'Arial Black',Impact,sans-serif;font-size:24px;font-weight:900;color:#fff;letter-spacing:-1px;text-transform:uppercase;">VEILLE SOCIALE</p>
+                  <p style="margin:8px 0 0;font-family:'Courier New',monospace;font-size:13px;font-weight:bold;color:#241405;background-color:#FFF6EA;display:inline-block;padding:4px 12px;border:2px solid #241405;border-radius:50px;">{ctx['slot'].upper()} &middot; {ctx['date_fr']}</p>
+                  <p style="margin:8px 0 0;font-family:'Courier New',monospace;font-size:12px;color:#fff;">{alerte}</p>
+                </td></tr>
+                <tr><td style="padding:32px 28px 16px;font-size:15px;line-height:1.6;">
+          {cartes or '<p style="margin:0 0 20px;">Rien à signaler ce slot : la passoire est calme.</p>'}
+          {mortes}
+                </td></tr>
+                <tr><td style="padding:20px 28px;background-color:#241405;color:#FFF6EA;border-top:3px solid #241405;">
+                  <p style="margin:0;font-family:'Courier New',monospace;font-size:12px;line-height:1.5;">
+                    Email interne FrancePassoire &middot; <a href="https://francepassoire.com/methode/" style="color:#FF6B1A;font-weight:bold;text-decoration:underline;">gérer les sources</a>
+                  </p>
+                </td></tr>
+              </table>
+            </td></tr></table>
+          </body></html>'''
+
+          def render_veille_text(occ, ctx):
+              lignes = [f"- [{o['plateforme']}] {o['auteur'][:30]} : {o['texte'][:100]} {o['url']}" for o in occ]
+              return '\n'.join([f"Veille sociale {ctx['slot']} · {ctx['date_fr']}", '']
+                               + (lignes or ['Rien à signaler : la passoire est calme.'])
+                               + ([f"Sources indisponibles ce slot : {', '.join(ctx['mortes'])}"] if ctx['mortes'] else [])
+                               + ['Gérer les sources : https://francepassoire.com/methode/'])
+
+          # ---------- sources sociales ----------
+
+          def occurrence(plateforme, source, auteur, texte, url, publie=''):
+              return {'plateforme': plateforme, 'source': source, 'auteur': auteur or '',
+                      'texte': (texte or '').strip(), 'url': url, 'publie': publie}
+
+          def reddit_rss(url):
+              xml = fetch(url, timeout=20)
+              items = []
               for m in re.finditer(r'<entry>(.*?)</entry>', xml, re.S):
                   b = m.group(1)
                   t = re.search(r'<title>(?:<!\[CDATA\[)?([^<\]]+)', b)
                   l = re.search(r'<link href="([^"]+)"', b)
-                  if t and l: brutes.append(('Reddit', 'reddit', t.group(1).strip(), l.group(1).strip(), ''))
-          except Exception: mortes.append('Reddit')
+                  a = re.search(r'<author>.*?<name>(?:<!\[CDATA\[)?([^<\]]+)', b, re.S)
+                  if t and l:
+                      items.append(occurrence('Reddit', 'Reddit', texte_xml(a.group(1)) if a else '',
+                                               texte_xml(t.group(1)), texte_xml(l.group(1))))
+              return items
 
-          # 3. Mastodon
-          try:
-              d = json.loads(fetch('https://mastodon.social/api/v2/search?q=' + urllib.parse.quote(requete) + '&type=statuses&resolve=false&limit=20'))
-              for s in d.get('statuses', []):
-                  if s.get('url'): brutes.append(('Mastodon', s.get('account',{}).get('acct',''), re.sub(r'<[^>]+>',' ',s.get('content','')).strip()[:200], s['url'], ''))
-          except Exception: mortes.append('Mastodon')
+          def source_reddit():
+              # Requêtes multiples (globales + 2 subs FR vérifiés le 23/08 : r/france et
+              # r/Programmation ; r/Piratage et r/informatique sont des 404). Reddit
+              # rationne agressivement (429 après 2-3 requêtes) : pauses de 8 s, chaque
+              # requête meurt seule sans tuer la plateforme.
+              requetes = [
+                  'https://www.reddit.com/search.rss?q=' + urllib.parse.quote('"fuite de données"') + '&limit=25',
+                  'https://www.reddit.com/search.rss?q=' + urllib.parse.quote('cyberattaque France') + '&limit=25',
+                  'https://www.reddit.com/search.rss?q=' + urllib.parse.quote('piratage données') + '&limit=25',
+                  'https://www.reddit.com/r/france/search.rss?q=fuite+donn%C3%A9es&restrict_sr=1',
+                  'https://www.reddit.com/r/Programmation/search.rss?q=fuite+donn%C3%A9es&restrict_sr=1',
+              ]
+              total = []
+              for u in requetes:
+                  try:
+                      total += reddit_rss(u)
+                  except Exception as e:
+                      print(f'reddit requête échouée ({type(e).__name__}): {u[:80]}')
+                  time.sleep(8)
+              return total
 
-          # 4. Bluesky
-          try:
-              d = json.loads(fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=' + urllib.parse.quote(requete) + '&limit=25'))
-              for p in d.get('posts', []):
-                  uri = p.get('uri',''); did = p.get('author',{}).get('did','')
-                  rkey = uri.split('/')[-1] if uri else ''
-                  if uri: brutes.append(('Bluesky', p.get('author',{}).get('handle',''), (p.get('record',{}).get('text','') or '')[:200], f'https://bsky.app/profile/{did}/post/{rkey}', ''))
-          except Exception: mortes.append('Bluesky')
+          def source_bluesky():
+              # AUTHENTIFIÉ : l'accès anonyme est 403 (audit §5.1). createSession sur
+              # bsky.social puis searchPosts Bearer. Identifiants dans env.sh
+              # (BLUESKY_HANDLE / BLUESKY_APP_PASSWORD, ajoutés le 23/08 soir).
+              handle = os.environ.get('BLUESKY_HANDLE', '')
+              passe = os.environ.get('BLUESKY_APP_PASSWORD', '')
+              if not handle or not passe:
+                  raise RuntimeError('BLUESKY_HANDLE / BLUESKY_APP_PASSWORD absents de env.sh')
+              corps = json.dumps({'identifier': handle, 'password': passe}).encode()
+              req = urllib.request.Request('https://bsky.social/xrpc/com.atproto.server.createSession',
+                                           data=corps, headers={'Content-Type': 'application/json', **UA})
+              jwt = json.loads(urllib.request.urlopen(req, timeout=20).read())['accessJwt']
+              total = []
+              for requete in ['"fuite de données"', 'cyberattaque', 'FrancePassoire', 'piratage']:
+                  u = ('https://bsky.social/xrpc/app.bsky.feed.searchPosts?q='
+                       + urllib.parse.quote(requete) + '&limit=100')
+                  req = urllib.request.Request(u, headers={'Authorization': 'Bearer ' + jwt, **UA})
+                  d = json.loads(urllib.request.urlopen(req, timeout=20).read())
+                  for p in d.get('posts', []):
+                      uri = p.get('uri', '')
+                      did = p.get('author', {}).get('did', '')
+                      rkey = uri.split('/')[-1] if uri else ''
+                      if uri and did:
+                          total.append(occurrence('Bluesky', 'Bluesky', p.get('author', {}).get('handle', ''),
+                                                   (p.get('record', {}).get('text', '') or '')[:220],
+                                                   f'https://bsky.app/profile/{did}/post/{rkey}',
+                                                   p.get('record', {}).get('createdAt', '')))
+                  time.sleep(1)
+              return total
 
-          # Dédup in-run (URL)
-          vues, uniques = set(), []
-          for o in brutes:
-              k = o[3].lower().split('?')[0]
-              if k in vues: continue
-              vues.add(k); uniques.append(o)
+          def mastodon_tag(base, tag):
+              d = json.loads(fetch(f'{base}/api/v1/timelines/tag/{urllib.parse.quote(tag)}?limit=40'))
+              items = []
+              for s in d:
+                  if not s.get('url'): continue
+                  texte = html_lib.unescape(re.sub(r'<[^>]+>', ' ', s.get('content', '')))
+                  items.append(occurrence('Mastodon', 'Mastodon', s.get('account', {}).get('acct', ''),
+                                          texte[:220], s['url'], s.get('created_at', '')))
+              return items
 
-          # Dédup persistant + insertion (veille_seen)
-          import hashlib
-          nouvelles = []
-          for o in uniques:
-              h = hashlib.sha256(o[3].lower().split('?')[0].encode()).hexdigest()
+          def source_mastodon_social():
+              return (mastodon_tag('https://mastodon.social', 'fuiteDeDonnées')
+                      + mastodon_tag('https://mastodon.social', 'cyberattaque'))
+
+          def source_mastodon_piaille():
+              # Instance FR vérifiée live le 23/08 soir (timelines tag publiques, 200).
+              return (mastodon_tag('https://piaille.fr', 'fuiteDeDonnées')
+                      + mastodon_tag('https://piaille.fr', 'cyberattaque'))
+
+          def ddg_liens(page):
+              # Balises <a class="result__a" href=...> (endpoint html) et
+              # <a href=... class='result-link'> (endpoint lite), guillemets simples
+              # ou doubles. Les liens passent par la redirection uddg de DDG.
+              sortie = []
+              for attrs, titre in re.findall(r'<a\s([^>]*class=["\'][^"\']*(?:result__a|result-link)[^"\']*["\'][^>]*)>(.*?)</a>', page, re.S):
+                  m = re.search(r'href=["\']([^"\']+)["\']', attrs)
+                  if not m: continue
+                  url = m.group(1).replace('&amp;', '&')
+                  if 'uddg=' in url:
+                      params = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+                      if 'uddg' in params: url = params['uddg'][0]
+                  sortie.append((url, html_lib.unescape(re.sub(r'<[^>]+>', '', titre)).strip()))
+              return sortie
+
+          def source_ddg(nom_plateforme, domaines, motif_url, requetes):
+              # Moisson best-effort : X / LinkedIn / Facebook n'ont pas d'API de
+              # recherche publique gratuite. Endpoint html d'abord, repli lite ;
+              # page anomalie 202 = 0 lien -> la plateforme meurt bruyamment ce slot.
+              total = []
+              for requete in requetes:
+                  qe = urllib.parse.quote(requete)
+                  for gabarit in ('https://html.duckduckgo.com/html/?q=', 'https://lite.duckduckgo.com/lite/?q='):
+                      try:
+                          page = fetch(gabarit + qe + '&kl=fr-fr', timeout=20,
+                                       entetes={'accept': 'text/html,application/xhtml+xml'})
+                      except Exception:
+                          continue
+                      avant = len(total)
+                      for url, titre in ddg_liens(page):
+                          h = urllib.parse.urlparse(url)
+                          if not any(h.netloc.lower() == d or h.netloc.lower().endswith('.' + d) for d in domaines): continue
+                          if not re.match(motif_url, h.path): continue
+                          segment = [s for s in h.path.split('/') if s]
+                          auteur = segment[0] if segment else ''
+                          if nom_plateforme == 'LinkedIn':
+                              m = re.match(r'([a-z0-9\-]+?)-activity-', h.path.split('/posts/')[-1])
+                              auteur = m.group(1) if m else ''
+                          if nom_plateforme == 'X': auteur = '@' + auteur
+                          total.append(occurrence(nom_plateforme, nom_plateforme, auteur, titre[:220], url))
+                      if len(total) > avant:
+                          break  # cet endpoint a donné de la matière, requête suivante
+                      time.sleep(2)  # endpoint muet (ou page anomalie 202) : repli
+                  time.sleep(2)
+              return total[:8]
+
+          # ---------- pipeline ----------
+
+          def slot_courant():
+              return 'matin' if datetime.now(PARIS).hour < 12 else 'soir'
+
+          def date_francaise(d):
+              JOURS = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
+              MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet',
+                      'août', 'septembre', 'octobre', 'novembre', 'décembre']
+              return f'{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]} {d.year}'
+
+          def main():
+              sources = [
+                  ('Reddit', source_reddit),
+                  ('Bluesky', source_bluesky),
+                  ('Mastodon (mastodon.social)', source_mastodon_social),
+                  ('Mastodon (piaille.fr)', source_mastodon_piaille),
+                  ('X', lambda: source_ddg('X', ['x.com', 'twitter.com'], r'^/[^/]+/status/\d+',
+                                           ['site:x.com "fuite de données"', 'site:twitter.com cyberattaque France'])),
+                  ('LinkedIn', lambda: source_ddg('LinkedIn', ['linkedin.com'], r'^/posts/',
+                                                  ['site:linkedin.com/posts fuite de données',
+                                                   'site:linkedin.com/posts cyberattaque France'])),
+                  ('Facebook', lambda: source_ddg('Facebook', ['facebook.com'], r'^/[^/]+/(posts|permalink|videos|photos)/|^/groups/',
+                                                  ['site:facebook.com cyberattaque France',
+                                                   'site:facebook.com "fuite de données"'])),
+              ]
+              brutes, mortes, par_source = [], [], {}
+              for nom, fn in sources:
+                  try:
+                      items = fn()
+                  except Exception as e:
+                      items = []
+                      print(f'source {nom} ÉCHEC : {type(e).__name__} {str(e)[:140]}')
+                  par_source[nom] = len(items)
+                  if items: brutes.extend(items)
+                  else: mortes.append(nom)
+                  print(f'{nom} : {par_source[nom]} brutes')
+
+              # Dédup in-run : URL puis titre fuzzy (port du module).
+              vues_url, vues_titre, uniques = set(), set(), []
+              for o in brutes:
+                  cle = o['url'].lower().split('?')[0]
+                  if cle in vues_url: continue
+                  titre = normaliser_titre(o['texte'])
+                  if titre and titre in vues_titre: continue
+                  vues_url.add(cle)
+                  if titre: vues_titre.add(titre)
+                  uniques.append(o)
+
+              # Dédup persistant D1 (veille_seen) par tranches, sans changement de schéma.
+              hashes = [hash_url_v(o['url']) for o in uniques]
+              deja = {}
+              for i in range(0, len(hashes), 40):
+                  tranche = hashes[i:i + 40]
+                  sql = 'SELECT url_hash, first_seen FROM veille_seen WHERE url_hash IN (' + ','.join('?' * len(tranche)) + ')'
+                  for r in q(sql, tranche)['result'][0]['results']:
+                      deja[r['url_hash']] = r['first_seen']
+              nouvelles = [o for o, h in zip(uniques, hashes) if h not in deja]
+
+              # Insertion des SEULS nouveaux hash (INSERT OR IGNORE, par tranches).
+              maintenant = datetime.now(timezone.utc).isoformat()
+              hs = [h for h in hashes if h not in deja]
+              for i in range(0, len(hs), 25):
+                  tranche = hs[i:i + 25]
+                  sql = ('INSERT OR IGNORE INTO veille_seen (url_hash, first_seen) VALUES '
+                         + ','.join('(?, ?)' for _ in tranche))
+                  q(sql, [x for h in tranche for x in (h, maintenant)])
+
+              # Catalogue public pour le scoring (dégradé silencieux si injoignable).
+              catalogue = set()
               try:
-                  vu = q('SELECT 1 FROM veille_seen WHERE url_hash = ?', [h])
-                  if not vu['result'][0]['results']:
-                      q('INSERT OR IGNORE INTO veille_seen (url_hash, first_seen) VALUES (?, ?)', [h, datetime.now(timezone.utc).isoformat()])
-                      nouvelles.append(o)
-              except Exception: nouvelles.append(o)
+                  d = json.loads(fetch('https://francepassoire.com/opendata/v1/fiches.json', timeout=20))
+                  catalogue = {f['entity'] for f in d.get('fiches', []) if f.get('entity')}
+              except Exception:
+                  pass
 
-          top = nouvelles[:15]
-          slot = os.environ.get('SLOT', 'matin')
-          date_fr = datetime.now(timezone(timedelta(hours=2))).strftime('%A %d %B %Y').capitalize()
-          calme = len(top) == 0
+              classees = sorted(nouvelles, key=lambda o: score_occurrence(o, catalogue), reverse=True)
+              digest = classees[:40]
+              if len(digest) < 20:
+                  # Complément « vus il y a moins de 24 h » : toujours des cibles de
+                  # commentaire fraîches (les hash insérés par les runs précédents).
+                  limite = datetime.now(timezone.utc) - timedelta(hours=24)
+                  def vue_fraiche(pa):
+                      o, h = pa
+                      brute = deja.get(h)
+                      if not brute: return False
+                      try:
+                          d0 = datetime.fromisoformat(brute.replace('Z', '+00:00'))
+                          if d0.tzinfo is None: d0 = d0.replace(tzinfo=timezone.utc)
+                          return d0 >= limite
+                      except Exception:
+                          return False
+                  fraiches = sorted([pa for pa in zip(uniques, hashes) if vue_fraiche(pa)],
+                                    key=lambda pa: score_occurrence(pa[0], catalogue), reverse=True)
+                  digest = digest + [o for o, _ in fraiches[:20 - len(digest)]]
+              digest = digest[:40]
 
-          # Email Brevo
-          if BREVO:
-              lignes_txt = [f'- [{p}] {a}: {t[:90]} {u}' for p,a,t,u,_ in top] or ['Rien à signaler ce slot : la passoire est calme.']
-              cartes = ''.join(f'<p style="margin:0 0 12px;"><strong style="background:#241405;color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;">{p}</strong> <small>{a}</small><br>{t[:160]}<br><a href="{u}" style="color:#E85A0C;">ouvrir &rarr;</a></p>' for p,a,t,u,_ in top)
-              sujet = f'Veille sociale {slot} — {("la passoire est calme" if calme else str(len(top)) + " opportunité(s)")} ({date_fr})'
-              html = f'''<div style="font-family:Arial;max-width:560px;margin:auto;border:3px solid #241405;border-radius:16px;overflow:hidden;">
-              <div style="background:#FF6B1A;padding:24px;text-align:center;"><h2 style="margin:0;color:#fff;text-transform:uppercase;">VEILLE SOCIALE</h2>
-              <p style="margin:6px 0 0;background:#FFF6EA;display:inline-block;padding:4px 12px;border:2px solid #241405;border-radius:20px;font-size:13px;"><strong>{slot.upper()} · {date_fr}</strong></p></div>
-              <div style="padding:24px;background:#FFF6EA;">{'<p>Rien à signaler ce slot : la passoire est calme.</p>' if calme else cartes}
-              {('<p style="font-size:12px;color:#6b5b45;">Sources indisponibles : ' + ', '.join(mortes) + '</p>') if mortes else ''}</div>
-              <div style="background:#241405;color:#FFF6EA;padding:14px;font-size:12px;text-align:center;">Email interne FrancePassoire · <a href="https://francepassoire.com/methode/" style="color:#FF6B1A;">gérer les sources</a></div></div>'''
-              body = json.dumps({'sender': {'name': 'France Passoire', 'email': 'alerte@francepassoire.com'},
+              slot = os.environ.get('SLOT') or slot_courant()
+              date_fr = date_francaise(datetime.now(PARIS))
+              calme = len(digest) == 0
+              sujet = (f'Veille sociale {slot} — la passoire est calme ({date_fr})' if calme
+                       else f'Veille sociale {slot} — {len(digest)} opportunité(s) ({date_fr})')
+              html = render_veille_html(digest, {'slot': slot, 'date_fr': date_fr, 'mortes': mortes, 'catalogue': catalogue})
+              texte = render_veille_text(digest, {'slot': slot, 'date_fr': date_fr, 'mortes': mortes})
+
+              compte_nouvelles = {}
+              for o in nouvelles: compte_nouvelles[o['source']] = compte_nouvelles.get(o['source'], 0) + 1
+              print('--- bilan sources ---')
+              print(f'brutes {len(brutes)}, uniques {len(uniques)}, nouvelles {len(nouvelles)}')
+              for nom, _ in sources:
+                  print(f'{nom} : {par_source[nom]} brutes, {compte_nouvelles.get(nom, 0)} nouvelles')
+              print(f'mortes : {", ".join(mortes) if mortes else "aucune"}')
+              print(f'digest : {len(digest)} opportunité(s)')
+
+              if not BREVO:
+                  print('BREVO_API_KEY absente : run en échec, slot non marqué (re-dispatch rejouera)')
+                  sys.exit(1)
+              corps = json.dumps({'sender': {'name': 'France Passoire', 'email': 'alerte@francepassoire.com'},
                   'to': [{'email': DEST}], 'subject': sujet,
-                  'htmlContent': html, 'textContent': '\n'.join(lignes_txt)}).encode()
-              req = urllib.request.Request('https://api.brevo.com/v3/smtp/email', data=body,
+                  'htmlContent': html, 'textContent': texte}).encode()
+              req = urllib.request.Request('https://api.brevo.com/v3/smtp/email', data=corps,
                   headers={'api-key': BREVO, 'Content-Type': 'application/json'})
-              try: urllib.request.urlopen(req, timeout=20); print('email envoyé')
+              try:
+                  urllib.request.urlopen(req, timeout=20)
+                  print('email envoyé')
               except Exception as e:
-                  print('email échoué:', e)
+                  print('email échoué :', e)
                   sys.exit(1)  # ne pas marquer le slot : re-dispatch pourra rejouer
-          else:
-              print('BREVO_API_KEY absente : run en échec, slot non marqué (re-dispatch rejouera)')
-              sys.exit(1)
-          print(f'{len(brutes)} brutes, {len(nouvelles)} nouvelles, mortes: {mortes}')
+
+          if __name__ == '__main__':
+              main()
           PYEOF
 
       - name: Marquer le slot traité (D1 veille_slots)
-        if: ${{ env.SKIP != '1' }}
+        # Jamais sur un dispatch forcé : le re-envoi manuel ne consomme pas le créneau.
+        if: ${{ env.SKIP != '1' && inputs.forcer != true }}
         run: |
           . /opt/francepassoire-shared/env.sh
           REP=$(curl -s -X POST "$FP_D1_QUERY_URL" \
