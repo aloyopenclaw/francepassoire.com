@@ -26,20 +26,53 @@ export const LIMITE_POST = 260;
 export const MENTION_REVENDICATION = 'revendication non confirmée par l’entité';
 
 /**
- * Phare de fin de post (décision propriétaire 22/08) : invitation à consulter
- * la fiche et à s'abonner pour rester informé. Identique sur toutes les
- * plateformes — c'est la signature FrancePassoire.
+ * Gabarit social propriétaire (décision owner 23/08) — structure EXACTE :
+ * en-tête 🚨📣 + Statut/Volume + résumé (description verbatim) + CTA + URL.
+ * LONG = FB/IG/LinkedIn (aucune limite + hashtags) ; COURT = X ≤ 280 et
+ * Bluesky ≤ 300 graphèmes (sans résumé, volume sans clause « selon X »).
  */
-export const PHARE = 'Passoire chargée ? Voir la fiche complète et suivre FrancePassoire pour ne rien rater des prochaines fuites.';
+export const CTA_LONG =
+  'Reprenez le contrôle. Consultez la fiche complète pour vérifier les gestes de protection immédiats et abonnez-vous à notre veille citoyenne gratuite pour ne rater aucune alerte 🔔 👇';
+export const CTA_COURT =
+  'Consultez la fiche complète et abonnez-vous à notre veille citoyenne gratuite pour ne rater aucune alerte 🔔 👇';
 
-/** Entrée de rendu du gabarit social propriétaire (description verbatim). */
+/** Libellé de statut pour la pilule du gabarit. */
+function piluleStatut(statut: string): string {
+  return statut === 'confirmee' ? 'Confirmée' : 'Revendiquée';
+}
+
+/** Libellé secteur pour l'en-tête du gabarit. */
+const SECTEURS_SOCIAUX: Record<string, string> = {
+  services: 'Services', sante: 'Santé', retail: 'Commerce', finance: 'Finance',
+  industrie: 'Industrie', media: 'Médias', public: 'Secteur public',
+  recherche: 'Recherche', autre: 'Autre',
+};
+
+/** Hashtags de portée (FB/IG/LinkedIn) : fixes + entité + groupe ransomware. */
+function hashtags(entity: string, groupeAffiche?: string): string {
+  const slug = entity
+    .normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+  const base = ['#FrancePassoire', '#FuiteDeDonnées', '#DataLeaks', '#Rancongiciel',
+    '#cybersecurite', '#cyberattaque', '#piratageinformatique', `#${slug.charAt(0).toUpperCase()}${slug.slice(1)}`];
+  if (groupeAffiche) base.splice(4, 0, `#${groupeAffiche}`);
+  return base.join(' ');
+}
+
+/** Entrée du gabarit social propriétaire (fiche → post). */
 export interface SocialPostInput {
   entity: string;
-  /** « Ce que l'on sait » : le champ description de la fiche, MOT POUR MOT. */
+  secteur: string;
+  statut: string;
+  /** Volume affiché : première clause du label (avant « ; »). */
+  volumeLabel: string;
+  /** « Ce que l'on sait » : description de la fiche, MOT POUR MOT. */
   description: string;
   url: string;
-  /** Logo de l'organisation si trouvé, sinon la carte FrancePassoire. */
+  /** Logo de l'organisation si trouvé, sinon carte FrancePassoire. */
   imageUrl: string;
+  /** Nom d'affichage du groupe ransomware (ex. « LockBit »), hashtag dédié long. */
+  group?: string;
 }
 
 const URL_SITE = 'https://francepassoire.com';
@@ -138,20 +171,48 @@ function formaterNombre(nombre: number): string {
   return groupes.join(' ');
 }
 
-/**
- * Gabarit social propriétaire (22/08) : description de la fiche MOT POUR MOT
- * (« Ce que l'on sait ») puis phare d'invitation. Aucune invention : si la
- * description manque ou est vide, on refuse le rendu plutôt que d'improviser.
- * Limite 260 caractères MAINTENUE : les posts X passent par le résumé court
- * (renderNewFichePost), le gabarit long est pour FB/IG/LinkedIn/Bluesky où
- * les limites sont de l'ordre du millier.
- */
+/** Gabarit LONG — FB / Instagram / LinkedIn (aucune limite, hashtags inclus). */
 export function renderSocialPost(post: SocialPostInput): string {
-  const description = champ('description', post.description);
-  if (description.trim().length === 0) {
-    throw new SocialTemplateError("Description vide : « Ce que l'on sait » est la matière première du post, on n'improvise pas.");
+  if (!post.description.trim()) {
+    throw new SocialTemplateError(
+      "Description vide : « Ce que l'on sait » est la matière première du post, on n'improvise pas.",
+    );
   }
-  return `${description}\n\n${PHARE}`;
+  const volume = post.volumeLabel.split(';')[0]?.trim() ?? post.volumeLabel;
+  return [
+    `🚨 📣 Nouvelle fuite recensée : ${post.entity} (${SECTEURS_SOCIAUX[post.secteur] ?? post.secteur})`,
+    '',
+    `Statut : ${piluleStatut(post.statut)}`,
+    `Volume : ${volume}`,
+    '',
+    post.description,
+    '',
+    CTA_LONG,
+    post.url,
+    '',
+    hashtags(post.entity, post.group),
+  ].join('\n');
+}
+
+/** Gabarit COURT — X (≤ 280) et Bluesky (≤ 300 graphèmes) : sans résumé. */
+export function renderSocialPostCourt(post: SocialPostInput): string {
+  const volumeComplet = post.volumeLabel.split(';')[0]?.trim() ?? post.volumeLabel;
+  const volume = volumeComplet.split(' selon ')[0]?.trim() ?? volumeComplet;
+  const texte = [
+    `🚨📣 Nouvelle fuite recensée : ${post.entity} (${SECTEURS_SOCIAUX[post.secteur] ?? post.secteur})`,
+    '',
+    `Statut : ${piluleStatut(post.statut)}`,
+    `Volume : ${volume}`,
+    '',
+    CTA_COURT,
+    post.url,
+  ].join('\n');
+  if (texte.length > 280) {
+    throw new SocialTemplateError(
+      `Gabarit court à ${String(texte.length)} caractères (limite X : 280) — réduire le volume.`,
+    );
+  }
+  return texte;
 }
 
 export function renderNewFichePost(fiche: NewFicheInput): string {

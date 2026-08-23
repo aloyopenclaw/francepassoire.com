@@ -1,8 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { MOTIFS_RETRAIT, type MotifRetrait, type Statut } from '../src/lib/taxonomy';
 import {
-  PHARE,
+  CTA_COURT,
+  CTA_LONG,
   renderSocialPost,
+  renderSocialPostCourt,
+  SocialTemplateError,
   renderNewFichePost,
   renderStatusChangePost,
   renderWeeklyDigestTeaser,
@@ -283,32 +286,61 @@ describe('social-templates — posts defamation-safe (nouvelle fiche, statut, te
   });
 });
 
-// Gabarit social propriétaire (22/08) : description verbatim + phare.
-describe('renderSocialPost — gabarit propriétaire', () => {
+// Gabarit social propriétaire (23/08) : structure owner exacte, LONG + COURT.
+describe('renderSocialPost / renderSocialPostCourt — gabarit propriétaire', () => {
   const actua = {
     entity: 'Actua',
-    description: "Le 22 août 2026, le groupe LockBit 5.0 revendique une attaque contre Actua, groupe français de recrutement et de travail temporaire fort de 37 agences et plus de 1 800 entreprises partenaires. Les cybercriminels annoncent la diffusion début septembre, via dix espaces de stockage distincts, d'un ensemble de documents comprenant des passeports, des diplômes, des CV et des attestations d'assurance concernant plus de 100 000 personnes recrutées.",
+    secteur: 'services',
+    statut: 'revendiquee',
+    volumeLabel: 'plus de 100 000 personnes recrutées selon LockBit 5.0 ; passeports annoncés',
+    description: "Le 22 août 2026, le groupe LockBit 5.0 revendique une attaque contre Actua, groupe français de recrutement. Les cybercrimiels annoncent la diffusion de documents.",
     url: 'https://francepassoire.com/fiche/actua-20260822/',
     imageUrl: 'https://francepassoire.com/fiche/actua-20260822/card.jpg',
+    group: 'LockBit',
   };
 
-  it('description MOT POUR MOT puis phare', () => {
+  it('LONG : structure exacte (en-tête, faits, résumé verbatim, CTA, URL, hashtags)', () => {
     const post = renderSocialPost(actua);
-    expect(post.startsWith(actua.description)).toBe(true);
-    expect(post).toContain('\n\n');
-    expect(post.endsWith(PHARE)).toBe(true);
+    expect(post.startsWith('🚨 📣 Nouvelle fuite recensée : Actua (Services)')).toBe(true);
+    expect(post).toContain('Statut : Revendiquée');
+    expect(post).toContain('Volume : plus de 100 000 personnes recrutées selon LockBit 5.0');
+    expect(post).toContain(actua.description);
+    expect(post).toContain(CTA_LONG);
+    expect(post).toContain(actua.url);
+    expect(post).toContain('#LockBit');
+    expect(post).toContain('#Actua');
+    expect(post).toContain('#FuiteDeDonnées');
   });
 
-  it('phare invite au site et au suivi', () => {
-    expect(PHARE.toLowerCase()).toContain('fiche');
-    expect(PHARE.toLowerCase()).toContain('suivre');
+  it('LONG : hashtags fixes tous présents', () => {
+    const post = renderSocialPost(actua);
+    for (const h of ['#FrancePassoire', '#DataLeaks', '#Rancongiciel', '#cybersecurite', '#cyberattaque', '#piratageinformatique']) {
+      expect(post).toContain(h);
+    }
   });
 
-  it('description vide → refus, jamais d’improvisation', () => {
+  it('COURT : sans résumé, volume sans clause « selon », ≤ 280, CTA court, URL', () => {
+    const post = renderSocialPostCourt(actua);
+    expect(post.startsWith('🚨📣 Nouvelle fuite recensée : Actua (Services)')).toBe(true);
+    expect(post).toContain('Volume : plus de 100 000 personnes recrutées');
+    expect(post).not.toContain('selon LockBit');
+    expect(post).not.toContain(actua.description);
+    expect(post).toContain(CTA_COURT);
+    expect(post).toContain(actua.url);
+    expect(post.length).toBeLessThanOrEqual(280);
+  });
+
+  it('COURT : dépassement 280 → refus explicite', () => {
+    expect(() =>
+      renderSocialPostCourt({
+        ...actua,
+        entity: 'Une Entité Au Nom Beaucoup Trop Long Pour Tenir Dans La Limite De Caracteres De X',
+        volumeLabel: 'un volume extraordinairement long qui ne tiendra jamais dans les deux cent quatre-vingts caracteres de la limite X',
+      }),
+    ).toThrow(SocialTemplateError);
+  });
+
+  it('LONG : description vide → refus, jamais d’improvisation', () => {
     expect(() => renderSocialPost({ ...actua, description: '   ' })).toThrow();
-  });
-
-  it('aucun em-dash dans le rendu', () => {
-    expect(renderSocialPost(actua)).not.toContain('—');
   });
 });
