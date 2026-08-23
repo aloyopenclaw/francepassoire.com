@@ -365,13 +365,14 @@ describe('T54c · run — mort d’endpoint via runScheduled', () => {
     expect(drapeau2.since).toBe(sinceRun1);
   });
 
-  it('isolation : ransomware.live en 401 (clé révoquée) ne perturbe pas le flux sain suivant', async () => {
-    adapters.push(ransomwareLiveAdapter, adapterZataz);
+  it('isolation : ransomware.live en 401 (clé PRO rejetée) ne perturbe pas le flux sain suivant', async () => {
+    adapters.push(ransomwareLiveAdapter('cle-test'), adapterZataz);
     const { env, store } = makeEnv();
+    env.RANSOMWARE_LIVE_API_KEY = 'cle-test';
 
     const results = await runScheduled(env, {
       fetchFn: fetchRouting({
-        'https://api.ransomware.live/v2/recentvictims': ['', 401],
+        'https://api-pro.ransomware.live/victims/recent': ['', 401],
         'https://www.zataz.com/feed/': [loadFixture('rss-zataz.xml'), 200],
       }),
       sleep: noSleep,
@@ -386,6 +387,35 @@ describe('T54c · run — mort d’endpoint via runScheduled', () => {
       reason: 'http-401',
     });
     expect(store.has('source_dead:rss:zataz')).toBe(false);
+  });
+
+  it('T54b : clé PRO absente — source ignorée sans fetch ni écriture (last_success vieillira, aucun drapeau)', async () => {
+    // Même instance keyless que le registre statique (adapter.ts) — le runner
+    // instancie avec la clé de l'env ; ici env n'en a PAS.
+    adapters.push(ransomwareLiveAdapter(undefined), adapterZataz);
+    const { env, store } = makeEnv();
+    const appels: string[] = [];
+    const fetchCompteur: typeof fetch = (async (input: RequestInfo | URL) => {
+      appels.push(String(input instanceof Request ? input.url : input));
+      return fetchRouting({ 'https://www.zataz.com/feed/': [loadFixture('rss-zataz.xml'), 200] })(input);
+    }) as typeof fetch;
+
+    const results = await runScheduled(env, { fetchFn: fetchCompteur, sleep: noSleep });
+
+    // Config, pas un jour calme : skipped avec log fort — mais PAS failed
+    // (aucun mensonge de transport) et le flux suivant reste sain.
+    expect(results).toEqual([
+      { adapter: 'ransomware.live', inserted: 0, failed: false, skipped: true },
+      { adapter: 'rss:zataz', inserted: 6, failed: false, skipped: false },
+    ]);
+    // Le PRO n'a JAMAIS été contacté (un appel keyless aurait répondu 401 et
+    // brouillé la détection de mort en source_dead:http-401).
+    expect(appels).toEqual(['https://www.zataz.com/feed/']);
+    // Aucun drapeau de mort ET aucun état écrit : sans succès enregistré,
+    // last_success vieillit — le signal honnête du rapport quotidien.
+    expect(store.has('source_dead:ransomware.live')).toBe(false);
+    expect(store.has('ingest:state:ransomware.live')).toBe(false);
+    expect(errorSpy).toHaveBeenCalledWith(expect.stringContaining('RANSOMWARE_LIVE_API_KEY'));
   });
 
   it('adapter sans fetch (corpus synthétique) : run sain, zéro drapeau', async () => {

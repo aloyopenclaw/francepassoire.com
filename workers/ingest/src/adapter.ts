@@ -87,7 +87,10 @@ export interface SourceAdapter {
  * runner depuis le fix soak de la tâche 20.
  */
 export const adapters: SourceAdapter[] = [
-  ransomwareLiveAdapter,
+  // T54b : instancié SANS clé ici (registre statique) ; le runner injecte le
+  // secret env.RANSOMWARE_LIVE_API_KEY à chaque run (index.ts, motif HIBP) —
+  // l'instance keyless ne fetch JAMAIS (log fort + []).
+  ransomwareLiveAdapter(undefined),
   ransomlookAdapter(),
   ...rssAdapters,
   certFrAvisAdapter,

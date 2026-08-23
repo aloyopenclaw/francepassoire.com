@@ -21,6 +21,7 @@
 import { adapters, type Candidate, type SourceAdapter } from './adapter';
 import { isDailyRateOk } from '../adapters/cnil';
 import { hibpDiffAdapter, HIBP_BREACHES_URL } from '../adapters/hibp';
+import { ransomwareLiveAdapter } from '../adapters/ransomware-live';
 // Internes du runner (extraction de index.ts — refactor pur, cf. runner-core.ts).
 import {
   GUID_SET_MAX,
@@ -38,6 +39,17 @@ export type { D1Database, D1PreparedStatement, KVNamespace };
 export interface Env {
   DB: D1Database;
   RUN_STATE: KVNamespace;
+  /**
+   * Clé PRO ransomware.live (T54b) — PREMIER secret du worker ingest, passé
+   * en en-tête X-API-KEY à api-pro.ransomware.live/victims/recent. Clé
+   * maître quarantinée hors dépôt (~/.config/francepassoire/ransomware-live
+   * .token) ; création au déploiement :
+   *   npx wrangler secret put RANSOMWARE_LIVE_API_KEY --config workers/ingest/wrangler.jsonc
+   * Absente : la source est ignorée avec un log fort (problème de
+   * configuration, pas un jour calme), sans fetch — last_success vieillit,
+   * signal honnête lu par le rapport quotidien workers/api.
+   */
+  RANSOMWARE_LIVE_API_KEY?: string;
 }
 
 export interface ExecutionContext {
@@ -93,6 +105,18 @@ async function runSource(
     return { adapter: adapter.id, inserted: 0, failed: false, skipped: true };
   }
 
+  // T54b : clé PRO ransomware.live absente = problème de configuration, PAS
+  // un jour calme — log fort, source ignorée SANS fetch ni écriture d'état.
+  // Un appel keyless au PRO répondrait 401 et brouillerait la détection de
+  // mort T54c ; enregistrer un succès mentirait au rapport quotidien. En
+  // n'écrivant rien, last_success vieillit : c'est le signal honnête.
+  if (adapter.id === 'ransomware.live' && !env.RANSOMWARE_LIVE_API_KEY) {
+    console.error(
+      '[ingest] ALERTE config : secret RANSOMWARE_LIVE_API_KEY absent — source ransomware.live ignorée (aucun fetch). Créer le secret : npx wrangler secret put RANSOMWARE_LIVE_API_KEY --config workers/ingest/wrangler.jsonc',
+    );
+    return { adapter: adapter.id, inserted: 0, failed: false, skipped: true };
+  }
+
   /**
    * Sortie de run pour mort d'endpoint (T54c) : drapeau KV posé (transition
    * seule, cf. appliquerVerdict), journal fort, last_run mis à jour — mais
@@ -117,10 +141,15 @@ async function runSource(
       // Si un snapshot KV existe, c'est LA vérité du runner (elle écrase tout
       // previousCatalog d'amorçage). Sinon on garde l'adapter du registre
       // tel quel (permet les tests qui injectent leur propre snapshot).
+      // T54b : ransomware.live est réinstancié avec la clé PRO de l'env
+      // (factory, même motif que le diff HIBP) — la garde keyless ci-dessus
+      // garantit que la clé est présente ici.
       const adapterEffectif =
-        adapter.id === 'hibp' && state.hibp_catalog !== undefined
-          ? hibpDiffAdapter({ previousCatalog: state.hibp_catalog })
-          : adapter;
+        adapter.id === 'ransomware.live'
+          ? ransomwareLiveAdapter(env.RANSOMWARE_LIVE_API_KEY)
+          : adapter.id === 'hibp' && state.hibp_catalog !== undefined
+            ? hibpDiffAdapter({ previousCatalog: state.hibp_catalog })
+            : adapter;
 
       let hibpCatalogue: string | undefined;
       const fetchTee: typeof fetch =

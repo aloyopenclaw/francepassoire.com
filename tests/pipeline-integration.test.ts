@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 // Suite d'intégration pipeline (tâche 20, Wave 2) — la chaîne COMPLÈTE sur un
-// corpus de 20 candidats : adapters réels (cassettes fixture enregistrées)
+// corpus de 19 candidats : adapters réels (cassettes fixture enregistrées)
 // → runner T13 (D1 + KV, fakes en mémoire) → synthétiseur T18 (+ dedup T11)
 // → décision PR (seuil dedup_score + repli slug T8→T19) → openDraftPr T19
 // (GithubClient fake). Aucun réseau réel, aucun jeton.
@@ -89,7 +89,7 @@ function makeEnv(): { env: Env; rows: InsertedRow[]; store: Map<string, string> 
       store.delete(key);
     },
   };
-  return { env: { DB: db, RUN_STATE: runState }, rows, store };
+  return { env: { DB: db, RUN_STATE: runState, RANSOMWARE_LIVE_API_KEY: 'cle-pro-test' }, rows, store };
 }
 
 // ---------------------------------------------------------------------------
@@ -140,7 +140,7 @@ const fixturesDir = fileURLToPath(new URL('./fixtures/adapters/', import.meta.ur
 const loadFixture = (name: string): string => readFileSync(`${fixturesDir}${name}`, 'utf-8');
 
 const ROUTES: Record<string, string> = {
-  'https://api.ransomware.live/v2/recentvictims': loadFixture('ransomware-live-recent.json'),
+  'https://api-pro.ransomware.live/victims/recent': loadFixture('ransomware-live-pro-recent.json'),
   'https://www.zataz.com/feed/': loadFixture('rss-zataz.xml'),
   // Flux malformé servi au flux ZDNet : 0 candidat, la chaîne continue.
   'https://www.zdnet.fr/feed': loadFixture('rss-malformed.xml'),
@@ -308,7 +308,9 @@ const originalAdapters = [...adapters];
 beforeEach(() => {
   adapters.length = 0;
   adapters.push(
-    ransomwareLiveAdapter,
+    // T54b : instance keyless du registre — le runner réinstancie avec la
+    // clé de l'env (makeEnv ci-dessus), la cassette PRO est servie.
+    ransomwareLiveAdapter(undefined),
     makeRssAdapter({ id: 'rss:zataz', name: 'Zataz', url: 'https://www.zataz.com/feed/' }),
     makeRssAdapter({ id: 'rss:zdnet-fr', name: 'ZDNet FR', url: 'https://www.zdnet.fr/feed' }),
     hibpDiffAdapter({ previousCatalog: loadFixture('hibp-snapshot-a.json') }),
@@ -325,7 +327,7 @@ afterEach(() => {
 // Chaîne complète — comptes EXACTS.
 // ---------------------------------------------------------------------------
 
-describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne complète', () => {
+describe('T20 · intégration pipeline — corpus de 19 candidats, chaîne complète', () => {
   it('run cron : 5 sources → exactement 20 lignes D1, toutes NEW, UUID distincts, état KV sain', async () => {
     const { env, rows, store } = makeEnv();
 
@@ -333,41 +335,40 @@ describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne compl
 
     // Résultats par source : le flux malformé ne lève JAMAIS (isolation T15).
     expect(results).toEqual([
-      { adapter: 'ransomware.live', inserted: 3, failed: false, skipped: false },
+      { adapter: 'ransomware.live', inserted: 2, failed: false, skipped: false },
       { adapter: 'rss:zataz', inserted: 6, failed: false, skipped: false },
       { adapter: 'rss:zdnet-fr', inserted: 0, failed: false, skipped: false },
       { adapter: 'hibp', inserted: 1, failed: false, skipped: false },
       { adapter: 'corpus-t20', inserted: 10, failed: false, skipped: false },
     ]);
 
-    // D1 : exactement 20 lignes, toutes NEW, dedup_score null à l'insertion,
+    // D1 : exactement 19 lignes, toutes NEW, dedup_score null à l'insertion,
     // UUID tous distincts. Répartition par source exacte — les lignes du corpus
     // synthétique portent leur source NOMINALE (8 rss, 1 ransomware.live,
     // 1 hibp), pas l'id de l'adapter qui les a servi.
-    expect(rows).toHaveLength(20);
+    expect(rows).toHaveLength(19);
     expect(rows.every((r) => r.status === 'NEW')).toBe(true);
     expect(rows.every((r) => r.dedup_score === null)).toBe(true);
-    expect(new Set(rows.map((r) => r.id)).size).toBe(20);
+    expect(new Set(rows.map((r) => r.id)).size).toBe(19);
     const bySource = rows.reduce<Record<string, number>>((acc, r) => {
       acc[r.source] = (acc[r.source] ?? 0) + 1;
       return acc;
     }, {});
     expect(bySource).toEqual({
-      'ransomware.live': 4, // 3 cassette + doublon de slug du corpus
+      'ransomware.live': 3, // 2 cassette + doublon de slug du corpus
       rss: 14, // 6 cassette Zataz + 8 corpus
       hibp: 2, // 1 diff cassette + 3e occurrence du corpus
     });
 
     // Non-FR et malformés sont bien SORTIS de la chaîne avant D1 : la cassette
-    // ransomware.live porte 50 victimes dont 47 non-FR ; le flux ZDnet malformé
+    // ransomware.live porte 51 victimes dont 49 non-FR ; le flux ZDnet malformé
     // ne produit RIEN ; HIBP ne garde que le nouveau .fr (VitteAuto).
     const rliveCassette = rows.filter(
       (r) => r.source === 'ransomware.live' && JSON.parse(r.raw).country === 'FR',
     );
     expect(rliveCassette.map((r) => r.entity_name)).toEqual([
-      'Experts Entreprendre',
-      'Capgemini Engineering',
-      'Philippe Hottinguer Finance',
+      'OTEIS Conseil & Ingénierie',
+      'Geb Sas',
     ]);
     const hibpCassette = rows.filter((r) => r.source === 'hibp' && 'BreachDate' in JSON.parse(r.raw));
     expect(hibpCassette.map((r) => r.entity_name)).toEqual(['VitteAuto']);
@@ -382,20 +383,20 @@ describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne compl
     }
   });
 
-  it('décision PR : les 20 lignes → exactement 2 PR, doublons repliés sur UN PR, rejets motivés', async () => {
+  it('décision PR : les 19 lignes → exactement 2 PR, doublons repliés sur UN PR, rejets motivés', async () => {
     const { env, rows } = makeEnv();
     await runScheduled(env, { fetchFn: fixtureFetch, sleep: async () => {} });
     const gh = new FakeGithub();
 
     const decisions = await decideAndOpen(rows, gh);
 
-    // Aucune ligne perdue : 20 décisions, chacune motivée.
-    expect(decisions).toHaveLength(20);
+    // Aucune ligne perdue : 19 décisions, chacune motivée.
+    expect(decisions).toHaveLength(19);
     const counts = decisions.reduce<Record<string, number>>((acc, d) => {
       acc[d.outcome.kind] = (acc[d.outcome.kind] ?? 0) + 1;
       return acc;
     }, {});
-    // 2 PR + 2 replis duplicate + 2 rejets de seuil + 5 sans slug (3 FR
+    // 2 PR + 2 replis duplicate + 2 rejets de seuil + 4 sans slug (2 FR
     // ransomware.live au format attackdate non lu par T18, le VitteAuto HIBP
     // réel à BreachDate non lue, l'IRD du corpus sans date) + 7 sans entité
     // (6 RSS cassette + 1 corpus) + 2 raw malformés.
@@ -403,7 +404,7 @@ describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne compl
       pr: 2,
       duplicate: 2,
       dedup_threshold: 2,
-      no_slug: 5,
+      no_slug: 4,
       no_entity: 7,
       bad_raw: 2,
     });
@@ -454,7 +455,7 @@ describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne compl
     await expect(
       runScheduled(env, { fetchFn: fixtureFetch, sleep: async () => {} }),
     ).resolves.toEqual([
-      { adapter: 'ransomware.live', inserted: 3, failed: false, skipped: false },
+      { adapter: 'ransomware.live', inserted: 2, failed: false, skipped: false },
       { adapter: 'rss:zataz', inserted: 6, failed: false, skipped: false },
       { adapter: 'rss:zdnet-fr', inserted: 0, failed: false, skipped: false },
       { adapter: 'hibp', inserted: 1, failed: false, skipped: false },
@@ -463,7 +464,7 @@ describe('T20 · intégration pipeline — corpus de 20 candidats, chaîne compl
 
     // La phase PR ne s'exécute pas (pas de client) : les lignes D1 restent
     // NEW, rien ne plante, la prochaine passe éditoriale les relira.
-    expect(rows).toHaveLength(20);
+    expect(rows).toHaveLength(19);
     expect(rows.every((r) => r.status === 'NEW')).toBe(true);
   });
 
