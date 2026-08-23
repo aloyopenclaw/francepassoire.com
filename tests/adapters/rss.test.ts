@@ -205,3 +205,23 @@ describe('T15 · adapter RSS — configuration exportée', () => {
     ]);
   });
 });
+
+// Régression 23/08 : FrenchBreaches (titres = noms d'entités nus) doit
+// passer SANS le filtre par mots-clés — le bug rejetait 100 % de ses items.
+describe('makeRssAdapter — sansFiltreKeywords (régression FrenchBreaches)', () => {
+  const fb = makeRssAdapter({ id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml', sansFiltreKeywords: true });
+  const xml = `<?xml version="1.0"?><rss><channel><title>x</title>${'<item><title>Declic Services</title><link>https://frenchbreaches.com/alertes/declic</link><guid>fb-1</guid><pubDate>Sun, 23 Aug 2026 01:31:00 +0200</pubDate></item>'}</channel></rss>`;
+  const fetchFn = (async () => new Response(xml, { status: 200 })) as typeof fetch;
+
+  it('FrenchBreaches : item sans mot-clé EST retenu', async () => {
+    const candidats = await fb.fetchCandidates(fetchFn, new Set());
+    expect(candidats).toHaveLength(1);
+    expect(candidats[0]?.entity_name).toBe('Declic Services');
+  });
+
+  it('flux standard : le même titre SANS le drapeau est filtré', async () => {
+    const standard = makeRssAdapter({ id: 'rss:test', name: 'Test', url: 'https://example.com/feed' });
+    const candidats = await standard.fetchCandidates(fetchFn, new Set());
+    expect(candidats).toHaveLength(0);
+  });
+});

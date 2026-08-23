@@ -34,6 +34,12 @@ export interface FeedConfig {
   name: string;
   /** URL du flux, vérifiée en direct (redirections suivies par le serveur d'origine). */
   url: string;
+  /**
+   * Flux déjà 100 % pertinents (ex. FrenchBreaches : chaque item EST une
+   * fuite) — KEYWORD_RE ne s'applique pas : leurs titres sont des noms
+   * d'entités nus, le filtre rejetait TOUT (bug 23/08 : 0 candidat FB).
+   */
+  sansFiltreKeywords?: boolean;
 }
 
 // ── Mots-clés (fuite de données / cyber) ────────────────────────────────────
@@ -198,7 +204,7 @@ export function makeRssAdapter(feedCfg: FeedConfig): RssAdapter {
       const items = parseFeedItems(await res.text());
       const candidates: Candidate[] = [];
       for (const item of items) {
-        if (!KEYWORD_RE.test(normalize(item.title))) continue;
+        if (!feedCfg.sansFiltreKeywords && !KEYWORD_RE.test(normalize(item.title))) continue;
         if (knownGuids?.has(item.guid)) continue;
         candidates.push({
           source: 'rss',
@@ -232,7 +238,7 @@ export const rssFeedConfigs: FeedConfig[] = [
   // Les TITRES+URLS publics sont des leads ; le catalogue fuitesinfos
   // reste license-gated (décision tâche 17) : jamais de copie de fiches.
   { id: 'rss:fuitesinfos', name: 'Fuites Infos', url: 'https://fuitesinfos.fr/feed.xml' },
-  { id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml' },
+  { id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml', sansFiltreKeywords: true },
   // Antennes temps réel (ajout 23/08, vague « 100x ») : presse française à
   // l'instant Google News l'indexe + blogs spécialisés + veille Hackmanac.
   { id: 'rss:gnews-fuites', name: 'Google News (fuites FR)', url: 'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr' },
