@@ -40,10 +40,12 @@ est bloqué, ce qui est dégradé et ce qui a déjà basculé sur le VPS.
 | rss:zataz | www.zataz.com | `rss.ts:240` | 200 XML | 200 XML | OK | Garder |
 | rss:fuitesinfos | fuitesinfos.fr | `rss.ts:245` | 200 XML | 200 XML | OK | Garder |
 | rss:gnews-fuites | news.google.com | retiré de `rss.ts`, moisson `.github/workflows/gnews-vps.yml` | **503** (3 sondages, 2 UA différents, 6 à 9 s avant échec) | 200 XML | **DÉJÀ VPS** | Bascule appliquée le 23/08 : `gnews-vps.yml` (même contrat d'insertion que `fb-vps.yml`) |
-| rss:undernews | www.undernews.fr | `rss.ts:252` | 200 XML | 200 XML | OK | Garder |
-| rss:dsb | www.datasecuritybreach.fr | `rss.ts:253` | 200 XML | 200 XML | OK | Garder |
+| rss:undernews | www.undernews.fr | `rss.ts:255` | 200 XML | 200 XML | OK | Garder |
+| rss:dsb | www.datasecuritybreach.fr | `rss.ts:256` | 200 XML | 200 XML | OK | Garder |
+| rss:lemagit | www.lemagit.fr | `rss.ts:264` | 200 XML (non sondé depuis un worker-jetable ; curl mac 200 avec UA navigateur ET UA pipeline)* | 200 XML (UA navigateur et pipeline, taille identique à l'octet près) | OK (à confirmer au premier run worker)* | Garder — ajouté 23/08 (T54d) |
+| rss:clubic | www.clubic.com | `rss.ts:265` | 200 XML (idem LeMagIT : curl mac 200 avec les deux UA)* | 200 XML (idem) | OK (à confirmer au premier run worker)* | Garder — ajouté 23/08 (T54d) ; `/rss/news.rss` redirige vers `/feed/rss` (configurée) |
 | rss:hackmanac | hackmanac.com | retiré de `rss.ts` | **202 + page HTML anti-bot** (interstitiel meta-refresh, tous UA testés) | 200 XML réel | **RETIRÉ** | Source abandonnée le 23/08 : redondante avec Zataz/DSB/Undernews (décision propriétaire) |
-| ransomware.live | api.ransomware.live | `adapters/ransomware-live.ts:27` | 200 JSON | 200 JSON | OK | Garder |
+| ransomware.live | api-pro.ransomware.live | `adapters/ransomware-live.ts:38` | non sondé depuis Workers à date (clé PRO requise ; 401 attendu sans `X-API-KEY`, cf. méthode §2) | 200 JSON depuis ce Mac (23/08, clé PRO, `/victims/recent`) | OK | Migration PRO T54b (23/08) : endpoint keyless `api.ransomware.live/v2/recentvictims` (200 des deux égress au sondage) déprécié par décision propriétaire — l'adapter interroge désormais le PRO avec le secret `RANSOMWARE_LIVE_API_KEY` |
 | RansomLook | www.ransomlook.io | `adapters/ransomlook.ts:13` | 200 JSON | 200 JSON | OK | Garder |
 | CERT-FR avis | www.cert.ssi.gouv.fr | `adapters/cert-fr.ts:32` | 200 XML | 200 XML | OK | Garder |
 | CERT-FR alertes | www.cert.ssi.gouv.fr | `adapters/cert-fr.ts:33` | 200 XML | 200 XML | OK | Garder |
@@ -51,6 +53,19 @@ est bloqué, ce qui est dégradé et ce qui a déjà basculé sur le VPS.
 | CNIL jeux de données | www.data.gouv.fr | `adapters/cnil.ts:44` | 200 JSON | 200 JSON | OK | Garder |
 | HIBP | haveibeenpwned.com | `adapters/hibp.ts:25` | 200 JSON | 200 JSON | OK | Garder |
 | FrenchBreaches | frenchbreaches.com | `rss.ts:246` (commentaire), moisson `.github/workflows/fb-vps.yml` | 403 « Just a moment » (UA pipeline) ; 200 (UA navigateur) | 200 XML | **DÉJÀ VPS** | Statu quo : la garder sur le VPS ; ne pas revenir au worker (le bot-check réapparaît selon l'UA) |
+
+### 3.1 Méthodologie allégée des lignes T54d (LeMagIT, Clubic)
+
+\* Les lignes `rss:lemagit` / `rss:clubic` (23/08 soir, T54d) n'ont PAS été
+sondées par worker-jetable (aucun déploiement autorisé pour cette tâche) :
+`curl` depuis le mac (IP résidentielle) et depuis le VPS (IP OVH), avec
+l'UA navigateur ET l'UA pipeline du worker — 200 et tailles identiques aux
+deux egress testés, aucun bot-check observé. Règle pragmatique appliquée :
+un flux qui sert le même XML à une IP résidentielle et à l'IP OVH, sans
+discriminer l'UA, sert très probablement aussi les IP sortantes Workers —
+mais ceci reste à confirmer par le premier run du worker (la sonde de mort
+d'endpoint T54c couvrira ce cas : un blocage Workers se lirait comme
+drapeau `source_dead` au lieu d'une panne silencieuse).
 
 ## 4. Constats d'ingestion notables
 
