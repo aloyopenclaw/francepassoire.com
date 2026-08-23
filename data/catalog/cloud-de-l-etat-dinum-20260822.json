@@ -1,0 +1,48 @@
+{
+  "slug": "cloud-de-l-etat-dinum-20260822",
+  "entity": "Cloud de l'État (DINUM)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 15021,
+    "unit": "enregistrements",
+    "label": "15 021 enregistrements estimés sur 31 544 lignes réparties en 12 fichiers CSV selon la revendication relayée par Fuites Infos ; part importante de données publiques selon FrenchBreaches et Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 15 021 enregistrements de pilotage cloud chez DINUM : fuite revendiquée (22 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-22-dinum-portail-cloud-de-l-etat",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Cloud de l'État : des milliers de données diffusées sur un forum de hackers (22 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/cloud-de-l-tat-cloud-numerique-gouv-fr-mt4685xhf4it99ffgkq",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — DINUM : 31 544 lignes liées au cloud de l'État en fuite (22 août 2026)",
+      "url": "https://www.cyberattaque.org/dinum-31-544-lignes-liees-au-cloud-de-letat-en-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 août 2026, l'acteur 0xSec publie sur un forum douze fichiers CSV associés au portail cloud.numerique.gouv.fr, que la DINUM exploite pour le pilotage cloud de l'État. L'ensemble couvre 31 544 lignes : administrations référencées par SIREN, commandes de 211 organismes entre 2020 et 2026 pour un cumul annoncé d'environ 98 millions d'euros, fournisseurs et projets d'intelligence artificielle. Le seul fichier nominatif recense des auteurs de contributions open source, avec noms et adresses e-mail, selon Fuites Infos. FrenchBreaches et Cyberattaque.org indiquent qu'une part importante des champs correspond à des données publiques ; une exposition via l'outil Metabase reste un scénario crédible selon Cyberattaque.org. La DINUM n'a pas confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-22",
+      "event": "0xSec publie sur un forum douze fichiers CSV attribués au portail cloud.numerique.gouv.fr : 31 544 lignes et environ 15 000 enregistrements annoncés, couvrant administrations, commandes, fournisseurs et projets d'intelligence artificielle."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relaient la publication ; les deux derniers notent qu'une part importante des champs semble publique, et la DINUM ne confirme pas l'incident."
+    }
+  ]
+}
