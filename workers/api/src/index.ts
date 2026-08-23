@@ -28,6 +28,7 @@
 
 import { handleWatchlistRequest, runInstantSweep, runWeeklyDigest } from './watchlist';
 import { runVeilleSociale, slotVeilleSociale } from './veille-sociale';
+import { runQueueWatchdog } from './queue-watchdog';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -62,6 +63,11 @@ export interface Env {
   WATCHLIST_AES_KEY?: string;
   /** Clé HMAC (T30) — signature des liens de confirmation 24 h. */
   WATCHLIST_HASH_KEY?: string;
+  /** Token Pushinator (chien de garde de file) — Bearer de l'API v2,
+   *  même contrat que .github/workflows/notify.yml. */
+  PUSHINATOR_TOKEN?: string;
+  /** Id du canal Pushinator recevant les alertes de file bloquée. */
+  PUSHINATOR_CHANNEL?: string;
 }
 
 export interface ExecutionContext {
@@ -357,6 +363,10 @@ export default {
         await runWeeklyDigest(env, { now });
       }
     }
+    // Chien de garde de la file éditoriale : plus ancien NEW > 24 h → email
+    // Brevo + push Pushinator, une fois par jour (garde KV dans RUN_STATE).
+    // Plié dans CE cron (plafond 5 déclencheurs/compte : rien de nouveau).
+    await runQueueWatchdog(env);
     // T52 : veille sociale interne — slots 07:00 et 19:00 Europe/Paris sur
     // le tick plein-heure, garde KV par slot/jour (plafond cron 5/compte :
     // pas de déclencheur dédié possible).

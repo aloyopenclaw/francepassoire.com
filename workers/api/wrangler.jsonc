@@ -60,6 +60,13 @@
   //   WATCHLIST_HASH_KEY  — clé HMAC-SHA256 des liens de confirmation (24 h).
   //                         Génération : openssl rand -hex 32
   //                         npx wrangler secret put WATCHLIST_HASH_KEY --config workers/api/wrangler.jsonc
+  //   PUSHINATOR_TOKEN    — token Bearer de l'API Pushinator v2 (push
+  //                         téléphone du chien de garde de file). Même contrat
+  //                         que .github/workflows/notify.yml.
+  //                         npx wrangler secret put PUSHINATOR_TOKEN --config workers/api/wrangler.jsonc
+  //   PUSHINATOR_CHANNEL  — id du canal Pushinator recevant l'alerte « file
+  //                         bloquée » (plus ancien NEW > 24 h, une fois/jour).
+  //                         npx wrangler secret put PUSHINATOR_CHANNEL --config workers/api/wrangler.jsonc
   //
   // Sans BREVO_API_KEY / WATCHLIST_* : POST /api/watchlist répond 503 « veille
   // par email : activation en cours » AVANT toute écriture D1, et
