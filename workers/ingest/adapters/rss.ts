@@ -254,6 +254,15 @@ export const rssFeedConfigs: FeedConfig[] = [
   // Blogs spécialisés (ajout 23/08, vague « 100x »).
   { id: 'rss:undernews', name: 'UnderNews', url: 'https://www.undernews.fr/feed' },
   { id: 'rss:dsb', name: 'DataSecurityBreach', url: 'https://www.datasecuritybreach.fr/feed/' },
+  // Médias tech généralistes (ajout 23/08, T54d). LeMagIT : seul flux exposé
+  // (TechTarget, pas de flux sécurité dédié) mais porteur — 5/20 items
+  // mot-clé au sondage (Cyberhebdo, dépêches cyber). Clubic : /rss/news.rss
+  // redirige vers /feed/rss, unique flux du site (aucun flux catégorie, le
+  // paramètre ?category= est ignoré) ; couverture fuites FR réelle (ANTS,
+  // Almerys, DGFiP…) noyée dans les bons plans — le filtre absorbe le bruit.
+  // Les deux acceptent l'UA pipeline (200 identique mac/VPS, sondage T54d).
+  { id: 'rss:lemagit', name: 'LeMagIT', url: 'https://www.lemagit.fr/rss/ContentSyndication.xml' },
+  { id: 'rss:clubic', name: 'Clubic', url: 'https://www.clubic.com/feed/rss' },
   // Hackmanac retiré : source redondante avec Zataz/DSB/Undernews et 202
   // anti-bot depuis Workers (audit docs/audit-ip-blocking.md §4.2).
 ];

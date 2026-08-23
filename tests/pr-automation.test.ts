@@ -271,7 +271,7 @@ describe('createGithubClient — requêtes réelles (fetch injecté)', () => {
 // ---------------------------------------------------------------------------
 
 describe('registre adapters (câblage T19)', () => {
-  it('enregistre exactement les 13 adapters worker (T14-T17 + vague 100x, FB et gnews côté VPS, Hackmanac retiré), dans l’ordre déclaré', () => {
+  it('enregistre exactement les 15 adapters worker (T14-T17 + vague 100x + T54d LeMagIT/Clubic, FB et gnews côté VPS, Hackmanac retiré), dans l’ordre déclaré', () => {
     expect(adapters.map((a) => a.id)).toEqual([
       'ransomware.live',
       'ransomlook',
@@ -282,6 +282,8 @@ describe('registre adapters (câblage T19)', () => {
       'rss:fuitesinfos',
       'rss:undernews',
       'rss:dsb',
+      'rss:lemagit',
+      'rss:clubic',
       'cert-fr-avis',
       'cert-fr-alertes',
       'cnil-sanctions',

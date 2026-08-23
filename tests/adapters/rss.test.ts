@@ -93,6 +93,48 @@ describe('T15 · adapter RSS — échantillons réels porteurs de mots-clés', (
     );
     expect(candidates[0]?.entity_name).toBeNull();
   });
+
+  it('LeMagIT : 4 candidats sur la capture réelle (guid = lien, l’item n’a pas de guid natif)', async () => {
+    const adapter = makeRssAdapter(feed({ id: 'rss:lemagit', name: 'LeMagIT', url: 'https://www.lemagit.fr/rss/ContentSyndication.xml' }));
+    const candidates = await adapter.fetchCandidates(fetchServing(loadFixture('rss-lemagit.xml')));
+
+    // Fixture figée : items Cyberhebdo, Vols de données, Cyberattaques (brève)
+    // et Cyberattaques & vols portent un mot-clé ; les titres quotés « … » du
+    // bruit (Phantom Compute, crise existentielle) n’en portent pas → dehors.
+    expect(candidates).toHaveLength(4);
+    // Titre réel en espaces insécables (typo française TechTarget) — le raw
+    // garde les octets d’origine, le fragment porte donc les mêmes \u00a0.
+    const cyberhebdo = findCandidate(candidates, 'Cyberhebdo du 21\u00a0août 2026');
+    expect(cyberhebdo?.source_url).toBe(
+      'https://www.lemagit.fr/actualites/366649425/Cyberhebdo-do-21-aout-2026-considerable-fuite-de-donnees-en-Lettonie',
+    );
+    // Le flux TechTarget n’expose pas de <guid> : repli sur le lien de l’item.
+    expect(cyberhebdo?.guid).toBe(cyberhebdo?.source_url);
+    expect(JSON.parse(cyberhebdo?.raw ?? '{}')).toMatchObject({
+      feed: 'rss:lemagit',
+      pubDate: 'Fri, 21 Aug 2026 06:54:00 GMT',
+    });
+    // Casse phrase : « Lettonie » seul = run d’1 mot → null, le synthétiseur tranche.
+    expect(cyberhebdo?.entity_name).toBeNull();
+    expect(findCandidate(candidates, 'Phantom Compute')).toBeUndefined();
+  });
+
+  it('Clubic : 2 candidats sur l’échantillon composé (titres CDATA), les bons plans restent dehors', async () => {
+    const adapter = makeRssAdapter(feed({ id: 'rss:clubic', name: 'Clubic', url: 'https://www.clubic.com/feed/rss' }));
+    const candidates = await adapter.fetchCandidates(fetchServing(loadFixture('rss-clubic.xml')));
+
+    // 8 items de bruit réels (bons plans, titres CDATA sans mot-clé) + 2
+    // articles réels de la rubrique cybersécurité (voir README fixtures).
+    expect(candidates).toHaveLength(2);
+    const almerys = findCandidate(candidates, 'Cyberattaque chez Almerys');
+    expect(almerys?.source_url).toBe(
+      'https://www.clubic.com/actualite-613981-cyberattaque-chez-almerys-les-adherents-d-alan-touches-par-une-fuite-de-donnees-sensibles.html',
+    );
+    // Convention Clubic vérifiée sur la capture : le guid EST l’URL de l’article.
+    expect(almerys?.guid).toBe(almerys?.source_url);
+    expect(almerys?.entity_name).toBeNull();
+    expect(findCandidate(candidates, 'CyberGhost VPN')).toBeUndefined();
+  });
 });
 
 describe('T15 · adapter RSS — bruit et pannes', () => {
@@ -177,8 +219,8 @@ describe('T15 · adapter RSS — heuristiques (docs RSS inline)', () => {
 });
 
 describe('T15 · adapter RSS — configuration exportée', () => {
-  it('rssAdapters expose les 7 flux worker (FrenchBreaches et gnews moissonnés côté VPS, Hackmanac retiré)', () => {
-    expect(rssAdapters).toHaveLength(7);
+  it('rssAdapters expose les 9 flux worker (FrenchBreaches et gnews moissonnés côté VPS, Hackmanac retiré)', () => {
+    expect(rssAdapters).toHaveLength(9);
     expect(rssAdapters.map((a) => a.id)).toEqual([
       'rss:01net',
       'rss:zdnet-fr',
@@ -187,6 +229,8 @@ describe('T15 · adapter RSS — configuration exportée', () => {
       'rss:fuitesinfos',
       'rss:undernews',
       'rss:dsb',
+      'rss:lemagit',
+      'rss:clubic',
     ]);
     expect(rssFeedConfigs.map((f) => f.url)).toEqual([
       'https://www.01net.com/feed/', // redirige depuis https://www.01net.com/feed
@@ -196,6 +240,8 @@ describe('T15 · adapter RSS — configuration exportée', () => {
       'https://fuitesinfos.fr/feed.xml', // ajout 23/08 : sources spécialisées (leads publics)
       'https://www.undernews.fr/feed',
       'https://www.datasecuritybreach.fr/feed/',
+      'https://www.lemagit.fr/rss/ContentSyndication.xml', // ajout 23/08 T54d : seul flux TechTarget exposé
+      'https://www.clubic.com/feed/rss', // ajout 23/08 T54d : /rss/news.rss redirige ici (unique flux)
     ]);
   });
 });
