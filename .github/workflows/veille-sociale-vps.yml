@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Garde anti-double (KV RUN_STATE, même clé que le worker api)
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
           AUJ=$(TZ=Europe/Paris date +%Y%m%d)
           SLOT=$(TZ=Europe/Paris date +%H | grep -q '^07' && echo matin || echo soir)
@@ -41,7 +41,7 @@ jobs:
 
       - name: Moisson + dédup + classement + email (python)
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           python3 << 'PYEOF'
           import json, re, os, urllib.request, urllib.parse
           from datetime import datetime, timezone, timedelta

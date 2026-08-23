@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Notifier selon l'événement
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           notify() {
             curl -s "https://api.pushinator.com/api/v2/notifications/send" \
               -X POST -H "Authorization: Bearer $PUSHINATOR_TOKEN" \

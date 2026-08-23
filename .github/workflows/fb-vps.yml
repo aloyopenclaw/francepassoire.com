@@ -26,7 +26,7 @@ jobs:
     steps:
       - name: Moissonner le feed et pousser les candidats dans D1
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
 
           # 1. Fetch du feed depuis l'IP du VPS (UA du pipeline)

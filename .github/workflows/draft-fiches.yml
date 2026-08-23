@@ -53,7 +53,7 @@ jobs:
       - name: Sélection des candidats (3 max, marqués DRAFT)
         id: candidats
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
           python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at DESC LIMIT 3) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json > .agent-tmp/candidates.json
@@ -80,7 +80,7 @@ jobs:
       - name: PR par fiche rédigée + mise à jour D1
         if: steps.candidats.outputs.n != '0'
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           git config user.name "aloyopenclaw"
           git config user.email "aloyopenclaw@users.noreply.github.com"
           [ -f .agent-tmp/verdicts.tsv ] || { echo "aucun verdict"; exit 0; }
@@ -111,7 +111,7 @@ jobs:
       - name: Filet de sécurité D1 (les DRAFT orphelins redeviennent NEW)
         if: always()
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
           printf '%s' '{"sql": "UPDATE candidates SET status = ?1 WHERE status = ?2", "params": ["NEW", "DRAFT"]}' > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json >/dev/null

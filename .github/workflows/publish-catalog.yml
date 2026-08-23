@@ -83,7 +83,7 @@ jobs:
 
       - name: Déployer Pages
         run: |
-          . /home/runner/.config/francepassoire/env.sh
+          . /opt/francepassoire-shared/env.sh
           npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
 
       - name: Nettoyage des runs fantômes éventuels
