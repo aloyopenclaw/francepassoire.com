@@ -1,0 +1,49 @@
+{
+  "slug": "solimut-mutuelle-de-france-20260823",
+  "entity": "Solimut Mutuelle de France",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-23",
+    "publication": "2026-08-23"
+  },
+  "volume": {
+    "count": 1244445,
+    "unit": "personnes",
+    "label": "1 244 445 fiches d'assurés et 770 467 comptes bancaires revendiqués par « misere » ; Fuites Infos annonce 1 382 878 personnes ; nombre de personnes uniques non établi"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1 382 878 personnes : fuite revendiquée chez Solimut Mutuelle de France (23 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-23-solimut-mutuelle-de-france",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Solimut Mutuelle : plus d'un million d'assurés et 770 000 comptes bancaires apparaîtraient dans les données (23 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/solimut-mutuelle-de-france-mt50un0cza4e3fi0er",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Solimut Mutuelle : près de 1,25 million d'assurés dans une fuite massive de données (23 août 2026)",
+      "url": "https://www.cyberattaque.org/solimut-mutuelle-pres-de-125-million-dassures-dans-une-fuite-massive-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 23 août 2026, l'acteur « misere » revendique sur un forum la vente de bases attribuées à Solimut Mutuelle de France, selon Fuites Infos. FrenchBreaches situe la publication de ce message au 22 août. La mutuelle opère dans la complémentaire santé en France. Les volumes annoncés couvrent plusieurs tables distinctes. Selon la revendication : 1 244 445 fiches d'assurés, 770 467 comptes bancaires, 1 082 238 déclarations DSN, 1 382 878 fiches individuelles. Identités, numéros de sécurité sociale, passeports, coordonnées et IBAN sont cités. Aucune donnée de santé n'est annoncée. L'extraction est présentée comme une injection SQL non authentifiée sur un extranet partenaire. La mutuelle n'a pas confirmé l'incident au 23 août.",
+  "timeline": [
+    {
+      "date": "2026-08-23",
+      "event": "L'acteur « misere » revendique sur un forum la vente de bases attribuées à la mutuelle, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-23",
+      "event": "FrenchBreaches situe la publication de ce message au 22 août ; Cyberattaque.org analyse 35 échantillons de 1 000 lignes."
+    }
+  ],
+  "group": "misere"
+}
