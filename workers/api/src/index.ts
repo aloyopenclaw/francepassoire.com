@@ -84,10 +84,16 @@ const MSG_MERCI =
   "Merci. Votre signalement a bien été reçu et sera examiné par l'équipe éditoriale.";
 const MSG_HONEYPOT = MSG_MERCI; // 201 factice : indiscernable du succès réel.
 
+// HSTS sur api.francepassoire.com : le même contrat que la zone principale
+// (public/_headers, max-age 2 ans) — sans lui, tout premier atterrissage en
+// http:// affiche « Non sécurisé » avant la redirection. Le worker ne sert
+// QUE du https en production, l'en-tête est donc toujours légitime.
+const HSTS = 'strict-transport-security: max-age=63072000; includeSubDomains';
+
 function jsonResponse(status: number, body: Record<string, unknown>, headers: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { 'content-type': 'application/json; charset=utf-8', ...headers },
+    headers: { 'content-type': 'application/json; charset=utf-8', HSTS, ...headers },
   });
 }
 
@@ -301,6 +307,7 @@ export async function handleRequest(
         'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
         'Access-Control-Allow-Headers': 'content-type',
         'Access-Control-Max-Age': '86400',
+        HSTS,
       },
     });
   }

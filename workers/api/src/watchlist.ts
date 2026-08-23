@@ -273,7 +273,7 @@ function jsonResponse(
 ): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { 'content-type': 'application/json; charset=utf-8', ...headers },
+    headers: { 'content-type': 'application/json; charset=utf-8', 'strict-transport-security': 'max-age=63072000; includeSubDomains', ...headers },
   });
 }
 
@@ -288,7 +288,7 @@ function corsHeaders(request: Request): Record<string, string> {
 function redirect302(location: string): Response {
   return new Response(null, {
     status: 302,
-    headers: { Location: location, 'X-Robots-Tag': 'noindex, nofollow' },
+    headers: { Location: location, 'X-Robots-Tag': 'noindex, nofollow', 'strict-transport-security': 'max-age=63072000; includeSubDomains' },
   });
 }
 
