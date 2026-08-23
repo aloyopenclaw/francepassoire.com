@@ -152,6 +152,8 @@ export function parserFluxCertFr(
 function adapterCertFr(id: string, url: string, flux: 'avis' | 'alertes'): SourceAdapter {
   return {
     id,
+    // T54c : flux RSS WordPress attendu — un HTML servi ici est un mensonge transport.
+    formatAttendu: 'xml',
     async fetchCandidates(fetchFn, knownGuids?) {
       const response = await fetchFn(url);
       if (!response.ok) {

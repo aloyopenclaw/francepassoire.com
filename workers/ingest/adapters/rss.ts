@@ -193,6 +193,8 @@ export interface RssAdapter extends SourceAdapter {
 export function makeRssAdapter(feedCfg: FeedConfig): RssAdapter {
   return {
     id: feedCfg.id,
+    // T54c : flux RSS/Atom attendu — un HTML servi ici est un mensonge transport.
+    formatAttendu: 'xml',
     /**
      * @param knownGuids Optionnel : guids déjà vus (KV guid_set câblé par le
      *        runner en T19) — les items correspondants sont filtrés ici.

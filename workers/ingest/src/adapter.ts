@@ -12,6 +12,14 @@ import { hibpDiffAdapter } from '../adapters/hibp';
 export type CandidateStatus = 'NEW' | 'DRAFT' | 'PUBLISHED' | 'REJECTED';
 
 /**
+ * Format de corps attendu d'un adapter (détection de mort d'endpoint, T54c).
+ * Déclaratif : l'adapter n'implémente rien, c'est la sonde transport du
+ * runner (transport-health.ts) qui renifle chaque réponse pour tout le
+ * registre.
+ */
+export type FormatAttendu = 'xml' | 'json';
+
+/**
  * Candidat normalisé, calqué sur les colonnes de la table D1 `candidates`
  * (migrations/0001_init.sql).
  *
@@ -54,6 +62,13 @@ export interface Candidate {
  */
 export interface SourceAdapter {
   id: string;
+  /**
+   * Format de corps attendu (T54c) : un HTML servi là où 'xml'/'json' était
+   * attendu pose le drapeau KV source_dead:<id>. Absent (ex. cnil-sanctions,
+   * dont la page est en HTML par design) : seule la santé du statut HTTP est
+   * contrôlée.
+   */
+  formatAttendu?: FormatAttendu;
   fetchCandidates(fetchFn: typeof fetch, knownGuids?: Set<string>): Promise<Candidate[]>;
 }
 

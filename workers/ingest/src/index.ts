@@ -7,11 +7,18 @@
 // runner lui-même) / circuit breaker (3 échecs consécutifs → disabled +
 // alerte console.error).
 //
+// Détection de mort d'endpoint (T54c, transport-health.ts) : un non-200, un
+// 202 ou un HTML là où du XML/JSON était attendu pose le drapeau KV
+// source_dead:<id> (contrat du rapport quotidien workers/api) et
+// n'enregistre JAMAIS de succès — distinct du circuit breaker, réservé aux
+// exceptions : un mensonge HTTP ne doit pas passer pour un jour calme
+// (leçons hackmanac 202 / gnews 503 des 22-23/08).
+//
 // Accès D1/KV uniquement via l'env injecté — interfaces structurelles
 // minimales (pas de dépendance @cloudflare/workers-types), donc testable
 // par vitest avec des fakes en mémoire.
 
-import { adapters, type SourceAdapter } from './adapter';
+import { adapters, type Candidate, type SourceAdapter } from './adapter';
 import { isDailyRateOk } from '../adapters/cnil';
 import { hibpDiffAdapter, HIBP_BREACHES_URL } from '../adapters/hibp';
 // Internes du runner (extraction de index.ts — refactor pur, cf. runner-core.ts).
@@ -24,6 +31,7 @@ import {
   type D1PreparedStatement,
   type KVNamespace,
 } from './runner-core';
+import { appliquerVerdict, sondeTransport, type VerdictTransport } from './transport-health';
 
 export type { D1Database, D1PreparedStatement, KVNamespace };
 
@@ -85,6 +93,20 @@ async function runSource(
     return { adapter: adapter.id, inserted: 0, failed: false, skipped: true };
   }
 
+  /**
+   * Sortie de run pour mort d'endpoint (T54c) : drapeau KV posé (transition
+   * seule, cf. appliquerVerdict), journal fort, last_run mis à jour — mais
+   * NI succès enregistré NI circuit breaker armé (le breaker reste réservé
+   * aux exceptions). Un mensonge HTTP ne doit jamais passer pour un jour
+   * calme, et ne se re-tente pas : il est déterministe.
+   */
+  const mortTransport = async (v: VerdictTransport): Promise<SourceRunResult> => {
+    const maintenant = new Date();
+    await writeState(env.RUN_STATE, adapter.id, { ...state, last_run: maintenant.toISOString() });
+    await appliquerVerdict(env.RUN_STATE, adapter.id, v, maintenant);
+    return { adapter: adapter.id, inserted: 0, failed: true, skipped: false };
+  };
+
   let lastError: unknown = null;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
@@ -116,7 +138,21 @@ async function runSource(
             }) as typeof fetch
           : fetchFn;
 
-      const fetched = await adapterEffectif.fetchCandidates(fetchTee, knownGuids);
+      // T54c : la sonde juge CHAQUE réponse passée à l'adapter (statut +
+      // reniflage du format attendu) sans en modifier le comportement.
+      const { fetchSonde, verdict } = sondeTransport(adapter.formatAttendu, fetchTee);
+
+      let fetched: Candidate[];
+      try {
+        fetched = await adapterEffectif.fetchCandidates(fetchSonde, knownGuids);
+      } catch (error) {
+        // La sonde a vu la réponse mourir AVANT que l'adapter n'échoue à la
+        // parser (ex. ransomlook : json() lève sur le HTML servi) : mort
+        // d'endpoint T54c, pas une exception de run.
+        if (!verdict().ok) return await mortTransport(verdict());
+        throw error;
+      }
+      if (!verdict().ok) return await mortTransport(verdict());
       // Filet runner : les adapters qui ignorent knownGuids (paramètre
       // optionnel du contrat) voient leurs candidats déjà vus filtrés ici
       // aussi — le dédup est systémique, pas seulement par adapter.
@@ -142,6 +178,8 @@ async function runSource(
         guid_set: guidSet.slice(-GUID_SET_MAX),
         ...(hibpCatalogue !== undefined ? { hibp_catalog: hibpCatalogue } : {}),
       });
+      // T54c : réponse saine → le drapeau de mort éventuel est retiré.
+      await appliquerVerdict(env.RUN_STATE, adapter.id, { ok: true }, new Date());
       return { adapter: adapter.id, inserted, failed: false, skipped: false };
     } catch (error) {
       lastError = error;

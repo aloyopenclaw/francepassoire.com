@@ -18,6 +18,8 @@ export interface D1Database {
 export interface KVNamespace {
   get(key: string): Promise<string | null>;
   put(key: string, value: string, opts?: { expirationTtl?: number }): Promise<void>;
+  /** T54c : retrait du drapeau source_dead quand une source redevient saine. */
+  delete(key: string): Promise<void>;
 }
 
 /** Taille max de guid_set par source (FIFO) — borne la valeur KV. */

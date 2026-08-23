@@ -35,6 +35,9 @@ function estFrancais(titre: string, description: string): boolean {
 export function ransomlookAdapter(): SourceAdapter {
   return {
     id: 'ransomlook',
+    // T54c : API JSON attendue — la détection T54c devance le throw ci-dessous
+    // quand le HTML est servi (mort d'endpoint, pas exception de run).
+    formatAttendu: 'json',
     async fetchCandidates(fetchFn: typeof fetch): Promise<Candidate[]> {
       const reponse = await fetchFn(RANSOMLOOK_RECENT_URL, {
         headers: { 'user-agent': 'FrancePassoire-Ingest/1.0 (+https://francepassoire.com)' },

@@ -86,6 +86,8 @@ export interface RansomwareLiveAdapter extends SourceAdapter {
 
 export const ransomwareLiveAdapter: RansomwareLiveAdapter = {
   id: 'ransomware.live',
+  // T54c : API JSON attendue (un HTML servi par le mauvais vhost est documenté ci-dessus).
+  formatAttendu: 'json',
   async fetchCandidates(fetchFn, knownGuids?) {
     const response = await fetchFn(API_URL);
     // Non-200 (4xx comme 5xx) : rien à extraire. On ne lève pas — le circuit

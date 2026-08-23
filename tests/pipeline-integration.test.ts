@@ -85,6 +85,9 @@ function makeEnv(): { env: Env; rows: InsertedRow[]; store: Map<string, string> 
     async put(key, value) {
       store.set(key, value);
     },
+    async delete(key) {
+      store.delete(key);
+    },
   };
   return { env: { DB: db, RUN_STATE: runState }, rows, store };
 }

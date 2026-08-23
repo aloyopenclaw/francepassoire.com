@@ -125,6 +125,8 @@ function parsePreviousCatalog(previous: BreachSummary[] | string | undefined): B
 export function hibpDiffAdapter(options: HibpDiffOptions = {}): SourceAdapter {
   return {
     id: 'hibp',
+    // T54c : catalogue JSON attendu.
+    formatAttendu: 'json',
     async fetchCandidates(fetchFn: typeof fetch): Promise<Candidate[]> {
       // Le catalogue courant est TOUJOURS fetché — premier run compris : cet
       // appel unique amorce l'état (le runner T19 tee la réponse via son

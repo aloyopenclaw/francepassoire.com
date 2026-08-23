@@ -41,6 +41,9 @@ function makeEnv(): { env: Env; executed: ExecutedStatement[]; store: Map<string
     async put(key, value) {
       store.set(key, value);
     },
+    async delete(key) {
+      store.delete(key);
+    },
   };
   return { env: { DB: db, RUN_STATE: runState }, executed, store };
 }
