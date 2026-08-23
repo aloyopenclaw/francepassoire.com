@@ -34,7 +34,10 @@ env:
 jobs:
   rediger:
     runs-on: self-hosted
-    timeout-minutes: 50
+    # 24/08 : 50 min tuaient la moitié des rédactions en plein vol (opencode
+    # vérifie chaque source par curl, ~10-15 min/fiche) — le filet de sécurité
+    # reconvertissait les DRAFT en NEW : boucle catch-and-release, file 223.
+    timeout-minutes: 110
     steps:
       - name: Checkout (sans persistance du token bot — pushes via gh/owner)
         uses: actions/checkout@v4
@@ -55,7 +58,7 @@ jobs:
         run: |
           . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
-          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at DESC LIMIT 3) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
+          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at ASC LIMIT 6) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json > .agent-tmp/candidates.json
           head -c 300 .agent-tmp/candidates.json; echo
           N=$(python3 -c "import json; d=json.load(open('.agent-tmp/candidates.json')); print(len(d['result'][0]['results']))" 2>/dev/null || echo 0)
