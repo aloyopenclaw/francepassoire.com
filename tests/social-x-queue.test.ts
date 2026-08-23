@@ -169,15 +169,17 @@ describe('file social_outbox — intake enqueuePost (T39)', () => {
     expect(executed[0]?.sql).toMatch(/^INSERT INTO social_outbox/);
   });
 
-  it('accepte facebook et instagram (T51), refuse plateforme inconnue et payloads vides', async () => {
+  it('accepte linkedin et bluesky, refuse plateforme retirée (facebook, 23/08) et payloads vides', async () => {
     const { db, lignes } = makeDb();
-    await enqueuePost(db, 'facebook', ficheConfirmee());
-    await enqueuePost(db, 'instagram', ficheConfirmee());
-    expect(lignes.map((l) => l.platform)).toEqual(['facebook', 'instagram']);
-    // Délibéré : forcer une valeur hors union pour prouver le rejet runtime.
-    const tiktok = 'tiktok' as unknown as SocialPlatform;
-    await expect(enqueuePost(db, tiktok, ficheConfirmee())).rejects.toThrow(
-      /Plateforme « tiktok » inconnue/,
+    await enqueuePost(db, 'linkedin', ficheConfirmee());
+    await enqueuePost(db, 'bluesky', ficheConfirmee());
+    expect(lignes.map((l) => l.platform)).toEqual(['linkedin', 'bluesky']);
+    // Délibéré : forcer des valeurs hors union pour prouver le rejet runtime
+    // — facebook/instagram, retirées le 23/08 (décision propriétaire, plus
+    // de produits Meta), ne sont plus mises en file.
+    const facebook = 'facebook' as unknown as SocialPlatform;
+    await expect(enqueuePost(db, facebook, ficheConfirmee())).rejects.toThrow(
+      /Plateforme « facebook » inconnue : seules x, linkedin, bluesky, nostr sont mises en file\./,
     );
     await expect(
       enqueuePost(db, 'x', { ...ficheConfirmee(), text: '   ' }),

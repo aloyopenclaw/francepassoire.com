@@ -2,20 +2,22 @@
 //
 // Raccorde le balayage instant (watchlist.ts, diff catalogue */15) à la file
 // social_outbox que draine le worker social (cron */5). Toute fiche NOUVELLE
-// ou tout passage revendiquée → confirmée met six lignes en file (x, linkedin,
-// facebook, instagram, bluesky, nostr) — décision propriétaire 23/08 : toutes
-// les plateformes, chaque fiche, pas de plafond de rafale.
+// ou tout passage revendiquée → confirmée met quatre lignes en file (x,
+// linkedin, bluesky, nostr) — décision propriétaire 23/08 : toutes les
+// plateformes, chaque fiche, pas de plafond de rafale. Facebook Page et
+// Instagram, branchés en T51, sont retirés le même jour (décision
+// propriétaire : plus de produits Meta).
 //
 // CHOIX DE RENDU (contrainte : la garde du drain exige la mention exacte
 // MENTION_REVENDICATION pour statut « revendiquée », et le gabarit COURT est
 // plafonné à 280 — les deux ne tiennent pas ensemble) :
-//   - LONG (facebook, instagram, linkedin) : gabarit propriétaire
+//   - LONG (linkedin) : gabarit propriétaire
 //     renderSocialPost (mention intégrée à la ligne Statut depuis ce jour) ;
 //   - COURT confirmée (x, bluesky, nostr) : gabarit propriétaire
 //     renderSocialPostCourt ;
 //   - COURT revendiquée : renderNewFichePost (format natif de la file, mention
 //     intégrée, validé ≤ 260) ;
-//   - changement de statut (les six) : renderStatusChangePost (transitions
+//   - changement de statut (les quatre) : renderStatusChangePost (transitions
 //     légales de la taxonomie uniquement, sinon refus explicite).
 //
 // Idempotence : id DÉTERMINISTE « sw:<slug>:<plateforme> » (nouvelle fiche) ou
@@ -34,14 +36,28 @@ import {
 } from '../../../src/lib/social-templates';
 
 /** Plateformes destination — l'ordre est celui de workers/social types.ts. */
-const PLATFORMES = ['x', 'linkedin', 'facebook', 'instagram', 'bluesky', 'nostr'] as const;
+const PLATFORMES = ['x', 'linkedin', 'bluesky', 'nostr'] as const;
 type Plateforme = (typeof PLATFORMES)[number];
 
-const LONGUES: readonly Plateforme[] = ['facebook', 'instagram', 'linkedin'];
+const LONGUES: readonly Plateforme[] = ['linkedin'];
 const COURTES: readonly Plateforme[] = ['x', 'bluesky', 'nostr'];
+
+/** Porte d'âge (décision propriétaire 23/08 soir, cas france-pare-brise) :
+ *  seule une fiche REVENDIQUÉE il y a moins de 7 jours se publie. Une fiche
+ *  ancienne qui entre au catalogue est de l'HISTOIRE, pas de l'actualité —
+ *  les changements de statut restent publiés sans porte (la transition est
+ *  l'événement, même pour une fiche vieille). */
+const AGE_MAX_PUBLICATION_MS = 7 * 24 * 3600 * 1000;
 
 export interface DispatchOptions {
   log?: (...args: unknown[]) => void;
+  now?: Date;
+}
+
+/** Vrai si la fiche est assez récente pour être publiée (porte d'âge). */
+export function publiable(fiche: FicheDigest, maintenant: Date): boolean {
+  const revendiquee = Date.parse(fiche.dates.revendication);
+  return !Number.isNaN(revendiquee) && maintenant.getTime() - revendiquee < AGE_MAX_PUBLICATION_MS;
 }
 
 /** Texte rendu pour une plateforme : LONG, COURT (confirmée) ou natif-file
@@ -87,7 +103,7 @@ async function enfiler(
   return res.meta?.changes !== 0;
 }
 
-/** Met en file les six plateformes pour chaque fiche nouvelle / changée.
+/** Met en file les quatre plateformes pour chaque fiche nouvelle / changée.
  *  Ne lève JAMAIS : chaque (fiche × plateforme) est isolée. */
 export async function dispatcherInstantSocial(
   db: D1Database,
@@ -96,8 +112,13 @@ export async function dispatcherInstantSocial(
   options: DispatchOptions = {},
 ): Promise<void> {
   const log = options.log ?? console.log;
+  const maintenant = options.now ?? new Date();
 
   for (const fiche of nouveaux) {
+    if (!publiable(fiche, maintenant)) {
+      log(`social: ${fiche.slug} non publiée (porte d'âge : revendication du ${fiche.dates.revendication}, > 7 jours)`);
+      continue;
+    }
     for (const plateforme of PLATFORMES) {
       try {
         const text = rendre(fiche, plateforme);

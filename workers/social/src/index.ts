@@ -28,8 +28,6 @@
 
 import { MENTION_REVENDICATION } from '../../../src/lib/social-templates';
 import { send as sendBluesky } from '../clients/bluesky';
-import { send as sendFacebook } from '../clients/facebook';
-import { send as sendInstagram } from '../clients/instagram';
 import { send as sendLinkedInDirect } from '../clients/linkedin';
 import { send as sendLinkedInMake } from '../clients/make-linkedin';
 import { send as sendMakeX } from '../clients/make-x';
@@ -49,9 +47,10 @@ import {
 /** Tentatives max par ligne (1 initiale + 2 retries au fil des crons). */
 export const MAX_ATTEMPTS = 3;
 
-// Clients branchés — T38 : Bluesky et Nostr ; T51 : X via Make + Facebook
-// Page + Instagram (l'API X directe, pay-per-use, et TikTok, vidéo-first,
-// sont retirés — docs/social-setup.md).
+// Clients branchés — T38 : Bluesky et Nostr ; T51 : X via Make (l'API X
+// directe, pay-per-use, et TikTok, vidéo-first, sont retirés —
+// docs/social-setup.md) ; 23/08 : Facebook Page et Instagram retirés à
+// leur tour (décision propriétaire : plus de produits Meta).
 const CLIENTS: Record<SocialPlatform, SendFn> = {
   // X : délégation Make.com (module « Create a Post » OAuth'é @francepassoire)
   // — l'API directe est passée pay-per-use, hors périmètre.
@@ -60,8 +59,6 @@ const CLIENTS: Record<SocialPlatform, SendFn> = {
   // chemin direct (sendLinkedInDirect, API + w_organization_social) est mort
   // sans entreprise enregistrée ; conservé pour référence/future association.
   linkedin: sendLinkedInMake,
-  facebook: sendFacebook,
-  instagram: sendInstagram,
   bluesky: sendBluesky,
   nostr: sendNostr,
 };
@@ -217,7 +214,7 @@ async function processRow(
       return { id: row.id, platform: row.platform, status: 'PENDING_KEYS' };
     }
     case 'UNSUPPORTED_PAYLOAD': {
-      // Refus structurel honnête (ex. Instagram sans carte fiche) : jamais un 500.
+      // Refus structurel honnête (payload non postable tel quel) : jamais un 500.
       await setStatus(env.DB, row.id, 'DEAD');
       console.error(
         `[social] ${row.platform} ligne ${row.id} payload non postable → DEAD : ${result.reason}`,

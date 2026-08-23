@@ -179,14 +179,15 @@ describe('client LinkedIn — cassette POST /v2/ugcPosts (T40)', () => {
 });
 
 describe('drain — plateformes bout en bout (T40 + T51)', () => {
-  it('2 lignes : 1 x via webhook Make + 1 facebook sans clés → SENT + PENDING_KEYS, statuts corrects', async () => {
+  it('2 lignes : 1 x via webhook Make + 1 bluesky sans clés → SENT + PENDING_KEYS, statuts corrects', async () => {
     const { db, lignes } = makeDb([
       ligne('x', ficheRevendiqueeAvecMention(), 'ligne-x'),
-      ligne('facebook', ficheConfirmee(), 'ligne-fb'),
+      ligne('bluesky', ficheConfirmee(), 'ligne-bsky'),
     ]);
     // Voie X = bridge Make (T51) : MAKE_WEBHOOK_URL, le webhook répond 2xx.
     // NB : linkedin partagerait le MÊME webhook (client make-linkedin) — la
-    // ligne « sans clés » est donc facebook, qui n'a aucun secret dans l'env.
+    // ligne « sans clés » est donc bluesky, qui n'a aucun secret dans l'env
+    // (facebook/instagram, anciennes voix sans clés, sont retirées le 23/08).
     const env = makeEnv(db, { MAKE_WEBHOOK_URL: 'https://hook.eu1.make.com/test-x' });
     const appelsReseau: string[] = [];
     const fetchX = (async (u: string | URL | Request): Promise<Response> => {
@@ -199,10 +200,10 @@ describe('drain — plateformes bout en bout (T40 + T51)', () => {
 
     expect(outcomes).toEqual([
       { id: 'ligne-x', platform: 'x', status: 'SENT' },
-      { id: 'ligne-fb', platform: 'facebook', status: 'PENDING_KEYS' },
+      { id: 'ligne-bsky', platform: 'bluesky', status: 'PENDING_KEYS' },
     ]);
     expect(lignes.map((l) => l.status)).toEqual(['SENT', 'PENDING_KEYS']);
-    expect(appelsReseau).toEqual(['https://hook.eu1.make.com/test-x']); // facebook sans clés : zéro réseau
+    expect(appelsReseau).toEqual(['https://hook.eu1.make.com/test-x']); // bluesky sans clés : zéro réseau
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining('en attente de clés'));
   });
 });

@@ -9,8 +9,9 @@
 Les workers de publication (tâches 38–40, refonte 51) sont codés en mode **file d'attente** : chaque post est mis en file et publié dès que la clé de la plateforme concernée est disponible. **Le lancement du site n'attend pas ces clés.**
 
 - **Bluesky et Nostr sont opérationnels dès le jour 1** : vos identifiants existent ou seront générés par la tâche 27, sans review externe.
-- **X (via Make), LinkedIn (via Make), Facebook Page et Instagram démarrent en file d'attente** : les posts s'accumulent et partiront dès que vous aurez fourni la clé correspondante.
+- **X (via Make) et LinkedIn (via Make) démarrent en file d'attente** : les posts s'accumulent et partiront dès que vous aurez fourni la clé correspondante.
 - **TikTok est retiré** (T51) : la Content Posting API est vidéo-first — il n'existe pas de post texte, et nos rendus sont texte + URL de fiche. Le client et ses secrets ont été supprimés du code ; le jour d'une stratégie vidéo (digest hebdomadaire), on rouvrira le sujet.
+- **Facebook Page et Instagram sont retirés** (23/08/2026) : décision propriétaire — plus de produits Meta. Les clients, les plateformes et leurs secrets ont été supprimés du code ; le reste du guide est conservé pour mémoire.
 
 ## Secrets wrangler canoniques
 
@@ -23,10 +24,6 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 | `LINKEDIN_WEBHOOK_URL` | LinkedIn | URL du webhook du scénario Make LinkedIn (scénario DISTINCT du X) |
 | `LINKEDIN_ACCESS_TOKEN` | LinkedIn (client direct de référence) | Access token utilisateur (60 jours) |
 | `LINKEDIN_MEMBER_URN` | LinkedIn (client direct de référence) | URN du membre émetteur |
-| `FB_PAGE_ID` | Facebook | ID numérique de la Page |
-| `FB_PAGE_TOKEN` | Facebook **et** Instagram | Page access token (Graph API) |
-| `IG_USER_ID` | Instagram | ID du compte IG professionnel (`user_id` de graph.instagram.com/me) |
-| `IG_TOKEN` | Instagram | Token natif IGAA… (flux Instagram Login, graph.instagram.com uniquement) |
 | `BLUESKY_HANDLE` | Bluesky | Handle, ex. `votrecompte.bsky.social` |
 | `BLUESKY_APP_PASSWORD` | Bluesky | Mot de passe d'application `xxxx-xxxx-xxxx-xxxx` |
 | `NOSTR_NSEC` | Nostr | Clé privée `nsec1…` fournie par la tâche 27 |
@@ -37,8 +34,8 @@ Ces noms exacts sont consommés par les workers des tâches 38–40/51. Ne les r
 |------------|--------|--------------------|-----------------|---------------|
 | **X** | **Disponible via Make** | Créer un compte Make.com, un scénario Webhook → X « Create a Post », connecter @francepassoire | `MAKE_WEBHOOK_URL` | Immédiat (~20 min, offre gratuite Make) |
 | **LinkedIn** | **Disponible via Make** | Scénario Make distinct avec module LinkedIn « Create a Post » | `LINKEDIN_WEBHOOK_URL` | Validé (21/08) |
-| **Facebook Page** | **Disponible (self-service)** | App Meta, token Page via Graph API Explorer | `FB_PAGE_ID` + `FB_PAGE_TOKEN` | Immédiat (~20 min) |
-| **Instagram** | **Disponible (compte pro + app IG Login)** | Compte IG professionnel + app « Instagram API with Instagram Login » → token IGAA… | `IG_USER_ID` + `IG_TOKEN` | Fait (2026-08-22) |
+| ~~Facebook Page~~ | Retiré (23/08/2026) | Rien — décision propriétaire : plus de produits Meta | — | — |
+| ~~Instagram~~ | Retiré (23/08/2026) | Rien — décision propriétaire : plus de produits Meta | — | — |
 | **Bluesky** | **Disponible jour 1** | Créer un compte, générer un *App Password* | `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` | Immédiat (~5 min) |
 | **Nostr** | **Disponible jour 1** | Rien — la paire de clés est générée par la tâche 27 ; conservez le backup reçu | `NOSTR_NSEC` | Clé remise par la tâche 27 |
 | ~~TikTok~~ | Retiré (T51) | Rien — API vidéo-first incompatible avec nos posts texte+URL | — | — |
@@ -97,71 +94,19 @@ wrangler secret put MAKE_WEBHOOK_URL
 
 ---
 
-## 3. Facebook Page — token en 20 minutes, self-service
+## 3. Facebook Page — RETIRÉ
 
-### Console développeur
+**RETIRÉ le 23/08/2026 — décision propriétaire : plus de produits Meta ; le reste du guide est conservé pour mémoire.**
 
-Portail : [developers.facebook.com](https://developers.facebook.com/) (compte Facebook personnel requis).
-
-### Étapes
-
-1. [developers.facebook.com/apps/create](https://developers.facebook.com/apps/create/) : type **Business**, nom (ex. « FrancePassoire Social »), e-mail de contact. Aucune review nécessaire pour publier sur SA PROPRE page.
-2. Ajouter le produit **Facebook Login for Business** (ou utiliser l'onglet **Graph API Explorer** directement — plus rapide).
-3. Ouvrir **[Graph API Explorer](https://developers.facebook.com/tools/explorer/)** : sélectionner l'app, cliquer **Generate access token** en coignant les permissions **`pages_show_list`**, **`pages_read_engagement`**, **`pages_manage_posts`**. Autoriser via votre compte (il faut un rôle sur la Page FrancePassoire : admin ou éditeur).
-4. Dans le champ de requête : **`GET /me/accounts`** → la réponse contient la Page avec :
-   - **`id`** → c'est `FB_PAGE_ID` ;
-   - **`access_token`** (token de PAGE, plus fort que le token utilisateur) → c'est `FB_PAGE_TOKEN`.
-5. Régénérer le token de page depuis le token utilisateur LONGUE DURÉE (recommandé) : suivre **Access Token Debugger** ([developers.facebook.com/tools/accesstoken](https://developers.facebook.com/tools/accesstoken/)) — « Extend Access Token ». Un token de page d'une page dont vous êtes admin n'expire pas en pratique tant que le compte est actif ; le worker signale le code 190 (token mort) par lettre morte + log, jamais en silence.
-
-```
-wrangler secret put FB_PAGE_ID
-# Valeur : l'ID numérique de la Page (GET /me/accounts)
-
-wrangler secret put FB_PAGE_TOKEN
-# Valeur : le page access token (permissions pages_manage_posts)
-```
-
-### Comportement du worker
-
-- POST Graph `v21.0/{page-id}/feed` avec `{message, link, access_token}` — 200 → `SENT`, l'id du post est loguée.
-- Erreurs Graph classées : code **190/102** (token/session mort) → lettre morte immédiate avec la mention « régénérer FB_PAGE_TOKEN » ; code **4/17/32** (limites de débit) → rejoué au cron suivant ; tout autre code → lettre morte avec la raison Meta.
+Le client `workers/social/clients/facebook.ts`, la plateforme `facebook` de la file sociale et les secrets `FB_PAGE_ID` / `FB_PAGE_TOKEN` ont été supprimés du code. Les lignes déjà publiées restent dans l'historique D1 ; aucune nouvelle ligne Facebook n'est mise en file.
 
 ---
 
-## 4. Instagram — compte professionnel relié à la Page
+## 4. Instagram — RETIRÉ
 
-### Principe
+**RETIRÉ le 23/08/2026 — décision propriétaire : plus de produits Meta ; le reste du guide est conservé pour mémoire.**
 
-La publication passe par la **Graph API Content Publishing** (deux temps : conteneur `/media` puis `/media_publish`) sur **`graph.instagram.com`** et exige un **compte Instagram professionnel**. Deux flux possibles :
-
-- **Flux retenu (Instagram Login natif)** : une app « Instagram API with Instagram Login » (ex. `francepassoire-posting-ig`) génère un **token natif préfixé `IGAA…`** — valable UNIQUEMENT sur `graph.instagram.com` (rejeté par graph.facebook.com). Secrets : `IG_TOKEN` + `IG_USER_ID`. C'est ce qui est câblé en prod depuis le 2026-08-22.
-- Flux alternatif (Facebook Login) : compte IG relié à la Page + `FB_PAGE_TOKEN` — abandonné ici car le champ `instagram_business_account` exige les permissions `instagram_basic`/`instagram_content_publish` sur le token utilisateur.
-
-L'image du post est la **carte fiche 1080×1080** générée au build (`scripts/generate-fiche-cards.mjs`) à l'URL publique `https://francepassoire.com/fiche/<slug>/card.jpg` — JPEG conforme à l'exigence Instagram (« JPEG is the only image format supported »).
-
-### Étapes
-
-1. Dans l'app Instagram : **Réglages → Type de compte → Passer à un compte professionnel** (Business).
-2. Récupérer l'ID IG : avec le token IGAA…, `GET graph.instagram.com/v21.0/me?fields=user_id,username` → `user_id` (17841…) = **`IG_USER_ID`** (vérifié : `17841438939842966`, @francepassoire, BUSINESS).
-3. Charger les secrets :
-
-```
-wrangler secret put IG_USER_ID
-wrangler secret put IG_TOKEN
-# IG_USER_ID : l'ID numérique du compte IG (17841…), pas le handle
-# IG_TOKEN : le token IGAA… (attention : les tokens du panneau de setup
-#            sont courts-vécus ; échanger contre un 60 jours via
-#            GET graph.instagram.com/access_token?grant_type=ig_exchange_token
-#            &client_secret=<secret de l'app> quand il expire)
-```
-
-4. Test end-to-end (une fois les deux secrets posés) : mettre en file un vrai post depuis l'interface ou attendre le prochain post automatique — le cron */5 min publie via les deux appels Graph.
-
-### Garde-fous du worker
-
-- Caption plafonnée à **2200 caractères** et **30 hashtags** (limites IG — tronquade sûre, jamais un post refusé pour taille).
-- `image_url` doit être publique et JPEG : la carte est servie par le site même.
-- Quotas Meta à connaître : **50 posts/24 h** max par compte IG pro (notre cadence : quelques posts/semaine), et l'app non reviewée est limitée à la publication sur les comptes dont VOUS êtes admin — notre cas exact, aucune review nécessaire.
+Le client `workers/social/clients/instagram.ts`, la plateforme `instagram` de la file sociale et les secrets `IG_TOKEN` / `IG_USER_ID` ont été supprimés du code. La carte fiche 1080×1080 (`card.jpg`) reste générée au build : elle sert toujours d'image aux posts LinkedIn et X (via Make).
 
 ---
 

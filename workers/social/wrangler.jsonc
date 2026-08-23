@@ -59,19 +59,9 @@
   //     additionnel documenté par la T40 : le token seul ne suffit pas,
   //     l'UGC Post exige l'auteur).
   //
-  //   npx wrangler secret put FB_PAGE_ID
-  //     ID numérique de la Page Facebook (Graph API Explorer → GET
-  //     /me/accounts). Identifiant, pas un jeton — secret par uniformité
-  //     avec BLUESKY_HANDLE.
-  //
-  //   npx wrangler secret put FB_PAGE_TOKEN
-  //     Page access token (permissions pages_manage_posts +
-  //     pages_read_engagement) — sert aussi au client Instagram (compte IG
-  //     professionnel relié à la Page, même jeton).
-  //
-  //   npx wrangler secret put IG_USER_ID
-  //     ID du compte Instagram professionnel (GET /{page-id}?fields=
-  //     instagram_business_account sur la Page ci-dessus).
+  //   (Les secrets Facebook Page et Instagram n'existent plus : plateformes
+  //   retirées le 23/08 — décision propriétaire, plus de produits Meta ;
+  //   les clients correspondants ont été supprimés du worker.)
   //
   // Aucun secret n'existe au jour du lancement : le worker tourne quand
   // même (cron) et les lignes s'accumulent en PENDING_KEYS. Le déploiement

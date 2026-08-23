@@ -1,5 +1,6 @@
 // tests/api-social-dispatch.test.ts — dispatcher social T38/T47 : le balayage
-// instant alimente social_outbox (six plateformes, idempotent, garde-mention).
+// instant alimente social_outbox (quatre plateformes — facebook/instagram
+// retirés le 23/08, décision propriétaire — idempotent, garde-mention).
 import { describe, expect, it } from 'vitest';
 import { DatabaseSync } from 'node:sqlite';
 import { dispatcherInstantSocial } from '../workers/api/src/social-dispatch';
@@ -92,22 +93,22 @@ function lignes(raw: DatabaseSync) {
 }
 
 describe('dispatcherInstantSocial — nouvelle fiche', () => {
-  it('revendiquée : six plateformes, mention EXACTE partout (garde du drain), LONG avec image', async () => {
+  it('revendiquée : quatre plateformes, mention EXACTE partout (garde du drain), LONG avec image', async () => {
     const { d1, raw } = makeDb();
     await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
     const rows = lignes(raw);
-    expect(rows).toHaveLength(6);
+    expect(rows).toHaveLength(4);
     expect(rows.map((r) => r.platform).sort()).toEqual(
-      ['bluesky', 'facebook', 'instagram', 'linkedin', 'nostr', 'x'],
+      ['bluesky', 'linkedin', 'nostr', 'x'],
     );
     for (const r of rows) {
       expect(r.id).toBe(`sw:actua-20260822:${r.platform}`);
       expect(r.payload.statut).toBe('revendiquee');
       expect(r.payload.text).toContain(MENTION);
     }
-    const fb = rows.find((r) => r.platform === 'facebook')!;
-    expect(fb.payload.imageUrl).toBe(URL_FICHE + 'card.jpg');
-    expect(fb.payload.text).toContain('Statut : Revendiquée (revendication non confirmée par l’entité)');
+    const li = rows.find((r) => r.platform === 'linkedin')!;
+    expect(li.payload.imageUrl).toBe(URL_FICHE + 'card.jpg');
+    expect(li.payload.text).toContain('Statut : Revendiquée (revendication non confirmée par l’entité)');
     const x = rows.find((r) => r.platform === 'x')!;
     expect(x.payload.text).toContain('Nouvelle fiche revendiquée : Actua');
     expect(x.payload.imageUrl).toBeUndefined();
@@ -117,19 +118,19 @@ describe('dispatcherInstantSocial — nouvelle fiche', () => {
     const { d1, raw } = makeDb();
     await dispatcherInstantSocial(d1, [confirmee], [], { log: () => {} });
     const rows = lignes(raw);
-    expect(rows).toHaveLength(6);
+    expect(rows).toHaveLength(4);
     const x = rows.find((r) => r.platform === 'x')!;
     expect(x.payload.text.startsWith('🚨📣 Nouvelle fuite recensée : IRD')).toBe(true);
     expect(x.payload.text).not.toContain(MENTION);
-    const ig = rows.find((r) => r.platform === 'instagram')!;
-    expect(ig.payload.text).toContain('#FrancePassoire');
+    const li = rows.find((r) => r.platform === 'linkedin')!;
+    expect(li.payload.text).toContain('#FrancePassoire');
   });
 
   it('idempotent : double passage = zéro doublon (id déterministe + OR IGNORE)', async () => {
     const { d1, raw } = makeDb();
     await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
     await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
-    expect((lignes(raw)).length).toBe(6);
+    expect((lignes(raw)).length).toBe(4);
   });
 
   it('rendu refusé (volume monstrueux en COURT) : plateforme sautée avec log, les autres partent, aucun crash', async () => {
@@ -143,16 +144,42 @@ describe('dispatcherInstantSocial — nouvelle fiche', () => {
     await dispatcherInstantSocial(d1, [monstre], [], { log: () => {} });
     const rows = lignes(raw);
     const plates = rows.map((r) => r.platform).sort();
-    expect(plates).toEqual(['facebook', 'instagram', 'linkedin']);
+    expect(plates).toEqual(['linkedin']);
   });
 });
 
-describe('dispatcherInstantSocial — changement de statut', () => {
-  it('revendiquée → confirmée : six lignes sw:maj, texte de transition légale', async () => {
+describe('dispatcherInstantSocial — porte d\'âge (7 jours, décision propriétaire 23/08)', () => {
+  it('fiche revendiquée il y a plus de 7 jours → AUCUNE ligne en file, log sonore du skip', async () => {
+    const { d1, raw } = makeDb();
+    const vieille: FicheDigest = { ...revendiquee, slug: 'france-pare-brise-20260713', dates: { revendication: '2026-07-13', publication: '2026-08-23' } };
+    const logs: string[] = [];
+    await dispatcherInstantSocial(d1, [vieille], [], { log: (...a: unknown[]) => logs.push(String(a[0])), now: new Date('2026-08-23T12:00:00Z') });
+    expect((lignes(raw)).length).toBe(0);
+    expect(logs.some((l) => l.includes('france-pare-brise-20260713') && l.includes('porte d\'âge'))).toBe(true);
+  });
+
+  it('fiche revendiquée il y a 3 jours → publiée (4 plateformes)', async () => {
+    const { d1, raw } = makeDb();
+    const recente: FicheDigest = { ...revendiquee, dates: { revendication: '2026-08-20', publication: '2026-08-23' } };
+    await dispatcherInstantSocial(d1, [recente], [], { log: () => {}, now: new Date('2026-08-23T12:00:00Z') });
+    expect((lignes(raw)).length).toBe(4);
+  });
+
+  it('la porte ne s\'applique PAS aux changements de statut : vieille fiche confirmée → 4 lignes sw:maj', async () => {
+    const { d1, raw } = makeDb();
+    const vieilleConfirmee: FicheDigest = { ...confirmee, slug: 'vieille-confirmee-20260701', dates: { revendication: '2026-07-01', publication: '2026-08-23' }, statut: 'confirmee' };
+    await dispatcherInstantSocial(d1, [], [vieilleConfirmee], { log: () => {}, now: new Date('2026-08-23T12:00:00Z') });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(4);
+    expect(rows.every((r) => r.id.startsWith('sw:maj:vieille-confirmee-20260701:'))).toBe(true);
+  });
+});
+
+describe('dispatcherInstantSocial — changement de statut', () => {  it('revendiquée → confirmée : quatre lignes sw:maj, texte de transition légale', async () => {
     const { d1, raw } = makeDb();
     await dispatcherInstantSocial(d1, [], [confirmee], { log: () => {} });
     const rows = lignes(raw);
-    expect(rows).toHaveLength(6);
+    expect(rows).toHaveLength(4);
     for (const r of rows) {
       expect(r.id).toBe(`sw:maj:ird-20260821:${r.platform}`);
       expect(r.payload.text).toContain('passe de « revendiquée » à « confirmée »');
@@ -187,7 +214,7 @@ describe('intégration runInstantSweep → file sociale', () => {
     const resultat = await runInstantSweep(env, { fetchFn, sleep: async () => {}, log: () => {} });
     expect(resultat.nouveaux).toBe(1);
     const rows = lignes(raw);
-    expect(rows).toHaveLength(6);
+    expect(rows).toHaveLength(4);
     expect(rows.every((r) => r.payload.text.includes(MENTION_REVENDICATION))).toBe(true);
   });
 });

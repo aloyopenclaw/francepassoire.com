@@ -28,7 +28,7 @@ export const MENTION_REVENDICATION = 'revendication non confirmée par l’entit
 /**
  * Gabarit social propriétaire (décision owner 23/08) — structure EXACTE :
  * en-tête 🚨📣 + Statut/Volume + résumé (description verbatim) + CTA + URL.
- * LONG = FB/IG/LinkedIn (aucune limite + hashtags) ; COURT = X ≤ 280 et
+ * LONG = LinkedIn (aucune limite + hashtags) ; COURT = X ≤ 280 et
  * Bluesky ≤ 300 graphèmes (sans résumé, volume sans clause « selon X »).
  */
 export const CTA_LONG =
@@ -48,7 +48,7 @@ const SECTEURS_SOCIAUX: Record<string, string> = {
   recherche: 'Recherche', autre: 'Autre',
 };
 
-/** Hashtags de portée (FB/IG/LinkedIn) : fixes + entité + groupe ransomware. */
+/** Hashtags de portée (LinkedIn) : fixes + entité + groupe ransomware. */
 function hashtags(entity: string, groupeAffiche?: string): string {
   const slug = entity
     .normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
@@ -179,7 +179,7 @@ function ligneStatutLong(statut: string): string {
     : `Statut : ${piluleStatut(statut)}`;
 }
 
-/** Gabarit LONG — FB / Instagram / LinkedIn (aucune limite, hashtags inclus). */
+/** Gabarit LONG — LinkedIn (aucune limite, hashtags inclus). */
 export function renderSocialPost(post: SocialPostInput): string {
   if (!post.description.trim()) {
     throw new SocialTemplateError(

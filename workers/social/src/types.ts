@@ -55,21 +55,6 @@ export interface Env {
   LINKEDIN_ACCESS_TOKEN?: string;
   /** URN du membre émetteur, ex. urn:li:person:XXXXXX (page Token Generator). */
   LINKEDIN_MEMBER_URN?: string;
-  /** ID de la Page Facebook (feed de publication), ex. 1234567890. */
-  FB_PAGE_ID?: string;
-  /**
-   * Page access token Facebook (Graph API Explorer → /me/accounts) — sert
-   * AUSSI au client Instagram (compte IG professionnel relié à la Page).
-   */
-  FB_PAGE_TOKEN?: string;
-  /**
-   * Token Instagram Login natif (préfixe IGAA…, App « Instagram API with
-   * Instagram Login ») — valable UNIQUEMENT sur graph.instagram.com, où il
-   * remplace le duo Page/IG_USER_ID du flux Facebook Login.
-   */
-  IG_TOKEN?: string;
-  /** ID du compte Instagram professionnel : 178414… (flux IG Login) ou via la Page. */
-  IG_USER_ID?: string;
   /** Handle Bluesky, ex. francepassoire.bsky.social (tâche 38). */
   BLUESKY_HANDLE?: string;
   /**
@@ -87,21 +72,18 @@ export interface Env {
 
 /**
  * Plateformes gérées par ce worker (T38–T40 : Bluesky/Nostr, X, LinkedIn ;
- * T51 : X passe au bridge Make, + Facebook Page + Instagram, TikTok retiré).
+ * T51 : X passe au bridge Make, TikTok retiré ; 23/08 : Facebook Page et
+ * Instagram retirés — décision propriétaire : plus de produits Meta).
  */
 export type SocialPlatform =
   | 'x'
   | 'linkedin'
-  | 'facebook'
-  | 'instagram'
   | 'bluesky'
   | 'nostr';
 
 export const PLATFORMES: readonly SocialPlatform[] = [
   'x',
   'linkedin',
-  'facebook',
-  'instagram',
   'bluesky',
   'nostr',
 ];
@@ -133,8 +115,8 @@ export interface PostPayload {
  * Verdict d'un client de plateforme. Quatre états, jamais d'exception :
  *  - SENT : publié, externalId logué ;
  *  - PENDING_KEYS : secret absent, la ligne reste en file (jamais un échec) ;
- *  - UNSUPPORTED_PAYLOAD : honnête refus structurel (ex. URL sans carte pour
- *    Instagram) ;
+ *  - UNSUPPORTED_PAYLOAD : honnête refus structurel (payload non postable
+ *    tel quel sur la plateforme) ;
  *  - ERROR : échec d'appel — retryable (429/5xx/réseau) ou non (401/4xx).
  */
 export type SendResult =

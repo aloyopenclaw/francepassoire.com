@@ -147,8 +147,8 @@ deux côtés, ou la brancher sur un jeton d'application.
 | PR GitHub | api.github.com | `workers/ingest/src/pr-automation.ts:104` | 200 | 200 | OK | Garder |
 | Email Brevo | api.brevo.com | `workers/api/src/watchlist.ts:61` | 401 sans clé (joignable) | 401 (un timeout transitoire sur 3 essais) | OK | Garder |
 | Turnstile siteverify | challenges.cloudflare.com | `workers/api/src/index.ts:77` | 405 en GET (joignable) | 405 | OK | Garder |
-| Graph Facebook | graph.facebook.com | `workers/social/clients/facebook.ts:69` | 400 sans token (joignable) | 400 | OK | Garder |
-| Graph Instagram | graph.instagram.com | `workers/social/clients/instagram.ts:22` | 400 sans token (joignable) | 400 | OK | Garder |
+| Graph Facebook | graph.facebook.com | `workers/social/clients/facebook.ts:69` (supprimé) | 400 sans token (joignable) | 400 | RETIRÉ (décision propriétaire 23/08 : plus de produits Meta) | Chemins supprimés du worker social |
+| Graph Instagram | graph.instagram.com | `workers/social/clients/instagram.ts:22` (supprimé) | 400 sans token (joignable) | 400 | RETIRÉ (décision propriétaire 23/08 : plus de produits Meta) | Chemins supprimés du worker social |
 | LinkedIn UGC | api.linkedin.com | `workers/social/clients/linkedin.ts:19` | 401 sans token (joignable) | 401 | OK | Garder |
 | Webhooks Make.com | secrets `LINKEDIN_WEBHOOK_URL` / `MAKE_WEBHOOK_URL` | `workers/social/clients/make-linkedin.ts:26`, `make-x.ts:28` | non sondable : l'URL est le credential | idem | NON AUDITABLE par principe | RAS (le secret n'existe pas en clair, c'est voulu) |
 | Auto-sondes du site | francepassoire.com, api.francepassoire.com | `workers/watchdog/src/cibles.ts:29-47` | (cibles internes) | 200 | OK | Garder |
