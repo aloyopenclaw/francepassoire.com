@@ -59,7 +59,7 @@ import type { D1Database, Env, KVNamespace } from './index';
 const SITE_URL = 'https://francepassoire.com';
 const SITEVERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 const BREVO_SEND_URL = 'https://api.brevo.com/v3/smtp/email';
-const FICHES_URL = 'https://francepassoire.com/api/v1/fiches.json';
+const FICHES_URL = 'https://francepassoire.com/opendata/v1/fiches.json';
 const SENDER_EMAIL = 'alerte@francepassoire.com';
 const SENDER_NAME = 'France Passoire';
 
