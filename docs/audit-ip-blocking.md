@@ -39,10 +39,10 @@ est bloqué, ce qui est dégradé et ce qui a déjà basculé sur le VPS.
 | rss:jdn | www.journaldunet.com | `rss.ts:239` | 200 XML (0,7 s) | 200 XML | OK | Garder |
 | rss:zataz | www.zataz.com | `rss.ts:240` | 200 XML | 200 XML | OK | Garder |
 | rss:fuitesinfos | fuitesinfos.fr | `rss.ts:245` | 200 XML | 200 XML | OK | Garder |
-| rss:gnews-fuites | news.google.com | `rss.ts:251` | **503** (3 sondages, 2 UA différents, 6 à 9 s avant échec) | 200 XML | **BLOQUÉ** | **Bascule VPS proposée** (même motif que FrenchBreaches ; aujourd'hui l'adaptateur récolte du vide en silence) |
+| rss:gnews-fuites | news.google.com | retiré de `rss.ts`, moisson `.github/workflows/gnews-vps.yml` | **503** (3 sondages, 2 UA différents, 6 à 9 s avant échec) | 200 XML | **DÉJÀ VPS** | Bascule appliquée le 23/08 : `gnews-vps.yml` (même contrat d'insertion que `fb-vps.yml`) |
 | rss:undernews | www.undernews.fr | `rss.ts:252` | 200 XML | 200 XML | OK | Garder |
 | rss:dsb | www.datasecuritybreach.fr | `rss.ts:253` | 200 XML | 200 XML | OK | Garder |
-| rss:hackmanac | hackmanac.com | `rss.ts:254` | **202 + page HTML anti-bot** (interstitiel meta-refresh, tous UA testés) | 200 XML réel | **BLOQUÉ** | **Bascule VPS proposée** ; voir constat 4.2 (échec silencieux) |
+| rss:hackmanac | hackmanac.com | retiré de `rss.ts` | **202 + page HTML anti-bot** (interstitiel meta-refresh, tous UA testés) | 200 XML réel | **RETIRÉ** | Source abandonnée le 23/08 : redondante avec Zataz/DSB/Undernews (décision propriétaire) |
 | ransomware.live | api.ransomware.live | `adapters/ransomware-live.ts:27` | 200 JSON | 200 JSON | OK | Garder |
 | RansomLook | www.ransomlook.io | `adapters/ransomlook.ts:13` | 200 JSON | 200 JSON | OK | Garder |
 | CERT-FR avis | www.cert.ssi.gouv.fr | `adapters/cert-fr.ts:32` | 200 XML | 200 XML | OK | Garder |
@@ -60,8 +60,8 @@ est bloqué, ce qui est dégradé et ce qui a déjà basculé sur le VPS.
 Workers**, avec l'UA navigateur ET l'UA pipeline. Le VPS obtient le flux
 complet (200 XML). L'adaptateur RSS traite un statut non-2xx par
 `return []` (`rss.ts:207`) : la source ne produit donc RIEN depuis le
-worker, sans erreur visible. Proposition (non implémentée) : un workflow
-VPS sur le modèle de `fb-vps.yml`, ou l'ajout du flux à `veille-sociale-vps.yml`.
+worker, sans erreur visible. Décision appliquée : `gnews-vps.yml` moissonne
+ce flux depuis le VPS (même contrat d'insertion que `fb-vps.yml`).
 
 ### 4.2 Hackmanac : le pire des cas, un 200-factice qui récolte du vide
 
@@ -69,9 +69,10 @@ Depuis Workers, hackmanac.com répond **202** avec une page HTML
 anti-bot (interstitiel meta-refresh), quel que soit l'UA. Or 202 EST un
 statut `res.ok` pour l'adaptateur (`rss.ts:204-207`) : le parseur reçoit du
 HTML, n'y trouve aucun `<item>`, et la récolte est vide SANS aucun signal
-d'échec. Depuis le VPS : 200 et le vrai flux RSS. Proposition : bascule VPS,
-et à court terme considérer « 202 sans XML » comme un échec de source dans
-l'adaptateur RSS (à implémenter séparément si retenu).
+d'échec. Depuis le VPS : 200 et le vrai flux RSS. Décision propriétaire :
+source retirée (redondante avec Zataz/DSB/Undernews) ; la piste « 202 sans
+XML = échec de source » dans l'adaptateur RSS reste pertinente si une autre
+source reproduit ce motif.
 
 ### 4.3 FrenchBreaches : le bot-check vit encore
 
@@ -131,9 +132,9 @@ deux côtés, ou la brancher sur un jeton d'application.
 ## 7. Règles de décision appliquées
 
 1. Source saine depuis Workers : **garder sur le worker** (aucune action).
-2. Morte depuis Workers mais saine depuis le VPS : **bascule VPS proposée**
-   (PROPOSITION SEULE, rien n'a été implémenté par cet audit ; modèle :
-   `fb-vps.yml`). Concernées : `rss:gnews-fuites`, `rss:hackmanac`.
+2. Morte depuis Workers mais saine depuis le VPS : **bascule VPS** (modèle :
+   `fb-vps.yml`). Concernées : `rss:gnews-fuites` (basculée le 23/08 via
+   `gnews-vps.yml`), `rss:hackmanac` (finalement retirée : redondance).
 3. Instable selon l'UA : **exiger un UA navigateur** côté VPS et ne pas
    rebasculer au worker. Concernées : Reddit, FrenchBreaches.
 4. Morte des deux côtés : question de contrat d'API, pas d'IP ; décision
@@ -161,6 +162,7 @@ session (hors dépôt).
   avec le commentaire d'en-tête de `veille-sociale-vps.yml`.
 * Mastodon renvoie des résultats vides depuis les deux côtés : ce n'est pas
   un blocage par IP.
-* Deux sources configurées dans le worker ingest récoltent actuellement du
-  vide en silence (`gnews-fuites`, `hackmanac`) : c'était précisément la
-  classe de panne que cet audit devait révéler.
+* Deux sources configurées dans le worker ingest récoltaient du vide en
+  silence (`gnews-fuites`, `hackmanac`) : c'était précisément la classe de
+  panne que cet audit devait révéler. Corrigé le jour même (gnews basculée
+  sur `gnews-vps.yml`, hackmanac retirée).
