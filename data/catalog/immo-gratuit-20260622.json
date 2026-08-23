@@ -1,0 +1,48 @@
+{
+  "slug": "immo-gratuit-20260622",
+  "entity": "Immo-gratuit",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-22",
+    "publication": "2026-06-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "nombre non communiqué ; échantillon partiel publié à titre de preuve, selon UndercodeNews"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "UndercodeNews — French Real Estate Platform Allegedly Hit by SQL Injection Attack, Sensitive Data Exposure Feared (24 juin 2026)",
+      "url": "https://undercodenews.com/french-real-estate-platform-allegedly-hit-by-sql-injection-attack-sensitive-data-exposure-feared-dark-web-recent-claims-video/",
+      "kind": "article"
+    },
+    {
+      "label": "DailyDarkWeb — IMMO-GRATUIT.COM Allegedly Compromised via SQL Injection (24 juin 2026)",
+      "url": "https://x.com/DailyDarkWeb/status/2069655055150530577",
+      "kind": "revendication"
+    },
+    {
+      "label": "00Sec — dump partiel des données utilisateurs du site immo-gratuit.com (22 juin 2026)",
+      "url": "https://00sec.com/darknet/Q0YRR0EVShZGEhUQQktKSkERERZDEEFCRUYREBFBQEJZAwYRHRYHXhsHHh9eQ0NDQ0BB",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 22 juin 2026, le digest de veille 00Sec rapporte la publication d'un échantillon de la base du site d'annonces immobilières immo-gratuit.com. Un acteur affirme y avoir accédé par injection SQL. Selon les relais, l'échantillon contient noms, e-mails, mots de passe, numéros de téléphone, villes, adresses et identifiants de session. L'acteur présente l'extraction comme volontairement limitée et affirme que la faille reste exploitable. Le 24 juin, le compte DailyDarkWeb relaie la revendication, puis UndercodeNews publie une analyse. L'exploitant n'a pas confirmé l'incident à ce stade. L'authenticité du dépôt et le volume réel des données restent à établir.",
+  "timeline": [
+    {
+      "date": "2026-06-22",
+      "event": "Le digest 00Sec rapporte un dump partiel de la base du site : identifiants, noms, mots de passe, e-mails, villes, téléphones et adresses sont annoncés."
+    },
+    {
+      "date": "2026-06-24",
+      "event": "Le compte DailyDarkWeb relaie la revendication d'une injection SQL ; UndercodeNews publie une analyse citant des identifiants de session dans l'échantillon."
+    }
+  ]
+}
