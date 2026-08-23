@@ -1,0 +1,48 @@
+{
+  "slug": "france-pare-brise-20260713",
+  "entity": "France Pare-Brise",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-13",
+    "publication": "2026-07-13"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volumes divergents et non confirmés : plus de 5 000 dossiers clients selon la revendication relayée par FrenchBreaches, environ 100 000 personnes selon la revendication relayée par Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — France Pare-Brise : 100 000 dossiers avec permis, cartes grises et IBAN revendiqués (13 juillet 2026)",
+      "url": "https://www.cyberattaque.org/france-pare-brise-100-000-dossiers-avec-permis-cartes-grises-et-iban-revendiques/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Plus de 5 000 dossiers clients de France Pare-Brise revendiqués par un groupe se présentant sous le nom de LunarisSec (14 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/france-pare-brise-mrkjfwtjw105ywlmsum",
+      "kind": "article"
+    }
+  ],
+  "description": "France Pare-Brise est une enseigne du groupe Saint-Gobain spécialisée dans la réparation et le remplacement de vitrages automobiles. Une revendication de fuite de données la visant est relayée le 13 juillet 2026. Selon Cyberattaque.org, l'auteur affirme avoir exploité une faille IDOR sur franceparebrise.fr pour récupérer des factures et dossiers clients en PDF. Selon FrenchBreaches, le groupe LunarisSec affirme détenir plus de 5 000 dossiers clients comportant identités, coordonnées, certificats d'immatriculation et IBAN. Cyberattaque.org évoque environ 100 000 personnes concernées selon la revendication. Ni l'entreprise ni les autorités n'ont confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2026-07-13",
+      "event": "Cyberattaque.org décrit une revendication exploitant une faille IDOR sur franceparebrise.fr pour récupérer des factures certifiées et des dossiers clients en PDF."
+    },
+    {
+      "date": "2026-07-14",
+      "event": "FrenchBreaches attribue la revendication au groupe LunarisSec sur un forum cybercriminel : plus de 5 000 dossiers clients et des certificats d'immatriculation en preuve."
+    },
+    {
+      "date": "2026-07-15",
+      "event": "Cyberattaque.org met à jour son article : aucune confirmation officielle de France Pare-Brise ni des autorités à ce stade."
+    }
+  ]
+}
