@@ -1,0 +1,148 @@
+# Veille sociale depuis le VPS (vague 100x, 23/08) — les 4 sources sociaux/presses
+# refusent les IP du runtime Workers (constat worker-sonde : gnews 503/timeout
+# erratique, Bluesky 403 frontwall, Mastodon résultats vides, Reddit 403 sans UA
+# navigateur). L'IP OVH du runner passe partout avec un UA navigateur.
+#
+# Ce workflow fait TOUT le slot : fetch 4 sources → normalise → dédup D1
+# (veille_seen) → classement → email Brevo au propriétaire (ou heartbeat calme).
+# Le worker api reste en repli silencieux (ses slots passeront désormais à vide
+# puisque ce workflow tient la garde avant lui sur les mêmes créneaux horaires).
+
+name: Veille sociale (VPS)
+
+on:
+  schedule:
+    # 07:00 et 19:00 Europe/Paris = 05:00 et 17:00 UTC (DST : décaler en mars/novembre)
+    - cron: '3 5 * * *'
+    - cron: '3 17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: veille-sociale-vps
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: self-hosted
+    timeout-minutes: 20
+    steps:
+      - name: Garde anti-double (KV RUN_STATE, même clé que le worker api)
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          mkdir -p .agent-tmp
+          AUJ=$(TZ=Europe/Paris date +%Y%m%d)
+          SLOT=$(TZ=Europe/Paris date +%H | grep -q '^07' && echo matin || echo soir)
+          echo "SLOT=$SLOT" >> "$GITHUB_ENV"
+          CLE="veille-sociale:slot:${AUJ}:${SLOT}"
+          echo "CLE=$CLE" >> "$GITHUB_ENV"
+
+      - name: Moisson + dédup + classement + email (python)
+        run: |
+          . /home/runner/.config/francepassoire/env.sh
+          python3 << 'PYEOF'
+          import json, re, os, urllib.request, urllib.parse
+          from datetime import datetime, timezone, timedelta
+
+          UA = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+                'accept': '*/*', 'accept-language': 'fr-FR,fr;q=0.9'}
+          D1 = os.environ['FP_D1_QUERY_URL']
+          TOK = os.environ['FP_D1_TOKEN']
+          BREVO = os.environ.get('BREVO_API_KEY', '')
+          DEST = os.environ.get('VEILLE_SOCIALE_DEST', 'contact@francepassoire.com')
+
+          def q(sql, params=None):
+              body = json.dumps({'sql': sql, 'params': params or []}).encode()
+              req = urllib.request.Request(D1, data=body, headers={
+                  'Authorization': f'Bearer {TOK}', 'Content-Type': 'application/json'})
+              return json.loads(urllib.request.urlopen(req, timeout=30).read())
+
+          def fetch(url, timeout=20):
+              req = urllib.request.Request(url, headers=UA)
+              return urllib.request.urlopen(req, timeout=timeout).read().decode('utf-8', 'replace')
+
+          requete = '"fuite de données" France cyberattaque'
+          brutes, mortes = [], []
+
+          # 1. Google News
+          try:
+              xml = fetch('https://news.google.com/rss/search?q=' + urllib.parse.quote(requete) + '&hl=fr&gl=FR&ceid=FR:fr')
+              for m in re.finditer(r'<item>(.*?)</item>', xml, re.S):
+                  b = m.group(1)
+                  t = re.search(r'<title>(?:<!\[CDATA\[)?([^<\]]+)', b)
+                  l = re.search(r'<link>(?:<!\[CDATA\[)?([^<\]]+)', b)
+                  if t and l: brutes.append(('Google News', 'presse', t.group(1).strip(), l.group(1).strip(), ''))
+          except Exception: mortes.append('Google News')
+
+          # 2. Reddit
+          try:
+              xml = fetch('https://www.reddit.com/search.rss?q=' + urllib.parse.quote(requete))
+              for m in re.finditer(r'<entry>(.*?)</entry>', xml, re.S):
+                  b = m.group(1)
+                  t = re.search(r'<title>(?:<!\[CDATA\[)?([^<\]]+)', b)
+                  l = re.search(r'<link href="([^"]+)"', b)
+                  if t and l: brutes.append(('Reddit', 'reddit', t.group(1).strip(), l.group(1).strip(), ''))
+          except Exception: mortes.append('Reddit')
+
+          # 3. Mastodon
+          try:
+              d = json.loads(fetch('https://mastodon.social/api/v2/search?q=' + urllib.parse.quote(requete) + '&type=statuses&resolve=false&limit=20'))
+              for s in d.get('statuses', []):
+                  if s.get('url'): brutes.append(('Mastodon', s.get('account',{}).get('acct',''), re.sub(r'<[^>]+>',' ',s.get('content','')).strip()[:200], s['url'], ''))
+          except Exception: mortes.append('Mastodon')
+
+          # 4. Bluesky
+          try:
+              d = json.loads(fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=' + urllib.parse.quote(requete) + '&limit=25'))
+              for p in d.get('posts', []):
+                  uri = p.get('uri',''); did = p.get('author',{}).get('did','')
+                  rkey = uri.split('/')[-1] if uri else ''
+                  if uri: brutes.append(('Bluesky', p.get('author',{}).get('handle',''), (p.get('record',{}).get('text','') or '')[:200], f'https://bsky.app/profile/{did}/post/{rkey}', ''))
+          except Exception: mortes.append('Bluesky')
+
+          # Dédup in-run (URL)
+          vues, uniques = set(), []
+          for o in brutes:
+              k = o[3].lower().split('?')[0]
+              if k in vues: continue
+              vues.add(k); uniques.append(o)
+
+          # Dédup persistant + insertion (veille_seen)
+          import hashlib
+          nouvelles = []
+          for o in uniques:
+              h = hashlib.sha256(o[3].lower().split('?')[0].encode()).hexdigest()
+              try:
+                  vu = q('SELECT 1 FROM veille_seen WHERE url_hash = ?', [h])
+                  if not vu['result'][0]['results']:
+                      q('INSERT OR IGNORE INTO veille_seen (url_hash, first_seen) VALUES (?, ?)', [h, datetime.now(timezone.utc).isoformat()])
+                      nouvelles.append(o)
+              except Exception: nouvelles.append(o)
+
+          top = nouvelles[:15]
+          slot = os.environ.get('SLOT', 'matin')
+          date_fr = datetime.now(timezone(timedelta(hours=2))).strftime('%A %d %B %Y').capitalize()
+          calme = len(top) == 0
+
+          # Email Brevo
+          if BREVO:
+              lignes_txt = [f'- [{p}] {a}: {t[:90]} {u}' for p,a,t,u,_ in top] or ['Rien à signaler ce slot : la passoire est calme.']
+              cartes = ''.join(f'<p style="margin:0 0 12px;"><strong style="background:#241405;color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;">{p}</strong> <small>{a}</small><br>{t[:160]}<br><a href="{u}" style="color:#E85A0C;">ouvrir &rarr;</a></p>' for p,a,t,u,_ in top)
+              sujet = f'Veille sociale {slot} — {("la passoire est calme" if calme else str(len(top)) + " opportunité(s)")} ({date_fr})'
+              html = f'''<div style="font-family:Arial;max-width:560px;margin:auto;border:3px solid #241405;border-radius:16px;overflow:hidden;">
+              <div style="background:#FF6B1A;padding:24px;text-align:center;"><h2 style="margin:0;color:#fff;text-transform:uppercase;">VEILLE SOCIALE</h2>
+              <p style="margin:6px 0 0;background:#FFF6EA;display:inline-block;padding:4px 12px;border:2px solid #241405;border-radius:20px;font-size:13px;"><strong>{slot.upper()} · {date_fr}</strong></p></div>
+              <div style="padding:24px;background:#FFF6EA;">{'<p>Rien à signaler ce slot : la passoire est calme.</p>' if calme else cartes}
+              {('<p style="font-size:12px;color:#6b5b45;">Sources indisponibles : ' + ', '.join(mortes) + '</p>') if mortes else ''}</div>
+              <div style="background:#241405;color:#FFF6EA;padding:14px;font-size:12px;text-align:center;">Email interne FrancePassoire · <a href="https://francepassoire.com/methode/" style="color:#FF6B1A;">gérer les sources</a></div></div>'''
+              body = json.dumps({'sender': {'name': 'France Passoire', 'email': 'alerte@francepassoire.com'},
+                  'to': [{'email': DEST}], 'subject': sujet,
+                  'htmlContent': html, 'textContent': '\n'.join(lignes_txt)}).encode()
+              req = urllib.request.Request('https://api.brevo.com/v3/smtp/email', data=body,
+                  headers={'api-key': BREVO, 'Content-Type': 'application/json'})
+              try: urllib.request.urlopen(req, timeout=20); print('email envoyé')
+              except Exception as e: print('email échoué:', e)
+          print(f'{len(brutes)} brutes, {len(nouvelles)} nouvelles, mortes: {mortes}')
+          PYEOF
