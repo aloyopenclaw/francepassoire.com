@@ -39,6 +39,16 @@ const dateTitre =
     : dateAttribution(fiche);
 const titreDocument = `${fiche.entity} : la fiche du ${formaterDate(dateTitre)} - France Passoire`;
 
+// Fraîcheur (GEO) : datePublished suit la règle d'attribution (stats.ts :
+// publication ?? revendication), dateModified retient l'événement le plus
+// récent connu de la fiche (revendication / publication / confirmation).
+const datesFiche = [
+  fiche.dates.revendication,
+  fiche.dates.publication,
+  fiche.dates.confirmation,
+].filter((date): date is string => typeof date === 'string');
+const dateModification = datesFiche.reduce((a, b) => (a > b ? a : b));
+
 const articleJsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -48,6 +58,8 @@ const articleJsonLd = JSON.stringify({
   publisher: { '@type': 'Organization', name: 'FrancePassoire' },
   isAccessibleForFree: true,
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  datePublished: dateAttribution(fiche),
+  dateModified: dateModification,
 });
 
 // Rétroliens fiche → hubs (Ton A, factuel sec) : un lien par hub EXISTANT
