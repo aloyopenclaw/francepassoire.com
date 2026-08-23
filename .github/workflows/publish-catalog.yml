@@ -59,7 +59,10 @@ jobs:
         run: node scripts/append-registry.mjs --fiches-dir data/catalog
 
       - name: Ancrages Nostr (upsert)
-        run: node scripts/publish-anchors.mjs
+        run: |
+          . /opt/francepassoire-shared/env.sh
+          export FRANCEPASSOIRE_NOSTR_KEY=/opt/francepassoire-shared/nostr.key
+          node scripts/publish-anchors.mjs
 
       - name: Vérification chaîne (refuse et bloque si cassée)
         run: node scripts/verify-registry.mjs registre.jsonl
@@ -84,7 +87,7 @@ jobs:
       - name: Déployer Pages
         run: |
           . /opt/francepassoire-shared/env.sh
-export FRANCEPASSOIRE_NOSTR_KEY=/opt/francepassoire-shared/nostr.key
+          export FRANCEPASSOIRE_NOSTR_KEY=/opt/francepassoire-shared/nostr.key
           npx wrangler pages deploy dist --project-name=francepassoire --branch=main --commit-dirty=true
 
       - name: Nettoyage des runs fantômes éventuels
