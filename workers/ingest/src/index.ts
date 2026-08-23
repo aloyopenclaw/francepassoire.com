@@ -11,23 +11,21 @@
 // minimales (pas de dépendance @cloudflare/workers-types), donc testable
 // par vitest avec des fakes en mémoire.
 
-import { adapters, type Candidate, type SourceAdapter } from './adapter';
+import { adapters, type SourceAdapter } from './adapter';
 import { isDailyRateOk } from '../adapters/cnil';
 import { hibpDiffAdapter, HIBP_BREACHES_URL } from '../adapters/hibp';
+// Internes du runner (extraction de index.ts — refactor pur, cf. runner-core.ts).
+import {
+  GUID_SET_MAX,
+  insertCandidates,
+  readState,
+  writeState,
+  type D1Database,
+  type D1PreparedStatement,
+  type KVNamespace,
+} from './runner-core';
 
-export interface D1PreparedStatement {
-  bind(...values: unknown[]): D1PreparedStatement;
-  run(): Promise<{ success: boolean }>;
-}
-
-export interface D1Database {
-  prepare(query: string): D1PreparedStatement;
-}
-
-export interface KVNamespace {
-  get(key: string): Promise<string | null>;
-  put(key: string, value: string): Promise<void>;
-}
+export type { D1Database, D1PreparedStatement, KVNamespace };
 
 export interface Env {
   DB: D1Database;
@@ -49,10 +47,6 @@ const MAX_ATTEMPTS = 3;
 /** Runs consécutifs en échec avant ouverture du circuit breaker. */
 const BREAKER_THRESHOLD = 3;
 const BACKOFF_BASE_MS = 200;
-/** Taille max de guid_set par source (FIFO : les plus anciens sont évincés) —
- *  borne la taille de la valeur KV sans jamais dépasser le volume d'un flux
- *  complet (CNIL : 390 sanctions distinctes). */
-const GUID_SET_MAX = 500;
 
 export interface SourceRunResult {
   adapter: string;
@@ -65,54 +59,6 @@ export interface RunOptions {
   fetchFn?: typeof fetch;
   /** Attente entre tentatives — injectable pour des tests rapides. */
   sleep?: (attempt: number) => Promise<void>;
-}
-
-interface SourceState {
-  last_run?: string;
-  last_success?: string;
-  consecutive_failures?: number;
-  disabled?: boolean;
-  guid_set?: string[];
-  /** Snapshot du catalogue HIBP (JSON string) pour le diff du run suivant. */
-  hibp_catalog?: string;
-}
-
-const stateKey = (adapterId: string): string => `ingest:state:${adapterId}`;
-
-async function readState(kv: KVNamespace, adapterId: string): Promise<SourceState> {
-  const raw = await kv.get(stateKey(adapterId));
-  return raw === null
-    ? {
-        last_run: null,
-        last_success: null,
-        consecutive_failures: 0,
-        disabled: false,
-        guid_set: [],
-      }
-    : (JSON.parse(raw) as SourceState);
-}
-
-const writeState = (kv: KVNamespace, adapterId: string, state: SourceState): Promise<void> =>
-  kv.put(stateKey(adapterId), JSON.stringify(state));
-
-async function insertCandidates(db: D1Database, candidates: Candidate[]): Promise<number> {
-  for (const candidate of candidates) {
-    await db
-      .prepare(
-        'INSERT INTO candidates (id, source, source_url, raw, entity_name, dedup_score, status) VALUES (?, ?, ?, ?, ?, ?, ?)',
-      )
-      .bind(
-        crypto.randomUUID(),
-        candidate.source,
-        candidate.source_url,
-        candidate.raw,
-        candidate.entity_name,
-        candidate.dedup_score ?? null,
-        'NEW',
-      )
-      .run();
-  }
-  return candidates.length;
 }
 
 function backoffSleep(attempt: number): Promise<void> {
