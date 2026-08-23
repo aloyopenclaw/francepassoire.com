@@ -55,7 +55,7 @@ jobs:
         run: |
           . /home/runner/.config/francepassoire/env.sh
           mkdir -p .agent-tmp
-          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at ASC LIMIT 3) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
+          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at DESC LIMIT 3) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json > .agent-tmp/candidates.json
           head -c 300 .agent-tmp/candidates.json; echo
           N=$(python3 -c "import json; d=json.load(open('.agent-tmp/candidates.json')); print(len(d['result'][0]['results']))" 2>/dev/null || echo 0)
