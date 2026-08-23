@@ -1,0 +1,49 @@
+{
+  "slug": "cloud-etat-dinum-20260822",
+  "entity": "Cloud de l'État (DINUM)",
+  "siren": "130025265",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-22",
+    "publication": "2026-08-22"
+  },
+  "volume": {
+    "count": 15021,
+    "unit": "enregistrements",
+    "label": "15 021 enregistrements estimés sur 31 544 lignes réparties en 12 fichiers CSV (revendiqué, non confirmé) ; données personnelles présentées comme marginales selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 15 021 enregistrements de pilotage cloud chez DINUM - fuite revendiquée (22 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-22-dinum-portail-cloud-de-l-etat",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — DINUM : 31 544 lignes liées au cloud de l'État en fuite (22 août 2026)",
+      "url": "https://www.cyberattaque.org/dinum-31-544-lignes-liees-au-cloud-de-letat-en-fuite/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cloud de l'État : des milliers de données diffusées sur un forum de hackers (22 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/cloud-de-l-tat-cloud-numerique-gouv-fr-mt4685xhf4it99ffgkq",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 22 août 2026, l'acteur 0xSec publie sur un forum cybercriminel douze fichiers CSV associés au portail cloud.numerique.gouv.fr, opéré par la DINUM. Le dépôt totalise 31 544 lignes selon la revendication. Y figurent un référentiel d'environ 1 800 administrations avec leur SIREN, des fournisseurs et des catalogues de produits. La revendication cite des commandes de 211 organismes entre 2020 et 2026, pour un cumul annoncé d'environ 98 millions d'euros. Les données personnelles y sont présentées comme marginales : noms et e-mails d'auteurs de contributions open source. Selon Cyberattaque.org, la plateforme repose sur Metabase et une exposition de données reste un scénario crédible. La DINUM n'a pas confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-22",
+      "event": "L'acteur 0xSec publie sur un forum douze fichiers CSV associés à cloud.numerique.gouv.fr : 31 544 lignes sur les administrations, fournisseurs, transactions et projets d'intelligence artificielle."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Cyberattaque.org relève que la plateforme repose sur Metabase ; une exposition de requêtes publiques constitue un scénario crédible, sans lien établi avec la faille Metabase d'août 2026."
+    }
+  ]
+}
