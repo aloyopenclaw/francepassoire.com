@@ -1,0 +1,51 @@
+{
+  "slug": "bureau-vallee-20260821",
+  "entity": "Bureau Vallée",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-21",
+    "publication": "2026-08-21"
+  },
+  "volume": {
+    "count": 4819927,
+    "unit": "enregistrements",
+    "label": "13 725 669 enregistrements bruts ramenés à 4 819 927 après déduplication selon l'auteur, avec extrait public de 10 000 lignes ; particuliers et professionnels, non confirmé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 4,8 millions d'enregistrements clients revendiqués chez Bureau Vallée (22 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-21-bureau-vallee",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données : Bureau Vallée, près de 4,82 millions d'enregistrements revendiqués (21 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/bureau-vall-e-mt2opn2q7t914mz1rap",
+      "kind": "revendication"
+    },
+    {
+      "label": "Capital (MSN) — Bureau Vallée, Beauty Success, Allobébé : une vague de fuites de données touche des millions de clients (22 août 2026)",
+      "url": "https://www.msn.com/fr-fr/finance/autres/bureau-vall%C3%A9e-beauty-success-allob%C3%A9b%C3%A9-une-vague-de-fuites-de-donn%C3%A9es-touche-des-millions-de-clients/ar-AA2aIHL5",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 21 août 2026, l'auteur misere met en vente une base attribuée à bureau-vallee.fr : 13 725 669 enregistrements bruts, ramenés à 4 819 927 après dédoublonnage selon la revendication, avec un extrait public d'environ 10 000 lignes. L'échantillon analysé par FrenchBreaches contient identifiants clients, noms, prénoms, adresses, e-mails, téléphones et, pour les professionnels, raison sociale et identifiant d'entreprise. Selon Fuites Infos, les données proviendraient d'exports quotidiens déposés sur un serveur de l'éditeur de la solution d'encaissement, après exploitation d'une injection SQL. Il s'agit de la seconde revendication visant l'enseigne en deux semaines, par un auteur différent et sur un périmètre sans recouvrement, selon Fuites Infos. Ni l'enseigne ni son prestataire n'ont confirmé.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "misere met en vente une base attribuée à bureau-vallee.fr : 13 725 669 enregistrements bruts, 4 819 927 après dédoublonnage, avec extrait public de 10 000 lignes."
+    },
+    {
+      "date": "2026-08-21",
+      "event": "FrenchBreaches analyse l'échantillon : identifiants clients, noms, coordonnées et données professionnelles ; les données remonteraient à la période 2021-2026 selon ses informations."
+    },
+    {
+      "date": "2026-08-22",
+      "event": "Fuites Infos relaie la revendication : seconde fuite en deux semaines, auteur différent, périmètre sans recouvrement, annoncé mais non vérifié ; la presse nationale relève la vague de fuites touchant plusieurs enseignes."
+    }
+  ]
+}
