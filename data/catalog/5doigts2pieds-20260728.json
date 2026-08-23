@@ -1,0 +1,47 @@
+{
+  "slug": "5doigts2pieds-20260728",
+  "entity": "5doigts2pieds.fr",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-28",
+    "publication": "2026-07-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par l'entreprise"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Une cyberattaque contre 5doigts2pieds entraîne le vol de données clients (30 juillet 2026)",
+      "url": "https://frenchbreaches.com/alertes/5doigts2pieds-ms7nsxtv858u04k6jvq",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — 5doigts2pieds.fr piraté : les données et commandes de ses clients ont été volées (30 juillet 2026)",
+      "url": "https://www.cyberattaque.org/5doigts2pieds-fr-pirate-les-donnees-et-commandes-de-ses-clients-ont-ete-volees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 juillet 2026, la boutique en ligne française 5doigts2pieds.fr, spécialisée dans les chaussures minimalistes, annonce une cyberattaque en cours. Son hébergeur retire le site pour interrompre les actions malveillantes. Selon l'entreprise, l'attaque survient moins de 24 heures après un premier incident. Le 29 juillet, la boutique confirme un vol de données clients : noms, prénoms, adresses postales, numéros de téléphone, adresses e-mail et historiques de commandes. Les données bancaires, gérées par un prestataire de paiement, ne sont pas concernées selon l'entreprise. Le nombre de clients touchés n'est pas communiqué. L'entreprise annonce préparer une déclaration à la CNIL et une information individuelle des personnes concernées.",
+  "timeline": [
+    {
+      "date": "2026-07-28",
+      "event": "La boutique annonce une cyberattaque en cours ; son hébergeur retire le site pour interrompre les actions malveillantes."
+    },
+    {
+      "date": "2026-07-29",
+      "event": "L'entreprise confirme que les attaquants ont accédé aux données clients : identités, coordonnées et historiques de commandes."
+    },
+    {
+      "date": "2026-07-30",
+      "event": "FrenchBreaches et Cyberattaque.org relatent l'incident ; le site reste indisponible, la remise en ligne prenant plus de temps que prévu."
+    }
+  ]
+}
