@@ -51,6 +51,7 @@
 //                 "watchlist-confirm:<email_hash>:<exp_ms>")>, TTL 24 h.
 
 import type { D1Database, Env, KVNamespace } from './index';
+import { dispatcherInstantSocial } from './social-dispatch';
 
 // ---------------------------------------------------------------------------
 // Constantes et copies locales (frontière worker ↔ src/lib — aucun import)
@@ -2017,6 +2018,11 @@ export async function runInstantSweep(
     log(`instant: aucun changement (${fiches.length} fiches vues, état ${Object.keys(precedent).length})`);
     return { bootstrap: false, nouveaux: 0, changements: 0, envois: 0, sauts: 0 };
   }
+
+  // File sociale : chaque nouvelle fiche et chaque passage confirmé part sur
+  // les six plateformes (décision propriétaire 23/08). AVANT l'écriture d'état
+  // KV ; un échec d'enfilement est isolé par plateforme (jamais bloquant).
+  await dispatcherInstantSocial(env.DB, nouveaux, changes, { log });
 
   const abonnes = (await confirmedSubscribers(env.DB)).filter((a) => parsePrefs(a.prefs_json).freq === 'quotidien');
   let envois = 0;

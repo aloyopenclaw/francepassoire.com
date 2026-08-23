@@ -1,0 +1,193 @@
+// tests/api-social-dispatch.test.ts — dispatcher social T38/T47 : le balayage
+// instant alimente social_outbox (six plateformes, idempotent, garde-mention).
+import { describe, expect, it } from 'vitest';
+import { DatabaseSync } from 'node:sqlite';
+import { dispatcherInstantSocial } from '../workers/api/src/social-dispatch';
+import { runInstantSweep, type FicheDigest } from '../workers/api/src/watchlist';
+import type { D1Database, Env, KVNamespace } from '../workers/api/src/index';
+import { MENTION_REVENDICATION } from '../src/lib/social-templates';
+
+const MENTION = 'revendication non confirmée par l’entité';
+const AES_KEY = 'a'.repeat(64);
+const URL_FICHE = 'https://francepassoire.com/fiche/actua-20260822/';
+
+function makeDb(): { d1: D1Database; raw: DatabaseSync } {
+  const raw = new DatabaseSync(':memory:');
+  raw.exec(`CREATE TABLE social_outbox (
+    id TEXT PRIMARY KEY, platform TEXT NOT NULL, payload TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'PENDING', scheduled_at TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime('now')));
+    CREATE TABLE subscribers (
+    id TEXT PRIMARY KEY, email_hash TEXT NOT NULL UNIQUE, email_enc TEXT NOT NULL,
+    confirmed_at TEXT, unsub_token TEXT NOT NULL UNIQUE,
+    prefs_json TEXT NOT NULL DEFAULT '{}',
+    created_at TEXT NOT NULL DEFAULT (datetime('now')));`);
+  const d1: D1Database = {
+    prepare(sql: string) {
+      const stmt = raw.prepare(sql);
+      let params: unknown[] = [];
+      const wrapped = {
+        bind(...values: unknown[]) {
+          params = params.concat(values);
+          return wrapped;
+        },
+        async run() {
+          stmt.run(...(params as Parameters<typeof stmt.run>));
+          return { success: true };
+        },
+        async first() {
+          return (stmt.get(...(params as Parameters<typeof stmt.get>)) ?? null) as unknown;
+        },
+        async all() {
+          return stmt.all(...(params as Parameters<typeof stmt.all>)) as unknown[];
+        },
+      };
+      return wrapped as never;
+    },
+  };
+  return { d1, raw };
+}
+
+class FakeKV implements KVNamespace {
+  store = new Map<string, string>();
+  get(key: string): Promise<string | null> {
+    return Promise.resolve(this.store.get(key) ?? null);
+  }
+  put(key: string, value: string): Promise<void> {
+    this.store.set(key, value);
+    return Promise.resolve();
+  }
+  delete(key: string): Promise<void> {
+    this.store.delete(key);
+    return Promise.resolve();
+  }
+}
+
+const revendiquee: FicheDigest = {
+  slug: 'actua-20260822',
+  entity: 'Actua',
+  secteur: 'services',
+  statut: 'revendiquee',
+  description: 'Le 22 août 2026, le groupe LockBit 5.0 revendique une attaque contre Actua.',
+  data_types: ['identite'],
+  dates: { revendication: '2026-08-22', publication: '2026-08-22' },
+  volume: { label: 'plus de 100 000 personnes recrutées selon LockBit 5.0 ; passeports annoncés' },
+};
+
+const confirmee: FicheDigest = {
+  ...revendiquee,
+  slug: 'ird-20260821',
+  entity: 'IRD',
+  statut: 'confirmee',
+  volume: { label: '7 500 personnes' },
+};
+
+function lignes(raw: DatabaseSync) {
+  return (raw.prepare('SELECT id, platform, payload FROM social_outbox ORDER BY id').all() as object[])
+    .map((r) => ({ ...(r as object), payload: JSON.parse((r as { payload: string }).payload) }) as {
+      id: string;
+      platform: string;
+      payload: { text: string; statut?: string; imageUrl?: string };
+    });
+}
+
+describe('dispatcherInstantSocial — nouvelle fiche', () => {
+  it('revendiquée : six plateformes, mention EXACTE partout (garde du drain), LONG avec image', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(6);
+    expect(rows.map((r) => r.platform).sort()).toEqual(
+      ['bluesky', 'facebook', 'instagram', 'linkedin', 'nostr', 'x'],
+    );
+    for (const r of rows) {
+      expect(r.id).toBe(`sw:actua-20260822:${r.platform}`);
+      expect(r.payload.statut).toBe('revendiquee');
+      expect(r.payload.text).toContain(MENTION);
+    }
+    const fb = rows.find((r) => r.platform === 'facebook')!;
+    expect(fb.payload.imageUrl).toBe(URL_FICHE + 'card.jpg');
+    expect(fb.payload.text).toContain('Statut : Revendiquée (revendication non confirmée par l’entité)');
+    const x = rows.find((r) => r.platform === 'x')!;
+    expect(x.payload.text).toContain('Nouvelle fiche revendiquée : Actua');
+    expect(x.payload.imageUrl).toBeUndefined();
+  });
+
+  it('confirmée : COURT = gabarit propriétaire, sans mention exiger, LONG hashtags', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [confirmee], [], { log: () => {} });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(6);
+    const x = rows.find((r) => r.platform === 'x')!;
+    expect(x.payload.text.startsWith('🚨📣 Nouvelle fuite recensée : IRD')).toBe(true);
+    expect(x.payload.text).not.toContain(MENTION);
+    const ig = rows.find((r) => r.platform === 'instagram')!;
+    expect(ig.payload.text).toContain('#FrancePassoire');
+  });
+
+  it('idempotent : double passage = zéro doublon (id déterministe + OR IGNORE)', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
+    await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {} });
+    expect((lignes(raw)).length).toBe(6);
+  });
+
+  it('rendu refusé (volume monstrueux en COURT) : plateforme sautée avec log, les autres partent, aucun crash', async () => {
+    const { d1, raw } = makeDb();
+    const monstre: FicheDigest = {
+      ...confirmee,
+      slug: 'monstre-20260823',
+      entity: 'Une Entité Au Nom Beaucoup Trop Long Pour Tenir Dans La Limite De Caracteres De X',
+      volume: { label: 'un volume extraordinairement long qui ne tiendra jamais dans la limite X' },
+    };
+    await dispatcherInstantSocial(d1, [monstre], [], { log: () => {} });
+    const rows = lignes(raw);
+    const plates = rows.map((r) => r.platform).sort();
+    expect(plates).toEqual(['facebook', 'instagram', 'linkedin']);
+  });
+});
+
+describe('dispatcherInstantSocial — changement de statut', () => {
+  it('revendiquée → confirmée : six lignes sw:maj, texte de transition légale', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [], [confirmee], { log: () => {} });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(6);
+    for (const r of rows) {
+      expect(r.id).toBe(`sw:maj:ird-20260821:${r.platform}`);
+      expect(r.payload.text).toContain('passe de « revendiquée » à « confirmée »');
+      expect(r.payload.statut).toBe('confirmee');
+    }
+  });
+});
+
+describe('intégration runInstantSweep → file sociale', () => {
+  it('une fiche nouvelle détectée par le balayage part en file sans abonné', async () => {
+    const { d1, raw } = makeDb();
+    const kv = new FakeKV();
+    await kv.put('watchlist:instant:last_catalog', JSON.stringify({ 'ird-20260821': { statut: 'confirmee' } }));
+    const env = {
+      DB: d1,
+      RUN_STATE: kv,
+      RATE_LIMIT: kv,
+      BREVO_API_KEY: 'cle-test',
+      WATCHLIST_AES_KEY: AES_KEY,
+    } as unknown as Env;
+
+    const fetchFn = (url: string | URL | Request): Promise<Response> => {
+      const u = String(url);
+      if (u.startsWith('https://francepassoire.com/opendata/v1/fiches.json')) {
+        return Promise.resolve(
+          new Response(JSON.stringify({ fiches: [revendiquee, confirmee] }), { status: 200 }),
+        );
+      }
+      return Promise.resolve(new Response('intronvable', { status: 404 }));
+    };
+
+    const resultat = await runInstantSweep(env, { fetchFn, sleep: async () => {}, log: () => {} });
+    expect(resultat.nouveaux).toBe(1);
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(6);
+    expect(rows.every((r) => r.payload.text.includes(MENTION_REVENDICATION))).toBe(true);
+  });
+});

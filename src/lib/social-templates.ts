@@ -171,6 +171,14 @@ function formaterNombre(nombre: number): string {
   return groupes.join(' ');
 }
 
+/** Ligne Statut du gabarit LONG : une fiche revendiquée porte TOUJOURS la
+ *  mention exacte (garde du drain social : sans elle la ligne est INVALID). */
+function ligneStatutLong(statut: string): string {
+  return statut === 'revendiquee'
+    ? `Statut : Revendiquée (${MENTION_REVENDICATION})`
+    : `Statut : ${piluleStatut(statut)}`;
+}
+
 /** Gabarit LONG — FB / Instagram / LinkedIn (aucune limite, hashtags inclus). */
 export function renderSocialPost(post: SocialPostInput): string {
   if (!post.description.trim()) {
@@ -182,7 +190,7 @@ export function renderSocialPost(post: SocialPostInput): string {
   return [
     `🚨 📣 Nouvelle fuite recensée : ${post.entity} (${SECTEURS_SOCIAUX[post.secteur] ?? post.secteur})`,
     '',
-    `Statut : ${piluleStatut(post.statut)}`,
+    ligneStatutLong(post.statut),
     `Volume : ${volume}`,
     '',
     post.description,

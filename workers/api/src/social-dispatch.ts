@@ -1,0 +1,154 @@
+// workers/api/src/social-dispatch.ts — T38/T47 : le dispatcher social manquant.
+//
+// Raccorde le balayage instant (watchlist.ts, diff catalogue */15) à la file
+// social_outbox que draine le worker social (cron */5). Toute fiche NOUVELLE
+// ou tout passage revendiquée → confirmée met six lignes en file (x, linkedin,
+// facebook, instagram, bluesky, nostr) — décision propriétaire 23/08 : toutes
+// les plateformes, chaque fiche, pas de plafond de rafale.
+//
+// CHOIX DE RENDU (contrainte : la garde du drain exige la mention exacte
+// MENTION_REVENDICATION pour statut « revendiquée », et le gabarit COURT est
+// plafonné à 280 — les deux ne tiennent pas ensemble) :
+//   - LONG (facebook, instagram, linkedin) : gabarit propriétaire
+//     renderSocialPost (mention intégrée à la ligne Statut depuis ce jour) ;
+//   - COURT confirmée (x, bluesky, nostr) : gabarit propriétaire
+//     renderSocialPostCourt ;
+//   - COURT revendiquée : renderNewFichePost (format natif de la file, mention
+//     intégrée, validé ≤ 260) ;
+//   - changement de statut (les six) : renderStatusChangePost (transitions
+//     légales de la taxonomie uniquement, sinon refus explicite).
+//
+// Idempotence : id DÉTERMINISTE « sw:<slug>:<plateforme> » (nouvelle fiche) ou
+// « sw:maj:<slug>:<plateforme> » (changement) + INSERT OR IGNORE — un même
+// tick rejoué ou un état KV qui n'avance pas ne double-jamais la file. Un
+// échec de rendu (entité/volume trop longs, champ vide) saute UNE plateforme
+// avec log sonore, jamais le passage entier.
+
+import type { D1Database } from './index';
+import type { FicheDigest } from './watchlist';
+import {
+  renderNewFichePost,
+  renderSocialPost,
+  renderSocialPostCourt,
+  renderStatusChangePost,
+} from '../../../src/lib/social-templates';
+
+/** Plateformes destination — l'ordre est celui de workers/social types.ts. */
+const PLATFORMES = ['x', 'linkedin', 'facebook', 'instagram', 'bluesky', 'nostr'] as const;
+type Plateforme = (typeof PLATFORMES)[number];
+
+const LONGUES: readonly Plateforme[] = ['facebook', 'instagram', 'linkedin'];
+const COURTES: readonly Plateforme[] = ['x', 'bluesky', 'nostr'];
+
+export interface DispatchOptions {
+  log?: (...args: unknown[]) => void;
+}
+
+/** Texte rendu pour une plateforme : LONG, COURT (confirmée) ou natif-file
+ * (revendiquée). Peut lever ( SocialTemplateError ) : attrapé par l'appelant. */
+function rendre(fiche: FicheDigest, plateforme: Plateforme): string {
+  const url = `https://francepassoire.com/fiche/${fiche.slug}/`;
+  const entree = {
+    entity: fiche.entity,
+    secteur: fiche.secteur,
+    statut: fiche.statut ?? 'revendiquee',
+    volumeLabel: fiche.volume.label,
+    description: fiche.description ?? '',
+    url,
+    imageUrl: `${url}card.jpg`,
+  };
+  if (LONGUES.includes(plateforme)) {
+    return renderSocialPost(entree);
+  }
+  if (entree.statut === 'revendiquee') {
+    return renderNewFichePost({
+      entity: entree.entity,
+      statut: 'revendiquee',
+      volumeLabel: entree.volumeLabel.split(';')[0]?.trim() ?? entree.volumeLabel,
+      url,
+    });
+  }
+  return renderSocialPostCourt({ ...entree, statut: 'confirmee' });
+}
+
+/** Une ligne en file : INSERT OR IGNORE (id déterministe = idempotence). */
+async function enfiler(
+  db: D1Database,
+  id: string,
+  plateforme: Plateforme,
+  payload: Record<string, unknown>,
+): Promise<boolean> {
+  const res = (await db
+    .prepare(
+      'INSERT OR IGNORE INTO social_outbox (id, platform, payload, status, scheduled_at) VALUES (?, ?, ?, ?, NULL)',
+    )
+    .bind(id, plateforme, JSON.stringify(payload), 'PENDING')
+    .run()) as unknown as { meta?: { changes?: number } };
+  return res.meta?.changes !== 0;
+}
+
+/** Met en file les six plateformes pour chaque fiche nouvelle / changée.
+ *  Ne lève JAMAIS : chaque (fiche × plateforme) est isolée. */
+export async function dispatcherInstantSocial(
+  db: D1Database,
+  nouveaux: readonly FicheDigest[],
+  changes: readonly FicheDigest[],
+  options: DispatchOptions = {},
+): Promise<void> {
+  const log = options.log ?? console.log;
+
+  for (const fiche of nouveaux) {
+    for (const plateforme of PLATFORMES) {
+      try {
+        const text = rendre(fiche, plateforme);
+        const url = `https://francepassoire.com/fiche/${fiche.slug}/`;
+        const payload: Record<string, unknown> = {
+          text,
+          url,
+          statut: fiche.statut,
+          metadata: { origine: 'instant-sweep' },
+        };
+        if (LONGUES.includes(plateforme)) {
+          payload.imageUrl = `${url}card.jpg`;
+          payload.description = fiche.description ?? '';
+        }
+        const posee = await enfiler(db, `sw:${fiche.slug}:${plateforme}`, plateforme, payload);
+        if (posee) log(`social: ${plateforme} en file pour ${fiche.slug}`);
+      } catch (error) {
+        console.error(
+          `social: ${plateforme} IMPOSSIBLE pour ${fiche.slug} (rendu refusé, fiche sautée sur cette plateforme) :`,
+          error,
+        );
+      }
+    }
+  }
+
+  for (const fiche of changes) {
+    const url = `https://francepassoire.com/fiche/${fiche.slug}/`;
+    let texte: string;
+    try {
+      texte = renderStatusChangePost({ entity: fiche.entity, from: 'revendiquee', to: 'confirmee', url });
+    } catch (error) {
+      console.error(`social: maj ${fiche.slug} non postable (rendu refusé) :`, error);
+      continue;
+    }
+    for (const plateforme of PLATFORMES) {
+      try {
+        const posee = await enfiler(
+          db,
+          `sw:maj:${fiche.slug}:${plateforme}`,
+          plateforme,
+          {
+            text: texte,
+            url,
+            statut: 'confirmee',
+            metadata: { origine: 'instant-sweep', type: 'maj' },
+          },
+        );
+        if (posee) log(`social: ${plateforme} en file (maj) pour ${fiche.slug}`);
+      } catch (error) {
+        console.error(`social: ${plateforme} maj ${fiche.slug} non enfilée (D1) :`, error);
+      }
+    }
+  }
+}

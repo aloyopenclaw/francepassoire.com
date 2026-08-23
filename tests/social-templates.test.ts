@@ -343,4 +343,14 @@ describe('renderSocialPost / renderSocialPostCourt — gabarit propriétaire', (
   it('LONG : description vide → refus, jamais d’improvisation', () => {
     expect(() => renderSocialPost({ ...actua, description: '   ' })).toThrow();
   });
+
+  it('LONG revendiquée : porte la mention EXACTE (garde du drain social)', () => {
+    expect(renderSocialPost(actua)).toContain(`Statut : Revendiquée (${MENTION_EXACTE})`);
+  });
+
+  it('LONG confirmée : ligne Statut sobre, sans la mention (rien à nuancer)', () => {
+    const post = renderSocialPost({ ...actua, statut: 'confirmee' });
+    expect(post).toContain('Statut : Confirmée');
+    expect(post).not.toContain(MENTION_EXACTE);
+  });
 });
