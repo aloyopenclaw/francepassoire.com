@@ -498,6 +498,117 @@ describe('GET /api/watchlist/confirm|unsub|prefs|status', () => {
 });
 
 // ---------------------------------------------------------------------------
+// 56b — POST /api/watchlist/prefs (mise à jour, jeton = authentification)
+// ---------------------------------------------------------------------------
+
+const validPrefs = {
+  sectors: ['finance', 'media'],
+  data_types: ['credentials'],
+  entities: ['Alaxione SAS'],
+  freq: 'quotidien',
+};
+
+function prefsPostRequest(query: string, body: unknown): Request {
+  return new Request(`https://api.francepassoire.com/api/watchlist/prefs${query}`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: typeof body === 'string' ? body : JSON.stringify(body),
+  });
+}
+
+describe('POST /api/watchlist/prefs — mise à jour des préférences (56b)', () => {
+  it('corps valide → 200, prefs_json mis à jour, unsub_token NON rotaté', async () => {
+    const { env, raw } = makeEnv(envComplet);
+    await insertSubscriber(raw, {
+      id: 'p1',
+      email: 'prefs@example.com',
+      prefs: { sectors: ['sante'], data_types: [], entities: [], freq: 'hebdo' },
+      confirmed: true,
+    });
+    const avant = raw.prepare('SELECT unsub_token, prefs_json FROM subscribers').get() as {
+      unsub_token: string; prefs_json: string;
+    };
+    expect(JSON.parse(avant.prefs_json).sectors).toEqual(['sante']);
+
+    const res = await handleRequest(prefsPostRequest(`?token=${avant.unsub_token}`, validPrefs), env);
+    const payload = (await res.json()) as { ok: boolean };
+
+    expect(res.status).toBe(200);
+    expect(payload.ok).toBe(true);
+    const apres = raw.prepare('SELECT unsub_token, prefs_json FROM subscribers').get() as {
+      unsub_token: string; prefs_json: string;
+    };
+    expect(apres.unsub_token).toBe(avant.unsub_token); // jamais rotaté : les liens des emails déjà envoyés restent valides
+    expect(JSON.parse(apres.prefs_json)).toEqual(validPrefs);
+  });
+
+  it('secteur hors énumération → 400 avec erreur FR nommée, ligne inchangée', async () => {
+    const { env, raw } = makeEnv(envComplet);
+    await insertSubscriber(raw, { id: 'p1', email: 'prefs@example.com', prefs: { sectors: ['sante'] }, confirmed: true });
+    const avant = raw.prepare('SELECT prefs_json FROM subscribers').get();
+
+    const res = await handleRequest(
+      prefsPostRequest('?token=tokp1abcdef0123456789', { ...validPrefs, sectors: ['nimporte'] }),
+      env,
+    );
+    const payload = (await res.json()) as { errors: string[] };
+
+    expect(res.status).toBe(400);
+    expect(payload.errors.some((e) => /secteur inconnu/i.test(e))).toBe(true);
+    expect(raw.prepare('SELECT prefs_json FROM subscribers').get()).toEqual(avant);
+  });
+
+  it('fréquence invalide → 400 avec erreur FR', async () => {
+    const { env, raw } = makeEnv(envComplet);
+    await insertSubscriber(raw, { id: 'p1', email: 'prefs@example.com', prefs: {}, confirmed: true });
+
+    const res = await handleRequest(
+      prefsPostRequest('?token=tokp1abcdef0123456789', { ...validPrefs, freq: 'mensuel' }),
+      env,
+    );
+    const payload = (await res.json()) as { errors: string[] };
+
+    expect(res.status).toBe(400);
+    expect(payload.errors.some((e) => /fréquence doit être/i.test(e))).toBe(true);
+  });
+
+  it('token bien formé mais inconnu → 404 « Jeton inconnu. »', async () => {
+    const { env } = makeEnv(envComplet);
+
+    const res = await handleRequest(prefsPostRequest('?token=tokinconnu1234567890', validPrefs), env);
+    const payload = (await res.json()) as { ok: boolean; error: string };
+
+    expect(res.status).toBe(404);
+    expect(payload.ok).toBe(false);
+    expect(payload.error).toBe('Jeton inconnu.');
+  });
+
+  it('token manquant ou malformé → 400 (sémantique du GET)', async () => {
+    const { env } = makeEnv(envComplet);
+
+    const sansToken = await handleRequest(prefsPostRequest('', validPrefs), env);
+    expect(sansToken.status).toBe(400);
+
+    const court = await handleRequest(prefsPostRequest('?token=court', validPrefs), env);
+    expect(court.status).toBe(400);
+    expect(((await court.json()) as { error: string }).error).toMatch(/jeton de préférences manquant ou invalide/i);
+  });
+
+  it('JSON illisible → 400 propre, ligne inchangée', async () => {
+    const { env, raw } = makeEnv(envComplet);
+    await insertSubscriber(raw, { id: 'p1', email: 'prefs@example.com', prefs: { sectors: ['sante'] }, confirmed: true });
+    const avant = raw.prepare('SELECT prefs_json FROM subscribers').get();
+
+    const res = await handleRequest(prefsPostRequest('?token=tokp1abcdef0123456789', '{pas du json'), env);
+    const payload = (await res.json()) as { error: string };
+
+    expect(res.status).toBe(400);
+    expect(payload.error).toMatch(/json attendu/i);
+    expect(raw.prepare('SELECT prefs_json FROM subscribers').get()).toEqual(avant);
+  });
+});
+
+// ---------------------------------------------------------------------------
 // T31 — digest hebdo + alertes instantanées
 // ---------------------------------------------------------------------------
 
@@ -561,6 +672,12 @@ describe('runWeeklyDigest — cron lundi 09:00 Paris', () => {
       expect(call.body.textContent).toMatch(/https:\/\/francepassoire\.com\/api\/watchlist\/unsub\/[A-Za-z0-9_-]+/);
       expect(call.body.htmlContent).toMatch(/Se désinscrire en un clic/);
       expect(call.body.htmlContent).toMatch(/https:\/\/francepassoire\.com\/api\/watchlist\/unsub\//);
+      // 56c : lien préférences authentifié par le MÊME jeton que la désinscription
+      const jetonUnsub = call.body.textContent.match(/unsub\/([A-Za-z0-9_-]+)/)?.[1];
+      const jetonPrefs = call.body.textContent.match(/ma-veille\/\?token=([A-Za-z0-9_-]+)/)?.[1];
+      expect(jetonPrefs).toBe(jetonUnsub);
+      expect(call.body.textContent).toMatch(/Gérer ma veille : <https:\/\/francepassoire\.com\/ma-veille\/\?token=[A-Za-z0-9_-]+>/);
+      expect(call.body.htmlContent).toMatch(/ma-veille\/\?token=[A-Za-z0-9_-]+/);
     }
   });
 
@@ -616,6 +733,7 @@ describe('runWeeklyDigest — cron lundi 09:00 Paris', () => {
     expect(html).toContain('Lire la fiche détaillée');
     expect(html).toContain('conseil passoire');
     expect(html).toMatch(/api\/watchlist\/unsub\//);
+    expect(html).toMatch(/ma-veille\/\?token=[A-Za-z0-9_-]+/);
     expect(body.textContent).toMatch(/REVENDIQUÉE/);
     expect(body.textContent).toMatch(/✓ CONFIRMÉE/);
   });
@@ -752,6 +870,8 @@ describe('enqueueInstantAlert — contrat testé (câblage CI en T47)', () => {
     expect(brevoCalls[0]!.body.to[0]!.email).toBe('quotidien-tout@example.com');
     expect(brevoCalls[0]!.body.subject).toContain('Alaxione');
     expect(brevoCalls[0]!.body.htmlContent).toMatch(/api\/watchlist\/unsub\//);
+    expect(brevoCalls[0]!.body.textContent).toMatch(/Gérer ma veille : <https:\/\/francepassoire\.com\/ma-veille\/\?token=toks4abcdef0123456789>/);
+    expect(brevoCalls[0]!.body.htmlContent).toMatch(/ma-veille\/\?token=toks4abcdef0123456789/);
   });
 
   it('correspondance d’entité : « Alaxione SAS » (préférence) matche « Alaxione » (fiche) via la normalisation locale', async () => {
@@ -829,6 +949,8 @@ describe('runInstantSweep — bootstrap, diff, alertes', () => {
     expect(call.body.htmlContent).toContain('https://francepassoire.com/fiche/nouvelle-20260821/');
     expect(call.body.htmlContent).toMatch(/Se désinscrire/);
     expect(call.body.textContent).toContain('nouvelle-20260821');
+    expect(call.body.textContent).toContain('Gérer mes alertes : https://francepassoire.com/ma-veille/?token=toks1abcdef0123456789');
+    expect(call.body.htmlContent).toMatch(/ma-veille\/\?token=toks1abcdef0123456789/);
   });
 
   it('revendiquée → confirmée → MiseAJourDeStatut (objet + bandeau vert + checkmark)', async () => {
@@ -850,6 +972,8 @@ describe('runInstantSweep — bootstrap, diff, alertes', () => {
     expect(call.body.htmlContent).toContain('FUITE CONFIRMÉE');
     expect(call.body.htmlContent).toContain('Confirmée');
     expect(call.body.htmlContent).toContain('officiellement confirmée');
+    expect(call.body.textContent).toContain('Gérer mes alertes : https://francepassoire.com/ma-veille/?token=toks4abcdef0123456789');
+    expect(call.body.htmlContent).toMatch(/ma-veille\/\?token=toks4abcdef0123456789/);
   });
 
   it('aucun changement → aucun envoi, aucune écriture KV (quota épargné)', async () => {
@@ -981,6 +1105,8 @@ describe('runInstantSweep — alerte groupée (rafale)', () => {
     expect(body.htmlContent).toContain('rafale-0-20260821');
     expect(body.htmlContent).toContain('rafale-8-20260821');
     expect(body.htmlContent).not.toContain('—');
+    expect(body.textContent).toContain('Gérer mes alertes : https://francepassoire.com/ma-veille/?token=toks4abcdef0123456789');
+    expect(body.htmlContent).toMatch(/ma-veille\/\?token=toks4abcdef0123456789/);
   });
 });
 

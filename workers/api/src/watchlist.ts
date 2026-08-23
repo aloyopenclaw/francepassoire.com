@@ -20,7 +20,14 @@
 //                                        l'existence du jeton).
 //   GET  /api/watchlist/prefs?token=     JSON {email masqué, prefs, confirmé}
 //                                        — API que l'UI de préférences
-//                                        (future page) consommera.
+//                                        (page /ma-veille/) consomme.
+//   POST /api/watchlist/prefs?token=     mise à jour des préférences (56b) :
+//                                        même validation que l'inscription,
+//                                        le jeton EST l'authentification (pas
+//                                        de Turnstile, comme /unsub) et n'est
+//                                        JAMAIS rotaté — les liens posés dans
+//                                        les emails déjà envoyés restent
+//                                        valides à vie.
 //
 // T31 — alertes Brevo (API HTTPS v3 — le binding send_email Cloudflare est
 // disqualifié par la sonde T29 : refus des destinations non vérifiées) :
@@ -448,6 +455,55 @@ function validateSubscribe(body: SubscribeBody): {
 }
 
 // ---------------------------------------------------------------------------
+// Validation de la mise à jour des préférences (56b) — mêmes helpers et
+// énumérations que validateSubscribe, sans email ni Turnstile : le jeton de
+// désinscription fait office d'authentification.
+// ---------------------------------------------------------------------------
+
+interface PrefsBody {
+  sectors?: unknown;
+  data_types?: unknown;
+  entities?: unknown;
+  freq?: unknown;
+}
+
+function validatePrefs(body: PrefsBody): { prefs: Prefs; errors: string[] } {
+  const errors: string[] = [];
+
+  const sectors = stringArray(body.sectors, SECTEURS.length, errors, 'Secteurs');
+  for (const s of sectors) {
+    if (!(SECTEURS as readonly string[]).includes(s)) {
+      errors.push(`Secteur inconnu : « ${s} ».`);
+    }
+  }
+
+  const dataTypes = stringArray(body.data_types, DATA_TYPES.length, errors, 'Types de données');
+  for (const d of dataTypes) {
+    if (!(DATA_TYPES as readonly string[]).includes(d)) {
+      errors.push(`Type de données inconnu : « ${d} ».`);
+    }
+  }
+
+  const entities = stringArray(body.entities, 20, errors, 'Entités');
+  for (const e of entities) {
+    if (e.length > 200) {
+      errors.push('Chaque entité surveillée doit tenir en 200 caractères.');
+      break;
+    }
+  }
+
+  let freq: Freq = 'hebdo';
+  const freqRaw = str(body.freq);
+  if (freqRaw !== '' && !(FREQS as readonly string[]).includes(freqRaw)) {
+    errors.push('La fréquence doit être « quotidien » ou « hebdo ».');
+  } else if (freqRaw !== '') {
+    freq = freqRaw as Freq;
+  }
+
+  return { prefs: { sectors, data_types: dataTypes, entities, freq }, errors };
+}
+
+// ---------------------------------------------------------------------------
 // POST /api/watchlist — inscription double opt-in
 // ---------------------------------------------------------------------------
 
@@ -707,6 +763,45 @@ async function handlePrefs(request: Request, env: Env): Promise<Response> {
   );
 }
 
+/**
+ * POST /api/watchlist/prefs?token= (56b) — garde de jeton identique au GET
+ * (TOKEN_RE → 400 ; SELECT par unsub_token → 404), puis validation du corps
+ * (validatePrefs) et UPDATE de prefs_json. Le unsub_token n'est JAMAIS
+ * rotaté : les liens de désinscription et de préférences posés dans les
+ * emails déjà envoyés doivent fonctionner à vie. Pas de Turnstile ni de
+ * rate limit dédié — le jeton est l'authentification, comme /unsub.
+ */
+async function handlePrefsUpdate(request: Request, env: Env): Promise<Response> {
+  const cors = corsHeaders(request);
+  const token = new URL(request.url).searchParams.get('token') ?? '';
+  if (!TOKEN_RE.test(token)) {
+    return jsonResponse(400, { ok: false, error: 'Jeton de préférences manquant ou invalide.' }, cors);
+  }
+  const row = await selectFirst<{ id: string }>(
+    env.DB,
+    'SELECT id FROM subscribers WHERE unsub_token = ?',
+    token,
+  );
+  if (!row) {
+    return jsonResponse(404, { ok: false, error: 'Jeton inconnu.' }, cors);
+  }
+  let body: PrefsBody;
+  try {
+    body = (await request.json()) as PrefsBody;
+  } catch {
+    return jsonResponse(400, { ok: false, error: 'Corps de requête invalide : JSON attendu.' }, cors);
+  }
+  const { prefs, errors } = validatePrefs(body);
+  if (errors.length > 0) {
+    return jsonResponse(400, { ok: false, error: 'Certains champs sont invalides.', errors }, cors);
+  }
+  await env.DB
+    .prepare('UPDATE subscribers SET prefs_json = ? WHERE unsub_token = ?')
+    .bind(JSON.stringify(prefs), token)
+    .run();
+  return jsonResponse(200, { ok: true }, cors);
+}
+
 function handleStatus(request: Request, env: Env): Response {
   const emailEnabled = Boolean(
     env.TURNSTILE_SECRET && env.BREVO_API_KEY && env.WATCHLIST_AES_KEY && env.WATCHLIST_HASH_KEY,
@@ -741,6 +836,9 @@ export async function handleWatchlistRequest(
   }
   if (path === '/api/watchlist/prefs' && request.method === 'GET') {
     return handlePrefs(request, env);
+  }
+  if (path === '/api/watchlist/prefs' && request.method === 'POST') {
+    return handlePrefsUpdate(request, env);
   }
   return jsonResponse(404, { ok: false, error: 'Introuvable.' }, corsHeaders(request));
 }
@@ -807,6 +905,18 @@ function ficheUrl(fiche: FicheDigest): string {
 
 function unsubUrlOf(token: string): string {
   return `${SITE_URL}/api/watchlist/unsub/${token}`;
+}
+
+/**
+ * Lien de gestion des préférences (56c) : /ma-veille/?token=<jeton>, même
+ * jeton que la désinscription. Invariant : unsubUrl provient toujours de
+ * unsubUrlOf — le jeton en est le dernier segment (sans « / », TOKEN_RE).
+ * Le jeton n'étant jamais rotaté, les liens des emails déjà envoyés
+ * restent valides à vie.
+ */
+function prefsUrlOf(unsubUrl: string): string {
+  const token = unsubUrl.split('/').pop() ?? '';
+  return `${SITE_URL}/ma-veille/?token=${token}`;
 }
 
 /** Fiches de la fenêtre de 7 jours glissantes, tri récent d'abord. */
@@ -989,7 +1099,7 @@ export function renderDigestHtml(
   options: { prefsUrl?: string; now?: Date } = {},
 ): string {
   const now = options.now ?? new Date();
-  const prefsUrl = options.prefsUrl ?? `${SITE_URL}/proteger/`;
+  const prefsUrl = options.prefsUrl ?? prefsUrlOf(unsubUrl);
   const numero = Math.max(1, Math.floor((now.getTime() - PREMIER_NUMERO) / (7 * 24 * 3600 * 1000)) + 1);
   const dateNumero = new Intl.DateTimeFormat('fr-FR', {
     weekday: 'long',
@@ -1221,7 +1331,7 @@ export function renderDigestText(
   options: { prefsUrl?: string; now?: Date } = {},
 ): string {
   const now = options.now ?? new Date();
-  const prefsUrl = options.prefsUrl ?? `${SITE_URL}/proteger/`;
+  const prefsUrl = options.prefsUrl ?? prefsUrlOf(unsubUrl);
   const numero = Math.max(1, Math.floor((now.getTime() - PREMIER_NUMERO) / (7 * 24 * 3600 * 1000)) + 1);
   const dateNumero = new Intl.DateTimeFormat('fr-FR', {
     weekday: 'long',
@@ -1599,7 +1709,7 @@ export function renderAlerteInitialeHtml(
                 Vous recevez cet email car vous avez activé la veille FrancePassoire (${escapeHtml(opts.secteurLigne)}).
               </p>
               <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
-                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                <a href="${prefsUrlOf(opts.unsubUrl)}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
                 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
                 <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
               </p>
@@ -1635,7 +1745,7 @@ export function renderAlerteInitialeText(
     '3. Surveiller les tentatives d\'hameçonnage',
     '',
     `Vous surveillez : ${opts.secteurLigne}.`,
-    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Gérer mes alertes : ${prefsUrlOf(opts.unsubUrl)}`,
     `Se désinscrire : ${opts.unsubUrl}`,
   ].join('\n');
 }
@@ -1715,7 +1825,7 @@ export function renderMiseAJourHtml(fiche: FicheDigest, opts: { unsubUrl: string
           <tr>
             <td style="padding: 24px 32px; background-color: #241405; color: #FFF6EA; border-top: 3px solid #241405;">
               <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
-                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                <a href="${prefsUrlOf(opts.unsubUrl)}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
                 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
                 <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
               </p>
@@ -1741,7 +1851,7 @@ export function renderMiseAJourText(fiche: FicheDigest, opts: { unsubUrl: string
     'La fuite n\'est plus une simple revendication : une source officielle l\'a confirmée. Si vous n\'aviez pas encore pris de précautions, faites-le maintenant.',
     '',
     `Fiche complète : ${ficheUrl(fiche)}`,
-    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Gérer mes alertes : ${prefsUrlOf(opts.unsubUrl)}`,
     `Se désinscrire : ${opts.unsubUrl}`,
   ].join('\n');
 }
@@ -1887,7 +1997,7 @@ ${cartes}
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                       <tr>
                         <td align="center" style="background-color: #FFF6EA; border: 2px solid #241405; border-radius: 10px; box-shadow: 3px 3px 0px 0px #241405;">
-                          <a href="${SITE_URL}/proteger/" style="display: inline-block; padding: 12px 24px; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; text-transform: uppercase;">
+                          <a href="${prefsUrlOf(opts.unsubUrl)}" style="display: inline-block; padding: 12px 24px; font-family: 'Arial Black', Impact, sans-serif; font-size: 14px; color: #241405; text-decoration: none; text-transform: uppercase;">
                             Gérer ma veille
                           </a>
                         </td>
@@ -1904,7 +2014,7 @@ ${cartes}
                 Vous recevez cet email car vous avez activé la veille FrancePassoire (${escapeHtml(opts.secteurLigne)}).
               </p>
               <p style="margin: 0 0 16px; font-family: 'Courier New', Courier, monospace; font-size: 12px;">
-                <a href="${SITE_URL}/proteger/" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
+                <a href="${prefsUrlOf(opts.unsubUrl)}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Gérer mes alertes</a>
                 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
                 <a href="${opts.unsubUrl}" style="color: #FF6B1A; font-weight: bold; text-decoration: underline;">Se désinscrire en 1 clic</a>
               </p>
@@ -1934,7 +2044,7 @@ export function renderAlerteGroupeeText(
     'Vous aviez un compte ? Les 3 gestes : changer le mot de passe, activer la double authentification, surveiller l\'hameçonnage.',
     '',
     `Vous surveillez : ${opts.secteurLigne}.`,
-    `Gérer mes alertes : ${SITE_URL}/proteger/`,
+    `Gérer mes alertes : ${prefsUrlOf(opts.unsubUrl)}`,
     `Se désinscrire : ${opts.unsubUrl}`,
   ].join('\n');
 }

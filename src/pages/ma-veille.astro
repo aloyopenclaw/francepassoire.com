@@ -1,0 +1,465 @@
+---
+// src/pages/ma-veille.astro — page « Ma veille » (gestion des préférences
+// d'alerte, tâche 56a).
+//
+// CONTRAT VISUEL FIGÉ : TemplateMailsGemini/france_passoire_ma_veille.html
+// est intégré tel quel (marque + CSS + structure) — aucune décision de
+// design prise ici. Écarts volontaires et minimaux, imposés par la tâche :
+//   • sélecteur d'états DÉMO retiré (les états sont testés côté tests/E2E) ;
+//   • valeurs des puces/choix = énumérations EXACTES du worker
+//     (workers/api/src/watchlist.ts : SECTEURS / DATA_TYPES / FREQS) — les
+//     DEFS du gabarit étaient des données de démo non conformes au contrat ;
+//   • onsubmit/onchange inline du gabarit → écouteurs (CSP script-src self) ;
+//   • hrefs « # » du gabarit → vraies destinations (accueil, /proteger/,
+//     /methode/).
+// Sans Layout : le gabarit embarque son propre header/footer (fait partie
+// du contrat visuel) — même convention que src/pages/embed/compteur.astro.
+// noindex : page utilisateur à jeton, hors sitemap (filtre astro.config.mjs).
+import '../styles/fonts.css';
+import '../styles/global.css';
+import {
+  SECTEURS_VEILLE,
+  DONNEES_VEILLE,
+} from '../lib/ma-veille-state';
+---
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma Veille - France Passoire</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body class="font-body min-h-screen flex flex-col relative pb-32 sm:pb-0">
+
+    <!-- Header -->
+    <header class="border-b-2 border-brand-ink bg-brand-cream sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 font-display font-bold text-xl sm:text-2xl tracking-tight text-brand-ink hover:opacity-80 transition-opacity">
+          <span class="text-2xl" aria-hidden="true">🧺</span>
+          FRANCEPASSOIRE
+        </a>
+        <a href="/" class="font-mono text-sm font-bold opacity-80 hover:opacity-100 underline underline-offset-4">Retour au site</a>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+
+      <!-- ================= STATE 3A: ERROR (INVALID TOKEN) ================= -->
+      <div id="view-error" class="view-state">
+        <section class="bg-dot-matrix border-b-2 border-brand-ink py-16 sm:py-24 relative overflow-hidden">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-8 sm:p-12 transform -rotate-1 inline-block">
+              <svg width="48" height="48" viewBox="0 0 24 24" class="svg-ink mx-auto mb-4 text-brand-red"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <h1 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-ink mb-4">Lien invalide ou expiré</h1>
+              <p class="font-body text-xl font-medium text-brand-ink/80 mb-8 max-w-lg mx-auto">
+                Ce lien d'accès a pris la poussière ou est incorrect. Vérifiez le lien reçu par email.
+              </p>
+              <a href="/proteger/#proteger-surveiller" class="inline-flex items-center gap-2 bg-brand-orange text-brand-ink px-6 py-4 rounded-xl border-2 border-brand-ink shadow-hard hover:bg-brand-hover font-display font-bold text-xl transition-all btn-press">
+                <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                Relancer une veille
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ================= STATE 1 & 2 & 3B: MAIN VEILLE PREFS ================= -->
+      <div id="view-main" class="view-state">
+
+        <!-- Hero -->
+        <section class="bg-dot-matrix border-b-2 border-brand-ink py-12 relative overflow-hidden">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="bg-brand-cream border-2 border-brand-ink shadow-hard rounded-passoire p-8 sm:p-10 transform rotate-1">
+              <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-6 mb-4">
+                <div>
+                  <p class="font-mono text-sm font-bold uppercase tracking-wider opacity-70 mb-2">Vos alertes personnalisées</p>
+                  <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-brand-ink">Ma veille</h1>
+                </div>
+                <div class="bg-brand-paper border-2 border-brand-ink px-4 py-2 rounded-xl flex items-center gap-3">
+                  <svg width="20" height="20" viewBox="0 0 24 24" class="svg-ink opacity-50"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span id="masked-email" class="font-mono text-brand-ink font-bold tracking-tight"></span>
+                </div>
+              </div>
+              <p class="font-body text-brand-ink/80 text-lg">Ajustez ce que vous surveillez. Ou coupez tout.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="py-12 relative z-20">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+            <form id="prefs-form" class="space-y-12">
+
+              <!-- Network Error Banner (Hidden by default) -->
+              <div id="network-error-banner" class="hidden bg-brand-red/10 border-2 border-brand-red rounded-xl p-4 flex items-start gap-4 animate-slide-up">
+                <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink text-brand-red flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <div>
+                  <p class="font-display font-bold text-brand-red text-lg">Oups, problème de réseau.</p>
+                  <p class="font-body text-brand-ink/80 text-sm mt-1">Vos préférences n'ont pas pu être sauvegardées. Vérifiez votre connexion et réessayez.</p>
+                </div>
+              </div>
+
+              <!-- Empty Warning Banner (Hidden by default) -->
+              <div id="empty-warning-banner" class="hidden bg-brand-cream border-2 border-brand-ink rounded-xl p-4 flex items-start gap-4 shadow-hard-sm animate-slide-up">
+                <svg width="24" height="24" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 mt-0.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                <div>
+                  <p class="font-display font-bold text-brand-ink text-lg">Vous ne suivez plus rien.</p>
+                  <p class="font-body text-brand-ink/80 text-sm mt-1">En enregistrant ce choix, vous ne recevrez plus aucune alerte anti-fuites. C'est votre droit absolu.</p>
+                </div>
+              </div>
+
+              <!-- Fieldset 1: Secteurs -->
+              <fieldset>
+                <legend class="font-display font-extrabold text-2xl mb-4 border-b-2 border-brand-ink/20 pb-2 w-full">1. Secteurs d'activité</legend>
+                <p class="font-mono text-sm opacity-70 mb-4">Quelles fuites d'entreprises/administrations voulez-vous surveiller ?</p>
+                <div class="flex flex-wrap gap-3" id="group-secteurs">
+                  {SECTEURS_VEILLE.map((d) => (
+                    <label class="relative block">
+                      <input type="checkbox" name="sectors" value={d.id} class="peer sr-only" />
+                      <span class="inline-block px-4 py-2 border-2 border-brand-ink rounded-full font-mono text-sm bg-brand-cream text-brand-ink cursor-pointer hover:bg-brand-orange/20 transition-all peer-checked:bg-brand-orange peer-checked:font-bold peer-checked:shadow-[2px_2px_0px_0px_#241405] peer-focus-visible:ring-[3px] peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-1 select-none">
+                        {d.label}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Fieldset 2: Types de données -->
+              <fieldset>
+                <legend class="font-display font-extrabold text-2xl mb-4 border-b-2 border-brand-ink/20 pb-2 w-full">2. Types de données</legend>
+                <p class="font-mono text-sm opacity-70 mb-4">Quelles données fuyantes déclenchent l'alerte ?</p>
+                <div class="flex flex-wrap gap-3" id="group-donnees">
+                  {DONNEES_VEILLE.map((d) => (
+                    <label class="relative block">
+                      <input type="checkbox" name="data_types" value={d.id} class="peer sr-only" />
+                      <span class="inline-block px-4 py-2 border-2 border-brand-ink rounded-full font-mono text-sm bg-brand-cream text-brand-ink cursor-pointer hover:bg-brand-orange/20 transition-all peer-checked:bg-brand-orange peer-checked:font-bold peer-checked:shadow-[2px_2px_0px_0px_#241405] peer-focus-visible:ring-[3px] peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-1 select-none">
+                        {d.label}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <!-- Fieldset 3: Fréquence -->
+              <fieldset>
+                <legend class="font-display font-extrabold text-2xl mb-4 border-b-2 border-brand-ink/20 pb-2 w-full">3. Rythme d'alerte</legend>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                  <label class="relative block cursor-pointer group">
+                    <input type="radio" name="freq" value="quotidien" class="peer sr-only">
+                    <div class="bg-brand-paper border-2 border-brand-ink p-4 rounded-xl flex items-start gap-4 transition-colors peer-checked:bg-brand-cream peer-checked:border-brand-orange peer-checked:shadow-[3px_3px_0px_0px_#FF6B1A] peer-focus-visible:ring-[3px] peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2">
+                      <div class="text-2xl mt-1">🔔</div>
+                      <div>
+                        <p class="font-display font-bold text-lg mb-1 group-hover:text-brand-orange transition-colors">Immédiatement</p>
+                        <p class="font-body text-sm opacity-80">Alerte envoyée dès qu'une fuite correspondant à vos critères est confirmée.</p>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="relative block cursor-pointer group">
+                    <input type="radio" name="freq" value="hebdo" class="peer sr-only">
+                    <div class="bg-brand-paper border-2 border-brand-ink p-4 rounded-xl flex items-start gap-4 transition-colors peer-checked:bg-brand-cream peer-checked:border-brand-orange peer-checked:shadow-[3px_3px_0px_0px_#FF6B1A] peer-focus-visible:ring-[3px] peer-focus-visible:ring-brand-ink peer-focus-visible:ring-offset-2">
+                      <div class="text-2xl mt-1">📰</div>
+                      <div>
+                        <p class="font-display font-bold text-lg mb-1 group-hover:text-brand-orange transition-colors">Récapitulatif hebdo</p>
+                        <p class="font-body text-sm opacity-80">Le lundi à 09h00, un seul email résumant l'essentiel de la semaine passée.</p>
+                      </div>
+                    </div>
+                  </label>
+
+                </div>
+              </fieldset>
+
+              <!-- Reassurance -->
+              <div class="bg-brand-cream border-2 border-brand-ink p-6 rounded-passoire flex flex-col md:flex-row gap-6 items-center shadow-sm">
+                <svg width="32" height="32" viewBox="0 0 24 24" class="svg-ink flex-shrink-0 opacity-50"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <div class="text-sm font-body">
+                  <p class="font-bold mb-1">Comment ça marche</p>
+                  <p class="opacity-80">Nous comparons chaque nouvelle fiche publique à vos critères. Rien d'autre. Votre email ne quitte jamais ce service et n'est jamais partagé. <a href="/methode/" class="underline hover:text-brand-orange font-bold">Voir notre méthode →</a></p>
+                </div>
+              </div>
+
+              <!-- Mobile Spacing for Sticky Bar -->
+              <div class="h-24 sm:h-0"></div>
+
+            </form>
+          </div>
+        </section>
+
+        <!-- Sticky Save Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-brand-paper border-t-2 border-brand-ink p-4 sm:p-6 z-40 sm:relative sm:bg-transparent sm:border-0 sm:p-0 sm:max-w-4xl sm:mx-auto sm:px-6">
+          <div class="flex flex-col sm:flex-row-reverse items-center justify-between gap-4 bg-brand-paper sm:bg-transparent">
+
+            <button id="btn-save" type="submit" form="prefs-form" disabled class="w-full sm:w-auto bg-brand-orange text-brand-ink px-8 py-4 rounded-xl border-2 border-brand-ink shadow-[4px_4px_0px_0px_#241405] hover:bg-brand-hover font-display font-bold text-xl transition-all btn-press disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none disabled:transform-none flex justify-center items-center gap-2">
+              <span id="btn-save-text">Enregistrer mes préférences</span>
+            </button>
+
+            <button id="btn-unsub" type="button" class="text-sm font-mono text-brand-ink/60 hover:text-brand-ink underline underline-offset-4 transition-colors">
+              Se désinscrire en 1 clic
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="bg-brand-ink text-brand-cream py-8 mt-12">
+      <div class="max-w-7xl mx-auto px-4 text-center font-mono text-xs opacity-50">
+        <p>Vous recevez cet email car vous avez activé la veille FrancePassoire.</p>
+        <p class="mt-2"><a href="/" class="underline hover:text-brand-orange">Retour au site / Découvrir les outils</a></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<style>
+  /* ===== CSS du gabarit figé (TemplateMailsGemini/france_passoire_ma_veille.html),
+     porté tel quel — seuls les points divergents du thème global du site sont
+     redéclarés ici, valeurs exactes du gabarit. ===== */
+
+  /* .btn-press du gabarit : enfoncement 3px + ombre résiduelle 2px (le thème
+     global du site emploie 5px/0px — on garde la valeur du gabarit). */
+  .btn-press:active:not(:disabled) {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px 0px #241405 !important;
+  }
+
+  /* Pointillés du héros : pois 2.6px du gabarit (le site global emploie
+     1.3px — on garde la valeur du gabarit). */
+  .bg-dot-matrix {
+    background-color: #FF6B1A;
+    background-image: radial-gradient(circle, #241405 2.6px, transparent 2.6px);
+    background-size: 22px 22px;
+  }
+
+  /* Bascule d'états du gabarit (view-error ↔ view-main). */
+  .view-state { display: none; }
+  .view-state.active { display: block; animation: veilleFadeIn 0.4s ease-out forwards; }
+
+  /* animate-slide-up du gabarit : 0.3s (l'utilitaire global du thème est à
+     0.5s — on garde la valeur du gabarit). */
+  .animate-slide-up { animation: veilleSlideUp 0.3s ease-out forwards; }
+
+  @keyframes veilleFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes veilleSlideUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Accessibilité (exigence AA de l'intégration) : le gabarit retire le focus
+     générique (les puces et radios portent leur anneau peer-focus-visible) —
+     les liens et boutons du gabarit n'avaient aucun focus visible ; on leur
+     rend un focus dans le vocabulaire visuel du gabarit (anneau encre 3px). */
+  *:focus-visible { outline: none; }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #241405;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* prefers-reduced-motion : les animations du gabarit (vues, bandeaux) se coupent. */
+  @media (prefers-reduced-motion: reduce) {
+    .view-state.active,
+    .animate-slide-up { animation: none !important; }
+  }
+</style>
+
+<script>
+  // --- Îlot client « Ma veille » (tâche 56a) — machine d'états du gabarit
+  // (idle → hydraté → modifié → enregistré / erreur), branchée sur le worker :
+  //   GET  /api/watchlist/prefs?token=…  → hydratation (email masqué, puces)
+  //   POST /api/watchlist/prefs?token=…  → enregistrement
+  //   lien « Se désinscrire » → https://francepassoire.com/api/watchlist/unsub/<jeton>
+  // Base API : même convention que WatchlistForm / SignalerForm.
+  import { normaliserPrefs, prefsEgales, prefsVides, type PrefsVeille } from '../lib/ma-veille-state';
+
+  const API_BASE = `${import.meta.env.ASTRO_PUBLIC_API_URL ?? (location.hostname.endsWith('.pages.dev') ? 'https://francepassoire-api.t5hsrdmmmn.workers.dev' : '')}`;
+  const UNSUB_URL = 'https://francepassoire.com/api/watchlist/unsub/';
+
+  // --- DOM (ids du gabarit) ---
+  const viewError = document.getElementById('view-error');
+  const viewMain = document.getElementById('view-main');
+  const prefsForm = document.getElementById('prefs-form') as HTMLFormElement | null;
+  const btnSave = document.getElementById('btn-save') as HTMLButtonElement | null;
+  const btnSaveText = document.getElementById('btn-save-text');
+  const btnUnsub = document.getElementById('btn-unsub') as HTMLButtonElement | null;
+  const maskedEmailEl = document.getElementById('masked-email');
+  const networkErrorBanner = document.getElementById('network-error-banner');
+  const emptyWarningBanner = document.getElementById('empty-warning-banner');
+
+  // --- État (gabarit : baseline initiale + jeton + entités conservées) ---
+  let currentToken = '';
+  let initialPrefs: PrefsVeille | null = null;
+  let entitesInitiales: string[] = [];
+  let unsubConfirming = false;
+
+  // --- Core Logic (portée fidèle du gabarit, écouteurs au lieu d'inline) ---
+
+  function montrerErreur(): void {
+    viewMain?.classList.remove('active');
+    viewError?.classList.add('active');
+  }
+
+  function getCurrentFormData(): PrefsVeille {
+    if (!prefsForm) return { sectors: [], data_types: [], freq: 'hebdo' };
+    const formData = new FormData(prefsForm);
+    return normaliserPrefs({
+      sectors: formData.getAll('sectors'),
+      data_types: formData.getAll('data_types'),
+      freq: formData.get('freq'),
+    });
+  }
+
+  function populateForm(data: { email: string; prefs: { sectors?: unknown; data_types?: unknown; freq?: unknown } }): void {
+    if (maskedEmailEl) maskedEmailEl.innerText = data.email;
+    const prefs = normaliserPrefs(data.prefs);
+
+    prefsForm?.reset();
+
+    prefs.sectors.forEach((id) => {
+      const el = prefsForm?.querySelector<HTMLInputElement>(`input[name="sectors"][value="${id}"]`);
+      if (el) el.checked = true;
+    });
+    prefs.data_types.forEach((id) => {
+      const el = prefsForm?.querySelector<HTMLInputElement>(`input[name="data_types"][value="${id}"]`);
+      if (el) el.checked = true;
+    });
+    const freqEl = prefsForm?.querySelector<HTMLInputElement>(`input[name="freq"][value="${prefs.freq}"]`);
+    if (freqEl) freqEl.checked = true;
+
+    // Sauvegarde de la baseline puis rafraîchissement UI (gabarit).
+    initialPrefs = getCurrentFormData();
+    checkState();
+  }
+
+  function checkState(): void {
+    if (!initialPrefs || !btnSave || !btnSaveText) return;
+
+    const current = getCurrentFormData();
+    const isChanged = !prefsEgales(current, initialPrefs);
+    const isEmpty = prefsVides(current);
+
+    if (isEmpty) {
+      emptyWarningBanner?.classList.remove('hidden');
+      btnSaveText.innerText = 'Enregistrer quand même';
+    } else {
+      emptyWarningBanner?.classList.add('hidden');
+      btnSaveText.innerText = 'Enregistrer mes préférences';
+    }
+
+    btnSave.disabled = !isChanged;
+  }
+
+  async function savePreferences(): Promise<void> {
+    if (!btnSave || !btnSaveText || btnSave.disabled || !initialPrefs) return;
+
+    const originalText = prefsVides(getCurrentFormData())
+      ? 'Enregistrer quand même'
+      : 'Enregistrer mes préférences';
+
+    // UI : état « Enregistrement... » (gabarit).
+    btnSave.disabled = true;
+    btnSaveText.innerHTML = `<svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-brand-ink inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Enregistrement...`;
+    networkErrorBanner?.classList.add('hidden');
+
+    const current = getCurrentFormData();
+
+    try {
+      const res = await fetch(`${API_BASE}/api/watchlist/prefs?token=${encodeURIComponent(currentToken)}`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          sectors: current.sectors,
+          data_types: current.data_types,
+          freq: current.freq,
+          entities: entitesInitiales,
+        }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      // Succès : nouvelle baseline, retour visuel vert du gabarit.
+      initialPrefs = current;
+      btnSaveText.innerText = '✓ Enregistré';
+      btnSave.classList.add('bg-brand-green', 'text-brand-cream', 'border-brand-green');
+
+      setTimeout(() => {
+        btnSave?.classList.remove('bg-brand-green', 'text-brand-cream', 'border-brand-green');
+        checkState();
+      }, 2000);
+    } catch {
+      // Échec : bandeau du gabarit, saisie conservée à l'écran, réessai permis.
+      networkErrorBanner?.classList.remove('hidden');
+      btnSaveText.innerText = originalText;
+      btnSave.disabled = false;
+    }
+  }
+
+  // --- Désinscription : double-clic de confirmation du gabarit, puis
+  // https://francepassoire.com/api/watchlist/unsub/<jeton> (tâche 56a).
+  btnUnsub?.addEventListener('click', () => {
+    if (!unsubConfirming) {
+      unsubConfirming = true;
+      btnUnsub.innerText = 'Confirmer la désinscription ?';
+      btnUnsub.classList.remove('text-brand-ink/60', 'underline');
+      btnUnsub.classList.add('text-brand-red', 'font-bold', 'bg-brand-red/10', 'px-4', 'py-2', 'rounded-full');
+
+      setTimeout(() => {
+        if (unsubConfirming) {
+          unsubConfirming = false;
+          if (!btnUnsub) return;
+          btnUnsub.innerText = 'Se désinscrire en 1 clic';
+          btnUnsub.classList.add('text-brand-ink/60', 'underline');
+          btnUnsub.classList.remove('text-brand-red', 'font-bold', 'bg-brand-red/10', 'px-4', 'py-2', 'rounded-full');
+        }
+      }, 4000);
+    } else {
+      btnUnsub.innerText = 'Désinscription...';
+      window.location.href = `${UNSUB_URL}${encodeURIComponent(currentToken)}`;
+    }
+  });
+
+  // --- Écouteurs (remplacent les attributs inline du gabarit : CSP) ---
+  prefsForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    void savePreferences();
+  });
+  prefsForm?.addEventListener('change', checkState);
+
+  // --- Boot : ?token= → GET prefs → hydratation, sinon état erreur.
+  const token = new URLSearchParams(window.location.search).get('token') ?? '';
+  if (token === '') {
+    montrerErreur();
+  } else {
+    currentToken = token;
+    try {
+      const res = await fetch(`${API_BASE}/api/watchlist/prefs?token=${encodeURIComponent(token)}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = (await res.json()) as {
+        ok?: boolean;
+        email?: string;
+        prefs?: { sectors?: unknown; data_types?: unknown; freq?: unknown; entities?: unknown };
+      };
+      if (data.ok !== true) throw new Error('réponse sans ok');
+      entitesInitiales = Array.isArray(data.prefs?.entities)
+        ? (data.prefs.entities as unknown[]).filter((v): v is string => typeof v === 'string')
+        : [];
+      populateForm({ email: data.email ?? '', prefs: data.prefs ?? {} });
+      viewError?.classList.remove('active');
+      viewMain?.classList.add('active');
+    } catch {
+      montrerErreur();
+    }
+  }
+</script>
