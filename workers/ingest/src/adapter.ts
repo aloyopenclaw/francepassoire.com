@@ -3,6 +3,7 @@
 // implémentent SourceAdapter et s'enregistrent dans `adapters`.
 
 import { ransomwareLiveAdapter } from '../adapters/ransomware-live';
+import { ransomlookAdapter } from '../adapters/ransomlook';
 import { rssAdapters } from '../adapters/rss';
 import { certFrAvisAdapter, certFrAlertesAdapter } from '../adapters/cert-fr';
 import { cnilSanctionsAdapter } from '../adapters/cnil';
@@ -72,6 +73,7 @@ export interface SourceAdapter {
  */
 export const adapters: SourceAdapter[] = [
   ransomwareLiveAdapter,
+  ransomlookAdapter(),
   ...rssAdapters,
   certFrAvisAdapter,
   certFrAlertesAdapter,

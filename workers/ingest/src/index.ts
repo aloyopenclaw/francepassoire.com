@@ -13,6 +13,7 @@
 
 import { adapters, type Candidate, type SourceAdapter } from './adapter';
 import { isDailyRateOk } from '../adapters/cnil';
+import { hibpDiffAdapter, HIBP_BREACHES_URL } from '../adapters/hibp';
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -67,12 +68,13 @@ export interface RunOptions {
 }
 
 interface SourceState {
-  last_run: string | null;
-  last_success: string | null;
-  consecutive_failures: number;
-  disabled: boolean;
-  /** Guids des candidats déjà insérés (≤ GUID_SET_MAX, FIFO) — dédup guid. */
-  guid_set: string[];
+  last_run?: string;
+  last_success?: string;
+  consecutive_failures?: number;
+  disabled?: boolean;
+  guid_set?: string[];
+  /** Snapshot du catalogue HIBP (JSON string) pour le diff du run suivant. */
+  hibp_catalog?: string;
 }
 
 const stateKey = (adapterId: string): string => `ingest:state:${adapterId}`;
@@ -141,7 +143,34 @@ async function runSource(
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       const knownGuids = new Set(state.guid_set);
-      const fetched = await adapter.fetchCandidates(fetchFn, knownGuids);
+      // HIBP (fix 23/08) : diff contre le catalogue précédent persisté en KV
+      // par ce runner (hibp_catalog) — avant ce fix, l'adapter était amorcé à
+      // chaque run et ne produisait JAMAIS de candidat.
+      // Si un snapshot KV existe, c'est LA vérité du runner (elle écrase tout
+      // previousCatalog d'amorçage). Sinon on garde l'adapter du registre
+      // tel quel (permet les tests qui injectent leur propre snapshot).
+      const adapterEffectif =
+        adapter.id === 'hibp' && state.hibp_catalog !== undefined
+          ? hibpDiffAdapter({ previousCatalog: state.hibp_catalog })
+          : adapter;
+
+      let hibpCatalogue: string | undefined;
+      const fetchTee: typeof fetch =
+        adapter.id === 'hibp'
+          ? (async (input: RequestInfo | URL, init?: RequestInit) => {
+              const reponse = await fetchFn(input, init);
+              if (String(input).startsWith(HIBP_BREACHES_URL) && reponse.ok) {
+                hibpCatalogue = await reponse.text();
+                return new Response(hibpCatalogue, {
+                  status: reponse.status,
+                  headers: reponse.headers,
+                });
+              }
+              return reponse;
+            }) as typeof fetch
+          : fetchFn;
+
+      const fetched = await adapterEffectif.fetchCandidates(fetchTee, knownGuids);
       // Filet runner : les adapters qui ignorent knownGuids (paramètre
       // optionnel du contrat) voient leurs candidats déjà vus filtrés ici
       // aussi — le dédup est systémique, pas seulement par adapter.
@@ -165,6 +194,7 @@ async function runSource(
         last_success: new Date().toISOString(),
         consecutive_failures: 0,
         guid_set: guidSet.slice(-GUID_SET_MAX),
+        ...(hibpCatalogue !== undefined ? { hibp_catalog: hibpCatalogue } : {}),
       });
       return { adapter: adapter.id, inserted, failed: false, skipped: false };
     } catch (error) {

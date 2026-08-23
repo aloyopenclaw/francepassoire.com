@@ -233,6 +233,12 @@ export const rssFeedConfigs: FeedConfig[] = [
   // reste license-gated (décision tâche 17) : jamais de copie de fiches.
   { id: 'rss:fuitesinfos', name: 'Fuites Infos', url: 'https://fuitesinfos.fr/feed.xml' },
   { id: 'rss:frenchbreaches', name: 'FrenchBreaches', url: 'https://frenchbreaches.com/feed.xml' },
+  // Antennes temps réel (ajout 23/08, vague « 100x ») : presse française à
+  // l'instant Google News l'indexe + blogs spécialisés + veille Hackmanac.
+  { id: 'rss:gnews-fuites', name: 'Google News (fuites FR)', url: 'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr' },
+  { id: 'rss:undernews', name: 'UnderNews', url: 'https://www.undernews.fr/feed' },
+  { id: 'rss:dsb', name: 'DataSecurityBreach', url: 'https://www.datasecuritybreach.fr/feed/' },
+  { id: 'rss:hackmanac', name: 'Hackmanac', url: 'https://hackmanac.com/feed' },
 ];
 
 /** Instances prêtes à l'emploi — le runner T19 les enregistrera dans

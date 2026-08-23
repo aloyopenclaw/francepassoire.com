@@ -177,8 +177,8 @@ describe('T15 · adapter RSS — heuristiques (docs RSS inline)', () => {
 });
 
 describe('T15 · adapter RSS — configuration exportée', () => {
-  it('rssAdapters expose les 6 flux avec ids et URLs réels vérifiés en direct', () => {
-    expect(rssAdapters).toHaveLength(6);
+  it('rssAdapters expose les 10 flux avec ids et URLs réels vérifiés en direct', () => {
+    expect(rssAdapters).toHaveLength(10);
     expect(rssAdapters.map((a) => a.id)).toEqual([
       'rss:01net',
       'rss:zdnet-fr',
@@ -186,6 +186,10 @@ describe('T15 · adapter RSS — configuration exportée', () => {
       'rss:zataz',
       'rss:fuitesinfos',
       'rss:frenchbreaches',
+      'rss:gnews-fuites',
+      'rss:undernews',
+      'rss:dsb',
+      'rss:hackmanac',
     ]);
     expect(rssFeedConfigs.map((f) => f.url)).toEqual([
       'https://www.01net.com/feed/', // redirige depuis https://www.01net.com/feed
@@ -194,6 +198,10 @@ describe('T15 · adapter RSS — configuration exportée', () => {
       'https://www.zataz.com/feed/',
       'https://fuitesinfos.fr/feed.xml', // ajout 23/08 : sources spécialisées (leads publics)
       'https://frenchbreaches.com/feed.xml',
+      'https://news.google.com/rss/search?q=%22fuite+de+donn%C3%A9es%22+OR+cyberattaque+France&hl=fr&gl=FR&ceid=FR:fr',
+      'https://www.undernews.fr/feed',
+      'https://www.datasecuritybreach.fr/feed/',
+      'https://hackmanac.com/feed', // www est bot-bloqué (403), l'apex sert en 200
     ]);
   });
 });
