@@ -34,6 +34,34 @@ const {
 
 const canonicalURL = canonical ? new URL(canonical, Astro.site) : new URL(Astro.url.pathname, Astro.site);
 const imageURL = new URL(image, Astro.site);
+
+// Entité FrancePassoire + site, au niveau global (GEO) : liés par @id pour
+// que les schémas de page (Article, Dataset…) s'y raccrochent dans le
+// graphe de connaissances. Logo stable : og-image générique, pas l'image
+// de partage propre à la page.
+const siteOrigin = canonicalURL.origin;
+const siteJsonLd = JSON.stringify([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteOrigin}/#organization`,
+    name: 'FrancePassoire',
+    url: `${siteOrigin}/`,
+    logo: new URL('/og-image.jpg', Astro.site).href,
+    description:
+      'Observatoire citoyen et indépendant des fuites de données personnelles touchant la France : catalogue sourcé, panorama ransomware et autoprotection.',
+    sameAs: ['https://github.com/aloyopenclaw/francepassoire.com'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteOrigin}/#website`,
+    name: 'FrancePassoire',
+    url: `${siteOrigin}/`,
+    inLanguage: 'fr-FR',
+    publisher: { '@id': `${siteOrigin}/#organization` },
+  },
+]);
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -58,6 +86,7 @@ const imageURL = new URL(image, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={socialDescription} />
     <meta name="twitter:image" content={imageURL} />
+    <script type="application/ld+json" set:html={siteJsonLd} />
     <slot name="head" />
   </head>
   <body class="font-body min-h-screen flex flex-col">
