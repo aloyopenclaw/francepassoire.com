@@ -1,0 +1,42 @@
+{
+  "slug": "youfid-20260824",
+  "entity": "YouFid",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-24",
+    "publication": "2026-08-24"
+  },
+  "volume": {
+    "count": 1899454,
+    "unit": "lignes",
+    "label": "1 899 454 lignes revendiquées par l'acteur Lagui1337, proposées à la vente pour 1 000 euros ; le nombre de personnes distinctes n'est pas établi"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1 899 454 lignes revendiquées, fuite revendiquée chez YouFid (24 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-24-youfid",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — YouFid : près de 1,9 million de profils clients revendiqués dans une fuite massive (24 août 2026)",
+      "url": "https://www.cyberattaque.org/youfid-pres-de-19-million-de-profils-clients-revendiques-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 août 2026, l'acteur Lagui1337 revendique sur un forum la vente d'une base de 1 899 454 enregistrements issus de YouFid, plateforme française de fidélisation dématérialisée utilisée par des commerces de proximité et des enseignes de restauration rapide. Selon Fuites Infos et Cyberattaque.org, les données incluent identité, adresse email, numéro de téléphone, date de naissance, identifiant de carte de fidélité, commerce d'inscription et nombre de passages. L'échantillon de 1 000 lignes examiné par Cyberattaque.org confirme la présence de coordonnées et de données de fidélité. Les inscriptions les plus anciennes remontent à 2015. La plateforme n'a pas confirmé l'incident au 24 août.",
+  "timeline": [
+    {
+      "date": "2026-08-24",
+      "event": "L'acteur Lagui1337 revendique sur un forum la mise en vente de 1 899 454 enregistrements issus de YouFid pour 1 000 euros, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-24",
+      "event": "Cyberattaque.org analyse un échantillon de 1 000 lignes : noms, emails, téléphones, dates de naissance et données de fidélité sont confirmés."
+    }
+  ]
+}
