@@ -45,7 +45,8 @@ const siteJsonLd = JSON.stringify([
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${siteOrigin}/#organization`,
-    name: 'FrancePassoire',
+    name: 'France Passoire',
+    alternateName: ['FrancePassoire', 'francepassoire.com'],
     url: `${siteOrigin}/`,
     logo: new URL('/og-image.jpg', Astro.site).href,
     description:
@@ -56,7 +57,11 @@ const siteJsonLd = JSON.stringify([
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${siteOrigin}/#website`,
-    name: 'FrancePassoire',
+    // Nom de site Google (rich result « site name ») : l'espace compte —
+    // « FrancePassoire » collé faisait afficher le domaine en résultat de
+    // recherche (constat owner 24/08) ; le collage reste en alternateName.
+    name: 'France Passoire',
+    alternateName: ['FrancePassoire', 'francepassoire.com'],
     url: `${siteOrigin}/`,
     inLanguage: 'fr-FR',
     publisher: { '@id': `${siteOrigin}/#organization` },
@@ -76,7 +81,7 @@ const siteJsonLd = JSON.stringify([
     <meta property="og:description" content={socialDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:site_name" content="FrancePassoire" />
+    <meta property="og:site_name" content="France Passoire" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content={imageURL} />
     <meta property="og:image:width" content={String(imageWidth)} />
