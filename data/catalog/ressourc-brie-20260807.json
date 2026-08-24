@@ -1,0 +1,45 @@
+{
+  "slug": "ressourc-brie-20260807",
+  "entity": "Ressourc'brie",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-07",
+    "publication": "2026-08-07"
+  },
+  "volume": {
+    "count": 2026,
+    "unit": "enregistrements",
+    "label": "2 026 enregistrements selon la revendication (chiffre non confirmé indépendamment)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage de Ressourc'brie : la ressourcerie associative victime d'une revendication de diffusion de base SQL (7 aout 2026)",
+      "url": "https://frenchbreaches.com/alertes/ressourc-brie-msiy6s8ktdtfnh45mbc",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ayi NEDJIMI Consultants — Fuite de donnees Ressourc'brie : 2 026 personnes exposees (15 aout 2026)",
+      "url": "https://ayinedjimi-consultants.fr/articles/fuite-donnees-ressourcbrie-2026",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 août 2026, une publication sur un forum cybercriminel revendique la diffusion d'une base de données SQL présentée comme appartenant à Ressourc'brie, une ressourcerie associative basée à Brie-Comte-Robert et active dans le réemploi. L'auteur affirme mettre à disposition trois fichiers SQL issus du service en ligne de l'association. Selon l'analyse d'Ayi NEDJIMI Consultants, environ 2 026 enregistrements seraient concernés. Aucun échantillon visible n'accompagne la publication. L'authenticité des données, leur contenu exact et les circonstances de leur récupération ne sont pas confirmés indépendamment à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-08-07",
+      "event": "Revendication sur un forum cybercriminel : trois fichiers SQL issus du service en ligne de Ressourc'brie, environ 2 026 enregistrements."
+    },
+    {
+      "date": "2026-08-07",
+      "event": "FrenchBreaches documente la revendication."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Ayi NEDJIMI Consultants publie une analyse de l'incident et chiffre le volume à environ 2 026 enregistrements."
+    }
+  ]
+}
