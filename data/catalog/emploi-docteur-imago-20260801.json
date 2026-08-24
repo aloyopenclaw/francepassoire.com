@@ -1,0 +1,48 @@
+{
+  "slug": "emploi-docteur-imago-20260801",
+  "entity": "Emploi Docteur Imago",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-01",
+    "publication": "2026-08-01"
+  },
+  "volume": {
+    "count": 10359,
+    "unit": "comptes",
+    "label": "10 359 comptes utilisateurs WordPress revendiqués par l'auteur de la publication (chiffre non confirmé indépendamment)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Emploi Docteur Imago : un pirate revendique le vol des données de plus de 10 000 personnes (1er août 2026)",
+      "url": "https://frenchbreaches.com/alertes/emploi-docteur-imago-msalwlhrpzvx55d1kuf",
+      "kind": "revendication"
+    },
+    {
+      "label": "Ayi NEDJIMI Consultants — Fuite de données Emploi Docteur Imago (2026) : analyse RGPD (15 août 2026)",
+      "url": "https://ayinedjimi-consultants.fr/articles/fuite-donnees-emploi-docteur-imago-2026",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er août 2026, une publication sur un forum cybercriminel revendique l'exfiltration de la base de données complète du site emploi.docteurimago.fr, plateforme de recrutement spécialisée dans le secteur de la santé. L'auteur affirme mettre à disposition 499 tables de la base, dont 10 359 comptes utilisateurs WordPress avec mots de passe hachés au format bcrypt, plus de 5 200 clients WooCommerce et plus de 10 300 contacts CRM Salesforce. Selon l'analyse d'Ayi NEDJIMI Consultants publiée le 15 août, l'authenticité des données n'est pas confirmée et l'entreprise n'a pas communiqué publiquement. Les données annoncées incluent adresses électroniques, identifiants de connexion et historiques de commandes.",
+  "timeline": [
+    {
+      "date": "2026-08-01",
+      "event": "Revendication sur un forum cybercriminel : base WordPress et WooCommerce complète d'Emploi Docteur Imago, 10 359 comptes utilisateurs."
+    },
+    {
+      "date": "2026-08-01",
+      "event": "FrenchBreaches documente la revendication."
+    },
+    {
+      "date": "2026-08-15",
+      "event": "Ayi NEDJIMI Consultants publie une analyse de l'incident et précise les catégories de données annoncées."
+    }
+  ]
+}
