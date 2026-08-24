@@ -1,0 +1,43 @@
+{
+  "slug": "setic-pourtier-20260802",
+  "entity": "Setic Pourtier",
+  "siren": "342635570",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "lockbit",
+  "dates": {
+    "revendication": "2026-08-02",
+    "publication": "2026-08-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de donnees chez Setic Pourtier : une attaque ransomware revendiquee (3 aout 2026)",
+      "url": "https://frenchbreaches.com/alertes/setic-pourtier-rw_YzJWMGFXTXRjRzkxY25ScFpYSXVZMjl0UUd4dlkydGlhWFEx",
+      "kind": "revendication"
+    },
+    {
+      "label": "DeXpose — LockBit 5 Breaches Setic Pourtier in France (3 aout 2026)",
+      "url": "https://dexpose.io/lockbit-5-breaches-setic-pourtier-in-france",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 août 2026, le groupe LockBit 5.0 revendique une cyberattaque contre Setic Pourtier, constructeur industriel roannais spécialisé dans les machines pour l'industrie du câble et du fil métallique (SIREN 342635570). La revendication, relayée le 3 août par FrenchBreaches et DeXpose, affirme la compromission des systèmes de l'entreprise et annonce une publication future de données via un compte à rebours sur le portail de fuite du groupe. Aucun échantillon de données, ni arborescence de fichiers, ni volume ne sont indiqués dans les captures consultées. Les liens de téléchargement restent inactifs au moment de la publication des relais de presse.",
+  "timeline": [
+    {
+      "date": "2026-08-02",
+      "event": "LockBit 5.0 revendique l'attaque contre Setic Pourtier sur son portail de fuite ; compte à rebours actif."
+    },
+    {
+      "date": "2026-08-03",
+      "event": "FrenchBreaches et DeXpose documentent la revendication ; aucun échantillon ni volume public."
+    }
+  ]
+}
