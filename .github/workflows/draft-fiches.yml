@@ -70,8 +70,11 @@ jobs:
         # Modèle ÉPINGLÉ sur le plan GLM authentifié (24/08 : sans cette
         # épingle, opencode retombait sur zen anonyme → 429 en cascade →
         # 40 min de backoff par run pour ~10 min de vrai travail).
+        # Choix modèle (propriétaire 24/08) : turbo pour LE VOLUME de la
+        # rédaction — le contrat strict + la validation 5.3 gardent la
+        # qualité ; monter à glm-5.2 si les PR déçoivent.
         run: |
-          opencode run --model zai-coding-plan/glm-5.3 "
+          opencode run --model zai-coding-plan/glm-5-turbo "
           Tu es le rédacteur éditorial de FrancePassoire. Lis les candidats dans .agent-tmp/candidates.json (résultat D1 : id, source, source_url, raw) et le CONTRAT DE RÉDACTION INTÉGRAL dans docs/redaction-contract.md. Il est ta loi : barre d'inclusion, dédoublement, schéma, Ton A, interdits (em-dash, massif), vérification curl de CHAQUE source, archives web.archive.org pour les mortes, slug=date de revendication, statut confirmee seulement avec source officielle, group pour les dossiers ransomware.
 
           Pour CHAQUE candidat :
