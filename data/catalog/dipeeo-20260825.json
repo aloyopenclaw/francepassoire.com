@@ -1,0 +1,43 @@
+{
+  "slug": "dipeeo-20260825",
+  "entity": "Dipeeo",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "nombre non communiqué ; 11 fichiers JSON revendiqués par l'acteur 0xSec selon Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Dipeeo : le spécialiste français du RGPD visé (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/dipeeo-mt92blpt805eb19szgb",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Dipeeo : les données RGPD de ses clients exposées après une cyberattaque (25 août 2026)",
+      "url": "https://www.cyberattaque.org/dipeeo-les-donnees-rgpd-de-ses-clients-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Dipeeo, société française spécialisée dans l'accompagnement RGPD et les services de DPO externalisé, fait l'objet d'une revendication de fuite de données publiée le 25 août 2026. Selon Cyberattaque.org, l'acteur 0xSec affirme avoir récupéré la base accessible depuis metabase.dipeeo.fr et diffuse la structure de 11 fichiers JSON. Les données décrites comprennent des comptes clients avec noms, adresses e-mail, activités et coordonnées de responsables juridiques, une cartographie des sous-traitants, des analyses de contrats de traitement, des journaux d'activité utilisateurs et des demandes Trust Center. Le volume de personnes concernées n'est pas établi. Dipeeo n'a pas confirmé l'incident au 25 août.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "L'acteur 0xSec revendique l'accès à la base Metabase de Dipeeo et publie la structure de 11 fichiers JSON, selon Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "FrenchBreaches relaye la revendication : 11 fichiers contenant des données clients et utilisateurs."
+    }
+  ]
+}
