@@ -14,8 +14,7 @@
   },
   "data_types": [
     "identite",
-    "coordonnees",
-    "credentials"
+    "coordonnees"
   ],
   "sources": [
     {
@@ -34,7 +33,7 @@
       "kind": "article"
     }
   ],
-  "description": "Docurba, plateforme publique d’urbanisme portée par la Direction générale de l’aménagement, du logement et de la nature (docurba.beta.gouv.fr), fait l’objet d’une revendication de fuite de données publiée le 25 août 2026. Selon Fuites Infos, 2 751 comptes seraient concernés, répartis dans trois fichiers tableurs totalisant environ 5 100 lignes. Les personnes exposées sont des agents de communes et d’intercommunalités, des agents des services déconcentrés de l’État, des élus locaux et des bureaux d’études, sur l’ensemble du territoire métropolitain et outre-mer. D’après la revendication, les données comprennent noms, prénoms, adresses e-mail professionnelles, numéros de téléphone, fonctions, droits d’administration et rattacements à des collectivités (SIREN, code Insee, département, région). L’acteur 0xSec affirme avoir ciblé les tables d’utilisateurs de la plateforme, sans accès aux mots de passe ni aux données bancaires. L’incident n’est pas confirmé publiquement par le ministère au 25 août.",
+  "description": "Docurba, plateforme publique d’urbanisme portée par la Direction générale de l’aménagement, du logement et de la nature (docurba.beta.gouv.fr), fait l’objet d’une revendication de fuite de données publiée le 25 août 2026. Selon Fuites Infos, 2 751 comptes seraient concernés, répartis dans trois fichiers tableurs totalisant environ 5 100 lignes. Les personnes exposées sont des agents de communes et d’intercommunalités, des agents des services déconcentrés de l’État, des élus locaux et des bureaux d’études, sur l’ensemble du territoire métropolitain et outre-mer. D’après la revendication, les données comprennent noms, prénoms, adresses e-mail professionnelles, numéros de téléphone, fonctions, droits d’administration et rattachements à des collectivités (SIREN, code Insee, département, région). L’acteur 0xSec affirme avoir ciblé les tables d’utilisateurs de la plateforme, sans accès aux mots de passe ni aux données bancaires. L’incident n’est pas confirmé publiquement par le ministère au 25 août.",
   "timeline": [
     {
       "date": "2026-08-25",
