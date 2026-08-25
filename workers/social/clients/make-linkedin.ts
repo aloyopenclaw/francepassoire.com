@@ -42,7 +42,9 @@ export const send: SendFn = async (
       body: JSON.stringify({
         text: payload.text,
         image_url: payload.imageUrl ?? payload.url,
-        request_id: payload.metadata?.request_id ?? '',
+        // Repli structurel : JAMAIS de request_id vide (un module Make mappé sur ce
+        // champ traite "" comme absent → « Missing value of required parameter », constaté 25/08).
+        request_id: payload.metadata?.request_id ?? payload.url,
       }),
       signal: controleur.signal,
     });

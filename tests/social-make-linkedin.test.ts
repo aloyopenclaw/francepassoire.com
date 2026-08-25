@@ -36,7 +36,7 @@ describe('client LinkedIn via Make (webhook)', () => {
     expect(r).toMatchObject({ status: 'ERROR', retryable: true });
   });
 
-  it('le corps embarque {text, mediaUrl} — contrat image+texte du scénario LinkedIn (22/08)', async () => {
+  it('le corps embarque {text, image_url, request_id} — contrat du scénario LinkedIn (22/08) ; SANS metadata, request_id = repli url (jamais vide, correctif 25/08)', async () => {
     let corps: Record<string, unknown> = {};
     const fetchFn = vi.fn(async (_u: string | URL | Request, init?: RequestInit) => {
       corps = JSON.parse(String(init?.body));
@@ -50,7 +50,8 @@ describe('client LinkedIn via Make (webhook)', () => {
     expect(corps).toEqual({
       text: payload.text,
       image_url: 'https://francepassoire.com/fiche/x/card.jpg',
-      request_id: '',
+      request_id: payload.url,
     });
+    expect(String(corps.request_id).length).toBeGreaterThan(0);
   });
 });

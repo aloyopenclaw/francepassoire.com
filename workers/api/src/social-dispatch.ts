@@ -161,11 +161,12 @@ export async function dispatcherInstantSocial(
       try {
         const text = rendre(fiche, plateforme);
         const url = `https://francepassoire.com/fiche/${fiche.slug}/`;
+        const idLigne = `sw:${fiche.slug}:${plateforme}`;
         const payload: Record<string, unknown> = {
           text,
           url,
           statut: fiche.statut,
-          metadata: { origine: 'instant-sweep' },
+          metadata: { origine: 'instant-sweep', request_id: idLigne },
         };
         if (LONGUES.includes(plateforme)) {
           payload.imageUrl = `${url}card.jpg`;
@@ -201,7 +202,7 @@ export async function dispatcherInstantSocial(
             text: texte,
             url,
             statut: 'confirmee',
-            metadata: { origine: 'instant-sweep', type: 'maj' },
+            metadata: { origine: 'instant-sweep', type: 'maj', request_id: `sw:maj:${fiche.slug}:${plateforme}` },
           },
         );
         if (posee) log(`social: ${plateforme} en file (maj) pour ${fiche.slug}`);
@@ -265,7 +266,12 @@ export async function dispatcherRecapHebdo(
       const payload: Record<string, unknown> = {
         text: dest.text,
         url,
-        metadata: { origine: 'digest-hebdo', type: 'recap', numero: options.numero },
+        metadata: {
+          origine: 'digest-hebdo',
+          type: 'recap',
+          numero: options.numero,
+          request_id: `sw:recap:${options.numero}:${dest.plateforme}`,
+        },
       };
       if (dest.image) payload.imageUrl = `${url}/og-image.jpg`;
       const posee = await enfiler(db, `sw:recap:${options.numero}:${dest.plateforme}`, dest.plateforme, payload);

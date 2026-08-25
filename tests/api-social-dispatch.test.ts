@@ -308,3 +308,18 @@ describe('dispatcherInstantSocial — volume COURT compact (correctif 25/08)', (
     expect(x.payload.text.length).toBeLessThanOrEqual(280);
   });
 });
+
+describe('request_id présent dans tout payload LinkedIn (correctif 25/08)', () => {
+  it('nouvelle fiche : metadata.request_id = id déterministe de la ligne', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [revendiquee], [], { log: () => {}, now: new Date('2026-08-25T12:00:00Z') });
+    const li = lignes(raw).find((r) => r.platform === 'linkedin')!;
+    expect((li.payload as { metadata?: { request_id?: string } }).metadata?.request_id).toBe('sw:actua-20260822:linkedin');
+  });
+  it('changement de statut : request_id sw:maj:…', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherInstantSocial(d1, [], [confirmee], { log: () => {}, now: new Date('2026-08-25T12:00:00Z') });
+    const li = lignes(raw).find((r) => r.platform === 'linkedin')!;
+    expect((li.payload as { metadata?: { request_id?: string } }).metadata?.request_id).toBe('sw:maj:ird-20260821:linkedin');
+  });
+});
