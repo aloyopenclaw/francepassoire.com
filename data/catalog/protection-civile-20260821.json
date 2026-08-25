@@ -1,7 +1,7 @@
 {
   "slug": "protection-civile-20260821",
-  "entity": "Fédération nationale de Protection Civile (FNPC)",
-  "secteur": "services",
+  "entity": "Protection Civile (Fédération nationale de Protection Civile)",
+  "secteur": "autre",
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-08-21",
@@ -10,31 +10,42 @@
   "volume": {
     "count": 525000,
     "unit": "personnes",
-    "label": "Plus de 525 000 profils et environ 15 000 photographies, dont des mineurs « cadets » (chiffres issus d’une revendication de mars 2026 et d’analyses de veille, non confirmés par la FNPC)"
+    "label": "plus de 525 000 profils selon FrenchBreaches, chiffre contesté par la FNPC qui évoque de nombreux doublons"
   },
   "data_types": [
     "identite",
-    "coordonnees",
-    "credentials",
-    "documents"
+    "coordonnees"
   ],
   "sources": [
     {
-      "label": "FrenchBreaches — Protection Civile piratée : plus de 525 000 profils et 15 000 photos potentiellement exposés",
+      "label": "FrenchBreaches — Fuite de données à la Protection Civile : plus de 525 000 profils concernés (21 août 2026)",
       "url": "https://frenchbreaches.com/alertes/protection-civile-mt27j64epv2smy5m0g",
       "kind": "revendication"
     },
     {
-      "label": "Cyberattaque.org — Protection Civile : plus de 525 000 personnes touchées par une cyberattaque",
-      "url": "https://www.cyberattaque.org/protection-civile-plus-de-525-000-personnes-touchees-par-une-cyberattaque/",
+      "label": "TF1 Info — La Protection Civile visée par une cyberattaque, des données personnelles de ses bénévoles piratées (21 août 2026)",
+      "url": "https://www.tf1info.fr/justice-faits-divers/la-protection-civile-visee-par-une-cyberattaque-en-mars-des-donnees-personnelles-de-ses-benevoles-piratees-2459722.html",
+      "kind": "article"
+    },
+    {
+      "label": "Midi Libre — Cyberattaque : vol de données à la Protection Civile, plus de 500 000 profils ciblés (21 août 2026)",
+      "url": "https://www.midilibre.fr/2026/08/21/cyberattaque-vol-massif-de-donnees-a-la-protection-civile-plus-de-500-000-profils-de-benevoles-et-de-mineurs-cibles-lors-dun-piratage-informatique-13517773.php",
       "kind": "article"
     }
   ],
-  "description": "La Fédération nationale de Protection Civile (FNPC) annonce à ses bénévoles, dans une communication relayée le 21 août 2026, une cyberattaque survenue en mars 2026 contre sa plateforme eProtec, ayant permis un accès non autorisé à des données personnelles. L’organisation confirme l’incident, dépose plainte auprès de la section de lutte contre la cybercriminalité du parquet de Paris et rapproche cette attaque d’une série visant plusieurs fédérations. Selon la revendication d’un hacker datée de mars et les analyses de FrenchBreaches, plus de 525 000 profils (noms, dates de naissance, téléphones, professions, identifiants) et environ 15 000 photographies, dont des mineurs, auraient été exfiltrés ; ces volumes ne sont pas confirmés par la FNPC.",
+  "description": "La Fédération nationale de Protection Civile (FNPC) confirme le 21 août 2026 avoir été victime d'un piratage informatique et d'une violation de données à caractère personnel au mois de mars 2026 sur la plateforme eProtec utilisée par ses bénévoles. Selon FrenchBreaches, plus de 525 000 profils (noms, prénoms, dates de naissance, numéros de téléphone, professions) et environ 15 000 photos de profil auraient été exfiltrés. La FNPC conteste le volume exact, évoquant de nombreux doublons. Des données de personnes mineures figurent parmi les fichiers analysés. L'association précise qu'aucune donnée de personne secourue n'est concernée et indique avoir porté plainte auprès de la section de lutte contre la cybercriminalité du parquet de Paris.",
   "timeline": [
     {
+      "date": "2026-03-01",
+      "event": "Le piratage de la plateforme eProtec de la Protection Civile a lieu au cours du mois de mars, selon le communiqué de la FNPC relayé par l'AFP."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La FNPC indique avoir pris connaissance de la violation de données le lundi 17 août."
+    },
+    {
       "date": "2026-08-21",
-      "event": "La FNPC confirme auprès de ses bénévoles une cyberattaque de mars 2026 contre sa plateforme eProtec ; plainte déposée auprès du parquet de Paris."
+      "event": "FrenchBreaches publie sa révélation et la FNPC confirme le jour même le piratage et la violation de données via un communiqué relayé par l'AFP, tout en contestant le chiffre de 525 000 profils."
     }
   ]
 }
