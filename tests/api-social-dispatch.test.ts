@@ -110,7 +110,9 @@ describe('dispatcherInstantSocial — nouvelle fiche', () => {
     expect(li.payload.imageUrl).toBe(URL_FICHE + 'card.jpg');
     expect(li.payload.text).toContain('Statut : Revendiquée (revendication non confirmée par l’entité)');
     const x = rows.find((r) => r.platform === 'x')!;
-    expect(x.payload.text).toContain('Nouvelle fiche revendiquée : Actua');
+    expect(x.payload.text).toContain('🚨📣 Nouvelle fuite recensée : Actua');
+    expect(x.payload.text).toContain(`Statut : Revendiquée (${MENTION_REVENDICATION})`);
+    expect(x.payload.text).toContain('Volume :');
     expect(x.payload.imageUrl).toBeUndefined();
   });
 
@@ -270,9 +272,10 @@ describe('dispatcherInstantSocial — volume COURT compact (correctif 25/08)', (
     const rows = lignes(raw);
     expect(rows).toHaveLength(4);
     const x = rows.find((r) => r.platform === 'x')!;
-    expect(x.payload.text).toContain('525 000 personnes');
+    expect(x.payload.text).toContain('🚨📣 Nouvelle fuite recensée : Protection Civile');
+    expect(x.payload.text).toContain('Volume : 525 000 personnes');
     expect(x.payload.text).toContain(MENTION_REVENDICATION);
-    expect(x.payload.text.length).toBeLessThanOrEqual(260);
+    expect(x.payload.text.length - 'https://francepassoire.com/fiche/protection-civile-20260821/'.length + 23).toBeLessThanOrEqual(280);
     const li = rows.find((r) => r.platform === 'linkedin')!;
     expect(li.payload.text).toContain('525 000 profils selon FrenchBreaches');
   });
@@ -289,9 +292,10 @@ describe('dispatcherInstantSocial — volume COURT compact (correctif 25/08)', (
     const rows = lignes(raw);
     expect(rows).toHaveLength(4);
     const x = rows.find((r) => r.platform === 'x')!;
-    expect(x.payload.text).toContain('10 073 enregistrements');
+    expect(x.payload.text).toContain('Volume : 10 073');
     expect(x.payload.text).toContain(MENTION_REVENDICATION);
-    expect(x.payload.text.length).toBeLessThanOrEqual(260);
+    const urlB = 'https://francepassoire.com/fiche/banque-alimentaire-de-strasbourg-20260825/';
+    expect(x.payload.text.length - urlB.length + 23).toBeLessThanOrEqual(280);
   });
 
   it('confirmée COURT (rare : fiche née confirmée) : volume micro-cap 12, gabarit à 280 respecté', async () => {

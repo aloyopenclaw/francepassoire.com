@@ -320,23 +320,35 @@ describe('renderSocialPost / renderSocialPostCourt — gabarit propriétaire', (
     }
   });
 
-  it('COURT : sans résumé, volume sans clause « selon », ≤ 280, CTA court, URL', () => {
-    const post = renderSocialPostCourt(actua);
-    expect(post.startsWith('🚨📣 Nouvelle fuite recensée : Actua (Services)')).toBe(true);
-    expect(post).toContain('Volume : plus de 100 000 personnes recrutées');
+  it('COURT : sans résumé ni secteur, mention inline si revendiquée, volume sans clause « selon », limite X pondérée (URL = 23)', () => {
+    // Volume tel que le dispatcher le livre (compacté) : le gabarit seul
+    // n'accueille pas un volume de 35 caractères AVEC la mention — c'est le rôle
+    // de volumeCourt côté dispatcher.
+    const post = renderSocialPostCourt({ ...actua, volumeLabel: 'plus de 100 000 personnes ; passeports annoncés' });
+    expect(post.startsWith('🚨📣 Nouvelle fuite recensée : Actua')).toBe(true);
+    expect(post).not.toContain('(Services)');
+    expect(post).toContain(`Statut : Revendiquée (${MENTION_EXACTE})`);
+    expect(post).toContain('Volume : plus de 100 000 personnes');
     expect(post).not.toContain('selon LockBit');
     expect(post).not.toContain(actua.description);
     expect(post).toContain(CTA_COURT);
     expect(post).toContain(actua.url);
-    expect(post.length).toBeLessThanOrEqual(280);
+    // Pondération X : l'URL réelle (~44 caractères) compte pour 23.
+    expect(post.length - actua.url.length + 23).toBeLessThanOrEqual(280);
   });
 
-  it('COURT : dépassement 280 → refus explicite', () => {
+  it('COURT confirmée : ligne Statut sobre, sans mention', () => {
+    const post = renderSocialPostCourt({ ...actua, statut: 'confirmee' });
+    expect(post).toContain('Statut : Confirmée');
+    expect(post).not.toContain(MENTION_EXACTE);
+  });
+
+  it('COURT : dépassement 280 pondéré → refus explicite', () => {
     expect(() =>
       renderSocialPostCourt({
         ...actua,
-        entity: 'Une Entité Au Nom Beaucoup Trop Long Pour Tenir Dans La Limite De Caracteres De X',
-        volumeLabel: 'un volume extraordinairement long qui ne tiendra jamais dans les deux cent quatre-vingts caracteres de la limite X',
+        entity: 'Établissement Public De Santé Au Nom Vraiment Beaucoup Trop Long Pour La Limite',
+        volumeLabel: 'un volume extraordinairement long qui ne tiendra jamais dans la limite pondérée de X',
       }),
     ).toThrow(SocialTemplateError);
   });

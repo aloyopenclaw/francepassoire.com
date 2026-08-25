@@ -8,15 +8,13 @@
 // Instagram, branchés en T51, sont retirés le même jour (décision
 // propriétaire : plus de produits Meta).
 //
-// CHOIX DE RENDU (contrainte : la garde du drain exige la mention exacte
-// MENTION_REVENDICATION pour statut « revendiquée », et le gabarit COURT est
-// plafonné à 280 — les deux ne tiennent pas ensemble) :
-//   - LONG (linkedin) : gabarit propriétaire
-//     renderSocialPost (mention intégrée à la ligne Statut depuis ce jour) ;
-//   - COURT confirmée (x, bluesky, nostr) : gabarit propriétaire
-//     renderSocialPostCourt ;
-//   - COURT revendiquée : renderNewFichePost (format natif de la file, mention
-//     intégrée, validé ≤ 260) ;
+// CHOIX DE RENDU (décision owner 25/08 : gabarit propriétaire PARTOUT — le
+// format natif « Nouvelle fiche revendiquée : … » faisait 10× moins
+// d'impressions) :
+//   - LONG (linkedin) : renderSocialPost (mention dans la ligne Statut) ;
+//   - COURT (x, bluesky, nostr), revendiquée COMME confirmée :
+//     renderSocialPostCourt — secteur retiré de l'en-tête, mention inline,
+//     limite X pesée URL = 23 caractères (t.co) ;
 //   - changement de statut (les quatre) : renderStatusChangePost (transitions
 //     légales de la taxonomie uniquement, sinon refus explicite).
 //
@@ -29,7 +27,6 @@
 import type { D1Database } from './index';
 import type { FicheDigest } from './watchlist';
 import {
-  renderNewFichePost,
   renderRecapLong,
   renderSocialPost,
   renderSocialPostCourt,
@@ -70,8 +67,8 @@ export function publiable(fiche: FicheDigest, maintenant: Date): boolean {
  *  x/bluesky/nostr sautés pour cette seule raison. La mention de prudence
  *  vit APRÈS le volume dans tous les gabarits : cette coupe ne peut jamais
  *  l'entamer. */
-const VOLUME_COURT_REVENDIQUEE = 48;
-const VOLUME_COURT_CONFIRMEE = 12;
+const VOLUME_COURT_REVENDIQUEE = 20;
+const VOLUME_COURT_CONFIRMEE = 32;
 
 /** Volume compact pour teaser : nombre + unité du catalogue quand fournis,
  *  sinon nombre+mot extraits en tête de clause, sinon troncature au mot
@@ -114,15 +111,13 @@ function rendre(fiche: FicheDigest, plateforme: Plateforme): string {
   if (LONGUES.includes(plateforme)) {
     return renderSocialPost(entree);
   }
-  if (entree.statut === 'revendiquee') {
-    return renderNewFichePost({
-      entity: entree.entity,
-      statut: 'revendiquee',
-      volumeLabel: volumeCourt(fiche, VOLUME_COURT_REVENDIQUEE),
-      url,
-    });
-  }
-  return renderSocialPostCourt({ ...entree, statut: 'confirmee', volumeLabel: volumeCourt(fiche, VOLUME_COURT_CONFIRMEE) });
+  return renderSocialPostCourt({
+    ...entree,
+    volumeLabel: volumeCourt(
+      fiche,
+      entree.statut === 'revendiquee' ? VOLUME_COURT_REVENDIQUEE : VOLUME_COURT_CONFIRMEE,
+    ),
+  });
 }
 
 /** Une ligne en file : INSERT OR IGNORE (id déterministe = idempotence). */

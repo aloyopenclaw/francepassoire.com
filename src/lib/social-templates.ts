@@ -206,18 +206,28 @@ export function renderSocialPost(post: SocialPostInput): string {
 export function renderSocialPostCourt(post: SocialPostInput): string {
   const volumeComplet = post.volumeLabel.split(';')[0]?.trim() ?? post.volumeLabel;
   const volume = volumeComplet.split(' selon ')[0]?.trim() ?? volumeComplet;
+  // Décision owner 25/08 : le gabarit propriétaire PARTOUT sur les formats
+  // courts (le format natif « Nouvelle fiche revendiquée : … » faisait 10×
+  // moins d'impressions) — le secteur est retiré de l'en-tête pour loger la
+  // mention de prudence inline, et la limite X est pesée à la façon de X :
+  // toute URL compte 23 caractères (t.co), quoi que sa longueur réelle.
+  const statut =
+    post.statut === 'confirmee'
+      ? 'Confirmée'
+      : `Revendiquée (${MENTION_REVENDICATION})`;
   const texte = [
-    `🚨📣 Nouvelle fuite recensée : ${post.entity} (${SECTEURS_SOCIAUX[post.secteur] ?? post.secteur})`,
+    `🚨📣 Nouvelle fuite recensée : ${post.entity}`,
     '',
-    `Statut : ${piluleStatut(post.statut)}`,
+    `Statut : ${statut}`,
     `Volume : ${volume}`,
     '',
     CTA_COURT,
     post.url,
   ].join('\n');
-  if (texte.length > 280) {
+  const longueurX = texte.length - post.url.length + 23;
+  if (longueurX > 280) {
     throw new SocialTemplateError(
-      `Gabarit court à ${String(texte.length)} caractères (limite X : 280) — réduire le volume.`,
+      `Gabarit court à ${String(longueurX)} caractères pondérés X (limite 280, URL comptée 23) — réduire le volume.`,
     );
   }
   return texte;
