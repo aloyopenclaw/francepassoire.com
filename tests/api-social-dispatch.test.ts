@@ -256,3 +256,55 @@ describe('dispatcherRecapHebdo — récap hebdo social (25/08)', () => {
     expect(lignes(raw)).toHaveLength(3);
   });
 });
+
+describe('dispatcherInstantSocial — volume COURT compact (correctif 25/08)', () => {
+  it('volume long avec count/unit : les QUATRE plateformes partent, COURT compact « N unité », mention intacte, ≤ 260', async () => {
+    const { d1, raw } = makeDb();
+    const ficheLongVolume: FicheDigest = {
+      ...revendiquee,
+      slug: 'protection-civile-20260821',
+      entity: 'Protection Civile',
+      volume: { label: "plus de 525 000 profils selon FrenchBreaches, chiffre contesté par la FNPC qui évoque de nombreux doublons", count: 525000, unit: 'personnes' },
+    };
+    await dispatcherInstantSocial(d1, [ficheLongVolume], [], { log: () => {}, now: new Date('2026-08-25T12:00:00Z') });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(4);
+    const x = rows.find((r) => r.platform === 'x')!;
+    expect(x.payload.text).toContain('525 000 personnes');
+    expect(x.payload.text).toContain(MENTION_REVENDICATION);
+    expect(x.payload.text.length).toBeLessThanOrEqual(260);
+    const li = rows.find((r) => r.platform === 'linkedin')!;
+    expect(li.payload.text).toContain('525 000 profils selon FrenchBreaches');
+  });
+
+  it('volume long SANS count (revendiquée, cas réel banque-alimentaire) : extraction « nombre + mot » en tête, les 4 plateformes partent', async () => {
+    const { d1, raw } = makeDb();
+    const fiche: FicheDigest = {
+      ...revendiquee,
+      slug: 'banque-alimentaire-de-strasbourg-20260825',
+      entity: 'Banque Alimentaire',
+      volume: { label: "10 073 enregistrements revendiqués par l'acteur Lagui1337, selon FrenchBreaches et Cyberattaque.org" },
+    };
+    await dispatcherInstantSocial(d1, [fiche], [], { log: () => {}, now: new Date('2026-08-25T12:00:00Z') });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(4);
+    const x = rows.find((r) => r.platform === 'x')!;
+    expect(x.payload.text).toContain('10 073 enregistrements');
+    expect(x.payload.text).toContain(MENTION_REVENDICATION);
+    expect(x.payload.text.length).toBeLessThanOrEqual(260);
+  });
+
+  it('confirmée COURT (rare : fiche née confirmée) : volume micro-cap 12, gabarit à 280 respecté', async () => {
+    const { d1, raw } = makeDb();
+    const fiche: FicheDigest = {
+      ...confirmee,
+      slug: 'ird-20260821',
+      entity: 'IRD',
+      volume: { label: '7 500 personnes', count: 7500, unit: 'personnes' },
+    };
+    await dispatcherInstantSocial(d1, [fiche], [], { log: () => {}, now: new Date('2026-08-25T12:00:00Z') });
+    const x = lignes(raw).find((r) => r.platform === 'x')!;
+    expect(x.payload.text).toContain('Statut : Confirmée');
+    expect(x.payload.text.length).toBeLessThanOrEqual(280);
+  });
+});

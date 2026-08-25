@@ -64,6 +64,42 @@ export function publiable(fiche: FicheDigest, maintenant: Date): boolean {
 
 /** Texte rendu pour une plateforme : LONG, COURT (confirmée) ou natif-file
  * (revendiquée). Peut lever ( SocialTemplateError ) : attrapé par l'appelant. */
+/** Budget volume d'un rendu COURT : les gabarits plafonnent à 260 (natif
+ *  revendiquée) / 280 (gabarit court confirmée, dont le CTA à lui seul
+ *  pèse ~110) et refusaient les volumes longs — 3 fiches fin août ont vu
+ *  x/bluesky/nostr sautés pour cette seule raison. La mention de prudence
+ *  vit APRÈS le volume dans tous les gabarits : cette coupe ne peut jamais
+ *  l'entamer. */
+const VOLUME_COURT_REVENDIQUEE = 48;
+const VOLUME_COURT_CONFIRMEE = 12;
+
+/** Volume compact pour teaser : nombre + unité du catalogue quand fournis,
+ *  sinon nombre+mot extraits en tête de clause, sinon troncature au mot
+ *  près. La nuance complète reste dans la fiche et la version LONGUE. */
+function volumeCourt(fiche: FicheDigest, cap: number): string {
+  const premiere = (fiche.volume.label.split(';')[0] ?? fiche.volume.label).trim();
+  if (fiche.volume.count && fiche.volume.unit) {
+    const compact = `${frNumVolume(fiche.volume.count)} ${fiche.volume.unit}`;
+    if (compact.length <= cap) return compact;
+  }
+  const extraction = premiere.match(/^([\d\s.,]+)\s*([a-zA-Zàâäéèêëîïôöùûüç'’-]+)/);
+  if (extraction) {
+    const extrait = `${extraction[1]!.trim()} ${extraction[2]}`.replace(/\s+/g, ' ');
+    if (extrait.length <= cap) return extrait;
+  }
+  if (premiere.length <= cap) return premiere;
+  const coupe = premiere.slice(0, cap);
+  const borne = coupe.lastIndexOf(' ');
+  return `${borne > 0 ? coupe.slice(0, borne) : coupe}…`;
+}
+
+/** Séparateur de milliers à la française (espace simple, sûr partout). */
+function frNumVolume(n: number): string {
+  return Math.round(n)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
 function rendre(fiche: FicheDigest, plateforme: Plateforme): string {
   const url = `https://francepassoire.com/fiche/${fiche.slug}/`;
   const entree = {
@@ -82,11 +118,11 @@ function rendre(fiche: FicheDigest, plateforme: Plateforme): string {
     return renderNewFichePost({
       entity: entree.entity,
       statut: 'revendiquee',
-      volumeLabel: entree.volumeLabel.split(';')[0]?.trim() ?? entree.volumeLabel,
+      volumeLabel: volumeCourt(fiche, VOLUME_COURT_REVENDIQUEE),
       url,
     });
   }
-  return renderSocialPostCourt({ ...entree, statut: 'confirmee' });
+  return renderSocialPostCourt({ ...entree, statut: 'confirmee', volumeLabel: volumeCourt(fiche, VOLUME_COURT_CONFIRMEE) });
 }
 
 /** Une ligne en file : INSERT OR IGNORE (id déterministe = idempotence). */
