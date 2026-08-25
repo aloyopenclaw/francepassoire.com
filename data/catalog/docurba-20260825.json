@@ -1,0 +1,48 @@
+{
+  "slug": "docurba-20260825",
+  "entity": "Docurba",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 2751,
+    "unit": "comptes",
+    "label": "2 751 comptes selon Fuites Infos ; environ 5 100 lignes réparties en trois fichiers tableurs selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 2 751 comptes concernés par une fuite revendiquée chez Docurba (25 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-25-docurba",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Docurba : plus de 2 700 comptes utilisateurs revendiqués (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/docurba-gouv-fr-mt926ef1e9hbxb4hwu",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Docurba : plus de 5 000 lignes d’utilisateurs de la plateforme de l’État diffusées par un hacker (25 août 2026)",
+      "url": "https://www.cyberattaque.org/docurba-plus-de-5-000-lignes-dutilisateurs-de-la-plateforme-de-letat-diffusees-par-un-hacker/",
+      "kind": "article"
+    }
+  ],
+  "description": "Docurba, plateforme publique d’urbanisme portée par la Direction générale de l’aménagement, du logement et de la nature (docurba.beta.gouv.fr), fait l’objet d’une revendication de fuite de données publiée le 25 août 2026. Selon Fuites Infos, 2 751 comptes seraient concernés, répartis dans trois fichiers tableurs totalisant environ 5 100 lignes. Les personnes exposées sont des agents de communes et d’intercommunalités, des agents des services déconcentrés de l’État, des élus locaux et des bureaux d’études, sur l’ensemble du territoire métropolitain et outre-mer. D’après la revendication, les données comprennent noms, prénoms, adresses e-mail professionnelles, numéros de téléphone, fonctions, droits d’administration et rattacements à des collectivités (SIREN, code Insee, département, région). L’acteur 0xSec affirme avoir ciblé les tables d’utilisateurs de la plateforme, sans accès aux mots de passe ni aux données bancaires. L’incident n’est pas confirmé publiquement par le ministère au 25 août.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "L’acteur 0xSec publie la revendication et trois fichiers tableurs totalisant environ 5 100 lignes, selon Cyberattaque.org et FrenchBreaches."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "Fuites Infos relaie l’incident et évalue à 2 751 le nombre de comptes concernés."
+    }
+  ]
+}
