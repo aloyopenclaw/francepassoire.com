@@ -1,0 +1,48 @@
+{
+  "slug": "timetonic-20260825",
+  "entity": "TimeTonic",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 51594,
+    "unit": "enregistrements",
+    "label": "51 594 enregistrements selon la revendication, correspondant à trois bases regroupées en 67 tableurs"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 51 594 utilisateurs concernés par une fuite revendiquée chez TimeTonic (25 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-25-timetonic",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données TimeTonic : trois bases et 67 fichiers revendiqués (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/timetonic-mt922eg42yopbt0z9va",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — TimeTonic : 3 bases de données exposées après une cyberattaque (25 août 2026)",
+      "url": "https://www.cyberattaque.org/timetonic-3-bases-de-donnees-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "TimeTonic, éditeur français d'une plateforme no-code de gestion et d'automatisation utilisée par des établissements hospitaliers, des administrations et des grands groupes industriels, fait l'objet d'une revendication de fuite de données publiée le 25 août 2026. Selon Fuites Infos, l'acteur affirme détenir trois bases extraites de plusieurs instances de l'outil de reporting interne, regroupées en 67 tableurs et totalisant 51 594 enregistrements. Les données décrites comprennent des identités et coordonnées professionnelles (noms, adresses e-mail, téléphones, adresses postales), des informations d'emploi (fonction, employeur), des tickets de support, des journaux de connexion, des factures et des dossiers de gestion interne. La plateforme n'a pas confirmé l'incident au 25 août.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "Un acteur revendique la publication de trois bases et 67 tableurs issus de TimeTonic, totalisant 51 594 enregistrements, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "FrenchBreaches et Cyberattaque.org relaient la revendication, confirmant la nature des données décrites : identités, coordonnées, documents internes."
+    }
+  ]
+}
