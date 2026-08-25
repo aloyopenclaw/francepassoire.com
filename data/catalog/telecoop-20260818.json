@@ -1,0 +1,51 @@
+{
+  "slug": "telecoop-20260818",
+  "entity": "TeleCoop",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-18",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; la collecte serait partielle et aléatoire selon la communication de TeleCoop relayée par FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque TeleCoop : l'opérateur confirme une fuite de données personnelles (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/telecoop-mt92pqrix4829xkc6hj",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — TeleCoop pirate : des données clients exposées via une faille Metabase (25 août 2026)",
+      "url": "https://www.cyberattaque.org/telecoop-pirate-des-donnees-clients-exposees-via-une-faille-metabase/",
+      "kind": "article"
+    }
+  ],
+  "description": "TeleCoop, opérateur français de télécommunications coopératif, a été victime d'un incident de sécurité entre le 18 et le 19 août 2026. Selon la communication adressée à ses abonnés et relayée par FrenchBreaches, des tiers ont exploité une vulnérabilité de la plateforme de visualisation de données Metabase pour accéder à certaines données personnelles. L'alerte a été transmise à TeleCoop le 19 août par les services de l'État. Les données concernées comprennent des noms, prénoms, adresses e-mail, adresses postales, numéros de téléphone, numéros de client ou de sociétaire et certains détails d'appels. TeleCoop précise que les données bancaires, les mots de passe et les pièces d'identité ne sont pas concernés. L'entreprise indique avoir déployé un correctif le 20 août et que l'incident technique est clos. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-18",
+      "event": "Début de l'incident : exploitation d'une vulnérabilité Metabase, selon la communication de TeleCoop relayée par FrenchBreaches."
+    },
+    {
+      "date": "2026-08-19",
+      "event": "Les services de l'État alertent TeleCoop de l'exploitation potentielle de la vulnérabilité."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "TeleCoop indique avoir déployé le correctif et sécurisé l'environnement."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "FrenchBreaches et Cyberattaque.org publient des articles détaillés sur l'incident confirmé par TeleCoop."
+    }
+  ]
+}
