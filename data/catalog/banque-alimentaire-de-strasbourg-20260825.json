@@ -1,0 +1,43 @@
+{
+  "slug": "banque-alimentaire-de-strasbourg-20260825",
+  "entity": "Banque Alimentaire de Strasbourg",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 10073,
+    "unit": "enregistrements",
+    "label": "10 073 enregistrements revendiqués par l'acteur Lagui1337, selon FrenchBreaches et Cyberattaque.org ; le nombre de personnes distinctes n'est pas établi"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données à la Banque Alimentaire de Strasbourg : 10 000 dossiers revendiqués (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/banque-alimentaire-de-strasbourg-mt89jp2oj5vvmzw9w4j",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Banque Alimentaire de la Croix-Rouge à Strasbourg : 10 073 fiches de bénéficiaires en fuite (25 août 2026)",
+      "url": "https://www.cyberattaque.org/banque-alimentaire-de-la-croix-rouge-a-strasbourg-10-073-fiches-de-beneficiaires-en-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 août 2026, l'acteur Lagui1337 revendique sur un forum la diffusion d'une base de 10 073 enregistrements liés à la Banque Alimentaire de Strasbourg, selon FrenchBreaches. Les données concernent des bénéficiaires de l'aide alimentaire et comprennent noms, prénoms, dates de naissance, coordonnées, numéros de dossier et de carte, périodes de droits et dates de dernier passage. Selon Cyberattaque.org, les fichiers analysés mentionnent une source rattachée à la Croix-Rouge. Des mineurs figurent parmi les enregistrements et certains dossiers affichent des droits actifs en août 2026. La Banque Alimentaire de Strasbourg n'a pas publié de communiqué à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "L'acteur Lagui1337 revendique sur un forum la diffusion de 10 073 enregistrements liés à la Banque Alimentaire de Strasbourg, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "Cyberattaque.org analyse les échantillons et signale la présence de données de mineurs et de dossiers actifs."
+    }
+  ]
+}
