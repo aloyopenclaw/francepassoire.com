@@ -1196,3 +1196,21 @@ describe('confirmedSubscribers — forme D1 réelle {results} (régression prod 
     expect(brevoCalls[0]!.body.to[0]!.email).toBe('abonne-tout@example.com');
   });
 });
+describe('runWeeklyDigest enfile le récap social', () => {
+  it('digest parti → 3 lignes sw:recap dans social_outbox (même numero que le mail)', async () => {
+    const { env, raw } = await digestEnv([
+      { id: 's1', email: 'abonne@example.com', prefs: { sectors: [], data_types: [], entities: [], freq: 'hebdo' }, confirmed: true },
+    ]);
+    const brevoCalls: BrevoCall[] = [];
+    await runWeeklyDigest(env, {
+      fetchFn: makeFetch({ brevoCalls, fiches: [ficheSante] }),
+      sleep: noSleep,
+      now: NOW,
+    });
+    expect(brevoCalls).toHaveLength(1);
+    const rows = raw.prepare('SELECT id, platform FROM social_outbox').all() as object[];
+    expect(rows).toHaveLength(3);
+    const ids = rows.map((r) => (r as { id: string }).id);
+    expect(ids.every((id) => id.startsWith('sw:recap:'))).toBe(true);
+  });
+});

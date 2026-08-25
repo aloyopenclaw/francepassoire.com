@@ -3,7 +3,7 @@
 // retirés le 23/08, décision propriétaire — idempotent, garde-mention).
 import { describe, expect, it } from 'vitest';
 import { DatabaseSync } from 'node:sqlite';
-import { dispatcherInstantSocial } from '../workers/api/src/social-dispatch';
+import { dispatcherInstantSocial, dispatcherRecapHebdo } from '../workers/api/src/social-dispatch';
 import { runInstantSweep, type FicheDigest } from '../workers/api/src/watchlist';
 import type { D1Database, Env, KVNamespace } from '../workers/api/src/index';
 import { MENTION_REVENDICATION } from '../src/lib/social-templates';
@@ -216,5 +216,43 @@ describe('intégration runInstantSweep → file sociale', () => {
     const rows = lignes(raw);
     expect(rows).toHaveLength(4);
     expect(rows.every((r) => r.payload.text.includes(MENTION_REVENDICATION))).toBe(true);
+  });
+});
+
+describe('dispatcherRecapHebdo — récap hebdo social (25/08)', () => {
+  const opts = {
+    numero: 2,
+    fiches: 12,
+    personnes: 2_400_000,
+    libellePersonnes: 'personnes et comptes exposés',
+    exemples: [
+      { entity: 'Alaxione', statut: 'confirmee', volume: '6 800 000 personnes' },
+      { entity: 'Actua', statut: 'revendiquee', volume: '100 000 personnes' },
+    ],
+  };
+
+  it('trois lignes (linkedin, x, bluesky), ids déterministes, imageUrl LinkedIn uniquement, mention sur la longue', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherRecapHebdo(d1, { ...opts, log: () => {} });
+    const rows = lignes(raw);
+    expect(rows).toHaveLength(3);
+    expect(rows.map((r) => r.platform).sort()).toEqual(['bluesky', 'linkedin', 'x']);
+    for (const r of rows) expect(r.id).toBe(`sw:recap:2:${r.platform}`);
+    const li = rows.find((r) => r.platform === 'linkedin')!;
+    expect(li.payload.imageUrl).toBe('https://francepassoire.com/og-image.jpg');
+    expect(li.payload.text).toContain('Le Récap Passoire · N°2');
+    expect(li.payload.text).toContain('revendication non confirmée par l’entité');
+    expect(li.payload.text).toContain('- Alaxione · Confirmée ·');
+    const x = rows.find((r) => r.platform === 'x')!;
+    expect(x.payload.imageUrl).toBeUndefined();
+    expect(x.payload.text).toContain('Cette semaine sur FrancePassoire');
+    expect(x.payload.text.length).toBeLessThanOrEqual(280);
+  });
+
+  it('idempotent : double appel → toujours 3 lignes', async () => {
+    const { d1, raw } = makeDb();
+    await dispatcherRecapHebdo(d1, { ...opts, log: () => {} });
+    await dispatcherRecapHebdo(d1, { ...opts, log: () => {} });
+    expect(lignes(raw)).toHaveLength(3);
   });
 });

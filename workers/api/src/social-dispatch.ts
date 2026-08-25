@@ -30,9 +30,11 @@ import type { D1Database } from './index';
 import type { FicheDigest } from './watchlist';
 import {
   renderNewFichePost,
+  renderRecapLong,
   renderSocialPost,
   renderSocialPostCourt,
   renderStatusChangePost,
+  renderWeeklyDigestTeaser,
 } from '../../../src/lib/social-templates';
 
 /** Plateformes destination — l'ordre est celui de workers/social types.ts. */
@@ -170,6 +172,70 @@ export async function dispatcherInstantSocial(
       } catch (error) {
         console.error(`social: ${plateforme} maj ${fiche.slug} non enfilée (D1) :`, error);
       }
+    }
+  }
+}
+
+export interface RecapDispatchOptions {
+  log?: (...args: unknown[]) => void;
+  /** Numéro d'édition du Récap (semaines écoulées depuis le n°1) — clé d'idempotence. */
+  numero: number;
+  fiches: number;
+  personnes: number;
+  libellePersonnes: string;
+  exemples: ReadonlyArray<{ entity: string; statut: string; volume: string }>;
+}
+
+/**
+ * Récap hebdo social (décision propriétaire 25/08) : quand le digest email
+ * « Le Récap Passoire » part (lundi 09:00 Paris, même garde KV), sa
+ * contrepartie part en file — LinkedIn en version longue (exemples + mention
+ * exacte pour toute revendiquée citée), X et Bluesky en teaser COURT.
+ * Ids déterministes sw:recap:<numero>:<plateforme> + INSERT OR IGNORE : un
+ * lundi rejoué ne double-jamais la file. Ne lève JAMAIS.
+ */
+export async function dispatcherRecapHebdo(
+  db: D1Database,
+  options: RecapDispatchOptions,
+): Promise<void> {
+  const log = options.log ?? console.log;
+  const url = 'https://francepassoire.com';
+  let court = '';
+  let long = '';
+  try {
+    court = renderWeeklyDigestTeaser({ fiches: options.fiches, personnes: options.personnes });
+    long = renderRecapLong({
+      numero: options.numero,
+      fiches: options.fiches,
+      personnes: options.personnes,
+      libellePersonnes: options.libellePersonnes,
+      exemples: options.exemples.map((e) => ({
+        entity: e.entity,
+        statut: e.statut === 'confirmee' ? 'confirmee' : 'revendiquee',
+        volume: e.volume,
+      })),
+    });
+  } catch (error) {
+    console.error('social: récap hebdo non rendu (gabarit refusé) :', error);
+    return;
+  }
+  const destinations: ReadonlyArray<{ plateforme: Plateforme; text: string; image: boolean }> = [
+    { plateforme: 'linkedin', text: long, image: true },
+    { plateforme: 'x', text: court, image: false },
+    { plateforme: 'bluesky', text: court, image: false },
+  ];
+  for (const dest of destinations) {
+    try {
+      const payload: Record<string, unknown> = {
+        text: dest.text,
+        url,
+        metadata: { origine: 'digest-hebdo', type: 'recap', numero: options.numero },
+      };
+      if (dest.image) payload.imageUrl = `${url}/og-image.jpg`;
+      const posee = await enfiler(db, `sw:recap:${options.numero}:${dest.plateforme}`, dest.plateforme, payload);
+      if (posee) log(`social: récap N°${options.numero} en file pour ${dest.plateforme}`);
+    } catch (error) {
+      console.error(`social: récap ${dest.plateforme} non enfilé (D1) :`, error);
     }
   }
 }

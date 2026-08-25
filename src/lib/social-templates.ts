@@ -282,3 +282,55 @@ export function renderWeeklyDigestTeaser(stats: WeeklyDigestStats): string {
     `Cette semaine sur FrancePassoire : ${fiches} et ${personnes}. Le détail par fiche : ${URL_SITE}`,
   );
 }
+
+/** Exemple d'incident cité dans le Récap social LONG (LinkedIn). */
+export interface ExempleRecap {
+  entity: string;
+  statut: Statut;
+  volume: string;
+}
+
+export interface RecapLongInput {
+  numero: number;
+  fiches: number;
+  personnes: number;
+  libellePersonnes: string;
+  exemples: readonly ExempleRecap[];
+}
+
+/**
+ * Récap hebdo LONG — LinkedIn (branché 25/08, décision propriétaire) : la
+ * contrepartie sociale du digest email « Le Récap Passoire ». Toute fuite
+ * revendiquée citée porte la mention exacte de non-confirmation (même règle
+ * que les posts de fiche : aucune allégation non vérifiée présentée comme
+ * un fait, même en résumé).
+ */
+export function renderRecapLong(input: RecapLongInput): string {
+  if (!Number.isInteger(input.numero) || input.numero < 1) {
+    throw new SocialTemplateError('Numéro de Récap invalide : entier ≥ 1 attendu.');
+  }
+  if (!Number.isInteger(input.fiches) || input.fiches < 1) {
+    throw new SocialTemplateError('Un Récap ne part que pour une semaine non vide.');
+  }
+  if (!Number.isInteger(input.personnes) || input.personnes < 0) {
+    throw new SocialTemplateError('Compteur de personnes invalide : entier positif attendu.');
+  }
+  const lignesExemples = input.exemples.slice(0, 3).map((ex) => {
+    const entite = champ('entité', ex.entity);
+    const volume = champ('volume', ex.volume);
+    return ex.statut === 'confirmee'
+      ? `- ${entite} · Confirmée · ${volume}`
+      : `- ${entite} · Revendiquée : ${MENTION_REVENDICATION} · ${volume}`;
+  });
+  return [
+    `🧺 Le Récap Passoire · N°${String(input.numero)}`,
+    '',
+    `${formaterNombre(input.fiches)} nouvelle${input.fiches > 1 ? 's' : ''} fuite${input.fiches > 1 ? 's' : ''} recensée${input.fiches > 1 ? 's' : ''} cette semaine, ${formaterNombre(input.personnes)} ${input.libellePersonnes}.`,
+    ...(lignesExemples.length > 0 ? ['', ...lignesExemples] : []),
+    '',
+    'Fiches sourcées, statuts tracés : Revendiquée n\'est pas Confirmée.',
+    `Tout le détail, fiche par fiche : ${URL_SITE}`,
+    '',
+    '#FrancePassoire #FuiteDeDonnées #cybersecurite #DataLeaks',
+  ].join('\n');
+}

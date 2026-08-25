@@ -9,6 +9,7 @@ import {
   renderNewFichePost,
   renderStatusChangePost,
   renderWeeklyDigestTeaser,
+  renderRecapLong,
   type NewFicheInput,
   type StatusChangeInput,
 } from '../src/lib/social-templates';
@@ -352,5 +353,54 @@ describe('renderSocialPost / renderSocialPostCourt — gabarit propriétaire', (
     const post = renderSocialPost({ ...actua, statut: 'confirmee' });
     expect(post).toContain('Statut : Confirmée');
     expect(post).not.toContain(MENTION_EXACTE);
+  });
+});
+
+// Récap hebdo LONG — LinkedIn (branché 25/08) : contrepartie sociale du digest email.
+describe('renderRecapLong — Récap hebdo LinkedIn', () => {
+  const base = {
+    numero: 2,
+    fiches: 12,
+    personnes: 2400000,
+    libellePersonnes: 'personnes et comptes exposés',
+  };
+
+  it('structure : en-tête N°, stats agrégées, exemples, CTA + URL + hashtags', () => {
+    const post = renderRecapLong({
+      ...base,
+      exemples: [
+        { entity: 'Alaxione', statut: 'confirmee', volume: '6 800 000 personnes' },
+        { entity: 'Actua', statut: 'revendiquee', volume: '100 000 personnes' },
+      ],
+    });
+    expect(post).toContain('Le Récap Passoire · N°2');
+    expect(post).toContain('12 nouvelles fuites');
+    expect(post).toContain('2 400 000 personnes et comptes exposés');
+    expect(post).toContain('- Alaxione · Confirmée · 6 800 000 personnes');
+    expect(post).toContain('#FrancePassoire');
+    expect(post).toContain('https://francepassoire.com');
+  });
+
+  it('exemple revendiquée → porte la mention EXACTE inline (résumé = même règle defamation-safe)', () => {
+    const post = renderRecapLong({
+      ...base,
+      exemples: [{ entity: 'Actua', statut: 'revendiquee', volume: '100 000 personnes' }],
+    });
+    expect(post).toContain(`- Actua · Revendiquée : ${MENTION_EXACTE} · 100 000 personnes`);
+  });
+  it('que des confirmées → aucune mention de non-confirmation', () => {
+    const post = renderRecapLong({
+      ...base,
+      exemples: [{ entity: 'IRD', statut: 'confirmee', volume: '7 500 personnes' }],
+    });
+    expect(post).toContain('- IRD · Confirmée ·');
+    expect(post).not.toContain(MENTION_EXACTE);
+  });
+  it('entrées invalides → refus (numéro, semaine vide, entité vide)', () => {
+    expect(() => renderRecapLong({ ...base, numero: 0, exemples: [] })).toThrow(SocialTemplateError);
+    expect(() => renderRecapLong({ ...base, fiches: 0, exemples: [] })).toThrow(SocialTemplateError);
+    expect(() =>
+      renderRecapLong({ ...base, exemples: [{ entity: '  ', statut: 'confirmee', volume: 'x' }] }),
+    ).toThrow(SocialTemplateError);
   });
 });

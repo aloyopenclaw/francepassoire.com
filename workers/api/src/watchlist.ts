@@ -58,7 +58,7 @@
 //                 "watchlist-confirm:<email_hash>:<exp_ms>")>, TTL 24 h.
 
 import type { D1Database, Env, KVNamespace } from './index';
-import { dispatcherInstantSocial } from './social-dispatch';
+import { dispatcherInstantSocial, dispatcherRecapHebdo } from './social-dispatch';
 
 // ---------------------------------------------------------------------------
 // Constantes et copies locales (frontière worker ↔ src/lib — aucun import)
@@ -1490,6 +1490,28 @@ export async function runWeeklyDigest(
     }
     await sleep(SEND_PAUSE_MS);
   }
+
+  // Récap social (décision propriétaire 25/08) : LinkedIn (version longue)
+  // + X/Bluesky (teaser) en même temps que l'email — même garde KV que le
+  // digest, ids déterministes par numéro d'édition (un lundi rejoué ne
+  // double-jamais). Un échec d'enfilement n'entache jamais les envois email.
+  const numeroRecap = Math.max(1, Math.floor((now.getTime() - PREMIER_NUMERO) / (7 * 24 * 3600 * 1000)) + 1);
+  const exemplesRecap = [...semaine]
+    .sort((a, b) => (b.volume.count ?? 0) - (a.volume.count ?? 0))
+    .slice(0, 3)
+    .map((f) => ({
+      entity: f.entity,
+      statut: f.statut ?? 'revendiquee',
+      volume: (f.volume.label.split(';')[0] ?? f.volume.label).trim(),
+    }));
+  await dispatcherRecapHebdo(env.DB, {
+    numero: numeroRecap,
+    fiches: semaine.length,
+    personnes: sommePersonnes(semaine),
+    libellePersonnes: libellePersonnes(semaine),
+    exemples: exemplesRecap,
+    log,
+  });
 
   log(`digest: ${sent} envoi(s), ${skipped} saut(s), ${abonnes.length} abonné(s) confirmé(s)`);
   return { sent, skipped };
