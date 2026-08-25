@@ -1,0 +1,49 @@
+{
+  "slug": "groupe-bernard-20260824",
+  "entity": "Groupe Bernard",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-24",
+    "publication": "2026-08-24"
+  },
+  "volume": {
+    "count": 26720,
+    "unit": "personnes",
+    "label": "26 720 personnes identifiables et 38 000 entreprises clientes évoquées, selon Fuites Infos ; 22,25 Go et 330 563 fichiers selon la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 26 720 personnes touchées par une fuite revendiquée chez Groupe Bernard (25 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-24-groupe-bernard",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuites de données Groupe Bernard : 22,25 Go et 330 563 fichiers... (24 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/groupe-bernard-blgcloud-mt7k8j5h05wkmuoyjbj",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Groupe Bernard : 22,25 Go de données et 330 563 fichiers publiés après une cyberattaque (24 août 2026)",
+      "url": "https://www.cyberattaque.org/groupe-bernard-2225-go-de-donnees-et-330-563-fichiers-publies-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Groupe Bernard, concessionnaire breton implanté sur quatorze établissements et actif dans le secteur agricole, fait l'objet d'une revendication de fuite de données publiée le 24 août 2026 sur un forum cybercriminel. L'auteur présente le dépôt comme le treizième volet de la série BlgCloud Leak, liée à la plateforme ERP BlgCloud. Selon Fuites Infos, 26 720 personnes identifiables et 38 000 entreprises clientes figureraient dans un référentiel commercial de 22 Go. Les échantillons montrent des données CRM, des coordonnées professionnelles, des coordonnées bancaires, des comptes utilisateurs et des métadonnées de documents commerciaux (factures, bons de livraison, ordres de travail). L'incident n'est pas confirmé par le Groupe Bernard au 25 août.",
+  "timeline": [
+    {
+      "date": "2026-08-24",
+      "event": "Publication du BlgCloud Leak n\u00b013 attribué au Groupe Bernard : 22,25 Go et 330 563 fichiers revendiqués, selon FrenchBreaches et Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-25",
+      "event": "Fuites Infos relaie la revendication et précise 26 720 personnes identifiables et 38 000 entreprises clientes évoquées."
+    }
+  ]
+}
