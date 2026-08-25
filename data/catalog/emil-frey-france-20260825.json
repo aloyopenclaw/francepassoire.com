@@ -1,0 +1,38 @@
+{
+  "slug": "emil-frey-france-20260825",
+  "entity": "Emil Frey France",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-25"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; selon la communication citée par Cyberattaque.org, le volume n'est pas précisé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque Emil Frey France : le groupe confirme une fuite de données (25 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/emil-frey-france-mt92ee51kf5jca5u0vc",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Emil Frey France : une fuite de données expose des leads et des collaborateurs (25 août 2026)",
+      "url": "https://www.cyberattaque.org/emil-frey-france-une-fuite-de-donnees-expose-des-leads-et-des-collaborateurs/",
+      "kind": "article"
+    }
+  ],
+  "description": "Emil Frey France, groupe de distribution automobile opérant sous la bannière Groupe Autosphere, fait l'objet d'une fuite de données relayée le 25 août 2026. Selon Cyberattaque.org, l'entreprise indique avoir détecté l'incident en début de semaine et affirme que le périmètre est circonscrit. Les données exposées portent sur des leads commerciaux et des coordonnées professionnelles de collaborateurs : noms, prénoms, fonctions et adresses e-mail professionnelles. Aucun mot de passe ni donnée bancaire ne serait concerné selon la communication citée. Le volume de personnes touchées n'est pas communiqué. Sans source officielle accessible en ligne, le statut reste revendiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "FrenchBreaches et Cyberattaque.org relaient une fuite de données chez Emil Frey France, citant une communication du groupe confirmant l'incident."
+    }
+  ]
+}
