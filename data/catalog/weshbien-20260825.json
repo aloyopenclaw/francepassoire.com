@@ -1,0 +1,44 @@
+{
+  "slug": "weshbien-20260825",
+  "entity": "WeshBien",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-25",
+    "publication": "2026-08-26"
+  },
+  "volume": {
+    "count": 9337,
+    "unit": "personnes",
+    "label": "environ 9 300 personnes, estimation après retrait des doublons selon Fuites Infos; la revendication porte sur 9 396 enregistrements"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 9 337 inscrits : fuite revendiquée chez WeshBien (26 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-25-weshbien",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données WeshBien : près de 9 400 profils exposés sur un réseau social pour adolescents (26 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/wesh-bien-mt9nfkouk66q43w6mn",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 août 2026, une fuite de données est revendiquée sur un forum cybercriminel contre WeshBien, plateforme sociale pour adolescents. La revendication porte sur 9 396 enregistrements incluant pseudonymes, adresses e-mail, dates de naissance, villes, géolocalisation, photos et champs libres de biographie. Sont également mentionnées des données sensibles comme l'orientation sexuelle déclarée. Selon Fuites Infos, le nombre de personnes concernées est d'environ 9 300 après retrait des doublons. La revendication indique que la majorité des comptes appartiendrait à des mineurs. L'éditeur du service n'a pas confirmé publiquement l'incident. Le revendiquant affirme qu'aucun mot de passe ne figure dans le dépôt, information non vérifiée de manière indépendante.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "La fuite est revendiquée sur un forum cybercriminel avec 9 396 enregistrements, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Fuites Infos et FrenchBreaches publient chacun un article sur l'incident; l'éditeur de WeshBien n'a pas diffusé de communiqué."
+    }
+  ]
+}
