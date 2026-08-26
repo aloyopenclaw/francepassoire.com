@@ -19,6 +19,12 @@ function classifierStatut(status: number): { retryable: boolean } {
   return { retryable: status === 429 || status >= 500 };
 }
 
+/** Suffixe anti-course CDN : ?v=<slug de la fiche>, vide si pas une fiche. */
+export function suffixeAntiCourse(urlFiche: string): string {
+  const slug = urlFiche.replace(/\/+$/, '').split('/').pop() ?? '';
+  return slug ? `?v=${encodeURIComponent(slug)}` : '';
+}
+
 export const send: SendFn = async (
   payload: PostPayload,
   env: Env,
@@ -43,8 +49,13 @@ export const send: SendFn = async (
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        // Course CDN (25/08) : juste après un deploy Pages, un edge peut
+        // encore servir le 404 périmé de card.jpg — Make rejette alors
+        // « this image url doesn't appear to be valid ». Le suffixe ?v=<slug>
+        // rend l'URL unique par fiche : jamais demandée avant, donc aucun
+        // 404 caché ne peut être servi, la requête file à l'origine.
         text: payload.text,
-        mediaUrl: `${payload.url.replace(/\/$/, '')}/card.jpg`,
+        mediaUrl: `${payload.url.replace(/\/$/, '')}/card.jpg${suffixeAntiCourse(payload.url)}`,
       }),
       signal: controleur.signal,
     });

@@ -51,7 +51,7 @@ describe('client X via Make (webhook) — T51', () => {
     );
     expect(corps).toEqual({
       text: payload.text,
-      mediaUrl: 'https://francepassoire.com/fiche/x/card.jpg',
+      mediaUrl: 'https://francepassoire.com/fiche/x/card.jpg?v=x',
     });
   });
 });
