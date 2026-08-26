@@ -1,0 +1,46 @@
+{
+  "slug": "comptoir-de-location-20260826",
+  "entity": "Comptoir de Location (CDL)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-26",
+    "publication": "2026-08-26"
+  },
+  "volume": {
+    "count": 83318,
+    "unit": "personnes",
+    "label": "83 318 personnes identifiables selon Fuites Infos ; 13,48 Go et 323 388 fichiers selon la revendication (BlgCloud Leak n°14, non confirmé)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "documents",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 83 318 personnes chez Comptoir de location CDL : fuite de données revendiquée (26 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-26-comptoir-de-location-cdl",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Comptoir de Location (CDL) : 13,48 Go et plus de 323 000 fichiers revendiqués (26 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/comptoir-de-location-blgcloud-mta9vlrtu8h6purmen",
+      "kind": "article"
+    }
+  ],
+  "description": "Comptoir de Location (CDL), loueur de matériel BTP basé à Clermont-Ferrand et implanté sur vingt-huit établissements, fait l'objet d'une revendication de fuite de données publiée le 26 août 2026 sur un forum cybercriminel. L'auteur présente le dépôt comme le quatorzième volet de la série BlgCloud Leak, liée à la plateforme ERP BlgCloud. D'après Fuites Infos, 83 318 personnes identifiables et 30 000 organisations clientes figurent dans la base de gestion commerciale évoquée. Les échantillons montrent des données CRM, des coordonnées complètes, des identifiants d'entreprise, des coordonnées bancaires, un historique de commandes, des pièces commerciales et des messages internes. L'incident n'est pas confirmé par Comptoir de Location au 26 août.",
+  "timeline": [
+    {
+      "date": "2026-08-26",
+      "event": "Publication du BlgCloud Leak n°14 attribué à Comptoir de Location : 13,48 Go et 323 388 fichiers revendiqués, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Fuites Infos relaie la revendication et précise 83 318 personnes identifiables et 30 000 organisations clientes évoquées."
+    }
+  ]
+}
