@@ -1,0 +1,48 @@
+{
+  "slug": "lcommerce-allo-e-leclerc-20260826",
+  "entity": "LCommerce (Allo E.Leclerc)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-26",
+    "publication": "2026-08-26",
+    "confirmation": "2026-08-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué par LCommerce"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "LCommerce — Notification individuelle aux clients relative à un accès non autorisé chez un prestataire logistique externe (août 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/08/l-commerce-e-leclerc-2026-08-27-notification.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données E.Leclerc : un prestataire logistique victime d'un incident de cybersécurité (26 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/l-commerce-e-leclerc-mta5lw4c0j22obuwzm3g",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez L Commerce (E.Leclerc) (27 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-27-l-commerce-e-leclerc",
+      "kind": "article"
+    }
+  ],
+  "description": "LCommerce, société exploitant le service Allo E.Leclerc, informe ses clients d'un accès non autorisé à leurs données personnelles chez l'un de ses prestataires logistiques externes. Selon la notification adressée aux personnes concernées et relayée par FrenchBreaches le 26 août puis Fuites Infos le 27 août 2026, les informations exposées comprennent le nom, le prénom, l'adresse e-mail et le numéro de téléphone. LCommerce précise que les données bancaires, identifiants de connexion et mots de passe ne sont pas concernés. Le nom du prestataire compromis n'est pas communiqué. L'entreprise indique avoir notifié la CNIL et avoir alerté individuellement les personnes concernées.",
+  "timeline": [
+    {
+      "date": "2026-08-26",
+      "event": "LCommerce envoie une notification à ses clients : un accès non autorisé chez un prestataire logistique externe a exposé nom, prénom, e-mail et téléphone, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Fuites Infos relaye l'incident et publie la copie de la notification ; LCommerce a notifié la CNIL et invite les personnes concernées à la vigilance."
+    }
+  ]
+}
