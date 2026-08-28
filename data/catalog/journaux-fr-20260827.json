@@ -1,0 +1,43 @@
+{
+  "slug": "journaux-fr-20260827",
+  "entity": "Journaux.fr",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-27",
+    "publication": "2026-08-27"
+  },
+  "volume": {
+    "count": 268304,
+    "unit": "enregistrements",
+    "label": "268 304 enregistrements de commandes selon la revendication analysée par Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 268 304 clients : fuite de données revendiquée chez Journaux.fr (27 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-27-journaux-fr",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Journaux.fr : 270 000 données de facturation et de livraison revendiquées après une fuite (27 août 2026)",
+      "url": "https://www.cyberattaque.org/journaux-fr-270-000-donnees-de-facturation-et-de-livraison-revendiquees-apres-une-fuite/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Journaux.fr (27 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/journaux-fr-mtbj5s58u9984dymo3",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 27 août 2026, une revendication sur un forum cybercriminel attribue à Journaux.fr, kiosque en ligne de presse française, la divulgation de 268 304 enregistrements de commandes. Selon Fuites Infos et Cyberattaque.org, les données exposées contiennent la civilité, le prénom, le nom, les adresses postales complètes de livraison et de facturation ainsi que des identifiants de commande. Pour les commandes professionnelles, la raison sociale et un numéro de TVA figurent également dans le fichier. La revendication précise l'absence de mots de passe, d'adresses électroniques, de numéros de téléphone et de données bancaires. Journaux.fr n'a pas confirmé l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-27",
+      "event": "Une revendication publiée sur un forum cybercriminel attribue à Journaux.fr la divulgation de 268 304 enregistrements de commandes comprenant identité, adresses postales et identifiants de commande (analyses convergentes de Fuites Infos, Cyberattaque.org et FrenchBreaches)."
+    }
+  ]
+}
