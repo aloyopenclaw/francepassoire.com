@@ -1,0 +1,46 @@
+{
+  "slug": "mistertemp-group-20260826",
+  "entity": "Mistertemp' group",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-26",
+    "publication": "2026-08-27"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué, selon la notification de l'entreprise relayée par Fuites Infos et FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Mistertemp' group (28 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-26-mistertemp-group",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque Mistertemp' group : des données personnelles exposées après un accès non autorisé (27 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/mistertemp-group-mtbjjqahg9jzou0akq4",
+      "kind": "article"
+    }
+  ],
+  "description": "Mistertemp' group, groupe français de recrutement et de travail temporaire, informe les personnes concernées d'un accès non autorisé à certaines données personnelles survenu le 29 juillet 2026. Selon la notification de l'entreprise relayée par Fuites Infos et FrenchBreaches, les données consultées comprennent le nom, le prénom, l'adresse e-mail, le numéro de téléphone et la nationalité. Aucune donnée bancaire, aucun mot de passe et aucune pièce d'identité ne sont concernés. L'incident touche les plus de 230 agences du groupe sous les enseignes Aquila RH, Lynx RH, Vitalis Médical et mistertemp'. Le nombre de personnes touchées n'est pas communiqué. D'après les deux sources, l'entreprise indique avoir corrigé la vulnérabilité, renforcé la surveillance, notifié la CNIL et déposé une plainte pénale. Aucune donnée n'a été mise en ligne ni proposée à la vente au 28 août 2026.",
+  "timeline": [
+    {
+      "date": "2026-07-29",
+      "event": "L'incident de sécurité informatique survient dans les systèmes de Mistertemp' group, selon la notification de l'entreprise relayée par Fuites Infos."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Mistertemp' group informe les personnes concernées par courrier électronique de l'accès non autorisé, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-27",
+      "event": "FrenchBreaches publie un article sur l'incident, précisant les catégories de données concernées."
+    }
+  ]
+}
