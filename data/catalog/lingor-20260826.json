@@ -1,0 +1,53 @@
+{
+  "slug": "lingor-20260826",
+  "entity": "Lingor",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-26",
+    "publication": "2026-08-28"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Lingor, négociant en or d'investissement (28 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-27-lingor",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Lingor : des données sensibles de clients potentiellement exposées après une cyberattaque (28 août 2026)",
+      "url": "https://www.cyberattaque.org/lingor-des-donnees-sensibles-de-clients-potentiellement-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Coin — Cyberattaque chez Lingor : pièces d'identité, IBAN et adresses des acheteurs d'or dans la nature (28 août 2026)",
+      "url": "https://journalducoin.com/technologies/cyberattaque-lingor-pieces-identite-iban-adresses-acheteurs-or/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 26 août 2026, les auteurs d'une intrusion informatique contactent Lingor, négociant français en or d'investissement, pour réclamer une rançon. L'entreprise, qui exploite une boutique en ligne et un service de rachat par kit postal, annonce l'incident le 27 août. Selon Fuites Infos et Cyberattaque.org, deux périmètres sont affectés : la boutique (identité, coordonnées, historique de commandes) et le service de rachat par kit postal, dont les dossiers contiennent des copies de pièces d'identité, des justificatifs de domicile et des coordonnées bancaires. Lingor indique ne pas stocker les données de carte bancaire, avoir notifié la CNIL et déposé plainte. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-26",
+      "event": "Les auteurs de l'intrusion contactent Lingor pour réclamer une rançon, selon l'entreprise et Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-27",
+      "event": "Lingor informe ses clients et annonce publiquement l'incident : deux périmètres identifiés, notification de la CNIL et dépôt de plainte, selon Fuites Infos et le Journal du Coin."
+    },
+    {
+      "date": "2026-08-28",
+      "event": "Cyberattaque.org et le Journal du Coin documentent l'étendue des données potentiellement exposées."
+    }
+  ]
+}
