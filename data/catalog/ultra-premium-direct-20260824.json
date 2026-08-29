@@ -1,0 +1,48 @@
+{
+  "slug": "ultra-premium-direct-20260824",
+  "entity": "Ultra Premium Direct",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-24",
+    "publication": "2026-08-28"
+  },
+  "volume": {
+    "count": 18000,
+    "unit": "personnes",
+    "label": "environ 18 000 personnes selon l'entreprise (entre 12 000 et 25 000 selon l'enquête publique)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Ultra Premium Direct confirme une fuite de données après l'attaque d'un prestataire (28 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/ultra-premium-direct-mtckovbzd1f2t3n126h",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 18 000 clients d'Ultra Premium Direct touchés par une fuite de données (28 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-28-ultra-premium-direct",
+      "kind": "article"
+    }
+  ],
+  "description": "Ultra Premium Direct, marque française d'alimentation pour animaux vendue par abonnement, informe ses clients d'une fuite de données consécutive à l'attaque d'un prestataire technique de sa plateforme de service client. Selon la communication relayée par Fuites Infos, l'incident est détecté le 24 août 2026. Un acteur a exploité une faille chez Klark, éditeur d'une solution de service client assisté par intelligence artificielle, et mis en vente les données sur un forum. L'extraction porte sur environ 18 000 personnes et 34 000 conversations selon Fuites Infos. Les données exposées comprennent nom, adresse e-mail, numéro de téléphone, références de commandes, montants et contenu des échanges. L'entreprise indique ne pas héberger de mots de passe ni de données bancaires chez ce prestataire. Elle affirme avoir coupé l'accès le 24 août, notifié la CNIL le 26 août et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-08-24",
+      "event": "L'attaque du prestataire Klark est détectée ; les données sont mises en vente sur un forum, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Ultra Premium Direct notifie la CNIL, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-28",
+      "event": "FrenchBreaches et Fuites Infos publient l'incident : environ 18 000 personnes et 34 000 conversations concernées."
+    }
+  ]
+}
