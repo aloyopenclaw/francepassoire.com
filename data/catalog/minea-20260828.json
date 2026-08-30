@@ -1,0 +1,45 @@
+{
+  "slug": "minea-20260828",
+  "entity": "Minea",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-28",
+    "publication": "2026-08-28"
+  },
+  "volume": {
+    "count": 93786,
+    "unit": "comptes",
+    "label": "93 786 profils rattachés à la France et ses territoires d'outre-mer selon Fuites Infos ; 533 162 profils uniques au total revendiqués sur un forum par BoneT4p2ndAcc"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 93 786 profils Minea : fuite revendiquée (28 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-28-minea",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Minea : 533 162 profils et plus de 81 millions d'enregistrements d'activité revendiqués (28 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/minea-mtdex0abbtr1kt0c8gd",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Minea : 533 000 profils et 81,6 millions d'activités exposés dans une fuite massive (28 août 2026)",
+      "url": "https://www.cyberattaque.org/minea-533-000-profils-et-816-millions-dactivites-exposes-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 août 2026, un acteur utilisant le pseudonyme BoneT4p2ndAcc revendique sur un forum la mise à disposition de données attribuées à Minea, plateforme d'analyse publicitaire pour le e-commerce. Selon la revendication, l'ensemble comprend 533 162 profils uniques et 81 619 864 enregistrements d'activité. Les données citées incluent adresses e-mail, adresses IP, localisation, informations d'appareil et historique d'usage. D'après Fuites Infos, environ 93 786 profils sont rattachés à la France et à ses territoires d'outre-mer. Les enregistrements s'arrêtent en août 2024 selon la revendication. Minea n'a pas confirmé l'incident à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-08-28",
+      "event": "Un acteur nommé BoneT4p2ndAcc revendique sur un forum la mise à disposition de 533 162 profils et 81,6 millions d'enregistrements d'activité attribués à Minea ; la revendication est relayée le jour même."
+    }
+  ]
+}
