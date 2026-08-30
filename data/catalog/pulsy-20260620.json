@@ -1,0 +1,56 @@
+{
+  "slug": "pulsy-20260620",
+  "entity": "Pulsy (GRADeS Grand Est)",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-06-20",
+    "publication": "2026-06-23",
+    "confirmation": "2026-07-19"
+  },
+  "volume": {
+    "count": 5858059,
+    "unit": "enregistrements",
+    "label": "5 858 059 enregistrements revendiqués par un hacker sur un forum (deux fichiers totalisant plus de 35 Go) ; la direction de Pulsy confirme une extraction de données sans en préciser le volume"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Est Républicain — Lorraine. Un hacker revendique le vol de 5,8 millions de données de santé du Grand Est (23 juin 2026)",
+      "url": "https://www.estrepublicain.fr/faits-divers-justice/2026/06/23/un-hacker-revendique-le-vol-de-5-8-millions-de-donnees-de-sante-du-grand-est",
+      "kind": "article"
+    },
+    {
+      "label": "esante.info — Cyberattaque dans le Grand Est : 5,8 millions de données de santé volées sur la plateforme Pulsy (23 juillet 2026)",
+      "url": "https://esante.info/cyberattaque-grand-est-donnees-sante-pulsy/",
+      "kind": "article"
+    },
+    {
+      "label": "Pulsy — Information relative à l'incident de sécurité (19 juillet 2026)",
+      "url": "https://www.pulsy.fr/portail/info-87-388.html",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Pulsy, groupement d'intérêt public opérateur des services numériques de santé pour la région Grand Est, est victime d'un accès non autorisé le 18 juin 2026 entre 3h30 et 6h. Le 20 juin, un hacker revendique sur un forum la mise en vente de 5 858 059 enregistrements liés à des patients pris en charge dans des établissements hospitaliers et médico-sociaux de la région. Le 19 juillet, Pulsy publie un communiqué confirmant qu'une partie des données a été extraite. La direction précise que les données concernées sont pour la majorité des données administratives (INS, noms, prénoms, dates de naissance) et qu'aucune donnée médicale n'est affectée. Les personnes dont les données nécessitent une information renforcée sont contactées directement.",
+  "timeline": [
+    {
+      "date": "2026-06-18",
+      "event": "Un accès non autorisé aux systèmes de Pulsy est détecté dans la nuit ; les équipes sécurisent les systèmes et limitent l'incident."
+    },
+    {
+      "date": "2026-06-20",
+      "event": "Un hacker revendique sur un forum la mise en vente de 5 858 059 enregistrements issus de Pulsy, selon des relais de veille."
+    },
+    {
+      "date": "2026-06-23",
+      "event": "L'Est Républicain relaye la revendication et précise que l'attaque a duré environ trois heures."
+    },
+    {
+      "date": "2026-07-19",
+      "event": "Pulsy confirme publiquement l'extraction d'une partie des données ; précise que les données sont majoritairement administratives et qu'aucune donnée médicale n'est concernée."
+    }
+  ]
+}
