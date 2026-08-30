@@ -1,0 +1,50 @@
+{
+  "slug": "zero-logement-vacant-20260828",
+  "entity": "Zéro Logement Vacant",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "zerobytes",
+  "dates": {
+    "revendication": "2026-08-28",
+    "publication": "2026-08-29"
+  },
+  "volume": {
+    "count": 148929194,
+    "unit": "lignes",
+    "label": "148 929 194 lignes brutes revendiquées par ZeroBytes, dont 47 948 974 personnes distinctes par identifiant selon l'auteur ; Cyberattaque.org confirme la présence de données de propriétaires dans les échantillons"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "geolocalisation",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage de Zéro Logement Vacant : ZeroBytes revendique l'accès à près de 149 millions d'enregistrements (29 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/z-ro-logement-vacant-gouv-mtdj0b0p5ycvbr6ajlw",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Zéro Logement Vacant : 48 millions de personnes exposées dans une fuite massive (29 août 2026)",
+      "url": "https://www.cyberattaque.org/zero-logement-vacant-48-millions-de-personnes-exposees-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 août 2026, le groupe ZeroBytes revendique sur un forum le piratage de Zéro Logement Vacant, service numérique de l'État destiné aux collectivités pour l'identification des logements vacants. L'auteur affirme avoir obtenu 148 929 194 lignes brutes, incluant des données issues de DataFoncier et de la DGFiP importées dans l'environnement de la plateforme. D'après les échantillons analysés par Cyberattaque.org, les données exposées comprennent identités, dates de naissance, adresses postales, adresses e-mail, numéros de téléphone de propriétaires, ainsi que des comptes d'agents et de collectivités avec hachages de mots de passe au format bcrypt. ZeroBytes dit être entré via une instance Metabase disposant d'une session superutilisateur valide. Le service a été mis hors ligne depuis la revendication.",
+  "timeline": [
+    {
+      "date": "2026-08-25",
+      "event": "ZeroBytes affirme avoir compromis l'environnement de Zéro Logement Vacant, avec des sessions datées du 25 août observées dans les échantillons."
+    },
+    {
+      "date": "2026-08-28",
+      "event": "ZeroBytes revendique sur un forum l'extraction de 148 929 194 lignes brutes depuis Zéro Logement Vacant, dont des données foncières issues de DataFoncier et de la DGFiP."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "La revendication est relayée par plusieurs médias spécialisés ; le service est mis hors ligne."
+    }
+  ]
+}
