@@ -1,0 +1,39 @@
+{
+  "slug": "freres-toque-20260829",
+  "entity": "Frères Toque",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "confirmation": "2026-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué par l'entreprise"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos : Fuite de données chez Frères Toque, clients informés (29 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-freres-toque",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org : Frères Toque : données clients et historiques de commandes exposés après une cyberattaque (29 août 2026)",
+      "url": "https://www.cyberattaque.org/freres-toque-donnees-clients-et-historiques-de-commandes-exposes-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Frères Toque, service de livraison de repas opérant à Angers, Le Mans, Tours, Nantes et Bordeaux, informe ses clients d'un accès non autorisé à des données personnelles via un outil externe non nommé utilisé pour l'analyse de données. L'entreprise, qui a notifié la CNIL, indique que les données exposées comprennent le nom, le prénom, l'adresse email, le numéro de téléphone, l'adresse postale et l'historique des commandes. Les informations bancaires, identifiants de connexion et mots de passe ne sont pas concernés. Le volume et la période d'exposition ne sont pas communiqués.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Frères Toque notifie ses clients et la CNIL d'un accès non autorisé à des données personnelles via un outil externe."
+    }
+  ]
+}
