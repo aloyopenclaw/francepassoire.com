@@ -1,0 +1,46 @@
+{
+  "slug": "easypara-20260829",
+  "entity": "Easypara",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué selon l'entreprise, qui évoque uniquement certains clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Easypara, volume non communiqué (29 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-easypara",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Easypara : une faille Metabase chez son prestataire expose les coordonnées de certains clients (29 août 2026)",
+      "url": "https://www.cyberattaque.org/easypara-une-faille-metabase-chez-son-prestataire-expose-les-coordonnees-de-certains-clients/",
+      "kind": "article"
+    }
+  ],
+  "description": "Easypara, parapharmacie en ligne, informe ses clients d'un accès non autorisé à leurs données personnelles chez son prestataire Shipp, en charge du suivi de livraison. L'incident est lié à une vulnérabilité de l'outil Metabase, selon Fuites Infos et Cyberattaque.org. Des noms, prénoms, adresses e-mail et numéros de téléphone ont pu être consultés entre le 31 juillet et le 17 août 2026. Aucune donnée bancaire ni mot de passe n'est concerné. La faille a été corrigée et les accès bloqués le 17 août 2026.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Début de l'accès non autorisé aux données chez le prestataire Shipp, selon la notification d'Easypara reprise par Fuites Infos."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La vulnérabilité Metabase est corrigée et les accès non autorisés sont bloqués, selon Fuites Infos et Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Fuites Infos et Cyberattaque.org publient des articles sur l'incident ; Easypara a informé ses clients concernés."
+    }
+  ]
+}
