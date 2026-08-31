@@ -1,0 +1,61 @@
+{
+  "slug": "vivaticket-20260313",
+  "entity": "Vivaticket (IREC SAS)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "ransomhouse",
+  "dates": {
+    "revendication": "2026-03-13",
+    "publication": "2026-03-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; 3 500 organisations utilisatrices selon la presse"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "actu.fr : Cyberattaque contre Vivaticket : des musées touchés à Paris, voici les données piratées (18 mars 2026)",
+      "url": "https://actu.fr/ile-de-france/paris_75056/cyberattaque-contre-vivaticket-des-musees-touches-a-paris-voici-les-donnees-piratees_64013066.html",
+      "kind": "article"
+    },
+    {
+      "label": "Actualitte : Cyberattaque : des musées et institutions culturelles perturbés, dont la BnF (19 mars 2026)",
+      "url": "https://actualitte.com/article/130017/usages-numeriques/cyberattaque-des-musees-et-institutions-culturelles-perturbes-dont-la-bnf",
+      "kind": "article"
+    },
+    {
+      "label": "Le Journal des Arts : Une cyberattaque en cours touche la billetterie de plusieurs musées en France (19 mars 2026)",
+      "url": "https://www.lejournaldesarts.fr/actualites/une-cyberattaque-en-cours-touche-la-billetterie-de-plusieurs-musees-en-france-182637",
+      "kind": "article"
+    }
+  ],
+  "description": "Début mars 2026, le prestataire de billetterie Vivaticket, basé à Chasseneuil-du-Poitou et filiale de l'opérateur italien Tickeasy, est frappé par une attaque de type rançongiciel. Le groupe RansomHouse revendique le piratage et publie des échantillons de données. L'incident touche environ 3 500 organisations en Europe, dont de nombreuses institutions culturelles françaises : BnF, musée du Louvre, musée d'Orsay, Arc de Triomphe, tour Eiffel, musée Guimet, Louvre-Lens. Selon le musée des Arts et Métiers et la BnF, des données personnelles incluant nom, prénom et adresse électronique ont été compromises. Les données bancaires ne sont pas concernées. Le parquet de Paris ouvre une enquête confiée à la section de lutte contre la cybercriminalité.",
+  "timeline": [
+    {
+      "date": "2026-03-02",
+      "event": "L'attaque est détectée sur les systèmes de Vivaticket, selon le Centre des monuments nationaux."
+    },
+    {
+      "date": "2026-03-13",
+      "event": "Le groupe RansomHouse revendique le piratage et la publication d'échantillons de données sur un site de fuite."
+    },
+    {
+      "date": "2026-03-17",
+      "event": "Libération et plusieurs médias rapportent l'attaque ; le parquet de Paris ouvre une enquête."
+    },
+    {
+      "date": "2026-03-18",
+      "event": "Le musée des Arts et Métiers informe ses visiteurs que nom, prénom, courriel et informations de compte ont été compromis."
+    },
+    {
+      "date": "2026-03-19",
+      "event": "La BnF et le Centre des monuments nationaux confirment l'indisponibilité de la billetterie en ligne et précisent la nature des données exposées."
+    }
+  ]
+}
