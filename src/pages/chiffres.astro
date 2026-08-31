@@ -34,6 +34,16 @@ const enregistrementsYTD = fiches
   .reduce((somme, f) => somme + f.volume.count, 0);
 const catalogueVide = compteur.fichesCount === 0;
 
+// Taille du compteur par magnitude (31/08 : à 1,15 Md — 13 chiffres — le
+// 8xl fixe débordait de la carte max-w-2xl). Paliers décroissants.
+const nbChiffresCompteur = formaterNombre(enregistrementsYTD).replace(/\D/g, '').length;
+const tailleCompteur =
+  nbChiffresCompteur >= 11
+    ? 'text-3xl sm:text-4xl md:text-5xl'
+    : nbChiffresCompteur >= 9
+      ? 'text-4xl sm:text-5xl md:text-6xl'
+      : 'text-7xl sm:text-8xl';
+
 // Carte « Ransomware » : 1 fuite sur N issue d'une revendication (N ≥ 2).
 const fichesRansomware = fiches.filter((f) => f.group).length;
 const ratioRansomware = fichesRansomware > 0
@@ -120,7 +130,7 @@ const barresAnnee = Object.entries(compteur.parAnnee)
         <p class="font-mono text-brand-cream/70 text-lg mb-4">Le Compteur National</p>
         <div class="bg-brand-cream border-4 border-brand-ink rounded-passoire p-6 sm:p-12 shadow-[8px_8px_0px_0px_#FF6B1A] transform -rotate-1 mb-8 inline-block max-w-2xl">
           <h1 class="mt-0">
-            <span class="count-up block font-mono font-black text-7xl sm:text-8xl text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter" data-cible={enregistrementsYTD}>{formaterNombre(enregistrementsYTD)}</span>
+            <span class={`count-up block font-mono font-black ${tailleCompteur} text-brand-hover drop-shadow-[3px_3px_0px_rgba(36,20,5,1)] tracking-tighter`} data-cible={enregistrementsYTD}>{formaterNombre(enregistrementsYTD)}</span>
             <span class="block font-display font-bold text-xl sm:text-2xl mt-4 text-brand-ink">enregistrements fuités depuis le 1<sup>er</sup> janvier {anneeCourante}</span>
           </h1>
         </div>
