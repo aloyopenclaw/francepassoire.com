@@ -2,10 +2,9 @@
   "slug": "freres-toque-20260829",
   "entity": "Frères Toque",
   "secteur": "retail",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
-    "revendication": "2026-08-29",
-    "confirmation": "2026-08-29"
+    "revendication": "2026-08-29"
   },
   "volume": {
     "count": 0,
