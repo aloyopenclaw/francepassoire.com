@@ -1,0 +1,49 @@
+{
+  "slug": "vivaticket-20260310",
+  "entity": "Vivaticket",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "ransomhouse",
+  "dates": {
+    "revendication": "2026-03-10",
+    "publication": "2026-03-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; la plateforme traite environ 850 millions de billets par an pour 3 500 organisations dans plus de 50 pays selon Tix.media"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Génération NT — Une cyberattaque paralyse des milliers de billetteries de musées en France (18 mars 2026)",
+      "url": "https://www.generation-nt.com/actualites/cyberattaque-vivaticket-musees-donnees-personnelles-ransomhouse-france-2072682",
+      "kind": "article"
+    },
+    {
+      "label": "Tix.media — Cyberattaque Vivaticket : le groupe RansomHouse revendique la compromission (20 mars 2026)",
+      "url": "https://tix.media/2026/03/20/cyberattaque-vivaticket-le-groupe-ransomhouse-revendique-la-compromission/",
+      "kind": "article"
+    },
+    {
+      "label": "L'Usine Digitale — Vivaticket touché par une cyberattaque, les systèmes de billetterie de 3 500 organisations exposés (archive, 18 mars 2026)",
+      "url": "https://web.archive.org/web/20260411100633/https://www.usine-digitale.fr/cybersecurite/vivaticket-touche-par-une-cyberattaque-les-systemes-de-billetterie-de-3500-organisations-exposes.Q4C5WKTCUNASFH46BXOMEP6UBQ.html",
+      "kind": "archive"
+    }
+  ],
+  "description": "Début mars 2026, le groupe RansomHouse revendique une attaque ransomware contre Vivaticket, prestataire de billetterie pour 3 500 organisations dans plus de 50 pays. Le Louvre-Lens, la Bibliothèque nationale de France, le Centre des monuments nationaux et le Parc Astérix figurent parmi les institutions françaises affectées. Les données exposées comprennent nom, prénom, adresse e-mail, pays, code postal et mots de passe chiffrés, selon Génération NT et Tix.media. Les données bancaires ne seraient pas concernées. Vivaticket a déposé plainte et notifié la CNIL et l'ANSSI, d'après Génération NT.",
+  "timeline": [
+    {
+      "date": "2026-03-10",
+      "event": "Le site FrenchBreaches rapporte le piratage de Vivaticket et l'exposition potentielle de données d'utilisateurs."
+    },
+    {
+      "date": "2026-03-18",
+      "event": "Génération NT et L'Usine Digitale publient des articles détaillant l'attaque ransomware revendiquée par RansomHouse et ses conséquences sur les billetteries françaises."
+    }
+  ]
+}
