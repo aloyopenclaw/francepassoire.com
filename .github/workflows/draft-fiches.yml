@@ -104,16 +104,26 @@ jobs:
               SLUG="$DETAIL"
               if [ ! -f "data/catalog/$SLUG.json" ]; then echo "fiche absente pour $ID, DEFERRED"; continue; fi
               BR="fiche/$SLUG"
-              git checkout -b "$BR" 2>/dev/null || git checkout "$BR"
+              # 02/09 : boucle infernale — un candidat re-drafté après un run
+              # échoué voyait son push REJETÉ (branche distante déjà posée par
+              # le run précédent, non-fast-forward) → filet → re-draft → même
+              # échec. On repart de la branche distante quand elle existe ; le
+              # commit re-créé devient identique (no-op géré) et gh détecte le
+              # PR existant.
+              git fetch origin "$BR" 2>/dev/null && git checkout -B "$BR" origin/"$BR" || git checkout -b "$BR"
               git add "data/catalog/$SLUG.json"
-              git commit -m "feat(catalog): $SLUG rédigé depuis candidat ingest (rédaction automatique)" --quiet
-              git push origin "$BR"
+              if git diff --cached --quiet; then
+                echo "fiche $SLUG identique à la branche existante — aucun commit, PR déjà en place"
+              else
+                git commit -m "feat(catalog): $SLUG rédigé depuis candidat ingest (rédaction automatique)" --quiet
+                git push origin "$BR"
+              fi
               gh pr create --head "$BR" --base main --title "Fiche : $SLUG (rédaction automatique)" \
                 --body "Rédigé depuis un candidat d'ingestion par le workflow draft-fiches selon docs/redaction-contract.md. Validation agent en cours ; fusion = décision propriétaire." || true
               git checkout main
               printf '{"sql": "UPDATE candidates SET dedup_score = ?1 WHERE id = ?2", "params": ["drafted:%s", "%s"]}' "$ID" > .agent-tmp/p.json
               curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json >/dev/null
-              echo "PR ouverte pour $SLUG (candidat $ID)"
+              echo "PR en place pour $SLUG (candidat $ID)"
             fi
           done < .agent-tmp/verdicts.tsv
 
