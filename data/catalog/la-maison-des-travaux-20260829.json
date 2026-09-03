@@ -1,0 +1,43 @@
+{
+  "slug": "la-maison-des-travaux-20260829",
+  "entity": "La Maison Des Travaux",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "qilin",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "aucun volume communiqué ; la revendication visible ne mentionne ni volume ni nature de données (FrenchBreaches, 29 août 2026)"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ransomware.live — Fiche victime www.lamaisondestravaux.com (groupe qilin, France, découverte 29 août 2026)",
+      "url": "https://www.ransomware.live/id/TGEgTWFpc29uIERlcyBUcmF2YXV4QHFpbGlu",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — La Maison Des Travaux visée par le ransomware Qilin : le groupe cybercriminel revendique une attaque (29 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/la-maison-des-travaux-rw_VEdFZ1RXRnBjMjl1SUVSbGN5QlVjbUYyWVhWNFFIRnBiR2x1",
+      "kind": "article"
+    },
+    {
+      "label": "Undercode News — Qilin Expands Its Victim List: BLISS 1041 and LA MAISON DES TRAVAUX Added Amid Rising Ransomware Pressure (29 août 2026)",
+      "url": "https://undercodenews.com/qilin-expands-its-victim-list-bliss-1041-and-la-maison-des-travaux-added-amid-rising-ransomware-pressure-video/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2026, le groupe de ransomware Qilin ajoute La Maison Des Travaux à son site de divulgation et revendique un accès à l'environnement informatique de l'entreprise. D'après FrenchBreaches, la fiche du groupe classe la cible dans la catégorie « Business Services » et ne comporte ni volume, ni nature de données, ni échantillon visible. Selon Undercode News, l'ajout est relevé le même jour par la veille de ThreatMon. La Maison Des Travaux est un réseau français de courtage en travaux qui met en relation particuliers et professionnels du bâtiment pour des projets de rénovation, d'aménagement ou de construction. L'entreprise n'a pas confirmé publiquement l'incident à la date des premières publications.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Qilin liste La Maison Des Travaux sur son site de divulgation, catégorie « Business Services », sans volume ni échantillon ; l'ajout est relevé par la veille de ThreatMon et relayé par FrenchBreaches."
+    }
+  ]
+}
