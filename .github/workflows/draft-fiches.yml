@@ -104,13 +104,19 @@ jobs:
               SLUG="$DETAIL"
               if [ ! -f "data/catalog/$SLUG.json" ]; then echo "fiche absente pour $ID, DEFERRED"; continue; fi
               BR="fiche/$SLUG"
-              # 02/09 : boucle infernale — un candidat re-drafté après un run
-              # échoué voyait son push REJETÉ (branche distante déjà posée par
-              # le run précédent, non-fast-forward) → filet → re-draft → même
-              # échec. On repart de la branche distante quand elle existe ; le
-              # commit re-créé devient identique (no-op géré) et gh détecte le
-              # PR existant.
-              git fetch origin "$BR" 2>/dev/null && git checkout -B "$BR" origin/"$BR" || git checkout -b "$BR"
+              # 02-03/09 : la branche distante existe déjà (run précédent) —
+              # on reprend SON histoire. Le fichier rédigé est untracked :
+              # git refuse de l'écraser au checkout, on le parque puis le
+              # restaure. Sans ça : checkout avorté → fallback branche neuve
+              # → push rejeté non-fast-forward → filet → re-draft → boucle.
+              git fetch origin "$BR" 2>/dev/null || true
+              if git show-ref --verify --quiet "refs/remotes/origin/$BR"; then
+                mv "data/catalog/$SLUG.json" ".agent-tmp/fiche-redigee.json"
+                git checkout -B "$BR" "origin/$BR"
+                mv ".agent-tmp/fiche-redigee.json" "data/catalog/$SLUG.json"
+              else
+                git checkout -b "$BR"
+              fi
               git add "data/catalog/$SLUG.json"
               if git diff --cached --quiet; then
                 echo "fiche $SLUG identique à la branche existante — aucun commit, PR déjà en place"
