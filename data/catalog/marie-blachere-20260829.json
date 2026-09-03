@@ -1,0 +1,42 @@
+{
+  "slug": "marie-blachere-20260829",
+  "entity": "Marie Blachère",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "volume total non communiqué ; des milliers de salariés potentiellement concernés d'après FrenchBreaches, sans chiffre vérifiable"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Marie Blachère piraté : des numéros de Sécurité sociale de salariés mis en vente (29 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/marie-blach-re-mtemu3hpnhmwfkgvnyf",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Marie Blachère : les données RH d'employés revendiqués dans une fuite (29 août 2026)",
+      "url": "https://www.cyberattaque.org/marie-blachere-les-donnees-rh-demployes-revendiques-dans-une-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2026, un auteur se présentant comme le hacker pwnedgroup met en vente une base attribuée à marieblachere.com, selon FrenchBreaches et Cyberattaque.org. Les échantillons publiés montrent des données RH de salariés : noms, prénoms, numéros de Sécurité sociale, types de demandes internes, dates de demande et statuts de validation. Une capture présente une interface interne de gestion du personnel, d'après les deux médias. Le volume total de la base et le nombre de salariés concernés ne sont pas communiqués. Le vecteur d'intrusion reste inconnu. Marie Blachère n'a pas confirmé publiquement cette revendication à la date des publications.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "pwnedgroup publie l'annonce de vente d'une base attribuée à marieblachere.com avec des échantillons de données RH de salariés."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "FrenchBreaches et Cyberattaque.org analysent les échantillons ; l'enseigne n'a pas confirmé la revendication et le volume total reste inconnu."
+    }
+  ]
+}
