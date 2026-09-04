@@ -1,0 +1,50 @@
+{
+  "slug": "herbiolys-laboratoire-20260831",
+  "entity": "Herbiolys Laboratoire",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-31",
+    "publication": "2026-08-31"
+  },
+  "volume": {
+    "count": 1300000,
+    "unit": "lignes",
+    "label": "environ 1 300 000 lignes revendiquées par l'auteur (pseudonyme Sophia) ; environ 1 500 IBAN uniques selon la revendication ; nombre de personnes non déterminé, données réparties entre plusieurs tables"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1,3 million de lignes : fuite revendiquée chez Herbiolys Laboratoire (31 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-31-herbiolys-laboratoire",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Herbiolys : 1,3 million de lignes et 1 500 IBAN exposés (31 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/herbiolys-mthbl4mtoe9zgl49kjj",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Herbiolys piraté : 1,3 million de lignes et 1 500 IBAN dans une fuite massive (31 août 2026)",
+      "url": "https://www.cyberattaque.org/herbiolys-cyberattaque-million-de-lignes-et-1-500-iban-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 31 août 2026, un auteur sous le pseudonyme Sophia revendique sur un forum la compromission de herbiolys.fr, boutique en ligne française de phytothérapie. La revendication date l'intrusion du mois d'août 2026. L'auteur affirme avoir extrait l'intégralité de la base de clients et propose le lot à la vente. Environ 1,3 million de lignes et près de 1 500 IBAN uniques sont revendiqués. Selon FrenchBreaches et Cyberattaque.org, les échantillons contiennent des données réelles : identité, coordonnées, historique de commandes, références de paiement et hachages de mots de passe. La base couvre des particuliers et des professionnels : pharmacies, naturopathes, professionnels de santé et revendeurs. D'après FrenchBreaches, l'entreprise indique un incident maîtrisé, des organismes officiels avertis et une plainte déposée.",
+  "timeline": [
+    {
+      "date": "2026-08-31",
+      "event": "Un auteur sous le pseudonyme Sophia publie sur un forum la revendication : compromission de herbiolys.fr au cours du mois d'août 2026 et extraction d'une base d'environ 1,3 million de lignes proposée à la vente."
+    },
+    {
+      "date": "2026-08-31",
+      "event": "FrenchBreaches et Cyberattaque.org relatent la revendication et examinent des échantillons contenant des données réelles ; FrenchBreaches rapporte le soir une réaction de l'entreprise : incident maîtrisé, organismes officiels avertis, plainte déposée."
+    }
+  ]
+}
