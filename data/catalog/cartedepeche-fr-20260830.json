@@ -1,0 +1,48 @@
+{
+  "slug": "cartedepeche-fr-20260830",
+  "entity": "CarteDePeche.fr (FNPF)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-30",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 486,
+    "unit": "personnes",
+    "label": "486 personnes uniques selon la revendication citée par Fuites Infos ; FrenchBreaches décrit deux fichiers annoncés, depositaires.json d'environ 6,8 Mo et adherents.json d'environ 270 Ko"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données CarteDePeche.fr : les données personnelles d'adhérents et de dépositaires revendiquées (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/carte-de-p-che-mtfr2p7gwirp63lb8q",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 486 personnes concernées par une fuite de données revendiquée chez Cartedepeche.fr (FNPF) (30 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-30-cartedepeche-fr-fnpf",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 août 2026, un acteur utilisant le pseudonyme Alduin revendique sur un forum la récupération de données issues de CarteDePeche.fr, portail national de la carte de pêche, selon FrenchBreaches et Fuites Infos. La revendication présente deux fichiers JSON : depositaires.json, environ 6,8 Mo, et adherents.json, environ 270 Ko. Selon Fuites Infos, 486 personnes uniques sont concernées. Les données annoncées comprennent identités, coordonnées, identifiants d'adhérent et, pour les dépositaires, numéro SIRET, plafonds de crédit et historique de transactions. La présence de données de mineurs est signalée. FrenchBreaches relève des traces d'activité datées des 28 et 29 août 2026, sans démontrer une nouvelle intrusion. La FNPF n'a pas confirmé publiquement cet incident, après ceux de septembre 2022 et décembre 2025.",
+  "timeline": [
+    {
+      "date": "2022-09-08",
+      "event": "Une première cyberattaque connue vise CarteDePeche.fr ; la violation est déclarée à la CNIL, selon FrenchBreaches."
+    },
+    {
+      "date": "2025-12-22",
+      "event": "La FNPF annonce un accès non autorisé à des données présentes sur CarteDePeche.fr, sans données bancaires ni mots de passe, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "Un acteur nommé Alduin revendique sur un forum des données d'adhérents et de dépositaires ; Fuites Infos annonce 486 personnes uniques et signale des données de mineurs."
+    }
+  ]
+}
