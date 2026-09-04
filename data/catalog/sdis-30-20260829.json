@@ -1,0 +1,51 @@
+{
+  "slug": "sdis-30-20260829",
+  "entity": "SDIS du Gard (SDIS 30)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 3168,
+    "unit": "personnes",
+    "label": "3 168 personnes revendiquées pour 3 757 lignes (environ 300 Ko, quatre tables CSV) ; vol de listes du personnel confirmé par le SDIS 30 selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 3 168 agents concernés par une fuite de données chez SDIS 30 (30 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-sdis-30",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS du Gard : 3 168 personnes potentiellement exposées (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-du-gard-mteyy43opeesk6j4mr",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (29 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaqu",
+      "kind": "article"
+    }
+  ],
+  "description": "Une publication datée du 29 août 2026 sur un forum cybercriminel revendique la diffusion d'une base associée au site du SDIS du Gard. Le dépôt annonce 3 757 lignes pour 3 168 personnes, en quatre tables CSV d'environ 300 Ko, selon FrenchBreaches et Cyberattaque.org. Les tables annoncées concernent les utilisateurs, les personnels et la récupération de mot de passe. Le 30 août, le président du SDIS 30 confirme l'attaque informatique et le vol de données de personnels, selon Objectif Gard cité par Cyberattaque.org. Selon Fuites Infos, les listes volées contiennent noms, prénoms et éléments de récupération de mot de passe. L'établissement évoque environ 3 000 sapeurs-pompiers et 160 personnels administratifs. Une plainte est annoncée.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée d'une base associée à sdis30.fr : 3 757 lignes et 3 168 personnes en quatre tables CSV, selon la veille cyber."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "Le président du SDIS 30 confirme l'attaque informatique et le vol de données de personnels, selon Objectif Gard cité par Cyberattaque.org."
+    },
+    {
+      "date": "2026-09-01",
+      "event": "Fuites Infos indique que le SDIS 30 confirme le vol de listes administratives et que les opérations de secours ne sont pas perturbées."
+    }
+  ]
+}
