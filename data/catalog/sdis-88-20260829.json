@@ -1,0 +1,59 @@
+{
+  "slug": "sdis-88-20260829",
+  "entity": "SDIS des Vosges (SDIS 88)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 3067,
+    "unit": "personnes",
+    "label": "4 226 lignes pour 3 067 personnes annoncées dans la revendication, environ 175 Mo au format CSV, selon FrenchBreaches et Cyberattaque.org ; Fuites Infos évoque 3 063 agents concernés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS 88 : 3 067 personnes et des historiques de connexions (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-des-vosges-mtezvi2a2rg01mrtvrp",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 3 063 agents dans une fuite revendiquée chez SDIS 88 (30 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-sdis-88",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (30 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2026, un acteur publie sur un forum des données présentées comme issues du site sdis88.fr, selon la revendication citée par FrenchBreaches. La publication annonce 4 226 lignes pour 3 067 personnes, soit environ 175 Mo au format CSV. Deux fichiers sont montrés : 3K_personnels.csv et 1K_connexions.csv. Le premier montre noms, grades, fonctions et références de photographies. Le second rassemble identifiants, services, horaires de connexion, adresses IP internes et types d'appareils. Fuites Infos ajoute adresse e-mail, téléphone, jeton d'authentification et éléments liés à l'extranet. Cyberattaque.org rattache la publication à la série de cinq SDIS du 29 août, attribuée à ChimeraZ. Le SDIS 88 n'a pas communiqué au 1er septembre, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-07-24",
+      "event": "Une première série de publications vise d'autres services d'incendie et fait l'objet d'une enquête du parquet de Paris qui ne couvre pas les Vosges, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée de 4 226 lignes pour 3 067 personnes, environ 175 Mo au format CSV, présentée comme issue du site sdis88.fr ; quatre autres services d'incendie sont revendiqués la même nuit, selon Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "FrenchBreaches, Fuites Infos et Cyberattaque.org relatent la revendication ; Cyberattaque.org attribue la série de cinq SDIS à un acteur nommé ChimeraZ."
+    },
+    {
+      "date": "2026-09-01",
+      "event": "Fuites Infos indique dans sa mise à jour que le SDIS 88 n'a publié aucune confirmation publique."
+    }
+  ]
+}
