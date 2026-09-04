@@ -1,0 +1,60 @@
+{
+  "slug": "sdis-57-20260829",
+  "entity": "SDIS de la Moselle (SDIS 57)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 5645,
+    "unit": "personnes",
+    "label": "5 645 agents concernés selon le SDIS 57 ; la revendication annonce 6 434 personnes pour 6 449 lignes (environ 3,2 Mo au format JSON)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 5 645 agents concernés par une fuite de données chez SDIS 57 (1 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-sdis-57",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS 57 (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-de-la-moselle-mtezsxcrwb76ft4xd69",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (29 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaqu",
+      "kind": "article"
+    }
+  ],
+  "description": "Le SDIS de la Moselle déclare une cyberattaque fin juillet 2026, selon Fuites Infos. Le 29 août 2026, une publication sur un forum revendique la diffusion du carnet d'adresses de la messagerie du service. Le dépôt annonce 6 449 lignes pour 6 434 personnes, environ 3,2 Mo au format JSON, selon FrenchBreaches et Cyberattaque.org. L'établissement confirme le vol de noms, prénoms, grades et adresses électroniques professionnelles, selon Fuites Infos. Le fichier publié contient également 804 listes de diffusion internes révélant l'organisation du service. L'incident est déclaré à la CNIL et un changement de mot de passe est demandé aux agents le 5 août. Une plainte est déposée le 31 août et l'enquête est confiée à la police judiciaire de Metz.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Fin juillet 2026 : le SDIS de la Moselle est victime d'une cyberattaque, selon l'établissement rapporté par Fuites Infos."
+    },
+    {
+      "date": "2026-08-05",
+      "event": "Le SDIS 57 demande à ses agents de changer leur mot de passe, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée d'un fichier présenté comme le carnet d'adresses du service : 6 449 lignes et 6 434 personnes, selon la veille cyber."
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Le SDIS 57 dépose plainte et l'enquête est confiée au service interdépartemental de police judiciaire de Metz, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-01",
+      "event": "Fuites Infos rapporte la confirmation de l'incident par l'établissement et sa déclaration à la CNIL."
+    }
+  ]
+}
