@@ -1,0 +1,51 @@
+{
+  "slug": "sdis-13-20260829",
+  "entity": "SDIS des Bouches-du-Rhône (SDIS 13)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 3699,
+    "unit": "personnes",
+    "label": "3 699 personnes et environ 3 700 lignes revendiquées pour un fichier JSON d'environ 635 Ko ; chiffres non confirmés par l'établissement"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 3 699 agents concernés par une fuite revendiquée chez SDIS 13 (30 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-sdis-13",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS des Bouches-du-Rhône (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-des-bouches-du-rh-ne-mtez1nua8138brrfb7i",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (29 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaqu",
+      "kind": "article"
+    }
+  ],
+  "description": "Une publication du 29 août 2026 sur un forum cybercriminel revendique la diffusion d'un export présenté comme l'annuaire du personnel du SDIS des Bouches-du-Rhône. Le dépôt annonce environ 3 700 lignes pour 3 699 personnes, soit environ 635 Ko au format JSON, selon FrenchBreaches. Les données citées sont le nom, le matricule interne, le statut et l'affectation opérationnelle, selon Fuites Infos. Quelques dizaines d'adresses électroniques professionnelles figurent également dans le dépôt. Fuites Infos et Cyberattaque.org rapportent que le même auteur a publié la même nuit des données visant quatre autres SDIS. Le SDIS 13 n'a pas communiqué publiquement sur cet incident. L'authenticité de la base et le nombre réel de personnes concernées ne sont pas vérifiés indépendamment.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée d'un export JSON de l'annuaire du personnel du SDIS 13 sur un forum cybercriminel, selon la veille cyber."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "FrenchBreaches et Fuites Infos documentent la revendication ; le même auteur revendique la même nuit des données visant quatre autres SDIS."
+    },
+    {
+      "date": "2026-09-01",
+      "event": "Fuites Infos indique que le SDIS 13 n'a pas communiqué publiquement et que la revendication reste non vérifiée."
+    }
+  ]
+}
