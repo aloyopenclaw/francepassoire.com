@@ -3,6 +3,7 @@
   "entity": "SDIS des Bouches-du-Rhône (SDIS 13)",
   "secteur": "public",
   "statut": "revendiquee",
+  "group": "chimeraz",
   "dates": {
     "revendication": "2026-08-29",
     "publication": "2026-08-30"
@@ -10,42 +11,43 @@
   "volume": {
     "count": 3699,
     "unit": "personnes",
-    "label": "3 699 personnes et environ 3 700 lignes revendiquées pour un fichier JSON d'environ 635 Ko ; chiffres non confirmés par l'établissement"
+    "label": "3 699 agents, export de l'annuaire du personnel d'environ 0,6 Mo, selon la revendication citée par Fuites Infos ; FrenchBreaches décrit une base d'environ 3 700 lignes"
   },
   "data_types": [
     "identite",
-    "coordonnees"
+    "coordonnees",
+    "autre"
   ],
   "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS des Bouches-du-Rhône : 3 699 personnes potentiellement concernées (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-des-bouches-du-rh-ne-mtez1nua8138brrfb7i",
+      "kind": "article"
+    },
     {
       "label": "Fuites Infos — 3 699 agents concernés par une fuite revendiquée chez SDIS 13 (30 août 2026)",
       "url": "https://fuitesinfos.fr/article/2026-08-29-sdis-13",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite de données au SDIS des Bouches-du-Rhône (30 août 2026)",
-      "url": "https://frenchbreaches.com/alertes/sdis-des-bouches-du-rh-ne-mtez1nua8138brrfb7i",
-      "kind": "revendication"
-    },
-    {
       "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (29 août 2026)",
-      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaqu",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaque/",
       "kind": "article"
     }
   ],
-  "description": "Une publication du 29 août 2026 sur un forum cybercriminel revendique la diffusion d'un export présenté comme l'annuaire du personnel du SDIS des Bouches-du-Rhône. Le dépôt annonce environ 3 700 lignes pour 3 699 personnes, soit environ 635 Ko au format JSON, selon FrenchBreaches. Les données citées sont le nom, le matricule interne, le statut et l'affectation opérationnelle, selon Fuites Infos. Quelques dizaines d'adresses électroniques professionnelles figurent également dans le dépôt. Fuites Infos et Cyberattaque.org rapportent que le même auteur a publié la même nuit des données visant quatre autres SDIS. Le SDIS 13 n'a pas communiqué publiquement sur cet incident. L'authenticité de la base et le nombre réel de personnes concernées ne sont pas vérifiés indépendamment.",
+  "description": "Le 29 août 2026, un acteur publie sur un forum ce qu'il présente comme l'export de l'annuaire du personnel du SDIS des Bouches-du-Rhône : 3 699 agents, selon la revendication citée par Fuites Infos. Chaque fiche mentionne nom, prénom, matricule interne, statut de professionnel ou volontaire et centre de secours de rattachement. Quelques dizaines d'adresses e-mail professionnelles y figurent. FrenchBreaches décrit une base d'environ 3 700 lignes. Le même auteur revendique quatre autres services la même nuit. Cyberattaque.org rattache la série de cinq SDIS à un acteur nommé ChimeraZ. Le SDIS 13 n'a pas communiqué au 30 août, selon Fuites Infos. La série prolonge celle du 24 juillet 2026, suivie d'une enquête du parquet de Paris hors Bouches-du-Rhône.",
   "timeline": [
     {
+      "date": "2026-07-24",
+      "event": "Une première série de publications visant d'autres services d'incendie donne lieu à une enquête du parquet de Paris, qui ne couvre pas les Bouches-du-Rhône, selon Fuites Infos."
+    },
+    {
       "date": "2026-08-29",
-      "event": "Publication revendiquée d'un export JSON de l'annuaire du personnel du SDIS 13 sur un forum cybercriminel, selon la veille cyber."
+      "event": "Publication revendiquée sur un forum de l'annuaire du personnel du SDIS 13, avec 3 699 agents annoncés ; quatre autres services d'incendie sont revendiqués la même nuit, selon Fuites Infos."
     },
     {
       "date": "2026-08-30",
-      "event": "FrenchBreaches et Fuites Infos documentent la revendication ; le même auteur revendique la même nuit des données visant quatre autres SDIS."
-    },
-    {
-      "date": "2026-09-01",
-      "event": "Fuites Infos indique que le SDIS 13 n'a pas communiqué publiquement et que la revendication reste non vérifiée."
+      "event": "FrenchBreaches, Fuites Infos et Cyberattaque.org relatent la revendication ; Cyberattaque.org attribue la série de cinq SDIS à un acteur nommé ChimeraZ."
     }
   ]
 }
