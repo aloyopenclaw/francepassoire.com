@@ -1,0 +1,49 @@
+{
+  "slug": "sis-67-20260829",
+  "entity": "Service d'incendie et de secours du Bas-Rhin (SIS 67)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 3584,
+    "unit": "personnes",
+    "label": "3 584 personnes selon FrenchBreaches ; la revendication citée par Fuites Infos évoque environ 2 974 sapeurs-pompiers dans le registre des séances de formation 2017-2026"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuites de données SDIS du Bas-Rhin : les données de 3 584 personnes exposées (30 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-du-bas-rhin-mtezqd7tc7tk1exr3is",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 2 974 sapeurs-pompiers concernés par une fuite revendiquée chez SIS 67 (30 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-29-service-d-incendie-et-de-secours-du-bas-rhin-sis-67",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (29 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2026, un acteur publie sur un forum ce qu'il présente comme le registre des séances de formation du Service d'incendie et de secours du Bas-Rhin (SIS 67), couvrant 2017 à 2026, soit 4 423 séances, selon la revendication citée par Fuites Infos. Chaque intervenant y figure avec nom précédé du grade, matricule, numéro de téléphone et centre d'affectation, pour environ 2 974 sapeurs-pompiers revendiqués. FrenchBreaches évalue le dépôt à 3 584 personnes. Le revendiquant exclut identifiants de connexion, données bancaires et données de santé. Cyberattaque.org rattache ce dépôt à la série de cinq services attribuée à ChimeraZ, estimée à environ 18 000 personnes. Le SIS 67 n'a pas confirmé publiquement cette publication au 30 août.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée du registre des séances de formation 2017-2026 du SIS 67, avec 4 423 séances annoncées ; quatre autres services d'incendie sont revendiqués la même nuit, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "FrenchBreaches, Fuites Infos et Cyberattaque.org relatent la revendication ; Cyberattaque.org attribue la série de cinq SDIS à un acteur nommé ChimeraZ et estime l'ensemble à environ 18 000 personnes."
+    }
+  ]
+}
