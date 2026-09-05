@@ -1,0 +1,45 @@
+{
+  "slug": "herbiolys-20260831",
+  "entity": "Herbiolys Laboratoire",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-31",
+    "publication": "2026-08-31"
+  },
+  "volume": {
+    "count": 1300000,
+    "unit": "lignes",
+    "label": "1,3 million de lignes revendiquées par le vendeur, avec près de 1 500 IBAN uniques selon Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1,3 million de lignes : fuite revendiquée chez Herbiolys Laboratoire (31 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-31-herbiolys-laboratoire",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Herbiolys : 1,3 million de lignes et 1 500 IBAN revendiqués (31 août 2026)",
+      "url": "https://www.cyberattaque.org/herbiolys-cyberattaque-million-de-lignes-et-1-500-iban-dans-une-fuite-massive/",
+      "kind": "article"
+    }
+  ],
+  "description": "Herbiolys Laboratoire, boutique française de produits à base de plantes, est visée par une fuite de données revendiquée le 31 août 2026. Un vendeur se présentant sous le pseudonyme Sophia affirme avoir compromis le site herbiolys.fr en août 2026 et extrait sa base de données, proposée à la vente. Selon Fuites Infos, le lot revendiqué compte 1,3 million de lignes. Cyberattaque.org, qui dit avoir consulté des échantillons, mentionne près de 1 500 IBAN uniques. Les catégories annoncées couvrent identités, coordonnées, dates de naissance, hachages de mots de passe, commandes, transactions et cartes partiellement masquées. Des enregistrements datés d'août 2026 figurent dans ces échantillons, selon Cyberattaque.org. L'entreprise n'a pas publié de communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-31",
+      "event": "Le vendeur se présentant comme Sophia revendique la compromission de herbiolys.fr en août 2026 et la mise en vente de la base, selon Fuites Infos."
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Fuites Infos et Cyberattaque.org relatent la revendication et décrivent les catégories de données d'après les échantillons consultés."
+    }
+  ]
+}
