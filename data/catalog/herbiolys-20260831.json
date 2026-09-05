@@ -1,0 +1,39 @@
+{
+  "slug": "herbiolys-20260831",
+  "entity": "Herbiolys Laboratoire",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-31",
+    "publication": "2026-08-31"
+  },
+  "volume": {
+    "count": 1300000,
+    "unit": "lignes",
+    "label": "1,3 million de lignes revendiquées par l'auteur du message, dont environ 1 500 IBAN uniques selon FrenchBreaches ; nombre de personnes concernées non déterminable"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "credentials"],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1,3 million de lignes : fuite revendiquée chez Herbiolys Laboratoire (31 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-31-herbiolys-laboratoire",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Herbiolys : 1,3 million de lignes et 1 500 IBAN exposés (31 août 2026)",
+      "url": "https://frenchbreaches.com/alertes/herbiolys-mthbl4mtoe9zgl49kjj",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 31 août 2026, un acteur sous le pseudonyme Sophia revendique sur un forum la compromission de herbiolys.fr en août 2026. Il affirme avoir extrait une base d'environ 1,3 million de lignes, dont environ 1 500 IBAN uniques, et propose la vente des données. Fuites Infos relaie la même revendication le même jour. Les catégories annoncées couvrent identité, coordonnées, commandes, transactions et données de paiement. Selon FrenchBreaches, les échantillons analysés contiennent des données réelles, sans validation des volumes revendiqués. Le site rapporte aussi que l'entreprise indique une attaque maîtrisée, des organismes officiels avertis et une plainte en cours. Le nombre de personnes concernées n'est pas déterminé.",
+  "timeline": [
+    {
+      "date": "2026-08-31",
+      "event": "Un acteur sous le pseudonyme Sophia revendique sur un forum une intrusion contre herbiolys.fr en août 2026 et l'extraction d'environ 1,3 million de lignes."
+    },
+    {
+      "date": "2026-08-31",
+      "event": "FrenchBreaches analyse les échantillons et rapporte que l'entreprise indique une attaque maîtrisée, des organismes officiels avertis et une plainte en cours."
+    }
+  ]
+}
