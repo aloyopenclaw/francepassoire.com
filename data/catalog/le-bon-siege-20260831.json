@@ -1,0 +1,45 @@
+{
+  "slug": "le-bon-siege-20260831",
+  "entity": "Le Bon Siège",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-31",
+    "publication": "2026-08-31"
+  },
+  "volume": {
+    "count": 1084,
+    "unit": "personnes",
+    "label": "1 084 clients revendiqués par le pirate selon Fuites Infos ; « près de 1 000 clients » selon Cyberattaque.org ; existence et ampleur annoncées non vérifiées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1084 clients de Le Bon Siège : fuite de données revendiquée (31 août 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-31-le-bon-siege-mb2",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Le Bon Siège : près de 1 000 clients exposés avec adresses et téléphones (31 août 2026)",
+      "url": "https://www.cyberattaque.org/lebonsiege-pres-de-1-000-clients-exposes-avec-adresses-et-telephones/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Bon Siège, boutique en ligne strasbourgeoise de sièges ergonomiques et de mobilier de bureau (lebonsiege.fr), est visée par une fuite de données revendiquée le 31 août 2026. Selon Fuites Infos, la revendication publiée sur un forum annonce 1 084 clients, particuliers et professionnels : identités, coordonnées, historique de commandes et factures, empreintes de mots de passe, plus de 200 numéros SIRET d'entreprises clientes et une douzaine de comptes d'administration. Cyberattaque.org, qui dit avoir consulté des extraits, décrit près de 1 000 clients et des comptes d'administration, avec des enregistrements de 2015 à 2021. La revendication indique qu'aucune donnée bancaire n'est présente. L'entreprise n'a pas publié de communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-31",
+      "event": "Une revendication attribuée au pseudonyme Sophia publie une base présentée comme issue de lebonsiege.fr ; Cyberattaque.org relate la publication le jour même."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Fuites Infos détaille la revendication : 1 084 clients couvrant juin 2015 à avril 2021, sans vérification indépendante du fichier complet à ce stade."
+    }
+  ]
+}
