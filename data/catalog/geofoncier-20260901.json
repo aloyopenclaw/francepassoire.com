@@ -1,0 +1,46 @@
+{
+  "slug": "geofoncier-20260901",
+  "entity": "Géofoncier",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "zerobytes",
+  "dates": {
+    "revendication": "2026-09-01",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 4226008,
+    "unit": "lignes",
+    "label": "4 226 008 lignes revendiquées par ZeroBytes, dont un annuaire de 6 782 géomètres-experts ; Géofoncier et l'Ordre des géomètres-experts ne confirment pas"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage de Géofoncier : des millions de données revendiquées par ZeroBytes (2 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/g-ofoncier-mtj8t6co0pczd1uq3z1h",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 6 782 géomètres-experts concernés par une fuite revendiquée chez Géofoncier (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-01-geofoncier",
+      "kind": "article"
+    }
+  ],
+  "description": "Géofoncier, portail foncier créé par l'Ordre des géomètres-experts, fait l'objet d'une revendication de fuite publiée le 1er septembre 2026. Le groupe ZeroBytes affirme avoir obtenu un accès via un compte disposant d'un accès à l'interface de programmation du portail. Selon FrenchBreaches et Fuites Infos, la revendication annonce 4 226 008 lignes : annuaire de 6 782 géomètres-experts, 6 448 structures d'exercice, 2 151 implantations et environ 4,2 millions de dossiers fonciers. Les données couvrent identités, coordonnées professionnelles, références internes de dossiers et métadonnées de documents de bornage. ZeroBytes reconnaît qu'une partie des informations est déjà accessible publiquement. Géofoncier et l'Ordre des géomètres-experts n'ont pas confirmé publiquement la fuite.",
+  "timeline": [
+    {
+      "date": "2026-09-01",
+      "event": "ZeroBytes publie sur un forum une revendication de fuite visant Géofoncier et met en ligne 4 226 008 lignes, selon FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "FrenchBreaches et Fuites Infos relatent la revendication et décrivent les catégories de données d'après les échantillons diffusés."
+    }
+  ]
+}
