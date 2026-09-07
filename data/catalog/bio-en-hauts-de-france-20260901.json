@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "Nombre de personnes concernées non communiqué ; les catégories de données volées sont détaillées dans la notification relatée par FrenchBreaches et Cyberattaque.org"
+    "label": "nombre de personnes concernées non communiqué par l'entité ; la notification ne précise pas non plus la date de l'intrusion, selon Cyberattaque.org"
   },
   "data_types": [
     "identite",
@@ -21,7 +21,7 @@
   ],
   "sources": [
     {
-      "label": "FrenchBreaches — Cyberattaque chez Bio en Hauts-de-France : des données de salariés ont... (1er septembre 2026)",
+      "label": "FrenchBreaches — Cyberattaque contre Bio en Hauts-de-France : des données personnelles et professionnelles volées (1er septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/bio-en-hauts-de-france-mtiikognot4hbi60ug",
       "kind": "article"
     },
@@ -29,22 +29,13 @@
       "label": "Cyberattaque.org — Bio en Hauts-de-France : des données personnelles compromises après une cyberattaque (1er septembre 2026)",
       "url": "https://www.cyberattaque.org/bio-en-hauts-de-france-des-donnees-personnelles-compromises-apres-une-cyberattaque/",
       "kind": "article"
-    },
-    {
-      "label": "Evasion FM — Cyberattaque dans les Hauts-de-France : les données d'exploitants agricoles dans la nature (2 septembre 2026)",
-      "url": "https://www.evasionfm.com/cyberattaque-dans-les-hauts-de-france-les-donnees-d-exploitants-agricoles-dans-la-nature",
-      "kind": "article"
     }
   ],
-  "description": "Bio en Hauts-de-France notifie les personnes concernées d'un vol de données après une cyberattaque, selon FrenchBreaches et Cyberattaque.org le 1er septembre 2026. La notification décrit des données d'identité et de coordonnées. Y figurent des données professionnelles et d'exploitations : SIREN/SIRET, PACAGE, numéro bio, productions, cheptels. Des données économiques et d'adhésions, l'historique du CRM, des contenus de courriels et des éléments d'authentification sont aussi cités. Les informations proviennent notamment de l'Observatoire régional de l'Agriculture biologique. L'organisation indique qu'aucune information bancaire n'est touchée. Evasion FM précise que l'attaque date de début août, qu'une plainte est déposée et que la sécurisation des bases est en cours. L'outil piraté sert aussi à des agences bio d'autres régions, selon le média.",
+  "description": "Bio en Hauts-de-France, interprofession régionale de l'agriculture biologique basée à Amiens, annonce avoir été victime d'une cyberattaque avec vol de données. Selon la notification adressée aux personnes concernées, les données dérobées incluent identités, coordonnées, données professionnelles des exploitations et données d'authentification. Sont aussi cités par FrenchBreaches et Cyberattaque.org le SIREN/SIRET, le PACAGE, le numéro bio, les certifications, l'historique CRM et des contenus de courriels. Une partie des informations provient des données collectées via l'Agence Bio pour l'Observatoire régional de l'Agriculture biologique. L'entité indique qu'aucune information bancaire n'est concernée. Le point d'entrée, la date de l'intrusion et le nombre de personnes touchées ne sont pas précisés.",
   "timeline": [
     {
       "date": "2026-09-01",
-      "event": "FrenchBreaches et Cyberattaque.org relatent la notification envoyée par Bio en Hauts-de-France aux personnes concernées. Les catégories citées couvrent identités, coordonnées, données d'exploitations, données économiques, CRM, courriels et éléments d'authentification."
-    },
-    {
-      "date": "2026-09-02",
-      "event": "Evasion FM rapporte la confirmation de l'organisation : cyberattaque début août, plainte déposée, sécurisation des bases de données en cours. L'outil piraté est également utilisé par des agences bio d'autres régions."
+      "event": "Bio en Hauts-de-France informe les personnes concernées d'un vol de données lors d'une cyberattaque ; la notification est citée par FrenchBreaches et Cyberattaque.org."
     }
   ]
 }
