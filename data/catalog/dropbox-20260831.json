@@ -1,0 +1,47 @@
+{
+  "slug": "dropbox-20260831",
+  "entity": "Dropbox",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-31",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 5000,
+    "unit": "comptes",
+    "label": "environ 5 000 comptes compromis selon le bilan communiqué par Dropbox (01net, mise à jour du 3 septembre 2026)"
+  },
+  "data_types": ["documents", "coordonnees"],
+  "sources": [
+    {
+      "label": "01net — Cyberattaque contre Dropbox : une faille de sécurité a permis de pirater certains comptes (2 septembre 2026, mis à jour le 3 septembre)",
+      "url": "https://www.01net.com/actualites/cyberattaque-contre-dropbox-une-faille-de-securite-a-permis-de-pirater-certains-comptes.html",
+      "kind": "article"
+    },
+    {
+      "label": "Cybersecurity News — Dropbox Says 5,000 Accounts Were Compromised Through Lenovo ID Authentication Flaw (2 septembre 2026)",
+      "url": "https://cybersecuritynews.com/dropbox-lenovo-id-flaw/",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le 4 et le 21 août 2026, des accès non autorisés visent des comptes Dropbox, selon les notifications de l'entreprise. L'attaque exploite une défaillance de vérification d'adresse e-mail chez Lenovo, partenaire de connexion unique : un Lenovo ID pouvait être créé au nom d'une adresse sans preuve du contrôle de la boîte. Le jeton associé permettait ensuite d'ouvrir une session Dropbox sans mot de passe ni double authentification. Selon 01net, environ 5 000 comptes ont été compromis et du contenu a été consulté et téléchargé. D'après Cybersecurity News, les comptes visés étaient liés via Lenovo ID sans double authentification active. Dropbox a révoqué les sessions concernées, coupé l'association des comptes et signalé l'incident aux autorités de protection des données.",
+  "timeline": [
+    {
+      "date": "2026-08-04",
+      "event": "Début de la fenêtre d'accès non autorisé aux comptes Dropbox, qui court jusqu'au 21 août, selon les notifications de l'entreprise relayées par la presse."
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Des personnes concernées partagent publiquement le courriel de notification de Dropbox sur les réseaux sociaux (message du 31 août 2026 cité par 01net)."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "01net et Cybersecurity News publient chacun un article sur l'incident ; environ 5 000 comptes compromis sont annoncés selon Dropbox."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Dans une mise à jour relayée par 01net, Dropbox indique que du contenu a été consulté et téléchargé et que l'incident a été signalé aux autorités de protection des données."
+    }
+  ]
+}
