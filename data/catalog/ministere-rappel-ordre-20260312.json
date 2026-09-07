@@ -1,0 +1,42 @@
+{
+  "slug": "ministere-rappel-ordre-20260312",
+  "entity": "Un ministère (dénomination non publiée par la CNIL)",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-03-12",
+    "confirmation": "2026-03-12",
+    "publication": "2026-07-06"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non précisé par la décision ; entité désignée anonymement dans le tableau officiel des sanctions"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "CNIL — Les sanctions prononcées par la CNIL (liste officielle) : « ministère », rappel à l'ordre et injonction (12 mars 2026)",
+      "url": "https://www.cnil.fr/fr/les-sanctions-prononcees-par-la-cnil",
+      "kind": "officiel"
+    },
+    {
+      "label": "CNIL — La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée (6 juillet 2026)",
+      "url": "https://www.cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le 12 mars 2026, la CNIL a prononcé un rappel à l'ordre et une injonction contre un ministère (selon le tableau officiel des sanctions). Les manquements retenus portent sur la licéité du traitement, la durée de conservation et le défaut de sécurité des données. La dénomination n'est pas publiée ; aucune délibération n'est mise en ligne. Le rappel à l'ordre, mesure la plus légère du catalogue répressif de la CNIL, est assorti d'une injonction de mise en conformité. D'après le communiqué du 6 juillet 2026, la CNIL a prononcé 23 sanctions simplifiées depuis janvier 2026, pour 133 750 euros d'amendes cumulées. Le volume de personnes concernées n'est pas précisé.",
+  "timeline": [
+    {
+      "date": "2026-03-12",
+      "event": "Rappel à l'ordre et injonction : licéité du traitement, durée de conservation et défaut de sécurité des données (tableau officiel des sanctions)."
+    },
+    {
+      "date": "2026-07-06",
+      "event": "La CNIL publie un bilan de 23 sanctions simplifiées depuis janvier 2026, pour 133 750 euros d'amendes cumulées."
+    }
+  ]
+}
