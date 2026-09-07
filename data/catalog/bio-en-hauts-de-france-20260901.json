@@ -1,0 +1,41 @@
+{
+  "slug": "bio-en-hauts-de-france-20260901",
+  "entity": "Bio en Hauts-de-France",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-01",
+    "publication": "2026-09-01"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué par l'entité ; la notification ne précise pas non plus la date de l'intrusion, selon Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque contre Bio en Hauts-de-France : des données personnelles et professionnelles volées (1er septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/bio-en-hauts-de-france-mtiikognot4hbi60ug",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Bio en Hauts-de-France : des données personnelles compromises après une cyberattaque (1er septembre 2026)",
+      "url": "https://www.cyberattaque.org/bio-en-hauts-de-france-des-donnees-personnelles-compromises-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Bio en Hauts-de-France, interprofession régionale de l'agriculture biologique basée à Amiens, annonce avoir été victime d'une cyberattaque avec vol de données. Selon la notification adressée aux personnes concernées, les données dérobées incluent identités, coordonnées, données professionnelles des exploitations et données d'authentification. Sont aussi cités par FrenchBreaches et Cyberattaque.org le SIREN/SIRET, le PACAGE, le numéro bio, les certifications, l'historique CRM et des contenus de courriels. Une partie des informations provient des données collectées via l'Agence Bio pour l'Observatoire régional de l'Agriculture biologique. L'entité indique qu'aucune information bancaire n'est concernée. Le point d'entrée, la date de l'intrusion et le nombre de personnes touchées ne sont pas précisés.",
+  "timeline": [
+    {
+      "date": "2026-09-01",
+      "event": "Bio en Hauts-de-France informe les personnes concernées d'un vol de données lors d'une cyberattaque ; la notification est citée par FrenchBreaches et Cyberattaque.org."
+    }
+  ]
+}
