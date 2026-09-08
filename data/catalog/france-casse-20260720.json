@@ -1,0 +1,48 @@
+{
+  "slug": "france-casse-20260720",
+  "entity": "France Casse",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-20",
+    "publication": "2026-07-20"
+  },
+  "volume": {
+    "count": 3300000,
+    "unit": "comptes",
+    "label": "Environ 3,3 millions de comptes clients annoncés par l'auteur de la revendication, selon Cyberattaque.org et S@FE Digitalisation ; aucune confirmation officielle"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — France Casse : 3,3 millions de comptes en fuite avec des mots de passe en clair (20 juillet 2026, mis à jour le 16 août 2026)",
+      "url": "https://www.cyberattaque.org/france-casse-33-millions-de-comptes-en-fuite-avec-des-mots-de-passe-en-clair/",
+      "kind": "article"
+    },
+    {
+      "label": "S@FE Digitalisation — France Casse : 3,3 millions de comptes en fuite avec des mots de passe en clair : quand une faute technique de 2025 explose en 2026 (21 juillet 2026)",
+      "url": "https://www.safe-digitalisation.fr/blog/article-france-casse.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 juillet 2026, un acteur publie sur un forum une base SQL présentée comme issue de France Casse. France Casse est une plateforme française de recherche et de vente de pièces automobiles d'occasion. Cyberattaque.org et S@FE Digitalisation relatent cette revendication. Elle annonce environ 3,3 millions de comptes clients : nom, adresse postale, e-mail, téléphone, date de naissance et mots de passe. L'auteur affirme que l'extraction date de mai 2025 et qu'une partie des mots de passe figure en clair. France Casse n'a pas confirmé publiquement cette revendication. Les deux médias indiquent qu'aucun élément indépendant ne valide l'authenticité de la base. Cette publication est distincte de la revendication du 15 août 2026, qui annonçait 512 comptes.",
+  "timeline": [
+    {
+      "date": "2026-07-20",
+      "event": "Un acteur publie sur un forum une revendication annonçant la diffusion d'une base SQL d'environ 3,3 millions de comptes clients de France Casse, extraite en mai 2025 selon l'auteur ; Cyberattaque.org relaie le même jour."
+    },
+    {
+      "date": "2026-07-21",
+      "event": "S@FE Digitalisation publie une analyse de la revendication : mots de passe en partie en clair selon l'auteur, aucune confirmation officielle de France Casse à cette date."
+    },
+    {
+      "date": "2026-08-16",
+      "event": "Cyberattaque.org met à jour son article : la revendication du 20 juillet reste sans confirmation publique de France Casse."
+    }
+  ]
+}
