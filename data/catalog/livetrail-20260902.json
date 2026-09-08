@@ -1,0 +1,46 @@
+{
+  "slug": "livetrail-20260902",
+  "entity": "LiveTrail",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "Nombre de comptes concernés non communiqué par l'entreprise (communication relayée par Fuites Infos)"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez LiveTrail : comptes utilisateurs affectés (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-livetrail",
+      "kind": "article"
+    },
+    {
+      "label": "Pacing Trail — LiveTrail piraté : ce que les traileurs doivent vérifier après l'exposition de données (3 septembre 2026)",
+      "url": "https://pacing-trail.fr/livetrail-pirate-traileurs-verifier-exposition-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 septembre 2026, LiveTrail informe ses utilisateurs d'un accès non autorisé sur une partie de son serveur, selon la communication de l'entreprise relayée par Fuites Infos et Pacing Trail. L'éditeur français de solutions d'inscription et de chronométrage, basé à Chamonix-Mont-Blanc, gère environ 300 courses selon Fuites Infos. Le périmètre cité se limite à l'adresse électronique utilisée comme identifiant et au mot de passe, stocké sous forme hachée. LiveTrail indique avoir fermé l'accès incriminé, imposé la réinitialisation des mots de passe concernés et renforcé la surveillance de ses systèmes. Le nombre de comptes concernés n'est pas communiqué. Aucun signalement à la CNIL n'est mentionné.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "LiveTrail notifie ses utilisateurs d'un accès non autorisé sur une partie de son serveur (communication relayée par Fuites Infos)."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "L'entreprise indique avoir fermé l'accès, imposé la réinitialisation des mots de passe concernés et renforcé la surveillance."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Pacing Trail relate l'incident et recommande de vérifier les accès et les mots de passe."
+    }
+  ]
+}
