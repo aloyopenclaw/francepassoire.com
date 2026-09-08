@@ -1,0 +1,45 @@
+{
+  "slug": "akaolife-20260624",
+  "entity": "Akaolife (prestataire RH de France Travail)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-06-24",
+    "publication": "2026-06-25"
+  },
+  "volume": {
+    "count": 14400000,
+    "unit": "enregistrements",
+    "label": "selon la revendication relayée par Zataz et Cyberattaque.org : environ 14,4 millions d'enregistrements, dont 966 816 dossiers RH et 38 138 dossiers de médecine du travail"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Zataz — Akaolife, l'intrusion qui menace France Travail ? (24 juin 2026)",
+      "url": "https://www.zataz.com/akaolife-lintrusion-qui-menace-france-travail/",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — AKAOLIFE : 14,4 millions d'enregistrements revendiqués dans une fuite visant un prestataire RH de France Travail (25 juin 2026)",
+      "url": "https://www.cyberattaque.org/akaolife-144-millions-denregistrements-revendiques-dans-une-fuite-visant-un-prestataire-rh-de-france-travail/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 24 juin 2026, un message publié sur un forum cybercriminel revendique l'intrusion dans Akaolife, éditeur français de solutions RH, selon Zataz. L'entreprise est présentée comme prestataire RH de France Travail en Île-de-France. Les pseudonymes misere et ChimeraZ revendiquent l'exfiltration d'environ 14,4 millions d'enregistrements, soit plus de 21 Go, selon Cyberattaque.org. La revendication cite 966 816 dossiers RH, 1 003 047 demandes de mobilité interne et 38 138 dossiers de médecine du travail. Elle cite aussi 26 684 mots de passe en clair liés à des comptes @pole-emploi.fr ou @francetravail.fr. Selon Cyberattaque.org, Akaolife a été rachetée par Sage en 2026. Aucune confirmation indépendante de ces volumes n'est publiée à la date de presse.",
+  "timeline": [
+    {
+      "date": "2026-06-24",
+      "event": "Un message sur un forum cybercriminel revendique l'intrusion dans Akaolife, prestataire RH de France Travail, selon Zataz."
+    },
+    {
+      "date": "2026-06-25",
+      "event": "Zataz et Cyberattaque.org rapportent la revendication : 14,4 millions d'enregistrements, dossiers RH et médicaux et mots de passe en clair revendiqués."
+    }
+  ]
+}
