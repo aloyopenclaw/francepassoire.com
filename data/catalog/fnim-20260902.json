@@ -1,0 +1,49 @@
+{
+  "slug": "fnim-20260902",
+  "entity": "FNIM (Fédération Nationale Indépendante des Mutuelles)",
+  "secteur": "finance",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02",
+    "confirmation": "2026-09-03"
+  },
+  "volume": {
+    "count": 817,
+    "unit": "personnes",
+    "label": "817 personnes distinctes comptées sur l'adresse électronique dans les trois bases diffusées (analyse Fuites Infos) ; chiffre non confirmé par la fédération"
+  },
+  "data_types": ["identite", "coordonnees", "credentials", "financier", "documents"],
+  "sources": [
+    {
+      "label": "FNIM — Incident informatique à la FNIM : la situation est circonscrite (3 septembre 2026)",
+      "url": "https://fnim.fr/2026/09/incident-informatique-a-la-fnim-la-situation-est-circonscrite/",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données confirmée chez la FNIM, 817 contacts dans les bases diffusées (2 septembre 2026, mise à jour 5 septembre)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-fnim-federation-nationale-independante-des-mutuelles",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque contre la FNIM : des sites piratés et un accès bancaire revendiqué (2 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/fnim-mtjy1oawv9ayhxk3qr",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 2 septembre 2026, une publication sur un forum cybercriminel revendique la compromission de la FNIM (Fédération Nationale Indépendante des Mutuelles) : trois bases présentées comme issues de ses sites et de deux structures associées, et des défacements documentés par des captures d'archive. Selon l'analyse de Fuites Infos, ces bases réunissent 817 personnes distinctes, en majorité des contacts professionnels du secteur mutualiste : identité, coordonnées, fonction, messages de formulaires, comptes d'administration et clés d'envoi de courrier. Dans un communiqué du 3 septembre, la fédération confirme une cyberattaque survenue l'après-midi, limitée selon elle à un fichier de facturation fournisseurs et à ses coordonnées bancaires, sans adhérent concerné. Elle ne s'est pas prononcée sur les trois bases diffusées.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "Publication sur un forum cybercriminel de trois bases attribuées à fnim.fr, comite-opera.org et www.ugm-opera.fr ; défacements de quatre pages d'accueil documentés par des captures d'archive entre 10 h 03 et 10 h 15 (selon Fuites Infos)."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "La fédération détecte l'incident dans l'après-midi, interrompt les accès et engage les déclarations auprès des autorités compétentes (communiqué du 3 septembre)."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Communiqué de la FNIM : cyberattaque confirmée, périmètre limité selon elle à un fichier de facturation fournisseurs et à ses coordonnées bancaires, aucun adhérent concerné."
+    }
+  ]
+}
