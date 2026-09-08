@@ -1,0 +1,50 @@
+{
+  "slug": "micromania-20260902",
+  "entity": "Micromania",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; selon la notification aux clients relayée par Fuites Infos : nom, adresse électronique et numéro de téléphone concernés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Micromania confirmée par l'enseigne (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-micromania",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Micromania : des informations clients compromises (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/micromania-mtkqt98z0l4chcj41qpe",
+      "kind": "article"
+    }
+  ],
+  "description": "Micromania informe les titulaires d'un compte client et les clients ayant récemment commandé qu'un tiers non autorisé a accédé à des données via son prestataire de suivi des colis, selon la notification relayée par Fuites Infos le 2 septembre 2026. La période d'accès s'étend du 31 juillet au 17 août 2026, date de la correction de la faille, selon la même notification. Les données concernées sont le nom, l'adresse électronique et le numéro de téléphone. Les mots de passe et les données bancaires ne sont pas concernés, selon l'enseigne, qui précise que ses systèmes ne sont pas affectés. FrenchBreaches identifie le prestataire comme Shipup le 3 septembre 2026. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Début de la période d'accès non autorisé aux données chez le prestataire, selon la notification aux clients relayée par Fuites Infos."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "La faille est corrigée et les accès non autorisés sont bloqués, selon la notification aux clients."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Notification aux personnes concernées et dépôt d'une déclaration à la CNIL, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "FrenchBreaches identifie le prestataire concerné comme Shipup."
+    }
+  ]
+}
