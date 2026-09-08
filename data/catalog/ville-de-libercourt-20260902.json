@@ -1,0 +1,44 @@
+{
+  "slug": "ville-de-libercourt-20260902",
+  "entity": "Ville de Libercourt",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "kairos",
+  "dates": {
+    "revendication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "817 Go de données revendiqués exfiltrés par le groupe Kairos ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Ville de Libercourt : 817 Go de données exfiltrés (2 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/ville-de-libercourt-rw_Vm1sc2JHVWdaR1VnVEdsaVpYSmpiM1Z5ZEVCcllXbHliM009",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Ville de Libercourt : 817 Go de données revendiqués après une cyberattaque (2 septembre 2026)",
+      "url": "https://www.cyberattaque.org/ville-de-libercourt-817-go-de-donnees-revendiquesapres-une-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "ransomware.live — Fiche victime libercourt.fr (groupe Kairos, France)",
+      "url": "https://www.ransomware.live/id/VmlsbGUgZGUgTGliZXJjb3VydEBrYWlyb3M=",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 2 septembre 2026, le groupe de rançongiciels Kairos ajoute la Ville de Libercourt à son site de fuite et revendique l'exfiltration de 817 Go de données, selon ransomware.live et Cyberattaque.org. Cyberattaque.org a observé des documents présentés comme issus de la commune : procès-verbaux, pièces d'identité et bulletins de paie. La carte d'identité du maire figure parmi les documents observés. La publication est accompagnée d'un compte à rebours avant une diffusion annoncée. Le point d'entrée, la durée de présence des attaquants et un éventuel chiffrement ne sont pas précisés. La commune n'a pas communiqué publiquement au moment des relais de presse. Le volume total demeure une affirmation du groupe.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "Le groupe Kairos affiche la Ville de Libercourt sur son site de fuite avec un compte à rebours et revendique 817 Go de données ; FrenchBreaches, Cyberattaque.org et ransomware.live relèvent la publication le même jour."
+    }
+  ]
+}
