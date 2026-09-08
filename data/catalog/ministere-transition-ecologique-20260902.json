@@ -1,0 +1,49 @@
+{
+  "slug": "ministere-transition-ecologique-20260902",
+  "entity": "Ministère de la Transition écologique",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 22211,
+    "unit": "personnes",
+    "label": "22 211 personnes selon Fuites Infos : 8 018 agents des administrations centrales et 14 193 contrôleurs agréés d'APAVE Exploitation France ; FrenchBreaches annonce 8 166 utilisateurs et 14 656 enregistrements de contrôleurs"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 22 211 personnes concernées par une fuite de données au ministère de la Transition écologique (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-ministere-de-la-transition-ecologique",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque au ministère de la Transition écologique : les données de milliers d'utilisateurs et contrôleurs revendiquées (2 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/minist-re-de-la-transition-cologique-mtk4bzvizh7z1fmgm7",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une « attaque informatique sophistiquée » paralyse plusieurs sites du gouvernement français (3 septembre 2026)",
+      "url": "https://www.01net.com/actualites/un-incident-informatique-touche-plusieurs-sites-du-gouvernement-francais.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 septembre 2026, le pseudonyme « mondial » revendique sur un forum cybercriminel l'extraction de deux bases liées à developpement-durable.gouv.fr. Selon FrenchBreaches, controleurs.csv est annoncé avec 14 656 enregistrements de contrôleurs et all_users.json avec 8 166 utilisateurs. Selon Fuites Infos, 22 211 personnes sont concernées : 8 018 agents des administrations centrales et 14 193 contrôleurs d'APAVE Exploitation France. Figurent identité, coordonnées professionnelles, matricules, affectations et identifiants ; aucun mot de passe n'apparaît. Le ministère confirme une attaque informatique « sophistiquée » visant des outils de messagerie la semaine précédente. L'ANSSI intervient et un signalement au parquet est effectué, selon 01net. Le ministère ne commente pas les volumes revendiqués.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "Le pseudonyme « mondial » revendique l'extraction de deux bases liées à developpement-durable.gouv.fr ; le même jour, plusieurs sites du pôle ministériel sont indisponibles. En soirée, le ministère confirme une attaque informatique sophistiquée survenue la semaine précédente, selon FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "01net relaye les déclarations du ministère à l'AFP : un signalement au parquet a été effectué. L'ANSSI indique intervenir auprès d'administrations du ministère et lie les interruptions de service à ses mesures de remédiation."
+    }
+  ]
+}
