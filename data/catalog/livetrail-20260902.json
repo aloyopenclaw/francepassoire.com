@@ -1,0 +1,42 @@
+{
+  "slug": "livetrail-20260902",
+  "entity": "LiveTrail",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "Nombre de comptes concernés non communiqué par LiveTrail, selon Fuites Infos et FrenchBreaches"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez LiveTrail : comptes utilisateurs affectés (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-livetrail",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque contre LiveTrail : des adresses e-mail et mots de passe compromis (2 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/livetrail-mtjxhuwerp3v2k4hem9",
+      "kind": "article"
+    }
+  ],
+  "description": "LiveTrail, éditeur français d'inscription et de chronométrage de courses, avertit ses utilisateurs d'un accès non autorisé à une partie de son serveur. Fuites Infos et FrenchBreaches relatent cette notification le 2 septembre 2026. L'entreprise, basée à Chamonix-Mont-Blanc, indique que l'extraction porte sur l'adresse e-mail servant d'identifiant et sur le mot de passe, stocké sous forme hachée. Elle déclare avoir fermé l'accès concerné, imposé la réinitialisation des mots de passe visés et renforcé la surveillance de ses systèmes. Elle recommande de modifier tout mot de passe réutilisé ailleurs et de se méfier des tentatives d'hameçonnage. Le nombre de comptes concernés n'est pas communiqué. Aucun signalement à la CNIL n'est mentionné, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "LiveTrail notifie les personnes concernées d'un accès non autorisé à une partie de son serveur, avec extraction d'adresses e-mail et de mots de passe hachés ; Fuites Infos et FrenchBreaches relatent la notification."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "LiveTrail indique avoir fermé l'accès à l'origine de l'incident, imposé la réinitialisation des mots de passe concernés et placé ses systèmes sous surveillance renforcée ; la même communication alerte sur les risques d'hameçonnage."
+    }
+  ]
+}
