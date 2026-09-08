@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "comptes",
-    "label": "Nombre de comptes concernés non communiqué par LiveTrail, selon Fuites Infos et FrenchBreaches"
+    "label": "Nombre de comptes concernés non communiqué par l'entreprise (communication relayée par Fuites Infos)"
   },
   "data_types": [
     "coordonnees",
@@ -23,20 +23,24 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Cyberattaque contre LiveTrail : des adresses e-mail et mots de passe compromis (2 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/livetrail-mtjxhuwerp3v2k4hem9",
+      "label": "Pacing Trail — LiveTrail piraté : ce que les traileurs doivent vérifier après l'exposition de données (3 septembre 2026)",
+      "url": "https://pacing-trail.fr/livetrail-pirate-traileurs-verifier-exposition-donnees/",
       "kind": "article"
     }
   ],
-  "description": "LiveTrail, éditeur français d'inscription et de chronométrage de courses, avertit ses utilisateurs d'un accès non autorisé à une partie de son serveur. Fuites Infos et FrenchBreaches relatent cette notification le 2 septembre 2026. L'entreprise, basée à Chamonix-Mont-Blanc, indique que l'extraction porte sur l'adresse e-mail servant d'identifiant et sur le mot de passe, stocké sous forme hachée. Elle déclare avoir fermé l'accès concerné, imposé la réinitialisation des mots de passe visés et renforcé la surveillance de ses systèmes. Elle recommande de modifier tout mot de passe réutilisé ailleurs et de se méfier des tentatives d'hameçonnage. Le nombre de comptes concernés n'est pas communiqué. Aucun signalement à la CNIL n'est mentionné, selon Fuites Infos.",
+  "description": "Le 2 septembre 2026, LiveTrail informe ses utilisateurs d'un accès non autorisé sur une partie de son serveur, selon la communication de l'entreprise relayée par Fuites Infos et Pacing Trail. L'éditeur français de solutions d'inscription et de chronométrage, basé à Chamonix-Mont-Blanc, gère environ 300 courses selon Fuites Infos. Le périmètre cité se limite à l'adresse électronique utilisée comme identifiant et au mot de passe, stocké sous forme hachée. LiveTrail indique avoir fermé l'accès incriminé, imposé la réinitialisation des mots de passe concernés et renforcé la surveillance de ses systèmes. Le nombre de comptes concernés n'est pas communiqué. Aucun signalement à la CNIL n'est mentionné.",
   "timeline": [
     {
       "date": "2026-09-02",
-      "event": "LiveTrail notifie les personnes concernées d'un accès non autorisé à une partie de son serveur, avec extraction d'adresses e-mail et de mots de passe hachés ; Fuites Infos et FrenchBreaches relatent la notification."
+      "event": "LiveTrail notifie ses utilisateurs d'un accès non autorisé sur une partie de son serveur (communication relayée par Fuites Infos)."
     },
     {
       "date": "2026-09-02",
-      "event": "LiveTrail indique avoir fermé l'accès à l'origine de l'incident, imposé la réinitialisation des mots de passe concernés et placé ses systèmes sous surveillance renforcée ; la même communication alerte sur les risques d'hameçonnage."
+      "event": "L'entreprise indique avoir fermé l'accès, imposé la réinitialisation des mots de passe concernés et renforcé la surveillance."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Pacing Trail relate l'incident et recommande de vérifier les accès et les mots de passe."
     }
   ]
 }
