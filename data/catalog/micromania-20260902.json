@@ -1,0 +1,51 @@
+{
+  "slug": "micromania-20260902",
+  "entity": "Micromania",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; selon la notification relayée par Fuites Infos, titulaires de comptes clients et personnes ayant récemment commandé"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Micromania confirmée par l'enseigne (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-micromania",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une fuite de données touche Micromania, attention aux arnaques au colis (3 septembre 2026)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-chez-micromania-gare-arnaques-colis.html",
+      "kind": "article"
+    },
+    {
+      "label": "Capital — Fuite de données chez Micromania, la vague d'arnaques au colis qui menace ses clients (4 septembre 2026)",
+      "url": "https://www.capital.fr/conso/fuite-de-donnees-chez-micromania-la-vague-d-arnaques-au-colis-qui-menace-ses-clients-1529870",
+      "kind": "article"
+    }
+  ],
+  "description": "Micromania informe ses clients d'un incident survenu chez un prestataire chargé du suivi des colis et des notifications de livraison. Selon la notification citée par Fuites Infos, un tiers non autorisé a accédé à certaines informations du 31 juillet au 17 août 2026. Les données concernées sont le nom, le prénom, l'adresse e-mail et, si renseigné, le numéro de téléphone. L'enseigne indique que ses systèmes, son site et les comptes clients ne sont pas affectés. Mots de passe et données bancaires sont exclus, ces éléments n'étant pas transmis au prestataire. La CNIL a été notifiée, selon cette communication. Le prestataire n'est pas nommé par l'enseigne ; Génération-NT cite Shipup. Aucun volume de personnes concernées n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Début de la période d'accès non autorisé possible chez le prestataire de suivi des colis, selon la notification citée par Fuites Infos."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "Fin de la période d'exposition ; selon la communication de l'enseigne, la faille est corrigée et les accès bloqués."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Micromania notifie les clients et la CNIL ; Fuites Infos publie le même jour."
+    }
+  ]
+}
