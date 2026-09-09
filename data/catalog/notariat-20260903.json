@@ -1,0 +1,40 @@
+{
+  "slug": "notariat-20260903",
+  "entity": "Notariat français (offices notariaux et Conseil supérieur du notariat)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; plus de 500 offices touchés (environ 7 % des études) et détournements estimés entre 35 et 40 millions d'euros fin 2024, selon les documents internes de l'ANSSI cités par Le Monde"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Le Monde — Au cœur d'une cyberattaque sans précédent qui a ébranlé le notariat français (3 septembre 2026) (archive)",
+      "url": "https://web.archive.org/web/20260903203806/https://www.lemonde.fr/pixels/article/2026/09/03/au-c-ur-d-une-cyberattaque-sans-precedent-qui-a-ebranle-le-notariat-francais_6765150_4408996.html",
+      "kind": "archive"
+    },
+    {
+      "label": "FrenchBreaches — Plus de 500 offices de notaires piratés en France, jusqu'à 40 millions d'euros détournés (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/blog/plus-de-500-offices-de-notaires-pirates-en-france-jusqua-40-millions-deuros-detournes",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 septembre 2026, Le Monde publie une enquête sur une campagne d'intrusion visant le notariat français, fondée sur des notes internes de l'ANSSI et du Conseil supérieur du notariat (CSN). Selon ces documents, les premières compromissions datent de décembre 2022 et plus de 500 offices, soit environ 7 % des études, sont touchés. Les détournements sont estimés entre 35 et 40 millions d'euros à fin 2024, par des substitutions de RIB et des fraudes au président. En mars 2024, un document piégé envoyé depuis un système compromis atteint plus de 10 000 officiers publics ; environ 80 % des destinataires cliquent, d'après l'ANSSI. D'après le CSN, les attaques sont contenues. Aucun acte authentique falsifié n'est identifié, selon le journal.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Le Monde publie son enquête sur la campagne d'intrusion contre le notariat ; FrenchBreaches relaie les mêmes éléments le jour même."
+    }
+  ]
+}
