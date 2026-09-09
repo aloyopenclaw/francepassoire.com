@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "nombre de personnes concernées non communiqué ; selon la notification aux clients relayée par Fuites Infos : nom, adresse électronique et numéro de téléphone concernés"
+    "label": "nombre de personnes concernées non communiqué ; selon la notification relayée par Fuites Infos, titulaires de comptes clients et personnes ayant récemment commandé"
   },
   "data_types": [
     "identite",
@@ -23,28 +23,29 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite de données chez Micromania : des informations clients compromises (3 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/micromania-mtkqt98z0l4chcj41qpe",
+      "label": "01net — Une fuite de données touche Micromania, attention aux arnaques au colis (3 septembre 2026)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-chez-micromania-gare-arnaques-colis.html",
+      "kind": "article"
+    },
+    {
+      "label": "Capital — Fuite de données chez Micromania, la vague d'arnaques au colis qui menace ses clients (4 septembre 2026)",
+      "url": "https://www.capital.fr/conso/fuite-de-donnees-chez-micromania-la-vague-d-arnaques-au-colis-qui-menace-ses-clients-1529870",
       "kind": "article"
     }
   ],
-  "description": "Micromania informe les titulaires d'un compte client et les clients ayant récemment commandé qu'un tiers non autorisé a accédé à des données via son prestataire de suivi des colis, selon la notification relayée par Fuites Infos le 2 septembre 2026. La période d'accès s'étend du 31 juillet au 17 août 2026, date de la correction de la faille, selon la même notification. Les données concernées sont le nom, l'adresse électronique et le numéro de téléphone. Les mots de passe et les données bancaires ne sont pas concernés, selon l'enseigne, qui précise que ses systèmes ne sont pas affectés. FrenchBreaches identifie le prestataire comme Shipup le 3 septembre 2026. Le nombre de personnes concernées n'est pas communiqué.",
+  "description": "Micromania informe ses clients d'un incident survenu chez un prestataire chargé du suivi des colis et des notifications de livraison. Selon la notification citée par Fuites Infos, un tiers non autorisé a accédé à certaines informations du 31 juillet au 17 août 2026. Les données concernées sont le nom, le prénom, l'adresse e-mail et, si renseigné, le numéro de téléphone. L'enseigne indique que ses systèmes, son site et les comptes clients ne sont pas affectés. Mots de passe et données bancaires sont exclus, ces éléments n'étant pas transmis au prestataire. La CNIL a été notifiée, selon cette communication. Le prestataire n'est pas nommé par l'enseigne ; Génération-NT cite Shipup. Aucun volume de personnes concernées n'est communiqué.",
   "timeline": [
     {
       "date": "2026-07-31",
-      "event": "Début de la période d'accès non autorisé aux données chez le prestataire, selon la notification aux clients relayée par Fuites Infos."
+      "event": "Début de la période d'accès non autorisé possible chez le prestataire de suivi des colis, selon la notification citée par Fuites Infos."
     },
     {
       "date": "2026-08-17",
-      "event": "La faille est corrigée et les accès non autorisés sont bloqués, selon la notification aux clients."
+      "event": "Fin de la période d'exposition ; selon la communication de l'enseigne, la faille est corrigée et les accès bloqués."
     },
     {
       "date": "2026-09-02",
-      "event": "Notification aux personnes concernées et dépôt d'une déclaration à la CNIL, selon Fuites Infos."
-    },
-    {
-      "date": "2026-09-03",
-      "event": "FrenchBreaches identifie le prestataire concerné comme Shipup."
+      "event": "Micromania notifie les clients et la CNIL ; Fuites Infos publie le même jour."
     }
   ]
 }
