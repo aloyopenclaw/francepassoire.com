@@ -1,0 +1,54 @@
+{
+  "slug": "jinko-20260907",
+  "entity": "Jinko (Jinko.care)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-07",
+    "publication": "2026-09-07"
+  },
+  "volume": {
+    "count": 3634,
+    "unit": "personnes",
+    "label": "3 634 personnes selon Fuites Infos ; la revendication annonce 3 552 comptes utilisateurs et 142 professionnels de santé sur 85 tables, plus de 883 000 lignes et environ 3,7 Go"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 3 634 personnes concernées par une fuite de données revendiquée chez Jinko (7 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-07-jinko",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Jinko victime d'une fuite de données : 3,7 Go de données médicales et personnelles revendiqués (7 septembre 2026, mise à jour 8 septembre)",
+      "url": "https://frenchbreaches.com/alertes/jinko-mtr8ebuvqi0us4ljpbi",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — L'énorme fuite de données chez Jinko, plateforme française dédiée aux malades du cancer, qui confirme le piratage (8 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-628717-l-enorme-fuite-de-donnees-chez-jinko-plateforme-francaise-dediee-aux-malades-du-cancer-qui-confirme-le-piratage.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une fuite compromet les données médicales de milliers de malades du cancer (8 septembre 2026)",
+      "url": "https://www.01net.com/actualites/fuite-compromet-donnees-medicales-milliers-malades-cancer.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 7 septembre 2026, une archive de 3,7 Go est publiée sur un forum cybercriminel, présentée comme issue de Jinko.care, plateforme française d'accompagnement de patients atteints de cancer. Selon Fuites Infos et FrenchBreaches, la revendication mentionne 85 tables, plus de 883 000 lignes, 3 552 comptes utilisateurs et 142 professionnels de santé. Les données annoncées couvrent identité, coordonnées et profils cliniques : type et stade de cancer, traitements, antécédents. Sont aussi cités les échanges avec les équipes soignantes, des documents médicaux, des photographies et des enregistrements vocaux. Fuites Infos dénombre 3 634 personnes. Le 8 septembre, Clubic et 01net rapportent que Jinko confirme le piratage. Selon FrenchBreaches, l'entreprise indique avoir sécurisé ses systèmes et informé les personnes concernées.",
+  "timeline": [
+    {
+      "date": "2026-09-07",
+      "event": "Une archive de 3,7 Go est publiée sur un forum, présentée comme issue de Jinko.care : 85 tables, plus de 883 000 lignes et 2 626 fichiers annoncés, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Clubic et 01net rapportent la confirmation du piratage par Jinko ; FrenchBreaches indique que l'entreprise a sécurisé ses systèmes et informé les personnes concernées."
+    }
+  ]
+}
