@@ -1,0 +1,44 @@
+{
+  "slug": "sdis-67-20260829",
+  "entity": "SDIS du Bas-Rhin (SIS 67)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-08-30"
+  },
+  "volume": {
+    "count": 3584,
+    "unit": "personnes",
+    "label": "3 584 personnes et 4 423 lignes (environ 5,83 Mo) selon l'analyse de FrenchBreaches reprise par Cyberattaque.org ; chiffres issus de la revendication, sans confirmation indépendante signalée"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — 14 SDIS piratés en 2026 : les données de milliers de sapeurs-pompiers exposées en ligne (30 août 2026)",
+      "url": "https://frenchbreaches.com/blog/14-sdis-pirates-en-2026-les-donnees-de-milliers-de-sapeurs-pompiers-exposees-en-ligne",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Les données de 18 000 pompiers en fuite après la cyberattaque des SDIS 13, 30, 57, 67 et 88 (30 août 2026)",
+      "url": "https://www.cyberattaque.org/sdis-13-et-sdis-30-pres-de-6-900-pompiers-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 août 2026, une base de 5,83 Mo au format JSON est publiée sur un forum cybercriminel, présentée comme issue du service d'incendie et de secours du Bas-Rhin (SIS 67). Selon FrenchBreaches, elle contient 4 423 lignes pour 3 584 personnes : noms, grades, matricules, numéros de téléphone, centres de secours et formations. Cyberattaque.org rattache cette publication à une série visant cinq services d'incendie : SDIS 13, 30, 57, 67 et 88, attribuée à un acteur nommé ChimeraZ, pour près de 18 000 personnes au total. FrenchBreaches recense 14 SDIS concernés par des fuites ou compromissions revendiquées depuis le début de 2026. Les chiffres reposent sur les déclarations de l'auteur, sans confirmation indépendante signalée.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Publication revendiquée d'une base JSON de 5,83 Mo présentée comme issue du SIS 67 ; la même série vise quatre autres services d'incendie, selon Cyberattaque.org."
+    },
+    {
+      "date": "2026-08-30",
+      "event": "FrenchBreaches analyse la base : 4 423 lignes pour 3 584 personnes ; Cyberattaque.org attribue la série de cinq SDIS à un acteur nommé ChimeraZ, pour près de 18 000 personnes."
+    }
+  ]
+}
