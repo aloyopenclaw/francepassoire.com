@@ -1,0 +1,51 @@
+{
+  "slug": "colisexpat-20260824",
+  "entity": "ColisExpat",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-08-24",
+    "publication": "2026-09-03",
+    "confirmation": "2026-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; selon Fuites Infos, aucune extraction de grande ampleur de la base clients n'est établie à ce stade, des extractions ciblées restant possibles"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Landmark Global France — Notification aux clients de ColisExpat, courrier du 3 septembre 2026 (scan relayé par Fuites Infos)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/colisexpat-2026-09-03-notification-lettre.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez ColisExpat (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-colisexpat",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque ColisExpat : des pièces d'identité et mots de passe potentiellement exposés (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/colisexpat-mtli3y3saqaoiaimmgd",
+      "kind": "article"
+    }
+  ],
+  "description": "ColisExpat, service de réexpédition de colis exploité par Landmark Global France, informe ses clients le 3 septembre 2026 d'un accès non autorisé identifié le 24 août. Selon la notification relayée par Fuites Infos et FrenchBreaches, des données personnelles ont probablement été consultées : copies de cartes d'identité ou de passeports, identifiant, mot de passe, prénom, nom, adresse électronique, adresse postale et numéro de TVA selon le type de compte. Toutes les personnes ne détenaient pas chacune de ces catégories, précise l'entreprise. Aucune extraction de grande ampleur de la base clients n'est établie à ce stade, selon Fuites Infos. L'environnement compromis est hors ligne, une investigation est en cours, la CNIL est notifiée et un dépôt de plainte est engagé.",
+  "timeline": [
+    {
+      "date": "2026-08-24",
+      "event": "Landmark Global France identifie qu'un tiers non autorisé a obtenu accès à la plateforme ColisExpat, selon sa notification aux clients."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Notification des clients par courrier ; la CNIL est notifiée et un dépôt de plainte est engagé, selon Fuites Infos ; FrenchBreaches et Fuites Infos relatent l'incident le même jour."
+    }
+  ]
+}
