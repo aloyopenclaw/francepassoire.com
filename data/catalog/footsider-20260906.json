@@ -1,0 +1,42 @@
+{
+  "slug": "footsider-20260906",
+  "entity": "Footsider",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-06",
+    "publication": "2026-09-06"
+  },
+  "volume": {
+    "count": 152029,
+    "unit": "personnes",
+    "label": "152 029 utilisateurs distincts selon Fuites Infos ; la revendication annonce environ 153 700 comptes et une archive de 2,89 Go en 84 fichiers, chiffres non vérifiés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation",
+    "credentials",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 152 029 utilisateurs concernés par une fuite revendiquée chez Footsider (6 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-06-footsider",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Footsider victime d'un piratage : les données de plus de 150 000 comptes revendiquées par un hacker (6 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/footsider-mtpvjd93ygng6mx0ul",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 6 septembre 2026, un acteur publie sur un forum cybercriminel une base présentée comme issue de Footsider, application française mettant en relation joueurs, clubs et recruteurs dans le football. La revendication annonce une archive de 2,89 Go en 84 fichiers couvrant environ 153 700 comptes. Sont annoncés : identités, coordonnées, dates de naissance, géolocalisation, profils sportifs, candidatures, historique d'achats intégrés et messages privés. Fuites Infos signale une part importante de mineurs parmi les dates de naissance. FrenchBreaches relève plus de 30 000 conversations revendiquées entre joueurs et clubs et les fiches de plus de 13 600 clubs, et qualifie la revendication de crédible après examen d'un échantillon. L'éditeur n'a pas confirmé publiquement, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-06",
+      "event": "Publication de la base revendiquée sur un forum cybercriminel ; Fuites Infos et FrenchBreaches relatent la fuite le même jour."
+    }
+  ]
+}
