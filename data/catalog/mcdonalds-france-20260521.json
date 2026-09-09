@@ -1,6 +1,7 @@
 {
   "slug": "mcdonalds-france-20260521",
   "entity": "McDonald's France",
+  "siren": "722003936",
   "secteur": "retail",
   "statut": "revendiquee",
   "dates": {
@@ -10,34 +11,33 @@
   "volume": {
     "count": 0,
     "unit": "comptes",
-    "label": "nombre de comptes concernés non communiqué par McDonald's France ; selon 01net, cité par RTL et TF1info, « des dizaines » de clients touchés"
+    "label": "des dizaines de comptes usurpés selon 01net ; volume exact non communiqué par l'enseigne"
   },
   "data_types": [
-    "identite",
-    "coordonnees"
+    "coordonnees",
+    "credentials"
   ],
   "sources": [
     {
-      "label": "RTL — Cyberattaque : McDonald's France touché par une fuite de données, des comptes fidélité débités (21 mai 2026)",
-      "url": "https://www.rtl.fr/actu/sciences-tech/cyberattaque-mcdonald-s-france-touche-par-une-fuite-de-donnees-des-comptes-fidelite-debites-7900637196",
+      "label": "BFMTV — Fuite de données chez McDonald's France : votre compte de fidélité a peut-être permis à des pirates malintentionnés de s'offrir un menu à vos frais (21 mai 2026)",
+      "url": "https://www.bfmtv.com/tech/cybersecurite/fuite-de-donnees-chez-mc-donald-s-france-votre-compte-de-fidelite-a-peut-etre-permis-a-des-pirates-malintentionnes-de-s-offrir-un-menu-a-vos-frais_AD-202605210554.html",
       "kind": "article"
     },
     {
-      "label": "TF1info — McDonald's France victime d'une fuite de données, des comptes fidélité débités (21 mai 2026)",
-      "url": "https://www.tf1info.fr/justice-faits-divers/mcdonald-s-france-victime-d-une-fuite-de-donnees-des-comptes-fidelite-debites-2442789.html",
-      "kind": "article"
-    },
-    {
-      "label": "Europe 1 — McDonald's France victime d'une fuite de données, des comptes fidélité débités (21 mai 2026)",
-      "url": "https://www.europe1.fr/societe/mcdonalds-france-victime-dune-fuite-de-donnees-des-comptes-fidelite-debites-937061",
+      "label": "Génération-NT — McDonald's France confirme une fuite de données, les comptes fidélité de ses clients vidés (21 mai 2026)",
+      "url": "https://www.generation-nt.com/actualites/mcdonalds-fuite-donnees-compte-fidelite-piratage-points-2075857",
       "kind": "article"
     }
   ],
-  "description": "McDonald's France confirme le 21 mai 2026 avoir pris des mesures correctives après une fuite de données ayant permis de débiter des comptes fidélité à l'insu de leurs titulaires, selon RTL et TF1info. L'information est révélée par 01net : des dizaines de clients rapportent une usurpation de leur compte fidélité. Selon le groupe, deux partenaires ont détecté des tentatives d'accès à des informations clients au sein du programme de fidélité et ont sécurisé l'environnement. McDonald's France indique qu'aucune donnée sensible ou financière n'a été consultée. Le nombre de comptes concernés et les dates de la fuite ne sont pas communiqués. Une réinitialisation des identifiants de comptes clients est lancée par précaution, selon l'entreprise.",
+  "description": "Le 21 mai 2026, McDonald's France reconnaît une fuite de données ayant permis l'usurpation de comptes fidélité, selon BFMTV et l'AFP. Des dizaines de clients ont vu leurs points utilisés à leur insu pour des commandes, d'après 01net. Selon Génération-NT, l'accès est passé par deux prestataires de l'enseigne, sans attaque directe des serveurs. Les identifiants récupérés ont alimenté la revente de comptes sur Discord et Telegram, d'après le même média. L'enseigne annonce des mesures correctives, une réinitialisation des identifiants et la désactivation des cartes fidélité virtuelles. Elle indique qu'aucune donnée sensible ou financière n'est compromise. Le volume exact de comptes concernés n'est pas communiqué.",
   "timeline": [
     {
       "date": "2026-05-21",
-      "event": "RTL et TF1info, avec l'AFP, rapportent la confirmation par McDonald's France de mesures correctives après une fuite de données : des comptes fidélité ont été débités à l'insu de clients, information révélée par 01net."
+      "event": "Selon BFMTV et l'AFP, McDonald's France confirme une fuite de données ayant permis l'usurpation de comptes fidélité et annonce une réinitialisation des identifiants."
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Génération-NT décrit un accès passé par deux prestataires de l'enseigne et la revente de comptes crédités en points sur Discord et Telegram."
     }
   ]
 }
