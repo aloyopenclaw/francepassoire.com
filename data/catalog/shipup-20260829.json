@@ -1,0 +1,63 @@
+{
+  "slug": "shipup-20260829",
+  "entity": "Shipup",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-29",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "étendue globale de la compromission inconnue ; Shipup indique accompagner plus de 700 marques, sans que l'ensemble de ses clients soit affecté, selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Shipup, spécialiste du suivi de colis, victime d'une fuite de données (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/shipup-mtkrgifdha9tj8813fl",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Aroma-Zone liée à un prestataire de suivi colis (8 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-08-aroma-zone",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Printemps (9 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-09-printemps",
+      "kind": "article"
+    }
+  ],
+  "description": "Shipup, plateforme de suivi des colis et de communications post-achat pour sites e-commerce, est touchée par la campagne d'exploitation d'une faille critique de l'outil Metabase, référencée CVE-2026-72898 selon Fuites Infos. Selon FrenchBreaches, des accès non autorisés ont été possibles entre le 31 juillet et le 17 août 2026, avec consultation de noms, prénoms, adresses électroniques et numéros de téléphone de consommateurs. Plusieurs enseignes clientes notifient leurs clients : Easypara, Micromania, Aroma-Zone, Printemps et Citadium, d'après Fuites Infos et FrenchBreaches. Aroma-Zone nomme le prestataire dans sa notification, la CNIL est saisie. Shipup a corrigé la faille, révoqué les accès compromis et renouvelé ses identifiants et clés.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Début de la période d'accès non autorisé chez le prestataire, du 31 juillet au 17 août 2026, selon les notifications relayées par Fuites Infos."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "Fin de la période d'exposition ; la faille Metabase est corrigée et les accès non autorisés sont bloqués, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-08-20",
+      "event": "Shipup informe les enseignes clientes d'une vulnérabilité exploitée sur son outil d'analyse, selon les notifications de Printemps et Citadium citées par Fuites Infos."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Premières publications relais : Fuites Infos et Cyberattaque.org relatent la notification adressée par Easypara à ses clients."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "FrenchBreaches documente la compromission de Shipup et la lie aux notifications de Micromania et Easypara."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Aroma-Zone nomme Shipup dans la notification adressée à une partie de ses clients et déclare la CNIL informée, selon Fuites Infos."
+    }
+  ]
+}
