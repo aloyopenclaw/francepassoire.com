@@ -58,7 +58,13 @@ jobs:
         run: |
           . /opt/francepassoire-shared/env.sh
           mkdir -p .agent-tmp
-          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at ASC LIMIT 10) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
+          # 09/09 (décision propriétaire) : PLUS RÉCENTS D'ABORD — la file
+          # FIFO noyait les incidents de septembre sous des reprises de
+          # presse d'incidents anciens (McDonald's mai, Micromania juillet).
+          # DESC : les candidats fraîchement ingérés (incidents du moment)
+          # passent en tête ; les reprises anciennes croupissent en queue
+          # où un tri massif les récoltera.
+          python3 -c "import json; print(json.dumps({'sql': \"UPDATE candidates SET status = ?1 WHERE id IN (SELECT id FROM candidates WHERE status = 'NEW' ORDER BY created_at DESC LIMIT 10) RETURNING id, source, source_url, raw\", 'params': ['DRAFT']}))" > .agent-tmp/p.json
           curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p.json > .agent-tmp/candidates.json
           head -c 300 .agent-tmp/candidates.json; echo
           N=$(python3 -c "import json; d=json.load(open('.agent-tmp/candidates.json')); print(len(d['result'][0]['results']))" 2>/dev/null || echo 0)
@@ -103,6 +109,30 @@ jobs:
             elif [ "$VERDICT" = "DRAFTED" ]; then
               SLUG="$DETAIL"
               if [ ! -f "data/catalog/$SLUG.json" ]; then echo "fiche absente pour $ID, DEFERRED"; continue; fi
+              # 09/09 : dédoublonnage EN VOL — deux runs à heures d'écart
+              # drataient le même incident (check-doublons ne voit que le
+              # catalogue FUSIONNÉ ; les PR ouvertes lui sont invisibles :
+              # McDonald's ×2, PR #143/#145). Si une PR ouverte porte déjà
+              # la même entité (préfixe du slug sans la date) à ±45 jours,
+              # on ne rouvre pas une deuxième fiche.
+              ENTITE_SLUG=$(echo "$SLUG" | sed -E 's/-[0-9]{8}$//')
+              DATE_SLUG=$(echo "$SLUG" | grep -oE '[0-9]{8}$' || echo 0)
+              DOUBLON_PR=$(gh pr list --state open --json headRefName --jq '.[].headRefName' \
+                | grep -oE 'fiche/.+-[0-9]{8}$' | sed 's|^fiche/||' || true)
+              for AUTRE in $DOUBLON_PR; do
+                AUTRE_ENTITE=$(echo "$AUTRE" | sed -E 's/-[0-9]{8}$//')
+                AUTRE_DATE=$(echo "$AUTRE" | grep -oE '[0-9]{8}$' || echo 0)
+                if [ "$AUTRE_ENTITE" = "$ENTITE_SLUG" ] && [ "$AUTRE" != "$SLUG" ]; then
+                  ECART=$(python3 -c "from datetime import date; a = date(int('${DATE_SLUG:0:4}'), int('${DATE_SLUG:4:2}'), int('${DATE_SLUG:6:2}')); b = date(int('${AUTRE_DATE:0:4}'), int('${AUTRE_DATE:4:2}'), int('${AUTRE_DATE:6:2}')); print(abs((a - b).days))")
+                  if [ "$ECART" -le 45 ]; then
+                    echo "doublon en vol : PR ouverte existe déjà pour $AUTRE_ENTITE ($AUTRE vs $SLUG, écart $ECART jours) — candidat $ID renvoyé"
+                    printf '{"sql": "UPDATE candidates SET status = ?1, dedup_score = ?2 WHERE id = ?3", "params": ["REJECTED", "doublon PR en vol: %s", "%s"]}' "$AUTRE" "$ID" > .agent-tmp/p2.json
+                    curl -s "$D1_QUERY_URL" -H "Authorization: Bearer $FP_D1_TOKEN" -H "Content-Type: application/json" --data @.agent-tmp/p2.json >/dev/null
+                    rm -f "data/catalog/$SLUG.json"
+                    continue 2
+                  fi
+                fi
+              done
               BR="fiche/$SLUG"
               # 02-03/09 : la branche distante existe déjà (run précédent) —
               # on reprend SON histoire. Le fichier rédigé est untracked :
