@@ -1,0 +1,62 @@
+{
+  "slug": "association-des-maires-de-france-20260904",
+  "entity": "Association des maires de France (AMF)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-04",
+    "publication": "2026-09-04"
+  },
+  "volume": {
+    "count": 114465,
+    "unit": "personnes",
+    "label": "114 465 personnes selon Fuites Infos ; la revendication annonce 114 000 entrées et FrenchBreaches retient plus de 100 000 entrées ; l'AMF n'a pas communiqué de volume"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — L'Association des Maires de France confirme la fuite de données : 114 465 personnes concernées (4 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-04-association-des-maires-de-france",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données : l'Association des maires de France touchée, 114 000 entrées exposées (4 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/association-des-maires-de-france-mtmsxq04rjndct88z4p",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Alerte fuite de données : l'Association des maires de France touchée par une cyberattaque (4 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-628315-alerte-fuite-de-donnees-l-association-des-maires-de-france-touchee-par-une-cyberattaque.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Mots de passe, identifiants, emails… une nouvelle fuite massive de données secoue la France (6 septembre 2026)",
+      "url": "https://www.01net.com/actualites/mots-de-passe-identifiants-emails-une-nouvelle-fuite-massive-de-donnees-secoue-la-france.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 4 septembre 2026, un acteur sous le pseudonyme Alduin revendique sur un forum l'extraction de la base du site amf.asso.fr par une injection SQL de type UNION. La revendication annonce environ 114 000 entrées. Selon FrenchBreaches, les données comprennent noms, prénoms, adresses électroniques, fonctions, collectivités de rattachement et identifiants internes. Une table contient aussi des mots de passe en clair, selon la même source. Fuites Infos retient 114 465 personnes concernées. L'AMF confirme la fuite le même jour, saisit la CNIL et annonce d'informer les personnes après audit, selon Fuites Infos et FrenchBreaches. Le public visé est composé d'élus locaux, d'agents territoriaux et d'abonnés de sa lettre d'information, selon Fuites Infos. L'association ne communique ni volume ni mode d'accès.",
+  "timeline": [
+    {
+      "date": "2026-09-04",
+      "event": "Un acteur sous le pseudonyme Alduin revendique sur un forum l'extraction de la base de amf.asso.fr par injection SQL, avec environ 114 000 entrées annoncées, selon FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "L'AMF confirme la fuite, saisit la CNIL et annonce d'informer les personnes concernées après audit, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "Clubic relate l'affaire et évoque plus de 100 000 entrées dérobées."
+    },
+    {
+      "date": "2026-09-06",
+      "event": "01net indique que l'AMF a confirmé l'incident et que les vérifications techniques se poursuivent."
+    }
+  ]
+}
