@@ -1,0 +1,47 @@
+{
+  "slug": "mcdonalds-france-20260520",
+  "entity": "McDonald's France",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-05-20",
+    "publication": "2026-05-21"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "nombre de comptes concernés non communiqué ; selon 01net, des dizaines de clients victimes d'usurpations de comptes fidélité"
+  },
+  "data_types": [
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "01net — McDo victime d'une fuite de données, les comptes fidélité des clients ont été siphonnés (20 mai 2026)",
+      "url": "https://www.01net.com/actualites/mcdo-victime-dune-fuite-de-donnees-les-comptes-fidelite-des-clients-ont-ete-siphonnes.html",
+      "kind": "article"
+    },
+    {
+      "label": "RTL — Cyberattaque : McDonald's France touché par une fuite de données, des comptes fidélité débités (21 mai 2026)",
+      "url": "https://www.rtl.fr/actu/sciences-tech/cyberattaque-mcdonald-s-france-touche-par-une-fuite-de-donnees-des-comptes-fidelite-debites-7900637196",
+      "kind": "article"
+    },
+    {
+      "label": "Europe 1 — McDonald's France victime d'une fuite de données, des comptes fidélité débités (21 mai 2026)",
+      "url": "https://www.europe1.fr/societe/mcdonalds-france-victime-dune-fuite-de-donnees-des-comptes-fidelite-debites-937061",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 mai 2026, 01net révèle des usurpations de comptes fidélité chez McDonald's France. Selon le média, des dizaines de clients voient leurs points utilisés à leur insu pour obtenir des réductions. Le 21 mai, McDonald's France confirme à l'AFP une fuite de données et déclare avoir pris des mesures correctives. Selon l'enseigne, deux partenaires ont détecté des tentatives d'accès à des informations clients au sein du programme de fidélité et sécurisé l'environnement. L'enseigne affirme qu'aucune donnée sensible ou financière n'a été consultée. Une réinitialisation des identifiants des comptes clients a été lancée par précaution, selon RTL. Le nombre de comptes concernés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-05-20",
+      "event": "01net révèle des usurpations de comptes fidélité McDonald's France : des dizaines de clients touchés, des points utilisés à leur insu."
+    },
+    {
+      "date": "2026-05-21",
+      "event": "McDonald's France confirme à l'AFP une fuite de données, évoque des tentatives d'accès détectées par deux partenaires et déclare l'incident contenu."
+    }
+  ]
+}
