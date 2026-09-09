@@ -1,0 +1,43 @@
+{
+  "slug": "tisseo-voyageurs-20260903",
+  "entity": "Tisséo Voyageurs",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 3234,
+    "unit": "personnes",
+    "label": "3 234 agents selon Fuites Infos, après confirmation de Tisséo Voyageurs ; la revendication de ChimeraZ annonçait 2 877 personnes sur 13 446 lignes, selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 3 234 agents concernés par une fuite de données chez Tisséo Voyageurs (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-tisseo-voyageurs",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données revendiquée chez Tisséo : près de 2 900 personnes potentiellement concernées (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/tiss-o-mtktrusw2xxeaxkehp8",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 septembre 2026, un acteur se présentant sous le pseudonyme ChimeraZ revendique sur un forum spécialisé une base attribuée à Tisséo Voyageurs, exploitant du réseau de transport toulousain. Selon FrenchBreaches, le dépôt annoncé représente 1,22 Go et 13 446 lignes pour 2 877 personnes. Tisséo Voyageurs confirme le 4 septembre une exfiltration touchant deux applications internes dédiées à ses agents, d'après Fuites Infos et FrenchBreaches. Sont exposés nom, matricule, affectation, coordonnées professionnelles et identifiants de connexion internes, sans mot de passe associé. L'établissement indique qu'aucune donnée voyageur, bancaire ou sensible n'est concernée. Il a déposé plainte et saisi la CNIL et l'ANSSI.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Revendication d'un acteur se présentant comme ChimeraZ : base attribuée à tisseo.fr, 13 446 lignes et 2 877 personnes annoncées, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "Tisséo Voyageurs confirme une exfiltration portant sur deux applications internes relatives à ses agents ; plainte déposée, CNIL et ANSSI saisies, selon Fuites Infos et FrenchBreaches."
+    }
+  ]
+}
