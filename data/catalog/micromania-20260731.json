@@ -1,0 +1,51 @@
+{
+  "slug": "micromania-20260731",
+  "entity": "Micromania",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-07-31",
+    "publication": "2026-09-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué par l'enseigne"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Micromania confirmée par l'enseigne (2 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-micromania",
+      "kind": "article"
+    },
+    {
+      "label": "Génération-NT — Micromania victime d'une fuite de données via un prestataire, des informations de clients dans la nature (3 septembre 2026)",
+      "url": "https://www.generation-nt.com/actualites/micromania-fuite-donnees-shipup-phishing-cyberattaque-2080596",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une fuite de données touche Micromania, attention aux arnaques au colis ! (3 septembre 2026)",
+      "url": "https://www.01net.com/actualites/fuite-donnees-chez-micromania-gare-arnaques-colis.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Entre le 31 juillet et le 17 août 2026, un tiers non autorisé a consulté des données clients de Micromania. L'accès est passé par un prestataire chargé du suivi des colis et des notifications de livraison. Selon la communication de l'enseigne, les noms, prénoms, adresses e-mail et numéros de téléphone sont concernés. Les mots de passe et les données bancaires ne sont pas transmis au prestataire, précise l'enseigne. Selon Génération-NT et 01net, le prestataire est Shipup, exposé par une vulnérabilité du logiciel Metabase. L'enseigne a notifié la CNIL, révoqué les accès et informé les personnes concernées. Le volume de personnes touchées n'est pas communiqué. Capital relève une vague d'arnaques au colis après la fuite.",
+  "timeline": [
+    {
+      "date": "2026-07-31",
+      "event": "Début de la période d'accès non autorisé chez le prestataire de suivi des colis, selon la communication de l'enseigne."
+    },
+    {
+      "date": "2026-08-17",
+      "event": "Fin de la période d'accès : la faille est corrigée et les accès sont bloqués selon l'enseigne."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Micromania informe les titulaires d'un compte et notifie la CNIL ; Fuites Infos et FrenchBreaches relatent l'incident."
+    }
+  ]
+}
