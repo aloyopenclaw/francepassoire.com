@@ -1,0 +1,54 @@
+{
+  "slug": "delicity-20260902",
+  "entity": "Delicity",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; Delicity indique avoir informé individuellement les personnes concernées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Delicity : clients, restaurateurs et livreurs concernés (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-delicity",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Delicity : une cyberattaque expose les données personnelles de clients (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/delicity-mtlhw5asykbr9p4rhu",
+      "kind": "article"
+    }
+  ],
+  "description": "Delicity, plateforme française de commande et de livraison de repas, publie le 2 septembre 2026 une information aux personnes concernées par une violation de données. Selon cette communication relayée par Fuites Infos et FrenchBreaches, un tiers non autorisé a consulté des données entre le 9 et le 24 août 2026 en exploitant une faille critique de l'outil Metabase. Pour les clients, nom, adresse électronique, téléphone, historique de commandes et quatre derniers chiffres de carte bancaire sont concernés. Restaurateurs et livreurs sont exposés en outre à des coordonnées bancaires, des pièces d'identité et des données de géolocalisation de courses. Delicity a saisi la CNIL et le procureur de la République.",
+  "timeline": [
+    {
+      "date": "2026-08-09",
+      "event": "Début de la période d'accès non autorisé, du 9 au 24 août 2026, selon la communication de Delicity relayée par Fuites Infos."
+    },
+    {
+      "date": "2026-08-24",
+      "event": "Découverte de l'incident en fin de période ; l'accès de l'attaquant est coupé le jour même, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Delicity publie une information aux personnes concernées et saisit la CNIL et le procureur de la République, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Fuites Infos et FrenchBreaches relatent l'incident et détaillent le périmètre de données par catégorie de personnes."
+    }
+  ]
+}
