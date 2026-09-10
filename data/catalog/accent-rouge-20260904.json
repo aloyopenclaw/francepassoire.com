@@ -1,0 +1,43 @@
+{
+  "slug": "accent-rouge-20260904",
+  "entity": "Accent Rouge",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-04",
+    "publication": "2026-09-04"
+  },
+  "volume": {
+    "count": 15964,
+    "unit": "personnes",
+    "label": "15 964 personnes distinctes selon Fuites Infos, rattachées à un peu plus de 32 500 fiches clients ; FrenchBreaches retient 32 583 fiches revendiquées et 79 336 enregistrements d'adresses"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 15 964 clients d'Accent Rouge concernés par une fuite de données revendiquée (5 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-04-accent-rouge",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Accent Rouge : 1,6 Go de données revendiqués par un pirate (4 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/accent-rouge-mtnfwe0yz31800vbok",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Accent Rouge, enseigne française d'aménagement intérieur, est revendiquée le 4 septembre 2026 sur un forum cybercriminel. L'acteur DaOnlySpark annonce un export d'environ 1,6 Go présenté comme la base de gestion de l'enseigne, selon FrenchBreaches. Fuites Infos retient 15 964 personnes distinctes rattachées à un peu plus de 32 500 fiches clients. Sont cités des identités, coordonnées, adresses de facturation et de livraison, un historique commercial avec commandes, factures et montants, et des références de paiement tronquées. La revendication évoque aussi un catalogue produits, des données fournisseurs et un journal technique. Selon Fuites Infos, la clientèle citée est majoritairement française et concentrée en Île-de-France. L'enseigne n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-04",
+      "event": "Publication de la revendication par l'acteur DaOnlySpark sur un forum cybercriminel : environ 1,6 Go annoncés et 32 583 fiches clients revendiquées, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "Relais par Fuites Infos : 15 964 personnes distinctes rattachées à un peu plus de 32 500 fiches clients ; aucune confirmation publique de l'enseigne."
+    }
+  ]
+}
