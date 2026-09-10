@@ -1,0 +1,43 @@
+{
+  "slug": "preference-formations-20260903",
+  "entity": "Préférence Formations",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-04"
+  },
+  "volume": {
+    "count": 5265,
+    "unit": "personnes",
+    "label": "5 265 personnes annoncées par l'acteur selon FrenchBreaches et Fuites Infos, pour 5 381 lignes selon FrenchBreaches ; Fuites Infos évoque environ 5 400 comptes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 5 379 personnes concernées, fuite de données revendiquée chez Préférence Formations (4 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-preference-formations",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Préférence Formations : les données de plus de 5 200 personnes publiées (4 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/pr-f-rence-formations-mtm701xaas25ttqxse",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Préférence Formations, réseau national de formation professionnelle agricole, est revendiquée le 3 septembre 2026 sur un forum cybercriminel par l'acteur au pseudonyme ChimeraZ, selon FrenchBreaches et Fuites Infos. La publication intitulée « [FR] 5.2K Preference-formations.fr » annonce 5 381 lignes pour 5 265 personnes et environ 375 Ko, chiffres non vérifiés. D'après les deux relais, le fichier présenté comme la base des utilisateurs du site preference-formations.fr contient nom et prénom réunis, adresse e-mail, localité de rattachement et pays. Le public mêle stagiaires, apprentis et personnels du réseau, d'après Fuites Infos. Aucun mot de passe, coordonnée bancaire ou donnée de santé n'est annoncé dans le dépôt. Préférence Formations n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Publication de la base attribuée à preference-formations.fr sur un forum cybercriminel par l'acteur ChimeraZ, d'après FrenchBreaches."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "Relais de la revendication par Fuites Infos et FrenchBreaches ; aucune confirmation publique de l'entité à cette date."
+    }
+  ]
+}
