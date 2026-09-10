@@ -1,0 +1,55 @@
+{
+  "slug": "esam-caen-cherbourg-20260908",
+  "entity": "ésam Caen/Cherbourg",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-08",
+    "publication": "2026-09-10",
+    "confirmation": "2026-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué : l'établissement n'a pas précisé le nombre de personnes concernées ni les catégories de données, selon Fuites Infos"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ésam Caen/Cherbourg — Communication à la suite d'un acte de cyber-malveillance (8 septembre 2026)",
+      "url": "https://www.esam-c2.fr/Communication-suite-a-un-acte-de-cyber-malveillance",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez ésam Caen/Cherbourg (10 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-08-esam-caen-cherbourg",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque à l'ESAM Caen/Cherbourg : des données personnelles exposées (10 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cole-sup-rieure-d-arts-m-dias-esam-mtvzmq32iapsm7uc9oj",
+      "kind": "article"
+    }
+  ],
+  "description": "L'ésam Caen/Cherbourg, école supérieure d'arts et médias implantée à Caen et à Cherbourg-en-Cotentin, confirme dans un communiqué du 8 septembre 2026 un acte de cybermalveillance survenu le 21 août 2026. Selon l'établissement, une faille de sécurité a permis un accès non autorisé à son infrastructure d'hébergement internet et à certaines applications liées. Les données à caractère personnel des usagers et des collaborateurs sont susceptibles d'avoir été impactées, sans que les catégories concernées ni le nombre de personnes soient précisés. L'école indique avoir détecté l'incident le 3 septembre 2026, en partie en raison de sa fermeture estivale. L'établissement déclare avoir bloqué les accès concernés, renforcé sa sécurité, lancé des investigations, notifié la CNIL et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-08-21",
+      "event": "Un acte de cybermalveillance affecte l'infrastructure d'hébergement de l'école, selon son communiqué."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "L'école détecte l'incident treize jours après l'événement, en partie en raison de sa fermeture estivale, selon son communiqué."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "L'établissement publie son communiqué : accès bloqués, sécurité renforcée, investigations lancées, CNIL notifiée, plainte déposée."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "Fuites Infos et FrenchBreaches relatent l'incident en se fondant sur le communiqué de l'établissement."
+    }
+  ]
+}
