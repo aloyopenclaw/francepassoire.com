@@ -1,0 +1,43 @@
+{
+  "slug": "charbonneaux-brabant-20260903",
+  "entity": "Charbonneaux-Brabant",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 2863,
+    "unit": "comptes",
+    "label": "2 863 comptes d'extranet professionnel selon la revendication, relais par Fuites Infos ; FrenchBreaches décompte 2 863 lignes, présentées comme autant de personnes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Charbonneaux-Brabant : plus de 2 800 personnes potentiellement concernées (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/charbonneaux-brabant-mtktomg03zpucc9qjk7",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 2 863 comptes d'extranet chez Charbonneaux Brabant, fuite revendiquée (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-charbonneaux-brabant",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Charbonneaux-Brabant, fabricant rémois de vinaigre et de condiments, est revendiquée le 3 septembre 2026 sur un forum cybercriminel par l'acteur ChimeraZ. Selon FrenchBreaches, la publication annonce un fichier JSON d'environ 660 Ko contenant 2 863 lignes, présentées comme autant de personnes. D'après Fuites Infos, il s'agit majoritairement de contacts professionnels d'environ 1 460 organisations clientes : nom, adresse e-mail professionnelle, fonction et portail de rattachement. Fuites Infos indique que le dépôt ne contiendrait ni mot de passe ni donnée bancaire. FrenchBreaches signale pour sa part un champ associé à un mot de passe, dont la nature reste indéterminée. La société n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Publication revendiquée d'un fichier JSON de 2 863 lignes intitulé « [FR] 2.8K CharbonneauxBrabant.com » par l'acteur ChimeraZ, d'après FrenchBreaches."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Relais de la revendication par FrenchBreaches et Fuites Infos ; Fuites Infos décrit des contacts professionnels d'environ 1 460 organisations clientes."
+    }
+  ]
+}
