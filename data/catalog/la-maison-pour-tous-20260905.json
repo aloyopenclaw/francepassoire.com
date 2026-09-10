@@ -1,0 +1,50 @@
+{
+  "slug": "la-maison-pour-tous-20260905",
+  "entity": "La Maison Pour Tous",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-05",
+    "publication": "2026-09-05",
+    "confirmation": "2026-09-07"
+  },
+  "volume": {
+    "count": 10047,
+    "unit": "personnes",
+    "label": "10 047 locataires selon Fuites Infos ; environ 8 000 enregistrements annoncés par la revendication"
+  },
+  "data_types": [
+    "identite"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 10 047 locataires concernés par une fuite revendiquée chez La Maison Pour Tous (5 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-05-la-maison-pour-tous",
+      "kind": "article"
+    },
+    {
+      "label": "La Maison Pour Tous — Information importante (7 septembre 2026)",
+      "url": "https://lmpt-coop.fr/information-importante/",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Une fuite de données concernant La Maison Pour Tous, société coopérative HLM du Jura, est revendiquée le 5 septembre 2026, selon Fuites Infos. Un acteur annonce sur un forum cybercriminel un fichier CSV d'environ 275 Ko et environ 8 000 enregistrements. Le contenu annoncé se limite à des noms, des civilités et un code numérique, sans adresses ni coordonnées, d'après Fuites Infos, qui décompte 10 047 locataires concernés. Le 7 septembre, l'entreprise indique avoir été informée par voie de presse de la diffusion d'un fichier contenant les noms et prénoms de certains locataires et annonce une plainte. Le 9 septembre, ses vérifications limitent les données concernées aux nom et prénom, selon ses communiqués.",
+  "timeline": [
+    {
+      "date": "2026-09-05",
+      "event": "Fuites Infos rapporte une revendication de diffusion d'un fichier CSV d'environ 275 Ko et environ 8 000 enregistrements."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "Le contenu annoncé se limite à des noms, des civilités et un code numérique, d'après Fuites Infos ; aucune confirmation publique de l'entreprise à cette date."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "La Maison Pour Tous publie un communiqué : informée par voie de presse, elle annonce des investigations et le dépôt d'une plainte."
+    },
+    {
+      "date": "2026-09-09",
+      "event": "L'entreprise indique que les vérifications menées limitent les données concernées aux nom et prénom, selon son communiqué."
+    }
+  ]
+}
