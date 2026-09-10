@@ -1,0 +1,49 @@
+{
+  "slug": "onrecrute-en-aveyron-20260905",
+  "entity": "OnRecrute en Aveyron",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-09-05",
+    "publication": "2026-09-06"
+  },
+  "volume": {
+    "count": 20284,
+    "unit": "personnes",
+    "label": "20 284 candidats selon Fuites Infos ; 20 316 personnes et 23 381 enregistrements revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 20 284 candidats touchés par une fuite revendiquée chez OnRecrute en Aveyron (6 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-05-onrecrute-en-aveyron-aveyron-attractivite",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Aveyron : les données de plus de 20 000 personnes exposées (6 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/aveyron-mtp0hyfwss6ietkec1q",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant OnRecrute en Aveyron est revendiquée le 5 septembre 2026 sur un forum cybercriminel par l'acteur ChimeraZ, selon FrenchBreaches. La plateforme d'emploi est un dispositif du Département de l'Aveyron animé par l'agence Aveyron Attractivité, selon Fuites Infos. Le dépôt annoncé d'environ 465 Mo contient des profils de candidature et près de 1 500 CV au format PDF. Sont cités identité, coordonnées, date de naissance, parcours professionnel, diplômes et contenu des CV. FrenchBreaches compte 23 381 enregistrements portant sur 20 316 personnes. Selon FrenchBreaches, la fuite résulterait de la compromission d'un compte client sans double authentification combinée à une faille IDOR. L'agence n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-05",
+      "event": "Publication par l'acteur ChimeraZ d'un dépôt d'environ 465 Mo attribué à OnRecrute.enAveyron.fr, avec 23 381 enregistrements et 1 499 documents PDF revendiqués, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-06",
+      "event": "FrenchBreaches relate une compromission d'un compte client dépourvu de double authentification combinée à une faille IDOR sur une base Odoo, selon ses informations."
+    },
+    {
+      "date": "2026-09-06",
+      "event": "Fuites Infos recense 20 284 candidats concernés et indique qu'aucune confirmation publique n'émane de l'agence."
+    }
+  ]
+}
