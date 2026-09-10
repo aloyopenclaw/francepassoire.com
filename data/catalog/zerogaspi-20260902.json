@@ -1,0 +1,47 @@
+{
+  "slug": "zerogaspi-20260902",
+  "entity": "ZeroGaspi",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-02",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 80000,
+    "unit": "enregistrements",
+    "label": "environ 80 000 enregistrements annoncés par le vendeur selon Fuites Infos ; FrenchBreaches décompte 80 001 victimes pour une base présentée comme celle de 80 000 clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 80 000 enregistrements revendiqués : fuite de données revendiquée chez ZeroGaspi (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-02-zerogaspi",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — ZeroGaspi : les données de 80 000 clients sont mises en vente par un pirate (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/zerogaspi-mtly357yaln2xfqzy4",
+      "kind": "article"
+    }
+  ],
+  "description": "Une mise en vente de données clients de ZeroGaspi, entreprise française de vente de produits anti-gaspillage, est revendiquée le 2 septembre 2026 sur un forum cybercriminel par un acteur au pseudonyme ksye, selon FrenchBreaches. Le vendeur affirme avoir obtenu les données le 1er septembre et demande 70 dollars pour une base partielle d'environ 80 000 enregistrements, accompagnée d'un échantillon d'une soixantaine de lignes, d'après Fuites Infos. Les lignes visibles associent nom, numéro de téléphone mobile, adresse de livraison et montant en euros, répartis sur 42 départements selon Fuites Infos. FrenchBreaches décrit des adresses e-mail dans l'échantillon ; Fuites Infos n'en relève pas. ZeroGaspi n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-01",
+      "event": "Date d'obtention des données affirmée par le vendeur, d'après Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Mise en vente d'une base partielle intitulée « zerogaspi (Part) - 80k » sur un forum cybercriminel, au prix annoncé de 70 dollars, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Relais de la revendication par Fuites Infos et FrenchBreaches ; aucune confirmation publique de ZeroGaspi à cette date."
+    }
+  ]
+}
