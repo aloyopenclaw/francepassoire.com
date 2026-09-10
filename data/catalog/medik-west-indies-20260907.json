@@ -1,0 +1,48 @@
+{
+  "slug": "medik-west-indies-20260907",
+  "entity": "Médik' West Indies",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-07",
+    "publication": "2026-09-07"
+  },
+  "volume": {
+    "count": 89180,
+    "unit": "enregistrements",
+    "label": "89 180 enregistrements annoncés par la revendication selon Fuites Infos et FrenchBreaches ; l'association déclare un peu plus de 300 adhérents pour la dernière année, selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite revendiquée chez Médik' West Indies (7 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-07-medik-west-indies",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Medikwestindies : une fuite de données touche près de 89 000 étudiants (8 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/medikwestindies-mtsio3ufjvj81y6m5ai",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données est revendiquée le 7 septembre 2026 contre Médik' West Indies, association fédérant les étudiants en médecine des Antilles et de la Guyane, rattachée à l'université des Antilles, selon Fuites Infos. La publication, attribuée au groupe ANKA Team, annonce 89 180 enregistrements d'une base associée au site medikwestindies.fr, selon FrenchBreaches. L'extrait visible montre des noms, prénoms, adresses e-mail, numéros de téléphone, mots de passe sous forme condensée et identifiants de session, d'après les deux médias. La capture porte la date du 3 juin 2017 ; l'ancienneté des informations ne peut être établie, selon Fuites Infos. L'association déclare un peu plus de 300 adhérents pour la dernière année. Ni l'association ni l'université n'ont confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2017-06-03",
+      "event": "Date affichée par la publication visible sur la capture diffusée par le revendiquant, selon FrenchBreaches ; le lien avec l'extraction des données n'est pas établi."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "Publication d'une revendication sur un forum spécialisé : 89 180 enregistrements annoncés, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "FrenchBreaches attribue la publication au groupe ANKA Team et relève des mots de passe sous forme condensée et des identifiants de session dans l'échantillon ; aucune confirmation publique de l'association à cette date."
+    }
+  ]
+}
