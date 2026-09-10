@@ -1,0 +1,44 @@
+{
+  "slug": "passpass-20260905",
+  "entity": "Pass Pass",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-05",
+    "publication": "2026-09-05"
+  },
+  "volume": {
+    "count": 18861,
+    "unit": "personnes",
+    "label": "18 861 personnes pour 92 178 enregistrements selon la revendication relayée par French Breaches ; 18 643 personnes après dédoublonnage selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 18 643 clients Pass Pass : fuite revendiquée (2026-09-05)",
+      "url": "https://fuitesinfos.fr/article/2026-09-05-pass-pass",
+      "kind": "article"
+    },
+    {
+      "label": "French Breaches — Fuite de données Pass Pass : près de 19 000 personnes concernées (2026-09-05)",
+      "url": "https://frenchbreaches.com/alertes/passpass-mtokkaq53s0e7hlda1i",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite visant Pass Pass, carte et centrale de vente des réseaux de transport des Hauts-de-France, est revendiquée le 5 septembre 2026 sur un forum cybercriminel par un acteur sous le pseudonyme ChimeraZ. D'après la revendication relayée par French Breaches, la base partielle représente 214 Mo, 92 178 enregistrements et 18 861 personnes. Fuites Infos annonce 18 643 personnes après retrait des doublons. Sont cités : identité, coordonnées, détail des titres achetés, montants réglés et factures nominatives, pour des commandes d'octobre 2019 à août 2026. Selon Fuites Infos, près d'un millier de personnes concernées seraient mineures. Le déposant affirme l'absence de coordonnées bancaires dans les fichiers. Aucune confirmation publique n'est disponible à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-05",
+      "event": "Revendication publiée sur un forum cybercriminel : une base partielle de 92 178 enregistrements et 18 861 personnes attribuée à passpass.fr, selon French Breaches."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "Fuites Infos rapporte 18 643 personnes après dédoublonnage, la présence annoncée d'un millier de mineurs et l'absence de coordonnées bancaires dans les fichiers."
+    }
+  ]
+}
