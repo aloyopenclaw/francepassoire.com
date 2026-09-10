@@ -1,0 +1,50 @@
+{
+  "slug": "reso-20260903",
+  "entity": "Réso",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non établi ; selon Fuites Infos, la revendication annonce 675 Go et 531 010 fichiers listés, avec les espaces personnels d'environ 220 comptes salariés répartis sur 29 sites ; FrenchBreaches retient environ 530 000 fichiers"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "sante",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 675 Go revendiqués, 531 010 fichiers listés : fuite revendiquée chez Réso (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-reso",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Réso piraté : 675 Go de données internes et 530 000 fichiers revendiqués (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/reso-mtlxxb9d9050x5hmr8q",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Réso, groupe familial de négoce de matériaux du second œuvre présent en France et au Maroc, est revendiquée le 3 septembre 2026 sur un forum cybercriminel par un acteur au pseudonyme caustic, selon FrenchBreaches. La revendication décrit une intrusion suivie de la copie des partages internes et annonce 675 Go, environ 43 000 dossiers et 531 010 fichiers listés, d'après Fuites Infos. Sont cités des dossiers de paie, contrats, pièces d'identité et coordonnées bancaires, des dossiers comptabilité et facturation, des dossiers clients et fournisseurs et des archives de messagerie, concernant salariés, clients et fournisseurs. FrenchBreaches relève un devis daté du 29 août 2026 dans les échantillons. Réso n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-29",
+      "event": "Un devis daté du 29 août 2026 figure parmi les échantillons publiés, selon FrenchBreaches : les données présentées étaient récentes au moment de la revendication."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Publication de la revendication par l'acteur caustic sur un forum cybercriminel, d'après FrenchBreaches."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Relais de la revendication par Fuites Infos : 675 Go annoncés et 531 010 fichiers listés, chiffres non vérifiés."
+    }
+  ]
+}
