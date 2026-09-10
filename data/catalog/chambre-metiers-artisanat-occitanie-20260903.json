@@ -1,0 +1,43 @@
+{
+  "slug": "chambre-metiers-artisanat-occitanie-20260903",
+  "entity": "Chambre de Métiers et de l'Artisanat d'Occitanie",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 1029,
+    "unit": "lignes",
+    "label": "1 029 lignes selon la revendication, présentées comme autant de personnes d'après FrenchBreaches ; Fuites Infos annonce 1 028 comptes professionnels"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données à la Chambre de Métiers et de l'Artisanat d'Occitanie (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/chambre-de-m-tiers-et-de-l-artisanat-d-occitanie-mtktlb1edwrd1ok63hq",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 1 028 comptes professionnels fuite de données revendiquée CMA Occitanie (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-chambre-de-metiers-et-de-l-artisanat-occitanie",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant la Chambre de Métiers et de l'Artisanat d'Occitanie est revendiquée le 3 septembre 2026 sur un forum cybercriminel par l'acteur ChimeraZ. Selon FrenchBreaches, la publication intitulée « [FR] 1K CRMA-OCCITANIE.FR » annonce un fichier CSV d'environ 60 Ko contenant 1 029 lignes, présentées comme autant de personnes. D'après Fuites Infos, il s'agit de comptes nominatifs rattachés aux chambres départementales de la région : nom complet, commune, identifiant interne et, pour une partie des entrées, adresse e-mail professionnelle. Fuites Infos précise que l'échantillon ne montre ni mot de passe ni donnée bancaire. La chambre n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Publication revendiquée d'un fichier CSV attribué à crma-occitanie.fr sur un forum cybercriminel par l'acteur ChimeraZ, d'après FrenchBreaches."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Relais de la revendication par FrenchBreaches et Fuites Infos ; Fuites Infos annonce 1 028 comptes professionnels rattachés aux chambres départementales."
+    }
+  ]
+}
