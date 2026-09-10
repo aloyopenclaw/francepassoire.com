@@ -1,0 +1,44 @@
+{
+  "slug": "bcti-20260903",
+  "entity": "BCTI (Bureau de Conformité Technique et Innovation, groupe Hypérion Développement)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-03"
+  },
+  "volume": {
+    "count": 957,
+    "unit": "personnes",
+    "label": "957 personnes selon Fuites Infos ; la revendication annonce environ 1 000 missions, devis et commandes et 21 pièces d'identité numérisées, pour 12 Mo de fichiers JSON et PDF"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez BCTI : 21 pièces d'identité potentiellement exposées (3 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/bcti-mtktuv79ab8qfhxo7bp",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 957 personnes chez BCTI : fuite de données revendiquée (3 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-bcti",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant BCTI, acteur du diagnostic rattaché au groupe Hypérion Développement, est revendiquée le 3 septembre 2026 sur un forum cybercriminel par un acteur au pseudonyme ChimeraZ. Selon FrenchBreaches, la publication annonce une base partielle d'environ 12 Mo aux formats JSON et PDF, extraite de la plateforme partenaires.bcti.fr. Elle contiendrait environ 1 000 missions, devis et commandes, ainsi que 21 pièces d'identité numérisées. D'après Fuites Infos, 957 personnes seraient concernées. Les fiches mentionnent identité des clients, localisation du bien diagnostiqué, montants à facturer et statut des rendez-vous, de septembre 2020 à fin août 2026. BCTI n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Publication revendiquée d'une base partielle attribuée à partenaires.bcti.fr sur un forum cybercriminel par l'acteur ChimeraZ, d'après FrenchBreaches."
+    },
+    {
+      "date": "2026-09-03",
+      "event": "Relais de la revendication par FrenchBreaches et Fuites Infos ; Fuites Infos annonce 957 personnes concernées."
+    }
+  ]
+}
