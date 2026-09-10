@@ -1,0 +1,49 @@
+{
+  "slug": "les-curistes-20260905",
+  "entity": "Les Curistes",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-09-05",
+    "publication": "2026-09-06"
+  },
+  "volume": {
+    "count": 82826,
+    "unit": "personnes",
+    "label": "82 826 personnes distinctes selon Fuites Infos ; 86 073 personnes revendiquées selon FrenchBreaches ; 328 649 lignes annoncées par la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 82 826 personnes dans une fuite de données revendiquée chez Les Curistes (6 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-05-les-curistes",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Les Curistes victime d'une fuite de données : 86 000 personnes concernées (6 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/les-curistes-mtp0o5mfdnfk170tt2f",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Les Curistes est revendiquée le 5 septembre 2026 sur un forum cybercriminel par l'acteur ChimeraZ, selon FrenchBreaches. Le portail français recense les cures et stations thermales et met en relation des visiteurs avec des établissements. La revendication décrit un export JSON d'environ 95 Mo comportant 328 649 messages, selon Fuites Infos. Sont cités noms, adresses e-mail, numéros de téléphone, adresses IP et contenu des messages adressés au portail. Selon Fuites Infos, une part des messages mentionne des pathologies, des traitements ou une situation de handicap. Fuites Infos compte 82 826 personnes distinctes après retrait des doublons ; FrenchBreaches retient 86 073 personnes. L'éditeur Bromaker n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-05",
+      "event": "Publication par l'acteur ChimeraZ d'un export JSON d'environ 95 Mo attribué à Les Curistes sur un forum cybercriminel, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-06",
+      "event": "FrenchBreaches publie son analyse : 328 649 messages associés à 86 073 personnes revendiquées, avec noms, coordonnées et contenu des échanges."
+    },
+    {
+      "date": "2026-09-06",
+      "event": "Fuites Infos relève 82 826 personnes distinctes et des mentions de données de santé dans le texte libre ; aucune confirmation publique de l'éditeur Bromaker."
+    }
+  ]
+}
