@@ -1,0 +1,43 @@
+{
+  "slug": "bumfot-20260907",
+  "entity": "BumFot",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-07",
+    "publication": "2026-09-07"
+  },
+  "volume": {
+    "count": 1281,
+    "unit": "personnes",
+    "label": "1 281 titulaires de comptes selon Fuites Infos ; environ 1 300 utilisateurs annoncés par la revendication (mention « 1.3K ») selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 1 281 comptes concernés par une fuite revendiquée chez BumFot (7 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-07-bumfot",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — BumFot victime d'une fuite de données : 1 300 utilisateurs concernés (7 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/bumfot-mtr6jurecstsgtv0ig5",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données est revendiquée le 7 septembre 2026 contre BumFot, application web française de partage de photos et de vidéos par QR code ou lien privé. Un acteur publie sur un forum cybercriminel un fichier au format JSON d'environ 481 Ko, présenté comme l'export de l'annuaire des comptes du service, selon Fuites Infos et FrenchBreaches. Fuites Infos décompte 1 281 titulaires de comptes ; la revendication annonce environ 1 300 utilisateurs. Les enregistrements annoncés associent noms, adresses e-mail, numéros de téléphone lorsqu'ils sont renseignés, pays, rôles de compte et dates d'inscription et de dernière connexion. Aucun mot de passe ne figure dans le fichier annoncé, d'après les deux médias. L'éditeur n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-07",
+      "event": "Publication intitulée « [FR] BUMFOT.FR | 1.3K » sur un forum cybercriminel : un fichier JSON d'environ 481 Ko est annoncé, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "Relais de la revendication par Fuites Infos et FrenchBreaches ; 1 281 comptes décomptés par Fuites Infos ; aucune confirmation publique de l'éditeur à cette date."
+    }
+  ]
+}
