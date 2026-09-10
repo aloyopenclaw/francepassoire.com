@@ -1,0 +1,46 @@
+{
+  "slug": "snexi-20260907",
+  "entity": "Snexi",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-07",
+    "publication": "2026-09-07"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes non communiqué par l'entreprise, selon Fuites Infos et FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fuite de données chez Snexi (7 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-07-snexi",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez SNEXI : des informations sur des propriétaires et locataires potentiellement compromises (7 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/snexi-mtndjyfm1p926jbh30z",
+      "kind": "article"
+    }
+  ],
+  "description": "Snexi, société tourangelle d'états des lieux et de diagnostics immobiliers intervenant en France, informe sur son site d'une cyberattaque survenue le 2 septembre 2026, selon Fuites Infos. L'entreprise indique qu'une violation de données à caractère personnel a suivi l'attaque. Sont susceptibles d'être concernés le nom, le prénom, l'adresse e-mail, l'adresse postale et le numéro de téléphone de clients et de personnes ayant fait appel à ses opérateurs. L'entreprise déclare ne détenir aucune donnée financière, bancaire ou sensible. Selon FrenchBreaches, des échantillons analysés avant cette communication contenaient des données liées à des propriétaires et à des locataires. La violation a été notifiée à la CNIL et des investigations techniques se poursuivent, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-02",
+      "event": "Cyberattaque contre snexi.fr avec violation de données personnelles, selon la communication de l'entreprise rapportée par Fuites Infos."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "L'entreprise informe les visiteurs de son site ; la CNIL est notifiée et des investigations techniques sont en cours, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "FrenchBreaches rapporte que des échantillons examinés avant la communication contenaient des données de propriétaires et de locataires."
+    }
+  ]
+}
