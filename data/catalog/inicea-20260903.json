@@ -1,0 +1,42 @@
+{
+  "slug": "inicea-20260903",
+  "entity": "Inicea",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-03",
+    "publication": "2026-09-04"
+  },
+  "volume": {
+    "count": 4111,
+    "unit": "personnes",
+    "label": "4 111 lignes pour autant de personnes selon la revendication relayée par French Breaches ; environ 4 000 comptes (4 031 personnes) selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 4 031 personnes touchées par une fuite de données revendiquée chez Inicea (2026-09-04)",
+      "url": "https://fuitesinfos.fr/article/2026-09-03-inicea",
+      "kind": "article"
+    },
+    {
+      "label": "French Breaches — Clinique de Vontes : les données de plus de 4 100 personnes publiées, revendication visant le réseau INICEA (2026-09-04)",
+      "url": "https://frenchbreaches.com/alertes/clinique-de-vontes-inicea-mtm6ww9opvv422tgg4",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite visant Inicea, réseau français de cliniques de santé mentale et de réadaptation, est revendiquée le 3 septembre 2026 sur un forum cybercriminel par un acteur sous le pseudonyme ChimeraZ. Le dépôt annoncé est intitulé Clinique de Vontes, établissement du réseau situé à Esvres-sur-Indre, selon French Breaches. D'après la revendication, le fichier contient 4 111 enregistrements d'annuaire interne couvrant quatorze établissements et le siège : civilité, noms, rattachement à l'établissement, au service et à la fonction, rôles applicatifs. Fuites Infos indique que des coordonnées professionnelles figurent pour un compte sur dix et qu'aucune donnée de patient n'apparaît dans l'extrait publié. Inicea et le groupe Clariane n'ont pas confirmé publiquement, selon les deux médias.",
+  "timeline": [
+    {
+      "date": "2026-09-03",
+      "event": "Publication revendiquée sur un forum cybercriminel : un fichier de 4 111 enregistrements attribué au réseau Inicea et intitulé Clinique de Vontes, selon French Breaches."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "French Breaches et Fuites Infos publient des analyses concordantes. Aucune confirmation publique d'Inicea ni du groupe Clariane à cette date."
+    }
+  ]
+}
