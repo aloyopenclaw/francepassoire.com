@@ -1,0 +1,53 @@
+{
+  "slug": "reparstores-20260904",
+  "entity": "Répar'stores",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-04",
+    "publication": "2026-09-04",
+    "confirmation": "2026-09-04"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun nombre de personnes concernées communiqué par l'entreprise ; l'auteur présumé revendique une compilation d'environ 1,8 million de clients, 1,8 million de factures et 2,4 millions de commandes selon FrenchBreaches, chiffres non confirmés par Répar'stores"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Répar'stores — Information importante concernant la sécurité de vos données",
+      "url": "https://www.reparstores.com/info-donnees-personnelles",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez Répar'stores (4 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-04-repar-stores",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Répar'stores : cyberattaque et données clients compromises (5 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/r-par-store-mtoa0qd4rlpkduc13t",
+      "kind": "article"
+    }
+  ],
+  "description": "Répar'stores, réseau de franchise de réparation et de motorisation de volets roulants, stores et portails, confirme un accès non autorisé à des données clients le 24 août 2026. Selon la communication de l'entreprise citée par Fuites Infos, sont concernés des noms, adresses électroniques, numéros de téléphone, adresses postales et un historique de devis, factures et commentaires. Les données bancaires et les mots de passe ne sont pas compromis, d'après l'entreprise. Répar'stores a informé la CNIL et déposé plainte. FrenchBreaches rapporte la revendication d'une compilation d'environ 1,8 million de clients et 2,4 millions de commandes. Ces chiffres ne sont pas confirmés par l'entreprise. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-24",
+      "event": "Accès non autorisé à certaines données clients dans l'un des environnements informatiques de l'entreprise, selon la communication de Répar'stores."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "Notification des clients par courrier électronique ; la CNIL est informée et une plainte est déposée, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "FrenchBreaches documente la compromission et rapporte la revendication d'une compilation d'environ 1,8 million de clients, non confirmée par l'entreprise."
+    }
+  ]
+}
