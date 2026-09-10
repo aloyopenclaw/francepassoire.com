@@ -1,0 +1,42 @@
+{
+  "slug": "vision2i-20260908",
+  "entity": "Vision2i",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-08",
+    "publication": "2026-09-08"
+  },
+  "volume": {
+    "count": 3,
+    "unit": "personnes",
+    "label": "trois personnes concernées selon Fuites Infos : deux comptes d'administration du site et des contacts d'une liste de diffusion"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 3 personnes concernées par une fuite revendiquée chez Vision2i (8 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-08-vision2i",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Vision2i : des contacts WordPress exposés (8 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/vision2i-mtt59zu9f60dfx10m5g",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Vision2i est revendiquée le 8 septembre 2026 sur un forum cybercriminel par une utilisatrice sous le pseudonyme Sophia, selon FrenchBreaches. Fuites Infos décrit un export du site vitrine du cabinet, mis en ligne en 2019, couvrant la période d'août 2019 à mai 2020. Selon Fuites Infos, trois personnes sont concernées : deux comptes d'administration du site et des contacts d'une liste de diffusion. FrenchBreaches identifie une structure de table de contacts du plugin WordPress Icegram Express, avec des adresses e-mail et des champs de noms et prénoms. Selon FrenchBreaches, le champ « hash » ne constitue pas nécessairement des mots de passe. Vision2i n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-07",
+      "event": "La vulnérabilité CVE-2026-12757 du plugin Icegram Express est rendue publique, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Une utilisatrice sous le pseudonyme Sophia publie la revendication et un échantillon de données, relaient FrenchBreaches et Fuites Infos."
+    }
+  ]
+}
