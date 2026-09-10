@@ -1,0 +1,48 @@
+{
+  "slug": "storia-mundi-20260904",
+  "entity": "Storia Mundi",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-04",
+    "publication": "2026-09-04"
+  },
+  "volume": {
+    "count": 17850,
+    "unit": "personnes",
+    "label": "17 850 utilisateurs dans l'export revendiqué selon Fuites Infos et FrenchBreaches ; la revendication annonce un dépôt couvrant au total un peu plus de 40 000 personnes, dont 40 221 participants aux conférences selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 40 221 participants : fuite revendiquée chez Storia Mundi (5 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-04-storia-mundi",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Storia Mundi : près de 18 000 comptes et des données de paiement revendiqués (4 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/storia-mundi-mtnbhl7gn987owivuep",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Storia Mundi est revendiquée le 4 septembre 2026 sur un forum cybercriminel. La plateforme française propose des contenus consacrés à l'histoire, à l'art et aux sciences humaines. L'acteur DaoOnlySpark attribue la base au domaine storiamundi.com, selon FrenchBreaches. La revendication décrit un export d'environ 338 Mo portant sur 17 850 utilisateurs, d'après Fuites Infos. Sont cités des identités, coordonnées et dates de naissance, des identifiants avec mots de passe hachés, 175 645 inscriptions à des conférences et des éléments de facturation avec références de carte tronquées. Selon Fuites Infos, le dépôt couvrirait au total plus de 40 000 personnes, majoritairement françaises. Storia Mundi n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-04",
+      "event": "Publication de la revendication par l'acteur DaoOnlySpark sur un forum cybercriminel, base attribuée à storiamundi.com, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-04",
+      "event": "FrenchBreaches relève dans la revendication 17 854 enregistrements d'authentification avec hashs de mots de passe et 175 645 inscriptions à des conférences."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "Relais par Fuites Infos : export présenté d'environ 338 Mo et dépôt revendiqué annoncé à plus de 40 000 personnes au total ; aucune confirmation publique de Storia Mundi."
+    }
+  ]
+}
