@@ -1,0 +1,42 @@
+{
+  "slug": "financiere-duzes-20260908",
+  "entity": "Financière d'Uzès",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "group": "panzer",
+  "dates": {
+    "revendication": "2026-09-08",
+    "publication": "2026-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Environ 70 Go de données revendiqués par Panzer ; nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Financière d'Uzès : 70 Go de données dérobés (8 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/financi-re-d-uz-s-rw_Um1sdVlXNWphY09vY21VZ1pDZFZlc09vYzBCUVlXNTZaWEk9",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Financière d'Uzès : 70 Go de données volées après une cyberattaque (8 septembre 2026)",
+      "url": "https://www.cyberattaque.org/financiere-duzes-70-go-de-donnees-volees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe ransomware Panzer revendique le 8 septembre 2026 une cyberattaque contre la Financière d'Uzès, maison française de gestion de patrimoine agréée par l'ACPR. D'après FrenchBreaches et Cyberattaque.org, la revendication évoque environ 70 Go de données exfiltrées, sans échantillon public ni détail sur la composition des fichiers. Panzer est apparu publiquement en août 2026, selon Cyberattaque.org. La société indique représenter 2 milliards d'euros confiés et une quarantaine de conseillers, selon son site cité par Cyberattaque.org. Le mode d'intrusion n'est pas connu. Aucune confirmation publique de la Financière d'Uzès n'a été identifiée à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-08",
+      "event": "Panzer ajoute la Financière d'Uzès à son site de divulgation et revendique environ 70 Go de données exfiltrées, selon FrenchBreaches et Cyberattaque.org."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Aucun échantillon de données n'accompagne la revendication et aucune confirmation publique de l'entreprise n'est identifiée, selon Cyberattaque.org."
+    }
+  ]
+}
