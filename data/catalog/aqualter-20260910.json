@@ -1,0 +1,42 @@
+{
+  "slug": "aqualter-20260910",
+  "entity": "Aqualter",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-10",
+    "publication": "2026-09-11"
+  },
+  "volume": {
+    "count": 273229,
+    "unit": "personnes",
+    "label": "273 229 personnes selon la revendication relayée par FrenchBreaches ; Fuites Infos situe le nombre réel entre 187 000 et 273 000, une même personne pouvant figurer dans les deux fichiers"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 187 074 contacts d'Aqualter : fuite revendiquée (11 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-10-aqualter",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données : 273 000 personnes exposées après le piratage d'Aqualter (11 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/aqualter-mtw3s7ufzaqj8v0kb3b",
+      "kind": "article"
+    }
+  ],
+  "description": "Une fuite de données visant Aqualter, opérateur français d'eau et d'assainissement basé à Chartres, est revendiquée le 10 septembre 2026 sur un forum cybercriminel par un acteur sous le pseudonyme ChimeraZ, relatent Fuites Infos et FrenchBreaches. La revendication décrit deux fichiers CSV présentés comme des contacts de l'entreprise : 86 156 adresses électroniques et 187 073 numéros de téléphone, soit 320 936 lignes selon FrenchBreaches. Chaque ligne associe un identifiant numérique à une seule coordonnée, sans nom ni adresse postale, selon la revendication. Fuites Infos indique que le nombre réel de personnes se situe entre 187 000 et 273 000, une même personne pouvant figurer dans les deux listes. L'origine des données n'est pas établie. Aqualter n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Un acteur sous le pseudonyme ChimeraZ publie sur un forum la revendication et des extraits de deux fichiers CSV, relatent Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication : 187 073 numéros et 86 156 adresses électroniques revendiqués, sans confirmation publique d'Aqualter."
+    }
+  ]
+}
