@@ -8,9 +8,9 @@
     "publication": "2026-09-11"
   },
   "volume": {
-    "count": 273229,
+    "count": 187073,
     "unit": "personnes",
-    "label": "273 229 personnes selon la revendication relayée par FrenchBreaches ; Fuites Infos situe le nombre réel entre 187 000 et 273 000, une même personne pouvant figurer dans les deux fichiers"
+    "label": "187 073 personnes distinctes au minimum selon le décompte de Cyberattaque.org : le pirate revendique 273 229 clients et 320 936 lignes, sans confirmation"
   },
   "data_types": [
     "coordonnees",
@@ -26,17 +26,22 @@
       "label": "FrenchBreaches — Fuite de données : 273 000 personnes exposées après le piratage d'Aqualter (11 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/aqualter-mtw3s7ufzaqj8v0kb3b",
       "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Aqualter : 187 000 numéros de téléphone exposés après une cyberattaque (11 septembre 2026)",
+      "url": "https://www.cyberattaque.org/aqualter-187-000-numeros-de-telephone-exposes-apres-une-cyberattaque/",
+      "kind": "article"
     }
   ],
-  "description": "Une fuite de données visant Aqualter, opérateur français d'eau et d'assainissement basé à Chartres, est revendiquée le 10 septembre 2026 sur un forum cybercriminel par un acteur sous le pseudonyme ChimeraZ, relatent Fuites Infos et FrenchBreaches. La revendication décrit deux fichiers CSV présentés comme des contacts de l'entreprise : 86 156 adresses électroniques et 187 073 numéros de téléphone, soit 320 936 lignes selon FrenchBreaches. Chaque ligne associe un identifiant numérique à une seule coordonnée, sans nom ni adresse postale, selon la revendication. Fuites Infos indique que le nombre réel de personnes se situe entre 187 000 et 273 000, une même personne pouvant figurer dans les deux listes. L'origine des données n'est pas établie. Aqualter n'a pas confirmé publiquement l'incident.",
+  "description": "Le 10 septembre 2026, un acteur sous le pseudonyme ChimeraZ diffuse deux fichiers CSV présentés comme des contacts d'Aqualter, selon FrenchBreaches et Cyberattaque.org. Les fichiers comptent 187 073 numéros de téléphone et 86 156 adresses e-mail, soit 320 936 lignes, d'après la revendication. Chaque ligne associe un identifiant numérique interne à une coordonnée. Le pirate avance 273 229 clients ; Cyberattaque.org décompte 187 073 personnes distinctes au minimum. Aucun nom ni mot de passe n'est annoncé dans les fichiers. Aqualter, opérateur français d'eau et d'assainissement basé à Chartres, n'a pas confirmé l'incident. L'origine et l'ancienneté des données restent indéterminées.",
   "timeline": [
     {
       "date": "2026-09-10",
-      "event": "Un acteur sous le pseudonyme ChimeraZ publie sur un forum la revendication et des extraits de deux fichiers CSV, relatent Fuites Infos et FrenchBreaches."
+      "event": "Un acteur sous le pseudonyme ChimeraZ publie deux fichiers CSV présentés comme des contacts d'Aqualter, selon FrenchBreaches et Cyberattaque.org."
     },
     {
       "date": "2026-09-11",
-      "event": "Fuites Infos et FrenchBreaches relatent la revendication : 187 073 numéros et 86 156 adresses électroniques revendiqués, sans confirmation publique d'Aqualter."
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relaient la revendication, sans confirmation publique d'Aqualter à cette date."
     }
   ]
 }
