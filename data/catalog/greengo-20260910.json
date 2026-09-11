@@ -1,0 +1,57 @@
+{
+  "slug": "greengo-20260910",
+  "entity": "GreenGo",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-10",
+    "publication": "2026-09-11",
+    "confirmation": "2026-09-10"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué : l'entreprise ne précise pas combien de personnes sont concernées, selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "GreenGo (courriel aux clients, copie Fuites Infos) — Notification d'incident de sécurité sur un outil interne (10 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/greengo-2026-09-10-notification-email.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Fuite de données chez GreenGo : réservations et cartes cadeaux des clients concernées (11 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-10-greengo",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — GreenGo victime d'une cyberattaque : données de comptes, réservations et messages consultés (11 septembre 2026)",
+      "url": "https://www.cyberattaque.org/greengo-victime-dune-cyberattaque-donnees-de-comptes-reservations-et-messages-potentiellement-consultes/",
+      "kind": "article"
+    }
+  ],
+  "description": "GreenGo, plateforme française de réservation d'hébergements, informe ses clients le 10 septembre 2026 d'un accès non autorisé à un outil interne. Selon le courriel de l'entreprise, cet accès s'est produit entre le 9 août et le 7 septembre 2026, en exploitant une faille du logiciel Metabase. Fuites Infos rapproche cette faille de la CVE-2026-72898 : l'entreprise n'a pas confirmé ce rapprochement. Sont concernés : identité, coordonnées, réservations, avis, favoris, messagerie, parrainage et cartes cadeaux. GreenGo indique ne stocker aucun numéro de carte bancaire. Les paiements passent par Stripe, précise l'entreprise. L'accès, découvert le 7 septembre, est coupé le jour même. GreenGo notifie la CNIL, dépose plainte et renouvelle les codes des cartes cadeaux. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-08-09",
+      "event": "Début de la période d'accès non autorisé à un outil interne de GreenGo, qui demeure possible jusqu'au 7 septembre 2026, selon le courriel de l'entreprise relayé par Fuites Infos."
+    },
+    {
+      "date": "2026-09-07",
+      "event": "L'accès est découvert à 19h20 et coupé le jour même ; GreenGo notifie la CNIL et dépose plainte, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "GreenGo informe ses clients par courriel : identité, coordonnées, réservations, messagerie et cartes cadeaux sont susceptibles d'avoir été consultés. Les mots de passe sont stockés sous forme d'empreinte argon2 et les codes de cartes cadeaux sont renouvelés, précise l'entreprise."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "Fuites Infos et Cyberattaque.org relatent l'incident en se fondant sur la notification de l'entreprise."
+    }
+  ]
+}
