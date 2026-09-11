@@ -1,0 +1,46 @@
+{
+  "slug": "sads-interim-20260908",
+  "entity": "SAD'S Interim",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "rhysida",
+  "dates": {
+    "revendication": "2026-09-08",
+    "publication": "2026-09-08"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes non communiqué ; Rhysida revendique des sauvegardes SQL de la paie représentant plusieurs centaines de gigaoctets, selon Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez SAD'S Interim : intrusion par ransomware (8 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/sad-s-interim-rw_VTBGRUoxTWdTVzUwWlhKcGJVQnlhSGx6YVdSaA",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — SAD'S Interim : une cyberattaque expose passeports, NIR et données de santé (8 septembre 2026)",
+      "url": "https://www.cyberattaque.org/sads-interim-une-cyberattaque-expose-passeports-nir-et-donnees-de-sante/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le groupe ransomware Rhysida revendique une cyberattaque contre SAD'S Interim, entreprise française de travail temporaire, le 8 septembre 2026. Selon FrenchBreaches, la revendication s'accompagne de captures présentées comme des échantillons : relevés bancaires, factures, données de paie et contrats. Cyberattaque.org analyse ces échantillons et y relève des copies de passeports, un numéro de sécurité sociale, un document MDPH lié au handicap, des tableaux de paie et des virements SEPA. Rhysida affirme aussi détenir des RIB, des cartes Vitale et des sauvegardes SQL de l'ERP BRANIPP, utilisé pour la paie des intérimaires. Le groupe annonce la vente des données à un acheteur unique sous sept jours. SAD'S Interim n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-08",
+      "event": "Rhysida publie SAD'S Interim sur son site de divulgation et revendique des documents internes : données bancaires, paie, contrats de travail et pièces d'identité, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-08",
+      "event": "Cyberattaque.org analyse les échantillons publiés : passeports, NIR, document MDPH, tableaux de paie et virements SEPA ; la vente des données à un acheteur unique est annoncée sous sept jours."
+    }
+  ]
+}
