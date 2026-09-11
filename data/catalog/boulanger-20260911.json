@@ -1,0 +1,43 @@
+{
+  "slug": "boulanger-20260911",
+  "entity": "Boulanger",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-11",
+    "publication": "2026-09-11"
+  },
+  "volume": {
+    "count": 132230,
+    "unit": "enregistrements",
+    "label": "132 230 enregistrements revendiqués par le vendeur ; FrenchBreaches décompte 132 229 enregistrements dans le fichier et Fuites Infos estime environ 61 275 clients distincts"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Boulanger victime d'un piratage, 132 000 dossiers clients revendiqués (11 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/boulanger-mtx6sn0e1djwcj87mtd",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — 61 275 clients des magasins partenaires Boulanger concernés par une fuite revendiquée (11 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-11-boulanger-exetco-sav-magasins-partenaires",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base attribuée à Boulanger.com est publiée le 11 septembre 2026 sur un forum cybercriminel par un utilisateur au pseudonyme fuie, selon FrenchBreaches. Le fichier contient 132 229 enregistrements présentés comme des dossiers de service après-vente, selon FrenchBreaches. Fuites Infos estime 61 275 clients distincts. Ils relèvent d'une cinquantaine de magasins des enseignes Expert et Connexion, liées à Boulanger par la centrale Ex&Co, selon Fuites Infos. Les dossiers associent nom, adresse, téléphones, appareil, date et prix d'achat, panne et garantie, selon les deux médias. Fuites Infos distingue cet incident de la fuite déclarée par Boulanger en septembre 2024. Aucune donnée bancaire ni mot de passe n'apparaît dans le fichier, selon Fuites Infos. Boulanger n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Les dates d'achat les plus récentes du fichier atteignent cette date, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "Publication de la base attribuée à Boulanger.com sur un forum cybercriminel ; FrenchBreaches et Fuites Infos relaient la revendication le même jour."
+    }
+  ]
+}
