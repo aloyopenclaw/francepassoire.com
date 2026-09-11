@@ -1,0 +1,61 @@
+{
+  "slug": "brevo-20260910",
+  "entity": "Brevo",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-10",
+    "publication": "2026-09-11",
+    "confirmation": "2026-09-10"
+  },
+  "volume": {
+    "count": 138,
+    "unit": "comptes",
+    "label": "138 comptes clients accessibles par l'attaquant selon le write-up de Brevo ; contacts exportés pour 43 comptes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Brevo (page de statut) — Write-up : Attacker gained access to client accounts (10 septembre 2026)",
+      "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Brevo victime d'une faille de sécurité : 138 comptes clients compromis (11 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/brevo-mtwuixif0kdw2y7yp3bn",
+      "kind": "article"
+    },
+    {
+      "label": "Cryptoast — Attaque de phishing en cours suite au piratage de la société de marketing numérique Brevo (11 septembre 2026)",
+      "url": "https://cryptoast.fr/attaque-de-phishing-en-cours-suite-au-piratage-de-la-societe-de-marketing-numerique-brevo/",
+      "kind": "article"
+    },
+    {
+      "label": "Journal du Coin — Trezor, BitBox, CoinTracking : la brèche chez Brevo transforme leurs emails en pièges à phishing (11 septembre 2026)",
+      "url": "https://journalducoin.com/technologies/trezor-bitbox-cointracking-la-breche-chez-brevo-transforme-leurs-emails-en-pieges-a-phishing/",
+      "kind": "article"
+    }
+  ],
+  "description": "Brevo, plateforme française d'emailing et de marketing digital, confirme un accès non autorisé à 138 comptes clients le 10 septembre 2026. Selon le write-up de l'entreprise, l'attaquant a exploité une faille de gestion du SSO SAML. Il a créé un compte, activé le SSO, puis invité des utilisateurs légitimes pour se connecter en leur nom. Six comptes ont servi à envoyer des e-mails de phishing et les contacts de 43 comptes ont été exportés, précise Brevo. La voie d'accès est fermée le jour même à 8h30 UTC. Selon Journal du Coin, les e-mails de phishing visant 347 000 abonnés de Trezor sont partis du compte Brevo de la marque. Brevo dépose plainte.",
+  "timeline": [
+    {
+      "date": "2026-09-09",
+      "event": "Des e-mails de phishing sont envoyés aux abonnés de Trezor depuis le compte Brevo de la marque, selon Journal du Coin."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "Brevo identifie à 6h30 UTC une faille SAML SSO exploitée pour accéder à 138 comptes, selon le write-up de l'entreprise."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "L'accès de l'attaquant est fermé à 8h30 UTC et toutes les sessions sont réinitialisées, précise Brevo."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "FrenchBreaches, Cryptoast et Journal du Coin relatent l'incident. Cryptoast signale des campagnes de phishing visant les clients de CoinTracking, Trezor et BitBox."
+    }
+  ]
+}
