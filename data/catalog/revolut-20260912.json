@@ -1,0 +1,45 @@
+{
+  "slug": "revolut-20260912",
+  "entity": "Revolut",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-12",
+    "publication": "2026-09-12"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; selon Clubic, un nombre limité de clients est concerné, dont des clients à fort patrimoine selon le chercheur ZachXBT"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents",
+    "biometrique"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Revolut : des données sensibles de clients transmises après de fausses demandes gouvernementales (12 septembre 2026)",
+      "url": "https://frenchbreaches.com/blog/revolut-des-donnees-sensibles-de-clients-transmises-apres-de-fausses-demandes-gouvernementales",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Gros couac potentiel pour Revolut, qui aurait transmis des données sensibles de clients à de faux agents gouvernementaux (12 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-629401-gros-couac-potentiel-pour-revolut-qui-aurait-transmis-des-donnees-sensibles-de-clients-a-de-faux-agents-gouvernementaux.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 septembre 2026, FrenchBreaches révèle que Revolut a transmis des données personnelles de certains clients à un acteur non autorisé. Selon FrenchBreaches, l'acteur a envoyé de fausses demandes d'informations depuis une adresse rattachée au domaine d'une administration publique. Ces demandes ont passé les contrôles d'authentification des e-mails. Revolut les a traitées comme légitimes avant d'établir la supercherie, selon Clubic. Les notifications clients citent nom, coordonnées, copie de passeport ou de permis, selfie de vérification, IBAN, relevés et historique de transactions, selon Clubic. Le nombre de clients concernés n'est pas communiqué. Revolut a bloqué l'adresse, alerté l'administration usurpée et informé les régulateurs, selon FrenchBreaches. La néobanque compte 8 millions de clients en France selon Clubic.",
+  "timeline": [
+    {
+      "date": "2026-09-11",
+      "event": "Selon FrenchBreaches, Revolut commence à notifier les clients concernés."
+    },
+    {
+      "date": "2026-09-12",
+      "event": "FrenchBreaches publie la révélation ; Clubic relaie et détaille les catégories de données citées dans les notifications."
+    }
+  ]
+}
