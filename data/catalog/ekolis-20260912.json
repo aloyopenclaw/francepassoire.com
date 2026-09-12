@@ -1,0 +1,45 @@
+{
+  "slug": "ekolis-20260912",
+  "entity": "Ekolis",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-12",
+    "publication": "2026-09-12"
+  },
+  "volume": {
+    "count": 20702,
+    "unit": "personnes",
+    "label": "20 702 personnes visées selon la revendication relayée par Fuites Infos ; FrenchBreaches évalue les huit fichiers publiés à environ 70 000 lignes, sans équivalence avec des personnes uniques"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "geolocalisation",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 20 702 personnes chez Ekolis visées par une fuite de données revendiquée (12 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-12-ekolis",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Ekolis : un pirate revendique la fuite de données de véhicules, conducteurs et utilisateurs (12 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/ekolis-mtye57ckbfljbjhsei",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 12 septembre 2026, un pirate utilisant le pseudonyme 4me1 revendique huit fichiers attribués à Ekolis. Ekolis est une entreprise française de télématique embarquée pour le transport. Selon Fuites Infos, 20 702 personnes sont visées, principalement des conducteurs employés par des entreprises clientes. FrenchBreaches a examiné les huit fichiers. Il évalue leur contenu à environ 70 000 lignes, dont 26 765 lignes de statuts de conducteurs et 3 272 comptes utilisateurs. Les données citées incluent identité, adresse e-mail, identifiant de connexion, niveau de droits, immatriculations, VIN, historique de positions et températures de remorques frigorifiques. Le pirate indique une compromission le 5 septembre 2026, selon FrenchBreaches. À ce stade, la revendication n'est pas confirmée publiquement par Ekolis, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-05",
+      "event": "Le pirate indique une date de compromission au 5 septembre, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-12",
+      "event": "La revendication est publiée puis relayée par FrenchBreaches et Fuites Infos."
+    }
+  ]
+}
