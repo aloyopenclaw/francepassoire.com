@@ -1,0 +1,47 @@
+{
+  "slug": "naturabuy-20260911",
+  "entity": "NaturaBuy",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-11",
+    "publication": "2026-09-11"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de membres concernés non communiqué, selon FrenchBreaches : NaturaBuy ne précise pas le volume de données extraites"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — NaturaBuy confirme une cyberattaque : des données personnelles de ses membres ont été volées (11 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/naturabuy-mtwzqa9gplhhoi6l87a",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — NaturaBuy : fuite de données confirmée après une cyberattaque (12 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-11-naturabuy",
+      "kind": "article"
+    }
+  ],
+  "description": "NaturaBuy indique avoir été victime d'une cyberattaque externe le 10 septembre 2026, rapportent FrenchBreaches et Fuites Infos. La place de marché française spécialisée dans la chasse, la pêche et le tir a mis son site hors ligne le temps d'un audit, selon les deux médias. D'après NaturaBuy, les attaquants ont extrait des données d'identification : nom, prénom, adresse électronique, adresse postale, numéro de téléphone, identifiant de connexion et mot de passe chiffré. L'entreprise affirme que les mots de passe en clair, les données bancaires, les numéros SIA et les numéros d'arme ne sont pas concernés. Selon FrenchBreaches, le nombre de membres touchés n'est pas communiqué. Selon Fuites Infos, l'entreprise a notifié la CNIL et déposé plainte.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "D'après NaturaBuy relayée par FrenchBreaches, une cyberattaque externe ciblée conduit à la mise hors ligne du site pour un audit."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "NaturaBuy indique avoir corrigé la vulnérabilité, notifié la CNIL et déposé plainte ; les membres sont informés par courriel, relèvent FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-09-12",
+      "event": "Fuites Infos détaille la liste des données extraites et la réinitialisation des mots de passe à la prochaine connexion, selon l'entreprise."
+    }
+  ]
+}
