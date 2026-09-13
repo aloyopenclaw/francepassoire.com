@@ -1,8 +1,7 @@
 {
   "slug": "caridro-val-de-loire-20260913",
   "entity": "CARIDRO Val de Loire",
-  "siren": "501582282",
-  "secteur": "services",
+  "secteur": "industrie",
   "statut": "revendiquee",
   "group": "qilin",
   "dates": {
@@ -12,32 +11,32 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "aucun volume ni type de données précisés par la revendication selon FrenchBreaches ; nombre de personnes concernées non communiqué"
+    "label": "aucun volume ni échantillon annoncés dans la fiche Qilin examinée par FrenchBreaches"
   },
   "data_types": [
     "autre"
   ],
   "sources": [
     {
-      "label": "FrenchBreaches — CARIDRO VAL DE LOIRE cible d'une cyberattaque : une fuite de données... (13 septembre 2026)",
+      "label": "FrenchBreaches — CARIDRO Val de Loire : le groupe de transport revendiqué par le ransomware Qilin (13 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/caridro-val-de-loire-rw_UTBGU1NVUlNUeUJXUVV3Z1JFVWdURTlKVWtWQWNXbHNhVzQ9",
       "kind": "article"
     },
     {
-      "label": "Ransomware.live — CARIDRO VAL DE LOIRE, victime revendiquée par le groupe qilin (13 septembre 2026)",
+      "label": "Ransomware.live — Fiche victime CARIDRO VAL DE LOIRE, groupe Qilin (13 septembre 2026)",
       "url": "https://www.ransomware.live/id/Q0FSSURSTyBWQUwgREUgTE9JUkVAcWlsaW4=",
       "kind": "revendication"
     }
   ],
-  "description": "Le groupe Qilin publie le 13 septembre 2026 une fiche au nom de CARIDRO VAL DE LOIRE, selon FrenchBreaches. La fiche porte le statut Published sur le site de divulgation du groupe. La revendication est enregistrée le même jour par Ransomware.live. FrenchBreaches indique qu'aucun volume de données, aucun échantillon de fichiers et aucun détail sur des données dérobées n'est affiché. Selon FrenchBreaches, aucun élément visible ne permet de confirmer l'étendue d'une éventuelle compromission ni la présence de données personnelles. FrenchBreaches décrit CARIDRO Val de Loire comme une entreprise française et la catégorise Business Services sur la fiche de divulgation. Le mode d'intrusion n'est pas connu. L'entité n'a pas confirmé publiquement l'incident.",
+  "description": "Le groupe ransomware Qilin inscrit CARIDRO Val de Loire sur son site de divulgation le 13 septembre 2026. Selon le relais FrenchBreaches, la fiche est classée « Published », sans volume, sans échantillon et sans détail sur les données visées. CARIDRO Val de Loire est une entreprise française de transport de voyageurs. Aucun communiqué de l'entreprise n'est identifié à ce stade. La revendication n'établit ni la réalité d'une exfiltration, ni la présence de données personnelles dans d'éventuels fichiers dérobés. Le dossier reste limité à la déclaration du groupe : toute fuite de données demeure non établie.",
   "timeline": [
     {
       "date": "2026-09-13",
-      "event": "Le groupe Qilin publie la fiche CARIDRO VAL DE LOIRE sur son site de divulgation avec le statut Published, selon FrenchBreaches."
+      "event": "Qilin publie une fiche « Published » attribuant une cyberattaque à CARIDRO Val de Loire, sans volume ni échantillon."
     },
     {
       "date": "2026-09-13",
-      "event": "FrenchBreaches relaie la revendication et précise qu'aucun volume ni échantillon de données n'est affiché à ce stade."
+      "event": "FrenchBreaches relaie la revendication et souligne l'absence d'éléments permettant d'établir un vol de données."
     }
   ]
 }
