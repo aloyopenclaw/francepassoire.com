@@ -10,34 +10,34 @@
   "volume": {
     "count": 6248,
     "unit": "personnes",
-    "label": "6 248 clients selon Fuites Infos ; 7 486 lignes pour environ 6 000 utilisateurs revendiqués selon FrenchBreaches"
+    "label": "6 248 clients selon Fuites Infos ; 7 486 lignes couvrant environ 6 000 utilisateurs selon FrenchBreaches"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "geolocalisation"
+    "autre"
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Sushi et Cie : fuite de données revendiquée visant 6 248 clients (13 septembre 2026)",
+      "label": "Fuites Infos — 6 248 clients de Sushi et Cie : fuite de données revendiquée (13 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-13-sushi-et-cie",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Sushi&Cie : un pirate revendique la fuite de données de 6 000 clients (13 septembre 2026)",
+      "label": "FrenchBreaches — Sushi&Cie victime d'un piratage : les données de 6 000 clients revendiquées (13 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/sushi-cie-mtzyrhan3ic1hahpxtv",
       "kind": "article"
     }
   ],
-  "description": "Le 13 septembre 2026, un pirate utilisant le pseudonyme « 4me1 » publie gratuitement une base présentée comme celle des clients de Sushi et Cie, restaurant japonais indépendant installé à Houdan, dans les Yvelines. D'après FrenchBreaches, le fichier compte 7 486 lignes pour environ 6 000 utilisateurs ; Fuites Infos évoque 6 248 clients. Les champs annoncés couvrent noms, adresses électroniques, numéros de téléphone, adresses IP et dates d'inscription, de 2017 à septembre 2026. Aucun mot de passe ni donnée bancaire n'est annoncé. Le site du restaurant affichait le jour même une signature identique à celle de l'annonce, selon Fuites Infos. L'enseigne n'a pas confirmé publiquement l'incident.",
+  "description": "Un acteur se présentant comme « 4me1 » publie le 13 septembre 2026 une revendication de fuite visant Sushi et Cie, restaurant de Houdan (Yvelines). Selon Fuites Infos, le fichier présenté comme la base clients du site de commande en ligne est mis gratuitement à disposition sur deux hébergeurs. FrenchBreaches rapporte 7 486 lignes pour environ 6 000 utilisateurs. Les champs cités couvrent nom, adresse électronique, numéro de téléphone, adresse IP, identifiant interne et date d'inscription. D'après Fuites Infos, l'annonce indique qu'aucun mot de passe ni aucune donnée bancaire ne figure dans le dépôt. Le média précise qu'une signature identique à celle de la revendication était affichée le même jour sur le site du restaurant. L'entreprise n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-13",
-      "event": "Un acteur se présentant comme « 4me1 » publie gratuitement une base de 7 486 lignes attribuée au site de commande en ligne de Sushi et Cie."
+      "event": "Un acteur se présentant comme « 4me1 » publie sur un forum une revendication de fuite attribuée à Sushi et Cie : 7 486 lignes pour environ 6 000 utilisateurs, selon FrenchBreaches."
     },
     {
       "date": "2026-09-13",
-      "event": "Fuites Infos recense 6 248 clients visés et note une signature identique à celle de l'annonce affichée sur le site du restaurant."
+      "event": "Fuites Infos rapporte la mise à disposition gratuite du fichier sur deux hébergeurs et la présence d'une signature identique à celle de l'annonce sur le site du restaurant."
     }
   ]
 }
