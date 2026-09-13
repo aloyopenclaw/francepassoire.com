@@ -1,0 +1,45 @@
+{
+  "slug": "mgel-20260912",
+  "entity": "MGEL",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-12",
+    "publication": "2026-09-13"
+  },
+  "volume": {
+    "count": 594414,
+    "unit": "personnes",
+    "label": "594 414 assurés selon Fuites Infos ; 603 845 adresses électroniques uniques et 450 806 IBAN revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — MGEL : fuite de données revendiquée portant sur 594 414 assurés (13 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-12-mgel",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Groupe MGEL : un pirate revendique une fuite massive de données contenant plus de 450 000 IBAN (13 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/groupe-mgel-mtzinl1af3p94rq9r2p",
+      "kind": "article"
+    }
+  ],
+  "description": "Selon une revendication publiée le 12 septembre 2026, un acteur se présentant sous le pseudonyme « RedStone » propose à la vente plusieurs bases attribuées au Groupe MGEL, mutuelle étudiante fondée en 1948 à Nancy. Fuites Infos évalue le lot à 594 414 assurés ; FrenchBreaches rapporte 16 bases, 387 tables et plus de 38,8 millions de lignes annoncées, dont 603 845 adresses électroniques uniques et 450 806 IBAN revendiqués. Figurent aussi, selon les deux relais, numéros de sécurité sociale, coordonnées bancaires, identifiants de connexion, nom du médecin traitant et données de prévention santé. La MGEL n'a pas confirmé publiquement l'incident. L'acteur affirme, d'après FrenchBreaches, avoir exploité une injection SQL restée ouverte.",
+  "timeline": [
+    {
+      "date": "2026-09-12",
+      "event": "Un acteur se présentant comme « RedStone » publie une revendication de vente de bases attribuées au Groupe MGEL."
+    },
+    {
+      "date": "2026-09-13",
+      "event": "Fuites Infos évalue le lot à 594 414 assurés ; FrenchBreaches rapporte la revendication d'une injection SQL exploité en une trentaine de minutes et présentée comme toujours ouverte."
+    }
+  ]
+}
