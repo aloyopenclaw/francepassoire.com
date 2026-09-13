@@ -1,0 +1,43 @@
+{
+  "slug": "sushi-et-cie-20260913",
+  "entity": "Sushi et Cie",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-13",
+    "publication": "2026-09-13"
+  },
+  "volume": {
+    "count": 6248,
+    "unit": "personnes",
+    "label": "6 248 clients selon Fuites Infos ; 7 486 lignes pour environ 6 000 utilisateurs revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "geolocalisation"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Sushi et Cie : fuite de données revendiquée visant 6 248 clients (13 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-13-sushi-et-cie",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Sushi&Cie : un pirate revendique la fuite de données de 6 000 clients (13 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/sushi-cie-mtzyrhan3ic1hahpxtv",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 septembre 2026, un pirate utilisant le pseudonyme « 4me1 » publie gratuitement une base présentée comme celle des clients de Sushi et Cie, restaurant japonais indépendant installé à Houdan, dans les Yvelines. D'après FrenchBreaches, le fichier compte 7 486 lignes pour environ 6 000 utilisateurs ; Fuites Infos évoque 6 248 clients. Les champs annoncés couvrent noms, adresses électroniques, numéros de téléphone, adresses IP et dates d'inscription, de 2017 à septembre 2026. Aucun mot de passe ni donnée bancaire n'est annoncé. Le site du restaurant affichait le jour même une signature identique à celle de l'annonce, selon Fuites Infos. L'enseigne n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-13",
+      "event": "Un acteur se présentant comme « 4me1 » publie gratuitement une base de 7 486 lignes attribuée au site de commande en ligne de Sushi et Cie."
+    },
+    {
+      "date": "2026-09-13",
+      "event": "Fuites Infos recense 6 248 clients visés et note une signature identique à celle de l'annonce affichée sur le site du restaurant."
+    }
+  ]
+}
