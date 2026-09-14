@@ -5,40 +5,39 @@
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-09-13",
-    "publication": "2026-09-14"
+    "publication": "2026-09-13"
   },
   "volume": {
-    "count": 36179,
-    "unit": "personnes",
-    "label": "environ 36 179 personnes distinctes selon la revendication relayée par FrenchBreaches et Cyberattaque.org ; 188 014 commandes ou interventions revendiquées, une même personne pouvant apparaître dans plusieurs lignes"
+    "count": 188014,
+    "unit": "enregistrements",
+    "label": "188 014 commandes ou interventions revendiquées selon Fuites Infos, avec environ 36 000 noms, 25 000 adresses e-mail et 43 000 numéros de téléphone annoncés ; aucune confirmation par l'entité"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "financier",
-    "autre"
+    "documents"
   ],
   "sources": [
+    {
+      "label": "Fuites Infos — Grand Delta Habitat : fuite de données revendiquée sur 188 014 commandes (13 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-13-grand-delta-habitat",
+      "kind": "article"
+    },
     {
       "label": "FrenchBreaches — Grand Delta Habitat : 188 014 commandes et des données de locataires revendiquées par un pirate (14 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/grand-delta-habitat-mu11w5cp7qxnf8bxui9",
       "kind": "article"
-    },
-    {
-      "label": "Cyberattaque.org — Grand Delta Habitat : 188 000 commandes et des données de locataires en fuite (14 septembre 2026)",
-      "url": "https://www.cyberattaque.org/grand-delta-habitat-188-000-commandes-cyberattaque/",
-      "kind": "article"
     }
   ],
-  "description": "Un acteur au pseudonyme « fdp » affirme mettre en vente une base de données de Grand Delta Habitat, bailleur social du sud-est de la France. Selon FrenchBreaches, la revendication a été publiée le 13 septembre 2026 sur un forum cybercriminel. L'acteur revendique 188 014 commandes et interventions couvrant la période du 15 mai 2018 au 7 septembre 2026. Selon Cyberattaque.org, ces lignes mentionnent environ 36 179 personnes distinctes, 24 914 adresses e-mail et 43 583 numéros de téléphone. Les enregistrements associent des occupants à des adresses de logements, des demandes de travaux et des fournisseurs. Grand Delta Habitat n'a pas confirmé publiquement ces éléments. L'origine et la réalité de la base restent non établies.",
+  "description": "Une fuite de données visant Grand Delta Habitat est revendiquée sur un forum cybercriminel, selon Fuites Infos le 13 septembre 2026. L'acteur affirme mettre en vente 188 014 commandes ou interventions du bailleur social, couvrant une période de mai 2018 au 7 septembre 2026, selon Fuites Infos. Les données annoncées incluent des noms, des adresses, des numéros de téléphone et des adresses e-mail d'occupants, ainsi que le suivi des demandes de travaux, selon Fuites Infos. FrenchBreaches décrit la même annonce et précise que 188 014 lignes ne valent pas 188 014 locataires. Grand Delta Habitat n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-13",
-      "event": "Selon FrenchBreaches, l'acteur « fdp » publie sur un forum cybercriminel la vente revendiquée d'une base de données liée à Grand Delta Habitat."
+      "event": "Fuites Infos relate une mise en vente revendiquant 188 014 commandes ou interventions du bailleur, sans échantillon publié."
     },
     {
       "date": "2026-09-14",
-      "event": "FrenchBreaches et Cyberattaque.org relatent la revendication : 188 014 commandes et interventions, environ 36 179 personnes distinctes mentionnées."
+      "event": "FrenchBreaches décrit la même revendication, avec une période annoncée allant de mai 2018 au 7 septembre 2026."
     }
   ]
 }
