@@ -1,0 +1,43 @@
+{
+  "slug": "sushi-et-cie-20260913",
+  "entity": "Sushi et Cie",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-13",
+    "publication": "2026-09-13"
+  },
+  "volume": {
+    "count": 6248,
+    "unit": "personnes",
+    "label": "6 248 clients selon Fuites Infos ; 7 486 lignes couvrant environ 6 000 utilisateurs selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — 6 248 clients de Sushi et Cie : fuite de données revendiquée (13 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-13-sushi-et-cie",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Sushi&Cie victime d'un piratage : les données de 6 000 clients revendiquées (13 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/sushi-cie-mtzyrhan3ic1hahpxtv",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur se présentant comme « 4me1 » publie le 13 septembre 2026 une revendication de fuite visant Sushi et Cie, restaurant de Houdan (Yvelines). Selon Fuites Infos, le fichier présenté comme la base clients du site de commande en ligne est mis gratuitement à disposition sur deux hébergeurs. FrenchBreaches rapporte 7 486 lignes pour environ 6 000 utilisateurs. Les champs cités couvrent nom, adresse électronique, numéro de téléphone, adresse IP, identifiant interne et date d'inscription. D'après Fuites Infos, l'annonce indique qu'aucun mot de passe ni aucune donnée bancaire ne figure dans le dépôt. Le média précise qu'une signature identique à celle de la revendication était affichée le même jour sur le site du restaurant. L'entreprise n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-13",
+      "event": "Un acteur se présentant comme « 4me1 » publie sur un forum une revendication de fuite attribuée à Sushi et Cie : 7 486 lignes pour environ 6 000 utilisateurs, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-13",
+      "event": "Fuites Infos rapporte la mise à disposition gratuite du fichier sur deux hébergeurs et la présence d'une signature identique à celle de l'annonce sur le site du restaurant."
+    }
+  ]
+}
