@@ -1,0 +1,44 @@
+{
+  "slug": "grand-delta-habitat-20260913",
+  "entity": "Grand Delta Habitat",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-13",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 36179,
+    "unit": "personnes",
+    "label": "environ 36 179 personnes distinctes selon la revendication relayée par FrenchBreaches et Cyberattaque.org ; 188 014 commandes ou interventions revendiquées, une même personne pouvant apparaître dans plusieurs lignes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Grand Delta Habitat : 188 014 commandes et des données de locataires revendiquées par un pirate (14 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/grand-delta-habitat-mu11w5cp7qxnf8bxui9",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Grand Delta Habitat : 188 000 commandes et des données de locataires en fuite (14 septembre 2026)",
+      "url": "https://www.cyberattaque.org/grand-delta-habitat-188-000-commandes-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur au pseudonyme « fdp » affirme mettre en vente une base de données de Grand Delta Habitat, bailleur social du sud-est de la France. Selon FrenchBreaches, la revendication a été publiée le 13 septembre 2026 sur un forum cybercriminel. L'acteur revendique 188 014 commandes et interventions couvrant la période du 15 mai 2018 au 7 septembre 2026. Selon Cyberattaque.org, ces lignes mentionnent environ 36 179 personnes distinctes, 24 914 adresses e-mail et 43 583 numéros de téléphone. Les enregistrements associent des occupants à des adresses de logements, des demandes de travaux et des fournisseurs. Grand Delta Habitat n'a pas confirmé publiquement ces éléments. L'origine et la réalité de la base restent non établies.",
+  "timeline": [
+    {
+      "date": "2026-09-13",
+      "event": "Selon FrenchBreaches, l'acteur « fdp » publie sur un forum cybercriminel la vente revendiquée d'une base de données liée à Grand Delta Habitat."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "FrenchBreaches et Cyberattaque.org relatent la revendication : 188 014 commandes et interventions, environ 36 179 personnes distinctes mentionnées."
+    }
+  ]
+}
