@@ -1,0 +1,43 @@
+{
+  "slug": "nature-et-decouvertes-20260914",
+  "entity": "Nature & Découvertes",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-14",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Nature & Découvertes : fuite de données confirmée chez un prestataire (14 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-14-nature-et-decouvertes",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Nature & Découvertes : des données de clients exposées après un incident chez un prestataire (14 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/nature-d-couvertes-mu1euyvui0h3fnzm19",
+      "kind": "article"
+    }
+  ],
+  "description": "Nature & Découvertes informe des clients d'un incident de sécurité chez un prestataire, selon un message daté du 14 septembre 2026 relaté par Fuites Infos. L'enseigne indique qu'un accès non autorisé a visé des données hébergées par ce prestataire : noms, prénoms, adresses postales, adresses e-mail, numéros de téléphone et informations de commandes, selon Fuites Infos. Les données bancaires et les mots de passe sont exclus, selon le même message. FrenchBreaches précise que la notification mentionne une démarche auprès de la CNIL. Le nombre de personnes concernées n'est pas communiqué et l'enseigne ne se prononce pas sur une extraction de données.",
+  "timeline": [
+    {
+      "date": "2026-09-14",
+      "event": "Nature & Découvertes notifie certains clients d'un accès non autorisé chez un prestataire, selon un message daté du 14 septembre relaté par Fuites Infos."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "Fuites Infos et FrenchBreaches publient chacun un article ; selon FrenchBreaches, la notification mentionne une démarche auprès de la CNIL."
+    }
+  ]
+}
