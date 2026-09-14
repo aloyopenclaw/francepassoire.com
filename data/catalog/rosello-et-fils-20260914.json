@@ -1,0 +1,49 @@
+{
+  "slug": "rosello-et-fils-20260914",
+  "entity": "Rosello et Fils",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "eclipse",
+  "dates": {
+    "revendication": "2026-09-14",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "environ 60 Go de données revendiqués par le groupe Eclipse selon FrenchBreaches ; volume Go non converti, nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Rosello et Fils : le grossiste français revendiqué par le ransomware Eclipse (14 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/rosello-et-fils-rw_VW05elpXeHNieUJsZENCR2FXeHpRRVZqYkdsd2MyVT0",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque — Rosello et Fils : près de 60 Go de données revendiqués par un ransomware (14 septembre 2026)",
+      "url": "https://www.cyberattaque.org/rosello-et-fils-pres-de-60-go-de-donnees-revendique-par-un-ransomware/",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Rosello et Fils, victime revendiquée par le groupe Eclipse (14 septembre 2026)",
+      "url": "https://www.ransomware.live/id/Um9zZWxsbyBldCBGaWxzQEVjbGlwc2U=",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le groupe ransomware Eclipse revendique une cyberattaque contre Rosello et Fils, grossiste en fruits et légumes à Saint-Laurent-Blangy, selon FrenchBreaches et Cyberattaque. La revendication, apparue le 14 septembre 2026 sur le site de divulgation du groupe, annonce environ 60 Go de données : informations sur les salariés, données financières, bases de données et documents comptables, selon FrenchBreaches. Cyberattaque précise qu'un compte à rebours précède une éventuelle publication. Ransomware.live relève la victime le même jour. Aucune confirmation publique de l'entreprise n'est disponible et le volume annoncé reste celui des cybercriminels.",
+  "timeline": [
+    {
+      "date": "2026-09-14",
+      "event": "Le groupe Eclipse publie une revendication visant Rosello et Fils sur son site de divulgation, avec environ 60 Go de données annoncés, selon FrenchBreaches et Cyberattaque."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "Ransomware.live relève la revendication ; selon Cyberattaque, un compte à rebours précède une éventuelle publication des données."
+    }
+  ]
+}
