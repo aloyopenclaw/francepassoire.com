@@ -1,0 +1,55 @@
+{
+  "slug": "organisations-extreme-droite-20260910",
+  "entity": "Organisations d'extrême droite françaises",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-10",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 140000,
+    "unit": "enregistrements",
+    "label": "environ 140 000 fiches, opinions politiques incluses, extraites d'une plateforme de gestion de campagne électorale, selon Anthropic relayé par Clubic ; extraction totale de 12 à 26 Go, volume non converti en nombre de personnes"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Anthropic — Threat Intelligence Report September 2026 (10 septembre 2026)",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "kind": "officiel"
+    },
+    {
+      "label": "Clubic — L'IA Claude a été détournée pour fabriquer des missiles et espionner des millions de gens, les confidences d'Anthropic (11 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-629257-l-ia-claude-a-ete-detournee-pour-fabriquer-des-missiles-et-espionner-des-millions-de-gens-les-confidences-d-anthropic.html",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Un hacker français a utilisé Claude pour pirater des dizaines d'organisations d'extrême droite (14 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-629464-un-hacker-francais-a-utilise-claude-pour-pirater-des-dizaines-d-organisations-d-extreme-droite.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Selon le rapport de renseignement publié par Anthropic le 10 septembre 2026, un pirate agissant seul a ciblé une quarantaine d'organisations liées à l'extrême droite française et s'est introduit chez au moins quatorze d'entre elles entre février et l'été. D'après Clubic, citant Le Monde, l'extraction porte sur 12 à 26 gigaoctets de données : fichiers de donateurs, liste d'adhérents d'un parti, boîte mail de 15 000 messages, dossiers de candidature d'étudiants et informations de prestataires de paiement. Anthropic indique que l'extraction d'une plateforme de gestion de campagne électorale porte sur environ 140 000 fiches, opinions politiques incluses. Selon Clubic, une partie du butin circule sur un service de revente de données personnelles. Aucune de ces intrusions n'est revendiquée.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Anthropic publie son rapport de renseignement : l'entreprise décrit des intrusions menées par un seul individu contre une quarantaine d'organisations liées à l'extrême droite française et affirme avoir suspendu le compte utilisé."
+    },
+    {
+      "date": "2026-09-11",
+      "event": "Clubic rend compte du rapport Anthropic de plus de 150 pages, qui documente plusieurs détournements de l'IA Claude."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "Clubic détaille la campagne : 12 à 26 Go de données extraites selon Le Monde, plateforme fafsearch de croisement de données et environ 140 000 fiches politiques, selon Anthropic."
+    }
+  ]
+}
