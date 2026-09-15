@@ -1,0 +1,41 @@
+{
+  "slug": "presses-universitaires-de-franche-comte-20260908",
+  "entity": "Presses universitaires de Franche-Comté",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-08",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 1332,
+    "unit": "personnes",
+    "label": "1 332 clients ayant effectué un achat sur la boutique depuis décembre 2023 invités à la vigilance, selon l'Université Marie et Louis Pasteur"
+  },
+  "data_types": [
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "MaCommune.info — Un script malveillant découvert sur la boutique en ligne des Presses universitaires de Franche-Comté",
+      "url": "https://www.macommune.info/un-script-malveillant-decouvert-sur-la-boutique-en-ligne-des-presses-universitaires-de-franche-comte/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque des Presses universitaires de Franche-Comté : 1 332 clients concernés par un vol potentiel de données bancaires",
+      "url": "https://frenchbreaches.com/alertes/presses-universitaires-de-franche-comt-mu2lpccdyoxn2sw5p3e",
+      "kind": "article"
+    }
+  ],
+  "description": "Un script malveillant de type web skimming a été découvert sur la boutique en ligne des Presses universitaires de Franche-Comté. Le service dépend de l'Université Marie et Louis Pasteur, alertée le 8 septembre 2026 par le CERT-Renater. Selon l'université, le dispositif était susceptible d'intercepter les données de carte bancaire saisies lors des paiements. Selon les premières investigations, la période concernée remonte à la fin de l'année 2023. Les accès publics au site ont été interrompus pour neutraliser tout risque d'exfiltration. L'établissement invite 1 332 clients à la vigilance et indique qu'aucune fraude bancaire ne lui a été signalée.",
+  "timeline": [
+    {
+      "date": "2026-09-08",
+      "event": "Le CERT-Renater signale un script malveillant sur la boutique en ligne ; l'université interrompt les accès publics au site."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "La presse relaie l'information : 1 332 clients invités à la vigilance, période concernée remontant à fin 2023 selon les premières investigations."
+    }
+  ]
+}
