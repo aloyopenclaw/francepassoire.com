@@ -1,16 +1,16 @@
 {
   "slug": "grand-delta-habitat-20260913",
   "entity": "Grand Delta Habitat",
-  "secteur": "public",
+  "secteur": "services",
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-09-13",
-    "publication": "2026-09-13"
+    "publication": "2026-09-14"
   },
   "volume": {
-    "count": 188014,
-    "unit": "enregistrements",
-    "label": "188 014 commandes ou interventions revendiquées selon Fuites Infos, avec environ 36 000 noms, 25 000 adresses e-mail et 43 000 numéros de téléphone annoncés ; aucune confirmation par l'entité"
+    "count": 36179,
+    "unit": "personnes",
+    "label": "environ 36 179 personnes distinctes revendiquées par l'auteur de la vente, selon FrenchBreaches ; 188 014 commandes et interventions, 24 914 adresses électroniques uniques et 43 583 numéros de téléphone uniques également revendiqués"
   },
   "data_types": [
     "identite",
@@ -19,25 +19,34 @@
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Grand Delta Habitat : fuite de données revendiquée sur 188 014 commandes (13 septembre 2026)",
+      "label": "Fuites Infos — Grand Delta Habitat : fuite de données revendiquée sur 188 014 commandes (14 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-13-grand-delta-habitat",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Grand Delta Habitat : 188 014 commandes et des données de locataires revendiquées par un pirate (14 septembre 2026)",
+      "label": "FrenchBreaches — Grand Delta Habitat visé par une fuite de données : 188 014 commandes et des données de locataires revendiquées (14 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/grand-delta-habitat-mu11w5cp7qxnf8bxui9",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Grand Delta Habitat : 188 000 commandes et des données de locataires en fuite (14 septembre 2026)",
+      "url": "https://www.cyberattaque.org/grand-delta-habitat-188-000-commandes-cyberattaque/",
       "kind": "article"
     }
   ],
-  "description": "Une fuite de données visant Grand Delta Habitat est revendiquée sur un forum cybercriminel, selon Fuites Infos le 13 septembre 2026. L'acteur affirme mettre en vente 188 014 commandes ou interventions du bailleur social, couvrant une période de mai 2018 au 7 septembre 2026, selon Fuites Infos. Les données annoncées incluent des noms, des adresses, des numéros de téléphone et des adresses e-mail d'occupants, ainsi que le suivi des demandes de travaux, selon Fuites Infos. FrenchBreaches décrit la même annonce et précise que 188 014 lignes ne valent pas 188 014 locataires. Grand Delta Habitat n'a pas confirmé publiquement l'incident.",
+  "description": "Une revendication de vente publiée le 13 septembre 2026 sur un forum cybercriminel vise Grand Delta Habitat, coopérative HLM basée à Avignon qui déclare plus de 42 000 logements sociaux, selon Fuites Infos. FrenchBreaches rapporte que l'auteur, sous le pseudonyme « fdp », affirme détenir 188 014 commandes et interventions couvrant la période du 15 mai 2018 au 7 septembre 2026. Les chiffres revendiqués incluent 36 179 personnes distinctes, 24 914 adresses électroniques uniques et 43 583 numéros de téléphone uniques, selon FrenchBreaches. Fuites Infos indique que les dossiers décrits associent logements, occupants, coordonnées, descriptions de demandes, montants et historiques de suivi. Aucun échantillon de données n'accompagne la publication, note Fuites Infos. Le bailleur n'a pas confirmé publiquement cette revendication.",
   "timeline": [
     {
       "date": "2026-09-13",
-      "event": "Fuites Infos relate une mise en vente revendiquant 188 014 commandes ou interventions du bailleur, sans échantillon publié."
+      "event": "Un acteur sous le pseudonyme « fdp » publie sur un forum cybercriminel une revendication de vente d'une base attribuée à Grand Delta Habitat, selon FrenchBreaches."
     },
     {
       "date": "2026-09-14",
-      "event": "FrenchBreaches décrit la même revendication, avec une période annoncée allant de mai 2018 au 7 septembre 2026."
+      "event": "Fuites Infos rapporte la revendication : 188 014 commandes couvrant mai 2018 au 7 septembre 2026 et environ 36 000 noms de personnes, sans échantillon publié."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "FrenchBreaches détaille les volumes revendiqués, dont 36 179 personnes distinctes et 366 agents émetteurs ; Cyberattaque.org relaie l'incident le même jour."
     }
   ]
 }
