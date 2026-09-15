@@ -1,0 +1,43 @@
+{
+  "slug": "aappma-basse-vallee-de-l-arc-20260915",
+  "entity": "AAPPMA de la Basse Vallée de l'Arc",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-15"
+  },
+  "volume": {
+    "count": 920,
+    "unit": "personnes",
+    "label": "environ 920 adhérents visés, dont environ 280 mineurs, selon Fuites Infos ; l'auteur de la revendication ne communique pas de volume global"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — AAPPMA de la Basse Vallée de l'Arc : fuite de données revendiquée visant 920 adhérents (15 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-15-aappma-de-la-basse-vallee-de-l-arc-cartedepeche-fr",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Carte-de-pêche.fr : un pirate revendique une fuite de données concernant plusieurs milliers d'adhérents (15 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/carte-de-p-che-mu2y1dhf81dp7ixpy9y",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 15 septembre 2026 sur un forum cybercriminel, sous le pseudonyme 4me1 selon FrenchBreaches, vise des données d'adhérents de l'AAPPMA de la Basse Vallée de l'Arc, association basée à Berre-l'Étang dont les adhésions passent par le portail Cartedepeche.fr. Selon Fuites Infos, le dépôt vise environ 920 adhérents, dont environ 280 mineurs : identité, date de naissance, code postal, commune et historique de cartes de pêche, en fichiers annuels de 2012 à 2026. L'auteur présente l'ensemble comme une base du portail national ; FrenchBreaches relève qu'aucun volume global n'est annoncé. Aucune confirmation publique de l'association, de la FNPF ou de la fédération départementale n'est disponible.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Publication de la revendication par un utilisateur se présentant sous le pseudonyme 4me1 : fichiers annuels d'adhérents de 2012 à 2026 présentés comme une base du portail Cartedepeche.fr, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "Fuites Infos situe le périmètre aux adhérents de l'AAPPMA de la Basse Vallée de l'Arc : environ 920 personnes, dont environ 280 mineurs ; aucune confirmation publique de l'association ou de la FNPF."
+    }
+  ]
+}
