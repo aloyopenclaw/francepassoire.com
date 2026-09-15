@@ -1,0 +1,43 @@
+{
+  "slug": "centrale-canine-20260915",
+  "entity": "Centrale Canine",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-15"
+  },
+  "volume": {
+    "count": 122147,
+    "unit": "personnes",
+    "label": "122 147 personnes et 464 237 lignes revendiquées par l'auteur (environ 892 Mo) selon FrenchBreaches et Cyberattaque.org ; doublons possibles entre fichiers"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données Centrale Canine : plus de 122 000 personnes concernées par un piratage revendiqué",
+      "url": "https://frenchbreaches.com/alertes/centrale-canine-mu2khodutmhix9d29g",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Centrale Canine : une cyberattaque expose les données de plus de 122 000 personnes",
+      "url": "https://www.cyberattaque.org/centrale-canine-une-cyberattaque-expose-les-donnees-de-plus-de-122-000-personnes/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base partielle attribuée à centrale-canine.fr a été publiée le 15 septembre 2026, selon FrenchBreaches et Cyberattaque.org. L'auteur, qui se présente sous le nom de ChimeraZ, revendique 122 147 personnes et 464 237 lignes. Selon les deux relais, les échantillons contiennent noms, adresses postales, numéros de téléphone, adresses e-mail et des données détaillées sur les chiens. La Centrale Canine indique qu'il ne s'agit pas d'un piratage mais d'un scraping de données accessibles via un endpoint public. L'organisme reconnaît que des adresses postales étaient inutilement exposées et annonce avoir réduit au minimum les données accessibles.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Publication d'une base partielle revendiquée par ChimeraZ : 122 147 personnes et 464 237 lignes annoncées sur un forum cybercriminel."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "La presse relaie la réponse de l'organisme : scraping d'un endpoint public selon la Centrale Canine, qui reconnaît l'exposition inutile d'adresses postales."
+    }
+  ]
+}
