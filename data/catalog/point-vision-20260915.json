@@ -1,0 +1,49 @@
+{
+  "slug": "point-vision-20260915",
+  "entity": "Point Vision",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-15",
+    "confirmation": "2026-09-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; ni le nombre de patients concernés ni la date de l'intrusion ne figurent dans la notification selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Point Vision — Notification patients : cyberattaque chez le prestataire de gestion des rendez-vous (15 septembre 2026, reproduction Fuites Infos)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/point-vision-notification.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Point Vision : fuite de données après une cyberattaque chez un prestataire (15 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-15-point-vision",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque de Point Vision : le prestataire compromis pourrait être Alaxione, déjà visé par un piratage en août (15 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/point-vision-alaxione-mu2xkknzvrz0vmolzuf",
+      "kind": "article"
+    }
+  ],
+  "description": "Point Vision, réseau français de centres d'ophtalmologie, informe des patients d'une cyberattaque contre le prestataire qui gère et organise ses rendez-vous. Selon la notification, une personne non autorisée a accédé à l'environnement de ce tiers et a pu consulter ou télécharger des données : nom, prénom, date de naissance, coordonnées, échanges liés aux rendez-vous et numéro de sécurité sociale. Point Vision indique ne pas pouvoir exclure un accès aux motifs de rendez-vous et aux mots de passe, une partie des traces de l'attaquant ayant été supprimée. Les systèmes hébergeant les dossiers médicaux sont présentés comme distincts et sans accès non autorisé identifié. Le prestataire n'est pas nommé ; FrenchBreaches et Fuites Infos relèvent sa proximité avec Alaxione, sans lien établi publiquement par les deux entreprises.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Notification aux patients : accès non autorisé confirmé chez le prestataire de gestion des rendez-vous ; identité, coordonnées et numéro de sécurité sociale concernés selon Point Vision."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "FrenchBreaches et Fuites Infos relaient l'incident ; FrenchBreaches relève que Point Vision désigne Alaxione comme prestataire de gestion des agendas et qu'Alaxione a reconnu une intrusion en août 2026, sans lien confirmé publiquement."
+    }
+  ]
+}
