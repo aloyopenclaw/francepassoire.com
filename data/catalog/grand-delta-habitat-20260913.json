@@ -1,0 +1,39 @@
+{
+  "slug": "grand-delta-habitat-20260913",
+  "entity": "Grand Delta Habitat",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-13",
+    "publication": "2026-09-14"
+  },
+  "volume": {
+    "count": 36179,
+    "unit": "personnes",
+    "label": "36 179 personnes distinctes et 188 014 commandes ou interventions revendiqués par l'auteur, selon FrenchBreaches ; Fuites Infos retient environ 36 000 noms ; chiffres revendiqués, non confirmés par Grand Delta Habitat"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Grand Delta Habitat : 188 014 commandes et des données de locataires revendiquées par un pirate (14 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/grand-delta-habitat-mu11w5cp7qxnf8bxui9",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — Grand Delta Habitat : fuite de données revendiquée sur 188 014 commandes (14 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-13-grand-delta-habitat",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 13 septembre 2026, un acteur sous le pseudonyme « fdp » publie sur un forum cybercriminel une annonce de vente visant Grand Delta Habitat. Ce bailleur social, coopérative d'HLM basée à Avignon, déclare plus de 42 000 logements sociaux, principalement dans le Vaucluse, selon Fuites Infos. Selon l'annonce relayée par FrenchBreaches, la base contient 188 014 commandes et interventions couvrant la période du 15 mai 2018 au 7 septembre 2026. Sont revendiqués : noms, adresses postales, numéros de téléphone, adresses e-mail, montants TTC et historiques de suivi, avec 36 179 personnes distinctes. Fuites Infos relève l'absence d'échantillon joint à la publication. Grand Delta Habitat n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-13",
+      "event": "Publication de l'annonce de vente sur un forum cybercriminel : 188 014 commandes et interventions revendiquées, période du 15 mai 2018 au 7 septembre 2026 (FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "FrenchBreaches et Fuites Infos relatent la revendication ; aucun échantillon publié, aucune confirmation publique du bailleur à cette date."
+    }
+  ]
+}
