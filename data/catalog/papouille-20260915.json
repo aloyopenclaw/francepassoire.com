@@ -1,0 +1,44 @@
+{
+  "slug": "papouille-20260915",
+  "entity": "Papouille (Papouillefrance.com)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-15"
+  },
+  "volume": {
+    "count": 57525,
+    "unit": "personnes",
+    "label": "57 525 clients visés selon Fuites Infos ; 75 Go et 240 177 fichiers revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Papouille : fuite de données revendiquée visant les contacts de crèches et de collectivités (15 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-15-papouille",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Papouillefrance.com : 75 Go et plus de 240 000 fichiers revendiqués (15 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/papouille-france-blgcloud-mu2kat4fov2247lxirf",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 15 septembre 2026 sur un forum cybercriminel vise Papouille, entreprise française établie à Fleurines (Oise), fournisseur de mobilier et de matériel de puériculture pour crèches, écoles et collectivités. La publication, intitulée BlgCloud Leak #16 selon FrenchBreaches, revendique 75 Go et 240 177 fichiers. Selon Fuites Infos, le dépôt comprend le fichier clients, la messagerie applicative et des documents commerciaux, pour environ 57 500 interlocuteurs de collectivités, d'établissements et d'entreprises. Quelques dizaines de messages contiennent des identifiants et mots de passe de comptes clients, selon le même média. L'auteur rattache le dépôt à la série visant les clients de BlgCloud, éditeur ayant fait état d'un incident en août 2026. Papouille n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Publication de la revendication « Papouillefrance.com : BlgCloud Leak #16 » sur un forum cybercriminel : 75 Go et 240 177 fichiers annoncés selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "Fuites Infos détaille le périmètre : fichier clients, messagerie applicative et documents commerciaux, environ 57 500 interlocuteurs, quelques dizaines de couples identifiants et mots de passe ; aucune confirmation publique de Papouille."
+    }
+  ]
+}
