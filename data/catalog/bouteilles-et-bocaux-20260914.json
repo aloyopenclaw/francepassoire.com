@@ -1,0 +1,45 @@
+{
+  "slug": "bouteilles-et-bocaux-20260914",
+  "entity": "Bouteilles et Bocaux",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-14",
+    "publication": "2026-09-14",
+    "confirmation": "2026-09-14"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume non communiqué ; l'entreprise indique ne pas pouvoir rattacher les données consultées à des clients précis"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Bouteilles et Bocaux — Notification clients : cyberattaque contre la boutique en ligne (14 septembre 2026, reproduction Fuites Infos)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/bouteilles-et-bocaux-2026-09-14-notification.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Bouteilles et bocaux : fuite de données après un incident de sécurité (14 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-14-bouteilles-et-bocaux",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Bouteilles et Bocaux victime d'une cyberattaque : des données de clients potentiellement exposées (15 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/bouteilles-et-bocaux-mu1wwqvgmn17bqmth5",
+      "kind": "article"
+    }
+  ],
+  "description": "Selon sa notification aux clients reproduite par Fuites Infos, Bouteilles et Bocaux a subi une cyberattaque contre sa boutique en ligne. Cette boutique francophone de bouteilles et de contenants est exploitée par la société allemande Flaschenland GmbH. Des personnes non autorisées ont accédé à l'environnement du site et y ont installé un logiciel malveillant. Les données potentiellement exposées comprennent noms, prénoms, adresses postales et adresses e-mail. L'entreprise indique ne pas pouvoir rattacher ces données à des clients précis. Les données de paiement ne sont pas stockées et aucun indice ne vise les mots de passe, selon Fuites Infos. La boutique a ensuite été remise en service sur un système reconstruit, selon l'entreprise.",
+  "timeline": [
+    {
+      "date": "2026-09-14",
+      "event": "Notification aux clients : personnes non autorisées ayant accédé à l'environnement de la boutique en ligne et installé un logiciel malveillant (courrier du 14 septembre 2026)."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "FrenchBreaches relaie l'incident ; selon l'entreprise, la faille est corrigée et la boutique remise en service sur un nouveau système."
+    }
+  ]
+}
