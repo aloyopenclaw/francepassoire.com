@@ -1,0 +1,44 @@
+{
+  "slug": "welyb-agiris-20260901",
+  "entity": "Welyb (AGIRIS)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-01",
+    "publication": "2026-09-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Périmètre non chiffré ; la notification adressée aux personnes concernées ne communique pas de nombre de personnes touchées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Welyb (AGIRIS) : une faille expose des données de clients de cabinets comptables",
+      "url": "https://frenchbreaches.com/alertes/welyb-agiris-mu2m3x9bh33cfsst2bl",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Welyb (AGIRIS) : une faille expose les données de clients de cabinets comptables",
+      "url": "https://www.cyberattaque.org/cyberattaque-welyb-agiris-une-faille-expose-les-donnees-de-clients-de-cabinets-comptables/",
+      "kind": "article"
+    }
+  ],
+  "description": "Un incident de sécurité détecté le 1er septembre 2026 a affecté un composant technique interagissant avec Welyb, selon FrenchBreaches et Cyberattaque.org. La plateforme sert aux cabinets d'expertise comptable, notamment via le Portail AGIRIS CONNECT. Selon la notification envoyée aux personnes concernées, les données exposées comprennent noms, prénoms, adresses, téléphones et adresses e-mail. Des mots de passe hachés figurent aussi dans le périmètre, avec raisons sociales et numéros SIRET ou SIREN. Welyb et AGIRIS indiquent avoir neutralisé la vulnérabilité et interrompu des accès non autorisés. Rien ne permet d'affirmer que des factures électroniques ou des données bancaires ont été exposées, selon les deux relais. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-01",
+      "event": "Détection d'un incident sur un composant interagissant avec Welyb, utilisé via le Portail AGIRIS CONNECT, selon la notification envoyée aux personnes concernées."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "FrenchBreaches et Cyberattaque.org relaient la notification : identité, coordonnées et mots de passe hachés exposés ; aucune facture électronique concernée selon les sources."
+    }
+  ]
+}
