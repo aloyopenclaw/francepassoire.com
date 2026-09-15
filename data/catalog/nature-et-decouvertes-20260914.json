@@ -2,15 +2,16 @@
   "slug": "nature-et-decouvertes-20260914",
   "entity": "Nature & Découvertes",
   "secteur": "retail",
-  "statut": "revendiquee",
+  "statut": "confirmee",
   "dates": {
     "revendication": "2026-09-14",
-    "publication": "2026-09-14"
+    "publication": "2026-09-14",
+    "confirmation": "2026-09-14"
   },
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "nombre de personnes concernées non communiqué selon Fuites Infos"
+    "label": "nombre de personnes concernées non communiqué : l'enseigne ne précise ni le volume ni l'existence d'une exfiltration, selon son courrier relayé par Fuites Infos et FrenchBreaches"
   },
   "data_types": [
     "identite",
@@ -27,17 +28,22 @@
       "label": "FrenchBreaches — Nature & Découvertes : des données de clients exposées après un incident chez un prestataire (14 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/nature-d-couvertes-mu1euyvui0h3fnzm19",
       "kind": "article"
+    },
+    {
+      "label": "Nature & Découvertes — Courrier de notification aux clients relayé par Fuites Infos (14 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/nature-et-decouvertes-2026-09-14-notification.webp",
+      "kind": "officiel"
     }
   ],
-  "description": "Nature & Découvertes informe des clients d'un incident de sécurité chez un prestataire, selon un message daté du 14 septembre 2026 relaté par Fuites Infos. L'enseigne indique qu'un accès non autorisé a visé des données hébergées par ce prestataire : noms, prénoms, adresses postales, adresses e-mail, numéros de téléphone et informations de commandes, selon Fuites Infos. Les données bancaires et les mots de passe sont exclus, selon le même message. FrenchBreaches précise que la notification mentionne une démarche auprès de la CNIL. Le nombre de personnes concernées n'est pas communiqué et l'enseigne ne se prononce pas sur une extraction de données.",
+  "description": "Nature & Découvertes informe ses clients d'un incident de sécurité chez l'un de ses prestataires, selon son courrier relayé par Fuites Infos. L'enseigne indique qu'un accès non autorisé a visé des données liées aux commandes : nom, prénom, adresse postale, adresse électronique, numéro de téléphone, articles commandés, quantités et prix. D'après FrenchBreaches, qui cite la même notification, aucune donnée bancaire, information de paiement ni mot de passe n'est concerné. L'entreprise affirme que la situation est maîtrisée. Fuites Infos relève que le nombre de personnes concernées, la durée de l'accès et l'existence d'une exfiltration ne sont pas précisés. L'incident a été notifié à la CNIL, selon la notification citée par FrenchBreaches.",
   "timeline": [
     {
       "date": "2026-09-14",
-      "event": "Nature & Découvertes notifie certains clients d'un accès non autorisé chez un prestataire, selon un message daté du 14 septembre relaté par Fuites Infos."
+      "event": "Nature & Découvertes notifie par courrier les clients concernés d'un accès non autorisé à des données hébergées chez un prestataire, selon Fuites Infos."
     },
     {
       "date": "2026-09-14",
-      "event": "Fuites Infos et FrenchBreaches publient chacun un article ; selon FrenchBreaches, la notification mentionne une démarche auprès de la CNIL."
+      "event": "FrenchBreaches rapporte la notification : coordonnées et informations de commandes concernées, données bancaires et mots de passe exclus, CNIL informée."
     }
   ]
 }
