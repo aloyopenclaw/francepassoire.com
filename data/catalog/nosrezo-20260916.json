@@ -1,0 +1,44 @@
+{
+  "slug": "nosrezo-20260916",
+  "entity": "NosRezo",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-16",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 413722,
+    "unit": "personnes",
+    "label": "413 722 personnes revendiquées (263 901 clients, 149 821 conseillers) selon l'annonce relayée par FrenchBreaches et Fuites Infos ; chiffres non confirmés"
+  },
+  "data_types": ["identite", "coordonnees", "financier"],
+  "sources": [
+    {
+      "label": "Fuites Infos — NosRezo : fuite de données revendiquée visant ses clients et conseillers (16 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-16-nosrezo",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Propertips, plateforme de recommandation : les données de plus de 413 000 personnes revendiquées à la vente (16 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/nosrezo-propertips-mu452qgr87fyxkxkxh",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Propertips by iad visé par une cyberattaque : 413 000 clients et conseillers en fuite (16 septembre 2026)",
+      "url": "https://www.cyberattaque.org/propertips-iad-cyberattaque-nosrezo/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 septembre 2026, l'acteur ChimeraZ publie sur un forum cybercriminel une annonce de vente intitulée « 413K IAD GROUP - NosRezo », selon FrenchBreaches. Il revendique 339 750 lignes portant sur 413 722 personnes : 263 901 clients et 149 821 conseillers. NosRezo est une plateforme française de recommandation immobilière exploitée sous la marque Propertips by iad, d'après Fuites Infos. L'échantillon diffusé montre identités, numéros de téléphone, adresses postales, adresses e-mail, villes, descriptions de projets immobiliers et montants associés, selon les deux sources. Ni NosRezo ni iad n'ont confirmé publiquement l'incident. Fuites Infos distingue ce dossier de la revendication confirmée visant IAD Group en juillet 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-16",
+      "event": "L'acteur ChimeraZ met en vente une base attribuée à NosRezo : 339 750 lignes et 413 722 personnes revendiquées, avec échantillon public (FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Fuites Infos et Cyberattaque.org relaient la revendication. Ni NosRezo ni iad n'ont confirmé à cette date."
+    }
+  ]
+}
