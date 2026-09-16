@@ -1,0 +1,44 @@
+{
+  "slug": "nosrezo-20260916",
+  "entity": "NosRezo",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-16",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 413722,
+    "unit": "personnes",
+    "label": "413 722 personnes revendiquées, dont 263 901 clients et 149 821 conseillers, selon l'annonce de l'acteur relayée par FrenchBreaches ; chiffres non confirmés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — NosRezo : fuite de données revendiquée visant ses clients et conseillers (16 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-16-nosrezo",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Propertips : les données de plus de 413 000 personnes revendiquées à la vente (16 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/nosrezo-propertips-mu452qgr87fyxkxkxh",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 16 septembre 2026, l'acteur ChimeraZ met en vente une base attribuée à NosRezo sur un forum cybercriminel. NosRezo est une plateforme française de recommandation immobilière, exploitée sous la marque Propertips by iad, selon Fuites Infos. L'acteur revendique 413 722 personnes : 263 901 clients et 149 821 conseillers. Le fichier est annoncé à 339 750 lignes et 160 Mo, selon FrenchBreaches. L'échantillon montre des noms, téléphones, adresses postales, villes et adresses e-mail. Les fiches associent ces coordonnées à des projets immobiliers et à des montants, selon les deux sources. Ni NosRezo ni iad n'ont confirmé l'incident. Fuites Infos situe cette annonce hors du dossier IAD Group, confirmé par la société en juillet 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-16",
+      "event": "ChimeraZ publie l'annonce de vente d'une base attribuée à NosRezo, avec un échantillon en soutien, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Fuites Infos documente la revendication : 413 722 personnes revendiquées et aucune confirmation publique de NosRezo ou iad à ce stade."
+    }
+  ]
+}
