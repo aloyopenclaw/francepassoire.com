@@ -1,0 +1,48 @@
+{
+  "slug": "maison-du-souvenir-de-maille-20260915",
+  "entity": "Maison du souvenir de Maillé",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "nombre d'adresses e-mail concernées non communiqué ; rançon de plus de 4 300 euros exigée selon Ici Touraine, cité par Actu.fr"
+  },
+  "data_types": ["coordonnees", "documents"],
+  "sources": [
+    {
+      "label": "Actu.fr — En Indre-et-Loire, le musée du massacre de Maillé piraté : « Plus d'une vingtaine d'années de travail ont été anéanties » (15 septembre 2026)",
+      "url": "https://actu.fr/centre-val-de-loire/maille_37142/en-indre-et-loire-le-musee-du-massacre-de-maille-pirate-plus-dune-vingtaine-dannees-de-travail-ont-ete-aneanties_64794419.html",
+      "kind": "article"
+    },
+    {
+      "label": "France 3 Régions — « Vingt années de travail anéanties » : une cyberattaque vise la Maison du souvenir de Maillé, témoin du massacre de 1944 (15 septembre 2026)",
+      "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/indre-loire/vingt-annees-de-travail-aneanties-une-cyberattaque-vise-la-maison-du-souvenir-de-maille-temoin-du-massacre-de-1944-3417461.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Maison du souvenir de Maillé piratée : 20 ans d'archives chiffrées (16 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/maison-du-souvenir-mu3s96ekg9d5znwpghs",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 septembre 2026, le serveur de la Maison du souvenir de Maillé (Indre-et-Loire) est compromis : données et sauvegardes sont chiffrées en quelques dizaines de minutes, selon l'annonce de la structure rapportée par Actu.fr. Photographies, témoignages, travaux de recherche et documents de gestion sont rendus inaccessibles, et une partie des documents est dérobée. D'après Ici Touraine, cité par Actu.fr, une rançon de plus de 4 300 euros est exigée le 14 septembre. Selon FrenchBreaches, la structure qualifie l'incident de violation de données à caractère personnel : les données visées sont principalement des adresses e-mail d'abonnés. L'ampleur de l'exfiltration n'est pas établie.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Compromission du serveur de la Maison du souvenir dans la nuit du 9 au 10 : données et sauvegardes chiffrées, selon l'annonce de la structure rapportée par Actu.fr."
+    },
+    {
+      "date": "2026-09-14",
+      "event": "Demande de rançon de plus de 4 300 euros, selon Ici Touraine cité par Actu.fr."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "La structure annonce l'incident ; Actu.fr, France 3 et FrenchBreaches en rendent compte. FrenchBreaches relève une violation de données personnelles portant principalement sur des adresses e-mail."
+    }
+  ]
+}
