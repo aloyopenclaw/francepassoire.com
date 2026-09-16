@@ -5,7 +5,7 @@
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-09-15",
-    "publication": "2026-09-16"
+    "publication": "2026-09-15"
   },
   "volume": {
     "count": 0,
@@ -42,7 +42,7 @@
     },
     {
       "date": "2026-09-15",
-      "event": "La structure annonce l'incident ; Actu.fr, France 3 et FrenchBreaches en rendent compte. FrenchBreaches relève une violation de données personnelles portant principalement sur des adresses e-mail."
+      "event": "La structure annonce l'incident ; Actu.fr et France 3 en rendent compte."
     }
   ]
 }
