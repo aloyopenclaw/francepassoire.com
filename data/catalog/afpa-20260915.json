@@ -1,0 +1,44 @@
+{
+  "slug": "afpa-20260915",
+  "entity": "Afpa",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 971420,
+    "unit": "enregistrements",
+    "label": "971 420 enregistrements revendiqués à la vente selon Fuites Infos et FrenchBreaches ; nombre de personnes non établi"
+  },
+  "data_types": ["identite", "coordonnees"],
+  "sources": [
+    {
+      "label": "Fuites Infos — AFPA : mise en vente revendiquée de 971 420 enregistrements (15 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-15-afpa",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — AFPA : une base de données de 971 420 enregistrements revendiquée à la vente par un pirate (16 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/afpa-mu3sfxoqeownzuda0zt",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — AFPA : près d'un million de dossiers revendiqués après une cyberattaque (16 septembre 2026)",
+      "url": "https://www.cyberattaque.org/afpa-pres-dun-million-de-dossiers-revendiques-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 15 septembre 2026, une annonce de mise en vente paraît sur un forum cybercriminel : elle propose une base présentée comme issue de l'Afpa, selon Fuites Infos. Le vendeur revendique 971 420 enregistrements. L'extrait publié montre, selon Fuites Infos, des données d'état civil : civilité, nom, prénom, date de naissance, plus une adresse postale, un numéro de téléphone et un identifiant interne. Aucune adresse électronique ni donnée financière n'y figure. Les fiches portent un code lié à un outil interne de gestion de l'hébergement des stagiaires. FrenchBreaches note que l'échantillon ne prouve ni compromission récente ni authenticité du volume revendiqué. L'Afpa n'a pas confirmé publiquement. Une revendication distincte visait un autre outil de l'agence en août 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Publication de l'annonce de mise en vente d'une base attribuée à l'Afpa sur un forum cybercriminel : 971 420 enregistrements revendiqués (Fuites Infos, FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relaient la revendication. Aucune confirmation publique de l'Afpa à cette date."
+    }
+  ]
+}
