@@ -9,18 +9,15 @@
   },
   "volume": {
     "count": 0,
-    "unit": "comptes",
-    "label": "nombre d'adresses e-mail concernées non communiqué ; rançon de plus de 4 300 euros exigée selon Ici Touraine, cité par Actu.fr"
+    "unit": "personnes",
+    "label": "nombre non communiqué ; la structure signale des adresses e-mail d'adhérents et d'abonnés potentiellement dérobées, sans exfiltration confirmée"
   },
-  "data_types": ["coordonnees", "documents"],
+  "data_types": [
+    "coordonnees"
+  ],
   "sources": [
     {
-      "label": "Actu.fr — En Indre-et-Loire, le musée du massacre de Maillé piraté : « Plus d'une vingtaine d'années de travail ont été anéanties » (15 septembre 2026)",
-      "url": "https://actu.fr/centre-val-de-loire/maille_37142/en-indre-et-loire-le-musee-du-massacre-de-maille-pirate-plus-dune-vingtaine-dannees-de-travail-ont-ete-aneanties_64794419.html",
-      "kind": "article"
-    },
-    {
-      "label": "France 3 Régions — « Vingt années de travail anéanties » : une cyberattaque vise la Maison du souvenir de Maillé, témoin du massacre de 1944 (15 septembre 2026)",
+      "label": "France 3 Centre-Val de Loire — Vingt années de travail anéanties : une cyberattaque vise la Maison du souvenir de Maillé (15 septembre 2026)",
       "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/indre-loire/vingt-annees-de-travail-aneanties-une-cyberattaque-vise-la-maison-du-souvenir-de-maille-temoin-du-massacre-de-1944-3417461.html",
       "kind": "article"
     },
@@ -30,19 +27,19 @@
       "kind": "article"
     }
   ],
-  "description": "Dans la nuit du 9 au 10 septembre 2026, le serveur de la Maison du souvenir de Maillé (Indre-et-Loire) est compromis : données et sauvegardes sont chiffrées en quelques dizaines de minutes, selon l'annonce de la structure rapportée par Actu.fr. Photographies, témoignages, travaux de recherche et documents de gestion sont rendus inaccessibles, et une partie des documents est dérobée. D'après Ici Touraine, cité par Actu.fr, une rançon de plus de 4 300 euros est exigée le 14 septembre. Selon FrenchBreaches, la structure qualifie l'incident de violation de données à caractère personnel : les données visées sont principalement des adresses e-mail d'abonnés. L'ampleur de l'exfiltration n'est pas établie.",
+  "description": "Dans la nuit du 9 au 10 septembre 2026, le serveur de la Maison du souvenir de Maillé est compromis. Données et sauvegardes sont chiffrées, selon le communiqué de la structure cité par France 3. Plus de vingt années de photographies, témoignages et travaux de recherche deviennent inaccessibles. Les pirates exigent une rançon de 5 000 dollars en bitcoins, environ 4 300 euros, selon France 3. Le prestataire informatique de la structure a établi un contact avec les attaquants. La structure qualifie l'incident de violation de données à caractère personnel : des adresses e-mail d'adhérents et d'abonnés sont potentiellement dérobées. Aucune exfiltration n'est confirmée et le groupe responsable n'est pas identifié.",
   "timeline": [
     {
-      "date": "2026-09-10",
-      "event": "Compromission du serveur de la Maison du souvenir dans la nuit du 9 au 10 : données et sauvegardes chiffrées, selon l'annonce de la structure rapportée par Actu.fr."
-    },
-    {
-      "date": "2026-09-14",
-      "event": "Demande de rançon de plus de 4 300 euros, selon Ici Touraine cité par Actu.fr."
+      "date": "2026-09-09",
+      "event": "Chiffrement du serveur et des sauvegardes de la Maison du souvenir durant la nuit du 9 au 10 septembre, selon le communiqué relayé par France 3."
     },
     {
       "date": "2026-09-15",
-      "event": "La structure annonce l'incident ; Actu.fr et France 3 en rendent compte."
+      "event": "La structure publie un communiqué : archives inaccessibles, rançon de 5 000 dollars exigée et adresses e-mail potentiellement dérobées, selon France 3."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FrenchBreaches documente l'incident et la recommandation de vigilance adressée aux adhérents et abonnés contre les prises de contact frauduleuses."
     }
   ]
 }
