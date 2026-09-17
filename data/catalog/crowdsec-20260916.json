@@ -10,7 +10,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "Nombre de personnes non communiqué ; 3,4 Go de code source et plus de 300 dépôts revendiqués selon FrenchBreaches, plus de 3 Go selon Cyberattaque.org"
+    "label": "environ 3,4 Go de code source non public revendiqués, couvrant plus de 300 dépôts GitHub, selon Fuites Infos ; nombre de personnes non communiqué"
   },
   "data_types": [
     "identite",
@@ -20,25 +20,30 @@
   ],
   "sources": [
     {
-      "label": "FrenchBreaches — CrowdSec, expert en cybersécurité, piraté : 3,4 Go de code revendiqués (17 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/crowdsec-mu4npqnxblj4hm33zkp",
-      "kind": "revendication"
+      "label": "Fuites Infos — CrowdSec : fuite de données revendiquée de ~3,4 Go de code source non public (16 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-16-crowdsec",
+      "kind": "article"
     },
     {
       "label": "Cyberattaque.org — CrowdSec : son code source en fuite après la compromission d'une clé API (16 septembre 2026)",
       "url": "https://www.cyberattaque.org/crowdsec-son-code-source-en-fuite-apres-la-compromission-dune-cle-api/",
       "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — CrowdSec, expert en cybersécurité, piraté : 3,4 Go de code revendiqués (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/crowdsec-mu4npqnxblj4hm33zkp",
+      "kind": "article"
     }
   ],
-  "description": "Le 16 septembre 2026, l'acteur mrwho publie sur un forum cybercriminel une annonce intitulée « CrowdSec Full Source Code », selon Cyberattaque.org et FrenchBreaches. Il revendique environ 3,4 Go de code source non public de CrowdSec, entreprise française de cybersécurité. Selon ses déclarations, l'accès a été obtenu grâce à une clé d'API exposée. FrenchBreaches a examiné l'arborescence jointe : plus de 300 dépôts rattachés à l'organisation crowdsecurity. Elle couvre la console, les API, le renseignement sur les menaces et l'infrastructure cloud. Les éléments publiés mentionnent des fichiers de configuration pouvant contenir clés d'accès, jetons et mots de passe. Des noms et adresses e-mail de contributeurs peuvent apparaître dans les métadonnées des dépôts, selon FrenchBreaches. CrowdSec n'a pas confirmé publiquement l'incident.",
+  "description": "Une fuite de données est revendiquée le 16 septembre 2026 contre CrowdSec, éditeur français de cybersécurité. L'auteur, sous le pseudonyme mrwho, affirme avoir obtenu un accès via une clé API exposée, selon Cyberattaque.org. Selon la revendication, l'archive couvre plus de 300 dépôts GitHub et environ 3,4 Go de code non public. Fuites Infos mentionne des fichiers de configuration pouvant contenir clés d'accès, jetons et mots de passe. Le même relais indique l'exposition des noms et adresses e-mail des contributeurs du code. FrenchBreaches relaie l'alerte le 17 septembre. CrowdSec n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-16",
-      "event": "mrwho publie l'annonce « CrowdSec Full Source Code » sur un forum cybercriminel et met en ligne l'arborescence des fichiers en échantillon, selon Cyberattaque.org et FrenchBreaches."
+      "event": "Le pseudonyme mrwho publie une revendication : plus de 3 Go de code source obtenus via une clé API exposée, selon Cyberattaque.org."
     },
     {
       "date": "2026-09-17",
-      "event": "FrenchBreaches examine l'arborescence revendiquée : plus de 300 dépôts rattachés à l'organisation crowdsecurity. CrowdSec n'a pas confirmé publiquement l'incident à cette date."
+      "event": "FrenchBreaches relaie l'alerte et évoque 3,4 Go de code revendiqués après l'exposition d'une clé API."
     }
   ]
 }
