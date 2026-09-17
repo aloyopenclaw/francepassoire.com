@@ -1,0 +1,48 @@
+{
+  "slug": "crowdsec-20260916",
+  "entity": "CrowdSec",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-16",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "3,4 Go de code source revendiqués par le pirate, plus de 300 dépôts selon FrenchBreaches ; nombre de personnes non communiqué"
+  },
+  "data_types": [
+    "documents",
+    "credentials",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — CrowdSec, expert en cybersécurité, piraté : 3,4 Go de code revendiqués (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/crowdsec-mu4npqnxblj4hm33zkp",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — CrowdSec : son code source en fuite après la compromission d'une clé API (16 septembre 2026)",
+      "url": "https://www.cyberattaque.org/crowdsec-son-code-source-en-fuite-apres-la-compromission-dune-cle-api/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 septembre 2026, un pirate sous le pseudonyme mrwho publie sur un forum cybercriminel une annonce intitulée « CrowdSec Full Source Code ». Il affirme détenir 3,4 Go de code source de CrowdSec, entreprise française de cybersécurité, après un accès obtenu via une clé d'API exposée. Selon FrenchBreaches, l'archive comporte plus de 300 dépôts de l'organisation crowdsecurity : console, API, services internes, CTI et infrastructure cloud. Le média indique que des fichiers de configuration susceptibles de contenir des clés d'accès, des jetons ou des mots de passe font partie des données revendiquées. Des noms et adresses e-mail de contributeurs figurent selon lui dans les métadonnées. Selon Cyberattaque.org, CrowdSec n'a pas confirmé publiquement la compromission.",
+  "timeline": [
+    {
+      "date": "2026-09-16",
+      "event": "Le pirate mrwho publie sur un forum cybercriminel une annonce revendiquant 3,4 Go de code source de CrowdSec, obtenus selon lui via une clé d'API exposée."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Cyberattaque.org relaie la revendication et indique que CrowdSec n'a pas confirmé publiquement la compromission."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "FrenchBreaches examine la liste des dépôts revendiqués : plus de 300 dépôts liés à la console, aux API, aux services internes et à l'infrastructure cloud."
+    }
+  ]
+}
