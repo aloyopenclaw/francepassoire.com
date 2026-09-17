@@ -2,48 +2,52 @@
   "slug": "crowdsec-20260916",
   "entity": "CrowdSec",
   "secteur": "services",
-  "statut": "revendiquee",
+  "statut": "confirmee",
   "dates": {
     "revendication": "2026-09-16",
-    "publication": "2026-09-16"
+    "publication": "2026-09-16",
+    "confirmation": "2026-09-17"
   },
   "volume": {
     "count": 0,
-    "unit": "personnes",
-    "label": "environ 3,4 Go de code source non public revendiqués, couvrant plus de 300 dépôts GitHub, selon Fuites Infos ; nombre de personnes non communiqué"
+    "unit": "enregistrements",
+    "label": "Nombre de personnes concernées non communiqué ; environ 3,4 Go de code source non public et plus de 300 dépôts revendiqués par l'acteur, dont plus de 130 dépôts publics selon l'éditeur ; aucune donnée personnelle client selon CrowdSec"
   },
   "data_types": [
-    "identite",
+    "autre",
     "coordonnees",
-    "credentials",
-    "documents"
+    "credentials"
   ],
   "sources": [
     {
-      "label": "Fuites Infos — CrowdSec : fuite de données revendiquée de ~3,4 Go de code source non public (16 septembre 2026)",
+      "label": "Fuites Infos — CrowdSec confirme la fuite de 3,4 Go de son code source non public (16 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-16-crowdsec",
       "kind": "article"
     },
     {
-      "label": "Cyberattaque.org — CrowdSec : son code source en fuite après la compromission d'une clé API (16 septembre 2026)",
-      "url": "https://www.cyberattaque.org/crowdsec-son-code-source-en-fuite-apres-la-compromission-dune-cle-api/",
+      "label": "FrenchBreaches — CrowdSec victime d'un piratage : 3,4 Go de code source revendiqués par un hacker (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/crowdsec-mu4npqnxblj4hm33zkp",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — CrowdSec, expert en cybersécurité, piraté : 3,4 Go de code revendiqués (17 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/crowdsec-mu4npqnxblj4hm33zkp",
-      "kind": "article"
+      "label": "CrowdSec — CrowdSec Statement: Source Code Exposure in May 2026 (17 septembre 2026)",
+      "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure",
+      "kind": "officiel"
     }
   ],
-  "description": "Une fuite de données est revendiquée le 16 septembre 2026 contre CrowdSec, éditeur français de cybersécurité. L'auteur, sous le pseudonyme mrwho, affirme avoir obtenu un accès via une clé API exposée, selon Cyberattaque.org. Selon la revendication, l'archive couvre plus de 300 dépôts GitHub et environ 3,4 Go de code non public. Fuites Infos mentionne des fichiers de configuration pouvant contenir clés d'accès, jetons et mots de passe. Le même relais indique l'exposition des noms et adresses e-mail des contributeurs du code. FrenchBreaches relaie l'alerte le 17 septembre. CrowdSec n'a pas confirmé publiquement l'incident.",
+  "description": "Le 16 septembre 2026, un acteur signé mrwho publie sur un forum cybercriminel une annonce intitulée « CrowdSec Full Source Code ». Il affirme détenir 3,4 Go de code source non public et plus de 300 dépôts, obtenus selon lui via une clé d'API exposée. CrowdSec, éditeur français de cybersécurité basé à Montrouge, confirme la fuite dans un communiqué du 17 septembre 2026. L'entreprise la date de mai 2026 et désigne la compromission des paquets TanStack comme vecteur probable. Selon l'éditeur, aucune donnée client, identifiant, nom ou organisation n'a fuité, et les jetons ont été renouvelés. Fuites Infos note que l'historique Git conserve les noms et adresses e-mail des contributeurs.",
   "timeline": [
     {
       "date": "2026-09-16",
-      "event": "Le pseudonyme mrwho publie une revendication : plus de 3 Go de code source obtenus via une clé API exposée, selon Cyberattaque.org."
+      "event": "Publication de l'annonce « CrowdSec Full Source Code » par l'acteur mrwho sur un forum cybercriminel ; 3,4 Go de code non public et plus de 300 dépôts revendiqués."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Fuites Infos publie un premier article et contacte l'éditeur."
     },
     {
       "date": "2026-09-17",
-      "event": "FrenchBreaches relaie l'alerte et évoque 3,4 Go de code revendiqués après l'exposition d'une clé API."
+      "event": "CrowdSec confirme la fuite, la date de mai 2026, désigne la compromission des paquets TanStack comme vecteur probable et annonce la rotation des jetons et identifiants."
     }
   ]
 }
