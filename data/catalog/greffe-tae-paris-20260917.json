@@ -1,0 +1,39 @@
+{
+  "slug": "greffe-tae-paris-20260917",
+  "entity": "Greffe du tribunal des activités économiques de Paris",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 722,
+    "unit": "personnes",
+    "label": "Environ 722 personnes distinctes après rapprochement des 1 364 entrées des quatre fichiers, estimation FrenchBreaches ; Fuites Infos avance 902 personnes ; chiffres revendiqués, non confirmés par le greffe"
+  },
+  "data_types": ["identite", "coordonnees", "credentials", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Greffe du tribunal des activités économiques de Paris : fuite de données revendiquée visant 902 personnes (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-greffe-du-tribunal-des-activites-economiques-de-paris",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite au Tribunal des activités économiques de Paris : données d'environ 722 personnes exposées (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/tribunal-des-activit-s-conomiques-de-paris-tae-mu5i6aq2tacwkov45cr",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 17 septembre 2026, un utilisateur sous le pseudonyme « Alduin » publie sur un forum cybercriminel quatre fichiers présentés comme issus du site greffe-tae-paris.fr, utilisé par le greffe du tribunal des activités économiques de Paris. Selon FrenchBreaches, ces fichiers totalisent 1 364 entrées, soit environ 722 personnes distinctes après rapprochement des noms : juges, magistrats, greffiers et personnels liés au tribunal. Fuites Infos avance 902 personnes. Les données comprennent selon ces sources des noms, dates de naissance, coordonnées, identifiants de connexion, fonctions, historiques de mandat et vœux d'affectation pour 2026. FrenchBreaches indique qu'aucun mot de passe n'apparaît dans les fichiers examinés. Le greffe n'a pas confirmé publiquement l'incident ; la méthode d'obtention des données reste indéterminée.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Publication de la revendication par « Alduin » sur un forum cybercriminel : quatre fichiers (users.csv, magistrats.json, voeux.csv, juge_sans_formation.csv) attribués au greffe du tribunal des activités économiques de Paris (FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "Fuites Infos et FrenchBreaches rapportent l'incident ; FrenchBreaches estime environ 722 personnes distinctes après déduplication des 1 364 entrées et précise qu'aucun mot de passe n'apparaît dans les fichiers."
+    }
+  ]
+}
