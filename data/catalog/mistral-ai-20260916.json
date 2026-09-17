@@ -1,0 +1,42 @@
+{
+  "slug": "mistral-ai-20260916",
+  "entity": "Mistral AI",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-16",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "enregistrements",
+    "label": "Taille du lot non communiquée par l'acteur ; liste de 337 archives de dépôts selon Fuites Infos, 339 fichiers et archives selon Cyberattaque.org ; 23 archives renvoient à 17 organisations clientes ou partenaires présumées selon Fuites Infos"
+  },
+  "data_types": [
+    "autre",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Mistral AI : fuite de code source revendiquée, 337 dépôts mis en vente (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-16-mistral-ai",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Le code source de Mistral AI revendiqué en fuite après une nouvelle cyberattaque (17 septembre 2026)",
+      "url": "https://www.cyberattaque.org/le-code-source-de-mistral-ai-revendique-en-fuite-apres-une-nouvelle-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 16 septembre 2026, un acteur signé mrwho met en vente sur un forum cybercriminel le code source présenté comme complet de Mistral AI. L'entreprise française d'intelligence artificielle est basée à Paris. Selon Fuites Infos, la liste publiée compte 337 archives de dépôts ; Cyberattaque.org en relève 339, dont des projets marqués internal ou private. Des noms d'organisations clientes ou partenaires présumées figurent dans la liste, dont Airbus, BNP, ASML et la DINUM. Selon les deux relais, cette présence n'établit pas une compromission de ces organisations. L'acteur affirme une nouvelle compromission en septembre 2026, due selon lui à des secrets d'accès non renouvelés depuis l'incident de mai 2026. Mistral AI n'a pas confirmé publiquement. Aucune donnée personnelle n'est annoncée.",
+  "timeline": [
+    {
+      "date": "2026-09-16",
+      "event": "Mise en vente revendiquée par l'acteur mrwho sur un forum cybercriminel ; liste de dépôts de code publiée, contre paiement en cryptomonnaie."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "Fuites Infos et Cyberattaque.org relatent la revendication ; Mistral AI n'a pas confirmé publiquement l'incident."
+    }
+  ]
+}
