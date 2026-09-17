@@ -1,0 +1,39 @@
+{
+  "slug": "zenfirst-20260917",
+  "entity": "Zenfirst",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 4390,
+    "unit": "comptes",
+    "label": "4 390 comptes selon Fuites Infos ; FrenchBreaches ne retient pas de décompte de victimes, une même personne pouvant apparaître dans plusieurs fichiers ; chiffres revendiqués, non confirmés par l'éditeur"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "documents"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Zenfirst : fuite de données revendiquée visant 4 390 utilisateurs (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-zenfirst",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données Zenfirst : des informations clients et factures divulguées (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/zenfirst-mu5htqiwd1qoi6ixtx5",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 17 septembre 2026, un utilisateur sous le pseudonyme « Alduin » publie sur un forum cybercriminel des données présentées comme issues de Zenfirst, logiciel de gestion commerciale et de trésorerie édité par la société bordelaise DUOSQUADRA. Selon Fuites Infos, le lot concerne 4 390 comptes : identité, coordonnées, références d'abonnement et de paiement. FrenchBreaches examine trois fichiers : comptes utilisateurs avec identifiants Stripe, prospects avec noms, e-mails et téléphones, et factures d'environ 84,6 Mo avec contenu OCR. FrenchBreaches ne retient pas de nombre de victimes, une même personne pouvant apparaître dans plusieurs fichiers. Aucune donnée complète de carte bancaire n'est identifiée selon FrenchBreaches. L'éditeur n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Publication de la revendication par « Alduin » sur un forum cybercriminel : trois fichiers présentés comme issus de Zenfirst (users.json, leads.json, invoices.json), diffusion annoncée sans mise en vente (FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "Fuites Infos et FrenchBreaches rapportent l'incident ; FrenchBreaches décrit des comptes, des prospects et 84,6 Mo de données de facturation, sans décompte de victimes."
+    }
+  ]
+}
