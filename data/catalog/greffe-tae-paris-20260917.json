@@ -8,11 +8,16 @@
     "publication": "2026-09-17"
   },
   "volume": {
-    "count": 722,
+    "count": 902,
     "unit": "personnes",
-    "label": "Environ 722 personnes distinctes après rapprochement des 1 364 entrées des quatre fichiers, estimation FrenchBreaches ; Fuites Infos avance 902 personnes ; chiffres revendiqués, non confirmés par le greffe"
+    "label": "902 selon la revendication relayée par Fuites Infos ; l'analyse FrenchBreaches estime environ 722 personnes distinctes pour 1 364 entrées cumulées"
   },
-  "data_types": ["identite", "coordonnees", "credentials", "autre"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
   "sources": [
     {
       "label": "Fuites Infos — Greffe du tribunal des activités économiques de Paris : fuite de données revendiquée visant 902 personnes (17 septembre 2026)",
@@ -20,20 +25,29 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite au Tribunal des activités économiques de Paris : données d'environ 722 personnes exposées (17 septembre 2026)",
+      "label": "FrenchBreaches — Fuite au Tribunal des activités économiques de Paris : données de... (17 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/tribunal-des-activit-s-conomiques-de-paris-tae-mu5i6aq2tacwkov45cr",
-      "kind": "revendication"
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Greffe du Tribunal de Paris : des adresses privées et données familiales de juges en fuite (17 septembre 2026)",
+      "url": "https://www.cyberattaque.org/greffe-du-tribunal-de-paris-des-adresses-privees-et-donnees-familiales-de-juges-en-fuite/",
+      "kind": "article"
     }
   ],
-  "description": "Le 17 septembre 2026, un utilisateur sous le pseudonyme « Alduin » publie sur un forum cybercriminel quatre fichiers présentés comme issus du site greffe-tae-paris.fr, utilisé par le greffe du tribunal des activités économiques de Paris. Selon FrenchBreaches, ces fichiers totalisent 1 364 entrées, soit environ 722 personnes distinctes après rapprochement des noms : juges, magistrats, greffiers et personnels liés au tribunal. Fuites Infos avance 902 personnes. Les données comprennent selon ces sources des noms, dates de naissance, coordonnées, identifiants de connexion, fonctions, historiques de mandat et vœux d'affectation pour 2026. FrenchBreaches indique qu'aucun mot de passe n'apparaît dans les fichiers examinés. Le greffe n'a pas confirmé publiquement l'incident ; la méthode d'obtention des données reste indéterminée.",
+  "description": "Le 17 septembre 2026, le pseudonyme Alduin revendique sur un forum cybercriminel la diffusion de données attribuées au site greffe-tae-paris.fr, selon FrenchBreaches et Cyberattaque.org. Selon la revendication relayée par Fuites Infos, 902 personnes sont visées : juges, magistrats, greffiers, avocats et personnels administratifs. FrenchBreaches annonce avoir examiné quatre fichiers totalisant 1 364 entrées, correspondant à environ 722 personnes distinctes. Les champs décrits incluent noms, adresses e-mail, téléphones, adresses postales, dates de naissance, identifiants de connexion, fonctions et historiques de mandat. Selon Cyberattaque.org, un fichier regroupe les vœux d'affectation des juges pour 2026. La méthode d'obtention reste inconnue. Le greffe n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-17",
-      "event": "Publication de la revendication par « Alduin » sur un forum cybercriminel : quatre fichiers (users.csv, magistrats.json, voeux.csv, juge_sans_formation.csv) attribués au greffe du tribunal des activités économiques de Paris (FrenchBreaches)."
+      "event": "Le pseudonyme Alduin publie sur un forum cybercriminel une revendication attribuant au greffe du tribunal des activités économiques de Paris quatre fichiers de données."
     },
     {
       "date": "2026-09-17",
-      "event": "Fuites Infos et FrenchBreaches rapportent l'incident ; FrenchBreaches estime environ 722 personnes distinctes après déduplication des 1 364 entrées et précise qu'aucun mot de passe n'apparaît dans les fichiers."
+      "event": "FrenchBreaches décrit 1 364 entrées cumulées, soit environ 722 personnes distinctes ; Cyberattaque.org détaille des adresses privées et des données familiales de juges."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "Fuites Infos relaie la revendication et cite 902 personnes visées, sans confirmation publique du greffe."
     }
   ]
 }
