@@ -1,0 +1,45 @@
+{
+  "slug": "maison-du-souvenir-de-maille-20260915",
+  "entity": "Maison du souvenir de Maillé",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-15"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; la structure signale des adresses e-mail d'adhérents et d'abonnés potentiellement dérobées, sans exfiltration confirmée"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "France 3 Centre-Val de Loire — Vingt années de travail anéanties : une cyberattaque vise la Maison du souvenir de Maillé (15 septembre 2026)",
+      "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/indre-loire/vingt-annees-de-travail-aneanties-une-cyberattaque-vise-la-maison-du-souvenir-de-maille-temoin-du-massacre-de-1944-3417461.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Maison du souvenir de Maillé piratée : 20 ans d'archives chiffrées (16 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/maison-du-souvenir-mu3s96ekg9d5znwpghs",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 9 au 10 septembre 2026, le serveur de la Maison du souvenir de Maillé est compromis. Données et sauvegardes sont chiffrées, selon le communiqué de la structure cité par France 3. Plus de vingt années de photographies, témoignages et travaux de recherche deviennent inaccessibles. Les pirates exigent une rançon de 5 000 dollars en bitcoins, environ 4 300 euros, selon France 3. Le prestataire informatique de la structure a établi un contact avec les attaquants. La structure qualifie l'incident de violation de données à caractère personnel : des adresses e-mail d'adhérents et d'abonnés sont potentiellement dérobées. Aucune exfiltration n'est confirmée et le groupe responsable n'est pas identifié.",
+  "timeline": [
+    {
+      "date": "2026-09-09",
+      "event": "Chiffrement du serveur et des sauvegardes de la Maison du souvenir durant la nuit du 9 au 10 septembre, selon le communiqué relayé par France 3."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "La structure publie un communiqué : archives inaccessibles, rançon de 5 000 dollars exigée et adresses e-mail potentiellement dérobées, selon France 3."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "FrenchBreaches documente l'incident et la recommandation de vigilance adressée aux adhérents et abonnés contre les prises de contact frauduleuses."
+    }
+  ]
+}
