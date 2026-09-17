@@ -1,0 +1,47 @@
+{
+  "slug": "mistral-ai-20260916",
+  "entity": "Mistral AI",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-16",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "337 archives de dépôts mises en vente selon Fuites Infos ; FrenchBreaches recense 339 fichiers ; taille du lot non indiquée, aucune donnée personnelle chiffrée annoncée"
+  },
+  "data_types": [
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Mistral AI : fuite de code source revendiquée, 337 dépôts mis en vente (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-16-mistral-ai",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Mistral AI de nouveau piratée ? Un hacker revendique la totalité de son code source (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/blog/mistral-ai-de-nouveau-piratee-un-hacker-revendique-la-totalite-de-son-code-source",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Le code source de Mistral AI revendiqué en fuite après une nouvelle cyberattaque (17 septembre 2026)",
+      "url": "https://www.cyberattaque.org/le-code-source-de-mistral-ai-revendique-en-fuite-apres-une-nouvelle-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 16 septembre 2026 sur un forum cybercriminel annonce la vente du code source complet de Mistral AI. L'auteur, sous le pseudonyme mrwho, propose le lot contre paiement en cryptomonnaie, selon Fuites Infos. FrenchBreaches a examiné une liste de 339 fichiers, dont des dépôts internes et un échantillon de code. Selon Fuites Infos, 23 archives portent des noms d'organisations clientes ou partenaires présumées, dont Airbus et la DINUM. Le seul nom d'archive n'établit pas l'exposition de données de ces organisations. La revendication allègue une nouvelle intrusion après l'incident de mai 2026, sans preuve publique. Mistral AI n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-16",
+      "event": "Le pseudonyme mrwho publie l'annonce « Selling mistral.ai Source Code » sur un forum, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relaient la revendication : vente de plusieurs centaines de dépôts, non confirmée."
+    }
+  ]
+}
