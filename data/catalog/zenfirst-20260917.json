@@ -10,13 +10,14 @@
   "volume": {
     "count": 4390,
     "unit": "comptes",
-    "label": "4 390 comptes selon la revendication relayée par Fuites Infos ; Cyberattaque.org cite l'intitulé « 4.4K » de la publication"
+    "label": "4 390 comptes utilisateurs selon Fuites Infos ; la revendication, intitulée 4.4K, inclut aussi des contacts prospects et des factures selon Cyberattaque.org ; chiffre non confirmé"
   },
   "data_types": [
     "identite",
     "coordonnees",
     "financier",
-    "documents"
+    "documents",
+    "autre"
   ],
   "sources": [
     {
@@ -25,29 +26,20 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite de données Zenfirst : des informations clients et factures divulguées (17 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/zenfirst-mu5htqiwd1qoi6ixtx5",
-      "kind": "article"
-    },
-    {
       "label": "Cyberattaque.org — Zenfirst victime d'une cyberattaque : des milliers de données de facturation exposées (17 septembre 2026)",
       "url": "https://www.cyberattaque.org/zenfirst-victime-dune-cyberattaque-des-milliers-de-donnees-de-facturation-exposees/",
       "kind": "article"
     }
   ],
-  "description": "Le 17 septembre 2026, le pseudonyme Alduin revendique sur un forum cybercriminel la diffusion de données attribuées à Zenfirst. Selon Fuites Infos, ce logiciel de gestion commerciale et de trésorerie est édité par DUOSQUADRA à Bordeaux. La revendication évoque 4 390 comptes. FrenchBreaches décrit trois fichiers : users.json (1,8 Mo), leads.json (95 Ko) et invoices.json (84,6 Mo). Selon Cyberattaque.org, ce dernier contient le texte intégral de factures extrait par OCR, avec montants, TVA, échéances et coordonnées des parties. Les exemples publiés montrent des factures émises en 2023 et 2024. FrenchBreaches cite aussi des identifiants Stripe. La méthode d'obtention reste inconnue. Zenfirst n'a pas confirmé publiquement l'incident.",
+  "description": "Le 17 septembre 2026, un acteur identifié comme Alduin par Cyberattaque.org revendique la fuite de données de Zenfirst, logiciel de gestion commerciale et de trésorerie édité par DUOSQUADRA à Bordeaux. Selon Fuites Infos, 4 390 comptes utilisateurs sont mentionnés. Selon Cyberattaque.org, le lot comprend des comptes clients, des contacts prospects et environ 84 Mo de factures avec leur texte intégral : identifiants fiscaux, montants, échéances et références bancaires figurent parmi les champs. Les fichiers sont proposés au téléchargement gratuit. Aucune confirmation publique de l'entreprise n'est disponible. L'authenticité et le volume réel des données ne sont pas vérifiés.",
   "timeline": [
     {
       "date": "2026-09-17",
-      "event": "Le pseudonyme Alduin publie sur un forum cybercriminel une revendication présentant en téléchargement libre des données attribuées à Zenfirst."
+      "event": "Un acteur identifié comme Alduin par Cyberattaque.org affirme déposer sur un forum cybercriminel des fichiers attribués à Zenfirst : comptes utilisateurs, contacts prospects et factures, en téléchargement gratuit."
     },
     {
       "date": "2026-09-17",
-      "event": "FrenchBreaches détaille les fichiers users.json, leads.json et invoices.json, ce dernier représentant 84,6 Mo de factures."
-    },
-    {
-      "date": "2026-09-17",
-      "event": "Fuites Infos relaie la revendication et cite 4 390 comptes, sans confirmation publique de l'entreprise."
+      "event": "Fuites Infos et Cyberattaque.org relatent la revendication ; Fuites Infos mentionne 4 390 comptes ; l'entreprise n'a pas confirmé publiquement l'incident."
     }
   ]
 }
