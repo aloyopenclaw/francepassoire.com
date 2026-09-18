@@ -1,0 +1,42 @@
+{
+  "slug": "totalenergies-le-club-20260918",
+  "entity": "TotalEnergies (Le Club)",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-18",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "nombre de membres du programme Le Club concernés non communiqué, selon Fuites Infos et FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — TotalEnergies : fuite de données chez Le Club, des données de fidélité exposées (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-18-totalenergies",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — TotalEnergies victime d'une fuite de données : des clients du Club touchés (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/totalenergies-le-club-mu7a3uzvcz8fsq6txcu",
+      "kind": "article"
+    }
+  ],
+  "description": "TotalEnergies Marketing France a notifié des membres de son programme de fidélité Le Club, selon Fuites Infos et FrenchBreaches. Les deux médias citent une notification décrivant un incident de sécurité survenu chez un prestataire technique non nommé. D'après ce document, un tiers malveillant s'est introduit dans les systèmes du prestataire. Les données extraites portent sur l'identification, le compte Club et l'historique des transactions. L'entreprise indique qu'aucune donnée bancaire ni moyen de paiement n'a été compromis. Elle affirme avoir mis fin à l'incident et avoir informé la CNIL. La date de l'intrusion et le nombre de membres concernés ne sont pas communiqués. Aucun groupe cybercriminel n'est mentionné.",
+  "timeline": [
+    {
+      "date": "2026-09-18",
+      "event": "Notification de membres du programme Le Club, relayée par FrenchBreaches : intrusion chez un prestataire technique et extraction de données confirmées par TotalEnergies selon la notification."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Fuites Infos précise le périmètre cité : identification, compte Club, historique de transactions ; aucune donnée bancaire selon l'entreprise ; CNIL notifiée."
+    }
+  ]
+}
