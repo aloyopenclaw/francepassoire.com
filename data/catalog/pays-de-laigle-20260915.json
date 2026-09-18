@@ -1,0 +1,52 @@
+{
+  "slug": "pays-de-laigle-20260915",
+  "entity": "Communauté de communes des Pays de L'Aigle",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-17",
+    "confirmation": "2026-09-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; la collectivité évoque des adresses e-mail et les informations contenues dans les messages, selon son communiqué"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Communauté de communes des Pays de L'Aigle — Les services de la CDC des Pays de L'Aigle, victimes d'une intrusion sur leur messagerie professionnelle (communiqué)",
+      "url": "https://www.paysdelaigle.fr/la-communaute-de-communes-le-cias-et-loffice-de-tourisme-des-pays-de-laigle-victimes-dune-intrusion-sur-leur-messagerie-professionnelle/",
+      "kind": "officiel"
+    },
+    {
+      "label": "actu.fr — Pays de L'Aigle : Communauté de communes, CIAS et Office de tourisme ont été pirates (17 septembre 2026)",
+      "url": "https://actu.fr/normandie/l-aigle_61214/pays-de-l-aigle-communaute-de-communes-cias-et-office-de-tourisme-ont-ete-pirates_64802728.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Pays de L'Aigle victime d'une cyberattaque : des données sensibles potentiellement volées (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/pays-de-l-aigle-mu62uazzlgiwn2iy3q",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 14 au 15 septembre 2026, une intrusion vise la messagerie de la Communauté de communes des Pays de L'Aigle. La collectivité, le CIAS et l'office de tourisme partagent ce serveur de messagerie professionnelle, précise le communiqué. L'accès concerné est coupé et une plainte est déposée auprès de la gendarmerie. Le communiqué indique qu'un vol de données personnelles, potentiellement sensibles, reste possible, notamment des adresses e-mail et le contenu des messages. La notification à la CNIL est engagée et une déclaration est en cours auprès de l'ANSSI, selon le communiqué. actu.fr relaie l'annonce le 17 septembre et FrenchBreaches documente l'incident le 18 septembre. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Intrusion sur le serveur de messagerie partagé par la collectivité, le CIAS et l'office de tourisme, dans la nuit du 14 au 15 septembre ; coupure de l'accès et plainte déposée, selon le communiqué."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "actu.fr relaie le communiqué : vol de données personnelles et potentiellement sensibles restant possible, notification CNIL engagée, déclaration ANSSI en cours."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches publie une analyse de l'incident et rappelle les recommandations de la collectivité face aux messages suspects."
+    }
+  ]
+}
