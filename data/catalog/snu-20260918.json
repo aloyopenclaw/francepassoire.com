@@ -2,11 +2,10 @@
   "slug": "snu-20260918",
   "entity": "Service national universel (SNU)",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-09-18",
-    "publication": "2026-09-18",
-    "confirmation": "2026-09-18"
+    "publication": "2026-09-18"
   },
   "volume": {
     "count": 0,
