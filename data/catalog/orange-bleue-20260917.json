@@ -1,0 +1,44 @@
+{
+  "slug": "orange-bleue-20260917",
+  "entity": "L'Orange Bleue",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 732385,
+    "unit": "personnes",
+    "label": "732 385 abonnés et 440 326 IBAN selon la revendication de l'acteur Venus1337 relayée par Fuites Infos et FrenchBreaches ; chiffres non vérifiés indépendamment, l'enseigne affichant 375 000 adhérents selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — L'Orange Bleue : 732 385 adhérents revendiqués dans une mise en vente de données (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-l-orange-bleue",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — L'Orange Bleue : les données de 732 385 abonnés et 440 326 IBAN revendiquées par un pirate (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/orange-bleue-mu6sr6lm5tsbb71uwjf",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur sous le pseudonyme Venus1337 a mis en vente, le 17 septembre 2026, des données attribuées à L'Orange Bleue. L'Orange Bleue est un réseau français de salles de fitness en franchise, selon Fuites Infos. L'acteur revendique les fiches de 732 385 abonnés et 440 326 IBAN, ainsi que des photos de profil. Selon la revendication, chaque fiche contient nom, date de naissance, coordonnées, adresse postale et données de mandat de prélèvement. L'acteur affirme avoir accédé au panneau d'administration d'un club, puis avoir exploité une faille de contrôle d'accès sur un lien d'export. Selon FrenchBreaches, ces affirmations techniques ne sont pas vérifiées indépendamment. Les deux médias relèvent l'absence de confirmation publique de l'enseigne.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Venus1337 publie sur un forum cybercriminel une mise en vente de 732 385 fiches d'abonnés, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication : 732 385 abonnés, 440 326 IBAN et photos de profil revendiqués, sans confirmation publique de l'enseigne."
+    }
+  ]
+}
