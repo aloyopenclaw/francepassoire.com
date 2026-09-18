@@ -1,0 +1,43 @@
+{
+  "slug": "lorange-bleue-20260917",
+  "entity": "L'Orange Bleue",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 732385,
+    "unit": "personnes",
+    "label": "732 385 abonnés et 440 326 IBAN revendiqués par l'acteur, selon FrenchBreaches et Fuites Infos ; volume non vérifié, proche du double des 375 000 adhérents affichés par l'enseigne"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — L'Orange Bleue : les données de 732 385 abonnés et 440 326 IBAN revendiquées par un pirate (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/orange-bleue-mu6sr6lm5tsbb71uwjf",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — L'Orange Bleue : 732 385 adhérents revendiqués dans une mise en vente de données (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-l-orange-bleue",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 septembre 2026, un acteur sous le pseudonyme Venus1337 met en vente sur un forum cybercriminel une base attribuée à L'Orange Bleue. L'Orange Bleue est un réseau français de salles de fitness en franchise. L'acteur revendique 732 385 abonnés, 440 326 IBAN et des photos de profil. Selon sa description, les fiches associent identité, coordonnées, abonnement et mandat de prélèvement. Il affirme avoir exploité une faille de contrôle d'accès de type IDOR sur un lien d'export d'un outil d'administration de club. Ces affirmations relèvent de la revendication. L'enseigne n'a pas confirmé l'incident. FrenchBreaches relève un volume revendiqué proche du double des 375 000 adhérents affichés par l'enseigne.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Publication de la revendication sur un forum cybercriminel : 732 385 abonnés et 440 326 IBAN revendiqués, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches et Fuites Infos relaient la mise en vente ; aucune confirmation publique de l'enseigne à cette date."
+    }
+  ]
+}
