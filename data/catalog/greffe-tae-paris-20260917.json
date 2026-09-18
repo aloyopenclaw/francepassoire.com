@@ -10,7 +10,7 @@
   "volume": {
     "count": 902,
     "unit": "personnes",
-    "label": "902 selon la revendication relayée par Fuites Infos ; l'analyse FrenchBreaches estime environ 722 personnes distinctes pour 1 364 entrées cumulées"
+    "label": "902 personnes visées selon Fuites Infos ; la revendication évoque environ 900 personnes ; chiffre non confirmé"
   },
   "data_types": [
     "identite",
@@ -25,29 +25,20 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite au Tribunal des activités économiques de Paris : données de... (17 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/tribunal-des-activit-s-conomiques-de-paris-tae-mu5i6aq2tacwkov45cr",
-      "kind": "article"
-    },
-    {
       "label": "Cyberattaque.org — Greffe du Tribunal de Paris : des adresses privées et données familiales de juges en fuite (17 septembre 2026)",
       "url": "https://www.cyberattaque.org/greffe-du-tribunal-de-paris-des-adresses-privees-et-donnees-familiales-de-juges-en-fuite/",
       "kind": "article"
     }
   ],
-  "description": "Le 17 septembre 2026, le pseudonyme Alduin revendique sur un forum cybercriminel la diffusion de données attribuées au site greffe-tae-paris.fr, selon FrenchBreaches et Cyberattaque.org. Selon la revendication relayée par Fuites Infos, 902 personnes sont visées : juges, magistrats, greffiers, avocats et personnels administratifs. FrenchBreaches annonce avoir examiné quatre fichiers totalisant 1 364 entrées, correspondant à environ 722 personnes distinctes. Les champs décrits incluent noms, adresses e-mail, téléphones, adresses postales, dates de naissance, identifiants de connexion, fonctions et historiques de mandat. Selon Cyberattaque.org, un fichier regroupe les vœux d'affectation des juges pour 2026. La méthode d'obtention reste inconnue. Le greffe n'a pas confirmé publiquement l'incident.",
+  "description": "Le 17 septembre 2026, un acteur identifié comme Alduin par Cyberattaque.org affirme déposer sur un forum cybercriminel des fichiers issus du site du greffe du tribunal des activités économiques de Paris. Selon Fuites Infos, environ 902 personnes sont visées : juges, greffiers, magistrats, avocats et personnels administratifs. Selon Cyberattaque.org, les fichiers comprennent des comptes d'accès avec rôles et chambres, des coordonnées personnelles, des dates de naissance, des historiques de mandats et des vœux d'affectation pour 2026. Certains enregistrements mentionnent des informations familiales. La revendication décrit une diffusion gratuite. Aucune confirmation publique du greffe n'est disponible. L'authenticité et l'exhaustivité des données ne sont pas vérifiées.",
   "timeline": [
     {
       "date": "2026-09-17",
-      "event": "Le pseudonyme Alduin publie sur un forum cybercriminel une revendication attribuant au greffe du tribunal des activités économiques de Paris quatre fichiers de données."
+      "event": "Un acteur identifié comme Alduin par Cyberattaque.org affirme déposer sur un forum cybercriminel des fichiers présentés comme issus du site du greffe du tribunal des activités économiques de Paris ; la diffusion est décrite comme gratuite."
     },
     {
       "date": "2026-09-17",
-      "event": "FrenchBreaches décrit 1 364 entrées cumulées, soit environ 722 personnes distinctes ; Cyberattaque.org détaille des adresses privées et des données familiales de juges."
-    },
-    {
-      "date": "2026-09-17",
-      "event": "Fuites Infos relaie la revendication et cite 902 personnes visées, sans confirmation publique du greffe."
+      "event": "Fuites Infos et Cyberattaque.org relatent la revendication ; Fuites Infos indique 902 personnes visées ; le greffe n'a pas confirmé publiquement l'incident."
     }
   ]
 }
