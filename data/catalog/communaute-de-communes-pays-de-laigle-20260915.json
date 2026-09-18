@@ -1,0 +1,47 @@
+{
+  "slug": "communaute-de-communes-pays-de-laigle-20260915",
+  "entity": "Communauté de communes des Pays de L'Aigle",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-17",
+    "confirmation": "2026-09-17"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; la collectivité indique que des données personnelles et potentiellement sensibles ont possiblement été dérobées"
+  },
+  "data_types": [
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Communauté de communes des Pays de L'Aigle — Les services de la CDC des Pays de L'Aigle, victimes d'une intrusion sur leur messagerie professionnelle (17 septembre 2026)",
+      "url": "https://www.paysdelaigle.fr/la-communaute-de-communes-le-cias-et-loffice-de-tourisme-des-pays-de-laigle-victimes-dune-intrusion-sur-leur-messagerie-professionnelle/",
+      "kind": "officiel"
+    },
+    {
+      "label": "FrenchBreaches — Pays de L'Aigle victime d'une cyberattaque : des données sensibles potentiellement volées (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/pays-de-l-aigle-mu62uazzlgiwn2iy3q",
+      "kind": "article"
+    }
+  ],
+  "description": "Dans la nuit du 14 au 15 septembre 2026, la communauté de communes des Pays de L'Aigle, le CIAS et l'office de tourisme subissent une intrusion visant leur serveur de messagerie professionnelle, selon un communiqué de la collectivité. L'accès concerné est coupé dès la détection. Selon le communiqué, des données personnelles et potentiellement sensibles, notamment des adresses e-mail et le contenu des messages, ont possiblement été dérobées. Les investigations se poursuivent. Le nombre de personnes concernées n'est pas communiqué. La collectivité limite ses échanges électroniques le temps d'installer une nouvelle messagerie et demande aux personnes ayant échangé par e-mail de changer leur mot de passe. FrenchBreaches relate l'incident le 18 septembre 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-15",
+      "event": "Intrusion informatique visant le serveur de messagerie de la communauté de communes, du CIAS et de l'office de tourisme, dans la nuit du 14 au 15 septembre ; l'accès concerné est coupé dès la détection, selon la collectivité."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "La collectivité publie un communiqué : des données personnelles et potentiellement sensibles ont possiblement été dérobées ; l'étendue de l'exfiltration est en cours d'évaluation."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches relate l'incident en citant le communiqué ; les mesures de précaution incluent le changement de mot de passe pour les personnes ayant échangé par e-mail avec les services."
+    }
+  ]
+}
