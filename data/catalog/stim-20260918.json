@@ -1,0 +1,42 @@
+{
+  "slug": "stim-20260918",
+  "entity": "Stim",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "panzer",
+  "dates": {
+    "revendication": "2026-09-18",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes concernées non communiqué ; volume de données non précisé, selon ransomware.live et FrenchBreaches"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez Stim : intrusion par ransomware et données exposées (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/stim-rw_VTNScGJVQlFZVzU2WlhJPQ",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Stim listée comme victime par le groupe Panzer (18 septembre 2026)",
+      "url": "https://www.ransomware.live/id/U3RpbUBQYW56ZXI=",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le groupe ransomware Panzer revendique le 18 septembre 2026 une intrusion contre Stim, entreprise française spécialisée dans les solutions de vidéosurveillance, selon ransomware.live. Le groupe affirme détenir des données de l'entreprise sur son site de divulgation. FrenchBreaches relaie l'information le même jour et évoque une fuite de données suspectée après cette intrusion. Ni le volume de données ni la nature des informations concernées ne sont précisés à ce stade, selon les deux sources. Ransomware.live n'indique aucune demande de rançon. Aucun communiqué de l'entreprise n'est recensé au 18 septembre 2026. Cette revendication rejoint le dossier Panzer, qui inclut la Financière d'Uzès depuis le 8 septembre 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-18",
+      "event": "Ransomware.live enregistre la revendication du groupe Panzer visant Stim et date l'attaque du 18 septembre 2026."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches publie une alerte évoquant une fuite de données suspectée chez Stim après l'intrusion revendiquée par Panzer."
+    }
+  ]
+}
