@@ -1,0 +1,44 @@
+{
+  "slug": "zenfirst-20260917",
+  "entity": "Zenfirst (DUOSQUADRA)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 4390,
+    "unit": "comptes",
+    "label": "4 390 comptes selon Fuites Infos ; FrenchBreaches n'établit pas de décompte fiable de personnes concernées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Zenfirst : fuite de données revendiquée visant 4 390 utilisateurs (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-zenfirst",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Zenfirst : une fuite de données revendiquée, des utilisateurs et des factures exposés (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/zenfirst-mu5htqiwd1qoi6ixtx5",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 septembre 2026, un acteur dénommé Alduin revendique la divulgation de données attribuées à Zenfirst, selon FrenchBreaches et Fuites Infos. Zenfirst est un logiciel de gestion commerciale et de trésorerie édité par DUOSQUADRA, société bordelaise, selon Fuites Infos. Les fichiers annoncés couvrent des comptes utilisateurs, des prospects et un fichier de factures d'environ 85 Mo avec contenu extrait par OCR. FrenchBreaches recense noms, adresses e-mail, numéros de téléphone, données d'entreprises et identifiants Stripe. Fuites Infos mentionne 4 390 comptes ; FrenchBreaches n'établit pas de décompte fiable de personnes. Aucune confirmation publique de l'entreprise n'est disponible.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Un acteur sous le pseudonyme Alduin publie la revendication sur un forum cybercriminel, avec des fichiers présentés comme des comptes utilisateurs, des prospects et des factures."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "FrenchBreaches analyse les échantillons : noms, coordonnées, données d'entreprises, identifiants Stripe et environ 84,6 Mo liés aux factures ; Fuites Infos relaie l'incident le même jour."
+    }
+  ]
+}
