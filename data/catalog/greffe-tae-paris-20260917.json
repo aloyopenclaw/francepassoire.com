@@ -1,0 +1,44 @@
+{
+  "slug": "greffe-tae-paris-20260917",
+  "entity": "Greffe du tribunal des activités économiques de Paris",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-17"
+  },
+  "volume": {
+    "count": 722,
+    "unit": "personnes",
+    "label": "environ 722 personnes distinctes après rapprochement de 1 364 entrées, selon l'analyse FrenchBreaches ; Fuites Infos rapporte 902 personnes au titre de la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Greffe du tribunal des activités économiques de Paris : fuite de données revendiquée visant 902 personnes (17 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-greffe-du-tribunal-des-activites-economiques-de-paris",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Tribunal des activités économiques de Paris : les données d'environ 722 personnes exposées (17 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/tribunal-des-activit-s-conomiques-de-paris-tae-mu5i6aq2tacwkov45cr",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 17 septembre 2026, un acteur dénommé Alduin revendique la diffusion de données attribuées au greffe du tribunal des activités économiques de Paris. Selon FrenchBreaches, quatre fichiers totalisent 1 364 entrées, soit environ 722 personnes distinctes après rapprochement des noms. Fuites Infos rapporte pour sa part 902 personnes. Le lot annoncé regroupe comptes d'accès, fichier de magistrats et vœux d'affectation pour 2026. Les données couvrent identité, coordonnées, identifiants de connexion, fonctions et éléments familiaux. FrenchBreaches précise qu'aucun mot de passe n'apparaît dans les fichiers. Le greffe n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Un acteur sous le pseudonyme Alduin publie la revendication et quatre fichiers attribués au site greffe-tae-paris.fr sur un forum cybercriminel, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "FrenchBreaches analyse les fichiers : 1 364 entrées et environ 722 personnes distinctes ; Fuites Infos relaie l'incident le même jour."
+    }
+  ]
+}
