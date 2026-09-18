@@ -1,0 +1,48 @@
+{
+  "slug": "totalenergies-marketing-france-20260918",
+  "entity": "TotalEnergies Marketing France (programme Le Club)",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-18",
+    "publication": "2026-09-18",
+    "confirmation": "2026-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué : la notification ne précise pas le nombre de membres concernés, selon FrenchBreaches et Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "TotalEnergies Marketing France (courriel aux membres, copie Fuites Infos) — Notification d'incident de sécurité du programme Le Club (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/totalenergies-2026-09-18-notification-email.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — TotalEnergies : fuite de données chez Le Club, des données de fidélité exposées (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-18-totalenergies",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Piratage chez TotalEnergies : des données de clients du Club ont été volées (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/totalenergies-le-club-mu7a3uzvcz8fsq6txcu",
+      "kind": "article"
+    }
+  ],
+  "description": "TotalEnergies Marketing France a informé les membres de son programme de fidélité Le Club d'une extraction illicite de données chez un prestataire technique. Selon la notification relayée par Fuites Infos et FrenchBreaches, un tiers malveillant s'est introduit dans les systèmes du prestataire. Les données extraites portent sur l'identification, le compte Club et l'historique des transactions. L'entreprise précise qu'aucune donnée bancaire ni aucun moyen de paiement n'ont été touchés. Le prestataire n'est pas nommé et le nombre de membres concernés n'est pas communiqué. La date de l'intrusion n'est pas précisée non plus. TotalEnergies Marketing France affirme avoir mis fin à l'incident et avoir notifié la CNIL.",
+  "timeline": [
+    {
+      "date": "2026-09-18",
+      "event": "TotalEnergies Marketing France notifie les membres du programme Le Club : extraction illicite de données chez un prestataire technique, selon la copie de notification publiée par Fuites Infos."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Fuites Infos et FrenchBreaches relaient l'incident ; la notification indique que la CNIL a été informée."
+    }
+  ]
+}
