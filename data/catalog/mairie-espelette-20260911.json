@@ -1,0 +1,60 @@
+{
+  "slug": "mairie-espelette-20260911",
+  "entity": "Mairie d'Espelette",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-11",
+    "publication": "2026-09-16"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; des données personnelles visées selon actu.fr"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Sud Ouest — Pays basque. La commune d'Espelette victime d'un piratage : des mails piégés portant un virus sont automatiquement envoyés par la mairie (16 septembre 2026)",
+      "url": "https://www.sudouest.fr/pyrenees-atlantiques/espelette/pays-basque-la-commune-d-espelette-victime-d-un-piratage-des-mails-pieges-portant-un-virus-sont-automatiquement-envoyes-par-la-mairie-30651628.php",
+      "kind": "article"
+    },
+    {
+      "label": "actu.fr — Au Pays basque, cette petite commune victime d'un piratage visant à dérober des données personnelles (17 septembre 2026)",
+      "url": "https://actu.fr/nouvelle-aquitaine/espelette_64213/au-pays-basque-cette-petite-commune-victime-d-un-piratage-visant-a-derober-des-donnees-personnelles_64800638.html",
+      "kind": "article"
+    },
+    {
+      "label": "mycyber.fr — Piraterie informatique dans une commune du Pays basque pour voler des données personnelles (17 septembre 2026)",
+      "url": "https://www.mycyber.fr/actualites/piraterie-informatique-dans-une-commune-du-pays-basque-pour-voler-des-donnees-personnelles",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — La Mairie d'Espelette piratée : un malware se propage par e-mail (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/mairie-d-espelette-mu74hl5nkpj7248ih2a",
+      "kind": "article"
+    }
+  ],
+  "description": "Le vendredi 11 septembre 2026, la mairie d'Espelette (Pyrénées-Atlantiques) est victime d'une attaque par hameçonnage, selon Sud Ouest. Un agent ouvre une pièce jointe présentée comme une facture d'un prestataire de la cantine municipale. Le fichier, nommé FACTURE FC_PDF, contient un logiciel malveillant qui compromet l'ordinateur municipal. La messagerie de la mairie envoie ensuite automatiquement des courriels piégés à plusieurs correspondants, dont certains ouvrent la pièce jointe. Selon actu.fr, l'objectif des pirates est de récupérer des données personnelles. D'après mycyber.fr, la mairie a alerté les autorités et informé les habitants. Le nombre de personnes concernées n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-11",
+      "event": "Attaque par hameçonnage : ouverture d'une fausse facture, compromission d'un poste municipal et envoi automatique de courriels piégés, selon Sud Ouest."
+    },
+    {
+      "date": "2026-09-16",
+      "event": "Sud Ouest révèle l'incident : des mails piégés portant un virus sont envoyés depuis la messagerie de la mairie."
+    },
+    {
+      "date": "2026-09-17",
+      "event": "actu.fr rapporte que l'attaque visait à dérober des données personnelles ; mycyber.fr reprend l'information."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches publie une synthèse de l'incident, classée confirmée par la presse locale."
+    }
+  ]
+}
