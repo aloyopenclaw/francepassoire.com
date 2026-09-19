@@ -10,34 +10,44 @@
   "volume": {
     "count": 732385,
     "unit": "personnes",
-    "label": "732 385 abonnés et 440 326 IBAN revendiqués par l'acteur, selon FrenchBreaches et Fuites Infos ; volume non vérifié, proche du double des 375 000 adhérents affichés par l'enseigne"
+    "label": "732 385 adhérents et 440 326 IBAN revendiqués par l'acteur selon FrenchBreaches et Fuites Infos ; aucune vérification indépendante du volume"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "financier"
+    "financier",
+    "autre"
   ],
   "sources": [
+    {
+      "label": "Fuites Infos — L'Orange Bleue : 732 385 adhérents revendiqués dans une mise en vente de données (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-l-orange-bleue",
+      "kind": "article"
+    },
     {
       "label": "FrenchBreaches — L'Orange Bleue : les données de 732 385 abonnés et 440 326 IBAN revendiquées par un pirate (18 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/orange-bleue-mu6sr6lm5tsbb71uwjf",
       "kind": "article"
     },
     {
-      "label": "Fuites Infos — L'Orange Bleue : 732 385 adhérents revendiqués dans une mise en vente de données (18 septembre 2026)",
-      "url": "https://fuitesinfos.fr/article/2026-09-17-l-orange-bleue",
+      "label": "Cyberattaque.org — L'Orange bleue : 732 000 fiches d'adhérents et 440 000 IBAN dans une fuite massive après une cyberattaque (18 septembre 2026)",
+      "url": "https://www.cyberattaque.org/lorange-bleue-732-000-fiches-dadherents-et-440-000-iban-dans-une-fuite-massive-apres-une-cyberattaque/",
       "kind": "article"
     }
   ],
-  "description": "Le 17 septembre 2026, un acteur sous le pseudonyme Venus1337 met en vente sur un forum cybercriminel une base attribuée à L'Orange Bleue. L'Orange Bleue est un réseau français de salles de fitness en franchise. L'acteur revendique 732 385 abonnés, 440 326 IBAN et des photos de profil. Selon sa description, les fiches associent identité, coordonnées, abonnement et mandat de prélèvement. Il affirme avoir exploité une faille de contrôle d'accès de type IDOR sur un lien d'export d'un outil d'administration de club. Ces affirmations relèvent de la revendication. L'enseigne n'a pas confirmé l'incident. FrenchBreaches relève un volume revendiqué proche du double des 375 000 adhérents affichés par l'enseigne.",
+  "description": "Le 17 septembre 2026, un acteur sous le pseudonyme Venus1337 met en vente une base attribuée à L'Orange Bleue, selon Fuites Infos et FrenchBreaches. L'Orange Bleue est un réseau français de salles de fitness en franchise, présent en France et en Espagne, selon Fuites Infos. L'acteur revendique 732 385 adhérents et 440 326 IBAN. Selon sa description, les fiches contiennent noms, dates de naissance, téléphones, adresses, e-mails et données de prélèvement. FrenchBreaches rapporte qu'il affirme avoir exploité une faille IDOR sur une fonction d'export d'un outil d'administration. L'enseigne n'a pas confirmé publiquement l'incident. Fuites Infos note que le volume revendiqué dépasse les 375 000 adhérents affichés publiquement par l'enseigne.",
   "timeline": [
     {
       "date": "2026-09-17",
-      "event": "Publication de la revendication sur un forum cybercriminel : 732 385 abonnés et 440 326 IBAN revendiqués, selon FrenchBreaches."
+      "event": "Un acteur sous le pseudonyme Venus1337 publie sur un forum cybercriminel la mise en vente d'une base présentée comme celle des adhérents de L'Orange Bleue, selon Fuites Infos."
     },
     {
       "date": "2026-09-18",
-      "event": "FrenchBreaches et Fuites Infos relaient la mise en vente ; aucune confirmation publique de l'enseigne à cette date."
+      "event": "FrenchBreaches détaille la revendication : 732 385 abonnés, 440 326 IBAN et une faille IDOR alléguée sur une fonction d'export d'un outil d'administration."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Fuites Infos relaie l'incident, signale l'absence de confirmation publique de l'enseigne et recommande la vigilance face aux e-mails usurpant son nom."
     }
   ]
 }
