@@ -1,0 +1,43 @@
+{
+  "slug": "snu-20260918",
+  "entity": "Service national universel (SNU)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-18",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "comptes",
+    "label": "aucun volume communiqué ; le nombre de titulaires de comptes concernés n'est pas précisé, selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Service national universel : des comptes frauduleux à l'origine d'une possible fuite de données (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-18-service-national-universel",
+      "kind": "article"
+    },
+    {
+      "label": "Service national universel — Base de connaissance : plateforme temporairement indisponible, vérifications en cours (18 septembre 2026)",
+      "url": "https://support.snu.gouv.fr/base-de-connaissance",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Le Service national universel a informé les titulaires de comptes de sa plateforme d'une possible exposition de leurs données, selon Fuites Infos. D'après les services chargés de la sécurité des systèmes d'information du ministère, des individus malveillants ont créé plusieurs comptes de responsable de structure. Ces comptes ont permis d'atteindre certaines informations des titulaires : nom, prénom, adresse e-mail, numéros de téléphone, région, département et métadonnées de compte. Le SNU évoque aussi une réutilisation possible d'une ancienne fuite de données. Il déclare ne pas pouvoir confirmer une consultation ou une diffusion effective. Aucun volume n'est communiqué. La base de connaissance officielle du dispositif annonce une indisponibilité temporaire de la plateforme, des vérifications étant en cours.",
+  "timeline": [
+    {
+      "date": "2026-09-18",
+      "event": "Notification aux titulaires de comptes d'une possible exposition : création frauduleuse de comptes de responsable de structure relevée par les services de sécurité du ministère, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "La base de connaissance du SNU annonce une indisponibilité temporaire de la plateforme, des vérifications étant en cours."
+    }
+  ]
+}
