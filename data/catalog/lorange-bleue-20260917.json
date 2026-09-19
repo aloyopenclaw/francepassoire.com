@@ -10,7 +10,7 @@
   "volume": {
     "count": 732385,
     "unit": "personnes",
-    "label": "732 385 adhérents et 440 326 IBAN revendiqués par l'acteur selon FrenchBreaches et Fuites Infos ; aucune vérification indépendante du volume"
+    "label": "732 385 fiches d'adhérents et 440 326 IBAN revendiqués par l'acteur Venus1337 ; l'enseigne affiche publiquement 375 000 adhérents selon Fuites Infos ; volumes non vérifiés indépendamment"
   },
   "data_types": [
     "identite",
@@ -25,7 +25,7 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — L'Orange Bleue : les données de 732 385 abonnés et 440 326 IBAN revendiquées par un pirate (18 septembre 2026)",
+      "label": "FrenchBreaches — L'Orange Bleue : les données de 732 385 abonnés et 440 326 IBAN (18 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/orange-bleue-mu6sr6lm5tsbb71uwjf",
       "kind": "article"
     },
@@ -35,19 +35,15 @@
       "kind": "article"
     }
   ],
-  "description": "Le 17 septembre 2026, un acteur sous le pseudonyme Venus1337 met en vente une base attribuée à L'Orange Bleue, selon Fuites Infos et FrenchBreaches. L'Orange Bleue est un réseau français de salles de fitness en franchise, présent en France et en Espagne, selon Fuites Infos. L'acteur revendique 732 385 adhérents et 440 326 IBAN. Selon sa description, les fiches contiennent noms, dates de naissance, téléphones, adresses, e-mails et données de prélèvement. FrenchBreaches rapporte qu'il affirme avoir exploité une faille IDOR sur une fonction d'export d'un outil d'administration. L'enseigne n'a pas confirmé publiquement l'incident. Fuites Infos note que le volume revendiqué dépasse les 375 000 adhérents affichés publiquement par l'enseigne.",
+  "description": "Le 17 septembre 2026, l'acteur Venus1337 publie sur un forum cybercriminel une mise en vente visant L'Orange Bleue, réseau français de salles de sport et de fitness. Selon la revendication relayée par Fuites Infos, FrenchBreaches et Cyberattaque.org, le fichier contient 732 385 fiches d'adhérents : identité, coordonnées, données d'abonnement et mandats de prélèvement. L'acteur revendique 440 326 IBAN, associés au nom du titulaire, au BIC et à la banque, ainsi que les photos de profil des adhérents. Un accès à l'administration d'un club puis un export accessible sans authentification sont évoqués par Cyberattaque.org. Selon Fuites Infos, l'enseigne affiche 375 000 adhérents et les données remontent à plusieurs années. Aucune confirmation de l'entreprise au 19 septembre.",
   "timeline": [
     {
       "date": "2026-09-17",
-      "event": "Un acteur sous le pseudonyme Venus1337 publie sur un forum cybercriminel la mise en vente d'une base présentée comme celle des adhérents de L'Orange Bleue, selon Fuites Infos."
+      "event": "Venus1337 publie sur un forum la mise en vente de la base revendiquée : 732 385 fiches d'adhérents, 440 326 IBAN et des photos de profil, selon Fuites Infos et Cyberattaque.org."
     },
     {
       "date": "2026-09-18",
-      "event": "FrenchBreaches détaille la revendication : 732 385 abonnés, 440 326 IBAN et une faille IDOR alléguée sur une fonction d'export d'un outil d'administration."
-    },
-    {
-      "date": "2026-09-18",
-      "event": "Fuites Infos relaie l'incident, signale l'absence de confirmation publique de l'enseigne et recommande la vigilance face aux e-mails usurpant son nom."
+      "event": "Cyberattaque.org, FrenchBreaches et Fuites Infos relaient la revendication ; les échantillons publiés montrent des échéances et passages datant de 2019 ou 2020, selon Cyberattaque.org ; l'enseigne ne confirme pas."
     }
   ]
 }
