@@ -1,0 +1,45 @@
+{
+  "slug": "faktus-20260919",
+  "entity": "Faktus",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-19",
+    "publication": "2026-09-19"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun nombre de personnes communiqué ; 53,7 Go, 38 497 fichiers et 21 818 dossiers revendiqués par l'acteur selon FrenchBreaches ; environ 1,8 million d'opérations bancaires citées par la revendication selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Faktus : fuite de données revendiquée de 53,7 Go (19 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-19-faktus",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Faktus victime d'une fuite de données : 53,7 Go, données bancaires et documents sensibles revendiqués (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/faktus-mu8r9zho1hh7afgp9w8i",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 19 septembre 2026 sur un forum cybercriminel vise Faktus, fintech parisienne du financement de chantiers BTP. L'auteur, sous le pseudonyme DaOnlySpark selon FrenchBreaches, affirme avoir accédé aux systèmes le 10 septembre 2026. Il déclare avoir réclamé une rançon sans obtenir de réponse, d'après Fuites Infos. La revendication annonce 53,7 Go, 38 497 fichiers et 21 818 dossiers. Elle cite des comptes clients, des données légales et bancaires, environ 1,8 million d'opérations et des pièces d'identité. FrenchBreaches a examiné des échantillons : noms, adresses e-mail, téléphones et empreintes bcrypt y figurent. Fuites Infos mentionne aussi des identifiants d'accès au portail Chorus Pro. Faktus n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Date d'accès aux bases de Faktus affirmée par l'acteur dans sa revendication, qui décrit aussi une demande de rançon restée sans réponse, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-19",
+      "event": "Publication de la revendication attribuée à DaOnlySpark : 53,7 Go, 38 497 fichiers et 21 818 dossiers annoncés selon FrenchBreaches ; relais par Fuites Infos et FrenchBreaches."
+    }
+  ]
+}
