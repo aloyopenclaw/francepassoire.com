@@ -1,0 +1,46 @@
+{
+  "slug": "whoof-20260919",
+  "entity": "Whoof",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-19",
+    "publication": "2026-09-19"
+  },
+  "volume": {
+    "count": 4835,
+    "unit": "personnes",
+    "label": "4 835 personnes et près de 500 élevages revendiqués par l'acteur, selon Fuites Infos ; FrenchBreaches indique un volume total non précisé dans la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Whoof : fuite de données revendiquée visant 4 835 personnes (19 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-19-whoof",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Whoof.fr : une fuite de données revendiquée, des comptes utilisateurs et documents liés aux éleveurs potentiellement exposés (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/whoof-mu8dyyqbqoaiqbzpoqr",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 19 septembre 2026 sur un forum cybercriminel présente un export de la base de Whoof. Whoof est une plateforme française mettant en relation adoptants et éleveurs canins. L'auteur, sous le pseudonyme DaOnlySpark selon FrenchBreaches, revendique 4 835 personnes et près de 500 élevages, d'après Fuites Infos. Les données citées comprennent noms, adresses e-mail, téléphones, identifiants de comptes, empreintes de mots de passe et jetons d'accès. Des identifiants Stripe, des numéros SIREN, des réservations et des messages entre utilisateurs sont aussi cités. La revendication mentionne des pièces d'identité et des certificats ACACED indexés, sans les fichiers, selon Fuites Infos. FrenchBreaches observe des empreintes au format bcrypt dans l'échantillon publié. Whoof n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Publication sur un forum cybercriminel d'un export présenté comme la base de Whoof ; revendication attribuée à DaOnlySpark selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-19",
+      "event": "Relais par Fuites Infos et FrenchBreaches : 4 835 personnes et près de 500 élevages annoncés selon Fuites Infos ; aucune confirmation publique de Whoof."
+    }
+  ]
+}
