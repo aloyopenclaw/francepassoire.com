@@ -1,0 +1,43 @@
+{
+  "slug": "cuc-loisirs-vacances-20260918",
+  "entity": "CUC Loisirs & Vacances",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-18",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 8915,
+    "unit": "lignes",
+    "label": "8 915 lignes revendiquées par l'acteur selon FrenchBreaches et Cyberattaque.org ; le nombre de personnes uniques n'est pas établi, certaines personnes pouvant apparaître dans plusieurs inscriptions"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Piratage du CUC Loisirs & Vacances : les données de milliers d'enfants et de parents exposées (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cuc-loisirs-vacances-mu7ahotf7ukds1b294",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — CUC Loisirs & Vacances : des informations de santé de mineurs diffusées après une cyberattaque (18 septembre 2026)",
+      "url": "https://www.cyberattaque.org/cuc-loisirs-vacances-des-informations-de-sante-de-mineurs-diffusees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 18 septembre 2026, un acteur sous le pseudonyme TimeSape revendique sur un forum cybercriminel une base d'inscriptions du CUC Loisirs & Vacances. Cette structure du Clermont Université Club organise accueils de loisirs, stages sportifs et colonies pour enfants et adolescents, selon FrenchBreaches. L'acteur revendique 8 915 lignes pour environ 2,9 Mo de données. L'échantillon publié montre identités d'enfants, coordonnées des responsables légaux, numéros de sécurité sociale, données CAF et informations médicales, selon FrenchBreaches. Les champs médicaux cités portent sur l'asthme, les allergies et les traitements. Cyberattaque.org relève des inscriptions datées surtout de 2015 et 2016. Le nombre de personnes uniques n'est pas établi ; aucune confirmation officielle n'est disponible.",
+  "timeline": [
+    {
+      "date": "2026-09-18",
+      "event": "Un acteur publie la revendication et un échantillon de la base d'inscriptions sur un forum cybercriminel, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "FrenchBreaches et Cyberattaque.org relaient l'incident ; Cyberattaque.org date les inscriptions visibles de 2015 et 2016."
+    }
+  ]
+}
