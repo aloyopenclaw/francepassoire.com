@@ -9,8 +9,8 @@
   },
   "volume": {
     "count": 0,
-    "unit": "comptes",
-    "label": "nombre de membres du programme Le Club concernés non communiqué, selon Fuites Infos et FrenchBreaches"
+    "unit": "personnes",
+    "label": "nombre de membres concernés non communiqué ; la notification ne précise pas non plus la date de l'intrusion, selon FrenchBreaches et Fuites Infos"
   },
   "data_types": [
     "identite",
@@ -26,17 +26,22 @@
       "label": "FrenchBreaches — TotalEnergies victime d'une fuite de données : des clients du Club touchés (18 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/totalenergies-le-club-mu7a3uzvcz8fsq6txcu",
       "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Le Club TotalEnergies touché par une cyberattaque : les historiques de transactions en fuite (18 septembre 2026)",
+      "url": "https://www.cyberattaque.org/le-club-totalenergies-touche-par-une-cyberattaque-les-historiques-de-transactions-en-fuite/",
+      "kind": "article"
     }
   ],
-  "description": "TotalEnergies Marketing France a notifié des membres de son programme de fidélité Le Club, selon Fuites Infos et FrenchBreaches. Les deux médias citent une notification décrivant un incident de sécurité survenu chez un prestataire technique non nommé. D'après ce document, un tiers malveillant s'est introduit dans les systèmes du prestataire. Les données extraites portent sur l'identification, le compte Club et l'historique des transactions. L'entreprise indique qu'aucune donnée bancaire ni moyen de paiement n'a été compromis. Elle affirme avoir mis fin à l'incident et avoir informé la CNIL. La date de l'intrusion et le nombre de membres concernés ne sont pas communiqués. Aucun groupe cybercriminel n'est mentionné.",
+  "description": "TotalEnergies Marketing France notifie les membres de son programme de fidélité Le Club après un incident chez un prestataire technique. L'entreprise indique qu'un tiers malveillant s'est introduit dans les systèmes du prestataire, selon Fuites Infos et FrenchBreaches. Des données d'identification, des informations du compte Club et des historiques de transactions ont été extraits de manière illicite, selon FrenchBreaches. Aucune donnée bancaire ni moyen de paiement ne sont concernés, selon la notification. Le nombre de membres touchés, la date de l'intrusion et le nom du prestataire ne sont pas précisés. TotalEnergies déclare avoir mis fin à l'incident et notifié la CNIL.",
   "timeline": [
     {
       "date": "2026-09-18",
-      "event": "Notification de membres du programme Le Club, relayée par FrenchBreaches : intrusion chez un prestataire technique et extraction de données confirmées par TotalEnergies selon la notification."
+      "event": "TotalEnergies Marketing France notifie les membres du programme Le Club : extraction confirmée de données d'identification, du compte Club et de l'historique de transactions chez un prestataire."
     },
     {
       "date": "2026-09-18",
-      "event": "Fuites Infos précise le périmètre cité : identification, compte Club, historique de transactions ; aucune donnée bancaire selon l'entreprise ; CNIL notifiée."
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relatent l'incident ; la CNIL a été informée et des mesures techniques ont été prises, selon Fuites Infos."
     }
   ]
 }
