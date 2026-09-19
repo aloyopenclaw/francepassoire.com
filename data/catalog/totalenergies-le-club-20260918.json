@@ -1,7 +1,7 @@
 {
   "slug": "totalenergies-le-club-20260918",
-  "entity": "TotalEnergies Marketing France (programme Le Club)",
-  "secteur": "retail",
+  "entity": "TotalEnergies (Le Club)",
+  "secteur": "industrie",
   "statut": "confirmee",
   "dates": {
     "revendication": "2026-09-18",
@@ -11,12 +11,16 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "Nombre de membres concernés non communiqué par TotalEnergies Marketing France, selon Fuites Infos et FrenchBreaches"
+    "label": "nombre de membres concernés non communiqué ; la notification ne précise pas le volume de données extrait, selon TotalEnergies Marketing France"
   },
-  "data_types": ["identite", "autre"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
   "sources": [
     {
-      "label": "TotalEnergies Marketing France — Notification e-mail aux membres du programme Le Club (capture, 18 septembre 2026)",
+      "label": "TotalEnergies Marketing France — Notification aux membres du Club, reproduction publiée par Fuites Infos (18 septembre 2026)",
       "url": "https://fuitesinfos.fr/uploads/2026/09/totalenergies-2026-09-18-notification-email.webp",
       "kind": "officiel"
     },
@@ -26,20 +30,25 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Piratage chez TotalEnergies : des données de clients du Club ont été volées (18 septembre 2026)",
+      "label": "FrenchBreaches — TotalEnergies victime d'une fuite de données : des clients du Club touchés (18 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/totalenergies-le-club-mu7a3uzvcz8fsq6txcu",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Le Club TotalEnergies touché par une cyberattaque : les historiques de transactions en fuite (18 septembre 2026)",
+      "url": "https://www.cyberattaque.org/le-club-totalenergies-touche-par-une-cyberattaque-les-historiques-de-transactions-en-fuite/",
       "kind": "article"
     }
   ],
-  "description": "TotalEnergies Marketing France informe les membres de son programme de fidélité Le Club d'un incident de sécurité survenu chez un prestataire technique, selon sa notification aux membres relayée par Fuites Infos et FrenchBreaches. L'entreprise confirme qu'un tiers malveillant s'est introduit dans les systèmes du prestataire et a extrait de façon illicite des données d'identification, des données relatives au compte Club et l'historique de transactions. Elle indique qu'aucune donnée bancaire ni aucun moyen de paiement n'ont été touchés. Le prestataire n'est pas nommé et le nombre de personnes concernées n'est pas communiqué. TotalEnergies déclare avoir mis en place des mesures techniques pour mettre fin à l'incident et avoir notifié la CNIL. L'entreprise appelle les membres à la vigilance face aux contacts frauduleux au nom de la marque.",
+  "description": "TotalEnergies Marketing France notifie les membres de son programme de fidélité Le Club d'un incident survenu chez un prestataire technique. D'après la notification, un tiers malveillant s'est introduit dans les systèmes du prestataire et a extrait des données d'identification, des informations relatives au compte Club et des historiques de transactions. L'entreprise indique qu'aucune donnée bancaire ni aucun moyen de paiement n'ont été compromis et que la CNIL a été notifiée. Le nombre de membres concernés, la date de l'intrusion et le volume extrait ne sont pas précisés. Fuites Infos, FrenchBreaches et Cyberattaque.org relatent la notification le 18 septembre 2026.",
   "timeline": [
     {
       "date": "2026-09-18",
-      "event": "TotalEnergies Marketing France notifie par e-mail les membres du programme Le Club : incident de sécurité chez un prestataire technique, extraction illicite de données d'identification, de compte Club et d'historique de transactions."
+      "event": "TotalEnergies Marketing France notifie les membres du Club : intrusion d'un tiers chez un prestataire technique, extraction de données d'identification, de compte Club et d'historiques de transactions ; CNIL notifiée, selon la notification."
     },
     {
       "date": "2026-09-18",
-      "event": "Fuites Infos et FrenchBreaches relatent la notification ; l'entreprise y précise avoir notifié la CNIL et mis en place des mesures techniques pour mettre fin à l'incident."
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relatent la notification ; le nombre de clients concernés n'est pas précisé, selon FrenchBreaches et Cyberattaque.org."
     }
   ]
 }
