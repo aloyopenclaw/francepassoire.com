@@ -1,0 +1,45 @@
+{
+  "slug": "waltio-20260915",
+  "entity": "Waltio",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-15",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes concernées non communiqué, selon Fuites Infos"
+  },
+  "data_types": [
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Waltio : fuite de données après un accès non autorisé à son compte (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-15-waltio",
+      "kind": "article"
+    },
+    {
+      "label": "Waltio — Notification aux utilisateurs : accès non autorisé à un compte prestataire (15 septembre 2026, capture)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/waltio-2026-09-15-notification.webp",
+      "kind": "officiel"
+    }
+  ],
+  "description": "Waltio notifie le 15 septembre 2026 ses utilisateurs d'un accès non autorisé chez un prestataire d'envoi d'e-mails. Selon l'entreprise, cet accès s'inscrit dans un incident de sécurité subi par ce prestataire le 10 septembre 2026. Waltio indique qu'aucun message malveillant n'a été envoyé depuis ce compte. Le prestataire ne pouvait établir si la liste de contacts avait été consultée ou exportée. Dans ce cas, les données se limitent, selon Waltio, à l'adresse e-mail et au numéro de département. L'outil ne contenait ni mot de passe, ni clé API, ni donnée de portefeuille ou fiscale, selon l'entreprise. Le nombre de personnes concernées n'est pas communiqué. Waltio présente cet épisode comme distinct de la fuite reconnue en janvier 2026, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "event": "Un incident de sécurité touche le prestataire d'envoi d'e-mails utilisé par Waltio, selon l'entreprise."
+    },
+    {
+      "date": "2026-09-15",
+      "event": "Waltio notifie ses utilisateurs d'un accès non autorisé à son compte chez ce prestataire, selon sa notification reprise par Fuites Infos."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Fuites Infos publie un article sur cette fuite de données et indique que le nombre de personnes concernées n'est pas communiqué."
+    }
+  ]
+}
