@@ -1,0 +1,44 @@
+{
+  "slug": "orange-bleue-20260917",
+  "entity": "L'Orange Bleue",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-17",
+    "publication": "2026-09-18"
+  },
+  "volume": {
+    "count": 732385,
+    "unit": "personnes",
+    "label": "732 385 adhérents et 440 326 IBAN revendiqués par l'auteur de la mise en vente, selon Fuites Infos et FrenchBreaches ; l'enseigne affiche publiquement environ 375 000 adhérents ; aucun chiffre vérifié indépendamment"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — L'Orange Bleue : 732 385 adhérents revendiqués dans une mise en vente de données (18 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-17-l-orange-bleue",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Orange Bleue : une fuite de données revendique les données de 732 385 abonnés ainsi que 440 326 IBAN (18 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/orange-bleue-mu6sr6lm5tsbb71uwjf",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 17 septembre 2026 sur un forum cybercriminel met en vente une base présentée comme celle des adhérents de L'Orange Bleue. L'acteur, sous le pseudonyme Venus1337 selon FrenchBreaches, annonce 732 385 adhérents et 440 326 IBAN. Fuites Infos énumère identité, coordonnées, données d'abonnement, mandats de prélèvement SEPA et photos de profil, d'après la description du fichier. L'acteur affirme avoir exploité une faille de contrôle d'accès de type IDOR sur un lien d'export d'outil d'administration, accessible sans authentification selon son récit. L'enseigne n'a pas confirmé publiquement l'incident. Fuites Infos distingue cette publication de celle de janvier 2026, qui visait des fiches de clubs et non des adhérents.",
+  "timeline": [
+    {
+      "date": "2026-09-17",
+      "event": "Mise en vente sur un forum cybercriminel : 732 385 adhérents et 440 326 IBAN revendiqués, sous le pseudonyme Venus1337 selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Relais par Fuites Infos et FrenchBreaches : récit d'une faille IDOR sur un export d'outil d'administration ; aucune confirmation publique de l'enseigne."
+    }
+  ]
+}
