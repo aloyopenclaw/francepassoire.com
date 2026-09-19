@@ -1,0 +1,43 @@
+{
+  "slug": "vitalaire-20260919",
+  "entity": "VitalAire",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-19",
+    "publication": "2026-09-19"
+  },
+  "volume": {
+    "count": 49984,
+    "unit": "personnes",
+    "label": "49 984 patients selon Fuites Infos ; 50 000 lignes revendiquées par l'acteur selon FrenchBreaches, sans nombre certain de personnes uniques"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — VitalAire : fuite de données revendiquée visant 49 984 patients (19 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-19-vitalaire",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — VitalWeb.fr : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 19 septembre 2026 sur un forum cybercriminel vise VitalAire, marque de santé à domicile du groupe Air Liquide. L'auteur, sous le pseudonyme HulkSmasher selon FrenchBreaches, affirme détenir 50 000 lignes de données de patients issues de VitalWeb, extranet des médecins prescripteurs. Fuites Infos annonce 49 984 patients, dont près de 700 mineurs. Les données citées comprennent identité, date de naissance, numéro de sécurité sociale, coordonnées et références des médecins. L'acteur revendique une faille de contrôle d'accès dans la fonction de recherche de patients, selon les deux médias. Cette méthode d'exploitation n'est pas confirmée indépendamment, précise FrenchBreaches. VitalAire n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Publication de la revendication attribuée à HulkSmasher : 50 000 lignes, environ 22 Mo au format JSONL et une faille de contrôle d'accès revendiquée, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-19",
+      "event": "Relais par Fuites Infos : 49 984 patients annoncés, dont près de 700 mineurs ; aucune confirmation publique de VitalAire."
+    }
+  ]
+}
