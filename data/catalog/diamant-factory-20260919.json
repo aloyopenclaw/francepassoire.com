@@ -1,0 +1,43 @@
+{
+  "slug": "diamant-factory-20260919",
+  "entity": "Diamant Factory",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-19",
+    "publication": "2026-09-19"
+  },
+  "volume": {
+    "count": 24094,
+    "unit": "lignes",
+    "label": "24 094 lignes de commandes et de dossiers service après-vente revendiquées par l'acteur Cybernox, couvrant juillet 2015 à septembre 2026 selon Fuites Infos ; nombre de clients distincts non établi"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Diamant Factory : fuite de données revendiquée sur 24 094 lignes de commandes (19 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-19-diamant-factory",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Diamant Factory victime d'un piratage : 24 094 lignes de données (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/diamant-factory-mu8elc69ehzc7qh8dpn",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 19 septembre 2026, l'acteur Cybernox met en vente sur un forum cybercriminel 24 094 lignes attribuées à Diamant Factory, bijouterie joaillerie installée à Monaco et Aix-en-Provence. Selon la revendication relayée par Fuites Infos et FrenchBreaches, les données proviennent de l'outil de suivi des commandes et du service après-vente et couvrent juillet 2015 à septembre 2026. Chaque ligne contient le nom du client, parfois un numéro de téléphone, la description de la pièce, l'atelier chargé du travail et l'historique de traitement. Un défaut de contrôle d'accès est revendiqué à l'origine de l'extraction. FrenchBreaches décompte plus de 5 000 occurrences de montants dans les commandes ; les dix exemples mis en avant vont de 25 000 à 150 000 euros, selon Fuites Infos. La vente est proposée à trois acheteurs au plus.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Cybernox publie la mise en vente de 24 094 lignes issues du suivi des commandes et du service après-vente, avec un échantillon ; un défaut de contrôle d'accès est revendiqué, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-19",
+      "event": "FrenchBreaches analyse les 24 094 lignes : fiches de commandes et de SAV sur plus de dix ans ; le nombre de personnes concernées reste indéterminé."
+    }
+  ]
+}
