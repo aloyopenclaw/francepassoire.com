@@ -10,12 +10,13 @@
   "volume": {
     "count": 49984,
     "unit": "personnes",
-    "label": "49 984 patients selon Fuites Infos ; 50 000 lignes revendiquées par l'acteur selon FrenchBreaches, présentées comme un premier extrait d'environ 175 000 patients accessibles (mise à jour du 20 septembre 2026)"
+    "label": "49 984 patients selon Fuites Infos ; 50 000 lignes de données patients revendiquées par l'auteur selon FrenchBreaches"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "sante"
+    "sante",
+    "autre"
   ],
   "sources": [
     {
@@ -24,20 +25,24 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — VitalWeb, logiciel médical, victime d'un piratage : les données de 50 000 dossiers revendiquées (19 septembre 2026)",
+      "label": "FrenchBreaches — VitalWeb : 50 000 dossiers contenant des données de patients revendiqués par HulkSmasher (19 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
       "kind": "article"
     }
   ],
-  "description": "Un acteur sous le pseudonyme HulkSmasher revendique une base attribuée à VitalWeb, extranet de VitalAire destiné aux médecins prescripteurs, selon Fuites Infos et FrenchBreaches. VitalAire, marque de santé à domicile du groupe Air Liquide, suit des patients atteints d'apnée du sommeil, d'insuffisance respiratoire ou de diabète. La revendication annonce 50 000 lignes, soit 49 984 patients selon Fuites Infos. Les champs cités couvrent identité, numéro de sécurité sociale, coordonnées, références médicales et données de santé, dont près de 700 mineurs. L'accès provient d'un compte compromis dépourvu d'authentification à deux facteurs selon FrenchBreaches. Les 50 000 dossiers publiés constituent un premier extrait d'environ 175 000 patients accessibles. VitalAire n'a pas confirmé publiquement l'incident.",
+  "description": "Le 19 septembre 2026, un acteur se présentant sous le pseudonyme HulkSmasher revendique sur un forum la détention d'une base attribuée à VitalWeb, extranet de VitalAire destiné aux professionnels de santé, selon FrenchBreaches. L'auteur affirme détenir 50 000 lignes, soit environ 22 Mo au format JSONL, issues d'une faille de contrôle d'accès dans la fonction de recherche de patients. Fuites Infos recense 49 984 patients, dont près de 700 mineurs, et cite identité, date de naissance, numéro de sécurité sociale, commune, téléphone et références des médecins. FrenchBreaches évoque un accès via un compte compromis sans double authentification, selon ses informations. VitalAire, marque du groupe Air Liquide, n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-19",
-      "event": "Publication de la revendication attribuée à HulkSmasher sur un forum cybercriminel, selon Fuites Infos et FrenchBreaches. Le fichier annoncé couvre 50 000 lignes, soit environ 22 Mo au format JSONL."
+      "event": "HulkSmasher publie sur un forum une base attribuée à VitalWeb : 50 000 lignes revendiquées et un échantillon d'environ 22 Mo en JSONL, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-19",
+      "event": "Fuites Infos recense 49 984 patients, dont près de 700 mineurs, et décrit une faille de contrôle d'accès revendiquée dans la recherche de patients."
     },
     {
       "date": "2026-09-20",
-      "event": "FrenchBreaches met à jour son analyse : accès obtenu via un compte compromis dépourvu d'authentification à deux facteurs, et premier extrait publié parmi environ 175 000 patients accessibles, selon ses informations."
+      "event": "FrenchBreaches met à jour son alerte et évoque, selon ses informations, un accès via un compte compromis dépourvu de double authentification."
     }
   ]
 }
