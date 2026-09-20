@@ -8,9 +8,9 @@
     "publication": "2026-09-19"
   },
   "volume": {
-    "count": 49998,
+    "count": 49984,
     "unit": "personnes",
-    "label": "49 984 patients visés selon la revendication, chiffre cité par Fuites Infos ; Cyberattaque.org et FrenchBreaches rapportent 50 000 lignes revendiquées ; nombre de patients distincts non établi"
+    "label": "49 984 patients selon Fuites Infos ; revendication initiale de 50 000 lignes, nombre de personnes distinctes non établi"
   },
   "data_types": [
     "identite",
@@ -24,25 +24,25 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — VitalWeb.fr : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
-      "kind": "revendication"
-    },
-    {
       "label": "Cyberattaque.org — VitalWeb : 50 000 dossiers patients avec numéros de sécurité sociale revendiqués (19 septembre 2026)",
       "url": "https://www.cyberattaque.org/vitalweb-50-000-dossiers-patients-cyberattaque/",
       "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — VitalWeb : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
+      "kind": "revendication"
     }
   ],
-  "description": "Le 19 septembre 2026, l'acteur HulkSmasher publie sur un forum cybercriminel une revendication visant VitalWeb, selon Cyberattaque.org. Cet extranet de VitalAire est destiné aux professionnels de santé pour le suivi des patients à domicile. VitalAire est une marque de santé à domicile du groupe Air Liquide, selon Fuites Infos. La revendication annonce 50 000 lignes : identités, dates de naissance, numéros de sécurité sociale, coordonnées et liens avec les médecins prescripteurs. Fuites Infos cite 49 984 patients et évoque près de 700 mineurs parmi les dossiers. L'acteur invoque un défaut de contrôle d'accès dans la recherche de patients. L'authenticité du fichier n'est pas établie. VitalAire n'a pas confirmé publiquement cet incident.",
+  "description": "Le 19 septembre 2026, un acteur utilisant le pseudonyme HulkSmasher publie sur un forum cybercriminel une base attribuée à VitalWeb, l'extranet de VitalAire destiné aux professionnels de santé. La revendication porte sur 50 000 lignes, environ 22 Mo au format JSONL, selon FrenchBreaches et Cyberattaque.org. Fuites Infos décompte 49 984 patients dans l'échantillon diffusé. Les champs cités incluent identité, sexe, date de naissance, numéro de sécurité sociale, coordonnées et références des médecins prescripteurs. Fuites Infos mentionne aussi près de 700 mineurs. L'acteur affirme avoir exploité un défaut de contrôle d'accès dans la fonction de recherche de patients. VitalAire, marque de santé à domicile du groupe Air Liquide, n'a pas confirmé publiquement cet incident.",
   "timeline": [
     {
       "date": "2026-09-19",
-      "event": "Publication de la revendication par l'acteur HulkSmasher sur un forum cybercriminel : fichier de 50 000 lignes présenté comme issu de VitalWeb, selon FrenchBreaches et Cyberattaque.org."
+      "event": "Publication de la revendication sur un forum cybercriminel : une base attribuée à VitalWeb, 50 000 lignes revendiquées."
     },
     {
       "date": "2026-09-19",
-      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relatent la revendication ; aucune confirmation publique de VitalAire à ce stade."
+      "event": "FrenchBreaches, Cyberattaque.org et Fuites Infos relatent la revendication. VitalAire n'a pas confirmé publiquement l'incident."
     }
   ]
 }
