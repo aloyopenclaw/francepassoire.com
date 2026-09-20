@@ -1,6 +1,6 @@
 {
   "slug": "vitalaire-20260919",
-  "entity": "VitalAire (extranet VitalWeb)",
+  "entity": "VitalAire",
   "secteur": "sante",
   "statut": "revendiquee",
   "dates": {
@@ -8,9 +8,9 @@
     "publication": "2026-09-19"
   },
   "volume": {
-    "count": 49984,
+    "count": 49998,
     "unit": "personnes",
-    "label": "49 984 patients visés selon la revendication relayée par Fuites Infos, dont près de 700 mineurs ; l'attaquant revendique 50 000 lignes selon Cyberattaque.org"
+    "label": "49 984 patients visés selon la revendication, chiffre cité par Fuites Infos ; Cyberattaque.org et FrenchBreaches rapportent 50 000 lignes revendiquées ; nombre de patients distincts non établi"
   },
   "data_types": [
     "identite",
@@ -24,29 +24,25 @@
       "kind": "article"
     },
     {
+      "label": "FrenchBreaches — VitalWeb.fr : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
+      "kind": "revendication"
+    },
+    {
       "label": "Cyberattaque.org — VitalWeb : 50 000 dossiers patients avec numéros de sécurité sociale revendiqués (19 septembre 2026)",
       "url": "https://www.cyberattaque.org/vitalweb-50-000-dossiers-patients-cyberattaque/",
       "kind": "article"
-    },
-    {
-      "label": "FrenchBreaches — VitalWeb.fr : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
-      "kind": "article"
     }
   ],
-  "description": "Le 19 septembre 2026, un pirate sous le pseudonyme HulkSmasher revendique la fuite de dossiers patients liés à VitalWeb, extranet de VitalAire. Selon Fuites Infos, 49 984 patients sont visés, dont près de 700 mineurs. Cyberattaque.org décrit 50 000 lignes revendiquées, soit environ 22 Mo au format JSONL, avec un index intitulé vitalaire_patients_prod. Les champs annoncés incluent identité, sexe, date de naissance, numéro de sécurité sociale, commune, téléphones et rattachement aux médecins prescripteurs. L'attaquant évoque un défaut de contrôle d'accès dans la fonction de recherche de patients. Selon FrenchBreaches, l'attaquant revendique un accès via un compte compromis dépourvu de double authentification. VitalAire n'a pas confirmé publiquement l'incident au 20 septembre.",
+  "description": "Le 19 septembre 2026, l'acteur HulkSmasher publie sur un forum cybercriminel une revendication visant VitalWeb, selon Cyberattaque.org. Cet extranet de VitalAire est destiné aux professionnels de santé pour le suivi des patients à domicile. VitalAire est une marque de santé à domicile du groupe Air Liquide, selon Fuites Infos. La revendication annonce 50 000 lignes : identités, dates de naissance, numéros de sécurité sociale, coordonnées et liens avec les médecins prescripteurs. Fuites Infos cite 49 984 patients et évoque près de 700 mineurs parmi les dossiers. L'acteur invoque un défaut de contrôle d'accès dans la recherche de patients. L'authenticité du fichier n'est pas établie. VitalAire n'a pas confirmé publiquement cet incident.",
   "timeline": [
     {
       "date": "2026-09-19",
-      "event": "Un pirate sous le pseudonyme HulkSmasher publie sur un forum cybercriminel la revendication d'une base VitalWeb : 50 000 lignes annoncées, environ 22 Mo au format JSONL."
+      "event": "Publication de la revendication par l'acteur HulkSmasher sur un forum cybercriminel : fichier de 50 000 lignes présenté comme issu de VitalWeb, selon FrenchBreaches et Cyberattaque.org."
     },
     {
       "date": "2026-09-19",
-      "event": "Cyberattaque.org puis Fuites Infos relaient la revendication : identité, numéro de sécurité sociale, coordonnées et données de santé figurent parmi les champs annoncés."
-    },
-    {
-      "date": "2026-09-20",
-      "event": "FrenchBreaches précise l'accès revendiqué via un compte compromis dépourvu de double authentification ; VitalAire n'a pas confirmé publiquement l'incident."
+      "event": "Fuites Infos, FrenchBreaches et Cyberattaque.org relatent la revendication ; aucune confirmation publique de VitalAire à ce stade."
     }
   ]
 }
