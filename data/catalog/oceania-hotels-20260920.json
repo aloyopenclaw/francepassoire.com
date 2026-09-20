@@ -1,0 +1,43 @@
+{
+  "slug": "oceania-hotels-20260920",
+  "entity": "Oceania Hotels",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-20",
+    "publication": "2026-09-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de clients concernés non communiqué ; réservations de séjours prévus entre août 2026 et juillet 2027 selon la communication de l'entreprise"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Oceania Hotels : fuite de données chez son prestataire de réservation (20 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-20-oceania-hotels",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Oceania Hotels : les réservations clients exposées après une cyberattaque (20 septembre 2026)",
+      "url": "https://www.cyberattaque.org/oceania-hotels-les-reservations-clients-exposees-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 septembre 2026, Oceania Hotels informe ses clients d'un incident chez le prestataire hébergeant son moteur de réservation en ligne. Selon la communication de l'entreprise, un tiers non autorisé a consulté des réservations de séjours prévus entre août 2026 et juillet 2027. Fuites Infos liste nom, adresse électronique, téléphone, identifiant interne, historique de réservations et montant. L'entreprise indique que les données bancaires ne sont pas concernées. Elle précise que la faille a été corrigée par le prestataire. Selon Fuites Infos et Cyberattaque.org, l'entreprise dit avoir notifié la CNIL et déposé plainte. Les deux médias signalent des messages frauduleux par WhatsApp, SMS et courriel reprenant ces éléments pour réclamer un paiement. Le nombre de clients concernés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-20",
+      "event": "Oceania Hotels informe ses clients d'un accès non autorisé aux réservations hébergées chez le prestataire de son moteur de réservation."
+    },
+    {
+      "date": "2026-09-20",
+      "event": "Fuites Infos et Cyberattaque.org relatent l'incident ; l'entreprise dit avoir notifié la CNIL et déposé plainte."
+    }
+  ]
+}
