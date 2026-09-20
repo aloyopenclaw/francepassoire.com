@@ -1,0 +1,43 @@
+{
+  "slug": "hopital-paris-saint-joseph-20260919",
+  "entity": "Hôpital Paris Saint-Joseph",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-19",
+    "publication": "2026-09-20"
+  },
+  "volume": {
+    "count": 15044,
+    "unit": "personnes",
+    "label": "15 044 patients distincts selon Fuites Infos ; la revendication annonce 15 061 entrées de personnes et 738 médecins"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Hôpital Paris Saint-Joseph : une archive revendiquée expose 15 044 patients, sans aucune donnée médicale (20 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-19-hopital-paris-saint-joseph",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Hôpital Paris Saint-Joseph : les données de plus de 15 000 patients diffusées par un pirate (20 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/h-pital-paris-saint-joseph-mu93cn8lvv9l381ye9f",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 19 septembre 2026, un acteur utilisant le pseudonyme weykofa publie en téléchargement libre sur un forum cybercriminel une archive attribuée à l'Hôpital Paris Saint-Joseph, selon FrenchBreaches. L'archive regroupe trois fichiers CSV, environ 1,3 Mo. L'analyse de Fuites Infos retient 15 044 patients distincts dans le fichier de facturation, avec noms, adresses électroniques, identifiants internes, montants réglés et dates de paiement. Les quatre derniers chiffres de carte bancaire figurent sur 226 dossiers. Aucune donnée médicale, aucun numéro de sécurité sociale ni date de naissance. Les deux autres fichiers reprennent un annuaire public de praticiens et des comptes d'un prestataire. L'établissement, hôpital privé non lucratif du 14e arrondissement de Paris, n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Publication de la revendication sur un forum cybercriminel : trois fichiers CSV attribués à l'Hôpital Paris Saint-Joseph, mis en téléchargement libre."
+    },
+    {
+      "date": "2026-09-20",
+      "event": "FrenchBreaches et Fuites Infos relatent l'incident et publient leur analyse. Aucune confirmation publique de l'établissement."
+    }
+  ]
+}
