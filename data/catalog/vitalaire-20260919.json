@@ -1,6 +1,6 @@
 {
   "slug": "vitalaire-20260919",
-  "entity": "VitalAire",
+  "entity": "VitalAire (extranet VitalWeb)",
   "secteur": "sante",
   "statut": "revendiquee",
   "dates": {
@@ -10,13 +10,12 @@
   "volume": {
     "count": 49984,
     "unit": "personnes",
-    "label": "49 984 patients selon Fuites Infos ; 50 000 lignes de données patients revendiquées par l'auteur selon FrenchBreaches"
+    "label": "49 984 patients visés selon la revendication relayée par Fuites Infos, dont près de 700 mineurs ; l'attaquant revendique 50 000 lignes selon Cyberattaque.org"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "sante",
-    "autre"
+    "sante"
   ],
   "sources": [
     {
@@ -25,24 +24,29 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — VitalWeb : 50 000 dossiers contenant des données de patients revendiqués par HulkSmasher (19 septembre 2026)",
+      "label": "Cyberattaque.org — VitalWeb : 50 000 dossiers patients avec numéros de sécurité sociale revendiqués (19 septembre 2026)",
+      "url": "https://www.cyberattaque.org/vitalweb-50-000-dossiers-patients-cyberattaque/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — VitalWeb.fr : 50 000 dossiers contenant des données de patients revendiqués par un pirate (19 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/vitalweb-mu8rm6d0f8s6d6vte3g",
       "kind": "article"
     }
   ],
-  "description": "Le 19 septembre 2026, un acteur se présentant sous le pseudonyme HulkSmasher revendique sur un forum la détention d'une base attribuée à VitalWeb, extranet de VitalAire destiné aux professionnels de santé, selon FrenchBreaches. L'auteur affirme détenir 50 000 lignes, soit environ 22 Mo au format JSONL, issues d'une faille de contrôle d'accès dans la fonction de recherche de patients. Fuites Infos recense 49 984 patients, dont près de 700 mineurs, et cite identité, date de naissance, numéro de sécurité sociale, commune, téléphone et références des médecins. FrenchBreaches évoque un accès via un compte compromis sans double authentification, selon ses informations. VitalAire, marque du groupe Air Liquide, n'a pas confirmé publiquement l'incident.",
+  "description": "Le 19 septembre 2026, un pirate sous le pseudonyme HulkSmasher revendique la fuite de dossiers patients liés à VitalWeb, extranet de VitalAire. Selon Fuites Infos, 49 984 patients sont visés, dont près de 700 mineurs. Cyberattaque.org décrit 50 000 lignes revendiquées, soit environ 22 Mo au format JSONL, avec un index intitulé vitalaire_patients_prod. Les champs annoncés incluent identité, sexe, date de naissance, numéro de sécurité sociale, commune, téléphones et rattachement aux médecins prescripteurs. L'attaquant évoque un défaut de contrôle d'accès dans la fonction de recherche de patients. Selon FrenchBreaches, l'attaquant revendique un accès via un compte compromis dépourvu de double authentification. VitalAire n'a pas confirmé publiquement l'incident au 20 septembre.",
   "timeline": [
     {
       "date": "2026-09-19",
-      "event": "HulkSmasher publie sur un forum une base attribuée à VitalWeb : 50 000 lignes revendiquées et un échantillon d'environ 22 Mo en JSONL, selon FrenchBreaches."
+      "event": "Un pirate sous le pseudonyme HulkSmasher publie sur un forum cybercriminel la revendication d'une base VitalWeb : 50 000 lignes annoncées, environ 22 Mo au format JSONL."
     },
     {
       "date": "2026-09-19",
-      "event": "Fuites Infos recense 49 984 patients, dont près de 700 mineurs, et décrit une faille de contrôle d'accès revendiquée dans la recherche de patients."
+      "event": "Cyberattaque.org puis Fuites Infos relaient la revendication : identité, numéro de sécurité sociale, coordonnées et données de santé figurent parmi les champs annoncés."
     },
     {
       "date": "2026-09-20",
-      "event": "FrenchBreaches met à jour son alerte et évoque, selon ses informations, un accès via un compte compromis dépourvu de double authentification."
+      "event": "FrenchBreaches précise l'accès revendiqué via un compte compromis dépourvu de double authentification ; VitalAire n'a pas confirmé publiquement l'incident."
     }
   ]
 }
