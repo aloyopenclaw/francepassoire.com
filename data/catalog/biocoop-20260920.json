@@ -1,0 +1,45 @@
+{
+  "slug": "biocoop-20260920",
+  "entity": "Biocoop",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-20",
+    "publication": "2026-09-20"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Nombre de personnes non communiqué ; 17 505 entrées de contacts et 4 430 comptes extranet observés par FrenchBreaches ; 2,76 Go revendiqués par l'auteur"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Biocoop piraté : 2,76 Go de données internes et des milliers de comptes (20 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/biocoop-mua6zxxgg1gjqmuiut",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Biocoop : 2,8 Go de données internes exposés après une cyberattaque (20 septembre 2026)",
+      "url": "https://www.cyberattaque.org/biocoop-28-go-de-donnees-internes-exposes-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 septembre 2026, un acteur sous le pseudonyme Venus1337 revendique sur un forum cybercriminel l'extraction d'environ 2,76 Go de données. La cible est l'extranet de Biocoop, réseau français de magasins bio. D'après FrenchBreaches, qui dit avoir analysé des fichiers, une base de contacts compte 17 505 entrées liées à 1 095 magasins. Une table de l'extranet contient 4 430 comptes avec empreintes de mots de passe, selon la même analyse. Des documents internes figurent aussi : chiffres d'affaires, assortiments et positionnement tarifaire. L'auteur affirme avoir exploité une faille LFI puis accédé à une interface Adminer et à un stockage MinIO. Cyberattaque.org relaie la même revendication. Biocoop n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-20",
+      "event": "Publication de la revendication sur un forum cybercriminel : extraction de 2,76 Go revendiquée depuis l'extranet, sous le pseudonyme Venus1337."
+    },
+    {
+      "date": "2026-09-20",
+      "event": "FrenchBreaches et Cyberattaque.org relatent l'incident : contacts de magasins, comptes extranet et documents commerciaux internes présentés ; aucune confirmation publique de Biocoop."
+    }
+  ]
+}
