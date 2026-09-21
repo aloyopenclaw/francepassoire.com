@@ -1,0 +1,44 @@
+{
+  "slug": "altagem-20260921",
+  "entity": "Altagem",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-21",
+    "publication": "2026-09-21"
+  },
+  "volume": {
+    "count": 14692,
+    "unit": "personnes",
+    "label": "14 692 personnes selon la revendication, relayée par Fuites Infos ; FrenchBreaches relève 3 284 clients dans des captures"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Altagem : fuite de données revendiquée visant 14 692 personnes (21/09/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-21-altagem",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Altagen piraté : Uways Qarani revendique l'accès à des milliers de clients, chantiers et comptes administrateurs (21/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/altagem-mubgua4y1pn9jonb1uu",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 21 septembre 2026, un acteur se présentant comme Uways Qarani revendique une intrusion dans le réseau d'Altagem. Altagem édite un logiciel en ligne de gestion d'interventions de terrain pour les entreprises du paysage, de l'élagage et du BTP. Selon Fuites Infos, la revendication mentionne 14 692 personnes, environ 500 entreprises clientes et près de 11 000 comptes utilisateurs. Les données citées comprennent identité, coordonnées, identifiants, mots de passe hachés, jetons d'accès et adresses IP. Pour quatre entreprises, des fiches de leurs propres clients sont annoncées. Selon FrenchBreaches, des captures montrent 3 284 clients et 36 comptes administrateurs, sans preuve du volume exfiltré. FrenchBreaches décrit un acteur se présentant comme politiquement motivé. Altagem n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-21",
+      "event": "Un acteur se présentant comme Uways Qarani revendique sur un forum une intrusion dans le réseau d'Altagem et l'exfiltration de données de clients et d'utilisateurs."
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Fuites Infos et FrenchBreaches relaient la revendication le jour même ; aucune confirmation publique d'Altagem n'est disponible."
+    }
+  ]
+}
