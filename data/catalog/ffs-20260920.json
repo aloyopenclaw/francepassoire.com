@@ -1,0 +1,45 @@
+{
+  "slug": "ffs-20260920",
+  "entity": "Fédération française de spéléologie (FFS)",
+  "siren": "448124792",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-20",
+    "publication": "2026-09-21"
+  },
+  "volume": {
+    "count": 93493,
+    "unit": "personnes",
+    "label": "93 493 membres uniques selon la revendication, couvrant des inscriptions depuis 1966 ; chiffre non confirmé indépendamment"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fédération Française de Spéléologie : les données de plus de 93 000 membres revendiquées par un pirate (21/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-sp-l-ologie-ffs-muac5a8sxy44x4kows",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — FFS : fuite de données revendiquée visant 93 493 membres (21 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-20-federation-francaise-de-speleologie-ffs",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 20 septembre 2026, un acteur se présentant sous le pseudonyme RedStone revendique la compromission de la Fédération française de spéléologie. Selon la revendication, il met en vente la base de 93 493 membres uniques, avec des inscriptions remontant à 1966. Le lot annoncé comprend identité, coordonnées, numéros de licence, données d'adhésion, 371 IBAN et mots de passe hachés. Un échantillon de 1 000 enregistrements est diffusé en preuve. Selon FrenchBreaches, l'auteur affirme avoir exploité une injection SQL suivie d'une exécution de code à distance. Ces éléments ne sont pas confirmés indépendamment. Le 21 septembre, des défigurations restent visibles sur des sous-domaines de paiement et de facturation selon FrenchBreaches. La fédération n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-20",
+      "event": "Un acteur se présentant comme RedStone met en vente les données de 93 493 membres et affirme détenir un accès complet aux serveurs de la fédération."
+    },
+    {
+      "date": "2026-09-21",
+      "event": "FrenchBreaches consulte l'échantillon de 1 000 enregistrements et relaie la revendication ; des défigurations sont visibles sur des sous-domaines de paiement et de facturation selon le site."
+    }
+  ]
+}
