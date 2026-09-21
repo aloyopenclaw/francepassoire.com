@@ -1,6 +1,6 @@
 {
   "slug": "ffs-20260920",
-  "entity": "Fédération Française de Spéléologie (FFS)",
+  "entity": "Fédération française de spéléologie (FFS)",
   "siren": "448124792",
   "secteur": "services",
   "statut": "revendiquee",
@@ -11,7 +11,7 @@
   "volume": {
     "count": 93493,
     "unit": "personnes",
-    "label": "93 493 membres revendiqués par l'acteur, selon FrenchBreaches et Fuites Infos"
+    "label": "93 493 membres uniques selon la revendication, couvrant des inscriptions depuis 1966 ; chiffre non confirmé indépendamment"
   },
   "data_types": [
     "identite",
@@ -21,9 +21,9 @@
   ],
   "sources": [
     {
-      "label": "FrenchBreaches — Fédération Française de Spéléologie piratée : 93 493 membres et près de 60 ans d'historique revendiqués (21 septembre 2026)",
+      "label": "FrenchBreaches — Fédération Française de Spéléologie : les données de plus de 93 000 membres revendiquées par un pirate (21/09/2026)",
       "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-sp-l-ologie-ffs-muac5a8sxy44x4kows",
-      "kind": "article"
+      "kind": "revendication"
     },
     {
       "label": "Fuites Infos — FFS : fuite de données revendiquée visant 93 493 membres (21 septembre 2026)",
@@ -31,15 +31,15 @@
       "kind": "article"
     }
   ],
-  "description": "Le 20 septembre 2026, un acteur au pseudonyme RedStone met en vente un ensemble présenté comme la base complète de la Fédération Française de Spéléologie. D'après FrenchBreaches et Fuites Infos, la revendication porte sur 93 493 membres, avec noms, coordonnées, dates de naissance et numéros de licence. L'acteur annonce 371 IBAN, des données de paiement et d'assurance, des empreintes de mots de passe et le code source d'un portail de paiement. Il affirme détenir un accès actif à un serveur en production. FrenchBreaches a consulté un échantillon de 1 000 fiches : des données personnelles y figurent. Fuites Infos relève des pages de défiguration sur des sous-domaines le 21 septembre. La fédération n'a pas confirmé publiquement l'incident.",
+  "description": "Le 20 septembre 2026, un acteur se présentant sous le pseudonyme RedStone revendique la compromission de la Fédération française de spéléologie. Selon la revendication, il met en vente la base de 93 493 membres uniques, avec des inscriptions remontant à 1966. Le lot annoncé comprend identité, coordonnées, numéros de licence, données d'adhésion, 371 IBAN et mots de passe hachés. Un échantillon de 1 000 enregistrements est diffusé en preuve. Selon FrenchBreaches, l'auteur affirme avoir exploité une injection SQL suivie d'une exécution de code à distance. Ces éléments ne sont pas confirmés indépendamment. Le 21 septembre, des défigurations restent visibles sur des sous-domaines de paiement et de facturation selon FrenchBreaches. La fédération n'a pas confirmé publiquement la revendication.",
   "timeline": [
     {
       "date": "2026-09-20",
-      "event": "Publication de la revendication de mise en vente par un acteur au pseudonyme RedStone : 93 493 membres, 28 bases de données et 322 Mo annoncés selon FrenchBreaches."
+      "event": "Un acteur se présentant comme RedStone met en vente les données de 93 493 membres et affirme détenir un accès complet aux serveurs de la fédération."
     },
     {
       "date": "2026-09-21",
-      "event": "Relais par FrenchBreaches et Fuites Infos ; échantillon de 1 000 fiches consulté par FrenchBreaches ; défigurations encore visibles sur des sous-domaines selon Fuites Infos."
+      "event": "FrenchBreaches consulte l'échantillon de 1 000 enregistrements et relaie la revendication ; des défigurations sont visibles sur des sous-domaines de paiement et de facturation selon le site."
     }
   ]
 }
