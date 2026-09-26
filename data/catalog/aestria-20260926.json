@@ -1,0 +1,43 @@
+{
+  "slug": "aestria-20260926",
+  "entity": "Aestria",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; FrenchBreaches décrit des fichiers publiés sans décompte, Fuites Infos ne relève aucun échantillon accessible"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Aestria : un accès à l'extranet client revendiqué, sans base diffusée (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-aestria",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Aestria visé par une fuite de données : clients, comptes, factures, support informatique et bases WordPress publiés (26 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/aestria-mui0okz5kx91njjeuw",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Aestria, prestataire informatique basé à Metz et positionné sur la cybersécurité, est visé par une revendication publiée le 26 septembre 2026 sur un forum cybercriminel accessible via Tor, selon Fuites Infos. L'auteur revendique un accès à l'extranet client de l'entreprise et annonce une archive regroupant plusieurs bases, dont une liée au site WordPress et une à un logiciel de gestion. Selon Fuites Infos, aucun échantillon ni lien de téléchargement n'est accessible publiquement. FrenchBreaches indique que des fichiers liés aux clients, aux comptes, aux factures, au support informatique et à des bases WordPress ont été publiés. Aucun volume n'est avancé. L'entreprise n'a pas confirmé la revendication à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication sur un forum cybercriminel accessible via Tor : accès à l'extranet client revendiqué et archive de bases annoncée, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "FrenchBreaches signale des fichiers publiés concernant clients, comptes, factures, support informatique et bases WordPress ; Fuites Infos relève l'absence d'échantillon accessible."
+    }
+  ]
+}
