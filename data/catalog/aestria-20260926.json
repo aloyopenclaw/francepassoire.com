@@ -1,0 +1,45 @@
+{
+  "slug": "aestria-20260926",
+  "entity": "Aestria",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre non communiqué ; selon FrenchBreaches, dix bases SQL sont publiées, dont une table de plusieurs centaines d'enregistrements clients"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Aestria : un accès à l'extranet client revendiqué, sans base diffusée (26/09/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-aestria",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Aestria piraté : des bases clients, ERP, support et sites WordPress revendiquées sur un forum (26/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/aestria-mui0okz5kx91njjeuw",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 26 septembre 2026, un acteur revendique sur un forum cybercriminel un accès à l'extranet client d'Aestria, prestataire informatique basé à Metz. Selon Fuites Infos, la publication décrit une faille et annonce une archive de bases internes, sans lien de téléchargement visible. Selon FrenchBreaches, dix dumps SQL sont mis en ligne : dolibarr, extranet, support, wordpress et d'autres bases. Le contenu cité comprend identité, coordonnées, identifiants, mots de passe hachés, commandes, factures, données comptables et secrets de configuration. FrenchBreaches relève une table de plusieurs centaines d'enregistrements clients. Aucun volume global n'est avancé. Aestria n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Un acteur publie sur un forum cybercriminel une revendication visant l'extranet client d'Aestria et annonce une archive de plusieurs bases de données."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Fuites Infos et FrenchBreaches relaient la revendication ; selon FrenchBreaches, dix dumps SQL sont publiés ; aucune confirmation d'Aestria n'est disponible."
+    }
+  ]
+}
