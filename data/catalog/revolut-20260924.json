@@ -1,0 +1,43 @@
+{
+  "slug": "revolut-20260924",
+  "entity": "Revolut (via DriveWealth)",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-24",
+    "publication": "2026-09-24"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "volume de clients Revolut concernés non communiqué ; DriveWealth évoque environ 62 000 personnes touchées dans le seul Rhode Island, selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Revolut : fuite de données via DriveWealth chez des clients de trading (24 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-24-revolut-via-drivewealth",
+      "kind": "article"
+    },
+    {
+      "label": "01net — 2e fuite de données chez Revolut : les informations de certains clients ont encore été piratées (25 septembre 2026)",
+      "url": "https://www.01net.com/actualites/2e-fuite-donnees-revolut-informations-certains-clients-encore-piratees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Revolut informe le 24 septembre 2026 une partie de ses clients d'une fuite de données survenue chez DriveWealth, son ancien courtier pour le trading d'actions américaines, selon Fuites Infos et 01net. Le courtier indique qu'un accès non autorisé à son réseau a eu lieu les 4 et 5 septembre 2026, dans le cadre d'une campagne d'ingénierie sociale. Les données exfiltrées incluent nom, adresse e-mail, téléphone, adresse postale et données d'emploi, selon la notification relayée par Fuites Infos. S'y ajoutent pays de citoyenneté, âge, genre et un numéro de compte DriveWealth partiel. Revolut précise que ses systèmes ne sont pas atteints et qu'aucun mot de passe ni moyen de paiement n'est concerné. Les clients de l'Espace économique européen inscrits après décembre 2023 ne sont pas touchés, selon 01net.",
+  "timeline": [
+    {
+      "date": "2026-09-04",
+      "event": "Accès non autorisé au réseau du courtier DriveWealth les 4 et 5 septembre 2026, présenté par la société comme une campagne d'ingénierie sociale, selon 01net."
+    },
+    {
+      "date": "2026-09-24",
+      "event": "Revolut informe les clients concernés ; Fuites Infos et 01net documentent l'incident et la nature des données exposées."
+    }
+  ]
+}
