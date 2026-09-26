@@ -10,36 +10,34 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "nombre non communiqué ; selon FrenchBreaches, dix bases SQL sont publiées, dont une table de plusieurs centaines d'enregistrements clients"
+    "label": "nombre de personnes concernées non communiqué ; FrenchBreaches décrit des fichiers publiés sans décompte, Fuites Infos ne relève aucun échantillon accessible"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "credentials",
-    "financier",
     "documents"
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Aestria : un accès à l'extranet client revendiqué, sans base diffusée (26/09/2026)",
+      "label": "Fuites Infos — Aestria : un accès à l'extranet client revendiqué, sans base diffusée (26 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-26-aestria",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Aestria piraté : des bases clients, ERP, support et sites WordPress revendiquées sur un forum (26/09/2026)",
+      "label": "FrenchBreaches — Aestria visé par une fuite de données : clients, comptes, factures, support informatique et bases WordPress publiés (26 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/aestria-mui0okz5kx91njjeuw",
       "kind": "revendication"
     }
   ],
-  "description": "Le 26 septembre 2026, un acteur revendique sur un forum cybercriminel un accès à l'extranet client d'Aestria, prestataire informatique basé à Metz. Selon Fuites Infos, la publication décrit une faille et annonce une archive de bases internes, sans lien de téléchargement visible. Selon FrenchBreaches, dix dumps SQL sont mis en ligne : dolibarr, extranet, support, wordpress et d'autres bases. Le contenu cité comprend identité, coordonnées, identifiants, mots de passe hachés, commandes, factures, données comptables et secrets de configuration. FrenchBreaches relève une table de plusieurs centaines d'enregistrements clients. Aucun volume global n'est avancé. Aestria n'a pas confirmé publiquement la revendication.",
+  "description": "Aestria, prestataire informatique basé à Metz et positionné sur la cybersécurité, est visé par une revendication publiée le 26 septembre 2026 sur un forum cybercriminel accessible via Tor, selon Fuites Infos. L'auteur revendique un accès à l'extranet client de l'entreprise et annonce une archive regroupant plusieurs bases, dont une liée au site WordPress et une à un logiciel de gestion. Selon Fuites Infos, aucun échantillon ni lien de téléchargement n'est accessible publiquement. FrenchBreaches indique que des fichiers liés aux clients, aux comptes, aux factures, au support informatique et à des bases WordPress ont été publiés. Aucun volume n'est avancé. L'entreprise n'a pas confirmé la revendication à ce stade.",
   "timeline": [
     {
       "date": "2026-09-26",
-      "event": "Un acteur publie sur un forum cybercriminel une revendication visant l'extranet client d'Aestria et annonce une archive de plusieurs bases de données."
+      "event": "Publication de la revendication sur un forum cybercriminel accessible via Tor : accès à l'extranet client revendiqué et archive de bases annoncée, selon Fuites Infos."
     },
     {
       "date": "2026-09-26",
-      "event": "Fuites Infos et FrenchBreaches relaient la revendication ; selon FrenchBreaches, dix dumps SQL sont publiés ; aucune confirmation d'Aestria n'est disponible."
+      "event": "FrenchBreaches signale des fichiers publiés concernant clients, comptes, factures, support informatique et bases WordPress ; Fuites Infos relève l'absence d'échantillon accessible."
     }
   ]
 }
