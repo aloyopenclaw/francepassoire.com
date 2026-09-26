@@ -1,0 +1,48 @@
+{
+  "slug": "celinni-20260926",
+  "entity": "Celinni",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 12000,
+    "unit": "personnes",
+    "label": "12 000 clients potentiellement exposés selon FrenchBreaches ; la revendication n'annonce aucun volume ; Celinni ne confirme ni n'infirme"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Celinni : fuite de données revendiquée, la maison ouvre une investigation (26/09/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-celinni",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Celinni piraté : des données clients et fournisseurs revendiquées par un groupe de hackers (26/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/celinni-muim3c0lnes4szg970p",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 26 septembre 2026, un groupe cybercriminel revendique sur Telegram une fuite de données visant Celinni, maison de joaillerie parisienne vendant en ligne. Selon la revendication, les données citées couvrent nom, e-mail, téléphone, adresse postale, comptes, historiques de commandes, factures et pièces d'identité. Les numéros de certificats GIA figurent aussi dans la liste. Selon FrenchBreaches, 12 000 clients sont potentiellement exposés ; la revendication n'annonce aucun volume. L'annonce survient trois jours après un courriel d'hameçonnage parti de l'adresse d'envoi de la boutique. Selon Celinni, l'identifiant d'envoi de son prestataire d'e-mailing a été détourné entre le 22 et le 24 septembre. La maison a renouvelé ses clés d'accès et ouvert une investigation. Elle ne confirme ni n'infirme la fuite.",
+  "timeline": [
+    {
+      "date": "2026-09-23",
+      "event": "Un courriel d'hameçonnage part de l'adresse d'expédition de Celinni, selon Fuites Infos ; la maison situe le détournement de l'identifiant d'envoi entre le 22 et le 24 septembre."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Un groupe revendique sur Telegram une fuite de données clients et fournisseurs ; Celinni ouvre une investigation et déclare ne pouvoir ni confirmer ni infirmer la revendication."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "FrenchBreaches relève 12 000 clients potentiellement exposés selon ses informations ; Celinni indique que les certificats GIA sont émis et conservés par le Gemological Institute of America."
+    }
+  ]
+}
