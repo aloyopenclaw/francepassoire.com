@@ -1,0 +1,48 @@
+{
+  "slug": "ecofone-20260926",
+  "entity": "Ecofone",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "aucun nombre de clients communiqué ; selon l'entreprise, les investigations n'ont pas établi si les données ont été consultées ou copiées"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Ecofone : fuite de données après une intrusion sur sa boutique en ligne (26/09/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-ecofone",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Ecofone victime d'une cyberattaque : des données clients potentiellement exposées après une intrusion (26/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/ecofone-muimai8f33qqkk1kskt",
+      "kind": "article"
+    }
+  ],
+  "description": "Ecofone informe ses clients d'une intrusion sur sa boutique en ligne de produits reconditionnés. Selon l'entreprise, des traces d'activité malveillante apparaissent dès le 4 septembre 2026 et l'intrusion est constatée le 5 septembre. Selon FrenchBreaches, l'attaque a exploité une vulnérabilité inconnue d'Adobe Magento avant la publication d'un correctif. Les données concernent l'identité, les adresses de facturation et de livraison, l'adresse e-mail, le téléphone et l'historique de commandes. Le mot de passe haché des comptes clients est aussi concerné, ainsi que les commandes invité. Les paiements passent par PayPlug et PayPal, sans stockage de données bancaires selon l'entreprise. Les investigations n'ont pas établi si les données ont été consultées ou copiées. Aucun volume n'est communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-04",
+      "event": "Ecofone et son hébergeur observent des traces d'activité malveillante sur la boutique en ligne, selon l'entreprise."
+    },
+    {
+      "date": "2026-09-05",
+      "event": "L'intrusion est constatée ; selon FrenchBreaches, une vulnérabilité inconnue d'Adobe Magento a été exploitée avant la publication d'un correctif."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Ecofone notifie ses clients et rend son courrier public ; Fuites Infos et FrenchBreaches publient le même jour ; l'entreprise indique avoir signalé l'incident à la CNIL quelques jours après sa découverte."
+    }
+  ]
+}
