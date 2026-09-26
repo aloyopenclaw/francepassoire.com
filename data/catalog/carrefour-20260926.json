@@ -1,0 +1,47 @@
+{
+  "slug": "carrefour-20260926",
+  "entity": "Carrefour",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par Carrefour"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — Carrefour : des données clients exposées après la cyberattaque de son prestataire (26 septembre 2026)",
+      "url": "https://www.cyberattaque.org/carrefour-des-donnees-clients-exposees-apres-la-cyberattaque-de-son-prestataire/",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Carrefour : fuite de données chez un prestataire touchant ses clients (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-carrefour",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Carrefour : des données clients exposées après la cyberattaque d'un prestataire (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/carrefour-shipup-muixw7rd535cstgrh65",
+      "kind": "article"
+    }
+  ],
+  "description": "Carrefour informe début septembre 2026 certains de ses clients d'un incident de sécurité survenu chez un prestataire, sans le nommer, selon Fuites Infos et Cyberattaque.org. Les données concernées se limitent au prénom, au nom, à l'adresse e-mail et au numéro de téléphone. Aucune donnée bancaire ni aucun mot de passe n'est concerné, selon la notification relayée par les deux médias. Cyberattaque.org et FrenchBreaches rapprochent l'incident de la cyberattaque contre Shipup, plateforme française de suivi des colis utilisée par Carrefour, liée à l'exploitation d'une faille critique de l'outil Metabase. Carrefour indique que les mesures nécessaires ont été prises par son prestataire. Le nombre de clients concernés n'est pas communiqué.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Cyberattaque.org et Fuites Infos relatent la notification adressée par Carrefour à certains de ses clients au sujet d'un incident de sécurité chez un prestataire."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "FrenchBreaches rapproche l'incident de la cyberattaque contre Shipup et de l'exploitation d'une faille de l'outil Metabase ; la période d'accès exacte n'est pas précisée par Carrefour."
+    }
+  ]
+}
