@@ -1,0 +1,57 @@
+{
+  "slug": "agence-de-services-et-paiement-20260924",
+  "entity": "Agence de services et de paiement (ASP)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-24",
+    "publication": "2026-09-24"
+  },
+  "volume": {
+    "count": 108555,
+    "unit": "personnes",
+    "label": "108 555 personnes selon l'ASP, indiqué par FrenchBreaches le 25 septembre ; le média avançait auparavant plus de 143 000 personnes, chiffre proche des 143 518 lignes revendiquées sur un forum"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Agence de Services et de Paiement : fuite de données touchant les bénéficiaires du Coup de pouce énergie (24 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-24-agence-de-services-et-de-paiement",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — ASP piratée : les données bancaires de plus de 143 000 personnes auraient été exfiltrées (24 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/agence-de-services-et-de-paiement-asp-mufhbfg6dferxvrn99",
+      "kind": "revendication"
+    },
+    {
+      "label": "Le Parisien — Fuite de données : l'Agence publique qui gère le « Coup de pouce énergie » piratée, plus de 100 000 personnes touchées (25 septembre 2026)",
+      "url": "https://www.leparisien.fr/high-tech/fuite-de-donnees-lagence-publique-qui-gere-le-coup-de-pouce-energie-piratee-plus-de-100-000-personnes-touchees-25-09-2026-TWPRHSISS5F5TIDNC4KOBOT7DI.php",
+      "kind": "article"
+    }
+  ],
+  "description": "L'Agence de services et de paiement (ASP), établissement public qui verse des aides publiques, signale un accès frauduleux survenu le 27 août 2026 sur le portail du dispositif « Coup de pouce énergie », selon sa notification relayée par Fuites Infos. Des avis de paiement 2023 et 2024 ont été exfiltrés : noms, adresses postales, numéros de bénéficiaire, coordonnées bancaires IBAN et BIC, montants versés, selon FrenchBreaches. Le dispositif concerne les régions Île-de-France et Provence-Alpes-Côte d'Azur. FrenchBreaches indique que l'ASP évoque 108 555 personnes concernées. Une revendication publiée sur un forum évoque 143 518 lignes, sans confirmation par l'agence. L'ASP indique avoir notifié la CNIL, selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-08-27",
+      "event": "Accès frauduleux à un compte utilisateur sur le portail « Coup de pouce énergie », suivi de l'exfiltration d'avis de paiement 2023 et 2024, selon la notification de l'ASP relayée par Fuites Infos."
+    },
+    {
+      "date": "2026-08-28",
+      "event": "Détection de l'incident par l'ASP, qui bloque le compte compromis et corrige la vulnérabilité identifiée, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-09-24",
+      "event": "Fuites Infos et FrenchBreaches documentent la notification aux bénéficiaires ; FrenchBreaches signale une revendication forum attribuant 143 518 lignes à l'ASP."
+    },
+    {
+      "date": "2026-09-25",
+      "event": "FrenchBreaches indique que l'ASP évoque 108 555 personnes concernées ; Le Parisien couvre l'incident."
+    }
+  ]
+}
