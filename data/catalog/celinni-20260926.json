@@ -8,9 +8,9 @@
     "publication": "2026-09-26"
   },
   "volume": {
-    "count": 12000,
+    "count": 0,
     "unit": "personnes",
-    "label": "12 000 clients potentiellement exposés selon FrenchBreaches ; la revendication n'annonce aucun volume ; Celinni ne confirme ni n'infirme"
+    "label": "nombre de clients concernés non communiqué ; la revendication n'annonce aucun volume, selon Fuites Infos"
   },
   "data_types": [
     "identite",
@@ -20,29 +20,25 @@
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Celinni : fuite de données revendiquée, la maison ouvre une investigation (26/09/2026)",
+      "label": "Fuites Infos — Celinni : fuite de données revendiquée, la maison ouvre une investigation (26 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-26-celinni",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Celinni piraté : des données clients et fournisseurs revendiquées par un groupe de hackers (26/09/2026)",
+      "label": "FrenchBreaches — Cyberattaque : le joaillier Celinni visé par une fuite présumée de données (26 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/celinni-muim3c0lnes4szg970p",
       "kind": "revendication"
     }
   ],
-  "description": "Le 26 septembre 2026, un groupe cybercriminel revendique sur Telegram une fuite de données visant Celinni, maison de joaillerie parisienne vendant en ligne. Selon la revendication, les données citées couvrent nom, e-mail, téléphone, adresse postale, comptes, historiques de commandes, factures et pièces d'identité. Les numéros de certificats GIA figurent aussi dans la liste. Selon FrenchBreaches, 12 000 clients sont potentiellement exposés ; la revendication n'annonce aucun volume. L'annonce survient trois jours après un courriel d'hameçonnage parti de l'adresse d'envoi de la boutique. Selon Celinni, l'identifiant d'envoi de son prestataire d'e-mailing a été détourné entre le 22 et le 24 septembre. La maison a renouvelé ses clés d'accès et ouvert une investigation. Elle ne confirme ni n'infirme la fuite.",
+  "description": "Un groupe cybercriminel revendique le 26 septembre 2026, sur un canal Telegram, le vol de données visant Celinni, maison de joaillerie parisienne qui vend en ligne des bijoux sertis de diamants certifiés GIA. Selon la revendication relayée par Fuites Infos et FrenchBreaches, les données visent l'identité et les coordonnées de clients. La revendication cite aussi des comptes, des historiques de commandes, des factures, des pièces d'identité et des numéros de certificats GIA. Aucun volume n'est annoncé. Selon Fuites Infos, un courriel d'hameçonnage est parti le 23 septembre de l'adresse de notification de la boutique. Celinni a ouvert une investigation et déclare ne pouvoir ni confirmer ni infirmer la fuite.",
   "timeline": [
     {
       "date": "2026-09-23",
-      "event": "Un courriel d'hameçonnage part de l'adresse d'expédition de Celinni, selon Fuites Infos ; la maison situe le détournement de l'identifiant d'envoi entre le 22 et le 24 septembre."
+      "event": "Un courriel d'hameçonnage aux couleurs de l'Assurance Maladie part de l'adresse de notification de la boutique en ligne, selon Fuites Infos."
     },
     {
       "date": "2026-09-26",
-      "event": "Un groupe revendique sur Telegram une fuite de données clients et fournisseurs ; Celinni ouvre une investigation et déclare ne pouvoir ni confirmer ni infirmer la revendication."
-    },
-    {
-      "date": "2026-09-26",
-      "event": "FrenchBreaches relève 12 000 clients potentiellement exposés selon ses informations ; Celinni indique que les certificats GIA sont émis et conservés par le Gemological Institute of America."
+      "event": "Publication de la revendication sur un canal Telegram ; Fuites Infos relaie l'incident et Celinni ouvre une investigation, sans confirmer ni infirmer."
     }
   ]
 }
