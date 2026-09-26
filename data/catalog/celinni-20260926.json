@@ -1,0 +1,44 @@
+{
+  "slug": "celinni-20260926",
+  "entity": "Celinni",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué ; la revendication n'annonce aucun volume, selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Celinni : fuite de données revendiquée, la maison ouvre une investigation (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-celinni",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque : le joaillier Celinni visé par une fuite présumée de données (26 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/celinni-muim3c0lnes4szg970p",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un groupe cybercriminel revendique le 26 septembre 2026, sur un canal Telegram, le vol de données visant Celinni, maison de joaillerie parisienne qui vend en ligne des bijoux sertis de diamants certifiés GIA. Selon la revendication relayée par Fuites Infos et FrenchBreaches, les données visent l'identité et les coordonnées de clients. La revendication cite aussi des comptes, des historiques de commandes, des factures, des pièces d'identité et des numéros de certificats GIA. Aucun volume n'est annoncé. Selon Fuites Infos, un courriel d'hameçonnage est parti le 23 septembre de l'adresse de notification de la boutique. Celinni a ouvert une investigation et déclare ne pouvoir ni confirmer ni infirmer la fuite.",
+  "timeline": [
+    {
+      "date": "2026-09-23",
+      "event": "Un courriel d'hameçonnage aux couleurs de l'Assurance Maladie part de l'adresse de notification de la boutique en ligne, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication sur un canal Telegram ; Fuites Infos relaie l'incident et Celinni ouvre une investigation, sans confirmer ni infirmer."
+    }
+  ]
+}
