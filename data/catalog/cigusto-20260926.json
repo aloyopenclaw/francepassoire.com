@@ -10,7 +10,7 @@
   "volume": {
     "count": 150000,
     "unit": "comptes",
-    "label": "environ 150 000 utilisateurs revendiqués selon Fuites Infos et FrenchBreaches ; échantillon publié d'environ 1 000 fiches"
+    "label": "150 000 comptes clients revendiqués selon Fuites Infos et FrenchBreaches ; échantillon de 1 000 fiches publié"
   },
   "data_types": [
     "identite",
@@ -27,22 +27,17 @@
       "label": "FrenchBreaches — Cigusto piraté : les données de 150 000 clients revendiquées sur un forum (26 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/cigusto-muiqgjuvvmozfkjzrdp",
       "kind": "article"
-    },
-    {
-      "label": "Cyberattaque.org — Cigusto : les données de 150 000 clients de l'enseigne de vape revendiquées (26 septembre 2026)",
-      "url": "https://www.cyberattaque.org/cigusto-les-donnees-de-150-000-clients-de-lenseigne-de-vape-revendiquees/",
-      "kind": "article"
     }
   ],
-  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise Cigusto, enseigne française de cigarettes électroniques et de produits de vapotage. L'auteur affirme détenir une base d'environ 150 000 clients de cigusto.com et publie un échantillon d'environ 1 000 fiches. Selon Fuites Infos et FrenchBreaches, ces fiches associent nom, prénom, adresse e-mail, niveau et statut de fidélité et montant de la cagnotte. Certaines mises à jour sont datées du 22 septembre 2026, selon les deux médias. Fuites Infos indique qu'aucun élément ne permet de rattacher cette revendication à la cyberattaque du 16 août 2025 mentionnée par Cigusto sur son site. Cigusto n'a pas confirmé publiquement la revendication.",
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise Cigusto, enseigne française de cigarettes électroniques et de vapotage. L'auteur affirme mettre en vente une base portant sur environ 150 000 comptes clients. Un échantillon de 1 000 fiches accompagne l'annonce, selon Fuites Infos et FrenchBreaches. Les champs visibles comprennent nom, prénom, adresse e-mail, identifiant interne, niveau et statut de fidélité, et montant de la cagnotte. Certaines fiches portent une mise à jour datée du 22 septembre 2026, selon FrenchBreaches. Fuites Infos indique ne pas pouvoir rattacher cette revendication à la cyberattaque évoquée par Cigusto au sujet du 16 août 2025. Cigusto n'a pas confirmé publiquement la revendication.",
   "timeline": [
     {
       "date": "2026-09-26",
-      "event": "Publication sur un forum d'une revendication présentant une base d'environ 150 000 clients de cigusto.com, accompagnée d'un échantillon d'environ 1 000 enregistrements, selon FrenchBreaches."
+      "event": "Publication de la revendication : mise en vente d'une base présentée comme issue de Cigusto, environ 150 000 comptes annoncés et échantillon de 1 000 fiches."
     },
     {
       "date": "2026-09-26",
-      "event": "Fuites Infos décrit des fiches avec nom, prénom, adresse e-mail, éléments de fidélité et montant de cagnotte, mises à jour datées du 22 septembre 2026 ; aucun lien établi avec la cyberattaque d'août 2025 mentionnée par Cigusto ; aucune confirmation publique."
+      "event": "Fuites Infos et FrenchBreaches décrivent les champs exposés : identité, adresse e-mail, identifiant interne, fidélité et cagnotte ; aucune confirmation publique de Cigusto."
     }
   ]
 }
