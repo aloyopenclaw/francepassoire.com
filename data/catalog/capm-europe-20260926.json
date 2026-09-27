@@ -10,7 +10,7 @@
   "volume": {
     "count": 53835,
     "unit": "personnes",
-    "label": "53 835 personnes distinctes selon Fuites Infos ; 200 Go et 193 982 fichiers revendiqués selon FrenchBreaches"
+    "label": "53 835 personnes selon Fuites Infos ; 200 Go et 193 982 fichiers revendiqués selon FrenchBreaches"
   },
   "data_types": [
     "identite",
@@ -31,15 +31,15 @@
       "kind": "article"
     }
   ],
-  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise CAPM Europe, société de Senlis (Oise) spécialisée dans les chariots élévateurs. Intitulée « CAPMEUROPE.COM : BlgCloud Leak #17 » selon FrenchBreaches, elle annonce 200 Go et 193 982 fichiers. Selon Fuites Infos, le dépôt porterait sur 53 835 personnes distinctes, en majorité des interlocuteurs de sociétés clientes, prospects ou fournisseurs : identité, coordonnées professionnelles, environ 271 000 courriels (2015 à juillet 2026) et environ 194 000 documents commerciaux incluant devis, factures et coordonnées bancaires. L'auteur rattache la publication à la série visant les clients de BlgCloud, plateforme dont l'éditeur BLG a signalé un incident en août 2026. CAPM Europe n'a pas confirmé publiquement l'incident.",
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise CAPM Europe. Basée à Senlis (Oise), l'entreprise vend, loue et entretient des chariots élévateurs. Intitulée « CAPMEUROPE.COM : BlgCloud Leak #17 » selon FrenchBreaches, elle annonce 200 Go et 193 982 fichiers. Selon Fuites Infos, le dépôt porte sur 53 835 personnes, surtout des interlocuteurs de clients, prospects ou fournisseurs. FrenchBreaches décrit des identités, coordonnées, identifiants de connexion, IBAN d'entreprises et documents commerciaux. Fuites Infos ajoute environ 271 000 courriels envoyés entre 2015 et juillet 2026. La revendication rejoint la série visant les clients de BlgCloud, dont l'éditeur a signalé un incident en août 2026. CAPM Europe n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-26",
-      "event": "Publication de la revendication « CAPMEUROPE.COM : BlgCloud Leak #17 » sur un forum cybercriminel : 200 Go et 193 982 fichiers annoncés, selon FrenchBreaches."
+      "event": "Publication de la revendication « CAPMEUROPE.COM : BlgCloud Leak #17 » sur un forum cybercriminel : 200 Go et 193 982 fichiers annoncés selon FrenchBreaches."
     },
     {
       "date": "2026-09-26",
-      "event": "Fuites Infos détaille le périmètre : 53 835 personnes distinctes, coordonnées professionnelles, environ 271 000 courriels (2015 à juillet 2026) et environ 194 000 documents commerciaux ; aucune confirmation publique de CAPM Europe."
+      "event": "Fuites Infos évalue le dépôt à 53 835 personnes et décrit identités, coordonnées professionnelles, courriels et documents commerciaux ; aucune confirmation publique de CAPM Europe."
     }
   ]
 }
