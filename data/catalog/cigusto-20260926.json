@@ -1,0 +1,47 @@
+{
+  "slug": "cigusto-20260926",
+  "entity": "Cigusto",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 150000,
+    "unit": "personnes",
+    "label": "150 000 clients annoncés par l'auteur de la revendication ; échantillon public d'environ 1 000 fiches selon Fuites Infos et FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Cigusto : fuite de données revendiquée visant 150 000 utilisateurs (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-cigusto",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cigusto piraté : les données de 150 000 clients revendiquées sur un forum (26 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cigusto-muiqgjuvvmozfkjzrdp",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication du 26 septembre 2026 sur un forum cybercriminel vise Cigusto, enseigne de cigarette électronique. L'auteur met en vente une base présentée comme issue de cigusto.com et annonce 150 000 clients. Un échantillon d'environ 1 000 fiches accompagne l'annonce, selon Fuites Infos et FrenchBreaches. Chaque fiche associe nom, prénom, adresse e-mail, identifiant interne, niveau de fidélité et montant de la cagnotte. Certaines fiches portent une mise à jour datée du 22 septembre 2026, selon FrenchBreaches. Fuites Infos note l'absence de mot de passe et de donnée bancaire dans l'échantillon. Le média ne rattache pas cette base à la cyberattaque du 16 août 2025 évoquée par Cigusto. Cigusto n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-22",
+      "event": "Les mises à jour visibles dans l'échantillon publié vont jusqu'au 22 septembre 2026, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication : 150 000 clients annoncés et échantillon d'environ 1 000 fiches, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Fuites Infos documente le dossier et signale l'absence de confirmation publique de Cigusto."
+    }
+  ]
+}
