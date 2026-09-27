@@ -1,0 +1,43 @@
+{
+  "slug": "score-n-co-20260927",
+  "entity": "Score'n'co",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-27",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 23063,
+    "unit": "personnes",
+    "label": "23 063 personnes selon Fuites Infos ; 22 962 lignes et environ 9 Mo annoncés par le revendiquant selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Score'n'co : fuite de données revendiquée visant 23 063 personnes (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-27-score-n-co",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données : près de 23 000 comptes de Scorenco revendiqués (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/scorenco-muk3vycif9p7gzzgupl",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 27 septembre 2026 sur un forum cybercriminel diffuse gratuitement une base présentée comme issue de Score'n'co. Selon FrenchBreaches, l'auteur, pseudonyme Syrv4x, annonce 22 962 lignes et environ 9 Mo. Fuites Infos évalue la fuite à 23 063 personnes distinctes, dont plus de 4 000 mineurs. Les champs décrits associent identité, coordonnées, numéro de licence sportive, équipes de rattachement et coordonnées de représentants légaux, selon les deux médias. Fuites Infos indique des adresses postales concentrées en Loire-Atlantique, Maine-et-Loire, Mayenne et Indre-et-Loire. La présence de champs consacrés aux représentants légaux suggère que certains comptes concernent des mineurs, selon FrenchBreaches. Score'n'co n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-27",
+      "event": "Publication de la revendication par le pseudonyme Syrv4x : diffusion gratuite d'une base de 22 962 lignes et environ 9 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication. Les fiches incluent des mineurs et leurs représentants légaux, selon Fuites Infos."
+    }
+  ]
+}
