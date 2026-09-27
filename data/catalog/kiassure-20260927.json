@@ -1,0 +1,47 @@
+{
+  "slug": "kiassure-20260927",
+  "entity": "Kiassure",
+  "secteur": "finance",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-27",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 42742,
+    "unit": "enregistrements",
+    "label": "42 742 dossiers clients et 187 comptes selon la revendication relayée par Fuites Infos ; 42 929 enregistrements et environ 918 Mo annoncés selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Kiassure : fuite de données revendiquée visant 42 742 dossiers clients (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-27-kiassure",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Kiassure visé par une fuite de données : plus de 42 000 clients revendiqués (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/kiassure-mukbnw9ya3i9enxgs1l",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 septembre 2026, une revendication sur un forum cybercriminel propose à la vente une base attribuée à Kiassure, courtier grossiste en assurance santé, prévoyance et protection juridique. Selon FrenchBreaches, l'auteur, pseudonyme RedStone, annonce 42 929 enregistrements dont 42 742 fiches clients, 187 comptes et environ 918 Mo en fichiers CSV et JSON. Les données annoncées associent identité et coordonnées d'assurés, IBAN et BIC, contrats de complémentaire santé avec cotisations et bénéficiaires, et signatures électroniques. FrenchBreaches relève 5 484 lignes IBAN dont 3 554 uniques. Selon Fuites Infos, l'extrait diffusé comporte des numéros de sécurité sociale chez certains assurés et la clientèle décrite est majoritairement retraitée. Ni Kiassure ni Ansamble Assurances n'ont confirmé cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-27",
+      "event": "Publication de la revendication par le pseudonyme RedStone : mise en vente d'une base de 42 929 enregistrements et 42 742 fiches clients, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "FrenchBreaches analyse la base annoncée : 187 comptes, 5 484 lignes IBAN dont 3 554 uniques, coordonnées postales et téléphoniques en grand nombre."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos relate la revendication : environ 3 500 IBAN distincts annoncés, extrait comportant des numéros de sécurité sociale, clientèle décrite comme très majoritairement retraitée."
+    }
+  ]
+}
