@@ -1,0 +1,44 @@
+{
+  "slug": "ffbb-20260806",
+  "entity": "Fédération Française de Basket-Ball (FFBB)",
+  "siren": "784405862",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 75831,
+    "unit": "personnes",
+    "label": "75 831 personnes selon Fuites Infos et FrenchBreaches, chiffres affichés par le revendiquant ; 6 873 clubs, 16 681 adresses e-mail et 2 030 CV annoncés"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fédération Française de Basket-Ball : fuite de données revendiquée visant 75 831 personnes (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-06-federation-francaise-de-basket-ball",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fédération française de basketball : les données de 75 000 personnes revendiquées (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-basketball-mujll4cjhxoskk8ka8",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 6 août 2026 sur un forum cybercriminel propose à la vente des fichiers présentés comme issus du site de la Fédération Française de Basket-Ball. Selon Fuites Infos, l'ensemble porte sur environ 75 800 personnes et près de 6 900 clubs. FrenchBreaches relève 75 831 personnes, 6 873 clubs, 16 681 adresses e-mail, 2 030 CV et 839,1 Mo annoncés par le revendiquant, pseudonyme weykofa. La vente est proposée 700 dollars en bitcoin, selon FrenchBreaches. L'échantillon laisse apparaître des coordonnées de correspondants de clubs et des éléments de candidatures, selon Fuites Infos. Les deux médias distinguent ce périmètre du fichier des licenciés concerné par l'incident d'avril 2026. La FFBB n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-08-06",
+      "event": "Publication de la revendication par le pseudonyme weykofa : vente proposée 700 dollars en bitcoin pour 839,1 Mo de données réparties en environ 2 000 fichiers, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication. Les deux médias la distinguent de l'incident du 17 avril 2026 qui visait le fichier des licenciés."
+    }
+  ]
+}
