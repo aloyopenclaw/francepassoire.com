@@ -1,0 +1,48 @@
+{
+  "slug": "planity-20260927",
+  "entity": "Planity",
+  "siren": "821511128",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-27",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 14630,
+    "unit": "personnes",
+    "label": "environ 14 630 personnes selon Fuites Infos ; 17 243 fiches analysées pour 17 244 lignes et environ 12 Mo annoncés, selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Planity : fuite de données revendiquée visant 14 630 clients (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-27-planity",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Planity : les données de plus de 17 000 clients exposées dans une fuite revendiquée (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/planity-muk9e2w3bmx7yd3yyfe",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 27 septembre 2026, un acteur diffuse gratuitement sur un forum cybercriminel un fichier présenté comme une base Planity, plateforme française de réservation beauté. Selon FrenchBreaches, la publication est attribuée au pseudonyme Syrv4x et annonce 17 244 lignes pour environ 12 Mo ; l'analyse fait apparaître 17 243 fiches rattachées à 15 établissements et 14 comptes professionnels. Selon Fuites Infos, le fichier porte sur environ 14 630 personnes, clientes d'une quinzaine d'établissements, avec nom, téléphone, e-mail, historique de rendez-vous et montants dépensés. La collecte date du 22 septembre 2026 selon l'échantillon. Les champs suggèrent un accès via des espaces professionnels, selon Fuites Infos. Planity n'a pas confirmé publiquement cette revendication, distincte de l'épisode de juillet 2026 reconnu par l'entreprise.",
+  "timeline": [
+    {
+      "date": "2026-09-22",
+      "event": "Collecte des données figurant dans l'échantillon publié, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Publication de la revendication par le pseudonyme Syrv4x : diffusion gratuite d'un fichier de 17 244 lignes et environ 12 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication : 17 243 fiches, 15 établissements et 14 comptes professionnels recensés, selon FrenchBreaches."
+    }
+  ]
+}
