@@ -1,0 +1,43 @@
+{
+  "slug": "cigusto-20260926",
+  "entity": "Cigusto",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 150000,
+    "unit": "comptes",
+    "label": "150 000 comptes clients revendiqués selon Fuites Infos et FrenchBreaches ; échantillon de 1 000 fiches publié"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Cigusto : fuite de données revendiquée visant 150 000 utilisateurs (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-cigusto",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cigusto piraté : les données de 150 000 clients revendiquées sur un forum (26 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cigusto-muiqgjuvvmozfkjzrdp",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise Cigusto, enseigne française de cigarettes électroniques et de vapotage. L'auteur affirme mettre en vente une base portant sur environ 150 000 comptes clients. Un échantillon de 1 000 fiches accompagne l'annonce, selon Fuites Infos et FrenchBreaches. Les champs visibles comprennent nom, prénom, adresse e-mail, identifiant interne, niveau et statut de fidélité, et montant de la cagnotte. Certaines fiches portent une mise à jour datée du 22 septembre 2026, selon FrenchBreaches. Fuites Infos indique ne pas pouvoir rattacher cette revendication à la cyberattaque évoquée par Cigusto au sujet du 16 août 2025. Cigusto n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication : mise en vente d'une base présentée comme issue de Cigusto, environ 150 000 comptes annoncés et échantillon de 1 000 fiches."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Fuites Infos et FrenchBreaches décrivent les champs exposés : identité, adresse e-mail, identifiant interne, fidélité et cagnotte ; aucune confirmation publique de Cigusto."
+    }
+  ]
+}
