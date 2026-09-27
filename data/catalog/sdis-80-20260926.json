@@ -1,0 +1,42 @@
+{
+  "slug": "sdis-80-20260926",
+  "entity": "SDIS de la Somme (SDIS 80)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 2322,
+    "unit": "personnes",
+    "label": "2 322 personnes selon Fuites Infos ; un peu moins de 2 500 selon Cyberattaque.org ; 16 000 utilisateurs annoncés dans la revendication"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — SDIS 80 : fuite de données revendiquée visant 2 322 personnes (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-sdis-80",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — SDIS 80 : près de 2 500 sapeurs-pompiers et agents de la Somme dans une fuite de données (27 septembre 2026)",
+      "url": "https://www.cyberattaque.org/sdis-80-pres-de-2-500-sapeurs-pompiers-et-agents-de-la-somme-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise l'extranet du SDIS 80 (Somme). Le hacker gqtia affirme diffuser gratuitement un annuaire interne présenté comme issu de cette plateforme, selon Cyberattaque.org. La revendication annonce 16 000 utilisateurs. L'analyse des fichiers fait ressortir un peu moins de 2 500 personnes distinctes, et 2 322 selon Fuites Infos. Les données associent nom, adresse e-mail, centre ou service de rattachement et fonction opérationnelle pour certains profils. Aucun mot de passe ni donnée bancaire n'apparaît dans les fichiers diffusés, selon Fuites Infos. Le SDIS 80 n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication : diffusion gratuite d'un fichier présenté comme l'annuaire de l'extranet du SDIS 80, avec 16 000 utilisateurs annoncés selon Cyberattaque.org."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos évalue le fichier diffusé à 2 322 personnes distinctes ; Cyberattaque.org avance un volume inférieur à 2 500, sans mot de passe ni donnée bancaire."
+    }
+  ]
+}
