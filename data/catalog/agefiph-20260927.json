@@ -1,0 +1,44 @@
+{
+  "slug": "agefiph-20260927",
+  "entity": "Agefiph",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-27",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 3728,
+    "unit": "personnes",
+    "label": "3 728 personnes selon Fuites Infos ; 3 736 lignes et environ 4 Mo annoncés par le revendiquant selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Agefiph : fuite de données revendiquée visant 3 728 personnes (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-27-agefiph",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — L'Agefiph visée par une fuite de données concernant plus de 3 700 personnes (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/agefiph-mujvbup2qid66k3d18c",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 27 septembre 2026 sur un forum cybercriminel vise une base présentée comme issue d'agefiph.fr. L'auteur, pseudonyme Syrv4x, annonce la diffusion gratuite d'un fichier d'environ 4 Mo, selon FrenchBreaches. Fuites Infos évalue la fuite à 3 728 personnes. FrenchBreaches relève 3 736 lignes annoncées. Les champs décrits associent identité, coordonnées, situation professionnelle, niveau de formation, minima sociaux et informations sur le handicap, selon FrenchBreaches. La nature du handicap relève des données de santé, selon Fuites Infos. Fuites Infos indique une concentration des personnes concernées dans le Rhône, l'Yonne, le Val-d'Oise et plusieurs départements de Bourgogne-Franche-Comté. L'Agefiph n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-27",
+      "event": "Publication de la revendication par le pseudonyme Syrv4x : diffusion gratuite d'une base de 3 736 lignes et environ 4 Mo présentée comme issue d'agefiph.fr, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication. Les champs décrits incluent la nature du handicap et le statut de bénéficiaire de l'obligation d'emploi, selon FrenchBreaches."
+    }
+  ]
+}
