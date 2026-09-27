@@ -1,0 +1,45 @@
+{
+  "slug": "capm-europe-20260926",
+  "entity": "CAPM Europe",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-26",
+    "publication": "2026-09-26"
+  },
+  "volume": {
+    "count": 53835,
+    "unit": "personnes",
+    "label": "53 835 personnes selon Fuites Infos ; 200 Go et 193 982 fichiers revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — CAPM Europe : fuite de données revendiquée visant 53 835 personnes (26 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-26-capm-europe",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — CAPM Europe piraté : 200 Go et près de 194 000 fichiers revendiqués dans une fuite liée à BlgCloud (26 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/capm-europe-blgcloud-muiqoe2111aliz5rbfbn",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise CAPM Europe. Basée à Senlis (Oise), l'entreprise vend, loue et entretient des chariots élévateurs. Intitulée « CAPMEUROPE.COM : BlgCloud Leak #17 » selon FrenchBreaches, elle annonce 200 Go et 193 982 fichiers. Selon Fuites Infos, le dépôt porte sur 53 835 personnes, surtout des interlocuteurs de clients, prospects ou fournisseurs. FrenchBreaches décrit des identités, coordonnées, identifiants de connexion, IBAN d'entreprises et documents commerciaux. Fuites Infos ajoute environ 271 000 courriels envoyés entre 2015 et juillet 2026. La revendication rejoint la série visant les clients de BlgCloud, dont l'éditeur a signalé un incident en août 2026. CAPM Europe n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-26",
+      "event": "Publication de la revendication « CAPMEUROPE.COM : BlgCloud Leak #17 » sur un forum cybercriminel : 200 Go et 193 982 fichiers annoncés selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-26",
+      "event": "Fuites Infos évalue le dépôt à 53 835 personnes et décrit identités, coordonnées professionnelles, courriels et documents commerciaux ; aucune confirmation publique de CAPM Europe."
+    }
+  ]
+}
