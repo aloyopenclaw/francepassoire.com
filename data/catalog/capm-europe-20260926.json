@@ -10,7 +10,7 @@
   "volume": {
     "count": 53835,
     "unit": "personnes",
-    "label": "53 835 personnes visées selon Fuites Infos ; 200 Go et 193 982 fichiers revendiqués par l'auteur selon FrenchBreaches"
+    "label": "53 835 personnes distinctes selon Fuites Infos ; 200 Go et 193 982 fichiers revendiqués selon FrenchBreaches"
   },
   "data_types": [
     "identite",
@@ -31,19 +31,15 @@
       "kind": "article"
     }
   ],
-  "description": "Une revendication du 26 septembre 2026 sur un forum cybercriminel vise CAPM Europe. Cette société de Senlis (Oise) vend, loue et entretient des chariots élévateurs. La revendication, intitulée « CAPMEUROPE.COM - BlgCloud Leak #17 », annonce 200 Go et 193 982 fichiers. Fuites Infos évalue le dépôt à environ 53 800 personnes distinctes. Selon la revendication, il comprend identités, coordonnées, identifiants, mots de passe et 271 000 courriels (2015 à juillet 2026). Fuites Infos cite aussi devis, factures et contrats de location parmi les documents. FrenchBreaches relève des IBAN dans l'échantillon CRM. La publication rejoint la série BlgCloud, du nom de la plateforme de l'éditeur BLG, victime d'un incident en août 2026. CAPM Europe n'a pas confirmé publiquement l'incident.",
+  "description": "Une revendication publiée le 26 septembre 2026 sur un forum cybercriminel vise CAPM Europe, société de Senlis (Oise) spécialisée dans les chariots élévateurs. Intitulée « CAPMEUROPE.COM : BlgCloud Leak #17 » selon FrenchBreaches, elle annonce 200 Go et 193 982 fichiers. Selon Fuites Infos, le dépôt porterait sur 53 835 personnes distinctes, en majorité des interlocuteurs de sociétés clientes, prospects ou fournisseurs : identité, coordonnées professionnelles, environ 271 000 courriels (2015 à juillet 2026) et environ 194 000 documents commerciaux incluant devis, factures et coordonnées bancaires. L'auteur rattache la publication à la série visant les clients de BlgCloud, plateforme dont l'éditeur BLG a signalé un incident en août 2026. CAPM Europe n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
-      "date": "2026-08-08",
-      "event": "L'éditeur BLG signale un incident de sécurité sur sa plateforme de gestion commerciale BlgCloud, selon Fuites Infos."
+      "date": "2026-09-26",
+      "event": "Publication de la revendication « CAPMEUROPE.COM : BlgCloud Leak #17 » sur un forum cybercriminel : 200 Go et 193 982 fichiers annoncés, selon FrenchBreaches."
     },
     {
       "date": "2026-09-26",
-      "event": "Publication de la revendication « CAPMEUROPE.COM - BlgCloud Leak #17 » : 200 Go et 193 982 fichiers annoncés selon FrenchBreaches."
-    },
-    {
-      "date": "2026-09-26",
-      "event": "Fuites Infos documente le dépôt : environ 53 800 personnes distinctes, coordonnées, identifiants, courriels et documents commerciaux ; aucune confirmation publique de CAPM Europe."
+      "event": "Fuites Infos détaille le périmètre : 53 835 personnes distinctes, coordonnées professionnelles, environ 271 000 courriels (2015 à juillet 2026) et environ 194 000 documents commerciaux ; aucune confirmation publique de CAPM Europe."
     }
   ]
 }
