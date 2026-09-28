@@ -10,7 +10,7 @@
   "volume": {
     "count": 6997,
     "unit": "personnes",
-    "label": "6 997 personnes distinctes pour 7 770 lignes annoncées, selon Fuites Infos ; 7 770 enregistrements, environ 3 Mo, selon la revendication relayée par FrenchBreaches"
+    "label": "6 997 clients selon Fuites Infos ; fichier annoncé à 7 770 lignes dans la revendication relayée par Fuites Infos"
   },
   "data_types": [
     "identite",
@@ -19,29 +19,29 @@
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Spareka : fuite de données revendiquée visant 6 997 clients (28 septembre 2026)",
+      "label": "Fuites Infos — Spareka confirme une fuite de données visant 6 997 clients (28 septembre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-09-28-spareka",
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite de données chez Spareka : près de 8 000 dossiers de clients publiés sur un forum de pirates (28 septembre 2026)",
+      "label": "FrenchBreaches — Fuite de données chez Spareka : près de 8 000 dossiers de clients... (28 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/spareka-mulcy9rimwnqor7klib",
       "kind": "article"
     }
   ],
-  "description": "Le 28 septembre 2026, le pseudonyme Syrv4x publie gratuitement sur un forum cybercriminel un fichier présenté comme la base de Spareka, selon FrenchBreaches. Spareka est une plateforme française de vente de pièces détachées et d'aide à la réparation d'appareils électroménagers. Le fichier annoncé compte 7 770 lignes, soit environ 3 Mo, et proviendrait du portail de rendez-vous du réseau de réparateurs partenaires, selon Fuites Infos. Fuites Infos évalue à 6 997 le nombre de personnes distinctes concernées. Les champs décrits couvrent l'identité, les coordonnées, les rendez-vous de réparation, l'appareil, sa marque, la description de la panne et un lien vers le dossier de bonus réparation. La collecte daterait du 24 septembre 2026, selon la revendication. Spareka n'a pas confirmé publiquement cet incident.",
+  "description": "Le 28 septembre 2026, un fichier présenté comme la base de clients de Spareka est publié gratuitement sur un forum cybercriminel, selon Fuites Infos. Fuites Infos évalue le fichier à 6 997 personnes distinctes et à 7 770 lignes, une par rendez-vous de réparation. FrenchBreaches évoque près de 8 000 dossiers avec noms, e-mails, téléphones et informations liées aux réparations. Selon Fuites Infos, les données proviendraient du portail de rendez-vous des réparateurs partenaires, avec une collecte le 24 septembre 2026. Spareka a confirmé l'incident le 28 septembre et décrit la compromission d'un compte individuel, selon Fuites Infos. Aucune adresse postale ni donnée bancaire ne figure dans la liste des champs annoncée.",
   "timeline": [
     {
       "date": "2026-09-24",
-      "event": "Collecte automatique des fiches depuis les pages de rendez-vous du portail de gestion des réparateurs, selon la revendication relayée par Fuites Infos."
+      "event": "Collecte des fiches depuis les pages de rendez-vous du portail des réparateurs partenaires, d'après la revendication relayée par Fuites Infos."
     },
     {
       "date": "2026-09-28",
-      "event": "Publication gratuite sur un forum cybercriminel d'un fichier attribué à Spareka par le pseudonyme Syrv4x : 7 770 lignes, environ 3 Mo, selon FrenchBreaches."
+      "event": "Publication gratuite du fichier sur un forum cybercriminel : 7 770 lignes annoncées, selon Fuites Infos."
     },
     {
       "date": "2026-09-28",
-      "event": "Fuites Infos évalue à 6 997 le nombre de personnes distinctes et décrit des champs liés aux rendez-vous, aux appareils et aux pannes ; aucune confirmation publique de Spareka."
+      "event": "Spareka confirme l'incident et évoque un incident circonscrit lié à la compromission d'un compte individuel, selon Fuites Infos."
     }
   ]
 }
