@@ -1,0 +1,43 @@
+{
+  "slug": "federation-francaise-de-basket-ball-20260806",
+  "entity": "Fédération Française de Basket-Ball (FFBB)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-08-06",
+    "publication": "2026-09-27"
+  },
+  "volume": {
+    "count": 75831,
+    "unit": "personnes",
+    "label": "75 831 personnes selon Fuites Infos et FrenchBreaches ; 6 873 clubs, 16 681 adresses e-mail et 2 030 CV annoncés par le revendiquant"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fédération Française de Basket-Ball : fuite de données revendiquée visant 75 831 personnes (27 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-08-06-federation-francaise-de-basket-ball",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fédération française de basketball : les données de 75 000 personnes revendiquées (27 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-basketball-mujll4cjhxoskk8ka8",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 6 août 2026 sur un forum cybercriminel vise le site de la Fédération Française de Basket-Ball. L'auteur, pseudonyme weykofa, affirme vendre 839 Mo de données pour 700 dollars en bitcoin, selon FrenchBreaches. L'ensemble annoncé porte sur 75 831 personnes et 6 873 clubs, avec 16 681 adresses e-mail et 2 030 CV revendiqués. L'échantillon diffusé montre noms, numéros de téléphone, adresses électroniques et postales, et rattachement à un club, selon FrenchBreaches. Fuites Infos précise que le lot mentionne aussi des candidatures adressées à la fédération. Fuites Infos distingue ce lot de la mise en vente d'avril 2026 portant sur le fichier des licenciés. La FFBB n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-08-06",
+      "event": "Publication de la revendication intitulée « [FR] Federation Basket - 75k » par le pseudonyme weykofa : 839,1 Mo, environ 2 000 fichiers et un prix de 700 dollars en bitcoin annoncés, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-27",
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication. Fuites Infos distingue ce lot de la mise en vente d'avril 2026 portant sur le fichier des licenciés."
+    }
+  ]
+}
