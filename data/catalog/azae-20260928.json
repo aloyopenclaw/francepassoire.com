@@ -1,0 +1,50 @@
+{
+  "slug": "azae-20260928",
+  "entity": "Azaé",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 3082,
+    "unit": "enregistrements",
+    "label": "3 082 enregistrements et 3 731 fichiers internes, environ 2,9 Go, selon la revendication relayée par FrenchBreaches et Fuites Infos ; nombre de bénéficiaires concernés non communiqué"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Azaé : fuite de données revendiquée visant 3 731 fichiers internes (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-azae",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Azaé de nouveau visé par une fuite de données : des documents liés à l'aide à domicile exposés (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/aza-mukkqhuagxmqmicsl9j",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 septembre 2026, le pseudonyme ChimeraZ publie sur un forum cybercriminel une base présentée comme issue d'Azaé, selon FrenchBreaches. Azaé est une enseigne française d'aide à domicile du groupe A2micile, selon Fuites Infos. La revendication porte sur 3 082 enregistrements et 3 731 fichiers, soit environ 2,9 Go, pour des documents situés entre 2024 et 2026 selon FrenchBreaches. Les fichiers décrits incluent comptes rendus, procès-verbaux, annuaires de partenaires et documents de paie. Des données de santé figurent dans les éléments décrits : hospitalisations, fin de vie et passages à domicile, selon Fuites Infos. Fuites Infos mentionne par ailleurs une revendication distincte de février 2026 sur des plannings d'intervention. Azaé n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication sur un forum cybercriminel d'une base attribuée à Azaé par le pseudonyme ChimeraZ : 3 082 enregistrements et 3 731 fichiers revendiqués, environ 2,9 Go, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FrenchBreaches décrit des données de santé, des documents de suivi des bénéficiaires et des éléments RH couvrant la période 2024 à 2026."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos relève des informations sur des bénéficiaires âgés ou dépendants et une revendication distincte de février 2026 portant sur des plannings d'intervention."
+    }
+  ]
+}
