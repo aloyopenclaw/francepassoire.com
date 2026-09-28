@@ -1,0 +1,47 @@
+{
+  "slug": "les-cles-de-l-atelier-20260928",
+  "entity": "Les Clés de l'Atelier",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 7821,
+    "unit": "personnes",
+    "label": "7 821 stagiaires selon Fuites Infos ; 10 193 lignes, environ 5 Mo, selon la revendication relayée par FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Les Clés de l'Atelier : fuite de données revendiquée visant 7 821 stagiaires (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-les-cles-de-l-atelier",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Les Clés de l'Atelier : plus de 10 000 données de stagiaires publiées sur un forum de pirates (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/les-cl-s-de-l-atelier-mulcuy15p8t3i1p5war",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 septembre 2026, un fichier présenté comme la base des stagiaires des Clés de l'Atelier est publié gratuitement sur un forum cybercriminel, selon Fuites Infos et FrenchBreaches. Les Clés de l'Atelier est un organisme de formation et CFA de la métropole de Lyon spécialisé dans les métiers du bâtiment, qui intervient aussi auprès de personnes détenues en Auvergne-Rhône-Alpes. FrenchBreaches décrit 10 193 lignes, environ 5 Mo, avec noms, dates et lieux de naissance, parcours de formation et informations relatives au handicap. Fuites Infos évalue à 7 821 le nombre de stagiaires concernés et indique qu'environ 800 dossiers incluraient un numéro de sécurité sociale et 500 un identifiant pénitentiaire. Des mineurs figureraient parmi les personnes concernées, selon Fuites Infos. L'organisme n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication gratuite sur un forum cybercriminel d'une base attribuée aux Clés de l'Atelier : 10 193 lignes, environ 5 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FrenchBreaches décrit des champs liés au handicap, à l'expérience en milieu pénitentiaire et à une éventuelle condamnation."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos évalue à 7 821 le nombre de stagiaires, dont environ 800 avec un numéro de sécurité sociale et 500 avec un identifiant pénitentiaire ; aucune confirmation publique de l'organisme."
+    }
+  ]
+}
