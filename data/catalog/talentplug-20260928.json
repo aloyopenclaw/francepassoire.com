@@ -1,0 +1,47 @@
+{
+  "slug": "talentplug-20260928",
+  "entity": "Talentplug",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 62700,
+    "unit": "personnes",
+    "label": "près de 62 700 personnes distinctes selon Fuites Infos ; 118 677 dossiers de candidatures revendiqués selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Talentplug : fuite de données revendiquée touchant près de 62 700 candidats (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-talentplug",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Talentplug : plus de 118 000 dossiers de... (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/talentplug-mulp4xdy2f3iyz3qle5",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 septembre 2026, une revendication publiée sur un forum cybercriminel propose gratuitement un fichier présenté comme la base de Talentplug, selon Fuites Infos. Le fichier porterait sur environ 118 700 candidatures déposées entre mai 2025 et septembre 2026, soit près de 62 700 personnes distinctes, selon Fuites Infos. FrenchBreaches annonce 118 677 dossiers avec noms, e-mails, téléphones, candidatures et pièces jointes. Selon Fuites Infos, les champs incluent identité, adresse e-mail, téléphone pour une partie des personnes, offre visée, lieu et site d'emploi d'origine, sans le contenu des CV. Talentplug n'a pas confirmé publiquement cette revendication. L'entreprise édite une solution de multidiffusion d'offres d'emploi et de gestion des candidatures pour les recruteurs.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication gratuite d'un fichier attribué à Talentplug sur un forum cybercriminel : 118 677 dossiers revendiqués, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos évalue le fichier à près de 62 700 personnes distinctes pour environ 118 700 candidatures, essentiellement des offres d'alternance d'un même organisme de formation."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos rapporte l'absence de confirmation publique de Talentplug."
+    }
+  ]
+}
