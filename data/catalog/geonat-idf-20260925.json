@@ -1,0 +1,47 @@
+{
+  "slug": "geonat-idf-20260925",
+  "entity": "GeoNat'îdF",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-25",
+    "publication": "2026-09-25"
+  },
+  "volume": {
+    "count": 3400,
+    "unit": "comptes",
+    "label": "environ 3 400 comptes selon la revendication relayée par Cyberattaque.org et FrenchBreaches ; fichier JSON d'environ 614 Ko annoncé selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Cyberattaque.org — GeoNat'îdF : les données de 3 400 utilisateurs de la plateforme biodiversité francilienne piraté (25 septembre 2026)",
+      "url": "https://www.cyberattaque.org/geonatidf-les-donnees-de-3-400-utilisateurs-de-la-plateforme-biodiversite-francilienne-pirate/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — GeoNat'ÎdF piraté : les données de plus de 3 400 comptes publiées (25 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/geonat-df-muh0ong95l9qveyqzp4",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 25 septembre 2026, le pseudonyme Alduin publie gratuitement sur un forum cybercriminel une base présentée comme issue de GeoNat'îdF. La plateforme régionale des données naturalistes d'Île-de-France est proposée par l'ARB îdF. Selon Cyberattaque.org et FrenchBreaches, la revendication porte sur environ 3 400 comptes utilisateurs. Les champs décrits incluent identifiant interne, nom, prénom, adresse e-mail, nom d'utilisateur et statut du compte. FrenchBreaches décrit un fichier JSON d'environ 614 Ko. Les échantillons contiennent des adresses professionnelles de collectivités, d'organismes publics et de structures de l'environnement. Aucun mot de passe ni aucune observation naturaliste n'apparaissent dans l'échantillon selon Cyberattaque.org. La méthode d'obtention de la base n'est pas expliquée. L'ARB îdF n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-25",
+      "event": "Publication de la revendication par le pseudonyme Alduin : diffusion gratuite d'une base de plus de 3 400 comptes utilisateurs, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-25",
+      "event": "FrenchBreaches décrit un fichier JSON d'environ 614 Ko avec identifiants internes, noms, prénoms, adresses e-mail, noms d'utilisateur et statuts de comptes."
+    },
+    {
+      "date": "2026-09-25",
+      "event": "Cyberattaque.org relève l'absence de mots de passe et de données naturalistes dans l'échantillon, et la présence d'adresses professionnelles."
+    }
+  ]
+}
