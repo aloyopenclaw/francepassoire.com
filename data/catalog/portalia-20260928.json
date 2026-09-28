@@ -1,0 +1,50 @@
+{
+  "slug": "portalia-20260928",
+  "entity": "Portalia",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 21698,
+    "unit": "enregistrements",
+    "label": "21 698 enregistrements et 22 221 fichiers, environ 2,8 Go, selon la revendication relayée par FrenchBreaches ; environ 1 069 consultants distincts selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Portalia : fuite de données revendiquée visant 1 069 consultants (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-portalia",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Portalia visé par une fuite de données : plus de 22 000 documents revendiqués (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/portalia-mukjf8v1pk2fw5xkrf",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 septembre 2026, le pseudonyme ChimeraZ publie sur un forum cybercriminel une base présentée comme issue de Portalia, selon FrenchBreaches. Portalia est une société française de portage salarial du groupe Mantu, selon Fuites Infos. La revendication porte sur 21 698 enregistrements et 22 221 fichiers, soit environ 2,8 Go. FrenchBreaches décrit des fichiers aux formats JSON et PDF. Fuites Infos évalue à environ 1 069 le nombre de consultants distincts concernés. Les documents cités incluent bulletins de salaire, contrats de travail, comptes d'activité et attestations France Travail. Les données incluent identité, adresse, numéro de Sécurité sociale, rémunération, coordonnées bancaires et noms des clients. Portalia n'a pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication sur un forum cybercriminel d'une base attribuée à Portalia par le pseudonyme ChimeraZ : 21 698 enregistrements et 22 221 fichiers revendiqués, environ 2,8 Go, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FrenchBreaches décrit des fichiers aux formats JSON et PDF et un échantillon présenté comme un bulletin de salaire."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos cite des bulletins de salaire de 2017 à septembre 2025, des attestations France Travail et environ 1 069 consultants distincts ; aucune confirmation publique de Portalia."
+    }
+  ]
+}
