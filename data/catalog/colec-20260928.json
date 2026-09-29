@@ -1,0 +1,47 @@
+{
+  "slug": "colec-20260928",
+  "entity": "Colec",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 2224,
+    "unit": "comptes",
+    "label": "selon Fuites Infos, 2 224 comptes utilisateurs ; FrenchBreaches évoque environ 2 159 utilisateurs enregistrés ; 3,36 Go et 10 336 fichiers revendiqués par l'auteur"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "geolocalisation",
+    "financier",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — CO'LEC : fuite de données revendiquée visant 2 224 comptes utilisateurs (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-co-lec",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Colec visé par une fuite de données : plus de 3 Go de fichiers revendiqués (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/colec-mulppzyrqa4qwnvus7c",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Colec est une plateforme française de réemploi et d'économie circulaire, organisatrice de collectes d'objets. Selon Fuites Infos et FrenchBreaches, une revendication publiée le 28 septembre 2026 sur un forum cybercriminel la vise. L'auteur, sous le pseudonyme DaOnlySpark, revendique une archive de 3,36 Go regroupant 10 336 fichiers dans 5 235 dossiers. Fuites Infos annonce 2 224 comptes utilisateurs ; FrenchBreaches évoque environ 2 159 utilisateurs enregistrés. Les échantillons montrent des noms, adresses e-mail, villes et empreintes de mots de passe bcrypt, selon FrenchBreaches. Fuites Infos cite aussi des données de dons, de factures, de géolocalisation et des fichiers de prospection visant environ 2 100 partenaires. Colec n'a pas confirmé la revendication à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication de la revendication sur un forum cybercriminel : l'auteur DaOnlySpark revendique 3,36 Go, 10 336 fichiers et 5 235 dossiers, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FrenchBreaches relève des empreintes bcrypt et des données de comptes dans les échantillons ; Fuites Infos cite 2 224 comptes utilisateurs et des fichiers de prospection sur environ 2 100 partenaires."
+    }
+  ]
+}
