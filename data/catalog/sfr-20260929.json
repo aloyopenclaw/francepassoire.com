@@ -1,0 +1,44 @@
+{
+  "slug": "sfr-20260929",
+  "entity": "SFR",
+  "siren": "343059564",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 13100,
+    "unit": "personnes",
+    "label": "Environ 13 100 personnes distinctes selon Fuites Infos ; 15 618 lignes revendiquées par leur auteur selon FrenchBreaches (15 818 lignes selon Fuites Infos)"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — SFR : fuite de données revendiquée, environ 13 100 clients concernés (29 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-29-sfr",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez SFR : plus de 15 000 clients apparaissent dans une base diffusée par un pirate (29 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/sfr-mumwwgpf6irybx9jcw7",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un acteur utilisant le pseudonyme Syrv4x publie le 29 septembre 2026, gratuitement, un fichier présenté comme la base clients de sfr.fr sur un forum. Selon Fuites Infos, il porte sur environ 13 100 personnes distinctes, pour 15 818 lignes ; FrenchBreaches annonce 15 618 lignes pour environ 13 Mo. Les données combineraient identité, coordonnées, offre souscrite, rendez-vous techniciens et suivi de raccordement. D'après Fuites Infos, les contrats datent surtout de fin 2023 à fin 2024, signés auprès d'équipes commerciales régionales. Selon FrenchBreaches, l'intrusion viserait le portail VAD et l'auteur aurait été détecté en quelques heures. SFR n'a pas confirmé. Les colonnes bancaires seraient vides selon Fuites Infos.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Un acteur sous le pseudonyme Syrv4x publie gratuitement sur un forum un fichier attribué à sfr.fr : 15 618 lignes selon FrenchBreaches, environ 15 818 lignes selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Fuites Infos chiffre environ 13 100 personnes distinctes ; FrenchBreaches évoque le portail VAD comme point d'entrée et une détection en quelques heures, sans confirmation de SFR."
+    }
+  ]
+}
