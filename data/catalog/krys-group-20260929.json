@@ -1,0 +1,43 @@
+{
+  "slug": "krys-group-20260929",
+  "entity": "Krys Group",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 8449,
+    "unit": "personnes",
+    "label": "Environ 8 400 à 8 449 personnes distinctes selon Fuites Infos ; 9 537 lignes revendiquées, environ 3 Mo, selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Krys Group : fuite de données revendiquée visant 8 449 personnes (29 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-29-krys-group",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Krys Group : plus de 9 500 clients concernés (29 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/groupe-krys-mumwngoynr60917ydof",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un acteur utilisant le pseudonyme Syrv4x diffuse gratuitement sur un forum, le 29 septembre 2026, des données attribuées à Krys Group, coopérative française d'opticiens. Selon Fuites Infos, le lot compte 9 537 lignes pour environ 8 400 personnes distinctes. Le premier ensemble couvrirait des rendez-vous en ligne pris en 2020 et 2021 ; le second, des bénéficiaires de séances suivis jusqu'à mi-septembre 2026. Sont cités : identité, coordonnées, dates de naissance et nombre de séances, avec des mineurs parmi les personnes décrites. Selon FrenchBreaches, l'auteur aurait été détecté après l'extraction. Krys Group n'a pas confirmé. Le groupe était déjà visé par une fuite distincte, revendiquée en juin 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Un acteur sous le pseudonyme Syrv4x publie gratuitement sur un forum deux ensembles de données attribués à Krys Group : 9 537 lignes, environ 3 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Fuites Infos chiffre environ 8 400 personnes distinctes, avec des rendez-vous de 2020 et 2021 et des séances suivies jusqu'à mi-septembre 2026 ; le groupe ne confirme pas."
+    }
+  ]
+}
