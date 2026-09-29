@@ -1,0 +1,50 @@
+{
+  "slug": "kel-orisha-20260929",
+  "entity": "KEL (Orisha)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 1300000,
+    "unit": "personnes",
+    "label": "environ 1,3 million de personnes revendiquées, avec 4 080 536 lignes, 682 122 adresses e-mail, 142 913 IBAN et environ 200 000 documents pour 110 Go compressés annoncés, selon FrenchBreaches et Cyberattaque.org citant la publication du pirate ; volumes non confirmés par l'entité"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données chez KEL / Orisha : 1,3 million de personnes et 200 000 documents revendiqués (29 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/groupe-kel-orisha-mukzqxqoj9x80n11kl",
+      "kind": "revendication"
+    },
+    {
+      "label": "Cyberattaque.org — Orisha : 1,3 million de personnes et 143 000 IBAN revendiqués après une cyberattaque (29 septembre 2026)",
+      "url": "https://www.cyberattaque.org/orisha-groupe-kel-13-million-de-personnes-et-143-000-iban-revendiques-apres-une-cyberattaque/",
+      "kind": "article"
+    }
+  ],
+  "description": "KEL édite des logiciels de gestion immobilière pour syndics et gestionnaires locatifs, au sein du groupe Orisha Real Estate, selon Cyberattaque.org. Le 29 septembre 2026, ChimeraZ revendique sur un forum cybercriminel la compromission de son infrastructure, selon FrenchBreaches et Cyberattaque.org. Selon FrenchBreaches, la revendication porte sur 4 080 536 lignes et environ 1,3 million de personnes. Les statistiques publiées listent 682 122 adresses e-mail, 618 008 numéros de téléphone et 142 913 IBAN, selon FrenchBreaches et Cyberattaque.org. Environ 200 000 documents sont annoncés pour 110 Go compressés : pièces d'identité, factures, fiches de paie et documents bancaires, selon Cyberattaque.org. FrenchBreaches relève des mots de passe en clair dans un échantillon. KEL et Orisha n'ont pas confirmé publiquement cette revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Publication sur un forum cybercriminel d'une revendication attribuée à KEL par le pseudonyme ChimeraZ : 4 080 536 lignes, environ 1,3 million de personnes et 110 Go de documents, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "FrenchBreaches et Cyberattaque.org décrivent des échantillons : coordonnées, identifiants de comptes, mots de passe dont un champ en clair, IBAN et BIC figurent dans les données présentées."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Aucune confirmation publique de KEL ou Orisha sur ces volumes à la date des articles, selon FrenchBreaches."
+    }
+  ]
+}
