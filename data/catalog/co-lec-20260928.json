@@ -1,0 +1,50 @@
+{
+  "slug": "co-lec-20260928",
+  "entity": "CO'LEC",
+  "secteur": "autre",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-28",
+    "publication": "2026-09-28"
+  },
+  "volume": {
+    "count": 2224,
+    "unit": "comptes",
+    "label": "2 224 comptes utilisateurs selon Fuites Infos ; archive de 3,36 Go annoncée dans la revendication, avec environ 2 100 structures partenaires dans des fichiers de prospection selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "geolocalisation",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — CO'LEC : fuite de données revendiquée visant 2 224 comptes utilisateurs (28 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-28-co-lec",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Colec visé par une fuite de données : plus de 3 Go de fichiers revendiqués (28 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/colec-mulppzyrqa4qwnvus7c",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 28 septembre 2026, une revendication publiée sur un forum cybercriminel propose une archive de 3,36 Go présentée comme la base de CO'LEC, selon Fuites Infos. Fuites Infos compte 2 224 comptes utilisateurs visés et environ 2 100 structures partenaires dans des fichiers de prospection. FrenchBreaches évoque plus de 3 Go de données avec utilisateurs, e-mails, adresses, fichiers et données de connexion. Selon Fuites Infos, les champs annoncés incluent identité, ville, mots de passe hachés, jeton d'authentification, adresses IP, données de fidélité, transactions et factures. CO'LEC n'a pas confirmé publiquement cette revendication. La plateforme française d'économie circulaire organise des collectes d'objets et de déchets électriques, convertis en bons de réduction.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Publication de la revendication sur un forum cybercriminel : archive de 3,36 Go annoncée portant sur 2 224 comptes utilisateurs, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FrenchBreaches relaie plus de 3 Go de données revendiquées, avec utilisateurs, e-mails, adresses, fichiers et données de connexion."
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Fuites Infos rapporte l'absence de confirmation publique de CO'LEC."
+    }
+  ]
+}
