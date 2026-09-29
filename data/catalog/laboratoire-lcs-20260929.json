@@ -1,0 +1,42 @@
+{
+  "slug": "laboratoire-lcs-20260929",
+  "entity": "Laboratoire LCS",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 26010,
+    "unit": "personnes",
+    "label": "Environ 26 010 porteurs de lentilles distincts selon Fuites Infos ; 42 495 lignes revendiquées, environ 7 Mo, par leur auteur"
+  },
+  "data_types": [
+    "identite",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Laboratoire LCS : fuite de données revendiquée visant 26 010 porteurs de lentilles (29 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-29-laboratoire-lcs",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données au Laboratoire LCS : les données de plus de 42 000 personnes diffusées gratuitement (29 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/laboratoire-lcs-mumvnwq04l1mbwn1j5",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Un acteur utilisant le pseudonyme Syrv4x publie gratuitement sur un forum, le 29 septembre 2026, un fichier présenté comme appartenant au Laboratoire LCS. Cette entreprise, aussi connue sous la raison sociale LENTILLES SAS, fabrique en Normandie des lentilles de contact sur mesure. Selon Fuites Infos, le fichier concerne environ 26 010 porteurs distincts, dont environ un quart de mineurs. Selon FrenchBreaches, il compte 42 495 lignes pour environ 7 Mo. Les colonnes citées relient identité et date de naissance à un historique de commandes couvrant 2014 à mi-septembre 2026. Pour Fuites Infos, la gamme commandée peut révéler le trouble visuel concerné, ce qui en fait une donnée de santé. Aucune adresse, e-mail ou numéro de téléphone ne figure dans le fichier selon la même source. Laboratoire LCS n'a pas confirmé.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Un acteur sous le pseudonyme Syrv4x publie gratuitement sur un forum un fichier attribué à laboratoire-lcs.com : 42 495 lignes, environ 7 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Fuites Infos chiffre environ 26 010 porteurs de lentilles distincts, dont environ un quart de mineurs ; le laboratoire ne confirme pas la diffusion."
+    }
+  ]
+}
