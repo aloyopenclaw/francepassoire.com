@@ -1,0 +1,51 @@
+{
+  "slug": "frontieres-20260930",
+  "entity": "Frontières",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "Plusieurs dizaines de milliers d'abonnés potentiellement concernés selon FrenchBreaches ; nombre exact non établi, non confirmé par le média"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Frontières : un chercheur signale des failles exposant des données d'abonnés (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-frontieres",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Frontières : des dizaines de milliers d'abonnés potentiellement concernés (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/fronti-res-muo3jsnd6wflxqyd4w8",
+      "kind": "article"
+    },
+    {
+      "label": "L'Informé — Comment un hacker a constitué un gigantesque fichier de sympathisants d'extrême droite (30 septembre 2026)",
+      "url": "https://www.linforme.com/tech-telecom/article/comment-un-hacker-a-constitue-un-gigantesque-fichier-de-sympathisants-d-extreme-droite_9965.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 septembre 2026, le chercheur en cybersécurité Sammy Azdoufal signale publiquement des failles sur le site du média Frontières. Selon un extrait de dix comptes relayé par Fuites Infos, les données exposées associent identifiant, adresse e-mail, prénom, nom et pseudonyme. D'après FrenchBreaches, l'exposition concerne potentiellement plusieurs dizaines de milliers d'abonnés. Le média avait été alerté plusieurs semaines auparavant ; une des failles a été corrigée et certaines données exposées demeurent accessibles selon FrenchBreaches. Aucun mot de passe ni donnée bancaire n'est évoqué. L'Informé cite les abonnés de Frontières parmi les visés d'une campagne de fichage décrite par Anthropic ; aucun lien formel n'est établi avec les failles signalées.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Le chercheur Sammy Azdoufal publie sur X un signalement de failles exposant des données d'abonnés de Frontières, avec un extrait de dix comptes, et évoque une saisine de la CNIL (Fuites Infos)."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "FrenchBreaches indique avoir alerté le média plusieurs semaines plus tôt, constate la correction d'une faille et la persistance de données accessibles ; le périmètre exact reste à établir."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "L'Informé écrit que les abonnés du magazine figurent parmi les données recueillies dans une campagne de fichage d'organisations d'extrême droite décrite par Anthropic en septembre ; aucune source ne relie cette campagne aux failles signalées (Fuites Infos)."
+    }
+  ]
+}
