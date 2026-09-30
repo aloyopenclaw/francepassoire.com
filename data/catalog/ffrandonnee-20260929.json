@@ -10,34 +10,34 @@
   "volume": {
     "count": 1429334,
     "unit": "enregistrements",
-    "label": "1 429 334 fiches d'adhérents revendiquées par l'auteur de l'annonce, dont 1 008 071 adresses e-mail et 663 291 numéros de téléphone uniques, selon FrenchBreaches et Zataz"
+    "label": "1 429 334 enregistrements revendiqués par leur auteur selon FrenchBreaches et Zataz, dont 1 008 071 adresses e-mail et 663 291 numéros de téléphone présentés comme uniques ; nombre de personnes distinctes non établi, non confirmé par la fédération"
   },
-  "data_types": ["identite", "coordonnees", "autre"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
   "sources": [
     {
-      "label": "FrenchBreaches — Fuite de données à la FFRandonnée : les informations de 1,43 million d'adhérents en vente (29 septembre 2026)",
+      "label": "FrenchBreaches — Fuite de données à la FFRandonnée : les informations de 1,43 million d'adhérents revendiquées par un pirate (29 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-la-randonn-e-ffr-mun6o16r4h0ud0vz18i",
       "kind": "revendication"
     },
     {
-      "label": "Zataz — FFRandonnée : 1,43 million de fiches proposées à la vente ? (30 septembre 2026)",
+      "label": "Zataz — FFRandonnée : 1,43 million de fiches proposées à la vente ? (29 septembre 2026)",
       "url": "https://www.zataz.com/ffrandonnee-143-million-de-fiches-proposees-a-la-vente/",
       "kind": "article"
     }
   ],
-  "description": "Le 29 septembre 2026, le courtier RedStone propose à la vente une base attribuée à la Fédération française de la randonnée pédestre. Selon FrenchBreaches, la revendication porte sur 1 429 334 fiches d'adhérents, avec des données remontant aux années 1990, pour environ 317 Mo. Sont revendiqués 1 008 071 e-mails uniques, 663 291 téléphones uniques, des adresses postales, des dates de naissance et des informations de licences. Selon Zataz, l'offre mentionne aussi une catégorie regroupant des données présentées comme médicales. Selon FrenchBreaches, ces volumes correspondent aux revendications de l'auteur et ne sont pas confirmés indépendamment.",
+  "description": "Le 29 septembre 2026, un acteur propose à la vente sur un forum un fichier attribué à la Fédération française de la randonnée pédestre. Selon Zataz, l'auteur se présente comme un courtier de données et ne fixe pas de prix. D'après FrenchBreaches, il revendique 1 429 334 enregistrements d'adhérents, soit environ 317 Mo au format CSV, dont 1 008 071 adresses e-mail et 663 291 numéros de téléphone présentés comme uniques. Les données annoncées incluent identité, dates de naissance, adresses postales et informations de licence. L'auteur annonce aussi 98 052 entrées présentées comme liées à des données médicales, CACI ou contacts d'urgence, et des enregistrements remontant aux années 1990. La fédération n'a pas confirmé.",
   "timeline": [
     {
       "date": "2026-09-29",
-      "event": "Un courtier sous le pseudonyme RedStone met en vente sur un forum une base attribuée à la FFRandonnée : 1 429 334 fiches d'adhérents revendiquées."
+      "event": "Publication sur un forum de l'offre de vente d'un fichier attribué à la FFRandonnée : 1 429 334 enregistrements revendiqués pour environ 317 Mo, avec e-mails et téléphones présentés comme uniques (FrenchBreaches, Zataz)."
     },
     {
       "date": "2026-09-29",
-      "event": "FrenchBreaches détaille la revendication."
-    },
-    {
-      "date": "2026-09-30",
-      "event": "Zataz relaie l'annonce, avec une catégorie présentée comme médicale, sans confirmation indépendante."
+      "event": "L'auteur annonce également 98 052 entrées présentées comme médicales, CACI ou contacts d'urgence, ainsi que 44 555 abonnés papier et 19 396 abonnés numériques ; aucune confirmation indépendante de l'intégralité des volumes (FrenchBreaches)."
     }
   ]
 }
