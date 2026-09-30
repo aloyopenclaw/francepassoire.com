@@ -1,0 +1,39 @@
+{
+  "slug": "region-centre-val-de-loire-20260930",
+  "entity": "Région Centre-Val de Loire",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 5405,
+    "unit": "personnes",
+    "label": "5 405 personnes distinctes selon Fuites Infos, environ 5 400 selon l'analyse FrenchBreaches, sur 6 768 lignes revendiquées par l'auteur ; chiffres non confirmés par la Région"
+  },
+  "data_types": ["identite", "coordonnees", "financier", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Région Centre-Val de Loire : fuite de données revendiquée visant 5 405 stagiaires (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-region-centre-val-de-loire",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données en Centre-Val de Loire : les dossiers de milliers de stagiaires diffusés, avec NIR et IBAN (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/centre-val-de-loire-muo89rks0k0zzitcbl67",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 30 septembre 2026 sur un forum cybercriminel vise la plateforme de gestion de la rémunération des stagiaires de la formation professionnelle de la Région Centre-Val de Loire. L'auteur, sous le pseudonyme Syrv4x, annonce 6 768 lignes pour 9 Mo, diffusées gratuitement. Selon Fuites Infos, le fichier porte sur environ 5 400 personnes distinctes. FrenchBreaches recense environ 5 400 identifiants individuels distincts sur 6 767 enregistrements analysés. Les données décrites incluent l'identité complète, la date et le lieu de naissance, la nationalité et le numéro de sécurité sociale. Y figurent aussi les coordonnées, la situation familiale et des éléments bancaires avec IBAN et BIC. Les dossiers couvrent la période 2017 à 2026. La Région n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Publication gratuite sur un forum cybercriminel d'un fichier présenté comme issu de la plateforme régionale de rémunération des stagiaires ; l'auteur revendique 6 768 lignes pour 9 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Fuites Infos et FrenchBreaches publient leurs analyses : environ 5 400 personnes distinctes, avec numéro de sécurité sociale et IBAN renseignés ; aucune confirmation publique de la Région à ce stade."
+    }
+  ]
+}
