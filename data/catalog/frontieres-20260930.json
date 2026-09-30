@@ -1,6 +1,6 @@
 {
   "slug": "frontieres-20260930",
-  "entity": "Frontières",
+  "entity": "Frontières (média)",
   "secteur": "media",
   "statut": "revendiquee",
   "dates": {
@@ -10,12 +10,9 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "Plusieurs dizaines de milliers d'abonnés potentiellement concernés selon FrenchBreaches ; nombre exact non établi, non confirmé par le média"
+    "label": "plusieurs dizaines de milliers d'abonnés selon Fuites Infos et Clubic ; nombre exact non établi à ce stade"
   },
-  "data_types": [
-    "identite",
-    "coordonnees"
-  ],
+  "data_types": ["identite", "coordonnees", "autre"],
   "sources": [
     {
       "label": "Fuites Infos — Frontières : un chercheur signale des failles exposant des données d'abonnés (30 septembre 2026)",
@@ -28,24 +25,20 @@
       "kind": "article"
     },
     {
-      "label": "L'Informé — Comment un hacker a constitué un gigantesque fichier de sympathisants d'extrême droite (30 septembre 2026)",
-      "url": "https://www.linforme.com/tech-telecom/article/comment-un-hacker-a-constitue-un-gigantesque-fichier-de-sympathisants-d-extreme-droite_9965.html",
+      "label": "Clubic — Fuites chez Frontières : les données de dizaines de milliers d'abonnés potentiellement touchées (30 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-632041-piratage-chez-frontieres-les-donnees-de-dizaines-de-milliers-d-abonnes-potentiellement-touchees.html",
       "kind": "article"
     }
   ],
-  "description": "Le 30 septembre 2026, le chercheur en cybersécurité Sammy Azdoufal signale publiquement des failles sur le site du média Frontières. Selon un extrait de dix comptes relayé par Fuites Infos, les données exposées associent identifiant, adresse e-mail, prénom, nom et pseudonyme. D'après FrenchBreaches, l'exposition concerne potentiellement plusieurs dizaines de milliers d'abonnés. Le média avait été alerté plusieurs semaines auparavant ; une des failles a été corrigée et certaines données exposées demeurent accessibles selon FrenchBreaches. Aucun mot de passe ni donnée bancaire n'est évoqué. L'Informé cite les abonnés de Frontières parmi les visés d'une campagne de fichage décrite par Anthropic ; aucun lien formel n'est établi avec les failles signalées.",
+  "description": "Frontières est un média et un magazine d'opinion édités par la société ARTEFAKT. Le 30 septembre 2026, le chercheur en cybersécurité Sammy Azdoufal signale publiquement des failles sur le site du média. Selon Fuites Infos, le signalement comprend un extrait de dix comptes d'abonnés. Les données exposées portent sur un identifiant de compte, une adresse e-mail, un prénom, un nom et un pseudonyme. Selon FrenchBreaches, qui indique avoir alerté le média plusieurs semaines plus tôt, une faille a été corrigée et des données exposées restent accessibles. Selon Fuites Infos et Clubic, plusieurs dizaines de milliers d'abonnés sont concernés, sans nombre exact établi. Aucun mot de passe ni donnée bancaire n'est évoqué. Frontières n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-09-30",
-      "event": "Le chercheur Sammy Azdoufal publie sur X un signalement de failles exposant des données d'abonnés de Frontières, avec un extrait de dix comptes, et évoque une saisine de la CNIL (Fuites Infos)."
+      "event": "Sammy Azdoufal publie sur X un signalement de failles exposant des données d'abonnés de Frontières, accompagné d'un extrait de dix comptes, selon Fuites Infos."
     },
     {
       "date": "2026-09-30",
-      "event": "FrenchBreaches indique avoir alerté le média plusieurs semaines plus tôt, constate la correction d'une faille et la persistance de données accessibles ; le périmètre exact reste à établir."
-    },
-    {
-      "date": "2026-09-30",
-      "event": "L'Informé écrit que les abonnés du magazine figurent parmi les données recueillies dans une campagne de fichage d'organisations d'extrême droite décrite par Anthropic en septembre ; aucune source ne relie cette campagne aux failles signalées (Fuites Infos)."
+      "event": "FrenchBreaches indique avoir alerté le média plusieurs semaines plus tôt : une faille a été corrigée, des données exposées restent accessibles selon ses constatations. Fuites Infos et Clubic relaient l'information."
     }
   ]
 }
