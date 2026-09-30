@@ -32,8 +32,12 @@
       "event": "Un courtier sous le pseudonyme RedStone met en vente sur un forum une base attribuée à la FFRandonnée : 1 429 334 fiches d'adhérents revendiquées."
     },
     {
+      "date": "2026-09-29",
+      "event": "FrenchBreaches détaille la revendication."
+    },
+    {
       "date": "2026-09-30",
-      "event": "FrenchBreaches détaille la revendication ; Zataz relaie l'annonce, avec une catégorie présentée comme médicale, sans confirmation indépendante."
+      "event": "Zataz relaie l'annonce, avec une catégorie présentée comme médicale, sans confirmation indépendante."
     }
   ]
 }
