@@ -1,0 +1,39 @@
+{
+  "slug": "ffrandonnee-20260929",
+  "entity": "Fédération française de la randonnée pédestre (FFRandonnée)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 1429334,
+    "unit": "enregistrements",
+    "label": "1 429 334 enregistrements d'adhérents revendiqués par le pirate RedStone, avec 1 008 071 adresses e-mail et 663 291 numéros de téléphone uniques annoncés ; volumes non confirmés indépendamment selon FrenchBreaches"
+  },
+  "data_types": ["identite", "coordonnees", "sante"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données à la FFRandonnée : les informations de 1,43 million d'adhérents revendiquées (29/09/2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-la-randonn-e-ffr-mun6o16r4h0ud0vz18i",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Fédération Française de la Randonnée Pédestre : 1,43 million de fiches d'adhérents revendiquées (29/09/2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-29-federation-francaise-de-la-randonnee-pedestre",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 septembre 2026, le pirate RedStone met en vente une base de données sur un forum cybercriminel. Il présente le lot comme issu du système de gestion de la Fédération française de la randonnée pédestre (FFRandonnée). Selon FrenchBreaches et Fuites Infos, la revendication porte sur 1 429 334 enregistrements d'adhérents, soit environ 317 Mo de fichiers CSV. Le pirate revendique 1 008 071 adresses e-mail uniques et 663 291 numéros de téléphone uniques. Il annonce aussi 98 052 enregistrements présentés comme médicaux, CACI ou contacts d'urgence. Selon Fuites Infos, la fédération n'a pas confirmé publiquement l'incident. Une première base liée à la fédération avait déjà été mise en vente en février 2026.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Mise en vente revendiquée par le pirate RedStone d'une base présentée comme issue de la FFRandonnée : 1 429 334 enregistrements d'adhérents et environ 317 Mo de fichiers CSV annoncés."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "FrenchBreaches et Fuites Infos relatent la revendication : identités, coordonnées, dates de naissance, licences et fiches médicales ou CACI annoncées ; aucune confirmation publique de la fédération."
+    }
+  ]
+}
