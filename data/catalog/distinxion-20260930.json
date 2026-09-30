@@ -1,0 +1,43 @@
+{
+  "slug": "distinxion-20260930",
+  "entity": "Distinxion",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 494123,
+    "unit": "lignes",
+    "label": "494 123 lignes revendiquées par leur auteur (environ 218 Mo) selon FrenchBreaches ; environ 415 000 personnes distinctes estimées par Fuites Infos ; non confirmé par Distinxion"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Distinxion : fuite de données revendiquée visant environ 415 000 personnes (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-distinxion",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Distinxion : près de 500 000 contacts revendiqués par un pirate (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/autos-distinxion-muo73x46b5xto1nd1oq",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 30 septembre 2026, un acteur sous le pseudonyme Syrv4x publie gratuitement sur un forum un fichier présenté comme la base de données d'autos.fr, site du réseau Distinxion. Selon FrenchBreaches, il revendique 494 123 lignes, soit environ 218 Mo, avec identifiants, noms, prénoms, adresses e-mail, numéros de téléphone et éléments de suivi commercial. D'après Fuites Infos, le fichier porterait sur environ 415 000 personnes distinctes, clients et prospects, dont certaines fiches comportent une date de naissance. Les données proviendraient d'un outil de gestion de la relation client du réseau, exploité par Réseaux Impulxion à Saint-Herblain. Distinxion n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Un acteur signant Syrv4x publie gratuitement sur un forum un fichier attribué à autos.fr : 494 123 lignes et environ 218 Mo revendiqués (FrenchBreaches)."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Fuites Infos estime environ 415 000 personnes distinctes concernées, majoritairement des particuliers suivis comme prospects ou clients ; le système précisément compromis et la date d'extraction restent indéterminés."
+    }
+  ]
+}
