@@ -1,0 +1,43 @@
+{
+  "slug": "sdis-66-20260930",
+  "entity": "SDIS des Pyrénées-Orientales (SDIS 66)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 118892,
+    "unit": "enregistrements",
+    "label": "118 892 fiches d'intervention et 99 108 documents revendiqués par l'auteur ; 108 825 noms et prénoms dénombrés par FrenchBreaches ; chiffres non confirmés par le SDIS 66"
+  },
+  "data_types": ["identite", "coordonnees", "sante", "documents"],
+  "sources": [
+    {
+      "label": "Fuites Infos — SDIS 66 : fuite de données revendiquée sur des interventions de secours (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-sdis-66",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données au SDIS 66 : près de 119 000 dossiers et 99 000 documents médicaux revendiqués (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/sdis-des-pyr-n-es-orientales-muofwgorb7tkmw3yu9a",
+      "kind": "article"
+    }
+  ],
+  "description": "Une revendication publiée le 30 septembre 2026 sur un forum cybercriminel vise le SDIS des Pyrénées-Orientales (SDIS 66). L'auteur, sous le pseudonyme Syrv4x selon FrenchBreaches, annonce 118 892 fiches d'intervention (328 Mo) et 99 108 documents et images (10,5 Go). Selon la revendication relayée par Fuites Infos, les données portent sur des personnes prises en charge lors d'interventions de secours : identité, coordonnées, relevés médicaux, pièces d'identité, cartes Vitale, ordonnances, comptes rendus, signatures et photographies. FrenchBreaches dénombre aussi 108 825 noms et prénoms et 87 463 adresses dans le lot revendiqué. Un échantillon présente une intervention du 27 septembre 2026. Le SDIS 66 n'a pas confirmé publiquement l'incident à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-27",
+      "event": "L'échantillon joint à la revendication présente une fiche d'intervention datée du 27 septembre 2026, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Publication de la revendication sur un forum cybercriminel : 118 892 fiches d'intervention et 99 108 documents annoncés, dont 50 à 60 % de cartes d'identité et de cartes Vitale selon l'auteur."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Fuites Infos et FrenchBreaches publient leurs analyses ; FrenchBreaches attribue la publication au pseudonyme Syrv4x et dénombre 108 825 noms et prénoms ; aucune confirmation publique du SDIS 66."
+    }
+  ]
+}
