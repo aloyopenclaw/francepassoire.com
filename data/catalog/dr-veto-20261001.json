@@ -1,0 +1,39 @@
+{
+  "slug": "dr-veto-20261001",
+  "entity": "Dr.Veto",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 29378,
+    "unit": "personnes",
+    "label": "29 378 personnes visées selon Fuites Infos et 31 240 lignes revendiquées pour environ 21 Mo selon FrenchBreaches ; chiffres non confirmés par Hubvet"
+  },
+  "data_types": ["identite", "coordonnees", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Dr.Veto : fuite de données revendiquée visant 29 378 personnes (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-dr-veto",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Dr.Veto : les données de plus de 31 000 comptes de cliniques vétérinaires diffusées gratuitement (1er octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/dr-veto-mupgpk69hg67nnxmf9v",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur utilisant le pseudonyme « Syrv4x » publie le 1er octobre 2026, gratuitement, sur un forum cybercriminel une base attribuée à drveto.mobi, portail du logiciel de gestion vétérinaire Dr.Veto édité par Hubvet, selon FrenchBreaches. La revendication annonce 31 240 lignes pour environ 21 Mo. Selon Fuites Infos, la base vise 29 378 personnes, clientes de deux établissements : la clinique vétérinaire Villa Blanchemer à Grasse et le cabinet Vétopuiseaux à Puiseaux. Les champs cités couvrent l'identité et les coordonnées des propriétaires d'animaux : nom, civilité, adresse postale, téléphone, e-mail, plus le nom, l'espèce et l'âge des animaux. La publication n'est pas confirmée publiquement par Hubvet ni par les deux structures citées.",
+  "timeline": [
+    {
+      "date": "2026-10-01",
+      "event": "« Syrv4x » publie gratuitement sur un forum cybercriminel une base attribuée à drveto.mobi : 31 240 lignes revendiquées pour environ 21 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Fuites Infos évalue à 29 378 le nombre de personnes visées et cite la clinique Villa Blanchemer à Grasse et le cabinet Vétopuiseaux à Puiseaux ; aucune confirmation publique de Hubvet."
+    }
+  ]
+}
