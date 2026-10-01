@@ -1,0 +1,44 @@
+{
+  "slug": "cneh-20260930",
+  "entity": "Centre National de l'Expertise Hospitalière (CNEH)",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "group": "kairos",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "645 Go de données revendiqués par le groupe Kairos ; aucun décompte vérifié du nombre de personnes ou de fichiers, selon FrenchBreaches"
+  },
+  "data_types": ["identite", "coordonnees", "sante", "financier", "documents"],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque au CNEH : 645 Go de données sensibles revendiqués, dont des cartes d'identité et Vitale (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/le-centre-national-de-l-expertise-hospitali-re-cneh-muome98fga2iaxy1jk",
+      "kind": "article"
+    },
+    {
+      "label": "Ransomware.live — Page de revendication du groupe Kairos visant le Centre National de l'Expertise Hospitalière (CNEH) (30 septembre 2026)",
+      "url": "https://www.ransomware.live/id/TGUgQ2VudHJlIE5hdGlvbmFsIGRlIGwnRXhwZXJ0aXNlIEhvc3BpdGFsacOocmUgKENORUgpQGthaXJvcw==",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le groupe Kairos affirme détenir environ 645 Go de données attribuées au Centre National de l'Expertise Hospitalière (CNEH), organisme fondé en 1974 qui accompagne les professionnels et les établissements de santé. La revendication est publiée le 30 septembre 2026, avec une diffusion menacée à l'issue d'un compte à rebours, selon FrenchBreaches. Les échantillons présentés montrent des copies de cartes nationales d'identité et de cartes Vitale, des numéros de Sécurité sociale, des coordonnées, des documents RH et financiers ainsi que des CV, selon FrenchBreaches. Ransomware.live enregistre la page de revendication le 30 septembre 2026 à 19:28 UTC. Aucun décompte vérifié du nombre de personnes concernées n'est disponible et le CNEH ne confirme pas publiquement l'incident à ce stade.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Le groupe Kairos publie une revendication visant le CNEH : environ 645 Go de données annoncées, diffusion menacée à l'issue d'un compte à rebours, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Ransomware.live enregistre la page de revendication du groupe Kairos visant le CNEH, découverte à 19:28 UTC, avec une date d'attaque estimée au 30 septembre."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "FrenchBreaches analyse les échantillons : cartes d'identité, cartes Vitale, numéros de Sécurité sociale, documents RH, financiers et CV y figurent ; le CNEH ne confirme pas publiquement l'incident."
+    }
+  ]
+}
