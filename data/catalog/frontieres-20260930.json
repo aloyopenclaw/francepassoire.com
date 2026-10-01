@@ -1,0 +1,44 @@
+{
+  "slug": "frontieres-20260930",
+  "entity": "Frontières (média)",
+  "secteur": "media",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "plusieurs dizaines de milliers d'abonnés selon Fuites Infos et Clubic ; nombre exact non établi à ce stade"
+  },
+  "data_types": ["identite", "coordonnees", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Frontières : un chercheur signale des failles exposant des données d'abonnés (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-frontieres",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Frontières : des dizaines de milliers d'abonnés potentiellement concernés (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/fronti-res-muo3jsnd6wflxqyd4w8",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — Fuites chez Frontières : les données de dizaines de milliers d'abonnés potentiellement touchées (30 septembre 2026)",
+      "url": "https://www.clubic.com/actualite-632041-piratage-chez-frontieres-les-donnees-de-dizaines-de-milliers-d-abonnes-potentiellement-touchees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Frontières est un média et un magazine d'opinion édités par la société ARTEFAKT. Le 30 septembre 2026, le chercheur en cybersécurité Sammy Azdoufal signale publiquement des failles sur le site du média. Selon Fuites Infos, le signalement comprend un extrait de dix comptes d'abonnés. Les données exposées portent sur un identifiant de compte, une adresse e-mail, un prénom, un nom et un pseudonyme. Selon FrenchBreaches, qui indique avoir alerté le média plusieurs semaines plus tôt, une faille a été corrigée et des données exposées restent accessibles. Selon Fuites Infos et Clubic, plusieurs dizaines de milliers d'abonnés sont concernés, sans nombre exact établi. Aucun mot de passe ni donnée bancaire n'est évoqué. Frontières n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Sammy Azdoufal publie sur X un signalement de failles exposant des données d'abonnés de Frontières, accompagné d'un extrait de dix comptes, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "FrenchBreaches indique avoir alerté le média plusieurs semaines plus tôt : une faille a été corrigée, des données exposées restent accessibles selon ses constatations. Fuites Infos et Clubic relaient l'information."
+    }
+  ]
+}
