@@ -1,48 +1,53 @@
 {
   "slug": "anssi-dinum-20260930",
-  "entity": "ANSSI et Dinum",
+  "entity": "ANSSI et DINUM",
   "secteur": "public",
-  "statut": "revendiquee",
+  "statut": "confirmee",
   "dates": {
     "revendication": "2026-09-30",
-    "publication": "2026-10-01"
+    "publication": "2026-10-01",
+    "confirmation": "2026-09-30"
   },
   "volume": {
     "count": 118,
     "unit": "comptes",
-    "label": "118 comptes utilisateurs compromis au laboratoire d'innovation de l'ANSSI, dont une trentaine externes, selon le point de situation de septembre 2026 de l'ANSSI cite par FrenchBreaches ; cote DINUM, deux instances Metabase concernees et volume exfiltre non precise"
+    "label": "118 comptes utilisateurs compromis au laboratoire d'innovation de l'ANSSI selon le point de situation REACTIV de l'agence, dont une trentaine de comptes externes ; volume de données exfiltrées de la DINUM non communiqué"
   },
-  "data_types": ["identite", "coordonnees", "credentials", "autre"],
+  "data_types": [
+    "credentials",
+    "coordonnees",
+    "autre"
+  ],
   "sources": [
     {
-      "label": "FrenchBreaches — Fuite de données à l'ANSSI : 118 comptes compromis via une faille Metabase (30 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/laboratoire-d-innovation-de-l-anssi-muol4p978duakorwom",
-      "kind": "article"
+      "label": "ANSSI (CERT-FR) — Point de situation de l'opération REACTIV, septembre 2026 (30 septembre 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/cti/CERTFR-2026-CTI-006/",
+      "kind": "officiel"
     },
     {
-      "label": "FrenchBreaches — Cyberattaque à la DINUM : deux services de l'État compromis via une faille Metabase (30 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/direction-interminist-rielle-du-num-rique-dinum-muol6l7pjtbxn5jirpc",
-      "kind": "article"
-    },
-    {
-      "label": "Clubic — Personne n'est à l'abri ! L'ANSSI et la Dinum victimes d'une fuite de données (1er octobre 2026)",
+      "label": "Clubic — L'ANSSI et la Dinum victimes d'une fuite de données (1 octobre 2026)",
       "url": "https://www.clubic.com/actualite-632056-personne-n-est-a-l-abri-l-anssi-et-la-dinum-victime-d-une-fuite-de-donnees.html",
+      "kind": "article"
+    },
+    {
+      "label": "01net — Une nouvelle fuite de données frappe l'État français, et l'Anssi fait partie des victimes (1 octobre 2026)",
+      "url": "https://www.01net.com/actualites/nouvelle-fuite-donnees-frappe-etat-francais-anssi-fait-partie-victimes.html",
       "kind": "article"
     }
   ],
-  "description": "Selon le point de situation de septembre 2026 de l'ANSSI, relayé par FrenchBreaches, l'exploitation d'une faille zero-day de Metabase a compromis 118 comptes du laboratoire d'innovation de l'ANSSI, dont une trentaine externes : identifiants, adresses e-mail, mots de passe hachés et données d'usage ont été dérobés. Deux instances Metabase de la DINUM, associées à ProConnect et Nuage-Public, ont également été visées, avec exfiltration d'informations administratives d'organismes publics, de numéros SIREN et SIRET, d'éléments de budgets et d'effectifs, de métadonnées de contributions open source et d'historiques de connexion anonymisés. Selon l'ANSSI, ces données étaient déjà publiques. La DINUM indique avoir corrigé les vulnérabilités, supprimé les comptes malveillants et réinitialisé les accès. L'ANSSI a renouvelé les mots de passe et désactivé les comptes inactifs depuis plus de trois mois.",
+  "description": "L'ANSSI publie le 30 septembre 2026 le premier point de situation de l'opération REACTIV. Selon ce document, l'exploitation d'une faille Metabase a permis de compromettre 118 comptes du laboratoire d'innovation de l'ANSSI, dont une trentaine de comptes externes. Des identifiants, des adresses e-mail et des mots de passe hachés sont concernés. Deux instances Metabase de la DINUM, liées à ProConnect et Nuage-Public, ont fait l'objet d'une exfiltration. Selon l'agence, les données exfiltrées étaient déjà publiques et les historiques de connexion anonymisés. L'ANSSI indique avoir renouvelé les mots de passe et désactivé les comptes inactifs depuis trois mois. La DINUM indique avoir corrigé les vulnérabilités et supprimé les comptes créés par l'attaquant. Clubic et 01net relaient l'information le 1er octobre 2026.",
   "timeline": [
     {
       "date": "2026-08-06",
-      "event": "Metabase annonce avoir détecté une faille zero-day critique, notée 10.0 sur l'échelle CVSS, selon Clubic."
+      "event": "Metabase annonce une faille zero-day critique exploitée contre ses clients, selon Clubic ; l'éditeur corrige la brèche."
     },
     {
       "date": "2026-09-30",
-      "event": "FrenchBreaches détaille, sur la base du point de situation de septembre 2026 de l'ANSSI, la compromission de 118 comptes du laboratoire d'innovation de l'ANSSI et de deux instances Metabase de la DINUM associées à ProConnect et Nuage-Public, avec exfiltration de données."
+      "event": "L'ANSSI publie le point de situation de l'opération REACTIV : 118 comptes du laboratoire d'innovation compromis et exfiltration sur deux instances Metabase de la DINUM."
     },
     {
       "date": "2026-10-01",
-      "event": "Clubic relate l'incident : la DINUM indique avoir corrigé les vulnérabilités, supprimé les comptes malveillants et réinitialisé des accès, et l'ANSSI a renouvelé les mots de passe et désactivé les comptes inactifs depuis plus de trois mois."
+      "event": "Clubic et 01net relatent l'incident et détaillent les mesures de correction annoncées par les deux organismes."
     }
   ]
 }
