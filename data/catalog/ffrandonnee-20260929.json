@@ -1,0 +1,43 @@
+{
+  "slug": "ffrandonnee-20260929",
+  "entity": "Fédération française de la randonnée pédestre (FFRandonnée)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29"
+  },
+  "volume": {
+    "count": 1429334,
+    "unit": "enregistrements",
+    "label": "1 429 334 enregistrements revendiqués par leur auteur selon FrenchBreaches et Zataz, dont 1 008 071 adresses e-mail et 663 291 numéros de téléphone présentés comme uniques ; nombre de personnes distinctes non établi, non confirmé par la fédération"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données à la FFRandonnée : les informations de 1,43 million d'adhérents revendiquées par un pirate (29 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/f-d-ration-fran-aise-de-la-randonn-e-ffr-mun6o16r4h0ud0vz18i",
+      "kind": "revendication"
+    },
+    {
+      "label": "Zataz — FFRandonnée : 1,43 million de fiches proposées à la vente ? (29 septembre 2026)",
+      "url": "https://www.zataz.com/ffrandonnee-143-million-de-fiches-proposees-a-la-vente/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 29 septembre 2026, un acteur propose à la vente sur un forum un fichier attribué à la Fédération française de la randonnée pédestre. Selon Zataz, l'auteur se présente comme un courtier de données et ne fixe pas de prix. D'après FrenchBreaches, il revendique 1 429 334 enregistrements d'adhérents, soit environ 317 Mo au format CSV, dont 1 008 071 adresses e-mail et 663 291 numéros de téléphone présentés comme uniques. Les données annoncées incluent identité, dates de naissance, adresses postales et informations de licence. L'auteur annonce aussi 98 052 entrées présentées comme liées à des données médicales, CACI ou contacts d'urgence, et des enregistrements remontant aux années 1990. La fédération n'a pas confirmé.",
+  "timeline": [
+    {
+      "date": "2026-09-29",
+      "event": "Publication sur un forum de l'offre de vente d'un fichier attribué à la FFRandonnée : 1 429 334 enregistrements revendiqués pour environ 317 Mo, avec e-mails et téléphones présentés comme uniques (FrenchBreaches, Zataz)."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "L'auteur annonce également 98 052 entrées présentées comme médicales, CACI ou contacts d'urgence, ainsi que 44 555 abonnés papier et 19 396 abonnés numériques ; aucune confirmation indépendante de l'intégralité des volumes (FrenchBreaches)."
+    }
+  ]
+}
