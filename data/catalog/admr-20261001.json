@@ -1,0 +1,39 @@
+{
+  "slug": "admr-20261001",
+  "entity": "ADMR",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 9700,
+    "unit": "comptes",
+    "label": "environ 9 700 comptes revendiqués au total et extrait gratuit de 1 000 comptes annoncé, selon Fuites Infos et FrenchBreaches ; chiffres non confirmés par l'ADMR"
+  },
+  "data_types": ["identite", "coordonnees", "credentials", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — ADMR : fuite de données revendiquée sur environ 9 700 comptes (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-admr",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — ADMR : une base de près de 10 000 comptes publiée sur un forum cybercriminel (1er octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/admr-mupn6cbtuoer51cdk4",
+      "kind": "article"
+    }
+  ],
+  "description": "Un acteur utilisant le pseudonyme « Quantique » publie le 1er octobre 2026 sur un forum cybercriminel un extrait de 1 000 comptes attribué à l'intranet de l'ADMR, réseau français d'aide et de services à domicile, et annonce un ensemble d'environ 9 700 comptes, selon Fuites Infos. Selon FrenchBreaches, la base est présentée comme collectée par scraping par un autre utilisateur, et le fichier complet est réservé contre des crédits du forum. Les champs cités décrivent des salariés, des responsables et des bénévoles des fédérations : identité, coordonnées, fonction, structure de rattachement et droits d'accès. Aucun mot de passe n'apparaît dans l'échantillon et aucune donnée sur les personnes aidées n'est citée. L'ADMR n'a pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-10-01",
+      "event": "« Quantique » publie sur un forum un extrait de 1 000 comptes attribué à l'intranet de l'ADMR et annonce un ensemble d'environ 9 700 comptes, selon Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "FrenchBreaches relève dans l'échantillon des dates de création et de dernière connexion de février 2026 et aucun champ de mot de passe ; l'ADMR n'a pas confirmé publiquement la revendication."
+    }
+  ]
+}
