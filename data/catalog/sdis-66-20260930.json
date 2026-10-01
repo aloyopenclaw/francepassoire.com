@@ -9,10 +9,15 @@
   },
   "volume": {
     "count": 118892,
-    "unit": "enregistrements",
-    "label": "118 892 fiches d'intervention et 99 108 documents revendiqués par l'auteur ; 108 825 noms et prénoms dénombrés par FrenchBreaches ; chiffres non confirmés par le SDIS 66"
+    "unit": "lignes",
+    "label": "118 892 fiches d'intervention (328 Mo) et 99 108 documents et images (10,5 Go) revendiqués par le vendeur, selon Fuites Infos et FrenchBreaches ; nombre de personnes distinctes non déterminé"
   },
-  "data_types": ["identite", "coordonnees", "sante", "documents"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "documents"
+  ],
   "sources": [
     {
       "label": "Fuites Infos — SDIS 66 : fuite de données revendiquée sur des interventions de secours (30 septembre 2026)",
@@ -23,21 +28,22 @@
       "label": "FrenchBreaches — Fuite de données au SDIS 66 : près de 119 000 dossiers et 99 000 documents médicaux revendiqués (30 septembre 2026)",
       "url": "https://frenchbreaches.com/alertes/sdis-des-pyr-n-es-orientales-muofwgorb7tkmw3yu9a",
       "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Revendication forum SDIS 66, reproduction publiée par Fuites Infos (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/sdis66-2026-09-30-revendication-forum.webp",
+      "kind": "revendication"
     }
   ],
-  "description": "Une revendication publiée le 30 septembre 2026 sur un forum cybercriminel vise le SDIS des Pyrénées-Orientales (SDIS 66). L'auteur, sous le pseudonyme Syrv4x selon FrenchBreaches, annonce 118 892 fiches d'intervention (328 Mo) et 99 108 documents et images (10,5 Go). Selon la revendication relayée par Fuites Infos, les données portent sur des personnes prises en charge lors d'interventions de secours : identité, coordonnées, relevés médicaux, pièces d'identité, cartes Vitale, ordonnances, comptes rendus, signatures et photographies. FrenchBreaches dénombre aussi 108 825 noms et prénoms et 87 463 adresses dans le lot revendiqué. Un échantillon présente une intervention du 27 septembre 2026. Le SDIS 66 n'a pas confirmé publiquement l'incident à ce stade.",
+  "description": "Une revendication publiée le 30 septembre 2026 sur un forum cybercriminel vise le SDIS des Pyrénées-Orientales. Son auteur, qui utilise le pseudonyme Syrv4x selon FrenchBreaches, propose 118 892 fiches d'intervention réunies dans un fichier de 328 Mo, et 99 108 documents et images pour 10,5 Go. Les données présentées porteraient sur des personnes secourues : identité, coordonnées, lieu d'intervention et observations médicales, selon FrenchBreaches. Selon la revendication, 50 à 60 % des documents seraient des pièces d'identité et des cartes Vitale. Le reste comprendrait des ordonnances, des comptes rendus médicaux, des signatures et des photographies d'interventions, selon Fuites Infos. L'extrait joint porterait sur une intervention du 27 septembre 2026. Le SDIS 66 n'a pas confirmé publiquement l'incident. Les volumes et contenus annoncés restent ceux revendiqués.",
   "timeline": [
     {
-      "date": "2026-09-27",
-      "event": "L'échantillon joint à la revendication présente une fiche d'intervention datée du 27 septembre 2026, selon Fuites Infos."
+      "date": "2026-09-30",
+      "event": "Publication de la revendication par Syrv4x sur un forum cybercriminel : 118 892 fiches d'intervention et 99 108 documents et images annoncés, avec un extrait présenté comme daté du 27 septembre 2026, selon FrenchBreaches."
     },
     {
       "date": "2026-09-30",
-      "event": "Publication de la revendication sur un forum cybercriminel : 118 892 fiches d'intervention et 99 108 documents annoncés, dont 50 à 60 % de cartes d'identité et de cartes Vitale selon l'auteur."
-    },
-    {
-      "date": "2026-09-30",
-      "event": "Fuites Infos et FrenchBreaches publient leurs analyses ; FrenchBreaches attribue la publication au pseudonyme Syrv4x et dénombre 108 825 noms et prénoms ; aucune confirmation publique du SDIS 66."
+      "event": "Fuites Infos et FrenchBreaches relatent la revendication : données présentées comme des bilans d'interventions de secours avec identité, coordonnées, éléments médicaux, pièces d'identité et cartes Vitale."
     }
   ]
 }
