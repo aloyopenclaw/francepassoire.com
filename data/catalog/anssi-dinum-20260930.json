@@ -2,61 +2,47 @@
   "slug": "anssi-dinum-20260930",
   "entity": "ANSSI et Dinum",
   "secteur": "public",
-  "statut": "confirmee",
+  "statut": "revendiquee",
   "dates": {
     "revendication": "2026-09-30",
-    "publication": "2026-09-30",
-    "confirmation": "2026-09-30"
+    "publication": "2026-10-01"
   },
   "volume": {
     "count": 118,
     "unit": "comptes",
-    "label": "118 comptes compromis au laboratoire d'innovation de l'ANSSI selon son point de situation, dont une trentaine de comptes externes ; côté Dinum, compromission de deux instances Metabase sans volume communiqué"
+    "label": "118 comptes utilisateurs compromis au laboratoire d'innovation de l'ANSSI, dont une trentaine externes, selon le point de situation de septembre 2026 de l'ANSSI cite par FrenchBreaches ; cote DINUM, deux instances Metabase concernees et volume exfiltre non precise"
   },
-  "data_types": [
-    "credentials",
-    "coordonnees",
-    "documents"
-  ],
+  "data_types": ["identite", "coordonnees", "credentials", "autre"],
   "sources": [
     {
-      "label": "ANSSI — Premier point de situation de l'opération REACTIV, reproduction publiée par Fuites Infos (30 septembre 2026)",
-      "url": "https://fuitesinfos.fr/uploads/2026/09/anssi-2026-09-30-rapport-anssi.webp",
-      "kind": "officiel"
+      "label": "FrenchBreaches — Fuite de données à l'ANSSI : 118 comptes compromis via une faille Metabase (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/laboratoire-d-innovation-de-l-anssi-muol4p978duakorwom",
+      "kind": "article"
     },
     {
-      "label": "Fuites Infos — ANSSI Laboratoire d'innovation : fuite de données, 118 comptes compromis (30 septembre 2026)",
-      "url": "https://fuitesinfos.fr/article/2026-09-30-anssi-laboratoire-d-innovation",
+      "label": "FrenchBreaches — Cyberattaque à la DINUM : deux services de l'État compromis via une faille Metabase (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/direction-interminist-rielle-du-num-rique-dinum-muol6l7pjtbxn5jirpc",
       "kind": "article"
     },
     {
       "label": "Clubic — Personne n'est à l'abri ! L'ANSSI et la Dinum victimes d'une fuite de données (1er octobre 2026)",
       "url": "https://www.clubic.com/actualite-632056-personne-n-est-a-l-abri-l-anssi-et-la-dinum-victime-d-une-fuite-de-donnees.html",
       "kind": "article"
-    },
-    {
-      "label": "01net.com — Une nouvelle fuite de données frappe l'État français, et l'Anssi fait partie des victimes (1er octobre 2026)",
-      "url": "https://www.01net.com/actualites/nouvelle-fuite-donnees-frappe-etat-francais-anssi-fait-partie-victimes.html",
-      "kind": "article"
     }
   ],
-  "description": "L'ANSSI publie le 30 septembre 2026 un premier point de situation de l'opération REACTIV. Selon ce document, l'exploitation d'une vulnérabilité de Metabase a compromis 118 comptes du laboratoire d'innovation de l'agence, dont une trentaine de comptes externes. Les données visées comprennent des identifiants, des adresses électroniques, des mots de passe hachés et des statistiques d'utilisation, selon Fuites Infos. Deux instances Metabase de la Dinum, liées à ProConnect et à Nuage-Public, ont aussi été touchées, selon Clubic et 01net. Les données dérobées comprennent des informations administratives d'organismes publics, des métadonnées de projets et des historiques de connexion anonymisés. L'ANSSI indique que ces dernières données sont déjà publiques. Les instances vulnérables ont été mises à jour et les mots de passe renouvelés. Aucune revendication n'a été identifiée.",
+  "description": "Selon le point de situation de septembre 2026 de l'ANSSI, relayé par FrenchBreaches, l'exploitation d'une faille zero-day de Metabase a compromis 118 comptes du laboratoire d'innovation de l'ANSSI, dont une trentaine externes : identifiants, adresses e-mail, mots de passe hachés et données d'usage ont été dérobés. Deux instances Metabase de la DINUM, associées à ProConnect et Nuage-Public, ont également été visées, avec exfiltration d'informations administratives d'organismes publics, de numéros SIREN et SIRET, d'éléments de budgets et d'effectifs, de métadonnées de contributions open source et d'historiques de connexion anonymisés. Selon l'ANSSI, ces données étaient déjà publiques. La DINUM indique avoir corrigé les vulnérabilités, supprimé les comptes malveillants et réinitialisé les accès. L'ANSSI a renouvelé les mots de passe et désactivé les comptes inactifs depuis plus de trois mois.",
   "timeline": [
     {
       "date": "2026-08-06",
-      "event": "Metabase annonce une compromission de ses systèmes liée à une faille zero-day critique notée CVSS 10.0, selon Clubic et 01net."
+      "event": "Metabase annonce avoir détecté une faille zero-day critique, notée 10.0 sur l'échelle CVSS, selon Clubic."
     },
     {
       "date": "2026-09-30",
-      "event": "L'ANSSI publie un premier point de situation de l'opération REACTIV : 118 comptes du laboratoire d'innovation compromis et deux instances Metabase de la Dinum touchées, selon Fuites Infos, FrenchBreaches et 01net."
-    },
-    {
-      "date": "2026-09-30",
-      "event": "Mises à jour des instances vulnérables, renouvellement des mots de passe et désactivation des comptes inactifs depuis plus de trois mois, selon le point de situation de l'ANSSI."
+      "event": "FrenchBreaches détaille, sur la base du point de situation de septembre 2026 de l'ANSSI, la compromission de 118 comptes du laboratoire d'innovation de l'ANSSI et de deux instances Metabase de la DINUM associées à ProConnect et Nuage-Public, avec exfiltration de données."
     },
     {
       "date": "2026-10-01",
-      "event": "Clubic et 01net relatent l'incident : informations administratives d'organismes publics côté Dinum, identifiants et mots de passe hachés côté ANSSI ; suppression des comptes malveillants créés chez la Dinum."
+      "event": "Clubic relate l'incident : la DINUM indique avoir corrigé les vulnérabilités, supprimé les comptes malveillants et réinitialisé des accès, et l'ANSSI a renouvelé les mots de passe et désactivé les comptes inactifs depuis plus de trois mois."
     }
   ]
 }
