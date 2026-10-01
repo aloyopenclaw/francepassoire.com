@@ -1,0 +1,43 @@
+{
+  "slug": "orkyn-20261001",
+  "entity": "Orkyn",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 18700,
+    "unit": "personnes",
+    "label": "de l'ordre de 18 700 patients selon Fuites Infos ; environ 18 000 entrées selon FrenchBreaches ; chiffre revendiqué sur un forum, non confirmé par Orkyn"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Orkyn : après la cyberattaque, un fichier de patients proposé sur un forum cybercriminel (1 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-orkyn",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Orkyn : 18 000 patients revendiqués après la fuite de données de santé (1 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/orkyn-mupff8p55spyc9k49rw",
+      "kind": "article"
+    }
+  ],
+  "description": "Orkyn, prestataire de santé à domicile du groupe Air Liquide, détecte une cyberattaque le 19 septembre 2026 et informe ses patients par courriel. L'entreprise confirme la compromission de données personnelles : identité, coordonnées, numéro de sécurité sociale, code patient, suivi de prise en charge et éléments de santé. Le 1er octobre 2026, un fichier présenté comme celui de ses patients est proposé sur un forum cybercriminel. Selon la revendication, il compte environ 18 000 entrées : nom, numéro de sécurité sociale, date de naissance, code postal, téléphone et références du médecin prescripteur. Fuites Infos évalue l'ensemble à de l'ordre de 18 700 patients. Orkyn n'a pas confirmé ce volume ni établi publiquement de lien entre le fichier et l'incident notifié.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Orkyn détecte une cyberattaque, informe ses patients et suspend l'accès à son espace patient en ligne, selon Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Un fichier présenté comme celui des patients d'Orkyn est proposé sur un forum cybercriminel ; la revendication annonce environ 18 000 entrées selon FrenchBreaches."
+    }
+  ]
+}
