@@ -1,0 +1,49 @@
+{
+  "slug": "tracfin-20260930",
+  "entity": "TRACFIN",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30",
+    "confirmation": "2026-09-30"
+  },
+  "volume": {
+    "count": 136,
+    "unit": "personnes",
+    "label": "136 assujettis selon le point de situation de l'ANSSI ; le contenu de 213 demandes d'assistance a également été exfiltré"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "ANSSI — Point de situation REACTIV, reproduction publiée par Fuites Infos (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/tracfin-2026-09-30-rapport-anssi.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — TRACFIN : 136 assujettis touchés par une fuite de données (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-07-15-tracfin",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données liée à TRACFIN : des déclarants et leurs demandes d'assistance compromis (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/tracfin-muohckeoxgv08biqk4c",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 septembre 2026, Fuites Infos et FrenchBreaches relatent un point de situation de l'ANSSI décrivant une exfiltration de données liée au portail de télédéclaration de TRACFIN. Selon l'ANSSI, la compromission d'un sous-traitant de l'opérateur du module d'assistance a permis une exfiltration entre fin juin et mi-juillet 2026. 136 assujettis sont concernés : nom, prénom, fonction, adresse électronique et numéro de téléphone. Le contenu de 213 demandes d'assistance adressées au support a également été exfiltré. L'agence indique qu'aucune donnée relative aux déclarations de soupçon n'a été exposée. L'administration a cessé toute relation avec le prestataire, toujours selon l'ANSSI. Aucune revendication publique n'a été identifiée.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Fuites Infos et FrenchBreaches relatent le point de situation de l'ANSSI : exfiltration des données de 136 assujettis et du contenu de 213 demandes d'assistance entre fin juin et mi-juillet 2026, après la compromission d'un sous-traitant de l'opérateur du module d'assistance."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Selon le document de l'ANSSI, aucune donnée relative aux déclarations de soupçon n'a été exposée et l'administration a cessé toute relation avec le prestataire compromis ; aucune revendication publique n'est identifiée."
+    }
+  ]
+}
