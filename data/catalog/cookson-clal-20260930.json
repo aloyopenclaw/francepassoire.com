@@ -1,0 +1,53 @@
+{
+  "slug": "cookson-clal-20260930",
+  "entity": "Cookson-CLAL",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30",
+    "confirmation": "2026-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par Cookson-CLAL"
+  },
+  "data_types": [
+    "financier",
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Cookson-CLAL — Notification aux clients, reproduction publiée par Fuites Infos (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/cookson-clal-2026-09-30-notification-clients.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Cookson-CLAL : fuite de données après un incident chez un prestataire de paiement (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-cookson-clal",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Cookson-CLAL : numéros de carte bancaire et cryptogrammes compromis (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cookson-clal-muomsy4ng1mk25gtxwj",
+      "kind": "article"
+    }
+  ],
+  "description": "Cookson-CLAL, fournisseur de métaux précieux et de fournitures pour la bijouterie et l'horlogerie, a informé des clients d'une extraction de données de paiement survenue chez un prestataire externe chargé de l'authentification des paiements par carte sur son site. Selon la notification reproduite par Fuites Infos, les éléments extraits comprennent le numéro complet de carte, la date d'expiration, le cryptogramme visuel, le nom associé à la carte et l'adresse e-mail du client. L'entreprise ne nomme pas le prestataire et ne communique ni période ni nombre de clients concernés. FrenchBreaches relate la notification le 30 septembre 2026, Fuites Infos le 1er octobre. Aucune revendication n'est signalée.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Cookson-CLAL notifie des clients : les investigations confirment l'extraction de données de paiement chez un prestataire externe chargé de l'authentification des paiements par carte, selon la notification reproduite par Fuites Infos."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "FrenchBreaches relate la notification ; le prestataire, la période des paiements visés et le nombre de clients concernés ne sont pas précisés, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Fuites Infos publie son article sur la notification aux clients de Cookson-CLAL ; aucune revendication n'est signalée."
+    }
+  ]
+}
