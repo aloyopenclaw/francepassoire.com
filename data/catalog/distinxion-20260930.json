@@ -1,0 +1,39 @@
+{
+  "slug": "distinxion-20260930",
+  "entity": "Distinxion",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 415000,
+    "unit": "personnes",
+    "label": "environ 415 000 personnes distinctes selon Fuites Infos ; 494 123 lignes revendiquées par l'auteur, qui annonce 218 Mo, selon FrenchBreaches ; chiffres non confirmés par l'entreprise"
+  },
+  "data_types": ["identite", "coordonnees", "autre"],
+  "sources": [
+    {
+      "label": "Fuites Infos — Distinxion : fuite de données revendiquée visant environ 415 000 personnes (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-distinxion",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez Distinxion : près de 500 000 contacts revendiqués par un pirate (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/autos-distinxion-muo73x46b5xto1nd1oq",
+      "kind": "article"
+    }
+  ],
+  "description": "Distinxion est un réseau français de distributeurs indépendants de véhicules d'occasion récents, exploité par Réseaux Impulxion à Saint-Herblain. Le 30 septembre 2026, un acteur sous le pseudonyme Syrv4x publie gratuitement sur un forum cybercriminel une base présentée comme issue d'autos.fr, site rattaché au réseau. Selon Fuites Infos, le fichier comporte environ 494 000 lignes et porte sur environ 415 000 personnes distinctes : clients, prospects et contacts entrants. FrenchBreaches relève la revendication de 494 123 lignes, pour 218 Mo annoncés. Les données décrites portent sur l'identité et les coordonnées : e-mail, téléphone, adresse postale, parfois date de naissance. Y figurent aussi des éléments de suivi commercial et des consentements marketing. Distinxion et Réseaux Impulxion n'ont pas confirmé publiquement la revendication.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Publication gratuite sur un forum cybercriminel d'une base présentée comme issue d'autos.fr ; l'auteur revendique 494 123 lignes pour 218 Mo, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Fuites Infos estime environ 415 000 personnes distinctes : clients, prospects et contacts entrants, avec identité, coordonnées et éléments de suivi commercial ; aucune confirmation publique de l'entreprise."
+    }
+  ]
+}
