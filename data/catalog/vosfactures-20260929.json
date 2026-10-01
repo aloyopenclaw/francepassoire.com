@@ -1,0 +1,69 @@
+{
+  "slug": "vosfactures-20260929",
+  "entity": "VosFactures",
+  "siren": "880286232",
+  "secteur": "services",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-29",
+    "publication": "2026-09-29",
+    "confirmation": "2026-09-29"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de comptes concernés non communiqué ; selon Fakturownia, l'accès a pu porter sur les comptes de l'ensemble de ses utilisateurs et sur des factures antérieures à 2023"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fakturownia — Incydent : komunikat z dnia 29.09.2026, communiqué officiel (29 septembre 2026)",
+      "url": "https://fakturownia.pl/incydent",
+      "kind": "officiel"
+    },
+    {
+      "label": "VosFactures (Factuali) — Fenêtre d'information aux utilisateurs, reproduction publiée par Fuites Infos (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/10/vosfactures-notification.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — VosFactures : une plateforme agréée de facture électronique touchée par la cyberattaque de son prestataire polonais (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-vosfactures",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données chez VosFactures : des comptes, clients, fournisseurs et documents potentiellement exposés (1er octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/vosfactures-muoqv8ylnty27ia39xm",
+      "kind": "article"
+    },
+    {
+      "label": "Niebezpiecznik — Fakturownia.pl piratée : factures et données de contractants dérobées, mis à jour (29 septembre 2026)",
+      "url": "https://niebezpiecznik.pl/post/fakturownia-pl-zhackowana/",
+      "kind": "article"
+    }
+  ],
+  "description": "Fakturownia, prestataire polonais du logiciel de facturation VosFactures, a détecté le 28 septembre 2026 un accès non autorisé sur ses serveurs. Selon son communiqué du 29 septembre, l'accès a pu porter sur les comptes de l'ensemble de ses utilisateurs, sur leurs clients et fournisseurs et sur des factures antérieures à 2023. Factuali, société de Nice qui exploite VosFactures, indique dans une fenêtre d'information qu'une personne non autorisée a accédé à des données de comptes, de clients et fournisseurs et à une partie des documents générés via le service, selon Fuites Infos. Le nombre de comptes concernés n'est pas communiqué. Fakturownia indique avoir bloqué l'accès, renouvelé les clés et déployé de nouveaux serveurs.",
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Fakturownia détecte un accès non autorisé sur ses serveurs, selon son communiqué du 29 septembre."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Fakturownia publie un communiqué : l'accès a pu porter sur les données des comptes de ses utilisateurs, de leurs contractants et sur des factures antérieures à 2023 ; Niebezpiecznik relate l'incident le même jour."
+    },
+    {
+      "date": "2026-09-29",
+      "event": "Factuali, exploitant de VosFactures, informe ses utilisateurs d'un accès non autorisé à des données de comptes, de clients et fournisseurs et à une partie des documents, selon Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Fuites Infos et FrenchBreaches relatent l'annonce de VosFactures ; les codes API sont invalidés le 1er octobre 2026 pour des raisons de sécurité, selon le courriel reproduit par Fuites Infos."
+    }
+  ]
+}
