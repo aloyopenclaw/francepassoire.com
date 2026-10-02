@@ -1,0 +1,43 @@
+{
+  "slug": "fitness-boutique-20261002",
+  "entity": "Fitness Boutique",
+  "secteur": "retail",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 1960466,
+    "unit": "lignes",
+    "label": "1 960 466 lignes (environ 3,5 Go) annoncées par la revendication publiée le 2 octobre 2026, selon FrenchBreaches et Fuites Infos ; non confirmé par Fitness Boutique"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Fitness Boutique : fuite de données revendiquée visant ses clients (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-fitness-boutique",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FitnessBoutique : une fuite de données de près de 2 millions de fiches clients revendiquée et mise en vente (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/fitnessboutique-mur3td4i3kz7pnkibuc",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 2 octobre 2026, une revendication publiée sur un forum cybercriminel annonce la mise en vente d'une base attribuée au site fitnessboutique.fr. Selon FrenchBreaches, l'auteur utilise le pseudonyme Syrv4x et annonce 1 960 466 enregistrements pour environ 3,5 Go. D'après Fuites Infos, les champs décrits incluent civilité, nom, prénom, date de naissance, e-mail, téléphone et adresse postale. La revendication mentionne aussi la cagnotte de fidélité et le magasin de rattachement. Un échantillon de 1 500 fiches accompagne l'annonce selon Fuites Infos. Aucun mot de passe ne figure parmi les champs décrits. Fitness Boutique n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Publication de la revendication : mise en vente d'une base attribuée à fitnessboutique.fr, 1 960 466 enregistrements annoncés selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Fuites Infos décrit un échantillon de 1 500 fiches et l'absence de mot de passe dans les champs décrits ; l'enseigne n'a pas confirmé l'incident."
+    }
+  ]
+}
