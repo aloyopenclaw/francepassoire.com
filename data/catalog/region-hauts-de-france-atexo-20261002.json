@@ -1,0 +1,47 @@
+{
+  "slug": "region-hauts-de-france-atexo-20261002",
+  "entity": "Région Hauts-de-France (données traitées par ATEXO)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de personnes concernées non communiqué ; la notification ne précise ni le nombre de personnes ni le volume de données, selon Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Région Hauts-de-France : fuite de données après une cyberattaque chez un prestataire (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-region-hauts-de-france",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Région Hauts-de-France : des données personnelles exposées suite à une cyberattaque chez ATEXO (2 octobre 2026)",
+      "url": "https://www.cyberattaque.org/region-hauts-de-france-des-donnees-personnelles-exposees-suite-a-une-cyberattaque-chez-atexo/",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez ATEXO : des données d'usagers de la Région Hauts-de-France (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/r-gion-hauts-de-france-atexo-mur6n6zz7mtgktgessr",
+      "kind": "article"
+    }
+  ],
+  "description": "La Région Hauts-de-France informe certaines personnes d'un incident de sécurité chez ATEXO, prestataire qui traite des données pour son compte. Selon la notification rapportée par Cyberattaque.org et FrenchBreaches, une cyberattaque visant ATEXO a permis un accès non autorisé à des données personnelles. Les investigations ont confirmé la compromission possible de trois catégories : nom, prénom et adresse e-mail. La Région indique ne disposer d'aucun élément confirmant la compromission d'autres informations à ce stade. Le nombre de personnes concernées n'est pas communiqué. Aucune revendication n'a été relevée selon Fuites Infos. Les investigations techniques se poursuivent pour établir l'étendue de l'accès.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "La Région Hauts-de-France notifie des personnes : cyberattaque chez ATEXO, accès non autorisé à des données traitées pour la collectivité, selon FrenchBreaches et Cyberattaque.org."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Fuites Infos et Cyberattaque.org publient : nom, prénom et adresse e-mail confirmés parmi les données susceptibles d'avoir été compromises ; nombre de personnes non communiqué."
+    }
+  ]
+}
