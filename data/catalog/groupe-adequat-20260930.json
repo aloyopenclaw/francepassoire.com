@@ -1,0 +1,43 @@
+{
+  "slug": "groupe-adequat-20260930",
+  "entity": "Groupe Adéquat",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de candidats concernés non communiqué par le groupe, selon Fuites Infos et Cyberattaque.org"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Groupe Adéquat : fuite de données sur son site de recrutement (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-groupe-adequat",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Adéquat : les données de candidats exposées pendant trois mois (30 septembre 2026)",
+      "url": "https://www.cyberattaque.org/adequat-les-donnees-de-candidats-exposees-pendant-trois-mois/",
+      "kind": "article"
+    }
+  ],
+  "description": "Selon Fuites Infos, Adéquat signale des accès non autorisés sur son site jobadequat.fr entre le 24 avril et le 22 juillet 2026. L'intrusion passe par l'exploitation d'une vulnérabilité sur un serveur géré par un prestataire technique non nommé. Les données susceptibles d'avoir été consultées sont le nom, le prénom, l'adresse e-mail, le numéro de téléphone et le contenu de la candidature. Le groupe indique ne pas pouvoir confirmer la consultation effective de ces données. Aucune donnée bancaire n'est concernée. La vulnérabilité a été corrigée et l'incident notifié à la CNIL, selon Cyberattaque.org. Le risque principal identifié par le groupe : fausses offres d'emploi et messages frauduleux au nom d'Adéquat.",
+  "timeline": [
+    {
+      "date": "2026-04-24",
+      "event": "Ouverture de la fenêtre d'accès non autorisés sur jobadequat.fr, qui court jusqu'au 22 juillet 2026 selon la notification du groupe."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Le groupe informe les personnes concernées, corrige la vulnérabilité, renouvelle les accès techniques et notifie la CNIL ; Fuites Infos et Cyberattaque.org relaient l'incident."
+    }
+  ]
+}
