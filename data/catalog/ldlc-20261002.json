@@ -1,0 +1,54 @@
+{
+  "slug": "ldlc-20261002",
+  "entity": "Groupe LDLC",
+  "secteur": "retail",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02",
+    "confirmation": "2026-10-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "nombre de clients concernés non communiqué par le Groupe LDLC"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Notification du Groupe LDLC aux clients, reproduction publiée par Fuites Infos (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/10/groupe-ldlc-2026-10-02-notification-clients.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Groupe LDLC : fuite de données après un accès non autorisé (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-groupe-ldlc",
+      "kind": "article"
+    },
+    {
+      "label": "01net.com — Cyberattaque contre LDLC : vos données personnelles ont peut-être été compromises (2 octobre 2026)",
+      "url": "https://www.01net.com/actualites/ldlc-cyberattaque-donnees-personnelles-clients-consultees.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — LDLC victime d'un incident de sécurité : des données de clients consultées (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/ldlc-muqsxvb7wz9y21k96wp",
+      "kind": "article"
+    }
+  ],
+  "description": "Le Groupe LDLC, distributeur lyonnais de matériel informatique et high-tech, informe ses clients d'un acte malveillant ayant permis un accès non autorisé à l'un de ses systèmes d'information. Selon la notification reproduite par Fuites Infos, les données consultées portent sur l'identité et les coordonnées : nom, prénom, adresse postale, adresse électronique, numéros de téléphone, codes clients, type de client, dates d'inscription et de dernière connexion. L'entreprise indique que les données bancaires, les identifiants de connexion et les mots de passe ne sont pas concernés. Elle déclare avoir isolé la solution visée, revu ses accès et notifié la CNIL. Le nombre de clients touchés n'est pas communiqué. 01net.com et FrenchBreaches relatent l'incident le même jour.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Le Groupe LDLC notifie ses clients d'un accès non autorisé à l'un de ses systèmes d'information, selon la notification reproduite par Fuites Infos."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "01net.com et FrenchBreaches relatent la notification : le nombre de personnes concernées et la date de l'intrusion ne sont pas précisés."
+    }
+  ]
+}
