@@ -1,0 +1,49 @@
+{
+  "slug": "sdis-66-20260930",
+  "entity": "SDIS des Pyrénées-Orientales (SDIS 66)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30"
+  },
+  "volume": {
+    "count": 118892,
+    "unit": "lignes",
+    "label": "118 892 fiches d'intervention et 99 108 documents annoncés par l'acteur selon Fuites Infos ; nature et étendue exactes en cours d'identification selon le SDIS 66"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — SDIS 66 : fuite de données revendiquée sur des interventions de secours (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-sdis-66",
+      "kind": "article"
+    },
+    {
+      "label": "ICI (Radio France) — Le SDIS 66 victime d'une fuite de données (1er octobre 2026)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/le-sdis-66-victime-d-une-fuite-de-donnees-7983412",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — SDIS 66 : 118 892 interventions et près de 100 000 documents médicaux revendiqués par un hacker (30 septembre 2026)",
+      "url": "https://www.cyberattaque.org/sdis-66-118-892-interventions-et-pres-de-100-000-documents-medicaux-revendiques-par-un-hacker/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 30 septembre 2026, un acteur revendique sur un forum cybercriminel le vol de données du SDIS 66, selon Fuites Infos. La revendication annonce 118 892 fiches d'intervention et 99 108 documents, dont des pièces d'identité et des cartes Vitale. Selon ICI (Radio France), le SDIS 66 confirme un vol sur un serveur maintenu par un prestataire technique. Les données touchent des personnes secourues : données médicales, comptes rendus d'intervention, coordonnées, copies de pièces d'identité et de cartes Vitale. Une cellule de crise a été mise en place et le système de transmission informatique a été bloqué. Les fiches secours sont rédigées à la main et les transmissions passent par radio. L'étendue exacte du vol reste en cours d'identification.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "Un acteur publie sur un forum cybercriminel une revendication visant le SDIS 66 : 118 892 fiches d'intervention et 99 108 documents annoncés, selon Fuites Infos et Cyberattaque.org."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Le SDIS 66 confirme un vol de données de fiches secours selon ICI (Radio France). Une cellule de crise est activée et les transmissions passent par papier et radio."
+    }
+  ]
+}
