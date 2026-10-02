@@ -1,0 +1,54 @@
+{
+  "slug": "laboratoire-innovation-anssi-20260930",
+  "entity": "Laboratoire d'innovation de l'ANSSI",
+  "secteur": "public",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-09-30",
+    "confirmation": "2026-09-30"
+  },
+  "volume": {
+    "count": 118,
+    "unit": "comptes",
+    "label": "118 comptes utilisateurs compromis, dont une trentaine de comptes externes, selon le point de situation de l'ANSSI de septembre 2026"
+  },
+  "data_types": ["credentials", "coordonnees", "autre"],
+  "sources": [
+    {
+      "label": "ANSSI — Point de situation de septembre 2026, reproduction publiée par Fuites Infos (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/09/anssi-2026-09-30-rapport-anssi.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — ANSSI Laboratoire d'innovation : fuite de données, 118 comptes compromis (30 septembre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-09-30-anssi-laboratoire-d-innovation",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données à l'ANSSI : 118 comptes compromis via une faille Metabase (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/laboratoire-d-innovation-de-l-anssi-muol4p978duakorwom",
+      "kind": "article"
+    },
+    {
+      "label": "Clubic — L'ANSSI et la Dinum victimes d'une fuite de données (1er octobre 2026)",
+      "url": "https://www.clubic.com/actualite-632056-personne-n-est-a-l-abri-l-anssi-et-la-dinum-victime-d-une-fuite-de-donnees.html",
+      "kind": "article"
+    }
+  ],
+  "description": "L'ANSSI publie le 30 septembre 2026 un point de situation décrivant la compromission de 118 comptes utilisateurs du laboratoire d'innovation de l'agence, dont une trentaine de comptes externes. Selon ce document, l'exploitation d'une vulnérabilité de Metabase, outil de visualisation de données, a permis de récupérer des identifiants, des adresses électroniques, des mots de passe hachés et des données statistiques d'utilisation. Clubic relaie l'incident le 1er octobre et rappelle que la faille Metabase, notée 10.0, est exploitée depuis août, également contre la DINUM. Aucune revendication publique n'est identifiée à ce stade. L'ANSSI indique avoir mis à jour les instances concernées, renouvelé les mots de passe de l'ensemble des comptes et désactivé les comptes inutilisés depuis plus de trois mois.",
+  "timeline": [
+    {
+      "date": "2026-09-30",
+      "event": "L'ANSSI publie son point de situation de septembre : l'exploitation d'une vulnérabilité Metabase a permis de compromettre 118 comptes du laboratoire d'innovation, dont une trentaine de comptes externes, selon Fuites Infos."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "Mesures correctives décrites dans le document : mise à jour des instances Metabase, renouvellement des mots de passe de l'ensemble des comptes et désactivation des comptes inutilisés depuis plus de trois mois."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Clubic relaie l'incident : la faille Metabase zero-day, notée 10.0 et annoncée le 6 août, a aussi servi contre deux instances Metabase de la DINUM, ProConnect et Nuage-Public, selon FrenchBreaches."
+    }
+  ]
+}
