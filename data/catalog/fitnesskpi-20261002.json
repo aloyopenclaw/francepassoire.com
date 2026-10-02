@@ -1,0 +1,44 @@
+{
+  "slug": "fitnesskpi-20261002",
+  "entity": "FitnessKPI",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 1848,
+    "unit": "enregistrements",
+    "label": "1 848 fiches d'adhérents (60 Mo) annoncées par la revendication, selon Fuites Infos ; Cyberattaque.org relève 1 847 profils uniques dans le fichier"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — FitnessKPI : fuite de données confirmée par le club Genae d'Écully (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-fitnesskpi",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Genae Écully : les habitudes de fréquentation de 1 848 adhérents exposés après une cyberattaque (2 octobre 2026)",
+      "url": "https://www.cyberattaque.org/genae-ecully-cyberattaque-fitnesskpi-1-848-adherents-exposes-avec-leurs-paiements-et-habitudes-de-frequentation/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, une revendication publiée sur un forum cybercriminel annonce la diffusion gratuite d'un fichier attribué à fitness-kpi.com. La plateforme de gestion pour salles de sport est éditée par Fitness Technologies, selon Fuites Infos. L'auteur, identifié comme Syrv4x selon Cyberattaque.org, annonce 1 848 fiches d'adhérents pour 60 Mo. Le fichier analysé par Cyberattaque.org contient 1 847 profils uniques, tous rattachés au club Genae d'Écully dans le Rhône. Selon le club, qui a confirmé l'incident au média, un ancien accès administrateur a été utilisé puis supprimé. Les champs incluent identité, coordonnées, contrat, historique de paiements et passages au club. FitnessKPI n'a pas déclaré publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Publication de la revendication : diffusion gratuite d'un fichier attribué à fitness-kpi.com, 1 848 fiches annoncées selon Cyberattaque.org."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Le club Genae d'Écully confirme l'incident à Cyberattaque.org : ancien accès administrateur utilisé puis supprimé ; aucun numéro de carte bancaire ni IBAN exposé selon le club."
+    }
+  ]
+}
