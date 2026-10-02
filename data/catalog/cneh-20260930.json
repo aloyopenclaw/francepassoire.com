@@ -11,7 +11,7 @@
   "volume": {
     "count": 0,
     "unit": "personnes",
-    "label": "645 Go de données annoncés par le groupe Kairos ; nombre de personnes concernées non déterminable à partir de ce volume, selon FrenchBreaches"
+    "label": "645 Go de données revendiqués selon FrenchBreaches ; nombre de personnes concernées non communiqué et aucune conversion en individus possible"
   },
   "data_types": [
     "identite",
@@ -21,25 +21,21 @@
   ],
   "sources": [
     {
-      "label": "ransomware.live — Fiche victime CNEH (groupe Kairos, France)",
-      "url": "https://www.ransomware.live/id/TGUgQ2VudHJlIE5hdGlvbmFsIGRlIGwnRXhwZXJ0aXNlIEhvc3BpdGFsacOocmUgKENORUgpQGthaXJvcw==",
-      "kind": "revendication"
+      "label": "FrenchBreaches — Cyberattaque au CNEH : 645 Go de données sensibles revendiqués, dont cartes Vitale et numéros de Sécurité sociale (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/le-centre-national-de-l-expertise-hospitali-re-cneh-muome98fga2iaxy1jk",
+      "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Cyberattaque au CNEH : 645 Go de données sensibles revendiqués, dont des cartes d'identité et Vitale (30 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/le-centre-national-de-l-expertise-hospitali-re-cneh-muome98fga2iaxy1jk",
+      "label": "Ransomware.live — Fiche victime CNEH, listing du groupe kairos (30 septembre 2026)",
+      "url": "https://www.ransomware.live/id/TGUgQ2VudHJlIE5hdGlvbmFsIGRlIGwnRXhwZXJ0aXNlIEhvc3BpdGFsacOocmUgKENORUgpQGthaXJvcw==",
       "kind": "revendication"
     }
   ],
-  "description": "Le groupe de rançongiciels Kairos ajoute le 30 septembre 2026 le Centre National de l'Expertise Hospitalière à son site de fuite et revendique environ 645 Go de données, selon ransomware.live et FrenchBreaches. Le groupe menace de rendre les données accessibles à l'issue d'un compte à rebours. Les échantillons présentés comprennent des copies de pièces d'identité et de cartes Vitale, selon FrenchBreaches. Figurent aussi des noms et prénoms, des dates et lieux de naissance, des adresses, des adresses électroniques, des numéros de téléphone et des numéros de Sécurité sociale. Des documents RH et financiers sont également montrés. Le CNEH, organisme d'accompagnement des professionnels et des établissements de santé fondé en 1974, n'a pas communiqué publiquement au moment des relais de presse. Le volume annoncé demeure une affirmation du groupe.",
+  "description": "Le groupe ransomware kairos affirme détenir des données du Centre National de l'Expertise Hospitalière (CNEH). Selon ransomware.live, la victime figure sur le site de fuite du groupe depuis le 30 septembre 2026. FrenchBreaches rapporte une revendication de 645 Go de données. Les contenus annoncés incluent cartes d'identité, cartes Vitale, numéros de Sécurité sociale, coordonnées, CV et documents RH et financiers, selon FrenchBreaches. Le CNEH est un organisme de formation des professionnels de santé fondé en 1974, selon la présentation reprise par ransomware.live. Aucune confirmation publique de l'organisme n'est connue au 1er octobre. Aucun nombre de personnes concernées ni montant de rançon n'est publié.",
   "timeline": [
     {
       "date": "2026-09-30",
-      "event": "Le groupe Kairos affiche le Centre National de l'Expertise Hospitalière sur son site de fuite avec un compte à rebours et annonce 645 Go de données, selon ransomware.live et FrenchBreaches."
-    },
-    {
-      "date": "2026-09-30",
-      "event": "FrenchBreaches relève des échantillons présentés comme issus du CNEH : pièces d'identité, cartes Vitale, numéros de Sécurité sociale et documents RH et financiers."
+      "event": "Inscription du CNEH sur le site de fuite du groupe kairos, selon ransomware.live ; FrenchBreaches relate la revendication de 645 Go de données."
     }
   ]
 }
