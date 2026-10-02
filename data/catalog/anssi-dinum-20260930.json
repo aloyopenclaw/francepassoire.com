@@ -1,0 +1,52 @@
+{
+  "slug": "anssi-dinum-20260930",
+  "entity": "ANSSI et Dinum",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-09-30",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 118,
+    "unit": "comptes",
+    "label": "118 comptes utilisateurs compromis au laboratoire de l'innovation de l'ANSSI selon Clubic ; deux instances Metabase de la Dinum également touchées"
+  },
+  "data_types": [
+    "credentials",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Clubic — Personne n'est à l'abri ! L'ANSSI et la Dinum victimes d'une fuite de données (1er octobre 2026)",
+      "url": "https://www.clubic.com/actualite-632056-personne-n-est-a-l-abri-l-anssi-et-la-dinum-victime-d-une-fuite-de-donnees.html",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Fuite de données à l'ANSSI : 118 comptes compromis via une faille Metabase (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/laboratoire-d-innovation-de-l-anssi-muol4p978duakorwom",
+      "kind": "revendication"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque à la DINUM : deux services de l'État compromis (30 septembre 2026)",
+      "url": "https://frenchbreaches.com/alertes/direction-interminist-rielle-du-num-rique-dinum-muol6l7pjtbxn5jirpc",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Une compromission via la faille zero-day Metabase touche l'ANSSI et la Dinum, selon FrenchBreaches et Clubic. Au laboratoire de l'innovation de l'ANSSI, 118 comptes utilisateurs sont compromis, avec vol d'identifiants, d'adresses e-mail et de mots de passe hachés. À la Dinum, deux instances Metabase sont visées, dont une dédiée à ProConnect et une au Nuage public. Les données dérobées comprennent des informations administratives d'organismes publics, des métadonnées de projets logiciels et des historiques de connexion. La majorité de ces données est publique et les historiques sont anonymisés, selon Clubic. La Dinum indique avoir corrigé les vulnérabilités, détruit les comptes malveillants et réinitialisé des accès. L'ANSSI a réinitialisé l'ensemble des mots de passe et désactivé les comptes inactifs depuis trois mois.",
+  "timeline": [
+    {
+      "date": "2026-08-06",
+      "event": "Metabase annonce avoir détecté une faille zero-day critique notée CVSS 10.0, selon Clubic."
+    },
+    {
+      "date": "2026-09-30",
+      "event": "FrenchBreaches publie deux alertes : 118 comptes compromis au laboratoire de l'innovation de l'ANSSI, deux instances Metabase compromises à la Dinum."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Clubic détaille l'incident. La Dinum indique avoir corrigé les vulnérabilités, l'ANSSI avoir réinitialisé l'ensemble des mots de passe."
+    }
+  ]
+}
