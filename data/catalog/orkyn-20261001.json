@@ -1,0 +1,54 @@
+{
+  "slug": "orkyn-20261001",
+  "entity": "Orkyn",
+  "secteur": "sante",
+  "statut": "confirmee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01",
+    "confirmation": "2026-10-01"
+  },
+  "volume": {
+    "count": 18700,
+    "unit": "personnes",
+    "label": "environ 18 700 patients selon la revendication rapportée par Fuites Infos ; FrenchBreaches évoque environ 18 000 entrées ; volume non confirmé par Orkyn"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "sante",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Notification d'Orkyn aux patients, reproduction publiée par Fuites Infos (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/10/orkyn-notification-patients.webp",
+      "kind": "officiel"
+    },
+    {
+      "label": "Fuites Infos — Orkyn : après la cyberattaque, un fichier de patients proposé sur un forum cybercriminel (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-orkyn",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Cyberattaque chez Orkyn : 18 000 patients revendiqués après la fuite de données de santé (1er octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/orkyn-mupff8p55spyc9k49rw",
+      "kind": "article"
+    }
+  ],
+  "description": "Orkyn, prestataire de santé à domicile du groupe Air Liquide, détecte une cyberattaque le 19 septembre 2026, selon la notification aux patients reproduite par Fuites Infos. L'entreprise confirme la compromission de données : identité, coordonnées, numéro de Sécurité sociale, code patient, suivi de prise en charge et données de santé. L'accès à son espace patient en ligne est suspendu. Le 1er octobre 2026, un fichier présenté comme celui des patients est proposé sur un forum cybercriminel. La revendication annonce environ 18 700 patients, avec numéro de Sécurité sociale et identifiants de médecins prescripteurs, selon Fuites Infos ; FrenchBreaches évoque environ 18 000 entrées. Orkyn n'a pas établi publiquement de lien entre ce fichier et l'incident notifié.",
+  "timeline": [
+    {
+      "date": "2026-09-19",
+      "event": "Orkyn détecte une cyberattaque et suspend l'accès à son espace patient en ligne, selon la notification aux patients reproduite par Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Un fichier présenté comme celui des patients d'Orkyn est proposé sur un forum cybercriminel, avec environ 18 700 patients revendiqués, selon Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "FrenchBreaches relate la notification et la revendication : compromission confirmée par Orkyn, volume d'environ 18 000 entrées non confirmé indépendamment."
+    }
+  ]
+}
