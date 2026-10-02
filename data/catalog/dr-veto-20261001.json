@@ -1,0 +1,43 @@
+{
+  "slug": "dr-veto-20261001",
+  "entity": "Dr.Veto",
+  "secteur": "sante",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 29378,
+    "unit": "personnes",
+    "label": "29 378 personnes estimées par Fuites Infos ; environ 29 400 personnes distinctes annoncées dans la revendication sur un fichier de 31 240 lignes ; non confirmé par Hubvet"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Dr.Veto : fuite de données revendiquée visant 29 378 personnes (1 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-dr-veto",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Dr.Veto : les données de plus de 31 000 comptes de cliniques vétérinaires diffusées gratuitement (1 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/dr-veto-mupgpk69hg67nnxmf9v",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 1er octobre 2026, un acteur utilisant le pseudonyme Syrv4x publie gratuitement sur un forum cybercriminel un fichier présenté comme provenant du portail en ligne de Dr.Veto, logiciel vétérinaire édité par Hubvet. La revendication annonce 31 240 lignes pour environ 21 Mo. Selon FrenchBreaches, les données proviendraient de drveto.mobi. Fuites Infos estime le dépôt à 29 378 personnes distinctes, rattachées à deux établissements cités : la clinique Villa Blanchemer à Grasse et le cabinet Vétopuiseaux à Puiseaux. Les champs décrits incluent identité, coordonnées postales, téléphone, e-mail et informations sur les animaux suivis. Hubvet et les deux structures citées n'ont pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-01",
+      "event": "Publication de la revendication : diffusion gratuite d'un fichier attribué à drveto.mobi, avec 31 240 lignes annoncées selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "Fuites Infos estime le dépôt à 29 378 personnes liées à deux établissements vétérinaires ; aucun responsable n'a confirmé l'incident."
+    }
+  ]
+}
