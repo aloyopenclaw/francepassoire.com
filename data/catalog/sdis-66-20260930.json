@@ -9,8 +9,8 @@
   },
   "volume": {
     "count": 118892,
-    "unit": "enregistrements",
-    "label": "118 892 fiches d'intervention revendiquées, avec environ 99 108 documents et images pour 10,5 Go, selon la revendication citée par Fuites Infos ; nombre de personnes distinctes non communiqué"
+    "unit": "lignes",
+    "label": "118 892 fiches d'intervention et 99 108 documents annoncés par l'acteur selon Fuites Infos ; nature et étendue exactes en cours d'identification selon le SDIS 66"
   },
   "data_types": [
     "identite",
@@ -25,20 +25,25 @@
       "kind": "article"
     },
     {
+      "label": "ICI (Radio France) — Le SDIS 66 victime d'une fuite de données (1er octobre 2026)",
+      "url": "https://www.ici.fr/infos/faits-divers-justice/le-sdis-66-victime-d-une-fuite-de-donnees-7983412",
+      "kind": "article"
+    },
+    {
       "label": "Cyberattaque.org — SDIS 66 : 118 892 interventions et près de 100 000 documents médicaux revendiqués par un hacker (30 septembre 2026)",
       "url": "https://www.cyberattaque.org/sdis-66-118-892-interventions-et-pres-de-100-000-documents-medicaux-revendiques-par-un-hacker/",
       "kind": "article"
     }
   ],
-  "description": "Le 30 septembre 2026, un acteur publie sur un forum une offre de vente visant le SDIS des Pyrénées-Orientales. Selon la revendication citée par Fuites Infos, le lot compte 118 892 fiches d'intervention dans un fichier de 328 Mo. Le même lot inclut 99 108 documents et images pour 10,5 Go, toujours selon la revendication. Cyberattaque.org attribue la publication au pseudonyme Syrv4x. D'après la revendication, les données visent des personnes secourues dans les Pyrénées-Orientales : identité, coordonnées, relevés médicaux, pièces d'identité, cartes Vitale, ordonnances et photographies. L'extrait joint porte sur une intervention du 27 septembre 2026, selon la même source. Fuites Infos note l'absence de confirmation publique du SDIS 66.",
+  "description": "Le 30 septembre 2026, un acteur revendique sur un forum cybercriminel le vol de données du SDIS 66, selon Fuites Infos. La revendication annonce 118 892 fiches d'intervention et 99 108 documents, dont des pièces d'identité et des cartes Vitale. Selon ICI (Radio France), le SDIS 66 confirme un vol sur un serveur maintenu par un prestataire technique. Les données touchent des personnes secourues : données médicales, comptes rendus d'intervention, coordonnées, copies de pièces d'identité et de cartes Vitale. Une cellule de crise a été mise en place et le système de transmission informatique a été bloqué. Les fiches secours sont rédigées à la main et les transmissions passent par radio. L'étendue exacte du vol reste en cours d'identification.",
   "timeline": [
     {
-      "date": "2026-09-27",
-      "event": "Date de l'intervention figurant dans l'extrait joint à la revendication, selon Fuites Infos."
+      "date": "2026-09-30",
+      "event": "Un acteur publie sur un forum cybercriminel une revendication visant le SDIS 66 : 118 892 fiches d'intervention et 99 108 documents annoncés, selon Fuites Infos et Cyberattaque.org."
     },
     {
-      "date": "2026-09-30",
-      "event": "Publication de l'offre de vente sur un forum ; Fuites Infos et Cyberattaque.org relaient la revendication, attribuée au pseudonyme Syrv4x."
+      "date": "2026-10-01",
+      "event": "Le SDIS 66 confirme un vol de données de fiches secours selon ICI (Radio France). Une cellule de crise est activée et les transmissions passent par papier et radio."
     }
   ]
 }
