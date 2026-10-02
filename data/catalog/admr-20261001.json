@@ -10,10 +10,19 @@
   "volume": {
     "count": 9700,
     "unit": "comptes",
-    "label": "environ 9 700 comptes revendiqués au total et extrait gratuit de 1 000 comptes annoncé, selon Fuites Infos et FrenchBreaches ; chiffres non confirmés par l'ADMR"
+    "label": "environ 9 700 comptes selon la revendication du 1er octobre 2026, avec un extrait de 1 000 comptes diffusé gratuitement ; chiffre non confirmé par l'ADMR"
   },
-  "data_types": ["identite", "coordonnees", "credentials", "autre"],
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
   "sources": [
+    {
+      "label": "Revendication sur forum cybercriminel, reproduction publiée par Fuites Infos (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/10/admr-2026-10-01-revendication-forum.webp",
+      "kind": "revendication"
+    },
     {
       "label": "Fuites Infos — ADMR : fuite de données revendiquée sur environ 9 700 comptes (1er octobre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-10-01-admr",
@@ -25,15 +34,15 @@
       "kind": "article"
     }
   ],
-  "description": "Un acteur utilisant le pseudonyme « Quantique » publie le 1er octobre 2026 sur un forum cybercriminel un extrait de 1 000 comptes attribué à l'intranet de l'ADMR, réseau français d'aide et de services à domicile, et annonce un ensemble d'environ 9 700 comptes, selon Fuites Infos. Selon FrenchBreaches, la base est présentée comme collectée par scraping par un autre utilisateur, et le fichier complet est réservé contre des crédits du forum. Les champs cités décrivent des salariés, des responsables et des bénévoles des fédérations : identité, coordonnées, fonction, structure de rattachement et droits d'accès. Aucun mot de passe n'apparaît dans l'échantillon et aucune donnée sur les personnes aidées n'est citée. L'ADMR n'a pas confirmé publiquement la revendication.",
+  "description": "Une base attribuée à l'ADMR, réseau français d'aide et de services à domicile, est publiée le 1er octobre 2026 sur un forum cybercriminel. Selon la revendication, un extrait de 1 000 comptes est diffusé gratuitement et l'ensemble complet compte environ 9 700 comptes. Les données annoncées concernent des salariés, des responsables et des bénévoles des fédérations et associations locales : identité, coordonnées, fonction, structure de rattachement et droits d'accès à l'intranet. FrenchBreaches indique que l'auteur présente la collecte comme un scraping et qu'aucun mot de passe n'apparaît dans l'échantillon. L'ADMR n'a pas confirmé publiquement l'incident.",
   "timeline": [
     {
       "date": "2026-10-01",
-      "event": "« Quantique » publie sur un forum un extrait de 1 000 comptes attribué à l'intranet de l'ADMR et annonce un ensemble d'environ 9 700 comptes, selon Fuites Infos."
+      "event": "Une base attribuée à l'intranet ADMR paraît sur un forum : extrait de 1 000 comptes, total annoncé d'environ 9 700, selon Fuites Infos."
     },
     {
       "date": "2026-10-01",
-      "event": "FrenchBreaches relève dans l'échantillon des dates de création et de dernière connexion de février 2026 et aucun champ de mot de passe ; l'ADMR n'a pas confirmé publiquement la revendication."
+      "event": "FrenchBreaches décrit identités, coordonnées, fonctions et habilitations dans l'échantillon ; l'auteur invoque un scraping, aucun mot de passe n'apparaît."
     }
   ]
 }
