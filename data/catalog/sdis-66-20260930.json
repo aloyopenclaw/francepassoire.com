@@ -9,8 +9,8 @@
   },
   "volume": {
     "count": 118892,
-    "unit": "lignes",
-    "label": "118 892 fiches d'intervention (328 Mo) et 99 108 documents et images (10,5 Go) revendiqués par le vendeur, selon Fuites Infos et FrenchBreaches ; nombre de personnes distinctes non déterminé"
+    "unit": "enregistrements",
+    "label": "118 892 fiches d'intervention revendiquées, avec environ 99 108 documents et images pour 10,5 Go, selon la revendication citée par Fuites Infos ; nombre de personnes distinctes non communiqué"
   },
   "data_types": [
     "identite",
@@ -25,25 +25,20 @@
       "kind": "article"
     },
     {
-      "label": "FrenchBreaches — Fuite de données au SDIS 66 : près de 119 000 dossiers et 99 000 documents médicaux revendiqués (30 septembre 2026)",
-      "url": "https://frenchbreaches.com/alertes/sdis-des-pyr-n-es-orientales-muofwgorb7tkmw3yu9a",
+      "label": "Cyberattaque.org — SDIS 66 : 118 892 interventions et près de 100 000 documents médicaux revendiqués par un hacker (30 septembre 2026)",
+      "url": "https://www.cyberattaque.org/sdis-66-118-892-interventions-et-pres-de-100-000-documents-medicaux-revendiques-par-un-hacker/",
       "kind": "article"
-    },
-    {
-      "label": "Fuites Infos — Revendication forum SDIS 66, reproduction publiée par Fuites Infos (30 septembre 2026)",
-      "url": "https://fuitesinfos.fr/uploads/2026/09/sdis66-2026-09-30-revendication-forum.webp",
-      "kind": "revendication"
     }
   ],
-  "description": "Une revendication publiée le 30 septembre 2026 sur un forum cybercriminel vise le SDIS des Pyrénées-Orientales. Son auteur, qui utilise le pseudonyme Syrv4x selon FrenchBreaches, propose 118 892 fiches d'intervention réunies dans un fichier de 328 Mo, et 99 108 documents et images pour 10,5 Go. Les données présentées porteraient sur des personnes secourues : identité, coordonnées, lieu d'intervention et observations médicales, selon FrenchBreaches. Selon la revendication, 50 à 60 % des documents seraient des pièces d'identité et des cartes Vitale. Le reste comprendrait des ordonnances, des comptes rendus médicaux, des signatures et des photographies d'interventions, selon Fuites Infos. L'extrait joint porterait sur une intervention du 27 septembre 2026. Le SDIS 66 n'a pas confirmé publiquement l'incident. Les volumes et contenus annoncés restent ceux revendiqués.",
+  "description": "Le 30 septembre 2026, un acteur publie sur un forum une offre de vente visant le SDIS des Pyrénées-Orientales. Selon la revendication citée par Fuites Infos, le lot compte 118 892 fiches d'intervention dans un fichier de 328 Mo. Le même lot inclut 99 108 documents et images pour 10,5 Go, toujours selon la revendication. Cyberattaque.org attribue la publication au pseudonyme Syrv4x. D'après la revendication, les données visent des personnes secourues dans les Pyrénées-Orientales : identité, coordonnées, relevés médicaux, pièces d'identité, cartes Vitale, ordonnances et photographies. L'extrait joint porte sur une intervention du 27 septembre 2026, selon la même source. Fuites Infos note l'absence de confirmation publique du SDIS 66.",
   "timeline": [
     {
-      "date": "2026-09-30",
-      "event": "Publication de la revendication par Syrv4x sur un forum cybercriminel : 118 892 fiches d'intervention et 99 108 documents et images annoncés, avec un extrait présenté comme daté du 27 septembre 2026, selon FrenchBreaches."
+      "date": "2026-09-27",
+      "event": "Date de l'intervention figurant dans l'extrait joint à la revendication, selon Fuites Infos."
     },
     {
       "date": "2026-09-30",
-      "event": "Fuites Infos et FrenchBreaches relatent la revendication : données présentées comme des bilans d'interventions de secours avec identité, coordonnées, éléments médicaux, pièces d'identité et cartes Vitale."
+      "event": "Publication de l'offre de vente sur un forum ; Fuites Infos et Cyberattaque.org relaient la revendication, attribuée au pseudonyme Syrv4x."
     }
   ]
 }
