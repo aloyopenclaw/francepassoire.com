@@ -1,0 +1,48 @@
+{
+  "slug": "admr-20261001",
+  "entity": "ADMR",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-01",
+    "publication": "2026-10-01"
+  },
+  "volume": {
+    "count": 9700,
+    "unit": "comptes",
+    "label": "environ 9 700 comptes selon la revendication du 1er octobre 2026, avec un extrait de 1 000 comptes diffusé gratuitement ; chiffre non confirmé par l'ADMR"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Revendication sur forum cybercriminel, reproduction publiée par Fuites Infos (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/uploads/2026/10/admr-2026-10-01-revendication-forum.webp",
+      "kind": "revendication"
+    },
+    {
+      "label": "Fuites Infos — ADMR : fuite de données revendiquée sur environ 9 700 comptes (1er octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-01-admr",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — ADMR : une base de près de 10 000 comptes publiée sur un forum cybercriminel (1er octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/admr-mupn6cbtuoer51cdk4",
+      "kind": "article"
+    }
+  ],
+  "description": "Une base attribuée à l'ADMR, réseau français d'aide et de services à domicile, est publiée le 1er octobre 2026 sur un forum cybercriminel. Selon la revendication, un extrait de 1 000 comptes est diffusé gratuitement et l'ensemble complet compte environ 9 700 comptes. Les données annoncées concernent des salariés, des responsables et des bénévoles des fédérations et associations locales : identité, coordonnées, fonction, structure de rattachement et droits d'accès à l'intranet. FrenchBreaches indique que l'auteur présente la collecte comme un scraping et qu'aucun mot de passe n'apparaît dans l'échantillon. L'ADMR n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-01",
+      "event": "Une base attribuée à l'intranet ADMR paraît sur un forum : extrait de 1 000 comptes, total annoncé d'environ 9 700, selon Fuites Infos."
+    },
+    {
+      "date": "2026-10-01",
+      "event": "FrenchBreaches décrit identités, coordonnées, fonctions et habilitations dans l'échantillon ; l'auteur invoque un scraping, aucun mot de passe n'apparaît."
+    }
+  ]
+}
