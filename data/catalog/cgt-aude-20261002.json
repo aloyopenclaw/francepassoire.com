@@ -1,0 +1,43 @@
+{
+  "slug": "cgt-aude-20261002",
+  "entity": "CGT (Aude)",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-03"
+  },
+  "volume": {
+    "count": 4778,
+    "unit": "personnes",
+    "label": "4 778 syndiqués selon Fuites Infos ; près de 77 000 lignes annoncées par l'auteur de la publication, un chiffre supérieur au nombre de personnes selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Fuite de données à la CGT dans l'Aude : des milliers de coordonnées personnelles exposées (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cgt-aude-murlk6wfg15fmu7agjq",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — CGT (Aude) : fuite revendiquée visant 4 778 syndiqués (3 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-cgt-aude",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, le groupe LunarisSec revendique la diffusion de fichiers liés à des structures CGT de l'Aude, selon FrenchBreaches. Fuites Infos indique que 4 778 syndiqués sont visés et que l'auteur annonce près de 77 000 lignes. Selon la revendication relayée par Fuites Infos, le fichier provient du site national de la CGT. FrenchBreaches décrit des noms, prénoms et adresses postales, avec des numéros de téléphone et des adresses e-mail pour certaines fiches. Fuites Infos mentionne aussi le rattachement syndical : union locale, fédération professionnelle et syndicat de base. Les personnes concernées sont rattachées aux unions locales de l'Aude, dont Narbonne et Carcassonne. La CGT n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "LunarisSec publie sur un forum une revendication portant sur des fichiers liés à des structures CGT de l'Aude, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "FrenchBreaches et Fuites Infos relaient la revendication ; Fuites Infos indique 4 778 syndiqués visés."
+    }
+  ]
+}
