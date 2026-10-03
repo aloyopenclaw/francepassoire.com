@@ -1,0 +1,49 @@
+{
+  "slug": "cnam-adage-20261002",
+  "entity": "Cnam (portail ADAGE)",
+  "secteur": "recherche",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 14842,
+    "unit": "personnes",
+    "label": "14 842 enseignants et intervenants selon Fuites Infos ; l'auteur revendique 15 984 lignes et l'analyse de Cyberattaque.org compte 15 983 profils distincts"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — Cnam (ADAGE) : fuite revendiquée visant 14 842 enseignants et intervenants (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-cnam-adage",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — Le CNAM visé par une fuite de données concernant près de 16 000 enseignants (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cnam-adage-muri2nsuk18ssrkyap",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Cnam : près de 900 000 fiches et 16 000 profils d'enseignants en fuite (2 octobre 2026)",
+      "url": "https://www.cyberattaque.org/cyberattaque-cnam-pres-de-16-000-profils-denseignants-exposes-dans-une-fuite-de-donnees/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, l'utilisateur Syrv4x diffuse gratuitement une base présentée comme issue d'ADAGE, portail d'agrément des enseignants du Cnam, selon Fuites Infos. L'auteur revendique 15 984 lignes ; Fuites Infos annonce 14 842 enseignants et intervenants concernés. L'analyse de Cyberattaque.org, qui a examiné le fichier, compte 15 983 profils distincts. Les données réunissent état civil, coordonnées, diplômes, statuts, parcours professionnel et liens vers des CV déposés, selon les trois médias. Le même jour, une seconde base présentée comme celle des apprenants a été mise en vente par le même acteur, selon Cyberattaque.org ; elle forme un dossier distinct. Le Cnam n'a pas confirmé publiquement cette diffusion.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Syrv4x diffuse gratuitement 15 984 lignes présentées comme issues d'ADAGE, portail d'agrément des enseignants du Cnam, selon FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Cyberattaque.org publie son analyse du fichier : 15 983 profils distincts avec coordonnées, diplômes et parcours professionnels."
+    }
+  ]
+}
