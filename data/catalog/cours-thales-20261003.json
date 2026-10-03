@@ -1,0 +1,43 @@
+{
+  "slug": "cours-thales-20261003",
+  "entity": "Cours Thalès",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-03",
+    "publication": "2026-10-03"
+  },
+  "volume": {
+    "count": 40070,
+    "unit": "enregistrements",
+    "label": "40 070 enregistrements de facturation comptés par Cyberattaque.org, avec plus de 10 000 références clients distinctes ; environ 40 000 enregistrements revendiqués par l'auteur selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cours Thalès victime d'une fuite de données : près de 40 000 enregistrements revendiqués (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cours-thal-s-musgbt3pvmwpqeg5v6",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Cours Thalès : 40 070 données de facturation exposées après une faille IDOR (3 octobre 2026)",
+      "url": "https://www.cyberattaque.org/cyberattaque-cours-thales-40-070-donnees-de-facturation-exposees-apres-une-faille-idor/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 octobre 2026, l'utilisateur Alduin publie sur un forum des données présentées comme issues de cours-thales.fr et revendique environ 40 000 enregistrements obtenus via une faille IDOR, selon FrenchBreaches. Cyberattaque.org, qui a examiné le fichier, compte exactement 40 070 enregistrements de facturation, plus de 10 000 références clients distinctes et plus de 10 000 noms d'élèves inscrits, couvrant la période de mai 2023 à octobre 2026. Les fiches réunissent nom du client, adresse postale, référence client, nom de l'élève, numéro et montant de facture, mode de paiement et statut de règlement. Aucun numéro de carte bancaire complet ni IBAN n'apparaît dans les données analysées, selon Cyberattaque.org. Cours Thalès n'a pas confirmé publiquement cette fuite.",
+  "timeline": [
+    {
+      "date": "2026-10-03",
+      "event": "Alduin publie une base présentée comme issue de cours-thales.fr et revendique environ 40 000 enregistrements obtenus via une faille IDOR, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "Cyberattaque.org publie son analyse du fichier : 40 070 enregistrements de facturation, plus de 10 000 références clients distinctes, période de mai 2023 à octobre 2026."
+    }
+  ]
+}
