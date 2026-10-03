@@ -1,0 +1,46 @@
+{
+  "slug": "capeb-20261002",
+  "entity": "CAPEB",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-03"
+  },
+  "volume": {
+    "count": 3966461,
+    "unit": "lignes",
+    "label": "3 966 461 lignes revendiquées par l'auteur de la publication, soit 2,48 Go, avec 261 884 numéros de téléphone et 253 636 adresses e-mail annoncés ; environ 500 000 dirigeants estimés selon Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — CAPEB : une base de 3,9 millions d'enregistrements diffusée sur un forum cybercriminel (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/capeb-murke1g4sga4x80oopk",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — CAPEB : fuite de données revendiquée visant environ 500 000 dirigeants (3 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-capeb",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, un acteur diffuse sur un forum cybercriminel une base présentée comme celle du site de la CAPEB, selon Fuites Infos. L'auteur revendique 3 966 461 lignes, soit 2,48 Go, avec 261 884 numéros de téléphone et 253 636 adresses e-mail annoncés. FrenchBreaches rapporte les mêmes volumes. Selon Fuites Infos, environ 500 000 dirigeants d'entreprises artisanales sont concernés. FrenchBreaches décrit des fiches associant l'identité et les coordonnées du dirigeant à des informations d'entreprise, dont SIRET et forme juridique. Fuites Infos mentionne aussi des dates de naissance, des numéros de sécurité sociale, des coordonnées bancaires, des factures et des mots de passe dans les catégories annoncées. La CAPEB n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Un acteur publie sur un forum une base présentée comme celle du site de la CAPEB et revendique 3 966 461 lignes, selon FrenchBreaches et Fuites Infos."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "Fuites Infos estime qu'environ 500 000 dirigeants d'entreprises artisanales du bâtiment sont concernés."
+    }
+  ]
+}
