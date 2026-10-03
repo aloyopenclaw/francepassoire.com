@@ -1,0 +1,39 @@
+{
+  "slug": "pierrefeu-immobilier-20261002",
+  "entity": "Pierrefeu Immobilier",
+  "siren": "310188891",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "group": "krybit",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 0,
+    "unit": "personnes",
+    "label": "207,06 Go de données revendiqués par le groupe krybit selon FrenchBreaches ; nombre de personnes concernées non communiqué"
+  },
+  "data_types": [
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Cyberattaque : le groupe Krybit revendique 207 Go de données volées à Pierrefeu Immobilier (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/pierrefeu-immobilier-rw_ZDNkM0xuQnBaWEp5WldabGRTNW1ja0JyY25saWFYUT0",
+      "kind": "article"
+    },
+    {
+      "label": "ransomware.live — Fiche victime www.pierrefeu.fr (groupe krybit, France)",
+      "url": "https://www.ransomware.live/id/d3d3LnBpZXJyZWZldS5mckBrcnliaXQ=",
+      "kind": "revendication"
+    }
+  ],
+  "description": "Le 2 octobre 2026, le groupe de rançongiciels krybit affiche Pierrefeu Immobilier sur son site de fuite. Selon FrenchBreaches, le groupe revendique 207,06 Go de données et affichait un compte à rebours d'environ 88 heures avant une étape de publication. L'agence, fondée en 1963 à Tarare dans le Rhône, exerce la transaction, la gestion locative, le syndic de copropriété et la promotion immobilière. Le contenu exact des fichiers revendiqués n'est pas détaillé : aucune compromission de données de clients, de propriétaires ou de locataires ne peut être affirmée. L'entreprise n'a pas communiqué publiquement sur l'incident. Le nombre de personnes concernées n'est pas établi.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Le groupe krybit affiche Pierrefeu Immobilier sur son site de fuite et revendique 207,06 Go de données, selon FrenchBreaches et ransomware.live."
+    }
+  ]
+}
