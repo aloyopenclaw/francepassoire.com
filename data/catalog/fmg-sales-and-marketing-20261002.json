@@ -1,0 +1,43 @@
+{
+  "slug": "fmg-sales-and-marketing-20261002",
+  "entity": "FMG Sales and Marketing",
+  "secteur": "services",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 10241,
+    "unit": "personnes",
+    "label": "10 241 personnes selon Fuites Infos ; FrenchBreaches rapporte 10 343 lignes revendiquées, environ 7 Mo"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — FMG Sales and Marketing : fuite de données revendiquée visant 10 241 personnes (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-fmg-sales-and-marketing",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — FMG Sales & Marketing : les données de plus de 10 000 intervenants diffusées gratuitement (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/fmg-sales-marketing-mur94aon523ticxpdfy",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, un acteur publie gratuitement sur un forum cybercriminel une base présentée comme issue de FMG Sales and Marketing. Selon Fuites Infos, la revendication porte sur 10 241 personnes : des intervenants du groupe, mobilisés sur des missions commerciales et promotionnelles. FrenchBreaches rapporte 10 343 lignes revendiquées, soit environ 7 Mo. Les champs annoncés incluent identité, date et lieu de naissance, nationalité, coordonnées et code intervenant. Fuites Infos mentionne aussi un numéro de sécurité sociale. FrenchBreaches situe l'échantillon publié dans une application de gestion des intervenants sur un sous-domaine de fmgsam.com. Ni FMG Sales and Marketing ni sa filiale DMF Sales & Marketing n'ont confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Un acteur publie gratuitement sur un forum une base attribuée à FMG Sales and Marketing et revendique 10 343 lignes, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Fuites Infos relaie la revendication et indique 10 241 personnes distinctes, du personnel de terrain du groupe."
+    }
+  ]
+}
