@@ -1,0 +1,52 @@
+{
+  "slug": "capeb-20261002",
+  "entity": "CAPEB (Confédération de l'artisanat et des petites entreprises du bâtiment)",
+  "secteur": "industrie",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 500000,
+    "unit": "personnes",
+    "label": "environ 500 000 dirigeants estimés selon Fuites Infos et Cyberattaque.org ; 3 966 461 lignes (2,48 Go), 261 884 numéros de téléphone et 253 636 adresses e-mail revendiqués par l'auteur, chiffres rapportés par FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "financier",
+    "credentials",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "Fuites Infos — CAPEB : fuite de données revendiquée visant environ 500 000 dirigeants (2 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-capeb",
+      "kind": "article"
+    },
+    {
+      "label": "FrenchBreaches — CAPEB : une base de 3,9 millions d'enregistrements diffusée sur un forum cybercriminel (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/capeb-murke1g4sga4x80oopk",
+      "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — CAPEB : 3,9 millions de lignes diffusées, 500 000 artisans en fuite (3 octobre 2026)",
+      "url": "https://www.cyberattaque.org/capeb-cyberattaque-3-9-millions-de-lignes-diffusees-500-000-artisans-en-fuite/",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, l'utilisateur ChimeraZ publie sur un forum une base présentée comme issue du site de la CAPEB, selon Fuites Infos et FrenchBreaches. L'auteur revendique 3 966 461 lignes, soit 2,48 Go, avec 261 884 numéros de téléphone et 253 636 adresses e-mail. Les extraits montrent des fiches de dirigeants et d'entreprises artisanales : identité, coordonnées, SIRET, activité et syndicat de rattachement. Fuites Infos rapporte aussi, sans vérification possible, des dates de naissance, des numéros de sécurité sociale et des coordonnées bancaires dans les catégories annoncées. Le nombre de personnes distinctes reste inconnu ; Fuites Infos et Cyberattaque.org évoquent de l'ordre de 500 000 dirigeants. La CAPEB n'a pas confirmé publiquement cette fuite.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "ChimeraZ publie sur un forum une base présentée comme issue de capeb.fr : 3 966 461 lignes et 2,48 Go revendiqués, selon Fuites Infos et FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "FrenchBreaches et Cyberattaque.org relaient la publication ; une estimation d'environ 500 000 dirigeants est avancée, sans confirmation de la CAPEB."
+    }
+  ]
+}
