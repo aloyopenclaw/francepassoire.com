@@ -1,7 +1,7 @@
 {
   "slug": "cgt-aude-20261002",
-  "entity": "CGT (unions locales de l'Aude)",
-  "secteur": "public",
+  "entity": "CGT (Aude)",
+  "secteur": "autre",
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-10-02",
@@ -10,7 +10,7 @@
   "volume": {
     "count": 4778,
     "unit": "personnes",
-    "label": "4 778 syndiqués visés selon Fuites Infos ; environ 4 600 personnes distinctes après déduplication selon l'analyse FrenchBreaches, sur près de 77 000 lignes revendiquées"
+    "label": "4 778 syndiqués selon Fuites Infos ; près de 77 000 lignes annoncées par l'auteur et environ 4 600 identités distinctes après déduplication selon FrenchBreaches"
   },
   "data_types": [
     "identite",
@@ -19,8 +19,8 @@
   ],
   "sources": [
     {
-      "label": "Fuites Infos — CGT (Aude) : fuite revendiquée visant 4 778 syndiqués (2 octobre 2026)",
-      "url": "https://web.archive.org/web/20261003162028/https://fuitesinfos.fr/article/2026-10-02-cgt-aude",
+      "label": "Fuites Infos — CGT (Aude) : fuite revendiquée visant 4 778 syndiqués (3 octobre 2026) (archive)",
+      "url": "http://web.archive.org/web/20261003162028/https://fuitesinfos.fr/article/2026-10-02-cgt-aude",
       "kind": "archive"
     },
     {
@@ -29,15 +29,15 @@
       "kind": "article"
     }
   ],
-  "description": "Le 2 octobre 2026, le groupe LunarisSec revendique la diffusion d'un fichier de syndiqués CGT de l'Aude, selon FrenchBreaches. Fuites Infos indique que la revendication publiée le même jour vise 4 778 syndiqués, rattachés pour la plupart aux unions locales du département. FrenchBreaches dénombre près de 4 600 personnes distinctes après déduplication sur près de 77 000 lignes. Les données comportent civilité, nom, adresse postale, téléphone, e-mail et rattachement syndical, selon les deux médias. L'appartenance syndicale est une donnée sensible au sens du RGPD, rappelle Fuites Infos. Le fichier était proposé en téléchargement gratuit. La CGT n'a pas confirmé publiquement cette fuite.",
+  "description": "Le 2 octobre 2026, le groupe LunarisSec publie sur un forum une base présentée comme issue de structures CGT de l'Aude et propose le fichier en téléchargement gratuit, selon Fuites Infos. Fuites Infos annonce 4 778 syndiqués, pour la plupart domiciliés dans l'Aude. L'analyse de FrenchBreaches compte près de 77 000 lignes et environ 4 600 identités distinctes après déduplication. Les champs observés incluent civilité, nom, adresse postale, numéros de téléphone, adresse e-mail, union locale, fédération et syndicat de rattachement, selon les deux médias. FrenchBreaches relève des colonnes dédiées aux responsables de structures syndicales. La méthode d'accès et le système compromis restent non confirmés. La CGT n'a pas confirmé publiquement cette fuite.",
   "timeline": [
     {
       "date": "2026-10-02",
-      "event": "Revendication du groupe LunarisSec visant un fichier de syndiqués CGT de l'Aude proposé en téléchargement gratuit, selon Fuites Infos et FrenchBreaches."
+      "event": "Le groupe LunarisSec publie une revendication visant des données de structures CGT de l'Aude et met le fichier en téléchargement gratuit, selon Fuites Infos."
     },
     {
       "date": "2026-10-03",
-      "event": "FrenchBreaches publie son analyse : près de 4 600 personnes distinctes après déduplication, avec coordonnées et rattachement syndical, sur près de 77 000 lignes."
+      "event": "Fuites Infos annonce 4 778 syndiqués ; FrenchBreaches publie son analyse : près de 77 000 lignes, environ 4 600 identités distinctes, données centrées sur l'Aude."
     }
   ]
 }
