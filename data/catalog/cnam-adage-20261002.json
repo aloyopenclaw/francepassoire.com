@@ -1,0 +1,44 @@
+{
+  "slug": "cnam-adage-20261002",
+  "entity": "Cnam (ADAGE)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-02",
+    "publication": "2026-10-02"
+  },
+  "volume": {
+    "count": 14842,
+    "unit": "personnes",
+    "label": "14 842 enseignants et intervenants selon Fuites Infos ; 15 984 fiches revendiquées par l'auteur de la publication selon FrenchBreaches"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — CNAM : les données de près de 16 000 enseignants diffusées sur un forum cybercriminel (2 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/cnam-adage-muri2nsuk18ssrkyap",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Cnam (ADAGE) : fuite revendiquée visant 14 842 enseignants et intervenants (3 octobre 2026)",
+      "url": "https://fuitesinfos.fr/article/2026-10-02-cnam-adage",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 2 octobre 2026, une base présentée comme issue d'ADAGE est diffusée gratuitement sur un forum cybercriminel. ADAGE est le portail utilisé par le Conservatoire national des arts et métiers pour gérer l'agrément de ses enseignants et intervenants, selon FrenchBreaches et Fuites Infos. L'auteur de la publication revendique 15 984 fiches. Fuites Infos indique que 14 842 enseignants et intervenants sont visés. Les champs annoncés incluent identité, date et lieu de naissance, coordonnées, diplômes, statut et parcours professionnel, d'après les deux médias. Le même acteur propose à la vente le même jour une seconde base présentée comme celle des apprenants du Cnam. Le Cnam n'a pas confirmé publiquement l'incident.",
+  "timeline": [
+    {
+      "date": "2026-10-02",
+      "event": "Un acteur diffuse gratuitement sur un forum une base présentée comme issue d'ADAGE et revendique 15 984 fiches, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "Fuites Infos relaie la revendication et indique 14 842 enseignants et intervenants enregistrés sur ADAGE."
+    }
+  ]
+}
