@@ -1,0 +1,47 @@
+{
+  "slug": "region-hauts-de-france-carte-generation-20261003",
+  "entity": "Région Hauts-de-France (services numériques, Carte Génération)",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "group": "chimeraz",
+  "dates": {
+    "revendication": "2026-10-03",
+    "publication": "2026-10-03"
+  },
+  "volume": {
+    "count": 708000,
+    "unit": "personnes",
+    "label": "environ 708 000 personnes sur 782 583 lignes revendiquées pour la base de comptes, et 90 011 documents PDF (48 Go) pour le lot documentaire ; chiffres de l'auteur rapportés par FrenchBreaches et Fuites Infos"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents",
+    "autre"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Hauts-de-France : près de 800 000 comptes et 90 000 documents revendiqués dans une nouvelle fuite de données (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/blog/fuite-de-donnees-hauts-de-france-plus-de-700-000-personnes-et-90-000-documents-concernes",
+      "kind": "article"
+    },
+    {
+      "label": "Fuites Infos — Génération #HDF : fuite revendiquée de 90 011 pièces justificatives (3 octobre 2026) (archive)",
+      "url": "https://web.archive.org/web/20261003151841/https://fuitesinfos.fr/article/2026-10-03-generation-hdf",
+      "kind": "archive"
+    }
+  ],
+  "description": "Le 3 octobre 2026, l'utilisateur ChimeraZ publie sur un forum deux revendications visant des services numériques de la Région Hauts-de-France, selon FrenchBreaches. La première porte sur 782 583 lignes couvrant environ 708 000 personnes : comptes, e-mails, téléphones, identifiants et transactions liées au dispositif Carte Génération. La seconde met en vente 90 011 documents PDF, dont 37 585 contrats d'apprentissage, 36 720 RIB et 15 118 attestations d'hébergement, selon Fuites Infos. Des mineurs figurent parmi les personnes concernées selon le même média. La veille, la Région avait notifié des personnes d'un incident distinct chez son prestataire ATEXO. Les deux ensembles ne sortent pas du même service, précise Fuites Infos. La Région n'a pas confirmé ces revendications.",
+  "timeline": [
+    {
+      "date": "2026-10-03",
+      "event": "ChimeraZ publie deux revendications visant des services numériques de la Région Hauts-de-France : une base de 782 583 lignes et 90 011 fichiers PDF, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "Fuites Infos détaille le lot documentaire mis en vente : contrats d'apprentissage, RIB, justificatifs de domicile et pièces d'identité, pour environ 48 Go."
+    }
+  ]
+}
