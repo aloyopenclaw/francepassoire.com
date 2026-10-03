@@ -1,7 +1,7 @@
 {
   "slug": "cnam-adage-20261002",
-  "entity": "Cnam (ADAGE)",
-  "secteur": "public",
+  "entity": "Cnam (portail ADAGE)",
+  "secteur": "recherche",
   "statut": "revendiquee",
   "dates": {
     "revendication": "2026-10-02",
@@ -10,16 +10,17 @@
   "volume": {
     "count": 14842,
     "unit": "personnes",
-    "label": "14 842 enseignants et intervenants concernés selon Fuites Infos ; la revendication annonce 15 984 fiches, soit environ 29 Mo, selon FrenchBreaches, une même personne pouvant figurer plusieurs fois"
+    "label": "14 842 enseignants et intervenants selon Fuites Infos ; l'auteur revendique 15 984 lignes et l'analyse de Cyberattaque.org compte 15 983 profils distincts"
   },
   "data_types": [
     "identite",
     "coordonnees",
-    "documents"
+    "documents",
+    "autre"
   ],
   "sources": [
     {
-      "label": "Fuites Infos — Cnam (ADAGE) : fuite revendiquée visant 14 842 enseignants et intervenants (3 octobre 2026)",
+      "label": "Fuites Infos — Cnam (ADAGE) : fuite revendiquée visant 14 842 enseignants et intervenants (2 octobre 2026)",
       "url": "https://fuitesinfos.fr/article/2026-10-02-cnam-adage",
       "kind": "article"
     },
@@ -27,17 +28,22 @@
       "label": "FrenchBreaches — Le CNAM visé par une fuite de données concernant près de 16 000 enseignants (2 octobre 2026)",
       "url": "https://frenchbreaches.com/alertes/cnam-adage-muri2nsuk18ssrkyap",
       "kind": "article"
+    },
+    {
+      "label": "Cyberattaque.org — Cnam : près de 900 000 fiches et 16 000 profils d'enseignants en fuite (2 octobre 2026)",
+      "url": "https://www.cyberattaque.org/cyberattaque-cnam-pres-de-16-000-profils-denseignants-exposes-dans-une-fuite-de-donnees/",
+      "kind": "article"
     }
   ],
-  "description": "Le 2 octobre 2026, le pseudonyme Syrv4x diffuse gratuitement sur un forum cybercriminel une base présentée comme issue d'ADAGE, le portail d'agrément des enseignants du Conservatoire national des arts et métiers, selon FrenchBreaches. La revendication porte sur 15 984 fiches, soit environ 29 Mo, visant des enseignants et intervenants du Cnam, selon FrenchBreaches. Fuites Infos évalue à 14 842 le nombre de personnes concernées, une même personne pouvant figurer plusieurs fois. Les fiches décrites réunissent état civil, adresse, téléphone, e-mail, diplômes, statut, parcours d'enseignement et lien vers le CV, selon Fuites Infos. Le même acteur propose à la vente une seconde base attribuée au Cnam portant sur 882 918 lignes d'étudiants, dossier distinct. Aucune confirmation publique du Cnam n'est relevée.",
+  "description": "Le 2 octobre 2026, l'utilisateur Syrv4x diffuse gratuitement une base présentée comme issue d'ADAGE, portail d'agrément des enseignants du Cnam, selon Fuites Infos. L'auteur revendique 15 984 lignes ; Fuites Infos annonce 14 842 enseignants et intervenants concernés. L'analyse de Cyberattaque.org, qui a examiné le fichier, compte 15 983 profils distincts. Les données réunissent état civil, coordonnées, diplômes, statuts, parcours professionnel et liens vers des CV déposés, selon les trois médias. Le même jour, une seconde base présentée comme celle des apprenants a été mise en vente par le même acteur, selon Cyberattaque.org ; elle forme un dossier distinct. Le Cnam n'a pas confirmé publiquement cette diffusion.",
   "timeline": [
     {
       "date": "2026-10-02",
-      "event": "Diffusion gratuite sur un forum cybercriminel d'une base attribuée à adage.cnam.fr par le pseudonyme Syrv4x : 15 984 fiches d'enseignants et intervenants revendiquées, environ 29 Mo, selon FrenchBreaches."
+      "event": "Syrv4x diffuse gratuitement 15 984 lignes présentées comme issues d'ADAGE, portail d'agrément des enseignants du Cnam, selon FrenchBreaches et Fuites Infos."
     },
     {
-      "date": "2026-10-03",
-      "event": "Fuites Infos publie : 14 842 personnes estimées, fiches avec état civil, coordonnées, diplômes et CV ; le même acteur met en vente une seconde base de 882 918 lignes présentées comme des étudiants du Cnam."
+      "date": "2026-10-02",
+      "event": "Cyberattaque.org publie son analyse du fichier : 15 983 profils distincts avec coordonnées, diplômes et parcours professionnels."
     }
   ]
 }
