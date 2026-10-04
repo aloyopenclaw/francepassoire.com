@@ -1,0 +1,50 @@
+{
+  "slug": "region-hauts-de-france-20261003",
+  "entity": "Région Hauts-de-France",
+  "secteur": "public",
+  "statut": "revendiquee",
+  "dates": {
+    "revendication": "2026-10-03",
+    "publication": "2026-10-03"
+  },
+  "volume": {
+    "count": 708000,
+    "unit": "personnes",
+    "label": "environ 708 000 personnes et 782 583 lignes, chiffres revendiqués par le pirate selon FrenchBreaches ; non confirmés par la Région"
+  },
+  "data_types": [
+    "identite",
+    "coordonnees",
+    "credentials",
+    "financier",
+    "documents"
+  ],
+  "sources": [
+    {
+      "label": "FrenchBreaches — Hauts-de-France : près de 800 000 comptes et 90 000 documents revendiqués dans une nouvelle fuite de données (3 octobre 2026)",
+      "url": "https://frenchbreaches.com/alertes/r-gion-hauts-de-france-muqbs0geks60ywxsfd",
+      "kind": "revendication"
+    },
+    {
+      "label": "Capital.fr — Hauts-de-France : un pirate revendique le vol des données de 700 000 personnes dont des lycéens et apprentis (3 octobre 2026)",
+      "url": "https://www.capital.fr/economie-politique/hauts-de-france-un-pirate-revendique-le-vol-des-donnees-de-700-000-personnes-dont-des-lyceens-et-apprentis-1530716",
+      "kind": "article"
+    },
+    {
+      "label": "01net.com — Cyberattaque contre la Région Hauts-de-France : les RIB de 700 000 Français compromis (3 octobre 2026)",
+      "url": "https://www.01net.com/actualites/cyberattaque-region-hauts-de-france-donnees-personnelles-rib.html",
+      "kind": "article"
+    }
+  ],
+  "description": "Le 3 octobre 2026, le pirate ChimeraZ publie sur un forum cybercriminel deux revendications visant des services numériques de la Région Hauts-de-France, selon FrenchBreaches. Il affirme détenir 782 583 lignes couvrant environ 708 000 personnes, plus 90 011 fichiers PDF (48 Go). Les plateformes citées : Carte Génération #HDF, Aides Hauts-de-France et services d'accompagnement. Les échantillons publiés montrent noms, coordonnées, identifiants et rôles de comptes. Les revendications mentionnent transactions, RIB, contrats d'apprentissage, attestations d'hébergement et certificats de scolarité, selon FrenchBreaches. La Région annonce une intrusion chez ses prestataires Atexo et Docaposte, selon Capital et 01net. Elle évoque noms, prénoms, adresses électroniques et potentiellement des RIB. Elle dépose plainte et ferme les plateformes. Le nombre de personnes concernées n'est pas confirmé.",
+  "timeline": [
+    {
+      "date": "2026-10-03",
+      "event": "ChimeraZ publie deux revendications sur un forum : 782 583 lignes, environ 708 000 personnes et 90 011 fichiers PDF, selon FrenchBreaches."
+    },
+    {
+      "date": "2026-10-03",
+      "event": "La Région annonce une intrusion chez Atexo et Docaposte, ferme les plateformes et dépose plainte, selon Capital et 01net."
+    }
+  ]
+}
